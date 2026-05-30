@@ -107,4 +107,4 @@ Only written when a project enables them. Same frontmatter discipline; own `capt
 - **`offerings.md`** — the product / service index. One `### <offering>` per item: URL, one-line description, pricing (verbatim), form/delivery, notable claims. Discover **breadth-first** (one per line/family before variants); the primary offering often shares the company name — list it first. *This structure is the cross-brand query fidelity lever — keep headings consistent.*
 - **`brand.md`** — the interpretive brand layer: voice/tone, personality (seed from Firecrawl `branding.personality`), positioning narrative, typography. The richer read that doesn't belong in `profile.md`'s scalars.
 
-*Detailed schemas land when the first project enables them — deferred on purpose. (Doro's product-analysis prompt is the seed for `offerings.md`.)*
+*Detailed schemas land when the first project enables them — deferred on purpose. (The seed for `offerings.md` is [`_design/references/doro-product-analysis-prompt.md`](_design/references/doro-product-analysis-prompt.md).)*
