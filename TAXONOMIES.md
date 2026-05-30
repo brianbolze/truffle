@@ -8,9 +8,22 @@
 
 ---
 
+## `entity_type`
+
+*What kind of entity this is — usually `Company`. The other values are graceful flags for non-standard entities, and they gate which other fields apply (an investor has no products; a nonprofit has no business model). Single-select.*
+
+| Value | Means |
+|---|---|
+| `Company` | An operating business selling products/services (the default) |
+| `Investor / Holding` | VC/PE firm, holding company, or conglomerate parent |
+| `Nonprofit` | Operates for social benefit, not profit |
+| `Government` | Government or public-sector body |
+| `Education` | School, university, or research institution |
+| `Individual / Creator` | Personal brand, solo creator, or independent |
+
 ## `target_market`
 
-*Who the company sells to. The cleanest grouping axis there is, and evident from almost any site.*
+*Who the company sells to — the cleanest grouping axis there is, evident from almost any site. Multi-select, best-fit first.*
 
 | Value | Means |
 |---|---|
@@ -38,9 +51,17 @@
 | `Energy / Utilities` | Generates, distributes, or services energy |
 | `Non-Profit / NGO` | Operates for social benefit, not profit |
 
+## `is_multi_product`
+
+*Boolean — does the company offer 2+ **distinct** offerings a customer would choose between or buy separately? Distinct in name, page, and positioning — not plans, tiers, or variants of one thing. The test: would someone comparison-shop between them?*
+
+- `true`: Apple (iPhone, Mac, Watch…), Microsoft (Office, Azure, Xbox…).
+- `false`: a single-product SaaS, even with Standard/Plus tiers.
+- Judgment call: Notion — historically `false` (one app), trending `true` as Notion Mail / Calendar become separately-named offerings, not features.
+
 ## `business_model` *(optional)*
 
-*How the company makes money. Often inferable from pricing pages; leave empty if not.*
+*How the company makes money — the primary model if several apply. Often inferable from pricing pages; leave empty if not.*
 
 | Value | Means |
 |---|---|
@@ -74,6 +95,7 @@
 2. **`Other` is always allowed**, and better than a forced wrong fit. When you use it, add a one-line note in the body so a human can see what didn't fit — repeated `Other`s are the signal to evolve the taxonomy.
 3. **Empty is always allowed.** If the captured site doesn't determine a field, leave it empty and note it in `unverified_fields`. Don't guess from prior knowledge.
 4. **Classify from what you captured**, not from memory. The site is the evidence.
+5. **Multi-select fields are ranked.** For `target_market` and `offering_category`, list the best-fit first — most relevant / biggest share of the business. Position 1 is treated as primary.
 
 *No `lifecycle_stage` field on purpose — it's a funding/financials signal you can't read off a marketing site (a deep-research job, not capture).*
 

@@ -34,13 +34,15 @@ key_pages:                           # the semantic links worth keeping; relativ
 unverified_fields:
   - "Per-product pricing — behind the intake quiz, did not submit."
 
-# Description — one sentence: what they do + for whom. Prefer their words (og:description / hero), tightened.
-description: "DTC men's-health telehealth brand offering TRT, weight-loss, and longevity programs via licensed clinicians."
+# Description — one sentence (~160-220 chars): [what they do] + [how] + [focus/differentiator].
+# Active voice, concrete, no buzzwords/superlatives. For firms/investors: "A [type] that…".
+description: "Delivers TRT, weight-loss, and longevity programs to men through licensed telehealth clinicians, using at-home lab testing to personalize and monitor each protocol."
 
 # Classification — closed sets (see TAXONOMIES.md). Leave empty if the site doesn't determine it.
-target_market: B2C
-offering_category: [Services / Consulting, Biotech / Pharma Products]   # primary first; list only for genuine hybrids
-is_multi_product: true
+entity_type: Company                 # what kind of entity; usually "Company". Gates the rest.
+target_market: [B2C]                 # multi-select, best-fit first
+offering_category: [Services / Consulting, Biotech / Pharma Products]   # multi-select, best-fit first
+is_multi_product: true               # 2+ distinct offerings, not plans/variants — see TAXONOMIES.md
 business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
@@ -62,10 +64,10 @@ Prose flexes where enums can't — write each section for the company in front o
 | Section | What goes here |
 |---|---|
 | **Overview** | 2–4 sentences: what they do, who for, how. Synthesized across pages, not the meta tag. |
-| **What they offer** | The *shape* of their offerings (lines/categories). Point to `products.md` for per-product detail. |
+| **What they offer** | The *shape* of their offerings (lines/categories). Point to `offerings.md` for per-offering detail. |
 | **How it works / model** | Customer journey (e.g. quiz → consult → subscription) + how they make money + delivery. |
 | **Positioning & audience** | Who they target, against whom, their claimed edge. Brief — deep voice work goes to `brand.md`. |
-| **Nav structure** | Their own taxonomy, as a nested list with URLs. Order matters. |
+| **Nav structure** | Their own taxonomy, as a nested list with URLs. Capture the **complete** nav — mega-menu flyouts and dropdowns included; it's the best signal of their offering hierarchy. |
 | **Credibility & proof** | Trust signals: press logos, certifications, # customers, guarantees, testimonial presence. |
 | **Provenance** | Pages analyzed, capture method per page, and what you couldn't get. |
 
@@ -77,22 +79,24 @@ Prose flexes where enums can't — write each section for the company in front o
 | **Strategic read** | The "so what" — anything distinctive, surprising, or strategically relevant. |
 
 <details>
-<summary>Positive examples — the level of synthesis expected</summary>
+  <summary>Positive examples — the level of synthesis expected</summary>
 
-**Overview**
-> A DTC men's-health telehealth brand. It pairs at-home lab testing with licensed-clinician oversight to deliver TRT, weight-loss, and longevity programs on a monthly membership. Positions as a clinical, data-driven alternative to both in-person clinics and lighter "wellness" telehealth.
+  > Examples are **shortened for brevity**. Real captures should be complete — especially **Nav structure**, which should include the full mega-nav (every flyout/dropdown), not a trimmed sample.
 
-**What they offer**
-> Three lines, all subscription: **Hormone therapy** (TRT, anchored on at-home bloodwork), **Weight loss** (GLP-1 + orals), **Longevity/peptides** (Sermorelin, NAD+). Labs are the wedge — most journeys start with a panel. Per-product detail in `products.md`.
+  **Overview**
+  > A DTC men's-health telehealth brand. It pairs at-home lab testing with licensed-clinician oversight to deliver TRT, weight-loss, and longevity programs on a monthly membership. Positions as a clinical, data-driven alternative to both in-person clinics and lighter "wellness" telehealth.
 
-**Nav structure**
-> ```
-> - Treatments
->   - TRT — /hormone-therapy/trt
->   - Weight loss — /weight-loss
-> - How it works — /how-it-works
-> - Membership — /membership
-> ```
+  **What they offer**
+  > Three lines, all subscription: **Hormone therapy** (TRT, anchored on at-home bloodwork), **Weight loss** (GLP-1 + orals), **Longevity/peptides** (Sermorelin, NAD+). Labs are the wedge — most journeys start with a panel. Per-offering detail in `offerings.md`.
+
+  **Nav structure**
+  > ```
+  > - Treatments
+  >   - TRT — /hormone-therapy/trt
+  >   - Weight loss — /weight-loss
+  > - How it works — /how-it-works
+  > - Membership — /membership
+  > ```
 
 </details>
 
@@ -100,7 +104,7 @@ Prose flexes where enums can't — write each section for the company in front o
 
 Only written when a project enables them. Same frontmatter discipline; own `captured_at`.
 
-- **`products.md`** — the product/offering index. One `### <product>` per offering: URL, one-line description, pricing (verbatim), form/delivery, notable claims. *This structure is the cross-brand query fidelity lever — keep product headings consistent.*
+- **`offerings.md`** — the product / service index. One `### <offering>` per item: URL, one-line description, pricing (verbatim), form/delivery, notable claims. Discover **breadth-first** (one per line/family before variants); the primary offering often shares the company name — list it first. *This structure is the cross-brand query fidelity lever — keep headings consistent.*
 - **`brand.md`** — the interpretive brand layer: voice/tone, personality (seed from Firecrawl `branding.personality`), positioning narrative, typography. The richer read that doesn't belong in `profile.md`'s scalars.
 
-*Detailed schemas for these land when the first project enables them — deferred on purpose.*
+*Detailed schemas land when the first project enables them — deferred on purpose. (Doro's product-analysis prompt is the seed for `offerings.md`.)*
