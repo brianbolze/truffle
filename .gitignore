@@ -1,0 +1,20 @@
+# Secrets
+.env
+.env.*
+
+# Payload sidecars — raw Firecrawl JSON + screenshots. Large, regenerable, iCloud-synced.
+**/.payloads/
+**/*.payloads/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / iCloud
+.DS_Store
+*.icloud
+
+# Experiment scratch output (keep READMEs + scripts + FINDINGS, ignore bulk dumps)
+experiments/**/_out/
