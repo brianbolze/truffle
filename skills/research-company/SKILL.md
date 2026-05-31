@@ -81,7 +81,7 @@ reliable discovery surface. Pull both.
 **4. Pick key pages (judgment, free).** Merge map URLs + homepage links. **Filter the noise first**
 (playbook §5.3): drop `/partner|/people|/hero-*-lp|/sweepstakes|/campaign|/blog|/post`, locale
 prefixes (`/en-uk`, `/de-eu`, …), and duplicate funnel slugs. Then pick **~4-8 signal pages**: pricing,
-products/treatments, how-it-works, about — whatever carries the company's offering + model + claims. The about / company info / history page would also be helpful - whatever carries founding history, key metrics the company makes public, and key company events. 
+products/treatments, how-it-works, about — whatever carries the company's offering + model + claims. The about / company info / history page would also be helpful - whatever carries founding history, key metrics the company makes public, and key company events. **Homepage caveat:** if the homepage is an app shell / storefront / logged-in app — a marketplace, a big retailer, a SaaS that drops you straight into the product — it carries little positioning; there the about/company page *is* the primary self-description, so lean on it plus the category/product pages.
 Let the site's apparent breadth guide depth (a `Single`-shape brand needs fewer pages than a
 `Multi-product` one; see `portfolio_shape` in TAXONOMIES).
 
