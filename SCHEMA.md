@@ -21,7 +21,7 @@ Stable, queryable, cheap. Closed-set fields draw from [`TAXONOMIES.md`](TAXONOMI
 
 ```yaml
 ---
-schema_version: 1                    # contract version this profile targets; readers gate on it (see note below)
+schema_version: 1                    # contract MAJOR.MINOR the profile obeys; readers gate on it (see note below)
 
 # Identity
 domain: honehealth.com               # primary key
@@ -62,7 +62,11 @@ design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/
 ---
 ```
 
-*`schema_version` is the contract version the profile was written against — bump only on a **breaking** change (a removed/renamed field, or a closed-set value whose meaning changed), never on additive ones. Old profiles keep their number until migrated, so a reader can tell a pre-existing gap from missing data.*
+*`schema_version` is the contract the profile obeys — the field / value / section set, **not** the prose docs (a docs-only edit like wording changes nothing). It's `MAJOR.MINOR`:*
+- ***MAJOR*** *(`1`→`2`) — a **breaking** change: a field removed/renamed, or a closed-set value whose meaning changed. Old profiles are now non-conformant — migrate `store/`, re-capture where needed, run `scripts/querycheck.py`.*
+- ***MINOR*** *(`1.0`→`1.1`) — an **additive**, backward-compatible change: a new optional field, value, or section. No backfill; the number just lets a reader read an empty new field in an older profile as "predates the field," not "missing data."*
+
+*Store it as a quoted string (`"1.0"`) so a future `"1.10"` doesn't collapse to the float `1.1`. Current profiles write a bare `1` (≡ `1.0`); the explicit string becomes canonical at the next version change.*
 
 *`favicon` and `website_url` are **derived from `domain`** at read time — never stored.*
 

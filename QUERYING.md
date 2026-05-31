@@ -61,4 +61,4 @@ Multi-selects are **ranked** — position 1 is *primary*. `tm[0]=="B2B"` means "
 
 ---
 
-*Authority + drift: SCHEMA / TAXONOMIES are the contract — this doc names fields and mechanics, never value lists. If a recipe here disagrees with them, trust the contract and re-derive the recipe. Written against `schema_version: 1`; a version bump means re-check the recipes with `scripts/querycheck.py`.*
+*Authority + drift: SCHEMA / TAXONOMIES are the contract — this doc names fields and mechanics, never value lists. If a recipe here disagrees with them, trust the contract and re-derive the recipe. Written against `schema_version: 1`; a **major** bump means re-check the recipes with `scripts/querycheck.py` (a minor/additive bump can't break an existing recipe).*
