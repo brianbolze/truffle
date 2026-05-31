@@ -34,7 +34,5 @@ System-level weaknesses, ideas, and TBDs for the engine itself. Light-touch — 
   Replace the single `logo_url` with a small `logos: {}` set — mark/favicon (square), wordmark (rectangle), `og:image`, + the cleanest SVG from `images[]` — chosen by vision at ingestion (AI-at-ingestion fit). Adds frontmatter surface → design in a dedicated session. Overlaps + would partly resolve the "branding payload is hint-only" item's logo fallback chain. Not v1-critical.
 - **Lint `profile.md` in the verify step** `[idea]`
   `verify` checks scrape md5-uniqueness but never lints the *written* profile — which is how leaked tool-call tags (`</content>`, `</invoke>`) reached the end of 4 profiles in the first batch. Add a cheap post-write check: no leaked tags, `## Provenance` present, required frontmatter keys present. Replaces hand-inspection.
-- **Specify the Provenance section before a consumer parses it** `[weakness]`
-  Heading is consistent (15/15) but contents drift: ~5 bullet-list / ~10 prose, and credits-spent appears in only 3 of 15. Codify a minimal template in SCHEMA (pages · method · verify result · credits · couldn't-get) so it stays greppable. Tighten, don't add a field. 
 - **Standardize how A/B-snapshot volatility is recorded** `[idea]`
   6 of 15 sites had live experiments (VWO, Optimizely, rotating hero, listing carousels, quiz-gating) flagged inconsistently — sometimes `site_notes`, sometimes `unverified_fields`. A stock `A/B: <tool>` site_notes line + one standard "prices are a point-in-time snapshot" phrasing keeps it queryable without a new field.
