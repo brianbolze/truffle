@@ -10,10 +10,14 @@ profile-writing (that's the agent's enrichment job, per SCHEMA.md).
 Usage:
   fc.py map    <url> --slug <slug> [--search TERM] [--limit 500] [--date YYYY-MM-DD]
   fc.py scrape <url> --slug <slug> --name <name> [--homepage] [--wait 3500] [--proxy auto] [--date ...]
-  fc.py verify --slug <slug> [--date ...]   # md5-dedup + sourceURL match across the run
+  fc.py verify --slug <slug> [--date ...]   # scrapes: md5-dedup + sourceURL match; + lint profile.md once written
   fc.py credits                             # GET /v2/team/credit-usage (free, 0 credits)
+
+verify runs at two points: pre-write (step 6) it checks scrape integrity; re-run post-write
+(step 7) it also lints the written profile.md (leaked tool-call tags, ## Provenance, required
+frontmatter keys). Exits nonzero if anything is wrong. Stdlib-only on purpose — no PyYAML.
 """
-import argparse, datetime, hashlib, json, os, time, urllib.request
+import argparse, datetime, hashlib, json, os, re, sys, time, urllib.request
 from pathlib import Path
 
 API = "https://api.firecrawl.dev/v2"
@@ -97,25 +101,87 @@ def do_scrape(url, slug, name, homepage, wait, proxy, date):
     if md and len(md) < 500:
         print(f"         !! THIN markdown (<500c) — possible SPA-blank / wall")
 
+# --- profile.md lint (step-7 output) ---------------------------------------
+# Required top-level frontmatter keys: identity + capture meta (never legitimately
+# empty) plus the fields QUERYING.md's recipes read — keep in sync with
+# scripts/querycheck.py's RECIPE_FIELDS. Optional fields (portfolio_shape, visual
+# identity) are intentionally not required.
+REQUIRED_FM_KEYS = [
+    "schema_version", "domain", "name", "captured_at", "capture_method", "description",
+    "entity_type", "target_market", "offering_category", "business_model",
+    "parent", "owns", "key_pages", "unverified_fields",
+]
+# Leaked harness control tags — how </content> and </invoke> reached 4 profiles in
+# the first batch. Targeted to the tool-call vocabulary so legit URL-template
+# placeholders (<slug>, <sku>, <drug>) don't false-positive.
+LEAK_RE = re.compile(r"</?\s*(?:antml:)?(?:function_calls|invoke|parameter|content)\b[^>]*>", re.I)
+
+def frontmatter_keys(text):
+    """Top-level frontmatter keys via a column-0 line scan (stdlib-only — no PyYAML).
+    Returns None if there's no leading '---' fence."""
+    if not text.startswith("---"):
+        return None
+    parts = text.split("---", 2)
+    if len(parts) < 3:
+        return None
+    return [m.group(1) for line in parts[1].splitlines()
+            if (m := re.match(r"([A-Za-z_][A-Za-z0-9_]*):", line))]
+
+def lint_profile(slug):
+    """Lint the written store/<slug>/profile.md: no leaked tool-call tags, a
+    ## Provenance section, and the required frontmatter keys. Returns True on issues.
+    Absent profile (pre-write step 6) is not a failure — the lint just defers."""
+    p = ROOT / "store" / slug / "profile.md"
+    if not p.exists():
+        print("  profile.md not yet written — lint deferred to the post-write verify")
+        return False
+    text = p.read_text()
+    bad = False
+    print(f"--- profile.md lint ({slug}) ---")
+    for i, line in enumerate(text.splitlines(), 1):
+        for m in LEAK_RE.finditer(line):
+            print(f"  LEAKED TAG line {i}: {m.group(0)!r}  <-- strip it"); bad = True
+    if "## Provenance" not in text:
+        print("  MISSING SECTION: ## Provenance"); bad = True
+    keys = frontmatter_keys(text)
+    if keys is None:
+        print("  no '---' frontmatter fence"); bad = True
+    else:
+        missing = [k for k in REQUIRED_FM_KEYS if k not in keys]
+        if missing:
+            print(f"  MISSING FRONTMATTER KEYS: {', '.join(missing)}"); bad = True
+    print("  profile.md OK — no leaked tags, Provenance present, required keys present"
+          if not bad else "  ^^ profile.md ISSUES above")
+    return bad
+
 def do_verify(slug, date):
     d = store(slug, date)
+    bad = False
+    # --- scrapes: sourceURL match + md5-uniqueness across the run ---
     mf = d / ".payloads" / "manifest.jsonl"
     if not mf.exists():
-        print("no manifest"); return
-    recs = [json.loads(l) for l in mf.read_text().splitlines() if l.strip()]
-    by_md5 = {}
-    print(f"=== verify {slug} ({len(recs)} pages) ===")
-    bad = False
-    for r in recs:
-        by_md5.setdefault(r["md5"], []).append(r["name"])
-        if not r["match"]:
-            print(f"  sourceURL MISMATCH: {r['name']}  requested={r['requested']} got={r['sourceURL']}")
-            bad = True
-    for md5, names in by_md5.items():
-        if len(names) > 1:
-            print(f"  DUP BODY md5={md5[:8]} across: {names}  <-- §5.1 contamination")
-            bad = True
-    print("  OK — all sourceURLs match, all bodies unique" if not bad else "  ^^ ISSUES above")
+        print(f"=== verify {slug} ===")
+        print("  no manifest — run scrapes first (skipping scrape checks)")
+    else:
+        recs = [json.loads(l) for l in mf.read_text().splitlines() if l.strip()]
+        by_md5 = {}
+        print(f"=== verify {slug} ({len(recs)} pages) ===")
+        scrape_bad = False
+        for r in recs:
+            by_md5.setdefault(r["md5"], []).append(r["name"])
+            if not r["match"]:
+                print(f"  sourceURL MISMATCH: {r['name']}  requested={r['requested']} got={r['sourceURL']}")
+                scrape_bad = True
+        for md5, names in by_md5.items():
+            if len(names) > 1:
+                print(f"  DUP BODY md5={md5[:8]} across: {names}  <-- §5.1 contamination")
+                scrape_bad = True
+        print("  scrapes OK — all sourceURLs match, all bodies unique" if not scrape_bad else "  ^^ scrape ISSUES above")
+        bad |= scrape_bad
+    # --- the written dossier ---
+    bad |= lint_profile(slug)
+    if bad:
+        sys.exit("verify: issues found (see above)")
 
 def do_credits():
     req = urllib.request.Request(f"{API}/team/credit-usage", headers=HDR)

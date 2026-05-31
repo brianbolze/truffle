@@ -54,12 +54,12 @@ portfolio_shape: Flagship + companions   # optional; shape of what they sell (al
 business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
-# Visual identity — from Firecrawl `branding`, but VERIFY against the screenshot — don't copy blindly (see note).
+# Visual identity — Firecrawl `branding` is a hint to verify, never source-of-truth; confirm against the screenshot (see note).
 logo_url: https://honehealth.com/...  # branding.images.logo, else favicon fallback (it's often empty / a data-URI)
 brand_colors: { primary: "#0E3A2F", accent: "#C7A867" }  # retain the palette; confirm the real hue visually (see note)
 fonts: [Söhne, Tiempos]              # usually branding.fonts[0] — but verify (generic "sans-serif" can rank first)
 color_scheme: light                  # light | dark
-design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/) — NOT branding.designSystem (reliably wrong)
+design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/), not the branding payload
 ---
 ```
 
@@ -75,7 +75,7 @@ design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/
 
 *`site_notes` is **carry-forward only** — durable, site-specific facts the next capture needs (JS-walled nav, geo traps, where pricing hides), so the next run inherits the playbook instead of re-discovering it. One-time run narration ("no contamination this run," credits spent) belongs in the **Provenance** body section, not here.*
 
-*Visual identity is **evidence to verify, not gospel.** `branding.colors` has no positional or presence guarantee — it can surface UI chrome, miss the true brand hue, or catch a campaign color; retain the palette but confirm the real one against the screenshot and write the read in **Visual & brand impression**. Read `design_framework` from `rawHtml`, never `branding.designSystem` (reliably wrong across the corpus). `logo_url` falls back to the favicon when `branding.images.logo` is empty or an inline data-URI.*
+*Visual identity — the `branding` payload is a **hint, not a source of truth**: seed from it, but verify every field rather than copy it. `branding.colors` has no positional or presence guarantee — it can surface UI chrome, miss the true brand hue, or catch a campaign color; retain the palette but confirm the real one against the screenshot and write the read in **Visual & brand impression**. Read `design_framework` from `rawHtml`, not the `branding` payload. `logo_url` falls back to the favicon when `branding.images.logo` is empty or an inline data-URI.*
 
 ## `profile.md` — body
 
