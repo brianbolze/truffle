@@ -57,7 +57,7 @@ python3 scripts/fc.py scrape  https://<domain>        --slug <slug> --name homep
 ```
 The map is a **sample** (big sites) or can be **empty** (custom SPAs) — homepage `links` are the reliable discovery surface. Pull both.
 
-**4. Pick key pages (judgment, free).** Merge map URLs + homepage links. **Filter the noise first** (playbook §5.3): drop `/partner|/people|/hero-*-lp|/sweepstakes|/campaign|/blog|/post`, locale prefixes (`/en-uk`, `/de-eu`, …), and duplicate funnel slugs.
+**4. Pick key pages (judgment, free).** Merge map URLs + homepage links. **Only ever scrape a URL that appears in this captured inventory — never hand-type a path from convention or prior knowledge** (`/about`, `/pricing`, `/ai`, …). A guessed path that doesn't exist can return a real-sized 404 error stub that silently passes `verify` and poisons the profile (the Qualtrics run burned 4 credits this way; see BACKLOG "junk soft-404 stubs"). If a page you expect is missing from the inventory, run a second `map --search "<term>"` to surface it, don't guess it. **Filter the noise first** (playbook §5.3): drop `/partner|/people|/hero-*-lp|/sweepstakes|/campaign|/blog|/post`, locale prefixes (`/en-uk`, `/de-eu`, …), and duplicate funnel slugs.
 
 Then pick **~4-8 signal pages**: pricing, products/treatments, how-it-works, about — whatever carries the company's offering + model + claims. The about / company info / history page would also be helpful - whatever carries founding history, key metrics the company makes public, and key company events.
 
