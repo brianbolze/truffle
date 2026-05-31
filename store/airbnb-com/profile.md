@@ -124,5 +124,3 @@ The capture catches Airbnb mid-pivot. For its entire history "Airbnb" meant Home
 - **Pages analyzed (7, all Firecrawl, `maxAge:0` + US geo, 2026-05-30):** homepage, `/homes`, `/experiences`, `/services`, `/host/homes`, `/aircover`, `/airbnb-friendly`. All 7 verified: sourceURL-matched and body-md5-unique (no geo/cache contamination).
 - **Discovery:** map returned ~470 URLs but ~95% were `/rooms/<id>` + `/help/article/<n>` noise; offering structure came from homepage top-nav + footer links.
 - **Not captured:** exact fee percentages, host onboarding flow behind `/become-a-host`, and the full Experiences/Services catalogs (geolocated, point-in-time). Financials/funding are a deep-research job, not Tier-0.
-</content>
-</invoke>
