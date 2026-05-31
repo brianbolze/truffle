@@ -28,3 +28,4 @@ Full paths (local dev only — a cloud clone won't have these): agent-workflows 
 - **Propose, don't write** across a project's boundary. The engine never silently mutates a project's KB.
 - **The anti-Doro line:** no graph DB, embeddings, datapoint reconciliation, entity-resolution, or served API. Domain is the key. When a decision smells heavy, that's the flag.
 - **Scope guideline:** the engine owns *state* (what a company/offering is). Events (news/funding/M&A) and judgments (relevance/threat) belong to downstream consumers.
+- **Commit per logical change**, terse imperative subject (e.g. `schema: portfolio_shape replaces is_multi_product`). `git log` is the changelog — no CHANGELOG file.

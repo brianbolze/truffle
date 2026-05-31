@@ -18,10 +18,14 @@ Stable, queryable, cheap. Closed-set fields draw from [`TAXONOMIES.md`](TAXONOMI
 
 ```yaml
 ---
+schema_version: 1                    # contract version this profile targets; readers gate on it (see note below)
+
 # Identity
 domain: honehealth.com               # primary key
 name: Hone Health
-aliases: []                          # alt names/domains; rebrand + M&A escape hatch
+aliases: []                          # alt names/domains of the SAME entity (rebrand + M&A escape hatch)
+parent: []                           # domain(s) this is a subsidiary / brand-of — from footer/©/about. Empty if top-level.
+owns: []                             # domain(s) of sub-brands / subsidiaries this entity owns. Empty if none.
 
 # Capture meta
 captured_at: 2026-05-29
@@ -42,20 +46,24 @@ description: "Delivers TRT, weight-loss, and longevity programs to men through l
 entity_type: Company                 # what kind of entity; usually "Company". Gates the rest.
 target_market: [B2C]                 # multi-select, best-fit first
 offering_category: [Services / Consulting, Biotech / Pharma Products]   # multi-select, best-fit first
-is_multi_product: true               # 2+ distinct offerings, not plans/variants — see TAXONOMIES.md
+portfolio_shape: Flagship + companions   # optional; shape of what they sell (also drives offerings capture) — see TAXONOMIES.md
 business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
-# Visual identity — lift straight from Firecrawl `branding`. Copy, don't analyze.
-logo_url: https://honehealth.com/...
-brand_colors: { primary: "#0E3A2F", accent: "#C7A867" }
-fonts: [Söhne, Tiempos]
+# Visual identity — from Firecrawl `branding`, but VERIFY against the screenshot — don't copy blindly (see note).
+logo_url: https://honehealth.com/...  # branding.images.logo, else favicon fallback (it's often empty / a data-URI)
+brand_colors: { primary: "#0E3A2F", accent: "#C7A867" }  # retain the palette; confirm the real hue visually (see note)
+fonts: [Söhne, Tiempos]              # usually branding.fonts[0] — but verify (generic "sans-serif" can rank first)
 color_scheme: light                  # light | dark
-design_framework: next.js            # from branding.designSystem; free tech signal
+design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/) — NOT branding.designSystem (reliably wrong)
 ---
 ```
 
+*`schema_version` is the **contract version** this profile was written against — currently `1`. Bump it only on a **breaking** change to this schema (a removed/renamed field, or a closed-set value whose meaning changed); purely additive changes don't bump it. Old profiles keep their existing number until migrated, so a reader can tell which contract a profile obeys instead of mistaking a pre-existing gap for missing data.*
+
 *`favicon` and `website_url` are **derived from `domain`** at read time — never stored. `site_notes` carries forward to the next capture: it's how the next run inherits the playbook instead of re-discovering it.*
+
+*Visual identity is **evidence to verify, not gospel.** `branding.colors` has no positional *or* presence guarantee — it can surface UI chrome, miss the true brand hue entirely, or capture an ephemeral campaign color; retain the palette but confirm the real brand color against the screenshot and write the read in **Visual & brand impression**. Read `design_framework` from `rawHtml`, not `branding.designSystem` (reliably wrong across the corpus). `logo_url` falls back to the favicon when `branding.images.logo` is empty or an inline data-URI.*
 
 ## `profile.md` — body
 

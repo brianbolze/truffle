@@ -18,6 +18,9 @@ System-level weaknesses, ideas, and TBDs for the engine itself. Light-touch — 
 
 ---
 
+- **`schema_version` stamp + migration discipline** `[idea]`
+  Stamp every `profile.md` with a `schema_version` so staleness is *queryable* ("which profiles predate the `parent`/`owns` fields?") and migrations are targetable. Pairs with the rule: **freeze the SCHEMA during a capture batch; treat any SCHEMA change as requiring a migration pass over `store/`.** Surfaced live 2026-05-30 — the 11-company corpus drifted from the contract (`is_multi_product`→`portfolio_shape`, `parent`/`owns` added, `Apparel & Footwear` + `Usage-based` values added) with nothing reconciling them. (Next action: reconciliation pass + introduce `schema_version: 1`.)
+
 - **Working name "web-research" not final** `[tbd]`
   Decide before it's load-bearing in skills/paths/remote. "Market Intelligence" is the aspirational name; keep the humble one until the map layer ships.
 

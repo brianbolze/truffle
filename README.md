@@ -13,4 +13,4 @@ experiments/  # throwaway probes to de-risk decisions before building
 store/        # the shared company store (store/<domain-slug>/) — created as captures land
 ```
 
-*Status: prototyping. Not yet a git repo / no remote (pending). Working name: `web-research`.*
+*Status: prototyping. Working name: `web-research`.*
