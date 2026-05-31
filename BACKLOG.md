@@ -41,3 +41,9 @@ System-level weaknesses, ideas, and TBDs for the engine itself. Light-touch — 
 
 - **Standardize how A/B-snapshot volatility is recorded** `[idea]`
   6 of 15 sites had live experiments (VWO, Optimizely, rotating hero, listing carousels, quiz-gating) flagged inconsistently — sometimes `site_notes`, sometimes `unverified_fields`. A stock `A/B: <tool>` site_notes line + one standard "prices are a point-in-time snapshot" phrasing keeps it queryable without a new field.
+
+- **Underused capture payload — scoped signal audit** `[idea]`
+  We persist `html`/`rawHtml`/`links`/`images`/`branding`/`metadata` per page, but enrichment reads only `markdown` + screenshots (+ `rawHtml` for framework). Likely leaving signal on the table. Run a $0 experiment over existing `.payloads/` to map what each format adds beyond markdown before codifying any new step. **Lead example: nav.** Markdown flattens mega-nav/flyouts; Doro recovers these from the `<header>`/`<nav>` region (incl. `aria-controls` flyout targets) — borrow the *insight*, not the machinery (Opus reads the HTML region directly; no reducer/Haiku/Pydantic). **Validate completeness against the homepage screenshot (ground truth), not substring presence in the md blob** (a label existing somewhere ≠ hierarchy captured). Nav works *okay* today, so not urgent.
+
+- **Multi-ratio logo set via vision** `[idea]`
+  Replace the single `logo_url` with a small `logos: {}` set — mark/favicon (square), wordmark (rectangle), `og:image`, + the cleanest SVG from `images[]` — chosen by vision at ingestion (AI-at-ingestion fit). Adds frontmatter surface → design in a dedicated session. Overlaps + would partly resolve the "branding payload is hint-only" item's logo fallback chain. Not v1-critical.
