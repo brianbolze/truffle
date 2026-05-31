@@ -63,7 +63,7 @@ A wide multi-vertical Rx catalog organized by goal (a future `offerings.md` woul
 - **Strength** — Sermorelin Injections ("From $126 first month") / Tablets; **Vardenafil + Tadalafil** (sexual function).
 - **Mood** — MIC+B12 ("As low as $106/mo"), Methylene Blue.
 
-**`is_multi_product: true` — unambiguous.** Unlike AG1's flagship-plus-companions edge case, Eden is a genuinely multi-vertical telehealth catalog: weight loss, longevity, hormones, hair, sexual health, and mood are each distinct, separately-bought programs with their own pages and pricing. **Notable catalog asymmetry: men's hair yes, but no men's TRT** — Eden sells women's hormone therapy and men's/women's hair, but no men's testosterone vertical (a real gap vs. the men's-health-anchored cohort peers).
+**`portfolio_shape: Multi-product` — unambiguous.** Unlike AG1's `Flagship + companions` edge case, Eden is a genuinely multi-vertical telehealth catalog: weight loss, longevity, hormones, hair, sexual health, and mood are each distinct, separately-bought programs with their own pages and pricing. **Notable catalog asymmetry: men's hair yes, but no men's TRT** — Eden sells women's hormone therapy and men's/women's hair, but no men's testosterone vertical (a real gap vs. the men's-health-anchored cohort peers).
 
 ## How it works / model
 

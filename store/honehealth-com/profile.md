@@ -46,7 +46,7 @@ color_scheme: light                  # branding.colorScheme + screenshot
 design_framework: wordpress          # rawHtml wp-content. branding.designSystem said "bootstrap" — wrong (§5.4).
 ---
 
-> **Strawman check (this domain is the SCHEMA.md example).** The strawman's **closed-set classification was exactly right** — `entity_type`, `target_market: [B2C]`, `offering_category: [Services / Consulting, Biotech / Pharma Products]`, `is_multi_product: true`, `business_model: Subscription`, `primary_industry: Healthcare & Life Sciences` all match the captured reality. What was **wrong** was everything that must be *captured, not inferred*: the strawman invented `brand_colors {primary #0E3A2F green, accent #C7A867 gold}` (reality: yellow #F8F93F + navy), `fonts [Söhne, Tiempos]` (reality: DM Sans / STIX Two Text), `design_framework: next.js` (reality: WordPress), and over-narrowed the description to "to men" — Hone is **mixed-gender** (a full Women's Care line). The taxonomy is guessable; the payload-lifted fields are not. (See cohort FINDINGS.)
+> **Strawman check (this domain is the SCHEMA.md example).** The strawman's **closed-set classification was exactly right** — `entity_type`, `target_market: [B2C]`, `offering_category: [Services / Consulting, Biotech / Pharma Products]`, `portfolio_shape: Multi-product`, `business_model: Subscription`, `primary_industry: Healthcare & Life Sciences` all match the captured reality. What was **wrong** was everything that must be *captured, not inferred*: the strawman invented `brand_colors {primary #0E3A2F green, accent #C7A867 gold}` (reality: yellow #F8F93F + navy), `fonts [Söhne, Tiempos]` (reality: DM Sans / STIX Two Text), `design_framework: next.js` (reality: WordPress), and over-narrowed the description to "to men" — Hone is **mixed-gender** (a full Women's Care line). The taxonomy is guessable; the payload-lifted fields are not. (See cohort FINDINGS.)
 
 ## Overview
 
@@ -63,7 +63,7 @@ Multiple distinct programs, split by gender, behind a membership (a future `offe
 - **Hone-at-Home** (concierge): **Botox $350+, Biomarker Testing $65, IV Therapy $249+** — delivered in-home.
 - **Peptides** — waitlist only ("coming soon," "this summer"); not yet purchasable.
 
-**`is_multi_product: true`** — clearly: TRT, ED, weight loss, hair, NAD/longevity, women's menopause, and the Hone-at-Home concierge line are distinct programs a customer chooses between, each with its own page and pricing.
+**`portfolio_shape: Multi-product`** — clearly: TRT, ED, weight loss, hair, NAD/longevity, women's menopause, and the Hone-at-Home concierge line are distinct programs a customer chooses between, each with its own page and pricing.
 
 ## How it works / model
 

@@ -65,7 +65,7 @@ Membership programs + a deep standalone treatment/lab catalog (a future `offerin
 - **Standalone treatments (per-month, + membership):** The Rapamycin Protocol $64/mo (the signature), Topical Rapamycin Skin $115 / Hair $140, SGLT2 Protocol $99, Methylene Blue $99, Oxytocin (Troche) $135, Cellular Renewal $105, Autophagy $56, Metformin $27, Acarbose $25, LDN $40, Enclomiphene $60, plus Wegovy®/Zepbound®/compounded semaglutide GLP-1s.
 - **Labs:** Longevity Starter Panel ($55 one-time), Rapamycin Bioavailability Panel ($25), Metabolic Pro Panel (~$120/mo), Complete Male/Female Hormone Panels, Prime/Longevity Pro.
 
-**`is_multi_product: true`** — multiple distinct membership programs *and* a large à-la-carte treatment/lab catalog a customer chooses among.
+**`portfolio_shape: Multi-product`** — multiple distinct membership programs *and* a large à-la-carte treatment/lab catalog a customer chooses among.
 
 ## How it works / model
 

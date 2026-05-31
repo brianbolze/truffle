@@ -63,7 +63,7 @@ Six mega-nav verticals, WooCommerce SKUs behind each (a future `offerings.md` wo
 - **Hair Loss** — Finasteride ($60/$90), Finasteride + Follicure RX ($130), ReGenX Bundle.
 - **Live Longer** — **NAD+** ($369 / 200mg/ml / 8–10 wk supply; excludes AL/ID/LA).
 
-**`is_multi_product: true`** — six distinct verticals, each a separately-bought program with its own page/pricing.
+**`portfolio_shape: Multi-product`** — six distinct verticals, each a separately-bought program with its own page/pricing.
 
 ## How it works / model
 

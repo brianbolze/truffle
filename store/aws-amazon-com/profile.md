@@ -67,7 +67,7 @@ Amazon Web Services (AWS) is **Amazon's cloud-computing subsidiary** — the wor
 - **Migration / IoT / Robotics / Business Apps / Media** — **AWS DataSync**, **AWS IoT**, **AWS RoboMaker**, **AWS Supply Chain**, **AWS Elemental**.
 - **AWS Marketplace** — a curated catalog of third-party software (a platform/marketplace alongside AWS's own services).
 
-**`is_multi_product: true` — the scale extreme of the field.** Where Linear is `false` (one app) and AG1 is `true` (a flagship + 3 companions), AWS is `true` at industrial scale: 240+ services, each separately documented, separately adopted, separately metered — you absolutely comparison-shop EC2 vs. Fargate vs. Lambda. The capture lesson is that at this scale the job is *not* enumeration but **portfolio-shape** (categories × flagships), exactly the doro breadth-first rule.
+**`portfolio_shape: Catalog` — the scale extreme of the field.** Where Linear is `Single` (one app) and AG1 is `Flagship + companions` (a hero + 3 companions), AWS is `Catalog` at industrial scale: 240+ services, each separately documented, separately adopted, separately metered — you absolutely comparison-shop EC2 vs. Fargate vs. Lambda. The capture lesson is that at this scale the job is *not* enumeration but **portfolio-shape** (categories × flagships), exactly the doro breadth-first rule.
 
 ## How it works / model
 

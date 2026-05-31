@@ -63,7 +63,7 @@ Seven consumer verticals, each a distinct storefront (a future `offerings.md` wo
 - **Labs by Hims** — at-home blood testing ("1,000+ health conditions," 130+ tests/yr); add-on **Multi-Cancer Test by Galleri®**.
 - **Skin Care** — `/skin-care`.
 
-**`is_multi_product: true`** — seven distinct verticals a customer chooses among, each its own storefront/pricing.
+**`portfolio_shape: Multi-product`** — seven distinct verticals a customer chooses among, each its own storefront/pricing.
 
 ## How it works / model
 

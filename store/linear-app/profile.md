@@ -65,7 +65,7 @@ One unified product, organized as a sequence of **surfaces** (each with its own 
 - **Diffs** (`/diffs`) — structural code-review of human *and* agent output, in-app.
 - **Monitor** (`/monitor`) — Pulse, Insights, dashboards; project updates and analytics.
 
-Cross-cutting features surfaced separately: **Asks**, **Agents**, **Customer Requests**, **Insights**, **Mobile**, **Integrations**, **Changelog**. This is **`is_multi_product: false`** by the TAXONOMIES test — you don't comparison-shop or separately buy "Plan" vs. "Build"; they're modules of one app on one per-seat price. (Same judgment call as the Notion example in TAXONOMIES — worth re-checking as Linear's surface count grows.)
+Cross-cutting features surfaced separately: **Asks**, **Agents**, **Customer Requests**, **Insights**, **Mobile**, **Integrations**, **Changelog**. This is **`portfolio_shape: Single`** by the TAXONOMIES test — you don't comparison-shop or separately buy "Plan" vs. "Build"; they're modules of one app on one per-seat price. (Same judgment call as the Notion example in TAXONOMIES — worth re-checking as Linear's surface count grows.)
 
 ## How it works / model
 
