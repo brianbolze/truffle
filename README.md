@@ -16,4 +16,4 @@ scripts/      # engine utilities (querycheck.py — QUERYING.md drift self-test)
 store/        # the shared company store (store/<domain-slug>/) — created as captures land
 ```
 
-*Status: prototyping. Working name: `web-research`.*
+*Status: prototyping. Name: `web-research`.*
