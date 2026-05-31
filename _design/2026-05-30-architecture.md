@@ -14,7 +14,7 @@ Where things live, and how they connect.
 
 | Layer | What | Lives in |
 |---|---|---|
-| **Verbs** | Skills / slash commands (`./research-company` …) | Global `~/.claude/skills/` |
+| **Verbs** | Skills / slash commands (`/research-company` …) | Global `~/.claude/skills/` |
 | **Engine + Store** | Capture/clean/query scripts, the shared store, default schema + taxonomies | This repo (own remote + iCloud) |
 | **Project config** | Which modules, freshness TTLs, destination(s), vertical taxonomy | `.web-research/config.yaml` per project |
 
