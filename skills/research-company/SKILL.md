@@ -36,9 +36,9 @@ ENGINE="$(cd "$(dirname "$(realpath "$0")")/../.." 2>/dev/null && pwd)"   # if $
 
 ## The capture loop
 
-Run in order. Steps 3–6 are the credit spend (~7–10 credits clean); 1–2 and 7–8 are free.
+Run in order. Steps 3–6 are the credit spend (~7–10 credits for a clean basic run = 1 map + 1 homepage + 5–8 key pages); 1–2 and 7–8 are free. Overages are add-ons, not the homepage pass (all-formats rides one credit) — enhanced-proxy retries (+4), PDF pages (+1/pg), and re-scrapes each show up per-call in `fc.py spend`.
 
-**0. Pre-flight (free).** `python3 scripts/fc.py credits` — note `remainingCredits`. If low (≲20), warn the user before spending. (Key check is automatic; `fc.py` aborts if it can't find the key.)
+**0. Pre-flight (free).** `python3 scripts/fc.py credits` — note `remainingCredits`. If low (≲20), warn the user before spending. This global balance is **headroom only** — it's a shared key, so don't diff it for this run's cost; that number comes from `fc.py spend` at step 8, summed from each call's own billed credits. (Key check is automatic; `fc.py` aborts if it can't find the key.)
 
 **1. Resolve the domain → slug (free, and it decides the store key).** `curl -sIL https://<domain>` and see what it *resolves to*.
 
@@ -75,7 +75,7 @@ Use a clear `--name` per page (`pricing`, `weight_loss`, `about`). Include linke
 
 Then **lint the written profile**: re-run `python3 scripts/fc.py verify --slug <slug>`. Now that `profile.md` exists it also checks for leaked tool-call tags (`</invoke>`, `</content>` — these reached 4 profiles in the first batch), the `## Provenance` section, and the required frontmatter keys. Fix anything it flags (nonzero exit) before step 8.
 
-**8. Record + summarize (free).** Update `site_notes` with anything this run learned about the site (JS-walls, map noise, geo quirks, where pricing hides) — that's the carry-forward for next time. Then `fc.py credits` again and report a run summary:
+**8. Record + summarize (free).** Update `site_notes` with anything this run learned about the site (JS-walls, map noise, geo quirks, where pricing hides) — that's the carry-forward for next time. Then `python3 scripts/fc.py spend --slug <slug>` for this run's **attributed** cost (summed from each call's own `creditsUsed` — defensible, no "shared key, can't attribute" hedge), and optionally `fc.py credits` for remaining headroom. Report a run summary:
 > Captured **<name>** (`<domain>`) → `store/<slug>/profile.md`. N pages, M credits spent (X remaining). Notable: <1-line site quirk or finding>. <Any `unverified_fields` worth flagging.>
 
 ## Enrichment is the product — don't shortchange step 7

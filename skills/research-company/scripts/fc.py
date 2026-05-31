@@ -11,11 +11,18 @@ Usage:
   fc.py map    <url> --slug <slug> [--search TERM] [--limit 500] [--date YYYY-MM-DD]
   fc.py scrape <url> --slug <slug> --name <name> [--homepage] [--wait 3500] [--proxy auto] [--date ...]
   fc.py verify --slug <slug> [--date ...]   # scrapes: md5-dedup + sourceURL match; + lint profile.md once written
-  fc.py credits                             # GET /v2/team/credit-usage (free, 0 credits)
+  fc.py spend  --slug <slug> [--date ...]   # this run's attributed cost, summed from per-call creditsUsed
+  fc.py credits                             # GET /v2/team/credit-usage — global headroom only (free, 0 credits)
 
 verify runs at two points: pre-write (step 6) it checks scrape integrity; re-run post-write
 (step 7) it also lints the written profile.md (leaked tool-call tags, ## Provenance, required
 frontmatter keys). Exits nonzero if anything is wrong. Stdlib-only on purpose — no PyYAML.
+
+Credit accounting: each billable call records its own billed credits to the manifest —
+scrapes from the response's metadata.creditsUsed, map from its documented flat 1/call. `spend`
+sums them for an attributable run total. We never diff the global balance: the key is shared,
+so the delta is polluted by other projects' calls (the old "can't attribute" hedge). credits
+stays only for pre-flight headroom.
 """
 import argparse, datetime, hashlib, json, os, re, sys, time, urllib.request
 from pathlib import Path
@@ -35,6 +42,12 @@ def store(slug, date):
     (d / ".payloads").mkdir(parents=True, exist_ok=True)
     return d
 
+def append_manifest(d, rec):
+    """One JSONL line per billable call — the per-run integrity + credit ledger.
+    `kind` ("scrape"|"map") lets verify read scrape-only records and spend sum all."""
+    with open(d / ".payloads" / "manifest.jsonl", "a") as f:
+        f.write(json.dumps(rec) + "\n")
+
 def post(endpoint, body):
     req = urllib.request.Request(f"{API}/{endpoint}",
         data=json.dumps(body).encode(), headers=HDR, method="POST")
@@ -50,7 +63,11 @@ def do_map(url, slug, search, limit, date):
     d = store(slug, date)
     tag = f"map_{search}" if search else "map"
     (d / ".payloads" / f"{tag}.json").write_text(json.dumps(out, indent=2))
-    print(f"[map] {url}  search={search!r}  -> {len(links)} urls  (saved {tag}.json)")
+    # map bills a flat 1 credit/call and returns no per-call creditsUsed — record
+    # the documented constant so the manifest stays a complete spend ledger.
+    append_manifest(d, {"kind": "map", "name": tag, "requested": url,
+                        "credits": 1, "urls": len(links)})
+    print(f"[map] {url}  search={search!r}  -> {len(links)} urls  (1 credit, saved {tag}.json)")
     for item in links[:600]:
         u = item.get("url") if isinstance(item, dict) else item
         print("   ", u)
@@ -76,6 +93,8 @@ def do_scrape(url, slug, name, homepage, wait, proxy, date):
     meta = data.get("metadata", {}) or {}
     src = meta.get("sourceURL") or meta.get("url")
     status = meta.get("statusCode")
+    credits = meta.get("creditsUsed")          # per-call billed truth (1 base; +4 enhanced proxy; +1/PDF pg)
+    proxy_used = meta.get("proxyUsed")
     md5 = hashlib.md5(md.encode()).hexdigest()
     d = store(slug, date)
     (d / ".payloads" / f"{name}.json").write_text(json.dumps(out, indent=2))
@@ -89,13 +108,14 @@ def do_scrape(url, slug, name, homepage, wait, proxy, date):
         except Exception as e:
             shot_ok = f"shot✗({e})"
     # append manifest line
-    rec = {"name": name, "requested": url, "sourceURL": src, "status": status,
-           "md5": md5, "mdlen": len(md), "secs": round(dt, 1),
-           "match": (src or "").rstrip("/") == url.rstrip("/")}
-    with open(d / ".payloads" / "manifest.jsonl", "a") as f:
-        f.write(json.dumps(rec) + "\n")
+    rec = {"kind": "scrape", "name": name, "requested": url, "sourceURL": src,
+           "status": status, "md5": md5, "mdlen": len(md), "secs": round(dt, 1),
+           "match": (src or "").rstrip("/") == url.rstrip("/"),
+           "credits": credits, "proxy": proxy_used}
+    append_manifest(d, rec)
     flag = "" if rec["match"] else "  <-- sourceURL MISMATCH"
-    print(f"[scrape] {name:28} status={status} mdlen={len(md):>6} {dt:4.1f}s "
+    cr = "?" if credits is None else credits
+    print(f"[scrape] {name:28} status={status} cr={cr} mdlen={len(md):>6} {dt:4.1f}s "
           f"md5={md5[:8]} {shot_ok}{flag}")
     print(f"         src={src}")
     if md and len(md) < 500:
@@ -164,10 +184,11 @@ def do_verify(slug, date):
         print("  no manifest — run scrapes first (skipping scrape checks)")
     else:
         recs = [json.loads(l) for l in mf.read_text().splitlines() if l.strip()]
+        scrapes = [r for r in recs if r.get("kind", "scrape") == "scrape"]
         by_md5 = {}
-        print(f"=== verify {slug} ({len(recs)} pages) ===")
+        print(f"=== verify {slug} ({len(scrapes)} pages) ===")
         scrape_bad = False
-        for r in recs:
+        for r in scrapes:
             by_md5.setdefault(r["md5"], []).append(r["name"])
             if not r["match"]:
                 print(f"  sourceURL MISMATCH: {r['name']}  requested={r['requested']} got={r['sourceURL']}")
@@ -183,6 +204,31 @@ def do_verify(slug, date):
     if bad:
         sys.exit("verify: issues found (see above)")
 
+def do_spend(slug, date):
+    """This run's attributed cost — sum the per-call credits in the manifest.
+    Authoritative because each line carries the credits that call itself billed
+    (scrape: metadata.creditsUsed; map: flat 1) — not a diff of the shared global
+    balance, which other projects' calls pollute. This is the run-summary number."""
+    d = store(slug, date)
+    mf = d / ".payloads" / "manifest.jsonl"
+    print(f"=== spend {slug} ({date}) ===")
+    if not mf.exists():
+        print("  no manifest — nothing billable captured this run (0 credits)")
+        return
+    recs = [json.loads(l) for l in mf.read_text().splitlines() if l.strip()]
+    total, unknown = 0, 0
+    for r in recs:
+        c = r.get("credits")
+        proxy = r.get("proxy")
+        extra = f"  ({proxy} proxy)" if proxy and proxy != "basic" else ""
+        if c is None:
+            mark, unknown = "?", unknown + 1
+        else:
+            mark, total = str(c), total + c
+        print(f"  {r.get('kind','scrape'):7} {r.get('name',''):26} {mark:>3}{extra}")
+    note = "" if not unknown else f"   ({unknown} call(s) w/o reported credits — total is a floor)"
+    print(f"  {'':7} {'TOTAL':26} {total:>3} credits{note}")
+
 def do_credits():
     req = urllib.request.Request(f"{API}/team/credit-usage", headers=HDR)
     with urllib.request.urlopen(req, timeout=60) as r:
@@ -195,9 +241,11 @@ if __name__ == "__main__":
     m = sub.add_parser("map");    m.add_argument("url"); m.add_argument("--slug", required=True); m.add_argument("--search"); m.add_argument("--limit", type=int, default=500); m.add_argument("--date", default=TODAY)
     s = sub.add_parser("scrape"); s.add_argument("url"); s.add_argument("--slug", required=True); s.add_argument("--name", required=True); s.add_argument("--homepage", action="store_true"); s.add_argument("--wait", type=int, default=3500); s.add_argument("--proxy"); s.add_argument("--date", default=TODAY)
     v = sub.add_parser("verify"); v.add_argument("--slug", required=True); v.add_argument("--date", default=TODAY)
+    sp = sub.add_parser("spend"); sp.add_argument("--slug", required=True); sp.add_argument("--date", default=TODAY)
     sub.add_parser("credits")
     a = ap.parse_args()
     if a.cmd == "map":     do_map(a.url, a.slug, a.search, a.limit, a.date)
     elif a.cmd == "scrape":do_scrape(a.url, a.slug, a.name, a.homepage, a.wait, a.proxy, a.date)
     elif a.cmd == "verify":do_verify(a.slug, a.date)
+    elif a.cmd == "spend": do_spend(a.slug, a.date)
     elif a.cmd == "credits":do_credits()
