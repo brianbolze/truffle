@@ -130,3 +130,7 @@ a rebuild — don't build them here.
 For a large key-page set, a sub-agent per page (scrape + clean) with the lead agent reconciling into
 `profile.md` is fine — but **serialize the scrapes within each agent** (the burst hazard is real). For
 the typical 5–8 page company, a single serial pass is simpler and sufficient. Don't fan out by default.
+
+---
+
+*Maintainer note: this verb's output is the contract `QUERYING.md` reads. If you change the **output format** — the frontmatter shape, the `captures/` layout, or the inline `#`-comment convention — update the engine's `QUERYING.md` and run `scripts/querycheck.py`.*

@@ -111,4 +111,4 @@
 
 *No `lifecycle_stage` field on purpose — it's a funding/financials signal you can't read off a marketing site (a deep-research job, not capture).*
 
-*Evolving this list: resist additions. Prefer `Other` + a body note; promote to a real value only when the same gap recurs across companies (per [`BACKLOG.md`](BACKLOG.md)). A new value is missing from every prior profile.*
+*Evolving this list: resist additions. Prefer `Other` + a body note; promote to a real value only when the same gap recurs across companies (per [`BACKLOG.md`](BACKLOG.md)). A new value is missing from every prior profile. When you add or rename a value, run a migration pass over `store/` so existing profiles match, then `scripts/querycheck.py` — [`QUERYING.md`](QUERYING.md) queries by field, not value, so it needs no change, but the corpus does.*

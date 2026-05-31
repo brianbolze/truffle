@@ -2,7 +2,9 @@
 
 > **What this is.** The contract between *capture* (a `/research-company` agent writes it) and *query* (any agent reads it). It's written to be read by an Opus-class agent that has the **whole capture** in context — multiple pages, screenshots, and the Firecrawl `branding` + `metadata` payloads — not a quick homepage skim.
 
-*Companion: [`TAXONOMIES.md`](TAXONOMIES.md) holds the closed value sets. Scope: commercial companies + products.*
+*Companion: [`TAXONOMIES.md`](TAXONOMIES.md) holds the closed value sets; [`QUERYING.md`](QUERYING.md) is the consume-side companion (how to read profiles back). Scope: commercial companies + products.*
+
+> **Drift guard.** Renaming a field, changing the frontmatter format, or renaming a body section breaks [`QUERYING.md`](QUERYING.md)'s recipes — update it and run `scripts/querycheck.py`. (Changing a closed-set *value* lives in TAXONOMIES and does not affect QUERYING.)
 
 ## How to write a profile (capturing agent)
 

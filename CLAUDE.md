@@ -7,7 +7,7 @@ A project-agnostic **company-research engine** — Firecrawl captures, Claude re
 1. [`README.md`](README.md) — what's here.
 2. [`_design/2026-05-29-frame.md`](_design/2026-05-29-frame.md) — **why / scope / non-goals** (the Frame).
 3. [`_design/2026-05-30-architecture.md`](_design/2026-05-30-architecture.md) — **how it works** end-to-end (capture lifecycle, consumption, relations).
-4. [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md) — the store contract (what a capture writes).
+4. [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md) — the store contract (what a capture writes); [`QUERYING.md`](QUERYING.md) — how to read it back (what a consumer queries).
 5. [`experiments/2026-05-29-query-affordance/FINDINGS.md`](experiments/2026-05-29-query-affordance/FINDINGS.md) — the proof that queryability is the product.
 
 ## Proven prior art (read before reinventing)
