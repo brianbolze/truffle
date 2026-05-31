@@ -64,8 +64,9 @@ stop to confirm — don't key on it. (A 403/429 here just means bot-defended; pr
 
 **2. Seed from the store + freshness gate (free).** If `store/<slug>/profile.md` exists:
    - Read its `site_notes` (the capture playbook for *this* site — inherit it, don't rediscover),
-     `key_pages`, and `captured_at`.
-   - **Coarse freshness:** if `captured_at` is recent (< ~30 days) and the user didn't ask for a
+     `key_pages`, and `captured_at`
+   - Move the previous capture into `captures/_archive/<date>` so that the most recent capture is always obvious and the captures folder doesn’t look massive.   
+   - **Coarse freshness:** if `captured_at` is recent (< ~7 days) and the user didn't ask for a
      refresh, **serve the existing dossier and stop** — that's the ~$0 warm path. Otherwise re-capture
      (a fresh `captures/<today>/` folder; the old one is preserved).
 
@@ -79,8 +80,8 @@ reliable discovery surface. Pull both.
 
 **4. Pick key pages (judgment, free).** Merge map URLs + homepage links. **Filter the noise first**
 (playbook §5.3): drop `/partner|/people|/hero-*-lp|/sweepstakes|/campaign|/blog|/post`, locale
-prefixes (`/en-uk`, `/de-eu`, …), and duplicate funnel slugs. Then pick **~5–8 signal pages**: pricing,
-products/treatments, how-it-works, about — whatever carries the company's offering + model + claims.
+prefixes (`/en-uk`, `/de-eu`, …), and duplicate funnel slugs. Then pick **~4-8 signal pages**: pricing,
+products/treatments, how-it-works, about — whatever carries the company's offering + model + claims. The about / company info / history page would also be helpful - whatever carries founding history, key metrics the company makes public, and key company events. 
 Let the site's apparent breadth guide depth (a `Single`-shape brand needs fewer pages than a
 `Multi-product` one; see `portfolio_shape` in TAXONOMIES).
 
@@ -129,7 +130,7 @@ a rebuild — don't build them here.
 
 For a large key-page set, a sub-agent per page (scrape + clean) with the lead agent reconciling into
 `profile.md` is fine — but **serialize the scrapes within each agent** (the burst hazard is real). For
-the typical 5–8 page company, a single serial pass is simpler and sufficient. Don't fan out by default.
+the typical 4-8 page company, a single serial pass is simpler and sufficient. Don't fan out by default.
 
 ---
 
