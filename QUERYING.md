@@ -45,7 +45,7 @@ Multi-selects are **ranked** — position 1 is *primary*. `tm[0]=="B2B"` means "
 
 **4. Cross-brand pricing** — *"compare GLP-1 prices across the cohort"* → the hard path, with a real ceiling:
 - **Intra-cohort only.** "Price" isn't comparable across business types (`$/mo` vs take-rate `%` vs AUM fee vs per-night) — compare within one like cohort.
-- **Locate, then reconcile by hand.** Prices live in body prose (What they offer / How it works), not frontmatter — but enumerable lines follow the SCHEMA **leaf shape** (`- **name** — … — verbatim price`), so `rg -n '^- \*\*.*\$[0-9]' store/<slug>/profile.md` enumerates priced lines. Units still fragment even within a cohort (first-month, membership-stacked, billing cadence) — normalize manually.
+- **Locate, then reconcile by hand.** Prices live in body prose (What they offer / How it works), not frontmatter — but enumerable lines lead with a bold name + verbatim price (`- **name:** … $X`), so `rg -n '^- \*\*.*\$[0-9]' store/<slug>/profile.md` enumerates priced lines. Units still fragment even within a cohort (first-month, membership-stacked, billing cadence) — normalize manually.
 
 **5. Primary source** — *verbatim claims / disclaimers / taglines* → `profile.md` paraphrases; the captures keep exact wording: `rg -n '<phrase or variant>' store/<slug>/captures/*/*.md`. Guess variants for regulated language ("not approved" / "not evaluated").
 
