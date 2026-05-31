@@ -6,6 +6,7 @@
 
 ## How to write a profile (capturing agent)
 
+- **Describe the company, not the engine.** A profile records what the company *is* — never commentary about the schema itself. Observations about the contract (missing values, taxonomy gaps, capture-tooling quirks) go to [`BACKLOG.md`](BACKLOG.md), not into prose or comments. The one exception is the inline `# STRAIN:` note on a frontmatter line, which explains *that field's* value to a grep-consumer in a few words.
 - **Fill every field the captured pages support — and only those.** If a field isn't determinable from what you captured, leave it empty and add one line to `unverified_fields`. Do not infer it from prior knowledge. *(Funding stage, headcount, revenue are rarely on a marketing site — leave them out. They're a deep-research job, not this one.)*
 - **Quote verbatim anything claim- or price-bearing** — taglines, pricing, regulated claims. Paraphrase only long prose.
 - **Use the screenshots.** The visual read (design maturity, imagery, tone) is yours to make and a text scraper can't. Write it in *Visual & brand impression*.
@@ -24,8 +25,8 @@ schema_version: 1                    # contract version this profile targets; re
 domain: honehealth.com               # primary key
 name: Hone Health
 aliases: []                          # alt names/domains of the SAME entity (rebrand + M&A escape hatch)
-parent: []                           # domain(s) this is a subsidiary / brand-of — from footer/©/about. Empty if top-level.
-owns: []                             # domain(s) of sub-brands / subsidiaries this entity owns. Empty if none.
+parent: []                           # domain SLUG(s) this is a subsidiary / brand-of — from footer/©/about. Empty if top-level. (See relations note.)
+owns: []                             # domain SLUG(s) of sub-brands / subsidiaries this entity owns. Empty if none. (See relations note.)
 
 # Capture meta
 captured_at: 2026-05-29
@@ -61,7 +62,11 @@ design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/
 
 *`schema_version` is the **contract version** this profile was written against — currently `1`. Bump it only on a **breaking** change to this schema (a removed/renamed field, or a closed-set value whose meaning changed); purely additive changes don't bump it. Old profiles keep their existing number until migrated, so a reader can tell which contract a profile obeys instead of mistaking a pre-existing gap for missing data.*
 
-*`favicon` and `website_url` are **derived from `domain`** at read time — never stored. `site_notes` carries forward to the next capture: it's how the next run inherits the playbook instead of re-discovering it.*
+*`favicon` and `website_url` are **derived from `domain`** at read time — never stored.*
+
+*Relations (`parent` / `owns`) hold the canonical **domain slug** of the related entity (the store-key form, e.g. `kenvue.com`) so the rung-3 index can JOIN on it. If the related entity has no resolvable domain of its own (a brand folded under the parent's site; a holding co with no site), record its **name in quotes** and accept it's un-joinable until it earns a domain — never mix a bare name and a domain as if both were keys.*
+
+*`site_notes` is **carry-forward only**: durable, site-specific facts the next capture needs (JS-walled nav, geo traps, where pricing hides). One-time run narration ("no contamination this run," credits spent) belongs in the **Provenance** body section, not here. It's how the next run inherits the playbook instead of re-discovering it.*
 
 *Visual identity is **evidence to verify, not gospel.** `branding.colors` has no positional *or* presence guarantee — it can surface UI chrome, miss the true brand hue entirely, or capture an ephemeral campaign color; retain the palette but confirm the real brand color against the screenshot and write the read in **Visual & brand impression**. Read `design_framework` from `rawHtml`, not `branding.designSystem` (reliably wrong across the corpus). `logo_url` falls back to the favicon when `branding.images.logo` is empty or an inline data-URI.*
 

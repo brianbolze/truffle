@@ -22,6 +22,8 @@
 | `Education` | School, university, or research institution |
 | `Individual / Creator` | Personal brand, solo creator, or independent |
 
+*`Brand` vs `Company` when there's a parent: use **`Brand`** only when the entity does **not** transact independently — a pure marketing/education site, no cart, revenue booked at the parent (e.g. Benadryl → Kenvue). If it runs its own P&L and sells directly, it's **`Company`** even with a parent (e.g. AWS → Amazon, Hims → Hims & Hers). Record the owner in `parent:` either way. `parent` says *who owns it*; `Brand` says *it isn't an operating business* — different facts, so both can apply.*
+
 ## `target_market`
 
 *Who the company sells to — the cleanest grouping axis there is, evident from almost any site. Multi-select, best-fit first.*
