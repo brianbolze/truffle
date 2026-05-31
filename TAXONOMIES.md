@@ -103,11 +103,10 @@
 
 ## Rules for the agent
 
-1. **Use the exact strings above.** Consistency is the entire point — a value that isn't on the list (outside `Other`) breaks grouping for every reader.
-2. **`Other` is allowed on the category fields** (`entity_type`, `offering_category`, `business_model`, `primary_industry`) and beats a forced wrong fit — add a one-line body note; repeated `Other`s signal the taxonomy needs a value. *Exception:* the ordinal `portfolio_shape` takes no `Other` — leave it empty instead.
-3. **Empty is always allowed.** If the captured site doesn't determine a field, leave it empty and note it in `unverified_fields`. Don't guess from prior knowledge.
-4. **Classify from what you captured**, not from memory. The site is the evidence.
-5. **Multi-select fields are ranked.** For `target_market` and `offering_category`, list the best-fit first — most relevant / biggest share of the business. Position 1 is treated as primary.
+1. **Exact strings only** — a value off the list (outside `Other`) breaks grouping for every reader. That's the whole point of closing these sets.
+2. **`Other` is the escape on the category fields** (`entity_type`, `offering_category`, `business_model`, `primary_industry`) and beats a forced wrong fit — add a one-line body note; repeated `Other`s are the signal to add a value. *Exception:* the ordinal `portfolio_shape` takes no `Other` — leave it empty.
+3. **Empty over guessing.** Classify only from what you captured, never from memory; if the site doesn't determine a field, leave it empty and note it in `unverified_fields`.
+4. **Multi-selects are ranked** (`target_market`, `offering_category`) — best-fit / biggest-share first; position 1 is treated as primary.
 
 *No `lifecycle_stage` field on purpose — it's a funding/financials signal you can't read off a marketing site (a deep-research job, not capture).*
 

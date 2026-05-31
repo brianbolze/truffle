@@ -62,15 +62,15 @@ design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/
 ---
 ```
 
-*`schema_version` is the **contract version** this profile was written against — currently `1`. Bump it only on a **breaking** change to this schema (a removed/renamed field, or a closed-set value whose meaning changed); purely additive changes don't bump it. Old profiles keep their existing number until migrated, so a reader can tell which contract a profile obeys instead of mistaking a pre-existing gap for missing data.*
+*`schema_version` is the contract version the profile was written against — bump only on a **breaking** change (a removed/renamed field, or a closed-set value whose meaning changed), never on additive ones. Old profiles keep their number until migrated, so a reader can tell a pre-existing gap from missing data.*
 
 *`favicon` and `website_url` are **derived from `domain`** at read time — never stored.*
 
-*Relations (`parent` / `owns`) hold the canonical **domain slug** of the related entity (the store-key form, e.g. `kenvue.com`) so the rung-3 index can JOIN on it. If the related entity has no resolvable domain of its own (a brand folded under the parent's site; a holding co with no site), record its **name in quotes** and accept it's un-joinable until it earns a domain — never mix a bare name and a domain as if both were keys.*
+*Relations (`parent` / `owns`) hold the related entity's canonical **domain slug** (the store-key form, e.g. `kenvue.com`) so the rung-3 index can JOIN on it. No resolvable domain (a brand folded under the parent's site; a holding co with no site)? Record the **name in quotes** and accept it's un-joinable until it earns one — never mix a bare name and a domain as if both were keys.*
 
-*`site_notes` is **carry-forward only**: durable, site-specific facts the next capture needs (JS-walled nav, geo traps, where pricing hides). One-time run narration ("no contamination this run," credits spent) belongs in the **Provenance** body section, not here. It's how the next run inherits the playbook instead of re-discovering it.*
+*`site_notes` is **carry-forward only** — durable, site-specific facts the next capture needs (JS-walled nav, geo traps, where pricing hides), so the next run inherits the playbook instead of re-discovering it. One-time run narration ("no contamination this run," credits spent) belongs in the **Provenance** body section, not here.*
 
-*Visual identity is **evidence to verify, not gospel.** `branding.colors` has no positional *or* presence guarantee — it can surface UI chrome, miss the true brand hue entirely, or capture an ephemeral campaign color; retain the palette but confirm the real brand color against the screenshot and write the read in **Visual & brand impression**. Read `design_framework` from `rawHtml`, not `branding.designSystem` (reliably wrong across the corpus). `logo_url` falls back to the favicon when `branding.images.logo` is empty or an inline data-URI.*
+*Visual identity is **evidence to verify, not gospel.** `branding.colors` has no positional or presence guarantee — it can surface UI chrome, miss the true brand hue, or catch a campaign color; retain the palette but confirm the real one against the screenshot and write the read in **Visual & brand impression**. Read `design_framework` from `rawHtml`, never `branding.designSystem` (reliably wrong across the corpus). `logo_url` falls back to the favicon when `branding.images.logo` is empty or an inline data-URI.*
 
 ## `profile.md` — body
 
