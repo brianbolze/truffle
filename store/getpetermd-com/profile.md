@@ -25,7 +25,7 @@ key_pages:
   bloodwork: /blood-work
 unverified_fields:
   - "Legal/operating entity and ownership — site states 'family, and U.S.-owned' but names no LLC/Inc or parent."
-  - "Per-SKU pricing varies by plan term and dose; captured prices are the displayed tiers on each product page, a point-in-time snapshot."
+  - "Per-SKU prices are a point-in-time snapshot, not fixed — captured tiers vary by plan term and dose (displayed per product page)."
   - "Headcount, funding, revenue — not on a marketing site (deep-research, not capture)."
 
 description: "Delivers TRT, weight-loss, sexual-wellness, hair-loss and longevity treatments to men through licensed-clinician telehealth, shipping US-made prescription medications direct to the door on monthly subscriptions."

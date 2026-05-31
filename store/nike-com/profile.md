@@ -26,7 +26,7 @@ key_pages:
   snkrs_launch: /launch
 unverified_fields:
   - "Per-product pricing — lives on product detail pages (/t/...), none captured this run."
-  - "Homepage hero + 'Latest in Hoops' are a rotating merchandising carousel — captured state is a point-in-time snapshot, not fixed."
+  - "Homepage hero & 'Latest in Hoops' carousel are a point-in-time snapshot, not fixed — rotating merchandising; captured state differs run-to-run."
   - "Financials, headcount, revenue split (DTC vs wholesale) — not on the consumer site; a deep-research job."
 
 description: "Designs and sells athletic footwear, apparel, and equipment direct-to-consumer and through wholesale, spanning performance sport and lifestyle, across the Nike, Jordan, and Converse brands."

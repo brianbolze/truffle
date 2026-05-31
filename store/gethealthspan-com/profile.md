@@ -11,7 +11,7 @@ owns: []
 # Capture meta
 captured_at: 2026-05-30
 capture_method: firecrawl
-site_notes: "Next.js app (assets under /_next/; rawHtml came back empty this run — framework read off asset paths). Heavy VWO A/B instrumentation: the homepage markdown leads with a large inline VWO campaign blob (noise — skip it), and per-SKU prices + homepage modules flicker run-to-run. Per-treatment pricing is on the homepage product carousel and each /treatments/<slug> page; program ('membership') pricing shows only a 'Starting at $99/mo' floor on /programs — real cost sits behind the app.gethealthspan.com signup. Map returns ~493 URLs but is ~70% /research/article/* essays (314) — the real catalog is /treatments (41), /programs (12), /labs (7); pull those, not the research firehose. Marketing pages live on a separate marketing.gethealthspan.com subdomain; community.* and dev0*.development.* also appear in the map — ignore."
+site_notes: "Next.js app (assets under /_next/; rawHtml came back empty this run — framework read off asset paths). A/B: VWO — heavy instrumentation; the homepage markdown leads with a large inline VWO campaign blob (noise — skip it), and per-SKU prices + homepage modules flicker run-to-run. Per-treatment pricing is on the homepage product carousel and each /treatments/<slug> page; program ('membership') pricing shows only a 'Starting at $99/mo' floor on /programs — real cost sits behind the app.gethealthspan.com signup. Map returns ~493 URLs but is ~70% /research/article/* essays (314) — the real catalog is /treatments (41), /programs (12), /labs (7); pull those, not the research firehose. Marketing pages live on a separate marketing.gethealthspan.com subdomain; community.* and dev0*.development.* also appear in the map — ignore."
 key_pages:
   how_it_works: /how-it-works
   programs: /programs
@@ -21,7 +21,7 @@ key_pages:
   our_mission: /our-mission
   signup_app: https://app.gethealthspan.com/#/product/signup/
 unverified_fields:
-  - "Pricing & homepage IA are a point-in-time snapshot — the site runs VWO A/B tests; per-SKU prices and homepage modules shift run-to-run (e.g. prior captures saw Rapamycin $64↔$65)."
+  - "Prices & homepage IA are a point-in-time snapshot, not fixed — VWO A/B tests shift per-SKU prices and which homepage modules render run-to-run (e.g. prior captures saw Rapamycin $64↔$65)."
   - "Program ('membership') pricing — /programs shows only a 'Starting at $99/mo' floor for all four programs; the real membership cost is behind the app signup flow, not captured."
   - "Founding year, HQ location, headcount, funding — not on the captured marketing pages (support phone is a 650/SF-Bay-Area number; © reads '2025 Healthspan')."
   - "design_framework inferred from /_next/ asset paths; rawHtml was empty this capture."

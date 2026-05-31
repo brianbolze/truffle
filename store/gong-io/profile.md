@@ -11,7 +11,7 @@ owns: []
 # Capture meta
 captured_at: 2026-05-31
 capture_method: firecrawl
-site_notes: "Next.js (turbopack, served under /marketing-assets/_next/) on a Sanity CMS; logos + most imagery on cdn.sanity.io. Animated stat counters render in markdown as vertical digit columns (`- 0 1 2 … . , + % b $`) — headline metrics (customers, employees, FORTUNE-10 %, ARR, G2 score) are NOT legible from md; read them off the screenshot. Hero headline rotates/A-Bs (md captured 'Close deals faster'; the shot showed 'Predict pipeline risk'). Pricing is quote-only behind a multi-step team-size form — no dollar figures published. Storylane interactive demos + Marketo forms embedded. Map returned 466 URLs but ~85% noise (/blog ×132, /docs ×86, /fr+/de locales); the real product catalog + nav came from homepage links/footer, not the map."
+site_notes: "Next.js (turbopack, served under /marketing-assets/_next/) on a Sanity CMS; logos + most imagery on cdn.sanity.io. Animated stat counters render in markdown as vertical digit columns (`- 0 1 2 … . , + % b $`) — headline metrics (customers, employees, FORTUNE-10 %, ARR, G2 score) are NOT legible from md; read them off the screenshot. A/B: yes (no tool fingerprinted) — hero headline rotates (md captured 'Close deals faster'; the shot showed 'Predict pipeline risk'). Pricing is quote-only behind a multi-step team-size form — no dollar figures published. Storylane interactive demos + Marketo forms embedded. Map returned 466 URLs but ~85% noise (/blog ×132, /docs ×86, /fr+/de locales); the real product catalog + nav came from homepage links/footer, not the map."
 key_pages:
   platform: /platform
   gong_ai: /platform/revenue-ai
@@ -24,7 +24,7 @@ key_pages:
 unverified_fields:
   - "Headline counters (customer count, employee count, FORTUNE-10 %, partner count, G2 star rating, Forrester 'Nx leader') render as animated digit-column noise in markdown — only the '5,000+ customers' / '6,200+ G2 reviews' / '$500M+ ARR, 55% YoY' figures were legible (from copy/press link), not the rest."
   - "Pricing — quote-only. Model is stated (per-user licenses + a user-count-based platform fee; integrations free) but no dollar amounts are published; gated behind a sales form."
-  - "Rotating hero headline and A/B-toggled homepage modules make captured homepage copy a point-in-time snapshot, not fixed truth."
+  - "Captured homepage copy is a point-in-time snapshot, not fixed — a rotating hero headline + A/B-toggled modules shift it run-to-run."
 
 # Description
 description: "A revenue-intelligence SaaS platform that captures and analyzes B2B sales calls, emails, and deals, then applies purpose-built AI models and agents to coach reps, forecast pipeline, and automate revenue workflows for enterprise GTM teams."

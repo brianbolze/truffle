@@ -24,7 +24,7 @@ key_pages:
 unverified_fields:
   - "Scale claims ('8 million vacation rentals', '2 million Guest Favorites', '220+ countries and regions') are homepage meta copy, not independently verified."
   - "Exact fee percentages (host service fee, guest service fee) are not stated on captured pages — only 'we only collect a fee after you've gotten paid' (host) and 'one price, all fees included' (guest)."
-  - "All listing/experience/service prices shown are geolocated and point-in-time (a US-metro snapshot); they are not stable values."
+  - "Listing/experience/service prices are a point-in-time snapshot, not fixed — geolocated (a US-metro snapshot) and they flicker run-to-run."
 
 description: "A global travel marketplace connecting guests with independent hosts who offer short-term home stays, local experiences, and on-demand services; hosts set their own prices and Airbnb earns a fee on each booking, backing both sides with AirCover protection."
 

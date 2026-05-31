@@ -11,7 +11,7 @@ owns: []
 # Capture meta
 captured_at: 2026-05-31
 capture_method: firecrawl
-site_notes: "WordPress (wp-content + wp-json markers; About page leaks the Cloudways origin host wordpress-1321605-5563180.cloudwaysapps.com). Optimizely A/B testing is live (an `optimizely.com is blocked` blob leaks into markdown as noise) → captured pricing + which homepage/landing modules render are a point-in-time SNAPSHOT, expect run-to-run flicker. /membership-pricing renders client-side and returns an empty (chrome-only) markdown body — membership pricing instead lives in the homepage FAQ and per-product pages. The full mega-nav DOES serialize into the homepage markdown (no flyout-recovery needed). Product catalog is under /mens/* and /womens/* (hub pages /mens, /womens); the map is ~80% noise — 328 of 484 URLs are /edge/* blog + programmatic /biomarkers/* SEO — so pull the catalog from homepage links, not the map. Funnel + app live on subdomains: start.honehealth.com & buy.honehealth.com (onboarding/quiz), app.honehealth.com (member login), shop.honehealth.com (supplements), help.honehealth.com (support)."
+site_notes: "WordPress (wp-content + wp-json markers; About page leaks the Cloudways origin host wordpress-1321605-5563180.cloudwaysapps.com). A/B: Optimizely — live (an `optimizely.com is blocked` blob leaks into markdown as noise); captured pricing + which homepage/landing modules render are a point-in-time snapshot, expect run-to-run flicker. /membership-pricing renders client-side and returns an empty (chrome-only) markdown body — membership pricing instead lives in the homepage FAQ and per-product pages. The full mega-nav DOES serialize into the homepage markdown (no flyout-recovery needed). Product catalog is under /mens/* and /womens/* (hub pages /mens, /womens); the map is ~80% noise — 328 of 484 URLs are /edge/* blog + programmatic /biomarkers/* SEO — so pull the catalog from homepage links, not the map. Funnel + app live on subdomains: start.honehealth.com & buy.honehealth.com (onboarding/quiz), app.honehealth.com (member login), shop.honehealth.com (supplements), help.honehealth.com (support)."
 key_pages:
   how_it_works: /how-it-works
   membership_pricing: /membership-pricing
@@ -29,7 +29,7 @@ key_pages:
 unverified_fields:
   - "Membership pricing taken from homepage FAQ + product pages — /membership-pricing is JS-walled (empty markdown body)."
   - "Biomarker-panel size is stated inconsistently across pages: '40+ biomarkers' (homepage, /hone-at-home) vs '50-biomarker blood testing' (TRT page) — likely an A/B or copy-version artifact."
-  - "Optimizely A/B testing is active — captured prices ($28–$160/mo) and which modules/landing pages show are a snapshot, not fixed truth."
+  - "Prices ($28–$160/mo) & which modules/landing pages render are a point-in-time snapshot, not fixed — Optimizely A/B testing is live; expect run-to-run flicker."
   - "Weight-loss GLP-1 molecule→price mapping not fully resolved per-SKU; price band $60–$160/mo + membership captured at the line level."
   - "Headcount, funding stage, revenue — not on the marketing site (deep-research job)."
 
