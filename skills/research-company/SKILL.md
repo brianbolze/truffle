@@ -41,9 +41,8 @@ ENGINE="$(cd "$(dirname "$(realpath "$0")")/../.." 2>/dev/null && pwd)"   # if $
 screenshots to `store/<slug>/captures/<today>/`, and logs a manifest for the verify step. **Always
 capture through `fc.py`** — never hand-roll curl scrapes (you'll drop a hazard knob).
 
-> **Interpreter note.** Invoke it as `python3 scripts/fc.py …`. If a shell (especially a `for`
-> loop) reports `python3: command not found`, the pyenv shim isn't on PATH in that subshell —
-> resolve an absolute interpreter once (`PY=$(command -v python3 || echo /opt/homebrew/bin/python3)`)
+> **Interpreter note.** If a subshell (often a `for` loop) reports `python3: command not found`, the
+> pyenv shim isn't on its PATH — resolve once with `PY=$(command -v python3 || echo /opt/homebrew/bin/python3)`
 > and call `"$PY" scripts/fc.py …`. fc.py is stdlib-only, so any Python 3 works.
 
 ## The capture loop
@@ -100,11 +99,11 @@ discard a page on HTTP status alone — SPAs return 404 with full correct conten
 
 **7. Enrich → write `profile.md` (free, the valuable step).** Read the *whole* capture — every
 `captures/<today>/*.md`, the screenshots in `.payloads/*.png`, and the homepage's `branding` payload —
-and write `store/<slug>/profile.md` **exactly per `SCHEMA.md` + `TAXONOMIES.md`**: `schema_version: 1`,
-the frontmatter (identity, generic classification from the closed sets, visual identity), and the body
-sections. Key reminders from the contract: fill only fields the captured pages support (else
-`unverified_fields`); quote prices/claims verbatim; make the visual read from the screenshots; read
-`design_framework` from `rawHtml`, never `branding.designSystem`; verify brand colors against the shot.
+and write `store/<slug>/profile.md` **exactly per SCHEMA's write rules + `TAXONOMIES.md`**:
+`schema_version: 1`, the frontmatter (identity, generic classification from the closed sets, visual
+identity), and the body sections. The two contract rules a capture most often trips on: fill only
+fields the captured pages support (else `unverified_fields` — never a guess), and read
+`design_framework` from `rawHtml`, never `branding.designSystem` (reliably wrong).
 
 **8. Record + summarize (free).** Update `site_notes` with anything this run learned about the site
 (JS-walls, map noise, geo quirks, where pricing hides) — that's the carry-forward for next time. Then
