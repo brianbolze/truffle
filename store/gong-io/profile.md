@@ -52,13 +52,13 @@ Gong sells a "Revenue AI OS" — an enterprise platform that automatically captu
 
 ## What they offer
 A single platform marketed as the **Gong Revenue AI OS**, composed of distinct, separately-positioned modules plus an agent layer:
-- **Gong Revenue Graph** — the data foundation: auto-captures and connects every interaction across the business.
-- **Gong AI / Conversation Intelligence** — analysis over "billions of buyer-seller interactions" using "40+ proprietary AI models" and "300+ signals."
-- **Gong Engage** — sales engagement / prospecting (GenAI email composer, prioritized workflows) — competes with Salesloft/Outreach.
-- **Gong Forecast** — pipeline & forecasting (deal likelihood scores, deal/forecast dashboards) — competes with Clari.
-- **Gong Enable** — revenue enablement, coaching, and AI Trainer role-play — grounded in real customer calls.
-- **Gong Agents** — ~18 named specialized agents (AI Tracker, Ask Anything, Briefer, Call Reviewer, Trainer, Composer, Deal Reviewer/Monitor/Predictor, Revenue Predictor, Activity Mapper, Transcriber, Translator, Data Extractor; AI Deep Researcher "coming soon"), built and tuned in a no-code **Agent Studio** (drag-and-drop, "no IT resources required").
-- **Gong Collective** — 300+ integrations + services marketplace (Salesforce, Zoom, MS Teams, Slack, Okta, MS 365 Copilot).
+- **Gong Revenue Graph:** the data foundation: auto-captures and connects every interaction across the business.
+- **Gong AI / Conversation Intelligence:** analysis over "billions of buyer-seller interactions" using "40+ proprietary AI models" and "300+ signals."
+- **Gong Engage:** sales engagement / prospecting (GenAI email composer, prioritized workflows) — competes with Salesloft/Outreach.
+- **Gong Forecast:** pipeline & forecasting (deal likelihood scores, deal/forecast dashboards) — competes with Clari.
+- **Gong Enable:** revenue enablement, coaching, and AI Trainer role-play — grounded in real customer calls.
+- **Gong Agents:** ~18 named specialized agents (AI Tracker, Ask Anything, Briefer, Call Reviewer, Trainer, Composer, Deal Reviewer/Monitor/Predictor, Revenue Predictor, Activity Mapper, Transcriber, Translator, Data Extractor; AI Deep Researcher "coming soon"), built and tuned in a no-code **Agent Studio** (drag-and-drop, "no IT resources required").
+- **Gong Collective:** 300+ integrations + services marketplace (Salesforce, Zoom, MS Teams, Slack, Okta, MS 365 Copilot).
 
 ## How it works / model
 Capture → unify → intelligence → automate. Gong ingests interactions via integrations (Zoom, Teams, Salesforce, etc.), maps them to the Revenue Graph, then AI models + agents generate insights, forecasts, and actions that flow back into seller and manager workflows. Sold as **seat-based subscription**: "Licenses are priced per user" plus "a platform fee based on the number of users supported," with integrations free. Enterprise, sales-led motion — pricing is quote-only behind a team-size form (brackets: 1–50, 51–1,000, 1,001–9,999, 10,000+). A newer **Gong Credits** consumption model (referenced in a May 2026 blog) layers usage-based AI pricing on top of seats.
@@ -100,7 +100,11 @@ Positions as the "**#1 AI OS for Revenue Teams**" and an "undisputed leader in r
 - **Customer-evidence library** (UserEvidence-sourced, on /customer-proof): 4,436 testimonials, 6 survey stats, 11 chart-backed findings, most recent verified May 29, 2026. Representative stat: "50% of Gong users decreased average time to ramp by greater than 10%." Customer-cited outcomes include Uber for Business saving "6,700 hours" and a "32%" lift in buyer response rates via the AI Tracker agent.
 
 ## Provenance
-Captured 2026-05-31 via Firecrawl (`maxAge:0`, `location:US`), 9 pages, all sourceURL-matched and md5-unique. Pages analyzed: homepage, /platform, /platform/revenue-ai, /platform/ai-agents-for-revenue-teams, /pricing, /solutions, /why-gong, /about, /customer-proof. **Could not get:** legible values for animated stat counters (rendered as digit-column artifacts — see `unverified_fields`); any actual price (quote-only); per-module deep detail beyond what the platform/agents pages list. Framework read from `rawHtml` (`_next/static` + turbopack → Next.js), not `branding.designSystem` (which said "tailwind").
+
+- **Pages:** homepage, /platform, /platform/revenue-ai, /platform/ai-agents-for-revenue-teams, /pricing, /solutions, /why-gong, /about, /customer-proof (9) — all Firecrawl, `maxAge:0`, `location:US`; `design_framework` from `rawHtml` (`_next/static` + turbopack → Next.js), not `branding.designSystem` (which said "tailwind").
+- **Verify:** all sourceURL-matched and md5-unique (clean).
+- **Credits:** not recorded this run.
+- **Couldn't get:** legible values for animated stat counters (rendered as digit-column artifacts — see `unverified_fields`); any actual price (quote-only); per-module deep detail beyond what the platform/agents pages list.
 
 ## Visual & brand impression
 Polished, high-budget enterprise-SaaS aesthetic. A predominantly light canvas (white → soft lavender feature cards) anchored by a deep royal-purple (#3E0075) and bright magenta (#FD63FE) brand palette, with deep-purple full-bleed sections and a near-black purple footer. Recurring motifs: a purple "star/sparkle" badge (the AI mark) and the literal gong/"ring the gong" metaphor. Clean Inter / Inter Tight type, generous whitespace, modular card grids, and animated counters and squiggle accents that read as confident and modern rather than playful. Overall: a category-leader presentation built to sell to enterprise revenue executives.

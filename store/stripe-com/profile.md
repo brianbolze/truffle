@@ -49,10 +49,10 @@ Stripe is a financial-infrastructure platform that sells the building blocks of 
 
 A `Catalog`-shape portfolio—30+ distinct products, grouped (per their pricing IA) into four families:
 
-- **Global payments** — Payments (online/in-person card processing), Checkout, Payment Links, Terminal (in-person/POS), Managed Payments (merchant-of-record), Radar (fraud), Connect (embedded payments for platforms).
-- **Money management** — Treasury (banking-as-a-service), Issuing (card issuing), Global Payouts, Financial Connections.
-- **Revenue & finance automation** — Billing (subscriptions/usage-based/metered), Invoicing, Tax, Revenue Recognition, Sigma (SQL analytics), Data Pipeline.
-- **More** — Identity (KYC), Atlas (incorporation), Climate (carbon removal), Workflows (no-code automation), plus developer surfaces (Elements, Link, SDKs, MCP server).
+- **Global payments:** Payments (online/in-person card processing), Checkout, Payment Links, Terminal (in-person/POS), Managed Payments (merchant-of-record), Radar (fraud), Connect (embedded payments for platforms).
+- **Money management:** Treasury (banking-as-a-service), Issuing (card issuing), Global Payouts, Financial Connections.
+- **Revenue & finance automation:** Billing (subscriptions/usage-based/metered), Invoicing, Tax, Revenue Recognition, Sigma (SQL analytics), Data Pipeline.
+- **More:** Identity (KYC), Atlas (incorporation), Climate (carbon removal), Workflows (no-code automation), plus developer surfaces (Elements, Link, SDKs, MCP server).
 
 Most products are independent but designed to compose. Too many to enumerate per-offering here; `/pricing` is the most complete roster. Pricing detail is captured below under *Model* and quoted verbatim from `/pricing`.
 
@@ -60,8 +60,8 @@ Most products are independent but designed to compose. Too many to enumerate per
 
 Self-serve onboarding (create an account and integrate via API/SDK, no-code tools, or prebuilt UIs; "first payment in minutes") or a sales-assisted **Custom** package for high-volume/complex businesses. Two headline tiers:
 
-- **Standard** — *"2.9% + 30¢ per successful transaction for domestic cards"*, "No setup fees, monthly fees, or hidden fees." Pay-as-you-go.
-- **Custom** — IC+ pricing, volume discounts, multi-product discounts, country-specific rates ("Contact sales").
+- **Standard:** *"2.9% + 30¢ per successful transaction for domestic cards"*, "No setup fees, monthly fees, or hidden fees." Pay-as-you-go.
+- **Custom:** IC+ pricing, volume discounts, multi-product discounts, country-specific rates ("Contact sales").
 
 Revenue model is primarily **usage-based**: per-transaction or %-of-volume fees (e.g. Terminal *2.7% + 5¢*; Managed Payments *+3.5%*; stablecoin *1.5%*; ACH *0.8%, $5 cap*; Connect platform fees from *0.25%*; Issuing *$0.10/virtual card*; Identity *$1.50/verification*). A subset of software products are **subscription**-priced (Billing from *$620/mo, 1-yr*; Tax from *$90/mo*; Revenue Recognition from *$25/mo*; Sigma from *$15/mo*; Data Pipeline from *$65/mo*) and Atlas is a *$500 one-time* fee. So the model is usage-based at its core with a growing subscription-software layer on top.
 
@@ -135,6 +135,7 @@ Stripe's distinctive move is its sheer surface area: it has expanded from a paym
 
 ## Provenance
 
-- **Captured** 2026-05-30 via Firecrawl (`fc.py`, `maxAge:0` + `location:US` + `waitFor`), 7 pages, all sourceURL-matched and md5-unique (no §5.1 contamination).
-- **Pages analyzed:** homepage (rich pass: markdown/html/rawHtml/links/branding/images/screenshot), `/pricing`, `/payments`, `/billing`, `/connect`, `/enterprise`, `/use-cases/agentic-commerce`.
-- **Could not get / out of scope:** per-product deep dives beyond the six captured; docs/dashboard/support subdomains (separate properties); company financials/headcount (not on marketing site). Pricing reflects US/standard rates as displayed on 2026-05-30.
+- **Pages:** homepage (rich pass: markdown/html/rawHtml/links/branding/images/screenshot), `/pricing`, `/payments`, `/billing`, `/connect`, `/enterprise`, `/use-cases/agentic-commerce` (7) — all Firecrawl (`fc.py`, `maxAge:0` + `location:US` + `waitFor`), 2026-05-30.
+- **Verify:** all sourceURL-matched, all md5-unique (clean, no §5.1 contamination).
+- **Credits:** not recorded this run.
+- **Couldn't get:** per-product deep dives beyond the six captured; docs/dashboard/support subdomains (separate properties); company financials/headcount (not on marketing site). Pricing reflects US/standard rates as displayed on 2026-05-30.

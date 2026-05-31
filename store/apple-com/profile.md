@@ -115,4 +115,7 @@ The site quietly tells the bull story: a hardware **catalog** so deep it can't b
 
 ## Provenance
 
-Captured 2026-05-31 via Firecrawl (`fc.py`, US location, `maxAge:0`, full-format homepage). 7 pages, all md5-unique, no geo/cache contamination, no bot defense encountered. Pages analyzed: homepage (full mega-nav + hero stack + branding/screenshot), /iphone/, /mac/ (verbatim pricing), /services/ (services + Apple One), /apple-intelligence/, /retail/ (store locator), /environment/. The `/map` was discarded as subdomain noise; IA and product set came from homepage links. Not captured: per-SKU pricing behind the shop funnel; financials/headcount (off-site).
+- **Pages:** homepage (full mega-nav + hero stack + branding/screenshot), /iphone/, /mac/ (verbatim pricing), /services/ (services + Apple One), /apple-intelligence/, /retail/ (store locator), /environment/ — 7 pages via Firecrawl (`fc.py`, US location, `maxAge:0`, full-format); `/map` discarded as subdomain noise; IA and product set from homepage links; no geo/cache contamination, no bot defense.
+- **Verify:** all md5-unique (clean).
+- **Credits:** not recorded this run.
+- **Couldn't get:** per-SKU pricing behind the shop funnel; financials/headcount (off-site, out of scope).

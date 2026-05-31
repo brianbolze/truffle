@@ -52,9 +52,9 @@ Airbnb is a two-sided online marketplace for travel. Guests search and book acco
 
 Three marketplace lines, each an un-enumerable catalog of host-supplied listings:
 
-- **Homes** — short-term stays in entire homes, private rooms, condos, cabins, villas, and (newer) partner hotels. The flagship: homepage meta claims "8 million vacation rentals" and "2 million Guest Favorites" across "220+ countries and regions." Priced per night by the host (captured examples: Ocean City homes $530–$889 for 2 nights).
-- **Experiences** ("NEW") — host-led activities, including a curated **Airbnb Originals** tier "hosted by the world's most interesting people" (e.g. soccer-pro sessions, FIFA World Cup 26 tie-ins). Per-guest pricing (captured: $12–$250/guest).
-- **Services** ("NEW") — on-demand professional services booked to a location: **Photography, Chefs, Massage, Prepared meals, Training** live, with **Makeup, Hair, Spa treatments, Catering** "Coming soon." Priced per guest or per group (captured: chefs from $20–$350/guest, often with a booking minimum; massage from $70/guest).
+- **Homes:** short-term stays in entire homes, private rooms, condos, cabins, villas, and (newer) partner hotels. The flagship: homepage meta claims "8 million vacation rentals" and "2 million Guest Favorites" across "220+ countries and regions." Priced per night by the host (captured examples: Ocean City homes $530–$889 for 2 nights).
+- **Experiences ("NEW"):** host-led activities, including a curated **Airbnb Originals** tier "hosted by the world's most interesting people" (e.g. soccer-pro sessions, FIFA World Cup 26 tie-ins). Per-guest pricing (captured: $12–$250/guest).
+- **Services ("NEW"):** on-demand professional services booked to a location: **Photography, Chefs, Massage, Prepared meals, Training** live, with **Makeup, Hair, Spa treatments, Catering** "Coming soon." Priced per guest or per group (captured: chefs from $20–$350/guest, often with a booking minimum; massage from $70/guest).
 
 Per-offering detail belongs in `offerings.md` (not captured at Tier-0).
 
@@ -63,7 +63,7 @@ Per-offering detail belongs in `offerings.md` (not captured at Tier-0).
 **Marketplace / commission.** Hosts list for free, set their own price, and Airbnb collects a service fee — host page: *"Getting started is free. You set your price, and we only collect a fee after you've gotten paid."* Guests now see *"one price for your trip, all fees included"* (a recent shift to total-price-upfront display). The host journey is explicitly de-risked: a free listing flow with 1-1 mentor support, and a new **co-host** marketplace where an owner can hire a "high-quality, local co-host" to create the listing or run hosting entirely.
 
 Adjacent programs widen the host funnel:
-- **Airbnb-friendly apartments** — a partnership with US/UK apartment-building owners so renters can host part-time in approved buildings ("Rent a place to live. Airbnb it part-time."). Airbnb does not own or operate the buildings; it's a B2B2C lead-gen partnership (testimonial cites a host earning avg "$13,799 per year").
+- **Airbnb-friendly apartments:** a partnership with US/UK apartment-building owners so renters can host part-time in approved buildings ("Rent a place to live. Airbnb it part-time."). Airbnb does not own or operate the buildings; it's a B2B2C lead-gen partnership (testimonial cites a host earning avg "$13,799 per year").
 - An earnings estimator on the host page ("Your home could make $854… 7 nights · $122/night") converts intent.
 
 ## Positioning & audience
@@ -106,10 +106,10 @@ Two audiences, one platform. **Guests** are pitched on breadth and trust ("an Ai
 
 ## Credibility & proof
 
-- **AirCover** — the headline trust layer, dual-sided. *AirCover for guests* (free on every home booking) promises rebooking or full/partial refund if a host cancels, is unreachable, or the listing is "significantly different than advertised," plus a 24-hour safety line; *AirCover for Hosts* covers the supply side.
-- **Reviews + Guest Favorites** — near-ubiquitous star ratings (4.7–5.0 on captured cards) and a "Guest favorite" / "2 million Guest Favorites" badge program signal vetted quality.
-- **Scale as proof** — "8 million vacation rentals," "220+ countries and regions," "Join millions of hosts."
-- Publicly traded (investors.airbnb.com / SEC filings surfaced in the map), reinforcing institutional credibility.
+- **AirCover:** the headline trust layer, dual-sided. *AirCover for guests* (free on every home booking) promises rebooking or full/partial refund if a host cancels, is unreachable, or the listing is "significantly different than advertised," plus a 24-hour safety line; *AirCover for Hosts* covers the supply side.
+- **Reviews + Guest Favorites:** near-ubiquitous star ratings (4.7–5.0 on captured cards) and a "Guest favorite" / "2 million Guest Favorites" badge program signal vetted quality.
+- **Scale as proof:** "8 million vacation rentals," "220+ countries and regions," "Join millions of hosts."
+- **Publicly traded:** investors.airbnb.com / SEC filings surfaced in the map, reinforcing institutional credibility.
 
 ## Visual & brand impression
 
@@ -121,6 +121,7 @@ The capture catches Airbnb mid-pivot. For its entire history "Airbnb" meant Home
 
 ## Provenance
 
-- **Pages analyzed (7, all Firecrawl, `maxAge:0` + US geo, 2026-05-30):** homepage, `/homes`, `/experiences`, `/services`, `/host/homes`, `/aircover`, `/airbnb-friendly`. All 7 verified: sourceURL-matched and body-md5-unique (no geo/cache contamination).
-- **Discovery:** map returned ~470 URLs but ~95% were `/rooms/<id>` + `/help/article/<n>` noise; offering structure came from homepage top-nav + footer links.
-- **Not captured:** exact fee percentages, host onboarding flow behind `/become-a-host`, and the full Experiences/Services catalogs (geolocated, point-in-time). Financials/funding are a deep-research job, not Tier-0.
+- **Pages:** homepage, `/homes`, `/experiences`, `/services`, `/host/homes`, `/aircover`, `/airbnb-friendly` (7) — all Firecrawl, `maxAge:0`, US geo, 2026-05-30; offering structure derived from homepage top-nav + footer links (map returned ~470 URLs but ~95% were `/rooms/<id>` + `/help/article/<n>` noise).
+- **Verify:** all sourceURL-matched and body-md5-unique (clean).
+- **Credits:** not recorded this run.
+- **Couldn't get:** exact fee percentages, host onboarding flow behind `/become-a-host`, and the full Experiences/Services catalogs (geolocated, point-in-time). Financials/funding are a deep-research job, not Tier-0.

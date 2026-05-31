@@ -159,9 +159,7 @@ all the visual energy.
 
 ## Provenance
 
-- **homepage** (`/`) — Firecrawl scrape, status 200, full mega-nav + footer IA + hero carousel. Full-page screenshot captured (brand visual read).
-- **about** (`about.nike.com/en`) — Firecrawl scrape, status 200; newsroom-style, football-PR heavy; source of the mission manifesto.
-- **membership** (`/membership`) — Firecrawl scrape, status 200; benefits + free-membership FAQ (quoted) + app ecosystem.
-- Map captured (~thousands of product/category URLs, locale-heavy) but used only to confirm Catalog scale; key pages came from homepage links.
-- Verify: all sourceURLs matched, all 3 bodies md5-unique (no geo/cache contamination). ~5 credits spent.
-- Not captured: product detail pages / pricing, Converse (separate domain), the gated app experiences.
+- **Pages:** homepage (`/`), about (`about.nike.com/en`), membership (`/membership`) — 3 pages, all Firecrawl scrape, US geo; map captured (~thousands of product/category URLs, locale-heavy) but used only to confirm Catalog scale; key pages came from homepage links. Full-page screenshot captured (brand visual read); Next.js confirmed from rawHtml (`__NEXT_DATA__`).
+- **Verify:** all sourceURLs matched, all 3 bodies md5-unique (clean; no geo/cache contamination).
+- **Credits:** ~5 credits spent.
+- **Couldn't get:** product detail pages / pricing (lives on `/t/...` PDPs, none captured), Converse (separate domain), the gated app experiences.

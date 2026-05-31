@@ -51,12 +51,12 @@ Hims is the men's-facing telehealth brand of Hims & Hers Health, Inc. (NYSE: HIM
 
 Six separately-positioned condition lines, all subscription, most starting from a digital intake:
 
-- **Weight loss** — the current hero. A "holistic program" (nutrition + app tracking + meds) gating a wide **GLP-1 lineup**: Wegovy® Pill from $149/mo, Wegovy® Pen from $199/mo, Ozempic® Pill from $149/mo, Foundayo® (orforglipron) from $149/mo, Zepbound® KwikPen® / Vial $299/mo — *medication-only prices; a separate Weight Loss Membership is $39 first month, then $149/mo*. Compounded and brand-name options coexist.
-- **Sexual health** — the original franchise: ED (sildenafil/"generic Viagra," tadalafil/Cialis, branded Cialis®) and premature ejaculation (sertraline for PE). Starting at $19–$39/mo for generics (brand-name SKUs run far higher, e.g. one at $543/mo).
-- **Hair loss** — finasteride, minoxidil, topical finasteride, combo kits; starting $15–$60/mo.
-- **Testosterone** — enclomiphene-based "Testosterone by Hims," from $99/mo (10-month plan paid upfront), plus T-boosting supplements and at-home T labs.
-- **Mental health / psychiatry** — generics sertraline (Zoloft®), escitalopram (Lexapro®).
-- **Labs** — a newer wedge: a Quest Diagnostics blood draw testing 75+ biomarkers at baseline (130+ available), twice-yearly panels, plus the Galleri® multi-cancer early-detection test; results + an "Action Plan" surfaced in-app.
+- **Weight loss:** the current hero. A "holistic program" (nutrition + app tracking + meds) gating a wide **GLP-1 lineup**: Wegovy® Pill from $149/mo, Wegovy® Pen from $199/mo, Ozempic® Pill from $149/mo, Foundayo® (orforglipron) from $149/mo, Zepbound® KwikPen® / Vial $299/mo — *medication-only prices; a separate Weight Loss Membership is $39 first month, then $149/mo*. Compounded and brand-name options coexist.
+- **Sexual health:** the original franchise: ED (sildenafil/"generic Viagra," tadalafil/Cialis, branded Cialis®) and premature ejaculation (sertraline for PE). Starting at $19–$39/mo for generics (brand-name SKUs run far higher, e.g. one at $543/mo).
+- **Hair loss:** finasteride, minoxidil, topical finasteride, combo kits; starting $15–$60/mo.
+- **Testosterone:** enclomiphene-based "Testosterone by Hims," from $99/mo (10-month plan paid upfront), plus T-boosting supplements and at-home T labs.
+- **Mental health / psychiatry:** generics sertraline (Zoloft®), escitalopram (Lexapro®).
+- **Labs:** a newer wedge: a Quest Diagnostics blood draw testing 75+ biomarkers at baseline (130+ available), twice-yearly panels, plus the Galleri® multi-cancer early-detection test; results + an "Action Plan" surfaced in-app.
 
 ## How it works / model
 
@@ -109,4 +109,7 @@ The capture catches Hims mid-pivot from its sexual-health/hair-loss origins to a
 
 ## Provenance
 
-8 pages captured via Firecrawl (`fc.py`, all `maxAge:0` + `location:US`) on 2026-05-30, verified clean (all sourceURLs matched, all bodies md5-unique — no geo/cache contamination): homepage (+ rawHtml/branding/screenshot), /weight-loss, /sexual-health, /hair-loss, /testosterone, /labs, /about/how-it-works, /about/the-company. Map returned 306 URLs (heavy blog/guides/support/investor noise; core catalog pulled from homepage links). Not captured: per-condition pricing past the "starting at" teaser (behind intake quizzes), the client-rendered mega-nav, and financials (investor site). ~9 Firecrawl credits.
+- **Pages:** homepage (+ rawHtml/branding/screenshot), /weight-loss, /sexual-health, /hair-loss, /testosterone, /labs, /about/how-it-works, /about/the-company (8) — all Firecrawl (`fc.py`, `maxAge:0`, `location:US`); map returned 306 URLs (heavy blog/guides/support/investor noise; core catalog pulled from homepage links).
+- **Verify:** all sourceURLs matched, all bodies md5-unique (clean — no geo/cache contamination).
+- **Credits:** ~9 Firecrawl credits.
+- **Couldn't get:** per-condition pricing past the "starting at" teaser (behind intake quizzes); the client-rendered mega-nav; financials (investor site).

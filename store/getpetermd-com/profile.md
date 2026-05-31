@@ -54,20 +54,22 @@ PeterMD is a DTC men's-health telehealth clinic. A free online consult with a li
 
 Multi-product, all subscription, organized as named care lines (per-offering detail belongs in `offerings.md`):
 
-- **Increase Testosterone** — Injectable TRT (`/mens-trt`), Oral TRT / Enclomiphene (`/enclomiphene`), HCG. Category: `/buy-testosterone-therapy`. The founding line and still the spine of the funnel.
-- **Lose Weight** — GLP-1 / semaglutide (`/glp1-b12`), Tirzepatide, B12 + MIC. Category: `/pmd-weight-loss`.
-- **Sexual Wellness** — Sildenafil, Tadalafil, Mount Everest, Scream Cream, Cabergoline. Category: `/sexual-wellness`.
-- **Enhance Performance** — Sermorelin, Thyroid Optimization, B12 + MIC. Category: `/enhance-performance`.
-- **Live Longer** — Metformin, NAD+ (injection + capsule). Category: `/live-longer`.
-- **Hair Loss** — Finasteride, Follicure RX, ReGenX Bundle. Category: `/hair-loss`.
-- **Blood Work** — Comprehensive bloodwork / blood tests, sold standalone.
+- **Increase Testosterone:** Injectable TRT (`/mens-trt`), Oral TRT / Enclomiphene (`/enclomiphene`), HCG. Category: `/buy-testosterone-therapy`. The founding line and still the spine of the funnel.
+- **Lose Weight:** GLP-1 / semaglutide (`/glp1-b12`), Tirzepatide, B12 + MIC. Category: `/pmd-weight-loss`.
+- **Sexual Wellness:** Sildenafil, Tadalafil, Mount Everest, Scream Cream, Cabergoline. Category: `/sexual-wellness`.
+- **Enhance Performance:** Sermorelin, Thyroid Optimization, B12 + MIC. Category: `/enhance-performance`.
+- **Live Longer:** Metformin, NAD+ (injection + capsule). Category: `/live-longer`.
+- **Hair Loss:** Finasteride, Follicure RX, ReGenX Bundle. Category: `/hair-loss`.
+- **Blood Work:** Comprehensive bloodwork / blood tests, sold standalone.
 - **Supplements & Vitamins**, **Merch**, and a **For Her** (women's TRT) entry round out the catalog.
 
 **Pricing (verbatim, point-in-time):**
-- TRT plans: **"$79/Month"** (yearly), **"$109 a month"** (bi-yearly), **"$139 a month"** (monthly); "Regular price: $1668"; "pricing starting as low as $79/month on the yearly plan." TRT requires a **6-month minimum commitment**.
-- Tirzepatide: **"Get Started for $149"** then **"$249 per month • billed quarterly."**
-- Sexual wellness (Sildenafil): **"$62.50"** ("Usually $358.00 for Viagra").
-- FAQ floor: **"Our plans start from as little as $29 per month."**
+- **TRT — Yearly ($79/Month):** "pricing starting as low as $79/month on the yearly plan"; "Regular price: $1668"; requires a 6-month minimum commitment.
+- **TRT — Bi-yearly ($109 a month):** mid-tier plan.
+- **TRT — Monthly ($139 a month):** month-to-month plan.
+- **Tirzepatide:** "Get Started for $149" then "$249 per month • billed quarterly."
+- **Sexual Wellness — Sildenafil ($62.50):** "Usually $358.00 for Viagra".
+- **FAQ floor ($29/month):** "Our plans start from as little as $29 per month."
 
 ## How it works / model
 
@@ -148,4 +150,7 @@ Light scheme, illustration-heavy, built as a long stacked-section landing page w
 
 ## Provenance
 
-Captured 2026-05-30 via Firecrawl (`fc.py`, maxAge:0, location:US), 9 pages, all md5-unique (verify passed, no geo/cache contamination). Pages analyzed: homepage (full mega-nav + branding + screenshot), `/about-us`, `/how-it-works`, `/mens-trt`, `/buy-testosterone-therapy`, `/pmd-weight-loss`, `/tirzepatide`, `/sexual-wellness`. Offering taxonomy reconstructed from the homepage nav (the map is mostly WooFunnels/sitemap noise). Pricing quoted verbatim from product pages and is a point-in-time snapshot (plan tiers vary by term/dose). Ownership/legal entity not stated on the site.
+- **Pages:** homepage (full mega-nav + branding + screenshot), `/about-us`, `/how-it-works`, `/mens-trt`, `/buy-testosterone-therapy`, `/pmd-weight-loss`, `/tirzepatide`, `/sexual-wellness` (9 pages) — all Firecrawl (`fc.py`, maxAge:0, location:US); offering taxonomy reconstructed from the homepage nav (map is mostly WooFunnels/sitemap noise); pricing quoted verbatim from product pages, point-in-time snapshot (plan tiers vary by term/dose).
+- **Verify:** all md5-unique (verify passed, no geo/cache contamination — clean).
+- **Credits:** not recorded this run.
+- **Couldn't get:** per-SKU deep pages beyond the 9 captured; ownership/legal entity (not stated on the site); financials/headcount (out of scope).

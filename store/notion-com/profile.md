@@ -48,11 +48,11 @@ Notion is a single connected workspace that absorbs the tools a team would other
 
 One flagship — the Notion workspace (Docs, Knowledge Base/Wikis, Projects, Databases) — with a companion set, all bundled under one per-seat plan rather than sold as separate SKUs:
 
-- **Notion AI** — chat, generate/edit docs, autofill databases, translate; plus **Research mode** (deep-reasoning reports) and **Enterprise Search** across connected apps (Slack, GitHub, etc.).
-- **Agents** — Notion Agent (does multi-step work for you) and **Custom Agents** that run repetitive work autonomously; metered: "Free to try, then **$10 per 1,000 monthly Notion credits**."
-- **AI Meeting Notes** — auto-transcription + summaries.
-- **Notion Calendar** and **Notion Mail** (syncs with Gmail) — standalone companion apps that sync into the workspace.
-- **Developer platform** — public API, webhooks, and **Workers** (Beta) to run custom code; surfaced separately at notion.dev / developers.notion.com.
+- **Notion AI:** chat, generate/edit docs, autofill databases, translate; plus **Research mode** (deep-reasoning reports) and **Enterprise Search** across connected apps (Slack, GitHub, etc.).
+- **Agents:** Notion Agent (multi-step work) + **Custom Agents** that run repetitive work autonomously, metered — "Free to try, then **$10 per 1,000 monthly Notion credits**"
+- **AI Meeting Notes:** auto-transcription + summaries.
+- **Notion Calendar & Notion Mail:** standalone companion apps (Mail syncs with Gmail) that sync into the workspace.
+- **Developer platform:** public API, webhooks, and **Workers** (Beta) to run custom code; surfaced separately at notion.dev / developers.notion.com.
 
 The site also runs a large **Templates**, **Connections**, and **Consultants** ecosystem. Per-offering detail is a Tier-1 `offerings.md` job (not captured here).
 
@@ -60,10 +60,10 @@ The site also runs a large **Templates**, **Connections**, and **Consultants** e
 
 Per-seat SaaS subscription with a freemium on-ramp. Four tiers (monthly, per member):
 
-- **Free — $0** — individuals; trial of Notion AI, basic forms/sites, Calendar + Mail, databases.
-- **Plus — $10** — small teams; custom forms/sites, unlimited blocks/uploads, basic connections.
-- **Business — $20** ("Recommended") — Notion Agent, AI Meeting Notes, Enterprise Search (Beta), SAML SSO, private teamspaces, premium connections.
-- **Enterprise — Custom** — zero data retention with LLM providers, SCIM, audit log, advanced security/DLP/SIEM, CSM.
+- **Free ($0):** individuals; trial of Notion AI, basic forms/sites, Calendar + Mail, databases.
+- **Plus ($10):** small teams; custom forms/sites, unlimited blocks/uploads, basic connections.
+- **Business ($20, "Recommended"):** Notion Agent, AI Meeting Notes, Enterprise Search (Beta), SAML SSO, private teamspaces, premium connections.
+- **Enterprise (Custom):** zero data retention with LLM providers, SCIM, audit log, advanced security/DLP/SIEM, CSM.
 
 Two **usage-based** add-ons ride on top of any plan: **Custom Agents** ($10 / 1,000 credits) and **Workers** (Beta, credit-metered from Aug 11). The Plus plan is **free for students and educators**. Refunds: full within 3 days (monthly) / 30 days (annual).
 
@@ -123,7 +123,7 @@ The capture caught Notion mid-repositioning: the durable "all-in-one workspace" 
 
 ## Provenance
 
-- **Captured 2026-05-31 via Firecrawl** (`fc.py`, US geo, all-formats bundle). 7 pages, all HTTP 200, all bodies md5-unique (verify clean).
-- Pages analyzed: homepage, `/product`, `/pricing`, `/product/ai`, `/product/agents`, `/enterprise`, `/about` — plus map sample and homepage `branding` payload + screenshots.
-- `design_framework` read from `rawHtml` (`__NEXT_DATA__`); brand colors/fonts cross-checked against screenshots (branding logo was an inline data-URI, so `logo_url` falls back to the favicon).
-- Not captured: per-product deep pages (Calendar, Mail, Docs, Projects individually), Templates/Connections catalogs, developer docs. Firm financials/headcount intentionally out of scope.
+- **Pages:** homepage, `/product`, `/pricing`, `/product/ai`, `/product/agents`, `/enterprise`, `/about` (7) — all Firecrawl, US geo, all-formats; `design_framework` from `rawHtml` (`__NEXT_DATA__`), colors/fonts cross-checked vs screenshots (branding logo was a data-URI → favicon fallback).
+- **Verify:** all HTTP 200, all bodies md5-unique (clean).
+- **Credits:** not recorded this run.
+- **Couldn't get:** per-product deep pages (Calendar, Mail, Docs, Projects), Templates/Connections catalogs, developer docs; financials/headcount (out of scope).

@@ -57,8 +57,8 @@ sunset on June 30, 2026** — see *Strategic read*.
 
 One platform, two product surfaces (bundled in every plan, not sold separately):
 
-- **Delighted Surveys** — ad-hoc questionnaires (open-ended, rating-scale, multiple-choice) to ask an audience anything.
-- **Delighted CX** — automated, ongoing feedback programs built on standard CX metrics: **NPS, CSAT, CES, eNPS, 5-star, Smileys, Thumbs, PMF**.
+- **Delighted Surveys:** ad-hoc questionnaires (open-ended, rating-scale, multiple-choice) to ask an audience anything.
+- **Delighted CX:** automated, ongoing feedback programs built on standard CX metrics: **NPS, CSAT, CES, eNPS, 5-star, Smileys, Thumbs, PMF**.
 
 Delivery across Link, Email, Web, Embed, iOS SDK, and Kiosk; reporting/dashboards with tagging,
 trends, and Smart Trends text analysis; "Delighted AI" enhancements; and 35+ free + premium
@@ -69,11 +69,11 @@ integrations (Slack, Shopify, Zendesk, Stripe, Square, Salesforce, Segment, HubS
 Product-led, self-serve **subscription** with a freemium entry. Plans (USD, tax-exclusive),
 metered by monthly responses + users:
 
-- **Free** — 25 responses, 1 user, no card.
-- **Starter $19/mo** — 50 responses, 2 users.
-- **Growth $39/mo** — 100 responses, 3 users.
-- **Advanced $149/mo** — 250 responses, 5 users.
-- **Premium $249/mo** (most popular) — 500 responses, 10 users; 6 premium integrations.
+- **Free ($0):** 25 responses, 1 user, no card.
+- **Starter ($19/mo):** 50 responses, 2 users.
+- **Growth ($39/mo):** 100 responses, 3 users.
+- **Advanced ($149/mo):** 250 responses, 5 users.
+- **Premium ($249/mo, most popular):** 500 responses, 10 users; 6 premium integrations.
 - Custom pricing above that (contact sales).
 
 The model — **"Ask → Analyze → Act"** — survey, read results in dashboards, then route feedback to
@@ -140,8 +140,7 @@ consumer should treat delighted.com as effectively frozen and time-boxed.
 
 ## Provenance
 
-Captured 2026-05-31 via Firecrawl (`maxAge:0`, `location:US`, `waitFor`), 6 pages, all sourceURL-matched
-and md5-unique (no geo/cache contamination). Pages: homepage (rich pass), /pricing, /sunset, /qualtrics,
-/features, /customer-experience-solution. Framework read from rawHtml (WordPress / blankslate theme).
-Could not get: post-sunset plans, firmographics (off-site), and a clean reconcile of the pricing table's
-user counts vs. the tier cards (noted in unverified_fields).
+- **Pages:** homepage (rich pass), /pricing, /sunset, /qualtrics, /features, /customer-experience-solution (6) — all Firecrawl (`maxAge:0`, `location:US`, `waitFor`); framework read from rawHtml (WordPress / blankslate theme).
+- **Verify:** all sourceURL-matched, all md5-unique (clean; no geo/cache contamination).
+- **Credits:** not recorded this run.
+- **Couldn't get:** post-sunset plans; firmographics (off-site, Qualtrics subsidiary); clean reconcile of pricing table user counts vs. tier cards (conflict noted in unverified_fields).

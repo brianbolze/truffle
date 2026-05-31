@@ -52,12 +52,12 @@ Healthspan is a direct-to-consumer telehealth clinic built around the "longevity
 
 Several distinct, enumerable lines, all subscription:
 
-- **Longevity medications & protocols** (flagship) — The Rapamycin Protocol ($64/mo, "Most Effective"), Topical Rapamycin for skin ($115/mo) and hair ($120/mo), Methylene Blue ($99/mo), Oxytocin / Oxytocin Troche ($135/mo), LDN ($40/mo).
-- **Metabolic** — Acarbose ($25/mo), Metformin ($27/mo), SGLT2 Metabolic Protocol ($99/mo).
-- **GLP-1 / weight** — Zepbound with ongoing care ($299/mo), Wegovy Pill ($149/mo), semaglutide.
-- **Hormone** — Men's (Testosterone cream $64/mo, Enclomiphene $60/mo) and Women's (Bi-Est cream $64/mo, Micronized Progesterone $32/mo).
-- **Programs (memberships)** — Longevity Optimization, GLP-1 Longevity Care, Men's Hormone Health, Women's Hormone Health (each "Starting at $99/mo"); all bundle BioAge+, Coaching, and Personalized Protocols.
-- **Labs** — Longevity Pro ($349 one-time, 80+ biomarkers, CLIA-certified), Longevity Starter ($40), plus Heart/Hormone/Rapamycin-bioavailability panels ($25–$120).
+- **Longevity medications & protocols:** (flagship) The Rapamycin Protocol ($64/mo, "Most Effective"), Topical Rapamycin for skin ($115/mo) and hair ($120/mo), Methylene Blue ($99/mo), Oxytocin / Oxytocin Troche ($135/mo), LDN ($40/mo).
+- **Metabolic:** Acarbose ($25/mo), Metformin ($27/mo), SGLT2 Metabolic Protocol ($99/mo).
+- **GLP-1 / weight:** Zepbound with ongoing care ($299/mo), Wegovy Pill ($149/mo), semaglutide.
+- **Hormone:** Men's (Testosterone cream $64/mo, Enclomiphene $60/mo) and Women's (Bi-Est cream $64/mo, Micronized Progesterone $32/mo).
+- **Programs (memberships):** Longevity Optimization, GLP-1 Longevity Care, Men's Hormone Health, Women's Hormone Health (each "Starting at $99/mo"); all bundle BioAge+, Coaching, and Personalized Protocols.
+- **Labs:** Longevity Pro ($349 one-time, 80+ biomarkers, CLIA-certified), Longevity Starter ($40), plus Heart/Hormone/Rapamycin-bioavailability panels ($25–$120).
 
 Labs are the data wedge — most journeys start or recur with a panel; retesting every 3–6 months is recommended. (Prices are a snapshot — see `unverified_fields`.)
 
@@ -104,4 +104,7 @@ Premium, editorial, science-forward. The full-page screenshot reads as predomina
 
 ## Provenance
 
-Captured 2026-05-30 via Firecrawl (`fc.py`), `maxAge:0` + `location:US`. Pages analyzed: homepage (all formats + screenshot), `/how-it-works`, `/programs`, `/program/longevity`, `/treatments/rapamycin`, `/labs`, `/our-mission` (markdown + links + screenshot each). Verify passed — 7/7 sourceURL-matched, all bodies md5-unique; no geo/cache contamination this run. `rawHtml` returned empty (framework inferred from `/_next/` asset paths). Map sampled ~493 URLs (≈314 of them `/research/article/*` essays — skipped). Not captured: program-membership pricing (behind app signup), per-treatment detail pages beyond rapamycin, corporate/funding facts (not on marketing site).
+- **Pages:** homepage, `/how-it-works`, `/programs`, `/program/longevity`, `/treatments/rapamycin`, `/labs`, `/our-mission` (7) — all Firecrawl (`fc.py`), `maxAge:0` + `location:US`, all formats + screenshot each; `design_framework` inferred from `/_next/` asset paths (`rawHtml` returned empty this run); map sampled ~493 URLs (≈314 `/research/article/*` essays — skipped).
+- **Verify:** 7/7 sourceURL-matched, all bodies md5-unique (clean); no geo/cache contamination this run.
+- **Credits:** not recorded this run.
+- **Couldn't get:** program-membership pricing (behind app.gethealthspan.com signup), per-treatment detail pages beyond rapamycin, corporate/funding facts (not on marketing site).

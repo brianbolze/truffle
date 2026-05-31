@@ -52,13 +52,14 @@ Maximus is a direct-to-consumer "performance medicine" telehealth company. Found
 
 A genuine multi-line catalog, all subscription / direct-pay (no insurance). Testosterone is the flagship and origin line; the rest are explicitly badged **NEW** (mood, labs, peptides):
 
-- **Testosterone** (flagship) — multiple protocol formats: Enclomiphene, Oral Testosterone, Testosterone Cream, Injectable TRT, plus combination protocols (e.g. enclomiphene + tadalafil + testosterone). "Protocols start at $99.99/month… combination protocols… range from $149.99–$199.99/mo." Up to $299.99/mo seen.
-- **Weight Loss** — GLP-1 / GIP: Semaglutide "Starting at $149.99" and Tirzepatide "Starting at $249.99."
-- **Lab Testing** (NEW) — Optimal Panel **$199.99/year**, Maximal Panel **$349.99/year** (up to 146+ biomarkers); At-Home Testosterone Test (10 markers, ~$99.99).
-- **Growth Hormone Peptides** (NEW) — Sermorelin / GHRH peptides, $199.99–$299.99/mo.
-- **Mood & Stress** (NEW) — patent-pending **Oxytocin Calming Cream**, "Starting at $99.99."
-- **Hair Growth** — finasteride/dutasteride/minoxidil orals + All-in-One Gel, $24.99–$79.99/mo.
-- **Blood Flow & ED** — vardenafil / tadalafil / sildenafil. **Prescription multivitamin** — "Building Blocks."
+- **Testosterone (flagship):** multiple protocol formats: Enclomiphene, Oral Testosterone, Testosterone Cream, Injectable TRT, plus combination protocols (e.g. enclomiphene + tadalafil + testosterone). "Protocols start at $99.99/month… combination protocols… range from $149.99–$199.99/mo." Up to $299.99/mo seen.
+- **Weight Loss:** GLP-1 / GIP: Semaglutide "Starting at $149.99" and Tirzepatide "Starting at $249.99."
+- **Lab Testing (NEW):** Optimal Panel **$199.99/year**, Maximal Panel **$349.99/year** (up to 146+ biomarkers); At-Home Testosterone Test (10 markers, ~$99.99).
+- **Growth Hormone Peptides (NEW):** Sermorelin / GHRH peptides, $199.99–$299.99/mo.
+- **Mood & Stress (NEW):** patent-pending **Oxytocin Calming Cream**, "Starting at $99.99."
+- **Hair Growth:** finasteride/dutasteride/minoxidil orals + All-in-One Gel, $24.99–$79.99/mo.
+- **Blood Flow & ED:** vardenafil / tadalafil / sildenafil.
+- **Prescription Multivitamin:** "Building Blocks."
 
 New clients on a 12-month plan get **50% off their first month**; every protocol bundles doctor consults, monitoring, and 24/7 care-team messaging at no extra cost.
 
@@ -112,4 +113,7 @@ Premium, masculine, clinical-but-aspirational. White background with deep-blue (
 
 ## Provenance
 
-Captured 2026-05-31 via Firecrawl (`fc.py`), 8 pages, clean run — all sourceURLs matched, all bodies md5-unique (no §5.1 geo/cache contamination). Pages: homepage (rich: markdown+html+rawHtml+links+branding+screenshot), `/testosterone`, `/weight-loss`, `/labs`, `/growth-hormone-peptides`, `/hair-growth`, `/oxytocin-calming-cream`, `/about-us` (markdown+links+screenshot each). Map returned 337 URLs (mostly `/resources/` blog + `/white-paper/` + paid-LP funnel slugs); catalog reconstructed from homepage links. Pricing quoted is the public "Starting at" anchor — full ladders sit behind the intake flow on `app.maximustribe.com`.
+- **Pages:** homepage (rich: markdown+html+rawHtml+links+branding+screenshot), `/testosterone`, `/weight-loss`, `/labs`, `/growth-hormone-peptides`, `/hair-growth`, `/oxytocin-calming-cream`, `/about-us` (markdown+links+screenshot each) — 8 pages via Firecrawl (`fc.py`), 2026-05-31; map returned 337 URLs (mostly `/resources/` blog + `/white-paper/` + paid-LP funnel slugs); catalog reconstructed from homepage links.
+- **Verify:** all sourceURLs matched, all bodies md5-unique (clean — no §5.1 geo/cache contamination).
+- **Credits:** not recorded this run.
+- **Couldn't get:** full pricing ladders (sit behind intake flow on `app.maximustribe.com`; public "Starting at" anchors only).

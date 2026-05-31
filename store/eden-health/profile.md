@@ -65,10 +65,10 @@ Most products are prescription (ᴿˣ) and compounded. A large SEO blog (~250+ `
 Customer journey: pick a health goal (or product) → free online intake form + telehealth consult with a licensed provider → if eligible, a custom prescription is dispensed by a partner pharmacy and shipped free/expedited to the door → ongoing 24/7 provider messaging, dose adjustments, and an in-app shot tracker via the member portal (`app.eden.health`).
 
 **Revenue = subscription, two-part:** an **Eden Membership** ($39 first month, auto-renews at **$99/month**) is mandatory and unlocks access, *plus* the medication subscription priced separately:
-- Compounded Semaglutide — **$99/mo***
-- Compounded Tirzepatide — **$199/mo***
-- Ozempic® / Zepbound® / Mounjaro® — **$1,399/mo**; Wegovy® — **$1,695/mo**
-- (homepage "from" prices for other lines: NAD+ from $119 first month; Sermorelin from $126 first month; Hair Kit from $83/mo; MIC+B12 from $73 first month)
+- **Compounded Semaglutide ($99/mo*):** compounded GLP-1
+- **Compounded Tirzepatide ($199/mo*):** compounded GLP-1
+- **Ozempic® / Zepbound® / Mounjaro® ($1,399/mo); Wegovy® ($1,695/mo):** branded GLP-1s
+- **Other lines (homepage "from" prices):** NAD+ from $119 first month; Sermorelin from $126 first month; Hair Kit from $83/mo; MIC+B12 from $73 first month
 
 *"\*Price includes medication only, if prescribed. An active Eden Membership is required ($39 for the first month, auto-renews at $99/month thereafter). Membership does not include or guarantee a prescription."* Differentiator: a **"Same Price at Every Dose" guarantee** — flat pricing regardless of dose escalation, no long-term contracts, cancel anytime, FSA/HSA eligible, no insurance needed. Buy-now-pay-later via Klarna & Afterpay. Affiliate/creator program runs through CJ.
 
@@ -126,7 +126,7 @@ Eden is a broad-catalog GLP-1-led telehealth roll-up: weight loss is unmistakabl
 
 ## Provenance
 
-- **Pages analyzed (Firecrawl, 2026-05-30, location US, maxAge:0):** homepage, `/about`, `/treatment/glp-1-treatments`, `/find-your-treatment/global`, `/frequently-asked-questions`, `/reviews` (+ map of 486 URLs, mostly blog). All via `fc.py`; 6 scrapes + 1 map.
-- **Verify:** all sourceURLs matched, all body md5s unique — no §5.1 geo/cache contamination this run.
-- **Visual identity** read from the full-page homepage screenshot + `branding`/`metadata` payloads.
-- **Not captured:** per-product full pricing tiers (behind intake quizzes on app.eden.health / tryeden.com); corporate financials/founding year (not on the marketing site); the goal-selector quiz (`/find-your-treatment/*`) renders thin in markdown (links-only SPA).
+- **Pages:** homepage, `/about`, `/treatment/glp-1-treatments`, `/find-your-treatment/global`, `/frequently-asked-questions`, `/reviews` — 6 scrapes + 1 map (486 URLs, mostly blog); Firecrawl, 2026-05-30, location US, maxAge:0, via `fc.py`; visual identity read from full-page homepage screenshot + `branding`/`metadata` payloads.
+- **Verify:** all sourceURLs matched, all body md5s unique (clean).
+- **Credits:** not recorded this run.
+- **Couldn't get:** per-product full pricing tiers (behind intake quizzes on app.eden.health / tryeden.com); the goal-selector quiz (`/find-your-treatment/*`) renders thin in markdown (links-only SPA); corporate financials/founding year (not on the marketing site).

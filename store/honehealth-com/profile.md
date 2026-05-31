@@ -59,23 +59,23 @@ Hone Health is a DTC telehealth clinic that frames itself as a **longevity platf
 
 Several distinct, separately-positioned lines, split by sex, all wrapped in a membership:
 
-- **Hormone therapy** — the flagship. *Men:* TRT (testosterone injections, cream, dissolvable troches), plus testosterone-supporting/fertility-preserving agents (clomiphene, enclomiphene) and estrogen control (anastrozole). *Women:* menopause HRT — testosterone (injection/cream), estradiol (patch, vaginal cream/Estrace, Vagifem), bi-est cream, progesterone (oral + cream), DHEA.
-- **Weight loss** — GLP-1 and adjuncts: compounded liraglutide, plus naltrexone, bupropion, phentermine, topiramate, sermorelin (men's + women's).
-- **Longevity / peptides** — NAD+, metformin, low-dose naltrexone, glutathione, B12, prescription omega-3 (peptides waitlist live).
-- **Sexual health** — men's ED (sildenafil, tadalafil, PT-141); women's low libido (PT-141, clitoral cream).
-- **Thyroid** — desiccated thyroid, T3, Synthroid (men's + women's).
-- **Hair loss / appearance** — finasteride + minoxidil.
-- **Supplements** — separate storefront at shop.honehealth.com.
-- **Hone at Home** — a concierge in-person arm (Botox $350+, IV Therapy $249+, at-home 40+ biomarker draw $65) in Orlando FL, Denver CO, Phoenix AZ, and NY metro.
+- **Hormone therapy:** the flagship. *Men:* TRT (testosterone injections, cream, dissolvable troches), plus testosterone-supporting/fertility-preserving agents (clomiphene, enclomiphene) and estrogen control (anastrozole). *Women:* menopause HRT — testosterone (injection/cream), estradiol (patch, vaginal cream/Estrace, Vagifem), bi-est cream, progesterone (oral + cream), DHEA.
+- **Weight loss:** GLP-1 and adjuncts: compounded liraglutide, plus naltrexone, bupropion, phentermine, topiramate, sermorelin (men's + women's).
+- **Longevity / peptides:** NAD+, metformin, low-dose naltrexone, glutathione, B12, prescription omega-3 (peptides waitlist live).
+- **Sexual health:** men's ED (sildenafil, tadalafil, PT-141); women's low libido (PT-141, clitoral cream).
+- **Thyroid:** desiccated thyroid, T3, Synthroid (men's + women's).
+- **Hair loss / appearance:** finasteride + minoxidil.
+- **Supplements:** separate storefront at shop.honehealth.com.
+- **Hone at Home:** a concierge in-person arm (Botox $350+, IV Therapy $249+, at-home 40+ biomarker draw $65) in Orlando FL, Denver CO, Phoenix AZ, and NY metro.
 
 ## How it works / model
 
 A four-step journey, marketed as **Measure & Assess → Consult & Plan → Treat & Act → Optimize & Adapt**: (1) buy the **$65 biomarker test + consult** (risk-free entry; complete at a partner lab or via a free at-home nurse draw where available); (2) a licensed physician reviews labs + history and builds a plan (~5 days); (3) medications/supplements ship to the door (~10 days) with ongoing care-team support; (4) retesting and protocol adjustment over time.
 
 Revenue is **subscription** on top of medication cost. Two membership tiers (verbatim, homepage):
-- **Hone Basic — $25/mo** "plus cost of medication": advanced testing of 40+ biomarkers every 6 months, ability to *purchase* telehealth consults, members-only pricing on BASIC medications & supplements.
-- **Hone Premium — $155/mo** "plus cost of medication" ("Chosen by 95% of patients"): 40+ biomarker testing, included physician consults, personalized protocols (testosterone, estrogen, weight loss & more), retesting + follow-ups every 90 days.
-- Entry: **"$65 per Biomarker Test + Consult"** — the funnel's risk-free first step. "No commitments. Cancel anytime."
+- **Hone Basic ($25/mo):** "plus cost of medication": advanced testing of 40+ biomarkers every 6 months, ability to *purchase* telehealth consults, members-only pricing on BASIC medications & supplements.
+- **Hone Premium ($155/mo):** "plus cost of medication" ("Chosen by 95% of patients"): 40+ biomarker testing, included physician consults, personalized protocols (testosterone, estrogen, weight loss & more), retesting + follow-ups every 90 days.
+- **Entry ($65 per Biomarker Test + Consult):** the funnel's risk-free first step. "No commitments. Cancel anytime."
 
 Medication is priced separately per-SKU, "+ membership." Representative captured prices: testosterone from $28/mo, testosterone cream/troches $60/mo, clomiphene $38, enclomiphene $42, anastrozole $22 (men's TRT); estradiol patch $58, bi-est cream $80, progesterone $49 / cream $79, Estrace $40, Vagifem $65, DHEA cream $56 (women's HRT); weight-loss line $60–$160/mo.
 
@@ -117,11 +117,11 @@ Footer — Why Hone: How It Works, Hone Biomarkers /biomarkers, Physicians /phys
 
 ## Credibility & proof
 
-- **Trustpilot 4.8 / 5 across 11,526 reviews** (homepage widget).
-- **LegitScript-approved** (seal links to LegitScript verification of honehealth.com) — a meaningful regulatory trust signal for a prescribing telehealth clinic.
-- Physician-led, with a stated separation: Hone-affiliated medical practices are independently owned/operated by licensed physicians using the Hone telehealth platform (`/clinical-policy`).
-- Compensated-patient testimonials (named, with ages) and named celebrity ambassadors.
-- Dedicated trust pages: `/physicians`, `/consults`, `/clinical-policy`, plus a deep programmatic biomarker library (`/biomarkers/*`).
+- **Trustpilot:** 4.8 / 5 across 11,526 reviews (homepage widget).
+- **LegitScript-approved:** seal links to LegitScript verification of honehealth.com — a meaningful regulatory trust signal for a prescribing telehealth clinic.
+- **Physician-led:** Hone-affiliated medical practices are independently owned/operated by licensed physicians using the Hone telehealth platform (`/clinical-policy`).
+- **Testimonials:** compensated-patient testimonials (named, with ages) and named celebrity ambassadors.
+- **Trust pages:** `/physicians`, `/consults`, `/clinical-policy`, plus a deep programmatic biomarker library (`/biomarkers/*`).
 
 ## Visual & brand impression
 
@@ -129,4 +129,7 @@ Polished, premium, editorial. The identity is built on a single bold **chartreus
 
 ## Provenance
 
-Captured 2026-05-31 via Firecrawl (`maxAge:0`, `location:US`, `waitFor:3500`), 9 credits (1 map + homepage + 7 key pages). Verify passed (all sourceURLs matched, all bodies md5-unique). Pages analyzed: homepage (rich pass: markdown/html/rawHtml/links/branding/screenshot), how-it-works, membership-pricing (JS-walled — chrome only), about, /mens/testosterone-replacement-therapy, /womens/menopause-treatment, /mens/weight-loss, /hone-at-home. Could not get: server-rendered membership-pricing detail (recovered from homepage FAQ instead); per-SKU weight-loss price map; any financials/headcount (not on site). A/B testing (Optimizely) is live, so the capture is a point-in-time snapshot.
+- **Pages:** homepage (rich pass: markdown/html/rawHtml/links/branding/screenshot), how-it-works, membership-pricing (JS-walled — chrome only), about, /mens/testosterone-replacement-therapy, /womens/menopause-treatment, /mens/weight-loss, /hone-at-home (8 pages) — Firecrawl `maxAge:0`, `location:US`, `waitFor:3500`; WordPress site (wp-content + wp-json); Optimizely A/B testing live, capture is a point-in-time snapshot.
+- **Verify:** all sourceURLs matched, all bodies md5-unique (clean).
+- **Credits:** 9 (1 map + homepage + 7 key pages).
+- **Couldn't get:** server-rendered membership-pricing detail (recovered from homepage FAQ instead); per-SKU weight-loss price map; any financials/headcount (not on site).

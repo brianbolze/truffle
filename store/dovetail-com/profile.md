@@ -55,13 +55,13 @@ customer experience, sales/CS, and marketing. Tagline: **"Build with facts, not 
 
 One platform, sold as a stack of AI surfaces (not separately-purchased products):
 
-- **AI Analysis** — *Channels* (auto-classify high-volume tickets/reviews/feedback in real time, trend
+- **AI Analysis:** *Channels* (auto-classify high-volume tickets/reviews/feedback in real time, trend
   digests) and *Projects* (research-grade investigation of calls, docs, surveys → summaries, reports, reels).
-- **AI Chat & Search** — semantic/keyword + RAG search; chat with your data, including via Slack/Teams (`@Dovetail`).
-- **AI Dashboards** (Beta) — turn qualitative data into quantitative charts / sentiment over time.
-- **AI Docs** (Beta) — shareable outputs combining structured insights with customer clips.
-- **AI Agents** (Beta) — autonomous monitoring, doc generation, and risk/opportunity alerts.
-- **API & integrations** — 38 native integrations, open API, CLI, and an **MCP server** (connects to Claude, ChatGPT, Copilot).
+- **AI Chat & Search:** semantic/keyword + RAG search; chat with your data, including via Slack/Teams (`@Dovetail`).
+- **AI Dashboards (Beta):** turn qualitative data into quantitative charts / sentiment over time.
+- **AI Docs (Beta):** shareable outputs combining structured insights with customer clips.
+- **AI Agents (Beta):** autonomous monitoring, doc generation, and risk/opportunity alerts.
+- **API & integrations:** 38 native integrations, open API, CLI, and an **MCP server** (connects to Claude, ChatGPT, Copilot).
 
 ## How it works / model
 
@@ -146,8 +146,7 @@ Chat, Dashboards, Docs, Agents) with an MCP server and AWS Bedrock private infer
 
 ## Provenance
 
-Captured 2026-05-31 via Firecrawl (`maxAge:0`, `location:US`, `waitFor`), 6 pages, all sourceURL-matched
-and md5-unique (no geo/cache contamination). Pages: homepage (rich pass — markdown/html/rawHtml/links/
-branding/screenshot), /pricing/, /enterprise/, /product/ai-analysis/, /solutions/voice-of-customer/,
-/customers/. Framework read from rawHtml (Gatsby). Could not read: per-seat dollar pricing (Enterprise is
-contact-sales) and any firmographics (headcount/funding/revenue — off-site).
+- **Pages:** homepage (rich pass — markdown/html/rawHtml/links/branding/screenshot), /pricing/, /enterprise/, /product/ai-analysis/, /solutions/voice-of-customer/, /customers/ (6) — Firecrawl, `maxAge:0`, `location:US`, `waitFor`; `design_framework` from rawHtml (Gatsby).
+- **Verify:** all sourceURL-matched, all bodies md5-unique (clean; no geo/cache contamination).
+- **Credits:** not recorded this run.
+- **Couldn't get:** per-seat dollar pricing (Enterprise is contact-sales only); firmographics — headcount/funding/revenue not on the marketing site (off-site, deep-research job).

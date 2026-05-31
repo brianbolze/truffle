@@ -50,11 +50,11 @@ Blue Owl Capital (NYSE: OWL) is a publicly-traded alternative asset manager focu
 
 Three distinct investment platforms (each comparison-shopped separately by LPs), plus a cross-platform Insurance Solutions capability and a set of registered/retail-accessible fund products:
 
-- **Credit** ($159.2B AUM; $195B gross originations, 825+ direct-lending deals) — direct lending to PE-sponsored and non-sponsored companies. Strategies: **Direct Lending** (Diversified, Technology, First Lien, Opportunistic), **Alternative Credit** (asset-based finance, specialty finance, equipment leasing), **Investment Grade Credit** (insurance-tailored), **Liquid Credit** (CLO management).
-- **Real Assets** ($85.1B AUM; 6,145+ properties, 865+ tenant relationships) — credit-first real-assets investing. Strategies: **Net Lease** (single-tenant industrial/healthcare/essential-retail/data-center), **Real Estate Credit**, **Digital Infrastructure** (data centers / hyperscaler partnerships).
-- **GP Strategic Capital** ($70.6B AUM; 70+ partnerships, 15-yr track record) — minority equity & financing to other alternative managers. Strategies: **GP Minority Stakes**, **GP Debt Financing**, **Professional Sports Minority Stakes**. Backed by a 55+ person **Business Services Platform** (NY/Menlo Park/London/Hong Kong) providing partner managers strategy, M&A, human-capital, AI/data-science, and procurement support.
-- **Insurance Solutions** — cross-platform capability tailoring alternatives strategies for insurers.
-- **Registered products** (access to the Credit platform): BDCs — **OBDC** (NYSE: OBDC), **OTF** (NYSE: OTF), **OCIC** (non-traded), **OTIC** (non-traded), **OBDC II** (non-traded); plus interval fund **OWLCX** (Blue Owl Alternative Credit Fund). These trade/host on separate domains, not blueowl.com.
+- **Credit ($159.2B AUM; $195B gross originations, 825+ direct-lending deals):** direct lending to PE-sponsored and non-sponsored companies. Strategies: **Direct Lending** (Diversified, Technology, First Lien, Opportunistic), **Alternative Credit** (asset-based finance, specialty finance, equipment leasing), **Investment Grade Credit** (insurance-tailored), **Liquid Credit** (CLO management).
+- **Real Assets ($85.1B AUM; 6,145+ properties, 865+ tenant relationships):** credit-first real-assets investing. Strategies: **Net Lease** (single-tenant industrial/healthcare/essential-retail/data-center), **Real Estate Credit**, **Digital Infrastructure** (data centers / hyperscaler partnerships).
+- **GP Strategic Capital ($70.6B AUM; 70+ partnerships, 15-yr track record):** minority equity & financing to other alternative managers. Strategies: **GP Minority Stakes**, **GP Debt Financing**, **Professional Sports Minority Stakes**. Backed by a 55+ person **Business Services Platform** (NY/Menlo Park/London/Hong Kong) providing partner managers strategy, M&A, human-capital, AI/data-science, and procurement support.
+- **Insurance Solutions:** cross-platform capability tailoring alternatives strategies for insurers.
+- **Registered products:** access to the Credit platform: BDCs — **OBDC** (NYSE: OBDC), **OTF** (NYSE: OTF), **OCIC** (non-traded), **OTIC** (non-traded), **OBDC II** (non-traded); plus interval fund **OWLCX** (Blue Owl Alternative Credit Fund). These trade/host on separate domains, not blueowl.com.
 
 ## How it works / model
 
@@ -98,11 +98,11 @@ Targets five named audiences (per /who-we-serve): **alternative asset managers**
 
 ## Credibility & proof
 
-- Publicly traded (NYSE: OWL); full IR/SEC-filings presence at ir.blueowl.com (quarterly results, dividends, governance).
-- Scale stats: ~$315B AUM, $224B+ permanent capital, 1,390+ employees, 15+ markets.
-- Awards cited: "Seven 2025 PERE and Infrastructure Investor Awards."
-- Active press cadence (fund closes, mergers, executive hires); a Blackstone co-investment (Atlas Holdings, Mar 2026) signals peer credibility.
-- Brand-sponsorship play: "Redefining the game" — sponsors professional tennis players (a visible homepage banner).
+- **Public listing:** NYSE: OWL; full IR/SEC-filings presence at ir.blueowl.com (quarterly results, dividends, governance).
+- **Scale:** ~$315B AUM, $224B+ permanent capital, 1,390+ employees, 15+ markets.
+- **Awards:** "Seven 2025 PERE and Infrastructure Investor Awards."
+- **Press / peer signals:** Active press cadence (fund closes, mergers, executive hires); a Blackstone co-investment (Atlas Holdings, Mar 2026) signals peer credibility.
+- **Sponsorship:** "Redefining the game" — sponsors professional tennis players (a visible homepage banner).
 
 ## Visual & brand impression
 
@@ -114,4 +114,7 @@ Blue Owl is a roll-up success: the 2020 merger of **Owl Rock** (direct lending, 
 
 ## Provenance
 
-Captured 2026-05-30 via Firecrawl (`fc.py`, maxAge:0 + location:US + waitFor). 7 pages: homepage (rich pass: markdown/html/rawHtml/links/branding/images/screenshot), /about-us, /credit, /real-assets, /gp-strategic-capital, /who-we-serve, /our-products. Verify clean — all sourceURLs matched, all body md5s unique (no §5.1 contamination). Map returned 436 URLs but dominated by /our-team/* bios + ir./docs./wealth. subdomain pages; key pages came from homepage links. Not captured: subdomain fund sites (OBDC/OTF own domains), ir.blueowl.com financials, /our-team, /sustainability, /insights — out of Tier-0 scope. Per-fund terms/fees live in SEC filings + fund prospectuses, not on blueowl.com.
+- **Pages:** 7 via Firecrawl (`fc.py`, maxAge:0 + location:US + waitFor) — homepage (rich pass: markdown/html/rawHtml/links/branding/images/screenshot), /about-us, /credit, /real-assets, /gp-strategic-capital, /who-we-serve, /our-products. Map returned 436 URLs, dominated by /our-team/* bios + ir./docs./wealth. subdomain pages; key pages came from homepage links.
+- **Verify:** all sourceURLs matched, all body md5s unique (clean — no §5.1 contamination).
+- **Credits:** not recorded this run.
+- **Couldn't get:** subdomain fund sites (OBDC/OTF own domains), ir.blueowl.com financials, /our-team, /sustainability, /insights — out of Tier-0 scope. Per-fund terms/fees live in SEC filings + fund prospectuses, not on blueowl.com.
