@@ -14,6 +14,7 @@
 - **Use the screenshots.** The visual read (design maturity, imagery, tone) is yours to make and a text scraper can't. Write it in *Visual & brand impression*.
 - **Reconcile across the whole site you captured.** The homepage is one input, not the answer. Apply this to every section, not just the first.
 - **Keep each body section tight** — a few sentences or bullets. Earn a section with evidence; omit it rather than pad with "N/A".
+- **Write the body to be queried, not just read** — enumerable lists (offerings, plans, proof-points) take the **leaf shape** (see *body*, below); interpretive prose stays prose. Don't template sections — shape the lists.
 
 ## `profile.md` — frontmatter
 
@@ -78,17 +79,21 @@ design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/
 
 ## `profile.md` — body
 
-Prose flexes where enums can't — write each section for the company in front of you.
+Prose flexes where enums can't — write each section for the company in front of you. But the body is also an **index** other agents grep, so wherever a section lists *the same kind of thing* (offerings, plans/tiers, proof-points), give each item the **leaf shape**:
+
+> `- **<name>** — <one-line what-it-is> — <verbatim price / metric / qualifier, if any>`
+
+One em-dash separator (one separator = one grep), value quoted verbatim, trailing value dropped when the page shows none. Interpretive sections (Overview, Positioning, Strategic read, Visual) are exempt — don't template them.
 
 | Section | What goes here |
 |---|---|
 | **Overview** | 2–4 sentences: what they do, who for, how. Synthesized across pages, not the meta tag. |
-| **What they offer** | The *shape* of their offerings (lines/categories). Point to `offerings.md` for per-offering detail. |
+| **What they offer** | Enumerate the offering lines/families as **leaf-shape** lines, pricing verbatim where shown — breadth + shape here, per-SKU depth defers to `offerings.md`. |
 | **How it works / model** | Customer journey (e.g. quiz → consult → subscription) + how they make money + delivery. |
 | **Positioning & audience** | Who they target, against whom, their claimed edge. Brief — deep voice work goes to `brand.md`. |
 | **Nav structure** | Their own taxonomy, as a nested list with URLs. Capture the **complete** nav — mega-menu flyouts and dropdowns included; it's the best signal of their offering hierarchy. |
 | **Credibility & proof** | Trust signals: press logos, certifications, # customers, guarantees, testimonial presence. |
-| **Provenance** | Pages analyzed, capture method per page, and what you couldn't get. |
+| **Provenance** | A fixed, greppable set — one line each: **Pages** (analyzed + method) · **Verify** (sourceURL + md5 result) · **Credits** spent · **Couldn't get** (what + why). |
 
 **Optional (only when there's real signal):**
 
@@ -106,7 +111,13 @@ Prose flexes where enums can't — write each section for the company in front o
   > A DTC men's-health telehealth brand. It pairs at-home lab testing with licensed-clinician oversight to deliver TRT, weight-loss, and longevity programs on a monthly membership. Positions as a clinical, data-driven alternative to both in-person clinics and lighter "wellness" telehealth.
 
   **What they offer**
-  > Three lines, all subscription: **Hormone therapy** (TRT, anchored on at-home bloodwork), **Weight loss** (GLP-1 + orals), **Longevity/peptides** (Sermorelin, NAD+). Labs are the wedge — most journeys start with a panel. Per-offering detail in `offerings.md`.
+  > Three lines, all subscription (leaf shape — no public price on these, so the trailing value is dropped):
+  >
+  > - **Hormone therapy** — TRT, anchored on at-home bloodwork
+  > - **Weight loss** — GLP-1 injections + orals
+  > - **Longevity / peptides** — Sermorelin, NAD+
+  >
+  > Labs are the wedge — most journeys start with a panel. Per-offering detail in `offerings.md`.
 
   **Nav structure**
   > ```

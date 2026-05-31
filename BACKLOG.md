@@ -18,8 +18,6 @@ System-level weaknesses, ideas, and TBDs for the engine itself. Light-touch — 
 
 ---
 
-- **Working name "web-research" not final** `[tbd]`
-  Decide before it's load-bearing in skills/paths/remote. "Market Intelligence" is the aspirational name; keep the humble one until the map layer ships.
 - **Rung-3 SQLite index — not yet** `[idea]`
   Build the derived index only when relations (discovery) or time-series (traction) first demand it. Markdown is the source of truth; the index is a regenerable lens. Don't build ahead of a real query.
 - **`offerings.md` / `brand.md` schemas deferred** `[tbd]`
