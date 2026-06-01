@@ -36,4 +36,4 @@ Open question for later: whether enrichment needs an explicit confidence floor (
 
 ---
 
-*Status (2026-06-01): queued as the **combined capture-trust edit** with the openai-capture retro ([BACKLOG](../../BACKLOG.md), priority 1). Not yet applied.*
+*Status (2026-06-01): **applied** as the combined capture-trust edit — landed in [`SCHEMA.md`](../../SCHEMA.md) write rules (the trace / verbatim / prominence bullets + the optional `Enriched (model knowledge)` Provenance line), the [`/research-company`](../../skills/research-company/SKILL.md) verb (step 7), and the Frame/Architecture principles. One tightening on apply: the prior-exception was scoped to **identity resolution only** (ticker, brand→domain) — not all stable facts, so HQ city / founding year are now capture-or-`unverified`, since that's where stale priors creep in.*

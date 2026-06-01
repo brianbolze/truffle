@@ -47,4 +47,4 @@ The recovery worked because the engine has cheap, authoritative ground-truth che
 
 ---
 
-*Status (2026-06-01): items 1–2 are queued as the **combined capture-trust edit** with the memory-vs-capture retro ([BACKLOG](../../BACKLOG.md), priority 1). Not yet applied.*
+*Status (2026-06-01): **applied** as the combined capture-trust edit — item 1 ("one phase per turn") landed in the [`/research-company`](../../skills/research-company/SKILL.md) capture loop; item 2 (grep-or-`unverified`, scoped to volatile facts) in step 7 + [`SCHEMA.md`](../../SCHEMA.md). Item 4 (the literal `fc.py` path) was already fixed; item 3 (prove-a-block-before-switching) stays out of scope. See the [memory-vs-capture retro](2026-05-31-memory-vs-capture.md) for the reconciled SCHEMA changes.*

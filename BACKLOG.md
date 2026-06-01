@@ -42,14 +42,6 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 
 ### Capture quality
 
-- **Capture trust / observation-discipline pass (one combined edit)** `[weakness]` `[md]` `[@brian]`
-  One coherent SCHEMA + verb edit — four strands of the same theme, *quote observations, don't assert interpretations*:
-  - **Two retros, reconciled.** [memory-vs-capture](_design/retro/2026-05-31-memory-vs-capture.md): soften SCHEMA "never infer from priors" → *stable-anchored-and-marked OK; volatile/causal = capture-only* + a `Provenance: Enriched (model knowledge): …` marker. [openai-capture](_design/retro/2026-05-31-openai-capture-retro.md): SKILL "one phase per turn" + "grep-it-or-unverified **scoped to volatile facts**" (the scope is what makes the two agree) + fix the literal `fc.py` path.
-  - **"Verbatim is gold" → a named principle** (Frame/Architecture, echoed in the verb + SCHEMA write rules): the positive practice behind grep-or-unverified — a quote can't be fabricated past the grep check, and verbatim blocks priors from leaking into paraphrase. A natural anti-hallucination mechanism.
-  - **Emphasis ≠ adoption guardrail.** Record what a site *foregrounds/pushes* as an observation; **never infer flagship / market-position / adoption from prominence** (the Microsoft CoPilot trap). Self-reported proof ("trusted by 10M") is captured **verbatim and flagged as self-reported**, never endorsed. (Market-leadership ranking is a separate consumer-layer job — deferred to a future Frame session, not built into capture.)
-  The OpenAI run near-missed fabricated prices into the store — highest trust-per-hour item here.
-  **Act when:** next — the priority-1 engine-correctness edit.
-
 - **Better `/map` guidance so results aren't 90% blog / docs** `[weakness]` `[sm]` `[@brian]`
   The map step over-returns articles and documentation, drowning product/pricing pages — hit on the Cloudflare and Datadog runs (should be noted in their `site_notes`).
 
