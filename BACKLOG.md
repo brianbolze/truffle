@@ -35,6 +35,9 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 - **Add a `specialties` field to profile frontmatter** `[idea]` `[sm]` `[@brian]`
   A multi-select, non-constrained list of what the company is known for doing / offering.
 
+- **Add a `socials` frontmatter field (LinkedIn, X, Instagram, …)** `[idea]` `[sm]` `[@brian]`
+  A small map filled when present — `linkedin` / `x` / `instagram` / `youtube` / `facebook` / `tiktok`. Multi-source, **not** JSON-LD-only: `sameAs` (rawHtml) is the cleanest, but near-universal footer/header anchors to the social domains are a free fallback (markdown links + `rawHtml`). Additive → MINOR bump. Overlaps the discoverability item's `linkedin`/`x`/`wikipedia` external-links hook; capture rides the `rawHtml` read ↑ (the [signal audit](experiments/2026-06-01-signal-audit/FINDINGS.md) found 0/profiles carry socials today, all 6 sampled JSON-LDs do).
+
 ### Capture quality
 
 - **Junk soft-404 stubs slip past verify** `[weakness]` `[sm]`
