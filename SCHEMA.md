@@ -74,7 +74,7 @@ design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/
 
 *`favicon` and `website_url` are **derived from `domain`** at read time — never stored.*
 
-*Relations (`parent` / `owns`) hold the related entity's canonical **domain slug** (the store-key form, e.g. `kenvue.com`) so the rung-3 index can JOIN on it. No resolvable domain (a brand folded under the parent's site; a holding co with no site)? Record the **name in quotes** and accept it's un-joinable until it earns one — never mix a bare name and a domain as if both were keys.*
+*Relations (`parent` / `owns`) hold the related entity's canonical **dotted domain** (e.g. `kenvue.com`, or a subdomain like `gshock.casio.com`) — **not** the dashed dir-slug. A JOIN folds the value to the store-slug with the same lowercase + dots→dashes rule the dirs use (`canon()` in [`scripts/store.py`](scripts/store.py)), so the two forms can never silently miss each other. No resolvable domain (a brand folded under the parent's site; a holding co with no site)? Record the **name in quotes** and accept it's un-joinable until it earns one — never mix a bare name and a domain as if both were keys.*
 
 *`site_notes` is **carry-forward only** — durable, site-specific facts the next capture needs (JS-walled nav, geo traps, where pricing hides), so the next run inherits the playbook instead of re-discovering it. One-time run narration ("no contamination this run," credits spent) belongs in the **Provenance** body section, not here.*
 

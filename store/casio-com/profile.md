@@ -6,7 +6,7 @@ domain: casio.com
 name: Casio
 aliases: ["Casio Computer Co., Ltd.", world.casio.com]
 parent: []
-owns: [gshock-casio-com, edifice-watches-com]
+owns: [gshock.casio.com, edifice-watches.com]
 
 # Capture meta
 captured_at: 2026-05-31
