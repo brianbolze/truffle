@@ -10,9 +10,9 @@ parent: []
 owns: ["ezra.com"]              # acquired Ezra (medical imaging); Ezra runs as a named brand under Function — leadership + scans integrated. Domain slug unconfirmed against ezra.com — see unverified_fields.
 
 # Capture meta
-captured_at: 2026-05-31
+captured_at: 2026-06-01
 capture_method: firecrawl
-site_notes: "Webflow (data-wf-* ×400 + cdn.prod.website-files.com; branding.designSystem said 'custom' — wrong, per the §5.4 rule). App lives on my.functionhealth.com; marketing on www. Logo is an inline data-URI SVG wordmark → use favicon fallback. Membership price ($365/yr, '$1/day') is on homepage + /pricing; scans pricing (member vs list, via Ezra) only on /scans. Long biomarker/condition marquees repeat the same terms many times in markdown — animation noise, not data. Footnote: $365 lab membership excluded in NY & NJ. No A/B tool fingerprinted, but $365 is 'first-year' promotional framing and scan prices show strikethrough promos — treat pricing as a snapshot."
+site_notes: "Webflow (data-wf-* ×400 + cdn.prod.website-files.com; branding.designSystem said 'custom' — wrong, per the §5.4 rule). App lives on my.functionhealth.com; marketing on www. Logo is an inline data-URI SVG wordmark → use favicon fallback. Membership price ($365/yr, '$1/day') is on homepage + /pricing; scans pricing (member vs list, via Ezra) only on /scans. Long biomarker/condition marquees repeat the same terms many times in markdown — animation noise, not data. Footnote: $365 lab membership excluded in NY & NJ. No A/B tool fingerprinted, but $365 is 'first-year' promotional framing and scan prices show strikethrough promos — treat pricing as a snapshot. 2026-06-01 re-verify: re-scraped homepage + /pricing + /scans only (3 pages, 3 credits) — ALL pricing unchanged from the 2026-05-31 full capture ($365/yr; MRI $999→$899, MRI+Spine $1699→$1,499, MRI Skeletal/Neuro $3,999, Heart CT $349, Lungs CT $399, $200 scan credit). /pricing also surfaces an FAQ link 'MRI starting at $499' and out-of-pocket comparison stats ($12,022/yr diabetes, $4,423/yr heart failure, $2,529/day hospital). Scan booking now routes to my.ezra.com 'Book directly with Ezra' alongside the Function signup. Body sections below carried forward from the 2026-05-31 capture (still accurate)."
 key_pages:
   how_it_works: /how-it-works
   what_we_test: /what-we-test
@@ -115,7 +115,8 @@ The **Ezra acquisition** is the headline move: Function is bolting structural im
 
 ## Provenance
 
-- **Pages:** homepage, /how-it-works, /what-we-test, /scans, /pricing, /about, /why-choose-function (7 captures) — Firecrawl scrape, all-formats homepage + markdown/links/screenshot on key pages, `maxAge:0` + `location:US`.
+- **2026-06-01 re-verify (this run):** re-scraped the 3 pricing-bearing pages — homepage, /pricing, /scans (3 credits) — at the user's request to confirm pricing isn't stale. All sourceURLs matched, all bodies unique (verify clean). **Every price is unchanged** from the 2026-05-31 capture; prior full capture moved to `captures/_archive/2026-05-31`. Body sections below are carried forward (still accurate).
+- **2026-05-31 full capture:** homepage, /how-it-works, /what-we-test, /scans, /pricing, /about, /why-choose-function (7 captures) — Firecrawl scrape, all-formats homepage + markdown/links/screenshot on key pages, `maxAge:0` + `location:US`.
 - **Verify:** all 7 sourceURLs matched; all body md5s unique (no §5.1 contamination).
-- **Credits:** 8 (1 map + 1 homepage + 6 key pages); no enhanced-proxy or PDF add-ons.
+- **Credits:** 8 (1 map + 1 homepage + 6 key pages) on the original capture, + 3 on the 2026-06-01 re-verify; no enhanced-proxy or PDF add-ons.
 - **Couldn't get:** member-app-gated add-on/scan à-la-carte pricing; member count; the parent↔Ezra domain relation from ezra.com itself (inferred). Long biomarker/condition marquees are animated repeats — treated as noise.
