@@ -38,6 +38,18 @@ This is the strongest "leaving signal on the table" evidence in the audit: it's 
 
 **Caveat (same discipline as `branding`):** self-authored ⇒ seed-to-verify, never blind-trust. It can be marketing-shaped (hims folds in the combined "hims & hers" brand), stale, or absent (11/43 have none), and `@type` varies. Treat it like the branding payload: a hint Opus confirms against the page, not a source of truth.
 
+### Update — probe 4 (the enrichment-delta check, [`probe4_jsonld.py`](probe4_jsonld.py))
+
+Ran the actual delta on 6 profiles. It **tempers this headline**: the recently re-enriched profiles *already* capture most identity basics (founders, HQ, description, parent) from the about page, so JSON-LD's marginal value there is **confirmation + structuring, not new facts**. What's genuinely net-new and JSON-LD-only:
+
+- **`sameAs` social/Wikipedia URLs — 0/6 profiles have a socials field; all 6 JSON-LDs carry them.** The standout; ties to the discoverability item's `linkedin`/`x`/`wikipedia` external-links hook.
+- **Self-reported `AggregateRating`** — clari `9.2 (5602)`, usertesting `4.25 (1034)`, both verified absent → clean Credibility fill (verbatim + flagged).
+- **Verbatim `legalName` / exact `foundingDate` / `medicalSpecialty`** where prose enrichment skipped or fuzzed them — honehealth `Time Therapeutics, Inc.` + `[Endocrinology, Menopause, Andrology]` confirmed absent (exact grep).
+
+Correction to the examples above: hims' "hims & hers" *is* captured — in `parent:` and prose — but the queryable **`aliases:` field is just `[www.hims.com]`**, so JSON-LD's `alternateName` would still populate the structured field. Net: the case for reading JSON-LD is **reliability + queryable structure + socials/ratings**, less "buried facts" than the headline implied.
+
+Implementation note: `<header>` extracts cleanly 4/6, hims needs a `<nav>` fallback, **marek has neither** (nav in a div) — so the nav-slice selector isn't just `<header>`; fall back to `<nav>`/`role=banner`, and validate against the screenshot (as the nav item already says).
+
 ---
 
 ## Per-format detail
