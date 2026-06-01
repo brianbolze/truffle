@@ -26,6 +26,8 @@ P = {p.split("/")[1]: frontmatter(p) for p in glob.glob("store/*/profile.md")}
 # P -> {slug: {field: value}}; lists come back as lists.
 ```
 
+**Resolve the company to its key first.** Domain is the key — but a question arrives as a *name*, an *old domain*, or an *alias*. `python scripts/store.py find <x>` (or `from store import resolve`) folds any surface form to the one slug; hand-matching silently misses non-obvious hits (`SendGrid → twilio-com`, `chatgpt.com → openai-com`, `salesloft.com → clari-com` post-merger). This and the relations join-check (Recipe 3) are the only two reads worth a script — everything else below is a one-line filter.
+
 ## Recipes
 
 **1. Point read** — *"tell me about <company>"* → read `store/<slug>/profile.md`. One ~10KB file; the body sections answer most asks. No tooling, every entity type.
@@ -38,10 +40,11 @@ Counter(p.get("business_model") for p in P.values())                 # group-by 
 ```
 Multi-selects are **ranked** — position 1 is *primary*. `tm[0]=="B2B"` means "primarily B2B"; membership means "sells B2C at all." Test membership, never equality.
 
-**3. Relations** — *"who owns X", "all brands of Y"* → `parent` / `owns` hold a **domain slug** (joinable to another profile) or a **quoted name** (no domain, so not joinable — expected).
+**3. Relations** — *"who owns X", "all brands of Y"* → `parent` / `owns` hold a **dotted domain** (joinable to another profile, folded via `canon()`) or a **quoted name** (no domain, so not joinable — expected).
 ```python
 {s: p.get("owns") for s,p in P.items() if p.get("owns")}
 ```
+To see which targets actually resolve to a held profile — and rank the dangling ones as re-capture candidates by in-degree (the parent two captured brands share is the highest-value next capture) — run `python scripts/store.py relations`. Doing this by eye across the corpus miscounts; today it's 1 joinable / 23 dangling / 8 name-only.
 
 **4. Cross-brand pricing** — *"compare GLP-1 prices across the cohort"* → the hard path, with a real ceiling:
 - **Intra-cohort only.** "Price" isn't comparable across business types (`$/mo` vs take-rate `%` vs AUM fee vs per-night) — compare within one like cohort.
