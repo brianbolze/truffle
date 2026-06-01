@@ -8,7 +8,7 @@ screenshots into store/<slug>/captures/<date>/, and records a manifest for the
 profile-writing (that's the agent's enrichment job, per SCHEMA.md).
 
 Usage:
-  fc.py map    <url> --slug <slug> [--search TERM] [--limit 500] [--date YYYY-MM-DD]
+  fc.py map    <url> --slug <slug> [--search TERM] [--limit 500] [--subdomains] [--date YYYY-MM-DD]
   fc.py scrape <url> --slug <slug> --name <name> [--homepage] [--wait 3500] [--proxy auto] [--date ...]
   fc.py verify --slug <slug> [--date ...]   # scrapes: md5-dedup + sourceURL match; + lint profile.md once written
   fc.py spend  --slug <slug> [--date ...]   # this run's attributed cost, summed from per-call creditsUsed
@@ -62,8 +62,17 @@ def post(endpoint, body):
         return json.load(r)
 
 
-def do_map(url, slug, search, limit, date):
-    body = {"url": url, "limit": limit, "location": {"country": "US"}}
+def do_map(url, slug, search, limit, date, subdomains=False):
+    # includeSubdomains defaults FALSE: a docs/dev subdomain (developers./docs.)
+    # otherwise swamps the map AND starves the marketing host's crawl — Cloudflare
+    # surfaced 4 www URLs with it on, 460 with it off. --subdomains opts back in for
+    # the rare signal subdomain (e.g. investors.), which the homepage also links (§5.3).
+    body = {
+        "url": url,
+        "limit": limit,
+        "location": {"country": "US"},
+        "includeSubdomains": subdomains,
+    }
     if search:
         body["search"] = search
     out = post("map", body)
@@ -329,6 +338,8 @@ if __name__ == "__main__":
     m.add_argument("--slug", required=True)
     m.add_argument("--search")
     m.add_argument("--limit", type=int, default=500)
+    m.add_argument("--subdomains", action="store_true",
+                   help="include subdomains (default: off — drops the docs/dev swamp, §5.3)")
     m.add_argument("--date", default=TODAY)
     s = sub.add_parser("scrape")
     s.add_argument("url")
@@ -347,7 +358,7 @@ if __name__ == "__main__":
     sub.add_parser("credits")
     a = ap.parse_args()
     if a.cmd == "map":
-        do_map(a.url, a.slug, a.search, a.limit, a.date)
+        do_map(a.url, a.slug, a.search, a.limit, a.date, a.subdomains)
     elif a.cmd == "scrape":
         do_scrape(a.url, a.slug, a.name, a.homepage, a.wait, a.proxy, a.date)
     elif a.cmd == "verify":
