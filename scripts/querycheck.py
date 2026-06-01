@@ -25,6 +25,18 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STORE = os.path.join(ROOT, "store")
 
+
+def ver_tuple(v):
+    """Normalize a schema_version (int 1, str '1.0', '1.10') to a (major, minor) tuple; None if unparseable."""
+    m = re.fullmatch(r"\s*(\d+)(?:\.(\d+))?\s*", str(v))
+    return (int(m.group(1)), int(m.group(2) or 0)) if m else None
+
+
+def current_schema_version(path):
+    """The contract's current version, parsed from SCHEMA.md's 'Current contract version' anchor — the single source of truth."""
+    m = re.search(r"Current contract version:\s*`(\d+(?:\.\d+)?)`", open(path, encoding="utf-8").read())
+    return ver_tuple(m.group(1)) if m else None
+
 # Fields the QUERYING.md recipes reference by name — a rename/removal breaks a recipe.
 RECIPE_FIELDS = [
     "schema_version",
@@ -109,6 +121,12 @@ if strict:
         )
         tax_sets = None  # can't enum-check without the sets; structural pass still runs and reports
 
+cur_ver = current_schema_version(os.path.join(ROOT, "SCHEMA.md"))
+if cur_ver is None:
+    warns.append(
+        "could not parse 'Current contract version' from SCHEMA.md — schema_version gate skipped."
+    )
+
 profiles = sorted(glob.glob(os.path.join(STORE, "*", "profile.md")))
 if not profiles:
     sys.exit("FAIL: no store/*/profile.md found.")
@@ -132,6 +150,16 @@ for p in profiles:
         fails.append(f"{slug}: frontmatter did not parse to a mapping.")
         continue
     seen_fields |= set(fm)
+    sv = fm.get("schema_version")
+    pv = ver_tuple(sv)
+    if sv is not None and pv is None:
+        fails.append(
+            f"{slug}: schema_version '{sv}' isn't MAJOR.MINOR — readers can't gate on it."
+        )
+    elif pv and cur_ver and pv[0] > cur_ver[0]:
+        warns.append(
+            f"{slug}: schema_version {sv} claims a major newer than SCHEMA.md's {cur_ver[0]}.{cur_ver[1]} — drift or typo?"
+        )
     for f in MULTISELECT:
         if fm.get(f) is not None and not isinstance(fm[f], list):
             fails.append(

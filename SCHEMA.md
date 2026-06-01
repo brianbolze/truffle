@@ -1,5 +1,7 @@
 # SCHEMA — the store contract
 
+> **Current contract version: `2.0`.** This is what new captures stamp as `schema_version`. Bump rules + the version history are in the `schema_version` note below (under the frontmatter block).
+
 > **What this is.** The contract between *capture* (a `/research-company` agent writes it) and *query* (any agent reads it). It's written to be read by an Opus-class agent that has the **whole capture** in context — multiple pages, screenshots, and the Firecrawl `branding` + `metadata` payloads — not a quick homepage skim.
 
 *Companion: [`TAXONOMIES.md`](TAXONOMIES.md) holds the closed value sets; [`QUERYING.md`](QUERYING.md) is the consume-side companion (how to read profiles back). Scope: commercial companies + products.*
@@ -24,7 +26,7 @@ Stable, queryable, cheap. Closed-set fields draw from [`TAXONOMIES.md`](TAXONOMI
 ```yaml
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: 1                    # contract MAJOR.MINOR the profile obeys; readers gate on it (see note below)
+schema_version: "2.0"                # contract MAJOR.MINOR this profile obeys; querycheck warns if it outruns SCHEMA's current version (see note below)
 
 # Identity
 domain: honehealth.com               # primary key
@@ -68,10 +70,14 @@ design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/
 *The first frontmatter line is a fixed pointer to [`QUERYING.md`](QUERYING.md) — **identical boilerplate on every profile**, so an agent that opens a `profile.md` cold (a deep path that never passed the store README) still finds the query contract. It's a YAML comment (the parser ignores it) and is store infrastructure, not a description of the company — carry it forward verbatim; the "describe the company, not the engine" rule doesn't reach a fixed template pointer.*
 
 *`schema_version` is the contract the profile obeys — the field / value / section set, **not** the prose docs (a docs-only edit like wording changes nothing). It's `MAJOR.MINOR`:*
-- ***MAJOR*** *(`1`→`2`) — a **breaking** change: a field removed/renamed, or a closed-set value whose meaning changed. Old profiles are now non-conformant — migrate `store/`, re-capture where needed, run `scripts/querycheck.py`.*
-- ***MINOR*** *(`1.0`→`1.1`) — an **additive**, backward-compatible change: a new optional field, value, or section. No backfill; the number just lets a reader read an empty new field in an older profile as "predates the field," not "missing data."*
+- ***MAJOR*** *(`1`→`2`) — a **breaking** change: a field removed/renamed, or a closed-set value whose meaning changed. Old profiles are now non-conformant — migrate `store/`, re-capture where needed, **re-stamp every profile to the new version**, run `scripts/querycheck.py`.*
+- ***MINOR*** *(`1.0`→`1.1`) — an **additive**, backward-compatible change: a new optional field, value, or section. **No backfill, no re-stamp** — grandfather the old number, so an empty new field in an older profile reads as "predates the field," not "missing data."*
 
-*Store it as a quoted string (`"1.0"`) so a future `"1.10"` doesn't collapse to the float `1.1`. Current profiles write a bare `1` (≡ `1.0`); the explicit string becomes canonical at the next version change.*
+*Store it as a quoted string (e.g. `"2.0"`) so a future `"1.10"` doesn't collapse to the float `1.1`. The stamp is **the version a profile was authored or last migrated under** — a MAJOR re-stamps the whole store as its closing step, so the number always answers "does this obey the current contract?" Grandfathering (leave the old number) is **MINOR-only**, where an empty new field must still read as "predates it." New captures stamp the current contract version (above), quoted.*
+
+*<a id="schema_version-note"></a>**Version history** — the referent that makes a bump mean something: a reader compares their profile's number to this list (not a `git blame`) to read an empty field as "predates it" vs "missing." Append one line per bump.*
+- ***1.0*** *— initial contract: the identity / capture-meta / classification / visual-identity frontmatter and the body sections defined in this doc.*
+- ***2.0*** *— `offering_category`: renamed `Hardware / Physical Products` → `Physical Products / Hardware`, removed `Apparel & Footwear` (folded physical-goods makers — watches, apparel — into Physical Products), added per-value exemplars + a maker-vs-reseller rule. Re-mapped 9 profiles' values; re-stamped all 44 to `"2.0"`.*
 
 *`favicon` and `website_url` are **derived from `domain`** at read time — never stored.*
 
@@ -99,7 +105,7 @@ The bold lead-in is the load-bearing part — `rg '^- \*\*'` enumerates the item
 | **Positioning & audience** | Who they target, against whom, their claimed edge. Brief — deep voice work goes to `brand.md`. |
 | **Nav structure** | Their own taxonomy, as a nested list with URLs. Capture the **complete** nav — mega-menu flyouts and dropdowns included; it's the best signal of their offering hierarchy. |
 | **Credibility & proof** | Trust signals: press logos, certifications, # customers, guarantees, testimonial presence. Capture self-reported proof ("trusted by 10M") **verbatim and flagged self-reported** — record the claim, never endorse it as fact. |
-| **Provenance** | A fixed, greppable set — one line each: **Pages** (analyzed + method) · **Verify** (sourceURL + md5 result) · **Credits** spent · **Couldn't get** (what + why). Optionally **Enriched** (model knowledge) — *only* the rare identity prior taken from the model, not the page (e.g. `Enriched (model knowledge): ETSY ticker; Reverb→reverb.com`); distinct from `unverified_fields` ("couldn't get it"), this is "got it — from the model, not the site." |
+| **Provenance** | A fixed, greppable set — one line each: **Pages** (analyzed + method) · **Verify** (sourceURL + md5 result) · **Credits** spent · **Couldn't get** (what + why). Optionally **Enriched** (model knowledge) — *only* the rare identity prior taken from the model, not the page (e.g. `Enriched (model knowledge): ETSY ticker; Reverb→reverb.com`); distinct from `unverified_fields` ("couldn't get it"), this is "got it — from the model, not the site." Optionally **Migrations** — added only to a profile a later migration *rule-rewrote* (not re-captured), one line per migration: date, version delta, value before→after (see [Migrations](#migrations)). |
 
 **Optional (only when there's real signal):**
 
@@ -135,6 +141,19 @@ The bold lead-in is the load-bearing part — `rg '^- \*\*'` enumerates the item
   > ```
 
 </details>
+
+## Migrations
+
+When a **MAJOR** bump (see `schema_version`) makes existing profiles non-conformant, migrate the store in one pass. Steps:
+
+1. **Edit the contract** — update [`SCHEMA.md`](SCHEMA.md) / [`TAXONOMIES.md`](TAXONOMIES.md), bump the *Current contract version* at the top, add a Version-history line.
+2. **Re-map values** in `store/` — change only the affected fields; never re-write prose a migration can't justify.
+3. **Mark what you rewrote** — append a **Migrations** line to the Provenance section of *every profile whose values changed* (date, version delta, before→after). This preserves the trust chain: a migrated value traces to a *rule*, not to that capture.
+4. **Re-stamp all profiles** to the new version (the migration's closing step) — a uniform stamp is the signal that the whole store obeys the current contract.
+5. **`python3 scripts/querycheck.py --strict`** — proves every value conforms; this is what makes the re-stamp honest.
+6. **Commit** as one logical change; the diff is the record (no separate migration script kept unless it's genuinely non-trivial).
+
+*MINOR/additive bumps skip all of this — no re-map, no re-stamp (grandfather the old number).*
 
 ## Tier-1 modules (opt-in, separate docs)
 
