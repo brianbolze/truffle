@@ -44,7 +44,7 @@ formats: ["markdown","html","rawHtml","links","branding","images",{"type":"scree
 |---|---|
 | `markdown` | Clean body copy — default extraction surface. |
 | `html` | Cleaned HTML. **Recovery surface for JS-walled values** (linear's `$` prices were scrambler artifacts in markdown, clean in html). |
-| `rawHtml` | Unmodified `<head>`/`<script>` — **source of truth for framework** (`__NEXT_DATA__`, `/_next/`); don't trust `branding.designSystem` (§5.4). |
+| `rawHtml` | Unmodified `<head>`/`<script>`. **Source of truth for framework** (`__NEXT_DATA__`, `/_next/`; not `branding.designSystem`, §5.4) **and the enrichment structured-layer read** — its JSON-LD identity graph + `<header>`/`<nav>` hierarchy, sliced by `fc.py signals` (SCHEMA's *Structured layer* note). |
 | `links` | On-page anchor inventory — feeds nav reconstruction when the nav is client-rendered. |
 | `branding` | Structured visual identity (colors, fonts, typography, `colorScheme`). **Must be requested explicitly** — omitting it cost linear a re-scrape. |
 | `images` | All image URLs — feeds the logo fallback chain (§5.4). Default to homepage only. |

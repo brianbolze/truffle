@@ -40,6 +40,8 @@ Counter(p.get("business_model") for p in P.values())                 # group-by 
 ```
 Multi-selects are **ranked** — position 1 is *primary*. `tm[0]=="B2B"` means "primarily B2B"; membership means "sells B2C at all." Test membership, never equality.
 
+`specialties` (open-vocab vertical tags, e.g. `Endocrinology`) is an *unranked* multi-select — test membership, but it's free-text so normalize/case-fold before matching, not against TAXONOMIES. `socials` is a `{platform: url}` map — test key presence (`"linkedin" in (p.get("socials") or {})`). Both are `schema_version` ≥ 2.1; an empty/absent value on an older profile means "predates the field," not "has none" (grandfathered — check the stamp before reporting a negative).
+
 **3. Relations** — *"who owns X", "all brands of Y"* → `parent` / `owns` hold a **dotted domain** (joinable to another profile, folded via `canon()`) or a **quoted name** (no domain, so not joinable — expected).
 ```python
 {s: p.get("owns") for s,p in P.items() if p.get("owns")}

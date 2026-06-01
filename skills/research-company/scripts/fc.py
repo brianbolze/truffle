@@ -10,8 +10,9 @@ profile-writing (that's the agent's enrichment job, per SCHEMA.md).
 Usage:
   fc.py map    <url> --slug <slug> [--search TERM] [--limit 500] [--subdomains] [--date YYYY-MM-DD]
   fc.py scrape <url> --slug <slug> --name <name> [--homepage] [--wait 3500] [--proxy auto] [--date ...]
-  fc.py verify --slug <slug> [--date ...]   # scrapes: md5-dedup + sourceURL match; + lint profile.md once written
-  fc.py spend  --slug <slug> [--date ...]   # this run's attributed cost, summed from per-call creditsUsed
+  fc.py verify  --slug <slug> [--date ...]  # scrapes: md5-dedup + sourceURL match; + lint profile.md once written
+  fc.py spend   --slug <slug> [--date ...]  # this run's attributed cost, summed from per-call creditsUsed
+  fc.py signals --slug <slug> [--name homepage] [--date ...]  # slice rawHtml's JSON-LD + nav region (step-7 hint read, free)
   fc.py credits                             # GET /v2/team/credit-usage — global headroom only (free, 0 credits)
 
 verify runs at two points: pre-write (step 6) it checks scrape integrity; re-run post-write
@@ -330,6 +331,139 @@ def do_credits():
     print(json.dumps(out, indent=2))
 
 
+# --- structured-layer slice (step-7 enrichment read) -----------------------
+# Surfaces the two underused rawHtml regions enrichment reads as HINTS (confirm
+# against the page/screenshot, never blind-trust — same discipline as branding):
+# the JSON-LD identity graph + the <header>/<nav> region whose mega-nav hierarchy
+# markdown flattens. Deterministic slice — grep + pretty-print, NOT extraction (no
+# LLM / schema / reconciliation; the anti-Doro line holds). Reads the persisted
+# homepage payload; spends nothing. SCHEMA.md "Structured layer" says what lands where.
+NAV_KEEP_ATTR = re.compile(
+    r"^(href|aria-controls|aria-haspopup|aria-expanded|aria-label|role)$", re.I
+)
+
+
+def latest_payload(slug, name, date):
+    """<name>.json under captures/<date>, else the most recent capture that has it
+    (enrichment may run a day after capture, or replay an old one). -> (path|None, date)."""
+    direct = ROOT / "store" / slug / "captures" / date / ".payloads" / f"{name}.json"
+    if direct.exists():
+        return direct, date
+    cands = sorted((ROOT / "store" / slug / "captures").glob(f"*/.payloads/{name}.json"))
+    if cands:
+        return cands[-1], cands[-1].parents[1].name
+    return None, None
+
+
+def jsonld_blocks(raw):
+    """Parsed ld+json blocks from rawHtml; tolerant — a malformed block yields (False, raw)."""
+    out = []
+    for b in re.findall(
+        r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', raw, re.S | re.I
+    ):
+        b = b.strip()
+        try:
+            out.append((True, json.loads(b)))
+        except Exception:
+            out.append((False, b))
+    return out
+
+
+def jsonld_types(obj, acc):
+    """Every @type present (flatten @graph/lists) — a scan aid for the reader."""
+    if isinstance(obj, list):
+        for x in obj:
+            jsonld_types(x, acc)
+    elif isinstance(obj, dict):
+        t = obj.get("@type")
+        if isinstance(t, str):
+            acc.add(t)
+        elif isinstance(t, list):
+            acc.update(x for x in t if isinstance(x, str))
+        for v in obj.values():
+            jsonld_types(v, acc)
+
+
+def slim_nav(s):
+    """Drop inline svg/style/script + attribute noise (Tailwind class-soup is the
+    bulk), keep href + aria-* + role + tag structure — so the flyout hierarchy reads
+    at a few KB, not tens, while its NESTING (the part markdown loses) survives."""
+    s = re.sub(r"<svg\b.*?</svg>", " ", s, flags=re.S | re.I)
+    s = re.sub(r"<(style|script|template|noscript)\b.*?</\1>", " ", s, flags=re.S | re.I)
+    s = re.sub(r"<!--.*?-->", " ", s, flags=re.S)
+
+    def keep(m):
+        tag, attrs = m.group(1), m.group(2) or ""
+        kept = [
+            f'{k}="{v}"'
+            for k, v in re.findall(r'([\w:-]+)="([^"]*)"', attrs)
+            if NAV_KEEP_ATTR.match(k)
+        ]
+        return f"<{tag}" + (" " + " ".join(kept) if kept else "") + ">"
+
+    s = re.sub(r'<([\w:-]+)((?:\s+[\w:-]+="[^"]*")*)\s*/?>', keep, s)
+    s = re.sub(r"[ \t]+", " ", s)
+    s = re.sub(r">\s+<", "><", s)
+    return s.strip()
+
+
+def nav_region(raw):
+    """The <header> region, else the first <nav>, slimmed. -> (selector|None, slim)."""
+    for sel, pat in (("header", r"<header\b.*?</header>"), ("nav", r"<nav\b.*?</nav>")):
+        m = re.search(pat, raw, re.S | re.I)
+        if m:
+            return sel, slim_nav(m.group(0))
+    return None, ""
+
+
+def do_signals(slug, name, date):
+    p, used = latest_payload(slug, name, date)
+    if p is None:
+        sys.exit(f"signals: no {name}.json under store/{slug}/captures/* — capture the homepage first")
+    data = json.loads(p.read_text())
+    data = data.get("data", data)
+    raw = data.get("rawHtml")
+    print(f"=== signals {slug} ({name}.json, {used}) ===")
+    print(
+        "  HINT layer — confirm every value against the page/screenshot before it lands "
+        "(self-authored: can be marketing-shaped, stale, or absent). SCHEMA 'Structured layer'."
+    )
+    if not raw:
+        sys.exit(
+            f"  no rawHtml in {name}.json — signals reads the homepage rich pass "
+            f"(only --homepage scrapes carry rawHtml)"
+        )
+    blocks = jsonld_blocks(raw)
+    print(f"\n## JSON-LD  ({len(blocks)} block(s))")
+    if not blocks:
+        print("  none — no application/ld+json on this homepage (it was absent on 11/43 sampled)")
+    for i, (ok, obj) in enumerate(blocks, 1):
+        if ok:
+            types = set()
+            jsonld_types(obj, types)
+            print(f"\n  --- block {i}  @type: {sorted(types)} ---")
+            pretty = json.dumps(obj, indent=2, ensure_ascii=False)
+            print("\n".join("  " + ln for ln in pretty.splitlines()))
+        else:
+            print(f"\n  --- block {i}  (unparseable JSON; first 200c) ---\n  {obj[:200]}")
+    sel, nav = nav_region(raw)
+    print("\n## Nav region")
+    if not nav:
+        print(
+            "  no <header>/<nav> element — nav is in a bare div (marek-shaped). "
+            "Rebuild Nav structure from the homepage screenshot (ground truth)."
+        )
+    else:
+        a = len(re.findall(r"<a\b", nav))
+        ac = len(re.findall(r"aria-controls", nav, re.I))
+        hp = len(re.findall(r"aria-haspopup", nav, re.I))
+        print(
+            f"  selector=<{sel}>  {len(nav)}b  <a>={a} aria-controls={ac} aria-haspopup={hp}  "
+            "(validate completeness vs the screenshot — a label present here != hierarchy captured)"
+        )
+        print("\n" + nav)
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -355,6 +489,10 @@ if __name__ == "__main__":
     sp = sub.add_parser("spend")
     sp.add_argument("--slug", required=True)
     sp.add_argument("--date", default=TODAY)
+    sg = sub.add_parser("signals")
+    sg.add_argument("--slug", required=True)
+    sg.add_argument("--name", default="homepage", help="payload to slice (default: homepage)")
+    sg.add_argument("--date", default=TODAY)
     sub.add_parser("credits")
     a = ap.parse_args()
     if a.cmd == "map":
@@ -365,5 +503,7 @@ if __name__ == "__main__":
         do_verify(a.slug, a.date)
     elif a.cmd == "spend":
         do_spend(a.slug, a.date)
+    elif a.cmd == "signals":
+        do_signals(a.slug, a.name, a.date)
     elif a.cmd == "credits":
         do_credits()
