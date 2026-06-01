@@ -1,0 +1,19 @@
+# ruff — lint + format + import-sort for the engine's Python.
+# Replaces the old .flake8. Scope is the DURABLE surface (scripts/, skills/);
+# experiments/ are dated throwaway probes and are exempt by exclude (below) — we
+# don't retro-type frozen code. See .claude/rules/python.md for the house rules.
+
+target-version = "py39"          # system interpreter; `X | None` annotations need the __future__ import
+line-length = 140
+
+# Probes are exempt: linting/formatting them would churn archived code for no payoff.
+extend-exclude = ["experiments"]
+
+[lint]
+# E/W/F pyflakes+pycodestyle · I isort (fixes the import drift) · B bugbear
+# UP pyupgrade (3.9-safe modernization) · ANN flake8-annotations (hints REQUIRED)
+select = ["E", "W", "F", "I", "B", "UP", "ANN"]
+ignore = [
+    "E501",    # long lines: the why-first docstrings run long on purpose; format owns code width
+    "ANN401",  # allow `Any` — yaml.safe_load values are genuinely dynamic
+]
