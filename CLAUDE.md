@@ -23,8 +23,8 @@ Full paths (local dev only — a cloud clone won't have these): agent-workflows 
 
 ## How we work here
 
-- **Iterative, not one-shot.** Do a capture by hand on a few real companies first; codify the verb only once the pattern stabilizes. Run experiments in `experiments/<date>-<slug>/` to de-risk before building.
-- **Spend on conventions, not infrastructure.** Markdown is the source of truth; any SQLite index is a *derived lens*, never authoritative.
+- **Iterative, not one-shot.** When making change, do a capture by hand on a few real companies first; codify the verb / changes only once the pattern stabilizes. Run experiments in `experiments/<date>-<slug>/` to de-risk before baking into the system.
+- **Spend on conventions, not infrastructure.** A well designed SCHEMA and TAXONOMY pays dividends down the line. Markdown is the source of truth; any SQLite index is a *derived lens*, never authoritative.
 - **Propose, don't write** across a project's boundary. The engine never silently mutates a project's KB.
 - **The anti-Doro line:** no graph DB, embeddings, datapoint reconciliation, entity-resolution, or served API. Domain is the key. When a decision smells heavy, that's the flag.
 - **Scope guideline:** the engine owns *state* (what a company/offering is). Events (news/funding/M&A) and judgments (relevance/threat) belong to downstream consumers.
