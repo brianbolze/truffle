@@ -39,7 +39,7 @@ description: "America's self-described largest longevity-medicine program: a mem
 # Classification
 entity_type: Company
 target_market: [B2C]
-offering_category: [Services / Consulting, Health & Wellness, Biotech / Pharma Products]
+offering_category: [Services / Consulting, Biotech / Pharma Products]
 portfolio_shape: Flagship + companions
 business_model: Subscription
 primary_industry: Healthcare & Life Sciences
