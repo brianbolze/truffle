@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: clari.com
@@ -127,6 +127,7 @@ Packaged for buyers as four solution bundles: **Pipeline Management & Prospectin
 
 - **Scale claims:** "Managing $5T in revenue for 1,500+ customers" (Clari standalone); combined Clari + Salesloft cited at "$10 trillion in annual revenue under management" and "over 5,000 organizations."
 - **Analyst:** named a **Leader in the inaugural Gartner® Magic Quadrant™ for Revenue Action Orchestration (RAO)** (Salesloft a Visionary in the same report). 2025 G2 Best Sales Software Winner.
+- **Self-reported rating:** **"9.2 / 10"** across **5,602 reviews** (homepage JSON-LD `AggregateRating`; self-reported, platform/scale not named in the markup, and not rendered in the page body — structured-data only).
 - **ROI:** Forrester Total Economic Impact™ study cited at **448% ROI** (pricing page) / **398% ROI** (why-clari) — figures vary by page; supporting stats: +30% first meetings booked, 15% faster deal cycles, 90% less time on forecasting for RevOps, 22% lower onboarding time.
 - **Named customers / testimonials:** Okta, Checkout.com, BirchStreet, Fortinet, Dialpad, Amplitude, Sumo Logic, KOFAX, Brooksource — named execs with quotes.
 - **Trust:** dedicated /security/ page, GDPR page, MSA/terms.
@@ -145,3 +146,4 @@ The defining fact is the **Clari + Salesloft merger** (announced Aug 7, 2025; th
 - **Verify:** all 8 sourceURLs matched; all body md5s unique — no geo/cache contamination.
 - **Credits:** 9 (1 map + 8 scrapes), 0 add-ons. ~1558 remaining on the shared key.
 - **Couldn't get:** public pricing (sales-gated, quote-only); firmographics (founding/headcount/funding — not on marketing pages); post-merger product-integration state.
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — JSON-LD has no `sameAs`/`logo`; its self-reported `AggregateRating` (9.2/10, 5,602 reviews) → Credibility & proof (verbatim, flagged self-reported); the `applicationCategory` keyword-blob was not usable as tags. Re-stamped 2.0→2.2.

@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: openai.com
@@ -114,3 +114,4 @@ Stark, confident **monochrome** identity — black (`#000000`) on white (`#fffff
 - **Credits:** 9 total (1 map + 1 homepage + 7 key pages). ~1417 remaining at run start (shared key).
 - **Couldn't get:** Business/Enterprise dollar prices (quote-only); headcount, revenue, funding, HQ (not on captured pages). /api/pricing was in the inventory but not scraped this run (API $ live on developers.openai.com).
 - `design_framework` from `rawHtml` (`/_next/` → Next.js); `logo_url` is the favicon (branding logo was an inline data-URI SVG).
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — no `application/ld+json` present, so no JSON-LD structured-layer fields (Nav already captured). Re-stamped 2.0→2.2.

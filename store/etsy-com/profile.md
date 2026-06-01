@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: etsy.com
@@ -8,6 +8,7 @@ name: Etsy
 aliases: ["Etsy, Inc."]
 parent: []
 owns: [reverb.com, depop.com]            # "house of brands" — consolidated figures span Etsy + Reverb + Depop (/press)
+socials: { facebook: "https://www.facebook.com/Etsy", x: "https://x.com/etsy", instagram: "https://www.instagram.com/etsy/", pinterest: "https://www.pinterest.com/etsy/", youtube: "https://www.youtube.com/@Etsy", tiktok: "https://www.tiktok.com/@etsy", linkedin: "https://www.linkedin.com/company/etsy" }   # JSON-LD sameAs
 
 # Capture meta
 captured_at: 2026-05-31
@@ -38,7 +39,7 @@ business_model: Marketplace / Commission
 primary_industry: Retail & E-Commerce
 
 # Visual identity
-logo_url: https://www.etsy.com/images/favicon-32x32.png   # branding.images.logo is an inline data-URI SVG; favicon fallback
+logo_url: https://i.etsystatic.com/site-assets/etsy-logo.svg   # JSON-LD `logo` (canonical mark) — supersedes the favicon fallback
 brand_colors: { primary: "#FFA300", teal: "#0D424E", cream: "#FAF8F5" }   # STRAIN: orange (#FFA300) is the signature CTA/logo hue (visually confirmed); branding mislabels it "secondary"
 fonts: [ABC Diatype, ABC Otto, Charter]
 color_scheme: light
@@ -136,3 +137,4 @@ Etsy is a **catalog-scale, asset-light marketplace**: it owns no inventory and b
 - **Verify:** all 6 sourceURLs matched; all body md5s unique (no §5.1 geo/cache contamination).
 - **Credits:** 7 (1 map + 6 scrapes), all base 1cr, no enhanced-proxy.
 - **Couldn't get:** current Etsy.com-only (non-consolidated) seller/buyer counts — /about carries only an older marketplace-only snapshot; SEC-grade financials live on investors.etsy.com, not captured (deep-research scope).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (fb/x/ig/pinterest/youtube/tiktok/linkedin); upgraded `logo_url` favicon→JSON-LD `logo` (`etsy-logo.svg`); founding already in prose; no `external`. Re-stamped 2.0→2.2.

@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: delighted.com
@@ -145,3 +145,4 @@ consumer should treat delighted.com as effectively frozen and time-boxed.
 - **Verify:** all sourceURL-matched, all md5-unique (clean; no geo/cache contamination).
 - **Credits:** not recorded this run.
 - **Couldn't get:** post-sunset plans; firmographics (off-site, Qualtrics subsidiary); clean reconcile of pricing table user counts vs. tier cards (conflict noted in unverified_fields).
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — JSON-LD present but no `sameAs`/`logo`/`alternateName`, so no new structured-layer fields. Re-stamped 2.0→2.2.

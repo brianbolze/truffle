@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: agelessrx.com
@@ -8,6 +8,7 @@ name: AgelessRx
 aliases: []
 parent: []
 owns: []
+socials: { facebook: "https://www.facebook.com/agelessrx1/", x: "https://x.com/ageless_rx", instagram: "https://www.instagram.com/agelessrx_longevity/", linkedin: "https://www.linkedin.com/company/agelessrx", youtube: "https://www.youtube.com/channel/UCHtmUJeRukilnzfNVJwbnuw" }   # JSON-LD sameAs (handles match the entity)
 
 # Capture meta
 captured_at: 2026-05-31
@@ -138,3 +139,4 @@ AgelessRx is the **broad-catalog generalist** of the longevity-telehealth cohort
 - **Verify:** 8/8 sourceURL-matched, all bodies md5-unique (clean); no geo/cache contamination this run.
 - **Credits:** 9 (1 map + 8 scrapes, 1 credit each).
 - **Couldn't get:** final per-SKU pricing (behind customer.agelessrx.com portal; pages show "Starting at" floors only), the ~40 individual product detail pages beyond Metformin, corporate facts (founding year, headcount, funding).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (sameAs fb/x/ig/linkedin/youtube); JSON-LD `logo` was an OG share image (`agelessrx-social-share.jpg`) so kept the existing on-domain SVG logo; no legalName/`external`. Re-stamped 2.0→2.2.

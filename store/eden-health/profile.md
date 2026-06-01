@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: eden.health
@@ -8,6 +8,7 @@ name: Eden
 aliases: [tryeden.com]            # intake/funnel + portal domain; Trustpilot listed under tryeden.com. Legal entity: Eden Health International Inc.
 parent: []
 owns: [edenhealthclubs.com, edenpharmacy.com]   # sub-brands linked in footer ("More from Eden"); Eden Meals lives at meals.tryeden.com
+socials: { facebook: "https://www.facebook.com/TryEdenHealth", instagram: "https://www.instagram.com/tryedennow", tiktok: "https://www.tiktok.com/@tryeden", linkedin: "https://www.linkedin.com/company/tryeden/", youtube: "https://www.youtube.com/@TryEden" }   # JSON-LD sameAs (all verified as footer anchors)
 
 # Capture meta
 captured_at: 2026-05-30
@@ -131,3 +132,4 @@ Eden is a broad-catalog GLP-1-led telehealth roll-up: weight loss is unmistakabl
 - **Verify:** all sourceURLs matched, all body md5s unique (clean).
 - **Credits:** not recorded this run.
 - **Couldn't get:** per-product full pricing tiers (behind intake quizzes on app.eden.health / tryeden.com); the goal-selector quiz (`/find-your-treatment/*`) renders thin in markdown (links-only SPA); corporate financials/founding year (not on the marketing site).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-30 rawHtml, hint-to-verify) — filled `socials` (fb/ig/tiktok/linkedin/youtube, footer-verified); JSON-LD `logo` sits on a different Webflow project bucket (possibly stale) so kept the current favicon; no `external`. Re-stamped 2.0→2.2.

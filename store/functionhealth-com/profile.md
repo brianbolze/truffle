@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: functionhealth.com
@@ -8,6 +8,7 @@ name: Function Health
 aliases: [www.functionhealth.com]
 parent: []
 owns: ["ezra.com"]              # acquired Ezra (medical imaging); Ezra runs as a named brand under Function — leadership + scans integrated. Domain slug unconfirmed against ezra.com — see unverified_fields.
+socials: { facebook: "https://facebook.com/askfunction/", instagram: "https://instagram.com/functionhealth/", x: "https://x.com/function", youtube: "https://youtube.com/channel/UCdeq9Uha-87vDSvtCoSJLQg", linkedin: "https://linkedin.com/company/functionhealth/" }   # JSON-LD sameAs (hand-read; the block has a stray trailing brace)
 
 # Capture meta
 captured_at: 2026-06-01
@@ -120,3 +121,4 @@ The **Ezra acquisition** is the headline move: Function is bolting structural im
 - **Verify:** all 7 sourceURLs matched; all body md5s unique (no §5.1 contamination).
 - **Credits:** 8 (1 map + 1 homepage + 6 key pages) on the original capture, + 3 on the 2026-06-01 re-verify; no enhanced-proxy or PDF add-ons.
 - **Couldn't get:** member-app-gated add-on/scan à-la-carte pricing; member count; the parent↔Ezra domain relation from ezra.com itself (inferred). Long biomarker/condition marquees are animated repeats — treated as noise.
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-06-01 rawHtml, hint-to-verify) — filled `socials` (fb/ig/x/youtube/linkedin) — hand-read from the homepage JSON-LD (a stray trailing brace fails strict parse, but the `sameAs` is intact and handle-matched); no usable `logo`/`external`. Re-stamped 2.0→2.2.

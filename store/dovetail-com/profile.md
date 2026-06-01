@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: dovetail.com
@@ -8,6 +8,8 @@ name: Dovetail
 aliases: ["Dovetail Research Pty. Ltd."]   # Australian legal entity (footer ©)
 parent: []
 owns: []
+socials: { x: "https://twitter.com/hidovetail", linkedin: "https://www.linkedin.com/company/heydovetail/", youtube: "https://www.youtube.com/channel/UCzST15vRd4wZ3wuR6PDutMA", facebook: "https://www.facebook.com/hidovetail", instagram: "https://instagram.com/hidovetail" }   # JSON-LD sameAs
+external: { crunchbase: "https://www.crunchbase.com/organization/dovetail-app" }   # JSON-LD sameAs — third-party record
 
 # Capture meta
 captured_at: 2026-05-31
@@ -36,7 +38,7 @@ business_model: Subscription
 primary_industry: Technology
 
 # Visual identity
-logo_url: https://dovetail.com/favicon.ico   # branding.images.logo is an inline data-URI SVG mark → favicon fallback
+logo_url: https://dovetail.com/logo.png   # JSON-LD `logo` (on-domain mark, also rendered on page) — supersedes the favicon fallback
 brand_colors: { primary: "#0044FF", accent: "#0FCCCE" }   # electric blue hero/brand hue + teal secondary; verified dark against screenshot
 fonts: [Inter, Roboto, JetBrains Mono]   # heading / body / mono
 color_scheme: dark
@@ -151,3 +153,4 @@ Chat, Dashboards, Docs, Agents) with an MCP server and AWS Bedrock private infer
 - **Verify:** all sourceURL-matched, all bodies md5-unique (clean; no geo/cache contamination).
 - **Credits:** not recorded this run.
 - **Couldn't get:** per-seat dollar pricing (Enterprise is contact-sales only); firmographics — headcount/funding/revenue not on the marketing site (off-site, deep-research job).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (x/linkedin/youtube/fb/ig) + `external` (crunchbase); upgraded `logo_url` favicon→JSON-LD `logo` (`/logo.png`); legalName matches the existing alias. Re-stamped 2.0→2.2.

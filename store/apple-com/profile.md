@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: apple.com
@@ -8,6 +8,8 @@ name: Apple
 aliases: []
 parent: []
 owns: []
+socials: { youtube: "https://www.youtube.com/user/Apple", linkedin: "https://www.linkedin.com/company/apple", facebook: "https://www.facebook.com/Apple", x: "https://www.twitter.com/Apple" }   # JSON-LD sameAs
+external: { wikidata: "http://www.wikidata.org/entity/Q312" }   # JSON-LD sameAs — third-party record
 
 # Capture meta
 captured_at: 2026-05-31
@@ -121,3 +123,4 @@ The site quietly tells the bull story: a hardware **catalog** so deep it can't b
 - **Credits:** not recorded this run.
 - **Couldn't get:** per-SKU pricing behind the shop funnel; financials/headcount (off-site, out of scope).
 - **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): Hardware / Physical Products → Physical Products / Hardware.
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (youtube/linkedin/facebook/x) + `external` (wikidata); JSON-LD `logo` is lateral to the existing OG logo — kept current. Re-stamped 2.0→2.2.

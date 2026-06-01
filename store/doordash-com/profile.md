@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: doordash.com
@@ -129,3 +129,4 @@ The captured site reveals DoorDash repositioning from "restaurant delivery app" 
 - **Verify:** all 6 sourceURLs matched; all body md5s unique (no §5.1 geo/cache contamination).
 - **Credits:** 7 (1 map + 1 homepage + 5 key pages), all basic proxy, 1 cr each.
 - **Couldn't get:** real brand typeface (branding gave generic fallbacks); DashPass landing page content (JS-walled — recovered pricing from /about FAQ); corporate financials/headcount (not on marketing surfaces).
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — no `application/ld+json` present, so no JSON-LD structured-layer fields (Nav already captured). Re-stamped 2.0→2.2.

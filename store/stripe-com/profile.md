@@ -1,13 +1,15 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: stripe.com
 name: Stripe
-aliases: []
+aliases: ["Stripe, LLC"]              # JSON-LD legalName
 parent: []
 owns: []
+socials: { x: "https://twitter.com/stripe", youtube: "https://youtube.com/@stripe", linkedin: "https://www.linkedin.com/company/stripe/", facebook: "https://www.facebook.com/StripeHQ", github: "https://github.com/stripe", instagram: "https://www.instagram.com/stripehq/" }   # JSON-LD sameAs (took @stripe, not the @StripeDev dev channel)
+external: { wikipedia: "https://en.wikipedia.org/wiki/Stripe,_Inc.", crunchbase: "https://www.crunchbase.com/organization/stripe", bloomberg: "https://www.bloomberg.com/profile/company/0170016D:US", wikidata: "https://www.wikidata.org/wiki/Q7624104", yahoo: "https://finance.yahoo.com/quote/STRI.PVT/" }   # JSON-LD sameAs — third-party records
 
 # Capture meta
 captured_at: 2026-05-30
@@ -44,7 +46,7 @@ design_framework: next.js
 
 ## Overview
 
-Stripe is a financial-infrastructure platform that sells the building blocks of online and in-person money movement as APIs and prebuilt tools. The core is payment processing—accepting cards, wallets, bank debits, BNPL, and stablecoins across 135+ currencies/methods—but it has expanded into a broad suite covering recurring billing, invoicing, tax compliance, fraud prevention, embedded payments for platforms, business banking/treasury, card issuing, identity verification, analytics, and even company incorporation (Atlas). It serves the full size spectrum, from first-transaction startups to "50% of the Fortune 100," and positions itself as the programmable, developer-first layer beneath commerce. Tagline: *"Financial infrastructure to grow your revenue."*
+Stripe is a financial-infrastructure platform that sells the building blocks of online and in-person money movement as APIs and prebuilt tools. The core is payment processing—accepting cards, wallets, bank debits, BNPL, and stablecoins across 135+ currencies/methods—but it has expanded into a broad suite covering recurring billing, invoicing, tax compliance, fraud prevention, embedded payments for platforms, business banking/treasury, card issuing, identity verification, analytics, and even company incorporation (Atlas). It serves the full size spectrum, from first-transaction startups to "50% of the Fortune 100," and positions itself as the programmable, developer-first layer beneath commerce. Founded by brothers Patrick and John Collison. Tagline: *"Financial infrastructure to grow your revenue."*
 
 ## What they offer
 
@@ -140,3 +142,4 @@ Stripe's distinctive move is its sheer surface area: it has expanded from a paym
 - **Verify:** all sourceURL-matched, all md5-unique (clean, no §5.1 contamination).
 - **Credits:** not recorded this run.
 - **Couldn't get:** per-product deep dives beyond the six captured; docs/dashboard/support subdomains (separate properties); company financials/headcount (not on marketing site). Pricing reflects US/standard rates as displayed on 2026-05-30.
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-30 rawHtml, hint-to-verify) — filled `socials` (sameAs x/youtube/linkedin/facebook/github/instagram) + `external` (wikipedia/crunchbase/bloomberg/wikidata/yahoo); `aliases` += legalName "Stripe, LLC"; Collison founders added to Overview. `logo_url` already matched the JSON-LD `logo` (favicon.svg). Re-stamped 2.0→2.2.

@@ -1,5 +1,5 @@
 ---
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: audemarspiguet.com
@@ -129,3 +129,4 @@ The site's deliberate *refusal* to transact is the strategy: no cart, no prices,
 - **Credits:** 7 (1 map + 1 homepage all-formats + 5 key pages, 1 each; no enhanced-proxy retries).
 - **Couldn't get:** Watch prices (none on .com — no e-commerce); maintenance price list (separate page, not scraped); headcount/revenue/production volume (not on a marketing site); textual store list (Stores page is a Google-Maps embed).
 - **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): Hardware / Physical Products → Physical Products / Hardware.
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — no `application/ld+json` present, so no JSON-LD structured-layer fields (Nav already captured). Re-stamped 2.0→2.2.

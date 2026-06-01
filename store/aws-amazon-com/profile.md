@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: aws.amazon.com
@@ -122,3 +122,4 @@ AWS is the canonical `Catalog` entity — its breadth (231 services) is itself t
 - **Verify:** all 7 sourceURLs matched; all 7 body md5s unique — no geo/cache contamination. All HTTP 200, basic proxy.
 - **Credits:** 10 (2 map + homepage + 6 key pages + 1 map-search). Remaining headroom ~1451.
 - **Couldn't get:** full product/pricing catalogs (client-side paginated — only first 8 of 231/180 render; counts captured, not the lists); mega-nav flyout contents (client-rendered, not in markdown — taxonomy reconstructed from /products + footer); headcount/revenue/funding (Amazon-parent financials, off the marketing site).
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — no `application/ld+json` present, so no JSON-LD structured-layer fields (Nav already captured). Re-stamped 2.0→2.2.

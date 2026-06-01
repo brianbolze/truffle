@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: maximustribe.com
@@ -8,6 +8,7 @@ name: Maximus
 aliases: []
 parent: []
 owns: []
+socials: { facebook: "https://www.facebook.com/maximustribehealth", youtube: "https://www.youtube.com/channel/UCQWjY88-W7XQBsKZxYnxbTg", instagram: "https://instagram.com/maximustribe", discord: "https://discord.gg/maximus" }   # JSON-LD sameAs
 
 # Capture meta
 captured_at: 2026-05-31
@@ -118,3 +119,4 @@ Premium, masculine, clinical-but-aspirational. White background with deep-blue (
 - **Verify:** all sourceURLs matched, all bodies md5-unique (clean — no §5.1 geo/cache contamination).
 - **Credits:** not recorded this run.
 - **Couldn't get:** full pricing ladders (sit behind intake flow on `app.maximustribe.com`; public "Starting at" anchors only).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (fb/youtube/ig/discord); JSON-LD `logo` was an OG share image (`share.png`) — kept the current favicon; no `external`. Re-stamped 2.0→2.2.

@@ -1,5 +1,5 @@
 ---
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: patek.com
@@ -158,3 +158,4 @@ Patek's entire moat is **scarcity + independence + intergenerational value**, an
 - **Credits:** 9 (1 map + 1 homepage + 7 key pages).
 - **Couldn't get:** any pricing (not published — luxury convention); company financials/headcount/production volume (not on a marketing site); per-reference catalog depth (deferred — `Catalog` shape, not enumerated).
 - **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): Hardware / Physical Products → Physical Products / Hardware.
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — no `application/ld+json` present, so no JSON-LD structured-layer fields (Nav already captured). Re-stamped 2.0→2.2.

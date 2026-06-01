@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: usertesting.com
@@ -152,6 +152,7 @@ Targets **enterprise** experience/research teams (Product, Design, UX Research, 
 - **Scale claims (verbatim):** "TRUSTED BY 75 OF THE FORTUNE 100"; "3,000+ enterprise customers in 40+ countries"; "7M+ authenticated participants across 34 countries" (homepage/network) — note the AI page says "6M+ participants" and Plans says "60+ countries."
 - **Network quality:** "Lowest participant fraud rate in the industry"; "80% of sessions in just a few hours"; "Every participant is vetted."
 - **Analyst / awards:** "Forrester names UserTesting a Leader in the Experience Research Platforms Wave"; Forrester TEI "415% ROI"; "Rated #1 by G2"; TrustRadius Buyer's Choice / Top Rated; G2 Leader (Enterprise/Mid-Market) across many quarters; Proddy "Top UX Research Product."
+- **Self-reported rating:** **"4.25 / 5"** across **1,034 reviews** (homepage `AggregateRating`, also shown on the page; self-reported).
 - **Security/compliance:** SOC2, ISO 27001, GDPR, HIPAA, CSA.
 - **Guarantee/trial:** free single test ("a video of a real person reviewing your website, typically in less than an hour"); Education Partner Program (free for qualifying institutions); OneWorld program (free/discounted for nonprofits).
 
@@ -169,3 +170,4 @@ UserTesting is consolidating the experience-research category by absorption: the
 - **Verify:** all 7 sourceURLs matched; all 7 body md5s unique — no §5.1 geo/cache contamination.
 - **Credits:** 8 (1 map + 7 scrapes, all basic proxy, 1cr each).
 - **Couldn't get:** public pricing (quote-only); founding year / headcount / revenue / corporate owner (not on captured pages — about-page stat counters are JS-animated and scrape as "0"); exact nature of the UserZoom/EnjoyHQ/User Interviews relationships (co-branded on-site but type not stated).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — JSON-LD has no `sameAs`; its self-reported `AggregateRating` (4.25/5, 1,034 reviews) → Credibility (verbatim, flagged self-reported); `logo_url` already matched the JSON-LD `logo`. Re-stamped 2.0→2.2.

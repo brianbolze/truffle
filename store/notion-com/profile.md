@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: notion.com
@@ -128,3 +128,4 @@ The capture caught Notion mid-repositioning: the durable "all-in-one workspace" 
 - **Verify:** all HTTP 200, all bodies md5-unique (clean).
 - **Credits:** not recorded this run.
 - **Couldn't get:** per-product deep pages (Calendar, Mail, Docs, Projects), Templates/Connections catalogs, developer docs; financials/headcount (out of scope).
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — no `application/ld+json` present, so no JSON-LD structured-layer fields (Nav already captured). Re-stamped 2.0→2.2.

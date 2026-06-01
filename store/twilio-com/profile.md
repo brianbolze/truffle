@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: twilio.com
@@ -8,6 +8,8 @@ name: Twilio
 aliases: [SendGrid, Twilio SendGrid, Segment, Twilio Segment]
 parent: []
 owns: ["sendgrid.com", "segment.com"]
+socials: { youtube: "https://www.youtube.com/c/twilio", x: "https://www.twitter.com/twilio", linkedin: "https://www.linkedin.com/company/twilio-inc-", facebook: "https://www.facebook.com/TeamTwilio", instagram: "https://www.instagram.com/twilio" }   # JSON-LD sameAs
+external: { wikipedia: "https://www.wikipedia.org/wiki/Twilio", wikidata: "https://www.wikidata.org/wiki/Q7858039" }   # JSON-LD sameAs — third-party records
 
 # Capture meta
 captured_at: 2026-05-31
@@ -38,7 +40,7 @@ business_model: Usage-based / Consumption
 primary_industry: Technology
 
 # Visual identity
-logo_url: https://www.twilio.com/content/dam/twilio-com/core-assets/social/favicon-32x32.png   # STRAIN: branding.images.logo is an inline data-URI SVG; favicon fallback
+logo_url: https://www.twilio.com/content/dam/twilio-com/core-assets/customer-logos/t-z/twilio.svg   # JSON-LD `logo` (on-domain wordmark) — supersedes the favicon fallback
 brand_colors: { primary: "#B10F23", secondary: "#1866EE", background: "#000104" }   # STRAIN: red is the historic Twilio brand hue; homepage runs dark navy ground w/ red+blue accents (verified in screenshot)
 fonts: [Whitney SSm]
 color_scheme: dark
@@ -126,3 +128,4 @@ The capture catches Twilio mid-pivot. The historic identity — programmable SMS
 - **Verify:** All 6 sourceURLs matched; all body md5s unique (no geo/cache contamination). All HTTP 200.
 - **Credits:** 7 (1 map + 6 scrapes, all base 1cr, basic proxy).
 - **Couldn't get:** Financials/headcount (public-company data, out of Tier-0 scope → investors.twilio.com). Per-route SMS rate tables (vary by carrier/destination; "starts at" anchors used instead).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (youtube/x/linkedin/fb/ig) + `external` (wikipedia/wikidata); upgraded `logo_url` favicon→JSON-LD `logo` (`twilio.svg`). Re-stamped 2.0→2.2.

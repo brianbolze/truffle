@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.1"
+schema_version: "2.2"
 
 # Identity
 domain: honehealth.com
@@ -9,6 +9,7 @@ aliases: [Hone, "Time Therapeutics, Inc."]   # JSON-LD alternateName + legalName
 parent: []
 owns: []
 socials: { linkedin: "https://www.linkedin.com/company/honeyourhealth", x: "https://twitter.com/HoneHealth", instagram: "https://www.instagram.com/hone.health/", youtube: "https://www.youtube.com/channel/UC63XVHmQBqFh5ADIjp7zg4Q", facebook: "https://www.facebook.com/hone.your.health/" }  # JSON-LD sameAs (FB/IG/X also verified in footer)
+external: { trustpilot: "https://www.trustpilot.com/review/honehealth.com" }   # JSON-LD sameAs — third-party record; the 4.8/5 rating itself is in Credibility & proof
 
 # Capture meta
 captured_at: 2026-05-31
@@ -44,7 +45,6 @@ offering_category: [Services / Consulting, Biotech / Pharma Products]
 portfolio_shape: Multi-product
 business_model: Subscription
 primary_industry: Healthcare & Life Sciences
-specialties: [Endocrinology, Menopause, Andrology]   # JSON-LD medicalSpecialty
 
 # Visual identity
 logo_url: https://honehealth.com/wp-content/uploads/2024/01/TriangleWhite.png  # JSON-LD `logo` (company-declared mark) — supersedes the earlier favicon fallback
@@ -136,4 +136,4 @@ Polished, premium, editorial. The identity is built on a single bold **chartreus
 - **Verify:** all sourceURLs matched, all bodies md5-unique (clean).
 - **Credits:** 9 (1 map + homepage + 7 key pages).
 - **Couldn't get:** server-rendered membership-pricing detail (recovered from homepage FAQ instead); per-SKU weight-loss price map; any financials/headcount (not on site).
-- **Structured layer (schema 2.1):** `socials`, `aliases` (legalName/alternateName), `specialties`, `logo_url`, and founding year read from this capture's homepage JSON-LD via `fc.py signals` — hint-to-verify (socials cross-checked against the footer). Traces to the 2026-05-31 rawHtml payload; profile re-stamped 2.0→2.1.
+- **Structured layer (schema 2.2):** `socials`, `external` (trustpilot), `aliases` (legalName/alternateName), `logo_url`, and founding year read from this capture's homepage JSON-LD via `fc.py signals` — hint-to-verify (socials cross-checked against the footer; Trustpilot rating lives in Credibility). Traces to the 2026-05-31 rawHtml payload; re-stamped 2.0→2.2 (`specialties`, briefly added in 2.1, was dropped in 2.2 — no working seed, no consumer).

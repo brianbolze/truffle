@@ -1,5 +1,5 @@
 ---
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: alange-soehne.com
@@ -130,3 +130,4 @@ The whole site is engineered to *not* sell online — price-on-request and a ves
 - **Credits:** 8 (1 map + 7 scrapes, all base 1cr; no enhanced proxy, no PDFs).
 - **Couldn't get:** any actual prices (all "Price upon request"); repair/overhaul price schedule (lives at /customer-service/* URLs, not in main nav); per-SKU catalogue depth (deferred to offerings.md).
 - **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): Hardware / Physical Products → Physical Products / Hardware.
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — no `application/ld+json` present, so no JSON-LD structured-layer fields (Nav already captured). Re-stamped 2.0→2.2.

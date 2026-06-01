@@ -1,13 +1,14 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: marekhealth.com
 name: Marek Health
-aliases: []
+aliases: ["Marek Health LLC"]        # JSON-LD legalName
 parent: []
 owns: ["marekdiagnostics.com"]   # "Diagnostic Labs" sibling brand on its own domain (footer link); same family, ownership not stated explicitly
+socials: { facebook: "https://www.facebook.com/marekhealth/", instagram: "https://www.instagram.com/marekhealth", x: "https://twitter.com/marekhealth" }   # JSON-LD sameAs (footer-verified)
 
 # Capture meta
 captured_at: 2026-05-31
@@ -142,3 +143,4 @@ Dark, premium, masculine. Near-black (#151515) ground, white type, and a single 
 - **Verify:** all md5-unique, all sourceURLs matched — clean, no geo/cache contamination.
 - **Credits:** 14 billed (1 map + 1 homepage + 6 key pages), but **6 were wasted**: a failed `| tail` pipe in the first key-page loop didn't abort `fc.py`, so the 6 key pages scraped twice — ~8 credits of useful work. Captures hold the latest version.
 - **Couldn't get:** per-treatment/per-SKU consumer pricing (behind intake/login); named medication SKUs (goal landing pages, not catalogs); marekdiagnostics.com ownership detail; financials/headcount (out of scope).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (fb/ig/x); `aliases` += legalName "Marek Health LLC"; JSON-LD `logo` lateral to the existing Marek logo — kept current. Re-stamped 2.0→2.2.

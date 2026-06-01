@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: cartier.com
@@ -138,3 +138,4 @@ Restrained, editorial luxury. Centered serif **Cartier wordmark** on a white/cre
 - **Credits:** 10 (1 map + 1 map-search + 1 homepage + 7 key pages).
 - **Couldn't get:** watch pricing (not sold online / appointment-gated); per-SKU catalog depth (Catalog shape — `offerings.md` territory); explicit Richemont ownership statement (inferred from footer link); headcount/revenue.
 - **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): [Apparel & Footwear, Retail / E-Commerce] → Physical Products / Hardware (maker-vs-reseller).
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — JSON-LD present but no `sameAs`/`logo`/`alternateName`, so no new structured-layer fields. Re-stamped 2.0→2.2.

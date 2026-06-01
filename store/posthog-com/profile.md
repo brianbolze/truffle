@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: posthog.com
@@ -124,3 +124,4 @@ PostHog is running an unusually coherent bundling-plus-transparency strategy: bu
 - **Verify:** all 7 sourceURLs matched; all body md5s unique (no §5.1 geo/cache contamination).
 - **Credits:** 8 (1 map + 7 scrapes; no enhanced-proxy retries, no PDFs).
 - **Couldn't get:** full per-product rate cards (calculator-driven on /pricing — 4 headline rates captured); headcount/revenue/funding (not on marketing site). /products markdown is thin (client-rendered) — product taxonomy reconstructed from its link text + homepage.
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — no `application/ld+json` present, so no JSON-LD structured-layer fields (Nav already captured). Re-stamped 2.0→2.2.

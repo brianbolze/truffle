@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: mylifeforce.com
@@ -128,3 +128,4 @@ The diagnostic is both moat and funnel: a 50+ biomarker panel positioned as the 
 - **Verify:** after cleanup, all sourceURLs match and all 13 bodies are md5-unique (exit 0). First pass hit two hazards: five guessed bare paths returned real Next **404s**, and **/diagnostic returned the /membership body** (§5.1-style duplicate) — those six junk captures were removed from the store and manifest before the rewrite.
 - **Credits:** 21 spent this run (1 map + 20 scrapes @ 1cr, basic proxy) — 14 on the retained dossier pages, ~7 on discovering the correct path structure (the 404s, the /diagnostic alias, one duplicate homepage). ~1,626 credits headroom at pre-flight.
 - **Couldn't get:** per-SKU supplement/Rx pricing (category-level catalog only); founding year, funding, headcount; named medical advisory board members; openable screenshots (PNGs captured but unreadable via the file tools this session).
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — no `application/ld+json` present, so no JSON-LD structured-layer fields (Nav already captured). Re-stamped 2.0→2.2.

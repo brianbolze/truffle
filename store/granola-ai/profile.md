@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: granola.ai
@@ -8,6 +8,7 @@ name: Granola
 aliases: [granola.so, meetgranola, "Granola, Inc."]   # granola.so = earlier domain (still cited in on-site testimonials); meetgranola = social handle
 parent: []
 owns: []
+socials: { linkedin: "https://www.linkedin.com/company/meetgranola", x: "https://twitter.com/meetgranola" }   # JSON-LD sameAs
 
 # Capture meta
 captured_at: 2026-05-31
@@ -115,6 +116,7 @@ Footer
 - **Funding (on-site banner, verbatim):** "Granola raises $125M to put your company's context to work" (`/blog/series-c`; `/blog/series-a` also present). On-site claim / event signal — noted, not treated as durable state.
 - **Customer case studies (named, with exec quotes):** Brex — Pedro Franceschi, Founder & CEO ("Granola earned our trust by delivering precise, reliable summaries"); Vercel — Guillermo Rauch, Founder & CEO ("the killer user research tool… no going back to pre-Granola days"); Vanta — Kelly Bray, VP Customer Success ("without budging on our compliance commitments"). Each links a `/customers/<co>` page.
 - **Press:** "Time magazine selected Granola as one of the best AI tools for note-taking" (cited on `/pricing`).
+- **Self-reported rating:** **"4.9 / 5"** from **39 ratings** (homepage JSON-LD `AggregateRating`; self-reported, small sample, not rendered in the page body — structured-data only).
 - **Security & compliance:** a dedicated `/security` page plus pricing/enterprise FAQs referencing **SOC 2 Type 2**, **HIPAA**, **SSO**, org-wide auto-deletion, and model-training opt-out (cert scope/dates not extracted — see `unverified_fields`).
 - **Trust/positioning extras:** "Granola contributes 1.5% of your subscription to remove CO₂… through Stripe Climate."
 
@@ -132,3 +134,4 @@ Granola is riding a sharp wedge — **bot-free, local-audio capture** — that d
 - **Verify:** `fc.py verify` (8 pages) — all sourceURLs match, all bodies md5-unique, no §5.1 contamination; `profile.md` lint clean (no leaked tags, Provenance + required keys present).
 - **Credits:** 11 this run (a clean run is ~9) — inflated by duplicate map/homepage captures (map ×3, homepage ×2) while recovering from the for-loop PATH hazard; the first two key-page batches died `python3: command not found` / `env: bash: No such file or directory` and billed nothing, then each scrape was re-run as an individual non-loop command.
 - **Couldn't get:** `/integrations` body (soft-404); SOC 2 / HIPAA cert scope + audit dates; founding date and formal HQ (not on captured pages).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (linkedin/x); self-reported `AggregateRating` (4.9/5, 39 ratings) → Credibility (verbatim, flagged self-reported); JSON-LD `logo` (icon.png) lateral to the existing marque SVG — kept current. Re-stamped 2.0→2.2.

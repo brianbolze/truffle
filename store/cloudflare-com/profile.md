@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: cloudflare.com
@@ -8,6 +8,7 @@ name: Cloudflare
 aliases: ["NET"]                     # NYSE ticker
 parent: []
 owns: []
+socials: { github: "https://github.com/cloudflare", linkedin: "https://www.linkedin.com/company/cloudflare", x: "https://x.com/cloudflare" }   # JSON-LD sameAs (handles match the entity)
 
 # Capture meta
 captured_at: 2026-05-31
@@ -35,7 +36,7 @@ business_model: Subscription
 primary_industry: Technology
 
 # Visual identity
-logo_url: https://www.cloudflare.com/favicon.ico   # STRAIN: branding.images.logo is an inline data-URI SVG — favicon fallback per SCHEMA
+logo_url: https://www.cloudflare.com/logo.svg   # JSON-LD `logo` (on-domain SVG mark) — supersedes the earlier favicon fallback
 brand_colors: { primary: "#FF5E1F", accent: "#FF7038", secondary: "#FFCFBC" }   # the iconic Cloudflare orange — visually confirmed as the true brand hue
 fonts: [FT Kunst Grotesk]
 color_scheme: light
@@ -123,3 +124,4 @@ The capture catches Cloudflare mid-pivot from "security/performance proxy" to **
 - **Verify:** all 5 sourceURLs matched; all 5 body md5s unique (no §5.1 geo/cache contamination). All HTTP 200.
 - **Credits:** 6 (1 map + 1 homepage + 4 key pages 1cr each). Per `fc.py spend`.
 - **Couldn't get:** per-SKU/per-product pages (Catalog shape — captured the catalog map + pricing, not 60 product pages); financials/headcount (public-company / SEC job, not on marketing site); subsidiaries (not surfaced).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (sameAs github/linkedin/x) and upgraded `logo_url` from the favicon to the JSON-LD `logo` (`/logo.svg`). No legalName/founders/third-party records in the JSON-LD (`external` empty). Re-stamped 2.0→2.2.

@@ -1,13 +1,14 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: gong.io
 name: Gong
-aliases: []
+aliases: ["Gong.io Ltd."]             # JSON-LD legalName
 parent: []
 owns: []
+socials: { linkedin: "https://www.linkedin.com/company/gong-io/", youtube: "https://www.youtube.com/c/Gongio", x: "https://x.com/gong_io", instagram: "https://www.instagram.com/gong.io/", facebook: "https://www.facebook.com/To.GongIO/" }   # JSON-LD sameAs
 
 # Capture meta
 captured_at: 2026-05-31
@@ -106,6 +107,7 @@ Positions as the "**#1 AI OS for Revenue Teams**" and an "undisputed leader in r
 - **Verify:** all sourceURL-matched and md5-unique (clean).
 - **Credits:** not recorded this run.
 - **Couldn't get:** legible values for animated stat counters (rendered as digit-column artifacts — see `unverified_fields`); any actual price (quote-only); per-module deep detail beyond what the platform/agents pages list.
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (linkedin/youtube/x/ig/fb); `aliases` += legalName "Gong.io Ltd."; founders already in prose; JSON-LD `logo` matches current. Re-stamped 2.0→2.2.
 
 ## Visual & brand impression
 Polished, high-budget enterprise-SaaS aesthetic. A predominantly light canvas (white → soft lavender feature cards) anchored by a deep royal-purple (#3E0075) and bright magenta (#FD63FE) brand palette, with deep-purple full-bleed sections and a near-black purple footer. Recurring motifs: a purple "star/sparkle" badge (the AI mark) and the literal gong/"ring the gong" metaphor. Clean Inter / Inter Tight type, generous whitespace, modular card grids, and animated counters and squiggle accents that read as confident and modern rather than playful. Overall: a category-leader presentation built to sell to enterprise revenue executives.

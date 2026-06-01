@@ -1,5 +1,5 @@
 ---
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: swatch.com
@@ -129,3 +129,4 @@ The interesting move is the **scarcity-as-channel** play on collaborations. Swat
 - **Credits:** 9 — 2 map + 1 homepage (all-formats) + 6 key pages, 1 credit each.
 - **Couldn't get:** MoonSwatch online price (in-store-only by design); explicit Swatch Group parent linkage (not on captured marketing pages); per-SKU catalog depth (deferred — `Catalog` shape, captured by shape not enumeration).
 - **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): [Apparel & Footwear, Retail / E-Commerce] → Physical Products / Hardware.
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — JSON-LD `alternateName` was just the short name (already the `name`); no `sameAs`/`logo`, so no new fields. Re-stamped 2.0→2.2.

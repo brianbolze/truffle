@@ -1,6 +1,6 @@
 # SCHEMA — the store contract
 
-> **Current contract version: `2.1`.** This is what new captures stamp as `schema_version`. Bump rules + the version history are in the `schema_version` note below (under the frontmatter block).
+> **Current contract version: `2.2`.** This is what new captures stamp as `schema_version`. Bump rules + the version history are in the `schema_version` note below (under the frontmatter block).
 
 > **What this is.** The contract between *capture* (a `/research-company` agent writes it) and *query* (any agent reads it). It's written to be read by an Opus-class agent that has the **whole capture** in context — multiple pages, screenshots, and the Firecrawl `branding` + `metadata` payloads — not a quick homepage skim.
 
@@ -34,7 +34,8 @@ name: Hone Health
 aliases: []                          # alt names/domains of the SAME entity (rebrand + M&A escape hatch)
 parent: []                           # domain SLUG(s) this is a subsidiary / brand-of — from footer/©/about. Empty if top-level. (See relations note.)
 owns: []                             # domain SLUG(s) of sub-brands / subsidiaries this entity owns. Empty if none. (See relations note.)
-socials: {}                          # external profiles when present: linkedin/x/instagram/youtube/facebook/tiktok -> URL. Seed from rawHtml JSON-LD `sameAs`, else footer/header anchors; verify each resolves to THIS entity. (See structured-layer note.)
+socials: {}                          # channels the entity OPERATES: linkedin/x/instagram/youtube/facebook/tiktok (+ github/pinterest/flickr, regional weibo/douyin/line) -> URL. Seed from rawHtml JSON-LD `sameAs`, else footer/header anchors; verify each resolves to THIS entity. (See structured-layer note.)
+external: {}                         # third-party RECORDS about the entity, NOT operated by it: crunchbase/wikipedia/wikidata/bloomberg/glassdoor/bbb/trustpilot -> URL. From JSON-LD `sameAs`; durable identity-resolution hooks. (See structured-layer note.)
 
 # Capture meta
 captured_at: 2026-05-29
@@ -58,7 +59,6 @@ offering_category: [Services / Consulting, Biotech / Pharma Products]   # multi-
 portfolio_shape: Flagship + companions   # optional; shape of what they sell (also drives offerings capture) — see TAXONOMIES.md
 business_model: Subscription
 primary_industry: Healthcare & Life Sciences
-specialties: []                      # open-vocab tags of what they're known for (e.g. [Endocrinology, Menopause, Andrology]) — NOT a closed set, NOT in TAXONOMIES. The fine vertical tag the coarse closed sets can't carry. Seed from JSON-LD `medicalSpecialty`/`applicationCategory` or prose; empty if undetermined.
 
 # Visual identity — Firecrawl `branding` is a hint to verify, never source-of-truth; confirm against the screenshot (see note).
 logo_url: https://honehealth.com/...  # branding.images.logo, else favicon fallback (it's often empty / a data-URI)
@@ -81,6 +81,7 @@ design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/
 - ***1.0*** *— initial contract: the identity / capture-meta / classification / visual-identity frontmatter and the body sections defined in this doc.*
 - ***2.0*** *— `offering_category`: renamed `Hardware / Physical Products` → `Physical Products / Hardware`, removed `Apparel & Footwear` (folded physical-goods makers — watches, apparel — into Physical Products), added per-value exemplars + a maker-vs-reseller rule. Re-mapped 9 profiles' values; re-stamped all 44 to `"2.0"`.*
 - ***2.1*** *(MINOR, additive — no backfill, grandfathered) — added `socials` + `specialties` frontmatter fields and the **Structured layer** read (enrichment now mines `rawHtml`'s JSON-LD + `<header>`/`<nav>` region as a hint-to-verify source). Older profiles read empty on the new fields = "predates the field." See the [signal audit](experiments/2026-06-01-signal-audit/FINDINGS.md).*
+- ***2.2*** *(MINOR additive + a same-day correction) — added the `external` frontmatter map and split JSON-LD `sameAs` two ways: channels the entity **operates** → `socials`, third-party **records about** it (crunchbase/wikipedia/bloomberg/glassdoor/bbb/trustpilot) → `external`. Reverses 2.1's "leave hooks for a consumer" call — a company-declared external record is durable identity state, so the engine keeps it. **Dropped `specialties`** (added in 2.1 the same day, only the smoke-test profile carried it — so no real break): the corpus-wide structured-layer read found no working seed (`medicalSpecialty` on 1/44; `applicationCategory` is generic-enum / keyword-blob noise) and there's no consumer yet, while the body's bold-led offering lines already carry that detail greppably — deferred until a cohort consumer defines the right shape. **Backfilled + re-stamped the whole corpus** (unusual for a MINOR — the structured-layer read hit every persisted `rawHtml` payload in one pass, so every profile was genuinely read; on a 2.2 profile, empty `socials`/`external` now means "looked, none found"). Re-mapped/re-stamped all profiles 2.0 & 2.1 → 2.2; per-profile reads traced in each Provenance's `Structured layer` line.*
 
 *`favicon` and `website_url` are **derived from `domain`** at read time — never stored.*
 
@@ -93,11 +94,10 @@ design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/
 *Visual identity — the `branding` payload is a **hint, not a source of truth**: seed from it, but verify every field rather than copy it. `branding.colors` has no positional or presence guarantee — it can surface UI chrome, miss the true brand hue, or catch a campaign color; retain the palette but confirm the real one against the screenshot and write the read in **Visual & brand impression**. Read `design_framework` from `rawHtml`, not the `branding` payload. `logo_url` falls back to the favicon when `branding.images.logo` is empty or an inline data-URI.*
 
 *<a id="structured-layer"></a>**Structured layer (`rawHtml` JSON-LD + nav) — same hint-to-verify discipline as `branding`.** The homepage's `<script type="application/ld+json">` block is company-authored, verbatim identity data that markdown drops; the `<header>`/`<nav>` region carries the mega-nav hierarchy markdown flattens. `scripts/fc.py signals --slug <slug>` slices both out of the persisted homepage payload (a deterministic grep + pretty-print — **not** extraction; no reducer/LLM/Pydantic, so the anti-Doro line holds), targeted so enrichment reads a few KB, never the 2 MB blob. It maps onto schema surface as:*
-- *`sameAs` → **`socials`** (the standout — most profiles carry none today); also yields wikipedia/crunchbase/trustpilot URLs (identity-resolution hooks, not socials — leave for a consumer).*
+- *`sameAs` splits two ways: profiles the company **operates** → **`socials`** (linkedin/x/instagram/youtube/facebook/tiktok, plus github/pinterest/flickr and regional weibo/douyin/line when present — the standout, most profiles carried none); third-party **records about** the entity (crunchbase/wikipedia/wikidata/bloomberg/glassdoor/bbb) → **`external`**. Trustpilot is both — its URL → `external`, its rating → Credibility (below). Verify each resolves to THIS entity (the handle matches), not a look-alike.*
 - *`alternateName` + `legalName` → **`aliases`** — both are alt names of the same entity (`legalName` "Time Therapeutics, Inc." for Hone Health is an alias, **not** a new field).*
 - *self-reported `AggregateRating` → **Credibility & proof**, verbatim + flagged self-reported (the section already mandates this).*
-- *`medicalSpecialty` / `applicationCategory` → **`specialties`**.*
-- *`logo` → the front of the `logo_url` source chain (cleaner/higher-trust than the favicon fallback).*
+- *`logo` → the front of the `logo_url` source chain (cleaner/higher-trust than the favicon fallback) — **but verify it's a real brand mark first**: JSON-LD `logo` is often an OG/share banner (`*-share.jpg`, `ogimage.png`, `*-fb.png`) or a 3rd-party theme asset (a Zendesk `zdassets.com` logo), which must NOT supersede a good on-domain logo already in `logo_url`. Upgrade mainly when the current value is a favicon and JSON-LD offers a true mark.*
 - *the slimmed `<header>`/`<nav>` region → **Nav structure** — recover the flyout tree, then **validate completeness against the homepage screenshot** (ground truth; a label present in the HTML ≠ hierarchy captured). No `<header>`/`<nav>` element (nav in a bare div)? Rebuild from the screenshot.*
 
 *It's **self-authored** ⇒ confirm every value against the page/screenshot before it lands — it can be marketing-shaped (a combined brand folded into `alternateName`), stale, or absent (≈¼ of homepages ship none). **Founders / founding-date stay at the deep-research edge** — land trivially-present ones in prose (Overview) where they already go, never as a frontmatter field.*

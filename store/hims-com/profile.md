@@ -1,13 +1,15 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: hims.com
 name: Hims
-aliases: [www.hims.com]
+aliases: [www.hims.com, "hims & hers", "for hims", forhims]   # JSON-LD alternateName (parent/combined brand + legacy names)
 parent: ["Hims & Hers Health, Inc."]   # NYSE: HIMS; men's brand of the public co. No distinct corporate domain (investors.hims.com is a subdomain). forhers.com is the sister women's brand.
 owns: []
+socials: { x: "https://twitter.com/wearehims", facebook: "https://www.facebook.com/wearehims", linkedin: "https://www.linkedin.com/company/hims-&-hers", pinterest: "https://www.pinterest.com/forhims/", youtube: "https://www.youtube.com/channel/UCH5P78PeOn_5mnbDK-tl8mw", flickr: "https://www.flickr.com/photos/155294893@N08", instagram: "https://www.instagram.com/hims/" }   # JSON-LD sameAs
+external: { bloomberg: "https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=542604862", glassdoor: "https://www.glassdoor.com/Overview/Working-at-Hims-EI_IE2090877.11,15.htm", crunchbase: "https://www.crunchbase.com/organization/hims", bbb: "https://www.bbb.org/greater-san-francisco/business-reviews/health-and-medical-products/hims-inc-in-san-francisco-ca-880029" }   # JSON-LD sameAs — third-party records
 
 # Capture meta
 captured_at: 2026-05-30
@@ -114,3 +116,4 @@ The capture catches Hims mid-pivot from its sexual-health/hair-loss origins to a
 - **Verify:** all sourceURLs matched, all bodies md5-unique (clean — no geo/cache contamination).
 - **Credits:** ~9 Firecrawl credits.
 - **Couldn't get:** per-condition pricing past the "starting at" teaser (behind intake quizzes); the client-rendered mega-nav; financials (investor site).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-30 rawHtml, hint-to-verify) — filled `socials` (x/fb/linkedin/pinterest/youtube/flickr/instagram) + `external` (bloomberg/glassdoor/crunchbase/bbb); `aliases` += alternateName (hims & hers / for hims / forhims); JSON-LD `logo` was a 3rd-party Zendesk theme asset (`zdassets.com`) — rejected, kept current. Re-stamped 2.0→2.2.

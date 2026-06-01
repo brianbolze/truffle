@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: gethealthspan.com
@@ -109,3 +109,4 @@ Premium, editorial, science-forward. The full-page screenshot reads as predomina
 - **Verify:** 7/7 sourceURL-matched, all bodies md5-unique (clean); no geo/cache contamination this run.
 - **Credits:** not recorded this run.
 - **Couldn't get:** program-membership pricing (behind app.gethealthspan.com signup), per-treatment detail pages beyond rapamycin, corporate/funding facts (not on marketing site).
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-30 homepage rawHtml — JSON-LD is WebSite-only (name, no `sameAs`/`logo`), so no new structured-layer fields. Re-stamped 2.0→2.2.

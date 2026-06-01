@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: datadoghq.com
@@ -8,6 +8,8 @@ name: Datadog
 aliases: [datadog.com]
 parent: []
 owns: []
+socials: { x: "https://twitter.com/datadoghq", instagram: "https://www.instagram.com/datadoghq/", facebook: "https://www.facebook.com/datadoghq/", linkedin: "https://www.linkedin.com/company/datadog", github: "https://github.com/DataDog", youtube: "https://www.youtube.com/channel/UCPO2QgTCReBAThZca6MB9jg" }   # JSON-LD sameAs
+external: { wikipedia: "https://en.wikipedia.org/wiki/Datadog" }   # JSON-LD sameAs — third-party record
 
 # Capture meta
 captured_at: 2026-05-31
@@ -123,3 +125,4 @@ The footer's sheer length *is* the strategy — Datadog has gone from single-pro
 - **Verify:** `fc.py verify` — all 5 sourceURLs match, all bodies md5-unique (no §5.1 contamination).
 - **Credits:** 6 (1 map + 1 homepage + 4 key pages); ~1463 remaining on the shared key.
 - **Couldn't get:** Full ~90-product pricing matrix transcribed line-by-line (sampled headline rates instead); financials/headcount (not on marketing pages — IR/deep-research job). No bot defense or geo issues encountered.
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (x/ig/fb/linkedin/github/youtube) + `external` (wikipedia); founders already in prose; JSON-LD `logo` lateral to the existing logo — kept current. Re-stamped 2.0→2.2.

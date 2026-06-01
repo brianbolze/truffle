@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: uber.com
@@ -123,3 +123,4 @@ The throughline is **asset-light orchestration**: Uber monetizes matching and ro
 - **Verify:** all 8 sourceURLs matched; all body md5s unique (no geo/cache contamination).
 - **Credits:** 9 attributed (1 map + 8 scrapes; transient HTTP-400 rejected calls billed nothing). Per `fc.py spend`.
 - **Couldn't get:** financials/headcount (deep-research, not on site); dynamic consumer pricing (per-city/surge — not a fixed value); product detail living on off-domain sites (ubereats.com, uberfreight.com, uberhealth.com) was not separately captured.
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — no `application/ld+json` present, so no JSON-LD structured-layer fields (Nav already captured). Re-stamped 2.0→2.2.

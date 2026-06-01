@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: typeform.com
@@ -8,6 +8,7 @@ name: Typeform
 aliases: []
 parent: []
 owns: []
+socials: { linkedin: "https://www.linkedin.com/company/typeform-/", facebook: "https://www.facebook.com/typeform/", x: "https://www.twitter.com/typeform/", instagram: "https://www.instagram.com/typeform/", youtube: "https://www.youtube.com/channel/UC2nRv6J0FsJVePJTLhUDKgg/" }   # JSON-LD sameAs (footer-verified)
 
 # Capture meta
 captured_at: 2026-05-31
@@ -125,3 +126,4 @@ Typeform is mid-pivot from "the pretty form builder" to an **AI-native data-coll
 - **Verify:** all sourceURLs matched; all 7 bodies md5-unique (no §5.1 contamination).
 - **Credits:** 8 (1 map + 7 scrapes), all single-credit basic scrapes; no enhanced-proxy or PDF overages.
 - **Couldn't get:** funding/revenue/exact headcount (not on a marketing site — deep-research job); per-template and full integration catalog (out of Tier-0 scope); live pricing is A/B'd so the captured numbers are a point-in-time snapshot.
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (linkedin/fb/x/ig/youtube); JSON-LD `logo` was an OG image (`ogimage.png`) — kept the current favicon; founding already flagged in prose; no `external`. Re-stamped 2.0→2.2.

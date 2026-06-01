@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: blueowl.com
@@ -119,3 +119,4 @@ Blue Owl is a roll-up success: the 2020 merger of **Owl Rock** (direct lending, 
 - **Verify:** all sourceURLs matched, all body md5s unique (clean — no §5.1 contamination).
 - **Credits:** not recorded this run.
 - **Couldn't get:** subdomain fund sites (OBDC/OTF own domains), ir.blueowl.com financials, /our-team, /sustainability, /insights — out of Tier-0 scope. Per-fund terms/fees live in SEC filings + fund prospectuses, not on blueowl.com.
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-30 homepage rawHtml — JSON-LD present (3 blocks) but no `sameAs`/`logo`/`alternateName`, so no new structured-layer fields. Re-stamped 2.0→2.2.

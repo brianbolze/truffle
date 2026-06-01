@@ -1,5 +1,5 @@
 ---
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: casio.com
@@ -112,3 +112,4 @@ Clean, high-volume retail storefront on a white background with black body text 
 - **Credits:** 7 (1 map + 6 scrapes; all basic proxy, 1cr each).
 - **Couldn't get:** corporate depth (founding year, financials, headcount, segment breakdown — on `world.casio.com/corporate` + `/ir`, not scraped at depth); Moflin retail price (not on the product page); non-US pricing (site geo-routes — US snapshot only).
 - **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): [Hardware / Physical Products, Retail / E-Commerce] → Physical Products / Hardware.
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — no `application/ld+json` present, so no JSON-LD structured-layer fields (Nav already captured). Re-stamped 2.0→2.2.

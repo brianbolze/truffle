@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: qualtrics.com
@@ -8,6 +8,7 @@ name: Qualtrics
 aliases: []
 parent: []
 owns: ["Press Ganey Forsta"]   # STRAIN: homepage banner announces "Qualtrics acquires Press Ganey Forsta"; no resolvable standalone domain captured, recorded as name (un-joinable until it earns a slug)
+socials: { x: "https://x.com/Qualtrics", instagram: "https://www.instagram.com/qualtrics/", facebook: "https://www.facebook.com/Qualtrics/", linkedin: "https://www.linkedin.com/company/qualtrics", youtube: "https://www.youtube.com/user/QualtricsSoftware" }   # JSON-LD sameAs
 
 # Capture meta
 captured_at: 2026-05-31
@@ -122,3 +123,4 @@ Bold, high-saturation enterprise-SaaS design — a blue (`#0768DD`) and purple (
 - **Verify:** All content pages src✓ and md5-unique. (One benign DUP-BODY flag = /customer-experience scraped twice — same URL, identical body, not cross-URL contamination.)
 - **Credits:** 13 total — 1 map + 12 scrapes; of the scrapes, 7 yielded content (homepage, /platform, /customer-experience, /employee-experience, /market-research, /pricing, /about), 4 were Marketo-proxy 404s from path guesses now corrected (/research, /platform/ai, /about-qualtrics, /why-qualtrics), and 1 was a duplicate /customer-experience. All basic proxy, 1/call.
 - **Couldn't get:** Public pricing (custom-quote, metered on Interactions); HQ/headcount/revenue/ownership (founding year + founders captured from /about; rest not on site); Press Ganey Forsta deal specifics (event, out of scope).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (x/ig/fb/linkedin/youtube); JSON-LD `logo` lateral to the existing Qualtrics SVG — kept current; no `external`. Re-stamped 2.0→2.2.

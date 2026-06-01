@@ -40,7 +40,7 @@ Counter(p.get("business_model") for p in P.values())                 # group-by 
 ```
 Multi-selects are **ranked** — position 1 is *primary*. `tm[0]=="B2B"` means "primarily B2B"; membership means "sells B2C at all." Test membership, never equality.
 
-`specialties` (open-vocab vertical tags, e.g. `Endocrinology`) is an *unranked* multi-select — test membership, but it's free-text so normalize/case-fold before matching, not against TAXONOMIES. `socials` is a `{platform: url}` map — test key presence (`"linkedin" in (p.get("socials") or {})`). Both are `schema_version` ≥ 2.1; an empty/absent value on an older profile means "predates the field," not "has none" (grandfathered — check the stamp before reporting a negative).
+`socials` (channels they operate) and `external` (third-party records about them — crunchbase/wikipedia/bloomberg/…) are both `{platform: url}` maps — test key presence (`"linkedin" in (p.get("socials") or {})`, `"crunchbase" in (p.get("external") or {})`). `socials` arrived at `schema_version` 2.1, `external` at 2.2. The whole corpus was backfilled + re-stamped to 2.2, so an empty/absent value here now means "looked, none found"; the grandfather rule still governs any *future* field (empty on a profile older than the field = "predates it," not "has none" — check the stamp before reporting a negative).
 
 **3. Relations** — *"who owns X", "all brands of Y"* → `parent` / `owns` hold a **dotted domain** (joinable to another profile, folded via `canon()`) or a **quoted name** (no domain, so not joinable — expected).
 ```python

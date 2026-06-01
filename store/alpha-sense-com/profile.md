@@ -1,13 +1,14 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: alpha-sense.com
 name: AlphaSense
-aliases: []
+aliases: ["AlphaSense, Inc."]         # JSON-LD legalName
 parent: []
 owns: ["Tegus", "Sentieo", "BamSEC", "Canalyst"]   # STRAIN: acquired companies folded into the platform (about page) — names, not domain-joined (domains now redirect)
+socials: { x: "https://twitter.com/AlphaSenseInc", linkedin: "https://www.linkedin.com/company/alphasense-inc-", youtube: "https://www.youtube.com/user/alphasensechannel", facebook: "https://www.facebook.com/AlphaSenseInc/" }   # JSON-LD sameAs — all four also present as footer anchors
 
 # Capture meta
 captured_at: 2026-05-31
@@ -47,7 +48,7 @@ design_framework: next.js
 
 ## Overview
 
-AlphaSense is an AI-powered market-intelligence and search platform for enterprises and financial institutions. It indexes a curated library of 500M+ premium business documents — SEC and global filings, earnings transcripts, broker/equity research from 1,000+ firms, news, regulatory content, and proprietary expert-call transcripts — and layers purpose-built generative AI (Generative Search, Deep Research agents, monitoring) on top so analysts can extract cited, auditable answers in seconds. Customers can also fold in their own internal content (Enterprise Intelligence). Founded 2011 by ex-banker Jack Kokko after the "CTRL+F across thousands of PDFs" research grind; positioned as the trusted, no-hallucination alternative to generic AI search and fragmented point tools.
+AlphaSense is an AI-powered market-intelligence and search platform for enterprises and financial institutions. It indexes a curated library of 500M+ premium business documents — SEC and global filings, earnings transcripts, broker/equity research from 1,000+ firms, news, regulatory content, and proprietary expert-call transcripts — and layers purpose-built generative AI (Generative Search, Deep Research agents, monitoring) on top so analysts can extract cited, auditable answers in seconds. Customers can also fold in their own internal content (Enterprise Intelligence). Founded 2011 by ex-banker Jack Kokko (with co-founder Raj Neervannan) after the "CTRL+F across thousands of PDFs" research grind; positioned as the trusted, no-hallucination alternative to generic AI search and fragmented point tools.
 
 ## What they offer
 
@@ -140,3 +141,4 @@ AlphaSense's durable advantage is **owned content, not the AI**: it has rolled u
 - **Verify:** all 6 sourceURLs matched requested; all body md5s unique (no §5.1 geo/cache contamination).
 - **Credits:** 7 (1 map + 6 scrapes; all basic proxy, 1 credit each).
 - **Couldn't get:** public pricing (sales-gated Marketo form); headcount/revenue/funding (not on site); acquired-brand domains not verified to resolve (recorded as names in `owns`).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (sameAs x/linkedin/youtube/facebook, all cross-verified as footer anchors); `aliases` += legalName "AlphaSense, Inc."; co-founder Raj Neervannan added to Overview. `logo_url` already matched the JSON-LD `logo`; no third-party records in `sameAs` (`external` empty). Re-stamped 2.0→2.2.

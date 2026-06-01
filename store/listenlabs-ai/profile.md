@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: listenlabs.ai
@@ -8,6 +8,7 @@ name: Listen Labs
 aliases: [Listen]
 parent: []
 owns: []
+socials: { linkedin: "https://www.linkedin.com/company/listenlabss", x: "https://x.com/listenlabs" }   # JSON-LD sameAs
 
 # Capture meta
 captured_at: 2026-05-31
@@ -37,7 +38,7 @@ business_model: Subscription
 primary_industry: Technology
 
 # Visual identity
-logo_url: https://framerusercontent.com/images/MsbZQm1PVsbD2Dgze1v2P83xHas.png  # branding.images.logo is an inline data-URI SVG; this is the favicon fallback
+logo_url: https://listenlabs.ai/logo.png   # JSON-LD `logo` (on-domain mark) — supersedes the framer-favicon fallback
 brand_colors: { primary: "#0000EE", accent: "#0021CC" }  # STRAIN: pure-blue hyperlink #0000EE is the signature hue, confirmed blue on CTAs in the screenshot
 fonts: [Plain]
 color_scheme: light
@@ -125,3 +126,4 @@ Listen is racing to define the "AI-moderated research" category and using a comp
 - **Verify:** All 6 sourceURLs matched; all body md5s unique — no geo/cache contamination.
 - **Credits:** 7 (1 map + 6 scrapes; no enhanced-proxy or PDF overages).
 - **Couldn't get:** Public pricing (none published — demo-led); headcount / founding date / founder names (not on marketing pages); deep docs (docs.listenlabs.ai, separate subdomain, out of scope this run).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (linkedin/x); upgraded `logo_url` framer-favicon→JSON-LD `logo` (`listenlabs.ai/logo.png`). Re-stamped 2.0→2.2.

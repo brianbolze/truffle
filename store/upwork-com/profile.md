@@ -1,13 +1,15 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: upwork.com
 name: Upwork
-aliases: []
+aliases: ["Upwork Global Inc."]       # JSON-LD legalName
 parent: []
 owns: ["go-lifted.com"]              # STRAIN: Enterprise rebranded to "Lifted, an Upwork Company" (Aug 2025); own domain, nav points there
+socials: { x: "https://twitter.com/Upwork", linkedin: "https://www.linkedin.com/company/upwork", facebook: "https://www.facebook.com/upwork", youtube: "https://www.youtube.com/channel/UCvxGFOnwUBDHHcxuPqhe4CQ", instagram: "https://www.instagram.com/upwork", reddit: "https://www.reddit.com/r/UpworkOfficial/" }   # JSON-LD sameAs
+external: { wikipedia: "https://en.wikipedia.org/wiki/Upwork", wikidata: "https://www.wikidata.org/wiki/Q3344170" }   # JSON-LD sameAs — third-party records
 
 # Capture meta
 captured_at: 2026-05-31
@@ -119,3 +121,4 @@ The most notable shift in this capture is the **enterprise pivot to "Lifted"** �
 - **Verify:** `fc.py verify` — all 7 sourceURLs matched, all bodies md5-unique (no contamination).
 - **Credits:** 8 (1 map + 7 scrapes); no enhanced-proxy retries needed.
 - **Couldn't get:** freelancer-side pricing (Connects/Freelancer Plus) and per-category rates — not on the client pricing page; founding date/history — not stated on captured pages.
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (x/linkedin/fb/youtube/ig/reddit) + `external` (wikipedia/wikidata); `aliases` += legalName "Upwork Global Inc."; JSON-LD `logo` was an FB share image (`upwork-fb.png`) — kept the current favicon. Re-stamped 2.0→2.2.

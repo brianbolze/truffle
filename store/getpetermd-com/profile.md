@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: getpetermd.com
@@ -8,6 +8,8 @@ name: PeterMD
 aliases: ["PeterUncaged MD", "Peter Uncaged MD"]   # rebranded from PeterUncaged MD (see Strategic read)
 parent: []
 owns: []
+socials: { facebook: "https://www.facebook.com/getpetermd/", instagram: "https://www.instagram.com/peter_uncagedmd/", linkedin: "https://www.linkedin.com/company/peter-md" }   # JSON-LD sameAs (took current-brand FB getpetermd, not legacy peteruncagedmd)
+external: { trustpilot: "https://www.trustpilot.com/review/getpetermd.com" }   # JSON-LD sameAs — third-party record
 
 # Capture meta
 captured_at: 2026-05-30
@@ -155,3 +157,4 @@ Light scheme, illustration-heavy, built as a long stacked-section landing page w
 - **Verify:** all md5-unique (verify passed, no geo/cache contamination — clean).
 - **Credits:** not recorded this run.
 - **Couldn't get:** per-SKU deep pages beyond the 9 captured; ownership/legal entity (not stated on the site); financials/headcount (out of scope).
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-30 rawHtml, hint-to-verify) — filled `socials` (facebook/instagram/linkedin) + `external` (trustpilot); JSON-LD `logo` lateral to the existing PeterMD logo — kept current. Re-stamped 2.0→2.2.

@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: snowflake.com
@@ -129,3 +129,4 @@ The whole site is mid-pivot from "cloud data warehouse" to **"AI Data Cloud" / a
 - **Verify:** all 7 sourceURLs matched requested; all body md5s unique (no §5.1 geo/cache contamination); HTTP 200 on all.
 - **Credits:** 5 this run (4 key-page scrapes + verify free) on top of a prior same-day partial (map + homepage + platform + workloads = 4) → 9 total for the captures dir.
 - **Couldn't get:** mega-nav flyout contents (client-rendered, absent from markdown — reconstructed from footer/sub-navs); full per-edition × cloud × region price matrix (behind selectors + CreditConsumptionTable.pdf, not scraped); financials (off-site, investor relations).
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-31 homepage rawHtml — JSON-LD present but no `sameAs`/`logo`/`alternateName`, so no new structured-layer fields. Re-stamped 2.0→2.2.

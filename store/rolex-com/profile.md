@@ -1,5 +1,5 @@
 ---
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: rolex.com
@@ -7,6 +7,7 @@ name: Rolex
 aliases: []
 parent: []                           # site states "independent"; ownership not asserted on captured pages
 owns: []
+socials: { youtube: "https://www.youtube.com/rolex", instagram: "https://www.instagram.com/rolex/", threads: "https://www.threads.com/@rolex", facebook: "https://www.facebook.com/rolex", linkedin: "https://www.linkedin.com/company/rolex", x: "https://x.com/ROLEX", pinterest: "https://www.pinterest.com/rolex/", weibo: "https://weibo.com/rolex", douyin: "https://v.douyin.com/uo9k_ivcQTQ/", line: "https://lin.ee/uGN7jOr1" }   # JSON-LD sameAs (incl. regional CN/JP channels)
 
 # Capture meta
 captured_at: 2026-05-31
@@ -38,7 +39,7 @@ business_model: Transactional / One-time
 primary_industry: Consumer Goods
 
 # Visual identity
-logo_url: https://static.rolex.com/icons/rolex_fav_icon.png   # branding.images.logo is the inline data-URI gold-crown SVG; favicon used as the hostable fallback
+logo_url: https://media.rolex.com/f_auto/q_auto/c_limit,w_300/rolexcom/rolex-logo.png   # JSON-LD `logo` (canonical crown mark) — supersedes the favicon fallback
 brand_colors: { primary: "#127749", accent: "#D4AF37" }   # Rolex green (branding payload: #329066/#127749) + the gold crown; verified against screenshot
 fonts: [Helvetica Now Text]
 color_scheme: light
@@ -138,3 +139,4 @@ Rolex is the rare luxury maker whose website is deliberately *not* a store — i
 - **Credits:** 9 (1 map + 1 homepage + 7 key pages); see `fc.py spend`.
 - **Couldn't get:** any pricing (none published — Official-Jeweler sales only); ownership/parent (not asserted on site); headcount/revenue/founding year (not on captured marketing pages).
 - **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): Hardware / Physical Products → Physical Products / Hardware.
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (youtube/ig/threads/fb/linkedin/x/pinterest + regional weibo/douyin/line); upgraded `logo_url` favicon→JSON-LD `logo` (`rolex-logo.png`); no `external`. Re-stamped 2.0→2.2.

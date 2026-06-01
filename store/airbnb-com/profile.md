@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: airbnb.com
@@ -126,3 +126,4 @@ The capture catches Airbnb mid-pivot. For its entire history "Airbnb" meant Home
 - **Verify:** all sourceURL-matched and body-md5-unique (clean).
 - **Credits:** not recorded this run.
 - **Couldn't get:** exact fee percentages, host onboarding flow behind `/become-a-host`, and the full Experiences/Services catalogs (geolocated, point-in-time). Financials/funding are a deep-research job, not Tier-0.
+- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-30 homepage rawHtml — JSON-LD present but carries no `sameAs`/`logo`/`alternateName`, so no new structured-layer fields. Re-stamped 2.0→2.2.

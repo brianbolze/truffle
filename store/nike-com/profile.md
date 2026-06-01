@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.2"
 
 # Identity
 domain: nike.com
@@ -8,6 +8,8 @@ name: Nike
 aliases: []
 parent: []
 owns: ["converse.com", "Jordan Brand", "NikeSKIMS"]   # STRAIN: Jordan = nike.com/jordan (no own domain); NikeSKIMS = Nike×SKIMS JV, also on-site
+socials: { youtube: "https://www.youtube.com/user/nike", linkedin: "https://www.linkedin.com/company/nike", facebook: "https://www.facebook.com/nike", x: "https://twitter.com/nike", instagram: "https://www.instagram.com/nike/" }   # JSON-LD sameAs (Nike-owned handles; the Converse/Jordan entries in the same sameAs left out)
+external: { wikipedia: "https://en.wikipedia.org/wiki/Nike,_Inc.", wikidata: "https://www.wikidata.org/wiki/Q483915" }   # JSON-LD sameAs — third-party records (Nike Inc; Converse/Jordan left out)
 
 # Capture meta
 captured_at: 2026-05-30
@@ -41,7 +43,7 @@ business_model: Transactional / One-time   # product sales; Nike Membership is a
 primary_industry: Sports & Recreation
 
 # Visual identity
-logo_url: https://www.nike.com/favicon.ico?v=1   # branding.images.logo is an inline data-URI swoosh SVG → favicon fallback
+logo_url: https://static.nike.com/a/images/f_jpg,q_auto:eco/61b4738b-e1e1-4786-8f6c-26aa0008e80b/swoosh-logo-black.png   # JSON-LD `logo` (canonical swoosh mark) — supersedes the favicon fallback
 brand_colors: { primary: "#111111", background: "#FFFFFF" }   # STRAIN: true identity is black swoosh / white; branding API returned campaign colors (volt #BAD168, pink #FF009E, orange #FF7334) — content, not brand
 fonts: [Helvetica Now Text, Helvetica Now Display]
 color_scheme: light
@@ -165,3 +167,4 @@ all the visual energy.
 - **Credits:** ~5 credits spent.
 - **Couldn't get:** product detail pages / pricing (lives on `/t/...` PDPs, none captured), Converse (separate domain), the gated app experiences.
 - **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): Apparel & Footwear → Physical Products / Hardware.
+- **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-30 rawHtml, hint-to-verify) — filled `socials` (youtube/linkedin/facebook/x/instagram — Nike-owned, not the Converse/Jordan sub-brands in the same `sameAs`) + `external` (wikipedia/wikidata, Nike Inc only); upgraded `logo_url` favicon→JSON-LD `logo` (swoosh PNG). Re-stamped 2.0→2.2.
