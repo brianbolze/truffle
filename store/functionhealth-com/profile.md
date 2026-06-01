@@ -1,4 +1,5 @@
 ---
+# Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
 schema_version: 1
 
 # Identity

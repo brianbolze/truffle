@@ -22,6 +22,7 @@ Stable, queryable, cheap. Closed-set fields draw from [`TAXONOMIES.md`](TAXONOMI
 
 ```yaml
 ---
+# Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
 schema_version: 1                    # contract MAJOR.MINOR the profile obeys; readers gate on it (see note below)
 
 # Identity
@@ -62,6 +63,8 @@ color_scheme: light                  # light | dark
 design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/), not the branding payload
 ---
 ```
+
+*The first frontmatter line is a fixed pointer to [`QUERYING.md`](QUERYING.md) — **identical boilerplate on every profile**, so an agent that opens a `profile.md` cold (a deep path that never passed the store README) still finds the query contract. It's a YAML comment (the parser ignores it) and is store infrastructure, not a description of the company — carry it forward verbatim; the "describe the company, not the engine" rule doesn't reach a fixed template pointer.*
 
 *`schema_version` is the contract the profile obeys — the field / value / section set, **not** the prose docs (a docs-only edit like wording changes nothing). It's `MAJOR.MINOR`:*
 - ***MAJOR*** *(`1`→`2`) — a **breaking** change: a field removed/renamed, or a closed-set value whose meaning changed. Old profiles are now non-conformant — migrate `store/`, re-capture where needed, run `scripts/querycheck.py`.*
