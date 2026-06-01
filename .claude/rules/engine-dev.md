@@ -14,8 +14,9 @@ The contract is [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md); why
 
 - **Spend on conventions, not infrastructure.** Markdown is the source of truth; any SQLite index is a *derived lens*, never authoritative. Improvements to SCHEMAs and TAXONOMIES pays dividends down the line.
 - **Iterative, not one-shot.** De-risk designs by running probes in `experiments/<date>-<slug>/` before baking in; Hand-capture a few real companies before codifying a verb/change.
-- **The anti-Doro line.** No graph DB, embeddings, datapoint reconciliation, complex entity-resolution, or served API. When a decision smells heavy, that's the flag.
+- **Least-complexity, and push back.** Hunt the simplest 80/20 and cut what isn't essential; no change should be *purely additive* — every edit earns a simplification pass (what can go?). Brian over-engineers by his own admission and *wants* the pushback, so challenge scope and say when simpler wins.
 - **Engine owns state — not events or judgments.** What a company/offering *is*: yes. News/funding/M&A and relevance/threat/fit: no — those belong to downstream consumers.
+- **The anti-Doro line.** No graph DB, embeddings, datapoint reconciliation, complex entity-resolution, or served API. When a decision smells heavy, that's the flag.
 - **Propose, don't write** across a project's boundary. The engine never silently mutates a project's KB.
 - **Commit per logical change**, terse imperative subject. `git log` is the changelog — no CHANGELOG file.
 
