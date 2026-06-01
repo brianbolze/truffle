@@ -9,10 +9,11 @@
 ## How to write a profile (capturing agent)
 
 - **Describe the company, not the engine.** A profile records what the company *is* — never commentary about the schema itself. Observations about the contract (missing values, taxonomy gaps, capture-tooling quirks) go to [`BACKLOG.md`](BACKLOG.md), not into prose or comments. The one exception is the inline `# STRAIN:` note on a frontmatter line, which explains *that field's* value to a grep-consumer in a few words.
-- **Fill every field the captured pages support — and only those.** If a field isn't determinable from what you captured, leave it empty and add one line to `unverified_fields`. Do not infer it from prior knowledge. *(Funding stage, headcount, revenue are rarely on a marketing site — leave them out. They're a deep-research job, not this one.)*
-- **Quote verbatim anything claim- or price-bearing** — taglines, pricing, regulated claims. Paraphrase only long prose.
+- **Everything traces to the capture.** Fill only what the captured pages support; else `unverified_fields`, never a guess. Every fact — *especially* volatile ones (prices, counts, dates, "current X") — must point to a captured page: greppable in the markdown or legible in a screenshot. Can't point to where it came from? It doesn't go in. And don't invent a reason or date to reconcile two captures that disagree — report the discrepancy. The lone exception: a prior used purely to **resolve identity** (a ticker, the domain behind a named brand) may land *marked* on the `Enriched (model knowledge)` Provenance line — kept near-empty, never for what the company does, sells, or claims. *(Funding stage, headcount, revenue are rarely on a marketing site — leave them out; that's a deep-research job, not this one.)*
+- **Verbatim where the exact words are the data.** Quote, don't paraphrase, wherever the wording or number is itself the signal — prices and tiers, the company's own product and category names, quantified or regulated claims, proof points, guarantees, named certifications and partners (among others). A verbatim string can't survive the grep if it was invented, and it stops a prior leaking into a paraphrase. Paraphrase only connective prose.
 - **Use the screenshots.** The visual read (design maturity, imagery, tone) is yours to make and a text scraper can't. Write it in *Visual & brand impression*.
 - **Reconcile across the whole site you captured.** The homepage is one input, not the answer. Apply this to every section, not just the first.
+- **Prominence is an observation, not a verdict.** Record what a site foregrounds — hero, repeated CTAs — as what they make *salient*; never infer flagship status, market position, or adoption from placement. Who leads a market is a consumer-layer call, not capture.
 - **Keep each body section tight** — a few sentences or bullets. Earn a section with evidence; omit it rather than pad with "N/A".
 - **Write the body to be queried, not just read** — enumerable lists (offerings, plans, proof-points) **lead each line with a bold `name:`** + verbatim value (see *body*, below); interpretive prose stays prose. Don't template sections — shape the lists.
 
@@ -97,8 +98,8 @@ The bold lead-in is the load-bearing part — `rg '^- \*\*'` enumerates the item
 | **How it works / model** | Customer journey (e.g. quiz → consult → subscription) + how they make money + delivery. |
 | **Positioning & audience** | Who they target, against whom, their claimed edge. Brief — deep voice work goes to `brand.md`. |
 | **Nav structure** | Their own taxonomy, as a nested list with URLs. Capture the **complete** nav — mega-menu flyouts and dropdowns included; it's the best signal of their offering hierarchy. |
-| **Credibility & proof** | Trust signals: press logos, certifications, # customers, guarantees, testimonial presence. |
-| **Provenance** | A fixed, greppable set — one line each: **Pages** (analyzed + method) · **Verify** (sourceURL + md5 result) · **Credits** spent · **Couldn't get** (what + why). |
+| **Credibility & proof** | Trust signals: press logos, certifications, # customers, guarantees, testimonial presence. Capture self-reported proof ("trusted by 10M") **verbatim and flagged self-reported** — record the claim, never endorse it as fact. |
+| **Provenance** | A fixed, greppable set — one line each: **Pages** (analyzed + method) · **Verify** (sourceURL + md5 result) · **Credits** spent · **Couldn't get** (what + why). Optionally **Enriched** (model knowledge) — *only* the rare identity prior taken from the model, not the page (e.g. `Enriched (model knowledge): ETSY ticker; Reverb→reverb.com`); distinct from `unverified_fields` ("couldn't get it"), this is "got it — from the model, not the site." |
 
 **Optional (only when there's real signal):**
 
