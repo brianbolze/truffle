@@ -21,7 +21,7 @@ The contract is [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md); why
 
 ## Prior art — mine it, don't reinvent it
 
-Capture mechanics + Firecrawl quirks are already distilled in-repo at [`firecrawl-capture.md`](_design/references/firecrawl-capture.md) (which reconciles agent-workflows' `competitor-watch` + `INVARIANTS`). Beyond capture, two prior systems solved pieces of this — read the relevant one before designing, then keep ours lighter.
+Capture mechanics + Firecrawl quirks are already distilled in-repo at [`firecrawl-capture.md`](skills/research-company/firecrawl-capture.md) — the capture playbook that ships with the `/research-company` skill (it reconciles agent-workflows' `competitor-watch` + `INVARIANTS`). Beyond capture, two prior systems solved pieces of this — read the relevant one before designing, then keep ours lighter.
 
 **Doro** — the VC-era PE tool whose weight we refused; mine its schemas, refuse its machinery. Base: `/Users/brianbolze/Development/software/doro/doro` (*local dev only — a cloud clone won't have it*). Paths below are relative to that base:
 

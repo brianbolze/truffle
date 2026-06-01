@@ -1,4 +1,4 @@
-# Reference: Firecrawl capture playbook
+# Firecrawl capture playbook
 
 The hard-won mechanics of capturing a company website with Firecrawl — what to call, in what order, what it costs, and what breaks. **This is the engine's capture contract; the `/research-company` verb implements it.** Distilled from our hand-captures ([linear](../../experiments/2026-05-30-first-capture/FINDINGS.md), [AG1](../../experiments/2026-05-30-breadth/FINDINGS.md), [shapes: nike/aws/benadryl](../../experiments/2026-05-30-shapes/FINDINGS.md), [telehealth cohort ×6](../../experiments/2026-05-30-telehealth-cohort/FINDINGS.md)), reconciled against agent-workflows' `competitor-watch` + `INVARIANTS.md`, and verified against docs.firecrawl.dev (2026-05-30).
 

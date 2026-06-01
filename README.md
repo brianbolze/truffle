@@ -14,7 +14,7 @@ _design/      # frame / vision docs (source of truth for intent)
 _archive/     # superseded docs
 experiments/  # throwaway probes to de-risk decisions before building
 scripts/      # engine utilities (querycheck.py — QUERYING.md drift self-test; store.py — resolve()/relations() query primitives)
-skills/       # the capture verb — research-company/ (SKILL.md + fc.py workhorse), global via ~/.claude/skills
+skills/       # the capture verb — research-company/ (SKILL.md + firecrawl-capture playbook + scripts/fc.py workhorse), global via ~/.claude/skills
 store/        # the shared company store (store/<domain-slug>/) — created as captures land
 ```
 

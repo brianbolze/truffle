@@ -19,7 +19,7 @@ Turn `research company X` into a cached, structured, cited dossier at `store/<do
 
 ## Before you start — read the two authority docs (don't reinvent them)
 
-This skill orchestrates; the contract lives in the engine repo. Resolve the engine root and read:
+Two contracts govern this verb. The **capture playbook** ships *with* this skill (a sibling file); the **store contract** lives in the engine repo — resolve the engine root for that one:
 
 ```bash
 # engine root = the repo holding this skill (works through the ~/.claude/skills symlink):
@@ -27,8 +27,8 @@ ENGINE="$(cd "$(dirname "$(realpath "$0")")/../.." 2>/dev/null && pwd)"   # if $
 # canonical fallback (single-user setup): "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research"
 ```
 
-1. **`_design/references/firecrawl-capture.md`** — the capture mechanics. **§1 is the recipe; the `fc.py` calls below execute it.** §5 is the when-it-breaks lookup (geo-misroute, bot defense, map noise, SPA soft-404s) — skim it so you recognize a hazard when you hit one.
-2. **`SCHEMA.md` + `TAXONOMIES.md`** — how to write `profile.md`: the frontmatter fields, the closed value sets, the body sections. This is the enrichment contract (step 7). Read it before writing.
+1. **`firecrawl-capture.md`** (next to this file) — the capture mechanics. **§1 is the recipe; the `fc.py` calls below execute it.** §5 is the when-it-breaks lookup (geo-misroute, bot defense, map noise, SPA soft-404s) — skim it so you recognize a hazard when you hit one.
+2. **`SCHEMA.md` + `TAXONOMIES.md`** (engine root) — how to write `profile.md`: the frontmatter fields, the closed value sets, the body sections. This is the enrichment contract (step 7). Read it before writing.
 
 `scripts/fc.py` (next to this file) is the workhorse: it auto-reads `FIRECRAWL_API_KEY`, applies `maxAge:0` + `location:US` + `waitFor` + the all-formats bundle, persists raw JSON + cleaned md + screenshots to `store/<slug>/captures/<today>/`, and logs a manifest for the verify step. **Always capture through `fc.py`** — never hand-roll curl scrapes (you'll drop a hazard knob).
 

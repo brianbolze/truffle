@@ -1,6 +1,6 @@
 # Reference: payload-markdown cleaning (research — not yet acted)
 
-> Research for the BACKLOG item *"payload-markdown cleaning pass."* An empirical noise inventory of the captured markdown, a proposed **subtractive** cleaning ruleset, and the section-tagging decision. **Nothing is applied** — the next step is a de-risking experiment (bottom). Authored 2026-05-31 (Opus research session); a sibling to [`firecrawl-capture.md`](firecrawl-capture.md) (capture mechanics) — this covers what to do with the markdown *after* capture.
+> Research for the BACKLOG item *"payload-markdown cleaning pass."* An empirical noise inventory of the captured markdown, a proposed **subtractive** cleaning ruleset, and the section-tagging decision. **Nothing is applied** — the next step is a de-risking experiment (bottom). Authored 2026-05-31 (Opus research session); a sibling to [`firecrawl-capture.md`](../../skills/research-company/firecrawl-capture.md) (capture mechanics) — this covers what to do with the markdown *after* capture.
 
 ## The premise (confirmed)
 
