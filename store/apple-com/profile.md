@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: 1
+schema_version: "2.0"
 
 # Identity
 domain: apple.com
@@ -33,7 +33,7 @@ description: "Designs and sells premium consumer hardware — iPhone, Mac, iPad,
 # Classification
 entity_type: Company
 target_market: [B2C, B2B, B2G]
-offering_category: [Hardware / Physical Products, Media / Content, Software / SaaS, Financial / Fintech Products]
+offering_category: [Physical Products / Hardware, Media / Content, Software / SaaS, Financial / Fintech Products]
 portfolio_shape: Catalog
 business_model: Transactional / One-time
 primary_industry: Technology
@@ -120,3 +120,4 @@ The site quietly tells the bull story: a hardware **catalog** so deep it can't b
 - **Verify:** all md5-unique (clean).
 - **Credits:** not recorded this run.
 - **Couldn't get:** per-SKU pricing behind the shop funnel; financials/headcount (off-site, out of scope).
+- **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): Hardware / Physical Products → Physical Products / Hardware.

@@ -1,5 +1,5 @@
 ---
-schema_version: 1
+schema_version: "2.0"
 
 # Identity
 domain: swatch.com
@@ -29,7 +29,7 @@ description: "A Swiss fashion-watch brand selling colorful, affordable quartz an
 # Classification
 entity_type: Company
 target_market: [B2C]
-offering_category: [Apparel & Footwear, Retail / E-Commerce]
+offering_category: [Physical Products / Hardware]
 portfolio_shape: Catalog
 business_model: Transactional / One-time
 primary_industry: Consumer Goods
@@ -128,3 +128,4 @@ The interesting move is the **scarcity-as-channel** play on collaborations. Swat
 - **Verify:** `fc.py verify` — all 7 sourceURLs matched, all body md5s unique; no geo/cache contamination. (Map is a 500-URL sample, near-all product PDPs.)
 - **Credits:** 9 — 2 map + 1 homepage (all-formats) + 6 key pages, 1 credit each.
 - **Couldn't get:** MoonSwatch online price (in-store-only by design); explicit Swatch Group parent linkage (not on captured marketing pages); per-SKU catalog depth (deferred — `Catalog` shape, captured by shape not enumeration).
+- **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): [Apparel & Footwear, Retail / E-Commerce] → Physical Products / Hardware.

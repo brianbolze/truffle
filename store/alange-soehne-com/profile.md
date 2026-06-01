@@ -1,5 +1,5 @@
 ---
-schema_version: 1
+schema_version: "2.0"
 
 # Identity
 domain: alange-soehne.com
@@ -31,7 +31,7 @@ description: "A German haute-horlogerie manufacture in Glashütte that hand-craf
 # Classification
 entity_type: Company
 target_market: [B2C]
-offering_category: [Hardware / Physical Products, Retail / E-Commerce]
+offering_category: [Physical Products / Hardware]
 portfolio_shape: Multi-product
 business_model: Transactional / One-time
 primary_industry: Consumer Goods
@@ -129,3 +129,4 @@ The whole site is engineered to *not* sell online — price-on-request and a ves
 - **Verify:** all 7 sourceURLs matched; all 7 body md5s unique — no geo/cache contamination. Served under location:US despite a UK geo-detect banner.
 - **Credits:** 8 (1 map + 7 scrapes, all base 1cr; no enhanced proxy, no PDFs).
 - **Couldn't get:** any actual prices (all "Price upon request"); repair/overhaul price schedule (lives at /customer-service/* URLs, not in main nav); per-SKU catalogue depth (deferred to offerings.md).
+- **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): Hardware / Physical Products → Physical Products / Hardware.

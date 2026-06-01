@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: 1
+schema_version: "2.0"
 
 # Identity
 domain: cartier.com
@@ -32,7 +32,7 @@ description: "The French luxury Maison, a jeweler and watchmaker since 1847, des
 # Classification — closed sets (see TAXONOMIES.md).
 entity_type: Company                 # runs its own commerce/P&L and sells DTC, though owned by Richemont (AWS→Amazon precedent)
 target_market: [B2C]
-offering_category: [Apparel & Footwear, Retail / E-Commerce]   # STRAIN: no "Luxury Goods / Jewelry & Watches" value exists; Apparel bucket explicitly covers "accessories (incl. fashion brands)" — best closed-set home for a jewelry/watch Maison. See BACKLOG.
+offering_category: [Physical Products / Hardware]   # maker of jewelry/watches/leather goods; sold DTC but classified by product, not as a reseller (maker-vs-reseller rule)
 portfolio_shape: Catalog             # category × iconic-collection; hundreds of SKUs, un-enumerable
 business_model: Transactional / One-time
 primary_industry: Consumer Goods
@@ -137,3 +137,4 @@ Restrained, editorial luxury. Centered serif **Cartier wordmark** on a white/cre
 - **Verify:** all 8 sourceURLs matched; all 8 body md5s unique — no §5.1 geo/cache contamination.
 - **Credits:** 10 (1 map + 1 map-search + 1 homepage + 7 key pages).
 - **Couldn't get:** watch pricing (not sold online / appointment-gated); per-SKU catalog depth (Catalog shape — `offerings.md` territory); explicit Richemont ownership statement (inferred from footer link); headcount/revenue.
+- **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): [Apparel & Footwear, Retail / E-Commerce] → Physical Products / Hardware (maker-vs-reseller).

@@ -39,21 +39,22 @@
 
 *What the company sells. **List the primary first**; add a second only for a genuine hybrid (e.g. telehealth = `Services / Consulting` + `Biotech / Pharma Products`). Breadth across lines is captured by `portfolio_shape`, not here.*
 
-| Value | Means |
+| Value | Means (exemplars after —) |
 |---|---|
-| `Software / SaaS` | Software / cloud services, usually subscription or licensed |
-| `Hardware / Physical Products` | Manufactured devices or equipment |
-| `Services / Consulting` | Human-delivered expertise, advisory, or done-for-you services |
-| `Marketplace / Platform` | Connects buyers and sellers; commission / network effects |
-| `Media / Content` | Produces or distributes content (news, video, music, streaming) |
-| `Financial / Fintech Products` | Payments, banking, lending, investing, insurance |
-| `Biotech / Pharma Products` | Drugs, therapeutics, medical devices, diagnostics |
-| `Consumer Packaged Goods (CPG)` | Frequently-replaced consumer goods (food, beauty, household) |
-| `Apparel & Footwear` | Clothing, footwear, and accessories (incl. athletic & fashion brands) |
-| `Retail / E-Commerce` | Sells products direct to consumers, online or in-store |
-| `Industrial / Manufacturing` | Industrial goods, machinery, large-scale production |
-| `Energy / Utilities` | Generates, distributes, or services energy |
-| `Non-Profit / NGO` | Operates for social benefit, not profit |
+| `Software / SaaS` | Software / cloud services, usually subscription or licensed — e.g. Salesforce, Adobe |
+| `Physical Products / Hardware` | Any manufactured physical good — devices, equipment, watches, apparel, durables — e.g. Apple, Rolex, Nike |
+| `Services / Consulting` | Human-delivered expertise, advisory, or done-for-you services — e.g. Deloitte, Accenture |
+| `Marketplace / Platform` | Connects buyers and sellers; commission / network effects — e.g. Airbnb, Uber |
+| `Media / Content` | Produces or distributes content (news, video, music, streaming) — e.g. Netflix, Spotify |
+| `Financial / Fintech Products` | Payments, banking, lending, investing, insurance — e.g. Stripe, PayPal |
+| `Biotech / Pharma Products` | Drugs, therapeutics, medical devices, diagnostics — e.g. Pfizer, Moderna |
+| `Consumer Packaged Goods (CPG)` | Frequently-replaced consumer goods (food, beauty, household) — e.g. Unilever, Coca-Cola |
+| `Retail / E-Commerce` | A **reseller** of other brands' goods — storefront, merchandising, inventory — e.g. Walmart, Wayfair |
+| `Industrial / Manufacturing` | Industrial goods, machinery, large-scale production — e.g. Siemens, Caterpillar |
+| `Energy / Utilities` | Generates, distributes, or services energy — e.g. Shell, NextEra |
+| `Non-Profit / NGO` | Operates for social benefit, not profit — e.g. Red Cross, WWF |
+
+**Maker vs. reseller.** Classify a company that *makes* a product by the product, even when it sells direct from its own site or boutiques — Rolex and Nike are `Physical Products / Hardware`, not `Retail / E-Commerce`. Reserve `Retail / E-Commerce` for **resellers** whose business *is* selling other brands' goods (Walmart, Wayfair); a maker's own storefront is a channel, not a second category. A market vertical (watches, luxury, fashion) is never an `offering_category` — what the company *makes* picks the value.
 
 ## `portfolio_shape` *(optional)*
 
@@ -87,7 +88,7 @@
 
 ## `primary_industry` *(optional — heaviest taxonomy)*
 
-*The sector the company operates **in** — distinct from what it sells. A fintech SaaS is `primary_industry: Finance & Fintech`, `offering_category: Software / SaaS`. A medical-device maker is `Healthcare & Life Sciences` + `Hardware / Physical Products`. Pick the single best fit; use `Other` rather than forcing a poor one.*
+*The sector the company operates **in** — distinct from what it sells. A fintech SaaS is `primary_industry: Finance & Fintech`, `offering_category: Software / SaaS`. A medical-device maker is `Healthcare & Life Sciences` + `Physical Products / Hardware`. Pick the single best fit; use `Other` rather than forcing a poor one.*
 
 | | | |
 |---|---|---|

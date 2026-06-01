@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: 1
+schema_version: "2.0"
 
 # Identity
 domain: nike.com
@@ -35,7 +35,7 @@ description: "Designs and sells athletic footwear, apparel, and equipment direct
 # Classification
 entity_type: Company
 target_market: [B2C, B2B]            # B2C dominant (DTC + retail); B2B via wholesale, Corporate Sales, team/federation kit
-offering_category: [Apparel & Footwear]
+offering_category: [Physical Products / Hardware]   # maker of footwear/apparel/equipment; the athletic/fashion vertical is not a category
 portfolio_shape: Catalog
 business_model: Transactional / One-time   # product sales; Nike Membership is a FREE loyalty layer, not a subscription
 primary_industry: Sports & Recreation
@@ -164,3 +164,4 @@ all the visual energy.
 - **Verify:** all sourceURLs matched, all 3 bodies md5-unique (clean; no geo/cache contamination).
 - **Credits:** ~5 credits spent.
 - **Couldn't get:** product detail pages / pricing (lives on `/t/...` PDPs, none captured), Converse (separate domain), the gated app experiences.
+- **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): Apparel & Footwear → Physical Products / Hardware.

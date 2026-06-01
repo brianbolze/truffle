@@ -1,5 +1,5 @@
 ---
-schema_version: 1
+schema_version: "2.0"
 
 # Identity
 domain: casio.com
@@ -30,7 +30,7 @@ description: "A Japanese electronics manufacturer that designs and sells consume
 # Classification
 entity_type: Company
 target_market: [B2C]
-offering_category: [Hardware / Physical Products, Retail / E-Commerce]
+offering_category: [Physical Products / Hardware]
 portfolio_shape: Catalog
 business_model: Transactional / One-time
 primary_industry: Technology
@@ -111,3 +111,4 @@ Clean, high-volume retail storefront on a white background with black body text 
 - **Verify:** all 6 sourceURLs matched the requested URLs; all body md5s unique — no geo/cache contamination this run.
 - **Credits:** 7 (1 map + 6 scrapes; all basic proxy, 1cr each).
 - **Couldn't get:** corporate depth (founding year, financials, headcount, segment breakdown — on `world.casio.com/corporate` + `/ir`, not scraped at depth); Moflin retail price (not on the product page); non-US pricing (site geo-routes — US snapshot only).
+- **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): [Hardware / Physical Products, Retail / E-Commerce] → Physical Products / Hardware.

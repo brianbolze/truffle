@@ -1,5 +1,5 @@
 ---
-schema_version: 1
+schema_version: "2.0"
 
 # Identity
 domain: patek.com
@@ -31,7 +31,7 @@ description: "The last family-owned Genevan watch manufacturer, designing and cr
 # Classification
 entity_type: Company
 target_market: [B2C, B2B2C]   # consumer luxury brand sold through a network of authorized retailers/Salons
-offering_category: [Hardware / Physical Products]   # manufactured mechanical timepieces; luxury goods has no closer closed-set value
+offering_category: [Physical Products / Hardware]
 portfolio_shape: Catalog   # 150+ references across ~10 wristwatch collections + pocket watches + clocks; capture shape, not the list
 business_model: Transactional / One-time   # watches bought outright; paid after-sales servicing/restoration is ancillary
 primary_industry: Consumer Goods
@@ -157,3 +157,4 @@ Patek's entire moat is **scarcity + independence + intergenerational value**, an
 - **Verify:** all 8 sourceURLs match; all 8 body md5s unique — no geo/cache contamination. All HTTP 200.
 - **Credits:** 9 (1 map + 1 homepage + 7 key pages).
 - **Couldn't get:** any pricing (not published — luxury convention); company financials/headcount/production volume (not on a marketing site); per-reference catalog depth (deferred — `Catalog` shape, not enumerated).
+- **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): Hardware / Physical Products → Physical Products / Hardware.

@@ -28,11 +28,6 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 
 ### Schema & taxonomy decisions
 
-- **`offering_category` fragments physical-goods makers (luxury/watch cohort)** `[weakness]` `[sm]`
-  The 7 watch/luxury brands split **3 ways** — `[Hardware / Physical Products]` (rolex, patek, AP), `[Apparel & Footwear, Retail / E-Commerce]` (cartier, swatch), `[Hardware / Physical Products, Retail / E-Commerce]` (alange, casio) — so "all watch brands" groups none of them. Cause: terse one-line value guidance + the name "Hardware" reads as *electronics*, repelling makers toward Apparel/Retail. **Not** a missing value — the fix is guidance, not a new bucket (defend the closed set from sprawl).
-  **Fix (guidance + rename + cut, no new value):** (1) **rename** `Hardware / Physical Products` to lead with the general term (e.g. `Physical Products / Hardware`) so any physical-goods maker belongs; (2) add per-value exemplars + a **maker-vs-reseller rule** (a maker is classified by its product; `Retail / E-Commerce` = resellers/storefronts) — Doro's *insight* (`categorical_fields/offering_categories.py`), not its machinery; (3) **remove `Apparel & Footwear`** (agent-added, beyond Doro's 12) — fold apparel makers (Nike, Swatch) into Physical Products. "Watches"/"luxury" is a **`tags` vertical**, not a category.
-  **Act when:** next. Value rename + removal = a **MAJOR** bump — migrate the affected physical-goods/apparel profiles, run `scripts/querycheck.py`.
-
 - **`offerings.md` design drafted (not activated); `brand.md` still deferred** `[tbd]` `[md]`
   The initial `offerings.md` design session is **done** → [`_design/2026-06-01-offerings.md`](_design/2026-06-01-offerings.md) (9-field record; per-offering `price_visibility` the one universal axis; heavy price-normalization left per messy vertical; `pricing_model` retired). What's open is a second design review, and **activation** — whether/when to write the file, gated on a project enabling the module (single-offering companies fold a `price_visibility` token into `profile.md` instead). `brand.md` schema is still unstarted; seed [`doro-product-analysis-prompt.md`](_design/references/doro-product-analysis-prompt.md).
   **Act when:** Brian decides, or a project turns on offerings (wire SCHEMA's Tier-1 stub → the design doc; add `offerings.md` lint to `fc.py`/`querycheck.py`) or brand.
@@ -41,9 +36,6 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
   A multi-select, non-constrained list of what the company is known for doing / offering.
 
 ### Capture quality
-
-- **Better `/map` guidance so results aren't 90% blog / docs** `[weakness]` `[sm]` `[@brian]`
-  The map step over-returns articles and documentation, drowning product/pricing pages — hit on the Cloudflare and Datadog runs (should be noted in their `site_notes`).
 
 - **Junk soft-404 stubs slip past verify** `[weakness]` `[sm]`
   Some sites serve a fake "Page Not Found" stub (HTTP 404, but a real-sized, unique body) for any bad path — Qualtrics did, for 4 guessed URLs. It's not thin, so verify's guards miss it and §5.6 ("trust the body, not the status") says keep it. **Prevention:** only scrape URLs from the captured map/homepage links, never guess paths from convention (this alone avoids it). **Detection:** teach `fc.py verify` a 404-with-not-found fingerprint.

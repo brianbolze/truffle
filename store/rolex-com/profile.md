@@ -1,5 +1,5 @@
 ---
-schema_version: 1
+schema_version: "2.0"
 
 # Identity
 domain: rolex.com
@@ -32,7 +32,7 @@ description: "Swiss luxury watch manufacture that designs, develops and produces
 # Classification
 entity_type: Company
 target_market: [B2C]
-offering_category: [Hardware / Physical Products]   # manufactured precision timepieces; brand frames itself as a "manufacture," not fashion apparel
+offering_category: [Physical Products / Hardware]
 portfolio_shape: Catalog
 business_model: Transactional / One-time
 primary_industry: Consumer Goods
@@ -137,3 +137,4 @@ Rolex is the rare luxury maker whose website is deliberately *not* a store — i
 - **Verify:** all 8 sourceURLs matched; all 8 body md5s unique (no §5.1 geo/cache contamination). /watches returned thin (~480c SPA grid) — model families recovered from homepage mega-nav. CPO page geo-label showed en-gb but body content is correct.
 - **Credits:** 9 (1 map + 1 homepage + 7 key pages); see `fc.py spend`.
 - **Couldn't get:** any pricing (none published — Official-Jeweler sales only); ownership/parent (not asserted on site); headcount/revenue/founding year (not on captured marketing pages).
+- **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): Hardware / Physical Products → Physical Products / Hardware.

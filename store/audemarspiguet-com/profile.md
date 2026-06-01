@@ -1,5 +1,5 @@
 ---
-schema_version: 1
+schema_version: "2.0"
 
 # Identity
 domain: audemarspiguet.com
@@ -30,7 +30,7 @@ description: "A Swiss haute-horlogerie manufacture, founded 1875 in Le Brassus a
 # Classification
 entity_type: Company
 target_market: [B2C]
-offering_category: [Hardware / Physical Products]   # luxury manufactured timepieces; no second category — .com does not sell directly
+offering_category: [Physical Products / Hardware]
 portfolio_shape: Flagship + companions   # STRAIN: Royal Oak (+ Offshore + Concept) is the overwhelming hero; Code 11.59 / Neo Frame / Établisseurs are companions. Underlying reference count is catalog-scale.
 business_model: Transactional / One-time
 primary_industry: Consumer Goods
@@ -128,3 +128,4 @@ The site's deliberate *refusal* to transact is the strategy: no cart, no prices,
 - **Verify:** All 6 sourceURLs matched; all 6 body md5s unique — no §5.1 geo/cache contamination.
 - **Credits:** 7 (1 map + 1 homepage all-formats + 5 key pages, 1 each; no enhanced-proxy retries).
 - **Couldn't get:** Watch prices (none on .com — no e-commerce); maintenance price list (separate page, not scraped); headcount/revenue/production volume (not on a marketing site); textual store list (Stores page is a Google-Maps embed).
+- **Migrations:** 2026-06-01 v1→v2.0 — offering_category remapped by rule (not re-captured): Hardware / Physical Products → Physical Products / Hardware.

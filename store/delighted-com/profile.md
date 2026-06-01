@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: 1
+schema_version: "2.0"
 
 # Identity
 domain: delighted.com
