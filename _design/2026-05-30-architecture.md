@@ -20,7 +20,7 @@ Where things live, and how they connect.
 
 A global verb finds the engine via `WEB_RESEARCH_HOME` in `~/.claude/settings.json` — the same file that grants repo access and allowlists `api.firecrawl.dev`. Config resolves as **global defaults ← project overrides**, so a bare session gets sane behavior and a configured project gets its own schema + destination.
 
-> **What the engine owns — and doesn't.** The engine owns generic, cross-domain **classification** (`entity_type`, `offering_category`, … — see [`TAXONOMIES.md`](../TAXONOMIES.md)) and company-intrinsic facts/observations. It does *not* own: (a) **market verticals** ("Weight Loss," "Hormone Therapy") — project-owned; or (b) **user-relative judgments** — strategic relevance, importance, competitive threat, fit — which depend on *who's asking* and need context the engine doesn't typically have. Rule of thumb: the engine **describes the company**; the project decides **what it means to them**. (The optional `Strategic read` section is company-*intrinsic* observation — "what's notable here" — not relevance-to-you.)
+> **What the engine owns — and doesn't.** The engine owns generic, cross-domain **classification** (`entity_type`, `offering_category`, … — see [`TAXONOMIES.md`](../TAXONOMIES.md)) and company-intrinsic facts/observations. It does *not* own: (a) **market verticals** ("Weight Loss," "Hormone Therapy") — project-owned; or (b) **user-relative judgments** — strategic relevance, importance, competitive threat, fit — which depend on *who's asking* and need context the engine doesn't typically have. Rule of thumb: the engine **describes the company**; the project decides **what it means to them**. (The optional `Strategic read` section is company-*intrinsic* observation — "what's notable here" — not relevance-to-you.) Market position rides the same line: record what a site foregrounds as observation, but inferring flagship status / market leadership / adoption from prominence is a judgment about *the market*, not the company — a consumer-layer call, deferred (a future Frame session, not built into capture).
 
 ## The lifecycle of a capture
 
@@ -97,7 +97,7 @@ The store will hold **several** entity types, but primarily "Companies".
 <details>
     <summary>The explicit inheritance — and the guardrails</summary>
 
-    **From Doro (ideas):** AI-at-ingestion; "structure for retrieval, not open query-time RAG"; the Capture/Enrichment/Synthesis vocabulary; provenance on every fact; freshness/recency weighting; the company field menu.
+    **From Doro (ideas):** AI-at-ingestion; "structure for retrieval, not open query-time RAG"; the Capture/Enrichment/Synthesis vocabulary; provenance on every fact — verbatim quotes are our anti-fabrication form of it; freshness/recency weighting; the company field menu.
 
     **From agent-workflows (substrate):** markdown + YAML + git + Claude Code/Routines; Max-absorbed cost (not LLM API-call pricing); payload sidecars + progressive pruning; the `site_notes` carry-forward; the BACKLOG bias-check.
 
