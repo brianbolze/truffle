@@ -12,6 +12,7 @@ Usage:
     python3 digest.py "Sermorelin"
     python3 digest.py "TRT" --snapshots /path/to/snapshots
 """
+
 import argparse
 import glob
 import os
@@ -55,7 +56,7 @@ def matching_sections(text, term):
     for k, (idx, level, title) in enumerate(headings):
         if term_l in title.lower():
             end = len(lines)
-            for idx2, level2, _ in headings[k + 1:]:
+            for idx2, level2, _ in headings[k + 1 :]:
                 if level2 <= level:
                     end = idx2
                     break
@@ -124,7 +125,7 @@ def main():
     )
     print("\n\n".join(chunks))
     print(
-        f'\n\n---\n_Coverage: {hits}/{len(brands)} brands. '
+        f"\n\n---\n_Coverage: {hits}/{len(brands)} brands. "
         f"Fidelity: {sectioned} clean, {price_only + mention_only} would need a file open._"
     )
 

@@ -8,6 +8,7 @@ Those are the candidates for code. The rest (count, recent, facet) are convenien
 
 Stdlib + PyYAML. Run `python probe.py` for the headline battery, or a single command (see DISPATCH).
 """
+
 import glob
 import os
 import re
@@ -20,7 +21,9 @@ try:
 except ImportError:
     sys.exit("PyYAML not importable — `pip install pyyaml`.")
 
-ROOT = os.environ.get("STORE_ROOT") or os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT = os.environ.get("STORE_ROOT") or os.path.dirname(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+)
 STORE = os.path.join(ROOT, "store")
 
 
@@ -32,8 +35,10 @@ def frontmatter(p):
 
 def load():
     """{slug: frontmatter-dict}. slug is the dir name (the actual store key), not the `domain` field."""
-    return {os.path.basename(os.path.dirname(p)): frontmatter(p)
-            for p in sorted(glob.glob(os.path.join(STORE, "*", "profile.md")))}
+    return {
+        os.path.basename(os.path.dirname(p)): frontmatter(p)
+        for p in sorted(glob.glob(os.path.join(STORE, "*", "profile.md")))
+    }
 
 
 def canon(s):
@@ -53,9 +58,12 @@ def is_domainish(s):
     """Does this string look like a domain/slug (joinable) vs a free-text name (not)?
 
     A relation target is either a resolvable domain or a quoted company name — the schema says so.
-    Domain markers: a dotted TLD, or the dashed slug-form the store dirs use (`foo-com`, `bar-ai`)."""
+    Domain markers: a dotted TLD, or the dashed slug-form the store dirs use (`foo-com`, `bar-ai`).
+    """
     s = str(s).strip().lower()
-    return bool(re.search(r"\.[a-z]{2,}$", s)) or bool(re.match(r"^[a-z0-9-]+-(com|ai|io|net|org|co|so)$", s))
+    return bool(re.search(r"\.[a-z]{2,}$", s)) or bool(
+        re.match(r"^[a-z0-9-]+-(com|ai|io|net|org|co|so)$", s)
+    )
 
 
 def index(P):
@@ -64,7 +72,9 @@ def index(P):
     for slug, fm in P.items():
         keys = {canon(slug), canon(fm.get("domain") or slug)}
         keys |= {canon(a) for a in (fm.get("aliases") or []) if is_domainish(a)}
-        keys |= {str(a).strip().lower() for a in (fm.get("aliases") or [])}  # name-form aliases too
+        keys |= {
+            str(a).strip().lower() for a in (fm.get("aliases") or [])
+        }  # name-form aliases too
         for k in keys:
             idx.setdefault(k, slug)
     return idx
@@ -93,7 +103,8 @@ def cmd_find(P, *args):
     """search — is X in the store? Resolves domain / name / alias / slug → the canonical key.
 
     The value here isn't the happy path (you'd guess the slug); it's the misses an agent makes by hand —
-    `granola.so` → granola-ai, `chatgpt.com` → openai-com, `Peter Uncaged MD` → getpetermd-com."""
+    `granola.so` → granola-ai, `chatgpt.com` → openai-com, `Peter Uncaged MD` → getpetermd-com.
+    """
     if not args:
         return print("usage: find <query>")
     q = " ".join(args)
@@ -108,10 +119,16 @@ def cmd_find(P, *args):
             return print(f"'{q}' → {slug}  (name)")
     # 3) substring fallback — report candidates, don't guess one
     cq = canon(q)
-    cands = sorted({slug for slug, fm in P.items()
-                    if cq in canon(slug) or cq in canon(fm.get("domain") or "")
-                    or any(cq in canon(a) for a in (fm.get("aliases") or []) if is_domainish(a))
-                    or q.strip().lower() in str(fm.get("name") or "").lower()})
+    cands = sorted(
+        {
+            slug
+            for slug, fm in P.items()
+            if cq in canon(slug)
+            or cq in canon(fm.get("domain") or "")
+            or any(cq in canon(a) for a in (fm.get("aliases") or []) if is_domainish(a))
+            or q.strip().lower() in str(fm.get("name") or "").lower()
+        }
+    )
     if cands:
         return print(f"'{q}' → no exact key; candidates: {', '.join(cands)}")
     print(f"'{q}' → NOT in store")
@@ -144,7 +161,7 @@ def cmd_relations(P, *_):
     joinable, dangling, named = [], [], []
     for slug, fm in P.items():
         for field in ("parent", "owns"):
-            for t in (fm.get(field) or []):
+            for t in fm.get(field) or []:
                 row = (slug, field, t)
                 if not is_domainish(t):
                     named.append(row)
@@ -152,7 +169,9 @@ def cmd_relations(P, *_):
                     joinable.append(row + (idx[canon(t)],))
                 else:
                     dangling.append(row)
-    print(f"relation targets: {len(joinable)} joinable · {len(dangling)} dangling · {len(named)} name-only\n")
+    print(
+        f"relation targets: {len(joinable)} joinable · {len(dangling)} dangling · {len(named)} name-only\n"
+    )
     print("JOINABLE (resolves to a held profile):")
     for slug, field, t, hit in joinable:
         print(f"  {slug:>22} --{field}--> {t}  → {hit}")
@@ -172,7 +191,7 @@ def cmd_facet(P, *args):
     multi = any(isinstance(fm.get(f), list) for fm in P.values())
     if multi:  # count membership across the lists
         c = Counter(v for fm in P.values() for v in (fm.get(f) or []))
-    else:      # scalar — count the value itself (don't iterate the string's chars)
+    else:  # scalar — count the value itself (don't iterate the string's chars)
         c = Counter(fm.get(f) or "—" for fm in P.values())
     for v, n in c.most_common():
         print(f"  {n:>3}  {v}")
@@ -180,9 +199,23 @@ def cmd_facet(P, *args):
 
 def cmd_coverage(P, *_):
     """coverage — how populated is each field across the corpus? Surfaces where the store is thin."""
-    fields = ["domain", "name", "aliases", "parent", "owns", "entity_type", "target_market",
-              "offering_category", "portfolio_shape", "business_model", "primary_industry",
-              "logo_url", "brand_colors", "design_framework", "unverified_fields"]
+    fields = [
+        "domain",
+        "name",
+        "aliases",
+        "parent",
+        "owns",
+        "entity_type",
+        "target_market",
+        "offering_category",
+        "portfolio_shape",
+        "business_model",
+        "primary_industry",
+        "logo_url",
+        "brand_colors",
+        "design_framework",
+        "unverified_fields",
+    ]
     n = len(P)
     for f in fields:
         have = sum(1 for fm in P.values() if fm.get(f) not in (None, "", []))
@@ -190,8 +223,14 @@ def cmd_coverage(P, *_):
         print(f"  {have:>3}/{n}  {bar:<20}  {f}")
 
 
-DISPATCH = {"stats": cmd_stats, "find": cmd_find, "recent": cmd_recent,
-            "relations": cmd_relations, "facet": cmd_facet, "coverage": cmd_coverage}
+DISPATCH = {
+    "stats": cmd_stats,
+    "find": cmd_find,
+    "recent": cmd_recent,
+    "relations": cmd_relations,
+    "facet": cmd_facet,
+    "coverage": cmd_coverage,
+}
 
 
 if __name__ == "__main__":

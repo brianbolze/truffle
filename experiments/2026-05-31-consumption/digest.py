@@ -20,6 +20,7 @@ Usage:
   python3 digest.py term "weight loss" GLP semaglutide tirzepatide Wegovy Zepbound Ozempic
   python3 digest.py term "compounded" "not approved" "not been evaluated" --captures
 """
+
 import argparse
 import glob
 import os
@@ -29,8 +30,14 @@ import sys
 STORE = os.path.join(os.path.dirname(__file__), "..", "..", "store")
 
 FM_FIELDS = [
-    "name", "domain", "entity_type", "target_market", "offering_category",
-    "business_model", "portfolio_shape", "is_multi_product",
+    "name",
+    "domain",
+    "entity_type",
+    "target_market",
+    "offering_category",
+    "business_model",
+    "portfolio_shape",
+    "is_multi_product",
 ]
 PRICE_RE = re.compile(r"\$\s?\d")
 
@@ -74,26 +81,41 @@ def cmd_facets(_args):
         fm = parse_fm(split_frontmatter(text)[0])
         shape = fm.get("portfolio_shape") or (
             f"(is_multi_product={fm['is_multi_product']})"
-            if "is_multi_product" in fm else "")
-        rows.append({
-            "name": fm.get("name", os.path.basename(os.path.dirname(path))),
-            "domain": fm.get("domain", ""),
-            "entity": fm.get("entity_type", ""),
-            "market": fm.get("target_market", ""),
-            "offering": fm.get("offering_category", ""),
-            "model": fm.get("business_model", ""),
-            "shape": shape,
-            "parent": fm.get("_parent", ""),
-        })
-    cols = ["name", "domain", "entity", "market", "offering", "model", "shape", "parent"]
+            if "is_multi_product" in fm
+            else ""
+        )
+        rows.append(
+            {
+                "name": fm.get("name", os.path.basename(os.path.dirname(path))),
+                "domain": fm.get("domain", ""),
+                "entity": fm.get("entity_type", ""),
+                "market": fm.get("target_market", ""),
+                "offering": fm.get("offering_category", ""),
+                "model": fm.get("business_model", ""),
+                "shape": shape,
+                "parent": fm.get("_parent", ""),
+            }
+        )
+    cols = [
+        "name",
+        "domain",
+        "entity",
+        "market",
+        "offering",
+        "model",
+        "shape",
+        "parent",
+    ]
     print(f"# Store facets ({len(rows)} companies)\n")
     print("| " + " | ".join(cols) + " |")
     print("|" + "|".join(["---"] * len(cols)) + "|")
     for r in rows:
         print("| " + " | ".join(str(r[c]).replace("|", "\\|") for c in cols) + " |")
-    print(f"\n_Note: `shape` falls back to legacy is_multi_product (portfolio_shape "
-          f"unused in corpus). `parent` is read from the `# parent:` COMMENT "
-          f"(parent/owns frontmatter fields are empty in every profile)._")
+    print(
+        f"\n_Note: `shape` falls back to legacy is_multi_product (portfolio_shape "
+        f"unused in corpus). `parent` is read from the `# parent:` COMMENT "
+        f"(parent/owns frontmatter fields are empty in every profile)._"
+    )
 
 
 def matching_lines(body, terms):
@@ -111,7 +133,7 @@ def matching_lines(body, terms):
 
 def cmd_term(args):
     terms = args.terms
-    print(f'# Cross-brand digest: {terms}\n')
+    print(f"# Cross-brand digest: {terms}\n")
     hits = clean_price = no_price = 0
     blocks = []
     for path, text in profiles():
@@ -135,8 +157,10 @@ def cmd_term(args):
             block.append("- ⚠ no $ price line found for these terms")
         blocks.append("\n".join(block))
     print("\n\n".join(blocks))
-    print(f"\n\n---\n_Coverage: {hits} companies match. "
-          f"{clean_price} have a $ price line, {no_price} do not._")
+    print(
+        f"\n\n---\n_Coverage: {hits} companies match. "
+        f"{clean_price} have a $ price line, {no_price} do not._"
+    )
 
 
 def main():

@@ -15,6 +15,7 @@ A *derived lens*, never authoritative: the markdown store is the source of truth
 CLI:  python store.py find <query>   ·   python store.py relations
 Lib:  from store import load, canon, resolve, relations
 """
+
 import glob
 import os
 import re
@@ -37,8 +38,10 @@ def _frontmatter(p):
 
 def load():
     """{slug: frontmatter-dict}. slug is the dir name — the actual store key, not the `domain` field."""
-    return {os.path.basename(os.path.dirname(p)): _frontmatter(p)
-            for p in sorted(glob.glob(os.path.join(STORE, "*", "profile.md")))}
+    return {
+        os.path.basename(os.path.dirname(p)): _frontmatter(p)
+        for p in sorted(glob.glob(os.path.join(STORE, "*", "profile.md")))
+    }
 
 
 def canon(s):
@@ -58,20 +61,24 @@ def _is_domainish(s):
     """A relation/alias target is either a resolvable domain or a quoted name — which is this?
 
     Domain markers: a dotted TLD (`converse.com`) or the dashed slug-form (`gshock-casio-com`). Anything
-    else (`Jordan Brand`, `Hims & Hers Health, Inc.`) is a name, un-joinable by design."""
+    else (`Jordan Brand`, `Hims & Hers Health, Inc.`) is a name, un-joinable by design.
+    """
     s = str(s).strip().lower()
-    return bool(re.search(r"\.[a-z]{2,}$", s)) or bool(re.match(r"^[a-z0-9-]+-(com|ai|io|net|org|co|so)$", s))
+    return bool(re.search(r"\.[a-z]{2,}$", s)) or bool(
+        re.match(r"^[a-z0-9-]+-(com|ai|io|net|org|co|so)$", s)
+    )
 
 
 def index(P):
     """canon-key → slug, over slug + `domain` + every alias (domain- and name-form). The resolver's table.
 
     Aliases are the M&A / rebrand escape hatch (SCHEMA), so a merged entity's old domain resolves to the
-    survivor: `salesloft.com → clari-com`. That's intended — query the acquired co, get who it's now part of."""
+    survivor: `salesloft.com → clari-com`. That's intended — query the acquired co, get who it's now part of.
+    """
     idx = {}
     for slug, fm in P.items():
         keys = {canon(slug), canon(fm.get("domain") or slug)}
-        for a in (fm.get("aliases") or []):
+        for a in fm.get("aliases") or []:
             keys.add(canon(a) if _is_domainish(a) else str(a).strip().lower())
         for k in keys:
             idx.setdefault(k, slug)
@@ -80,7 +87,8 @@ def index(P):
 
 def resolve(query, P=None):
     """Any surface form → canonical slug, or None. Exact match on canon(slug/domain/domainish-alias) or a
-    lowercased name-alias, then on `name`. (The CLI adds a fuzzy candidate fallback; the library stays exact.)"""
+    lowercased name-alias, then on `name`. (The CLI adds a fuzzy candidate fallback; the library stays exact.)
+    """
     P = load() if P is None else P
     idx = index(P)
     hit = idx.get(canon(query)) or idx.get(str(query).strip().lower())
@@ -104,7 +112,7 @@ def relations(P=None):
     indeg = Counter()
     for slug, fm in P.items():
         for field in ("parent", "owns"):
-            for t in (fm.get(field) or []):
+            for t in fm.get(field) or []:
                 if not _is_domainish(t):
                     named.append((slug, field, t))
                 elif canon(t) in idx:
@@ -112,8 +120,12 @@ def relations(P=None):
                 else:
                     dangling.append((slug, field, t))
                     indeg[canon(t)] += 1
-    return {"joinable": joinable, "dangling": dangling, "named": named,
-            "dangling_indegree": indeg}
+    return {
+        "joinable": joinable,
+        "dangling": dangling,
+        "named": named,
+        "dangling_indegree": indeg,
+    }
 
 
 # --- CLI ------------------------------------------------------------------------------------------
@@ -125,25 +137,43 @@ def _cli_find(P, *args):
     if hit:
         return print(f"'{q}' → {hit}")
     cq = canon(q)
-    cands = sorted({slug for slug, fm in P.items()
-                    if cq in canon(slug) or cq in canon(fm.get("domain") or "")
-                    or any(cq in canon(a) for a in (fm.get("aliases") or []) if _is_domainish(a))
-                    or q.strip().lower() in str(fm.get("name") or "").lower()})
-    print(f"'{q}' → no exact key; candidates: {', '.join(cands)}" if cands else f"'{q}' → NOT in store")
+    cands = sorted(
+        {
+            slug
+            for slug, fm in P.items()
+            if cq in canon(slug)
+            or cq in canon(fm.get("domain") or "")
+            or any(
+                cq in canon(a) for a in (fm.get("aliases") or []) if _is_domainish(a)
+            )
+            or q.strip().lower() in str(fm.get("name") or "").lower()
+        }
+    )
+    print(
+        f"'{q}' → no exact key; candidates: {', '.join(cands)}"
+        if cands
+        else f"'{q}' → NOT in store"
+    )
 
 
 def _cli_relations(P, *_):
     r = relations(P)
-    print(f"relation targets: {len(r['joinable'])} joinable · "
-          f"{len(r['dangling'])} dangling · {len(r['named'])} name-only\n")
+    print(
+        f"relation targets: {len(r['joinable'])} joinable · "
+        f"{len(r['dangling'])} dangling · {len(r['named'])} name-only\n"
+    )
     print("JOINABLE (resolves to a held profile):")
     for slug, field, t, hit in r["joinable"]:
         print(f"  {slug:>24} --{field}--> {t}  → {hit}")
     print("\nDANGLING (no profile yet — re-capture candidates, by in-degree):")
     rank = r["dangling_indegree"]
-    for slug, field, t in sorted(r["dangling"], key=lambda x: (-rank[canon(x[2])], x[2])):
+    for slug, field, t in sorted(
+        r["dangling"], key=lambda x: (-rank[canon(x[2])], x[2])
+    ):
         deg = rank[canon(t)]
-        print(f"  {slug:>24} --{field}--> {t}" + (f"   [{deg} refs]" if deg > 1 else ""))
+        print(
+            f"  {slug:>24} --{field}--> {t}" + (f"   [{deg} refs]" if deg > 1 else "")
+        )
     print("\nNAME-ONLY (un-joinable by design):")
     for slug, field, t in r["named"]:
         print(f"  {slug:>24} --{field}--> {t!r}")
@@ -158,6 +188,8 @@ if __name__ == "__main__":
     else:
         if len(sys.argv) > 1:
             print(f"unknown command {sys.argv[1]!r}\n")
-        print(f"store.py — {len(P)} profiles. commands: {', '.join(_DISPATCH)}\n"
-              f"  find <query>   domain/name/alias/slug → canonical key\n"
-              f"  relations      parent/owns join-check + re-capture ranking")
+        print(
+            f"store.py — {len(P)} profiles. commands: {', '.join(_DISPATCH)}\n"
+            f"  find <query>   domain/name/alias/slug → canonical key\n"
+            f"  relations      parent/owns join-check + re-capture ranking"
+        )
