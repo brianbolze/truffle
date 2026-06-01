@@ -32,31 +32,18 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
   The initial `offerings.md` design session is **done** → [`_design/2026-06-01-offerings.md`](_design/2026-06-01-offerings.md) (9-field record; per-offering `price_visibility` the one universal axis; heavy price-normalization left per messy vertical; `pricing_model` retired). What's open is a second design review, and **activation** — whether/when to write the file, gated on a project enabling the module (single-offering companies fold a `price_visibility` token into `profile.md` instead). `brand.md` schema is still unstarted; seed [`doro-product-analysis-prompt.md`](_design/references/doro-product-analysis-prompt.md).
   **Act when:** Brian decides, or a project turns on offerings (wire SCHEMA's Tier-1 stub → the design doc; add `offerings.md` lint to `fc.py`/`querycheck.py`) or brand.
 
-- **Add a `specialties` field to profile frontmatter** `[idea]` `[sm]` `[@brian]`
-  A multi-select, non-constrained list of what the company is known for doing / offering.
-
-- **Add a `socials` frontmatter field (LinkedIn, X, Instagram, …)** `[idea]` `[sm]` `[@brian]`
-  A small map filled when present — `linkedin` / `x` / `instagram` / `youtube` / `facebook` / `tiktok`. Multi-source, **not** JSON-LD-only: `sameAs` (rawHtml) is the cleanest, but near-universal footer/header anchors to the social domains are a free fallback (markdown links + `rawHtml`). Additive → MINOR bump. Overlaps the discoverability item's `linkedin`/`x`/`wikipedia` external-links hook; capture rides the `rawHtml` read ↑ (the [signal audit](experiments/2026-06-01-signal-audit/FINDINGS.md) found 0/profiles carry socials today, all 6 sampled JSON-LDs do).
-
 ### Capture quality
 
 - **Junk soft-404 stubs slip past verify** `[weakness]` `[sm]`
   Some sites serve a fake "Page Not Found" stub (HTTP 404, but a real-sized, unique body) for any bad path — Qualtrics did, for 4 guessed URLs. It's not thin, so verify's guards miss it and §5.6 ("trust the body, not the status") says keep it. **Prevention:** only scrape URLs from the captured map/homepage links, never guess paths from convention (this alone avoids it). **Detection:** teach `fc.py verify` a 404-with-not-found fingerprint.
   **Act when:** 2nd sighting (1 so far).
 
-- **Read `rawHtml`'s structured layer (JSON-LD + `<header>`) at enrichment** `[idea]` `[md]` `[@brian]` — *graduated from the signal audit → [FINDINGS](experiments/2026-06-01-signal-audit/FINDINGS.md)*
-  Audit verdict: `rawHtml` is the one badly-underused payload (`html`/`links` proved dead weight — the "html recovers garbled prices" rationale was 0/43, all artifacts; `branding`/`metadata`/`images` ~scoped right). Read its **JSON-LD** (32/43 homepages: `legalName`, `alternateName`→`aliases`, founders, self-reported `AggregateRating`, `medicalSpecialty`) + the `<header>` flyout region — Opus reads both slices of the already-persisted payload directly; **no reducer/Haiku/Pydantic** (anti-Doro), hint-to-verify like `branding`. **Consolidates nav (below) + the logo set into one change**; live decision is the scope boundary (which JSON-LD fields enter the profile vs brush the Frame's deep-research exclusion — founders/founding-date are the edge).
-  **Act when:** next. [Probe 4](experiments/2026-06-01-signal-audit/FINDINGS.md) already ran the delta: enrichment *already* gets the identity basics (founders/HQ/desc) from the about page — the clean net-new wins are **socials (`sameAs`)** (0/profiles have them), self-reported **ratings**, and verbatim **`legalName`/`foundingDate`/specialties**. Remaining work: light SCHEMA guidance + playbook edit (Opus reads the slice, hint-to-verify). Field boundary already decided — lean to adding (company-published).
-
-- **Nav-structure capture is lossy** `[weakness]` `[md]` `[@brian]` — *direction confirmed by the [signal audit](experiments/2026-06-01-signal-audit/FINDINGS.md); fold into the `rawHtml` read ↑*
-  Markdown flattens mega-nav/flyouts, so the captured `Nav structure` under-represents the real IA. Audit confirmed the fix is the `<header>`/`<nav>` region of `rawHtml` (incl. `aria-controls` flyout targets — twilio 51, apple 23) and **ruled out `links`** (flat + redundant + noisy). Borrow Doro's *insight*, not its machinery (Opus reads the HTML directly; no reducer/Haiku/Pydantic). **Validate completeness against the homepage screenshot (ground truth), not substring presence** (a label existing somewhere ≠ hierarchy captured). Works okay today → not urgent. Doro prior art: `…/web_search/nav_extraction/` (`llm_extraction/implementations/extractor_v1.py`, `schemas.py`).
-
 - **Light, honesty-preserving cleaning pass on payload markdown** `[idea]` `[md]` `[@brian]`
   Captured `.md` is a raw Firecrawl dump (47.5% blank lines; animated stat-counter digit-columns; leaked VWO/JS + consent blobs; hard-break `\\` residue) — the "cleaned" files are byte-identical to raw. Researched → [`payload-cleaning.md`](_design/references/payload-cleaning.md): a **subtractive + whitespace-only** ruleset (delete noise lines, never reword) cuts ~19% of bytes while keeping every content byte verbatim; decision lean = strip chrome, don't section-tag.
   **Act when:** de-risk first — `experiments/<date>-payload-clean/` over the 111 existing files, prove zero content-line loss, *then* touch SCHEMA / fc.py.
 
 - **Multi-ratio logo set via vision** `[idea]` `[md]` `[@brian]`
-  Replace the single `logo_url` with a small `logos: {}` set — mark/favicon (square), wordmark (rectangle), `og:image`, + the cleanest SVG from `images[]` — chosen by vision at ingestion. Retires the brittle favicon fallback chain. Adds frontmatter surface → design in a dedicated session. Not v1-critical.
+  Replace the single `logo_url` with a small `logos: {}` set — mark/favicon (square), wordmark (rectangle), `og:image`, + the cleanest SVG from `images[]` — chosen by vision at ingestion. Adds frontmatter surface → design in a dedicated session. Not v1-critical. *Source-upgrade already landed (2.1): `logo_url` now prefers JSON-LD `logo` ahead of the favicon fallback — so this item is just the multi-ratio `logos:{}` redesign, not the source fix.*
 
 ### Parked
 
