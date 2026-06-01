@@ -33,4 +33,7 @@ The bright line is between the last two rows — not between "page" and "memory.
 3. **Keep the OpenAI-retro's "grep-it-or-unverified" — just scope it to volatile facts** (prices, counts, dates). That's what catches fabricated pricing; it shouldn't block a stable ticker. Split that way, the two retros agree.
 
 Open question for later: whether enrichment needs an explicit confidence floor ("would one search confirm it?"). Not worth deciding until it bites.
-</content>
+
+---
+
+*Status (2026-06-01): queued as the **combined capture-trust edit** with the openai-capture retro ([BACKLOG](../../BACKLOG.md), priority 1). Not yet applied.*

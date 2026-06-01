@@ -35,7 +35,7 @@ None of these are in training priors. Every one came from a grep-able captured l
 Honest caveat first: **no skill text guarantees a model won't confabulate.** That failure is mine, not a documentation gap. But a few small rules make it structurally harder to do and trivial to catch:
 
 1. **One phase per turn.** Never issue a step in the same message as the step whose output it consumes. Kills both the cascade-cancel and the results-vacuum that invites confabulation. *(Highest leverage.)*
-2. **Grep-it-or-it's-unverified.** Every figure in `profile.md` must be greppable from a captured file; if you can't point at the line, it goes to `unverified_fields`. Makes "fabricated but cited-looking" structurally impossible to pass off. *(Highest leverage.)*
+2. **Grep-it-or-it's-unverified.** Every figure in `profile.md` must be greppable from a captured file; if you can't point at the line, it goes to `unverified_fields`. Makes "fabricated but cited-looking" structurally impossible to pass off. *(Highest leverage.)* **Scope** (per the [memory-vs-capture retro](2026-05-31-memory-vs-capture.md)): applies to **volatile** facts (prices, counts, dates) — a stable, anchored, *marked* prior (a ticker) may land labeled rather than forced to `unverified_fields`. That scoping is what reconciles the two retros.
 3. **Prove a block before switching capture method.** Only reach for Chrome / enhanced-proxy when an *actual* fc.py response shows a block (stub body, non-200, DUP BODY) — never a hypothesized one.
 4. **Fix the literal commands.** Document the real `fc.py` path (skill dir) and the `.payloads/` JSON+screenshot layout.
 
@@ -44,3 +44,7 @@ Deliberately *not* suggesting more — this was a process-discipline failure, no
 ## One meta-note
 
 The recovery worked because the engine has cheap, authoritative ground-truth checks (`verify`, `spend`, grep over `captures/`) that eventually contradicted the fabrication loudly. That's a point in favor of the file-first, verify-driven design: the confabulation was *catchable* because truth was one `grep` away. The fix is to consult that ground truth *before* narrating, not after.
+
+---
+
+*Status (2026-06-01): items 1–2 are queued as the **combined capture-trust edit** with the memory-vs-capture retro ([BACKLOG](../../BACKLOG.md), priority 1). Not yet applied.*
