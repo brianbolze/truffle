@@ -1,13 +1,14 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"
+schema_version: "2.1"
 
 # Identity
 domain: honehealth.com
 name: Hone Health
-aliases: []
+aliases: [Hone, "Time Therapeutics, Inc."]   # JSON-LD alternateName + legalName — same entity
 parent: []
 owns: []
+socials: { linkedin: "https://www.linkedin.com/company/honeyourhealth", x: "https://twitter.com/HoneHealth", instagram: "https://www.instagram.com/hone.health/", youtube: "https://www.youtube.com/channel/UC63XVHmQBqFh5ADIjp7zg4Q", facebook: "https://www.facebook.com/hone.your.health/" }  # JSON-LD sameAs (FB/IG/X also verified in footer)
 
 # Capture meta
 captured_at: 2026-05-31
@@ -43,9 +44,10 @@ offering_category: [Services / Consulting, Biotech / Pharma Products]
 portfolio_shape: Multi-product
 business_model: Subscription
 primary_industry: Healthcare & Life Sciences
+specialties: [Endocrinology, Menopause, Andrology]   # JSON-LD medicalSpecialty
 
 # Visual identity
-logo_url: https://honehealth.com/wp-content/uploads/2024/04/cropped-favicon-150x150.png  # STRAIN: branding logo LLM failed (rejected); fell back to favicon
+logo_url: https://honehealth.com/wp-content/uploads/2024/01/TriangleWhite.png  # JSON-LD `logo` (company-declared mark) — supersedes the earlier favicon fallback
 brand_colors: { primary: "#F8F93F", text: "#0E0B20", background: "#FFFFFF" }  # STRAIN: chartreuse-yellow #F8F93F is the verified hero/section brand hue; branding.accent (#0E0B20) is the near-black text/footer color
 fonts: [STIX Two Text, DM Sans]   # display serif (headings) + sans body
 color_scheme: light
@@ -54,7 +56,7 @@ design_framework: wordpress       # rawHtml: wp-content + wp-json (Cloudways-hos
 
 ## Overview
 
-Hone Health is a DTC telehealth clinic that frames itself as a **longevity platform** — "Longevity engineered around your biology." It serves **both men and women** (it began men's-only and has since added a full women's line), pairing at-home or at-lab **biomarker blood testing** with **licensed-physician** telehealth consults to prescribe and ship treatments to the patient's door. The wedge is diagnostics: nearly every journey starts with a $65 lab panel (40+ biomarkers across hormones, heart, thyroid, liver, kidney, immunity, metabolism, nutrients), after which a physician builds a personalized protocol. Founded by **Saad Alam** (HQ: 154 W. 14th Street, New York, NY); brands itself around the "Death to Midlife" idea.
+Hone Health is a DTC telehealth clinic that frames itself as a **longevity platform** — "Longevity engineered around your biology." It serves **both men and women** (it began men's-only and has since added a full women's line), pairing at-home or at-lab **biomarker blood testing** with **licensed-physician** telehealth consults to prescribe and ship treatments to the patient's door. The wedge is diagnostics: nearly every journey starts with a $65 lab panel (40+ biomarkers across hormones, heart, thyroid, liver, kidney, immunity, metabolism, nutrients), after which a physician builds a personalized protocol. Founded in **2021** by **Saad Alam** (HQ: 154 W. 14th Street, New York, NY; legal entity Time Therapeutics, Inc.); brands itself around the "Death to Midlife" idea.
 
 ## What they offer
 
@@ -134,3 +136,4 @@ Polished, premium, editorial. The identity is built on a single bold **chartreus
 - **Verify:** all sourceURLs matched, all bodies md5-unique (clean).
 - **Credits:** 9 (1 map + homepage + 7 key pages).
 - **Couldn't get:** server-rendered membership-pricing detail (recovered from homepage FAQ instead); per-SKU weight-loss price map; any financials/headcount (not on site).
+- **Structured layer (schema 2.1):** `socials`, `aliases` (legalName/alternateName), `specialties`, `logo_url`, and founding year read from this capture's homepage JSON-LD via `fc.py signals` — hint-to-verify (socials cross-checked against the footer). Traces to the 2026-05-31 rawHtml payload; profile re-stamped 2.0→2.1.
