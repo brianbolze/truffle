@@ -8,6 +8,12 @@
 > + `core/schemas/products.py`), pruned to the anti-Doro line. **Not yet codified into SCHEMA or the
 > verb** — this is the contract; activation is §6.
 
+> **⤳ Superseded on activation (2026-06-03).** The [tournament](../experiments/2026-06-03-offerings-tournament/FINDINGS.md)
+> resolved §Activation (**build it**, store-only) and **revised the body shape**: roster-first, deep
+> blocks *earned* not default, molecule kept in `What` (the molecule-pivot was probed and rejected). The
+> 9-field core + `portfolio_shape` dial below still hold — read this for the field derivation, then
+> [`2026-06-03-offerings-module.md`](2026-06-03-offerings-module.md) for the current shape, recipe, and verdict.
+
 *Companion to [`2026-05-29-frame.md`](2026-05-29-frame.md) (scope) and [`2026-05-30-architecture.md`](2026-05-30-architecture.md)
 (lifecycle). Pricing rationale is settled separately in
 [`../experiments/2026-05-31-consumption-affordance/FINDINGS.md`](../experiments/2026-05-31-consumption-affordance/FINDINGS.md);

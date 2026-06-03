@@ -88,7 +88,7 @@ Then **lint the written profile**: re-run `python3 scripts/fc.py verify --slug <
 
 ## v1 scope — what this verb does NOT do (on purpose)
 
-Tier-0 `profile.md` only. **No** `offerings.md`/`brand.md` (Tier-1, opt-in, lands when a project enables them), **no** `.web-research/config.yaml` resolution, **no** per-section TTL, **no** Notion promotion. v1 = one company → one `profile.md`, no hand-holding. Those are clean later additions, not a rebuild — don't build them here.
+Tier-0 `profile.md` is the **default** — one company → one dossier, no hand-holding. The one opt-in extension live today is **`offerings.md`** (Tier-1 per-SKU roster — run the separate recipe in [`firecrawl-capture.md` §1.1](firecrawl-capture.md) **only** when a cohort needs the per-SKU grain, telehealth first; lint with `scripts/offeringscheck.py`). Still **not** built: `brand.md`, `.web-research/config.yaml` resolution, per-section TTL, Notion promotion — clean later additions, not a rebuild; don't build them here.
 
 ## Optional: fan-out for big sites
 

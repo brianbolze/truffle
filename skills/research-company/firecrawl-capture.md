@@ -19,6 +19,55 @@ Do this in order. Knobs that matter are inline; the *why* is in the section link
 
 **Clean-run budget: ~7–10 credits** = 1 map + 1 rich homepage + ~5–8 key pages (1 credit each).
 
+## 1.1 Offerings module — the per-SKU roster capture (opt-in)
+
+A **separate** recipe for the opt-in `offerings.md` (own `captured_at` — pricing goes stale fast). Run it
+**only** when a cohort's consumer needs the per-SKU grain (telehealth first); the default capture stays
+Tier-0 `profile.md`. Full contract + verdict: [`_design/2026-06-03-offerings-module.md`](../../_design/2026-06-03-offerings-module.md).
+It reuses §2–§5 mechanics (same `fc.py`, same hazards) and is **near-free over a `profile.md` capture** —
+the same category/product pages, no new endpoints. Two passes: **map the portfolio (breadth)**, then
+**deepen the flagships (depth)**.
+
+**Enumerate the roster with the cheapest tool that works — not `/scrape`-everything.** The ladder:
+
+| Rung | Tool | Job | Caveat |
+|---|---|---|---|
+| **backbone** | scrape the **category/index page** (`fc.py scrape … --homepage`) | the company's own product-card links + labels + order — authoritative, structure-independent, and it **doubles as the prominence read** | use `--homepage` so you get `rawHtml` + `onlyMainContent:false` + the full-page screenshot (badges + section order live there, not in the default above-the-fold markdown) |
+| accelerant | `fc.py map … --search "site:domain/<category-path>"` | a labeled SKU list; catches unlinked PDPs | **clean only where products & content live in separate URL paths** (Hims `/weight-loss/<sku>` → 7/7 SKUs; Ro nests articles under `/weight-loss/` → ~20%, noisy). Cross-check, never trust blindly |
+| census | `fc.py map` (no search) | a flat slug census across categories | under-returns on big sites; mixes content |
+
+**Decision rule:** glance at the map — products & content in *separate* paths → the `site:domain/path` search
+~nails the roster cheaply; else fall back to the index scrape (always the backbone). **Never** enumerate with
+a keyword/brand search (SEO noise — a generic `weight loss GLP-1` query found **1 of 7** SKUs), and **never**
+read prominence from a search `position` (Google rank ≠ the company's emphasis). `/crawl` + `/extract` stay off
+(§7). Then scrape the **flagship PDPs** serially (§5.1), one `fc.py scrape` each.
+
+**Depth dial = `portfolio_shape`** (on the company's `profile.md`): `Single` ~4–6 cr · `Flagship + companions` /
+`Multi-product` → enumerate the set, top-N PDPs rich · `Catalog` (Nike/AWS) → **shape + exemplars only, never
+the SKUs**. A ~20-SKU `Multi-product` company is **~10–20 credits**; most rows read off 1–2 index pages + a
+`/pricing` page, with per-PDP scrapes reserved for flagships.
+
+**Capture rules (where the tournament's two warts convert to discipline):**
+- **Verbatim price + its footnotes**, every SKU. The `†`/`*` membership + dose-ladder notes are what decide
+  `[partial]` (a med-only floor with a mandatory membership on top) vs `[published]` — capture them, and cite
+  the exact page the price sits on (the one B1 wart: a correct *number*, fabricated *where* it's published).
+- **Gating is a finding, not a skip** — a quiz/app/membership-gated SKU still gets a row: the floor that *is*
+  shown + `[on-request]`/`[partial]`.
+- **Molecule + form from the page only** — never inferred from the brand name; write **"not stated"** if the
+  page is silent (the B2 wart: tagging Mounjaro "tirzepatide" with no page support). It rides inside `What`,
+  not as a column.
+- **Prominence flags are load-bearing and must run at capture time** (payloads prune on a curve and can't be
+  re-derived): the `--homepage` rich pass on the category page gives the `fullPage` screenshot + `rawHtml` +
+  `onlyMainContent:false` the read needs — **persist the `.png`** (24h expiry, §5.5). Gotchas: a popularity
+  badge ("Best seller") is emphasis, a stock tag ("In stock") is not; scope badge detection to *rendered
+  text*, not a `rawHtml` grep (Hims's 59 "Featured" hits were all the `FeaturedTile` CSS class); exclude
+  alphabetical index pages (a `/pricing`) from order inference; a rotating hero still gives the *category* lead.
+
+**Output:** a roster-first `offerings.md` (`## Portfolio overview` → `## Roster` → earned `## Deep blocks`) per
+[SCHEMA's Tier-1 stub](../../SCHEMA.md#tier-1-modules-opt-in-separate-docs). **Lint it:** `python3 scripts/offeringscheck.py --slug <slug>`
+— roster columns present, `price_visibility` closed-set, every row slug-keyed, **every `$` price greppable in a
+cited capture**, no cross-company canonical key. It exits nonzero on any miss (the misattributed-price guard).
+
 ## 2. Endpoints
 
 | Endpoint | When | Cost |
