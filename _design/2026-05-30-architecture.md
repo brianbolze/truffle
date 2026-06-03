@@ -20,7 +20,7 @@ Where things live, and how they connect.
 
 A global verb finds the engine via `WEB_RESEARCH_HOME` in `~/.claude/settings.json` — the same file that grants repo access and allowlists `api.firecrawl.dev`. Config resolves as **global defaults ← project overrides**, so a bare session gets sane behavior and a configured project gets its own schema + destination.
 
-> **What the engine owns — and doesn't.** The engine owns generic, cross-domain **classification** (`entity_type`, `offering_category`, … — see [`TAXONOMIES.md`](../TAXONOMIES.md)) and company-intrinsic facts/observations. It does *not* own: (a) **market verticals** ("Weight Loss," "Hormone Therapy") — project-owned; or (b) **user-relative judgments** — strategic relevance, importance, competitive threat, fit — which depend on *who's asking* and need context the engine doesn't typically have. Rule of thumb: the engine **describes the company**; the project decides **what it means to them**. (The optional `Strategic read` section is company-*intrinsic* observation — "what's notable here" — not relevance-to-you.) Market position rides the same line: record what a site foregrounds as observation, but inferring flagship status / market leadership / adoption from prominence is a judgment about *the market*, not the company — a consumer-layer call, deferred (a future Frame session, not built into capture).
+> **What the engine owns — and doesn't.** This is the **State / Signals / Judgments** split from the [Frame](2026-05-29-frame.md), made operational. The engine owns **State** — generic, cross-domain **classification** (`entity_type`, `offering_category`, … — see [`TAXONOMIES.md`](../TAXONOMIES.md)) and company-intrinsic facts/observations, captured as a current snapshot. It does *not* own: (a) **market verticals** ("Weight Loss," "Hormone Therapy") — project-owned; (b) **Signals** — the same facts on a time axis (funding, traffic, headcount), which append rather than overwrite and live in the signals layer, not the profile; or (c) **user-relative judgments** — strategic relevance, importance, competitive threat, fit — which depend on *who's asking* and need context the engine doesn't typically have. Rule of thumb: the engine **describes the company**; the project decides **what it means to them**. (The optional `Strategic read` section is company-*intrinsic* observation — "what's notable here" — not relevance-to-you.) Market position rides the same line: record what a site foregrounds as observation, but inferring flagship status / market leadership / adoption from prominence is a judgment about *the market*, not the company — a consumer-layer call, deferred (a future Frame session, not built into capture).
 
 ## The lifecycle of a capture
 
@@ -31,7 +31,7 @@ The heart of the system. `/research-company <domain>` runs:
 3. **Freshness check** — per-section TTL decides reuse vs. refetch. Fresh ⇒ serve the existing dossier and stop. Stale ⇒ refetch only what's stale.
 4. **Map + homepage, in parallel** — Firecrawl `/v2/map` for the URL inventory *and* a `/v2/scrape` of the homepage (the root is almost always the most important page, and its nav/links are themselves a map). Merge both to pick key pages — pricing, products, how-it-works, about.
 5. **Scrape the rest** — `/v2/scrape` per remaining key page (markdown + html + links + screenshot + `branding` + `metadata`); raw responses land in `captures/<date>/.payloads/`.
-6. **Enrich - AI at ingestion** — Opus reads the *whole* capture (pages + screenshots + branding) and writes `profile.md`: frontmatter (identity, generic classification, visual identity) + body (the synthesized read). Opt-in `offerings.md` / `brand.md` if the project enables them. *This is the expensive step, done once.*
+6. **Enrich - AI at ingestion** — Opus reads the *whole* capture (pages + screenshots + branding) and writes `profile.md`: frontmatter (identity, generic classification, visual identity) + body (the synthesized read). Enabled **modules run their own gathering recipe here** — not just fill fields (e.g. `offerings.md`, `brand.md`; see [Modules](#modules-recipes-not-just-schemas)). *This is the expensive step, done once.*
 7. **Record** — cleaned observations to `captures/<date>/`, update `site_notes` with anything new, stamp `captured_at`.
 8. **Promote (optional)** — propose structured writes to the project's destination (e.g. a Notion DB). Default to "**Propose, don't write**" — the engine never silently mutates a project's source of truth. Those output destinations are typically co-authored with humans, so we need to be careful not to overwrite user-content, and/or add bloat. 
 
@@ -47,6 +47,41 @@ Steps 4–6 are cache-aware: a warm, fresh company skips straight to "serve." v1
 | **Enrichment** | AI-at-ingestion: structured fields from the capture | `profile.md` frontmatter, `offerings.md` |
 | **Synthesis** | Derived understanding across the capture | `profile.md` body, `brand.md` |
 | **Promotion** | Propose structured output to a project's KB | project destination (Notion) — propose-only |
+
+## The store
+
+One company = one folder = its whole story. Top docs are the latest view; you rarely open `captures/`.
+
+```
+store/<domain-slug>/              # e.g. hone-health
+  profile.md                      # State — the current snapshot (frontmatter + body)
+  offerings.md                    # a module doc, opt-in, its own freshness
+  captures/
+    <date>/                       # one self-contained folder per run
+      homepage.md  pricing.md     # cleaned observations
+      .payloads/                  # raw Firecrawl JSON + screenshots (gitignored, pruned)
+    _archive/                     # old runs swept aside to keep the latest obvious
+cohorts/<category-slug>/          # (later) cross-company signals that don't key on a domain
+```
+
+- **Top = the latest view, `captures/` = the source** you rarely open. A `captured_at` stamp is the freshness pointer — no fragile symlinks (they break across iCloud + git + cloud).
+- **Every consumer also gets a primary-source cache.** Beyond the synthesized `profile.md`, the cleaned `captures/` and raw `.payloads/` let an agent quote exact wording or inspect a page *without re-fetching* — pre-fetched primary source, ready to cite.
+
+> **The store holds snapshots today.** The **Signals** layer (funding, traffic-over-time) is a *different record shape* — dated, append-only — and is **not in the store yet**; today it lives in the `competitive-traction` sibling. *Whether web-research grows its own domain-keyed timeline or keeps delegating is an [open question](2026-05-29-frame.md)* — the deliberate "how do these two systems re-relate?" call worth resolving before the aggregation layer hardens.
+
+## Modules: recipes, not just schemas
+
+> **A module is a *recipe + schema + destination* — a mini-verb.** It carries its own way to *gather* (which sources, which pages, what to trust), not just fields to fill — the way `/research-company` carries its capture playbook. The core capture writes `profile.md`; an enabled module runs its recipe to write its own doc. **`offerings.md` is the first exemplar** (`brand.md` next).
+
+**Where a module's output lands is decided by the *kind* of fact** (the Frame's State / Signals / Judgments):
+
+| Kind | Example | Destination |
+|---|---|---|
+| **State** | what they sell, founders | the `web-research` store (`profile.md` / a module doc) |
+| **Signals** | funding, traffic trend | the signals layer (`competitive-traction` today) |
+| **Judgments** | formidable? threat? | the project |
+
+A module is opt-in per project (config resolves global defaults ← project overrides) and carries its own freshness TTL. *Detailed module schemas land when the first project enables one — deferred on purpose; see [`SCHEMA.md`](../SCHEMA.md).*
 
 ## Three consumption paths
 
@@ -107,7 +142,13 @@ The store will hold **several** entity types, but primarily "Companies".
 
 ## What's in scope — a guideline, not a roadmap
 
-A lens for sorting *future* capabilities (a principle, not a commitment): the engine owns **state** — what a company/offering *is* now, capturable from its own primary web sources, cacheable. It leaves **events** (news, funding, M&A — time-bound history) and **judgments** (relevance, threat, fit — relative to the asker) to downstream consumers that read the store as priors. *Discovery* (finding related companies) and *traction* (time-series metrics) sit in the family as distinct capabilities; pure event-streams and user-relative judgments do not. When unsure: *is this durable state from the company's own sources, or a stream/opinion that belongs to the consumer?*
+A lens for sorting *future* capabilities (a principle, not a commitment), mapping onto the Frame's three kinds of fact:
+
+- **State** — what a company/offering *is* now, capturable from its own primary web sources, cacheable → **the engine owns it.**
+- **Signals** — the same facts on a time axis (funding, traffic, headcount; news/M&A as dated events) → **the signals layer**, not the profile.
+- **Judgments** — relevance, threat, fit, relative to the asker → **the consumer/project.**
+
+*Discovery* (finding related companies) and *traction* (time-series metrics) sit in the family as distinct capabilities — traction being Signals. When unsure: *is this durable state from the company's own sources, or a stream/opinion that belongs to a consumer?*
 
 ## Phasing
 

@@ -8,6 +8,15 @@
 
 > **Drift guard.** Renaming a field, changing the frontmatter format, or renaming a body section breaks [`QUERYING.md`](QUERYING.md)'s recipes — update it and run `scripts/querycheck.py`. (Changing a closed-set *value* lives in TAXONOMIES and does not affect QUERYING.)
 
+## Designing fields — every field is a cut
+
+*This governs which fields the contract carries; "How to write a profile" (below) governs how to fill them.*
+
+- **A field earns its place by information gain — and fillability.** A categorical field is worth it when it *divides companies on a question you actually ask*, **and** a capture recipe can fill it reliably from the page. A field nothing splits on, or one you can't fill, is decoration — cut it.
+- **Universal fields sort across the whole corpus** — telehealth vs. watches vs. SaaS. *Inside* one cohort they often read alike: the telehealth set came back **13/13 identical** on all four universal classification fields. That's expected, not a flaw — it's the price of a cut that generalizes.
+- **A cohort needs its own cuts** — "owns its pharmacy?", "men / women / both" — and those *can* be just as crisp and categorical (a cohort cut is still a real field, not second-class). They live in a **module**, because they usually only make sense inside that vertical.
+- **The universal-vs-module test is "does it apply across the corpus?"** — *not* how sharply it happens to cut. A field that cuts beautifully but only within one vertical belongs to that vertical's module, not the universal frontmatter.
+
 ## How to write a profile (capturing agent)
 
 - **Describe the company, not the engine.** A profile records what the company *is* — never commentary about the schema itself. Observations about the contract (missing values, taxonomy gaps, capture-tooling quirks) go to [`BACKLOG.md`](BACKLOG.md), not into prose or comments. The one exception is the inline `# STRAIN:` note on a frontmatter line, which explains *that field's* value to a grep-consumer in a few words.
