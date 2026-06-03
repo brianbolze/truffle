@@ -1,6 +1,6 @@
 # SCHEMA — the store contract
 
-> **Current contract version: `2.2`.** This is what new captures stamp as `schema_version`. Bump rules + the version history are in the `schema_version` note below (under the frontmatter block).
+> **Current contract version: `2.3`.** This is what new captures stamp as `schema_version`. Bump rules + the version history are in the `schema_version` note below (under the frontmatter block).
 
 > **What this is.** The contract between *capture* (a `/research-company` agent writes it) and *query* (any agent reads it). It's written to be read by an Opus-class agent that has the **whole capture** in context — multiple pages, screenshots, and the Firecrawl `branding` + `metadata` payloads — not a quick homepage skim.
 
@@ -26,7 +26,7 @@ Stable, queryable, cheap. Closed-set fields draw from [`TAXONOMIES.md`](TAXONOMI
 ```yaml
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.0"                # contract MAJOR.MINOR this profile obeys; querycheck warns if it outruns SCHEMA's current version (see note below)
+schema_version: "2.3"                # contract MAJOR.MINOR this profile obeys; querycheck warns if it outruns SCHEMA's current version (see note below)
 
 # Identity
 domain: honehealth.com               # primary key
@@ -82,6 +82,7 @@ design_framework: next.js            # read from rawHtml (__NEXT_DATA__, /_next/
 - ***2.0*** *— `offering_category`: renamed `Hardware / Physical Products` → `Physical Products / Hardware`, removed `Apparel & Footwear` (folded physical-goods makers — watches, apparel — into Physical Products), added per-value exemplars + a maker-vs-reseller rule. Re-mapped 9 profiles' values; re-stamped all 44 to `"2.0"`.*
 - ***2.1*** *(MINOR, additive — no backfill, grandfathered) — added `socials` + `specialties` frontmatter fields and the **Structured layer** read (enrichment now mines `rawHtml`'s JSON-LD + `<header>`/`<nav>` region as a hint-to-verify source). Older profiles read empty on the new fields = "predates the field." See the [signal audit](experiments/2026-06-01-signal-audit/FINDINGS.md).*
 - ***2.2*** *(MINOR additive + a same-day correction) — added the `external` frontmatter map and split JSON-LD `sameAs` two ways: channels the entity **operates** → `socials`, third-party **records about** it (crunchbase/wikipedia/bloomberg/glassdoor/bbb/trustpilot) → `external`. Reverses 2.1's "leave hooks for a consumer" call — a company-declared external record is durable identity state, so the engine keeps it. **Dropped `specialties`** (added in 2.1 the same day, only the smoke-test profile carried it — so no real break): the corpus-wide structured-layer read found no working seed (`medicalSpecialty` on 1/44; `applicationCategory` is generic-enum / keyword-blob noise) and there's no consumer yet, while the body's bold-led offering lines already carry that detail greppably — deferred until a cohort consumer defines the right shape. **Backfilled + re-stamped the whole corpus** (unusual for a MINOR — the structured-layer read hit every persisted `rawHtml` payload in one pass, so every profile was genuinely read; on a 2.2 profile, empty `socials`/`external` now means "looked, none found"). Re-mapped/re-stamped all profiles 2.0 & 2.1 → 2.2; per-profile reads traced in each Provenance's `Structured layer` line.*
+- ***2.3*** *(MINOR, additive — no backfill, grandfathered) — added the per-offering **price-visibility token** `` `[published | partial | on-request]` `` on `What they offer` body lines: the one pricing axis that generalizes ("can I even get a price?"), greppable, **wrapping** the verbatim price (never replacing it). Grounded in [Probe 0](experiments/2026-06-01-profile-enrichment/FINDINGS.md) — enriching `profile.md` with verbatim price barely helped a cold consumer, but the visibility token was the durable win (it also defers `offerings.md`; see BACKLOG). Absent token on a pre-2.3 profile = "predates the convention," not "published"; no backfill (a cohort consumer can tag on demand).*
 
 *`favicon` and `website_url` are **derived from `domain`** at read time — never stored.*
 
@@ -110,10 +111,12 @@ Prose flexes where enums can't — write each section for the company in front o
 
 The bold lead-in is the load-bearing part — `rg '^- \*\*'` enumerates the items, and the verbatim value puts the price on the line. The separator isn't policed (an em-dash reads better than a colon for some name–detail lines; fine — the bold lead-in is what matters). Interpretive sections (Overview, Positioning, Strategic read, Visual) are exempt — don't template them.
 
+*<a id="price-visibility"></a>**Price-visibility token — `What they offer` lines.** Tag each enumerated offering line with the one pricing axis that generalizes across shapes — *can I even get a price?* — as a backtick token after the verbatim price: `` `[published]` `` (a price / floor / range is shown) · `` `[partial]` `` (a price shows but the real all-in is gated — a med-only "from $X" with a mandatory membership on top; a floor hiding per-SKU) · `` `[on-request]` `` (no price; intake / quiz / consult / dealer-gated). It **wraps** the price, never replaces it — quote the price exactly as the verbatim rule demands, then tag. Tag **every** offering line (not just gated ones) so an absent token reads as "predates the convention" (pre-`2.3`), not "published"; `rg '\[on-request\]'` then enumerates the gated lines. It's **per-offering, never a company scalar** — a multi-line seller can publish one line and gate another (telehealth labs published, the GLP-1 quiz-walled; a jeweller's rings priced, its watches on request). When `offerings.md` is activated it owns `price_visibility` per-SKU; until then this family-line token is the whole convention. *(Grounded in [Probe 0](experiments/2026-06-01-profile-enrichment/FINDINGS.md).)*
+
 | Section | What goes here |
 |---|---|
 | **Overview** | 2–4 sentences: what they do, who for, how. Synthesized across pages, not the meta tag. |
-| **What they offer** | Enumerate the offering lines/families as **bold-led** lines (`- **Name:** …`), pricing verbatim where shown — breadth + shape here, per-SKU depth defers to `offerings.md`. |
+| **What they offer** | Enumerate the offering lines/families as **bold-led** lines (`- **Name:** …`), pricing verbatim where shown + a **price-visibility token** (`` `[published \| partial \| on-request]` ``, [see note](#price-visibility)) — breadth + shape here, per-SKU depth defers to `offerings.md`. |
 | **How it works / model** | Customer journey (e.g. quiz → consult → subscription) + how they make money + delivery. |
 | **Positioning & audience** | Who they target, against whom, their claimed edge. Brief — deep voice work goes to `brand.md`. |
 | **Nav structure** | Their own taxonomy, as a nested list with URLs. Capture the **complete** nav — mega-menu flyouts and dropdowns included; it's the best signal of their offering hierarchy. |
@@ -136,11 +139,11 @@ The bold lead-in is the load-bearing part — `rg '^- \*\*'` enumerates the item
   > A DTC men's-health telehealth brand. It pairs at-home lab testing with licensed-clinician oversight to deliver TRT, weight-loss, and longevity programs on a monthly membership. Positions as a clinical, data-driven alternative to both in-person clinics and lighter "wellness" telehealth.
 
   **What they offer**
-  > Three lines, all subscription (bold lead-in; no public price on these):
+  > Three lines, all subscription (bold lead-in, verbatim price + visibility token per line):
   >
-  > - **Hormone therapy:** TRT, anchored on at-home bloodwork
-  > - **Weight loss:** GLP-1 injections + orals
-  > - **Longevity / peptides:** Sermorelin, NAD+
+  > - **Weight loss:** GLP-1 injections + orals — **from $149/mo** (med-only, + membership) `[published]`
+  > - **Hormone therapy:** TRT, anchored on at-home bloodwork — **price behind intake** `[on-request]`
+  > - **Longevity / peptides:** Sermorelin, NAD+ `[partial]`
   >
   > Labs are the wedge — most journeys start with a panel. Per-offering detail in `offerings.md`.
 

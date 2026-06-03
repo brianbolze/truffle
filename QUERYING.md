@@ -51,6 +51,7 @@ To see which targets actually resolve to a held profile — and rank the danglin
 **4. Cross-brand pricing** — *"compare GLP-1 prices across the cohort"* → the hard path, with a real ceiling:
 - **Intra-cohort only.** "Price" isn't comparable across business types (`$/mo` vs take-rate `%` vs AUM fee vs per-night) — compare within one like cohort.
 - **Locate, then reconcile by hand.** Prices live in body prose (What they offer / How it works), not frontmatter — but enumerable lines lead with a bold name + verbatim price (`- **name:** … $X`), so `rg -n '^- \*\*.*\$[0-9]' store/<slug>/profile.md` enumerates priced lines. Units still fragment even within a cohort (first-month, membership-stacked, billing cadence) — normalize manually.
+- **Visibility *is* queryable — the value isn't.** Each `What they offer` line carries a `` `[published | partial | on-request]` `` token (SCHEMA → [price-visibility](SCHEMA.md#price-visibility)), so *"who even publishes a price vs. gates it behind intake"* is one grep — `rg -n '\[on-request\]\|\[partial\]' store/<slug>/profile.md` — even though the price *number* still needs the hand-normalize above. Absent token on a **pre-`2.3`** profile = "predates the convention," not "published" — check the stamp before reporting a negative.
 
 **5. Primary source** — *verbatim claims / disclaimers / taglines* → `profile.md` paraphrases; the captures keep exact wording: `rg -n '<phrase or variant>' store/<slug>/captures/*/*.md`. Guess variants for regulated language ("not approved" / "not evaluated").
 
@@ -59,7 +60,7 @@ To see which targets actually resolve to a held profile — and rank the danglin
 **Before trusting a negative.** *"Company X doesn't do Y"* can mean **not offered** or **not captured**. Three signals tell them apart — check before reporting: `key_pages` (what the capturer treated as signal), `unverified_fields` (what it explicitly couldn't get), and the **Provenance** body section (pages analyzed + what was missed).
 
 **Can't answer yet:**
-- **Numeric / range price** ("under $200/mo") — no structured price field (`offerings.md` deferred). Say so; don't fake a table.
+- **Numeric / range price** ("under $200/mo") — no structured price *value* field (`offerings.md` deferred); the price is a verbatim string, so hand-normalize — don't fake a table. *(Price **visibility** — gated vs. published — is queryable; see Recipe 4.)*
 - **Cross-type price** comparison — not meaningful (see Recipe 4).
 - **Relational JOINs at scale** — no derived index; fine at this N, a rung-3 concern.
 - **Events** (news/funding/M&A), **judgments** (threat/fit/relevance), **financials** (revenue/headcount) — out of scope by design. The store holds durable *state*; these are a deep-research job that reads the store as priors (see the Frame).
