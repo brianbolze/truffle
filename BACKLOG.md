@@ -8,8 +8,8 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 
 **Item format.** A bold punchline + tags on one scannable line (tags in this order), then 1–3 tight sentences. An optional **Act when** line names the trigger that graduates the item — point at cited experiments rather than restating them.
 - **kind** — `[weakness]` gap likely to bite · `[idea]` possible improvement · `[bug]` confirmed defect · `[tbd]` pending decision · `[simplification]` removes surface area / prescriptiveness
-- **size** (rough wall time) — `[sm]` ≤½ day · `[md]` ~1 day · `[lg]` 2–3 days · `[xl]` >3 days, break it up
-- **provenance** — `[@brian]` added/approved by Brian; untagged = agent-added, subject to review · `[parked]` = deferred on purpose
+- **provenance** — `[@brian]` added / explicitly-approved / co-authored by Brian; untagged = agent-added, subject to review
+- `[parked]` = deferred on purpose
 
 **Bias to remove.** Default is to add — resist it. Before logging, look for a way to *consolidate* or *cut* instead; hunt `[simplification]`s at least as hard as features. If an entry adds surface, note what it replaces.
 
@@ -18,6 +18,9 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 **Soft cap: ≤15 open items.** Over that, close/cut/promote 2 before adding 1. Stale items (>60 days untouched) default-cut at the next review.
 
 ---
+
+- **Inputs for the `research-company` verb** `[idea]` `[md]` `[@brian]`
+  When triggering research-company, allow some customization - like `light|default|deep` capture mode, depth vs breadth preference, what types of pages to focus on.
 
 ### Discoverability & consumption
 
@@ -28,9 +31,15 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 
 ### Schema & taxonomy decisions
 
-- **`offerings.md` design drafted (not activated); `brand.md` still deferred** `[tbd]` `[md]`
-  The initial `offerings.md` design session is **done** → [`_design/2026-06-01-offerings.md`](_design/2026-06-01-offerings.md) (9-field record; per-offering `price_visibility` the one universal axis; heavy price-normalization left per messy vertical; `pricing_model` retired). What's open is a second design review, and **activation** — whether/when to write the file, gated on a project enabling the module (single-offering companies fold a `price_visibility` token into `profile.md` instead). `brand.md` schema is still unstarted; seed [`doro-product-analysis-prompt.md`](_design/references/doro-product-analysis-prompt.md).
-  **Act when:** Brian decides, or a project turns on offerings (wire SCHEMA's Tier-1 stub → the design doc; add `offerings.md` lint to `fc.py`/`querycheck.py`) or brand.
+- **Revisit 2.2's "no `founders`/`legal_entity` field" call — a cohort consumer has now appeared** `[tbd]` `[sm]`
+  2.2 deliberately kept both out (`legalName` folds into `aliases`; founders "stay at the deep-research edge," prose-only) "until a cohort consumer defines the right shape." The 2026-06-01 Teleprescribe telehealth deep-research cohort is that consumer — all 6 reports leaned on founders + legal entity, several KB-load-bearing (PeterMD "no real Peter"; Remedy → founder Haris Memon). **But the evidence cuts both ways:** most founders were dug *externally* (Sunbiz/news), not from JSON-LD — which is exactly *why* 2.2 edged them; only site-derivable ones are true store-state.
+  **Decide:** promote a queryable `legal_entity` out of `aliases` (cheap, low-risk), and/or a `founders` field filled *only when site-derivable* — never one that needs external research to fill, which would break the site-derived-state line.
+
+- **`offerings.md` module** `[tbd]` `[md]` `[@brian]`
+  Temporarily parked. `price_visibility` token adopted as an initial improvement; `brand.md` module still deferred**
+  **Act when:** a live **per-SKU** offering-comparison consumer appears ("cheapest Zepbound *vial* across brands" — the grain a family line can't hold; same bar as rung-3). Then wire SCHEMA's Tier-1 stub → the design doc + `offerings.md` lint in `fc.py`/`querycheck.py`. (`brand.md`: when a project turns it on.)
+  **UPDATE:** Have done work on updated framing / architecture / vocab. These "modules" aren't just new schema overlays - it's *a gathering recipe + schema + destination*. Tt brings its own way to find and read its data, not just fields to fill. So the draft in `_design/2026-06-01-offerings.md` needs a re-look.
+  History: Design review + [Probe 0](experiments/2026-06-01-profile-enrichment/FINDINGS.md) settled activation: a cold consumer gained ~nothing from verbatim price folded into `profile.md`, and the drafted `offerings.md` (verbatim price, **no** `{value,unit,cadence}` struct) wouldn't have beaten it — so the one durable win, the per-offering **`price_visibility` token** (`[published | partial | on-request]`), landed in `profile.md`'s *What they offer* (SCHEMA `2.3`, wraps the verbatim price). The design doc ([`_design/2026-06-01-offerings.md`](_design/2026-06-01-offerings.md)) stays a settled, parked contract. `brand.md` schema still unstarted; seed [`doro-product-analysis-prompt.md`](_design/references/doro-product-analysis-prompt.md).
 
 ### Capture quality
 
@@ -46,6 +55,16 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
   Replace the single `logo_url` with a small `logos: {}` set — mark/favicon (square), wordmark (rectangle), `og:image`, + the cleanest SVG from `images[]` — chosen by vision at ingestion. Adds frontmatter surface → design in a dedicated session. Not v1-critical. *Source-upgrade already landed (2.1): `logo_url` now prefers JSON-LD `logo` ahead of the favicon fallback — so this item is just the multi-ratio `logos:{}` redesign, not the source fix.*
 
 ### Parked
+
+- **Traction module / verb** `[idea]` `[xl]` `[parked]` `[@brian]`
+  Still desparately need more signals on growth / traction - ways of answering questions like "is this a formidable competitor?" or "do they have any real leadership in the markets they operate in?". Been thinking that this is _not_ a responsibility of this Web Research system, but I still haven't found a good home for it. There are some tools for this in the Teleprescribe Venture project's `agent-workflows` (`competitive-traction`), but those were designed in the past - and are not able to be used for other projects. Much of the output of a "Traction" style tool wouldn't live directly in the `store` because it's not all `State`, but rather `Signals`, and some `Judgements` - but identifying traction signals for a company is definitely something most projects researching projects in any market would want to do, so it would be nice to provide something for them. Still needs further design thinking to get right. 
+  This would be primarily designed to get an idea of a company's "market share" (which is _rarely_ directly observable) - but we could get an idea of this through signals like:
+  - Funding / growth trajectory / M&A
+  - SEO/AIO rankings
+  - Published / public revenue figures
+  - People / leadership ("is the leadership team legit?")
+  - Predictions about their roadmap (can often get an idea of this by looking at job descriptions on career pages)
+  - Notable differentiation from their competitors
 
 - **Rung-3 SQLite index — not yet** `[idea]` `[xl]` `[parked]`
   Build the derived index only when relations (discovery) or time-series (traction) first demand it. Markdown stays the source of truth; the index is a regenerable lens. Don't build ahead of a real query. [coded-queries](experiments/2026-06-01-coded-queries/) quantified the emptiness: **23/24 relation edges dangle** today.
