@@ -48,6 +48,9 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 - **Multi-ratio logo set via vision** `[idea]` `[md]` `[@brian]`
   Replace the single `logo_url` with a small `logos: {}` set — mark/favicon (square), wordmark (rectangle), `og:image`, + the cleanest SVG from `images[]` — chosen by vision at ingestion. Adds frontmatter surface → design in a dedicated session. Not v1-critical. *Source-upgrade already landed (2.1): `logo_url` now prefers JSON-LD `logo` ahead of the favicon fallback — so this item is just the multi-ratio `logos:{}` redesign, not the source fix.*
 
+- **Hero-image module is physical-product-only** `[idea]` `[s]`
+  `fc.py hero` + the step-2.5 "offerings.md with flagship product images" option presume a physical render (bottle / vial / pen). On a software/API company there's nothing to capture — the Stripe run (2026-06-04) path-scored 15 candidates that were all lifestyle photography / demo-merchant goods / UI mockups (every score 0.0); the run correctly returned **N/A**, but the guided menu offered it anyway. **Cheap fix:** in the step-2.5 batch, suppress (or label "physical products only") the hero-image option when `offering_category` carries no `Physical Products / Hardware` / CPG — same logic likely applies to `Marketplace / Platform` and `Financial / Fintech`.
+
 ### Parked
 
 - **Traction module / verb** `[idea]` `[xl]` `[parked]` `[@brian]`
@@ -63,3 +66,6 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 - **Rung-3 SQLite index — not yet** `[idea]` `[xl]` `[parked]`
   Build the derived index only when relations (discovery) or time-series (traction) first demand it. Markdown stays the source of truth; the index is a regenerable lens. Don't build ahead of a real query. [coded-queries](experiments/2026-06-01-coded-queries/) quantified the emptiness: **23/24 relation edges dangle** today.
   **When it lands:** index relations on the subsidiary side (`parent`), reverse-scanned. Consumption (P7) found `parent`/`owns` are populated **one-sided** — `delighted.parent: [qualtrics.com]` carries the link, but `qualtrics.owns` doesn't list Delighted. A JOIN that trusts `owns` for symmetry misses real edges: build the graph from `parent` (reverse-scanned across the corpus), treat `owns` as best-effort.
+
+- **Historical diffs & Wayback machine usage** `[idea]` `[xl]` `[parked]` `[@brian]`
+  To get a better understanding of each company, use the Wayback Machine to look at the website from 3-months ago, 12 months ago, and 3 years ago to see how it's evolved.
