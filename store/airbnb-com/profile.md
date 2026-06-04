@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.2"
+schema_version: "2.5"
 
 # Identity
 domain: airbnb.com
@@ -8,28 +8,30 @@ name: Airbnb
 aliases: []
 parent: []
 owns: []
+socials: { instagram: "https://instagram.com/airbnb", x: "https://twitter.com/airbnb", facebook: "https://www.facebook.com/airbnb" }   # from footer anchors (no JSON-LD sameAs); handle "airbnb" verified
+external: {}
 
 # Capture meta
-captured_at: 2026-05-30
+captured_at: 2026-06-04
 capture_method: firecrawl
-site_notes: "Custom React SPA. /v2/map returns ~470 URLs but ~95% are /rooms/<id> listings + /help/article/<n> — near-zero structural signal; derive the offering structure from homepage links instead (top nav = Homes/Experiences/Services; footer carries the full Support/Hosting/company nav). Homepage + each vertical page render geolocated, point-in-time listing/price carousels (US capture localized to the DC–Manassas metro and Wichita, KS); listing prices and 'X available' counts flicker run-to-run — treat as a snapshot, not stable data. Logo is an inline data-URI SVG (the Bélo) → use favicon for logo_url. Homepage markdown tail repeats 'Now you'll see one price for your trip, all fees included' hundreds of times (a total-price-display banner animation) — strip as noise. A login modal overlays the homepage screenshot."
+site_notes: "Custom React SPA (no Next/Gatsby/Webflow markers, hashed assets). /v2/map returns ~470 URLs but ~95% are /rooms/<id> listings + /help/article + /users/show + /s/<loc> search — near-zero structural signal; derive structure from homepage links (top nav = Homes/Experiences/Services; footer carries Support/Hosting/Airbnb nav + social anchors instagram/twitter/facebook). Homepage + each vertical render geolocated, point-in-time listing/price carousels (US capture localizes to the DC–Manassas–Leesburg metro); listing prices, 'X available' counts, AND which Services show 'live' vs 'Coming soon' all flicker by location/run — treat as a snapshot. The Services TYPE taxonomy itself (Photography/Chefs/Prepared meals/Training/Catering/Massage/Makeup/Hair/Spa treatments) is stable; only availability is geolocated. Logo is an inline data-URI SVG WORDMARK in branding.images.logo (Bélo + 'airbnb', viewBox 3490×1080) → decode to assets/wordmark.svg. Favicon/og come off a0.muscache.com, a CDN that content-negotiates modern formats (the og:image .jpg URL served AVIF to the fetcher). Feature announcements live off-site at news.airbnb.com (homepage links it as /release) — the richest 'what's new' source. Homepage markdown tail repeats the 'Now you'll see one price for your trip, all fees included' banner — strip as noise. A coral login/price-banner modal overlays the homepage screenshot."
 key_pages:
   homes: /homes
   experiences: /experiences
   services: /services
-  host: /host/homes
-  become_host: /become-a-host
+  host_homes: /host/homes
   aircover: /aircover
   aircover_hosts: /aircover-for-hosts
-  airbnb_friendly: /airbnb-friendly
+  release: /release
 unverified_fields:
-  - "Scale claims ('8 million vacation rentals', '2 million Guest Favorites', '220+ countries and regions') are homepage meta copy, not independently verified."
-  - "Exact fee percentages (host service fee, guest service fee) are not stated on captured pages — only 'we only collect a fee after you've gotten paid' (host) and 'one price, all fees included' (guest)."
-  - "Listing/experience/service prices are a point-in-time snapshot, not fixed — geolocated (a US-metro snapshot) and they flicker run-to-run."
+  - "Scale claims ('8 million vacation rentals', '2 million Guest Favorites', '220+ countries and regions') are homepage meta-description copy; 'over one billion guest and host reviews' and Experiences '4.93 out of 5 average' are 2026 Summer-Release marketing copy — self-reported, not independently verified."
+  - "Exact fee percentages (host service fee, guest service fee) are not stated on captured pages — only 'one price for your trip, all fees included' (guest) and AirCover-as-free framing (host)."
+  - "Listing/experience/service prices, 'X available' counts, the host-earnings estimate ('make $854'), and which Services read 'live' vs 'Coming soon' are a point-in-time, geolocated snapshot, not fixed — DC-metro localization, flicker run-to-run."
 
-description: "A global travel marketplace connecting guests with independent hosts who offer short-term home stays, local experiences, and on-demand services; hosts set their own prices and Airbnb earns a fee on each booking, backing both sides with AirCover protection."
+# Description — one sentence: [what they do] + [how] + [focus/differentiator].
+description: "A global travel marketplace where independent hosts list short-term stays, local experiences, and on-demand services; hosts set their own prices, Airbnb takes a per-booking fee and backs both sides with AirCover protection."
 
-# Classification
+# Classification — closed sets (see TAXONOMIES.md).
 entity_type: Company
 target_market: [B2C, B2B2C]
 offering_category: [Marketplace / Platform]
@@ -37,93 +39,94 @@ portfolio_shape: Multi-product
 business_model: Marketplace / Commission
 primary_industry: Hospitality & Tourism
 
-# Visual identity
-logo_url: https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-Favicons/original/0d189acb-3f82-4b2c-b95f-ad1d6a803d13.png?im_w=240
-brand_colors: { primary: "#FF385C", text: "#222222", background: "#FFFFFF" }   # STRAIN: branding 'accent' #224CA4 is a link blue, not the brand hue; coral #FF385C is the verified identity color
+# Visual identity — branding payload is a hint; confirmed against screenshot + rawHtml.
+logo_url: assets/wordmark.svg
+logos:
+  wordmark: { src: assets/wordmark.svg, w: 102, h: 32 }                                                          # inline data-URI SVG from branding.images.logo — Bélo + "airbnb", viewBox 0 0 3490 1080
+  logomark: { src: "https://www.google.com/s2/favicons?domain=airbnb.com&sz=256", px: 240, transparent: false } # white Bélo on a BAKED coral square (JPG, no alpha) — flag for dark slides
+  og:       { src: "https://a0.muscache.com/im/pictures/fe7217ff-0b24-438d-880d-b94722c75bf5.jpg", w: 1200, h: 600 }  # declared og:image (CDN serves AVIF); clean lifestyle cover (glowing dome stay)
+brand_colors: { primary: "#FF385C", text: "#222222", background: "#FFFFFF" }   # STRAIN: branding 'accent' #224CA4 is the link blue, not the brand hue; coral #FF385C is the verified identity color
 fonts: [Airbnb Cereal, Circular]
 color_scheme: light
-design_framework: react (custom SPA)   # STRAIN: rawHtml shows React but no Next/Gatsby/Webflow markers — Airbnb's own front-end stack
+design_framework: react (custom SPA)   # STRAIN: rawHtml shows no Next/Gatsby/Webflow markers — Airbnb's own front-end stack
 ---
 
 ## Overview
 
-Airbnb is a two-sided online marketplace for travel. Guests search and book accommodations and activities; independent **hosts** supply the inventory, set their own prices, and pay Airbnb a fee per booking. As of the 2026 Summer Release the site presents three co-equal verticals in the top nav — **Homes** (the original and still-dominant short-term-rental business), **Experiences**, and **Services** — the latter two newly relaunched and pushed hard. Airbnb itself owns no inventory; its product is the marketplace, the booking/payments rails, and the trust layer (reviews, Guest Favorites, AirCover) that lets strangers transact.
+Airbnb is a two-sided online marketplace for travel. Guests search and book; independent **hosts** supply the inventory, set their own prices, and pay Airbnb a fee per booking. Airbnb owns no inventory — its product is the marketplace, the booking/payments rails, and the trust layer (reviews, Guest Favorites, AirCover) that lets strangers transact. As of the **2026 Summer Release** the platform is visibly expanding from "book a stay" toward "book the whole trip": three co-equal verticals lead the top nav — **Homes** (the original, still-dominant short-term-rental business), **Experiences**, and **Services** (the latter two relaunched and pushed hard) — now wrapped in a layer of trip logistics (grocery, airport pickup, luggage, car rental), boutique hotels, and AI planning/support tools.
 
 ## What they offer
 
-Three marketplace lines, each an un-enumerable catalog of host-supplied listings:
+Three marketplace verticals, each an un-enumerable catalog of host-supplied listings, plus a newer trip-logistics + AI layer. Breadth + shape here; per-line/feature detail in `offerings.md`.
 
-- **Homes:** short-term stays in entire homes, private rooms, condos, cabins, villas, and (newer) partner hotels. The flagship: homepage meta claims "8 million vacation rentals" and "2 million Guest Favorites" across "220+ countries and regions." Priced per night by the host (captured examples: Ocean City homes $530–$889 for 2 nights).
-- **Experiences ("NEW"):** host-led activities, including a curated **Airbnb Originals** tier "hosted by the world's most interesting people" (e.g. soccer-pro sessions, FIFA World Cup 26 tie-ins). Per-guest pricing (captured: $12–$250/guest).
-- **Services ("NEW"):** on-demand professional services booked to a location: **Photography, Chefs, Massage, Prepared meals, Training** live, with **Makeup, Hair, Spa treatments, Catering** "Coming soon." Priced per guest or per group (captured: chefs from $20–$350/guest, often with a booking minimum; massage from $70/guest).
-
-Per-offering detail belongs in `offerings.md` (not captured at Tier-0).
+- **Homes:** short-term stays — entire homes, private rooms, condos, cabins, villas — plus newly added **boutique & independent hotels** (launching across 20 destinations). Host-set nightly pricing, displayed all-fees-included (captured DC-metro examples ~$103–$198/night; 2-night totals $206–$1,375). `[published]`
+- **Experiences ("NEW"):** host-led local activities, including curated **Airbnb Originals** and the categories Airbnb is scaling — **Landmarks** ("more than 3,000"), **Food culture** ("more than 2,500"), and **FIFA World Cup 2026** tie-ins across six host cities. Per-guest pricing (captured: From $28–$250/guest). `[published]`
+- **Services ("NEW"):** on-demand professional services booked to a location. Live in the captured metro: **Photography, Chefs, Prepared meals, Training, Catering**; **Massage, Makeup, Hair, Spa treatments** shown "Coming soon" (the live-vs-coming-soon split is geolocated, not global). Priced per guest or per group, often with booking minimums (captured: From $20–$295/guest, "Minimum $60–$600 to book"). `[published]`
+- **Trip services (2026 Summer Release, partner-powered):** booked in-app, fulfilled and priced by partners with Airbnb-guest perks — **Grocery delivery** (Instacart, "$0 delivery and $10 off an order of $50 or more", 25+ US cities), **Airport pickups** (Welcome Pickups, "20% off", 160+ cities), **Luggage storage** (Bounce, "15% off", 15,000+ locations / 175 cities), **Car rentals** (in-app, "20% credit back" on first rental). `[partial]`
+- **AirCover for guests:** bundled free on every home booking — rebooking help or a full/partial refund for serious issues (host cancels, unreachable host, listing "significantly different"), plus a 24-hour safety line. Explicitly "not an insurance policy." `[published]`
+- **AirCover for Hosts:** "Always included, always free. Only on Airbnb." — guest identity verification, reservation screening, **$3M USD** host damage protection (art & valuables, auto & boat, pet damage, income loss, deep cleaning), **$1M** liability insurance, **$1M** Experiences liability insurance, and a 24-hour safety line. `[published]`
+- **Hosting platform:** list a home / experience / service; **Airbnb Setup** (hands-on onboarding from a Superhost), the **Co-Host Network** (hire a local co-host to run your listing), and an earnings estimator ("Your home could make $854" — geolocated). Free to list; Airbnb earns its fee per booking. `[published]`
+- **AI & planning layer (Summer Release, rolling out):** AI review highlights (synthesizing "over one billion" reviews), AI-powered wishlist comparison, shared group itinerary, a connections/travel map, and an AI customer-support assistant ("11 languages," billed "the best AI support assistant in travel"). Platform features, not separately priced.
 
 ## How it works / model
 
-**Marketplace / commission.** Hosts list for free, set their own price, and Airbnb collects a service fee — host page: *"Getting started is free. You set your price, and we only collect a fee after you've gotten paid."* Guests now see *"one price for your trip, all fees included"* (a recent shift to total-price-upfront display). The host journey is explicitly de-risked: a free listing flow with 1-1 mentor support, and a new **co-host** marketplace where an owner can hire a "high-quality, local co-host" to create the listing or run hosting entirely.
-
-Adjacent programs widen the host funnel:
-- **Airbnb-friendly apartments:** a partnership with US/UK apartment-building owners so renters can host part-time in approved buildings ("Rent a place to live. Airbnb it part-time."). Airbnb does not own or operate the buildings; it's a B2B2C lead-gen partnership (testimonial cites a host earning avg "$13,799 per year").
-- An earnings estimator on the host page ("Your home could make $854… 7 nights · $122/night") converts intent.
+**Two-sided marketplace on commission.** Guests browse free, book a stay/experience/service, and pay a single all-in price ("one price for your trip, all fees included"); hosts set prices and list for free. Airbnb makes money by taking a **fee per booking** (host- and guest-side service fees — percentages not disclosed on captured pages) and, increasingly, via partner/affiliate economics on the new trip services (Instacart, Welcome Pickups, Bounce, car rentals) and a credit-back loop that recycles spend into future Airbnb stays. The trust layer is the enabling product: identity verification, reviews, **Guest Favorites**, and **AirCover** (free protection on both sides) are what make stranger-to-stranger transactions work. Host acquisition runs through self-serve listing + Airbnb Setup + the Co-Host Network.
 
 ## Positioning & audience
 
-Two audiences, one platform. **Guests** are pitched on breadth and trust ("an Airbnb for every kind of trip"); **hosts** on low-friction, low-risk income. The 2025–26 expansion from Homes into Experiences and Services reframes Airbnb from "where you stay" toward "what you do on the trip" — competing less with hotels alone and more with activity/booking platforms (Viator, GetYourGuide) and local-services apps. The co-host marketplace and Airbnb-friendly program attack the supply side, lowering the bar to becoming a host.
+Targets leisure and increasingly longer-stay travelers (B2C) and the hosts who supply inventory (B2B2C — individuals, co-hosts, and now boutique hoteliers). Positions against hotels and OTAs (Booking/Expedia) on *uniqueness and locality* — "Experiences you can only get on Airbnb," hotels "with no big chains" — and against pure-stay rivals (Vrbo) on *breadth*: the 2026 Summer Release reframes Airbnb from a stays marketplace toward an end-to-end trip platform. Claimed edge: the two-sided trust layer (AirCover, reviews, Guest Favorites) and a host network no competitor matches.
 
 ## Nav structure
 
+Header nav (verified from rawHtml `<header>` + screenshot):
+
 ```
-- [Top nav]
+- Airbnb homepage (logo) — /
+- Search tabs (the primary IA):
   - Homes — /homes
-  - Experiences (NEW) — /experiences
-  - Services (NEW) — /services
-- Support (footer)
-  - Help Center — /help/home
-  - Get help with a safety issue — /help/contact-us
-  - AirCover — /aircover
-  - Travel insurance — /travelinsurance
-  - Anti-discrimination — /against-discrimination
-  - Disability support — /accessibility
-  - Cancellation options — /help/article/2701
-  - Report neighborhood concern — /neighbors
-- Hosting (footer)
-  - Airbnb your home — /host/homes
-  - Airbnb your experience — /host/experiences
-  - Airbnb your service — /host/services
-  - AirCover for Hosts — /aircover-for-hosts
-  - Hosting resources — /resources
-  - Hosting responsibly — /help/responsible-hosting
-  - Airbnb-friendly apartments — /airbnb-friendly
-  - Join a free hosting class — /e/intro-to-hosting
-  - Find a co-host — /host/co-hosts
-  - Refer a host — /refer
-- Airbnb (footer)
-  - 2026 Summer Release — /release
-  - Newsroom — /press/news
-  - Careers — /careers
-  - Gift cards — /giftcards
+  - Experiences  [NEW] — /experiences
+  - Services  [NEW] — /services
+- Search bar: Where · When (Add dates) · Who (Add guests)
+- Become a host — /become-a-host
+- Language & currency selector
+- Profile / main navigation menu (account, login/signup — client-rendered)
+```
+
+Footer / global links (destinations from the homepage link inventory; group labels follow Airbnb's standard footer — the mega-footer is client-rendered, not in captured markdown):
+
+```
+- Support: Help Center /help · AirCover /aircover · Anti-discrimination /against-discrimination ·
+  Accessibility /accessibility · Travel insurance /travelinsurance · Community Center /t5/Community-Center ·
+  Report neighborhood concern /neighbors
+- Hosting: Airbnb your home /host/homes · Host an Experience /host/experiences ·
+  Host a Service /host/services · AirCover for Hosts /aircover-for-hosts · Co-Host Network /host/co-hosts ·
+  Airbnb-friendly apartments /airbnb-friendly · Hosting resources /resources
+- Airbnb: Newsroom /press/news · 2026 Summer Release /release · Careers /careers ·
+  Gift cards /giftcards · Refer a host /refer
 ```
 
 ## Credibility & proof
 
-- **AirCover:** the headline trust layer, dual-sided. *AirCover for guests* (free on every home booking) promises rebooking or full/partial refund if a host cancels, is unreachable, or the listing is "significantly different than advertised," plus a 24-hour safety line; *AirCover for Hosts* covers the supply side.
-- **Reviews + Guest Favorites:** near-ubiquitous star ratings (4.7–5.0 on captured cards) and a "Guest favorite" / "2 million Guest Favorites" badge program signal vetted quality.
-- **Scale as proof:** "8 million vacation rentals," "220+ countries and regions," "Join millions of hosts."
-- **Publicly traded:** investors.airbnb.com / SEC filings surfaced in the map, reinforcing institutional credibility.
+All figures are **self-reported** (homepage meta + Summer-Release marketing copy) — recorded verbatim, not endorsed:
+
+- **Scale:** "8 million vacation rentals," "2 million Guest Favorites," "220+ countries and regions worldwide" (homepage meta); "over one billion guest and host reviews," "millions of hosts."
+- **Quality / ratings:** Experiences "4.93 out of 5 stars on average"; per-listing ratings shown across captures cluster 4.7–5.0 (snapshot); the **Guest Favorite** badge and **Superhost** program as on-platform trust marks.
+- **AI support:** "the best AI support assistant in travel," "available in 11 languages."
+- **Host protection (concrete guarantees):** AirCover for Hosts — "$3M USD" damage protection, "$1M" liability insurance, "$1M" Experiences liability insurance, guest identity verification, reservation screening, 24-hour safety line. Hotels carry a "Price match guarantee" (difference back as Airbnb credit).
+- **Partnerships (named):** Instacart, Welcome Pickups, Bounce (trip services); Chef's Table, Grand Central Market (food experiences); FIFA World Cup 2026.
 
 ## Visual & brand impression
 
-Polished, photography-forward, and unmistakably mature. The homepage is a clean white canvas filled with dense, region-grouped grids of rounded-corner listing photos — the imagery (the homes, the food, the experiences) *is* the brand; chrome is minimal. The signature **Rausch coral (#FF385C)** anchors the search bar, the heart/Bélo logo, and primary CTAs against near-black (#222222) text. Typography is the proprietary **Airbnb Cereal** (a Circular derivative), reinforcing a friendly-but-premium, design-led identity. The captured shot has a coral-buttoned login modal overlaid mid-page.
+Mature, confident consumer design. The homepage is a **storefront/app-shell** — a dense grid of rounded-corner listing cards (Popular homes, Featured hotels, then city-by-city carousels), wishlist hearts, and "Guest favorite" badges, carrying little positioning prose (the self-description lives on the vertical and release pages). The palette is restrained white/near-black (#222) with the signature **coral #FF385C** ("Rausch") as the single accent — search button, the Bélo, CTAs. Airbnb Cereal typography, generous whitespace, photography-forward. The top nav animates the Homes/Experiences/Services tabs with small looping videos. A coral modal (the white Bélo + "Now you'll see one price for your trip, all fees included") overlays the capture — a UX nudge toward the all-in pricing change.
 
 ## Strategic read
 
-The capture catches Airbnb mid-pivot. For its entire history "Airbnb" meant Homes; the 2026 Summer Release elevates **Experiences** and **Services** to co-equal nav tabs — a deliberate bet to monetize the whole trip, not just the bed, and to turn its host base and guest demand into a broader local-commerce platform. Two supply-side plays reinforce it: the **co-host marketplace** (removes the effort barrier) and **Airbnb-friendly apartments** (removes the ownership barrier). The simultaneous move to all-in total pricing is a direct response to years of "hidden cleaning fee" backlash. Watch whether Experiences/Services gain real liquidity or stay thin (several Services categories are still "Coming soon," and Experiences leans on subsidized Originals).
+The capture caught Airbnb mid-pivot. For its first ~17 years the product was *stays*; the **2026 Summer Release** is a deliberate widening into a full-trip platform — Experiences and Services elevated to co-equal nav verticals, a new trip-logistics layer (grocery/airport/luggage/car) stitched in via partners rather than built, boutique hotels added to inventory, and an AI layer (review synthesis, comparison, multilingual support) wrapped around the booking flow. The throughline is **owning more of the trip without owning more assets** — Airbnb keeps its asset-light, two-sided-marketplace model and monetizes adjacency through partnerships and a credit-back flywheel that recycles every service purchase into another stay. The defensible core remains the trust layer (AirCover, reviews, Guest Favorites) and the host supply; the open question the release bets on is whether guests will treat Airbnb as a trip *super-app* rather than just a place to book a room.
 
 ## Provenance
 
-- **Pages:** homepage, `/homes`, `/experiences`, `/services`, `/host/homes`, `/aircover`, `/airbnb-friendly` (7) — all Firecrawl, `maxAge:0`, US geo, 2026-05-30; offering structure derived from homepage top-nav + footer links (map returned ~470 URLs but ~95% were `/rooms/<id>` + `/help/article/<n>` noise).
-- **Verify:** all sourceURL-matched and body-md5-unique (clean).
-- **Credits:** not recorded this run.
-- **Couldn't get:** exact fee percentages, host onboarding flow behind `/become-a-host`, and the full Experiences/Services catalogs (geolocated, point-in-time). Financials/funding are a deep-research job, not Tier-0.
-- **Structured layer (schema 2.2):** ran `fc.py signals` on the persisted 2026-05-30 homepage rawHtml — JSON-LD present but carries no `sameAs`/`logo`/`alternateName`, so no new structured-layer fields. Re-stamped 2.0→2.2.
+- **Pages:** 8 analyzed (Firecrawl, 2026-06-04) — homepage + /homes, /experiences, /services, /host/homes, /aircover, /aircover-for-hosts, /release (the news.airbnb.com 2026 Summer Release).
+- **Verify:** all 8 sourceURLs matched; all body md5s unique — no geo/cache contamination this run.
+- **Credits:** 9 (1 map + 1 homepage rich pass + 7 key pages; logos module reused the cached homepage payload, no new credits).
+- **Couldn't get:** exact host/guest fee percentages (not on captured pages); the mega-footer hierarchy (client-rendered, reconstructed from link destinations); founding/company history + financials (off-site, deep-research scope).
+- **Run profile:** guided — emphasis "platform features / services taxonomy"; +offerings (platform-feature/service grain, not listing SKUs); +logos. Forced refresh over a still-warm 2026-05-30 capture (prior archived to captures/_archive/).
