@@ -21,6 +21,10 @@ mandated deep blocks + an explicit visibility rule), not to the module.
   cross-company canonical key the architecture refuses (OFFERINGS rule 4) and the deferred promotion step.
   **Re-seed `store/hims-com/offerings.md` to 7 columns** (it's the exemplar; currently 9-col, so it teaches the
   rejected shape). *(Eden, GoGeviti, MyDrHank also carry 9-col — fold to 7 on their next capture, no rush.)*
+  **Refined 2026-06-04:** this lock targets a *cross-company canonical* `Category` (the rule-4 key), **not** a
+  project-local within-company grouping column — which the contract's customization clause permits (project-local
+  + Run-profile-noted, e.g. Notion's product-vs-feature axis). See [non-Rx triage](../2026-06-04-non-rx-triage.md);
+  `OFFERINGS.md` is authoritative.
 - **Visibility token = a stated judgment**, blessed as such (§A1).
 
 ---
