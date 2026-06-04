@@ -57,6 +57,15 @@ To see which targets actually resolve to a held profile — and rank the danglin
 
 **5. Primary source** — *verbatim claims / disclaimers / taglines* → `profile.md` paraphrases; the captures keep exact wording: `rg -n '<phrase or variant>' store/<slug>/captures/*/*.md`. Guess variants for regulated language ("not approved" / "not evaluated").
 
+**6. Cohort cross-cut** — *"within telehealth: who owns their pharmacy and leads with men?"* → where a company carries `store/<slug>/telehealth.md` (a **cohort pack** — telehealth today; contract [`TELEHEALTH.md`](TELEHEALTH.md)), its frontmatter is the same valid-YAML closed-set surface as `profile.md`, parsed the same way and **joined on the slug**. The pack exists *because* the universal classification reads identical across a cohort (the telehealth set is 13/13 identical) — so these are the cuts that actually separate players *within* it.
+```python
+TH = {p.split("/")[1]: frontmatter(p) for p in glob.glob("store/*/telehealth.md")}   # same frontmatter() as above
+# the within-cohort scan: integrated pharmacy + men-led + TRT front door
+[s for s,t in TH.items() if t.get("pharmacy_model") == "integrated"
+   and t.get("audience") in {"men-only", "men-first"} and t.get("anchor_category") == "TRT"]
+```
+Closed sets live in [`TELEHEALTH.md`](TELEHEALTH.md), not here. **`unclear`/empty is "looked, couldn't tell," not "no"** — a sparse pack (a platform/lab) honestly leaves cuts blank, so check before reporting a within-cohort negative. **Cross-company comparison is computed here, at query time** — it's never stored in the pack (a baked "one of only two who…" rots when the cohort grows; that's the anti-reconciliation line). Judgments (threat/fit) aren't in the pack at all — they're a consumer-side read over it.
+
 ## Gotchas & limits
 
 **Before trusting a negative.** *"Company X doesn't do Y"* can mean **not offered** or **not captured**. Three signals tell them apart — check before reporting: `key_pages` (what the capturer treated as signal), `unverified_fields` (what it explicitly couldn't get), and the **Provenance** body section (pages analyzed + what was missed).

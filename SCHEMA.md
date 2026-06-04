@@ -195,7 +195,20 @@ When a **MAJOR** bump (see `schema_version`) makes existing profiles non-conform
 
 ## Tier-1 modules (opt-in, separate docs)
 
-Only written when a project enables them — **enablement = the file exists** (no config mechanism; the cohort with a live consumer is the enabled set). Same frontmatter discipline; own `captured_at`.
+Only written when a project enables them — **enablement = the file exists** (no config mechanism; the cohort with a live consumer is the enabled set). Same frontmatter discipline; own `captured_at`. Registering one is a **docs edit, not a `profile.md` version bump** — each module is a separate file with its own contract + `schema_version` (a new module changes nothing in `profile.md`).
+
+**Two species** share this machinery but answer different questions:
+
+- **Depth modules** extend a **universal dimension** at finer grain — *what* every company sells, *how* it sounds. The schema is **cohort-agnostic**: a watch brand and a telehealth brand fill the same `offerings.md` columns. Opt-in by a consumer's need for depth.
+- **Cohort packs** carry **vertical-specific classification** — cuts that only exist inside one vertical (`owns its pharmacy?` is meaningless for a watchmaker). The schema is **defined by the cohort**. The job is **within-cohort** discrimination: the universal fields read near-identical inside a cohort (the telehealth set came back 13/13 identical), so the pack supplies the cuts the universal schema can't. State-only and page-attested, same trust line as `profile.md` — **judgments + cross-company comparison stay consumer-side** (a pack is shared across every project that reads the cohort, so an asker-relative verdict can't live in it).
+
+*One depth module + one cohort pack isn't "two of a kind," so the contracts stay top-level CAPS files for now: a `modules/` directory earns its place at the **2nd depth module**, a `cohorts/` directory at the **2nd cohort pack**.*
+
+**Depth modules:**
 
 - **`offerings.md`** — the per-SKU/molecule roster, for a cohort whose consumer needs the grain a family line collapses (a brand's six GLP-1 SKUs into one bullet). Opt-in; **first enabled set: the telehealth cohort**, default elsewhere is *don't write the file*. **Full contract → [`OFFERINGS.md`](OFFERINGS.md)** (roster-first; molecule rides `What` page-attested; lint `scripts/offeringscheck.py`; rationale [`_design/2026-06-03-offerings.md`](_design/2026-06-03-offerings.md)). When active it owns `price_visibility` per-SKU; `profile.md`'s family-line token stays the convention everywhere else.
 - **`brand.md`** — the interpretive brand layer: voice/tone, personality (seed from Firecrawl `branding.personality`), positioning narrative, typography. The richer read that doesn't belong in `profile.md`'s scalars. *(Detailed schema lands when the first project enables it — deferred on purpose.)*
+
+**Cohort packs:**
+
+- **`telehealth.md`** — per-company telehealth classification: **8 single-select cuts** (`value_chain_role`, `pharmacy_model`, `audience`, `compounding_posture`, `anchor_category`, `modality`, `access_model`, `pay_model`) that the universal profile reads identical for every telehealth brand, plus a page-attested body (the pharmacy-ownership claim verbatim, categories served, health-merchant credibility). Opt-in; **first enabled set: the telehealth cohort**. **Full contract → [`TELEHEALTH.md`](TELEHEALTH.md)** (frontmatter-first closed sets; lint `scripts/cohortcheck.py --cohort telehealth`). Page-attested, never adjudicated — the ownership *claim* is recorded, never verified.
