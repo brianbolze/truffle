@@ -23,7 +23,7 @@ Do this in order. Knobs that matter are inline; the *why* is in the section link
 
 A **separate** recipe for the opt-in `offerings.md` (own `captured_at` — pricing goes stale fast). Run it
 **only** when a cohort's consumer needs the per-SKU grain (telehealth first); the default capture stays
-Tier-0 `profile.md`. Full contract + verdict: [`_design/2026-06-03-offerings-module.md`](../../_design/2026-06-03-offerings-module.md).
+Tier-0 `profile.md`. Full contract + verdict: [`_design/2026-06-03-offerings.md`](../../_design/2026-06-03-offerings.md).
 It reuses §2–§5 mechanics (same `fc.py`, same hazards) and is **near-free over a `profile.md` capture** —
 the same category/product pages, no new endpoints. Two passes: **map the portfolio (breadth)**, then
 **deepen the flagships (depth)**.
@@ -54,8 +54,14 @@ the SKUs**. A ~20-SKU `Multi-product` company is **~10–20 credits**; most rows
 - **Gating is a finding, not a skip** — a quiz/app/membership-gated SKU still gets a row: the floor that *is*
   shown + `[on-request]`/`[partial]`.
 - **Molecule + form from the page only** — never inferred from the brand name; write **"not stated"** if the
-  page is silent (the B2 wart: tagging Mounjaro "tirzepatide" with no page support). It rides inside `What`,
-  not as a column.
+  page is silent (the B2 wart: tagging Mounjaro "tirzepatide" with no page support). Scope attestation to
+  **product copy** — exclude citations, ISI/footnotes, alt-text, SEO blocks (a molecule can sit in page *text*
+  yet not be attested to the SKU). And **don't assert a page is silent on a term without grepping it**:
+  `not stated` is fine, but "the page never names X" must be checked first (a pilot claimed two molecules
+  absent that the PDP names). It rides inside `What`, not as a column.
+- **Slug attested, never constructed** — every rostered slug is a real URL from a captured page (or
+  `(no PDP — …)` for a card without one); never build one. A pilot fabricated `/weight-loss/ozempic-pen` — a
+  within-company key in no capture, which the lint can't catch — so verify the slug resolves before rostering it.
 - **Prominence flags are load-bearing and must run at capture time** (payloads prune on a curve and can't be
   re-derived): the `--homepage` rich pass on the category page gives the `fullPage` screenshot + `rawHtml` +
   `onlyMainContent:false` the read needs — **persist the `.png`** (24h expiry, §5.5). Gotchas: a popularity
@@ -64,7 +70,7 @@ the SKUs**. A ~20-SKU `Multi-product` company is **~10–20 credits**; most rows
   alphabetical index pages (a `/pricing`) from order inference; a rotating hero still gives the *category* lead.
 
 **Output:** a roster-first `offerings.md` (`## Portfolio overview` → `## Roster` → earned `## Deep blocks`) per
-[SCHEMA's Tier-1 stub](../../SCHEMA.md#tier-1-modules-opt-in-separate-docs). **Lint it:** `python3 scripts/offeringscheck.py --slug <slug>`
+the [`OFFERINGS.md`](../../OFFERINGS.md) contract. **Lint it:** `python3 scripts/offeringscheck.py --slug <slug>`
 — roster columns present, `price_visibility` closed-set, every row slug-keyed, **every `$` price greppable in a
 cited capture**, no cross-company canonical key. It exits nonzero on any miss (the misattributed-price guard).
 

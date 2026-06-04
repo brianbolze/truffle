@@ -13,7 +13,7 @@
 > baseline** — all three designs read the same 15-credit capture, so the module is a structuring choice
 > over already-captured state, not new spend.
 
-*2026-06-03. The activation probe the [offerings design](../../_design/2026-06-01-offerings.md) left
+*2026-06-03. The activation probe the [offerings design](../../_archive/2026-06-01-offerings.md) left
 open ("§Activation — open"), and the per-SKU re-trigger [Probe 0](../2026-06-01-profile-enrichment/FINDINGS.md)
 parked it behind. The live per-SKU consumer (the Teleprescribe Venture's Products/SKUs) has appeared, so
 the trigger is met — this tests what to build, not whether a consumer exists.*
@@ -135,13 +135,13 @@ screenshots + rawHtml** were load-bearing and present (un-pruned here), so the r
 time** before payloads prune. Gotchas: popularity-badge ≠ stock-tag; scope badge grep to rendered text
 (the `FeaturedTile` CSS trap); exclude alphabetical index pages from order inference.
 
-Both fold into [`../../_design/2026-06-03-offerings-module.md`](../../_design/2026-06-03-offerings-module.md)
+Both fold into [`../../_archive/2026-06-03-offerings-module.md`](../../_archive/2026-06-03-offerings-module.md)
 (§The recipe, §Prominence).
 
 ## Decision
 
 Activate `offerings.md`, **roster-first and store-only**, per the proposal in
-[`_design/2026-06-03-offerings-module.md`](../../_design/2026-06-03-offerings-module.md). The baseline
+[`_archive/2026-06-03-offerings-module.md`](../../_archive/2026-06-03-offerings-module.md). The baseline
 (`extend profile.md`) **loses decisively** for the per-SKU/molecule consumer — but `profile.md`'s family
 lines + visibility token **stay** as the cross-corpus point-read; `offerings.md` is the opt-in per-SKU
 layer (telehealth cohort first). Reject the molecule-pivot; demote deep blocks to earned. Promotion to

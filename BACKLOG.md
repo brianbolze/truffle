@@ -20,7 +20,7 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 ---
 
 - **Inputs for the `research-company` verb** `[idea]` `[md]` `[@brian]`
-  When triggering research-company, allow some customization - like `light|default|deep` capture mode, depth vs breadth preference, what types of pages to focus on.
+  When triggering research-company, allow some customization - like `light|default|deep` capture mode, depth vs breadth preference, what types of pages to focus on. Could also customize the schema (for the profile, and for additional modules like offerings.md) -- as long as we add a **`### Run profile`** line to the provenance section **when the run was non-vanilla** — what a custom prompt changed vs. a plain run.
 
 ### Discoverability & consumption
 
@@ -34,10 +34,6 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 - **Revisit 2.2's "no `founders`/`legal_entity` field" call — a cohort consumer has now appeared** `[tbd]` `[sm]`
   2.2 deliberately kept both out (`legalName` folds into `aliases`; founders "stay at the deep-research edge," prose-only) "until a cohort consumer defines the right shape." The 2026-06-01 Teleprescribe telehealth deep-research cohort is that consumer — all 6 reports leaned on founders + legal entity, several KB-load-bearing (PeterMD "no real Peter"; Remedy → founder Haris Memon). **But the evidence cuts both ways:** most founders were dug *externally* (Sunbiz/news), not from JSON-LD — which is exactly *why* 2.2 edged them; only site-derivable ones are true store-state.
   **Decide:** promote a queryable `legal_entity` out of `aliases` (cheap, low-risk), and/or a `founders` field filled *only when site-derivable* — never one that needs external research to fill, which would break the site-derived-state line.
-
-- **`brand.md` module** `[tbd]` `[sm]` `[@brian]` `[parked]`
-  The interpretive brand layer (voice/personality/positioning narrative/typography) — schema still unstarted; seed [`doro-product-analysis-prompt.md`](_design/references/doro-product-analysis-prompt.md). **Act when:** a project turns it on. *(Replaces the old combined offerings+brand item — offerings shipped, below.)*
-  **✓ `offerings.md` shipped (2026-06-03)** — the per-SKU consumer (the Teleprescribe Venture's Products/SKUs) appeared, firing the trigger, so the module graduated from parked to built: roster-first contract [`_design/2026-06-03-offerings-module.md`](_design/2026-06-03-offerings-module.md) (a probe-grounded [tournament](experiments/2026-06-03-offerings-tournament/FINDINGS.md) beat extending `profile.md`), capture recipe [§1.1](skills/research-company/firecrawl-capture.md), `scripts/offeringscheck.py` lint, live for the telehealth cohort (`store/{hims-com,ro-co,maximustribe-com,remedymeds-com}/offerings.md`). `profile.md`'s `price_visibility` token stays the family-grain convention everywhere else; Notion promotion stays propose-only.
 
 ### Capture quality
 

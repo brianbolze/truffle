@@ -6,10 +6,13 @@
 > — open"** left by the [2026-06-01 design](2026-06-01-offerings.md) and **revises that draft's body
 > shape**: lead with the roster, demote deep blocks to earned, reject the molecule-pivot. Companion to the
 > [frame](2026-05-29-frame.md) (scope) + [architecture](2026-05-30-architecture.md) ("Modules: recipes,
-> not just schemas"). **Codified 2026-06-03** — §Activation steps 1–6 landed (SCHEMA Tier-1 stub,
-> the [§1.1 capture recipe](../skills/research-company/firecrawl-capture.md), `scripts/offeringscheck.py`
-> lint, the QUERYING molecule-grouping recipe); settled on [`store/hims-com/offerings.md`](../store/hims-com/offerings.md),
-> fanning out the rest of the telehealth cohort. Notion promotion (step 7) stays propose-only.*
+> not just schemas"). **Codified 2026-06-03** — §Activation steps 1–6 landed. The settled **contract** was
+> distilled to the top-level [`OFFERINGS.md`](../OFFERINGS.md) (beside SCHEMA/TAXONOMIES/QUERYING);
+> **this doc is now the dated decision record** — the probe, the verdict, what changed from the draft.
+> Also landed: the [§1.1 capture recipe](../skills/research-company/firecrawl-capture.md),
+> `scripts/offeringscheck.py` lint, the QUERYING molecule-grouping recipe; settled on
+> [`store/hims-com/offerings.md`](../store/hims-com/offerings.md) + the telehealth cohort.
+> Notion promotion (step 7) stays propose-only.*
 
 ## Verdict
 

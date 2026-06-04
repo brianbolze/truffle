@@ -9,7 +9,7 @@
 > the earlier cohorts hadn't tested** (marketplace, usage-metered).
 >
 > *The full design synthesized from these findings (+ the breadth/identity/structure discussion + Doro
-> prior art) lives in [`../../_design/2026-06-01-offerings.md`](../../_design/2026-06-01-offerings.md).
+> prior art) lives in [`../../_archive/2026-06-01-offerings.md`](../../_archive/2026-06-01-offerings.md).
 > This file is just the evidence.*
 
 *Method: one fresh Firecrawl page per shape (5 credits) — telehealth (hims `/weight-loss`), luxury
