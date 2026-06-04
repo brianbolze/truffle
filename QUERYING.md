@@ -14,6 +14,7 @@ A `/research-company` agent already paid to capture and structure each company, 
 The store is `store/<domain-slug>/`:
 - `profile.md` — **frontmatter** (structured, closed-set, valid YAML) + **body** (the prose sections SCHEMA defines: Overview, What they offer, …).
 - `captures/<date>/*.md` — cleaned pages, **verbatim** primary source.
+- `captures/<date>/images/<sku>.<ext>` — **product reference imagery** (opt-in; absent on most companies): a flagship's clean **hero product render**, captured for a design / rendering-reference consumer and cited from the `offerings.md` deep block. A binary asset, not greppable — look here when you need the picture, not the text.
 
 Frontmatter is valid YAML, so the structured reader is five lines (PyYAML + stdlib `glob`):
 
