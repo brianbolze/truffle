@@ -1,8 +1,9 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse frontmatter; grep the body to locate.
-schema_version: "1.0"
+schema_version: "1.1"
 domain: hims.com            # company key; each offering's slug (its relative url) is its key *within* hims
 captured_at: 2026-06-03     # own freshness; captures/2026-06-03/ holds the source pages
+site_notes: "Custom React SPA, no CMS backend (no /products.json or /wp-json; the sitemap-fed /map is the only census, and it 403s to plain curl). Roster census = robots.txt → sitemap.xml → Firecrawl /map + site:hims.com/<path> map passes — these surface the PDPs the category grids hide (incl. the skin-care + sexual-wellness device lines absent from profile.md). Prices run promo/A-B (struck-through labs price, 'limited time' WL heroes) — re-check next run."
 ---
 
 ## Portfolio overview
@@ -46,17 +47,6 @@ $958/mo (brand Cialis® daily)**; brand Viagra® is **$543/mo**.
   · Hair · Mental · Skin) puts **Labs second [MED]**, a louder push than its 2-SKU depth implies.
 - Card order within a grid and the rotating ATF heroes left **[LOW]** — not used for ranking.
 
-**Form column** = the page-attested delivery mechanism mapped to the Notion **Delivery Mechanisms** slug *by
-route*: swallowed orals → `pill`, self-injection → `injection`, creams/gels/serums → `topical-gel`. Where the
-vocab has **no slug for the page's form**, the page word carries a **`[new?]`** flag — `chewable`, `spray`,
-`foam`, `shampoo`, `wipe` are all genuine gaps (DTC men's-health is full of chewables/sprays; the list has only
-`sublingual-troche`/`nasal-spray`/`topical-gel`). Non-drug items (labs draws, sex-toy devices, meal replacement)
-have **no** delivery mechanism → `not stated`.
-
-**Category column** = the SKU's best-fit Notion **Product Category**, slugified, grounded in hims's own grouping.
-`[?]` marks a forced fit: OTC skin "basics" (Notion's *aesthetics-dermatology* explicitly *excludes* OTC beauty),
-the meal-replacement (a food in a drug category), and the dandruff shampoo (OTC scalp care shelved under hair).
-
 ## Roster
 
 Complete at the indexed level (hims's product cards) across all seven lines, deduped: marketing-URL variants
@@ -65,83 +55,83 @@ storefronts is listed once. Price quoted verbatim with its on-page markers; mole
 (never inferred from a brand name — see the molecule audit under Verbatim anchors). A slug here is never asserted
 equal to another brand's.
 
-| Offering | Kind | Parent | Slug | Price (verbatim) | Visibility | Form | Category | What (molecule · access) |
-|---|---|---|---|---|---|---|---|---|
-| **Weight Loss** | family | — | `/weight-loss` | — | — | — | — | GLP-1 line; "holistic program" gating a SKU roster behind a separate membership. |
-| Weight Loss Membership | buyable | Weight Loss | `/weight-loss/membership` | `$39 for the first month, auto-renews at $149/month thereafter` | published | not stated | glp-1-medical-weight-loss | — · the recurring fee that gates every WL SKU; billed separately from medication. |
-| Wegovy® Pill | buyable | Weight Loss | `/weight-loss/wegovy-pill` | `From $149/mo†` | partial | pill | glp-1-medical-weight-loss | semaglutide · oral, once-daily · membership-gated; med-only price. |
-| Wegovy® Pen | buyable | Weight Loss | `/weight-loss/wegovy-pen` | `From $199/mo†` | partial | injection | glp-1-medical-weight-loss | semaglutide · once-weekly inj., doses 0.25–7.2mg · membership-gated; FSA/HSA eligible. |
-| Zepbound® Vial | buyable | Weight Loss | `/weight-loss/zepbound-vial` | `From $299/mo†` | partial | injection | glp-1-medical-weight-loss | tirzepatide · once-weekly inj. (vial) · membership-gated; med-only price. |
-| Zepbound® KwikPen® | buyable | Weight Loss | `/weight-loss/zepbound-kwikpen` | `From $299/mo†` | partial | injection | glp-1-medical-weight-loss | tirzepatide · once-weekly pre-filled pen · membership-gated; now its own PDP. |
-| Foundayo™ Pill | buyable | Weight Loss | `/weight-loss/foundayo-pill` | `From $149/mo†` | partial | pill | glp-1-medical-weight-loss | orforglipron · oral, once-daily · membership-gated; "no rules around food, water, timing." |
-| Ozempic® Pill | buyable | Weight Loss | `/weight-loss/ozempic-pill` | `From $149/mo†` | partial | pill | glp-1-medical-weight-loss | semaglutide · oral · membership-gated; FDA-approved T2D, off-label weight loss. |
-| Ozempic® (injection) | buyable | Weight Loss | `/weight-loss/ozempic-pen` | `From $199/mo†` | partial | injection | glp-1-medical-weight-loss | semaglutide · weekly inj. · membership-gated; off-label weight loss. |
-| Mounjaro® | buyable | Weight Loss | (no PDP — category modal) | `$1,899/mo†` / `$1,899/mo*` | partial | injection | glp-1-medical-weight-loss | not stated · weekly inj. · membership-gated; full-price brand card, "a weekly GLP-1 injection." |
-| Zepbound® (brand entry) | buyable | Weight Loss | (no PDP — category modal) | `$1,899/mo†` / `$1,899/mo*` | partial | injection | glp-1-medical-weight-loss | tirzepatide · weekly inj. · membership-gated; full-price brand card, distinct from the $299 Vial/KwikPen. |
-| Meal Replacements | buyable | Weight Loss | `/weight-loss/meal-replacement` | `Starting at $110/mo*` | published | not stated | glp-1-medical-weight-loss [?] | not stated · shakes (chocolate/vanilla) + bars · non-Rx food adjunct; [?] food in a drug category. |
-| **Sexual Health** | family | — | `/sexual-health` | — | — | — | — | ED + premature-ejaculation Rx + an OTC sexual-wellness shelf; self-contained subs (no membership). |
-| Generic for Viagra® (Sildenafil) | buyable | Sexual Health | `/erectile-dysfunction/sildenafil` | `Starting at $22/mo` / `From $4 per use` | published | pill | ed | sildenafil · as-needed PDE5i · "Most popular"; dose 25/50/100mg, "5% of the cost" of Viagra®. |
-| Viagra® (brand) | buyable | Sexual Health | `/erectile-dysfunction/viagra` | `Starting at $543/mo` / `From $135 per use` | published | pill | ed | sildenafil · as-needed · FDA-approved brand ("the little blue pill"). |
-| Generic for Cialis® (Tadalafil) | buyable | Sexual Health | `/erectile-dysfunction/tadalafil` | `Starting at $24/mo` / daily `From $40 per month` | published | pill | ed | tadalafil · as-needed or daily PDE5i. |
-| Cialis® (brand) | buyable | Sexual Health | `/erectile-dysfunction/cialis` | `$958 per month` | published | pill | ed | tadalafil · daily · FDA-approved brand. |
-| 3-in-1 Hard Mints™ | buyable | Sexual Health | `/erectile-dysfunction/hard-mint-chewable` | `Starting at $30/mo` / `From $1.63 per use` | published | chewable [new?] | ed | sildenafil + tadalafil + vitamin B12 · as-needed mint · "Most popular." |
-| Sildenafil Chews | buyable | Sexual Health | `/erectile-dysfunction/sildenafil-chew` | `Starting at $30/mo` | published | chewable [new?] | ed | sildenafil · as-needed berry chew. |
-| Tadalafil Chews | buyable | Sexual Health | `/erectile-dysfunction/tadalafil-chew` | `Starting at $30/mo` | published | chewable [new?] | ed | tadalafil · as-needed lemon chew. |
-| 3-in-1 Pill | buyable | Sexual Health | (no PDP — ED storefront card) | `Starting at $39/mo` | published | pill | ed | sildenafil + tadalafil · as-needed multi-benefit pill. |
-| Sex Rx + Hair Health | buyable | Sexual Health | (no PDP — ED storefront card) | `Starting at $39/mo` | published | pill | ed | not stated · daily 2-in-1 (ED + finasteride for hair). |
-| Sex Rx + Testosterone Support | buyable | Sexual Health | (no PDP — ED storefront card) | `Starting at $39/mo` | published | pill | ed | not stated · daily 2-in-1 (ED + T support). |
-| Sex Rx + Multivitamin | buyable | Sexual Health | (no PDP — ED storefront card) | `Starting at $39/mo` | published | pill | ed | not stated · daily (ED + multivitamin). |
-| Sex Rx + Climax Control | buyable | Sexual Health | (no PDP — ED/PE card) | `Starting at $39/mo` / `from $39/month` | published | pill | ed | tadalafil + fluoxetine · daily (ED + PE control). |
-| Sex Rx + Vitality Pro | buyable | Sexual Health | (no PDP — ED storefront card) | `Starting at $39/mo` | published | pill | ed | not stated · daily 2-in-1 (ED + cholesterol support). |
-| Sertraline for PE | buyable | Sexual Health | `/premature-ejaculation/sertraline-for-pe` | (no price on page — line floor `from $39/month`) | on-request | pill | ed | sertraline · daily, off-label for PE. |
-| Sildenafil for PE | buyable | Sexual Health | `/premature-ejaculation/sildenafil-for-pe` | `from $4/use` | published | pill | ed | sildenafil · as-needed, off-label PE endurance. |
-| Tadalafil for PE | buyable | Sexual Health | (no PDP — PE storefront card) | `from $6/use` | published | pill | ed | tadalafil · as-needed, off-label PE endurance. |
-| Clockstopper Climax Delay Wipes | buyable | Sexual Health | `/premature-ejaculation/benzocaine-wipes` | `from $19/use` / `Starting at $19/mo` | published | wipe [new?] | ed | benzocaine · topical anesthetic wipe (off-label PE). |
-| Climax Control Condoms | buyable | Sexual Health | `/premature-ejaculation/climax-control-condoms` | (price not shown on captured pages) | on-request | not stated | other | — · device, climax-control condoms. |
-| Standing O Penis Rings | buyable | Sexual Health | `/sexual-health/penis-rings` | `$30` | published | not stated | other | — · OTC device. |
-| Thrill Ride Prostate Massager | buyable | Sexual Health | `/sexual-health/prostate-massager` | `$74` | published | not stated | other | — · OTC device. |
-| OMG Ring Vibrator | buyable | Sexual Health | `/sexual-health/male-vibrator` | `$74` | published | not stated | other | — · OTC device. |
-| Condoms & Lube Kit | buyable | Sexual Health | `/sexual-health/sex-kit` | `$35` | published | not stated | other | — · OTC accessory kit. |
-| Ultra Thin Condoms | buyable | Sexual Health | `/sexual-health/ultra-thin-condoms` | `$35 / 12 Pack` | published | not stated | other | — · OTC accessory. |
-| Glide Water-based Lube | buyable | Sexual Health | `/sexual-health/water-based-lube` | `$15` | published | not stated | other | — · OTC accessory. |
-| Valacyclovir | buyable | Sexual Health | `/sexual-health/valacyclovir` | (no price on page) | on-request | pill | other | valacyclovir · oral antiviral, genital herpes (also a cold-sore PDP at `/skin-care/valacyclovir`). |
-| **Hair Loss** | family | — | `/hair-loss` | — | — | — | — | "Hair Hybrids" — finasteride/minoxidil singles + multi-active sprays/serums/chews; published subs, no membership. |
-| Finasteride & Minoxidil + Supplement Blend Pill | buyable | Hair Loss | `/hair-loss/finasteride-minoxidil-supplement-pill` | `Starting at $29 per month` | published | pill | hair-loss | finasteride + minoxidil + supplement blend · oral · badge "New." |
-| Finasteride & Minoxidil + Supplement Blend Chew | buyable | Hair Loss | `/hair-loss/finasteride-minox-chew-week` | `Starting at $29 per month` | published | chewable [new?] | hair-loss | finasteride + minoxidil + supplements · 3-in-1 citrus chew · "Most popular." |
-| Rx Hair Loss Spray (Finasteride & Minoxidil) | buyable | Hair Loss | `/hair-loss/topical-finasteride` | `Starting at $29 per month` | published | spray [new?] | hair-loss | finasteride + minoxidil · once-daily quick-dry spray. |
-| Rx Hair Loss Spray + Ketoconazole + Biotin | buyable | Hair Loss | `/hair-loss/hair-loss-spray` | `Starting at $33 per month` | published | spray [new?] | hair-loss | finasteride + minoxidil + ketoconazole + biotin · spray. |
-| Rx Hair Loss Serum | buyable | Hair Loss | `/hair-loss/serum` | `Starting at $29 per month` | published | topical-gel | hair-loss | finasteride + minoxidil · once-daily dropper serum. |
-| Minoxidil + Supplement Blend Chew | buyable | Hair Loss | `/hair-loss/minox-chew` | `Starting at $29 per month` | published | chewable [new?] | hair-loss | minoxidil + supplements · once-daily orange chew. |
-| Finasteride | buyable | Hair Loss | `/hair-loss/finasteride` | `Starting at $22 per month` | published | pill | hair-loss | finasteride · oral, FDA-approved (generic Propecia®). |
-| Hair Power Pack | buyable | Hair Loss | `/hair-loss/hair-power-pack` | `Starting at $60 per month` | published | pill | hair-loss | finasteride + minoxidil (kit) · "complete hair growth routine." |
-| Minoxidil Foam | buyable | Hair Loss | `/hair-loss/minoxidil-foam` | `Starting at $19 per month` | published | foam [new?] | hair-loss | minoxidil · OTC topical foam. |
-| Minoxidil Serum | buyable | Hair Loss | `/hair-loss/minoxidil` | `Starting at $15 per month` | published | topical-gel | hair-loss | minoxidil · OTC topical solution/serum, FDA-approved. |
-| Dandruff Detox Shampoo | buyable | Hair Loss | `/hair-loss/zinc-pyrithione-shampoo` | `Starting at $18 per month` | published | shampoo [new?] | hair-loss [?] | zinc pyrithione · OTC anti-dandruff; [?] OTC scalp care shelved under hair. |
-| **Testosterone** | family | — | `/testosterone` | — | — | — | — | "Testosterone Rx+" (enclomiphene, *not* synthetic TRT) live now; real TRT "Coming in 2026." |
-| Testosterone Rx+ (enclomiphene + supplements) | buyable | Testosterone | `/testosterone/enclomiphene-supplements` | none on page; FAQ `starts at $99/month for a 10-month plan paid upfront and in full` | on-request | pill | fertility-preserving-hormone-optimization | enclomiphene + supplements (zinc, B6, B12, L-arginine) · oral, daily · lab + intake gated. |
-| Testosterone Rx+ (enclomiphene + tadalafil + supplements) | buyable | Testosterone | `/testosterone/enclomiphene-tadalafil-supplements` | none on page; FAQ `$99/month for a 10-month plan paid upfront and in full` | on-request | pill | fertility-preserving-hormone-optimization | enclomiphene + tadalafil + supplements · oral, daily · the marquee card; lab + intake gated. |
-| Injectable TRT | buyable (roadmap) | Testosterone | (no PDP — category card) | `Coming in 2026*` | on-request | injection | trt | testosterone cypionate · once-weekly inj. · FDA-approved; not yet offered. |
-| Oral TRT | buyable (roadmap) | Testosterone | (no PDP — category card) | `Coming in 2026*` | on-request | pill | trt | testosterone undecanoate (Kyzatrex®) · twice-daily oral · FDA-approved; not yet offered. |
-| **Mental Health** | family | — | `/mental-health` | — | — | — | — | Async psychiatry for anxiety/depression; SSRIs/SNRIs + adjuncts, line floor `from $49/mo`. No controlled substances. |
-| Sertraline | buyable | Mental Health | `/psychiatry/sertraline` | `Starting at $49/mo` | published | pill | mental-health | sertraline · oral (generic Zoloft®). |
-| Escitalopram | buyable | Mental Health | `/psychiatry/escitalopram` | line floor `from $49/mo` | published | pill | mental-health | escitalopram · oral (generic Lexapro®). |
-| Citalopram | buyable | Mental Health | `/psychiatry/citalopram` | line floor `from $49/mo` | published | pill | mental-health | citalopram · oral (generic Celexa®). |
-| Fluoxetine | buyable | Mental Health | `/psychiatry/fluoxetine` | line floor `from $49/mo` | published | pill | mental-health | fluoxetine · oral (generic Prozac®). |
-| Duloxetine | buyable | Mental Health | `/psychiatry/duloxetine` | line floor `from $49/mo` | published | pill | mental-health | duloxetine · oral (generic Cymbalta®). |
-| Venlafaxine | buyable | Mental Health | `/psychiatry/venlafaxine` | line floor `from $49/mo` | published | pill | mental-health | venlafaxine · oral (generic Effexor®). |
-| Bupropion XL | buyable | Mental Health | `/psychiatry/bupropion` | line floor `from $49/mo` | published | pill | mental-health | bupropion · oral (generic Wellbutrin XL®). |
-| Buspirone HCl | buyable | Mental Health | `/psychiatry/buspirone` | line floor `from $49/mo` | published | pill | mental-health | buspirone · oral (generic Buspar®). |
-| Propranolol | buyable | Mental Health | `/psychiatry/propranolol` | line floor `from $49/mo` | published | pill | mental-health | propranolol · oral beta-blocker (off-label performance anxiety). |
-| **Labs** | family | — | `/labs` | — | — | — | — | At-home blood testing via Quest + a doctor-built "Action Plan"; Galleri cancer add-on. |
-| Labs by Hims (biomarker panel) | buyable | Labs | `/labs/biomarkers` | `~~$499~~ $349 per year` ("less than $1/day") | published | not stated | labs-diagnostics | not stated · 130+ biomarkers / "1,000+ conditions" across 10 areas; Quest blood draw + Action Plan. |
-| Hims Multi-Cancer Test by Galleri® | buyable | Labs | `/labs/cancer-test` | (no price — "add it to your Labs plan") | on-request | not stated | labs-diagnostics | not stated · annual MCED blood screen, 50+ cancer types; add-on to the Labs plan. |
-| **Skin Care** | family | — | `/skin-care` | — | — | — | — | Men's derm in partnership with Apostrophe — Rx custom creams (gated) + OTC basics (published). |
-| Custom Anti-Aging Cream | buyable | Skin Care | `/skin-care/anti-aging` | (no price — "Prescription," intake-gated) | on-request | topical-gel | aesthetics-dermatology | tretinoin + azelaic acid + niacinamide · custom Rx cream. |
-| Custom Acne Cream | buyable | Skin Care | `/skin-care/acne-treatment` | (no price — "Prescription," intake-gated) | on-request | topical-gel | aesthetics-dermatology | tretinoin / clindamycin / niacinamide / azelaic acid / zinc pyrithione (custom mix) · Rx cream. |
-| Goodnight Wrinkle Cream | buyable | Skin Care | `/skin-care/night-cream-men` | `$24` | published | topical-gel | aesthetics-dermatology [?] | not stated · OTC night cream; [?] Notion aesthetics-derm excludes OTC beauty. |
-| High Tide Cleanser | buyable | Skin Care | `/skin-care/face-cleanser-men` | `$15` | published | topical-gel | aesthetics-dermatology [?] | not stated · OTC face cleanser; [?] OTC beauty. |
-| Everyday Moisturizer | buyable | Skin Care | `/skin-care/moisturizer-men` | `$18` | published | topical-gel | aesthetics-dermatology [?] | not stated · OTC moisturizer; [?] OTC beauty. |
-| Vitamin C Serum | buyable | Skin Care | `/skin-care/vitamin-c-serum-men` | `$33` | published | topical-gel | aesthetics-dermatology [?] | vitamin C · OTC serum; [?] OTC beauty. |
+| Offering | Kind | Parent | Slug | Price (verbatim) | Visibility | What (molecule · form · access) |
+|---|---|---|---|---|---|---|
+| **Weight Loss** | family | — | `/weight-loss` | — | — | GLP-1 line; "holistic program" gating a SKU roster behind a separate membership. |
+| Weight Loss Membership | buyable | Weight Loss | `/weight-loss/membership` | `$39 for the first month, auto-renews at $149/month thereafter` | published | — · the recurring fee that gates every WL SKU; billed separately from medication. |
+| Wegovy® Pill | buyable | Weight Loss | `/weight-loss/wegovy-pill` | `From $149/mo†` | partial | semaglutide · oral, once-daily · membership-gated; med-only price. |
+| Wegovy® Pen | buyable | Weight Loss | `/weight-loss/wegovy-pen` | `From $199/mo†` | partial | semaglutide · once-weekly inj., doses 0.25–7.2mg · membership-gated; FSA/HSA eligible. |
+| Zepbound® Vial | buyable | Weight Loss | `/weight-loss/zepbound-vial` | `From $299/mo†` | partial | tirzepatide · once-weekly inj. (vial) · membership-gated; med-only price. |
+| Zepbound® KwikPen® | buyable | Weight Loss | `/weight-loss/zepbound-kwikpen` | `From $299/mo†` | partial | tirzepatide · once-weekly pre-filled pen · membership-gated; now its own PDP. |
+| Foundayo™ Pill | buyable | Weight Loss | `/weight-loss/foundayo-pill` | `From $149/mo†` | partial | orforglipron · oral, once-daily · membership-gated; "no rules around food, water, timing." |
+| Ozempic® Pill | buyable | Weight Loss | `/weight-loss/ozempic-pill` | `From $149/mo†` | partial | semaglutide · oral · membership-gated; FDA-approved T2D, off-label weight loss. |
+| Ozempic® (injection) | buyable | Weight Loss | `/weight-loss/ozempic-pen` | `From $199/mo†` | partial | semaglutide · weekly inj. · membership-gated; off-label weight loss. |
+| Mounjaro® | buyable | Weight Loss | (no PDP — category modal) | `$1,899/mo†` / `$1,899/mo*` | partial | not stated · weekly inj. · membership-gated; full-price brand card, "a weekly GLP-1 injection." |
+| Zepbound® (brand entry) | buyable | Weight Loss | (no PDP — category modal) | `$1,899/mo†` / `$1,899/mo*` | partial | tirzepatide · weekly inj. · membership-gated; full-price brand card, distinct from the $299 Vial/KwikPen. |
+| Meal Replacements | buyable | Weight Loss | `/weight-loss/meal-replacement` | `Starting at $110/mo*` | published | not stated · shakes (chocolate/vanilla) + bars · non-Rx food adjunct. |
+| **Sexual Health** | family | — | `/sexual-health` | — | — | ED + premature-ejaculation Rx + an OTC sexual-wellness shelf; self-contained subs (no membership). |
+| Generic for Viagra® (Sildenafil) | buyable | Sexual Health | `/erectile-dysfunction/sildenafil` | `Starting at $22/mo` / `From $4 per use` | published | sildenafil · oral, as-needed PDE5i · "Most popular"; dose 25/50/100mg, "5% of the cost" of Viagra®. |
+| Viagra® (brand) | buyable | Sexual Health | `/erectile-dysfunction/viagra` | `Starting at $543/mo` / `From $135 per use` | published | sildenafil · oral, as-needed · FDA-approved brand ("the little blue pill"). |
+| Generic for Cialis® (Tadalafil) | buyable | Sexual Health | `/erectile-dysfunction/tadalafil` | `Starting at $24/mo` / daily `From $40 per month` | published | tadalafil · oral, as-needed or daily PDE5i. |
+| Cialis® (brand) | buyable | Sexual Health | `/erectile-dysfunction/cialis` | `$958 per month` | published | tadalafil · oral, daily · FDA-approved brand. |
+| 3-in-1 Hard Mints™ | buyable | Sexual Health | `/erectile-dysfunction/hard-mint-chewable` | `Starting at $30/mo` / `From $1.63 per use` | published | sildenafil + tadalafil + vitamin B12 · as-needed chewable mint · "Most popular." |
+| Sildenafil Chews | buyable | Sexual Health | `/erectile-dysfunction/sildenafil-chew` | `Starting at $30/mo` | published | sildenafil · as-needed berry chew. |
+| Tadalafil Chews | buyable | Sexual Health | `/erectile-dysfunction/tadalafil-chew` | `Starting at $30/mo` | published | tadalafil · as-needed lemon chew. |
+| 3-in-1 Pill | buyable | Sexual Health | (no PDP — ED storefront card) | `Starting at $39/mo` | published | sildenafil + tadalafil · as-needed multi-benefit pill. |
+| Sex Rx + Hair Health | buyable | Sexual Health | (no PDP — ED storefront card) | `Starting at $39/mo` | published | not stated · oral, daily 2-in-1 (ED + finasteride for hair). |
+| Sex Rx + Testosterone Support | buyable | Sexual Health | (no PDP — ED storefront card) | `Starting at $39/mo` | published | not stated · oral, daily 2-in-1 (ED + T support). |
+| Sex Rx + Multivitamin | buyable | Sexual Health | (no PDP — ED storefront card) | `Starting at $39/mo` | published | not stated · oral, daily (ED + multivitamin). |
+| Sex Rx + Climax Control | buyable | Sexual Health | (no PDP — ED/PE card) | `Starting at $39/mo` / `from $39/month` | published | tadalafil + fluoxetine · oral, daily (ED + PE control). |
+| Sex Rx + Vitality Pro | buyable | Sexual Health | (no PDP — ED storefront card) | `Starting at $39/mo` | published | not stated · oral, daily 2-in-1 (ED + cholesterol support). |
+| Sertraline for PE | buyable | Sexual Health | `/premature-ejaculation/sertraline-for-pe` | (no price on page — line floor `from $39/month`) | on-request | sertraline · oral, daily, off-label for PE. |
+| Sildenafil for PE | buyable | Sexual Health | `/premature-ejaculation/sildenafil-for-pe` | `from $4/use` | published | sildenafil · oral, as-needed, off-label PE endurance. |
+| Tadalafil for PE | buyable | Sexual Health | (no PDP — PE storefront card) | `from $6/use` | published | tadalafil · oral, as-needed, off-label PE endurance. |
+| Clockstopper Climax Delay Wipes | buyable | Sexual Health | `/premature-ejaculation/benzocaine-wipes` | `from $19/use` / `Starting at $19/mo` | published | benzocaine · topical anesthetic wipe (off-label PE). |
+| Climax Control Condoms | buyable | Sexual Health | `/premature-ejaculation/climax-control-condoms` | (price not shown on captured pages) | on-request | — · device, climax-control condoms. |
+| Standing O Penis Rings | buyable | Sexual Health | `/sexual-health/penis-rings` | `$30` | published | — · OTC device. |
+| Thrill Ride Prostate Massager | buyable | Sexual Health | `/sexual-health/prostate-massager` | `$74` | published | — · OTC device. |
+| OMG Ring Vibrator | buyable | Sexual Health | `/sexual-health/male-vibrator` | `$74` | published | — · OTC device. |
+| Condoms & Lube Kit | buyable | Sexual Health | `/sexual-health/sex-kit` | `$35` | published | — · OTC accessory kit. |
+| Ultra Thin Condoms | buyable | Sexual Health | `/sexual-health/ultra-thin-condoms` | `$35 / 12 Pack` | published | — · OTC accessory. |
+| Glide Water-based Lube | buyable | Sexual Health | `/sexual-health/water-based-lube` | `$15` | published | — · OTC accessory. |
+| Valacyclovir | buyable | Sexual Health | `/sexual-health/valacyclovir` | (no price on page) | on-request | valacyclovir · oral antiviral, genital herpes (also a cold-sore PDP at `/skin-care/valacyclovir`). |
+| **Hair Loss** | family | — | `/hair-loss` | — | — | "Hair Hybrids" — finasteride/minoxidil singles + multi-active sprays/serums/chews; published subs, no membership. |
+| Finasteride & Minoxidil + Supplement Blend Pill | buyable | Hair Loss | `/hair-loss/finasteride-minoxidil-supplement-pill` | `Starting at $29 per month` | published | finasteride + minoxidil + supplement blend · oral · badge "New." |
+| Finasteride & Minoxidil + Supplement Blend Chew | buyable | Hair Loss | `/hair-loss/finasteride-minox-chew-week` | `Starting at $29 per month` | published | finasteride + minoxidil + supplements · 3-in-1 citrus chew · "Most popular." |
+| Rx Hair Loss Spray (Finasteride & Minoxidil) | buyable | Hair Loss | `/hair-loss/topical-finasteride` | `Starting at $29 per month` | published | finasteride + minoxidil · once-daily quick-dry spray. |
+| Rx Hair Loss Spray + Ketoconazole + Biotin | buyable | Hair Loss | `/hair-loss/hair-loss-spray` | `Starting at $33 per month` | published | finasteride + minoxidil + ketoconazole + biotin · spray. |
+| Rx Hair Loss Serum | buyable | Hair Loss | `/hair-loss/serum` | `Starting at $29 per month` | published | finasteride + minoxidil · once-daily dropper serum. |
+| Minoxidil + Supplement Blend Chew | buyable | Hair Loss | `/hair-loss/minox-chew` | `Starting at $29 per month` | published | minoxidil + supplements · once-daily orange chew. |
+| Finasteride | buyable | Hair Loss | `/hair-loss/finasteride` | `Starting at $22 per month` | published | finasteride · oral, FDA-approved (generic Propecia®). |
+| Hair Power Pack | buyable | Hair Loss | `/hair-loss/hair-power-pack` | `Starting at $60 per month` | published | finasteride + minoxidil (kit) · "complete hair growth routine." |
+| Minoxidil Foam | buyable | Hair Loss | `/hair-loss/minoxidil-foam` | `Starting at $19 per month` | published | minoxidil · OTC topical foam. |
+| Minoxidil Serum | buyable | Hair Loss | `/hair-loss/minoxidil` | `Starting at $15 per month` | published | minoxidil · OTC topical solution/serum, FDA-approved. |
+| Dandruff Detox Shampoo | buyable | Hair Loss | `/hair-loss/zinc-pyrithione-shampoo` | `Starting at $18 per month` | published | zinc pyrithione · OTC anti-dandruff shampoo. |
+| **Testosterone** | family | — | `/testosterone` | — | — | "Testosterone Rx+" (enclomiphene, *not* synthetic TRT) live now; real TRT "Coming in 2026." |
+| Testosterone Rx+ (enclomiphene + supplements) | buyable | Testosterone | `/testosterone/enclomiphene-supplements` | none on page; FAQ `starts at $99/month for a 10-month plan paid upfront and in full` | on-request | enclomiphene + supplements (zinc, B6, B12, L-arginine) · oral, daily · lab + intake gated. |
+| Testosterone Rx+ (enclomiphene + tadalafil + supplements) | buyable | Testosterone | `/testosterone/enclomiphene-tadalafil-supplements` | none on page; FAQ `$99/month for a 10-month plan paid upfront and in full` | on-request | enclomiphene + tadalafil + supplements · oral, daily · the marquee card; lab + intake gated. |
+| Injectable TRT | buyable (roadmap) | Testosterone | (no PDP — category card) | `Coming in 2026*` | on-request | testosterone cypionate · once-weekly inj. · FDA-approved; not yet offered. |
+| Oral TRT | buyable (roadmap) | Testosterone | (no PDP — category card) | `Coming in 2026*` | on-request | testosterone undecanoate (Kyzatrex®) · twice-daily oral · FDA-approved; not yet offered. |
+| **Mental Health** | family | — | `/mental-health` | — | — | Async psychiatry for anxiety/depression; SSRIs/SNRIs + adjuncts, line floor `from $49/mo`. No controlled substances. |
+| Sertraline | buyable | Mental Health | `/psychiatry/sertraline` | `Starting at $49/mo` | published | sertraline · oral (generic Zoloft®). |
+| Escitalopram | buyable | Mental Health | `/psychiatry/escitalopram` | line floor `from $49/mo` | published | escitalopram · oral (generic Lexapro®). |
+| Citalopram | buyable | Mental Health | `/psychiatry/citalopram` | line floor `from $49/mo` | published | citalopram · oral (generic Celexa®). |
+| Fluoxetine | buyable | Mental Health | `/psychiatry/fluoxetine` | line floor `from $49/mo` | published | fluoxetine · oral (generic Prozac®). |
+| Duloxetine | buyable | Mental Health | `/psychiatry/duloxetine` | line floor `from $49/mo` | published | duloxetine · oral (generic Cymbalta®). |
+| Venlafaxine | buyable | Mental Health | `/psychiatry/venlafaxine` | line floor `from $49/mo` | published | venlafaxine · oral (generic Effexor®). |
+| Bupropion XL | buyable | Mental Health | `/psychiatry/bupropion` | line floor `from $49/mo` | published | bupropion · oral (generic Wellbutrin XL®). |
+| Buspirone HCl | buyable | Mental Health | `/psychiatry/buspirone` | line floor `from $49/mo` | published | buspirone · oral (generic Buspar®). |
+| Propranolol | buyable | Mental Health | `/psychiatry/propranolol` | line floor `from $49/mo` | published | propranolol · oral beta-blocker (off-label performance anxiety). |
+| **Labs** | family | — | `/labs` | — | — | At-home blood testing via Quest + a doctor-built "Action Plan"; Galleri cancer add-on. |
+| Labs by Hims (biomarker panel) | buyable | Labs | `/labs/biomarkers` | `~~$499~~ $349 per year` ("less than $1/day") | published | not stated · 130+ biomarkers / "1,000+ conditions" across 10 areas; Quest blood draw + Action Plan. |
+| Hims Multi-Cancer Test by Galleri® | buyable | Labs | `/labs/cancer-test` | (no price — "add it to your Labs plan") | on-request | not stated · annual MCED blood screen, 50+ cancer types; add-on to the Labs plan. |
+| **Skin Care** | family | — | `/skin-care` | — | — | Men's derm in partnership with Apostrophe — Rx custom creams (gated) + OTC basics (published). |
+| Custom Anti-Aging Cream | buyable | Skin Care | `/skin-care/anti-aging` | (no price — "Prescription," intake-gated) | on-request | tretinoin + azelaic acid + niacinamide · custom Rx cream. |
+| Custom Acne Cream | buyable | Skin Care | `/skin-care/acne-treatment` | (no price — "Prescription," intake-gated) | on-request | tretinoin / clindamycin / niacinamide / azelaic acid / zinc pyrithione (custom mix) · Rx cream. |
+| Goodnight Wrinkle Cream | buyable | Skin Care | `/skin-care/night-cream-men` | `$24` | published | not stated · OTC night cream. |
+| High Tide Cleanser | buyable | Skin Care | `/skin-care/face-cleanser-men` | `$15` | published | not stated · OTC face cleanser. |
+| Everyday Moisturizer | buyable | Skin Care | `/skin-care/moisturizer-men` | `$18` | published | not stated · OTC moisturizer. |
+| Vitamin C Serum | buyable | Skin Care | `/skin-care/vitamin-c-serum-men` | `$33` | published | vitamin C · OTC serum. |
 
 ### Verbatim anchors
 
@@ -156,7 +146,7 @@ and form audit. Quoted exactly from the captured pages.
 - **\* (Mounjaro / generic Zepbound $1,899):** the same membership footnote keyed to `*` on the "Our brands"
   modals (`weight-loss-category`).
 - **\* (Meal Replacements $110):** *"Starting at $110/mo"* with a `*` (`weight-loss-meal-replacement`); a non-Rx
-  food, self-contained → `published`, but `[?]` on category (a food in a drug-defined vertical).
+  food, self-contained → `published`.
 - **\* (testosterone "Coming in 2026"):** *"Such expected launch is subject to certain assumptions and factors,
   some of which may be outside of our control, and as such may be subject to change."* (`testosterone-category`).
 - **Testosterone $99 is FAQ-only + lab-gated → `on-request`:** the only figure on the entire line is in FAQ prose
@@ -189,13 +179,6 @@ and form audit. Quoted exactly from the captured pages.
   TRT → **testosterone undecanoate (Kyzatrex®)** (both attested on the testosterone cards). The four bundle SKUs
   whose cards don't name a molecule (Sex Rx + Hair Health / Testosterone Support / Multivitamin / Vitality Pro)
   are **"not stated"** — only Sex Rx + Climax Control is attested (*"Tadalafil and Fluoxetine"*).
-- **`[new?]` form gaps:** the Delivery Mechanisms vocab has no slug for **chewable/ODT** (Hard Mints, the
-  sildenafil/tadalafil chews, the hair chews), **topical spray** (the two Rx Hair Loss Sprays), **foam**
-  (Minoxidil Foam), **shampoo** (Dandruff Detox), or **wipe** (Clockstopper benzocaine wipes). All five are
-  common in DTC men's health — a real vocab gap, flagged rather than force-fit to `topical-gel`/`pill`.
-- **`[?]` category forces:** `meal-replacement` (food → glp-1 vertical), `dandruff-shampoo` (OTC scalp → hair),
-  and the four OTC skin basics (Notion *aesthetics-dermatology* is defined as Rx skincare, *"distinct from
-  over-the-counter beauty products"* — so cleanser/moisturizer/wrinkle-cream/vit-C don't cleanly fit any category).
 
 ## Deep blocks
 
@@ -304,10 +287,6 @@ sits second in the site's "Explore" nav despite its thin SKU count — a deliber
   call — unattributable, shared-key, so counted as a ceiling). **Run total ≈ 32–41 Firecrawl credits**, ~9
   uncertain. *(Note: `fc.py map` mis-handles a slash in `--search`; the `site:` passes were done via the raw map
   API to avoid it — worth a one-line fix to the script.)*
-- **[new?] / [?] flags raised** (for the Notion vocab owners): **Form `[new?]`** — `chewable`, `spray`, `foam`,
-  `shampoo`, `wipe` (Delivery Mechanisms has none of these). **Category `[?]`** — `meal-replacement`,
-  `dandruff-shampoo`, and the four OTC skin basics (no clean Product Category; aesthetics-dermatology is Rx-only
-  by definition).
 - **Point-in-time snapshot, not fixed:** hims runs promo + A/B pricing (struck-through `$499→$349` labs, "for a
   limited time" WL heroes, reCAPTCHA/Stripe/Transcend instrumentation in the markdown). This module's own
   `captured_at` + a short TTL are the guard — re-capture before trusting a price as current.
