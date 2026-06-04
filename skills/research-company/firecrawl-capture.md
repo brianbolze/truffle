@@ -83,6 +83,19 @@ company is ~10–20 cr.
   badge ("Best seller") is emphasis, a stock tag ("In stock") is not; scope badge detection to *rendered
   text*, not a `rawHtml` grep (Hims's 59 "Featured" hits were all the `FeaturedTile` CSS class); exclude
   alphabetical index pages (a `/pricing`) from order inference; a rotating hero still gives the *category* lead.
+- **Hero product images — opt-in asset capture** (for a Product-Rendering / design-reference consumer; default
+  runs **skip** this). Capture the **flagship PDPs' clean isolated product renders** (bottle / vial / pill / pen on
+  a plain background). Proved across 6 sites — [`experiments/2026-06-03-offerings-images/FINDINGS.md`](../../experiments/2026-06-03-offerings-images/FINDINGS.md):
+  - **Scrape the flagship PDP with `--images`** (the `images[]` list rides the 1-credit base — free; lean scrapes
+    omit it), then `fc.py hero --slug <slug> --name <pdp>` path-scores it **recall-first** and headed-downloads the
+    top-N candidates to `.payloads/hero/<pdp>/` (a bare fetch 403s on bot-defended CDNs, §5.2).
+  - **You pick precision by LOOKING** — the path-score only guarantees a clean hero is *in the set* (site-level
+    recall 5/5), **not** that it's rank 1 (rank-1 precision 3/5; packaging shots + lifestyle-with-product fool the
+    regex, not you). Read the candidates, choose the clean isolated render, and **promote the winner** to
+    `store/<slug>/captures/<date>/images/<sku>.<ext>` — durable, beside the cleaned captures, **not** in `.payloads`.
+  - **`og:image` is fallback-only** (0/5 clean renders across the probe — usually a lifestyle/SEO card); use it
+    only when a lean scrape carries no `images[]`. It's an **asset, never a roster column** — reference the saved
+    path from the flagship's `## Deep block`, and note image capture in the `### Run profile`.
 
 **Output:** a roster-first `offerings.md` (`## Portfolio overview` → `## Roster` → earned `## Deep blocks`) per
 the [`OFFERINGS.md`](../../OFFERINGS.md) contract. **Lint it:** `python3 scripts/offeringscheck.py --slug <slug>`

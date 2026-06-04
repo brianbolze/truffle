@@ -9,7 +9,8 @@ profile-writing (that's the agent's enrichment job, per SCHEMA.md).
 
 Usage:
   fc.py map    <url> --slug <slug> [--search TERM] [--limit 500] [--subdomains] [--date YYYY-MM-DD]
-  fc.py scrape <url> --slug <slug> --name <name> [--homepage] [--wait 3500] [--proxy auto] [--date ...]
+  fc.py scrape <url> --slug <slug> --name <name> [--homepage] [--images] [--wait 3500] [--proxy auto] [--date ...]
+  fc.py hero    --slug <slug> --name <name> [--top 15] [--date ...]  # recall-first hero-image candidates to pick (opt-in asset, §1.1)
   fc.py verify  --slug <slug> [--date ...]  # scrapes: md5-dedup + sourceURL match; + lint profile.md once written
   fc.py spend   --slug <slug> [--date ...]  # this run's attributed cost, summed from per-call creditsUsed
   fc.py signals --slug <slug> [--name homepage] [--date ...]  # slice rawHtml's JSON-LD + nav region (step-7 hint read, free)
@@ -39,6 +40,7 @@ import time
 import urllib.request
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 API = "https://api.firecrawl.dev/v2"
 KEY = os.environ.get("FIRECRAWL_API_KEY")
@@ -125,6 +127,7 @@ def do_scrape(
     homepage: bool,
     wait: int,
     proxy: str | None,
+    images: bool,
     date: str,
 ) -> None:
     if homepage:
@@ -140,6 +143,8 @@ def do_scrape(
         only_main = False
     else:
         formats = ["markdown", "links", {"type": "screenshot", "fullPage": True}]
+        if images:
+            formats.append("images")  # hero-capture: images[] rides the 1-credit base (§1.1)
         only_main = True
     body: dict[str, Any] = {
         "url": url,
@@ -451,6 +456,135 @@ def do_signals(slug: str, name: str, date: str) -> None:
         print("\n" + nav)
 
 
+# --- hero product image (opt-in asset capture, §1.1) -----------------------
+# Recall-first candidate surfacing for the Product-Rendering reference library:
+# score a flagship PDP's images[] by URL-path signal, headed-download the top-N to
+# a scratch dir, and let the capturing agent PICK the clean isolated render by
+# LOOKING — vision does precision; the path-score only guarantees a hero is in the
+# set, never that it's rank 1 (n=6 probe: site-level recall 5/5, rank-1 precision
+# 3/5 — so always eyeball). og:image is a last-resort fallback (0/5 clean renders
+# across the probe). Bare urlretrieve 403s on bot-defended image CDNs (§5.2) — fetch
+# headed (Referer + browser UA). Rationale: experiments/2026-06-03-offerings-images/FINDINGS.md.
+#
+# The NEG list rejects only what is NEVER a product render. Note `/nav/` is a path
+# SEGMENT, not the bare token `nav`: Webflow ships clean hero renders as `nav-<sku>.webp`,
+# and a `nav` substring match destroyed those (the probe's worst recall miss). Precision
+# (packaging-vs-render, lifestyle-with-product) is the agent's vision job, not the regex's.
+HERO_NEG = re.compile(
+    r"(\.svg|\.gif|f_svg|/icons?/|[-_]icon[-_./]|logo|/footer/|/header/|/nav/|/navigation/|navbar"
+    r"|/menu/|qr[-_]?code|testimonial|avatar|headshot|[-_]review|[-_]stars?[-_]|rating|trustpilot"
+    r"|/press/|/blog/|background|hero-bg|[-_]seo[-_]|[-_]share[-_]|/og[-_]|[-_]og\b|social|favicon"
+    r"|sprite|placeholder|visa|mastercard|amex|klarna|afterpay|paypal|[-_]hsa[-_]|[-_]fsa[-_]"
+    r"|payment|[-_]ba[-_]|[-_]before[-_]|[-_]after[-_])",
+    re.I,
+)
+HERO_POS = re.compile(
+    r"(/products?/|/pdps?/|[-_/]pdp|product[-_]|[-_]product|bottle|vial|[-_]pill|[-_]pen\b|capsule"
+    r"|tablet|packaging|render|float|[-_]jar|[-_]box\b|tube|syringe|device|[-_]kit\b|sachet)",
+    re.I,
+)
+HERO_WIDTH = re.compile(r"(?:[,/_]w[_=](\d{2,4}))|(?:[-_](\d{3,4})x\d{2,4})|(?:[-_]p[-_](\d{3,4}))")
+HERO_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+
+
+def hero_width(url: str) -> int:
+    """Largest declared pixel width in the URL — Cloudinary `,w_499`, WordPress `-300x300`,
+    Webflow `-p-500`. Bigger trends more hero-like; 0 when none is encoded."""
+    widths = [int(g) for m in HERO_WIDTH.finditer(url) for g in m.groups() if g]
+    return max(widths) if widths else 0
+
+
+def hero_score(url: str) -> float:
+    """Recall-first path score: hard-reject never-product assets, boost product tokens,
+    nudge by width. Deliberately coarse — the agent's vision pass is the precision layer."""
+    s = 0.0
+    if HERO_NEG.search(url):
+        s -= 10
+    if HERO_POS.search(url):
+        s += 5
+    return s + min(hero_width(url), 1600) / 400.0
+
+
+def hero_ext(blob: bytes) -> str | None:
+    """Image type from magic bytes, so a 403/HTML error body never lands as a fake .png."""
+    if blob.startswith(b"\xff\xd8\xff"):
+        return "jpg"
+    if blob.startswith(b"\x89PNG\r\n\x1a\n"):
+        return "png"
+    if blob[:6] in (b"GIF87a", b"GIF89a"):
+        return "gif"
+    if blob[:4] == b"RIFF" and blob[8:12] == b"WEBP":
+        return "webp"
+    return None
+
+
+def fetch_image(url: str, referer: str | None) -> bytes | None:
+    """Headed GET (browser UA + Referer) — bare urlretrieve 403s on bot-defended image
+    CDNs (§5.2; the probe proved this across 6 hosts). Retries with the image host itself
+    as Referer. None on failure / non-image body / a too-tiny (<600B) tracking pixel."""
+    headers = {
+        "User-Agent": HERO_UA,
+        "Accept": "image/avif,image/webp,image/png,image/*,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+    }
+    for ref in [r for r in (referer, f"https://{urlparse(url).netloc}/") if r]:
+        try:
+            req = urllib.request.Request(url, headers={**headers, "Referer": ref})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                blob = r.read()
+            if len(blob) >= 600 and hero_ext(blob):
+                return blob
+        except Exception:
+            continue
+    return None
+
+
+def do_hero(slug: str, name: str, date: str, top_n: int) -> None:
+    p, used = latest_payload(slug, name, date)
+    if p is None:
+        sys.exit(f"hero: no {name}.json under store/{slug}/captures/* — scrape the flagship PDP first (with --images)")
+    data = json.loads(p.read_text())
+    data = data.get("data", data)
+    imgs = [u for u in (data.get("images") or []) if isinstance(u, str) and u.startswith("http")]
+    meta = data.get("metadata") or {}
+    og = meta.get("og:image")
+    src = meta.get("sourceURL") or meta.get("url") or ""
+    referer = f"https://{urlparse(src).netloc}/" if src else None
+    print(f"=== hero {slug} ({name}.json, {used}) ===")
+    print(
+        "  RECALL-FIRST candidates — the agent PICKS the clean isolated render by LOOKING "
+        "(Read each; the path-score only guarantees a hero is in the set, NOT at rank 1). "
+        "og.* is FALLBACK-ONLY. Rationale: experiments/2026-06-03-offerings-images/FINDINGS.md."
+    )
+    if not imgs:
+        if not og:
+            sys.exit("  no images[] and no og:image — re-scrape the PDP with `fc.py scrape ... --images` (rides the 1-credit base)")
+        print("  !! no images[] (lean scrape) — only the og:image fallback is available; re-scrape with --images for real candidates")
+    outdir = store(slug, date) / ".payloads" / "hero" / name
+    outdir.mkdir(parents=True, exist_ok=True)
+    ranked = sorted(dict.fromkeys(imgs), key=hero_score, reverse=True)[:top_n]
+    n_ok = 0
+    for i, u in enumerate(ranked, 1):
+        blob = fetch_image(u, referer)
+        if not blob:
+            print(f"  c{i:02} FETCH-FAIL  {u}")
+            continue
+        fp = outdir / f"c{i:02}.{hero_ext(blob)}"
+        fp.write_bytes(blob)
+        n_ok += 1
+        print(f"  c{i:02} score={hero_score(u):+5.1f} w={hero_width(u):>4} {fp.relative_to(ROOT)}")
+    if og and (blob := fetch_image(og, referer)):
+        fp = outdir / f"og.{hero_ext(blob)}"
+        fp.write_bytes(blob)
+        print(f"  og  (fallback only)        {fp.relative_to(ROOT)}")
+    print(f"\n  {n_ok}/{len(ranked)} candidates saved to {outdir.relative_to(ROOT)}/  (headed download)")
+    print("  NEXT (agent): Read the candidates, pick the clean isolated product render, then promote the winner:")
+    print(
+        f"    mkdir -p store/{slug}/captures/{date}/images && cp {outdir.relative_to(ROOT)}/cNN.<ext> store/{slug}/captures/{date}/images/<sku>.<ext>"
+    )
+    print("  Reference that path from the flagship's ## Deep block. It is an ASSET, never a roster column.")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -470,6 +604,7 @@ def main() -> None:
     s.add_argument("--slug", required=True)
     s.add_argument("--name", required=True)
     s.add_argument("--homepage", action="store_true")
+    s.add_argument("--images", action="store_true", help="add the free `images` format (hero capture on a flagship PDP, §1.1)")
     s.add_argument("--wait", type=int, default=3500)
     s.add_argument("--proxy")
     s.add_argument("--date", default=TODAY)
@@ -483,18 +618,25 @@ def main() -> None:
     sg.add_argument("--slug", required=True)
     sg.add_argument("--name", default="homepage", help="payload to slice (default: homepage)")
     sg.add_argument("--date", default=TODAY)
+    h = sub.add_parser("hero")
+    h.add_argument("--slug", required=True)
+    h.add_argument("--name", required=True, help="flagship PDP payload to source (scraped with --images)")
+    h.add_argument("--top", type=int, default=15, help="candidates to download (recall-first; headed download is free)")
+    h.add_argument("--date", default=TODAY)
     sub.add_parser("credits")
     a = ap.parse_args()
     if a.cmd == "map":
         do_map(a.url, a.slug, a.search, a.limit, a.date, a.subdomains)
     elif a.cmd == "scrape":
-        do_scrape(a.url, a.slug, a.name, a.homepage, a.wait, a.proxy, a.date)
+        do_scrape(a.url, a.slug, a.name, a.homepage, a.wait, a.proxy, a.images, a.date)
     elif a.cmd == "verify":
         do_verify(a.slug, a.date)
     elif a.cmd == "spend":
         do_spend(a.slug, a.date)
     elif a.cmd == "signals":
         do_signals(a.slug, a.name, a.date)
+    elif a.cmd == "hero":
+        do_hero(a.slug, a.name, a.date, a.top)
     elif a.cmd == "credits":
         do_credits()
 
