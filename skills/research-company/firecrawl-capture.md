@@ -28,24 +28,39 @@ It reuses §2–§5 mechanics (same `fc.py`, same hazards) and is **near-free ov
 the same category/product pages, no new endpoints. Two passes: **map the portfolio (breadth)**, then
 **deepen the flagships (depth)**.
 
-**Enumerate the roster with the cheapest tool that works — not `/scrape`-everything.** The ladder:
+**First — where does the catalog actually live? The rendered grid is rarely all of it** (4 of 6 pilot runs
+found SKUs the grid hid). Branch on `design_framework` (on the profile) + a storefront-subdomain check —
+cheapest authoritative backend first:
+
+| Platform | Catalog backbone | Guard |
+|---|---|---|
+| WordPress / Shopify | the CMS REST registry (`/wp-json/wp/v2/<type>?per_page=100`, `/products.json`) | **verify the body is JSON, not the SPA shell** — a custom SPA soft-200s `/wp-json` with `index.html` |
+| `app.`/`shop.` storefront subdomain | none public — commerce is a walled app; nav + census is the whole backbone | read `site_notes`/`key_pages` for the subdomain first |
+| custom React/Vite SPA | the route/registry (`Ep=[{slug,…}]` + route table) in `assets/index-*.js` | a reliable *catalog* oracle, an unreliable *price* one — slugs from it, prices from the rendered PDP |
+| Webflow / else | nav links + the `/map` census | — |
+
+**Then enumerate off the cheapest tool that works — never `/scrape`-everything:**
 
 | Rung | Tool | Job | Caveat |
 |---|---|---|---|
-| **backbone** | scrape the **category/index page** (`fc.py scrape … --homepage`) | the company's own product-card links + labels + order — authoritative, structure-independent, and it **doubles as the prominence read** | use `--homepage` so you get `rawHtml` + `onlyMainContent:false` + the full-page screenshot (badges + section order live there, not in the default above-the-fold markdown) |
-| accelerant | `fc.py map … --search "site:domain/<category-path>"` | a labeled SKU list; catches unlinked PDPs | **clean only where products & content live in separate URL paths** (Hims `/weight-loss/<sku>` → 7/7 SKUs; Ro nests articles under `/weight-loss/` → ~20%, noisy). Cross-check, never trust blindly |
+| **backbone** | scrape the **category/index page** (`fc.py scrape … --homepage`) | the company's own product-card links + labels + order — authoritative, structure-independent; **doubles as the prominence read** | `--homepage` gets `rawHtml` + `onlyMainContent:false` + the full-page screenshot (badges + section order live there, not the above-the-fold markdown) |
+| accelerant | `fc.py map … --search "site:domain/<category-path>"` | a labeled SKU list; catches unlinked PDPs | **clean only where products & content live in separate paths** (Hims `/weight-loss/<sku>` → 7/7; Ro nests articles under `/weight-loss/` → ~20%, noisy) |
 | census | `fc.py map` (no search) | a flat slug census across categories | under-returns on big sites; mixes content |
 
-**Decision rule:** glance at the map — products & content in *separate* paths → the `site:domain/path` search
-~nails the roster cheaply; else fall back to the index scrape (always the backbone). **Never** enumerate with
-a keyword/brand search (SEO noise — a generic `weight loss GLP-1` query found **1 of 7** SKUs), and **never**
-read prominence from a search `position` (Google rank ≠ the company's emphasis). `/crawl` + `/extract` stay off
-(§7). Then scrape the **flagship PDPs** serially (§5.1), one `fc.py scrape` each.
+**Never** enumerate with a keyword/brand search (SEO noise — a generic `weight loss GLP-1` found **1 of 7** SKUs)
+or read prominence from a search `position` (Google rank ≠ emphasis); `/crawl` + `/extract` stay off (§7). Then
+scrape the **flagship PDPs** serially (§5.1).
 
-**Depth dial = `portfolio_shape`** (on the company's `profile.md`): `Single` ~4–6 cr · `Flagship + companions` /
-`Multi-product` → enumerate the set, top-N PDPs rich · `Catalog` (Nike/AWS) → **shape + exemplars only, never
-the SKUs**. A ~20-SKU `Multi-product` company is **~10–20 credits**; most rows read off 1–2 index pages + a
-`/pricing` page, with per-PDP scrapes reserved for flagships.
+**Completeness = blind-source agreement:** reconcile ≥2 sources that don't see each other (rendered grid ∩
+`/map` census ∩ `sitemap.xml`) — agreement is what licenses a "complete" claim. **Caveat:** on a code-gated SPA,
+nav and census are the *same* blind source (both miss a route-filtered SKU) — there the bundle registry is the
+backbone, not a cross-check.
+
+**Depth + budget.** `portfolio_shape` (on the profile) sets depth: `Single` ~4–6 cr · `Flagship + companions` /
+`Multi-product` → enumerate the set, top-N PDPs rich · `Catalog` (Nike/AWS) → **shape + exemplars, never the
+SKUs**. Budget from the index: **prices on the category page → cheap** (most rows read off 1–2 pages); **prices
+PDP-only → ≈ one scrape per SKU** (a complete priced roster forces the full sweep). A ~20-SKU `Multi-product`
+company is ~10–20 cr.
 
 **Capture rules (where the tournament's two warts convert to discipline):**
 - **Verbatim price + its footnotes**, every SKU. The `†`/`*` membership + dose-ladder notes are what decide
