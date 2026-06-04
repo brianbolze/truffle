@@ -1,4 +1,6 @@
-<!-- source: https://www.hims.com/testosterone | WARM copy of store/hims-com/captures/2026-05-30/testosterone.md (firecrawl 2026-05-30) -->
+[Navigate to homepage](https://www.hims.com/)
+
+- [Log in](https://www.hims.com/account)
 
 ![](https://www.hims.com/forhims/video/upload/so_0/c_scale,w_576/q_auto:low/f_webp,fl_lossy/v1/cms/hims/Testosterone/Storefront/04-23-26/Hims-TRT-ATF-M)
 
@@ -36,9 +38,13 @@ Convenient at-home lab testing to track progress
 
 Not available in all 50 states. Prescription products require an online consultation with a healthcare provider who will determine if a prescription is appropriate.
 
+##### Testosterone care  through Hims
+
 Now with supplements
 
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/ar_16:9,c_fill,g_auto/v1/cms/hims/Testosterone/LP/04-23-26/hims-trt-enclo-sup-1-m)
+
+#### Testosterone Rx+
 
 Enclomiphene + Tadalafil + Supplements
 
@@ -48,11 +54,15 @@ Take an all-in-one approach with enclomiphene to increase natural testosterone, 
 
 View details
 
+[Important safety information](https://www.hims.com/important-safety/enclomiphene-tadalafil-supplement-blend)
+
 Injection
 
 Coming in 2026\*
 
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/ar_16:9,c_fill,g_auto/v1/cms/hims/Testosterone/LP/Testo-Launch/08-28-2025/hims-trt-injection-notags-3)
+
+#### Injectable TRT
 
 Testosterone cypionate
 
@@ -63,6 +73,8 @@ FDA approved
 Coming in 2026\*
 
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/ar_16:9,c_fill,g_auto/v1/cms/hims/Testosterone/LP/Testo-Launch/08-28-2025/hims-trt-oral-notags)
+
+#### Oral TRT
 
 Kyzatrex® (Testosterone Undecanoate)
 
@@ -129,17 +141,33 @@ Checking your T levels is the first step in knowing if your body is producing en
 
 [Check your T levels](https://www.hims.com/g/i/tt)
 
+##### Get to know Testosterone Rx+
+
+[Get started](https://www.hims.com/g/i/tt)
+
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/ar_3:4,c_fill,g_auto/v1/cms/hims/Testosterone/Storefront/04-23-26/hims-trt-meducation-1.1-m)
+
+#### A daily pill designed to help get your edge back
 
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/ar_3:4,c_fill,g_auto/v1/cms/hims/Testosterone/Storefront/Testo-launch/08-28-2025/hims-trt-meducation-2-NEW)
 
+#### With enclomiphene to stimulate natural testosterone pathways
+
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/ar_3:4,c_fill,g_auto/v1/cms/hims/Testosterone/Storefront/04-23-26/hims-trt-meducation-3.1-m)
+
+#### And supplements to support your everyday health
 
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/ar_3:4,c_fill,g_auto/v1/cms/hims/Testosterone/Storefront/04-23-26/hims-trt-meducation-4.1-m)
 
+#### Can be combined with tadalafil to boost sexual performance7
+
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/ar_3:4,c_fill,g_auto/v1/cms/hims/Testosterone/Storefront/Testo-launch/08-28-2025/hims-trt-meducation-4)
 
+#### Start by checking your current T levels with an at-home lab test8
+
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/ar_3:4,c_fill,g_auto/v1/cms/hims/Testosterone/LP/Testo-Launch/08-28-2025/hims-trt-meducation-5-new)
+
+#### Get everything you need, including prepaid overnight return to the lab
 
 [Get started](https://www.hims.com/g/i/tt)
 
@@ -159,15 +187,27 @@ Checking your T levels is the first step in knowing if your body is producing en
 
 8\. This test is ordered by a healthcare provider and processed in a CLIA-certified lab. It does not diagnose conditions. Review results with your provider.
 
+##### Supported by supplements
+
+Prescription ingredients are combined with doctor-trusted supplements, to support both your T levels and overall health.
+
+[Get started](https://www.hims.com/g/i/tt)
+
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/Testosterone/Storefront/04-23-26/hims-trt-enclo-sup-card-01-m)
+
+### Zinc
 
 **to support healthy T levels** **1**
 
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/Testosterone/Storefront/04-23-26/hims-trt-enclo-sup-card-02-m)
 
+### Vitamins B6 & B12
+
 **for energy metabolism** **2**
 
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/Testosterone/Storefront/04-23-26/hims-trt-enclo-sup-card-01-m)
+
+### L-Arginine
 
 **for blood circulation** **3**
 
@@ -262,19 +302,31 @@ Settle into your daily treatment routine, then we’ll check in on your levels t
 
 [Begin free consultation](https://www.hims.com/g/i/tt)
 
+##### Why Testosterone by Hims
+
+[Get started](https://www.hims.com/g/i/tt)
+
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/Testosterone/PDP/Enclomiphene%20+%20Supplement%20Blend/hims-trt-enclo-sup-m)
+
+### Doctor-trusted  ingredients
 
 Feel like yourself again with enclomiphene to increase testosterone levels, and tadalafil to boost your sex drive.
 
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/Testosterone/PDP/Testo-launch/08-28-2025/Hims-Testo-whyTest-Card-02)
 
+### Treatment informed by labs
+
 Labs help determine your eligibility for treatment and ensure you're accessing what you need to reach your optimal T levels.
 
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/Testosterone/PDP/Testo-launch/08-28-2025/Hims-Testo-whyTest-Card-03)
 
+### Convenient at-home lab testing
+
 With regular at-home testing and Care Team support, you’ll track progress to make sure you’re on the right track.
 
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_499/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/Testosterone/Storefront/Testo-launch/08-28-2025/Hims-Testo-whyTest-Card-04)
+
+### Comprehensive care at every turn
 
 24/7 Care Team access, provider check-ins and dosage adjustments as needed, are included in your plan.
 
@@ -438,13 +490,176 @@ Dr. Peter Stahl
 
 Updated September 5th, 2025
 
+###### Menu
+
+- [Log-in to website](https://www.hims.com/account)
+
 ###### Explore
+
+Weight LossLabsSexual HealthTestosteroneHair RegrowthMental HealthSkinEveryday Health
 
 ###### Top Treatments
 
+[![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_180/q_auto:good:sensitive/f_auto,fl_lossy/v1/Hers/homepage/2026/product_wegovy-pill)**RxNew**\\
+\\
+Wegovy® Pill](https://www.hims.com/weight-loss/wegovy-pill) [![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_180/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/products/hims-and-hers/wl/wegovy-7.2mg-float/HH-WL-Wegovy-7.2mg-Float-1_1)**RxNew**\\
+\\
+Wegovy® Pen](https://www.hims.com/weight-loss/wegovy-pen) [![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_180/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/products/hims-and-hers/wl/zepbound-kwikpen-float/HH-WL-Zepbound-Kwikpen-7.5mg-Float-1_1)**RxNew**\\
+\\
+Zepbound®\\
+KwikPen®](https://www.hims.com/weight-loss/zepbound-kwikpen) [![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_180/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/shared/additional-page-elements/202508/hims-navigation-drawer-product-hard-mints)**Rx**\\
+\\
+Hard MintsTM by Hims](https://www.hims.com/erectile-dysfunction/sildenafil-chew) [![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_180/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/products/sexual-health/generic%20for%20viagra/generic-viagra-pill-product-1_1)**Rx**\\
+\\
+Generic for Viagra®\\
+\\
+(Sildenafil)](https://www.hims.com/erectile-dysfunction/sildenafil) [![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_180/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/products/sexual-health/viagra/viagra-pill-product-1_1)**Rx**\\
+\\
+Viagra®\\
+\\
+(Sildenafil)](https://www.hims.com/erectile-dysfunction/viagra) [![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_180/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/products/hims/hair/rx-spray-badge/Hims-Hair-Rx-Spray_Badge-1_1)**Rx**\\
+\\
+Finasteride & Minoxidil Spray](https://www.hims.com/hair-loss/topical-finasteride) [![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_180/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/shared/additional-page-elements/202508/hims-navigation-drawer-product-generic-for-lexapro)**Rx**\\
+\\
+Generic for Lexapro®\\
+\\
+Escitalopram](https://www.hims.com/psychiatry/escitalopram)
+
 ###### Learn
 
+[About Hims](https://www.hims.com/about) [Clinical excellence](https://www.hims.com/about/clinical-excellence) [Hims benefits](https://www.hims.com/benefits)
+
 ###### Our brands
+
+[![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_40/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/shared/additional-page-elements/202501/footer/additional-page-brand-cta-hers)\\
+visit forhers.com](https://www.forhers.com/)
+
+2. [Enclomiphene + Supplements](https://www.hims.com/testosterone/enclomiphene-supplements)
+3. Testosterone Support, Prescribed Online \| Hims
+
+Download the free Hims app
+
+#### Total Care.  Totally Different.
+
+Download
+
+the app
+
+![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_76/q_auto:good:sensitive/f_svg,fl_lossy/v1/cms/shared/additional-page-elements/202501/footer/additional-page-elements-qr-code-hims)
+
+[Download now](https://link.app.hims.com/cVWYVFhZMyb)
+
+For iOS and Android
+
+![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_430/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/global/footer-app_static-hims)
+
+### Learn
+
+- [Labs](https://www.hims.com/labs)
+
+- [Weight Loss](https://www.hims.com/blog/weight)
+
+- [Sexual Health](https://www.hims.com/blog/sexual-health)
+
+- [Testosterone](https://www.hims.com/learn/testosterone)
+
+- [Hair Regrowth](https://www.hims.com/blog/hair)
+
+- [Mental Health](https://www.hims.com/blog/mental-health)
+
+- [Drug Comparisons](https://www.hims.com/drugs/compare)
+
+- [Drugs & Medications](https://www.hims.com/drugs/info)
+
+- [About the Company](https://www.hims.com/about/the-company)
+
+
+### Tools
+
+- [BMI Calculator](https://www.hims.com/tools/bmi-calculator)
+
+- [Low Testosterone Calculator](https://www.hims.com/lp/tt-start-testo-symp-calc)
+
+- [Calculate Your Daily Calories Burned](https://www.hims.com/tools/tdee-calculator)
+
+- [Calculate Your Caloric Deficit](https://www.hims.com/tools/calorie-deficit-calculator)
+
+- [Protein Calculator](https://www.hims.com/tools/protein-calculator)
+
+- [Calculate Your Daily Water Intake](https://www.hims.com/tools/water-intake-calculator)
+
+
+### Popular
+
+- [GLP-1 Injections](https://www.hims.com/weight-loss)
+
+- [Sildenafil](https://www.hims.com/erectile-dysfunction/sildenafil) Generic for Viagra®
+
+- [Tadalafil](https://www.hims.com/erectile-dysfunction/tadalafil) Generic for Cialis®
+
+- [Minoxidil Solution](https://www.hims.com/hair-loss/minoxidil)
+
+- [Finasteride Pills](https://www.hims.com/hair-loss/finasteride)
+
+- [Topical Finasteride](https://www.hims.com/hair-loss/topical-finasteride)
+
+- [Sertraline for PE](https://www.hims.com/premature-ejaculation/sertraline-for-pe)
+
+- [Sertraline](https://www.hims.com/psychiatry/sertraline) Generic for Zoloft®
+
+- [Escitalopram](https://www.hims.com/psychiatry/escitalopram) Generic for Lexapro®
+
+
+### Hims
+
+- [About Us](https://www.hims.com/about)
+
+- [Good Health](https://www.hims.com/blog)(It's our blog)
+
+- [How It Works](https://www.hims.com/how-it-works)
+
+- [Medical Experts](https://www.hims.com/our-medical-experts)
+
+- [Editorial Standards](https://www.hims.com/editorial-standards)
+
+- [Hims Benefits](https://www.hims.com/benefits)
+
+- [FAQs](https://support.hims.com/hc/en-us)
+
+- [Investors](https://investors.forhims.com/)
+
+
+### Careers
+
+- [Professionals](https://www.hims.com/careers-professionals)
+
+- [Providers](https://www.hims.com/careers-providers)
+
+
+### Connect
+
+- [Customer Help Center](https://support.forhims.com/hc/en-us)
+
+- [Press Center](https://news.hims.com/)
+
+
+- [Facebook](https://facebook.com/wearehims "Facebook")
+- [Twitter](https://x.com/wearehims "Twitter")
+- [Instagram](https://www.instagram.com/hims "Instagram")
+- [TikTok](https://www.tiktok.com/@hims "TikTok")
+
+[![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_40/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/shared/additional-page-elements/202501/footer/additional-page-brand-cta-hers)\\
+visit forhers.com](https://www.forhers.com/)
+
+[![LegitScript approved](https://static.legitscript.com/seals/11008607.png)](https://www.legitscript.com/websites/?checker_keywords=hims.com "Verify LegitScript Approval")
+
+- [Terms & conditions](https://www.hims.com/terms-and-conditions)
+- [Privacy policy](https://www.hims.com/privacy-policy)
+- [Sitemap](https://www.hims.com/sitemap.html)
+- [Telehealth Consent & Open Payments](https://www.hims.com/telehealth-consent)
+- [Consumer Health Data Privacy Policy](https://www.hims.com/consumer-health-data-privacy-policy)
+- [Your privacy choices](https://support.hims.com/hc/en-us/articles/360037813632-Privacy-Request)
+- © 2026 Hims & Hers Health, Inc. All rights reserved. HIMS, HERS, H, and HIMS & HERS are trademarks of Hims, Inc.
 
 ##### Testosterone Rx+
 
