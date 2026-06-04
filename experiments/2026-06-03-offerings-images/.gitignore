@@ -1,0 +1,5 @@
+# derived/throwaway probe artifacts — regenerate via extract.py / probe.py
+out/
+sites/
+args.json
+__pycache__/

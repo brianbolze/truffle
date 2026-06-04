@@ -83,3 +83,12 @@ Site-level recall is 5/5, but **specific molecules** had renders that fell outsi
 
 ## The simplification (vs. the synthesis's full tuning list)
 The heuristic doesn't run alone in production — it feeds a **vision-capable Opus capture agent**. So split the labor: the **deterministic heuristic does RECALL** (proven 5/5 — surface clean heroes into the candidate set, don't over-reject), and **Opus does PRECISION by looking** (it correctly read agelessrx packaging-vs-vial, eden model-vs-vial). That collapses most recommended tuning (per-platform regex profiles, aspect-ratio math, hero/packaging POS split) — the agent handles precision for free. **Keep only the recall-protecting fixes:** the Webflow nav-segment fix + a higher candidate cap. og:image stays last-resort fallback.
+
+---
+
+## Shipped (2026-06-03)
+Codified per the GO-WITH-CHANGES verdict, lean version (heuristic = recall, Opus = precision):
+- **`fc.py hero --slug <s> --name <pdp>`** + **`fc.py scrape … --images`** (the free `images` format) — the recall-first selector with the Webflow nav-segment fix + headed download + magic-byte validation. Candidates → `.payloads/hero/<pdp>/`; the agent views + promotes the winner to `captures/<date>/images/<sku>.<ext>`.
+- **`firecrawl-capture.md` §1.1** — the hero-image capture step (opt-in, default runs skip).
+- **`OFFERINGS.md`** — blessed as an opt-in asset referenced from the flagship deep block, never a roster column.
+Dropped from the synthesis's list (over-engineering): per-platform regex profiles, aspect-ratio scoring, hero-vs-packaging POS split — the agent's vision pass handles precision for free.
