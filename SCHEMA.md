@@ -202,7 +202,7 @@ Only written when a project enables them — **enablement = the file exists** (n
 - **Depth modules** extend a **universal dimension** at finer grain — *what* every company sells, *how* it sounds. The schema is **cohort-agnostic**: a watch brand and a telehealth brand fill the same `offerings.md` columns. Opt-in by a consumer's need for depth.
 - **Cohort packs** carry **vertical-specific classification** — cuts that only exist inside one vertical (`owns its pharmacy?` is meaningless for a watchmaker). The schema is **defined by the cohort**. The job is **within-cohort** discrimination: the universal fields read near-identical inside a cohort (the telehealth set came back 13/13 identical), so the pack supplies the cuts the universal schema can't. State-only and page-attested, same trust line as `profile.md` — **judgments + cross-company comparison stay consumer-side** (a pack is shared across every project that reads the cohort, so an asker-relative verdict can't live in it).
 
-*One depth module + one cohort pack isn't "two of a kind," so the contracts stay top-level CAPS files for now: a `modules/` directory earns its place at the **2nd depth module**, a `cohorts/` directory at the **2nd cohort pack**.*
+*One depth module + one cohort pack isn't "two of a kind," so the contracts stay **top-level CAPS files for now**; revisit a directory when a 2nd of either lands. The likely move is **one `modules/` dir for all contracts** (species noted in this section) — **not** a `cohorts/` dir: that name is taken by the architecture's store-level `cohorts/<category-slug>/` cross-company *signals* layer ([architecture](_design/2026-05-30-architecture.md)), a different concept (Signals by category, not per-domain State).*
 
 **Depth modules:**
 

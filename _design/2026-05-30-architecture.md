@@ -73,6 +73,8 @@ cohorts/<category-slug>/          # (later) cross-company signals that don't key
 
 > **A module is a *recipe + schema + destination* — a mini-verb.** It carries its own way to *gather* (which sources, which pages, what to trust), not just fields to fill — the way `/research-company` carries its capture playbook. The core capture writes `profile.md`; an enabled module runs its recipe to write its own doc. **`offerings.md` is the first exemplar** (`brand.md` next).
 
+**Two module species** (since the `telehealth` pack — see [`SCHEMA.md` → Tier-1 modules](../SCHEMA.md#tier-1-modules-opt-in-separate-docs) + [design](2026-06-04-telehealth-cohort.md)): **depth modules** extend a *universal* dimension at finer grain (`offerings.md`, `brand.md`) with a real gather recipe; **cohort packs** carry *vertical-specific classification* cuts (`telehealth.md`) that go flat in the universal schema, with only a thin recipe (they ride the `profile.md` pages). A cohort pack is per-domain **State** — distinct from the store-level `cohorts/<category-slug>/` *signals* layer below, which the name unfortunately echoes.
+
 **Where a module's output lands is decided by the *kind* of fact** (the Frame's State / Signals / Judgments):
 
 | Kind | Example | Destination |

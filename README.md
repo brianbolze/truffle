@@ -9,12 +9,12 @@ A project-agnostic company-research engine: Firecrawl for capture, Claude Max fo
 ```
 SCHEMA.md TAXONOMIES.md   # the store contract — what a capture writes
 QUERYING.md               # how to read the store back — consumer recipes
-OFFERINGS.md              # opt-in module contract — the per-SKU offerings.md (1st of the module contracts; → modules/ at the 2nd)
+OFFERINGS.md TELEHEALTH.md  # opt-in module contracts — per-SKU offerings.md (depth module) + the telehealth.md cohort pack; top-level for now (see SCHEMA → Tier-1 modules)
 BACKLOG.md                # system-level weaknesses / ideas (capped, tagged, curated)
 _design/      # frame / vision docs (source of truth for intent)
 _archive/     # superseded docs
 experiments/  # throwaway probes to de-risk decisions before building
-scripts/      # engine utilities (querycheck.py — QUERYING.md drift self-test; store.py — resolve()/relations() query primitives)
+scripts/      # engine utilities (querycheck.py — QUERYING.md drift self-test; store.py — resolve()/relations(); offeringscheck.py + cohortcheck.py — module-contract linters)
 skills/       # the capture verb — research-company/ (SKILL.md + firecrawl-capture playbook + scripts/fc.py workhorse), global via ~/.claude/skills
 store/        # the shared company store (store/<domain-slug>/) — created as captures land
 ```
