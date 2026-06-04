@@ -9,8 +9,8 @@ the brand name* — so this script asserts the structural rules that make those 
   1. roster column presence   — the seven spine columns are all there (Molecule is NOT one of them).
   2. price_visibility set      — every Visibility cell is `published | partial | on-request` (or `—`).
   3. every row is slug-keyed   — the within-company key column is never blank.
-  4. grep-verifiable price     — every `$` amount in the doc is findable in a cited capture (the anti-
-                                 hallucination check: a verbatim number can't survive the grep if invented).
+  4. grep-verifiable price     — every `$`, `%`, or `¢` amount in the doc is findable in a cited capture
+                                 (the anti-hallucination check: a verbatim number can't survive the grep if invented).
   5. no cross-company canon     — no `Molecule` lead column and no canonical-key frontmatter field; molecule
                                  stays a descriptive token inside `What`, grouped across brands at query time.
 
@@ -39,7 +39,10 @@ SPINE_PREFIXES = ["offering", "kind", "parent", "slug", "price", "visibility", "
 # A standalone molecule/canonical column or frontmatter key is the B2 pivot the design rejected.
 CANON_KEY_RE = re.compile(r"^(molecule|canonical|global)\b|_(canonical|id)$", re.I)
 # A `$` amount: requires the sigil so image widths (`w_499`) and years never match. Comma optional.
-PRICE_RE = re.compile(r"\$\s?(\d[\d,]*(?:\.\d+)?)")
+DOLLAR_RE = re.compile(r"\$\s?(\d[\d,]*(?:\.\d+)?)")
+# A rate amount: the sigil TRAILS the number (`2.9%`, `30¢`) — a metered/usage seller prices here, not in `$`.
+# Left-guarded so the leading digits are captured whole (and, at verify time, so `2.9%` !-> `12.9%`).
+RATE_RE = re.compile(r"(?<![\d.])(\d[\d,]*(?:\.\d+)?)\s?([%¢])")
 
 
 def frontmatter_keys(text: str) -> list[str] | None:
@@ -87,16 +90,42 @@ def parse_roster(text: str) -> tuple[list[str], list[list[str]]]:
 
 
 def captures_text(slug: str) -> str:
-    """All capture markdown for a company, commas stripped from numbers — the corpus a price must grep into.
+    """All capture markdown for a company, joined raw — the corpus a rostered price must grep into.
 
-    Stripping `,` lets a doc's `$1,899` match a capture's `$1899` (and vice versa); the `$` sigil in
-    PRICE_RE still guards against bare-number false positives. Empty string if the company has no captures.
+    Returned un-normalised on purpose: the price check strips commas itself for `$`-matching (so a doc's
+    `$1,899` matches a capture's `$1899`), but also keeps this raw copy so a footnote-glued price can be
+    verified *with* its thousands comma — the comma grouping is what licenses the footnote tolerance (see
+    `price_in_corpus`). Empty string if the company has no captures.
     """
     out: list[str] = []
     for p in glob.glob(os.path.join(STORE, slug, "captures", "**", "*.md"), recursive=True):
         with open(p, encoding="utf-8") as f:
             out.append(f.read())
-    return re.sub(r"(?<=\d),(?=\d)", "", "\n".join(out))
+    return "\n".join(out)
+
+
+def price_in_corpus(token: str, sigil: str, raw: str, stripped: str) -> bool:
+    """Is a rostered price verbatim in the capture corpus? The anti-hallucination check, by pricing shape.
+
+    `token` is the amount as written in offerings.md (may carry a thousands `,`); `sigil` is `$`, `%`, or `¢`.
+    Three shapes must verify, and none may let a *wrong* number through:
+      - a `$`-amount — comma-normalised, a trailing letter OK (`$300` -> `$300Add-On`), a longer number
+        rejected (`$30` !-> `$300`);
+      - a `%`/`¢`-amount — the trailing sigil right-anchors it (`30¢` !-> `300¢`), left-guarded so a short
+        rate can't ride inside a longer one (`2.9%` !-> `12.9%`);
+      - a `$`-amount the page glued a 1-2 digit footnote marker onto (`$79,995` -> `$79,9951`) — allowed
+        ONLY when the token carries its thousands comma, matched against the raw corpus so the comma grouping
+        (not a coincidental longer run) is what licenses the tolerance (`$1,234` still !-> `$12,345`).
+    """
+    digits = token.replace(",", "")
+    if sigil != "$":  # rate: digits then the trailing sigil; left-guard kills the 2.9%-inside-12.9% match
+        return bool(re.search(r"(?<![\d.])" + re.escape(digits) + r"\s?" + re.escape(sigil), raw))
+    # comma-normalised match: trailing letter OK, a longer number rejected by (?!\d)
+    if re.search(r"\$\s?" + re.escape(digits) + r"(?:\.\d+)?(?!\d)", stripped):
+        return True
+    # footnote-glued: only for comma-grouped prices, matched with the comma intact, so a real `$79,995`
+    # verifies against the page's `$79,9951` while `$1,234` never matches `$12,345` (different grouping)
+    return "," in token and bool(re.search(r"\$\s?" + re.escape(token) + r"\d{1,2}(?!\d)", raw))
 
 
 def check(slug: str) -> list[str]:
@@ -118,7 +147,9 @@ def check(slug: str) -> list[str]:
                 fails.append(f"{slug}: frontmatter missing '{required}'.")
         for k in keys:
             if CANON_KEY_RE.search(k):
-                fails.append(f"{slug}: frontmatter key '{k}' looks like a cross-company canonical key — the design forbids one (molecule rides in `What`).")
+                fails.append(
+                    f"{slug}: frontmatter key '{k}' looks like a cross-company canonical key — the design forbids one (molecule rides in `What`)."
+                )
 
     for section in ("## Portfolio overview", "## Roster"):
         if section not in text:
@@ -147,21 +178,28 @@ def check(slug: str) -> list[str]:
             if not cells[slug_i].strip().strip("`"):
                 fails.append(f"{slug}: roster row {r} ({cells[0] if cells else '?'}) has an empty Slug — every row is slug-keyed.")
 
-    # --- grep-verifiable price (check 4): every `$` amount must sit in a cited capture ---
-    amounts = {m.group(1).replace(",", "") for m in PRICE_RE.finditer(text)}
-    if amounts:
-        corpus = captures_text(slug)
-        if not corpus:
+    # --- grep-verifiable price (check 4): every $/%/¢ amount must sit in a cited capture ---
+    # `$` rides before the number, `%`/`¢` after it; both classes are the anti-hallucination guard, and the
+    # per-shape match + footnote/longer-number guards live in price_in_corpus (which once pushed an author to
+    # hand-edit a capture to pass — the exact tampering this check exists to stop). Scanned over the BODY
+    # only: frontmatter `site_notes` is carry-forward capture narration (analytical proportions like
+    # "~90% PDPs"), not rostered priced data.
+    parts = text.split("---", 2)
+    body = parts[2] if text.startswith("---") and len(parts) >= 3 else text
+    priced = [(m.group(1), "$") for m in DOLLAR_RE.finditer(body)]
+    priced += [(m.group(1), m.group(2)) for m in RATE_RE.finditer(body)]
+    if priced:
+        raw = captures_text(slug)
+        stripped = re.sub(r"(?<=\d),(?=\d)", "", raw)  # comma-normalised, for `$`-matching
+        if not raw:
             fails.append(f"{slug}: offerings.md cites prices but store/{slug}/captures/ is empty — nothing to grep-verify against.")
         else:
-            for amt in sorted(amounts, key=lambda a: float(a)):
-                # Match the `$`-anchored amount (corpus already comma-stripped). Trailing `(?!\d)`
-                # still rejects a longer number ($30 must NOT verify against $300) but ALLOWS a real
-                # price the page glued to a letter: markdown jams `$300</span>Add-On` into `$300Add-On`,
-                # and `$101M` trails an `M`. A `\b` here wrongly failed both — which once pushed an
-                # author to hand-edit a capture to pass, the exact tampering this check exists to stop.
-                if not re.search(r"\$\s?" + re.escape(amt) + r"(?:\.\d+)?(?!\d)", corpus):
-                    fails.append(f"{slug}: price '${amt}' is not greppable in any store/{slug}/captures/ page — misattributed or hallucinated?")
+            for token, sigil in sorted(set(priced)):
+                if not price_in_corpus(token, sigil, raw, stripped):
+                    shown = f"${token}" if sigil == "$" else f"{token}{sigil}"
+                    fails.append(
+                        f"{slug}: price '{shown}' is not greppable in any store/{slug}/captures/ page — misattributed or hallucinated?"
+                    )
     return fails
 
 
