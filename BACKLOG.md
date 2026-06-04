@@ -53,6 +53,10 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 
 ### Parked
 
+- **Rung-3 SQLite index — not yet** `[idea]` `[xl]` `[parked]`
+  Build the derived index only when relations (discovery) or time-series (traction) first demand it. Markdown stays the source of truth; the index is a regenerable lens. Don't build ahead of a real query. [coded-queries](experiments/2026-06-01-coded-queries/) quantified the emptiness: **23/24 relation edges dangle** today.
+  **When it lands:** index relations on the subsidiary side (`parent`), reverse-scanned. Consumption (P7) found `parent`/`owns` are populated **one-sided** — `delighted.parent: [qualtrics.com]` carries the link, but `qualtrics.owns` doesn't list Delighted. A JOIN that trusts `owns` for symmetry misses real edges: build the graph from `parent` (reverse-scanned across the corpus), treat `owns` as best-effort.
+
 - **Traction module / verb** `[idea]` `[xl]` `[parked]` `[@brian]`
   Still desparately need more signals on growth / traction - ways of answering questions like "is this a formidable competitor?" or "do they have any real leadership in the markets they operate in?". Been thinking that this is _not_ a responsibility of this Web Research system, but I still haven't found a good home for it. There are some tools for this in the Teleprescribe Venture project's `agent-workflows` (`competitive-traction`), but those were designed in the past - and are not able to be used for other projects. Much of the output of a "Traction" style tool wouldn't live directly in the `store` because it's not all `State`, but rather `Signals`, and some `Judgements` - but identifying traction signals for a company is definitely something most projects researching projects in any market would want to do, so it would be nice to provide something for them. Still needs further design thinking to get right. 
   This would be primarily designed to get an idea of a company's "market share" (which is _rarely_ directly observable) - but we could get an idea of this through signals like:
@@ -63,9 +67,8 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
   - Predictions about their roadmap (can often get an idea of this by looking at job descriptions on career pages)
   - Notable differentiation from their competitors
 
-- **Rung-3 SQLite index — not yet** `[idea]` `[xl]` `[parked]`
-  Build the derived index only when relations (discovery) or time-series (traction) first demand it. Markdown stays the source of truth; the index is a regenerable lens. Don't build ahead of a real query. [coded-queries](experiments/2026-06-01-coded-queries/) quantified the emptiness: **23/24 relation edges dangle** today.
-  **When it lands:** index relations on the subsidiary side (`parent`), reverse-scanned. Consumption (P7) found `parent`/`owns` are populated **one-sided** — `delighted.parent: [qualtrics.com]` carries the link, but `qualtrics.owns` doesn't list Delighted. A JOIN that trusts `owns` for symmetry misses real edges: build the graph from `parent` (reverse-scanned across the corpus), treat `owns` as best-effort.
-
 - **Historical diffs & Wayback machine usage** `[idea]` `[xl]` `[parked]` `[@brian]`
   To get a better understanding of each company, use the Wayback Machine to look at the website from 3-months ago, 12 months ago, and 3 years ago to see how it's evolved.
+
+- **Monitoring** `[idea]` `[xl]` `[parked]` `[@brian]`
+  Add capabilities to monitor changes on key parts of a companies website -- like new product launches, significant rebrands, price changes on certain products, etc. 
