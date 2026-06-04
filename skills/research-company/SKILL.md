@@ -50,7 +50,19 @@ The final canonical host is the **store folder slug** (dots→dashes, e.g. `hone
 
    - Read its `site_notes` (the capture playbook for *this* site — inherit it, don't rediscover), `key_pages`, and `captured_at`
    - Move the previous capture into `captures/_archive/<date>` so that the most recent capture is always obvious and the captures folder doesn’t look massive.
-   - **Coarse freshness:** if `captured_at` is recent (< ~7 days) and the user didn't ask for a refresh, **serve the existing dossier and stop** — that's the ~$0 warm path. Otherwise re-capture (a fresh `captures/<today>/` folder; the old one is preserved).
+   - **Coarse freshness:** if `captured_at` is recent (< ~7 days) and the user didn't ask for a refresh, **serve the existing dossier and stop** — that's the ~$0 warm path. Otherwise re-capture (a fresh `captures/<today>/` folder; the old one is preserved). *(On a bare/guided invocation the serve-vs-refresh call surfaces at **step 2.5** instead of auto-deciding here.)*
+
+**2.5. Guided pre-flight — one question batch, then go (free, conditional).** Two on-ramps into the spend:
+
+- **Express** — the invocation already carried intent (a focus, a `refresh`, a module ask, or a plain "just go"). Honor it and skip this step.
+- **Guided** — a bare invocation (`/research-company acme.com`, nothing else). Before spending a credit, surface the run as **one** `AskUserQuestion` batch (never drip questions across turns), every option defaulted so the user can glance-and-accept. Shape it from what steps 1–2 found:
+  - **This run** *(include only when a warm < ~7-day capture exists)* — `Serve the cached dossier` (default) · `Re-capture fresh`. The freshness gate's serve-vs-refresh call made explicit — the one place a human override beats the silent auto-serve. Stale/new → nothing to serve; omit this question.
+  - **Output scope** — `Standard profile` (default) · `+ per-SKU offerings.md` (the Tier-1 roster; [§1.1](firecrawl-capture.md)) · `+ offerings.md with flagship product images` (also pull each flagship's clean **hero product render** for a design / rendering-reference consumer — rides the same PDP capture, stored at `captures/<date>/images/<sku>.<ext>`; [§1.1](firecrawl-capture.md)). Don't offer a depth dial — page count already flexes with `portfolio_shape`; the site decides depth better than a blind setting.
+  - **Emphasis** *(free-text, optional)* — "Anything to focus on or watch for?" It *biases* page selection (step 4), never *subtracts*: the core `profile.md` contract still gets filled, anything missed goes to `unverified_fields`, so a guided profile stays corpus-comparable.
+
+  Branch on the answer: `Serve cached` → serve and stop (~$0 warm path); otherwise carry scope + emphasis through steps 3–8.
+
+  **A non-vanilla run leaves one trace.** If the guided run deviated from a plain capture — emphasis given, offerings added, or a refresh forced over a still-warm capture — append a single **`Run profile:`** line to the Provenance section in step 8 (e.g. `Run profile: guided — emphasis "enterprise pricing"; +offerings`). A vanilla run adds nothing; clean profiles stay clean. *(Part of SCHEMA's fixed Provenance set as of `2.4`.)*
 
 **3. Map + homepage, together (2 credits).** Different endpoints — safe to run in one batch:
 ```bash
