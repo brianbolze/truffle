@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.2"
+schema_version: "2.5"
 
 # Identity
 domain: eden.health
@@ -38,7 +38,11 @@ business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
 # Visual identity
-logo_url: https://cdn.prod.website-files.com/676eb86a8ca7187507487da6/678a7c93763d80c5ef6ea922_edn-favicon.png  # branding.images.logo is an inline data-URI SVG wordmark; favicon used as the hostable fallback
+logo_url: assets/wordmark.svg   # extracted from branding.images.logo (inline data-URI SVG); canonicalized to the wordmark per 2.5 — was the favicon PNG
+logos:
+  wordmark: { src: assets/wordmark.svg, w: 74, h: 31 }                                                          # committed text SVG (the inline data-URI mark, decoded)
+  logomark: { src: "https://www.google.com/s2/favicons?domain=eden.health&sz=256", px: 256, transparent: true } # "eden" in a circular badge; corners transparent on a checker tile
+  og:       { src: "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab657_Opengraph-1.jpg", w: 1200, h: 630 }  # "Welcome to eden" branded cover
 brand_colors: { primary: "#1D1D1F", accent: "#2E6B4F" }  # STRAIN: primary = near-black wordmark (logo SVG fill rgb(29,29,31)); accent = forest green read from screenshot — branding payload's cyan/red are artifacts
 fonts: [Satoshi Variable]
 color_scheme: light
@@ -133,3 +137,4 @@ Eden is a broad-catalog GLP-1-led telehealth roll-up: weight loss is unmistakabl
 - **Credits:** not recorded this run.
 - **Couldn't get:** per-product full pricing tiers (behind intake quizzes on app.eden.health / tryeden.com); the goal-selector quiz (`/find-your-treatment/*`) renders thin in markdown (links-only SPA); corporate financials/founding year (not on the marketing site).
 - **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-30 rawHtml, hint-to-verify) — filled `socials` (fb/ig/tiktok/linkedin/youtube, footer-verified); JSON-LD `logo` sits on a different Webflow project bucket (possibly stale) so kept the current favicon; no `external`. Re-stamped 2.0→2.2.
+- **Run profile:** +logos (2026-06-03) — added the `logos:{}` module via `fc.py logos`, measured from the cached 2026-05-30 homepage payload (no re-scrape, 0 credits). Wordmark extracted from `branding.images.logo`'s `data:image/svg+xml` URI → committed text SVG at `assets/wordmark.svg` (viewBox 74×31); `logo_url` re-pointed off the favicon to it. logomark/og are stable URLs. Stamped 2.2→2.5.

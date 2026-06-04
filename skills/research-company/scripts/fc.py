@@ -11,6 +11,7 @@ Usage:
   fc.py map    <url> --slug <slug> [--search TERM] [--limit 500] [--subdomains] [--date YYYY-MM-DD]
   fc.py scrape <url> --slug <slug> --name <name> [--homepage] [--images] [--wait 3500] [--proxy auto] [--date ...]
   fc.py hero    --slug <slug> --name <name> [--top 15] [--date ...]  # recall-first hero-image candidates to pick (opt-in asset, §1.1)
+  fc.py logos   --slug <slug> [--name homepage] [--wordmark URL|PATH] [--date ...]  # measure the multi-ratio mark set (opt-in, §1.2)
   fc.py verify  --slug <slug> [--date ...]  # scrapes: md5-dedup + sourceURL match; + lint profile.md once written
   fc.py spend   --slug <slug> [--date ...]  # this run's attributed cost, summed from per-call creditsUsed
   fc.py signals --slug <slug> [--name homepage] [--date ...]  # slice rawHtml's JSON-LD + nav region (step-7 hint read, free)
@@ -35,12 +36,13 @@ import hashlib
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 import urllib.request
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
 
 API = "https://api.firecrawl.dev/v2"
 KEY = os.environ.get("FIRECRAWL_API_KEY")
@@ -585,6 +587,176 @@ def do_hero(slug: str, name: str, date: str, top_n: int) -> None:
     print("  Reference that path from the flagship's ## Deep block. It is an ASSET, never a roster column.")
 
 
+# --- logos module (opt-in: the multi-ratio brand-mark set, §1.2) ------------
+# Measures the deterministic source chains so the agent never hand-counts pixels:
+#   logomark = the larger MEASURED short side of {google s2/favicons sz=256, apple-touch-icon}
+#   og       = the DECLARED og:image, gated at >=600px actual width (the meta size lies — Probe 3)
+#   wordmark = the SVG/raster the AGENT chose (--wordmark) — vision picks it; a blind scan grabs
+#              press logos (Probe 2). fc.py only MEASURES what it's handed, never selects it.
+# sips reads raster px (stdlib subprocess — never PIL, the design's no-image-dep line); an SVG's box
+# is parsed from its text (sips can't read vector). `transparent` stays the agent's eyes on a checker
+# tile (hasAlpha lies — Probe 3). Candidates land in .payloads/logos/ for that eyeball; only an
+# extracted-SVG wordmark is COMMITTED (to store/<slug>/assets/). Rationale: _design/2026-06-03-logos.md.
+SVG_SNIFF = re.compile(rb"<svg\b|<\?xml", re.I)
+
+
+def fetch_bytes(url: str, referer: str | None) -> bytes | None:
+    """Headed GET (browser UA + Referer) — like fetch_image but format-agnostic: logos fetches
+    SPECIFIC known URLs (google-s2, apple-touch, og, the chosen wordmark), not a blind scan, so no
+    magic-byte/pixel gate — an SVG body must pass through too. Bare fetch 403s on bot CDNs (§5.2)."""
+    headers = {
+        "User-Agent": HERO_UA,
+        "Accept": "image/avif,image/webp,image/png,image/svg+xml,image/*,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+    }
+    for ref in [r for r in (referer, f"https://{urlparse(url).netloc}/") if r]:
+        try:
+            req = urllib.request.Request(url, headers={**headers, "Referer": ref})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                blob = r.read()
+            if len(blob) >= 100:  # reject an empty / error-stub body, not a real small icon
+                return blob
+        except Exception:
+            continue
+    return None
+
+
+def sips_dims(path: Path) -> tuple[int, int] | None:
+    """(width, height) px via macOS `sips` — stdlib subprocess, never PIL (the design's no-image-dep
+    line). None when sips can't read it (a vector SVG, or a non-image body)."""
+    try:
+        out = subprocess.run(
+            ["sips", "-g", "pixelWidth", "-g", "pixelHeight", str(path)],
+            capture_output=True,
+            text=True,
+            timeout=30,
+        ).stdout
+    except Exception:
+        return None
+    wm = re.search(r"pixelWidth:\s*(\d+)", out)
+    hm = re.search(r"pixelHeight:\s*(\d+)", out)
+    return (int(wm.group(1)), int(hm.group(1))) if wm and hm else None
+
+
+def svg_dims(text: str) -> tuple[int, int] | None:
+    """(width, height) scoped to the OPENING <svg> tag — its numeric width/height, else its viewBox
+    (`min-x min-y W H`). Tag-scoped + numeric-only on purpose: a whole-text scan pairs the root's
+    `width` with a CHILD's `height`, and `width="100%"` is a layout hint, not a pixel size — both
+    are why eden's `width="100%" viewBox="0 0 74 31"` must fall through to the box (74x31)."""
+    head = m.group(0) if (m := re.search(r"<svg\b[^>]*>", text, re.I)) else text[:1000]
+
+    def attr(name: str) -> float | None:
+        a = re.search(rf'\b{name}="(\d+(?:\.\d+)?)(?:px)?"', head)  # bare number (+optional px), not "100%"
+        return float(a.group(1)) if a else None
+
+    wm, hm = attr("width"), attr("height")
+    if wm and hm:
+        return (round(wm), round(hm))
+    vb = re.search(r'viewBox="\s*[-\d.]+[\s,]+[-\d.]+[\s,]+(\d+(?:\.\d+)?)[\s,]+(\d+(?:\.\d+)?)', head)
+    if vb:
+        return (round(float(vb.group(1))), round(float(vb.group(2))))
+    return None
+
+
+def do_logos(slug: str, name: str, date: str, wordmark: str | None) -> None:
+    p, used = latest_payload(slug, name, date)
+    if p is None:
+        sys.exit(f"logos: no {name}.json under store/{slug}/captures/* — capture the homepage first (--homepage)")
+    data = json.loads(p.read_text())
+    data = data.get("data", data)
+    meta = data.get("metadata") or {}
+    raw = data.get("rawHtml") or ""
+    src = meta.get("sourceURL") or meta.get("url") or ""
+    netloc = urlparse(src).netloc or slug.replace("-", ".")
+    domain = netloc[4:] if netloc.startswith("www.") else netloc
+    referer = f"https://{netloc}/" if netloc else None
+    outdir = store(slug, date) / ".payloads" / "logos"
+    outdir.mkdir(parents=True, exist_ok=True)
+    print(f"=== logos {slug} ({name}.json, {used}) ===")
+    print(
+        "  sips MEASURES; the AGENT looks — confirm the wordmark is the real brand mark (a blind scan\n"
+        "  grabs press logos, Probe 2) and judge `transparent` on a checker tile (hasAlpha lies, Probe 3).\n"
+        "  Omit a slot only on TRUE absence; RECORD a small/weak mark with its measurement, never drop it."
+    )
+
+    def measure(tag: str, ref: str, *, local: bool = False) -> tuple[int, int] | None:
+        """Fetch (or read a local file) + measure one source; saves a viewable copy to .payloads/logos/."""
+        if local:
+            fp = Path(ref) if Path(ref).is_absolute() else ROOT / ref
+            if not fp.exists():
+                print(f"  {tag:15} MISSING FILE  {ref}")
+                return None
+            blob = fp.read_bytes()
+        else:
+            blob = fetch_bytes(ref, referer)
+            if not blob:
+                print(f"  {tag:15} FETCH-FAIL    {ref}")
+                return None
+        is_svg = bool(SVG_SNIFF.search(blob[:300]))
+        if local:
+            target = fp
+        else:
+            target = outdir / f"{tag}.{'svg' if is_svg else (hero_ext(blob) or 'img')}"
+            target.write_bytes(blob)
+        dims = svg_dims(blob.decode("utf-8", "ignore")) if is_svg else sips_dims(target)
+        size = f"{dims[0]}x{dims[1]}" if dims else "??x?? unmeasured"
+        print(f"  {tag:15} {'svg' if is_svg else 'raster':6} {size:>14}  {ref}")
+        return dims
+
+    # --- logomark: the larger MEASURED of the two deterministic square sources ---
+    print("\n## logomark  (square; >=128px short side is the deck bar — the CONSUMER applies it)")
+    cands = [("logomark-s2", f"https://www.google.com/s2/favicons?domain={domain}&sz=256")]
+    for lm in re.finditer(r"<link\b[^>]*apple-touch-icon[^>]*>", raw, re.I):
+        href = re.search(r'href="([^"]+)"', lm.group(0))
+        if href:
+            cands.append(("logomark-apple", urljoin(src or f"https://{netloc}/", href.group(1))))
+    best: tuple[int, str] | None = None  # (short_side_px, winning_src)
+    for tag, url in cands:
+        dims = measure(tag, url)
+        if dims and (best is None or min(dims) > best[0]):
+            best = (min(dims), url)
+    if best:
+        flag = "" if best[0] >= 128 else "   <-- under 128px (record it anyway; the consumer's call)"
+        print(f"  -> winner px={best[0]}  src={best[1]}{flag}")
+    else:
+        print("  -> no measurable logomark — omit the slot (true absence)")
+
+    # --- og: the DECLARED og:image, gated at >=600px actual width ---
+    print("\n## og  (wide cover; gate: a DECLARED og:image at >=600px ACTUAL width — the meta size lies, Probe 3)")
+    og = meta.get("og:image") or meta.get("ogImage")
+    og_dims = None
+    if not og:
+        print("  no og:image declared — omit the og slot (true absence)")
+    else:
+        og = urljoin(src or f"https://{netloc}/", og)
+        og_dims = measure("og", og)
+        if og_dims and og_dims[0] < 600:
+            print(f"  -> og width {og_dims[0]}px < 600 — best-effort gate FAILS; omit unless a small-cover consumer wants it")
+
+    # --- wordmark: the agent's pick (vision); fc.py only measures what it's handed ---
+    print("\n## wordmark  (rectangle, mark+name — the PRIMARY slot; YOU pick it by looking, fc.py measures)")
+    wm_dims = None
+    if not wordmark:
+        print("  no --wordmark given. Pick it by LOOKING: the hostable logo_url if it's a real wordmark, else")
+        print("  extract the inline <svg> (commit the text to store/<slug>/assets/wordmark.svg), then re-run")
+        print("  with --wordmark <url|path> to measure it. NEVER let a blind scan pick it (press-logo trap).")
+    else:
+        wm_dims = measure("wordmark", wordmark, local=not wordmark.startswith("http"))
+
+    # --- draft block — the agent CONFIRMS by looking, sets `transparent`, then writes it ---
+    print("\n## Draft logos:{} — confirm by looking, set `transparent`, then write into profile.md frontmatter:")
+    wm_src = wordmark or "assets/wordmark.svg | <hostable-url>"
+    wm_wh = f"w: {wm_dims[0]}, h: {wm_dims[1]}" if wm_dims else "w: ?, h: ?"
+    print(f"  logo_url: {wm_src}        # new captures canonicalize logo_url to the wordmark")
+    print("  logos:")
+    print(f"    wordmark: {{ src: {wm_src}, {wm_wh} }}")
+    if best:
+        print(f'    logomark: {{ src: "{best[1]}", px: {best[0]}, transparent: <true|false — YOU judge> }}')
+    if og_dims:
+        print(f'    og:       {{ src: "{og}", w: {og_dims[0]}, h: {og_dims[1]} }}')
+    print(f"\n  candidates saved to {outdir.relative_to(ROOT)}/ — Read them to confirm the mark + judge `transparent`.")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -623,6 +795,14 @@ def main() -> None:
     h.add_argument("--name", required=True, help="flagship PDP payload to source (scraped with --images)")
     h.add_argument("--top", type=int, default=15, help="candidates to download (recall-first; headed download is free)")
     h.add_argument("--date", default=TODAY)
+    lg = sub.add_parser("logos")
+    lg.add_argument("--slug", required=True)
+    lg.add_argument("--name", default="homepage", help="homepage payload to source og:image + apple-touch + domain (default: homepage)")
+    lg.add_argument(
+        "--wordmark",
+        help="the wordmark YOU picked (a hostable URL or a committed assets/ path) — fc.py measures it, vision picks it (§1.2)",
+    )
+    lg.add_argument("--date", default=TODAY)
     sub.add_parser("credits")
     a = ap.parse_args()
     if a.cmd == "map":
@@ -637,6 +817,8 @@ def main() -> None:
         do_signals(a.slug, a.name, a.date)
     elif a.cmd == "hero":
         do_hero(a.slug, a.name, a.date, a.top)
+    elif a.cmd == "logos":
+        do_logos(a.slug, a.name, a.date, a.wordmark)
     elif a.cmd == "credits":
         do_credits()
 

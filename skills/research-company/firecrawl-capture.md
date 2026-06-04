@@ -102,6 +102,56 @@ the [`OFFERINGS.md`](../../OFFERINGS.md) contract. **Lint it:** `python3 scripts
 — roster columns present, `price_visibility` closed-set, every row slug-keyed, **every `$` price greppable in a
 cited capture**, no cross-company canonical key. It exits nonzero on any miss (the misattributed-price guard).
 
+## 1.2 Logos module — the multi-ratio brand-mark set (opt-in)
+
+The opt-in `logos:{}` block on `profile.md` (**not** a separate file — three frontmatter entries + a few asset
+files). Captures a company's marks at the **ratios a consumer renders** — a square **logomark**, a rectangular
+**wordmark**, a wide **og** cover — each with **its measurements attached as facts the consumer gates on** (the
+engine never pre-drops a mark). Asked in the step-2.5 pre-flight batch, like offerings; default runs **skip** it.
+Contract: [`SCHEMA.md` §Logos](../../SCHEMA.md#logos); rationale + the 3-probe evidence:
+[`_design/2026-06-03-logos.md`](../../_design/2026-06-03-logos.md).
+
+**Near-free over the baseline** — it reuses the homepage payload (`rawHtml` + `metadata` + `branding`) and the
+full-page screenshot the capture already took; the only new spend is fetching a few small icon/cover URLs (headed,
+no credits). **`sips` measures, the agent's eyes decide** — that split is the whole design: vision does what a
+script can't (is this the real brand mark; is the background baked), `sips` does what vision shouldn't guess (exact px).
+
+**Run it after the profile capture (free, reads the cached homepage payload — no re-scrape):**
+```bash
+python3 scripts/fc.py logos --slug <slug>                                   # measures logomark + og; lists the wordmark options
+python3 scripts/fc.py logos --slug <slug> --wordmark <hostable-url | assets/wordmark.svg>   # once YOU'VE picked it, measure it too
+```
+It fetches each candidate **headed** (a bare fetch 403s on bot-defended CDNs, §5.2) into `.payloads/logos/` for
+you to eyeball, `sips`-measures each (an SVG's box is parsed from its text — `sips` can't read vector), and prints a
+draft `logos:{}` block. Stdlib-only — **never PIL** (the no-image-dep line); `rsvg-convert`/ImageMagick are
+recipe-time tools (rasterize an SVG, composite a checker tile, crop a header), never a Python dep.
+
+**The three slots — source chains measured, never trusted (the winner is *measured*, not *requested*):**
+
+| Slot | Shape | Source chain | Mode |
+|---|---|---|---|
+| **wordmark** | rectangle, mark+name | the hostable `logo_url` if it's a real wordmark, **else extract the inline `<svg>`** (or, last resort, crop the header) — **the agent picks it** | **vision-in-the-loop** |
+| **logomark** | square | the **larger measured** of google `s2/favicons?domain=<domain>&sz=256` and the `apple-touch-icon` — `sz=256` is a request, not a promise (returns 32px for some), so read the bytes | deterministic |
+| **og** | wide cover | a **declared** `og:image` (`metadata`) verified at **≥600px actual width** — the declared meta size lies (one declares 600, serves 30) | deterministic |
+
+**The wordmark is the agent's job, and a blind scan won't do it** — Probe 2's naive "widest image" scan grabbed
+**press/payment logos** (NYT, Afterpay, Airbnb, a Zendesk asset). `fc.py` never picks the wordmark; **you do, by
+looking:**
+1. If `logo_url` (or `branding.images.logo`) is a real on-brand wordmark, that's it — a **hostable URL stays a URL** (no file).
+2. Else **extract the inline `<svg>`** from `branding.images.logo` / `rawHtml` (often a `data:image/svg+xml` URI — decode it) → commit the SVG **text** to `store/<slug>/assets/wordmark.svg` (text commits clean, scales infinitely) and point `src` at the relative `assets/wordmark.svg`. Truly no URL and not text (a rare raster header-crop)? It lands in a gitignored sidecar → local-only; commit the tiny PNG if it must survive a fresh clone.
+3. Re-run `fc.py logos --wordmark …` to measure your pick (`sips` for raster; viewBox for SVG).
+
+**Then judge `transparent` on the logomark by LOOKING** — `hasAlpha` is NOT a transparency test (5 probe marks
+reported alpha-yes yet carried an opaque color box). Composite the saved logomark on a checker/dark tile and look at
+the **corners**: `transparent: false` means a baked rectangular background → a colored square on a dark slide, a
+human glances first. We **flag** it, never auto-remove it (corner flood-fill mangles logos).
+
+**Write the block** into `profile.md`'s visual-identity frontmatter per [`SCHEMA.md` §Logos](../../SCHEMA.md#logos):
+each slot records what you found + its measurements; **omit a slot only on true absence** (record a small/weak mark
+with its measurement, never silently drop it). **Canonicalize `logo_url` to the wordmark** (old values grandfather).
+It's an **additive 2.5 MINOR** — stamp `schema_version: "2.5"`, note it in the `Run profile` Provenance line
+(`+logos`), and do **no corpus backfill** (an empty `logos` on an older profile = "predates the module").
+
 ## 2. Endpoints
 
 | Endpoint | When | Cost |

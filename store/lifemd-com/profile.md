@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.3"
+schema_version: "2.5"
 
 # Identity
 domain: lifemd.com
@@ -45,7 +45,11 @@ business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
 # Visual identity
-logo_url: https://lifemd.com/css/img/logo.svg
+logo_url: https://lifemd.com/css/img/logo.svg   # the hostable wordmark (canonical mark, 2.5)
+logos:
+  wordmark: { src: "https://lifemd.com/css/img/logo.svg", w: 232, h: 65 }                                       # hostable on-domain wordmark (no file needed)
+  logomark: { src: "https://www.google.com/s2/favicons?domain=lifemd.com&sz=256", px: 180, transparent: true }  # blue/teal cross mark; corners transparent on a checker tile
+  og:       { src: "https://lifemd.com/img/og-image.webp?1780455485", w: 1200, h: 630 }                         # "The Doctor Will See You Now" branded cover
 brand_colors: { primary: "#0D6EFD", text: "#000229" }   # STRAIN: blue CTA + near-black navy text; brand also leans on a bright multi-color condition palette + teal/green weight-loss sections (screenshot-confirmed)
 fonts: [Manrope]
 color_scheme: light
@@ -134,3 +138,4 @@ Breadth is the strategy. LifeMD runs a **portfolio**: a broad general-care flags
 - **Credits:** 9 (1 map + 8 scrapes); 0 add-ons; 1118→~1109 plan balance.
 - **Couldn't get:** Cardiovascular Health pricing (page not scraped); reconciled patient-count + per-tier GLP-1 prices flagged in unverified_fields.
 - **Enriched (model knowledge):** LifeMD is publicly traded as NASDAQ **LFMD** (identity prior; ir.lifemd.com confirms a public co, ticker not on captured pages). Sub-brand domains rexmd.com / shapiromd.com / navamd.com resolved live via curl HEAD (free identity check); getcleared.com 301→lifemd.com.
+- **Run profile:** +logos (2026-06-03) — added the `logos:{}` module via `fc.py logos`, measured from the cached 2026-06-02 homepage payload (no re-scrape, 0 credits); all three slots are stable URLs, no committed asset. Stamped 2.5.
