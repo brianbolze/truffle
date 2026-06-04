@@ -19,8 +19,8 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 
 ---
 
-- **Inputs for the `research-company` verb** `[idea]` `[md]` `[@brian]`
-  When triggering research-company, allow some customization - like `light|default|deep` capture mode, depth vs breadth preference, what types of pages to focus on. Could also customize the schema (for the profile, and for additional modules like offerings.md) -- as long as we add a **`### Run profile`** line to the provenance section **when the run was non-vanilla** — what a custom prompt changed vs. a plain run.
+- **Automatic retro** `[idea]` `[@brian]`
+  Adjust the system / `research-company` verb such that when an agent has a really messy / ineffective capture - they automatically write a retro (or, maybe suggest the user spawn a new session for that retro... idk... I still want the user to get their results quickly - without waiting for the retro to complete...) -- that gets written to _design/retro/ -- following a consistent format / guideline.
 
 ### Discoverability & consumption
 
