@@ -1,0 +1,318 @@
+{
+  "slug": "eden-health",
+  "referer": "https://www.eden.health/",
+  "n_images": 103,
+  "n_ranked": 103,
+  "entries": [
+    {
+      "tag": "og",
+      "rank": null,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abca5_OpenGraph.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/eden-health/png/og.png"
+    },
+    {
+      "tag": "og",
+      "rank": null,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abda7_OpenGraph.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/eden-health/png/og.png"
+    },
+    {
+      "tag": "r01",
+      "rank": 1,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abc92_inside-our-mens-hair-growth-kit.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/eden-health/png/r01.png"
+    },
+    {
+      "tag": "r02",
+      "rank": 2,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab707_Vials.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/eden-health/png/r02.png"
+    },
+    {
+      "tag": "r03",
+      "rank": 3,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abdd0_pdp_nad-1.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/eden-health/png/r03.png"
+    },
+    {
+      "tag": "r04",
+      "rank": 4,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a1edf467c9eb1aef42d8b32_nad-plus-injection-vial-metabolic-support.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/eden-health/png/r04.png"
+    },
+    {
+      "tag": "r05",
+      "rank": 5,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab65b_nav-micb12.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/eden-health/png/r05.png"
+    },
+    {
+      "tag": "r06",
+      "rank": 6,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abad4_card_zepbound.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/eden-health/png/r06.png"
+    },
+    {
+      "tag": "r07",
+      "rank": 7,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abdd1_Slideshow%201.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/eden-health/png/r07.png"
+    },
+    {
+      "tag": "r08",
+      "rank": 8,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abada_Card.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/eden-health/png/r08.png"
+    },
+    {
+      "tag": "r09",
+      "rank": 9,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abadd_Card-1.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/eden-health/png/r09.png"
+    },
+    {
+      "tag": "r10",
+      "rank": 10,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abe0c_Final%20CTA.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/eden-health/png/r10.png"
+    }
+  ],
+  "all_ranked_urls": [
+    {
+      "rank": 1,
+      "score": 5.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abc92_inside-our-mens-hair-growth-kit.webp"
+    },
+    {
+      "rank": 2,
+      "score": 5.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab707_Vials.webp"
+    },
+    {
+      "rank": 3,
+      "score": 5.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abdd0_pdp_nad-1.webp"
+    },
+    {
+      "rank": 4,
+      "score": 5.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a1edf467c9eb1aef42d8b32_nad-plus-injection-vial-metabolic-support.webp"
+    },
+    {
+      "rank": 5,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab65b_nav-micb12.webp"
+    },
+    {
+      "rank": 6,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abad4_card_zepbound.webp"
+    },
+    {
+      "rank": 7,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abdd1_Slideshow%201.webp"
+    },
+    {
+      "rank": 8,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abada_Card.webp"
+    },
+    {
+      "rank": 9,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abadd_Card-1.webp"
+    },
+    {
+      "rank": 10,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abe0c_Final%20CTA.webp"
+    },
+    {
+      "rank": 11,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab659_nav-nad.webp"
+    },
+    {
+      "rank": 12,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab12d_dr-rebecca.webp"
+    },
+    {
+      "rank": 13,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab65e_nav-hairkit.webp"
+    },
+    {
+      "rank": 14,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab65c_nav-glp1s.webp"
+    },
+    {
+      "rank": 15,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abadc_card_mounjaro.webp"
+    },
+    {
+      "rank": 16,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab427_stack_img-3.webp"
+    },
+    {
+      "rank": 17,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab65a_nav-sermorelin.webp"
+    },
+    {
+      "rank": 18,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab42a_stack_card-img-4.webp"
+    },
+    {
+      "rank": 19,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abf3d_Card.webp"
+    },
+    {
+      "rank": 20,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab6ec_Card.webp"
+    },
+    {
+      "rank": 21,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abf3c_Card2.webp"
+    },
+    {
+      "rank": 22,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab424_stack_img-1.webp"
+    },
+    {
+      "rank": 23,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abda8_CTA.webp"
+    },
+    {
+      "rank": 24,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab603_4step-men.webp"
+    },
+    {
+      "rank": 25,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abdcb_Card.webp"
+    },
+    {
+      "rank": 26,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab050/6a0ccac3db38d1a0339ab64a_MaleHand-General.webp"
+    },
+    {
+      "rank": 27,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abdcc_Card2.webp"
+    },
+    {
+      "rank": 28,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abd99_Info.webp"
+    },
+    {
+      "rank": 29,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abbae_Card%203.webp"
+    },
+    {
+      "rank": 30,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abdcd_Card3.webp"
+    },
+    {
+      "rank": 31,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/677ad12b41a6a6503fefd5a8/68a89f8ae77e89ee8caf37d2_Hero%20Image.webp"
+    },
+    {
+      "rank": 32,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abc9c_freepik__expand__61910.webp"
+    },
+    {
+      "rank": 33,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abbac_Card%201.webp"
+    },
+    {
+      "rank": 34,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abe31_Final%20CTA.webp"
+    },
+    {
+      "rank": 35,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abbab_CTA.webp"
+    },
+    {
+      "rank": 36,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abd7e_Info.webp"
+    },
+    {
+      "rank": 37,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abbaf_Card%204.webp"
+    },
+    {
+      "rank": 38,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abbad_Card%202.webp"
+    },
+    {
+      "rank": 39,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abca6_Card%205.webp"
+    },
+    {
+      "rank": 40,
+      "score": 0.0,
+      "url": "https://cdn.prod.website-files.com/6a0ccac3db38d1a0339ab054/6a0ccac3db38d1a0339abec6_main-image.webp"
+    }
+  ]
+}

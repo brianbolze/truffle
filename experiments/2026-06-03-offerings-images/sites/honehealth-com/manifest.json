@@ -1,0 +1,318 @@
+{
+  "slug": "honehealth-com",
+  "referer": "https://honehealth.com/",
+  "n_images": 133,
+  "n_ranked": 133,
+  "entries": [
+    {
+      "tag": "og",
+      "rank": null,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/10/TRT-vial.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/honehealth-com/png/og.png"
+    },
+    {
+      "tag": "og",
+      "rank": null,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://honehealth.com/wp-content/uploads/2024/08/Hone_neutral_Sermorelin.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/honehealth-com/png/og.png"
+    },
+    {
+      "tag": "r01",
+      "rank": 1,
+      "score": 5.75,
+      "width": 300,
+      "url": "https://honehealth.com/wp-content/uploads/2025/10/TRT-vial-300x300.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/honehealth-com/png/r01.png"
+    },
+    {
+      "tag": "r02",
+      "rank": 2,
+      "score": 5.38,
+      "width": 150,
+      "url": "https://honehealth.com/wp-content/uploads/2024/08/05-Box-Mockups-Perpective-150x150.png",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/honehealth-com/png/r02.png"
+    },
+    {
+      "tag": "r03",
+      "rank": 3,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/03/progesterone-box-womens-no-bg.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/honehealth-com/png/r03.png"
+    },
+    {
+      "tag": "r04",
+      "rank": 4,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/04/testosterone-vial-women-no-bg.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/honehealth-com/png/r04.png"
+    },
+    {
+      "tag": "r05",
+      "rank": 5,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/04/testosterone-vial-men-no-bg.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/honehealth-com/png/r05.png"
+    },
+    {
+      "tag": "r06",
+      "rank": 6,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/10/TRT-vial-forbes.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/honehealth-com/png/r06.png"
+    },
+    {
+      "tag": "r07",
+      "rank": 7,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/10/buy-box-man.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/honehealth-com/png/r07.png"
+    },
+    {
+      "tag": "r08",
+      "rank": 8,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://honehealth.com/wp-content/uploads/2024/08/Hone_Women_ProgesteroneCapsules_Box.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/honehealth-com/png/r08.png"
+    },
+    {
+      "tag": "r09",
+      "rank": 9,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/10/TRT-vial.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/honehealth-com/png/r09.png"
+    },
+    {
+      "tag": "r10",
+      "rank": 10,
+      "score": 3.0,
+      "width": 1200,
+      "url": "https://honehealth.com/wp-content/uploads/2025/06/progesterone-cream-1200x1200-1.webp",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/honehealth-com/png/r10.png"
+    }
+  ],
+  "all_ranked_urls": [
+    {
+      "rank": 1,
+      "score": 5.75,
+      "url": "https://honehealth.com/wp-content/uploads/2025/10/TRT-vial-300x300.webp"
+    },
+    {
+      "rank": 2,
+      "score": 5.38,
+      "url": "https://honehealth.com/wp-content/uploads/2024/08/05-Box-Mockups-Perpective-150x150.png"
+    },
+    {
+      "rank": 3,
+      "score": 5.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/03/progesterone-box-womens-no-bg.webp"
+    },
+    {
+      "rank": 4,
+      "score": 5.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/04/testosterone-vial-women-no-bg.webp"
+    },
+    {
+      "rank": 5,
+      "score": 5.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/04/testosterone-vial-men-no-bg.webp"
+    },
+    {
+      "rank": 6,
+      "score": 5.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/10/TRT-vial-forbes.webp"
+    },
+    {
+      "rank": 7,
+      "score": 5.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/10/buy-box-man.webp"
+    },
+    {
+      "rank": 8,
+      "score": 5.0,
+      "url": "https://honehealth.com/wp-content/uploads/2024/08/Hone_Women_ProgesteroneCapsules_Box.webp"
+    },
+    {
+      "rank": 9,
+      "score": 5.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/10/TRT-vial.webp"
+    },
+    {
+      "rank": 10,
+      "score": 3.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/06/progesterone-cream-1200x1200-1.webp"
+    },
+    {
+      "rank": 11,
+      "score": 3.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/11/Hone_Men_Enclomiphene_1200x1200.webp"
+    },
+    {
+      "rank": 12,
+      "score": 1.92,
+      "url": "https://honehealth.com/wp-content/uploads/2024/07/buy-testosterone-online-V211-768x330.jpg"
+    },
+    {
+      "rank": 13,
+      "score": 1.92,
+      "url": "https://honehealth.com/wp-content/uploads/2024/04/TRT-Side-Effects-768x330.jpeg"
+    },
+    {
+      "rank": 14,
+      "score": 1.92,
+      "url": "https://honehealth.com/wp-content/uploads/2025/09/how-long-does-testosterone-take-to-work-hero-768x330.webp"
+    },
+    {
+      "rank": 15,
+      "score": 1.92,
+      "url": "https://honehealth.com/wp-content/uploads/2023/11/how-much-does-trt-cost-768x330.webp"
+    },
+    {
+      "rank": 16,
+      "score": 1.92,
+      "url": "https://honehealth.com/wp-content/uploads/2024/01/trt-benefits-hero-768x330.webp"
+    },
+    {
+      "rank": 17,
+      "score": 1.92,
+      "url": "https://honehealth.com/wp-content/uploads/2024/04/Guide_Self_Injections-768x330.webp"
+    },
+    {
+      "rank": 18,
+      "score": 1.92,
+      "url": "https://honehealth.com/wp-content/uploads/2024/01/trt-results-timeline-benefits-hero-768x330.webp"
+    },
+    {
+      "rank": 19,
+      "score": 1.92,
+      "url": "https://honehealth.com/wp-content/uploads/2023/11/at-home-testosterone-test-hero-768x330.webp"
+    },
+    {
+      "rank": 20,
+      "score": 1.92,
+      "url": "https://honehealth.com/wp-content/uploads/2024/12/sermorelin-vs-ipamorelin-hero-768x330.webp"
+    },
+    {
+      "rank": 21,
+      "score": 1.92,
+      "url": "https://honehealth.com/wp-content/uploads/2024/03/sermorelin-for-weight-loss-1-768x330.webp"
+    },
+    {
+      "rank": 22,
+      "score": 1.92,
+      "url": "https://honehealth.com/wp-content/uploads/2024/12/does-sermorelin-increase-testosterone-hero-768x330.webp"
+    },
+    {
+      "rank": 23,
+      "score": 1.92,
+      "url": "https://honehealth.com/wp-content/uploads/2023/12/peptides-for-weight-loss-1-768x330.webp"
+    },
+    {
+      "rank": 24,
+      "score": 0.75,
+      "url": "https://honehealth.com/wp-content/uploads/2025/04/womens-trt-cream-300x300.webp"
+    },
+    {
+      "rank": 25,
+      "score": 0.38,
+      "url": "https://honehealth.com/wp-content/uploads/2025/07/Image-Export-150x150.png"
+    },
+    {
+      "rank": 26,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/04/Hone_NY_-2143-DP_R1_040725-scaled-e1744227562854.jpg"
+    },
+    {
+      "rank": 27,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/04/6unisex.png"
+    },
+    {
+      "rank": 28,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2024/08/Hone_neutral_Topiramate.webp"
+    },
+    {
+      "rank": 29,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/09/lab-results-image.png"
+    },
+    {
+      "rank": 30,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/04/2unisex.png"
+    },
+    {
+      "rank": 31,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/04/5mens.png"
+    },
+    {
+      "rank": 32,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2024/08/Hone_neutral_Naltrexone.webp"
+    },
+    {
+      "rank": 33,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2024/08/Hone_neutral_Bupropion.webp"
+    },
+    {
+      "rank": 34,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2024/08/Hone_neutral_Phentermine.webp"
+    },
+    {
+      "rank": 35,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/10/50-50-accordion-man.webp"
+    },
+    {
+      "rank": 36,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2024/08/Hone_neutral_Sermorelin.webp"
+    },
+    {
+      "rank": 37,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/05/liraglutide-1-1.webp"
+    },
+    {
+      "rank": 38,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/04/3mens.png"
+    },
+    {
+      "rank": 39,
+      "score": 0.0,
+      "url": "https://static.legitscript.com/seals/10842626.png"
+    },
+    {
+      "rank": 40,
+      "score": 0.0,
+      "url": "https://honehealth.com/wp-content/uploads/2025/04/Hone_LA-3340-scaled-e1745335675678.jpg"
+    }
+  ]
+}

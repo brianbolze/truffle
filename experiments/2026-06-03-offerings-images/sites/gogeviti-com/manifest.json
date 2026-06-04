@@ -1,0 +1,318 @@
+{
+  "slug": "gogeviti-com",
+  "referer": "https://www.gogeviti.com/",
+  "n_images": 193,
+  "n_ranked": 193,
+  "entries": [
+    {
+      "tag": "og",
+      "rank": null,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://www.gogeviti.com/en/clinic/opengraph-image.png?opengraph-image.26cadfe2.png",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/gogeviti-com/png/og.png"
+    },
+    {
+      "tag": "og",
+      "rank": null,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://www.gogeviti.com/en/supplements/opengraph-image.png?opengraph-image.26cadfe2.png",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/gogeviti-com/png/og.png"
+    },
+    {
+      "tag": "r01",
+      "rank": 1,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://www.gogeviti.com/images/genetics/icon-kit.png",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/gogeviti-com/png/r01.png"
+    },
+    {
+      "tag": "r02",
+      "rank": 2,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fsupplements%2Fgeneric-pills-new.jpg&w=3840&q=75",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/gogeviti-com/png/r02.png"
+    },
+    {
+      "tag": "r03",
+      "rank": 3,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://www.gogeviti.com/images/bloodwork/blood-vial-tube.png",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/gogeviti-com/png/r03.png"
+    },
+    {
+      "tag": "r04",
+      "rank": 4,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fproduct-cream.png&w=3840&q=75",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/gogeviti-com/png/r04.png"
+    },
+    {
+      "tag": "r05",
+      "rank": 5,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fproduct-troche.png&w=3840&q=75",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/gogeviti-com/png/r05.png"
+    },
+    {
+      "tag": "r06",
+      "rank": 6,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fproduct-injection.png&w=3840&q=75",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/gogeviti-com/png/r06.png"
+    },
+    {
+      "tag": "r07",
+      "rank": 7,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fproduct-dropper.png&w=3840&q=75",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/gogeviti-com/png/r07.png"
+    },
+    {
+      "tag": "r08",
+      "rank": 8,
+      "score": 5.0,
+      "width": 0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fproduct-enc.png&w=3840&q=75",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/gogeviti-com/png/r08.png"
+    },
+    {
+      "tag": "r09",
+      "rank": 9,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ficons%2Fillustrated%2Fblueprint-forms.png&w=64&q=75",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/gogeviti-com/png/r09.png"
+    },
+    {
+      "tag": "r10",
+      "rank": 10,
+      "score": 0.0,
+      "width": 0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ficons%2Fillustrated%2Ffaq.png&w=64&q=75",
+      "dl": "ok",
+      "png": "experiments/2026-06-03-offerings-images/sites/gogeviti-com/png/r10.png"
+    }
+  ],
+  "all_ranked_urls": [
+    {
+      "rank": 1,
+      "score": 5.0,
+      "url": "https://www.gogeviti.com/images/genetics/icon-kit.png"
+    },
+    {
+      "rank": 2,
+      "score": 5.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fsupplements%2Fgeneric-pills-new.jpg&w=3840&q=75"
+    },
+    {
+      "rank": 3,
+      "score": 5.0,
+      "url": "https://www.gogeviti.com/images/bloodwork/blood-vial-tube.png"
+    },
+    {
+      "rank": 4,
+      "score": 5.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fproduct-cream.png&w=3840&q=75"
+    },
+    {
+      "rank": 5,
+      "score": 5.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fproduct-troche.png&w=3840&q=75"
+    },
+    {
+      "rank": 6,
+      "score": 5.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fproduct-injection.png&w=3840&q=75"
+    },
+    {
+      "rank": 7,
+      "score": 5.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fproduct-dropper.png&w=3840&q=75"
+    },
+    {
+      "rank": 8,
+      "score": 5.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fproduct-enc.png&w=3840&q=75"
+    },
+    {
+      "rank": 9,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ficons%2Fillustrated%2Fblueprint-forms.png&w=64&q=75"
+    },
+    {
+      "rank": 10,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ficons%2Fillustrated%2Ffaq.png&w=64&q=75"
+    },
+    {
+      "rank": 11,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ficons%2Fillustrated%2Flaboratory-robot-arm.png&w=64&q=75"
+    },
+    {
+      "rank": 12,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ficons%2Fillustrated%2Fdoctor.png&w=64&q=75"
+    },
+    {
+      "rank": 13,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ficons%2Fillustrated%2Fdietary-supplement.png&w=64&q=75"
+    },
+    {
+      "rank": 14,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ficons%2Fillustrated%2Fsecurity.png&w=64&q=75"
+    },
+    {
+      "rank": 15,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ficons%2Fillustrated%2Fphlebotomist.png&w=64&q=75"
+    },
+    {
+      "rank": 16,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ficons%2Fillustrated%2Fblog.png&w=64&q=75"
+    },
+    {
+      "rank": 17,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ftesting%2Fcard-bloodwork.png&w=3840&q=75"
+    },
+    {
+      "rank": 18,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ftesting%2Fstep-2.png&w=3840&q=75"
+    },
+    {
+      "rank": 19,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ftesting%2Fstep-3.png&w=3840&q=75"
+    },
+    {
+      "rank": 20,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fclinic-bottom-cta-v2.jpg&w=3840&q=75"
+    },
+    {
+      "rank": 21,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ftesting%2Fcard-genetics.png&w=3840&q=75"
+    },
+    {
+      "rank": 22,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ftesting%2Fstep-1.png&w=3840&q=75"
+    },
+    {
+      "rank": 23,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ftesting%2Fhero-phone-desktop.png&w=3840&q=75"
+    },
+    {
+      "rank": 24,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ftesting%2Fhero-phone-mobile.png&w=3840&q=75"
+    },
+    {
+      "rank": 25,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ftesting%2Fstep-4.png&w=3840&q=75"
+    },
+    {
+      "rank": 26,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ftesting%2Fcard-gut.png&w=3840&q=75"
+    },
+    {
+      "rank": 27,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Fold-way-doc-1.png&w=3840&q=75"
+    },
+    {
+      "rank": 28,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Ficon-genetics.png&w=3840&q=75"
+    },
+    {
+      "rank": 29,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Ficon-lifestyle.png&w=3840&q=75"
+    },
+    {
+      "rank": 30,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Ficon-gut.png&w=3840&q=75"
+    },
+    {
+      "rank": 31,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Fmakor-question-icon.png&w=3840&q=75"
+    },
+    {
+      "rank": 32,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Fstep-test-3d.png&w=3840&q=75"
+    },
+    {
+      "rank": 33,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Fstep-build-3d.png&w=3840&q=75"
+    },
+    {
+      "rank": 34,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Fgeviti-way-widget-1.png&w=3840&q=75"
+    },
+    {
+      "rank": 35,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Ficon-biomarker.png&w=3840&q=75"
+    },
+    {
+      "rank": 36,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Ficon-supplement.png&w=3840&q=75"
+    },
+    {
+      "rank": 37,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Ficon-rx.png&w=3840&q=75"
+    },
+    {
+      "rank": 38,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Ficons%2Fpress%2Fyahoo.png&w=3840&q=75"
+    },
+    {
+      "rank": 39,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Fchat-attachment-2.jpg&w=3840&q=75"
+    },
+    {
+      "rank": 40,
+      "score": 0.0,
+      "url": "https://www.gogeviti.com/_next/image?url=%2Fimages%2Fblueprint%2Fold-way-doc-3.png&w=3840&q=75"
+    }
+  ]
+}
