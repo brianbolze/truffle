@@ -19,3 +19,5 @@ venv/
 
 # Experiment scratch output (keep READMEs + scripts + FINDINGS, ignore bulk dumps)
 experiments/**/_out/
+# self-contained embedded-image sheets — bulk, regenerable from _out/
+experiments/**/contact-sheet.html

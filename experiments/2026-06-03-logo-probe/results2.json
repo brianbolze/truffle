@@ -1,0 +1,162 @@
+[
+  {
+    "slug": "hims-com",
+    "domain": "hims.com",
+    "cls": "EXTRACT",
+    "mech": "inline-svg",
+    "detail": "inline-svg",
+    "url": "",
+    "cur": "https://www.hims.com/forhims/image/upload/q_auto,f_auto,fl_lossy,c_limit/Hims/apple-touch-icon-hims",
+    "miss": false
+  },
+  {
+    "slug": "ro-co",
+    "domain": "ro.co",
+    "cls": "EXTRACT",
+    "mech": "inline-svg",
+    "detail": "inline-svg",
+    "url": "",
+    "cur": "https://ro.co/rocostatic/favicon.svg",
+    "miss": false
+  },
+  {
+    "slug": "lifemd-com",
+    "domain": "lifemd.com",
+    "cls": "HOSTABLE",
+    "mech": "",
+    "detail": "logo_url 232x65 a=3.6",
+    "url": "https://lifemd.com/css/img/logo.svg",
+    "cur": "https://lifemd.com/css/img/logo.svg",
+    "miss": false
+  },
+  {
+    "slug": "maximustribe-com",
+    "domain": "maximustribe.com",
+    "cls": "EXTRACT",
+    "mech": "client-rendered",
+    "detail": "client-rendered",
+    "url": "",
+    "cur": "https://www.maximustribe.com/favicon-32x32.png",
+    "miss": false
+  },
+  {
+    "slug": "honehealth-com",
+    "domain": "honehealth.com",
+    "cls": "EXTRACT",
+    "mech": "inline-svg",
+    "detail": "inline-svg",
+    "url": "",
+    "cur": "https://honehealth.com/wp-content/uploads/2024/01/TriangleWhite.png",
+    "miss": false
+  },
+  {
+    "slug": "getpetermd-com",
+    "domain": "getpetermd.com",
+    "cls": "HOSTABLE",
+    "mech": "",
+    "detail": "logo_url 1613x316 a=5.1",
+    "url": "https://getpetermd.com/wp-content/uploads/PeterMD-logo-1.svg",
+    "cur": "https://getpetermd.com/wp-content/uploads/PeterMD-logo-1.svg",
+    "miss": false
+  },
+  {
+    "slug": "remedymeds-com",
+    "domain": "remedymeds.com",
+    "cls": "HOSTABLE",
+    "mech": "",
+    "detail": "logo_url 105x30 a=3.5",
+    "url": "https://remedymeds.com/remedymeds/images/remedy-logo-white.svg",
+    "cur": "https://remedymeds.com/remedymeds/images/remedy-logo-white.svg",
+    "miss": false
+  },
+  {
+    "slug": "joiandblokes-com",
+    "domain": "joiandblokes.com",
+    "cls": "HOSTABLE",
+    "mech": "",
+    "detail": "logo_url 2281x314 a=7.3",
+    "url": "https://joiandblokes.com/wp-content/themes/joiandblokes/images/full-logo-joi-and-blokes-black.svg",
+    "cur": "https://joiandblokes.com/wp-content/themes/joiandblokes/images/full-logo-joi-and-blokes-black.svg",
+    "miss": false
+  },
+  {
+    "slug": "agelessrx-com",
+    "domain": "agelessrx.com",
+    "cls": "HOSTABLE",
+    "mech": "",
+    "detail": "logo_url 146x32 a=4.6",
+    "url": "https://agelessrx.com/wp-content/themes/agelessrx-2024/assets/images/agelessrx-logo-2024.svg",
+    "cur": "https://agelessrx.com/wp-content/themes/agelessrx-2024/assets/images/agelessrx-logo-2024.svg",
+    "miss": true
+  },
+  {
+    "slug": "gogeviti-com",
+    "domain": "gogeviti.com",
+    "cls": "HOSTABLE",
+    "mech": "",
+    "detail": "logo_url 86x21 a=4.1",
+    "url": "https://www.gogeviti.com/images/icons/ui/geviti-logo.svg",
+    "cur": "https://www.gogeviti.com/images/icons/ui/geviti-logo.svg",
+    "miss": true
+  },
+  {
+    "slug": "mylifeforce-com",
+    "domain": "mylifeforce.com",
+    "cls": "EXTRACT",
+    "mech": "inline-svg",
+    "detail": "inline-svg",
+    "url": "",
+    "cur": "https://www.mylifeforce.com/favicon-32x32.png",
+    "miss": false
+  },
+  {
+    "slug": "gethealthspan-com",
+    "domain": "gethealthspan.com",
+    "cls": "EXTRACT",
+    "mech": "inline-svg",
+    "detail": "inline-svg",
+    "url": "",
+    "cur": "(empty)",
+    "miss": false
+  },
+  {
+    "slug": "marekhealth-com",
+    "domain": "marekhealth.com",
+    "cls": "HOSTABLE",
+    "mech": "",
+    "detail": "logo_url 294x44 a=6.7",
+    "url": "https://images.marekhealth.com/website_assets/homepage/marek-health-desktop-logo-dark.webp",
+    "cur": "https://images.marekhealth.com/website_assets/homepage/marek-health-desktop-logo-dark.webp",
+    "miss": true
+  },
+  {
+    "slug": "functionhealth-com",
+    "domain": "functionhealth.com",
+    "cls": "EXTRACT",
+    "mech": "inline-svg",
+    "detail": "inline-svg",
+    "url": "",
+    "cur": "https://cdn.prod.website-files.com/68823b2fd9cc28b78fb3ee65/69710ea94b3b07ac1965f017_Favicon.png",
+    "miss": false
+  },
+  {
+    "slug": "eden-health",
+    "domain": "eden.health",
+    "cls": "EXTRACT",
+    "mech": "inline-svg",
+    "detail": "inline-svg",
+    "url": "",
+    "cur": "https://cdn.prod.website-files.com/676eb86a8ca7187507487da6/678a7c93763d80c5ef6ea922_edn-favicon.png",
+    "miss": false
+  },
+  {
+    "slug": "onemedical-com",
+    "domain": "onemedical.com",
+    "cls": "EXTRACT",
+    "mech": "inline-svg",
+    "detail": "inline-svg",
+    "url": "",
+    "cur": "https://www.onemedical.com/static/images/favicon.ico",
+    "miss": false
+  }
+]
