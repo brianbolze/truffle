@@ -41,12 +41,12 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
   Some sites serve a fake "Page Not Found" stub (HTTP 404, but a real-sized, unique body) for any bad path — Qualtrics did, for 4 guessed URLs. It's not thin, so verify's guards miss it and §5.6 ("trust the body, not the status") says keep it. **Prevention:** only scrape URLs from the captured map/homepage links, never guess paths from convention (this alone avoids it). **Detection:** teach `fc.py verify` a 404-with-not-found fingerprint.
   **Act when:** 2nd sighting (1 so far).
 
+- **Leaked-tag guard only runs on `profile.md`** `[bug]` `[s]`
+  The `</invoke>`/`</content>` leaked-tag check lives in `fc.py verify` (profile.md only); `cohortcheck.py` and `offeringscheck.py` don't check for it, so a `telehealth.md` / `offerings.md` can ship leaked tags silently. Hit on the Noom run (2026-06-04) — both module files trailed a `</content>` that only a manual `tail` caught. **Fix:** lift the leaked-tag scan into a shared helper all three linters call (or have cohortcheck/offeringscheck run it).
+
 - **Light, honesty-preserving cleaning pass on payload markdown** `[idea]` `[md]` `[@brian]`
   Captured `.md` is a raw Firecrawl dump (47.5% blank lines; animated stat-counter digit-columns; leaked VWO/JS + consent blobs; hard-break `\\` residue) — the "cleaned" files are byte-identical to raw. Researched → [`payload-cleaning.md`](_design/references/payload-cleaning.md): a **subtractive + whitespace-only** ruleset (delete noise lines, never reword) cuts ~19% of bytes while keeping every content byte verbatim; decision lean = strip chrome, don't section-tag.
   **Act when:** de-risk first — `experiments/<date>-payload-clean/` over the 111 existing files, prove zero content-line loss, *then* touch SCHEMA / fc.py.
-
-- **Multi-ratio logo set via vision** `[idea]` `[md]` `[@brian]`
-  Replace the single `logo_url` with a small `logos: {}` set — mark/favicon (square), wordmark (rectangle), `og:image`, + the cleanest SVG from `images[]` — chosen by vision at ingestion. Adds frontmatter surface → design in a dedicated session. Not v1-critical. *Source-upgrade already landed (2.1): `logo_url` now prefers JSON-LD `logo` ahead of the favicon fallback — so this item is just the multi-ratio `logos:{}` redesign, not the source fix.*
 
 - **Hero-image module is physical-product-only** `[idea]` `[s]`
   `fc.py hero` + the step-2.5 "offerings.md with flagship product images" option presume a physical render (bottle / vial / pen). On a software/API company there's nothing to capture — the Stripe run (2026-06-04) path-scored 15 candidates that were all lifestyle photography / demo-merchant goods / UI mockups (every score 0.0); the run correctly returned **N/A**, but the guided menu offered it anyway. **Cheap fix:** in the step-2.5 batch, suppress (or label "physical products only") the hero-image option when `offering_category` carries no `Physical Products / Hardware` / CPG — same logic likely applies to `Marketplace / Platform` and `Financial / Fintech`.
