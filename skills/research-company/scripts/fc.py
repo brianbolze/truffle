@@ -94,7 +94,11 @@ def do_map(
     out = post("map", body)
     links = out.get("links", out.get("data", []))
     d = store(slug, date)
-    tag = f"map_{search}" if search else "map"
+    # Slugify search for the payload FILENAME: a `site:domain/path` term carries `/`
+    # and `:` that otherwise land in the path and crash the write *after* post() already
+    # billed the credit — a silent leak hit twice across the offerings runs. The print
+    # below keeps the readable form via `search`, so nothing legible is lost.
+    tag = f"map_{re.sub(r'[^A-Za-z0-9._-]+', '-', search)}" if search else "map"
     (d / ".payloads" / f"{tag}.json").write_text(json.dumps(out, indent=2))
     # map bills a flat 1 credit/call and returns no per-call creditsUsed — record
     # the documented constant so the manifest stays a complete spend ledger.

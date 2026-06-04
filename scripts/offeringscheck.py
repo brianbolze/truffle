@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """offeringscheck — lint an opt-in `offerings.md` against the module contract.
 
-`offerings.md` is the per-SKU layer (SCHEMA "Tier-1 modules" → _design/2026-06-03-offerings-module.md):
+`offerings.md` is the per-SKU layer (contract: OFFERINGS.md; rationale: _design/2026-06-03-offerings.md):
 a roster table whose load-bearing invariant is that every price is real. The tournament that designed it
 caught exactly two failure modes a human eye misses — a *misattributed price* and a *molecule guessed from
 the brand name* — so this script asserts the structural rules that make those greppable:
@@ -155,8 +155,12 @@ def check(slug: str) -> list[str]:
             fails.append(f"{slug}: offerings.md cites prices but store/{slug}/captures/ is empty — nothing to grep-verify against.")
         else:
             for amt in sorted(amounts, key=lambda a: float(a)):
-                # match the `$`-anchored amount with or without thousands commas; corpus already comma-stripped
-                if not re.search(r"\$\s?" + re.escape(amt) + r"(?:\.\d+)?\b", corpus):
+                # Match the `$`-anchored amount (corpus already comma-stripped). Trailing `(?!\d)`
+                # still rejects a longer number ($30 must NOT verify against $300) but ALLOWS a real
+                # price the page glued to a letter: markdown jams `$300</span>Add-On` into `$300Add-On`,
+                # and `$101M` trails an `M`. A `\b` here wrongly failed both — which once pushed an
+                # author to hand-edit a capture to pass, the exact tampering this check exists to stop.
+                if not re.search(r"\$\s?" + re.escape(amt) + r"(?:\.\d+)?(?!\d)", corpus):
                     fails.append(f"{slug}: price '${amt}' is not greppable in any store/{slug}/captures/ page — misattributed or hallucinated?")
     return fails
 
