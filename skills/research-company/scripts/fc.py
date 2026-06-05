@@ -550,6 +550,8 @@ def do_hero(slug: str, name: str, date: str, top_n: int) -> None:
     imgs = [u for u in (data.get("images") or []) if isinstance(u, str) and u.startswith("http")]
     meta = data.get("metadata") or {}
     og = meta.get("og:image")
+    if isinstance(og, list):  # og:image can repeat — fetch_image wants one URL string
+        og = next((u for u in og if isinstance(u, str) and u.startswith("http")), None)
     src = meta.get("sourceURL") or meta.get("url") or ""
     referer = f"https://{urlparse(src).netloc}/" if src else None
     print(f"=== hero {slug} ({name}.json, {used}) ===")
