@@ -22,15 +22,21 @@ stopped early and now *reads* as a small catalog, so any count under-reports it.
    name / alias / slug) to the key. **NOT in store** → nothing to deepen; run `/research-company "$ARGUMENTS"`
    for a first capture instead, then stop.
 
-2. **Find the gaps.** Read `store/<slug>/offerings.md` → `## Provenance` + `site_notes`, and chase only the
-   **breadth** gaps: whole product lines, an off-host / sibling **subdomain** (a `shop.` storefront), categories
-   priced but not rostered, anything "out of scope" last run. **Leave the by-design leaf omissions** (dose /
-   quantity tiers, per-SKU PDP price depth, `Catalog` leaves) — chasing those just burns credits. No completeness
-   note at all (common) → treat the whole roster as unverified and re-enumerate off the index pages.
+2. **Find the gaps.** First read the frontmatter **`enumeration`** flag — it's the explicit TODO: **`lines-omitted`**
+   (a whole line was skipped — the `## Provenance` scope note names it) or **`unknown`/absent** (scope unverified) is
+   the work; **`indexed-complete` is already comprehensive → decline with reason** (nothing to deepen). Then read
+   `## Provenance` + `site_notes` and chase only the **breadth** gaps: whole product lines, an off-host / sibling
+   **subdomain** (a `shop.` storefront), categories priced but not rostered, anything "out of scope" last run.
+   **Leave the by-design leaf omissions** (dose / quantity tiers, per-SKU PDP price depth, `Catalog` leaves) —
+   chasing those just burns credits. No `enumeration` flag *and* no scope note (a pre-1.2 file) → treat the whole
+   roster as unverified and re-enumerate off the index pages.
 
 3. **Re-capture for breadth.** Force a refresh (don't serve the warm dossier); drive `offerings.md` to complete
-   at the indexed level across all lines + the step-2 gaps. Refresh the `## Provenance` scope note so the next
-   run — and any consumer reading a count — sees how far this one got.
+   at the indexed level across all lines + the step-2 gaps. Refresh the `## Provenance` scope note, and **set the
+   frontmatter `enumeration`** to the achieved state — `indexed-complete` if every line was reached, or
+   `lines-omitted` (naming the residual line in the scope note) if one was found but still deferred — bumping
+   `schema_version` to `"1.2"` if the file predates it. That one token is what graduates a count from "floor" to
+   trustworthy-as-breadth (contract: [`OFFERINGS.md`](../../OFFERINGS.md) → `enumeration`).
 
 **Scope:** offerings only (a full refresh or first capture is `/research-company`); it spends Firecrawl, so
 research-company's credit pre-flight applies.

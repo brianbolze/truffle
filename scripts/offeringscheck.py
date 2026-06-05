@@ -13,6 +13,10 @@ the brand name* — so this script asserts the structural rules that make those 
                                  (the anti-hallucination check: a verbatim number can't survive the grep if invented).
   5. no cross-company canon     — no `Molecule` lead column and no canonical-key frontmatter field; molecule
                                  stays a descriptive token inside `What`, grouped across brands at query time.
+  6. enumeration closed set     — if the optional `enumeration` frontmatter key is present (schema 1.2+), its
+                                 value is `indexed-complete | lines-omitted | unknown` — the count-trust signal
+                                 (so a roster count is never read naked as catalog breadth). The price_visibility
+                                 closed-set mirror, at capture-scope grain. Absent key = predates the field (legal).
 
 Per-file by design (`--slug hims-com`): the fan-out's adversarial verifier runs it on one draft. No `--slug`
 lints every `store/*/offerings.md`. Exit 0 = the module contract holds; nonzero prints how it broke.
@@ -33,6 +37,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STORE = os.path.join(ROOT, "store")
 
 VISIBILITY_OK = {"published", "partial", "on-request"}  # the one closed set; `—` (no price) also allowed
+# The capture-scope cut (schema 1.2+, optional/additive). Gates count-trust: a roster count is breadth only at
+# `indexed-complete`. Absent key = predates the field (reads `unknown`), so the check fires only when present.
+ENUMERATION_OK = {"indexed-complete", "lines-omitted", "unknown"}
+ENUM_RE = re.compile(r'(?m)^enumeration:\s*"?([a-z][a-z-]*)"?')
 # The seven spine columns (2026-06-03 design). Matched by the first word so "Price (verbatim)" and
 # "What (molecule · form · access)" still resolve — and so a bare "Molecule" column trips check 5.
 SPINE_PREFIXES = ["offering", "kind", "parent", "slug", "price", "visibility", "what"]
@@ -142,6 +150,14 @@ def check(slug: str) -> list[str]:
             if CANON_KEY_RE.search(k):
                 fails.append(
                     f"{slug}: frontmatter key '{k}' looks like a cross-company canonical key — the design forbids one (molecule rides in `What`)."
+                )
+        # check 6 — the optional capture-scope cut, validated only when present (additive; absent = predates it).
+        if "enumeration" in keys:
+            m = ENUM_RE.search(text.split("---", 2)[1])  # keys is non-None ⇒ a fenced frontmatter block exists
+            val = m.group(1) if m else None
+            if val not in ENUMERATION_OK:
+                fails.append(
+                    f"{slug}: frontmatter 'enumeration: {val}' is not one of {{indexed-complete, lines-omitted, unknown}} (the count-trust signal)."
                 )
 
     for section in ("## Portfolio overview", "## Roster"):

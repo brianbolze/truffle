@@ -1,8 +1,9 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse frontmatter; grep the body to locate.
-schema_version: "1.1"
+schema_version: "1.2"
 domain: honehealth.com       # company key; each offering's slug (its relative url) is its key *within* Hone
 captured_at: 2026-06-04      # own freshness; Rx roster ← captures/2026-06-03/, supplements line ← captures/2026-06-04/
+enumeration: indexed-complete   # 12 Rx lines + the 9-SKU shop. supplements line reached (post-deepen); leaf/dedup omissions in Provenance
 site_notes: "Two separate catalogs. (1) Rx telehealth — honehealth.com /mens/* /womens/* /hypothyroidism/* (WordPress; prices on the category cards, suffixed '+ membership'; Optimizely A/B-live → price/order flicker). (2) OTC supplements — shop.honehealth.com, a nopCommerce store with a real sitemap.xml (authoritative census) + server-rendered product grids, so a free curl enumerates the whole catalog (/supplements all=9, /mens-care=9, /womens-care=7). Supplement prices are PDP-only (a one-time price + a 10% subscribe-&-save 'subscription-price'); the grid shows only the one-time. The shop subdomain is ALSO the commerce backend for lab-tests / assessments / treatment-plans / Rx-subscriptions — nopCommerce categories that mirror the marketing-site Rx lines; don't re-roster them. /prenuvo is a dead sitemap entry (error page)."
 ---
 

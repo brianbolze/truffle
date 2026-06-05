@@ -1,8 +1,9 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse frontmatter; grep the body to locate.
-schema_version: "1.1"
+schema_version: "1.2"
 domain: ro.co               # company key; each offering's slug (its relative url) is its key *within* the company
 captured_at: 2026-06-04     # own freshness; captures/2026-06-04/ holds the source pages
+enumeration: indexed-complete   # all 8 lines reached at the indexed level (Multi-product); only leaf omissions in Provenance
 site_notes: "Catalog backbone = the public /pricing/ page — it enumerates per-SKU prices + active ingredient + 'Most popular' badges for EVERY non-GLP-1 line (ED, hair, PE, cold sores/herpes, multivitamin, testosterone, LATISSE, Custom Rx, women's hair). GLP-1 prices live ONLY on /weight-loss/pricing/ (not /pricing/, which shows just the Ro Body membership). Fertility (Modern Fertility kits + Sperm Kit) is the one line with NO published price — intake/quiz-gated, enumerated off the /fertility/ hub + nav. Hair-care add-ons (Revive Shampoo, Restore Conditioner) and Upneeq have no PDP/price — funnel/FAQ only. Prices A/B + promo volatile (own ro-experiments engine; 'Prepay & Save', TrumpRx-matched cash pricing, dated $20-off ED) — re-capture before trusting current. Per-dose GLP-1 ladders (Wegovy pill/pen, Foundayo) sit behind an unrendered 'See pricing details' expander; only Zepbound KwikPen's full ladder is in the FAQ."
 ---
 

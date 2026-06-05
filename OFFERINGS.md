@@ -14,21 +14,32 @@ Opt-in — **enablement = the file exists** (no config mechanism). Write `offeri
 
 **Hard floor — decline even on request.** A pure-services / bespoke company — no published price and no enumerable SKU (a consultancy whose "products" are confidential client work) — has nothing for the roster to bind, so **don't write the file even when a guided run asks for it**. `profile.md`'s *What they offer* lines + their per-line `[on-request]` tokens are the complete, correct altitude; **record the decline** in `## Provenance` → `### Run profile` (`Skipped with reason: …`). A reasoned decline is a valid, recorded outcome — not a gap. *(Seed exemplar: [`store/ideo-com/profile.md`](store/ideo-com/profile.md).)*
 
-## Frontmatter — doc-meta only
+## Frontmatter — doc-meta + capture-scope
 
-The offerings live in the body; frontmatter is just doc-meta, with **its own `captured_at`** (pricing goes stale fast — the reason this is a separate module from `profile.md`).
+The offerings live in the body; frontmatter is doc-meta (`schema_version`, `domain`) plus facts about the **capture**: its **own `captured_at`** (pricing goes stale fast — the reason this is a separate module from `profile.md`), the carry-forward **`site_notes`**, and **`enumeration`** — how far the roster got (subsection below). The last two cross the old "doc-meta only" line on purpose: scope-reached is a fact about the capture, the reach analog of `captured_at`'s timestamp.
 
 ```yaml
 ---
 # Query contract for this store: ../../QUERYING.md — parse frontmatter; grep the body to locate.
-schema_version: "1.1"
+schema_version: "1.2"
 domain: hims.com            # company key; each offering's slug (its relative url) is its key *within* the company
 captured_at: 2026-06-03     # own freshness; captures/<date>/ holds the source pages
+enumeration: indexed-complete   # capture-scope reached vs portfolio_shape — gates count-trust (see below)
 site_notes: "Catalog lives in the JS bundle, not nav; prices PDP-only (budget ~1 scrape/SKU); prices A/B-flicker $64↔$65 — re-check next run."
 ---
 ```
 
 **`site_notes` is carry-forward only** — the offerings-capture playbook the next run inherits: where the real catalog lives (CMS REST / an `app.` subdomain / a SPA bundle registry / nav+census), where prices hide, what's A/B-volatile or worth a diff. One-time run narration (credits, runtime, "no contamination this run") stays in `## Provenance`, **never here** — same discipline as `profile.md`'s `site_notes`. *(Added in `schema_version` **1.1** — MINOR/additive; absent on a `1.0` file reads as "predates the field," not "none found." No backfill, no re-stamp.)*
+
+### `enumeration` — how far the roster got (gates count-trust)
+
+A single-select closed-set field: did this capture reach the indexed level its **`portfolio_shape`** calls for? It's the machine-readable promotion of the `## Provenance` scope note the run already writes, so **a roster count is never read naked as catalog breadth** (the [Ro.co trap](experiments/2026-06-04-sqlite-aggregation/CAVEATS.md): an 8-SKU run on a ~36-SKU brand). Three values:
+
+- **`indexed-complete`** — reached the indexed level **line by line**: every line/category is rostered at the grain *that line* warrants (a `Multi-product` line at SKU grain; a `Catalog` line at tier + marked exemplars). Only sub-indexed **leaf** detail was skipped by design — dose/quantity tiers, un-captured PDPs, a `Catalog`'s individual leaf SKUs, a marketplace's un-enumerable listings. Count trustworthy as breadth **at the grain `portfolio_shape` names**.
+- **`lines-omitted`** — a whole **line / category / sibling subdomain** is **absent from the roster** (a weight-loss-only run on a multi-line brand; a `shop.` storefront left for next time). The count **understates breadth — it's a floor, don't rank on it.** When set, the Provenance scope note **must name** the omitted line(s). *(A line that's present but price-gated is **not** this — that's `price_visibility`'s `on-request`/`partial`, a separate axis.)*
+- **`unknown`** — scope couldn't be determined, or (by **absence**) the file predates the field. **No claim** — keeps the "count is a floor" caution live until a re-capture sets a real value.
+
+**Read paired with `portfolio_shape`** (in `profile.md`): the shape defines the target ("indexed level"), `enumeration` says whether the capture hit it. `indexed-complete` + `Multi-product` = all lines at SKU grain → count = breadth; `indexed-complete` + `Catalog` = tier + exemplars → an **exemplar** count, **never a census**. So `enumeration` carries **no shape values of its own** — a `catalog-exemplars`/`flagship-only` value would just re-encode (and drift from) `portfolio_shape`; exemplar-ness has one home, the shape. A roster grain that contradicts the shape is a **`profile.md` fix**, not something `enumeration` papers over. **Leaf-omission is deliberately unsayable here** — only a missing *line* sets `lines-omitted` — which is exactly what stops a count from conflating "small catalog" with "stopped early." *(Added in `schema_version` **1.2** — MINOR/additive; absent reads "predates the field," **not** "incomplete." No backfill, no re-stamp — a re-capture or `/deepen-offerings` sets it. The lint checks the value against the closed set: [`offeringscheck.py`](scripts/offeringscheck.py), the `price_visibility` mirror.)*
 
 ## Body — roster-first
 
@@ -55,7 +66,7 @@ Order: `## Portfolio overview` → `## Roster` → `### Verbatim anchors` → `#
   - **Two block types — don't conflate them.** A *per-SKU deep-dive* is earned **only on ambiguity** (above), **never** a per-flagship quota — the quota manufactured padding ([pilot triage §C](_design/retro/offerings/2026-06-03-offerings-pilot-triage.md)). A *PDP-template anatomy* — **one** block per company that maps the repeated PDP shell so reading one teaches the whole catalog ([Hone exemplar](store/honehealth-com/offerings.md)) — is a **portfolio-level finding**: high-signal to a copy/structure consumer (website-building), near-useless to a price consumer. So it's an **opt-in archetype, not a default** — include it only when a run asks for it, and record that in the `### Run profile` note. It earns its place by the *cross-SKU template read*, not by re-quoting one page (the raw PDP it distills already sits verbatim in `captures/`).
   - **Hero image — opt-in asset, never a column.** A flagship's deep block may reference a captured **hero product render** at `captures/<date>/images/<sku>.<ext>` — a clean isolated product shot for a design / rendering-reference consumer. Capture recipe → [`firecrawl-capture.md` §1.1](skills/research-company/firecrawl-capture.md) (`fc.py hero`); opt-in per run, noted in the `### Run profile`. Default runs skip it.
 
-- **`## Provenance`** — pages read (the cited captures), scope (what's enumerated vs noted-but-not-enumerated), gated/unreachable, and a point-in-time-snapshot caveat (pricing runs promo/A-B). Plus a **`### Run profile`** line **when the run was non-vanilla** — what a custom prompt changed vs. a plain run (added columns, an opt-in PDP-anatomy block, a deeper cut on one line). One or two lines; **absent reads as vanilla**, not "unknown." This is one-time run narration — forward-carry capture intel still goes to `site_notes`, the same split `profile.md` keeps.
+- **`## Provenance`** — pages read (the cited captures), the **scope note** (what's enumerated vs noted-but-not-enumerated — the human drill-down the frontmatter `enumeration` field summarizes; **leaf** omissions live here and never set `lines-omitted`, and when `enumeration: lines-omitted` the note **must name** the omitted line/subdomain), gated/unreachable, and a point-in-time-snapshot caveat (pricing runs promo/A-B). Plus a **`### Run profile`** line **when the run was non-vanilla** — what a custom prompt changed vs. a plain run (added columns, an opt-in PDP-anatomy block, a deeper cut on one line). One or two lines; **absent reads as vanilla**, not "unknown." This is one-time run narration — forward-carry capture intel still goes to `site_notes`, the same split `profile.md` keeps.
 
 ## The rules (what the lint enforces)
 
