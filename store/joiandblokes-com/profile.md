@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.3"
+schema_version: "2.5"
 
 # Identity
 domain: joiandblokes.com
@@ -8,7 +8,7 @@ name: Joi + Blokes
 aliases: ["Joi", "Blokes", "Joi and Blokes", "Joi+Blokes"]   # Joi = women's brand, Blokes = men's brand; one company, two consumer-facing halves
 parent: []
 owns: []
-socials:                              # operates PARALLEL handles per platform — Joi (women) listed here; Blokes (men): facebook.com/getblokes, instagram.com/getblokes, tiktok.com/@getblokes (see Credibility)
+socials:                              # operates PARALLEL handles per platform — Joi (women) listed here; Blokes (men): facebook.com/getblokes, instagram.com/getblokes, tiktok.com/@getblokes, youtube channel UCyNEAbQ4Qo7J87fU8gCs-lA (all 8 confirmed in JSON-LD sameAs; see Credibility)
   facebook: https://www.facebook.com/JOIwomenswellness
   instagram: https://www.instagram.com/joiwomenswellness/
   youtube: https://www.youtube.com/channel/UC-UexQLpWPuk-5j09qCuulg
@@ -17,9 +17,9 @@ external:
   trustpilot: https://www.trustpilot.com/review/joiandblokes.com
 
 # Capture meta
-captured_at: 2026-06-01
+captured_at: 2026-06-04
 capture_method: firecrawl
-site_notes: "WordPress (custom theme `joiandblokes`, no WooCommerce/Elementor markers). Every page's markdown is prepended by ~60 lines of persistent cart/login/promo chrome ($0.00 line items) — strip it. Homepage is Cloudflare edge-cached (cf HIT); deep nav pages render full content only on the EXACT trailing-slash nav URL (a malformed/guessed path returns a real WordPress 404 'Not found' template). NY & NJ get different pricing via a geo modal. TRT cannot ship to AL/AR/CT/DE/GA/HI/LA/MN/MO/MS/NC/ND/OK/PA/RI/SC. Trustpilot widget embeds live review text (point-in-time). Operates dual brand social handles (joiwomenswellness / getblokes)."
+site_notes: "WordPress (custom theme `joiandblokes`, no WooCommerce/Elementor markers). Every page's markdown is prepended by ~60 lines of persistent cart/login/promo chrome ($0.00 line items) — strip it. Homepage is Cloudflare edge-cached (cf HIT); deep nav pages render full content only on the EXACT trailing-slash nav URL (a malformed/guessed path returns a real WordPress 404 'Not found' template). The catalog `/shop/men/` & `/shop/women/` 'All Products' pages are the per-SKU roster backbone — cards carry price + 'Best Seller'/'Lab Required' badges; this is where offerings.md is enumerated. Site exposes DUPLICATE category-aliased PDP URLs (TRT at both /shop/men/hormone-health/... and /shop/men/testosterone/...; women's HRT at both /shop/women/hormone-health/hrt/ and /shop/women/menopause-care/hrt/) — both resolve; nav uses the /hormone-health/ form. /v2/map is content-heavy (journal + landing pages like /trt-forbes); shop PDPs come from catalog cards + the mega-nav, not the map. NY & NJ get different pricing via a geo modal. TRT/testosterone cannot ship to AL/AR/CT/DE/GA/HI/LA/MN/MO/MS/NC/ND/OK/PA/RI/SC. Sitewide 'MEN'S HEALTH MONTH: 25% OFF + 65% OFF LABS, code MENSHEALTH' promo live both 2026-06-01 and 2026-06-04 (applied via code at checkout — card prices are list, not promo). Trustpilot widget embeds live review text (point-in-time). Operates dual brand social handles (joiwomenswellness / getblokes)."
 key_pages:
   about: /about/
   shop_men: /shop/men/
@@ -43,8 +43,11 @@ portfolio_shape: Multi-product
 business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
-# Visual identity
-logo_url: https://joiandblokes.com/wp-content/themes/joiandblokes/images/full-logo-joi-and-blokes-black.svg
+# Visual identity — Firecrawl branding is a hint to verify; logos measured by fc.py + eyes (2.5 module)
+logo_url: https://joiandblokes.com/wp-content/themes/joiandblokes/images/full-logo-joi-and-blokes-black.svg   # canonicalized to the wordmark (2.5)
+logos:                                # og omitted on TRUE absence — homepage declares no og:image
+  wordmark: { src: https://joiandblokes.com/wp-content/themes/joiandblokes/images/full-logo-joi-and-blokes-black.svg, w: 2281, h: 314 }   # hostable on-domain SVG "Joi + Blokes" wordmark, black
+  logomark: { src: "https://www.google.com/s2/favicons?domain=joiandblokes.com&sz=256", px: 192, transparent: true }   # the gray "+" cross mark; transparent confirmed on a magenta tile
 brand_colors: { primary: "#BACDFF", secondary: "#176F4F", text: "#363636", background: "#E5E5E5" }   # periwinkle is the CTA/accent hue over a near-grayscale light UI; green is a secondary
 fonts: [Basis Grotesque, Simula]     # Basis Grotesque (sans body/headings) + Simula (serif display)
 color_scheme: light
@@ -63,8 +66,8 @@ Multi-product across two audiences; therapies are monthly subscriptions, labs an
 - **Testosterone Replacement Therapy (Blokes):** testosterone cypionate + consults + quarterly labs, tiered by commitment — **$149/mo** (3-mo, $447 upfront) · **$129/mo** (6-mo, $774) · **$99/mo** (12-mo, $1,188); "Start now for $75." `[published]`
 - **Enclomiphene (Blokes):** oral, raises natural testosterone — **$99/mo**, lab required. `[published]`
 - **$1/mo hair + ED add-ons:** active TRT/Enclomiphene members can add oral sildenafil, tadalafil, finasteride, and minoxidil for **$1 each/mo** (state-restricted) — a headline differentiator vs. competitors' $20–$90/mo. `[published]`
-- **Compounded GLP-1 / GLP-1·GIP (weight loss):** compounded semaglutide **$199/mo** (first month $99) and compounded tirzepatide **$299/mo** (first month $149), billed quarterly, meds included; also Liraglutide **$299/mo** and **Zepbound®** program **$99/mo billed quarterly (plus the cost of meds)** `[partial]`. GLP-1s prescribed via partner clinicians and dispensed through U.S.-licensed pharmacies. `[published]`
-- **Hormone Replacement Therapy / BHRT (Joi):** customized hormone support — **from $59/mo**; plus Thyroid Care **$99/mo**. `[published]`
+- **Compounded GLP-1 / GLP-1·GIP (weight loss):** compounded semaglutide **$199/mo** (first month $99) and compounded tirzepatide **$299/mo** (first month $149) — billed quarterly, **medication included** `[published]`; also Liraglutide **$299/mo** `[published]` and the **Zepbound®** program **$99/mo billed quarterly (plus the cost of meds)** `[partial]`. Compounded GLP-1s prescribed via partner clinicians, dispensed through U.S.-licensed pharmacies, flagged not FDA-approved; brand GLP-1s (Ozempic/Wegovy/Zepbound/Mounjaro) may be insurance-eligible.
+- **Hormone Replacement Therapy / BHRT (Joi):** bioidentical estrogen/progesterone/testosterone, customized by delivery form — **$50/mo care fee (billed quarterly; all follow-up labs + clinician visits included), medications billed separately** per form (injection/cream/capsule/patch/suppository **$49–$89/mo**); catalog entry reads **from $59/mo** `[partial]`. Plus Thyroid Care **$99/mo** `[published]`.
 - **Longevity / peptides:** Sermorelin **$199/mo**, NAD+ **$150/mo**, VIP Peptide **$159/mo**, Rapamycin (Sirolimus) **$83/mo**, B12+MIC **$50/mo**, Glutathione, Low-Dose Naltrexone, Pain Cream. `[published]`
 - **Sexual health:** The Mood **from $119/mo**, Oxytocin nasal spray **$159/mo**, (Joi) Scream Cream, vFit® Gold+ device. `[published]`
 - **Supplements:** Levels (men) / Balance (women), Focus **$74/mo**, Sleep **$74/mo**, Smart Supplements **$149/mo**, GLP-1 Assist, Creatine **from $45/mo**, Gut Health, Thyroid Support, Hair Support. `[published]`
@@ -129,7 +132,7 @@ B2C, targeting symptom-driven adults dismissed by conventional primary care ("yo
 
 ## Credibility & proof
 
-- **Trustpilot (company-displayed widget, third-party data):** "Reviews 1,335 … 4.6" out of 5.0 — embedded live on product pages, linking to trustpilot.com/review/joiandblokes.com. Recorded verbatim; third-party-sourced but self-selected for display.
+- **Trustpilot (company-displayed widget, third-party data):** "Reviews 1,338 … 4.6" out of 5.0 (2026-06-04; was "1,335 … 4.6" on 2026-06-01) — embedded live on product pages, linking to trustpilot.com/review/joiandblokes.com. Recorded verbatim; third-party-sourced but self-selected for display.
 - **LegitScript certified:** footer carries a LegitScript "Verify Approval" seal (id 44312975) for joiandblokes.com.
 - **Press logos (self-displayed, unlinked):** Esquire, Forbes, Goop, Medium, Men's Health, Poosh, Vice, Vogue.
 - **Named advisors:** Dr. Melissa Loseke DO (Medical Director), Ben Bikman PhD (scientist/research advisor), Brooke Estes DnP FNP-C (lead nurse advisor), Dr. Jaclyn Tolentino MD, Paul Reynolds PhD, Dr. Clay Moss MD, Mohit Joshipura MD (telehealth), Jocelyn Freimuth (pharmacy).
@@ -147,8 +150,9 @@ Near-exact structural analog to the Teleprescribe venture's model: cash-pay DTC 
 
 ## Provenance
 
-- **Pages:** 8 captured via Firecrawl (firecrawl, basic proxy, maxAge:0, US geo) — homepage + about, shop/men, shop/women, TRT product, men's-labs, glp-1 (rich); shop/men/weight-loss returned thin (1,442 chars, mostly chrome — its offerings are covered by the catalog + glp-1 pages). Women's-labs not separately scraped (mirrors men's-labs). Enrichment also read the homepage `branding` payload, the full-page screenshot, and `rawHtml` JSON-LD + nav (`fc.py signals`).
-- **Verify:** all 8 sourceURLs matched; all body md5s unique (no §5.1 geo/cache contamination).
-- **Credits:** 9 (1 map + 1 homepage + 7 key pages) for this profile. NOTE: an earlier run wasted 7 credits on malformed URLs (a `"<url> <name>"` arg-splitting bug sent a literal space in the path → genuine WordPress 404s); those captures were discarded and re-scraped. True session spend: 16 credits.
-- **Structured layer:** JSON-LD Organization confirmed name "Joi + Blokes", logo (square jb-logo-schema.png — but on-domain SVG wordmark kept as `logo_url` per real-brand-mark rule), and `sameAs` socials (dual handles per platform). No `alternateName`/`legalName`; founders taken from about-page prose, not frontmatter.
-- **Couldn't get:** corporate/legal entity name, ownership/funding, headcount, the legacy "Blokes"→"Joi + Blokes" timeline (getblokes handle predates the combined brand — likely Blokes was the original company, unconfirmed). Per-state pricing variants (NY/NJ) not enumerated.
+- **Pages:** 10 captured via Firecrawl on 2026-06-04 (basic proxy, maxAge:0, US geo) — homepage (rich), shop/men + shop/women catalogs (rich, the per-SKU roster backbone + prominence read), mens-labs + womens-labs, and four flagship PDPs with `--images` (complete-hormone-panel, TRT, glp-1, women's HRT). Refresh of the 2026-06-01 capture (8 pages incl. /about); the about/positioning/strategic narrative carried forward from that run, all prices re-verified against today's catalogs. Enrichment also read the homepage `branding` payload, full-page screenshots, and `rawHtml` JSON-LD + nav (`fc.py signals`).
+- **Verify:** all 9 scrape sourceURLs matched; all 9 body md5s unique (no §5.1 geo/cache contamination). profile.md lint clean.
+- **Credits:** 10 this run (1 map + 9 scrapes); the logos/signals/hero reads are free over the captures. (2026-06-01 run: 9 + 7 wasted on a since-fixed arg-splitting bug.)
+- **Structured layer:** JSON-LD Organization confirmed name "Joi + Blokes" and `sameAs` (all 8 dual handles, incl. a 2nd YouTube channel `UCyNEAbQ4Qo7J87fU8gCs-lA`); its `logo` is the square schema PNG (`jb-logo-schema.png`, 512²) — on-domain SVG wordmark kept as `logo_url` per the real-brand-mark rule. No `alternateName`/`legalName`; founders from about-page prose, not frontmatter. Mega-nav recovered complete and validated vs the homepage screenshot.
+- **Run profile:** express module-add over a still-warm (3-day) capture — forced refresh + `+offerings` (per-SKU roster), `+telehealth` (cohort pack), `+logos` (2.5 module), and flagship **hero product images** (`captures/2026-06-04/images/`) for a design/rendering-reference consumer.
+- **Couldn't get:** corporate/legal entity name, ownership/funding, headcount, the legacy "Blokes"→"Joi + Blokes" timeline (getblokes handle predates the combined brand — likely Blokes was the original company, unconfirmed). Per-state pricing variants (NY/NJ) not enumerated. No clean isolated product render exists for the diagnostic-lab panels (candidates were podcast still / phone mockup / torso / results-laptop) — labs hero skipped on true absence.
