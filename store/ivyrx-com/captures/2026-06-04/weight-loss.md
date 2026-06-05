@@ -1,0 +1,1234 @@
+[Important Update Banner](https://www.ivyrx.com/weight-loss#)
+Close Announcement Banner
+
+[Home Page](https://www.ivyrx.com/)
+
+[Anti-Aging](https://www.ivyrx.com/weight-loss#) [Weight Loss](https://www.ivyrx.com/weight-loss) [Peptides](https://www.ivyrx.com/peptides) [Supplements](https://www.ivyrx.com/supplements)
+
+[login](https://patient.ivyrx.com/) login
+
+Login
+
+- EXPLORE
+
+- Weight loss
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### Weight loss
+
+
+
+
+
+
+
+OUR PRODUCTS
+
+[![All Ivy RX products visual](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/690b5ad4b47130a86a84d61f_9391a93a9b71587a7cac869b742dc15c_all-products-visual.avif)\\
+\\
+View all products](https://www.ivyrx.com/weight-loss)
+
+  - [![GLP-1 navigation image](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891fe384599888ae3c2e541_glp-finalnav.avif)\\
+    GLP-1 Injections](https://www.ivyrx.com/products/personalized-glp-1-injections)
+  - [![Microdose navigation image](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/691f46fe856a425cf8ecdd90_nav_microdose.avif)\\
+    GLP-1 Microdose](https://www.ivyrx.com/products/microdose-glp-1-injections)
+  - [![GLP Melts navigation image](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69a76517c26863b41ff43995_glp-melts-nav.avif)\\
+    GLP-1 Oral Melts](https://www.ivyrx.com/products/glp1-oral-melts)
+  - [![MIC+B12 navigation final](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891fe6387823a871ab97f45_micb12-final-nav.avif)\\
+    MIC + B12 Injection](https://www.ivyrx.com/products/lipotropic-mic-b12-injection)
+  - [![Decorative frame element](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/697cece5eb51a586e9e9e365_cc1189dc2f21158f643940101e570cb7_Frame%202085662993.avif)\\
+    Anti-Nausea Tablets](https://www.ivyrx.com/products/anti-nausea-tablets)
+  - [![GLP-1 navigation final](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891fef9877158453a82ee59_glp-1-finall-nav.avif)\\
+    GLP-1 boost](https://www.ivyrx.com/products/glp-1-boost)
+  - [![Ozempic product Ivy RX](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6792f5a1e8d3e81fe9d62b7e_ozempic_product_IVYRX.avif)\\
+    Ozempic®](https://www.ivyrx.com/products/ozempic)
+  - [![Mounjaro product Ivy RX](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6792f5a03641bd5af58b8086_mounjaro_product_IVYRX.avif)\\
+    Mounjaro®](https://www.ivyrx.com/products/mounjaro)
+  - [![Metformin navigation image](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891fdeb29a42084d46e5163_metformin-final-nav.avif)\\
+    Metformin](https://www.ivyrx.com/products/metformin)
+
+- Anti-aging
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### Anti-aging
+
+
+
+
+
+
+
+OUR PRODUCTS
+
+[![Decorative frame element](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/690b70d135632d985a2e3ceb_Frame%202085662992.avif)\\
+\\
+View all products](https://www.ivyrx.com/anti-aging)
+
+  - [![NAD+ navigation image](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891da70f2996c45c7e4e6d5_ivy-nav-final.avif)\\
+    NAD+ Injection](https://www.ivyrx.com/products/nad-injection)
+  - [![Decorative frame element](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891daeb86c64ec6dc049364_nad-nasal-nav-fina.avif)\\
+    NAD+ Nasal Spray](https://www.ivyrx.com/products/nad-nasal-spray)
+  - [![Glutathione navigation image](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891d9a7877158453a736a65_044b37e10e5665ad2649e895b4fd2271_glutathione-nav.avif)\\
+    Glutathione Injection](https://www.ivyrx.com/products/glutathione-injection)
+  - [![Gsh nasal Ivy RX](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6792f5a0e5aa326b08967397_gsh_nasal_IVYRX.avif)\\
+    Glutathione Nasal Spray](https://www.ivyrx.com/products/glutathione-nasal-spray)
+  - [![Decorative frame element](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891fda797d9bef93114ebc7_b12-final-nav.avif)\\
+    B12 Injection](https://www.ivyrx.com/products/vitamin-b12-injection)
+  - [![Decorative frame element](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891fdc63119380b128bdb37_serm-final-nav.avif)\\
+    Sermorelin](https://www.ivyrx.com/products/sermorelin-injection)
+  - [![Metformin navigation image](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891fdeb29a42084d46e5163_metformin-final-nav.avif)\\
+    Metformin](https://www.ivyrx.com/products/metformin)
+
+- Peptides
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### Peptide
+
+
+
+
+
+
+
+OUR PRODUCTS
+
+
+
+  - [![Sermorelin Ivy RX](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6792f5a1bc09ffcf5629de45_sermorelin_IVYRX.avif)\\
+    Sermorelin](https://www.ivyrx.com/products/sermorelin-injection-old)
+  - [![BPC-157 Mock Bottle Front (1)](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6792f5a0e8d3e81fe9d62ad7_BPC%20Mock%20Bottle%20Front%20(1).avif)\\
+    BPC 157](https://www.ivyrx.com/products/bpc-157)
+
+- Supplements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### Supplements
+
+
+
+
+
+
+
+OUR PRODUCTS
+
+[![Supplements navigation image](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/690b754fa07dac2a281b3f68_nav-supplements-main.avif)\\
+\\
+View all products](https://www.ivyrx.com/supplements)
+
+  - [![BPC-157 navigation final](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891feaddc87aff402721473_bpv157-final-nav.avif)\\
+    BPC 157](https://www.ivyrx.com/products/bpc-157)
+  - [![GLP-1 navigation final](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891fef9877158453a82ee59_glp-1-finall-nav.avif)\\
+    GLP-1 boost](https://www.ivyrx.com/products/glp-1-boost)
+  - [![Gut Peptide navigation final](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891ff1c5971ad5f407492b9_gut-peptide-final.avif)\\
+    Gut Peptide Complex](https://www.ivyrx.com/products/gut-peptide-complex)
+  - [![Methylene Blue navigation final](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6891ff3c911134dfc197897f_methylene-final-nav.avif)\\
+    Methylene Blue](https://www.ivyrx.com/products/methylene-blue)
+
+Lose weight with
+
+GLP-1 Injection
+
+[Shop now](https://app.ivyrx.com/start-online-visit/glp-1-ga)
+
+![Gradient](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/686d0e1321c8b0d9e64c7165_gradient.avif)
+
+- MEET IVY RX
+
+- [About us](https://www.ivyrx.com/about-us)
+- [How it works](https://www.ivyrx.com/how-it-works)
+- [Reviews](https://www.ivyrx.com/reviews)
+- [Journal](https://www.ivyrx.com/blog)
+- [Help center](https://support.ivyrx.com/)
+- [Contact us](https://www.ivyrx.com/contact)
+
+CONTACT
+
+866-464-8979
+
+hello@ivyrx.com
+
+111 NE 1st Street 8th Floor #8564 Miami, FL 33132
+
+[home](https://www.ivyrx.com/)
+
+[login](https://patient.ivyrx.com/) login
+
+Login
+
+4.5
+
+5000+ reviews
+
+# Longetivitymedication, personalized to you
+
+Weight loss
+
+![hero Text Icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/685d7cb5aa035a908bb1c930_hero-text-icon.svg)
+
+medication,
+
+# personalized to you
+
+# Weight loss
+
+![Title icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/688d52c91a0ed5d49ed6848c_title-icon.svg)
+
+# Longetivity
+
+![Longevity icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/688d547d96aa94525e05bbf9_longetivity-icon.svg)
+
+# Weight loss
+
+![Title icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/688d52c91a0ed5d49ed6848c_title-icon.svg)
+
+# Longetivity
+
+![Longevity icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/688d547d96aa94525e05bbf9_longetivity-icon.svg)
+
+# Weight loss
+
+![Title icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/688d52c91a0ed5d49ed6848c_title-icon.svg)
+
+# Longetivity
+
+![Longevity icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/688d547d96aa94525e05bbf9_longetivity-icon.svg)
+
+# Weight loss
+
+![Title icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/688d52c91a0ed5d49ed6848c_title-icon.svg)
+
+# Longetivity
+
+![Longevity icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/688d547d96aa94525e05bbf9_longetivity-icon.svg)
+
+# Weight loss
+
+![Title icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/688d52c91a0ed5d49ed6848c_title-icon.svg)
+
+# medication,
+
+# personalized to you
+
+# Longetivity
+
+![hero Text Icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/685d7cb5aa035a908bb1c930_hero-text-icon.svg)
+
+# medication, personalized to you
+
+This is more than just the beginning — it’s where your personalized care journey truly takes shape, tailored to your unique needs and goals.
+
+[Find my treatment\\
+![Navigation arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69834f5a448856047378fa96_Frame%202085663091.svg)](https://www.ivyrx.com/weight-loss#products)
+
+200,000+ patients
+
+Free and discreet delivery
+
+No insurance required
+
+Free consultation, fast approval
+
+## Lose weight with
+
+## Personalized GLP-1 Injections
+
+[Order Now](https://www.ivyrx.com/products/personalized-glp-1-injections) Order Now
+
+Lose weight
+
+![Semaglutide Injection](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/685452d08f8a5888c035ce5f_IVY_GLP1.avif)
+
+![](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/685452cd37381861d44996df_Background%20Green.avif)
+
+## Stay energized
+
+## NAD+ injections
+
+[Order Now](https://www.ivyrx.com/products/nad-injection-old) Order Now
+
+Feel better
+
+![Semaglutide Injection](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/685452d08688de6dd09186fc_IVY_NAD.avif)
+
+![](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/685452cfae6f30e584d1bd62_Background%20Violet.avif)
+
+![Ivy RX NAD+](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/685452cf92d991f006c83413_IVY_NAD-1.avif)
+
+[Order Now](https://www.ivyrx.com/weight-loss#) Order Now
+
+Anti-aging
+
+![Ivy RX GLP-1](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/685452ce70a71196701aba30_IVY_GLP1-1.avif)
+
+[Order Now](https://www.ivyrx.com/weight-loss) Order Now
+
+Weight loss
+
+![Ivy RX Testosterone](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/685452d09367344c1672f3dc_IVY_TESTOSTERONE.avif)
+
+[Order Now](https://www.ivyrx.com/peptides) Order Now
+
+Testosterones
+
+![Ivy RX Supplements](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/685452cee9f97dd07f63054a_IVY%20Supplements.avif)
+
+[Order Now](https://www.ivyrx.com/supplements) Order Now
+
+Supplement
+
+![Weight loss hero image](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68aa5bc6a543cfadd31cdf14_weight-loss-hero-image.avif)
+
+Lose Weight with GLP-1 injections
+
+[Feel better](https://app.ivyrx.com/start-online-visit/glp-1-md)
+
+![Weight loss header vial](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6a01a46fe5cef2f2733ab759_wl-header-vial.avif)
+
+Treatments
+
+## Don’t just live longer, live healthier
+
+[Order Now](https://www.ivyrx.com/treatments) Order Now
+
+All treatments
+
+![Button arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/697b7570df471cb2d85932da_btn-arrow.svg)
+
+![GLP-1 green background](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68aa5e75b497193ee030e2d7_glp-green-bg.avif)
+
+### GLP-1
+
+$175
+
+![GLP-1 slider image](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69d4b81e1ddc27a5aa7ff830_85c69da8f040e10a04fb206f7272a226_glp_slider.avif)
+
+[Order Now](https://app.ivyrx.com/start-online-visit/glp-1-new) Order Now
+
+Shop now
+
+![Navigation arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69834f5a448856047378fa96_Frame%202085663091.svg)
+
+[Order Now](https://www.ivyrx.com/products/personalized-glp-1-injections) Order Now
+
+Learn more
+
+![Button arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/697b7570df471cb2d85932da_btn-arrow.svg)
+
+Important safety information
+
+![GLP-1 green background](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68aa5e75b497193ee030e2d7_glp-green-bg.avif)
+
+### GLP-1  Microdose
+
+$155
+
+![GLP-1 slider image](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69d4b81e1ddc27a5aa7ff830_85c69da8f040e10a04fb206f7272a226_glp_slider.avif)
+
+[Order Now](https://app.ivyrx.com/start-online-visit/glp-1-md) Order Now
+
+Shop now
+
+![Navigation arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69834f5a448856047378fa96_Frame%202085663091.svg)
+
+[Order Now](https://www.ivyrx.com/products/microdose-glp-1-injections) Order Now
+
+Learn more
+
+![Button arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/697b7570df471cb2d85932da_btn-arrow.svg)
+
+Important safety information
+
+![GLP-1 green background](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68aa5e75b497193ee030e2d7_glp-green-bg.avif)
+
+### MIC + B12 Injection
+
+$179
+
+![MIC+B12 card](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68aa5f66883db00975795bf1_card-mic-b12.avif)
+
+[Order Now](https://app.ivyrx.com/start-online-visit/b12) Order Now
+
+Shop now
+
+![Navigation arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69834f5a448856047378fa96_Frame%202085663091.svg)
+
+[Order Now](https://www.ivyrx.com/products/lipotropic-mic-b12-injection) Order Now
+
+Learn more
+
+![Button arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/697b7570df471cb2d85932da_btn-arrow.svg)
+
+Important safety information
+
+![GLP-1 green background](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68aa5e75b497193ee030e2d7_glp-green-bg.avif)
+
+### Metformin
+
+$90
+
+![Metformin visual card](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68aa5fce44189858c8266f3f_metformin-visual-card.avif)
+
+[Order Now](https://app.ivyrx.com/start-online-visit/metformin) Order Now
+
+Shop now
+
+![Navigation arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69834f5a448856047378fa96_Frame%202085663091.svg)
+
+[Order Now](https://www.ivyrx.com/products/metformin) Order Now
+
+Learn more
+
+![Button arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/697b7570df471cb2d85932da_btn-arrow.svg)
+
+Important safety information
+
+![GLP-1 green background](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68aa5e75b497193ee030e2d7_glp-green-bg.avif)
+
+### Anti-Nausea
+
+$19.99
+
+![Anti-nausea medication product](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6980ab3c077bfbb5f42937d4_f784dbc867419b052b995fbfd37d8d6a_anti_nausea.avif)
+
+[Order Now](https://app.ivyrx.com/start-online-visit/anti-nausea) Order Now
+
+Shop now
+
+![Navigation arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69834f5a448856047378fa96_Frame%202085663091.svg)
+
+[Order Now](https://www.ivyrx.com/products/anti-nausea-tablets) Order Now
+
+Learn more
+
+![Button arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/697b7570df471cb2d85932da_btn-arrow.svg)
+
+Important safety information
+
+![Purple background](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6860106923334a509d10f46a_purple-bg.avif)
+
+### GLP-1 Boost
+
+$72
+
+Supplement
+
+![GLP-1 Boost visual](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68aa606845a40c4baf27df8f_glp-boost-visual.avif)
+
+[Order Now](https://app.ivyrx.com/start-online-visit/glp1-boost) Order Now
+
+Shop now
+
+![Navigation arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69834f5a448856047378fa96_Frame%202085663091.svg)
+
+[Order Now](https://www.ivyrx.com/products/glp-1-boost) Order Now
+
+Learn more
+
+![Button arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/697b7570df471cb2d85932da_btn-arrow.svg)
+
+Important safety information
+
+[Previous slide](https://www.ivyrx.com/weight-loss#) [Next slide](https://www.ivyrx.com/weight-loss#)
+
+## **Compounded GLP-1s (Tirzepatide & Semaglutide)**
+
+_\*Compounded medications may be prescribed by physicians, but have not been FDA-regulated for safety, effectiveness, or quality. FDA-approved medicines containing GLPs are available._
+
+### **WARNING**
+
+**Please contact your doctor ASAP and seek in-person care immediately if a side effect becomes problematic or you experience:**
+
+- Severe nausea and/or vomiting resulting in dehydration—it is important to stay well hydrated and drink plenty of fluids while on this medication.
+
+Kidney problems/kidney failure - vomiting, nausea, diarrhea can cause dehydration and kidney issues and make kidney problems worse in individuals who have pre-existing kidney conditions; may sometimes lead to the need for hemodialysis
+
+‍
+- Thyroid C-Cell Tumor: Trouble swallowing, hoarseness, a lump or swelling in your neck, or shortness of breath (see black box warning below)
+
+‍
+- Pancreatitis: Severe pain in your abdomen or back that will not go away
+
+‍
+- Acute gallbladder disease - Pain in the middle or right upper stomach, fever, white parts of your eyes turn yellow or skin turns yellow, nausea/vomiting. If gallstones or inflammation of the gallbladder is suspected further studies are needed.
+
+‍
+- Hepatitis/Elevated liver enzymes/Jaundice
+
+‍
+- Diabetic retinopathy problems: Changes in vision in those with type II diabetes, particularly vision problems may worsen in those with a history of diabetic retinopathy
+
+‍
+- Severe gastrointestinal disease - may cause gastrointestinal disease; do not use if you have a history of severe gastrointestinal disease
+
+‍
+- Signs of low blood sugar (for example, dizziness, weakness, shakiness, jitteriness, headache, anxiety/mood changes, rapid heartbeat, confusion, slurred speech, sweating, or lightheadedness). While this is rare with GLP-1s, if it occurs, please seek in-person care immediately. If you have these symptoms, try having liquid or food containing sugar (around 15-20 grams) —drinking juice, having regular soda, or eating some hard candies right away, as this will help raise your blood sugar quickly. If taken with insulin or an insulin secretagogue (i.e. Sulfonylurea such as Glipizide, Glimepiride, and Glyburide) it is best to talk to your healthcare provider about possibly lowering the dose of these medications to lower the risk of hypoglycemia.
+
+‍
+- Increasing heart rate
+
+‍
+- Worsening depression, behavior changes, or suicidality
+
+## **‍**
+
+**Never share GLP-1s with other people**
+
+### **Drug Interactions**
+
+As with other medications, compounded **GLP-1s** can interact with alcohol and certain prescription and non-prescription medications and herbal products. The risk of hypoglycemia is increased when combined with insulin or insulin secretagogues such as sulfonylureas. Compounded GLP-1s delay gastric emptying and may impact the absorption of oral medications. If you are on papillary hormone medication, prior to starting a compounded GLP-1, please review the timing of taking your papillary hormone medication with the doctor who prescribes it as it may need to be adjusted. The drug levels of medications with narrow therapeutic windows (ie Warfarin) should be monitored closely while on compounded GLP-1s.
+
+Please consult the pharmaceutical packaging for a full list of side effects, warnings, interactions and additional information.
+
+To report suspected adverse reactions to compounded GLP-1s, contact the FDA at 1-800-FDA-1088 or [www.fda.gov/medwatch](http://www.fda.gov/medwatch).
+
+In case of emergencies, please call 911 or go to the nearest emergency room.
+
+Note: The above statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
+
+### **BLACK BOX WARNING**
+
+GLP-1s are contraindicated in individuals with a history of medullary thyroid carcinoma, a family history of such, or in patients with multiple endocrine neoplasia syndrome type 2. Do not take them if you have ever had thyroid cancer. In studies with rodents, GLP-1s caused thyroid tumors, including thyroid cancer; it is not known if they will cause thyroid tumors or cancer in humans. Please notify your doctor ASAP if you develop trouble swallowing, hoarseness, a lump or swelling in your neck, or shortness of breath.
+
+If you experience a medical emergency, call 911 or go to the nearest emergency room.
+
+Tell your healthcare provider about your medical history prior to taking a GLP-1.
+
+Avoid alcohol while taking this medication. If you’re taking diabetes medications, please discuss this with your prescribing doctor before starting a GLP-1, as your diabetes medications may need to be adjusted as you lose weight.
+
+Use adequate contraception while taking this medication. Do not take this medication if pregnant, trying to get pregnant or breastfeeding. If you plan to become pregnant, this medication needs to be stopped at least 2 months before trying. This medication may cause fetal harm.
+
+Notify your doctor if you have kidney, liver, or pancreas problems.
+
+Stop using GLP-1 and call your healthcare provider immediately if you have severe stomach or abdomen pain that will not go away, with or without vomiting.
+
+Stop using GLP-1 and get medical help right away if you have any symptoms of a serious allergic reaction, including swelling of your face, lips, tongue, or throat; problems breathing or swallowing; severe rash or itching; fainting or feeling dizzy; or very rapid heartbeat.
+
+Serious hypersensitivity reactions (e.g., anaphylaxis and angioedema) have been reported. Discontinue GLP-1 if suspected and promptly seek medical advice.
+
+![Close](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6867a1405efc1b6fb2994da3_close.png)
+
+## **Lipotropic (MIC) & B12 Injection: Important Safety Information**
+
+## **1\. Introduction**
+
+- **What Are Lipotropic (MIC) Injections?** Lipotropic injections often contain a combination of **Methionine, Inositol, and Choline (MIC)**. These components may support liver function, metabolism, and fat processing when used alongside a proper diet and exercise regimen.
+
+- **B12 Supplementation** Vitamin B12 (commonly cyanocobalamin or methylcobalamin) is frequently added to lipotropic injections to support energy metabolism and red blood cell formation.
+
+- **Regulatory Status** Certain formulations of MIC and B12 injections **may not be evaluated or approved by the U.S. Food and Drug Administration (FDA)** for weight loss or other off-label uses. If you prefer only FDA-approved treatments, please consult your healthcare provider about alternatives.
+
+
+## **2\. Potential Uses & Benefits**
+
+- **Weight-Management Support** MIC injections are sometimes used as an adjunct to lifestyle interventions (diet and exercise) for individuals seeking to support healthy metabolism.
+- **Nutritional Support** B12 supplementation may help address or prevent deficiency, supporting energy levels and proper red blood cell production.
+- **Limitations** This product is **not intended to diagnose, treat, cure, or prevent any disease** and is typically part of a broader health or weight-management plan. Efficacy for weight loss varies among individuals and has limited clinical trial data.
+
+## **3\. Contraindications**
+
+**You should not receive MIC+B12 injections if you:**
+
+- Have a known allergy or hypersensitivity to any of the ingredients (e.g., methionine, inositol, choline, vitamin B12) or their preservatives.
+- Are pregnant, trying to conceive, or breastfeeding, unless your healthcare provider has deemed it safe.
+- Have severe or unstable medical conditions (e.g., advanced liver or kidney disease) without consulting a qualified healthcare professional.
+
+## **4\. Warnings & Precautions**
+
+1. **Not FDA-Approved for Weight Loss**
+   - While sometimes used in weight-management protocols, lipotropic injections have not been formally evaluated or approved by the FDA for weight loss.
+2. ‍
+3. **Consult Your Healthcare Provider**
+   - Discuss your full medical history, including any chronic conditions, allergies, or autoimmune disorders.
+   - Inform your provider about all medications, supplements, and herbs you currently take, as these can interact with MIC or B12.
+4. ‍
+5. **Pre-Existing Conditions**
+   - Use caution if you have a history of cardiovascular disease, diabetes, or hormone-related conditions.
+   - Lab monitoring (e.g., liver function, B12 levels) may be recommended depending on your clinical situation.
+6. ‍
+7. **Pediatric or Geriatric Use**
+   - Safety and efficacy in children or the elderly have not been fully established for weight-management or off-label indications.
+   - Use only under professional guidance in these populations.
+
+## **5\. Potential Side Effects**
+
+**While many individuals tolerate MIC+B12 injections well, side effects can occur. Contact your healthcare provider if any of the following become severe or persist:**
+
+1. **Injection Site Reactions**
+   - Redness, swelling, tenderness, or bruising at the injection site.
+   - If signs of infection (e.g., pus, warmth, significant redness) develop, seek medical attention.
+2. ‍
+3. **Gastrointestinal Discomfort**
+   - Nausea, upset stomach, or mild diarrhea.
+   - Severe or persistent GI symptoms should be evaluated by a healthcare professional.
+4. ‍
+5. **Allergic Reactions**
+   - Rash, itching, hives, swelling of the face or throat, difficulty breathing (possible anaphylaxis).
+   - Discontinue use and seek immediate medical help if you suspect a serious allergic reaction.
+6. ‍
+7. **Headache, Dizziness, or Fatigue**
+   - Some individuals may experience mild headaches, dizziness, or fatigue following the injection.
+   - Stop use and consult your provider if these symptoms are severe or prolonged.
+8. ‍
+9. **Unusual Urine Odor**
+   - Methionine can sometimes cause a distinct odor in urine; generally not harmful but discuss with your provider if concerning.
+
+## **6\. Drug Interactions**
+
+- **Other Medications and Supplements**
+  - Lipotropic agents and high-dose B12 may interact with certain prescription drugs (e.g., levodopa, methotrexate) or other supplements.
+  - Always inform your healthcare provider of all medications, supplements, or herbal products you take.
+
+## **7\. Administration & Dosage**
+
+1. **Administration Method**
+   - Injections are typically administered intramuscularly (IM) or subcutaneously (SQ).
+   - A qualified healthcare professional or a person trained in proper injection technique should administer.
+2. ‍
+3. **Dosage & Frequency**
+   - Dosage and frequency can vary widely, depending on individual health status and goals.
+   - Follow your provider’s specific instructions and do **not** exceed the recommended dose without medical guidance.
+4. ‍
+5. **Monitoring**
+   - Your provider may recommend periodic blood work (e.g., vitamin B12 levels, liver function tests) to assess effectiveness and detect potential issues.
+
+## **8\. Storage & Handling**
+
+- **Proper Storage**
+  - Refrigeration may be required for certain lipotropic formulations (check label or pharmacy instructions).
+  - Protect from direct sunlight or extreme temperatures.
+- **Sterility**
+  - Use sterile, unexpired products. Do not reuse needles or syringes.
+  - Dispose of injection materials in approved sharps containers.
+
+## **9\. Adverse Event Reporting**
+
+- **Severe Reactions**
+  - If you experience any severe or life-threatening symptoms, discontinue use and seek emergency medical care.
+- **FDA Reporting**
+  - You or your healthcare provider can report suspected adverse reactions to the FDA’s MedWatch Program at **1-800-FDA-1088** or online at [**www.fda.gov/medwatch**](http://www.fda.gov/medwatch).
+
+## **10\. Disclaimer**
+
+- **Not Evaluated by the FDA**
+  - These statements have not been evaluated by the FDA, and MIC+B12 injections are not approved to diagnose, treat, cure, or prevent any disease beyond recognized indications.
+- **Consult a Professional**
+  - This information is intended for educational purposes only and does not replace professional medical advice.
+- **Individual Variation**
+  - Responses to lipotropic injections vary; results are not guaranteed. Always follow healthcare professional guidance regarding dosage, follow-ups, and any complementary dietary or lifestyle adjustments.
+
+### **Questions or Concerns?**
+
+**If you have any questions about Lipotropic (MIC) and B12 injections, including their potential benefits, side effects, or dosage, please consult your qualified healthcare provider.**
+
+## ‍
+
+![Close](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6867a1405efc1b6fb2994da3_close.png)
+
+## **Metformin (Off-Label Use for Anti-Aging & Weight Loss): Important Safety Information**
+
+## **1\. Introduction**
+
+- **FDA-Approved Use** Metformin is an oral medication primarily approved by the U.S. Food and Drug Administration (FDA) for the management of type 2 diabetes mellitus. It helps improve blood glucose control by decreasing glucose production in the liver and increasing insulin sensitivity.
+- **Off-Label Use** Metformin has garnered interest as a potential agent for **anti-aging** and **weight management**, but it is **not FDA-approved** for these purposes. Efficacy and safety data for these off-label uses are still under investigation in clinical and observational studies.
+
+## **2\. Potential Benefits & Limitations**
+
+- **Possible Benefits (Off-Label)**
+  - _Anti-Aging:_ Some researchers hypothesize metformin may have protective effects on metabolic and cellular processes related to aging.
+  - _Weight Management:_ Metformin can help reduce appetite or modestly aid weight reduction in certain individuals, especially those with insulin resistance.
+- **Limitations**
+  - There is **no guarantee** of anti-aging or weight-loss results, as evidence is not conclusive for these off-label indications.
+  - Metformin **does not** replace lifestyle interventions such as a healthy diet, regular exercise, and balanced sleep.
+  - This product is **not intended to diagnose, treat, cure, or prevent any disease** in the context of anti-aging.
+
+## **3\. Contraindications**
+
+**You should not take metformin if you:**
+
+- Have a severe renal impairment or significantly reduced kidney function (e.g., eGFR below certain thresholds—consult your healthcare provider for details).
+- Have a known hypersensitivity to metformin or its inactive ingredients.
+- Have acute or chronic metabolic acidosis (including diabetic ketoacidosis).
+- Are undergoing imaging studies with iodinated contrast (your provider may advise temporarily stopping metformin around the time of the procedure to reduce risk of kidney issues).
+- Have any condition associated with hypoxemia or significantly compromised circulation (e.g., heart failure or recent myocardial infarction), which can increase the risk of lactic acidosis.
+
+## **4\. Black Box Warning: Lactic Acidosis**
+
+- **Serious Risk** Metformin can cause lactic acidosis (a dangerous build-up of lactic acid in the blood). Although rare, it can be fatal.
+- **Risk Factors**
+  - Poorly functioning kidneys.
+  - Excessive alcohol intake.
+  - Severe dehydration or infections.
+  - Use of certain medications (e.g., carbonic anhydrase inhibitors) or conditions reducing tissue perfusion.
+- **Symptoms**
+  - Rapid breathing, muscle pain, abdominal discomfort, unusual fatigue, dizziness, or feeling cold.
+  - Seek **immediate medical attention** if you suspect lactic acidosis.
+
+## **5\. Warnings & Precautions**
+
+1. **Off-Label Status**
+   - Metformin’s benefits for anti-aging or weight loss are not confirmed by large-scale randomized trials. Use under medical supervision if considering for off-label purposes.
+2. **Renal & Liver Function**
+   - Periodic kidney function checks (e.g., eGFR) are essential.
+   - Caution in patients with hepatic (liver) impairment, as it may increase the risk of lactic acidosis.
+3. **Vitamin B12 Deficiency**
+   - Long-term metformin use may reduce vitamin B12 absorption. Your provider may recommend periodic B12 monitoring and supplementation if needed.
+4. **Hypoglycemia Risk (Low Blood Sugar)**
+   - While metformin alone rarely causes hypoglycemia, the risk may increase if you combine metformin with other anti-diabetic agents (e.g., insulin, sulfonylureas).
+5. **Pregnancy & Breastfeeding**
+   - Safety in pregnant or breastfeeding individuals for anti-aging or weight-loss purposes is not established. Discuss with a qualified healthcare professional before use.
+
+## **6\. Common Side Effects**
+
+**You may experience mild to moderate side effects when starting or adjusting metformin dosage. Contact your healthcare provider if symptoms become severe or persist.**
+
+1. **Gastrointestinal (GI) Distress**
+   - Nausea, diarrhea, abdominal cramping, bloating, or gas.
+   - Taking metformin with meals can often help reduce GI side effects.
+2. **Metallic Taste**
+   - A harmless yet noticeable metallic or bitter taste in the mouth.
+3. **Weakness or Fatigue**
+   - May occur initially; consult your provider if persistent or severe.
+4. **Vitamin B12 Deficiency**
+   - Can manifest as numbness, tingling in extremities, or fatigue over long-term use.
+
+## **7\. Drug Interactions**
+
+- **Other Medications**
+  - Some drugs (e.g., diuretics, corticosteroids, antihypertensives, carbonic anhydrase inhibitors, etc.) can affect metformin’s safety and effectiveness.
+  - Always inform your healthcare provider of all prescription, over-the-counter medications, vitamins, and herbal supplements you take.
+- **Alcohol**
+  - Excessive alcohol consumption increases the risk of lactic acidosis and should be avoided or limited while on metformin.
+
+## **8\. Administration & Dosage**
+
+1. **Prescribed Dosage**
+   - Doses vary based on clinical factors such as body weight, kidney function, and potential diabetic risk.
+   - Do not exceed the recommended dose without medical advice.
+2. **Timing**
+   - Usually taken with meals to reduce GI discomfort.
+   - Extended-release forms (XR) may be taken once daily, often with the evening meal.
+3. **Monitoring**
+   - Your healthcare provider may recommend periodic blood tests to monitor kidney function, vitamin B12 levels, and overall metabolic health.
+
+## **9\. Storage & Handling**
+
+- **Storage**
+  - Store at room temperature away from moisture and direct sunlight.
+  - Keep out of reach of children and pets.
+- **Integrity**
+  - Check expiration dates. Do not use expired metformin.
+  - Store tablets in their original packaging whenever possible.
+
+## **10\. Adverse Event Reporting**
+
+- **Severe Reactions**
+  - Stop taking metformin and seek immediate medical attention if you experience symptoms of lactic acidosis or a severe allergic reaction (e.g., hives, swelling, difficulty breathing).
+- **FDA Reporting**
+  - Patients or healthcare providers can report suspected adverse reactions to the FDA’s MedWatch Program at **1-800-FDA-1088** or online at [**www.fda.gov/medwatch**](http://www.fda.gov/medwatch).
+
+## **11\. Disclaimer**
+
+- **Off-Label Use**
+  - Metformin’s use for anti-aging or weight-loss support is **not FDA-approved**, and scientific consensus on these off-label benefits is still evolving.
+- **Not a Replacement**
+  - Metformin is **not** a replacement for a healthy diet, regular exercise, and routine health monitoring.
+- **Consult a Professional**
+  - This information is for educational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.
+
+### **Questions or Concerns?**
+
+**If you have any questions about metformin’s off-label use for anti-aging or weight loss, including potential benefits, side effects, or dosage, please consult a qualified healthcare professional.**
+
+## ‍
+
+![Close](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6867a1405efc1b6fb2994da3_close.png)
+
+## **GLP-1 Boost: Important Safety Information**
+
+## **1\. Introduction**
+
+- **What is GLP-1 Boost?** GLP-1 Boost is a dietary supplement designed to support healthy metabolism, inspired by mechanisms of glucagon-like peptide-1 (GLP-1). It is formulated with a proprietary blend of **hops extract, beetroot powder, nicotinamide mononucleotide (NMN), and berberine**, encapsulated in a vegetable capsule (HPMC).
+
+- **Why GLP-1?** GLP-1 is a hormone known for its glucose-dependent insulin secretion, regulation of gastric emptying, and appetite modulation. It is also studied for its possible **anti-inflammatory**, **cardio-** and **neuroprotective** effects, as well as reduced apoptosis and potential support for learning and memory.
+
+- **Regulatory Status** GLP-1 Boost is **not** an FDA-approved product. If you require an FDA-approved medication, such as prescription GLP-1 receptor agonists (e.g., semaglutide, tirzepatide), please consult your healthcare provider for alternatives.
+
+
+## **2\. Potential Benefits & Ingredients**
+
+1. **Hops Extract**
+   - Known for its **antioxidant (polyphenols)**, **anti-inflammatory**, and **antimicrobial** properties.
+   - May have positive impacts on digestion and relaxation/sleep.
+2. ‍
+3. **Beetroot Powder**
+   - Rich in **betalains (betanin)** and **nitrates**, which can help support antioxidant pathways and potentially reduce LDL cholesterol.
+   - May contribute to improved exercise capacity and reduced muscle soreness.
+4. ‍
+5. **Nicotinamide Mononucleotide (NMN)**
+   - A precursor to NAD+, essential for cellular energy and repair processes.
+   - Often discussed in the context of healthy aging, cellular metabolism, and pro-survival mechanisms.
+6. ‍
+7. **Berberine**
+   - A plant alkaloid widely used in Eastern medicine for digestive disorders and skin conditions.
+   - Studies suggest it may help regulate glucose and lipid metabolism and may have **hypoglycemic** (blood sugar–lowering) properties.
+
+### **Note on Research**
+
+- While some **in vitro** and **animal** studies (and small human trials for berberine) show promise for these individual ingredients, **robust clinical data** in humans on this exact combination (GLP-1 Boost) is currently limited.
+- The blend is formulated to **mimic or support** processes linked to GLP-1 receptor agonists; however, it is **not** a substitute for prescribed medications.
+
+## **3\. Who Should Avoid or Use Caution**
+
+**You should not take GLP-1 Boost if you:**
+
+- Are **pregnant, trying to become pregnant, or breastfeeding**, unless specifically advised by a qualified healthcare professional.
+- Have a known **allergy** or **hypersensitivity** to any of the listed ingredients (hops, beetroot, NMN, berberine) or the capsule constituents.
+- Have **severe or unstable medical conditions** (e.g., advanced liver disease, kidney disease, or heart failure) without close medical supervision.
+
+**Consult your healthcare provider before starting GLP-1 Boost if you:**
+
+- Have **type 1 diabetes**, uncontrolled type 2 diabetes, or require insulin therapy.
+- Are on medications for **blood sugar control** (e.g., sulfonylureas, metformin) or other supplements that may interact with these ingredients.
+- Have a history of severe **gastrointestinal disorders** or any condition affecting nutrient absorption.
+- Have underlying conditions involving **blood pressure**, as beetroot nitrates may influence nitric oxide pathways.
+
+## **4\. Possible Side Effects**
+
+**Although many individuals may tolerate GLP-1 Boost without incident, you could experience:**
+
+1. **Gastrointestinal Distress**
+   - Mild bloating, gas, or changes in bowel habits.
+   - If persistent or severe, consult a healthcare professional.
+2. ‍
+3. **Allergic Reactions**
+   - Itching, hives, swelling of the lips/tongue/face, or difficulty breathing (possible anaphylaxis).
+   - Discontinue immediately and seek medical attention if you suspect an allergic reaction.
+4. ‍
+5. **Headache or Dizziness**
+   - May occur if you are sensitive to changes in blood sugar or blood pressure.
+   - If pronounced, discontinue and consult a qualified provider.
+6. ‍
+7. **Blood Sugar Fluctuations**
+   - Possible for those who are on other hypoglycemic agents or have impaired glucose tolerance.
+   - Monitor blood sugar levels as advised by your physician.
+8. ‍
+9. **Low Blood Pressure**
+   - Especially if combined with other blood pressure–lowering agents or if you are prone to hypotension.
+
+## **5\. Drug Interactions**
+
+- **Medications for Diabetes**
+  - Berberine and NMN may influence glucose metabolism and insulin sensitivity; combining them with anti-diabetic medications may increase the risk of **hypoglycemia**.
+- **Blood Pressure Medications**
+  - Beetroot (and its nitric oxide effects) could influence blood pressure, requiring careful monitoring with antihypertensives.
+- **Other Supplements or Herbs**
+  - Hops or berberine might potentiate or reduce the efficacy of other herbal therapies or supplements.
+- **Always Inform Your Healthcare Provider**
+  - Disclose all prescription drugs, over-the-counter medications, vitamins, and herbal products you are taking before starting GLP-1 Boost.
+
+## **6\. Usage & Dosing**
+
+- **Recommended Dosage**
+  - Follow instructions provided on the label or as directed by your healthcare professional.
+  - Do **not** exceed the recommended serving size without professional guidance.
+- **Timing**
+  - Some components may be better absorbed with meals. Check with a healthcare professional for best timing.
+- **Storage**
+  - Store in a cool, dry place away from direct sunlight. Keep out of reach of children.
+
+## **7\. Additional Considerations**
+
+- **Not a Substitute for Prescription Medications**
+  - GLP-1 Boost is a **dietary supplement**, not a prescription GLP-1 receptor agonist (e.g., semaglutide, tirzepatide). It should not replace medications prescribed for metabolic disorders or diabetes.
+- **Lifestyle Factors**
+  - For optimal results, combine this supplement with a balanced diet, regular exercise, proper hydration, and adequate rest.
+- **Individual Results May Vary**
+  - Response to dietary supplements can differ significantly among individuals based on genetics, health status, and lifestyle factors.
+
+## **8\. Disclaimer**
+
+- **Not Evaluated by the FDA**
+  - These statements have **not** been evaluated by the U.S. Food and Drug Administration. This product is **not** intended to diagnose, treat, cure, or prevent any disease.
+- **Consult a Professional**
+  - This information is provided for educational purposes only and does not replace professional medical advice.
+- **No Guaranteed Outcomes**
+  - While some evidence supports the individual ingredients, results are not guaranteed, and research is still evolving.
+
+## **9\. Reporting Adverse Events**
+
+- **Seek Medical Care**
+  - If you experience severe side effects or adverse events (e.g., difficulty breathing, severe allergic reactions, acute hypoglycemia), discontinue use and seek immediate medical attention.
+- **FDA MedWatch**
+  - You or your healthcare provider can report suspected adverse reactions to the FDA’s MedWatch Program by calling **1-800-FDA-1088** or visiting [**www.fda.gov/medwatch**](http://www.fda.gov/medwatch).
+
+### **Questions or Concerns?**
+
+**If you have any questions regarding GLP-1 Boost—whether about potential benefits, side effects, or interactions—please consult a qualified healthcare professional.**
+
+## ‍
+
+![Close](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6867a1405efc1b6fb2994da3_close.png)
+
+## **Ondansetron**
+
+**_Ondansetron is an FDA-approved prescription medication used to prevent and treat nausea and vomiting. It may be prescribed for off-label uses at a provider’s discretion._**
+
+## **WARNING**
+
+**Please contact your doctor ASAP and seek in-person care immediately if a side effect becomes problematic or you experience:**
+
+- **Heart rhythm problems (QT prolongation):** Irregular heartbeat, fast heartbeat, dizziness, fainting, or shortness of breath
+- **Serotonin syndrome:** Agitation, confusion, rapid heart rate, fever, sweating, muscle stiffness, tremor, or diarrhea—especially if taken with antidepressants (SSRIs, SNRIs), MAOIs, or other serotonergic medications
+- **Severe allergic reactions:** Swelling of the face, lips, tongue, or throat; difficulty breathing or swallowing; severe rash, hives, or itching
+- **Severe constipation or bowel obstruction:** Persistent abdominal pain, bloating, or inability to pass stool or gas
+- **Liver Problems:** Yellowing of the skin or the whites of the eyes (jaundice), dark urine, or pain in the upper right abdomen.
+- **Severe headache or vision changes**
+- **Chest pain or pressure**
+
+## **Drug Interactions**
+
+**As with other medications, ondansetron can interact with alcohol and certain prescription and non-prescription medications and herbal products.**
+
+- **Medications that affect heart rhythm:** Increased risk of QT prolongation when combined with antiarrhythmics, certain antibiotics (e.g., macrolides), or antipsychotics
+- **Serotonergic medications:** Increased risk of serotonin syndrome when combined with SSRIs, SNRIs, MAOIs, triptans, or certain supplements
+- **Apomorphine:** Concomitant use is contraindicated due to risk of profound hypotension and loss of consciousness
+- **Electrolyte-altering medications:** Low potassium or magnesium may increase the risk of heart rhythm disturbances
+- **CYP3A4 Inducers:** Medications like phenytoin, carbamazepine, and rifampin may reduce the levels of ondansetron in your blood, making it less effective.
+
+**Please consult the pharmaceutical packaging for a full list of side effects, warnings, interactions, and additional information.**
+
+**To report suspected adverse reactions to ondansetron, contact the FDA at 1-800-FDA-1088 or** [**www.fda.gov/medwatch**](http://www.fda.gov/medwatch) **.**
+
+**In case of emergencies, please call 911 or go to the nearest emergency room.**
+
+**Note: The above statements have not been evaluated by the Food and Drug Administration for off-label use. This product is not intended to diagnose, treat, cure, or prevent any disease.**
+
+## **IMPORTANT SAFETY INFORMATION**
+
+**Tell your healthcare provider about your medical history prior to taking ondansetron, especially if you have:**
+
+- A history of heart rhythm problems (QT prolongation, arrhythmias)
+- Low potassium or magnesium levels
+- Liver disease
+- A history of serotonin syndrome
+- Known allergies to ondansetron or similar medications
+- Are pregnant, planning to become pregnant, or breastfeeding.
+
+**Use caution when consuming alcohol, as it may worsen side effects such as dizziness or drowsiness.**
+
+**Never share ondansetron with other people.**
+
+**Stop using ondansetron and get medical help right away if you are experiencing heart rhythm abnormalities or symptoms of a serious allergic reaction including swelling of your face, lips, tongue, or throat; problems breathing or swallowing; severe rash or itching; or fainting.**
+
+**If you experience a medical emergency, call 911 or go to the nearest emergency room.**
+
+‍
+
+![Close](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6867a1405efc1b6fb2994da3_close.png)
+
+How it works
+
+## 3 simple steps
+
+![step](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6755c59b6b2f0e11a110a96f_Step.avif)
+
+### 1\. Questionnaire
+
+Answer a few questions about your symptoms and health history —100% online.
+
+![step](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6755c59b01bc54196e14e1a7_Step-1.avif)
+
+### 2\. Prescription
+
+A licensed medical provider will recommend the right treatment for you.
+
+![step](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6755c59bba9317ab3b941716_Step-2.avif)
+
+### 3\. Delivery
+
+If prescribed, your medication will be shipped discreetly from an FDA-registered pharmacy.
+
+## How Ivy Rx works
+
+![step](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/685941e4a8264628c72b582b_step-1.svg)
+
+Step 1
+
+Free quiz
+
+Answer some questions about your health history, lifestyle, and goals.
+
+![Tep Badge](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68595600b3c32d4b5ab18a7d_tep-badge.svg)![How it works - Weight Loss](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6a01164942fe49cfaaf2047c_hw-weight-loss.avif)
+
+Step 2
+
+Provider evaluation
+
+A medical professional will review your intake and determine what’s right for you.
+
+![Product feature icons](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68d582781c02ab21fcc25689_Frame%202085663087.svg)
+
+Step 3
+
+Receive your medication
+
+Medication is delivered to your door in 2 days.
+
+Find my treatment
+
+![Navigation arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69834f5a448856047378fa96_Frame%202085663091.svg)
+
+Support
+
+## Medical support, on your terms
+
+![support card Left](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68546557ee688ab599876d3d_Support%20Card%20Left.avif)![support card Center](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6854659845efd74c5a8a050a_Support%20Card%20Center.avif)![GLP-1 medication card](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6a01a395b5c449db12aee54b_0cd2445f6351b0c9331b537309fef0d1_ms-glp-card.avif)![support card mobile](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6854667ee35acbf4f19f664f_Support%20Card%20Mobile.avif)
+
+[Find my treatment](https://www.ivyrx.com/weight-loss#products) Find my treatment
+
+Find my treatment
+
+![Navigation arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69834f5a448856047378fa96_Frame%202085663091.svg)
+
+Video reviews
+
+## What our customers are saying
+
+[Order Now](https://www.trustpilot.com/review/ivyrx.com) Order Now
+
+All reviews
+
+[![Design preview screenshot](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6869abe145a4568ba9da2e25_6fb035f575976ffc18e456d32a99e4d2_Screenshot%202025-07-06%20at%2000.47.18.avif)\\
+\\
+Anna Smith\\
+\\
+27 Years Old](https://www.ivyrx.com/weight-loss#)![Video](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/684992cc33ed369e8d9c4b22_Video.avif)
+
+[![Patient feedback video thumbnail](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/695be6bbd42baef1d583bdfe_3db506be0d72636fb9959205f28a3d38_feedback-video.avif)\\
+\\
+Anna Smith\\
+\\
+27 Years Old](https://www.ivyrx.com/weight-loss#)![Video](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/684992cc33ed369e8d9c4b22_Video.avif)
+
+[![Design preview screenshot](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6869ad29fff14c231d8fdb0a_Screenshot%202025-07-06%20at%2000.54.19.avif)\\
+\\
+Anna Smith\\
+\\
+27 Years Old](https://www.ivyrx.com/weight-loss#)![Video](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/684992cc33ed369e8d9c4b22_Video.avif)
+
+[![Jose patient feedback](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/695bb96517c455f9a7c933d6_jose%20feedback.avif)\\
+\\
+Anna Smith\\
+\\
+27 Years Old](https://www.ivyrx.com/weight-loss#)![Video](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/684992cc33ed369e8d9c4b22_Video.avif)
+
+[![Patient video feedback](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/695bbcc9510ee0f329a3b201_video-feedback.avif)\\
+\\
+Anna Smith\\
+\\
+27 Years Old](https://www.ivyrx.com/weight-loss#)![Video](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/684992cc33ed369e8d9c4b22_Video.avif)
+
+[Previous slide](https://www.ivyrx.com/weight-loss#)[Next slide](https://www.ivyrx.com/weight-loss#)
+
+Testimonials
+
+## Join 200,000+ patients feeling their best
+
+“The process was easy. I was able to talk to my doctor and customer service easily via the patient portal. I have lost 12lbs over 50 days.”
+
+Theresa
+
+Verified Customers
+
+“I have lost 46lbs  in 8 weeks. It is extremely convenient to order online and have consultations  online if needed”
+
+Anna
+
+Verified Customers
+
+“My experience with IVY RX was simple and straightforward. I would have had to jump through so many hoops to get this same experience.  ”
+
+Melisa
+
+Verified Customers
+
+“I have been with  this company for over a year and their customer service is above and beyond.  I appreciate the sincere and kind representatives.”
+
+Joshua
+
+Verified Customers
+
+“I have been with  this company for over a year and their customer service is above and beyond.  I appreciate the sincere and kind representatives.”
+
+Joshua
+
+Verified Customers
+
+![Ivy RX card Logo](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/68623d648ef9b871c860281f_ivy-car-logo.svg)
+
+Ready to thrive?
+
+Explore treatments
+
+![Navigation arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69834f5a448856047378fa96_Frame%202085663091.svg)
+
+- 1
+- 2
+- 3
+
+FAQ
+
+## All your questions, answered
+
+### Can I cancel my subscription anytime?
+
+Absolutely! We understand that circumstances may change, and there are no long-term contracts or cancellation fees involved. We are committed to customer satisfaction.
+
+### How much weight will I lose?
+
+Because our program is backed by science and designed by experts, your unique treatment plan aims to foster healthy, sustainable weight loss. However, every individual’s journey is different, so the speed and extent of your results will vary. To help ensure you reach your goals, consider incorporating these healthy habits into your daily routine: Take your medication as directed, support your progress with nutritious meals, engage in consistent, moderate physical activity.
+
+### Can I talk to a doctor?
+
+Absolutely! You can quickly and securely message your care providers through our [patient portal](https://patient.ivyrx.com/). Simply log in, choose your provider, and send them a message. It’s that easy!
+
+### Who are the healthcare providers?
+
+All Ivy Rx affiliated doctors are board certified US-licensed healthcare professionals. The medical advisory board comprises experts in psychology, oncology, men's health, sexual health, neurology, and family medicine. [Learn more about our medical advisory board here.](https://www.ivyrx.com/about-us#advisory-board)
+
+### How are compounded medications sourced?
+
+The treatments are compounded in pharmacies compliant with 503B/USP <797> standards. This ensures a high level of quality and safety throughout the entire process.
+
+Still have questions?
+
+Feel free to leave a message for us
+
+[Order Now](https://www.ivyrx.com/weight-loss#) Order Now
+
+Message us
+
+## Don’t just live longer,   live healthier
+
+Start your 5-minute assessment and receive your medication in as little as 2 days
+
+[Order Now](https://www.ivyrx.com/weight-loss#) Order Now
+
+Get started
+
+Thank you! Your submission has been received!
+
+Oops! Something went wrong while submitting the form.
+
+Find my treatment
+
+![Navigation arrow icon](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/69834f5a448856047378fa96_Frame%202085663091.svg)
+
+![Pre-footer background image](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/6893de12532fd1cd240023df_pref0ooter-bg.avif)
+
+Don’t just live longer, live healthier
+
+[4.5\\
+\\
+4000+ reviews](https://www.trustpilot.com/review/ivyrx.com)
+
+Treatments
+
+[Weight Loss](https://www.ivyrx.com/weight-loss) [Anti-Aging](https://www.ivyrx.com/anti-aging) [Supplements](https://www.ivyrx.com/supplements)
+
+Ivy Rx
+
+[About Us](https://www.ivyrx.com/about-us) [Contact Us](https://www.ivyrx.com/contact) [Help Center](https://support.ivyrx.com/en/) [Ambassador program](https://www.ivyrx.com/ambassador-program)
+
+Resources
+
+[Blog](https://www.ivyrx.com/blog) [BMI Calculator](https://www.ivyrx.com/resources/bmi-calculator) [TDEE Calculator](https://www.ivyrx.com/resources/tdee-calculator)
+
+![Qr](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/684a448f29bf5534c8c41bb9_QR.avif)
+
+@2025 Ivy RX  PLLC. All rights reserved.
+
+[Safety Information](https://www.ivyrx.com/safety-information)
+
+•
+
+[Refund Policy](https://www.ivyrx.com/refund-policy)
+
+•
+
+[Terms of Service](https://www.ivyrx.com/terms-of-service)
+
+•
+
+[Privacy Policy](https://www.ivyrx.com/privacy-policy)
+
+•
+
+[Consumer Health Data Privacy Policy](https://www.ivyrx.com/consumer-health-data-privacy-policy)
+
+Prescription products require an online evaluation by a licensed medical professional. Medications are prescribed by licensed physicians as part of our programs, and actual product packaging may vary. The FDA does not review compounded medications for safety or effectiveness. For prescription items, Ivy Rx will arrange a consultation with a qualified healthcare provider. If approved, prescriptions can be filled at a partner pharmacy.
+
+Note: These statements have not been evaluated by the FDA and are not intended to diagnose, treat, cure, or prevent any disease.
+
+![Legitscript](https://cdn.prod.website-files.com/6740c7cb57461a7d58397b6e/685a7899e87d6fa227fe46fe_LegitScript.svg)
