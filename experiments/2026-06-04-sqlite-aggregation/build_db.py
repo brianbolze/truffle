@@ -146,22 +146,42 @@ def parse_roster(path: str) -> list[dict[str, Any]]:
     return rows
 
 
-def jdump(value: Any) -> str | None:
+# the full standard profile.md frontmatter — "all standard company profile fields" (carried verbatim;
+# lists/maps land as JSON text so the column stays queryable with json_extract / LIKE).
+PROFILE_FIELDS = [
+    "name", "domain", "aliases", "parent", "owns", "entity_type", "target_market",
+    "offering_category", "portfolio_shape", "business_model", "primary_industry", "description",
+    "logo_url", "brand_colors", "fonts", "color_scheme", "design_framework", "socials", "external",
+    "logos", "key_pages", "site_notes", "unverified_fields", "capture_method", "schema_version",
+    "captured_at",
+]
+
+
+def cell(value: Any) -> str | None:
+    """Normalize a frontmatter value to a TEXT cell: None stays None, list/dict → JSON, scalar → str."""
     import json
 
-    return json.dumps(value) if value else None
+    if value is None:
+        return None
+    if isinstance(value, (list, dict)):
+        return json.dumps(value, ensure_ascii=False)
+    return str(value)
 
 
 # --- build ----------------------------------------------------------------------------------------
 def build(conn: sqlite3.Connection) -> dict[str, int]:
     cur = conn.cursor()
     cur.executescript(
+        "DROP VIEW IF EXISTS telehealth_full; DROP VIEW IF EXISTS offerings_stats;"
+        "DROP TABLE IF EXISTS companies; DROP TABLE IF EXISTS telehealth; DROP TABLE IF EXISTS offerings;"
+    )
+    cur.execute(
+        "CREATE TABLE companies (slug TEXT PRIMARY KEY, "
+        + ", ".join(f'"{f}" TEXT' for f in PROFILE_FIELDS)
+        + ")"
+    )
+    cur.executescript(
         """
-        DROP TABLE IF EXISTS companies; DROP TABLE IF EXISTS telehealth; DROP TABLE IF EXISTS offerings;
-        CREATE TABLE companies (
-          slug TEXT PRIMARY KEY, name TEXT, domain TEXT, entity_type TEXT,
-          business_model TEXT, primary_industry TEXT, target_market TEXT, offering_category TEXT
-        );
         CREATE TABLE telehealth (
           slug TEXT PRIMARY KEY, domain TEXT, value_chain_role TEXT, pharmacy_model TEXT,
           audience TEXT, compounding_posture TEXT, anchor_category TEXT, modality TEXT,
@@ -176,14 +196,12 @@ def build(conn: sqlite3.Connection) -> dict[str, int]:
     )
     n = {"companies": 0, "telehealth": 0, "offerings": 0, "skus": 0}
 
+    insert_company = (
+        "INSERT INTO companies VALUES (" + ",".join("?" * (1 + len(PROFILE_FIELDS))) + ")"
+    )
     for path in sorted(glob.glob(os.path.join(STORE, "*", "profile.md"))):
         fm, slug = frontmatter(path), slug_of(path)
-        cur.execute(
-            "INSERT INTO companies VALUES (?,?,?,?,?,?,?,?)",
-            (slug, fm.get("name"), fm.get("domain"), fm.get("entity_type"),
-             fm.get("business_model"), fm.get("primary_industry"),
-             jdump(fm.get("target_market")), jdump(fm.get("offering_category"))),
-        )
+        cur.execute(insert_company, (slug, *[cell(fm.get(f)) for f in PROFILE_FIELDS]))
         n["companies"] += 1
 
     for path in sorted(glob.glob(os.path.join(STORE, "*", "telehealth.md"))):
@@ -208,6 +226,48 @@ def build(conn: sqlite3.Connection) -> dict[str, int]:
                  molecule_of(r["what"]), num, unit, int(promo)),
             )
             n["skus"] += 1
+
+    # per-company offerings aggregates — the HONEST ones: counts, price-visibility posture, molecule presence.
+    # all are over-the-roster facts that don't launder the price wall. The two price columns are the lone
+    # magnitude stat, deliberately narrow: the *published, monthly* band only (mixing /use + /yr + promo
+    # floors would be a lie) — and even this is a floor-y range, not a comparable number. `buyable` excludes
+    # family umbrella rows; molecule presence is LIKE-membership (page-attested text), never an adjudicated lane.
+    cur.execute(
+        """
+        CREATE VIEW offerings_stats AS
+        SELECT slug,
+          SUM(kind LIKE '%buyable%')                                    AS sku_count,
+          SUM(kind = 'family')                                          AS line_count,
+          SUM(kind LIKE '%buyable%' AND visibility='published')         AS published_skus,
+          SUM(kind LIKE '%buyable%' AND visibility='partial')           AS partial_skus,
+          SUM(kind LIKE '%buyable%' AND visibility='on-request')        AS gated_skus,
+          ROUND(100.0 * SUM(kind LIKE '%buyable%' AND visibility='published')
+                / NULLIF(SUM(kind LIKE '%buyable%'), 0))                AS pct_published,
+          SUM(kind LIKE '%buyable%' AND (what LIKE '%semaglutide%' OR what LIKE '%tirzepatide%')) AS glp1_skus,
+          MIN(CASE WHEN visibility='published' AND price_unit='/mo' THEN price_num END) AS mo_price_min,
+          MAX(CASE WHEN visibility='published' AND price_unit='/mo' THEN price_num END) AS mo_price_max
+        FROM offerings GROUP BY slug
+        """
+    )
+
+    # the joined surface: every standard profile field + the 8 telehealth cohort cuts + offerings aggregates,
+    # keyed on slug. a VIEW, not a table — regenerates with the build, never goes stale. `c.*` carries the
+    # profile's own captured_at; the cohort pack's is aliased so it doesn't collide. LEFT JOIN on stats so a
+    # telehealth company with no offerings.md still appears (its stat columns NULL).
+    cur.execute(
+        """
+        CREATE VIEW telehealth_full AS
+        SELECT c.*,
+               t.value_chain_role, t.pharmacy_model, t.audience, t.compounding_posture,
+               t.anchor_category, t.modality, t.access_model, t.pay_model,
+               t.captured_at AS telehealth_captured_at,
+               s.sku_count, s.line_count, s.published_skus, s.partial_skus, s.gated_skus,
+               s.pct_published, s.glp1_skus, s.mo_price_min, s.mo_price_max
+        FROM companies c
+        JOIN telehealth t ON c.slug = t.slug
+        LEFT JOIN offerings_stats s ON s.slug = c.slug
+        """
+    )
     conn.commit()
     return n
 
@@ -220,13 +280,23 @@ def main() -> None:
     conn = sqlite3.connect(db)
     n = build(conn)
     print(f"built {db}")
-    print(f"  companies:  {n['companies']}")
+    print(f"  companies:  {n['companies']}  ({len(PROFILE_FIELDS)} profile fields each)")
     print(f"  telehealth: {n['telehealth']}")
     print(f"  offerings:  {n['offerings']} files → {n['skus']} SKU rows")
     th_with_off = conn.execute(
         "SELECT COUNT(DISTINCT t.slug) FROM telehealth t JOIN offerings o ON o.slug=t.slug"
     ).fetchone()[0]
     print(f"  telehealth ∩ offerings (joinable): {th_with_off}/{n['telehealth']}")
+    vcols = [r[1] for r in conn.execute("PRAGMA table_info(telehealth_full)").fetchall()]
+    vrows = conn.execute("SELECT COUNT(*) FROM telehealth_full").fetchone()[0]
+    print(f"  view telehealth_full: {vrows} rows × {len(vcols)} cols (profile + 8 cohort cuts + 9 offerings aggregates)")
+    print("\n  offerings aggregates sample (sku_count · %pub · glp1 · published /mo band):")
+    for r in conn.execute(
+        """SELECT name, sku_count, pct_published, glp1_skus, mo_price_min, mo_price_max
+           FROM telehealth_full ORDER BY sku_count DESC LIMIT 8"""
+    ):
+        band = f"${r[4]:.0f}–${r[5]:.0f}/mo" if r[4] is not None else "—"
+        print(f"    {r[1]:>3} SKUs · {str(r[2]) + '%':>4} pub · {r[3]:>2} GLP-1 · {band:>14}  {r[0]}")
     conn.close()
 
 

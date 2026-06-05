@@ -48,3 +48,13 @@ A query earns code when it's *(a)* error-prone or *(b)* silently-wrong by hand. 
 queries into **plain `scripts/store.py` functions, not a database** — so the bar here is sharper: does the
 JOIN surface earn *SQLite specifically* (ad-hoc SQL over joined tables) over one more `store.py` function?
 And: markdown stays source-of-truth — any DB is a regenerable lens that inherits a build + staleness cost.
+
+## Follow-up artifacts (2026-06-04)
+
+- **`telehealth_full` view + offerings aggregates** (in `build_db.py`) — the joined surface: every profile
+  field + 8 cohort cuts + 9 per-company offerings aggregates (`sku_count`, visibility counts, `glp1_skus`, a
+  fenced published-`/mo` price band). `mo_price` magnitude is fenced on purpose (see CAVEATS #2).
+- **`audit_completeness.py`** — reads each telehealth `offerings.md`'s completeness self-report (no Firecrawl)
+  to find where the roster likely *understates* the catalog. Born from the Ro.co enumeration trap (FINDINGS
+  follow-up): `sku_count` conflates "small catalog" with "capture stopped early."
+- **`CAVEATS.md`** — usage guidelines for the lens. The enumeration trap is #1. Read before trusting a number.

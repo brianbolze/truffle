@@ -78,3 +78,34 @@ aggregates. Mild anti-Doro smell: structure invites over-trust.
 
 *Throwaway: `build_db.py` + `battery.py` are the artifacts, not load-bearing; `_out/store.db` is gitignored.
 If recommendation #2 is taken, the graduated `store.py` reader supersedes `build_db.py`.*
+
+---
+
+## Follow-up (2026-06-04): the enumeration-completeness trap — the sharpest reason to keep it caveated
+
+After adding per-company offerings aggregates to `telehealth_full` (`sku_count`, `glp1_skus`, visibility
+counts, a fenced `mo_price` band), a real failure surfaced: **Ro.co sorted dead-last on `sku_count` (8) despite
+a broad catalog** — its prior `offerings.md` had enumerated weight-loss + testosterone only and marked the rest
+"out of this run's scope." A re-capture took it to 36 SKUs; a `build_db.py` rebuild re-derived the right number
+automatically. The lesson: **an aggregate count silently conflates "small catalog" with "capture stopped
+early,"** because `offerings.md` is *designed* to stop at the indexed level for Firecrawl-credit care.
+
+**Cohort audit ([`audit_completeness.py`](audit_completeness.py), reads self-reports, no Firecrawl).** Across 35
+telehealth `offerings.md`: the completeness self-report lives in `## Provenance` as **prose**, is **inconsistently
+present**, and is **not reliably keyword-classifiable** — the triage false-flagged 5 of 8 "breadth-gap"
+candidates (a benign "couldn't reach all-in cost" reads the same to a regex as a real "whole line out of
+scope"). Genuine dig-deeper candidates were honehealth (supplements subdomain), hevahealth (legacy catalog),
+defymedical (off-host lines); the rest were complete-at-indexed-level or scoped to a sibling slug.
+
+**Two outputs:**
+- [`CAVEATS.md`](CAVEATS.md) — usage guidelines for the lens (the enumeration trap is #1). Folds into
+  `QUERYING.md` if the layer ever graduates.
+- **Recommendation (propose, don't write):** promote the existing prose completeness verdict into a single
+  structured `offerings.md` frontmatter cut — e.g. `enumeration: complete-at-indexed-level | partial-lines-omitted
+  | flagship-only | catalog-exemplars`. Then the build carries it as a column and `sku_count` is **never read
+  naked**. Cheap (one single-select, fills from the run the agent already does), and it makes caveat #1
+  machine-visible instead of prose-buried — the only way an aggregation layer is trustworthy.
+
+**Net:** this strengthens the original verdict. A SQLite/aggregation layer isn't just speed-vs-expressiveness —
+its *trustworthiness* is gated on capture-completeness being machine-visible. One more reason to keep any such
+layer light, caveated, and downstream of a structured completeness signal.
