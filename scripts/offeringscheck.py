@@ -108,14 +108,17 @@ def price_in_corpus(token: str, sigil: str, corpus: str) -> bool:
     `token` is the digits as written; `sigil` is `$`, `%`, or `¢`. Neither shape may let a *wrong* number
     through — the guard that once pushed an author to hand-edit a capture to pass:
       - a `$`-amount — sigil leads; a trailing letter is OK (`$300` -> `$300Add-On`) but a longer number is
-        rejected (`$30` !-> `$300`);
+        rejected (`$30` !-> `$300`). The sigil-to-digits matcher spans ALL whitespace (not just one space):
+        split-rendered price widgets (Webflow/React emit the `$` and the number as separate DOM nodes) clean
+        to a `$`, a blank line, then `499` — whitespace-only can't cross intervening text, so this still
+        verifies the real number against the SAME sigil without weakening the guard;
       - a `%`/`¢`-amount — sigil trails and right-anchors it (`30¢` !-> `300¢`), left-guarded so a short rate
         can't ride inside a longer one (`2.9%` !-> `12.9%`).
     """
     digits = token.replace(",", "")
     if sigil != "$":  # rate: digits then the trailing sigil; left-guard kills the 2.9%-inside-12.9% match
-        return bool(re.search(r"(?<![\d.])" + re.escape(digits) + r"\s?" + re.escape(sigil), corpus))
-    return bool(re.search(r"\$\s?" + re.escape(digits) + r"(?:\.\d+)?(?!\d)", corpus))
+        return bool(re.search(r"(?<![\d.])" + re.escape(digits) + r"\s*" + re.escape(sigil), corpus))
+    return bool(re.search(r"\$\s*" + re.escape(digits) + r"(?:\.\d+)?(?!\d)", corpus))
 
 
 def check(slug: str) -> list[str]:
