@@ -726,6 +726,8 @@ def do_logos(slug: str, name: str, date: str, wordmark: str | None) -> None:
     # --- og: the DECLARED og:image, gated at >=600px actual width ---
     print("\n## og  (wide cover; gate: a DECLARED og:image at >=600px ACTUAL width — the meta size lies, Probe 3)")
     og = meta.get("og:image") or meta.get("ogImage")
+    if isinstance(og, list):  # Firecrawl returns a list when a page declares multiple og:image tags
+        og = next((u for u in og if u), None)
     og_dims = None
     if not og:
         print("  no og:image declared — omit the og slot (true absence)")
