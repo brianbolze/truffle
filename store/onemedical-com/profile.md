@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.3"
+schema_version: "2.5"
 
 # Identity
 domain: onemedical.com
@@ -46,7 +46,11 @@ business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
 # Visual identity
-logo_url: https://www.onemedical.com/static/images/favicon.ico   # branding.images.logo empty, no JSON-LD logo — favicon fallback
+logo_url: assets/wordmark.svg        # 2.5 canonicalizes to the wordmark — the live co-brand "amazon one medical" lockup, extracted inline <svg> from rawHtml (branding.images.logo empty)
+logos:                               # 2.5 module — co-brand lockup is the current primary mark; "amazon" smile-arrow in ink + "one medical" in health-green
+  wordmark: { src: assets/wordmark.svg, w: 1083, h: 169 }                                                          # rectangle "amazon one medical" lockup (viewBox 1083.2×168.9); CSS-token fills inlined for portability
+  logomark: { src: "https://www.onemedical.com/static/images/apple-touch-icon-180x180.png", px: 180, transparent: false }   # the 5-dot teal "+" mark on a BAKED WHITE square (beats the 152px google-s2; hasAlpha lies)
+  og:       { src: "https://www.onemedical.com/media/images/240610_OM-Homepage-Open-Graph_1.2e16d0ba.fill-1200x630.png", w: 1200, h: 630 }   # declared og:image, verified 1200×630
 brand_colors: { primary: "#004D49", secondary: "#068466", accent: "#005450" }   # deep teal-green identity, white ground
 fonts: [Ginto, GT Super Display]     # branding ranked generic "sans-serif" first; real faces are Ginto (sans) + GT Super Display (serif)
 color_scheme: light
@@ -128,6 +132,8 @@ Self-reported metrics (verbatim, **not endorsed**):
 
 Clean, calm, premium-consumer healthcare aesthetic — deep teal-green (`#004D49`) as the brand hue against generous white space, with a friendly editorial serif (GT Super Display) for headlines over a geometric sans (Ginto) for body. Illustration-led (soft human figures rather than clinical stock photography), warm and approachable rather than sterile. The design reads as mature and well-funded — consistent with a 15-year-old brand now resourced by Amazon. Tone is professional but reassuring ("less painful," "fall in love with your doctor's office").
 
+The **primary logo is now the co-brand lockup "amazon one medical"** — "amazon" with its smile-arrow in dark ink, "one medical" in health-green (extracted from the nav `<svg>`, viewBox 1083.2×168.9; see `assets/wordmark.svg`). The standalone square mark is the **5-dot teal "+" symbol** (apple-touch-icon, 180px, on a baked white ground). The Amazon co-brand sits *in the logotype itself*, not just the footer — a visible signal of how far the acquisition has folded the brand into Amazon Health.
+
 ## Strategic read
 
 The interesting structure is the **double monetization**: a recurring membership fee layered on top of normal insurance billing — One Medical gets paid to be your front door *and* gets reimbursed for walking you through it. That, plus the **Amazon Prime $99/yr bundle**, is the post-acquisition growth engine: convert Prime's enormous membership base into primary-care members at a price (halved from $199) that traditional concierge medicine can't match. The portfolio actually braids three different payer models under one brand — consumer subscription, employer contracts, and value-based Medicare (Iora) — which is why "primary care" undersells it; the economics differ sharply by segment. For a DTC telehealth comparison set, One Medical is the **bricks-and-mortar, insurance-integrated** end of the spectrum (offices, labs, in-network billing), the opposite of cash-pay, ship-to-door compounded-Rx models — and now an Amazon-distributed one.
@@ -137,5 +143,6 @@ The interesting structure is the **double monetization**: a recurring membership
 - **Pages:** 8 captured via Firecrawl (homepage + membership, sixty-five-plus/seniors, business, services, about-us, virtual-care, insurance); map returned 484 URLs (~90% /locations + /providers noise), key pages selected from homepage links.
 - **Verify:** all 8 sourceURLs matched requested URLs; all 8 body md5s unique — no geo/cache contamination.
 - **Credits:** 9 (1 map + 8 scrapes), basic proxy throughout.
-- **Couldn't get:** Pay-per-visit flat fee (gated); current authoritative employer-client count (8,500+ vs 11,600+ conflict); per-visit copay amounts (insurance-dependent).
+- **Couldn't get:** Pay-per-visit flat fee (gated to /amazon/pay-per-visit/, not captured); current authoritative employer-client count (8,500+ vs 11,600+ conflict); per-visit copay amounts (insurance-dependent).
+- **Run profile:** guided/express — +logos (2.5: extracted the live **"amazon one medical"** co-brand wordmark to `assets/wordmark.svg`, measured logomark/og from the 2026-06-02 homepage payload — no re-scrape); +offerings.md and +telehealth.md cohort pack, both off a reused 2026-06-02 base capture plus 4 new program-page scrapes on 2026-06-04 (mindset, chronic-conditions, kids, lab-services → `captures/2026-06-04/`). Profile body itself not re-captured (2-day-warm). **Product-render images requested but N/A** — One Medical is a service; pages carry only lifestyle/illustration (exam rooms, phlebotomist, family), no clean isolated product shot to capture.
 - **Enriched (model knowledge):** parent Amazon = NASDAQ AMZN; One Medical founded 2007 by Tom Lee (founder not on captured pages; "past 15 years" on /about corroborates ~2007).
