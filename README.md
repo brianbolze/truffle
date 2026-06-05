@@ -14,7 +14,7 @@ BACKLOG.md                # system-level weaknesses / ideas (capped, tagged, cur
 _design/      # frame / vision docs (source of truth for intent)
 _archive/     # superseded docs
 experiments/  # throwaway probes to de-risk decisions before building
-scripts/      # engine utilities (querycheck.py — QUERYING.md drift self-test; store.py — resolve()/relations(); offeringscheck.py + cohortcheck.py — module-contract linters)
+scripts/      # engine utilities (querycheck.py — QUERYING.md drift self-test; store.py — resolve()/relations(); offeringscheck.py + cohortcheck.py — module-contract linters; build_db.py — derived SQLite lens for telehealth cohort aggregation, --check-guarded)
 skills/       # capture verbs — research-company/ (SKILL.md + firecrawl-capture playbook + scripts/fc.py workhorse) + deepen-offerings/ (thin offerings-comprehensiveness preset of it); global via ~/.claude/skills
 store/        # the shared company store (store/<domain-slug>/) — created as captures land
 ```

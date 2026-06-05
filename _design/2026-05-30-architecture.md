@@ -97,7 +97,7 @@ A module is opt-in per project (config resolves global defaults ← project over
 |---|---|---|
 | 1 | Disciplined frontmatter (grep/ripgrep) | now |
 | 2 | A `digest`-style helper wrapped in a skill the agent reaches for | proven in [experiment](../experiments/2026-05-29-query-affordance/FINDINGS.md); the likely real fix |
-| 3 | Derived SQLite index, regenerated from the markdown — the join/time-series layer (relations, traction) | when aggregation/relations demand it — a cache, never source-of-truth |
+| 3 | Derived SQLite index, regenerated from the markdown — a cache, never source-of-truth | **landed 2026-06-04** for telehealth cohort aggregation ([`scripts/build_db.py`](../scripts/build_db.py); [QUERYING Recipe 7](../QUERYING.md)); the relations/traction **join graph** stays deferred until a consumer earns it |
 
 **3. Deep-research as a consumer.** An open-ended run (news, funding, M&A, reviews) **reads the store as priors first**, then goes wide, and writes its narrative **project-side, not into the store**. The store stays tight and factual — we never dump news/funding into a profile (that's the Doro "ingest everything into a graph" move we refuse). The store gives the foundation; deep research builds on it.
 
