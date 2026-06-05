@@ -109,3 +109,22 @@ defymedical (off-host lines); the rest were complete-at-indexed-level or scoped 
 **Net:** this strengthens the original verdict. A SQLite/aggregation layer isn't just speed-vs-expressiveness —
 its *trustworthiness* is gated on capture-completeness being machine-visible. One more reason to keep any such
 layer light, caveated, and downstream of a structured completeness signal.
+
+---
+
+## Decision (2026-06-04): graduated as the fenced SQLite lens — *not* the lighter reader
+
+The probe argued the lighter `store.py` reader over SQLite, and an independent adversary backed that 65/35.
+**Brian overrode toward SQLite on a consumer the probe under-weighted: his own browsing + ad-hoc SQL in
+Beekeeper** — which makes the probe's gating condition (a) ("sustained ad-hoc multi-dimensional exploration,
+where SQL beats a function") *present*, and moots the reader's one real edge (no build / low latency), an axis
+Brian doesn't value. SQLite-as-derived-lens is the architecture's blessed rung 3, not an anti-Doro breach.
+
+`build_db.py` graduated to [`scripts/build_db.py`](../../scripts/build_db.py) — house-styled, `--check`
+drift-test, and **safer than this probe** by *deletion*: the lossy columns this experiment added to probe the
+walls (`molecule`, `price_num`) are **removed** in the graduate (they launder a wrong answer), SKU/price rows
+are **telehealth-scoped** (cross-type aggregate impossible), the parser is **imported from `offeringscheck`**
+(one source of truth), and `sku_count` now rides beside the **`enumeration`** signal (shipped in parallel by a
+sibling session) + a `catalog_breadth` floor-render, so a count is never read naked. Caveats folded into
+[QUERYING.md Recipe 7](../../QUERYING.md); BACKLOG rung-3 re-pointed (mechanism landed for cohort aggregation,
+relations graph still parked). These scripts stay as the frozen probe record.

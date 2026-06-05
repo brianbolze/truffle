@@ -67,6 +67,17 @@ TH = {p.split("/")[1]: frontmatter(p) for p in glob.glob("store/*/telehealth.md"
 ```
 Closed sets live in [`TELEHEALTH.md`](TELEHEALTH.md), not here. **`unclear`/empty is "looked, couldn't tell," not "no"** — a sparse pack (a platform/lab) honestly leaves cuts blank, so check before reporting a within-cohort negative. **Cross-company comparison is computed here, at query time** — it's never stored in the pack (a baked "one of only two who…" rots when the cohort grows; that's the anti-reconciliation line). Judgments (threat/fit) aren't in the pack at all — they're a consumer-side read over it.
 
+**7. Cohort aggregation — the SQLite lens (telehealth).** When a question wants *many* one-off pivots at once — *"semaglutide SKUs by `pharmacy_model`", "who gates vs. publishes", or just browse-and-sort the whole field in a GUI* — `python scripts/build_db.py` projects the markdown into a derived SQLite lens at `scripts/_out/store.db` (open it in any SQLite client, or query with stdlib `sqlite3`). It's the architecture's **rung-3 derived index — a regenerable cache, never the source of truth**: rebuild it whenever the markdown changes (it's gitignored, and stale the moment a capture lands). The headline is the **`telehealth_full`** view — every profile field + the 8 cohort cuts + per-company offerings aggregates, one row per telehealth company; **`offerings`** is one row per SKU (verbatim).
+
+It's deliberately **scoped + fenced** so it can't hand back a fast, clean, *confident-wrong* answer:
+- **Counts read through `enumeration`, never naked** (Recipe 4's count-trust rule, built into the schema). Every `sku_count` rides beside the `enumeration` cut, and `catalog_breadth` renders a `lines-omitted` count as `≥N (floor)` and an `unknown` one as `N (unverified)` — only an `indexed-complete` count is a bare number safe to rank on.
+- **No price magnitude.** Only `price_verbatim` — there is no `price_num` by design (a first-`$` grab is *wrong, not lossy*: `$749` parsed for a $166/mo SKU; teasers sort below real prices). Recipe 4's hand-normalize ceiling is unchanged.
+- **Molecule is `LIKE`, never `GROUP BY`.** No `molecule` column — group with `what LIKE '%semaglutide%'` (Recipe 4's grep, in SQL); a stored key fragments "testosterone" into ~30 buckets.
+- **Intra-cohort only.** SKU/price rows are telehealth-scoped, so a cross-type `AVG(price)` (across `$/mo` + take-rate + per-night) is **structurally impossible**. `companies` carries every profile for browsing, but no magnitude to mis-aggregate.
+- **`unclear`/empty ≠ "no"** (Recipe 6), and **three freshness clocks** on `telehealth_full` — `captured_at`, `telehealth_captured_at`, `offerings_captured_at`: a fresh profile can sit over a month-old roster.
+
+`python scripts/build_db.py --check` is the drift self-test — a renamed roster column or cohort cut fails loudly instead of misbuilding silently. **Telehealth-scoped** today; generalizes when a second cohort earns it. For a *single* pivot the Recipe 4/6 one-liners beat a rebuild — reach for the lens when the *number* of cuts makes ad-hoc SQL (or a GUI) win.
+
 ## Gotchas & limits
 
 **Before trusting a negative.** *"Company X doesn't do Y"* can mean **not offered** or **not captured**. Three signals tell them apart — check before reporting: `key_pages` (what the capturer treated as signal), `unverified_fields` (what it explicitly couldn't get), and the **Provenance** body section (pages analyzed + what was missed).
@@ -74,7 +85,7 @@ Closed sets live in [`TELEHEALTH.md`](TELEHEALTH.md), not here. **`unclear`/empt
 **Can't answer yet:**
 - **Numeric / range price** ("under $200/mo") — still no structured price *value* field (verbatim strings only, by design); hand-normalize, don't fake a table. The per-SKU `offerings.md` (opt-in cohorts) tightens this to one row per SKU with a verbatim price + query-time molecule grouping (Recipe 4) — but the value is still a string to normalize, never a sortable number. *(Price **visibility** — gated vs. published — is queryable; see Recipe 4.)*
 - **Cross-type price** comparison — not meaningful (see Recipe 4).
-- **Relational JOINs at scale** — no derived index; fine at this N, a rung-3 concern.
+- **Cohort aggregation** — the telehealth cohort now has a derived SQLite lens (Recipe 7); the *corpus-wide* relation graph (`parent`/`owns` across all types) still has no index — fine at this N, the rung-3 item for when discovery/traction demands it.
 - **Events** (news/funding/M&A), **judgments** (threat/fit/relevance), **financials** (revenue/headcount) — out of scope by design. The store holds durable *state*; these are a deep-research job that reads the store as priors (see the Frame).
 
 ---
