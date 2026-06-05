@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.2"
+schema_version: "2.5"
 
 # Identity
 domain: functionhealth.com
@@ -13,7 +13,7 @@ socials: { facebook: "https://facebook.com/askfunction/", instagram: "https://in
 # Capture meta
 captured_at: 2026-06-01
 capture_method: firecrawl
-site_notes: "Webflow (data-wf-* ×400 + cdn.prod.website-files.com; branding.designSystem said 'custom' — wrong, per the §5.4 rule). App lives on my.functionhealth.com; marketing on www. Logo is an inline data-URI SVG wordmark → use favicon fallback. Membership price ($365/yr, '$1/day') is on homepage + /pricing; scans pricing (member vs list, via Ezra) only on /scans. Long biomarker/condition marquees repeat the same terms many times in markdown — animation noise, not data. Footnote: $365 lab membership excluded in NY & NJ. No A/B tool fingerprinted, but $365 is 'first-year' promotional framing and scan prices show strikethrough promos — treat pricing as a snapshot. 2026-06-01 re-verify: re-scraped homepage + /pricing + /scans only (3 pages, 3 credits) — ALL pricing unchanged from the 2026-05-31 full capture ($365/yr; MRI $999→$899, MRI+Spine $1699→$1,499, MRI Skeletal/Neuro $3,999, Heart CT $349, Lungs CT $399, $200 scan credit). /pricing also surfaces an FAQ link 'MRI starting at $499' and out-of-pocket comparison stats ($12,022/yr diabetes, $4,423/yr heart failure, $2,529/day hospital). Scan booking now routes to my.ezra.com 'Book directly with Ezra' alongside the Function signup. Body sections below carried forward from the 2026-05-31 capture (still accurate)."
+site_notes: "Webflow (data-wf-* ×400 + cdn.prod.website-files.com; branding.designSystem said 'custom' — wrong, per the §5.4 rule). App lives on my.functionhealth.com; marketing on www. Logo is an inline data-URI SVG wordmark (viewBox 196×40, circular terracotta logomark + 'Function' name) → extracted to assets/wordmark.svg for the 2.5 logos module; favicon/webclip is the circular logomark on a baked cream (#FEF9EF) ground (not transparent). Membership price ($365/yr, '$1/day') is on homepage + /pricing; scans pricing (member vs list, via Ezra) only on /scans. Long biomarker/condition marquees repeat the same terms many times in markdown — animation noise, not data. Footnote: $365 lab membership excluded in NY & NJ. No A/B tool fingerprinted, but $365 is 'first-year' promotional framing and scan prices show strikethrough promos — treat pricing as a snapshot. 2026-06-01 re-verify: re-scraped homepage + /pricing + /scans only (3 pages, 3 credits) — ALL pricing unchanged from the 2026-05-31 full capture ($365/yr; MRI $999→$899, MRI+Spine $1699→$1,499, MRI Skeletal/Neuro $3,999, Heart CT $349, Lungs CT $399, $200 scan credit). /pricing also surfaces an FAQ link 'MRI starting at $499' and out-of-pocket comparison stats ($12,022/yr diabetes, $4,423/yr heart failure, $2,529/day hospital). Scan booking now routes to my.ezra.com 'Book directly with Ezra' alongside the Function signup. Body sections below carried forward from the 2026-05-31 capture (still accurate)."
 key_pages:
   how_it_works: /how-it-works
   what_we_test: /what-we-test
@@ -40,7 +40,11 @@ business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
 # Visual identity
-logo_url: https://cdn.prod.website-files.com/68823b2fd9cc28b78fb3ee65/69710ea94b3b07ac1965f017_Favicon.png  # branding.images.logo is an inline data-URI SVG wordmark; favicon fallback per §5.4
+logo_url: assets/wordmark.svg        # 2.5 canonicalizes to the wordmark — extracted from the inline data-URI SVG in branding.images.logo
+logos:                               # 2.5 module — measured off the cached 2026-06-01 homepage payload (no re-scrape)
+  wordmark: { src: assets/wordmark.svg, w: 196, h: 40 }                                                                  # inline data-URI SVG (viewBox 0 0 196 40) → committed text SVG; circular mark + "Function"
+  logomark: { src: "https://www.google.com/s2/favicons?domain=functionhealth.com&sz=256", px: 256, transparent: false } # circular terracotta sun on a BAKED cream (#FEF9EF) ground — judged on a checker tile; webclip matches
+  og:       { src: "https://cdn.prod.website-files.com/68823b2fd9cc28b78fb3ee65/6917a20e06dfd004f71f8f66_Open%20Graph_alt.png", w: 1200, h: 630 }  # branded cover: "It's time you own your health" + results UI on dark wood-grain
 brand_colors: { primary: "#FEF9EF", accent: "#B05A36", text: "#2A2B2F" }  # cream ground + terracotta/rust accent, near-black text — verified against homepage screenshot
 fonts: [Financier Display, Inter]   # serif display (italic headlines) + sans body; branding listed Arial/Inter first, but Financier Display carries the brand
 color_scheme: light
@@ -55,11 +59,11 @@ Function Health sells a single annual membership ($365/year, framed as "$1/day")
 
 One membership is the product; scans and add-on tests are companions (breadth here; per-SKU depth defers to `offerings.md`):
 
-- **Function membership:** "$365 per year — $1 per day" (first-year pricing, HSA/FSA eligible). Includes 160+ lab tests annually, an Annual Test + a Mid-Year (3–6 mo) retest, clinician review of every result, and a personalized protocol. "There's just one Function membership" — no tiers.
-- **Add-On Tests (member-only):** à-la-carte advanced tests on top of membership — **Galleri® / GRAIL multi-cancer**, brain/Alzheimer's health, environmental-toxin & mold reactivity, sexual health (chlamydia, herpes, etc.). Pricing behind the app.
-- **MRI & CT scans (via Ezra):** member-priced imaging booked through Ezra. **Annual MRI:** "$999 / $899" (member); **MRI with Spine:** "$1699 / $1,499"; **MRI with Skeletal & Neurological Assessment:** "$3,999"; **Heart CT (CAC score):** "$349"; **Lungs CT:** "$399." Up to a "$200 credit off scans for Function members." 170 scan locations and growing.
-- **Function for Work (B2B):** employer-sponsored program (`/for-business`) — onboarding, engagement tooling, reporting; tailored for executives, remote, and frontline teams.
-- **Gifting + referral + creator/practitioner programs:** memberships are giftable; referral rewards paid via Impact.
+- **Function membership:** "$365 per year — $1 per day" (first-year pricing, HSA/FSA eligible) `[published]`. Includes 160+ lab tests annually, an Annual Test + a Mid-Year (3–6 mo) retest, clinician review of every result, and a personalized protocol. "There's just one Function membership" — no tiers.
+- **Add-On Tests (member-only):** à-la-carte advanced tests on top of membership — **Galleri® / GRAIL multi-cancer**, brain/Alzheimer's health, environmental-toxin & mold reactivity, sexual health (chlamydia, herpes, etc.). Pricing behind the app `[on-request]`.
+- **MRI & CT scans (via Ezra):** member-priced imaging booked through Ezra. **Annual MRI:** "$999 / $899" (member); **MRI with Spine:** "$1699 / $1,499"; **MRI with Skeletal & Neurological Assessment:** "$3,999"; **Heart CT (CAC score):** "$349"; **Lungs CT:** "$399." Up to a "$200 credit off scans for Function members." 170 scan locations and growing. `[partial]` (member-only pricing — assumes the $365 membership; non-members route to Ezra).
+- **Function for Work (B2B):** employer-sponsored program (`/for-business`) — onboarding, engagement tooling, reporting; tailored for executives, remote, and frontline teams `[on-request]`.
+- **Gifting + referral + creator/practitioner programs:** memberships are giftable ("$365") `[published]`; referral rewards paid via Impact. Per-SKU depth in `offerings.md`.
 
 ## How it works / model
 
@@ -122,3 +126,4 @@ The **Ezra acquisition** is the headline move: Function is bolting structural im
 - **Credits:** 8 (1 map + 1 homepage + 6 key pages) on the original capture, + 3 on the 2026-06-01 re-verify; no enhanced-proxy or PDF add-ons.
 - **Couldn't get:** member-app-gated add-on/scan à-la-carte pricing; member count; the parent↔Ezra domain relation from ezra.com itself (inferred). Long biomarker/condition marquees are animated repeats — treated as noise.
 - **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-06-01 rawHtml, hint-to-verify) — filled `socials` (fb/ig/x/youtube/linkedin) — hand-read from the homepage JSON-LD (a stray trailing brace fails strict parse, but the `sameAs` is intact and handle-matched); no usable `logo`/`external`. Re-stamped 2.0→2.2.
+- **Run profile:** Express `/research-telehealth-brand` (2026-06-04) over the warm 2026-06-01 base — added the **`logos:{}`** module, the **`telehealth.md`** cohort pack, and **`offerings.md`**; stamped **2.2 → 2.5** and added 2.3 price-visibility tokens to *What they offer*. No re-scrape: the cohort/offerings cuts ride the cached 2026-06-01 pages and `logos` was measured off the persisted `homepage.json` ($0). Wordmark extracted from the inline data-URI SVG → `assets/wordmark.svg` (196×40); logomark judged **not transparent** (baked cream ground).
