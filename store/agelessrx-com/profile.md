@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.2"
+schema_version: "2.5"
 
 # Identity
 domain: agelessrx.com
@@ -42,7 +42,11 @@ business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
 # Visual identity
-logo_url: https://agelessrx.com/wp-content/themes/agelessrx-2024/assets/images/agelessrx-logo-2024.svg
+logo_url: https://agelessrx.com/wp-content/themes/agelessrx-2024/assets/images/agelessrx-logo-2024.svg   # canonical wordmark (on-domain SVG)
+logos:                               # 2.5 module — measured by fc.py logos; the consumer applies the size bar
+  wordmark: { src: https://agelessrx.com/wp-content/themes/agelessrx-2024/assets/images/agelessrx-logo-2024.svg, w: 146, h: 32 }   # dark "ageless" + teal "rx"; on-brand, reads on light
+  logomark: { src: "https://www.google.com/s2/favicons?domain=agelessrx.com&sz=256", px: 100, transparent: false }                 # white "a." on a baked dark-green square; <128px short side (recorded anyway)
+  # og omitted — the only DECLARED og:image is a NYT press logo (newyorktimes-logo.png, 400x53), fails the >=600px cover gate
 brand_colors: { primary: "#023B37", accent: "#FFB54C", link: "#0B857D" }   # STRAIN: brand hue is the deep forest-green hero/footer bands; amber is the CTA accent. branding payload inverted these (primary→amber) — corrected against screenshot.
 fonts: [AgelessSans, CheltenhamPro]   # CheltenhamPro = editorial NYT-style serif for headings; AgelessSans for body
 color_scheme: light
@@ -140,3 +144,4 @@ AgelessRx is the **broad-catalog generalist** of the longevity-telehealth cohort
 - **Credits:** 9 (1 map + 8 scrapes, 1 credit each).
 - **Couldn't get:** final per-SKU pricing (behind customer.agelessrx.com portal; pages show "Starting at" floors only), the ~40 individual product detail pages beyond Metformin, corporate facts (founding year, headcount, funding).
 - **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (sameAs fb/x/ig/linkedin/youtube); JSON-LD `logo` was an OG share image (`agelessrx-social-share.jpg`) so kept the existing on-domain SVG logo; no legalName/`external`. Re-stamped 2.0→2.2.
+- **Run profile:** +logos — 2.5 logos module added 2026-06-04 over the existing capture (cached homepage payload, no re-scrape); marks measured by `fc.py logos`, `transparent` judged on a checker tile. og omitted (declared og:image is a press logo). Re-stamped 2.2→2.5.

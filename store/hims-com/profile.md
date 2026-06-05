@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.2"
+schema_version: "2.5"
 
 # Identity
 domain: hims.com
@@ -39,7 +39,11 @@ business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
 # Visual identity
-logo_url: https://www.hims.com/forhims/image/upload/q_auto,f_auto,fl_lossy,c_limit/Hims/apple-touch-icon-hims  # branding.images.logo was an inline data-URI SVG wordmark → favicon fallback
+logo_url: assets/wordmark.svg        # 2.5 canonicalizes to the wordmark — the inline data-URI SVG that branding.images.logo carried, extracted (prior value was the apple-touch-icon favicon fallback)
+logos:                               # 2.5 module — measured by fc.py logos; the consumer applies the size bar
+  wordmark: { src: assets/wordmark.svg, w: 404, h: 139 }                                                          # lowercase "hims" serif; WHITE-fill (built for the dark hero — invisible on white)
+  logomark: { src: "https://www.google.com/s2/favicons?domain=hims.com&sz=256", px: 180, transparent: false }     # black "h" on a baked tan (#C79B85) square
+  og:       { src: "https://cloudinary.forhims.com/image/upload/Hims-Home-Share", w: 1200, h: 630 }               # lifestyle hero (man, tan ground) — real share cover
 brand_colors: { primary: "#C79B85", accent: "#FFC671", text: "#453421" }  # warm tan + amber-gold on dark-brown text, verified against screenshot. branding's secondary "#0000EE" is default-link chrome — dropped.
 fonts: [Sofia Pro]                   # branding.fonts[0], role:body
 color_scheme: light
@@ -117,3 +121,4 @@ The capture catches Hims mid-pivot from its sexual-health/hair-loss origins to a
 - **Credits:** ~9 Firecrawl credits.
 - **Couldn't get:** per-condition pricing past the "starting at" teaser (behind intake quizzes); the client-rendered mega-nav; financials (investor site).
 - **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-30 rawHtml, hint-to-verify) — filled `socials` (x/fb/linkedin/pinterest/youtube/flickr/instagram) + `external` (bloomberg/glassdoor/crunchbase/bbb); `aliases` += alternateName (hims & hers / for hims / forhims); JSON-LD `logo` was a 3rd-party Zendesk theme asset (`zdassets.com`) — rejected, kept current. Re-stamped 2.0→2.2.
+- **Run profile:** +logos — 2.5 logos module added 2026-06-04 over the existing capture (cached homepage payload, no re-scrape). Wordmark extracted from the inline data-URI SVG in `branding.images.logo` (committed to `assets/wordmark.svg`, white-fill); logomark/og measured by `fc.py logos`, `transparent` judged on a checker tile; `logo_url` canonicalized to the wordmark. Re-stamped 2.2→2.5.

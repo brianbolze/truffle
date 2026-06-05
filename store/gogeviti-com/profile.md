@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.3"
+schema_version: "2.5"
 
 # Identity
 domain: gogeviti.com
@@ -42,7 +42,11 @@ business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
 # Visual identity
-logo_url: https://www.gogeviti.com/images/icons/ui/geviti-logo.svg
+logo_url: https://www.gogeviti.com/images/icons/ui/geviti-logo.svg   # canonical wordmark (on-domain SVG)
+logos:                               # 2.5 module — measured by fc.py logos; the consumer applies the size bar
+  wordmark: { src: https://www.gogeviti.com/images/icons/ui/geviti-logo.svg, w: 86, h: 21 }                       # navy "Geviti"; on-brand, reads on light
+  logomark: { src: "https://www.google.com/s2/favicons?domain=gogeviti.com&sz=256", px: 32, transparent: false }  # pale-blue "G" on a baked near-black square; only a 32px favicon.ico exists (weak mark, recorded anyway)
+  og:       { src: "https://www.gogeviti.com/en/opengraph-image.png?opengraph-image.4cd83560.png", w: 1200, h: 630 }  # navy "Geviti" over clouds — real share cover
 brand_colors: { primary: "#06284B", accent: "#D5EFFF", background: "#F9F8F6" }   # deep navy + pale-blue sky accent on off-white; confirmed vs screenshot
 fonts: [Aspekta, VictorSerif]        # Aspekta sans body, VictorSerif display headings
 color_scheme: light
@@ -120,3 +124,4 @@ The model's distinctive move is **absorbing four normally-separate spend categor
 - **Verify:** all 7 sourceURLs matched requests; all 7 body md5s unique (no geo/cache contamination). Post-write lint re-run.
 - **Credits:** 8 (1 map + 1 homepage + 6 key pages, 1 credit each; no enhanced-proxy/PDF add-ons).
 - **Couldn't get:** per-Rx and per-supplement unit pricing (app + intake walled); the named "Infinite"/"Premium" tier's price; any third-party reputation record (no JSON-LD sameAs).
+- **Run profile:** +logos — 2.5 logos module added 2026-06-04 over the existing capture (cached homepage payload, no re-scrape); marks measured by `fc.py logos`, `transparent` judged on a checker tile. Logomark is a weak 32px (Geviti ships only a 32×32 favicon.ico — no apple-touch-icon or larger mark). Re-stamped 2.3→2.5.

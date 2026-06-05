@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.2"
+schema_version: "2.5"
 
 # Identity
 domain: honehealth.com
@@ -47,7 +47,11 @@ business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
 # Visual identity
-logo_url: https://honehealth.com/wp-content/uploads/2024/01/TriangleWhite.png  # JSON-LD `logo` (company-declared mark) — supersedes the earlier favicon fallback
+logo_url: assets/wordmark.svg        # 2.5 canonicalizes to the wordmark — "HONE" header SVG extracted from rawHtml (prior value, TriangleWhite.png, is the logomark family, kept below)
+logos:                               # 2.5 module — measured by fc.py logos; the consumer applies the size bar
+  wordmark: { src: assets/wordmark.svg, w: 1321, h: 262 }                                                                       # "HONE" bold serif; WHITE-fill (built for the dark hero — invisible on white)
+  logomark: { src: "https://honehealth.com/wp-content/uploads/2024/04/cropped-favicon-300x300.png", px: 300, transparent: true }  # triangle outline, transparent ground (the "TriangleWhite" mark family)
+  og:       { src: "https://honehealth.com/wp-content/uploads/2024/09/Hone_SocialShare_TRT.png", w: 1200, h: 900 }                # Hone product bottles ("HONE") — real share cover
 brand_colors: { primary: "#F8F93F", text: "#0E0B20", background: "#FFFFFF" }  # STRAIN: chartreuse-yellow #F8F93F is the verified hero/section brand hue; branding.accent (#0E0B20) is the near-black text/footer color
 fonts: [STIX Two Text, DM Sans]   # display serif (headings) + sans body
 color_scheme: light
@@ -137,3 +141,4 @@ Polished, premium, editorial. The identity is built on a single bold **chartreus
 - **Credits:** 9 (1 map + homepage + 7 key pages).
 - **Couldn't get:** server-rendered membership-pricing detail (recovered from homepage FAQ instead); per-SKU weight-loss price map; any financials/headcount (not on site).
 - **Structured layer (schema 2.2):** `socials`, `external` (trustpilot), `aliases` (legalName/alternateName), `logo_url`, and founding year read from this capture's homepage JSON-LD via `fc.py signals` — hint-to-verify (socials cross-checked against the footer; Trustpilot rating lives in Credibility). Traces to the 2026-05-31 rawHtml payload; re-stamped 2.0→2.2 (`specialties`, briefly added in 2.1, was dropped in 2.2 — no working seed, no consumer).
+- **Run profile:** +logos — 2.5 logos module added 2026-06-04 over the existing capture (cached homepage payload, no re-scrape). Wordmark extracted from the inline "HONE" header SVG in rawHtml (committed to `assets/wordmark.svg`, white-fill); logomark/og measured by `fc.py logos`, `transparent` judged on a checker tile; `logo_url` canonicalized from the TriangleWhite logomark to the wordmark. Re-stamped 2.2→2.5.

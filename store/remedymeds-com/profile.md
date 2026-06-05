@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.3"
+schema_version: "2.5"
 
 # Identity
 domain: remedymeds.com
@@ -37,7 +37,11 @@ business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
 # Visual identity — branding payload is a hint; hues below estimated from the screenshot (payload returned gray text chrome)
-logo_url: https://remedymeds.com/remedymeds/images/remedy-logo-white.svg
+logo_url: https://remedymeds.com/remedymeds/images/remedy-logo-white.svg   # canonical wordmark (on-domain SVG)
+logos:                               # 2.5 module — measured by fc.py logos; the consumer applies the size bar
+  wordmark: { src: https://remedymeds.com/remedymeds/images/remedy-logo-white.svg, w: 105, h: 30 }                  # italic "Remedy" serif (Playfair); WHITE-fill (built for the navy hero — invisible on white)
+  logomark: { src: "https://www.google.com/s2/favicons?domain=remedymeds.com&sz=256", px: 256, transparent: false } # white "R{+}" on a baked navy (#1E2950) square
+  og:       { src: "https://remedymeds.com/remedymeds/og-image.jpg", w: 1600, h: 900 }                              # "Remedy Meds" weight-loss share card (app + vials) — real cover
 brand_colors: { primary: "#1E2950", accent: "#6C7DC4" }   # STRAIN: navy section bg + periwinkle-indigo serif accent, screenshot-estimated
 fonts: [Playfair Display, Inter, Figtree]                 # Playfair (italic serif) for emphasis headings, Inter/Figtree sans for body
 color_scheme: light
@@ -121,3 +125,4 @@ A high-volume, single-vertical compounded-GLP-1 weight-loss funnel — no insura
 - **Verify:** sourceURLs match; all 6 bodies md5-unique. /safety (295c) and /quiz (644c) are thin SPA shells — bodies trusted (status 200, content legible), not re-scraped.
 - **Credits:** 29 this run (1 map + homepage + 4 page scrapes at 1 each + getting-started PDF at 23). ~1,327 remaining.
 - **Couldn't get:** microdose/branded pricing (quiz-gated); states served, corporate operator/parent, founders/founding date (not on captured pages); independent verification of Trustpilot rating and scale/outcome claims (all self-displayed).
+- **Run profile:** +logos — 2.5 logos module added 2026-06-04 over the existing capture (cached homepage payload, no re-scrape); marks measured by `fc.py logos`, `transparent` judged on a checker tile. Re-stamped 2.3→2.5.
