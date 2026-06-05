@@ -19,5 +19,7 @@ venv/
 
 # Experiment scratch output (keep READMEs + scripts + FINDINGS, ignore bulk dumps)
 experiments/**/_out/
+# Derived SQLite lens — regenerable from the markdown, never source of truth (scripts/build_db.py)
+scripts/_out/
 # self-contained embedded-image sheets — bulk, regenerable from _out/
 experiments/**/contact-sheet.html
