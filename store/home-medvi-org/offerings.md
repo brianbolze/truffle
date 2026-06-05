@@ -124,4 +124,3 @@ MEDVi's "men's health" to a hormone/TRT brand would be comparing different categ
 - **Run profile:** guided — no emphasis; **+hero product images** (opt-in `fc.py hero` asset capture;
   framerusercontent CDN blocked the headed scorer, so the clean per-SKU renders were fetched directly with a
   browser UA + referer and promoted to `captures/2026-06-04/images/`).
-</content>

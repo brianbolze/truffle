@@ -29,6 +29,8 @@ import re
 import sys
 from typing import Any
 
+from storelint import leaked_tags  # shared, schema-independent guard (also called by offeringscheck)
+
 try:
     import yaml
 except ImportError:
@@ -77,11 +79,19 @@ def check(slug: str, cohort: str, spec: dict[str, Any]) -> list[str]:
     path = os.path.join(STORE, slug, f"{cohort}.md")
     if not os.path.isfile(path):
         return [f"{slug}: no {cohort}.md (pack not active here)"]
-    fm = frontmatter(path)
-    if fm is None:
-        return [f"{slug}: no leading '---' frontmatter fence."]
 
     fails: list[str] = []
+    # --- leaked harness tags: schema-independent, so shared with offeringscheck via storelint ---
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+    for ln, tag in leaked_tags(text):
+        fails.append(f"{slug}: leaked harness tag {tag!r} on line {ln} — strip it (generation artifact, not content).")
+
+    fm = frontmatter(path)
+    if fm is None:
+        fails.append(f"{slug}: no leading '---' frontmatter fence.")
+        return fails
+
     doc_meta = spec.get("doc_meta") or ["schema_version", "domain", "captured_at"]
     fields = spec["fields"]
 
@@ -92,7 +102,9 @@ def check(slug: str, cohort: str, spec: dict[str, Any]) -> list[str]:
     allowed = set(doc_meta) | set(fields)
     for key, val in fm.items():
         if key not in allowed:
-            fails.append(f"{slug}: stray frontmatter key '{key}' — not doc-meta, not a declared cut (typo? a profile.md field leaking in?).")
+            fails.append(
+                f"{slug}: stray frontmatter key '{key}' — not doc-meta, not a declared cut (typo? a profile.md field leaking in?)."
+            )
         elif key in fields:
             if isinstance(val, (list, dict)):
                 fails.append(f"{slug}: cut '{key}' is multi-valued ({val!r}) — cohort cuts are single-select.")

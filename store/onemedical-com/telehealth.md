@@ -27,5 +27,3 @@ pay_model: bills insurance               # "we will bill your insurance" for vis
 
 ## Notes
 - **The cohort outlier, by design.** One Medical is the **insurance-integrated, bricks-and-mortar, FDA-brand primary-care** end of telehealth — the inverse of the cash-pay, ship-to-door, compounded-Rx men's-health brands the cohort is built around. The cuts capture that contrast crisply: `pay_model: bills insurance` (vs cash-pay), `modality: hybrid` (vs async), `anchor_category: primary-care` (vs TRT/GLP-1), `compounding_posture: FDA-brand-only` (vs compounded-only/both). Page-attested, not adjudicated.
-</content>
-</invoke>

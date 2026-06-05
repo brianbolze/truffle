@@ -116,4 +116,3 @@ manufacture padding. No PDP-template anatomy block (not requested this run); the
   (3 flagship renders, cropped from PDP screenshots since the CDN renders were uncapturable). Standard 7-column spine +
   closed visibility set retained, so `offeringscheck.py` holds. First non-telehealth + first Catalog `offerings.md` of
   this shape in the store.
-</content>

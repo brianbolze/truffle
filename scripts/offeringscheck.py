@@ -33,6 +33,8 @@ import os
 import re
 import sys
 
+from storelint import leaked_tags  # shared, schema-independent guard (also called by cohortcheck)
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STORE = os.path.join(ROOT, "store")
 
@@ -137,6 +139,10 @@ def check(slug: str) -> list[str]:
         return [f"{slug}: no offerings.md (module not active here)"]
     with open(path, encoding="utf-8") as f:
         text = f.read()
+
+    # --- leaked harness tags: schema-independent, so shared with cohortcheck via storelint ---
+    for ln, tag in leaked_tags(text):
+        fails.append(f"{slug}: leaked harness tag {tag!r} on line {ln} — strip it (generation artifact, not content).")
 
     # --- frontmatter: fence + doc-meta keys + no canonical-key field (check 5a) ---
     keys = frontmatter_keys(text)

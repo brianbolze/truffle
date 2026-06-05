@@ -267,5 +267,3 @@ Rx price is app-walled — the page anatomy *is* the explanation a roster cell c
   top bar. This module's own `captured_at` + a short TTL are the guard; re-capture before trusting a price.
 - **Credits:** 10 (1 map + 9 rich scrapes, 1 each; no enhanced-proxy/PDF add-ons). Screenshots + raw JSON
   persisted to `captures/2026-06-03/.payloads/`.
-</content>
-</invoke>
