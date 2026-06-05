@@ -12,7 +12,7 @@ Usage:
   fc.py scrape <url> --slug <slug> --name <name> [--homepage] [--images] [--wait 3500] [--proxy auto] [--date ...]
   fc.py hero    --slug <slug> --name <name> [--top 15] [--date ...]  # recall-first hero-image candidates to pick (opt-in asset, §1.1)
   fc.py logos   --slug <slug> [--name homepage] [--wordmark URL|PATH] [--date ...]  # measure the multi-ratio mark set (opt-in, §1.2)
-  fc.py verify  --slug <slug> [--date ...]  # scrapes: md5-dedup + sourceURL match; + lint profile.md once written
+  fc.py verify  --slug <slug> [--date ...]  # scrapes: md5-dedup + sourceURL match + junk soft-404 gate; + lint profile.md once written
   fc.py spend   --slug <slug> [--date ...]  # this run's attributed cost, summed from per-call creditsUsed
   fc.py signals --slug <slug> [--name homepage] [--date ...]  # slice rawHtml's JSON-LD + nav region (step-7 hint read, free)
   fc.py credits                             # GET /v2/team/credit-usage — global headroom only (free, 0 credits)
@@ -122,6 +122,46 @@ def do_map(
         print("   ", u)
 
 
+# --- junk soft-404 guard (firecrawl-capture.md §5.6) ------------------------
+# A page whose TITLE (or first heading) is *essentially* a "not found" message is a
+# dead/guessed path — discard it. Deliberately STATUS-INDEPENDENT: a junk stub and a
+# REAL §5.6 soft-404 (TeloLife /pricing renders full content at HTTP 404) are BOTH 404,
+# so the status can't tell them apart — the page's own headline can (TeloLife's title is
+# "Pricing — TeloLife", the stub's is "Not Found"/"404"). Anchored to the headline, NEVER
+# a body scan: "...patients who have not found success..." (nurx) is legit mid-sentence
+# copy a full-text grep would false-positive on. The dangerous case is a real-SIZED stub
+# — ivyrx /pdp-glp1-oral-melts is 9.4 KB with a unique body, so it slips BOTH the thin
+# guard and the md5-dedup; only its title gives it away. Validated across the corpus:
+# 6/6 true-positive (incl. the 9 KB ivyrx/joinamble shells), 0 false-positive in ~1000 pages.
+NOT_FOUND_RE = re.compile(
+    r"^\s*(?:404\b"
+    r"|(?:page|content)?\s*not\s+found\b"
+    r"|page\s+(?:not\s+available|unavailable|does(?:n['’]| no)t\s+exist|can['’]?t\s+be\s+found)"
+    r"|this\s+page\s+(?:does(?:n['’]| no)t\s+exist|is(?:n['’]t| not)\s+(?:available|found)|could\s+not\s+be\s+found)"
+    r"|oops[!,. ])",
+    re.I,
+)
+
+
+def first_heading(md: str) -> str | None:
+    """The first markdown ATX heading's text — where a stub's '# Page not found' lands when
+    the <title> is generic (goodlifemeds/granola). None if the body opens with no heading."""
+    for line in md.splitlines():
+        if m := re.match(r"#{1,6}\s+(.*)", line.strip()):
+            return m.group(1).strip()
+    return None
+
+
+def is_not_found(title: str | None, md: str) -> bool:
+    """True when the page ANNOUNCES itself as not-found in its title or first heading — the
+    junk-stub signature. Keeps a real §5.6 soft-404 (a real title served at HTTP 404), which
+    is the whole reason this anchors on the headline and not the status code."""
+    if title and NOT_FOUND_RE.match(title.strip()):
+        return True
+    head = first_heading(md)
+    return bool(head and NOT_FOUND_RE.match(head))
+
+
 def do_scrape(
     url: str,
     slug: str,
@@ -169,6 +209,8 @@ def do_scrape(
     credits = meta.get("creditsUsed")  # per-call billed truth (1 base; +4 enhanced proxy; +1/PDF pg)
     proxy_used = meta.get("proxyUsed")
     md5 = hashlib.md5(md.encode()).hexdigest()
+    title = meta.get("title")
+    not_found = is_not_found(title, md)
     d = store(slug, date)
     (d / ".payloads" / f"{name}.json").write_text(json.dumps(out, indent=2))
     (d / f"{name}.md").write_text(md)
@@ -191,6 +233,7 @@ def do_scrape(
         "mdlen": len(md),
         "secs": round(dt, 1),
         "match": (src or "").rstrip("/") == url.rstrip("/"),
+        "not_found": not_found,
         "credits": credits,
         "proxy": proxy_used,
     }
@@ -201,6 +244,9 @@ def do_scrape(
     print(f"         src={src}")
     if md and len(md) < 500:
         print("         !! THIN markdown (<500c) — possible SPA-blank / wall")
+    if not_found:
+        print(f"         !! NOT-FOUND stub — title={title!r} at HTTP {status}: a dead/guessed path,")
+        print(f"            NOT page content (§5.6 junk soft-404). Drop {name}.md — verify gates on it.")
 
 
 # --- profile.md lint (step-7 output) ---------------------------------------
@@ -226,7 +272,9 @@ REQUIRED_FM_KEYS = [
 ]
 # Leaked harness control tags — how </content> and </invoke> reached 4 profiles in
 # the first batch. Targeted to the tool-call vocabulary so legit URL-template
-# placeholders (<slug>, <sku>, <drug>) don't false-positive.
+# placeholders (<slug>, <sku>, <drug>) don't false-positive. MIRROR of
+# scripts/storelint.py's LEAK_RE (duplicated across the skill boundary so fc.py
+# stays self-contained + stdlib-only) — change both together.
 LEAK_RE = re.compile(r"</?\s*(?:antml:)?(?:function_calls|invoke|parameter|content)\b[^>]*>", re.I)
 
 
@@ -295,7 +343,22 @@ def do_verify(slug: str, date: str) -> None:
             if len(names) > 1:
                 print(f"  DUP BODY md5={md5[:8]} across: {names}  <-- §5.1 contamination")
                 scrape_bad = True
-        print("  scrapes OK — all sourceURLs match, all bodies unique" if not scrape_bad else "  ^^ scrape ISSUES above")
+        # --- junk soft-404 stubs (§5.6): the page declared itself not-found in its
+        # title/heading. The LATEST record per name wins (a re-scrape that resolved to
+        # real content clears it); a still-flagged page whose .md is on disk is unresolved
+        # junk poisoning the capture — the 404 fact lives in `status` + the screenshot +
+        # prose, never the nav-shell body, so the fix is to drop the .md (true for a
+        # deliberate "dead SKU" finding too: roster it in prose, don't keep the stub file).
+        latest: dict[str, dict[str, Any]] = {}
+        for r in scrapes:
+            latest[r["name"]] = r  # append-ordered manifest -> last write per name wins
+        for name, r in latest.items():
+            if r.get("not_found") and (d / f"{name}.md").exists():
+                print(
+                    f"  JUNK SOFT-404: {name}  (HTTP {r.get('status')}, title declares not-found)  <-- §5.6 dead/guessed path; rm {name}.md"
+                )
+                scrape_bad = True
+        print("  scrapes OK — all sourceURLs match, all bodies unique, no junk soft-404s" if not scrape_bad else "  ^^ scrape ISSUES above")
         bad |= scrape_bad
     # --- the written dossier ---
     bad |= lint_profile(slug)
