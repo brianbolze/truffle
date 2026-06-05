@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.3"
+schema_version: "2.5"
 
 # Identity
 domain: ro.co
@@ -12,21 +12,26 @@ socials: {}                          # none in captured footer/JSON-LD (icons ma
 external: {}                         # JSON-LD carried no sameAs
 
 # Capture meta
-captured_at: 2026-06-01
+captured_at: 2026-06-04
 capture_method: firecrawl
-site_notes: "React/Remix SPA; mega-nav is client-rendered (signals <header> collapsed) — rebuild nav from homepage markdown links, which capture the full flyout. A/B: yes (own engine, ro-experiments/roexp.min.js) — pricing/IA is point-in-time. Datadog RUM + Cloudflare + GTM. Comprehensive per-condition pricing at /pricing/ AND per-product pages; Ro Body (GLP-1) membership price lives in the /weight-loss/how-it-works/ FAQ, med cost billed separately/gated. Map (499 urls) is swamped by /health-guide, /weight-loss/*, /erectile-dysfunction/* SEO content + /network-physician/* bios — select from homepage links, not the map."
+site_notes: "React/Remix SPA; mega-nav is client-rendered (signals <header> collapsed) — rebuild nav from homepage markdown links, which capture the full flyout. A/B: yes (own engine, ro-experiments/roexp.min.js) — pricing/IA is point-in-time. Datadog RUM + Cloudflare + GTM. Pricing split: /pricing/ enumerates per-SKU price + molecule + 'Most popular' badge for EVERY line EXCEPT GLP-1s (whose 'Weight management' block shows only the Ro Body membership) and fertility (intake-gated, no public price); GLP-1 prices live only on /weight-loss/pricing/. Map (~500 urls) is swamped by /health-guide, /weight-loss/*, /erectile-dysfunction/* SEO content + /network-physician/* bios — select from homepage links, not the map. Per-SKU roster (all 8 lines) → offerings.md."
 key_pages:
   pricing: /pricing/
   weight_loss: /weight-loss/
+  weight_loss_pricing: /weight-loss/pricing/
   weight_loss_how_it_works: /weight-loss/how-it-works/
   erectile_dysfunction: /erectile-dysfunction/
+  hair_loss: /hair-loss/
+  dermatology: /dermatology/
+  fertility: /fertility/
   ro_os: /os/
   founder_letter: /founder-letter/
   advisors: /advisors/
   faq: /faq/
 unverified_fields:
-  - "GLP-1 medication cash price — billed separately from the Ro Body membership; 'varies by medication and insurance', not published."
-  - "Prices/IA are a point-in-time snapshot, not fixed — own A/B engine (ro-experiments) + promo-driven offers (e.g. TrumpRx pricing, $20-off ED) rotate."
+  - "GLP-1 medication cash price — billed separately from the Ro Body membership; dose-laddered + provider-titrated ('thereafter' ranges are floors, not totals)."
+  - "Fertility line (Modern Fertility kits + Sperm Kit), Upneeq, and Saxenda carry no public price — quiz/intake-gated or nav/FAQ-only; Saxenda's molecule is unnamed on captured pages."
+  - "Prices/IA are a point-in-time snapshot, not fixed — own A/B engine (ro-experiments) + promo-driven offers (TrumpRx-matched pricing, Prepay & Save, dated $20-off ED) rotate."
 
 description: "A DTC telehealth company connecting patients to licensed providers, a nationwide pharmacy, and at-home labs on one vertically integrated platform, delivering prescription weight-loss, sexual-health, hair, skin, and fertility treatments online."
 
@@ -39,7 +44,11 @@ business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
 # Visual identity
-logo_url: https://ro.co/rocostatic/favicon.svg   # on-domain SVG mark (branding.images.logo + JSON-LD logo both absent)
+logo_url: assets/wordmark.svg        # 2.5: canonicalized to the wordmark — the inline "ro" logotype SVG (branding.images.logo, decoded from its data-URI). Favicon fallback was https://ro.co/rocostatic/favicon.svg
+logos:                               # 2.5 module (+logos this run); each slot = what was found + ITS measurements (consumer applies the bar)
+  wordmark: { src: assets/wordmark.svg, w: 30, h: 17 }                                              # the "ro" logotype, black #1A1A1A, transparent SVG (committed text, scales infinitely); viewBox 0 0 64 36
+  logomark: { src: "https://ro.co/apple-touch-icon.png", px: 144, transparent: false }              # "ro" mark on a BAKED white square — renders as a white box on a dark slide (apple-touch-icon; google s2 returned only 32px)
+  og:       { src: "https://imgctf--assets.ro.co/jj2wf7627pjc/3QamN652IGIe5jHXBe73mP/4d7444afacc2a6b53bd1ba48d3f2044f/og-ro.jpg", w: 2400, h: 1260 }   # clean brand cover — "ro" wordmark + lifestyle/product photo grid
 brand_colors: { primary: "#1A1A1A", accent: "#F8FFA1", secondary: "#5E6F8D" }   # black wordmark/text on white; signature acid-chartreuse accent (branding called it "primary"); muted blue-grey + pastel photo blocks
 fonts: [Ro Sans]                     # proprietary typeface (branding.fonts[0], body role)
 color_scheme: light
@@ -59,10 +68,12 @@ Six condition lines, mostly subscription with monthly/quarterly/annual plans (pr
 - **Premature ejaculation:** Roman Swipes (4% benzocaine, OTC) **$22–$27/mo**; sertraline (generic Zoloft) **$24/mo**. `[published]`
 - **Hair loss (men):** finasteride **$16–$20/mo**; oral minoxidil **$24–$30/mo**; topical minoxidil **$13–$16/mo**; Ro Mane Spray (3-in-1 compounded) **$43–$50/mo**. `[published]`
 - **Women's hair loss:** women's oral minoxidil **$30/mo**; Hair Solution Rx (compounded) **$40/mo**. `[published]`
-- **Skin / dermatology:** Custom Rx skincare **$29/mo**; enriching cream **$8/mo**; LATISSE (bimatoprost, lashes) **$110/mo or $159/quarter**. `[published]`
+- **Skin / dermatology:** Custom Rx skincare (compounded blend) **$29/mo**; enriching cream **$8/mo**; LATISSE (bimatoprost, lashes) **$110/mo or $159/quarter**. `[published]` — plus Upneeq (oxymetazoline, ptosis eye drop), FAQ-only, no price `[on-request]`
 - **Cold sores / genital herpes:** valacyclovir (generic Valtrex) **$42–$144 per 3 mo** by dose/use. `[published]`
-- **Fertility:** Fertility Hormone Test, Ovulation Test, Pregnancy Test, Prenatal Multivitamin, Sperm Kit. `[on-request]` (priced via intake; not on `/pricing/`)
-- **Daily health (OTC supplements):** Ro Daily men's multivitamin **$29–$35/mo**; Testosterone Support **$29–$35/mo**. `[published]`
+- **Fertility — Modern Fertility (acquired by Ro):** Fertility Hormone Test (best seller), Ovulation Test, Pregnancy Test, Prenatal Multivitamin, Sperm Kit (`spermkit.ro.co`). `[on-request]` (quiz/intake-gated; not on `/pricing/`)
+- **Daily health (OTC supplements):** Ro Daily men's multivitamin (23 nutrients) **$29–$35/mo**; Testosterone Support **$29–$35/mo**. `[published]`
+
+Full per-SKU roster across all eight lines (~30 SKUs, molecules + dose ladders + visibility) → [`offerings.md`](offerings.md).
 
 ## How it works / model
 
@@ -118,7 +129,7 @@ Mass-consumer, no longer male-only: weight loss is the foregrounded hero (top pr
 
 ## Credibility & proof
 
-- **Scale (self-reported):** "**3,000,000+** members and counting"; "**95%** love their experience"; ro.OS page claims "Millions of patients helped," "Tens of millions of treatments delivered," "Hundreds of millions of care interactions."
+- **Scale (self-reported):** "**3,000,000+** members and counting"; "**95%** love their experience"; "**3,000,000+** members treated" (ED page); "Join **250,000+** Ro patients" (derm page); ro.OS page claims "Millions of patients helped," "Tens of millions of treatments delivered," "Hundreds of millions of care interactions."
 - **Outcome claims (self-reported, weight loss):** "Drop 20% of your weight," "Average weight loss in 1 year is 11–20% (vs ~2–3% with diet and exercise alone)"; member survey (n=1,243, ≥7 weeks): **87%** life-changing results, **93%** easier to incorporate, **97%** quieter food noise.
 - **Clinical leadership:** CMO Dr. Melynda Barnes (triple board-certified); advisors page; "Former Surgeon General and Head of the DEA" cited among advisors; "100s of published studies." Provider/credential network surfaced via `/network-physician/*` and `/advisors/`.
 - **Certification:** LegitScript-certified seal in footer.
@@ -134,8 +145,9 @@ Most relevant comp signal for a men's-health-adjacent venture: Ro's durable adva
 
 ## Provenance
 
-- **Pages:** homepage, /pricing/, /weight-loss/, /weight-loss/how-it-works/, /erectile-dysfunction/, /os/, /founder-letter/ (7 pages); Firecrawl scrape, all formats on homepage; map (499 urls) for inventory.
-- **Verify:** all 7 sourceURLs matched requested; all body md5s unique (no geo/cache contamination).
-- **Credits:** 8 (1 map + 7 scrapes), all basic proxy; ~1347 remaining.
-- **Couldn't get:** GLP-1 medication cash price (gated, varies by med/insurance); social handles (none in footer markdown / JSON-LD); per-SKU fertility pricing (intake-walled).
-- **Enriched (model knowledge):** "Roman" ↔ "Ro" rebrand/heritage relationship used for identity resolution only — Roman path (`/roman/`) is on-site; founders are named on the captured `/founder-letter/` page (not enriched).
+- **Pages (fresh, `captures/2026-06-04/`):** homepage, /pricing/, /weight-loss/, /weight-loss/pricing/, /weight-loss/how-it-works/, /erectile-dysfunction/, /hair-loss/, /dermatology/, /fertility/, /os/, /founder-letter/ (11 pages); Firecrawl scrape, all formats on homepage; map (~500 urls) for inventory. Prior captures (2026-06-01 base, 2026-06-03 weight-loss offerings) archived under `captures/_archive/`.
+- **Verify:** all 11 sourceURLs matched requested; all body md5s unique (no geo/cache contamination).
+- **Credits:** 12 (1 map + 11 scrapes), all basic proxy; ~557 remaining.
+- **Couldn't get:** GLP-1 medication all-in cash cost (dose-laddered + provider-titrated, billed separately from membership); social handles (JSON-LD carries only a minimal Organization block — name/url/contactPoint, no `sameAs`); fertility / Upneeq / Saxenda pricing (intake-walled / FAQ-only / nav-only); Testosterone Support + enriching cream molecules (unnamed blends).
+- **Run profile:** fresh re-capture + all-SKU offerings expansion (2026-06-04) — re-scraped the full profile page set + added /hair-loss/, /dermatology/, /fertility/; rebuilt `offerings.md` from weight-loss-only (prior 2026-06-03) to **all eight lines** (~30 SKUs). Logos (2.5: wordmark/logomark/og) + telehealth cohort pack added in the prior 2026-06-04 module pass (logos rode the cached homepage payload, 0 credits).
+- **Enriched (model knowledge):** "Roman" ↔ "Ro" rebrand/heritage relationship used for identity resolution only — Roman path (`/roman/`) is on-site. Founders (Reitano, Rahmanian, Schutz) are named on the captured `/founder-letter/` page; Modern Fertility / Rory→Custom Rx renames are on captured pages (`/fertility/`, `/dermatology/`) — not enriched.
