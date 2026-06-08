@@ -4,6 +4,7 @@ paths:
   - "experiments/**"
   - "scripts/**"
   - "skills/**"
+  - "tools/**"
   - "BACKLOG.md"
 ---
 # Working on the engine
