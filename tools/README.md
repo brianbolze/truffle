@@ -28,6 +28,14 @@ Five tools live; the last two deferred on purpose — see [`BACKLOG.md`](BACKLOG
 | `ad_library.py` | Meta Ad Library (Apify) | `APIFY_API_KEY` | deferred |
 | `reddit.py` | Reddit JSON search | none | deferred |
 
+Consumer helpers live here too when they make repeated use of captured envelopes boring without
+turning into project judgment:
+
+| Consumer | Inputs | Status |
+|---|---|---|
+| [`serp_match.py`](serp_match.py) | one `serpapi.py` envelope + cohort JSON | **live bridge** |
+| [`serp_intent_panel.py`](serp_intent_panel.py) · [docs](serp_intent_panel.md) | query set + cohort JSON + captured `serpapi.py` envelopes | **live** |
+
 ## Conventions (the reference shape)
 
 [`serpapi.py`](serpapi.py) + [`serpapi.md`](serpapi.md) are the worked example — copy their shape. The load-bearing rules, so tool #N doesn't reinvent them:
@@ -39,7 +47,7 @@ Five tools live; the last two deferred on purpose — see [`BACKLOG.md`](BACKLOG
   - **optional:** `parser_version` (only on versionable/drift-prone upstreams — skip it on frozen feeds like CDX) · `cost` (only where the source meters credits/$).
   - then the tool's **payload as named field(s) beside** these (`organic_results`, `snapshots`, `neighbors`, `reviews`…) — never nested under a generic `payload`/`data`.
   - **`captured_at` is *this invocation's* wall-clock, not a source-reported date.** Source dates that are themselves the signal (Wayback timestamps, review dates, ad first-seen) live *inside payload items* under their own names. Conflating the two is the trap. Lock these keys; leave payload naming to each tool (a loose spine, not a frozen schema).
-- **Match-free.** Capture tools emit raw signal; matching results to a cohort/brand list is a separate composable step (`_match.py` plus thin consumers like `serp_match.py`), never baked into a capture tool. Keeps every capture generic — `serpapi` does this; the legacy scripts that baked matching in are what we're undoing.
+- **Match-free.** Capture tools emit raw signal; matching results to a cohort/brand list is a separate composable step (`_match.py` plus consumers like `serp_match.py` and `serp_intent_panel.py`), never baked into a capture tool. Keeps every capture generic — `serpapi` does this; the legacy scripts that baked matching in are what we're undoing.
 - **Avoid wrapper sprawl.** `_match.py` is the shared importable matcher; don't add one `*_match.py` CLI per source. A one-off bridge can exist while a workflow proves itself, but repeated matching/orchestration should graduate to a generic recipe or batch runner outside the capture-tool surface.
 - **Drift-prone upstream → fail loud.** If the source reshapes (Google AIO, Apify, Trustpilot HTML): pin a `PARSER_VERSION`, ship `validate_<x>_shape_<ver>()` returning a complaint list, route it through `schema_drift[]`, **suppress the parsed fields** (no parse-on into plausible-but-wrong output), exit 3. Stable sources (Wayback CDX) skip this — don't cargo-cult a validator onto a frozen feed.
 - **CLI shape.** Single-verb → flat `main()` (serpapi). Multi-verb → subparsers + `DISPATCH = {cmd: fn}` (the `fc.py` pattern, per [`python.md`](../.claude/rules/python.md)).

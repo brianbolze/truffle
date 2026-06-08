@@ -1,0 +1,225 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-08T19:10:13Z",
+  "ok": true,
+  "input": {
+    "query": "NAD injection online",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "Buying NAD+ injections online typically involves a telehealth consultation with a licensed provider who reviews your health history and, if appropriate, issues a prescription. The medication is then shipped directly from a licensed compounding pharmacy to your home\n\n\n. Wisp +3",
+    "Several platforms specialize in at-home NAD+ therapy kits, which usually include the vial, syringes, and medical support.",
+    "Costs vary significantly depending on the dosage (500mg vs. 1000mg) and commitment level."
+  ],
+  "headings": [
+    "Top Online Providers",
+    "Pricing and Subscription Models",
+    "How the Online Process Works",
+    "Important Safety Notes"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "Wisp",
+      "title": "Buy NAD+ Injections Online: Provider-Guided Care | Wisp",
+      "link": "https://hellowisp.com/products/nad-injection-solution?srsltid=AfmBOopPcnFmQ1eFmNf0JBgyZNKvzrLKNszkPOIhZIf4lFVHXN5O09Xa"
+    },
+    {
+      "index": 1,
+      "source": "Everyday Health",
+      "title": "10 Best Platforms for Obtaining NAD+ Online in 2026",
+      "link": "https://www.everydayhealth.com/medical-products/best-nad-online/"
+    },
+    {
+      "index": 2,
+      "source": "Hone Health",
+      "title": "NAD+ Injections - Get an NAD Prescription Online - Hone Health",
+      "link": "https://honehealth.com/longevity/nad/?srsltid=AfmBOopbc15jiBPPhPs7GnclXBCrN67Lzy-aHjCauPfWbTE976l2wZCM"
+    },
+    {
+      "index": 3,
+      "source": "Empower Pharmacy",
+      "title": "NAD+ Injection (Aqueous) - Empower Pharmacy",
+      "link": "https://www.empowerpharmacy.com/compounding-pharmacy/nad-injection-aqueous/"
+    },
+    {
+      "index": 4,
+      "source": "Alan Health",
+      "title": "NAD+ Injection - Energy & Cognitive Function | Alan Health",
+      "link": "https://www.alanmeds.com/medications/nad-injection?srsltid=AfmBOoqVGeqOU8XY1_o75Zqxr0LmLOX5Xf6yvN8ZEy8MuCCms-FBtmvO"
+    },
+    {
+      "index": 5,
+      "source": "Concierge MD",
+      "title": "NAD Injections At Home - Concierge MD",
+      "link": "https://conciergemdla.com/nad-therapy/"
+    },
+    {
+      "index": 6,
+      "source": "MediVera Compounding Pharmacy",
+      "title": "NAD+ Injection - MediVera Compounding Pharmacy",
+      "link": "https://mediverarx.com/medication/nad-injection/"
+    },
+    {
+      "index": 7,
+      "source": "AgelessRx",
+      "title": "Buy NAD Injection - Fast NAD+ Injection Delivery - AgelessRx",
+      "link": "https://agelessrx.com/nad-injection/?srsltid=AfmBOorfswal0EqpYKhdb44sGPGvjT7UFJ76JTykGqiUI5tKWz3CtCG1"
+    },
+    {
+      "index": 8,
+      "source": "www.vaccinealliance.org",
+      "title": "Best Online Sources for NAD+ Injections - Vaccine Alliance",
+      "link": "https://www.vaccinealliance.org/nad-injections/best/"
+    },
+    {
+      "index": 9,
+      "source": "Refills",
+      "title": "NAD+ Injections Prescription Online | Anti-Aging Peptides - Refills",
+      "link": "https://www.refills.com/daily-health/nad-injections"
+    },
+    {
+      "index": 10,
+      "source": "NAD+ at Home",
+      "title": "NAD+ Injections Kit | NAD+ Therapy at Home",
+      "link": "https://nadplusathome.com/product/nad-at-home/?srsltid=AfmBOopP7vVfPKPkO8vUw_im-eRtXpEkLAn03efBprB7YUDPGWcFOtRc"
+    },
+    {
+      "index": 11,
+      "source": "NAD+ at Home",
+      "title": "NAD+ AT HOME - Experience the benefits of NAD+",
+      "link": "https://nadplusathome.com/?srsltid=AfmBOopxvi-CFEtr-o4tYxtL7Kz571lXCziYeK0pfKQjERMjzIxwbAVe"
+    },
+    {
+      "index": 12,
+      "source": "Renew MedSpa",
+      "title": "NAD+ Injections",
+      "link": "https://renewmedspamn.com/treatments/nad-injections/"
+    },
+    {
+      "index": 13,
+      "source": "Progress MD",
+      "title": "NAD+ \\u0026 Renew Injections - Amarillo",
+      "link": "https://progressmd.com/nad%2B-%26-renew-injections"
+    },
+    {
+      "index": 14,
+      "source": "Saltbox Aesthetics + Apothecary",
+      "title": "NAD+ Injections in Dallas, TX | Energy \\u0026 Brain Fog Relief",
+      "link": "https://saltboxdallas.com/pages/nad-injections-in-dallas-tx"
+    },
+    {
+      "index": 15,
+      "source": "The Hydration Room",
+      "title": "NAD+ Injections | Hydration Room",
+      "link": "https://hydrationroom.com/nad-therapy/nad-plus-injection"
+    },
+    {
+      "index": 16,
+      "source": "UK Meds",
+      "title": "Buy NAD+ Injections by Vivere",
+      "link": "https://www.ukmeds.co.uk/vivere-nad-injection"
+    },
+    {
+      "index": 17,
+      "source": "Kuya Wellness",
+      "title": "NAD+ Therapy at Kuya - Advanced Mental Health - Austin, TX",
+      "link": "https://kuyawellness.com/nad-therapy/"
+    },
+    {
+      "index": 18,
+      "source": "4Ever Young Anti Aging Solutions",
+      "title": "NAD+ IV Therapy: Energy \\u0026 Anti-Aging | 4Ever Young",
+      "link": "https://4everyoungantiaging.com/anti-aging-tips/nad-iv-therapy-boost-energy-and-fight-aging-from-within/"
+    },
+    {
+      "index": 19,
+      "source": "Phoenix Mobile IV Therapy",
+      "title": "NAD+ IV Therapy in Phoenix, AZ",
+      "link": "https://mobileivtherapyphoenix.com/nad-iv-therapy/"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Buy NAD+ Injections Online: Provider-Guided Care",
+      "link": "https://hellowisp.com/products/nad-injection-solution?srsltid=AfmBOoo3nsVvDv6qolyunj8iLPu2pxDVzB33z1OaMyFq1go4F7OmXhA3",
+      "snippet": "Explore NAD+ injection therapy from home. Provider-reviewed prescriptions designed to support energy, focus, and long-term wellness.",
+      "displayed_link": "https://hellowisp.com \u203a products \u203a nad-injection-solution"
+    },
+    {
+      "position": 2,
+      "title": "NAD+ Injection (Lyo)",
+      "link": "https://www.empowerpharmacy.com/compounding-pharmacy/nad-injection/",
+      "snippet": "Never purchase NAD+ injections directly online without a prescription; not only is it illegal, but product quality and sterility would be uncertain. With a ...",
+      "displayed_link": "https://www.empowerpharmacy.com \u203a Products"
+    },
+    {
+      "position": 3,
+      "title": "Explore NAD+ Treatments",
+      "link": "https://agelessrx.com/all-nad-support/?srsltid=AfmBOoqdhtC7xQS6LE82GTVepTv3AqS-n0LvFF1aO_87hZ_bnLz1GDft",
+      "snippet": "Without NAD, life would cease to exist ; NAD+ Injection \u00b7 Starting at $99 ; NAD+ Patches \u00b7 Starting at $160 ; NAD+ Nasal Spray \u00b7 Starting at $125 ; NAD+ Face Cream.",
+      "displayed_link": "https://agelessrx.com \u203a all-nad-support"
+    },
+    {
+      "position": 4,
+      "title": "Best Online Sources for NAD+ Injections - Vaccine Alliance",
+      "link": "https://www.vaccinealliance.org/nad-injections/best/",
+      "snippet": "9 Best Online Sources for NAD+ Injections (Ranked and Reviewed) ; Eden \u00b7 4.9. Best for Patient-Friendly Support \u00b7 $186/mo ; Shed \u00b7 4.8. Best for Affordability \u00b7 $169/ ...",
+      "displayed_link": "https://www.vaccinealliance.org \u203a NAD Injections"
+    },
+    {
+      "position": 5,
+      "title": "NAD+ Injection Therapy",
+      "link": "https://driphydration.com/nad-injections/?srsltid=AfmBOop0s3sQNZxH_L_61sXvTXsImgSpxF9Cb_PN73JmBs1gqAPXYLRb",
+      "snippet": "NAD injections are delivered directly to your home; Faster effects than oral NAD+ supplements; Supports brain health, energy levels, and cellular health ...",
+      "displayed_link": "https://driphydration.com \u203a nad-injections"
+    },
+    {
+      "position": 6,
+      "title": "NAD+ Injections - Get an NAD Prescription Online",
+      "link": "https://honehealth.com/longevity/nad/?srsltid=AfmBOorEzbxdNBig5RbN-EpfC-nEKRbuLgQAN69f4n6eIJsQWMW73MHC",
+      "snippet": "Energize your life with NAD+ Injections: Boost longevity, vitality, and brain power. Replenish your NAD+ levels today with Hone Health.",
+      "displayed_link": "https://honehealth.com \u203a Longevity"
+    },
+    {
+      "position": 7,
+      "title": "NAD+ Injection",
+      "link": "https://mediverarx.com/medication/nad-injection/",
+      "snippet": "MediVera Compounding Pharmacy\u2122 prepares NAD+ injections for metabolic support, available by prescription from MediVera Compounding Pharmacy\u2122.",
+      "displayed_link": "https://mediverarx.com \u203a Medications"
+    },
+    {
+      "position": 8,
+      "title": "Buy NAD+ Injections | Boost Health & Energy | Free Shipping",
+      "link": "https://hydramed.com/rx/nad/injections",
+      "snippet": "Buy NAD+ injections from HydraMed to enhance energy, improve cellular health, and promote anti-aging. Order now for doorstep delivery and start boosting ...",
+      "displayed_link": "https://hydramed.com \u203a nad \u203a injections"
+    },
+    {
+      "position": 9,
+      "title": "NAD+ (Active Form) Injection HOMEKIT",
+      "link": "https://www.vitastir.com/product/nad-injection/?srsltid=AfmBOooHCI3fb1v3N_jcjzBrxGHdF7JR3780gzfbqqgoO2H3rBJra7AS",
+      "snippet": "Our NAD Injection are used for Energy, Focus, Anti-Aging, Depression, athletic performance and recovery. Improvements in endurance, strength.",
+      "displayed_link": "https://www.vitastir.com \u203a Shop"
+    },
+    {
+      "position": 10,
+      "title": "NAD Injection | Nicotinamide Adenine Dinucleotide |",
+      "link": "https://www.olympiapharmacy.com/product/nad-injections/?srsltid=AfmBOorzsoxNerc_Zd2nTQJpojNS8y5q8DkSR0sZn29qXSTDasjPSVzv",
+      "snippet": "Overview of NAD Injection. Injectable NAD and NAD+ Injections occur naturally in the body. They play a major role in the chemical process of generating energy.",
+      "displayed_link": "https://www.olympiapharmacy.com \u203a product \u203a nad-inj..."
+    }
+  ]
+}

@@ -42,13 +42,6 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
   comparability notes only. No blended score, no market-share read.
   **Act when:** there are two captures of the same panel or source.
 
-- **SERP intent panel recipe over `serpapi.py` + `_match.py`** `[idea]`
-  Query set + cohort in; captured SERP envelopes + match output out. The reusable method should
-  classify results as own page, third-party mention, aggregator/listicle, or irrelevant with
-  provenance, while leaving category intent and "visibility vs traction" interpretation to the
-  project. This replaces generic web-search probes, not `serpapi.py`.
-  **Act when:** repeating a category query set after 48-72 hours.
-
 - **Trustpilot velocity + integrity comparator belongs beside the capture tool** `[idea]`
   `trustpilot.py` correctly captures profile state and raw flags; velocity and comparability need a
   separate consumer over two or more envelopes. Output review-count deltas, monthly velocity,

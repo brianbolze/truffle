@@ -1,0 +1,53 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-08T18:20:11Z",
+  "ok": true,
+  "input": {
+    "query": "buy payroll tax forms",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 1
+  },
+  "ai_overview_present": false,
+  "ai_overview_skipped": true,
+  "ranked_brands": [],
+  "narrative_paragraphs": [],
+  "headings": [],
+  "references": [],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Buy payroll tax forms online",
+      "link": "https://www.amazon.com/payroll-tax-forms/s?k=payroll+tax+forms",
+      "snippet": "Shop paper payroll tax forms and envelopes.",
+      "displayed_link": "amazon.com"
+    },
+    {
+      "position": 2,
+      "title": "Payroll forms and tax envelopes",
+      "link": "https://www.walmart.com/c/payroll-tax-forms",
+      "snippet": "Buy forms, envelopes, and office supplies.",
+      "displayed_link": "walmart.com"
+    },
+    {
+      "position": 3,
+      "title": "Tax forms for employers",
+      "link": "https://www.staples.com/payroll-tax-forms/cat_CL12345",
+      "snippet": "Retail office supplies for payroll recordkeeping.",
+      "displayed_link": "staples.com"
+    },
+    {
+      "position": 4,
+      "title": "Printable payroll tax forms",
+      "link": "https://example.org/payroll-tax-forms",
+      "snippet": "Download and shop employer tax form packs.",
+      "displayed_link": "example.org"
+    }
+  ]
+}

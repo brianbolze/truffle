@@ -1,0 +1,41 @@
+{
+  "evidence_shape_equal": true,
+  "ignored_expected_differences": [
+    "generated_at",
+    "input.fetch_missing",
+    "input.organic_only_for_live_fetch",
+    "input.fetched_live_count",
+    "queries[].capture_status",
+    "queries[].capture.path"
+  ],
+  "live_capture_statuses": {
+    "trt-online-prescription": "fetched_live",
+    "sermorelin-online-prescription": "fetched_live",
+    "nad-injection-online": "fetched_live",
+    "compounded-tirzepatide-online": "fetched_live"
+  },
+  "cached_capture_statuses": {
+    "trt-online-prescription": "captured",
+    "sermorelin-online-prescription": "captured",
+    "nad-injection-online": "captured",
+    "compounded-tirzepatide-online": "captured"
+  },
+  "live_summary": {
+    "query_count": 4,
+    "captured_query_count": 4,
+    "missing_query_count": 0,
+    "schema_drift_query_count": 0,
+    "clean_query_count": 0,
+    "no_cohort_signal_query_count": 0,
+    "noisy_query_count": 4
+  },
+  "cached_summary": {
+    "query_count": 4,
+    "captured_query_count": 4,
+    "missing_query_count": 0,
+    "schema_drift_query_count": 0,
+    "clean_query_count": 0,
+    "no_cohort_signal_query_count": 0,
+    "noisy_query_count": 4
+  }
+}

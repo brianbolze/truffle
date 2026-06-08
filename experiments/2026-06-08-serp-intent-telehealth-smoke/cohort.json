@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "hims",
+    "domain": "hims.com",
+    "aliases": [
+      "Hims",
+      "Hims & Hers",
+      "forhims"
+    ]
+  },
+  {
+    "slug": "ro",
+    "domain": "ro.co",
+    "aliases": [
+      "Ro",
+      "Roman"
+    ],
+    "disambiguate_regex": "\\b(?:Ro Health|Ro\\.co|Roman|ro\\.co)\\b"
+  },
+  {
+    "slug": "hone-health",
+    "domain": "honehealth.com",
+    "aliases": [
+      "Hone",
+      "Hone Health"
+    ]
+  },
+  {
+    "slug": "trt-nation",
+    "domain": "trtnation.com",
+    "aliases": [
+      "TRT Nation"
+    ]
+  },
+  {
+    "slug": "peter-md",
+    "domain": "getpetermd.com",
+    "aliases": [
+      "PeterMD",
+      "Peter MD",
+      "PeterUncaged MD",
+      "Peter Uncaged MD"
+    ]
+  },
+  {
+    "slug": "maximus",
+    "domain": "maximustribe.com",
+    "aliases": [
+      "Maximus"
+    ]
+  },
+  {
+    "slug": "agelessrx",
+    "domain": "agelessrx.com",
+    "aliases": [
+      "AgelessRx"
+    ]
+  },
+  {
+    "slug": "strut-health",
+    "domain": "struthealth.com",
+    "aliases": [
+      "Strut",
+      "Strut Health"
+    ]
+  },
+  {
+    "slug": "brello-health",
+    "domain": "brellohealth.com",
+    "aliases": [
+      "Brello",
+      "Brello Health",
+      "BrelloHealth"
+    ]
+  },
+  {
+    "slug": "ivim-health",
+    "domain": "ivimhealth.com",
+    "aliases": [
+      "Ivím",
+      "Ivim",
+      "Ivím Health",
+      "Ivim Health"
+    ]
+  },
+  {
+    "slug": "hydramed",
+    "domain": "hydramed.com",
+    "aliases": [
+      "HydraMed"
+    ]
+  }
+]

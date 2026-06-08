@@ -1,0 +1,19 @@
+{
+  "defaults": {
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "queries": [
+    {
+      "id": "payroll-software",
+      "category": "payroll",
+      "query": "online payroll software"
+    },
+    {
+      "id": "payroll-tax-forms",
+      "category": "payroll",
+      "query": "buy payroll tax forms"
+    }
+  ]
+}

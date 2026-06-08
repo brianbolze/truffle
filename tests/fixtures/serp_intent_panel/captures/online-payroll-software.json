@@ -1,0 +1,83 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-08T18:16:11Z",
+  "ok": true,
+  "input": {
+    "query": "online payroll software",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [
+    {
+      "position": 1,
+      "label": "Best Overall",
+      "after_colon": "AlphaPay",
+      "raw_snippet": "Best Overall: AlphaPay",
+      "format": "labeled",
+      "reference_indexes": [1]
+    },
+    {
+      "position": 2,
+      "label": "Top Compliance",
+      "after_colon": "Beta Ledger",
+      "raw_snippet": "Top Compliance: Beta Ledger",
+      "format": "labeled",
+      "reference_indexes": [2]
+    }
+  ],
+  "narrative_paragraphs": [],
+  "headings": [],
+  "references": [
+    {
+      "index": 0,
+      "source": "AlphaPay",
+      "title": "AlphaPay Online Payroll Software",
+      "link": "https://www.alphapay.com/payroll"
+    },
+    {
+      "index": 1,
+      "source": "Payroll Software Review",
+      "title": "Best Payroll Software: AlphaPay vs Beta Ledger",
+      "link": "https://reviews.example.com/payroll-software"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "AlphaPay Online Payroll Software",
+      "link": "https://www.alphapay.com/payroll",
+      "snippet": "AlphaPay helps small teams run payroll online.",
+      "displayed_link": "alphapay.com"
+    },
+    {
+      "position": 2,
+      "title": "Best Payroll Software: AlphaPay vs Beta Ledger",
+      "link": "https://www.softwareadvice.com/hr/best-payroll-software/",
+      "snippet": "Our comparison covers AlphaPay, Beta Ledger, and other payroll platforms.",
+      "displayed_link": "softwareadvice.com"
+    },
+    {
+      "position": 3,
+      "title": "Beta Ledger Payroll Platform",
+      "link": "https://betaledger.com/products/payroll",
+      "snippet": "Beta Ledger offers payroll and compliance workflows.",
+      "displayed_link": "betaledger.com"
+    },
+    {
+      "position": 4,
+      "title": "Payroll basics for first-time employers",
+      "link": "https://example.com/payroll-basics",
+      "snippet": "A guide to payroll taxes, filings, and employee records.",
+      "displayed_link": "example.com"
+    }
+  ]
+}

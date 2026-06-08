@@ -1,0 +1,158 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-08T19:09:56Z",
+  "ok": true,
+  "input": {
+    "query": "sermorelin online prescription",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 1
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "Sermorelin is a prescription medication and cannot be purchased over the counter. You can legally obtain it online through legitimate telemedicine platforms that require a virtual consultation, medical history review, and sometimes lab testing. Strut Health +2",
+    "Monthly costs typically range from $150 to $300, depending on your dosage and the provider you choose. Strut Health",
+    "Be wary of any provider that promises sermorelin without a prescription or medical consultation, as it is illegal. Because sermorelin is typically compounded (since synthetic growth hormone secretagogues are off-label for general anti-aging), ensure your provider uses licensed, FDA-registered 503A pharmacies. Always disclose all medications, allergies, and health conditions to your consulting provider. Strut Health +4"
+  ],
+  "headings": [
+    "How to Get a Prescription Online",
+    "Trusted Telemedicine Platforms & Pricing",
+    "Important Safety Notes"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "AgelessRx",
+      "title": "Sermorelin Injection - AgelessRx",
+      "link": "https://agelessrx.com/sermorelin/"
+    },
+    {
+      "index": 1,
+      "source": "Hone Health",
+      "title": "Buy Sermorelin Injections - Online Prescriptions - Hone Health",
+      "link": "https://honehealth.com/mens/sermorelin/"
+    },
+    {
+      "index": 2,
+      "source": "Strut Health",
+      "title": "Sermorelin Prescription Online: Safety, Process & What to Expect",
+      "link": "https://www.struthealth.com/blog/sermorelin-prescription-online"
+    },
+    {
+      "index": 3,
+      "source": "Strut Health",
+      "title": "\u200dWhere to Get Sermorelin Safely? Here's What Actually Works",
+      "link": "https://www.struthealth.com/blog/where-to-get-sermorelin"
+    },
+    {
+      "index": 4,
+      "source": "IVY RX",
+      "title": "Sermorelin Prescription Online: Cost, Safety & Legal Options - IVY RX",
+      "link": "https://www.ivyrx.com/blog/sermorelin-prescription-online"
+    },
+    {
+      "index": 5,
+      "source": "Empower Pharmacy",
+      "title": "Sermorelin Acetate Injection - Empower Pharmacy",
+      "link": "https://www.empowerpharmacy.com/compounding-pharmacy/sermorelin-acetate-injection/"
+    },
+    {
+      "index": 6,
+      "source": "Midi Health",
+      "title": "Sermorelin - Midi Health",
+      "link": "https://www.joinmidi.com/store/sermorelin"
+    },
+    {
+      "index": 7,
+      "source": "Heally",
+      "title": "Sermorelin therapy online - free consultation - Heally",
+      "link": "https://getheally.com/patients/sermorelin"
+    },
+    {
+      "index": 8,
+      "source": "Strut Health",
+      "title": "How to Buy Sermorelin Online: What To Expect - Strut Blog",
+      "link": "https://www.struthealth.com/blog/how-to-buy-sermorelin-online"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Sermorelin Injection",
+      "link": "https://agelessrx.com/sermorelin/?srsltid=AfmBOoo2AfVMPwdpI5eP-ttDnRTzO1VLNrHSqihkNVY-UEL_-BytWzvE",
+      "snippet": "Buy Sermorelin online with free delivery and expert prescriber support, without the risks and side effects of synthetic HGH therapy.",
+      "displayed_link": "https://agelessrx.com \u203a sermorelin"
+    },
+    {
+      "position": 2,
+      "title": "Sermorelin Compounded",
+      "link": "https://www.cfspharmacy.pharmacy/sermorelin-compounded",
+      "snippet": "Sermorelin is normally given by an injection. However, our pharmacy can compound it into tablets and solutions that can go under the tongue, or into a lozenge- ...",
+      "displayed_link": "https://www.cfspharmacy.pharmacy \u203a sermorelin-compo..."
+    },
+    {
+      "position": 3,
+      "title": "Sermorelin Prescription Online: Safe & Legal Options",
+      "link": "https://www.eden.health/post/sermorelin-prescriptions-online-understanding-the-process-and-considerations?srsltid=AfmBOor1X6mY_X8WUStxR_Ib7qQ1FwsYcFIeyKQxy2KKgUOP8QYMmFth",
+      "snippet": "Many wellness clinics offer sermorelin therapy, but it's also possible to get a sermorelin prescription online through telemedicine services, ...",
+      "displayed_link": "https://www.eden.health \u203a post \u203a sermorelin-prescriptio..."
+    },
+    {
+      "position": 4,
+      "title": "Sermorelin Prescription Online: Safety, Process & What to ...",
+      "link": "https://www.struthealth.com/blog/sermorelin-prescription-online",
+      "snippet": "Online sermorelin prescriptions aren't typically covered by insurance. Monthly costs can range from $99-500 depending on dosing, delivery method, and provider.",
+      "displayed_link": "https://www.struthealth.com \u203a blog \u203a sermorelin-prescri..."
+    },
+    {
+      "position": 5,
+      "title": "Sermorelin",
+      "link": "https://www.joinmidi.com/store/sermorelin",
+      "snippet": "Sermorelin. $179 / Starting per month. A non-hormonal way to help recharge energy, metabolism, and recovery in midlife. Your clinician will evaluate your ...",
+      "displayed_link": "https://www.joinmidi.com \u203a store \u203a sermorelin"
+    },
+    {
+      "position": 6,
+      "title": "Sermorelin (injection route) - Side effects & dosage",
+      "link": "https://www.mayoclinic.org/drugs-supplements/sermorelin-injection-route/description/drg-20065923",
+      "snippet": "Sermorelin is a synthetic (man-made) version of a naturally occurring substance that causes release of growth hormone from the pituitary gland.",
+      "displayed_link": "https://www.mayoclinic.org \u203a drg-20065923"
+    },
+    {
+      "position": 7,
+      "title": "Compounded Sermorelin Injections | Peptides",
+      "link": "https://www.olympiapharmacy.com/product/sermorelin-injections/?srsltid=AfmBOoqRZPMJ-xb4WIhQL9ujkz1XyFM2GlGmCWVy52uZv0sJhPqu90sV",
+      "snippet": "Discover how Sermorelin Peptide Injections can support your weight loss journey with effective peptide injections from Olympia Pharmacy.",
+      "displayed_link": "https://www.olympiapharmacy.com \u203a Peptides"
+    },
+    {
+      "position": 8,
+      "title": "Buy Sermorelin Online | Safe & Effective Growth Hormone ...",
+      "link": "https://hydramed.com/rx/semorelin/injections",
+      "snippet": "Choose a monthly subscription for $199 or a one-time purchase for $249. Prescription included. FDA registered pharmacy. Licensed doctors & nurses. Get Started ...",
+      "displayed_link": "https://hydramed.com \u203a semorelin \u203a injections"
+    },
+    {
+      "position": 9,
+      "title": "Buy Sermorelin Injections - Online Prescriptions",
+      "link": "https://honehealth.com/mens/sermorelin/?srsltid=AfmBOorvr1evxhy7V0WsQJN6iJViAVI-BZZ7VeAGh9la83E2a3Hs7rTK",
+      "snippet": "Sermorelin injections are prescribed as part of Hone's hormone replacement program for men. It supports improvements in muscle strength and metabolism.",
+      "displayed_link": "https://honehealth.com \u203a Weight Loss"
+    },
+    {
+      "position": 10,
+      "title": "\u200dWhere to Get Sermorelin Safely? Here's What Actually Works",
+      "link": "https://www.struthealth.com/blog/where-to-get-sermorelin",
+      "snippet": "Can I get sermorelin without a prescription? No. Legitimate sermorelin requires a prescription from a licensed physician. Anyone selling it without requiring ...",
+      "displayed_link": "https://www.struthealth.com \u203a blog \u203a where-to-get-serm..."
+    }
+  ]
+}

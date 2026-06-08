@@ -1,0 +1,140 @@
+{
+  "tool": "serp_intent_panel",
+  "source": "serpapi_envelopes",
+  "generated_at": "2026-06-08T19:08:44Z",
+  "ok": false,
+  "input": {
+    "query_count": 4,
+    "cohort_count": 11,
+    "fetch_missing": false,
+    "organic_only_for_live_fetch": false,
+    "fetched_live_count": 0
+  },
+  "summary": {
+    "query_count": 4,
+    "captured_query_count": 0,
+    "missing_query_count": 4,
+    "schema_drift_query_count": 0,
+    "clean_query_count": 0,
+    "no_cohort_signal_query_count": 0,
+    "noisy_query_count": 0
+  },
+  "queries": [
+    {
+      "id": "trt-online-prescription",
+      "category": "TRT",
+      "query": "TRT online prescription",
+      "capture_status": "missing",
+      "capture": null,
+      "organic_top10_match_count": 0,
+      "organic_matched_result_count": 0,
+      "organic_distinct_cohort_count": 0,
+      "own_page_matches": [],
+      "third_party_mention_matches": [],
+      "ai_overview": {
+        "present": false,
+        "skipped": false,
+        "ranked_brand_match_count": 0,
+        "ranked_brand_matches": []
+      },
+      "serp_character": {
+        "organic_result_count": 0,
+        "unmatched_result_count": 0,
+        "type_counts": {},
+        "top_unmatched_domains": [],
+        "sample_unmatched_results": []
+      },
+      "query_usefulness_labels": [
+        "no_capture"
+      ]
+    },
+    {
+      "id": "sermorelin-online-prescription",
+      "category": "peptides",
+      "query": "sermorelin online prescription",
+      "capture_status": "missing",
+      "capture": null,
+      "organic_top10_match_count": 0,
+      "organic_matched_result_count": 0,
+      "organic_distinct_cohort_count": 0,
+      "own_page_matches": [],
+      "third_party_mention_matches": [],
+      "ai_overview": {
+        "present": false,
+        "skipped": false,
+        "ranked_brand_match_count": 0,
+        "ranked_brand_matches": []
+      },
+      "serp_character": {
+        "organic_result_count": 0,
+        "unmatched_result_count": 0,
+        "type_counts": {},
+        "top_unmatched_domains": [],
+        "sample_unmatched_results": []
+      },
+      "query_usefulness_labels": [
+        "no_capture"
+      ]
+    },
+    {
+      "id": "nad-injection-online",
+      "category": "NAD",
+      "query": "NAD injection online",
+      "capture_status": "missing",
+      "capture": null,
+      "organic_top10_match_count": 0,
+      "organic_matched_result_count": 0,
+      "organic_distinct_cohort_count": 0,
+      "own_page_matches": [],
+      "third_party_mention_matches": [],
+      "ai_overview": {
+        "present": false,
+        "skipped": false,
+        "ranked_brand_match_count": 0,
+        "ranked_brand_matches": []
+      },
+      "serp_character": {
+        "organic_result_count": 0,
+        "unmatched_result_count": 0,
+        "type_counts": {},
+        "top_unmatched_domains": [],
+        "sample_unmatched_results": []
+      },
+      "query_usefulness_labels": [
+        "no_capture"
+      ]
+    },
+    {
+      "id": "compounded-tirzepatide-online",
+      "category": "GLP-1",
+      "query": "compounded tirzepatide online",
+      "capture_status": "missing",
+      "capture": null,
+      "organic_top10_match_count": 0,
+      "organic_matched_result_count": 0,
+      "organic_distinct_cohort_count": 0,
+      "own_page_matches": [],
+      "third_party_mention_matches": [],
+      "ai_overview": {
+        "present": false,
+        "skipped": false,
+        "ranked_brand_match_count": 0,
+        "ranked_brand_matches": []
+      },
+      "serp_character": {
+        "organic_result_count": 0,
+        "unmatched_result_count": 0,
+        "type_counts": {},
+        "top_unmatched_domains": [],
+        "sample_unmatched_results": []
+      },
+      "query_usefulness_labels": [
+        "no_capture"
+      ]
+    }
+  ],
+  "notes": [
+    "Measures buyer-intent SERP visibility for a cohort; does not measure demand, spend, conversion, market share, or traction.",
+    "Capture provenance remains in each query row; repeat panels should compare like-for-like query, gl, hl, device, and capture source."
+  ]
+}

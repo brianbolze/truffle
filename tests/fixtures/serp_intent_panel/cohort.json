@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "alphapay",
+    "domain": "alphapay.com",
+    "aliases": ["AlphaPay"]
+  },
+  {
+    "slug": "betaledger",
+    "domain": "betaledger.com",
+    "aliases": ["Beta Ledger", "BetaLedger"]
+  }
+]

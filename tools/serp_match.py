@@ -7,9 +7,8 @@ classification: which cohort members appear, where, and whether each hit is thei
 mention.
 
 Do not copy this file into `exa_match.py`, `wayback_match.py`, etc. That wrapper-per-source shape
-would clutter `tools/` and blur the capture/judgment boundary. If a second CLI consumer needs the
-same shape, graduate to one generic recipe/batch runner outside the capture tools; keep `_match.py`
-as the shared importable core.
+would clutter `tools/` and blur the capture/judgment boundary. Repeated SERP query panels now live
+in `serp_intent_panel.py`; keep `_match.py` as the shared importable core.
 
 Input is intentionally boring JSON:
 

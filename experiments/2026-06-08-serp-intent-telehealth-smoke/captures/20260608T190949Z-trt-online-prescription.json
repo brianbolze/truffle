@@ -1,0 +1,162 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-08T19:09:49Z",
+  "ok": true,
+  "input": {
+    "query": "TRT online prescription",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "You can get a TRT prescription online through dedicated telehealth platforms. The process involves an initial health assessment, at-home or in-lab blood testing to confirm a clinical deficiency, a virtual consultation with a licensed medical provider, and direct delivery of your medication. policylab.us +2",
+    "Key platforms, formats, and pricing structures vary:",
+    "For more details on finding a provider, you can explore directories like\nKlarity Health\nor check specific treatment platforms like Hone Health\n."
+  ],
+  "headings": [
+    "What You Need to Know:"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "Hims",
+      "title": "Testosterone Support, Prescribed Online - Hims",
+      "link": "https://www.hims.com/testosterone"
+    },
+    {
+      "index": 1,
+      "source": "Hone Health",
+      "title": "Online Testosterone Replacement Therapy - Hone Health",
+      "link": "https://honehealth.com/mens/testosterone-replacement-therapy/?srsltid=AfmBOopGfKRdVPVxqyUaiS8c9kwNmf5Rvvq46hbNUSwZOd3ibUvrUmbx"
+    },
+    {
+      "index": 2,
+      "source": "policylab.us",
+      "title": "The Best Online TRT Clinics of 2026: What to Know Before ...",
+      "link": "https://policylab.us/testosterone-replacement-therapy/online-trt/"
+    },
+    {
+      "index": 3,
+      "source": "TRT Nation",
+      "title": "America's Clinic | Testosterone Replacement Therapy $99/mo",
+      "link": "https://trtnation.com/"
+    },
+    {
+      "index": 4,
+      "source": "Klarity Health",
+      "title": "How to get a prescription for testosterone online - Klarity Health",
+      "link": "https://www.helloklarity.com/post/how-to-get-a-prescription-for-testosterone-online/"
+    },
+    {
+      "index": 5,
+      "source": "Hone Health",
+      "title": "How to Get a TRT Prescription & Buy Testosterone Online",
+      "link": "https://honehealth.com/edge/how-to-buy-testosterone-online/?srsltid=AfmBOoqKvhmfKFgnvGCeaXuoJbOysT-_e9jKgYH-tv2cFLOJopW2ooST"
+    },
+    {
+      "index": 6,
+      "source": "Klarity Health",
+      "title": "Get Online Testosterone Prescriptions For Low ...",
+      "link": "https://www.helloklarity.com/medication/online-testosterone-prescription/"
+    },
+    {
+      "index": 7,
+      "source": "Hims",
+      "title": "Do You Need a Prescription for Testosterone? | Good Health by Hims",
+      "link": "https://www.hims.com/blog/do-you-need-a-prescription-for-testosterone"
+    },
+    {
+      "index": 8,
+      "source": "Doctronic.ai",
+      "title": "TRT and How It Works Through Telehealth - Doctronic",
+      "link": "https://www.doctronic.ai/blog/trt-and-how-it-works-through-telehealth/"
+    },
+    {
+      "index": 9,
+      "source": "Hone Health",
+      "title": "Buy Testosterone Cream for Men Online - Hone Health",
+      "link": "https://honehealth.com/mens/testosterone-cream/?srsltid=AfmBOooNNhQp30kCfenM1xkpEengubSYmAwJ3a5D1cqyibosa2jpkeYC"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Testosterone Support, Prescribed Online",
+      "link": "https://www.hims.com/testosterone",
+      "snippet": "Testosterone treatment to feel like yourself again. Take a simple at-home test to measure your levels and receive treatment, if appropriate.",
+      "displayed_link": "https://www.hims.com \u203a testosterone"
+    },
+    {
+      "position": 2,
+      "title": "Online Testosterone Replacement Therapy",
+      "link": "https://honehealth.com/mens/testosterone-replacement-therapy/?srsltid=AfmBOopmszaTWqDVerWh3f80bEbbrqJJzHG6sJP7gdIO-1RiWzbujs1_",
+      "snippet": "Gain energy, focus, and strength with Testosterone Replacement Therapy for hypogonadism and low T. Buy testosterone online safely and legally through Hone.",
+      "displayed_link": "https://honehealth.com \u203a mens \u203a testosterone-replaceme..."
+    },
+    {
+      "position": 3,
+      "title": "Testosterone Replacement Therapy (TRT): Side Effects ...",
+      "link": "https://www.goodrx.com/classes/androgens/testosterone-replacement-options-for-treatment-have-just-gotten-better?srsltid=AfmBOooUxEfDfLNO0JYqocI4YB7gbGdUWY64KJjSgH4e6v6ide3ffOtM",
+      "snippet": "No, you can't get TRT online. However, if you have a prescription, you may be able to get it through a licensed mail-order pharmacy. Goodrx ...",
+      "displayed_link": "https://www.goodrx.com \u203a ... \u203a Drug Classes \u203a Androgens"
+    },
+    {
+      "position": 4,
+      "title": "The Best Online TRT Clinics of 2026: What to Know Before ...",
+      "link": "https://policylab.us/testosterone-replacement-therapy/online-trt/",
+      "snippet": "Here, we'll look at five online TRT providers: Male Excel, Peter MD, Hone Health, Fountain TRT, and Defy Medical. We'll cover verified pricing, ...",
+      "displayed_link": "https://policylab.us \u203a testosterone-replacement-therapy"
+    },
+    {
+      "position": 5,
+      "title": "America's Clinic | Testosterone Replacement Therapy $99/mo",
+      "link": "https://trtnation.com/",
+      "snippet": "Start TRT TESTOSTERONE THERAPY #1 IN THE NATION Get your spark back. $99/mo 100% online + Free Shipping Start Now WEIGHT LOSS",
+      "displayed_link": "https://trtnation.com"
+    },
+    {
+      "position": 6,
+      "title": "How To Find The Best Online TRT Clinic",
+      "link": "https://www.forbes.com/health/wellness/best-testosterone-replacement-therapy/",
+      "snippet": "Getting a prescription online typically involves completing a medical intake to clarify your goals, medical history and symptoms, completing ...",
+      "displayed_link": "https://www.forbes.com \u203a health \u203a wellness \u203a best-testos..."
+    },
+    {
+      "position": 7,
+      "title": "Is Testosterone Replacement Therapy Right for You?",
+      "link": "https://www.webmd.com/men/testosterone-replacement-therapy-is-it-right-for-you",
+      "snippet": "Testosterone replacement therapy (TRT) is a shot, patch, or gel of the hormone testosterone to bring the level back to normal.",
+      "displayed_link": "https://www.webmd.com \u203a men \u203a testosterone-replacem..."
+    },
+    {
+      "position": 8,
+      "title": "TESTOSTERONE CYPIONATE (SINGLE USE) 200 MG/ML ...",
+      "link": "https://pharmacy.amazon.com/TESTOSTERONE-CYPIONATE-SINGLE-USE-200-MG-ML-VIAL/dp/B084BXK3NL",
+      "snippet": "This medication is injected into a muscle. It can be given by your care team in a hospital or clinic setting. It may also be given at home.",
+      "displayed_link": "https://pharmacy.amazon.com \u203a TESTOSTERONE-CY..."
+    },
+    {
+      "position": 9,
+      "title": "Online Doctors Who Prescribe Testosterone (TRT)",
+      "link": "https://www.helloklarity.com/post/how-to-get-a-prescription-for-testosterone-online/",
+      "snippet": "Licensed online doctors evaluate and prescribe testosterone (TRT) via telehealth. Same-week appointments available.",
+      "displayed_link": "https://www.helloklarity.com \u203a post \u203a how-to-get-a-presc..."
+    },
+    {
+      "position": 10,
+      "title": "Men",
+      "link": "https://rxoutreach.org/men/",
+      "snippet": "By enrolling with Rx Outreach you can confidentially select the medications you need online and they will be delivered directly to your home. Please click \"Find ...",
+      "displayed_link": "https://rxoutreach.org \u203a men"
+    }
+  ]
+}
