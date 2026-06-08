@@ -26,7 +26,7 @@ rediscovery:
 | `google_shopping` | product listings, price, merchant |
 | `google_maps` / `google_local` | local pack, "near me" intent, review counts |
 | `google_scholar` | citations / research footprint |
-| `google_trends` | search-interest over time (today served by the planned `trends.py`) |
+| `google_trends` | search-interest over time (today served by `trends.py`) |
 
 Keep the boundary deliberate: extend by adding an engine + its parser, **not** by widening this
 file into a general SerpAPI client. One source-shape per parser, one version pin per shape.

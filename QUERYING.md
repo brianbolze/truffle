@@ -2,7 +2,7 @@
 
 > **What this is.** The consume-side companion to [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md): they define what a `profile.md` *contains*; this defines how to *get answers out*.
 
-A `/research-company` agent already paid to capture and structure each company, so a reader **filters that structure instead of re-scraping**. The only thing you have to get right is matching the question to the tool — that's the difference between a one-line answer and a wrong one.
+A `/research-company` agent already paid to capture and structure each company, so a reader **filters that structure instead of re-scraping**. If the question asks for an external signal the store does not hold yet — SERP visibility, Wayback tenure, Trustpilot profile state, branded Trends, Exa neighbors — use [`tools/`](tools/README.md) to capture that source as JSON instead of generic web search. The only thing you have to get right is matching the question to the tool — that's the difference between a one-line answer and a wrong one.
 
 ## The one rule: query shape picks the tool
 
@@ -10,6 +10,7 @@ A `/research-company` agent already paid to capture and structure each company, 
 |---|---|---|
 | **Locate** — does X appear, where, quote it verbatim | `rg` / `grep -r` (the whole corpus is ~100KB) | line-oriented and cheap; you want the raw text |
 | **Structure** — filter / group / aggregate / relate on frontmatter | **parse the YAML** (below) — never `grep \| uniq` | values carry inline `#` comments, and multi-selects aren't order-canonical (`[B2C, B2B]` ≠ `[B2B, B2C]`), so `grep \| uniq` silently fragments the count |
+| **External signal** — visibility, tenure, review profile, branded search trajectory, similar-site discovery | `tools/<source>.py` → JSON envelope, then match/diff/interpret above it | repeatable source capture with provenance beats one-off web search |
 
 The store is `store/<domain-slug>/`:
 - `profile.md` — **frontmatter** (structured, closed-set, valid YAML) + **body** (the prose sections SCHEMA defines: Overview, What they offer, …).
@@ -77,6 +78,15 @@ It's deliberately **scoped + fenced** so it can't hand back a fast, clean, *conf
 - **`unclear`/empty ≠ "no"** (Recipe 6), and **three freshness clocks** on `telehealth_full` — `captured_at`, `telehealth_captured_at`, `offerings_captured_at`: a fresh profile can sit over a month-old roster.
 
 `python scripts/build_db.py --check` is the drift self-test — a renamed roster column or cohort cut fails loudly instead of misbuilding silently. **Telehealth-scoped** today; generalizes when a second cohort earns it. For a *single* pivot the Recipe 4/6 one-liners beat a rebuild — reach for the lens when the *number* of cuts makes ad-hoc SQL (or a GUI) win.
+
+**8. Source-signal capture — tools before generic web search.** The store is site-derived State; it does not automatically know whether a brand is visible in Google, how old a SKU URL is, whether a Trustpilot profile is active, or how branded search interest moved. For those questions, run the focused capture in [`tools/`](tools/README.md) and keep interpretation above it:
+- `serpapi.py` — organic + AI Overview visibility for a query; match with `_match.py` / `serp_match.py` when a cohort is involved.
+- `wayback.py` — exact-URL archived tenure; reads as a lower bound, not a launch date.
+- `trustpilot.py` — one Trustpilot profile state at one `captured_at`; velocity needs repeat captures.
+- `trends.py` — branded search trajectory within each keyword, not absolute cross-brand volume.
+- `exa_similar.py` — neighbor discovery / blind-spot finding.
+
+These tools print JSON envelopes to stdout and do **not** write the store. Save captures project-side or in an experiment until a reusable method earns a home.
 
 ## Gotchas & limits
 

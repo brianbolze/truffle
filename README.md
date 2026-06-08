@@ -1,6 +1,6 @@
 # web-research
 
-A project-agnostic company-research engine: Firecrawl for capture, Claude Max for reasoning, a shared file-first store any project can read and any agent can query.
+A project-agnostic company-research engine: Firecrawl for company-site capture, shared source-signal tools for repeatable external evidence, Claude Max for reasoning, and a file-first store any project can read.
 
 > **Start here:** [`_design/2026-05-29-frame.md`](_design/2026-05-29-frame.md) — the Frame (goal, scope, principles, non-goals). Everything else serves that doc.
 
@@ -15,6 +15,7 @@ _design/      # frame / vision docs (source of truth for intent)
 _archive/     # superseded docs
 experiments/  # throwaway probes to de-risk decisions before building
 scripts/      # engine utilities (querycheck.py — QUERYING.md drift self-test; store.py — resolve()/relations(); offeringscheck.py + cohortcheck.py — module-contract linters; build_db.py — derived SQLite lens for telehealth cohort aggregation, --check-guarded)
+tools/        # reusable source-signal capture utilities + small consumers (SERP, Wayback, Trustpilot, Trends, Exa; no project judgment)
 skills/       # capture verbs — research-company/ (SKILL.md + firecrawl-capture playbook + scripts/fc.py workhorse) + deepen-offerings/ (thin offerings-comprehensiveness preset of it); global via ~/.claude/skills
 store/        # the shared company store (store/<domain-slug>/) — created as captures land
 ```

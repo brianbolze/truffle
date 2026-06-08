@@ -4,7 +4,7 @@
 
 ## The loop in one breath
 
-A global verb captures a company **once** — Opus reading many pages, screenshots, and Firecrawl's `branding`/`metadata` — and leaves a structured, cited dossier in a shared store. Every later read (another project, a cross-company query, a deep-research run) **filters that structure instead of re-scraping**. Reasoning is free (absorbed by Claude Max subscription); Firecrawl is the only real cost — so the store is both the moat and the budget.
+A global verb captures a company **once** — Opus reading many pages, screenshots, and Firecrawl's `branding`/`metadata` — and leaves a structured, cited dossier in a shared store. Focused `tools/` scripts capture repeatable external source signals when the store does not hold the answer: SERP visibility, Wayback tenure, Trustpilot profile state, branded Trends, Exa neighbors. Every later read (another project, a cross-company query, a deep-research run) **filters stored structure first**, then uses source-specific tools instead of generic web search when fresh outside evidence is needed. Reasoning is free (absorbed by Claude Max subscription); metered capture is the real cost — so the store plus reusable source capture is both the moat and the budget.
 
 This is Doro's *"AI at ingestion, structure for retrieval"* on a file-first, single-user substrate — with Doro's heavy infrastructure deliberately refused.
 
@@ -15,7 +15,7 @@ Where things live, and how they connect.
 | Layer | What | Lives in |
 |---|---|---|
 | **Verbs** | Skills / slash commands (`/research-company` …) | Global `~/.claude/skills/` |
-| **Engine + Store** | Capture/clean/query scripts, the shared store, default schema + taxonomies | This repo (own remote + iCloud) |
+| **Engine + Store** | Capture/clean/query scripts, reusable source-signal tools, the shared store, default schema + taxonomies | This repo (own remote + iCloud) |
 | **Project config** | Which modules, freshness TTLs, destination(s), vertical taxonomy | `.web-research/config.yaml` per project |
 
 A global verb finds the engine via `WEB_RESEARCH_HOME` in `~/.claude/settings.json` — the same file that grants repo access and allowlists `api.firecrawl.dev`. Config resolves as **global defaults ← project overrides**, so a bare session gets sane behavior and a configured project gets its own schema + destination.
@@ -67,7 +67,7 @@ cohorts/<category-slug>/          # (later) cross-company signals that don't key
 - **Top = the latest view, `captures/` = the source** you rarely open. A `captured_at` stamp is the freshness pointer — no fragile symlinks (they break across iCloud + git + cloud).
 - **Every consumer also gets a primary-source cache.** Beyond the synthesized `profile.md`, the cleaned `captures/` and raw `.payloads/` let an agent quote exact wording or inspect a page *without re-fetching* — pre-fetched primary source, ready to cite.
 
-> **The store holds snapshots today.** The **Signals** layer (funding, traffic-over-time) is a *different record shape* — dated, append-only — and is **not in the store yet**; today it lives in the `competitive-traction` sibling. *Whether web-research grows its own domain-keyed timeline or keeps delegating is an [open question](2026-05-29-frame.md)* — the deliberate "how do these two systems re-relate?" call worth resolving before the aggregation layer hardens.
+> **The store holds snapshots today.** The **Signals** layer (funding, traffic-over-time, review/visibility movement) is a *different record shape* — dated, append-only — and is **not in the store yet**. `tools/` now provides reusable source captures for some signals, but not a durable timeline. *Whether web-research grows its own domain-keyed signal store is an [open question](2026-05-29-frame.md)* — the deliberate call worth resolving before the aggregation layer hardens.
 
 ## Modules: recipes, not just schemas
 
@@ -80,7 +80,7 @@ cohorts/<category-slug>/          # (later) cross-company signals that don't key
 | Kind | Example | Destination |
 |---|---|---|
 | **State** | what they sell, founders | the `web-research` store (`profile.md` / a module doc) |
-| **Signals** | funding, traffic trend | the signals layer (`competitive-traction` today) |
+| **Signals** | funding, traffic trend, review/visibility movement | source captures in `tools/` today; durable timelines remain the signals layer design |
 | **Judgments** | formidable? threat? | the project |
 
 A module is opt-in per project (config resolves global defaults ← project overrides) and carries its own freshness TTL. *Detailed module schemas land when the first project enables one — deferred on purpose; see [`SCHEMA.md`](../SCHEMA.md).*
@@ -99,7 +99,7 @@ A module is opt-in per project (config resolves global defaults ← project over
 | 2 | A `digest`-style helper wrapped in a skill the agent reaches for | proven in [experiment](../experiments/2026-05-29-query-affordance/FINDINGS.md); the likely real fix |
 | 3 | Derived SQLite index, regenerated from the markdown — a cache, never source-of-truth | **landed 2026-06-04** for telehealth cohort aggregation ([`scripts/build_db.py`](../scripts/build_db.py); [QUERYING Recipe 7](../QUERYING.md)); the relations/traction **join graph** stays deferred until a consumer earns it |
 
-**3. Deep-research as a consumer.** An open-ended run (news, funding, M&A, reviews) **reads the store as priors first**, then goes wide, and writes its narrative **project-side, not into the store**. The store stays tight and factual — we never dump news/funding into a profile (that's the Doro "ingest everything into a graph" move we refuse). The store gives the foundation; deep research builds on it.
+**3. Deep-research as a consumer.** An open-ended run (news, funding, M&A, reviews) **reads the store as priors first**, then goes wide. Where a repeatable source primitive exists, it uses `tools/` rather than generic web search, and writes the narrative **project-side, not into the store**. The store stays tight and factual — we never dump news/funding into a profile (that's the Doro "ingest everything into a graph" move we refuse). The store gives the foundation; source tools provide auditable outside evidence; deep research builds on both.
 
 **Across all three — the store is also a primary-source cache.** Beyond the synthesized `profile.md`, every consumer can pull **verbatim** material: cleaned `captures/` and the raw `.payloads/` (markdown, screenshots) let an agent quote exact wording or inspect a page *without re-fetching*. The value isn't only structured summary — it's pre-fetched primary source, ready to cite.
 
@@ -147,10 +147,10 @@ The store will hold **several** entity types, but primarily "Companies".
 A lens for sorting *future* capabilities (a principle, not a commitment), mapping onto the Frame's three kinds of fact:
 
 - **State** — what a company/offering *is* now, capturable from its own primary web sources, cacheable → **the engine owns it.**
-- **Signals** — the same facts on a time axis (funding, traffic, headcount; news/M&A as dated events) → **the signals layer**, not the profile.
+- **Signals** — the same facts on a time axis (funding, traffic, headcount; review deltas; SERP movement; news/M&A as dated events) → source-specific capture tools now, and **the signals layer** when a durable timeline shape earns it; never the profile.
 - **Judgments** — relevance, threat, fit, relative to the asker → **the consumer/project.**
 
-*Discovery* (finding related companies) and *traction* (time-series metrics) sit in the family as distinct capabilities — traction being Signals. When unsure: *is this durable state from the company's own sources, or a stream/opinion that belongs to a consumer?*
+*Discovery* (finding related companies) and *traction* (time-series metrics) sit in the family as distinct capabilities — traction being Signals. `tools/` is the current home for small source-capture primitives and thin consumers; project-specific interpretations stay above it. When unsure: *is this durable state from the company's own sources, a repeatable source signal, or a stream/opinion that belongs to a consumer?*
 
 ## Phasing
 
@@ -164,4 +164,4 @@ Visualizations are pull-consumers, but they reach backward: "hotness" needs trac
 
 ---
 
-*Companion: [`2026-05-29-frame.md`](2026-05-29-frame.md) (why/scope), [`../SCHEMA.md`](../SCHEMA.md) + [`../TAXONOMIES.md`](../TAXONOMIES.md) (the store contract), [`../experiments/2026-05-29-query-affordance/`](../experiments/2026-05-29-query-affordance/) (the rung-2 proof).*
+*Companion: [`2026-05-29-frame.md`](2026-05-29-frame.md) (why/scope), [`../SCHEMA.md`](../SCHEMA.md) + [`../TAXONOMIES.md`](../TAXONOMIES.md) (the store contract), [`../tools/README.md`](../tools/README.md) (source-signal capture tools), [`../experiments/2026-05-29-query-affordance/`](../experiments/2026-05-29-query-affordance/) (the rung-2 proof).*
