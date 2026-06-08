@@ -81,6 +81,7 @@ It's deliberately **scoped + fenced** so it can't hand back a fast, clean, *conf
 
 **8. Source-signal capture — tools before generic web search.** The store is site-derived State; it does not automatically know whether a brand is visible in Google, how old a SKU URL is, whether a Trustpilot profile is active, or how branded search interest moved. For those questions, run the focused capture in [`tools/`](tools/README.md) and keep interpretation above it:
 - `serpapi.py` — organic + AI Overview visibility for a query; match with `_match.py` / `serp_match.py` when a cohort is involved.
+- `serp_intent_panel.py` — query-set + cohort buyer-intent SERP panels over captured `serpapi.py` envelopes; use this when deciding whether category queries are worth tracking. Live capture happens only with explicit `--fetch-missing`.
 - `wayback.py` — exact-URL archived tenure; reads as a lower bound, not a launch date.
 - `trustpilot.py` — one Trustpilot profile state at one `captured_at`; velocity needs repeat captures.
 - `trends.py` — branded search trajectory within each keyword, not absolute cross-brand volume.
