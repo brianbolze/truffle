@@ -1,0 +1,99 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-08T19:23:55Z",
+  "ok": true,
+  "input": {
+    "url": "https://honehealth.com/longevity/nad"
+  },
+  "schema_drift": [],
+  "first_seen": "2024-09-21T12:23:03Z",
+  "last_seen": "2026-04-10T09:51:23Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 625,
+  "snapshot_count": 12,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2024-09-21T12:23:03Z",
+      "to": "2026-04-10T09:51:23Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20240921122303/https://honehealth.com/longevity/nad/",
+  "last_snapshot_url": "https://web.archive.org/web/20260410095123/https://honehealth.com/longevity/nad/",
+  "snapshots": [
+    {
+      "timestamp": "2024-09-21T12:23:03Z",
+      "url": "https://honehealth.com/longevity/nad/",
+      "status": "200",
+      "digest": "YDVC5JT5I5PWUHNM4L7ULT6IRPHAU5S5"
+    },
+    {
+      "timestamp": "2024-12-25T17:25:30Z",
+      "url": "https://honehealth.com/longevity/nad/",
+      "status": "200",
+      "digest": "BGOAXGPMMISNJDEXSTR6N2GHZNHD2IWO"
+    },
+    {
+      "timestamp": "2025-01-25T03:15:55Z",
+      "url": "https://honehealth.com/longevity/nad/",
+      "status": "200",
+      "digest": "TJCW6G4IGRI3MZRUKHM5TQBQAOGDQ34W"
+    },
+    {
+      "timestamp": "2025-04-18T17:09:11Z",
+      "url": "https://honehealth.com/longevity/nad/",
+      "status": "200",
+      "digest": "MGZSUP5LDMWQUZUXJ3YIMX2WMUTLFAPK"
+    },
+    {
+      "timestamp": "2025-10-10T03:51:28Z",
+      "url": "https://honehealth.com/longevity/nad/",
+      "status": "200",
+      "digest": "SI6P3CG3CCGBWH5HPEQXAL7LJTED2572"
+    },
+    {
+      "timestamp": "2025-10-10T16:39:02Z",
+      "url": "https://honehealth.com/longevity/nad/",
+      "status": "200",
+      "digest": "TPNHPICYDKXDS4K3NLMRMKJII5SA76F6"
+    },
+    {
+      "timestamp": "2025-12-14T11:29:11Z",
+      "url": "https://honehealth.com/longevity/nad/",
+      "status": "200",
+      "digest": "Q2BLAS2HT7WZYI6YAL56GWA43QSEDMNW"
+    },
+    {
+      "timestamp": "2026-01-04T00:16:33Z",
+      "url": "https://honehealth.com/longevity/nad/",
+      "status": "200",
+      "digest": "QVIQJLAX7CLXCTR27WZFXS3CZNZON6SK"
+    },
+    {
+      "timestamp": "2026-02-20T07:03:14Z",
+      "url": "https://honehealth.com/longevity/nad/",
+      "status": "200",
+      "digest": "4CP4LTUM2U6WWOHSF3QKIFGUQGXV54SW"
+    },
+    {
+      "timestamp": "2026-03-04T05:53:52Z",
+      "url": "https://honehealth.com/longevity/nad/",
+      "status": "200",
+      "digest": "GCEG2HDAKJDRC6K3YDBNWTGZSSZHURUD"
+    },
+    {
+      "timestamp": "2026-03-04T05:53:53Z",
+      "url": "https://honehealth.com/longevity/nad/",
+      "status": "200",
+      "digest": "G6D3JY57Q5NHEL5VUND6BMKX5AF4E6LV"
+    },
+    {
+      "timestamp": "2026-04-10T09:51:23Z",
+      "url": "https://honehealth.com/longevity/nad/",
+      "status": "200",
+      "digest": "LOBD6WWCTS734DOYRNYLZCOKEFRKIEL4"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-08T19:21:48Z",
+  "ok": true,
+  "input": {
+    "url": "https://trtnation.com/anti-aging/"
+  },
+  "schema_drift": [],
+  "first_seen": "2026-02-03T11:38:59Z",
+  "last_seen": "2026-02-03T11:38:59Z",
+  "first_seen_confidence": "provisional",
+  "tenure_days": 125,
+  "snapshot_count": 1,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2026-02-03T11:38:59Z",
+      "to": "2026-02-03T11:38:59Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20260203113859/https://trtnation.com/anti-aging/",
+  "last_snapshot_url": "https://web.archive.org/web/20260203113859/https://trtnation.com/anti-aging/",
+  "snapshots": [
+    {
+      "timestamp": "2026-02-03T11:38:59Z",
+      "url": "https://trtnation.com/anti-aging/",
+      "status": "200",
+      "digest": "XOHS6U4Q4ASFTDQEINKBMMLHEPF3Q5EK"
+    }
+  ]
+}

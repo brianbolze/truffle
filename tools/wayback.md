@@ -33,6 +33,26 @@ https://web.archive.org/web/<timestamp>id_/<original_url>
 The `id_` suffix requests original/raw replay mode. The tool preserves the normal replay URL too, so
 a human can inspect the Wayback-rendered page separately.
 
+## Runtime And Sweep Guidance
+
+This tool is intentionally one-URL-at-a-time, and it can be slow.
+
+- **Tenure mode is usually faster** because it only asks CDX for metadata, but it can still pause or
+  timeout on Wayback/network reads.
+- **Diff mode is replay-bound** because it does one CDX request plus up to two raw archived-page
+  fetches. Real runs can take tens of seconds per URL, and occasional timeouts are normal data
+  collection noise rather than evidence about the page.
+- **For large cohorts, do not run an aggressive firehose.** Use a small manifest-driven sweep
+  outside this tool, save JSON after every command, and make the sweep resumable from existing
+  output files.
+- **Prefer scheduled, bounded/adaptive concurrency** for broad monitoring, then inspect only the
+  changed, failed, or newly measurable rows. Tenure mode can likely tolerate more parallelism than
+  diff mode; diff should start lower because replay fetches are heavier, then back off on timeouts,
+  429/503s, or rising latency.
+
+Keep `wayback.py` as the single-page primitive. Any cohort runner should be a thin orchestration
+layer that preserves raw JSON and records timeouts/fetch failures as measurement status.
+
 ## URL Matching
 
 The tool does **not** rewrite the caller's URL before sending it to CDX. `example.com` is passed as
@@ -74,6 +94,9 @@ The caller decides whether "old enough" or "meaningful change" follows from that
 - **Replay fetches can fail.** A selected CDX row can have a replay response that returns a non-2xx
   status. The JSON keeps `fetch_status`, `fetch_ok`, `fetch_error`, byte count, and hashes when a
   response body exists; `ok:false` marks that the comparison did not complete cleanly.
+- **Slow or timed-out runs are expected.** Replay fetch latency varies a lot. Retry sparingly, save
+  each attempt's output/error context at the caller layer, and avoid treating a timeout as content
+  absence.
 - **No-snapshot states are data.** `no_snapshots`, `insufficient_snapshots`, and
   `insufficient_distinct_selection` exit cleanly with `ok:true` and `diff:null`.
 - **Diffs are bounded.** `diff.lines` is capped by `--max-diff-lines`; hashes and line counts still
