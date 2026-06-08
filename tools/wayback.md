@@ -1,149 +1,198 @@
-# wayback.py — Internet Archive first-seen / tenure lookup
+# wayback.py — Internet Archive tenure + archived-content diff
 
-Give it ONE URL; it asks the [Wayback Machine](https://web.archive.org)'s **CDX Server** for every
-archived capture of that page and emits the **tenure signal** — first seen, last seen, how many
-distinct content snapshots exist, and the status lifecycle (`200 → 301 → 404` = launched, moved,
-died). One free GET, **no key**. Parsed JSON to stdout — no store write, no cohort, no vertical
-baked in. The caller loops a roster; this tool does one page.
+Give it ONE URL. By default it asks the [Wayback Machine](https://web.archive.org)'s
+[CDX Server](https://github.com/internetarchive/wayback/tree/master/wayback-cdx-server) for archived
+captures of that page and emits the **tenure signal**: first seen, last seen, distinct-content
+snapshot count, and status lifecycle. In `diff` mode, it selects two CDX snapshots, fetches raw
+`id_` replay content, extracts normalized text, and emits hashes plus a bounded unified diff.
+
+No key. No store write. No cohort. No SKU/claim judgment.
 
 ```bash
 python3 tools/wayback.py https://www.henrymeds.com/treatments/
-python3 tools/wayback.py example.com                       # bare domain -> the homepage (exact match)
-python3 tools/wayback.py https://brand.com/products/sermorelin
+python3 tools/wayback.py example.com
+python3 tools/wayback.py tenure https://brand.com/products/sermorelin
+
+python3 tools/wayback.py diff https://brand.com/products/sermorelin
+python3 tools/wayback.py diff https://brand.com/products/sermorelin --from 2023 --to 2025
+python3 tools/wayback.py diff example.com --context-lines 1 --max-diff-lines 80
 ```
 
-**Why it earns a place:** page/SKU *tenure* is the strongest age proxy we have, and a first-seen
-date doesn't rot — unlike a price or a roster line, it's a fact about the past that only accretes.
-It's the **Tenure axis** of the candidate-SKU ledger (`first_seen_date` / `first_seen_method` /
-`first_seen_confidence`).
+## What It Captures
 
-## first-seen is a LOWER BOUND (the load-bearing caveat)
+**Default / `tenure`: CDX metadata for one exact URL.** It reports when the Archive first and last
+saw distinct content at that canonical URL key.
 
-The output is "first **archived**," never "first existed." Three things make a page's true birth
-*earlier* than its first snapshot — so treat every `first_seen` as a floor, never a birthday:
+**`diff`: raw archived content for two snapshots.** It uses the same CDX query, chooses first/last
+distinct snapshots by default, or nearest snapshots to `--from` / `--to`, then fetches:
 
-- **Under-archiving.** Fresh or obscure pages get crawled late; a SKU page can be live for months
-  before the Archive notices it. Empty CDX (`first_seen: null`) means *never archived* — too new,
-  too obscure, or `robots.txt`/exclusion-blocked — **not** that the page never existed.
-- **Domain ≠ brand.** A first-seen on a *domain* can predate the current brand by years if someone
-  else owned the domain first. Live: `wayback.py hims.com` → `first_seen: 2001` (a prior owner; the
-  telehealth brand is ~2017). For brand/SKU tenure, query the **specific deep URL**, not the apex —
-  or read the apex result as "the domain has existed since," nothing more.
-- **Confidence is about corroboration, not age.** `first_seen_confidence` mirrors the SKU ledger's
-  labels and reacts to *how many captures back the date up*, never to how old it is:
+```text
+https://web.archive.org/web/<timestamp>id_/<original_url>
+```
 
-  | label | rule | read |
-  |---|---|---|
-  | `insufficient` | 0 captures | never archived — tenure unmeasurable (data, not an error) |
-  | `provisional` | exactly 1 capture | a first-seen exists but is uncorroborated; the page may predate its lone snapshot |
-  | `measured` | ≥2 distinct-content captures | archived tenure is real; `first_seen` is a solid lower bound (the ledger's "≥2 real captures" bar) |
+The `id_` suffix requests original/raw replay mode. The tool preserves the normal replay URL too, so
+a human can inspect the Wayback-rendered page separately.
 
-  It does **not** check whether the captures span meaningful *time* — two captures a day apart are
-  still `measured`. A caller that needs "first seen ≥6 months ago" reads `first_seen` / `tenure_days`
-  itself; that time-span judgment is the caller's, kept out on purpose.
+## URL Matching
 
-## The captured_at split (why this tool exists to test the convention)
+The tool does **not** rewrite the caller's URL before sending it to CDX. `example.com` is passed as
+`url=example.com`, not normalized by us to `https://example.com/`.
 
-This is the exact case the library's envelope rule warns about. The Wayback snapshot dates **are**
-the signal, so they live *inside the payload* under their own names — `first_seen`, `last_seen`,
-per-snapshot `timestamp`. The envelope's `captured_at` is **this lookup's wall-clock** (when we asked
-CDX), never an archive date. Conflating the two would destroy the whole field: you'd "freshen" a
-roster's tenure to today every time you re-ran it. The split is the point.
+CDX exact matching is still canonicalized by Wayback's SURT key: HTTP/HTTPS, case, and `www.` are
+not treated as separate in the same way a raw string comparison would be. Paths and trailing slashes
+still matter. So:
 
-## What it does now vs. what it could grow into
+- `example.com`, `http://example.com/`, and `https://www.example.com/` may land on the same canonical homepage key.
+- `/treatments` and `/treatments/` can be different keys.
+- If a deep SKU URL returns `insufficient`, try the slash variant before reading meaning into absence.
 
-**Now — CDX metadata for one exact URL.** The capture list and what you derive from it. That's the
-whole scope. Each growth path below is a *scoped* addition (a new endpoint or param + its own
-handling), not a rediscovery — all latent, none built:
+That is CDX behavior, not tool-side normalization.
 
-| Growth path | What it would add | Note |
+## Lower-Bound Caveat
+
+The output is "first **archived**," never "first existed." A page can predate its earliest snapshot
+because the Archive crawled it late, was blocked, or never saw it.
+
+`first_seen_confidence` is corroboration, not age:
+
+| label | rule | read |
 |---|---|---|
-| Historical **content** fetch + diff | CDX picks snapshots at target dates → fetch `web.archive.org/web/<ts>id_/<url>` (the `id_` suffix = raw archived bytes, no Wayback chrome) → optionally clean via Firecrawl → diff what the page *said* over time | The big one: turns tenure into "when did this SKU/price/claim first appear." `first_snapshot_url` is the seed. |
-| [Availability API](https://archive.org/help/wayback_api.php) | closest single snapshot to a given date (`/wayback/available?url=…&timestamp=…`) | A one-shot "what did this look like on date X" — lighter than walking the full CDX list. |
-| `matchType=prefix` / `domain` | whole-section history (`/products/*`, or every URL on a domain) | Section-level tenure / "when did this catalog branch appear." This tool is **exact-URL only**. |
-| CDX `from` / `to`, `limit=-N`, `fastLatest` | date-windowed or cheap-latest queries | For a pure first-seen headline you only need the first row; for "still alive?" only the last. v1 always fetches the full history (tenure needs the count + trail). |
+| `insufficient` | 0 captures | never archived; tenure unmeasurable, not an error |
+| `provisional` | exactly 1 capture | first-seen exists but is uncorroborated |
+| `measured` | >=2 distinct-content captures | archived tenure is real; first-seen is a solid lower bound |
 
-Keep the boundary deliberate: add an endpoint/param + its handler, **not** a general Archive client
-wedged into this file.
+The caller decides whether "old enough" or "meaningful change" follows from that evidence.
 
-## The gotchas (most of the value)
+## Diff Mode Caveats
 
-These cost a probe or a real bug to learn. Carry them forward; don't relitigate them live.
+- **Mechanical text only.** HTML is parsed with a tiny stdlib parser that drops script/style-ish
+  content and collapses whitespace. It does not render JavaScript, click through modals, resolve
+  lazy content, or infer meaning.
+- **CDX digest is provenance, not our byte hash.** CDX `digest` describes the archived response body
+  as stored by the Archive. The tool also emits `content_sha256` over bytes fetched from replay and
+  `text_sha256` over normalized extracted text.
+- **Replay fetches can fail.** A selected CDX row can have a replay response that returns a non-2xx
+  status. The JSON keeps `fetch_status`, `fetch_ok`, `fetch_error`, byte count, and hashes when a
+  response body exists; `ok:false` marks that the comparison did not complete cleanly.
+- **No-snapshot states are data.** `no_snapshots`, `insufficient_snapshots`, and
+  `insufficient_distinct_selection` exit cleanly with `ok:true` and `diff:null`.
+- **Diffs are bounded.** `diff.lines` is capped by `--max-diff-lines`; hashes and line counts still
+  let callers compare outputs even when the visible diff is truncated.
 
-- **`collapse=digest` makes the count mean something.** CDX folds *adjacent* captures with an
-  identical content hash, so a snapshot row = "content that differs from the row before it," and
-  `snapshot_count` is a **distinct-content** count, not a raw crawl count (a page crawled 500× with
-  no change collapses to 1). That's what makes `≥2` a real corroboration bar rather than a crawl-rate
-  artifact. Collapse keeps the *earliest* row of each content-run — i.e. *when that content first
-  appeared* — which is exactly the tenure semantics we want.
-- **Empty CDX is data, not failure.** A never-archived URL returns HTTP 200 with an **empty body**
-  (not `[]`). The tool normalizes that to `first_seen: null`, `confidence: "insufficient"`,
-  `ok: true`, **exit 0**. Never confuse "the Archive never saw it" with "the lookup failed."
-- **`status` is verbatim — including `-`.** CDX emits `-` for revisit / unknown-status records;
-  redirects (`301`/`302`/`307`/`308`), `403`, `410`, `400` all show up live. We report the code, we
-  don't normalize or judge it. The `status_trail` collapses *consecutive* same-status captures into
-  runs, so a launch→redirect→death lifecycle reads at a glance (e.g. `pets.com`: a long `301`/`403`
-  parked-death tail after the dot-com bust). The trail is computed over the **full** history and sits
-  top-level, so the snapshots cap below never hides a page's death.
-- **`snapshots` is capped; the summary isn't.** The emitted `snapshots` list is bounded at
-  **500 rows** (oldest first — this tool's first-seen focus) to keep the blob sane; `snapshots_truncated`
-  flags when it's trimmed. The headline fields (`first_seen` / `last_seen` / `snapshot_count` /
-  `status_trail`) are **always** computed over the full set, so truncation is cosmetic — a 16,877-capture
-  domain like `theranos.com` still reports the true count and full trail.
-- **Exact-URL match, and it's SURT-canonicalized.** CDX matches the canonical form, so `http://`
-  vs `https://` and a `www.` prefix collapse to the same key — but a **trailing slash and a deep path
-  are significant**. `/treatments` and `/treatments/` can be different keys; if a SKU returns
-  `insufficient`, try the slash variant (and the apex) before concluding it was never archived.
-- **No key, but be polite.** CDX is free and unauthenticated. The Archive can be slow (a deep-history
-  domain is a multi-thousand-row response) and will rate-limit an aggressive loop — space the calls
-  when sweeping a roster. Timeout is 60s.
+## Output Shape
 
-## Output shape
+The shared envelope keys lead every output. Source/archive dates stay inside payload fields; top-level
+`captured_at` is only this invocation's wall-clock.
 
-The shared **envelope** keys lead; wayback's payload sits beside them — and critically, the archive
-dates are *in the payload*, never lifted to `captured_at`. **No `parser_version`** (CDX is a frozen
-feed — no version-pinned parser, so no schema-drift path), **no `cost`** (free), **no key**. Real
-capture (trimmed):
+Default tenure output, trimmed:
 
 ```jsonc
 {
-  // --- shared envelope ---
   "tool": "wayback",
-  "source": "web.archive.org/cdx",       // the external system hit (the CDX Server)
-  "captured_at": "2026-06-08T18:10:05Z", // THIS lookup's wall-clock (UTC) — NOT an archive date
-  "ok": true,                            // transport failures exit 2 before this; empty CDX is still ok
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-08T18:10:05Z",
+  "ok": true,
   "input": { "url": "https://www.henrymeds.com/treatments/" },
-  "schema_drift": [],                    // always [] — frozen feed, kept for envelope uniformity
-  // --- payload (the archive dates the envelope must NOT carry) ---
-  "first_seen": "2022-12-05T04:49:34Z",  // earliest archived capture — a LOWER BOUND on the page's age
-  "last_seen": "2026-02-16T17:40:52Z",   // most recent capture (a still-alive proxy)
-  "first_seen_confidence": "measured",   // insufficient | provisional | measured
-  "tenure_days": 1281,                   // captured_at - first_seen, in days; a lower bound
-  "snapshot_count": 22,                  // distinct-content captures (post collapse=digest) — full count
-  "snapshots_truncated": false,          // true when `snapshots` (below) is capped at 500; summary stays full
-  "status_trail": [                      // consecutive same-status captures collapsed into lifecycle runs
-    { "status": "200", "from": "2022-12-05T04:49:34Z", "to": "2025-05-16T01:42:45Z" },
-    { "status": "308", "from": "2025-05-24T00:42:34Z", "to": "2025-05-24T00:42:34Z" },
-    { "status": "200", "from": "2025-05-24T00:42:34Z", "to": "2026-02-16T17:40:52Z" }
+  "schema_drift": [],
+
+  "first_seen": "2022-12-05T04:49:34Z",
+  "last_seen": "2026-02-16T17:40:52Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 1281,
+  "snapshot_count": 22,
+  "snapshots_truncated": false,
+  "status_trail": [
+    { "status": "200", "from": "2022-12-05T04:49:34Z", "to": "2025-05-16T01:42:45Z" }
   ],
   "first_snapshot_url": "https://web.archive.org/web/20221205044934/https://henrymeds.com/treatments/",
-  "last_snapshot_url":  "https://web.archive.org/web/20260216174052/https://henrymeds.com/treatments/",
-  "snapshots": [                         // oldest-first; capped at 500 rows (see snapshots_truncated)
-    { "timestamp": "2022-12-05T04:49:34Z", "url": "https://henrymeds.com/treatments/",
-      "status": "200", "digest": "S6TCGVNIVYRBL7YQU7VDSTGKGVSVUANQ" }
+  "last_snapshot_url": "https://web.archive.org/web/20260216174052/https://henrymeds.com/treatments/",
+  "snapshots": [
+    {
+      "timestamp": "2022-12-05T04:49:34Z",
+      "url": "https://henrymeds.com/treatments/",
+      "status": "200",
+      "digest": "S6TCGVNIVYRBL7YQU7VDSTGKGVSVUANQ"
+    }
   ]
 }
 ```
 
-A never-archived URL is the same envelope with `first_seen`/`last_seen`/`tenure_days` `null`,
-`first_seen_confidence: "insufficient"`, `snapshot_count: 0`, and `snapshots: []` — `ok: true`,
-exit 0.
+Diff output, trimmed:
 
-## Exit codes
+```jsonc
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-08T18:10:05Z",
+  "ok": true,
+  "input": {
+    "mode": "diff",
+    "url": "https://brand.com/products/sermorelin",
+    "from": "2023",
+    "to": "2025",
+    "context_lines": 3,
+    "max_diff_lines": 400
+  },
+  "schema_drift": [],
+  "selection": {
+    "strategy": "nearest_targets",
+    "state": "selected",
+    "note": null,
+    "snapshot_count": 9
+  },
+  "selected_snapshots": [
+    {
+      "timestamp": "2023-02-01T12:30:00Z",
+      "raw_timestamp": "20230201123000",
+      "original_url": "https://brand.com/products/sermorelin",
+      "replay_url": "https://web.archive.org/web/20230201123000/https://brand.com/products/sermorelin",
+      "raw_replay_url": "https://web.archive.org/web/20230201123000id_/https://brand.com/products/sermorelin",
+      "status": "200",
+      "digest": "CDXDIGEST",
+      "mimetype": "text/html",
+      "length": 12345
+    }
+  ],
+  "contents": [
+    {
+      "timestamp": "2023-02-01T12:30:00Z",
+      "fetch_status": 200,
+      "fetch_ok": true,
+      "content_type": "text/html; charset=utf-8",
+      "byte_count": 9421,
+      "content_sha256": "…",
+      "text_char_count": 2213,
+      "text_line_count": 77,
+      "text_sha256": "…"
+    }
+  ],
+  "text_changed": true,
+  "diff": {
+    "format": "unified_diff",
+    "context_lines": 3,
+    "max_diff_lines": 400,
+    "truncated": false,
+    "line_counts": { "from": 77, "to": 81, "common": 72, "added": 9, "removed": 5 },
+    "lines": ["--- 2023-02-01T12:30:00Z …", "+++ 2025-01-04T09:00:00Z …"]
+  }
+}
+```
 
-- `0` — clean capture (**including** a never-archived URL → `insufficient`, the empty-CDX signal).
-- `2` — fetch error: network, an Archive HTTP error (4xx/5xx), or an unexpected/garbled CDX body
-  (a non-list response, or a header missing a required column — surfaced loud rather than parsed-on).
-- `3` — unused. CDX is a frozen feed with no version-pinned parser to drift, so this never fires; the
-  `schema_drift`→exit-3 wiring is kept only to stay uniform with the drift-prone tools (serpapi,
-  trustpilot).
+## Gotchas
+
+- **`collapse=digest` makes counts useful.** Adjacent identical-content captures collapse to the
+  first row in that run. `snapshot_count` is a distinct-content count, not raw crawl count.
+- **`snapshots` is capped; summaries are not.** The default tenure payload emits at most 500
+  snapshots, oldest first. `first_seen`, `last_seen`, `snapshot_count`, and `status_trail` are
+  computed over the full CDX result.
+- **`status` is verbatim.** `-`, redirects, `403`, `410`, and parked-domain failures are reported,
+  not normalized.
+- **Be polite.** One diff does one CDX request plus at most two replay fetches. Do not wrap it in an
+  aggressive loop without sleeps/retries above this tool.
+
+## Exit Codes
+
+- `0` — clean capture, including empty/no-snapshot states.
+- `2` — transport error: network failure, CDX HTTP error, or unexpected/garbled CDX body.
+- `3` — unused today. CDX is treated as stable/no parser version; `schema_drift` remains `[]` for
+  envelope uniformity.

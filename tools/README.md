@@ -21,7 +21,7 @@ Five tools live; the last two deferred on purpose — see [`BACKLOG.md`](BACKLOG
 | Tool | Source | Auth | Status |
 |---|---|---|---|
 | [`serpapi.py`](serpapi.py) · [docs](serpapi.md) | Google SERP (AI Overview + organic) | `SERP_API_KEY` | **live** |
-| [`wayback.py`](wayback.py) · [docs](wayback.md) | Internet Archive CDX (first-seen / tenure) | none | **live** |
+| [`wayback.py`](wayback.py) · [docs](wayback.md) | Internet Archive CDX + replay (tenure / content diff) | none | **live** |
 | [`trends.py`](trends.py) · [docs](trends.md) | Google Trends (pytrends) | none | **live** |
 | [`trustpilot.py`](trustpilot.py) · [docs](trustpilot.md) | Trustpilot reviews (Firecrawl-stealth) | `FIRECRAWL_API_KEY` | **live** |
 | [`exa_similar.py`](exa_similar.py) · [docs](exa_similar.md) | Exa /findSimilar | `EXA_API_KEY` | **live** |

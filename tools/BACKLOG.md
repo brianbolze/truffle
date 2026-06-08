@@ -28,14 +28,6 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
 
 ## Highest leverage
 
-- **Wayback content fetch + diff is the next missing capture primitive** `[idea]`
-  `wayback.py` answers "how long has this URL had archived tenure?"; the next reusable step is
-  "what did the archived page say, and when did a SKU / price / claim / formulation first appear?"
-  Keep it mechanical: choose archive snapshots, fetch raw `id_` content, preserve snapshot
-  provenance, emit text/content hashes and diffs. Do not turn this into a general Archive client or a
-  project-specific SKU judge.
-  **Act when:** the next SKU-ledger pass needs more than first-seen tenure.
-
 - **Batch runner for repeated captures, not per-project loops** `[idea]`
   SERP, Trustpilot, Exa, and Wayback each do one focused capture; agents should not keep writing
   throwaway loops for 15-brand panels or 50-URL ledgers. Add a generic runner that reads CSV / JSON /
@@ -66,13 +58,6 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
 
 ## Tool hardening
 
-- **Wayback exact-URL normalization needs to be pinned before deeper diff work** `[weakness]`
-  The docs present bare domains as homepage exact matches, while `lookup()` sends the caller's raw
-  string to CDX. Decide whether to normalize bare domains to a canonical homepage URL before lookup,
-  or document CDX's canonicalization as the actual behavior. This matters more once content diffs
-  compare `/path`, `/path/`, `http`, `https`, and `www` variants.
-  **Act when:** implementing Wayback content fetch or running a SKU URL ledger.
-
 - **Clarify partial-capture exit semantics for orchestration** `[tbd]`
   `trends.py` can emit useful partial JSON with top-level `ok:false` while still exiting `0`. That
   may be right, but a batch runner needs one rule: exit code is transport/drift only and callers read
@@ -97,6 +82,14 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
   `pytrends`, import/help smoke commands, and docs that reflect `_match.py` / `serp_match.py` as
   current rather than planned. Also keep generated `__pycache__/` files out of staged changes.
   **Act when:** preparing the tools directory for commit or handoff.
+
+## Graduated
+
+- **Wayback content fetch + diff** `[done]`
+  `wayback.py diff <url>` now selects two exact-URL CDX snapshots, fetches raw `id_` replay content,
+  preserves per-snapshot provenance, emits byte/text hashes, and returns a bounded unified diff. The
+  bare-domain/exact-URL behavior is pinned as documented CDX canonicalization, not tool-side URL
+  rewriting.
 
 ## Deliberate deferrals
 
