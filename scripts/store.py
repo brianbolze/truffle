@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""store — the two consume-side query primitives that are error-prone to do by hand.
+"""store — the consume-side query primitives that are error-prone to do by hand.
 
 QUERYING.md already gives every *easy* read as a one-line YAML filter (count, group-by, recent). This
-module exists only for the two that an agent gets subtly wrong by eye, so they're worth committing once:
+module exists only for the reads an agent gets subtly wrong by eye, so they're worth committing once:
 
   resolve(query)  — fold any surface form (domain / name / alias / store-slug) to the one canonical key.
                     "domain is the key" only holds if a single function maps every form to it — canon().
@@ -12,7 +12,7 @@ module exists only for the two that an agent gets subtly wrong by eye, so they'r
 A *derived lens*, never authoritative: the markdown store is the source of truth. Loads frontmatter fresh
 (no cache, no index — the whole corpus is ~100KB; see experiments/2026-06-01-coded-queries). Stdlib + PyYAML.
 
-CLI:  python store.py find <query>   ·   python store.py relations
+CLI:  python store.py find <query>   ·   python store.py relations   ·   python store.py health
 Lib:  from store import load, canon, resolve, relations
 """
 
@@ -23,6 +23,7 @@ import os
 import re
 import sys
 from collections import Counter
+from datetime import date
 from typing import Any, Callable
 
 try:
@@ -32,6 +33,15 @@ except ImportError:
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STORE = os.path.join(ROOT, "store")
+
+# Hand-maintained mirror of SCHEMA's minor-additive (no backfill, grandfathered) fields.
+# display-name → schema_version at which the field/convention was added.
+# On a MINOR bump that adds a no-backfill field: append here AND add "append to FIELD_VERSIONS" to
+# the SCHEMA version-history line. querycheck --strict asserts this covers every such version SCHEMA names.
+FIELD_VERSIONS: dict[str, str] = {
+    "price-visibility": "2.3",
+    "logos": "2.5",
+}
 
 
 def _frontmatter(path: str) -> dict[str, Any]:
@@ -127,26 +137,115 @@ def relations(profiles: dict[str, dict[str, Any]] | None = None) -> dict[str, An
     }
 
 
+# --- trust surface helpers -----------------------------------------------------------------------
+
+def _ver_tuple(v: object) -> tuple[int, int] | None:
+    m = re.fullmatch(r"\s*(\d+)(?:\.(\d+))?\s*", str(v))
+    return (int(m.group(1)), int(m.group(2) or 0)) if m else None
+
+
+def _days_ago(date_val: object) -> int | None:
+    try:
+        d = date.fromisoformat(str(date_val))
+        return (date.today() - d).days
+    except (TypeError, ValueError):
+        return None
+
+
+def _stub_capture_date(slug: str) -> str | None:
+    """Latest date-named subdir under captures/, or None."""
+    caps = os.path.join(STORE, slug, "captures")
+    if not os.path.isdir(caps):
+        return None
+    entries = sorted(e for e in os.listdir(caps) if re.match(r"\d{4}-\d{2}-\d{2}", e))
+    return entries[-1] if entries else None
+
+
+def _predates(schema_ver: object) -> list[str]:
+    """FIELD_VERSIONS names that predate the given schema_version (conservative if None)."""
+    sv = _ver_tuple(schema_ver)
+    if sv is None:
+        return list(FIELD_VERSIONS.keys())
+    return [name for name, fv in FIELD_VERSIONS.items() if sv < (_ver_tuple(fv) or (0, 0))]
+
+
+def _resolve_stub(query: str) -> str | None:
+    """Resolve query to a stub slug (folder with no profile.md), or None.
+
+    Tries exact canon match first, then prefix match ('norexi' → 'norexi-org' if unique).
+    """
+    cq = canon(query)
+    stub_slugs = [
+        os.path.basename(d)
+        for d in sorted(glob.glob(os.path.join(STORE, "*")))
+        if os.path.isdir(d) and not os.path.exists(os.path.join(d, "profile.md"))
+    ]
+    if cq in stub_slugs:
+        return cq
+    prefix_hits = [s for s in stub_slugs if s.startswith(cq + "-")]
+    return prefix_hits[0] if len(prefix_hits) == 1 else None
+
+
+def _profile_line(query: str, slug: str, fm: dict[str, Any]) -> str:
+    """Format one 'find' result line for a profile with per-layer clocks and predates annotation."""
+    parts: list[str] = []
+    ca = fm.get("captured_at")
+    if ca:
+        d = _days_ago(ca)
+        parts.append(f"captured {ca} ({d}d)")
+    slug_dir = os.path.join(STORE, slug)
+    for mod in ("offerings", "telehealth"):
+        mod_path = os.path.join(slug_dir, f"{mod}.md")
+        if os.path.exists(mod_path):
+            mca = _frontmatter(mod_path).get("captured_at")
+            if mca:
+                parts.append(f"{mod} {mca}")
+    sv = fm.get("schema_version")
+    pre = _predates(sv)
+    sv_str = f"schema {sv}" + (f" — predates: {', '.join(pre)}" if pre else "")
+    parts.append(sv_str)
+    return f"{query} → {slug:<26} {' · '.join(parts)}"
+
+
 # --- CLI ------------------------------------------------------------------------------------------
 def _cli_find(profiles: dict[str, dict[str, Any]], *args: str) -> None:
     if not args:
         return print("usage: store.py find <query>")
     q = " ".join(args)
+
+    # Exact profile hit
     hit = resolve(q, profiles)
     if hit:
-        return print(f"'{q}' → {hit}")
+        print(_profile_line(q, hit, profiles[hit]))
+        return
+
+    # Stub hit (no profile.md)
+    stub = _resolve_stub(q)
+    if stub:
+        cap = _stub_capture_date(stub)
+        cap_str = f"({cap})" if cap else "(no captures)"
+        print(f"{q} → {stub:<26} STUB — captures only {cap_str}, no profile")
+        return
+
+    # Fuzzy candidates across all folders (profiles + stubs)
     cq = canon(q)
+    all_dirs = {os.path.basename(d) for d in glob.glob(os.path.join(STORE, "*")) if os.path.isdir(d)}
     cands = sorted(
         {
             slug
-            for slug, fm in profiles.items()
+            for slug in all_dirs
             if cq in canon(slug)
-            or cq in canon(fm.get("domain") or "")
-            or any(cq in canon(a) for a in (fm.get("aliases") or []) if _is_domainish(a))
-            or q.strip().lower() in str(fm.get("name") or "").lower()
+            or (
+                slug in profiles
+                and (
+                    cq in canon(profiles[slug].get("domain") or "")
+                    or any(cq in canon(a) for a in (profiles[slug].get("aliases") or []) if _is_domainish(a))
+                    or q.strip().lower() in str(profiles[slug].get("name") or "").lower()
+                )
+            )
         }
     )
-    print(f"'{q}' → no exact key; candidates: {', '.join(cands)}" if cands else f"'{q}' → NOT in store")
+    print(f"{q} → no exact key; candidates: {', '.join(cands)}" if cands else f"{q} → NOT in store")
 
 
 def _cli_relations(profiles: dict[str, dict[str, Any]], *_: str) -> None:
@@ -165,9 +264,84 @@ def _cli_relations(profiles: dict[str, dict[str, Any]], *_: str) -> None:
         print(f"  {slug:>24} --{field}--> {t!r}")
 
 
+def _cli_health(profiles: dict[str, dict[str, Any]], *_: str) -> None:
+    all_dirs = sorted(
+        os.path.basename(d)
+        for d in glob.glob(os.path.join(STORE, "*"))
+        if os.path.isdir(d)
+    )
+    stubs = [d for d in all_dirs if d not in profiles]
+
+    print(f"store health — {len(profiles)} profiles · {len(stubs)} stubs\n")
+
+    # Stubs
+    if stubs:
+        print(f"STUBS ({len(stubs)}):")
+        for s in stubs:
+            cap = _stub_capture_date(s)
+            suffix = f"  (captures only {cap})" if cap else ""
+            print(f"  {s}{suffix}")
+        print()
+
+    # Staleness ranking (oldest 10 by captured_at)
+    ages: list[tuple[int, str, object]] = []
+    for slug, fm in profiles.items():
+        ca = fm.get("captured_at")
+        d = _days_ago(ca)
+        if d is not None:
+            ages.append((d, slug, ca))
+    ages.sort(reverse=True)
+    top = ages[:10]
+    print(f"STALENESS (oldest {len(top)}):")
+    for age, slug, ca in top:
+        print(f"  {age:3d}d  {slug:<32} {ca}")
+    print()
+
+    # Module clock skew (any module whose captured_at diverges from profile's)
+    skews: list[tuple[str, str, int, object, int, object]] = []
+    for slug, fm in profiles.items():
+        pd = _days_ago(fm.get("captured_at"))
+        if pd is None:
+            continue
+        slug_dir = os.path.join(STORE, slug)
+        for mod in ("offerings", "telehealth"):
+            mod_path = os.path.join(slug_dir, f"{mod}.md")
+            if not os.path.exists(mod_path):
+                continue
+            mca = _frontmatter(mod_path).get("captured_at")
+            md = _days_ago(mca)
+            if md is not None and abs(pd - md) > 0:
+                skews.append((slug, mod, pd, fm.get("captured_at"), md, mca))
+    if skews:
+        skews.sort(key=lambda x: abs(x[2] - x[4]), reverse=True)
+        print("MODULE CLOCK SKEW:")
+        for slug, mod, pd, pdate, md, mdate in skews:
+            diff = abs(pd - md)
+            direction = "profile older" if pd > md else "module older"
+            print(f"  {slug:<28} profile {pdate} ({pd}d) · {mod} {mdate} ({md}d)  [{diff}d, {direction}]")
+        print()
+
+    # store.db freshness
+    db_path = os.path.join(ROOT, "scripts", "_out", "store.db")
+    if os.path.exists(db_path):
+        import datetime as _dt
+        db_mtime = os.path.getmtime(db_path)
+        db_date = _dt.date.fromtimestamp(db_mtime)
+        newer = sum(
+            1
+            for root, _, files in os.walk(STORE)
+            for f in files
+            if f.endswith(".md") and os.path.getmtime(os.path.join(root, f)) > db_mtime
+        )
+        print(f"store.db built {db_date}; {newer} markdown files newer — rebuild: python scripts/build_db.py")
+    else:
+        print("store.db not built — run: python scripts/build_db.py")
+
+
 _DISPATCH: dict[str, Callable[..., None]] = {
     "find": _cli_find,
     "relations": _cli_relations,
+    "health": _cli_health,
 }
 
 
@@ -178,10 +352,13 @@ def main() -> None:
     else:
         if len(sys.argv) > 1:
             print(f"unknown command {sys.argv[1]!r}\n")
+        all_dirs = sum(1 for d in glob.glob(os.path.join(STORE, "*")) if os.path.isdir(d))
+        stubs = all_dirs - len(profiles)
         print(
-            f"store.py — {len(profiles)} profiles. commands: {', '.join(_DISPATCH)}\n"
-            f"  find <query>   domain/name/alias/slug → canonical key\n"
-            f"  relations      parent/owns join-check + re-capture ranking"
+            f"store.py — {len(profiles)} profiles · {stubs} stubs. commands: {', '.join(_DISPATCH)}\n"
+            f"  find <query>   domain/name/alias/slug → profile or stub info\n"
+            f"  relations      parent/owns join-check + re-capture ranking\n"
+            f"  health         stubs · staleness · module-clock skew · store.db freshness"
         )
 
 

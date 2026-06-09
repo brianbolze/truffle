@@ -76,6 +76,22 @@ CLOSED_FIELDS = [
 OTHER_OK = {"entity_type", "offering_category", "business_model", "primary_industry"}
 
 
+def _grandfathered_versions_from_schema(path: str) -> set[str]:
+    """Extract version strings for MINOR bumps that require a FIELD_VERSIONS entry.
+
+    Only matches lines tagged '→ FIELD_VERSIONS' in SCHEMA's version history — the explicit signal
+    added when a no-backfill field creates a trust hazard (empty = 'predates it', not 'has none').
+    """
+    result: set[str] = set()
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            if "FIELD_VERSIONS" in line and "MINOR" in line:
+                m = re.search(r"\*\*\*(\d+\.\d+)\*\*\*", line)
+                if m:
+                    result.add(m.group(1))
+    return result
+
+
 def load_taxonomy_sets(path: str) -> dict[str, set[str]]:
     """Derive {field: {allowed values}} from TAXONOMIES.md — the closed sets live there, not here.
 
@@ -123,6 +139,26 @@ def main() -> None:
         if missing:
             fails.append(f"--strict: could not derive {missing} from TAXONOMIES.md — its table format changed?")
             tax_sets = None  # can't enum-check without the sets; structural pass still runs and reports
+
+        # FIELD_VERSIONS coverage: the dict in store.py must cover every grandfathered MINOR version SCHEMA names.
+        schema_path = os.path.join(ROOT, "SCHEMA.md")
+        gf_vers = _grandfathered_versions_from_schema(schema_path)
+        if gf_vers:
+            scripts_dir = os.path.dirname(os.path.abspath(__file__))
+            if scripts_dir not in sys.path:
+                sys.path.insert(0, scripts_dir)
+            try:
+                from store import FIELD_VERSIONS  # type: ignore[import]
+                fv_vers = set(FIELD_VERSIONS.values())
+                missing_vers = sorted(gf_vers - fv_vers)
+                if missing_vers:
+                    fails.append(
+                        f"FIELD_VERSIONS in store.py missing entries for schema versions {missing_vers}"
+                        f" — append to FIELD_VERSIONS after each MINOR no-backfill bump"
+                        f" (has: {sorted(fv_vers)}, needs: {sorted(gf_vers)})."
+                    )
+            except ImportError as e:
+                fails.append(f"FIELD_VERSIONS check: could not import store.py ({e}).")
 
     cur_ver = current_schema_version(os.path.join(ROOT, "SCHEMA.md"))
     if cur_ver is None:

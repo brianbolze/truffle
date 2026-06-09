@@ -17,6 +17,8 @@ The store is `store/<domain-slug>/`:
 - `captures/<date>/*.md` — cleaned pages, **verbatim** primary source.
 - `captures/<date>/images/<sku>.<ext>` — **product reference imagery** (opt-in; absent on most companies): a flagship's clean **hero product render**, captured for a design / rendering-reference consumer and cited from the `offerings.md` deep block. A binary asset, not greppable — look here when you need the picture, not the text.
 
+A folder **without** `profile.md` is a **stub** — a raw capture cache, not a dossier. `python scripts/store.py find <x>` distinguishes profiles from stubs explicitly; "is X captured?" means "does `store/<x>/profile.md` exist?"
+
 Frontmatter is valid YAML, so the structured reader is five lines (PyYAML + stdlib `glob`):
 
 ```python
@@ -48,7 +50,7 @@ Multi-selects are **ranked** — position 1 is *primary*. `tm[0]=="B2B"` means "
 ```python
 {s: p.get("owns") for s,p in P.items() if p.get("owns")}
 ```
-To see which targets actually resolve to a held profile — and rank the dangling ones as re-capture candidates by in-degree (the parent two captured brands share is the highest-value next capture) — run `python scripts/store.py relations`. Doing this by eye across the corpus miscounts; today it's 1 joinable / 23 dangling / 8 name-only.
+To see which targets actually resolve to a held profile — and rank the dangling ones as re-capture candidates by in-degree (the parent two captured brands share is the highest-value next capture) — run `python scripts/store.py relations`. Doing this by eye across the corpus miscounts.
 
 **4. Cross-brand pricing** — *"compare GLP-1 prices across the cohort"* → the hard path, with a real ceiling:
 - **Intra-cohort only.** "Price" isn't comparable across business types (`$/mo` vs take-rate `%` vs AUM fee vs per-night) — compare within one like cohort.
@@ -59,7 +61,7 @@ To see which targets actually resolve to a held profile — and rank the danglin
 
 **5. Primary source** — *verbatim claims / disclaimers / taglines* → `profile.md` paraphrases; the captures keep exact wording: `rg -n '<phrase or variant>' store/<slug>/captures/*/*.md`. Guess variants for regulated language ("not approved" / "not evaluated").
 
-**6. Cohort cross-cut** — *"within telehealth: who owns their pharmacy and leads with men?"* → where a company carries `store/<slug>/telehealth.md` (a **cohort pack** — telehealth today; contract [`TELEHEALTH.md`](TELEHEALTH.md)), its frontmatter is the same valid-YAML closed-set surface as `profile.md`, parsed the same way and **joined on the slug**. The pack exists *because* the universal classification reads identical across a cohort (the telehealth set is 13/13 identical) — so these are the cuts that actually separate players *within* it.
+**6. Cohort cross-cut** — *"within telehealth: who owns their pharmacy and leads with men?"* → where a company carries `store/<slug>/telehealth.md` (a **cohort pack** — telehealth today; contract [`TELEHEALTH.md`](TELEHEALTH.md)), its frontmatter is the same valid-YAML closed-set surface as `profile.md`, parsed the same way and **joined on the slug**. The pack exists *because* the universal classification reads near-identical across a cohort — so these are the cuts that actually separate players *within* it.
 ```python
 TH = {p.split("/")[1]: frontmatter(p) for p in glob.glob("store/*/telehealth.md")}   # same frontmatter() as above
 # the within-cohort scan: integrated pharmacy + men-led + TRT front door
@@ -93,6 +95,8 @@ These tools print JSON envelopes to stdout and do **not** write the store. Save 
 
 **Before trusting a negative.** *"Company X doesn't do Y"* can mean **not offered** or **not captured**. Three signals tell them apart — check before reporting: `key_pages` (what the capturer treated as signal), `unverified_fields` (what it explicitly couldn't get), and the **Provenance** body section (pages analyzed + what was missed).
 
+**Answer trust.** Quote the governing clock, the enumeration floor, and any `unverified_fields` in every answer — point reads end with `as of <captured_at> (Nd)` (use the module's own clock for module-layer facts); cohort answers use a range form (`captures 2026-05-30..06-07, oldest 10d`) rather than per-row clauses; counts cite their `enumeration` status; fields in `unverified_fields` get said out loud. `python scripts/store.py find <x>` puts the clocks in the output — copy, don't recall.
+
 **Can't answer yet:**
 - **Numeric / range price** ("under $200/mo") — still no structured price *value* field (verbatim strings only, by design); hand-normalize, don't fake a table. The per-SKU `offerings.md` (opt-in cohorts) tightens this to one row per SKU with a verbatim price + query-time molecule grouping (Recipe 4) — but the value is still a string to normalize, never a sortable number. *(Price **visibility** — gated vs. published — is queryable; see Recipe 4.)*
 - **Cross-type price** comparison — not meaningful (see Recipe 4).
@@ -101,4 +105,4 @@ These tools print JSON envelopes to stdout and do **not** write the store. Save 
 
 ---
 
-*Authority + drift: SCHEMA / TAXONOMIES are the contract — this doc names fields and mechanics, never value lists. If a recipe here disagrees with them, trust the contract and re-derive the recipe. Written against `schema_version: 1`; a **major** bump means re-check the recipes with `scripts/querycheck.py` (a minor/additive bump can't break an existing recipe).*
+*Authority + drift: SCHEMA / TAXONOMIES are the contract — this doc names fields and mechanics, never value lists. If a recipe here disagrees with them, trust the contract and re-derive the recipe. A **major** bump means re-check the recipes with `scripts/querycheck.py` (a minor/additive bump can't break an existing recipe).*
