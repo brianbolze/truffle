@@ -83,6 +83,38 @@ because the Archive crawled it late, was blocked, or never saw it.
 
 The caller decides whether "old enough" or "meaningful change" follows from that evidence.
 
+## Launch / First-Offered Probes
+
+Wayback can sometimes tighten a lower bound for when a buyer-path page existed. It usually cannot
+prove a launch date.
+
+When a caller is trying to harden "first archived SKU page" into a first-offered estimate, keep the
+probe narrow:
+
+- Start from an existing row or known URL. Do not turn this into broad discovery.
+- Check exact variants first: `http` / `https`, `www` / no-`www`, slash / no-slash.
+- Check only obvious predecessor or successor slugs for the same company and molecule/SKU.
+- Use scoped prefix/path checks when slug churn is plausible, then inspect the earliest relevant
+  replay content before trusting the timestamp.
+- Treat sitemap `lastmod`, canonical tags, redirects, and page metadata as supporting hints, not
+  buyer-path proof.
+- Record negative checks as "not found in this surface," not "did not exist."
+
+Useful evidence classes, strongest first:
+
+| class | what it can support |
+|---|---|
+| buyer-path SKU page | no-later-than date for purchasable page existence |
+| predecessor buyer-path page | improved no-later-than date if same company + SKU/molecule context is clear |
+| category page naming a purchasable SKU | category-level lower bound; not automatically SKU-page existence |
+| teaser / waitlist / coming soon | pre-offer context only unless availability is explicit |
+| redirect / canonical artifact | slug relationship hint; inspect content before relying on it |
+| metadata-only hint | corroboration or recheck lead, not launch evidence |
+
+Use "launch date" only when a source explicitly states a launch or availability date. Use a launch
+window only when source-backed earlier/later boundaries bracket the likely offer window. Otherwise,
+keep the classification at "no later than first archived buyer-path evidence" or "insufficient."
+
 ## Diff Mode Caveats
 
 - **Mechanical text only.** HTML is parsed with a tiny stdlib parser that drops script/style-ish
