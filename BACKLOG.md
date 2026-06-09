@@ -21,13 +21,18 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 
 - **Automatic retro** `[idea]` `[@brian]`
   Adjust the system / `research-company` verb such that when an agent has a really messy / ineffective capture - they automatically write a retro (or, maybe suggest the user spawn a new session for that retro... idk... I still want the user to get their results quickly - without waiting for the retro to complete...) -- that gets written to _design/retro/ -- following a consistent format / guideline.
+  
+- **Web design quality** `[idea]` `[@brian]`
+  During research-company flows, have a sub-agent review the website screenshot(s) (home page probably sufficient) and score it across a rubric to determine a rough “website design quality” metric / classification. Good first pass to downgrade clearly crappy, unprofessional sites. Look for common “slop” patterns including: (candidate list, full list to be designed)
+  - **Iconography**: “amateur” quality graphics, poor placement, inconsistent or inappropriate sizing
+  - **Lack of professional imagery / renders**: Good imagery is hard and often expensive. Amateur D2C operators often just skip this and rely on text, and maybe icons / cheap illustrations.
+  - **Inconsistency**: no clear typography hierarchy, etc
 
 ### Discoverability & consumption
 
-- **No store-aware entry point for cross-company / consumption queries** `[weakness]` `[md]`
-  Single-company is covered — a fresh agent reliably reaches `research-company`, which transitively reveals the store. The **consumption / aggregation** shape ("compare these companies", "what do these competitors charge", "is X already in our research") has **no verb**. The [2026-06-01 discoverability test](experiments/2026-06-01-discoverability/) caught P4 re-scraping **4 warm brands live**. (The rival skill that owned that intent, `competitive-research-audit`, is now **uninstalled** — so the miss-mode is now "defaults to WebSearch," not "routed to a rival.")
-  **Fix — a rung-2 "consume the company store" verb** `[idea]`: a sibling to `research-company` (consume vs. capture — don't fold in) that triggers on consumption intent, reads `WEB_RESEARCH_HOME` + `QUERYING.md`, and filters the corpus **before any web call** (Frame rung 2; consumption-affordance **Wall 2**). `WEB_RESEARCH_HOME` is now set in `~/.claude/settings.json` but **no skill reads it yet** — wire that in here.
-  **Act when:** a live consumer appears (none today → unhurried). Then re-run the probe — pass = a fresh agent compares ≥2 warm companies store-first, ~$0, no live re-scrape.
+- **No store-aware entry point for cross-company / consumption queries** `[weakness]`
+  Single-company is covered. The **consumption / aggregation** shape ("compare these competitors", "what do they charge", "is X in the store") has no verb — the [2026-06-01 discoverability test](experiments/2026-06-01-discoverability/) caught P4 re-scraping 4 warm brands live. `competitive-research-audit` (the rival that won P4's intent) **is still installed** and should be, so the re-probe must run with it present.
+  **Trust surface (ship-set A) shipped 2026-06-09** — stubs visible in `store.py find`, QUERYING cleaned, FIELD_VERSIONS fenced. **`/query-companies` verb (ship-set B) is next** — spec in [`_design/fable-analysis/03-consume-verb.md`](_design/fable-analysis/03-consume-verb.md). Pass condition: fresh agent compares ≥2 warm brands store-first, ~$0, no re-scrape, with the rival installed.
 
 ### Schema & taxonomy decisions
 
