@@ -10,7 +10,7 @@ One script, one output file, no server, no build step. The markdown stays the so
 the brief is a regenerable lens (same philosophy as the SQLite lens).
 
 Structure: four tabs (Profile / Offer architecture / Brand system / Provenance & limits),
-collapsible sections with one-line peeks, taxonomy icons (lucide, via icons.py).
+collapsible sections with one-line peeks.
 
 extract_model() and render_html() are deliberately separate so the future N-company compare
 sheet can reuse extraction without touching the template.
@@ -42,7 +42,7 @@ OUT = os.path.join(SCRIPTS, "_out", "briefs")
 FONTCACHE = os.path.join(OUT, ".fontcache")
 IMGCACHE = os.path.join(OUT, ".imgcache")
 
-from icons import icon_svg, raw_svg  # noqa: E402
+from icons import raw_svg  # noqa: E402
 from offeringscheck import SPINE_PREFIXES, parse_roster  # noqa: E402
 
 from store import load as store_load  # noqa: E402
@@ -685,15 +685,8 @@ a:hover{border-bottom-color:var(--accent)}
 .hero-desc{font-family:var(--display);font-size:29px;line-height:1.32;font-weight:400;max-width:36ch;
   margin-top:22px;animation:rise .8s .42s both}
 
-/* specs datasheet — full-width label/value rows so long values never distort neighbors */
-.specs{padding:8px 0 4px;border-bottom:1px solid var(--rule);animation:rise .8s .5s both}
-.spec{display:grid;grid-template-columns:200px 1fr;gap:30px;padding:15px 0;border-top:1px solid var(--rule)}
-.spec:first-child{border-top:none}
-.spec>.label{padding-top:3px}
-.spec-val{display:flex;gap:11px;align-items:flex-start}
-.spec .ic{width:18px;height:18px;flex:none;color:var(--accent);margin-top:1px}
-.spec .val{font-size:16.5px;line-height:1.45}
-.cohort{padding:20px 0 24px;border-bottom:1px solid var(--rule)}
+/* classification + cohort cuts — quiet chip strips; corpus-cut keys, deliberately demoted */
+.cohort{padding:18px 0 20px;border-bottom:1px solid var(--rule);animation:rise .8s .5s both}
 .cohort>.label{display:block;margin-bottom:11px}
 .cohort .cuts{display:flex;flex-wrap:wrap;gap:8px}
 .cut{font-family:var(--mono);font-size:11px;letter-spacing:.05em;padding:4px 10px;border:1px solid var(--rule)}
@@ -873,8 +866,6 @@ blockquote{border-left:2px solid var(--rule);padding-left:16px;font-style:italic
   .provrow{grid-template-columns:1fr;gap:6px}
   .tabbar{margin:0 -22px;padding:0 12px;overflow-x:auto}
   .tabbtn{padding:15px 12px 12px;white-space:nowrap}
-  .spec{grid-template-columns:1fr;gap:8px}
-  .spec>.label{padding-top:0}
   .brandgrid,.prov-grid{grid-template-columns:1fr}
   .hero-desc{font-size:23px}
   .sec-peek{display:none}
@@ -1166,23 +1157,25 @@ def render_html(m: dict[str, Any]) -> str:
     if others:
         alias_html = f'<div class="alias">a.k.a. {esc(" · ".join(others))}</div>'
 
-    specs: list[tuple[str, str, str]] = []  # (label, value-html, icon-html)
-    if cls["entity"]:
-        specs.append(("entity", esc(cls["entity"]), icon_svg("entity", cls["entity"])))
-    if cls["industry"]:
-        specs.append(("industry", esc(cls["industry"]), icon_svg("industry", cls["industry"])))
-    if cls["model"]:
-        specs.append(("business model", esc(cls["model"]), icon_svg("model", cls["model"])))
+    # Classification is the store's corpus-cut vocabulary — deliberately generic, so it renders as
+    # one quiet chip strip, not a datasheet. "Sells to" leads; the default entity (Company) is noise.
+    chips: list[tuple[str, str]] = []
     if cls["market"]:
-        specs.append(("market", esc(" · ".join(cls["market"])), icon_svg("market", cls["market"][0])))
-    if cls["shape"]:
-        specs.append(("portfolio", esc(cls["shape"]), icon_svg("shape", cls["shape"])))
+        chips.append(("sells to", " · ".join(cls["market"])))
+    if cls["industry"]:
+        chips.append(("industry", cls["industry"]))
+    if cls["model"]:
+        chips.append(("model", cls["model"]))
     if cls["category"]:
-        specs.append(("offering", esc(" · ".join(cls["category"])), icon_svg("category", cls["category"][0])))
-    specs_html = "".join(
-        f'<div class="spec"><span class="label">{lbl}</span>'
-        f'<div class="spec-val">{ic}<div class="val">{val}</div></div></div>'
-        for lbl, val, ic in specs)
+        chips.append(("offering", " · ".join(cls["category"])))
+    if cls["shape"]:
+        chips.append(("portfolio", cls["shape"]))
+    if cls["entity"] and cls["entity"] != "Company":
+        chips.append(("entity", cls["entity"]))
+    specs_html = ""
+    if chips:
+        cuts = "".join(f'<span class="cut">{esc(lbl)} <b>{esc(val)}</b></span>' for lbl, val in chips)
+        specs_html = f'<div class="cohort"><span class="label">classification</span><div class="cuts">{cuts}</div></div>'
 
     cohort_html = ""
     if m["telehealth"]:
@@ -1250,7 +1243,7 @@ def render_html(m: dict[str, Any]) -> str:
   {alias_html}
   <p class="hero-desc">{desc}</p>
 </section>
-<div class="specs">{specs_html}</div>
+{specs_html}
 {cohort_html}
 {tab_inputs}
 {tabbar}
