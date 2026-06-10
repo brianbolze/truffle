@@ -22,12 +22,6 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 - **Automatic retro** `[idea]` `[@brian]`
   Adjust the system / `research-company` verb such that when an agent has a really messy / ineffective capture - they automatically write a retro (or, maybe suggest the user spawn a new session for that retro... idk... I still want the user to get their results quickly - without waiting for the retro to complete...) -- that gets written to _design/retro/ -- following a consistent format / guideline.
   
-### Discoverability & consumption
-
-- **Verify `/query-companies` implicit routing from an unrelated project cwd** `[tbd]` `[sm]`
-  Both 2026-06-09 items closed: `/research-company`'s warm-serve path is now a hand-off to `/query-companies` (one verb owns "answer about X", the other "go capture X" — see [03-consume-verb](_design/fable-analysis/03-consume-verb.md)), and the implicit-routing re-test **passed** in a fresh top-level session — a naked Hone-pricing prompt invoked `/query-companies` unprompted, store-only, clocks cited. Remaining gap: that test ran with the engine repo as cwd (CLAUDE.md in context); routing via the global skill links from another project is unobserved.
-  **Act when:** next time a company question comes up while working in another repo — note whether it routed to the store; one clean hit closes this, a miss means the global description needs work.
-
 ### Schema & taxonomy decisions
 
 - **Revisit 2.2's "no `founders`/`legal_entity` field" call — a cohort consumer has now appeared** `[tbd]` `[sm]`

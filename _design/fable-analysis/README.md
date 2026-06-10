@@ -15,7 +15,7 @@
 | # | Ship | Fixes (observed, not imagined) | Size | Status |
 |---|---|---|---|---|
 | **A** | **Trust surface** → [02](02-trust-surface.md): `store.py find` sees stubs + prints clocks/`predates:` · `store.py health` · QUERYING.md strip-the-baked-numbers + one answer-trust convention · fenced `FIELD_VERSIONS` | Stub false-negatives (probe #1) · no staleness visibility (Q7) · stale doc numbers (probe #3) · the remembered stamp-check tax | **S** | ✅ shipped 2026-06-09 |
-| **B** | **`/query-companies` verb** → [03](03-consume-verb.md): sibling read-only router over QUERYING.md, 46 lines; per-company status report before any answer; gaps are hand-offs, never silent web fallback | The P4 routing miss · warm/stale/missing made visible · the store finally read via `WEB_RESEARCH_HOME` | **S** | ✅ shipped 2026-06-09; implicit-routing re-test passed 2026-06-09 (in-repo; cross-project discovery unobserved) |
+| **B** | **`/query-companies` verb** → [03](03-consume-verb.md): sibling read-only router over QUERYING.md, 46 lines; per-company status report before any answer; gaps are hand-offs, never silent web fallback | The P4 routing miss · warm/stale/missing made visible · the store finally read via `WEB_RESEARCH_HOME` | **S** | ✅ shipped 2026-06-09; implicit routing verified (in-repo + cross-project, hit + miss paths) |
 | **C** | **Corpus-wide lens** → [04](04-derived-lens.md): un-gate `offerings` · `coverage` + `_meta` tables · rebuild-before-read convention · fences restated honestly (ranking stays cohort-gated) | Silent store.db staleness (probe #2) · capture-status manifest the consumer asked for · Beekeeper gets fences *in the artifact* | **M** | ✅ shipped 2026-06-09 |
 
 A, B, and C are shipped. The deferred items below stay deferred until their triggers fire.
@@ -31,7 +31,7 @@ A, B, and C are shipped. The deferred items below stay deferred until their trig
 ## Open decisions for Brian
 
 1. **Enumeration backfill.** Many active rosters still read as `enumeration: unknown` — every breadth answer there is a floor. Inspect `coverage` / `telehealth_full` before budgeting `/deepen-offerings`; retiring it means real Firecrawl spend across the cohort you're actively mining.
-2. ~~**Implicit routing re-test.**~~ Resolved 2026-06-09: a naked pricing prompt in a fresh top-level session routed to `/query-companies` unaided (store-only, clocks cited). Residual: cross-project discovery via the global skill links is unobserved — tracked in BACKLOG.
+2. ~~**Implicit routing re-test.**~~ Resolved: naked prompts route to `/query-companies` unaided in-repo (hit + miss paths, 2026-06-09) and from an unrelated project cwd via the global skill links (2026-06-10) — store-only, clocks cited, gaps handed off. Closed in BACKLOG.
 
 ## What I'd push back on
 
