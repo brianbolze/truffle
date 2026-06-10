@@ -682,8 +682,8 @@ a:hover{border-bottom-color:var(--accent)}
 .mark-text{font-family:var(--display);font-weight:600;color:var(--hero-accent);line-height:1.02;letter-spacing:-.01em}
 .alias{font-family:var(--mono);font-size:11px;letter-spacing:.12em;margin-top:14px;
   color:color-mix(in srgb,var(--hero-fg) 52%,transparent)}
-.hero-desc{font-family:var(--display);font-size:29px;line-height:1.32;font-weight:400;max-width:36ch;
-  margin-top:22px;animation:rise .8s .42s both}
+.hero-desc{font-family:var(--display);font-size:var(--desc-size,29px);line-height:1.32;font-weight:400;
+  max-width:38ch;margin-top:22px;animation:rise .8s .42s both}
 
 /* classification + cohort cuts — quiet chip strips; corpus-cut keys, deliberately demoted */
 .cohort{padding:18px 0 20px;border-bottom:1px solid var(--rule);animation:rise .8s .5s both}
@@ -867,7 +867,7 @@ blockquote{border-left:2px solid var(--rule);padding-left:16px;font-style:italic
   .tabbar{margin:0 -22px;padding:0 12px;overflow-x:auto}
   .tabbtn{padding:15px 12px 12px;white-space:nowrap}
   .brandgrid,.prov-grid{grid-template-columns:1fr}
-  .hero-desc{font-size:23px}
+  .hero-desc{font-size:min(23px,var(--desc-size,29px))}
   .sec-peek{display:none}
 }
 @media print{
@@ -1141,6 +1141,9 @@ def render_html(m: dict[str, Any]) -> str:
     pal, fonts = m["pal"], m["fonts"]
     cls = m["classification"]
     desc = esc(m["description"]) or "—"
+    # A hero headline shouldn't run 5-6 lines: step the display size down with description length.
+    dlen = len(m["description"])
+    desc_size = 29 if dlen <= 110 else (25 if dlen <= 170 else 21)
 
     css_vars = (
         f":root{{--paper:{PAPER};--ink:{INK};--desk:#DCD5C4;"
@@ -1241,7 +1244,7 @@ def render_html(m: dict[str, Any]) -> str:
   </div>
   <div class="hero-mark">{_hero_mark_html(m)}</div>
   {alias_html}
-  <p class="hero-desc">{desc}</p>
+  <p class="hero-desc" style="--desc-size:{desc_size}px">{desc}</p>
 </section>
 {specs_html}
 {cohort_html}
