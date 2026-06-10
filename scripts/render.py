@@ -566,14 +566,28 @@ def extract_telehealth(slug: str) -> dict[str, Any] | None:
     return {"captured_at": _datestr(fm.get("captured_at")), "cuts": cuts}
 
 
-def _index_mark(slug: str) -> str | None:
-    """Newest locally-captured logomark. The index never fetches — it must render offline in ~1s,
-    so companies without a captured mark get a typographic tile instead of costing a network trip."""
+def _index_mark(slug: str, domain: str, fetch: bool) -> str | None:
+    """Newest locally-captured logomark, else the company favicon (Google s2) disk-cached on first
+    fetch — so the index renders offline after one warm run. No mark, no fetch → letter tile."""
     hits = sorted(glob.glob(os.path.join(STORE, slug, "captures", "*", ".payloads", "logos", "logomark-s2.png")))
-    return _b64_file(hits[-1]) if hits else None
+    if hits:
+        return _b64_file(hits[-1])
+    if not domain:
+        return None
+    cache = os.path.join(IMGCACHE, f"{slug}-favicon.png")
+    if not os.path.exists(cache):
+        if not fetch:
+            return None
+        raw = _fetch(f"https://www.google.com/s2/favicons?domain={domain}&sz=256")
+        if not raw:
+            return None
+        os.makedirs(IMGCACHE, exist_ok=True)
+        with open(cache, "wb") as f:
+            f.write(raw)
+    return _b64_file(cache)
 
 
-def extract_index() -> list[dict[str, Any]]:
+def extract_index(fetch: bool = True) -> list[dict[str, Any]]:
     """One light row per profiled company — frontmatter + layer clocks only, none of the brief's
     heavy assets (fonts/screenshots/remote logos). Everything is computed at render time."""
     rows: list[dict[str, Any]] = []
@@ -590,7 +604,7 @@ def extract_index() -> list[dict[str, Any]]:
             "buyable": off["buyable"] if off else None,
             "roster_at": off["captured_at"] if off else "",
             "cohort": extract_telehealth(slug) is not None,
-            "mark": _index_mark(slug),
+            "mark": _index_mark(slug, str(fm.get("domain") or ""), fetch),
         })
     return rows
 
@@ -1420,8 +1434,9 @@ def main() -> None:
         print(f"  paste into your reply: [Open {m.get('name') or m['slug']} brief](<{out_path}>)")
 
     if args.index:
-        rows = extract_index()
-        out_path = os.path.join(OUT, "index.html")
+        rows = extract_index(fetch=not args.no_fetch)
+        # 00- prefix: the index sorts to the top of the briefs folder, where a human looks first.
+        out_path = os.path.join(OUT, "00-index.html")
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(render_index_html(rows, build_fonts([], fetch=not args.no_fetch)))
         print(f"index → {out_path}  ({len(rows)} companies, {os.path.getsize(out_path) // 1024} KB)")
