@@ -1264,12 +1264,18 @@ def render_html(m: dict[str, Any]) -> str:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description="render store/<slug>/ into self-contained HTML briefs")
-    ap.add_argument("company", nargs="+", help="company name, domain, alias, or store slug")
+    ap.add_argument("company", nargs="*", help="company name, domain, alias, or store slug")
+    ap.add_argument("--all", action="store_true",
+                    help="render every company in the store — pre-warms font/logo/image caches so a live demo never waits on a fetch")
     ap.add_argument("--no-fetch", action="store_true", help="skip remote logo/font fetches; use local assets and fallbacks")
     args = ap.parse_args()
 
+    queries = sorted(store_load()) if args.all else args.company
+    if not queries:
+        ap.error("name at least one company, or pass --all")
+
     os.makedirs(OUT, exist_ok=True)
-    for q in args.company:
+    for q in queries:
         m = extract_model(q, fetch=not args.no_fetch)
         if m is None:
             print(f"{q} → not in store (try: python scripts/store.py find '{q}')")
