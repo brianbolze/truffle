@@ -12,7 +12,7 @@ module exists only for the reads an agent gets subtly wrong by eye, so they're w
 A *derived lens*, never authoritative: the markdown store is the source of truth. Loads frontmatter fresh
 (no cache, no index — the whole corpus is ~100KB; see experiments/2026-06-01-coded-queries). Stdlib + PyYAML.
 
-CLI:  python store.py find <query>   ·   python store.py relations   ·   python store.py health
+CLI:  python store.py find <query> [<query> ...]   ·   python store.py relations   ·   python store.py health
 Lib:  from store import load, canon, resolve, relations
 """
 
@@ -147,6 +147,7 @@ def relations(profiles: dict[str, dict[str, Any]] | None = None) -> dict[str, An
 
 # --- trust surface helpers -----------------------------------------------------------------------
 
+
 def _ver_tuple(v: object) -> tuple[int, int] | None:
     m = re.fullmatch(r"\s*(\d+)(?:\.(\d+))?\s*", str(v))
     return (int(m.group(1)), int(m.group(2) or 0)) if m else None
@@ -216,27 +217,22 @@ def _profile_line(query: str, slug: str, fm: dict[str, Any]) -> str:
 
 
 # --- CLI ------------------------------------------------------------------------------------------
-def _cli_find(profiles: dict[str, dict[str, Any]], *args: str) -> None:
-    if not args:
-        return print("usage: store.py find <query>")
-    q = " ".join(args)
-
-    # Exact profile hit
-    hit = resolve(q, profiles)
+def _hit_line(query: str, profiles: dict[str, dict[str, Any]]) -> str | None:
+    """A definite 'find' hit — profile (with clocks) or stub — formatted; None on a miss."""
+    hit = resolve(query, profiles)
     if hit:
-        print(_profile_line(q, hit, profiles[hit]))
-        return
-
-    # Stub hit (no profile.md)
-    stub = _resolve_stub(q)
+        return _profile_line(query, hit, profiles[hit])
+    stub = _resolve_stub(query)
     if stub:
         cap = _stub_capture_date(stub)
         cap_str = f"({cap})" if cap else "(no captures)"
-        print(f"{q} → {stub:<26} STUB — captures only {cap_str}, no profile")
-        return
+        return f"{query} → {stub:<26} STUB — captures only {cap_str}, no profile"
+    return None
 
-    # Fuzzy candidates across all folders (profiles + stubs)
-    cq = canon(q)
+
+def _miss_line(query: str, profiles: dict[str, dict[str, Any]]) -> str:
+    """The miss half of 'find': fuzzy candidates across all folders (profiles + stubs), or NOT in store."""
+    cq = canon(query)
     all_dirs = {os.path.basename(d) for d in glob.glob(os.path.join(STORE, "*")) if os.path.isdir(d)}
     cands = sorted(
         {
@@ -248,12 +244,31 @@ def _cli_find(profiles: dict[str, dict[str, Any]], *args: str) -> None:
                 and (
                     cq in canon(profiles[slug].get("domain") or "")
                     or any(cq in canon(a) for a in (profiles[slug].get("aliases") or []) if _is_domainish(a))
-                    or q.strip().lower() in str(profiles[slug].get("name") or "").lower()
+                    or query.strip().lower() in str(profiles[slug].get("name") or "").lower()
                 )
             )
         }
     )
-    print(f"{q} → no exact key; candidates: {', '.join(cands)}" if cands else f"{q} → NOT in store")
+    return f"{query} → no exact key; candidates: {', '.join(cands)}" if cands else f"{query} → NOT in store"
+
+
+def _cli_find(profiles: dict[str, dict[str, Any]], *args: str) -> None:
+    if not args or args[0].startswith("-"):
+        return print("usage: store.py find <query> [<query> ...]")
+    # Unquoted multi-word names are the common case, so all args are tried as ONE query first.
+    # But a joined miss must never mask per-company hits — `find "Marek Health" "Defy Medical"`
+    # once printed a single false NOT-in-store — so on a miss, each arg is retried as its own query.
+    joined = " ".join(args)
+    line = _hit_line(joined, profiles)
+    if line:
+        return print(line)
+    if len(args) > 1:
+        per_arg = [(query, _hit_line(query, profiles)) for query in args]
+        if any(hit for _, hit in per_arg):
+            for query, hit in per_arg:
+                print(hit or _miss_line(query, profiles))
+            return
+    print(_miss_line(joined, profiles))
 
 
 def _cli_relations(profiles: dict[str, dict[str, Any]], *_: str) -> None:
@@ -273,11 +288,7 @@ def _cli_relations(profiles: dict[str, dict[str, Any]], *_: str) -> None:
 
 
 def _cli_health(profiles: dict[str, dict[str, Any]], *_: str) -> None:
-    all_dirs = sorted(
-        os.path.basename(d)
-        for d in glob.glob(os.path.join(STORE, "*"))
-        if os.path.isdir(d)
-    )
+    all_dirs = sorted(os.path.basename(d) for d in glob.glob(os.path.join(STORE, "*")) if os.path.isdir(d))
     stubs = [d for d in all_dirs if d not in profiles]
 
     print(f"store health — {len(profiles)} profiles · {len(stubs)} stubs\n")
