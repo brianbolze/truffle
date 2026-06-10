@@ -30,9 +30,8 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 
 ### Discoverability & consumption
 
-- **No store-aware entry point for cross-company / consumption queries** `[weakness]`
-  Single-company is covered. The **consumption / aggregation** shape ("compare these competitors", "what do they charge", "is X in the store") has no verb — the [2026-06-01 discoverability test](experiments/2026-06-01-discoverability/) caught P4 re-scraping 4 warm brands live. `competitive-research-audit` (the rival that won P4's intent) **is still installed** and should be, so the re-probe must run with it present.
-  **Trust surface (ship-set A) shipped 2026-06-09** — stubs visible in `store.py find`, QUERYING cleaned, FIELD_VERSIONS fenced. **`/query-companies` verb (ship-set B) is next** — spec in [`_design/fable-analysis/03-consume-verb.md`](_design/fable-analysis/03-consume-verb.md). Pass condition: fresh agent compares ≥2 warm brands store-first, ~$0, no re-scrape, with the rival installed.
+- **Re-test implicit routing for `/query-companies` in a fresh top-level session** `[tbd]` `[sm]`
+  Ship-sets A and B landed 2026-06-09: `store.py find` exposes stubs/clocks, QUERYING is cleaned, and `/query-companies` is installed as the read-only consume verb. Controlled invocation passed (`store.py find` → local `offerings.md`, no live web / no credits), but naked in-session sub-agents still treated testosterone-pricing prompts as current-public-page work. Re-test after the skill index reloads; if it still misses, fix discovery/plumbing before adding recipe prose.
 
 ### Schema & taxonomy decisions
 

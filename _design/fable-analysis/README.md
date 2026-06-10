@@ -1,10 +1,10 @@
 # Fable analysis — consumability
 
-*2026-06-09. A deep-dive on achieving the engine's consumption goals, requested with fresh eyes. Produced by a 9-agent workflow — 3 evidence agents (live-consumer ethnography · prior-art distillation · a live 8-question probe), 3 design agents, 3 adversarial reviewers — then synthesized. **Proposals, not decisions.** Probe record: [`experiments/2026-06-09-consumption-mechanics/`](../../experiments/2026-06-09-consumption-mechanics/FINDINGS.md).*
+*2026-06-09. A deep-dive on achieving the engine's consumption goals, requested with fresh eyes. Produced by a 9-agent workflow — 3 evidence agents (live-consumer ethnography · prior-art distillation · a live 8-question probe), 3 design agents, 3 adversarial reviewers — then synthesized. Probe record: [`experiments/2026-06-09-consumption-mechanics/`](../../experiments/2026-06-09-consumption-mechanics/FINDINGS.md). Ship-sets A and B have since landed; C remains proposed.*
 
 ## TL;DR
 
-**The consume side works — it's invisible and unaccountable, not broken.** The live probe answered 8/8 real consumption questions correctly, store-first, $0, cold; 10/10 cold agents have found `README → QUERYING.md` unaided. The failures are **visibility failures** (stubs no recipe can see, a derived db that's silently stale, baked numbers in QUERYING.md that are now wrong) and **one routing failure** (consumption intent has no verb — and the rival skill that caused the P4 warm-re-scrape is *installed again*, despite BACKLOG saying otherwise).
+**The consume side works — it was invisible and unaccountable, not broken.** The live probe answered 8/8 real consumption questions correctly, store-first, $0, cold; 10/10 cold agents found `README → QUERYING.md` unaided. The failures were **visibility failures** (stubs no recipe could see, a derived db that's silently stale, baked numbers in QUERYING.md that rotted) and **one routing failure**: consumption intent had no verb. Ship-set A fixed the trust surface; ship-set B added `/query-companies` as the read-only consume verb.
 
 **The live consumer validates the architecture.** competitive-mine built its own judgment lens (cartography) *on the engine's own parsers*, refused to bake judgments into the store, and quotes State/Signals/Judgments back approvingly. The demand is better **State plumbing** — capture-status, clocks, faithful spine — not a smarter engine.
 
@@ -15,10 +15,10 @@
 | # | Ship | Fixes (observed, not imagined) | Size | Status |
 |---|---|---|---|---|
 | **A** | **Trust surface** → [02](02-trust-surface.md): `store.py find` sees stubs + prints clocks/`predates:` · `store.py health` · QUERYING.md strip-the-baked-numbers + one answer-trust convention · fenced `FIELD_VERSIONS` | Stub false-negatives (probe #1) · no staleness visibility (Q7) · stale doc numbers (probe #3) · the remembered stamp-check tax | **S** | ✅ shipped 2026-06-09 |
-| **B** | **`/query-companies` verb** → [03](03-consume-verb.md): sibling read-only router over QUERYING.md, ~65 lines; per-company status report before any answer; gaps are hand-offs, never silent web fallback. Ships atomically with A's `find` change; **re-probe with the rival installed** | The P4 routing miss (live again) · warm/stale/missing made visible · the store finally read via `WEB_RESEARCH_HOME` | **S/M** | ▶ next |
+| **B** | **`/query-companies` verb** → [03](03-consume-verb.md): sibling read-only router over QUERYING.md, 46 lines; per-company status report before any answer; gaps are hand-offs, never silent web fallback | The P4 routing miss · warm/stale/missing made visible · the store finally read via `WEB_RESEARCH_HOME` | **S** | ✅ shipped 2026-06-09; implicit-routing re-test still needed |
 | **C** | **Corpus-wide lens** → [04](04-derived-lens.md): un-gate `offerings` (6 rosters invisible today) · `coverage` + `_meta` tables · rebuild-before-read convention · fences restated honestly (ranking stays cohort-gated) | Silent store.db staleness (probe #2) · capture-status manifest the consumer asked for · Beekeeper gets fences *in the artifact* | **M** | — |
 
-A before B (the verb depends on `find`); C independent but reads better after A's QUERYING cleanup.
+A and B are shipped. C is independent, but reads better after A's QUERYING cleanup.
 
 ## Explicitly not built — and the trigger that changes it
 
@@ -30,9 +30,8 @@ A before B (the verb depends on `find`); C independent but reads better after A'
 
 ## Open decisions for Brian
 
-1. **The rival skill.** `competitive-research-audit` is installed (BACKLOG line 34 is stale). Options: keep-and-outcompete (recommended — it's the honest re-probe condition, and it serves non-store domains) · uninstall · patch it to check the store first. BACKLOG line needs updating either way.
-2. **Enumeration backfill.** 37/47 telehealth rosters are `enumeration: unknown` — every breadth answer is a floor. Retiring it = `/deepen-offerings` passes across the active cohort = real Firecrawl spend. Worth it for the cohort you're actively mining?
-3. **Verb name.** `query-companies` recommended (verb-object house style; "compare-companies" too narrow, "consume-store" presumes store knowledge).
+1. **Enumeration backfill.** 37/47 telehealth rosters are `enumeration: unknown` — every breadth answer is a floor. Retiring it = `/deepen-offerings` passes across the active cohort = real Firecrawl spend. Worth it for the cohort you're actively mining?
+2. **Implicit routing re-test.** In-session sub-agents still treated naked testosterone-pricing prompts as current-public-page work; explicit `/query-companies` invocation passed. Re-test in a new top-level session after the skill index reloads before calling automatic discovery solved.
 
 ## What I'd push back on
 
@@ -40,4 +39,4 @@ Nothing in this round needs new infrastructure — the adversaries' strongest fi
 
 ## Docs
 
-[01 — Evidence](01-evidence.md) (what the consumer does · what's proven · the probe) · [02 — Trust surface](02-trust-surface.md) · [03 — Consume verb](03-consume-verb.md) · [04 — Derived lens](04-derived-lens.md). Each design doc ends with an "Adversarial review — what changed" section; the raw adversary verdicts flagged real bugs (e.g. `AVG(price_verbatim)` *executes* in SQLite; `store.py find` structurally cannot see stubs).
+[01 — Evidence](01-evidence.md) (what the consumer does · what's proven · the probe) · [02 — Trust surface](02-trust-surface.md) · [03 — Consume verb](03-consume-verb.md) · [04 — Derived lens](04-derived-lens.md). The raw adversary verdicts flagged real bugs (e.g. `AVG(price_verbatim)` *executes* in SQLite; `store.py find` structurally could not see stubs before ship-set A).
