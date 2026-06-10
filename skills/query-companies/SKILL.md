@@ -3,9 +3,10 @@ name: query-companies
 description: >
   Use for named-company comparison or lookup prompts that can be answered from
   the local web-research company store, especially pricing, offerings, ownership,
-  catalog breadth, cohort cuts, and price-visibility: "compare X and Y", "what
-  do these competitors charge / offer", "which brands sell <thing>", "who owns
-  X", "is X in the web-research store", "what has the store captured on X".
+  catalog breadth, cohort cuts, price-visibility, and broad single-company
+  briefs: "tell me about X", "compare X and Y", "what do these competitors
+  charge / offer", "which brands sell <thing>", "who owns X", "is X in the
+  web-research store", "what has the store captured on X".
   Answers are captured-state snapshots from cited primary-source dossiers instead
   of WebSearch. Do not browse, WebSearch, curl, or open live company pages just
   to verify; resolve with store.py find, answer from store files, and cite local
@@ -27,8 +28,10 @@ points at the trust rules.
 1. Resolve the store: `$WEB_RESEARCH_HOME` first; quote it because the path has spaces.
 2. Resolve names -> slugs, always: `python "$WEB_RESEARCH_HOME/scripts/store.py" find <each>`.
    Report per-company status before answering: clocks per layer / `STUB` / not in store.
-3. Route via `QUERYING.md`'s one-rule table: `rg` for locate; PyYAML parse for structure;
-   `store.db` only for many-pivot asks, and rebuild it first.
+3. Route via `QUERYING.md`'s one-rule table: for a human-facing ask about one
+   profiled company, default to the rendered HTML brief link, then answer in
+   chat; `rg` for locate; PyYAML parse for structure; `store.db` only for
+   many-pivot asks, and rebuild it first.
 4. Answer captured state from store files only. No WebSearch/browser/curl. Cite path
    + governing clock; prices use the offerings clock when they come from `offerings.md`.
 5. Gaps are hand-offs, never silent live fallback: cold -> suggest `/research-company`;
