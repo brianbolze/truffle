@@ -25,6 +25,7 @@ Five tools live; the last two deferred on purpose — see [`BACKLOG.md`](BACKLOG
 | [`trends.py`](trends.py) · [docs](trends.md) | Google Trends (pytrends) | none | **live** |
 | [`trustpilot.py`](trustpilot.py) · [docs](trustpilot.md) | Trustpilot reviews (Firecrawl-stealth) | `FIRECRAWL_API_KEY` | **live** |
 | [`exa_similar.py`](exa_similar.py) · [docs](exa_similar.md) | Exa /findSimilar | `EXA_API_KEY` | **live** |
+| [`ads_transparency.py`](ads_transparency.py) · [docs](ads_transparency.md) | Google Ads Transparency Center (paid-ads presence/recency) | `SERP_API_KEY` | **live** |
 | `ad_library.py` | Meta Ad Library (Apify) | `APIFY_API_KEY` | deferred |
 | `reddit.py` | Reddit JSON search | none | deferred |
 
