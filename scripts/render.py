@@ -1104,9 +1104,11 @@ def _provenance_html(m: dict[str, Any]) -> str:
 
 
 def _profile_panel(m: dict[str, Any]) -> str:
+    # Positioning rides second and open: the brief's first external reader is a brand strategist —
+    # who a company sells to and how it talks to them outranks how it monetizes.
     order = [("overview", "Overview", True),
+             ("positioning & audience", "Positioning & audience", True),
              ("how it works / model", "Model & monetization", False),
-             ("positioning & audience", "Positioning", False),
              ("credibility & proof", "Proof & trust signals", False),
              ("strategic read", "Strategic read", False)]
     parts = []
