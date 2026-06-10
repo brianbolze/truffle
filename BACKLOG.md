@@ -22,6 +22,24 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 - **Automatic retro** `[idea]` `[@brian]`
   Adjust the system / `research-company` verb such that when an agent has a really messy / ineffective capture - they automatically write a retro (or, maybe suggest the user spawn a new session for that retro... idk... I still want the user to get their results quickly - without waiting for the retro to complete...) -- that gets written to _design/retro/ -- following a consistent format / guideline.
   
+### Presentation surface
+
+- **Corpus index brief — `render.py --index`** `[idea]` `[s]`
+  One self-contained HTML page: every profiled company (logo, name, one-liner, per-layer clocks) linking to its brief — the render-twin of `store.py health`, and the store's only human front door beyond the file tree. Everything computed at render time; nothing baked.
+  **Act when:** a human asks "what's in the store?" and the CLI answer feels thin — or before the 2026-06-12 Scott demo if Brian wants the 5-second "this is real" artifact.
+
+- **Tune the brief for a brand-strategy reader** `[idea]` `[sm]`
+  The brief's first external human (Scott Witt / Parlance) values language extraction, competitor patterns, and visual signals; check whether briefs lead with voice + positioning or with classification fields, and reorder only if the fix is small. Yardstick: lands with a creative director in 5 seconds.
+  **Act when:** after the 06-12 meeting — let Scott's actual reactions pick the changes; don't pre-polish.
+
+- **Cross-company comparison view** `[idea]` `[parked]`
+  "Compare X and Y" today = two brief links + chat synthesis, and that's right: a side-by-side artifact drags in exactly the cross-company price/unit normalization judgments the store refuses to hold; cohort SQL covers the structured case.
+  **Act when:** a human consumer asks for the side-by-side twice (rule of two) — and then intra-cohort only.
+
+- **CoWork as a consumer surface** `[tbd]` `[parked]`
+  CoWork runs sessions in a Linux VM: no shell env (mitigated — the skill carries a canonical-path fallback), an unreliable personal-skill registry, and a documented iCloud-stub hazard that would surface as silent store false-negatives. Desk findings + the live probe to run first: [`experiments/2026-06-10-cowork-bridge/`](experiments/2026-06-10-cowork-bridge/FINDINGS.md).
+  **Act when:** post-06-12 — run the live stub probe; clean → package read-only `/query-companies` as a plugin; stubbed → store-location decision precedes any bridge.
+
 ### Schema & taxonomy decisions
 
 - **Revisit 2.2's "no `founders`/`legal_entity` field" call — a cohort consumer has now appeared** `[tbd]` `[sm]`
