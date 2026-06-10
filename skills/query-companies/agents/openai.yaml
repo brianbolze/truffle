@@ -1,0 +1,7 @@
+interface:
+  display_name: "Query Companies"
+  short_description: "Answer from captured company dossiers"
+  default_prompt: "Use $query-companies to compare captured companies from the local web-research store."
+
+policy:
+  allow_implicit_invocation: true

@@ -16,6 +16,6 @@ _archive/     # superseded docs
 experiments/  # throwaway probes to de-risk decisions before building
 scripts/      # engine utilities (querycheck.py — QUERYING.md drift self-test; store.py — resolve()/relations(); offeringscheck.py + cohortcheck.py — module-contract linters; build_db.py — derived SQLite lens for telehealth cohort aggregation, --check-guarded)
 tools/        # reusable source-signal capture utilities + small consumers (SERP, Wayback, Trustpilot, Trends, Exa; no project judgment)
-skills/       # capture verbs — research-company/ (SKILL.md + firecrawl-capture playbook + scripts/fc.py workhorse) + deepen-offerings/ (thin offerings-comprehensiveness preset of it); global via ~/.claude/skills
+skills/       # company verbs — query-companies/ (read-only store router), research-company/ (capture + Firecrawl playbook), deepen-offerings/ (offerings-comprehensiveness preset); global via ~/.claude/skills and ~/.agents/skills
 store/        # the shared company store (store/<domain-slug>/) — created as captures land
 ```
