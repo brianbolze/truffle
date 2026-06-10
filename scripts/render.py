@@ -7,7 +7,8 @@ identity (wordmark, brand_colors, fonts), with the engine's trust surface (captu
 unverified fields, enumeration floors) rendered visibly as the product, not fine print.
 
 One script, one output file, no server, no build step. The markdown stays the source of truth;
-the brief is a regenerable lens (same philosophy as the SQLite lens).
+the brief is a regenerable lens (same philosophy as the SQLite lens). `--index` renders the
+store's human front door: every profiled company, one row, per-layer clocks — local reads only.
 
 Structure: four tabs (Profile / Offer architecture / Brand system / Provenance & limits),
 collapsible sections with one-line peeks.
@@ -563,6 +564,35 @@ def extract_telehealth(slug: str) -> dict[str, Any] | None:
     cuts = {k: str(v) for k, v in fm.items()
             if k not in ("schema_version", "domain", "captured_at") and v is not None and not isinstance(v, (dict, list))}
     return {"captured_at": _datestr(fm.get("captured_at")), "cuts": cuts}
+
+
+def _index_mark(slug: str) -> str | None:
+    """Newest locally-captured logomark. The index never fetches — it must render offline in ~1s,
+    so companies without a captured mark get a typographic tile instead of costing a network trip."""
+    hits = sorted(glob.glob(os.path.join(STORE, slug, "captures", "*", ".payloads", "logos", "logomark-s2.png")))
+    return _b64_file(hits[-1]) if hits else None
+
+
+def extract_index() -> list[dict[str, Any]]:
+    """One light row per profiled company — frontmatter + layer clocks only, none of the brief's
+    heavy assets (fonts/screenshots/remote logos). Everything is computed at render time."""
+    rows: list[dict[str, Any]] = []
+    for slug, fm in sorted(store_load().items()):
+        off = extract_offerings(slug)
+        rows.append({
+            "slug": slug,
+            "name": str(fm.get("name") or fm.get("domain") or slug),
+            "domain": str(fm.get("domain") or ""),
+            "description": str(fm.get("description") or ""),
+            "industry": str(fm.get("primary_industry") or "Unclassified"),
+            "captured_at": _datestr(fm.get("captured_at")),
+            "age": _age_days(fm.get("captured_at")),
+            "buyable": off["buyable"] if off else None,
+            "roster_at": off["captured_at"] if off else "",
+            "cohort": extract_telehealth(slug) is not None,
+            "mark": _index_mark(slug),
+        })
+    return rows
 
 
 SECTION_ORDER = [
@@ -1260,6 +1290,104 @@ def render_html(m: dict[str, Any]) -> str:
 </body></html>"""
 
 
+# ---------------------------------------------------------------- corpus index
+
+INDEX_CSS = r"""
+.ix-stats{border-bottom:1px solid var(--rule);padding:26px 0 6px;animation:rise .8s .15s both}
+.ix-rows{padding:4px 0 30px;animation:rise .8s .3s both}
+.ghead{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);
+  font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:32px 0 9px;border-bottom:2px solid var(--ink)}
+.ghead span:last-child{color:var(--accent)}
+a.row{display:grid;grid-template-columns:26px minmax(180px,230px) 1fr auto;gap:16px;align-items:center;
+  padding:11px 0;border-top:1px solid var(--rule);border-bottom:none;color:inherit}
+.ghead+a.row{border-top:none}
+a.row:hover{background:color-mix(in srgb,var(--ink) 4%,transparent)}
+img.rmark{width:26px;height:26px;object-fit:contain}
+span.rmark{width:26px;height:26px;display:grid;place-items:center;border:1px solid var(--rule);
+  font-family:var(--display);font-weight:600;font-size:14px;color:var(--accent)}
+.rname{font-family:var(--display);font-weight:600;font-size:16.5px;line-height:1.2}
+.rdom{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;font-weight:400;
+  color:color-mix(in srgb,var(--ink) 52%,var(--paper));margin-top:3px}
+.rdesc{font-size:13.5px;line-height:1.45;color:color-mix(in srgb,var(--ink) 72%,var(--paper));
+  min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rmeta{text-align:right;font-family:var(--mono);white-space:nowrap}
+.rmeta b{display:block;font-weight:400;font-size:11px;letter-spacing:.08em}
+.rmeta .rlayers{display:block;font-size:9.5px;letter-spacing:.06em;margin-top:3px;color:var(--accent)}
+@media (max-width:760px){a.row{grid-template-columns:24px 1fr auto}.rdesc{display:none}}
+@media print{a.row{break-inside:avoid}}
+"""
+
+
+def render_index_html(rows: list[dict[str, Any]], fonts: dict[str, Any]) -> str:
+    """The store's front door, in the engine's own dress (no company palette): a stat band that is
+    recomputed every render (counts rot — never bake), then every company grouped by industry,
+    each row a per-layer clock linking to its brief."""
+    css_vars = (
+        f":root{{--paper:{PAPER};--ink:{INK};--desk:#DCD5C4;"
+        f"--rule:color-mix(in srgb,{INK} 16%,{PAPER});"
+        f"--accent:#4A4438;--accent-dark:#C9BFA8;"
+        f"--hero-bg:{INK};--hero-fg:{PAPER};--hero-accent:#C9BFA8;"
+        f"--display:{fonts['display']};--body:{fonts['body']};--mono:{fonts['mono']};"
+        f"--grain:{GRAIN}}}"
+    )
+    today = str(date.today())
+    n_roster = sum(1 for r in rows if r["roster_at"])
+    n_sku = sum(r["buyable"] or 0 for r in rows)
+    n_cohort = sum(1 for r in rows if r["cohort"])
+    newest = max((r["captured_at"] for r in rows if r["captured_at"]), default="—")
+
+    groups: dict[str, list[dict[str, Any]]] = {}
+    for r in rows:
+        groups.setdefault(r["industry"], []).append(r)
+
+    body: list[str] = []
+    for industry, members in sorted(groups.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+        body.append(f'<div class="ghead"><span>{esc(industry)}</span><span>{len(members)}</span></div>')
+        for r in sorted(members, key=lambda x: str(x["name"]).lower()):
+            mark = (f'<img class="rmark" src="{r["mark"]}" alt="">' if r["mark"]
+                    else f'<span class="rmark">{esc(str(r["name"])[:1])}</span>')
+            layers = []
+            if r["buyable"]:
+                layers.append(f"{r['buyable']} SKUs")
+            elif r["roster_at"]:
+                layers.append("roster")
+            if r["cohort"]:
+                layers.append("cohort")
+            age_s = f" · {r['age']}d" if r["age"] is not None else ""
+            body.append(
+                f'<a class="row" href="{esc(r["slug"])}.html">{mark}'
+                f'<span class="rname">{esc(r["name"])}<span class="rdom">{esc(r["domain"])}</span></span>'
+                f'<span class="rdesc">{esc(_truncate(r["description"], 150))}</span>'
+                f'<span class="rmeta"><b>{esc(r["captured_at"] or "undated")}{age_s}</b>'
+                f'<span class="rlayers">{esc(" · ".join(layers) or "profile only")}</span></span></a>')
+
+    return f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Web Research — Company Index</title>
+<style>{fonts['css']}
+{css_vars}
+{CSS}
+{INDEX_CSS}</style></head><body>
+<div class="sheet">
+<div class="crop tl"></div><div class="crop tr"></div><div class="crop bl"></div><div class="crop br"></div>
+<header class="masthead">
+  <div class="mh-row"><span class="mh-left">Web&middot;Research — <b>Company Index</b></span>
+  <span class="mh-right">WR/{today.replace("-", "")}/INDEX</span></div>
+  <div class="rule-heavy"></div><div class="rule-thin"></div>
+</header>
+<div class="statband ix-stats">
+  <div class="stat"><div class="num">{len(rows)}</div><span class="label">companies profiled</span></div>
+  <div class="stat"><div class="num">{n_roster}</div><span class="label">SKU rosters</span></div>
+  <div class="stat"><div class="num">{n_sku:,}</div><span class="label">buyable SKUs enumerated</span></div>
+  <div class="stat"><div class="num">{n_cohort}</div><span class="label">cohort packs</span></div>
+</div>
+<div class="ix-rows">{"".join(body)}</div>
+<footer class="foot"><p>Generated {today} from store/ — computed at render time, nothing baked · newest capture {esc(newest)}<br>
+Each row links to its brief — render them with --all so the links resolve.</p></footer>
+</div>
+</body></html>"""
+
+
 # ---------------------------------------------------------------- CLI
 
 def main() -> None:
@@ -1267,12 +1395,14 @@ def main() -> None:
     ap.add_argument("company", nargs="*", help="company name, domain, alias, or store slug")
     ap.add_argument("--all", action="store_true",
                     help="render every company in the store — pre-warms font/logo/image caches so a live demo never waits on a fetch")
+    ap.add_argument("--index", action="store_true",
+                    help="render the corpus index (index.html) — the store's human front door; pair with --all so row links resolve")
     ap.add_argument("--no-fetch", action="store_true", help="skip remote logo/font fetches; use local assets and fallbacks")
     args = ap.parse_args()
 
     queries = sorted(store_load()) if args.all else args.company
-    if not queries:
-        ap.error("name at least one company, or pass --all")
+    if not queries and not args.index:
+        ap.error("name at least one company, or pass --all / --index")
 
     os.makedirs(OUT, exist_ok=True)
     for q in queries:
@@ -1288,6 +1418,14 @@ def main() -> None:
         # The brief is invisible unless the link lands in the agent's reply — hand over the exact
         # markdown (angle brackets: the repo path contains spaces) so no one re-derives it from prose.
         print(f"  paste into your reply: [Open {m.get('name') or m['slug']} brief](<{out_path}>)")
+
+    if args.index:
+        rows = extract_index()
+        out_path = os.path.join(OUT, "index.html")
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(render_index_html(rows, build_fonts([], fetch=not args.no_fetch)))
+        print(f"index → {out_path}  ({len(rows)} companies, {os.path.getsize(out_path) // 1024} KB)")
+        print(f"  paste into your reply: [Open the company index](<{out_path}>)")
 
 
 if __name__ == "__main__":
