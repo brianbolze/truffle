@@ -36,6 +36,8 @@ P = {p.split("/")[1]: frontmatter(p) for p in glob.glob("store/*/profile.md")}
 
 **1. Point read** — *"tell me about <company>"* → read `store/<slug>/profile.md`. One ~10KB file; the body sections answer most asks. No tooling, every entity type.
 
+**Human brief** — `python scripts/render.py <company>` writes a self-contained presentation lens to `scripts/_out/briefs/<slug>.html`.
+
 **2. Filter / group** — *"all B2C subscription brands", "group by business_model"* → parse, then query the dict. (Value strings live in TAXONOMIES — read them there, don't hardcode.)
 ```python
 from collections import Counter

@@ -44,10 +44,18 @@ FIELD_VERSIONS: dict[str, str] = {
 }
 
 
-def _frontmatter(path: str) -> dict[str, Any]:
+def read_doc(path: str) -> tuple[dict[str, Any], str]:
+    """Read a store markdown file as (frontmatter, body)."""
     with open(path, encoding="utf-8") as f:
         text = f.read()
-    return yaml.safe_load(text.split("---", 2)[1]) if text.startswith("---") else {}
+    if text.startswith("---"):
+        _, fm, body = text.split("---", 2)
+        return yaml.safe_load(fm) or {}, body
+    return {}, text
+
+
+def _frontmatter(path: str) -> dict[str, Any]:
+    return read_doc(path)[0]
 
 
 def load() -> dict[str, dict[str, Any]]:
