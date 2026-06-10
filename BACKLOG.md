@@ -24,10 +24,6 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
   
 ### Presentation surface
 
-- **Corpus index brief — `render.py --index`** `[idea]` `[s]`
-  One self-contained HTML page: every profiled company (logo, name, one-liner, per-layer clocks) linking to its brief — the render-twin of `store.py health`, and the store's only human front door beyond the file tree. Everything computed at render time; nothing baked.
-  **Act when:** a human asks "what's in the store?" and the CLI answer feels thin — or before the 2026-06-12 Scott demo if Brian wants the 5-second "this is real" artifact.
-
 - **Tune the brief for a brand-strategy reader** `[idea]` `[sm]`
   The brief's first external human (Scott Witt / Parlance) values language extraction, competitor patterns, and visual signals; check whether briefs lead with voice + positioning or with classification fields, and reorder only if the fix is small. Yardstick: lands with a creative director in 5 seconds.
   **Act when:** after the 06-12 meeting — let Scott's actual reactions pick the changes; don't pre-polish.
@@ -35,10 +31,6 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 - **Cross-company comparison view** `[idea]` `[parked]`
   "Compare X and Y" today = two brief links + chat synthesis, and that's right: a side-by-side artifact drags in exactly the cross-company price/unit normalization judgments the store refuses to hold; cohort SQL covers the structured case.
   **Act when:** a human consumer asks for the side-by-side twice (rule of two) — and then intra-cohort only.
-
-- **CoWork as a consumer surface** `[tbd]` `[parked]`
-  CoWork runs sessions in a Linux VM: no shell env (mitigated — the skill carries a canonical-path fallback), an unreliable personal-skill registry, and a documented iCloud-stub hazard that would surface as silent store false-negatives. Desk findings + the live probe to run first: [`experiments/2026-06-10-cowork-bridge/`](experiments/2026-06-10-cowork-bridge/FINDINGS.md).
-  **Act when:** post-06-12 — run the live stub probe; clean → package read-only `/query-companies` as a plugin; stubbed → store-location decision precedes any bridge.
 
 ### Schema & taxonomy decisions
 
@@ -74,9 +66,14 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
   - People / leadership ("is the leadership team legit?")
   - Predictions about their roadmap (can often get an idea of this by looking at job descriptions on career pages)
   - Notable differentiation from their competitors
+  **UPDATE:** We've now added a set of tools for gathering traction signals - see the new [`/tools`](./tools/README.md) directory.
 
 - **Historical diffs & Wayback machine usage** `[idea]` `[xl]` `[parked]` `[@brian]`
   To get a better understanding of each company, use the Wayback Machine to look at the website from 3-months ago, 12 months ago, and 3 years ago to see how it's evolved. The source-capture home for this is now [`tools/BACKLOG.md`](tools/BACKLOG.md): Wayback content fetch + diff should land there as a reusable primitive before this becomes a store/module workflow.
 
 - **Monitoring** `[idea]` `[xl]` `[parked]` `[@brian]`
   Add capabilities to monitor changes on key parts of a companies website -- like new product launches, significant rebrands, price changes on certain products, etc. 
+
+- **CoWork as a consumer surface** `[tbd]` `[parked]`
+  CoWork runs sessions in a Linux VM: no shell env (mitigated — the skill carries a canonical-path fallback), an unreliable personal-skill registry, and a documented iCloud-stub hazard that would surface as silent store false-negatives. Desk findings + the live probe to run first: [`experiments/2026-06-10-cowork-bridge/`](experiments/2026-06-10-cowork-bridge/FINDINGS.md).
+  **Act when:** post-06-12 — run the live stub probe; clean → package read-only `/query-companies` as a plugin; stubbed → store-location decision precedes any bridge.
