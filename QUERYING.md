@@ -37,7 +37,7 @@ P = {p.split("/")[1]: frontmatter(p) for p in glob.glob("store/*/profile.md")}
 
 **1. Single-company brief** — when a human-facing query resolves to exactly one profiled company, run `python scripts/render.py <company>`.
 
-Lead with a clickable local link to the generated HTML: `[Open <company> brief](</absolute/path/to/scripts/_out/briefs/<slug>.html>)`. Use the absolute path, wrapped in angle brackets because this repo path contains spaces. Treat the link as a companion artifact, not a replacement for the answer: after the link, add whatever concise synthesis helps the conversation. Skip the render when the ask is atomic (one field, one price, one quote), cross-company/cohort, machine-readable, agent-internal, or outside store scope/current-state.
+`render.py` prints a ready-to-paste markdown link line — paste it into your reply verbatim (don't re-derive the path; it's pre-wrapped in angle brackets for the spaces). **A rendered brief whose link never reaches the reply is invisible** — the paste is part of the answer, not a flourish. Treat the link as a companion artifact, not a replacement: alongside it, add whatever concise synthesis helps the conversation. Skip the render when the ask is atomic (one field, one price, one quote), cross-company/cohort, machine-readable, agent-internal, or outside store scope/current-state.
 
 **2. Filter / group** — *"all B2C subscription brands", "group by business_model"* → parse, then query the dict. (Value strings live in TAXONOMIES — read them there, don't hardcode.)
 ```python

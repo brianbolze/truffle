@@ -1281,6 +1281,9 @@ def main() -> None:
             f.write(render_html(m))
         size = os.path.getsize(out_path) // 1024
         print(f"{q} → {out_path}  ({size} KB)")
+        # The brief is invisible unless the link lands in the agent's reply — hand over the exact
+        # markdown (angle brackets: the repo path contains spaces) so no one re-derives it from prose.
+        print(f"  paste into your reply: [Open {m.get('name') or m['slug']} brief](<{out_path}>)")
 
 
 if __name__ == "__main__":

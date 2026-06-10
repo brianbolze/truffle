@@ -29,9 +29,10 @@ points at the trust rules.
 2. Resolve names -> slugs, always: `python "$WEB_RESEARCH_HOME/scripts/store.py" find <each>`.
    Report per-company status before answering: clocks per layer / `STUB` / not in store.
 3. Route via `QUERYING.md`'s one-rule table: for a human-facing ask about one
-   profiled company, default to the rendered HTML brief link, then answer in
-   chat; `rg` for locate; PyYAML parse for structure; `store.db` only for
-   many-pivot asks, and rebuild it first.
+   profiled company, run `render.py` and **paste the link line it prints into
+   your reply** (rendering without linking buries the artifact); `rg` for
+   locate; PyYAML parse for structure; `store.db` only for many-pivot asks,
+   and rebuild it first.
 4. Answer captured state from store files only. No WebSearch/browser/curl. Cite path
    + governing clock; prices use the offerings clock when they come from `offerings.md`.
 5. Gaps are hand-offs, never silent live fallback: cold -> suggest `/research-company`;
