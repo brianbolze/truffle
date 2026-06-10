@@ -31,7 +31,7 @@ stopped early and now *reads* as a small catalog, so any count under-reports it.
    chasing those just burns credits. No `enumeration` flag *and* no scope note (a pre-1.2 file) → treat the whole
    roster as unverified and re-enumerate off the index pages.
 
-3. **Re-capture for breadth.** Force a refresh (don't serve the warm dossier); drive `offerings.md` to complete
+3. **Re-capture for breadth.** Force a refresh (the warm-capture skip never applies here); drive `offerings.md` to complete
    at the indexed level across all lines + the step-2 gaps. Refresh the `## Provenance` scope note, and **set the
    frontmatter `enumeration`** to the achieved state — `indexed-complete` if every line was reached, or
    `lines-omitted` (naming the residual line in the scope note) if one was found but still deferred — bumping

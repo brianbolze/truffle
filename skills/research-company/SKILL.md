@@ -2,15 +2,16 @@
 name: research-company
 description: >
   Capture a single company's website into the web-research store as a structured, cited dossier
-  (store/<domain>/profile.md) using Firecrawl. Use whenever the user wants to research, capture,
-  profile, or "look up" a company from its website — "research company X", "/research-company
-  acme.com", "capture acme into the store", "what does acme.com do / sell / charge", "profile this
-  competitor", "add X to the company store". One company at a time, keyed by canonical domain.
+  (store/<domain>/profile.md) using Firecrawl. Use whenever the user wants to capture or re-capture
+  a company from its website — "research company X", "/research-company acme.com", "capture acme
+  into the store", "profile this competitor", "add X to the company store". One company at a time,
+  keyed by canonical domain.
 
   It captures durable STATE (what the company is/sells/how it's positioned, from its own site) — not
   events (news/funding/M&A) or judgments (threat/fit/relevance), which belong to downstream
-  consumers. A warm, fresh company is served from the store at ~$0; only stale/new companies spend
-  Firecrawl credits.
+  consumers. NOT for answering questions from already-captured data — "tell me about X", "what does
+  X charge" — that's /query-companies; if a warm fresh capture exists, this verb stops and hands
+  off there instead of presenting the dossier. Only stale/new companies spend Firecrawl credits.
 ---
 
 # /research-company — capture a company into the store
@@ -50,17 +51,17 @@ The final canonical host is the **store folder slug** (dots→dashes, e.g. `hone
 
    - Read its `site_notes` (the capture playbook for *this* site — inherit it, don't rediscover), `key_pages`, and `captured_at`
    - Move the previous capture into `captures/_archive/<date>` so that the most recent capture is always obvious and the captures folder doesn’t look massive.
-   - **Coarse freshness:** if `captured_at` is recent (< ~7 days) and the user didn't ask for a refresh, **serve the existing dossier and stop** — that's the ~$0 warm path. Otherwise re-capture (a fresh `captures/<today>/` folder; the old one is preserved). *(On a bare/guided invocation the serve-vs-refresh call surfaces at **step 2.5** instead of auto-deciding here.)*
+   - **Coarse freshness:** if `captured_at` is recent (< ~7 days) and the user didn't ask for a refresh, **stop without capturing and hand off** — report the warm status (per-layer clocks from `store.py find`) and route the answer through `/query-companies`. This verb decides capture-vs-skip; presenting the dossier is the consume verb's job, never this one's. Otherwise re-capture (a fresh `captures/<today>/` folder; the old one is preserved). *(On a bare/guided invocation the skip-vs-refresh call surfaces at **step 2.5** instead of auto-deciding here.)*
 
 **2.5. Guided pre-flight — one question batch, then go (free, conditional).** Two on-ramps into the spend:
 
 - **Express** — the invocation already carried intent (a focus, a `refresh`, a module ask, or a plain "just go"). Honor it and skip this step.
 - **Guided** — a bare invocation (`/research-company acme.com`, nothing else). Before spending a credit, surface the run as **one** `AskUserQuestion` batch (never drip questions across turns), every option defaulted so the user can glance-and-accept. Shape it from what steps 1–2 found:
-  - **This run** *(include only when a warm < ~7-day capture exists)* — `Serve the cached dossier` (default) · `Re-capture fresh`. The freshness gate's serve-vs-refresh call made explicit — the one place a human override beats the silent auto-serve. Stale/new → nothing to serve; omit this question.
+  - **This run** *(include only when a warm < ~7-day capture exists)* — `Skip — capture is warm` (default; the answer routes through `/query-companies`) · `Re-capture fresh`. The freshness gate's skip-vs-refresh call made explicit — the one place a human override beats the silent auto-skip. Stale/new → nothing warm; omit this question.
   - **Output scope** *(modules combine — multi-select)* — `Standard profile` (default) · `+ logos:{} brand marks` (the multi-ratio wordmark/logomark/og set for a slide / Notion-cover consumer — near-free, rides the homepage payload; [§1.2](firecrawl-capture.md)) · `+ per-SKU offerings.md` (the Tier-1 roster; [§1.1](firecrawl-capture.md)) · `+ offerings.md with flagship product images` (also pull each flagship's clean **hero product render** for a design / rendering-reference consumer — rides the same PDP capture, stored at `captures/<date>/images/<sku>.<ext>`; [§1.1](firecrawl-capture.md)) · `+ telehealth.md cohort pack` (for a telehealth company — the 8 vertical classification cuts the universal profile can't tell apart; near-free, rides the profile pages; contract [`TELEHEALTH.md`](../../TELEHEALTH.md), lint `cohortcheck.py`). Don't offer a depth dial — page count already flexes with `portfolio_shape`; the site decides depth better than a blind setting. **`offerings.md` is shape-gated:** if `offering_category` reads Services/Consulting, or the company has no enumerable priced SKU (bespoke / project work), **warn** that there's likely nothing to roster and default to skipping it with a recorded reason ([OFFERINGS "When to write it"](../../OFFERINGS.md)). Warn, don't block — the category can resolve late or wrong.
   - **Emphasis** *(free-text, optional)* — "Anything to focus on or watch for?" It *biases* page selection (step 4), never *subtracts*: the core `profile.md` contract still gets filled, anything missed goes to `unverified_fields`, so a guided profile stays corpus-comparable.
 
-  Branch on the answer: `Serve cached` → serve and stop (~$0 warm path); otherwise carry scope + emphasis through steps 3–8.
+  Branch on the answer: `Skip` → stop and hand off to `/query-companies` (~$0, no capture); otherwise carry scope + emphasis through steps 3–8.
 
   **A non-vanilla run leaves one trace.** If the guided run deviated from a plain capture — emphasis given, a module added (offerings / logos), or a refresh forced over a still-warm capture — append a single **`Run profile:`** line to the Provenance section in step 8 (e.g. `Run profile: guided — emphasis "enterprise pricing"; +offerings`). A vanilla run adds nothing; clean profiles stay clean. *(Part of SCHEMA's fixed Provenance set as of `2.4`.)*
 

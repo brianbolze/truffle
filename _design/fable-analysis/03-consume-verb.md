@@ -43,7 +43,9 @@ Trust rules stay as pointers, not restatements: negatives, counts, prices, and c
 
 Controlled fresh sub-agent invocation passed: when explicitly told to use `/query-companies`, it resolved Hims + Hone, answered from local `offerings.md` rows, cited `store/hims-com/offerings.md` captured `2026-06-03` and `store/honehealth-com/offerings.md` captured `2026-06-04`, and reported no live web / no scrape / no credits.
 
-The stricter naked prompt in the already-running Codex harness did **not** pass: repeated fresh sub-agents still treated testosterone pricing as a current-public-page task. That is a routing/discoverability caveat, not a recipe failure. Re-test in a new top-level session after the skill index reloads before claiming implicit routing solved.
+The stricter naked prompt in the already-running Codex harness did **not** pass at first: repeated fresh sub-agents still treated testosterone pricing as a current-public-page task. **Re-test passed 2026-06-09** in a fresh top-level Claude Code session (repo cwd): a naked sub-agent prompt — "What does Hone Health charge for testosterone therapy?" — invoked `/query-companies` unprompted, resolved via `store.py find`, answered from `store/honehealth-com/offerings.md` with clocks cited, no live web. Caveat: tested with the repo as cwd (CLAUDE.md in context); routing from an unrelated project via the global skill links is still unobserved.
+
+The **miss path** also passed (2026-06-09): a naked prompt on a company *not* in the store ("What does Vault Health charge…") routed to `/query-companies`, reported NOT-in-store as *not captured* (not "they don't publish pricing"), declined live-web fallback, flagged its one memory-based aside as low-confidence, and handed off to `/research-company vaulthealth.com`. The hand-off is a suggestion, not an auto-capture — by design, since capture spends credits.
 
 ## Scope Notes
 

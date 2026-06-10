@@ -24,8 +24,9 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
   
 ### Discoverability & consumption
 
-- **Re-test implicit routing for `/query-companies` in a fresh top-level session** `[tbd]` `[sm]`
-  Ship-sets A and B landed 2026-06-09: `store.py find` exposes stubs/clocks, QUERYING is cleaned, and `/query-companies` is installed as the read-only consume verb. Controlled invocation passed (`store.py find` → local `offerings.md`, no live web / no credits), but naked in-session sub-agents still treated testosterone-pricing prompts as current-public-page work. Re-test after the skill index reloads; if it still misses, fix discovery/plumbing before adding recipe prose.
+- **Verify `/query-companies` implicit routing from an unrelated project cwd** `[tbd]` `[sm]`
+  Both 2026-06-09 items closed: `/research-company`'s warm-serve path is now a hand-off to `/query-companies` (one verb owns "answer about X", the other "go capture X" — see [03-consume-verb](_design/fable-analysis/03-consume-verb.md)), and the implicit-routing re-test **passed** in a fresh top-level session — a naked Hone-pricing prompt invoked `/query-companies` unprompted, store-only, clocks cited. Remaining gap: that test ran with the engine repo as cwd (CLAUDE.md in context); routing via the global skill links from another project is unobserved.
+  **Act when:** next time a company question comes up while working in another repo — note whether it routed to the store; one clean hit closes this, a miss means the global description needs work.
 
 ### Schema & taxonomy decisions
 
