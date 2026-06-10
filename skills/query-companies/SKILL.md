@@ -25,7 +25,10 @@ points at the trust rules.
 
 ## Steps
 
-1. Resolve the store: `$WEB_RESEARCH_HOME` first; quote it because the path has spaces.
+1. Resolve the store: `$WEB_RESEARCH_HOME` first; if unset (harnesses that skip
+   the shell profile), fall back to the canonical single-user path
+   `"/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research"`.
+   Quote it — the path has spaces.
 2. Resolve names -> slugs, always: `python "$WEB_RESEARCH_HOME/scripts/store.py" find <each>`.
    Report per-company status before answering: clocks per layer / `STUB` / not in store.
 3. Route via `QUERYING.md`'s one-rule table: for a human-facing ask about one
