@@ -31,6 +31,15 @@ Rendered all three from current master, no changes yet. Pre-render state notes:
 | 6 | Wife demo: "so what / what can't Claude do alone" — built a presentation layer? | **done** (259ec68) | Brian called the gate → `render.py --index` built: 101 companies, per-layer clocks, stat band, links to briefs. The demo opener |
 | 7 | Immersion-phase + comparison value didn't come across | **post-Scott / parked** | Comparison view stays parked per BACKLOG rule-of-two; wife demo ≠ second human ask |
 
+## Round 3 — 2026-06-10 (index pass)
+
+| # | Note | Triage | Resolution |
+|---|------|--------|------------|
+| 8 | Letter-tile rows → fall back to the s2 favicon by domain | **done** (ece3c4d) | Fetched once, disk-cached → still offline-fast warm. 100/101 rows now carry a real mark (hormonemd.com serves no 256px favicon — honest letter tile) |
+| 9 | Largest-group-first ranking | **fine as-is** | No change |
+| 10 | Index easier to find in the folder | **done** (ece3c4d) | Output renamed `00-index.html`; stale `index.html` deleted |
+| 11 | Clear the corpus-index BACKLOG item | **done (uncommitted)** | Item removed from BACKLOG.md; left uncommitted so Brian's pending BACKLOG/.gitignore edits ride with his own commit |
+
 ## Deferred until after the meeting (post-Scott)
 
 - (per BACKLOG) Reorder for a brand-strategy reader — voice/positioning *leading the
