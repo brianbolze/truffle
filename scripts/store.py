@@ -321,22 +321,6 @@ def _cli_health(profiles: dict[str, dict[str, Any]], *_: str) -> None:
             print(f"  {slug:<28} profile {pdate} ({pd}d) · {mod} {mdate} ({md}d)  [{diff}d, {direction}]")
         print()
 
-    # store.db freshness
-    db_path = os.path.join(ROOT, "scripts", "_out", "store.db")
-    if os.path.exists(db_path):
-        import datetime as _dt
-        db_mtime = os.path.getmtime(db_path)
-        db_date = _dt.date.fromtimestamp(db_mtime)
-        newer = sum(
-            1
-            for root, _, files in os.walk(STORE)
-            for f in files
-            if f.endswith(".md") and os.path.getmtime(os.path.join(root, f)) > db_mtime
-        )
-        print(f"store.db built {db_date}; {newer} markdown files newer — rebuild: python scripts/build_db.py")
-    else:
-        print("store.db not built — run: python scripts/build_db.py")
-
 
 _DISPATCH: dict[str, Callable[..., None]] = {
     "find": _cli_find,
@@ -358,7 +342,7 @@ def main() -> None:
             f"store.py — {len(profiles)} profiles · {stubs} stubs. commands: {', '.join(_DISPATCH)}\n"
             f"  find <query>   domain/name/alias/slug → profile or stub info\n"
             f"  relations      parent/owns join-check + re-capture ranking\n"
-            f"  health         stubs · staleness · module-clock skew · store.db freshness"
+            f"  health         stubs · staleness · module-clock skew"
         )
 
 

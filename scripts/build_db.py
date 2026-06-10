@@ -2,12 +2,13 @@
 """build_db — project the markdown store into a derived SQLite lens for cross-company aggregation.
 
 Markdown stays the source of truth; this is a **regenerable cache, never authoritative** — the architecture's
-rung-3 "derived index" ([_design/2026-05-30-architecture.md]). It exists for two consumers of the *telehealth
-cohort*: a human browsing/querying in a SQLite GUI (Beekeeper), and an agent running ad-hoc SQL. Rebuild it
-whenever the markdown changes (`python scripts/build_db.py`); query `_out/store.db`.
+rung-3 "derived index" ([_design/2026-05-30-architecture.md]). It exists for two consumers: a human
+browsing/querying in a SQLite GUI (Beekeeper), and an agent running ad-hoc SQL. Rebuild it before reading
+(`python scripts/build_db.py`); query `_out/store.db`.
 
-Scoped + fenced so it can't hand back a confident wrong answer — the lessons the 2026-06-04 sqlite-aggregation
-probe paid for ([experiments/2026-06-04-sqlite-aggregation/CAVEATS.md], folded into QUERYING.md):
+Corpus-wide + fenced so it can't hand back a confident wrong answer — the lessons the 2026-06-04
+sqlite-aggregation probe paid for ([experiments/2026-06-04-sqlite-aggregation/CAVEATS.md], folded into
+QUERYING.md):
 
   - **No molecule column.** Grouping is `LIKE` on `what` (page-attested free text); a stored `molecule` key
     fragments "testosterone" into ~30 buckets (OFFERINGS rule 4). So we don't store one — group at query time.
@@ -16,9 +17,11 @@ probe paid for ([experiments/2026-06-04-sqlite-aggregation/CAVEATS.md], folded i
   - **A count is never naked.** `sku_count` rides beside `enumeration` (the capture-scope signal) and a
     `catalog_breadth` rendering that flags a floor — so a `lines-omitted` count can't be sorted as a census
     (the Ro.co lie: it sorted dead-last at 8 SKUs off a weight-loss-only run, actually carrying ~36).
-  - **Telehealth-scoped.** SKU/price rows are the telehealth cohort only, so a cross-type aggregate
-    (`AVG(price)` over $/mo + take-rate + per-night) is structurally impossible. `companies` carries all
-    profiles for browsing, but has no magnitude to mis-aggregate.
+  - **Corpus-wide lookup, cohort-gated ranking.** `offerings` carries every roster so "who sells X" doesn't
+    silently miss non-telehealth companies. Ranking/count surfaces stay inside cohort views like
+    `telehealth_full`, so Ford and Hims don't land in the same league table.
+  - **Freshness lives in the db.** `_meta` holds `built_at`, row counts, and caveat rows; `_meta_days_old`
+    recomputes age on every open. `coverage` is the folder manifest with module presence and clocks.
 
 Stdlib + PyYAML (sqlite3 is stdlib). The roster parser is imported from `offeringscheck` — one lint-tested
 source of truth for the table shape, so the two can't drift. Run `--check` for the drift self-test.
@@ -27,6 +30,7 @@ source of truth for the table shape, so the two can't drift. Run `--check` for t
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import glob
 import json
 import os
@@ -165,15 +169,67 @@ def cell_value(value: Any) -> str | None:
     return str(value)
 
 
+def captured_at(fm: dict[str, Any]) -> str | None:
+    val = fm.get("captured_at")
+    return str(val) if val is not None else None
+
+
+def store_slugs() -> list[str]:
+    return sorted(os.path.basename(d) for d in glob.glob(os.path.join(STORE, "*")) if os.path.isdir(d))
+
+
+def write_meta(cur: sqlite3.Cursor, n: dict[str, int]) -> None:
+    built_at = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+    rows = [
+        (10, "build", "built_at", built_at, built_at),
+        (20, "count", "store_folders", str(n["folders"]), built_at),
+        (30, "count", "companies", str(n["companies"]), built_at),
+        (40, "count", "coverage_rows", str(n["coverage"]), built_at),
+        (50, "count", "telehealth", str(n["telehealth"]), built_at),
+        (60, "count", "offerings_files", str(n["offerings"]), built_at),
+        (70, "count", "offering_rows", str(n["skus"]), built_at),
+        (80, "caveat", "counts_are_floors", "counts are floors — read enumeration and catalog_breadth", built_at),
+        (90, "caveat", "no_price_number", "no price number exists — price_verbatim only", built_at),
+        (100, "caveat", "cohort_gated_ranking", "ranking surfaces live in <cohort>_full views", built_at),
+        (110, "rule", "rebuild_before_read", "rebuild before you read; reconnect GUI clients after rebuild", built_at),
+    ]
+    cur.executemany("INSERT INTO _meta VALUES (?,?,?,?,?)", rows)
+
+
 # --- build ----------------------------------------------------------------------------------------
 def build(conn: sqlite3.Connection) -> dict[str, int]:
-    """Project the markdown into the lens. `companies` = every profile (browsable classification, no magnitude);
-    `telehealth` / `offerings` = the cohort only, so price/SKU aggregation is intra-cohort by construction.
+    """Project the markdown into the lens.
+
+    `companies` = every profile (browsable classification, no magnitude).
+    `coverage` = every store folder, including stubs and per-module clocks.
+    `offerings` = every roster row in the corpus.
+    `<cohort>_full` views = the only ranking surfaces.
     """
     cur = conn.cursor()
     cur.executescript(
-        "DROP VIEW IF EXISTS telehealth_full; DROP VIEW IF EXISTS offerings_stats;"
-        "DROP TABLE IF EXISTS companies; DROP TABLE IF EXISTS telehealth; DROP TABLE IF EXISTS offerings;"
+        """
+        DROP VIEW IF EXISTS _meta_days_old;
+        DROP VIEW IF EXISTS telehealth_full;
+        DROP VIEW IF EXISTS offerings_stats;
+        DROP TABLE IF EXISTS _meta;
+        DROP TABLE IF EXISTS coverage;
+        DROP TABLE IF EXISTS companies;
+        DROP TABLE IF EXISTS telehealth;
+        DROP TABLE IF EXISTS offerings;
+        """
+    )
+    cur.executescript(
+        """
+        CREATE TABLE _meta (
+          sort_order INTEGER PRIMARY KEY, kind TEXT, item TEXT, value TEXT, built_at TEXT
+        );
+        CREATE TABLE coverage (
+          slug TEXT PRIMARY KEY, domain TEXT,
+          has_profile INTEGER NOT NULL, has_offerings INTEGER NOT NULL, has_telehealth INTEGER NOT NULL,
+          profile_captured_at TEXT, offerings_captured_at TEXT, telehealth_captured_at TEXT,
+          enumeration TEXT
+        );
+        """
     )
     cur.execute("CREATE TABLE companies (slug TEXT PRIMARY KEY, " + ", ".join(f'"{f}" TEXT' for f in PROFILE_FIELDS) + ")")
     cur.executescript(
@@ -190,72 +246,96 @@ def build(conn: sqlite3.Connection) -> dict[str, int]:
         );
         """
     )
-    n = {"companies": 0, "telehealth": 0, "offerings": 0, "skus": 0}
+    slugs = store_slugs()
+    n = {"folders": len(slugs), "coverage": 0, "companies": 0, "telehealth": 0, "offerings": 0, "skus": 0}
 
     insert_company = "INSERT INTO companies VALUES (" + ",".join("?" * (1 + len(PROFILE_FIELDS))) + ")"
-    for path in sorted(glob.glob(os.path.join(STORE, "*", "profile.md"))):
-        fm, slug = frontmatter(path), slug_of(path)
-        cur.execute(insert_company, (slug, *[cell_value(fm.get(f)) for f in PROFILE_FIELDS]))
-        n["companies"] += 1
+    for slug in slugs:
+        slug_dir = os.path.join(STORE, slug)
+        profile_path = os.path.join(slug_dir, "profile.md")
+        telehealth_path = os.path.join(slug_dir, "telehealth.md")
+        offerings_path = os.path.join(slug_dir, "offerings.md")
 
-    telehealth_slugs: set[str] = set()
-    for path in sorted(glob.glob(os.path.join(STORE, "*", "telehealth.md"))):
-        fm, slug = frontmatter(path), slug_of(path)
-        telehealth_slugs.add(slug)
-        cur.execute(
-            "INSERT INTO telehealth VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-            (slug, fm.get("domain"), *[fm.get(cut) for cut in TELEHEALTH_CUTS], str(fm.get("captured_at"))),
-        )
-        n["telehealth"] += 1
+        profile_fm = frontmatter(profile_path) if os.path.exists(profile_path) else {}
+        telehealth_fm = frontmatter(telehealth_path) if os.path.exists(telehealth_path) else {}
+        offerings_fm: dict[str, Any] = {}
+        offerings_text = ""
+        enum = None
 
-    # offerings: the telehealth cohort ONLY — the scope fence that makes a cross-type aggregate impossible.
-    for path in sorted(glob.glob(os.path.join(STORE, "*", "offerings.md"))):
-        slug = slug_of(path)
-        if slug not in telehealth_slugs:
-            continue
-        fm = frontmatter(path)
-        with open(path, encoding="utf-8") as fh:
-            text = fh.read()
-        enum = enumeration_of(fm, text)
-        cap = str(fm.get("captured_at")) if fm.get("captured_at") is not None else None
-        n["offerings"] += 1
-        for r in roster_rows(text):
+        if os.path.exists(profile_path):
+            cur.execute(insert_company, (slug, *[cell_value(profile_fm.get(f)) for f in PROFILE_FIELDS]))
+            n["companies"] += 1
+
+        if os.path.exists(telehealth_path):
             cur.execute(
-                "INSERT INTO offerings VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-                (
-                    slug,
-                    fm.get("domain"),
-                    r["offering"],
-                    r["kind"],
-                    r["parent"],
-                    r["sku_slug"],
-                    r["price_verbatim"],
-                    r["visibility"],
-                    r["what"],
-                    cap,
-                    enum,
-                ),
+                "INSERT INTO telehealth VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+                (slug, telehealth_fm.get("domain"), *[telehealth_fm.get(cut) for cut in TELEHEALTH_CUTS], captured_at(telehealth_fm)),
             )
-            n["skus"] += 1
+            n["telehealth"] += 1
 
-    # per-company offerings aggregates — the HONEST ones only: counts + visibility posture + molecule presence
-    # (LIKE-membership, never an adjudicated lane). enumeration / offerings_captured_at are file-level constants,
-    # so MAX() over the group just carries them through. NO price magnitude (the wall — CAVEATS #2).
+        if os.path.exists(offerings_path):
+            offerings_fm = frontmatter(offerings_path)
+            with open(offerings_path, encoding="utf-8") as fh:
+                offerings_text = fh.read()
+            enum = enumeration_of(offerings_fm, offerings_text)
+            cap = captured_at(offerings_fm)
+            n["offerings"] += 1
+            for r in roster_rows(offerings_text):
+                cur.execute(
+                    "INSERT INTO offerings VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+                    (
+                        slug,
+                        offerings_fm.get("domain"),
+                        r["offering"],
+                        r["kind"],
+                        r["parent"],
+                        r["sku_slug"],
+                        r["price_verbatim"],
+                        r["visibility"],
+                        r["what"],
+                        cap,
+                        enum,
+                    ),
+                )
+                n["skus"] += 1
+
+        domain = profile_fm.get("domain") or offerings_fm.get("domain") or telehealth_fm.get("domain")
+        cur.execute(
+            "INSERT INTO coverage VALUES (?,?,?,?,?,?,?,?,?)",
+            (
+                slug,
+                domain,
+                int(os.path.exists(profile_path)),
+                int(os.path.exists(offerings_path)),
+                int(os.path.exists(telehealth_path)),
+                captured_at(profile_fm),
+                captured_at(offerings_fm),
+                captured_at(telehealth_fm),
+                enum,
+            ),
+        )
+        n["coverage"] += 1
+
+    # Per-company offerings aggregates — the HONEST ones only: counts + visibility posture + molecule presence
+    # (LIKE-membership, never an adjudicated lane). This is deliberately cohort-gated; the corpus table is for
+    # membership/lookup, not cross-type league tables.
     cur.execute(
         """
         CREATE VIEW offerings_stats AS
-        SELECT slug,
-          MAX(enumeration)                                             AS enumeration,
-          MAX(offerings_captured_at)                                  AS offerings_captured_at,
-          SUM(kind LIKE '%buyable%')                                  AS sku_count,
-          SUM(kind = 'family')                                        AS line_count,
-          SUM(kind LIKE '%buyable%' AND visibility='published')       AS published_skus,
-          SUM(kind LIKE '%buyable%' AND visibility='partial')         AS partial_skus,
-          SUM(kind LIKE '%buyable%' AND visibility='on-request')      AS gated_skus,
-          ROUND(100.0 * SUM(kind LIKE '%buyable%' AND visibility='published')
-                / NULLIF(SUM(kind LIKE '%buyable%'), 0))              AS pct_published,
-          SUM(kind LIKE '%buyable%' AND (what LIKE '%semaglutide%' OR what LIKE '%tirzepatide%')) AS glp1_skus
-        FROM offerings GROUP BY slug
+        SELECT o.slug,
+          MAX(o.enumeration)                                             AS enumeration,
+          MAX(o.offerings_captured_at)                                  AS offerings_captured_at,
+          SUM(o.kind LIKE '%buyable%')                                  AS sku_count,
+          SUM(o.kind = 'family')                                        AS line_count,
+          SUM(o.kind LIKE '%buyable%' AND o.visibility='published')     AS published_skus,
+          SUM(o.kind LIKE '%buyable%' AND o.visibility='partial')       AS partial_skus,
+          SUM(o.kind LIKE '%buyable%' AND o.visibility='on-request')    AS gated_skus,
+          ROUND(100.0 * SUM(o.kind LIKE '%buyable%' AND o.visibility='published')
+                / NULLIF(SUM(o.kind LIKE '%buyable%'), 0))              AS pct_published,
+          SUM(o.kind LIKE '%buyable%' AND (o.what LIKE '%semaglutide%' OR o.what LIKE '%tirzepatide%')) AS glp1_skus
+        FROM offerings o
+        JOIN telehealth t ON t.slug = o.slug
+        GROUP BY o.slug
         """
     )
 
@@ -284,6 +364,15 @@ def build(conn: sqlite3.Connection) -> dict[str, int]:
         LEFT JOIN offerings_stats s ON s.slug = c.slug
         """
     )
+    cur.execute(
+        """
+        CREATE VIEW _meta_days_old AS
+        SELECT MIN(built_at) AS built_at,
+               ROUND(julianday('now') - julianday(MIN(built_at)), 3) AS days_old
+        FROM _meta
+        """
+    )
+    write_meta(cur, n)
     conn.commit()
     return n
 
@@ -296,32 +385,49 @@ def check(conn: sqlite3.Connection) -> list[str]:
     fails: list[str] = []
     q = conn.execute
 
-    for table in ("companies", "telehealth", "offerings"):
+    for table in ("_meta", "coverage", "companies", "telehealth", "offerings"):
         if q(f"SELECT COUNT(*) FROM {table}").fetchone()[0] == 0:
             fails.append(f"{table}: 0 rows — a glob or parse broke (or the store is empty).")
 
-    # footgun columns must stay gone — a regression guard against re-adding the laundered price / fake key.
-    ocols = {r[1] for r in q("PRAGMA table_info(offerings)").fetchall()}
-    for forbidden in ("molecule", "price_num", "price_unit", "promo_first_month"):
-        if forbidden in ocols:
-            fails.append(f"offerings: footgun column '{forbidden}' is back — it launders a wrong answer (see the module docstring).")
+    # Footgun columns must stay gone everywhere — a regression guard against re-adding the laundered price /
+    # fake key. SQLite will happily coerce leading-digit TEXT in AVG(); the fence is that no numeric price
+    # column exists in the lens.
+    relations = q(
+        "SELECT name, type FROM sqlite_master WHERE type IN ('table','view') AND name NOT LIKE 'sqlite_%'"
+    ).fetchall()
+    for name, _kind in relations:
+        cols = q(f'PRAGMA table_info("{name}")').fetchall()
+        for col in cols:
+            cname = col[1].lower()
+            ctype = (col[2] or "").upper()
+            if cname == "molecule" or cname in {"price", "price_num", "price_numeric", "price_value", "price_unit", "promo_first_month"}:
+                fails.append(f"{name}: footgun column '{col[1]}' is back — it launders a wrong answer.")
+            if cname.startswith("price_") and cname != "price_verbatim":
+                fails.append(f"{name}: unsupported price column '{col[1]}' — only price_verbatim is allowed.")
+            if "price" in cname and ctype and not ctype.startswith("TEXT"):
+                fails.append(f"{name}: price column '{col[1]}' has non-TEXT type {ctype} — no price magnitude allowed.")
 
-    # scope fence: every SKU row is a telehealth company, so no cross-type aggregate is possible.
-    stray = q("SELECT COUNT(*) FROM offerings WHERE slug NOT IN (SELECT slug FROM telehealth)").fetchone()[0]
-    if stray:
-        fails.append(f"offerings: {stray} row(s) outside the telehealth cohort — the scope fence leaked.")
+    # coverage density: every store folder gets exactly one manifest row, including stubs.
+    folders = set(store_slugs())
+    covered = {r[0] for r in q("SELECT slug FROM coverage").fetchall()}
+    if folders != covered:
+        fails.append(
+            f"coverage: folder manifest mismatch — missing {sorted(folders - covered)}, extra {sorted(covered - folders)}."
+        )
 
-    # join density: every telehealth pack that has an offerings.md on disk must have contributed rows
+    # join density: every roster on disk must have contributed rows (not just telehealth). This catches the
+    # silent-drop bug this corpus-wide lens exists to kill.
     # (a roster that silently failed to parse — e.g. a spine rename — drops out here).
-    on_disk = {
-        slug_of(p)
-        for p in glob.glob(os.path.join(STORE, "*", "offerings.md"))
-        if slug_of(p) in {r[0] for r in q("SELECT slug FROM telehealth").fetchall()}
-    }
+    on_disk = {slug_of(p) for p in glob.glob(os.path.join(STORE, "*", "offerings.md"))}
     in_db = {r[0] for r in q("SELECT DISTINCT slug FROM offerings").fetchall()}
     missing = on_disk - in_db
     if missing:
         fails.append(f"offerings: {sorted(missing)} have an offerings.md but produced no rows — a roster parse failed (spine rename?).")
+
+    # ranking remains cohort-gated even though the base offerings table is corpus-wide.
+    stats_stray = q("SELECT COUNT(*) FROM offerings_stats WHERE slug NOT IN (SELECT slug FROM telehealth)").fetchone()[0]
+    if stats_stray:
+        fails.append(f"offerings_stats: {stats_stray} non-telehealth row(s) — cohort ranking fence leaked.")
 
     # the 8 cohort cuts are present as columns (a rename in TELEHEALTH.md would silently drop one).
     tcols = {r[1] for r in q("PRAGMA table_info(telehealth)").fetchall()}
@@ -335,6 +441,19 @@ def check(conn: sqlite3.Connection) -> list[str]:
     if bad:
         fails.append(f"offerings: off-list enumeration value(s) {sorted(bad)} — not in {sorted(ENUMERATION_VALUES)}.")
 
+    cvals = {r[0] for r in q("SELECT DISTINCT enumeration FROM coverage WHERE enumeration IS NOT NULL").fetchall()}
+    cbad = cvals - ENUMERATION_VALUES
+    if cbad:
+        fails.append(f"coverage: off-list enumeration value(s) {sorted(cbad)} — not in {sorted(ENUMERATION_VALUES)}.")
+
+    meta_items = {r[0] for r in q("SELECT item FROM _meta").fetchall()}
+    for item in ("built_at", "counts_are_floors", "no_price_number", "cohort_gated_ranking"):
+        if item not in meta_items:
+            fails.append(f"_meta: missing trust row {item!r}.")
+    days_old = q("SELECT days_old FROM _meta_days_old").fetchone()[0]
+    if days_old is None or days_old < 0:
+        fails.append("_meta_days_old: live freshness view did not produce a non-negative days_old.")
+
     # the joined view resolves and is intra-cohort (one row per telehealth company).
     vfull = q("SELECT COUNT(*) FROM telehealth_full").fetchone()[0]
     nth = q("SELECT COUNT(*) FROM telehealth").fetchone()[0]
@@ -347,9 +466,14 @@ def check(conn: sqlite3.Connection) -> list[str]:
 # --- CLI ------------------------------------------------------------------------------------------
 def _summary(conn: sqlite3.Connection, n: dict[str, int]) -> None:
     th_with_off = conn.execute("SELECT COUNT(DISTINCT t.slug) FROM telehealth t JOIN offerings o ON o.slug=t.slug").fetchone()[0]
-    print(f"  companies:  {n['companies']}  (all profiles — browsable classification, no magnitude)")
+    corpus_with_off = conn.execute("SELECT COUNT(DISTINCT slug) FROM offerings").fetchone()[0]
+    stubs = conn.execute("SELECT COUNT(*) FROM coverage WHERE has_profile=0").fetchone()[0]
+    built_at, days_old = conn.execute("SELECT built_at, days_old FROM _meta_days_old").fetchone()
+    print(f"  _meta:     built_at {built_at} ({days_old}d old via live view)")
+    print(f"  coverage:  {n['coverage']} folders ({stubs} stubs)")
+    print(f"  companies: {n['companies']}  (all profiles — browsable classification, no magnitude)")
     print(f"  telehealth: {n['telehealth']}")
-    print(f"  offerings:  {n['offerings']} files (telehealth-scoped) → {n['skus']} SKU rows")
+    print(f"  offerings:  {n['offerings']} files (corpus-wide) → {n['skus']} SKU rows across {corpus_with_off} companies")
     print(f"  telehealth ∩ offerings (joinable): {th_with_off}/{n['telehealth']}")
     print("\n  telehealth_full sample — breadth reads through enumeration, never a naked count:")
     print(f"    {'breadth':>16}  {'enum':<16} {'%pub':>4} {'glp1':>4}  brand")
@@ -361,7 +485,7 @@ def _summary(conn: sqlite3.Connection, n: dict[str, int]) -> None:
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="build the derived SQLite lens over the markdown store (telehealth cohort)")
+    ap = argparse.ArgumentParser(description="build the corpus-wide derived SQLite lens over the markdown store")
     ap.add_argument("--check", action="store_true", help="drift self-test: build in-memory and assert invariants (exit nonzero on drift)")
     ap.add_argument("--db", default=os.path.join(OUT, "store.db"), help="output path (default: scripts/_out/store.db)")
     args = ap.parse_args()
@@ -376,7 +500,7 @@ def main() -> None:
             for f in fails:
                 print("FAIL:", f)
             sys.exit(f"\n{n} failure(s) — the lens drifted from the store contract.")
-        print("build_db --check: OK — the lens's structural invariants hold.")
+        print("build_db --check: OK — the corpus lens's structural invariants hold.")
         return
 
     os.makedirs(OUT, exist_ok=True)
