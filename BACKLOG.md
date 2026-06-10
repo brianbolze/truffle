@@ -22,12 +22,6 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 - **Automatic retro** `[idea]` `[@brian]`
   Adjust the system / `research-company` verb such that when an agent has a really messy / ineffective capture - they automatically write a retro (or, maybe suggest the user spawn a new session for that retro... idk... I still want the user to get their results quickly - without waiting for the retro to complete...) -- that gets written to _design/retro/ -- following a consistent format / guideline.
   
-- **Web design quality** `[idea]` `[@brian]`
-  During research-company flows, have a sub-agent review the website screenshot(s) (home page probably sufficient) and score it across a rubric to determine a rough “website design quality” metric / classification. Good first pass to downgrade clearly crappy, unprofessional sites. Look for common “slop” patterns including: (candidate list, full list to be designed)
-  - **Iconography**: “amateur” quality graphics, poor placement, inconsistent or inappropriate sizing
-  - **Lack of professional imagery / renders**: Good imagery is hard and often expensive. Amateur D2C operators often just skip this and rely on text, and maybe icons / cheap illustrations.
-  - **Inconsistency**: no clear typography hierarchy, etc
-
 ### Discoverability & consumption
 
 - **Re-test implicit routing for `/query-companies` in a fresh top-level session** `[tbd]` `[sm]`
@@ -49,6 +43,10 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
   `fc.py hero` + the step-2.5 "offerings.md with flagship product images" option presume a physical render (bottle / vial / pen). On a software/API company there's nothing to capture — the Stripe run (2026-06-04) path-scored 15 candidates that were all lifestyle photography / demo-merchant goods / UI mockups (every score 0.0); the run correctly returned **N/A**, but the guided menu offered it anyway. **Cheap fix:** in the step-2.5 batch, suppress (or label "physical products only") the hero-image option when `offering_category` carries no `Physical Products / Hardware` / CPG — same logic likely applies to `Marketplace / Platform` and `Financial / Fintech`.
 
 ### Parked
+
+- **Web design quality / site-presentation rating** `[idea]` `[parked]` `[@brian]`
+  Rating observable site-presentation quality from capture screenshots failed calibration three times (2026-06-09): raters agree with each other (≤1-bucket spread) but sit ~1–2 buckets above Brian — "coherent template" reads `strong` where Brian reads `basic`, `weak` never fires, and slick dark-gradient template aesthetics read `excellent` (Infusive, Brian 2.5). Rule-tightening is exhausted; the anchors themselves are off. Evidence: [v1](experiments/2026-06-09-site-presentation-quality/FINDINGS.md) · [v2](experiments/2026-06-09-site-presentation-quality-v2/FINDINGS.md) · [v3 bottom-heavy fail](experiments/2026-06-09-site-presentation-quality-v3/FINDINGS.md). What survives: the evidence *cues* (template/stock/render-defect reads) were accurate — they stay welcome as `Visual & brand impression` prose; the bucket is what's parked. The depth-gate use case never needed it (gate on observable site substance instead).
+  **Act when:** a consumer needs the rating itself (Notion auto-fill, cohort comparison) — then try **anchored comparison** (place against fixed Brian-rated reference screenshots) before any absolute scale; v3 showed relative ordering is nearly right even when absolute labels aren't.
 
 - **Rung-3 SQLite index — landed for cohort aggregation; relations graph still parked** `[idea]` `[xl]` `[parked]`
   The derived-index *mechanism* graduated 2026-06-04 for **telehealth cohort aggregation**: [`scripts/build_db.py`](scripts/build_db.py) builds `_out/store.db` (the `telehealth_full` view — profile × cohort × per-SKU offerings), fenced against the price-magnitude / naked-count / cross-type footguns the [sqlite-aggregation probe](experiments/2026-06-04-sqlite-aggregation/) found, `--check`-guarded; [QUERYING Recipe 7](QUERYING.md). The live consumer that earned it was **Brian's Beekeeper browsing + ad-hoc SQL** (latency was never the axis — the lighter `store.py` reader's only edge); the probe's own gating condition (a) thus held. Markdown stays source of truth; the `.db` is gitignored + regenerable.
