@@ -1,0 +1,441 @@
+{
+  "summary": "Blind-rate 8 companies (5 bottom-heavy + 3 controls) on site presentation quality, 3 independent raters each (2 Opus + 1 Sonnet)",
+  "agentCount": 24,
+  "logs": [
+    "24/24 ratings returned"
+  ],
+  "result": {
+    "ratings": [
+      {
+        "company": "Function Health",
+        "slug": "functionhealth-com",
+        "rater": "opus-a",
+        "model": "opus",
+        "rating": "excellent",
+        "confidence": "high",
+        "key_evidence": [
+          "Distinctive editorial art direction held consistently: serif italic accent headlines in a warm terracotta on a cream palette paired with a clean sans body ('Gold standard for lab testing', 'Not your average checkup', 'The new standard for health'), giving a magazine-like rhythm rather than a generic SaaS look.",
+          "Scans hero (sc_truetop) is a moody, commissioned dark portrait overlaid with hand-drawn terracotta swirl lines illustrating dizziness/symptoms — bespoke art direction, not stock.",
+          "Custom, polished components: a Function-vs-standard-checkup comparison table with a highlighted terracotta column and check/dash icons (hp_5), a clean pricing/membership card with checklist (hp_6), and reused data viz (US-map dot graphic + '75M+'/'2,000' stats with bar chart) appearing consistently on homepage and pricing.",
+          "Strong, consistent trust surfaces: a grid of named M.D./PhD scientific-board members with uniform headshot treatment (hp_5/hp_6), press cards (TIME100, Fast Company Most Innovative 2024), lab partner logos (Quest, Getlabs), and video testimonial cards with consistent play-button overlays.",
+          "Cross-page consistency is high: pricing.png and scans.png both carry the same nav (announcement bar, logomark, pill 'Start testing' CTA), the same serif-italic display type ('170 scan locations and growing'), pill CTAs, and card system as the homepage.",
+          "Render integrity is clean across all bands except the homepage's top hero viewport, which captured as blank cream (hp_truetop) — most consistent with a hero image/video not captured rather than a site defect; all other sections rendered fully."
+        ],
+        "cap_rule_notes": "Excellent is allowed: the site shows BOTH distinctiveness (editorial serif-italic/terracotta-on-cream system, commissioned moody photography, bespoke swirl illustration, custom data viz) AND execution discipline (tight, consistent component system carried across homepage, pricing, and scans with no generic-template feel). No major placeholder blocks, broken media panels, repeated overlays, or unfinished sections. The single blemish — a blank homepage hero region in this capture — reads as a capture artifact (a hero image/video that didn't render), not a presentation defect, so it does not cap to strong.",
+        "screenshots_reviewed": 3
+      },
+      {
+        "company": "Function Health",
+        "slug": "functionhealth-com",
+        "rater": "opus-b",
+        "model": "opus",
+        "rating": "excellent",
+        "confidence": "high",
+        "key_evidence": [
+          "Homepage hero and OG image share a distinctive editorial system: restrained cream/terracotta/copper palette, serif-italic accent headlines ('Check your health', 'Real results', 'Gold standard', 'Not your average', 'Life is short?') paired with clean sans body — a deliberate, coherent brand voice, not template default.",
+          "Commissioned media throughout: uniform real-person testimonial video cards with consistent play-button overlays and name/caption treatment, board-physician portraits with matched backgrounds, plus a refined biomarker dashboard UI mock in the OG image — no stock or AI-ish filler.",
+          "Custom data visualizations rendered to brand: a dotted US lab-locations map with '2,000' numeral and a '75M+' results stat over a copper bar-chart illustration — distinctive bespoke graphics rather than generic icon rows.",
+          "Pricing/'$15,000 is $365' membership card and the comparison table are well-structured: clear $1/day hierarchy, checkmark feature lists, single accent CTA, branded Function column vs muted 'Standard checkup' column — disciplined component polish.",
+          "Cross-page consistency holds: scans and pricing pages retain the same palette, serif-italic headline system, card patterns, CTA styling, and footer — homepage polish does not degrade on secondary pages.",
+          "Render integrity clean across all three full-page captures (1920px wide, ~11.5k/9.5k tall homepage/scans): no broken media, blank panels, clipped text, consent overlays, or low-contrast failures."
+        ],
+        "cap_rule_notes": "Clears the excellent cap: shows both distinctiveness (a deliberate editorial serif-italic + copper-on-cream system, bespoke data viz, commissioned photography) and execution discipline (clean render, consistent components and palette across homepage/pricing/scans, polished cards/CTAs/tables). None of the cap triggers present — no placeholder blocks, broken media, repeated overlays, low-contrast sections, or generic stock-template execution.",
+        "screenshots_reviewed": 4
+      },
+      {
+        "company": "Function Health",
+        "slug": "functionhealth-com",
+        "rater": "sonnet-a",
+        "model": "sonnet",
+        "rating": "strong",
+        "confidence": "high",
+        "key_evidence": [
+          "Homepage screenshot shows a cohesive warm off-white/terracotta color system applied consistently across headline treatments, CTA buttons, and accent marks — indicating a deliberate, executed brand palette rather than a default theme.",
+          "Typography hierarchy is well-controlled across all three pages: large editorial hero headlines in a serif/italic style, mid-weight section headers, and compact body text — the vertical rhythm holds without collapsing or crowding.",
+          "Scans page opens with a high-contrast dark hero panel (deep brown/black) featuring a full-bleed body image — the tonal departure from the main site palette is handled cleanly with a deliberate cinematic treatment that still reads as on-brand.",
+          "Real-person photography is used throughout (member testimonials, medical board headshots) and the headshots appear commissioned or editorial-style rather than generic stock — consistent warm-toned backgrounds on the board member portraits signal intentional art direction.",
+          "Pricing page retains full design-system fidelity: the same card styles, button treatment, comparison table, and color tokens from the homepage are intact — cross-page consistency is high.",
+          "Minor cap signals: at thumbnail scale the homepage mid-section has dense stacked biomarker-list and comparison-table areas where the layout becomes content-heavy and less art-directed; not broken but reduces the 'distinctive' threshold needed for excellent."
+        ],
+        "cap_rule_notes": "Excellent would require both distinctiveness and execution discipline across all sections. The site has strong execution discipline and real art direction (editorial photography, custom brand palette, clean typographic system), but the mid-homepage sections (scrolling disease-name ticker, dense comparison table) are more functional/content-heavy than visually distinguished. The medical board and social-proof sections recover the polish. Overall the cap sits at strong: clearly professional and well-executed, but not unusually distinctive enough to clear excellent.",
+        "screenshots_reviewed": 3
+      },
+      {
+        "company": "Amble",
+        "slug": "joinamble-com",
+        "rater": "opus-a",
+        "model": "opus",
+        "rating": "excellent",
+        "confidence": "high",
+        "key_evidence": [
+          "Distinctive art direction: serif+sans typographic system with italic accent words ('Your questions, answered', 'tested by data'), bold full-width color-blocked benefit bands (orange/purple/blue gradients) on homepage and PDPs, cohesive palette — clears the distinctiveness bar.",
+          "Strong execution discipline: a single product-detail template (clean product render, spec table, 'How it works' steps, color band, 'Why amble', star reviews, FAQ accordion, CTA footer band) applied consistently across glp1, sermorelin, nad, glutathione, lipo-b, lipo-c.",
+          "Commissioned media throughout: lifestyle portraits, isolated product renders, and an editorial photo grid plus ingredient macro shots and a provider portrait on the skin page — no generic stock or placeholder assets.",
+          "FAQ page at full resolution shows polished components: consistent top trust ribbon with matching iconography, organized category + accordion layout, gradient contact CTA, dark footer with payment and social badges.",
+          "Render integrity is clean; the recurring right-margin floating boxes in thumbnails resolve to the real 'Your privacy choices' consent overlay at full scale, not broken media.",
+          "tesamorelin.png is a 404 'Page Not Found', but it is a branded, on-system empty state (trust ribbon, gradient button, full footer) — a polished error page, not broken rendering."
+        ],
+        "cap_rule_notes": "Excellent allowed: the site has both distinctiveness (editorial type system with italic accents, bold color-blocked bands, commissioned photography and editorial grids) AND execution discipline (one PDP template held consistently across 6+ products, consistent iconography/CTAs/footer). No placeholder blocks, broken media panels, low-contrast sections, or generic stock-template execution that would cap at strong. The lone 404 (tesamorelin) and the consent overlay are minor and themselves on-brand, not unfinished-section evidence.",
+        "screenshots_reviewed": 10
+      },
+      {
+        "company": "Amble",
+        "slug": "joinamble-com",
+        "rater": "opus-b",
+        "model": "opus",
+        "rating": "excellent",
+        "confidence": "high",
+        "key_evidence": [
+          "Distinctive editorial type system seen across pages: lowercase serif 'amble' wordmark plus mixed serif-italic/sans headlines (e.g. FAQ 'Your questions, answered' with serif italic accent), used consistently on homepage, product pages, and FAQ.",
+          "Custom commissioned-looking product renders rather than stock: GLP-1 hero (hero/glp1/pick1.png) is a monochrome-on-orange studio composition of a branded vial + syringe with 'Rx Only' detail; product pages reuse matching purple/render cards.",
+          "Strong cross-page consistency: glp1, nad, sermorelin, glutathione, lipo-b, lipo-c all reuse one tight template (render card + spec table + 'How it works' steps + gradient lifestyle band + 'Why Amble' cards + testimonials + FAQ accordion + pink CTA + dark footer).",
+          "Commissioned lifestyle photography of diverse real people on gradient bands (purple/orange/blue/pink) on homepage and product pages; coherent color language and consistent iconography in the top utility bar (FDA regulated, free delivery, 24/7 support, etc.).",
+          "Well-organized dark footer with tidy link columns (Treatment/Tools/Amble), social icons, and a full row of payment-method badges (Visa, MC, Amex, Apple Pay, Klarna, Link).",
+          "Blemishes are minor and capture-side: a persistent 'Your privacy choices' consent overlay sits over the footer on most pages, and tesamorelin.png is a clean 'Page Not Found' 404 (a dead route, not a render defect of a live page)."
+        ],
+        "cap_rule_notes": "Excellent is allowed because both distinctiveness (custom product renders, editorial serif/sans type system, branded color language) and execution discipline (near-identical high-polish template reused cleanly across 7+ pages) are clearly present. No placeholder blocks, broken media, low-contrast sections, or generic stock-template feel. The only deductions are a consent overlay (expected capture artifact) and one dead 404 route, neither a presentation defect of the live design — not enough to cap at strong.",
+        "screenshots_reviewed": 12
+      },
+      {
+        "company": "Amble",
+        "slug": "joinamble-com",
+        "rater": "sonnet-a",
+        "model": "sonnet",
+        "rating": "strong",
+        "confidence": "high",
+        "key_evidence": [
+          "Homepage (homepage.png): Intentional color-block layout — alternating yellow, lavender, and orange hero sections, each with well-lit lifestyle photography of diverse models; not a generic stock template.",
+          "Product pages (glp1, sermorelin, glutathione, nad, lipo-b, lipo-c PNGs): All six share an identical, cleanly executed template — product vial on purple studio panel, pricing widget, 3-step 'How it works' row, benefits color-block, testimonials, FAQ accordion — applied with no visible breaks or missing panels.",
+          "Typography system: serif + sans combination with mixed upright/italic headline treatment ('Your questions, answered') applied consistently across homepage, FAQ, and all product pages.",
+          "Skin page (skin.png): Editorial-quality close-up photography and a distinct visual treatment from the injection pages — shows the design system can flex across product categories rather than being rigidly single-template.",
+          "Tesamorelin page (tesamorelin.png): Full 404 'Page Not Found' on a product page that was crawled; one broken destination in the captured set.",
+          "Persistent right-side sidebar widget (visible in product page thumbnails): a sticky 'primary doctor' side panel partially overlaps content across all product pages, adding recurring visual clutter."
+        ],
+        "cap_rule_notes": "Excellent is capped: the site has genuine art direction (color-blocking, commissioned photography, typography intentionality) but the tesamorelin 404 is a broken page within the captured set, and the product page execution is visibly templated — polish is consistent but not distinctive enough to clear the excellent bar. Strong is the right call.",
+        "screenshots_reviewed": 9
+      },
+      {
+        "company": "Belmar Pharma",
+        "slug": "belmarpharmasolutions-com",
+        "rater": "opus-a",
+        "model": "opus",
+        "rating": "strong",
+        "confidence": "high",
+        "key_evidence": [
+          "Consistent design system across all 4 pages: green 'Belmar' brand mark, identical top nav, and a recurring dark-teal gradient footer with 'Stay Informed' newsletter form, multi-column link lists, and trust badges (LegitScript, U.N.) — strong cross-page coherence.",
+          "Real commissioned photography throughout: clinicians/pharmacist interactions on the clinicians page, a pharmacy-bottle still life with a pull-quote band on the homepage, and lab/coat imagery on open-account — not generic icon-only or obvious stock filler.",
+          "Clean section rhythm and card grids: homepage 'Why Belmar?' four-up feature row with line icons, a 3-up 'Featured Resources' card block, and a tidy 'Commonly Asked Questions' accordion on open-account — consistent spacing and typographic hierarchy.",
+          "No broken rendering or missing assets across screenshots; layouts render fully end-to-end including long footer. One minor artifact: a Cookiebot consent bar is captured mid-page on the account-form screenshot.",
+          "Execution is professional but not distinctively art-directed — the homepage hero (woman driving behind a green gradient) is a generic composition, and the open-account / provider account-form pages are long, utilitarian form layouts with plain field stacking, keeping it short of 'excellent'."
+        ],
+        "cap_rule_notes": "Capped at strong, not excellent: the site has clear execution discipline and brand-system coherence but lacks distinctive art direction — the hero is a generic photo-plus-gradient composition and the account/provider pages are plain utilitarian forms. Per the cap rule, professional + coherent + credentialed does not reach excellent without distinctiveness. Well above 'solid' due to genuine cross-page design-system consistency and commissioned photography rather than generic stock-template execution.",
+        "screenshots_reviewed": 4
+      },
+      {
+        "company": "Belmar Pharma",
+        "slug": "belmarpharmasolutions-com",
+        "rater": "opus-b",
+        "model": "opus",
+        "rating": "strong",
+        "confidence": "high",
+        "key_evidence": [
+          "All four full-page screenshots (homepage, clinicians, open-account, account-form) render cleanly with no broken media, blank panels, clipped text, or consent-overlay artifacts.",
+          "Consistent brand system across every page: green/white palette, same Belmar wordmark, same dark-teal footer with newsletter signup and trust badges (LegitScript, UN); clinicians and open-account pages fully retain the homepage's polish.",
+          "Homepage uses real commissioned-looking photography (hero woman on phone, two-clinician shot, pill-bottle quote panel) rather than obvious generic stock, plus a consistent line-icon set in the 'Why Belmar?' card grid.",
+          "Layout discipline is solid: aligned card grids, clear typographic hierarchy (hero headline, section headers, card titles), accordion FAQ on open-account, and a long multi-section provider intake form with grouped fields and labeled sections on account-form.",
+          "Execution is conventional/template-grade healthcare design — clean and credible but not distinctive in art direction; cards, hero, and component patterns are standard, which caps it below excellent."
+        ],
+        "cap_rule_notes": "Capped at strong (not excellent): execution is disciplined and consistent but lacks distinctive art direction — it reads as a polished but conventional pharmacy/healthcare template (standard card grids, stock-style hero composition). Per the excellent cap, distinctiveness AND execution discipline are both required; only execution discipline is clearly present. No render breakage, placeholders, or low-contrast sections push it down, so it sits comfortably above solid.",
+        "screenshots_reviewed": 4
+      },
+      {
+        "company": "Belmar Pharma",
+        "slug": "belmarpharmasolutions-com",
+        "rater": "sonnet-a",
+        "model": "sonnet",
+        "rating": "solid",
+        "confidence": "high",
+        "key_evidence": [
+          "Homepage screenshot shows a coherent green/teal brand system applied consistently across nav, hero section, section dividers, and footer — typography hierarchy is clear and functional.",
+          "Photography across all pages is competent generic stock (clinicians examining plants, woman in hero, doctor with laptop) rather than commissioned work; no distinctive art direction.",
+          "Clinicians page uses a 6-up card grid with stock photo thumbnails that are inconsistent in crop style and tone, diluting the design system coherence.",
+          "Account/open-account page applies the same geometric green overlay on hero photos and icon-card step chooser — consistent component reuse, but standard template patterns.",
+          "Provider account form is well-structured (dropdowns, radio groups, checkbox clusters) with clean field spacing; functional and credible but unremarkable.",
+          "Footer is dense with trust badges (PCAB, LegitScript), location columns, and newsletter sign-up — cluttered by calibration-trap standards but not broken; trust surface is visible but not elegantly composed."
+        ],
+        "cap_rule_notes": "Site does not reach strong: photography is generic stock throughout, card components are stock-template patterns, and no section shows distinctive art direction or elevated execution. Coherent design system plus professional credentials does not raise a site to strong per the calibration trap. Solid is appropriate — competent and credible with no major presentation issues, but generic.",
+        "screenshots_reviewed": 4
+      },
+      {
+        "company": "AnazaoHealth",
+        "slug": "anazaohealth-com",
+        "rater": "opus-a",
+        "model": "opus",
+        "rating": "basic",
+        "confidence": "high",
+        "key_evidence": [
+          "Render integrity is clean across all 7 pages — consistent cyan/blue palette, shared header/footer, no broken media, missing CSS, or consent overlays — but the execution is plainly a generic Wix-style template (centered column, stock component blocks).",
+          "Imagery is generic stock and dated: homepage hero is a stock 'couple in a field' photo, weight_management uses a stock gym photo plus a flat product-banner for Zao supplements, and location pages use simplistic outline house icons. No commissioned or distinctive media.",
+          "Inner pages (partnerships.png, quality.png, what_is_compounding.png) are walls of thin gray body text on large empty white canvases — functional information clarity but weak layout rhythm and monotone typography hierarchy (bright all-caps cyan H1, tiny gray body).",
+          "Visible copy defect: the footer reads 'Hava a question?' (typo for 'Have a question?') repeated across multiple pages — a polish miss.",
+          "Dated brand cues: a 'Since 1997' vintage emblem badge in the footer and a small embedded YouTube video block on the homepage 'ABOUT US' section read as older-web execution rather than current polish.",
+          "Navigation is clear and consistent (Home / Solutions / About Us / Latest News / Tradeshows / Contact Us with login CTAs), and the homepage SOLUTIONS grid of plain rounded-rectangle buttons is orderly but unstyled and generic."
+        ],
+        "cap_rule_notes": "Excellent is firmly capped: no distinctiveness and clearly generic stock-template execution, plus dated components (Since-1997 emblem, embedded YouTube block) and a repeated copy typo. Per the v3 calibration traps, coherent-but-generic execution is solid at most, and generic stock-template execution with dated components reads basic — which is where this lands. Clear IA prevents weak/broken but does not lift it. Not solid because the stock imagery, text-heavy empty inner pages, dated badge, and footer typo accumulate beyond merely generic into lightly-polished/dated territory.",
+        "screenshots_reviewed": 7
+      },
+      {
+        "company": "AnazaoHealth",
+        "slug": "anazaohealth-com",
+        "rater": "opus-b",
+        "model": "opus",
+        "rating": "solid",
+        "confidence": "high",
+        "key_evidence": [
+          "Render integrity is clean across all 8 captures: homepage hero photo, embedded YouTube video, and Google Map widget all render; no broken media, missing CSS, or clipped text.",
+          "Brand system is consistently applied page-to-page: cyan AnazaoHealth logo, blue 'Submit 503B Office Use Orders' top bar, identical header nav, 'Since 1997' hexagon footer badge, and a tri-color teal/blue/green bottom border appear on every page.",
+          "Imagery is generic stock with no commissioned/distinctive media: couple-in-a-field hero, gym/fitness stock photo on weight_management, plain house-outline location icons on facility_information; only a single product render appears (weight_management OTC banner).",
+          "Homepage SOLUTIONS section is a grid of flat blue text buttons sitting over a washed-out/ghosted cleanroom background photo — low-contrast and visually generic; the ABOUT US section also uses a faded background image.",
+          "Inner pages (quality, what_is_compounding, partnerships) are text-dominant walls of dense gray body copy with oversized all-caps cyan H1s and a small square divider, plus small-print disclaimer blocks at the bottom of every page — functional but plain hierarchy.",
+          "Overall reads as a coherent but dated Wix-style template: clean execution and clear information architecture, but no art-direction distinctiveness or media sophistication."
+        ],
+        "cap_rule_notes": "Excellent and strong are both capped. The site shows execution discipline (clean render, consistent cross-page brand system) but no distinctiveness — it is generic stock-template execution with washed-out hero backgrounds, a low-contrast button grid, generic stock photos, and text-heavy inner pages. Per the v2 traps, coherent structure plus credentials does not reach strong, and generic stock-template/dated components read basic. Clean render and consistent system lift it above basic to solid; the lack of any distinctive art direction or media sophistication keeps it from strong.",
+        "screenshots_reviewed": 7
+      },
+      {
+        "company": "AnazaoHealth",
+        "slug": "anazaohealth-com",
+        "rater": "sonnet-a",
+        "model": "sonnet",
+        "rating": "basic",
+        "confidence": "high",
+        "key_evidence": [
+          "Homepage uses a generic stock couple-outdoors hero image with no distinctive art direction; the Solutions section is a teal button grid that reads as a site-builder default component (homepage.png).",
+          "Interior pages (quality.png, partnerships.png, what_is_compounding.png) are largely text-only with no supporting imagery, no visual accents beyond the teal heading color, and near-zero layout variation page to page.",
+          "Facility information page (facility_information.png) uses flat blue building icons for location thumbnails — clip-art level iconography rather than photography or custom illustration.",
+          "Cross-page visual system is consistent (teal/blue palette, same header/nav/footer template, repeated 'Since 1997' badge) but the consistency comes from a site-builder template, not a designed system.",
+          "Weight management page (weight_management.png) mixes a promotional OTC product banner with a different visual style than the rest of the site, slightly breaking consistency.",
+          "All pages render fully with no broken media, clipped text, or layout failures — site is functional and navigable, preventing a 'weak' or 'broken' rating."
+        ],
+        "cap_rule_notes": "Excellent is clearly inapplicable — no distinctive art direction, commissioned photography, or execution discipline. Strong is also not warranted because coherent-but-generic template execution with stock imagery and sparse interior pages is explicitly a basic signal per calibration traps. The site is functional and credible (no rendering failures, clear IA, consistent template) which keeps it out of weak territory, landing at basic.",
+        "screenshots_reviewed": 7
+      },
+      {
+        "company": "Infusive",
+        "slug": "goinfusive-com",
+        "rater": "opus-a",
+        "model": "opus",
+        "rating": "excellent",
+        "confidence": "high",
+        "key_evidence": [
+          "Homepage hero (hp_hero crop) is crisp and distinctive: gradient INFUSIVE wordmark, clean nav with a pill 'APPLY NOW' CTA, a framed product-UI mockup with an overlaid testimonial card, and a 'Trusted by Leading Wellness Clinics' logo strip — commissioned assets, not stock.",
+          "Coherent purple-to-magenta gradient brand system holds across all 7 pages (homepage, platform, services, about, our_story, qualify, vendor): same card components with gradient borders, icon-in-circle iconography, alternating dark/light sections, and a recurring gradient-highlight word treatment in display headings.",
+          "Real commissioned photography throughout: named founder headshots with titles/bios (Dr. William Haas, Darren Frank in about_team crop), a composed team group shot, and lab/clinic photos with play-button video thumbnails (hp_mid) — a genuine trust surface, not AI or generic stock portraits.",
+          "Product screenshots are real app UI (purchase-order / protocol-management interfaces framed in device mockups on homepage and platform pages), reinforcing a software-platform story with polished media.",
+          "Vendor page (vendor_logos crop) presents partner logos in clean categorized white tiles ('Pharmacies', etc.) with consistent spacing — disciplined component reuse, no clipped or misaligned assets.",
+          "Render integrity is clean on every screenshot: no blank panels, broken media, placeholder blocks, consent overlays, or clipped text; the qualify form page rendered crisply with well-styled multi-field input cards."
+        ],
+        "cap_rule_notes": "Clears the excellent cap: the site shows both distinctiveness (cohesive dark gradient brand system, custom wave/grid backgrounds, gradient-highlight typographic motif) and execution discipline (consistent cards/icons/CTAs across all 7 pages, commissioned photography and real product UI, no placeholder/broken/low-contrast/generic-template tells). No render defects observed. Not capped at strong.",
+        "screenshots_reviewed": 7
+      },
+      {
+        "company": "Infusive",
+        "slug": "goinfusive-com",
+        "rater": "opus-b",
+        "model": "opus",
+        "rating": "strong",
+        "confidence": "high",
+        "key_evidence": [
+          "All 7 full-page screenshots render cleanly — no broken media, blank panels, or clipped text; the qualify and vendor pages (readable zoom) show crisp type, well-formed multi-field forms, and tidy aligned vendor-logo grids.",
+          "Cohesive, distinctive brand system across every page: dark purple/magenta gradients with topographic-line and dot-grid motifs, reused pink-to-orange gradient CTA buttons, identical logo/nav — strong cross-page consistency.",
+          "Real styled imagery rather than icon-and-text: founder/team headshots (about, our_story), lifestyle clinic photography, and app/dashboard product mockups (homepage, platform); a 3D 'Stay Ahead of the Chaos' ebook render adds distinctive art direction.",
+          "Polished, well-organized copy and IA: clear hero value prop, tiered Core/Growth/Elite partnership cards (services), structured Vendor FAQ, and a stepped 'Step 1: Business Info' qualify form; nav (About/Vendors/Platform/Partnership/Log In) is clear.",
+          "Unfinished-asset tells cap it below excellent: homepage testimonial uses a 'testi-placeholder-circle.webp' avatar (placeholder), and the trust-logo strip embeds the same 'home-logos-fix.png' image twice; some gradient-on-gradient sections also lower text contrast."
+        ],
+        "cap_rule_notes": "Execution discipline and distinctive art direction are both present, which would open the door to excellent. But the homepage carries a literal placeholder testimonial avatar and a duplicated/patched logo-strip asset — the kind of visibly unfinished elements the excellent cap names — plus some low-contrast gradient-on-gradient sections. These hold it at the top of strong rather than excellent. Well above solid given the commissioned imagery, consistent design system, and copy polish.",
+        "screenshots_reviewed": 7
+      },
+      {
+        "company": "Infusive",
+        "slug": "goinfusive-com",
+        "rater": "sonnet-a",
+        "model": "sonnet",
+        "rating": "strong",
+        "confidence": "high",
+        "key_evidence": [
+          "homepage.png: Consistent dark-purple gradient brand system with magenta/pink CTAs, wave-texture backgrounds, and white hierarchy typography maintained across all 7 pages — clearly a deliberate, maintained visual identity, not a default theme.",
+          "about.png + our_story.png: Real professional photography of named founders and team members (not generic stock headshots), editorial-style portrait layouts, which adds media asset credibility.",
+          "services.png: Three-tier partnership structure (Core / Growth / Elite) uses a card-grid system that is clean and internally consistent but relies on a recognizable agency-template pattern — competent execution, not distinctive.",
+          "platform.png: Software feature sections use laptop/dashboard mockups rendered in low contrast against dark backgrounds, making the actual product UI difficult to read — a notable execution gap.",
+          "vendor.png: Vendor logo grid shows logos of uneven sizing and visual weight, looking somewhat cluttered; reduces polish on an otherwise consistent page.",
+          "qualify.png: Multi-step lead form page is clean, uncluttered, and on-brand, with a well-placed newsletter CTA and consistent bottom-of-page founder CTA signature — strong form/conversion surface execution."
+        ],
+        "cap_rule_notes": "Strong is warranted: the site shows clear professional intent, a maintained color/type/component system, and real photography. The excellent cap applies because the visual language is a recognizable dark-SaaS/agency template aesthetic (purple gradient + wave textures), the product UI mockups have low-contrast readability issues, and the vendor logo grid lacks visual discipline — these together prevent distinctiveness + execution discipline from both being satisfied.",
+        "screenshots_reviewed": 7
+      },
+      {
+        "company": "Jinfiniti",
+        "slug": "jinfiniti-com",
+        "rater": "opus-a",
+        "model": "opus",
+        "rating": "solid",
+        "confidence": "high",
+        "key_evidence": [
+          "Coherent brand system across all 7 pages: consistent purple/magenta palette, repeated header/footer, magenta pill CTAs, and a teal-accented icon set reused on homepage, providers, and product pages.",
+          "Real media assets, not just stock: branded product packaging renders (Vitality NAD+, AgingSOS, Intracellular NAD test kits), professional provider/team headshots (about_us management/advisory grids, providers 'what people say about us'), and a 'Featured in' logo strip (CBS/FOX/etc.).",
+          "Structured PDP execution on product pages: spec/biomarker tables, numbered 'how the test works' process steps, comparison sections, star-rating review blocks, and trust-stat counters (e.g. '100k+ / 24+ / 10+').",
+          "Render rough edges: dark/black blank media panels on the homepage hero-adjacent section and recurring on intracellular_nad_test, vitality_nad_plus, and agingsos_advanced_panel — failed-to-render video/lazy-image blocks rather than capture cropping.",
+          "Layout-discipline gaps: shop grid has uneven card heights and inconsistent copy lengths producing ragged rows; product pages are dense and text-heavy with several gray placeholder blocks.",
+          "Repeated purple announcement bar stacked many times down each capture is a sticky-header scroll artifact, not a real site defect — discounted from scoring."
+        ],
+        "cap_rule_notes": "Capped below excellent and below strong. The brand system is coherent and execution is competent (real product renders, headshots, structured PDPs, clear IA), which clears basic/weak — but it reads as a coherent-but-generic health-commerce template rather than distinctive art direction, which the v2 trap explicitly holds at 'solid at most'. Multiple unrendered dark/gray media panels recurring across pages and ragged shop-grid spacing are execution-discipline lapses that also block strong. No broken CSS or unusable rendering, so not weak/broken.",
+        "screenshots_reviewed": 7
+      },
+      {
+        "company": "Jinfiniti",
+        "slug": "jinfiniti-com",
+        "rater": "opus-b",
+        "model": "opus",
+        "rating": "strong",
+        "confidence": "high",
+        "key_evidence": [
+          "Coherent custom design system across all 7 pages: consistent indigo/purple brand color, white cards with soft shadows, a recurring purple promo bar, a custom JINFINITI logomark, and a bespoke line-icon set (condition icons on homepage, numbered process steps on providers/product pages) that is reused consistently rather than generic stock.",
+          "Homepage shows a genuine render-integrity defect: a large half-purple / half-solid-black blank media panel (confirmed on zoom, likely an unloaded video embed) below the promo bar, plus several large empty gray gaps mid-page where testimonial/embed sections failed to load.",
+          "About_us and providers pages are clearly professional: commissioned-style lifestyle photography, a 'Featured on' logo strip (CBS, Fox, MarketWatch, Benzinga, etc.), management-team headshots, an advisory-board grid, and a dark 'NEXT BIG THING' hero band with disciplined typography.",
+          "Product pages (intracellular_nad_test, agingsos_advanced_panel) have polished, information-dense layouts: product box renders, comparison/spec tables, hex 'how it works' diagrams, video-testimonial thumbnail rows, and real-looking star-rated customer review cards.",
+          "vitality_nad_plus product page renders several gray placeholder/blank blocks where media (images/embeds) did not load, weakening cross-page render consistency.",
+          "Typography hierarchy is strong and consistent throughout: large friendly display headings, readable body copy, clear section labels, and well-styled CTA buttons (rounded purple/pink) with consistent navigation across pages."
+        ],
+        "cap_rule_notes": "Execution discipline and a distinctive, consistent custom design system (icons, brand color, typography, photography, trust surfaces) clear the bar for 'strong'. Capped below 'excellent' by the excellent-cap's explicit triggers: a broken black media panel on the homepage, repeated blank/gray unfinished-looking sections on the homepage and the vitality product page. These render defects keep it from 'excellent' but the underlying art direction and consistency are well above 'solid'/generic, so 'strong' fits. Confidence high — 7 full-page screenshots across homepage, shop, about, providers, and three product pages give consistent signal.",
+        "screenshots_reviewed": 7
+      },
+      {
+        "company": "Jinfiniti",
+        "slug": "jinfiniti-com",
+        "rater": "sonnet-a",
+        "model": "sonnet",
+        "rating": "solid",
+        "confidence": "high",
+        "key_evidence": [
+          "Consistent purple/white brand system applied across all 6 pages — nav, footer, sticky promo bar, and section color alternation are uniform throughout (homepage, providers, product pages)",
+          "Product photography is clean and professional — supplement packaging, test kits, and product renders are presentable; no broken images or missing media observed",
+          "Media logo rows (CBS, FOX, BIOSPACE, etc.) repeated on nearly every page and a 'NEXT BIG THING' award banner on the about page read as heavy trust-badge stacking, which is generic rather than polished",
+          "All product pages follow an identical long-form alternating-band template (purple section, white section, purple section) with text-heavy blocks and small supporting visuals — formulaic execution, not crafted",
+          "About page mixes professional headshots with a loud graphical award block, giving the page an uneven visual quality — competent but dated in places",
+          "No broken rendering, missing CSS, or layout failures across any screenshot; information architecture is clear (what they sell, for whom, what to do next) throughout"
+        ],
+        "cap_rule_notes": "Solid is appropriate here — the site has a coherent brand system and clean assets, but the execution is generic stock-template: repeated trust-badge rows, identical long-form product page structure, no distinctive art direction. Coherent structure plus credentials does not make a site strong per the calibration traps. Excellent and strong are both ruled out by the formulaic layout discipline and dated graphical elements.",
+        "screenshots_reviewed": 6
+      },
+      {
+        "company": "Kingsberg Medical",
+        "slug": "kingsbergmedical-com",
+        "rater": "opus-a",
+        "model": "opus",
+        "rating": "basic",
+        "confidence": "high",
+        "key_evidence": [
+          "Homepage and get_started hero uses a generic stock mountain-landscape background with two cut-out stock doctor photos in lab coats — classic dated stock-template execution, not commissioned art direction.",
+          "Heavy reliance on generic stock medical imagery throughout: vials/syringes on services.png and testosterone.png, an RX pad photo, and a stock business-people lineup; growth_hormone.png uses clip-art-style anatomy diagrams.",
+          "Content pages (growth_hormone, semaglutide, hormone_testing) are long, dense, text-heavy walls in narrow columns with cluttered right sidebars stacking 'Top Stories' thumbnails and a 'Schedule Your Blood Test' ad-style banner — cramped, uneven spacing.",
+          "Render integrity is clean across all 8 screenshots — no broken images, missing CSS, clipped text, or overlay junk; pages load coherently.",
+          "Brand system is internally consistent: same green accent, repeated green 'GET STARTED'/'SUBMIT REQUEST' CTA buttons, consistent header/footer and logo carry across every page — coherent but unremarkable.",
+          "Forms and typography are basic and dated: simple input-field overlays paired with another stock doctor photo, standard system fonts with size-only hierarchy."
+        ],
+        "cap_rule_notes": "Excellent is capped hard. Per the v3 traps, generic stock-template execution, dated components, and cluttered sidebar/ad blocks read 'basic' — coherent structure plus a consistent green brand system does not lift it to 'solid' or 'strong'. Cross-page consistency and clear IA prevent 'weak'/'broken' (no render failures), but the reliance on cut-out stock doctors, clip-art diagrams, and cramped text-heavy layouts is the textbook 'basic' profile rather than competent-and-polished 'solid'.",
+        "screenshots_reviewed": 8
+      },
+      {
+        "company": "Kingsberg Medical",
+        "slug": "kingsbergmedical-com",
+        "rater": "opus-b",
+        "model": "opus",
+        "rating": "basic",
+        "confidence": "high",
+        "key_evidence": [
+          "Render integrity is intact across all 8 pages — no broken media, missing CSS, or clipped text; pages share a consistent green-palette header, mountain-scenery hero, single-column body + right sidebar system.",
+          "Imagery is generic stock throughout: an Alps mountain hero, stock doctor-with-arms-crossed cutouts repeated identically across about_us/services/testosterone/get_started, stock vial/syringe photos, and clip-art organ/molecule diagrams (growth_hormone, testosterone).",
+          "Dated early-2010s template aesthetic: thin typographic hierarchy, small body text, boxed 'Get Started' lead-capture forms, numbered 3-step circles, and sidebar widgets ('Top Stories', 'Schedule Your Blood Test' green box).",
+          "Long-form pages (growth_hormone, semaglutide, hormone_testing) are dense text walls with minimal visual breakup; hormone_testing renders clean pricing/panel data tables but layout remains monotonous.",
+          "Cross-page consistency is good (logo, nav, color, footer HMA badge reused), but the system is coherent-generic rather than distinctive or modern.",
+          "Trust surface present but modest: doctor bios with photos on about_us, footer credential badge — credentials without polish."
+        ],
+        "cap_rule_notes": "Capped well below excellent/strong. Per the v1/v2 calibration trap, generic stock-template execution with dated components reads 'basic' — coherent structure plus credentials does not lift it to strong. Clean render integrity and clear IA (false-negative guard) keep it out of weak/broken, but the repeated stock doctor cutouts, dated component styling, and text-heavy walls preclude solid.",
+        "screenshots_reviewed": 8
+      },
+      {
+        "company": "Kingsberg Medical",
+        "slug": "kingsbergmedical-com",
+        "rater": "sonnet-a",
+        "model": "sonnet",
+        "rating": "basic",
+        "confidence": "high",
+        "key_evidence": [
+          "Homepage and all interior pages share an identical two-column template: main content left, persistent 'Top Stories' + 'Schedule Your Blood Test' sidebar right — a dated WordPress-era blog layout, unchanged across all 8 captured pages.",
+          "All imagery is generic stock photography: mountain landscape hero, white-coat physician composites, prescription bottle product shots against teal gradients, lifestyle aging photos, molecular diagrams. No commissioned or distinctive visual assets anywhere.",
+          "Typography is minimal and flat — green horizontal rule bars for section breaks, plain body text, no typographic hierarchy or branded font system visible.",
+          "The 'GET STARTED' CTA form block (boxed form with green submit button) appears repeatedly across pages in identical form, which shows template reuse rather than intentional design.",
+          "Color system is consistent (green/white) and the site renders without broken elements, but the execution reads as a stock HRT clinic template from circa 2012-2015 — coherent but entirely generic.",
+          "Footer carries a BBB logo and AMM/HMI partner badges; these trust badges add clutter rather than polish and do not elevate the overall presentation."
+        ],
+        "cap_rule_notes": "Excellent cap does not apply — the site shows no distinctiveness or execution discipline. Solid is also too high: the dated two-column blog layout, fully generic stock imagery, and stock-template component execution squarely fit the calibration trap ('generic stock-template execution, dated components read basic'). Rated basic, not weak, because the site renders cleanly, navigation is clear, and the color/layout system is consistent throughout.",
+        "screenshots_reviewed": 8
+      },
+      {
+        "company": "Mills Pharmacy",
+        "slug": "millspharmacy-com",
+        "rater": "opus-a",
+        "model": "opus",
+        "rating": "strong",
+        "confidence": "high",
+        "key_evidence": [
+          "Coherent brand system across all 7 pages: circular 'M' monogram, gold accent over slate/teal palette, serif display headers paired with sans body, consistent angled-bar header and multi-column footer (homepage, pharmacy, compounding footers identical).",
+          "Real commissioned photography throughout, not generic stock: storefront hero with 'pharmacy + apothecary' signage (homepage), lab/consultation shots and a sublingual-bottle product render (weight_management), vintage storefront + modern interior photos in the history timeline, apothecary shelf photo.",
+          "Polished components: clean card grids with consistent bordered 'READ MORE' buttons (pharmacy, compounding), accordion list and a custom 'States We Serve' US map graphic plus hero overlay caption (quality_safety), and a three-value icon row with custom line icons over a dotted pattern (homepage footer area).",
+          "Trust surface handled tastefully: dedicated 'Professional Affiliations' band with PCAB/PCCA/NCPA/ACHC accreditation logos, FDA-compounding disclaimers in footer.",
+          "Execution-discipline caps below excellent: site is a vendor template ('Website Development by Storey Marketing') with competent but non-distinctive art direction, and the Pharmacy and Compounding interior pages are pure text-card grids with no imagery (thinner than the homepage).",
+          "Capture-time overlays present but read as integrity-neutral: a signup modal fully covers the homepage hero, and a 'Manage Consent' banner clips one card on the compounding and weight-management pages."
+        ],
+        "cap_rule_notes": "Capped at strong, not excellent. Execution is disciplined and professional with real photography and a consistent design system, but it is an off-the-shelf vendor template (Storey Marketing) without distinctive bespoke art direction, and several interior pages (Pharmacy, Compounding) drop to image-less text-card grids. Per the excellent cap, distinctiveness is lacking and generic-template execution plus the capture overlays keep it at strong. It clears solid because the photography, iconography, map graphic, and cross-page consistency exceed merely-competent generic work. Overlays (signup modal, consent banner) are capture artifacts, not site defects, so they did not push it down.",
+        "screenshots_reviewed": 7
+      },
+      {
+        "company": "Mills Pharmacy",
+        "slug": "millspharmacy-com",
+        "rater": "opus-b",
+        "model": "opus",
+        "rating": "strong",
+        "confidence": "high",
+        "key_evidence": [
+          "Consistent brand system across all 7 pages: circular Mills monogram logo, gold/teal/charcoal palette, and a distinctive angled/diagonal dark nav band reused on every page (pharmacy.png, compounding.png) with the same footer (contact columns, social icons, accreditation).",
+          "Commissioned-feeling imagery rather than stock-only: team group photo (about_mills.png), vintage storefront + modern interior on the history timeline (history.png), lab/gloved-hands hero on quality_safety.png, and a provider/patient consultation hero plus a product-bottle render on weight_management.png.",
+          "Editorial depth on key pages: quality_safety.png has an overlaid teal text panel over a lab photo, a custom color-coded 'States We Serve' US map, and a clean credentials accordion; weight_management.png uses full-width teal section bands, a bordered callout box, and a dark photographic 'Benefits of Sublingual Delivery' section.",
+          "Clear typography hierarchy (condensed sans display headings + serif accents), consistent gold-bordered 'READ MORE' CTAs and drop-shadowed cards in the service grids (pharmacy.png, compounding.png).",
+          "Caps below excellent: pharmacy and compounding index pages are text-only card grids with no imagery and generic, template-driven layout; some card copy is run-on/awkwardly truncated ('OUR PROMISE Mills Compounding team is the...'); footer credits a marketing-vendor template.",
+          "Render integrity is clean; the only overlays are a standard homepage newsletter modal and a cookie-consent dialog (compounding.png/about_mills.png), which are expected widgets, not broken media or missing CSS."
+        ],
+        "cap_rule_notes": "Capped at strong, not excellent. Execution is disciplined and the angled nav band plus good photography on Discover/Quality/Weight pages give it some distinctiveness, but the service index pages (pharmacy, compounding) fall back to generic, imagery-free template card grids with minor copy truncation, and the footer credits a marketing-vendor template. Per the excellent cap, generic stock-template execution and visibly uneven polish across pages hold it below excellent. Above solid because the brand system, custom map, and commissioned imagery clear the 'coherent-but-generic' bar.",
+        "screenshots_reviewed": 7
+      },
+      {
+        "company": "Mills Pharmacy",
+        "slug": "millspharmacy-com",
+        "rater": "sonnet-a",
+        "model": "sonnet",
+        "rating": "solid",
+        "confidence": "high",
+        "key_evidence": [
+          "Homepage shows consistent brand palette (dark slate nav + gold/teal accents) with a circular 'M' logotype and clear dropdown navigation — coherent visual identity applied across all six pages",
+          "Interior and staff photography on homepage and history page is genuine (not obviously generic stock) and adds credibility; lab photography on quality_safety page is purposeful",
+          "Service pages (pharmacy.png, compounding.png) reuse the same uppercase-card-grid template verbatim — 3-column cards with teal headers and 'READ MORE' CTAs — revealing template-driven construction with no page-level differentiation",
+          "History page (history.png) incorporates vintage archival pharmacy photos alongside modern shots, giving the one page real character, but this is isolated to one page",
+          "About page (about_mills.png) is noticeably thin — wide empty margins, single text column, sparse content — showing uneven depth across the site",
+          "No broken layouts, missing images, or render failures across all six pages; cookie-consent overlays appear on several captures but are a capture artifact, not a site presentation failure"
+        ],
+        "cap_rule_notes": "Solid is appropriate: the site is competent and credible with a consistent brand system and real photography, but the heavy reuse of a page-builder card-grid template across service sections, the thin inner pages, and the absence of any distinctive art direction or custom component work prevent it from reaching strong. Coherent structure plus credentials does not make a site strong per calibration guidance.",
+        "screenshots_reviewed": 6
+      }
+    ],
+    "missing": 0
+  }
+}
