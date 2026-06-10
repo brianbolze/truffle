@@ -10,6 +10,7 @@ A `/research-company` agent already paid to capture and structure each company, 
 |---|---|---|
 | **Locate** — does X appear, where, quote it verbatim | `rg` / `grep -r` (the whole corpus is ~100KB) | line-oriented and cheap; you want the raw text |
 | **Structure** — filter / group / aggregate / relate on frontmatter | **parse the YAML** (below) — never `grep \| uniq` | values carry inline `#` comments, and multi-selects aren't order-canonical (`[B2C, B2B]` ≠ `[B2B, B2C]`), so `grep \| uniq` silently fragments the count |
+| **Presentation** — hand a non-technical human a company brief | `python scripts/render.py <company>` → `scripts/_out/briefs/<slug>.html` | static, self-contained, and provenance renders with the artifact |
 | **External signal** — visibility, tenure, review profile, branded search trajectory, similar-site discovery | `tools/<source>.py` → JSON envelope, then match/diff/interpret above it | repeatable source capture with provenance beats one-off web search |
 
 The store is `store/<domain-slug>/`:
@@ -36,7 +37,7 @@ P = {p.split("/")[1]: frontmatter(p) for p in glob.glob("store/*/profile.md")}
 
 **1. Point read** — *"tell me about <company>"* → read `store/<slug>/profile.md`. One ~10KB file; the body sections answer most asks. No tooling, every entity type.
 
-**Human brief** — `python scripts/render.py <company>` writes a self-contained presentation lens to `scripts/_out/briefs/<slug>.html`.
+**1b. Human brief** — `python scripts/render.py <company>` writes a self-contained presentation lens to `scripts/_out/briefs/<slug>.html`.
 
 **2. Filter / group** — *"all B2C subscription brands", "group by business_model"* → parse, then query the dict. (Value strings live in TAXONOMIES — read them there, don't hardcode.)
 ```python

@@ -15,9 +15,11 @@ The repo's deepest rule already covers this: **markdown is the source of truth; 
 | Kind | Exemplar | Consumer |
 |---|---|---|
 | **Query lens** | `scripts/build_db.py` → `store.db` | agents, Beekeeper |
-| **Presentation lens** | `scripts/render.py` → `brief.html` | humans |
+| **Presentation lens** | `scripts/render.py` → `scripts/_out/briefs/<slug>.html` | humans |
 
 Same rules for both: derived and regenerable from the markdown, output gitignored, computed at generation time, freshness clocks visible in the artifact.
+
+Run it directly: `python scripts/render.py <company>`.
 
 ## Guardrails
 
