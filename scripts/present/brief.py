@@ -13,7 +13,7 @@ from typing import Any
 
 from .md import _peek, _truncate, esc, md_blocks, md_inline
 from .model import _age_days
-from .theme import ARROW_SVG, GRAIN, INK, PAPER, css
+from .theme import ARROW_SVG, INK, PAPER, css
 
 # Tabs are CSS-only (radio + :checked) so they work with JS disabled — e.g. iOS Quick Look on
 # an AirDropped file. The only JS is a progressive enhancement: expand every <details> before
@@ -242,7 +242,7 @@ def _offer_panel(m: dict[str, Any]) -> str:
 
 def render_html(m: dict[str, Any]) -> str:
     pal, fonts = m["pal"], m["fonts"]
-    sheet_css = css("brief")
+    sheet_css = css("base") + css("brief")
     cls = m["classification"]
     desc = esc(m["description"]) or "—"
     # A hero headline shouldn't run 5-6 lines: step the display size down with description length.
@@ -250,12 +250,11 @@ def render_html(m: dict[str, Any]) -> str:
     desc_size = 29 if dlen <= 110 else (25 if dlen <= 170 else 21)
 
     css_vars = (
-        f":root{{--paper:{PAPER};--ink:{INK};--desk:#DCD5C4;"
+        f":root{{--paper:{PAPER};--ink:{INK};"
         f"--rule:color-mix(in srgb,{INK} 16%,{PAPER});"
         f"--accent:{pal['accent']};--accent-dark:{pal['accent_dark']};"
         f"--hero-bg:{pal['hero_bg']};--hero-fg:{pal['hero_fg']};--hero-accent:{pal['hero_accent']};"
-        f"--display:{fonts['display']};--body:{fonts['body']};--mono:{fonts['mono']};"
-        f"--grain:{GRAIN}}}"
+        f"--display:{fonts['display']};--body:{fonts['body']};--mono:{fonts['mono']}}}"
     )
 
     docno = f"WR/{m['captured_at'].replace('-', '')[:8] or 'UNDATED'}/{m['slug'].upper().replace('-', '·')}"
@@ -334,7 +333,6 @@ def render_html(m: dict[str, Any]) -> str:
 {css_vars}
 {sheet_css}</style></head><body>
 <div class="sheet">
-<div class="crop tl"></div><div class="crop tr"></div><div class="crop bl"></div><div class="crop br"></div>
 <header class="masthead">
   <div class="mh-row"><span class="mh-left">Web&middot;Research — <b>Company Brief</b></span>
   <span class="mh-right">{esc(docno)}</span></div>

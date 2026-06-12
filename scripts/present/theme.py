@@ -28,7 +28,3 @@ ARROW_SVG = ('<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentCol
              'aria-hidden="true"><path d="M7 7h10v10M7 17L17 7"/></svg>')
 
 
-GRAIN = ("url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E"
-         "%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E"
-         "%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.32 0 0 0 0 0.24 0 0 0 0.05 0'/%3E%3C/filter%3E"
-         "%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E\")")

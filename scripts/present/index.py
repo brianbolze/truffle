@@ -11,7 +11,7 @@ from datetime import date
 from typing import Any
 
 from .md import _truncate, esc
-from .theme import GRAIN, INK, PAPER, css
+from .theme import INK, PAPER, css
 
 
 def render_index_html(rows: list[dict[str, Any]], fonts: dict[str, Any]) -> str:
@@ -19,14 +19,13 @@ def render_index_html(rows: list[dict[str, Any]], fonts: dict[str, Any]) -> str:
     recomputed every render (counts rot — never bake), then every company grouped by industry,
     each row a per-layer clock linking to its brief."""
     css_vars = (
-        f":root{{--paper:{PAPER};--ink:{INK};--desk:#DCD5C4;"
+        f":root{{--paper:{PAPER};--ink:{INK};"
         f"--rule:color-mix(in srgb,{INK} 16%,{PAPER});"
         f"--accent:#4A4438;--accent-dark:#C9BFA8;"
         f"--hero-bg:{INK};--hero-fg:{PAPER};--hero-accent:#C9BFA8;"
-        f"--display:{fonts['display']};--body:{fonts['body']};--mono:{fonts['mono']};"
-        f"--grain:{GRAIN}}}"
+        f"--display:{fonts['display']};--body:{fonts['body']};--mono:{fonts['mono']}}}"
     )
-    base_css, view_css = css("brief"), css("index")
+    base_css, view_css = css("base") + css("brief"), css("index")
     today = str(date.today())
     n_roster = sum(1 for r in rows if r["roster_at"])
     n_sku = sum(r["buyable"] or 0 for r in rows)
@@ -66,7 +65,6 @@ def render_index_html(rows: list[dict[str, Any]], fonts: dict[str, Any]) -> str:
 {base_css}
 {view_css}</style></head><body>
 <div class="sheet">
-<div class="crop tl"></div><div class="crop tr"></div><div class="crop bl"></div><div class="crop br"></div>
 <header class="masthead">
   <div class="mh-row"><span class="mh-left">Web&middot;Research — <b>Company Index</b></span>
   <span class="mh-right">WR/{today.replace("-", "")}/INDEX</span></div>

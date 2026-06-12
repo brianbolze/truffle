@@ -17,7 +17,7 @@ from typing import Any
 
 from .assets import _hex_rgb, build_fonts
 from .md import _peek, _truncate, esc
-from .theme import GRAIN, INK, PAPER
+from .theme import INK, PAPER, css
 
 # ---------------------------------------------------------------- voice harvest
 
@@ -110,8 +110,8 @@ def render_compare(models: list[dict[str, Any]]) -> str:
     scaffold = build_fonts([], fetch=False)["css"]
     fonts_css.append(scaffold)
     for m in models:  # each model's css repeats the scaffold prefix; keep only the company faces
-        css = m["fonts"]["css"]
-        fonts_css.append(css[len(scaffold):] if scaffold and css.startswith(scaffold) else css)
+        fcss = m["fonts"]["css"]
+        fonts_css.append(fcss[len(scaffold):] if scaffold and fcss.startswith(scaffold) else fcss)
 
     # 01 lineup — each mark on its own captured ground
     lineup = []
@@ -210,113 +210,16 @@ def render_compare(models: list[dict[str, Any]]) -> str:
     accents = "".join(
         f'.cells .cell:nth-child({i + 1})::before{{background:{m["pal"]["accent"]}}}' for i, m in enumerate(models))
 
-    css = f"""
-*{{box-sizing:border-box;margin:0;padding:0}}
-:root{{--paper:{PAPER};--ink:{INK};--desk:#DCD5C4;--rule:color-mix(in srgb,{INK} 16%,{PAPER});
-  --mono:'Fragment Mono',ui-monospace,'SF Mono',Menlo,monospace;
-  --body:'Newsreader','Iowan Old Style',Palatino,Georgia,serif;--grain:{GRAIN}}}
-body{{background:var(--desk);font-family:var(--body);color:var(--ink);-webkit-font-smoothing:antialiased}}
-.sheet{{position:relative;max-width:{min(1680, 230 + 300 * n)}px;margin:44px auto;padding:0 56px 8px;background:var(--paper);
-  box-shadow:0 30px 80px rgba(20,16,8,.28),0 2px 10px rgba(20,16,8,.14)}}
-.sheet::before{{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
-  background-image:var(--grain);background-size:300px 300px}}
-.label{{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
-  color:color-mix(in srgb,var(--ink) 62%,var(--paper))}}
-.masthead{{padding:46px 0 0}}
-.mh-row{{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:10px;
-  font-family:var(--mono);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase}}
-.mh-row .right{{font-size:10.5px;letter-spacing:.14em;color:color-mix(in srgb,var(--ink) 55%,var(--paper))}}
-.rule-heavy{{height:3px;background:var(--ink)}}.rule-thin{{height:1px;background:var(--rule);margin-top:2px}}
-.title{{padding:30px 0 26px;border-bottom:1px solid var(--rule)}}
-.title h1{{font-size:31px;font-weight:400;font-style:italic;line-height:1.25;max-width:30ch}}
-.title .sub{{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
-  margin-top:12px;color:color-mix(in srgb,var(--ink) 55%,var(--paper))}}
-
-.band{{display:grid;grid-template-columns:108px 1fr;gap:0 26px;border-bottom:1px solid var(--ink);padding:26px 0 30px}}
-.band:last-of-type{{border-bottom:none}}
-.rail{{display:flex;flex-direction:column;gap:7px;border-right:1px solid var(--rule);padding:4px 14px 0 0}}
-.rail .rno{{font-family:var(--mono);font-size:11px;color:color-mix(in srgb,var(--ink) 45%,var(--paper))}}
-.rail .rtitle{{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase}}
-.rail .rsub{{font-size:12.5px;font-style:italic;line-height:1.45;color:color-mix(in srgb,var(--ink) 55%,var(--paper))}}
-.cells{{display:grid;gap:0 22px}}
-.cells .cell{{position:relative;padding-top:12px;min-width:0}}
-.cells .cell::before{{content:"";position:absolute;top:0;left:0;width:30px;height:3px}}
-{accents}
-
-.ground{{display:flex;align-items:center;justify-content:center;height:108px;padding:16px;
-  border:1px solid rgba(0,0,0,.14)}}
-.plate{{display:inline-flex;background:var(--paper);padding:9px 14px}}
-.who{{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-top:9px}}
-.who b{{font-size:15px;font-weight:600}}
-.who span{{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:color-mix(in srgb,var(--ink) 55%,var(--paper))}}
-
-.q{{line-height:1.34;margin-bottom:12px;overflow-wrap:break-word}}
-.q.fallback{{font-style:italic;font-size:15px;color:color-mix(in srgb,var(--ink) 70%,var(--paper))}}
-
-.stripes{{display:flex;height:46px;border:1px solid var(--rule)}}
-.stripes i{{flex:1}}
-.hexes{{font-family:var(--mono);font-size:9.5px;letter-spacing:.05em;margin-top:6px;
-  color:color-mix(in srgb,var(--ink) 58%,var(--paper))}}
-.spectrum{{grid-column:1/-1;margin-top:22px;padding-top:14px;border-top:1px dashed var(--rule)}}
-.spectrum .label{{display:block;margin-bottom:8px}}
-.spectrum .stripes{{height:16px}}
-
-.face{{display:flex;gap:12px;align-items:center;border:1px solid var(--rule);padding:9px 12px;margin-bottom:8px}}
-.face .ag{{font-size:30px;line-height:1;min-width:42px}}
-.face .fmeta{{font-family:var(--mono);font-size:10px;letter-spacing:.06em;line-height:1.55;
-  color:color-mix(in srgb,var(--ink) 60%,var(--paper))}}
-.face .fmeta b{{display:block;color:var(--ink);font-weight:400;font-size:11.5px}}
-
-.chips b{{display:inline-block;font-family:var(--mono);font-weight:400;font-size:10.5px;letter-spacing:.08em;
-  border:1px solid var(--rule);padding:3px 9px;margin:0 6px 6px 0}}
-.line{{font-size:13.5px;font-style:italic;line-height:1.5;color:color-mix(in srgb,var(--ink) 72%,var(--paper))}}
-
-.vitals{{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;
-  color:color-mix(in srgb,var(--ink) 55%,var(--paper))}}
-.big{{font-size:38px;font-weight:600;line-height:1}}
-.big small{{font-size:11px;font-weight:400;font-family:var(--mono);letter-spacing:.06em;
-  color:color-mix(in srgb,var(--ink) 55%,var(--paper))}}
-.bar{{display:flex;height:13px;margin:12px 0 7px;border:1px solid var(--ink)}}
-.seg-published{{background:var(--ink)}}
-.seg-partial{{background:color-mix(in srgb,var(--ink) 38%,var(--paper))}}
-.seg-on-request{{background:repeating-linear-gradient(45deg,transparent,transparent 3px,
-  color-mix(in srgb,var(--ink) 38%,var(--paper)) 3px,color-mix(in srgb,var(--ink) 38%,var(--paper)) 4px)}}
-.leg{{font-family:var(--mono);font-size:9.5px;letter-spacing:.05em;color:color-mix(in srgb,var(--ink) 58%,var(--paper))}}
-
-.shot{{border:1px solid var(--rule)}}
-.shot img{{display:block;width:100%;height:300px;object-fit:cover;object-position:top;
-  -webkit-mask-image:linear-gradient(to bottom,#000 82%,transparent);mask-image:linear-gradient(to bottom,#000 82%,transparent)}}
-.shot .cap{{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;padding:6px 9px;
-  border-top:1px solid var(--rule);color:color-mix(in srgb,var(--ink) 55%,var(--paper))}}
-.none{{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:color-mix(in srgb,var(--ink) 48%,var(--paper))}}
-
-.prov{{margin:0 -56px;padding:34px 56px 30px;background:var(--ink);color:color-mix(in srgb,var(--paper) 88%,var(--ink))}}
-.prov .grid{{display:grid;gap:0 22px;grid-template-columns:108px repeat({n},1fr)}}
-.prov .cell{{display:flex;flex-direction:column;gap:4px;font-family:var(--mono);font-size:10.5px;letter-spacing:.05em}}
-.prov b{{font-weight:400;font-size:13px;letter-spacing:.08em;color:var(--paper)}}
-.prov span{{color:color-mix(in srgb,var(--paper) 55%,transparent)}}
-.prov a{{color:color-mix(in srgb,var(--paper) 80%,transparent);text-decoration:none;
-  border-bottom:1px solid color-mix(in srgb,var(--paper) 30%,transparent);width:fit-content;margin-top:3px}}
-.prov .plabel{{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
-  color:color-mix(in srgb,var(--paper) 48%,transparent)}}
-.foot{{padding:24px 0 34px;text-align:center;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;
-  text-transform:uppercase;color:color-mix(in srgb,var(--ink) 48%,var(--paper));line-height:2}}
-
-@media (max-width:900px){{
-  .sheet{{margin:0;padding:0 18px 8px}}
-  .band{{grid-template-columns:1fr}}
-  .rail{{flex-direction:row;align-items:baseline;border-right:none;border-bottom:1px solid var(--rule);
-    padding:0 0 8px;margin-bottom:14px}}
-  .cells{{overflow-x:auto;grid-auto-columns:minmax(200px,1fr)}}
-  .prov{{margin:0 -18px;padding:26px 18px}}
-  .prov .grid{{grid-template-columns:repeat({n},minmax(150px,1fr));overflow-x:auto}}
-}}
-@media print{{
-  body{{background:#fff}}.sheet{{box-shadow:none;margin:0;max-width:none}}
-  .band,.shot,.face{{break-inside:avoid}}
-  .ground,.prov,.stripes{{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
-}}
-"""
+    css_vars = (f":root{{--paper:{PAPER};--ink:{INK};"
+                f"--rule:color-mix(in srgb,{INK} 16%,{PAPER});"
+                "--mono:'Fragment Mono',ui-monospace,'SF Mono',Menlo,monospace;"
+                "--body:'Newsreader','Iowan Old Style',Palatino,Georgia,serif}}")
+    # The sheet's width, the per-column accent ticks, and the provenance grid all depend on N —
+    # they're the only style computed here; everything static is css/compare.css.
+    dyn_css = (f".sheet{{{{max-width:{min(1680, 230 + 300 * n)}px}}}}\n{accents}\n"
+               f".prov .grid{{{{grid-template-columns:108px repeat({n},1fr)}}}}\n"
+               f"@media (max-width:900px){{{{.prov .grid{{{{grid-template-columns:repeat({n},minmax(150px,1fr));overflow-x:auto}}}}}}}}")
+    sheet_css = css("base") + css("compare")
 
     bands = [
         _band(1, "Lineup", "each mark on its own captured ground", lineup, n),
@@ -332,11 +235,13 @@ body{{background:var(--desk);font-family:var(--body);color:var(--ink);-webkit-fo
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(names)} — Comparison Sheet</title>
 <style>{"".join(fonts_css)}
-{css}</style></head><body>
+{css_vars}
+{sheet_css}
+{dyn_css}</style></head><body>
 <div class="sheet">
 <header class="masthead">
-  <div class="mh-row"><span>Web&middot;Research — <b style="font-weight:400">Comparison Sheet</b></span>
-  <span class="right">{esc(docno)}</span></div>
+  <div class="mh-row"><span class="mh-left">Web&middot;Research — <b>Comparison Sheet</b></span>
+  <span class="mh-right">{esc(docno)}</span></div>
   <div class="rule-heavy"></div><div class="rule-thin"></div>
 </header>
 <div class="title"><h1>{esc(names)}</h1>

@@ -1,39 +1,11 @@
+/* brief — the single-company view. Brand-dressed: selection + accents come from the
+   company's own captured palette. Engine chrome lives in base.css. */
 
-*{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%}
-body{background:var(--desk);font-family:var(--body);color:var(--ink);
-  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 ::selection{background:var(--hero-accent);color:var(--hero-bg)}
-a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 40%,transparent)}
-a:hover{border-bottom-color:var(--accent)}
-.sheet{position:relative;max-width:1060px;margin:44px auto;padding:0 64px;
-  background:var(--paper);
-  box-shadow:0 30px 80px rgba(20,16,8,.28),0 2px 10px rgba(20,16,8,.14)}
-.sheet::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
-  background-image:var(--grain);background-size:300px 300px}
-.crop{position:absolute;width:18px;height:18px;pointer-events:none;opacity:.55}
-.crop::before,.crop::after{content:"";position:absolute;background:var(--ink)}
-.crop::before{width:18px;height:1px;top:9px}
-.crop::after{width:1px;height:18px;left:9px}
-.crop.tl{top:14px;left:14px}.crop.tr{top:14px;right:14px}
-.crop.bl{bottom:14px;left:14px}.crop.br{bottom:14px;right:14px}
-
-.mono,.label{font-family:var(--mono)}
-.label{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 62%,var(--paper))}
-
-/* masthead */
-.masthead{padding:48px 0 0}
-.mh-row{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:10px}
-.mh-left{font-family:var(--mono);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase}
-.mh-left b{font-weight:400;color:var(--accent)}
-.mh-right{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:color-mix(in srgb,var(--ink) 55%,var(--paper))}
-.rule-heavy{height:3px;background:var(--ink);transform-origin:left;animation:drawX .9s cubic-bezier(.22,1,.36,1) both}
-.rule-thin{height:1px;background:var(--rule);margin-top:2px;transform-origin:left;animation:drawX .9s .08s cubic-bezier(.22,1,.36,1) both}
-
 /* hero */
 .hero{position:relative;margin:30px -64px 0;padding:52px 64px 58px;background:
   radial-gradient(900px 420px at 88% -12%,color-mix(in srgb,var(--hero-accent) 16%,transparent),transparent 62%),
-  var(--hero-bg);color:var(--hero-fg);animation:rise .8s .15s both}
+  var(--hero-bg);color:var(--hero-fg)}
 .hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
 .hero .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
   color:color-mix(in srgb,var(--hero-fg) 64%,transparent);padding-top:4px}
@@ -47,16 +19,16 @@ a:hover{border-bottom-color:var(--accent)}
 .caprec .cr-date{display:block;font-size:17px;letter-spacing:.1em;color:var(--hero-accent);margin:4px 0 3px}
 .caprec .cr-sub{display:block;font-size:10px;letter-spacing:.08em;
   color:color-mix(in srgb,var(--hero-fg) 55%,transparent)}
-.hero-mark{margin:30px 0 8px;animation:rise .8s .3s both}
+.hero-mark{margin:30px 0 8px}
 .mark-plate{display:inline-block;background:var(--paper);padding:16px 26px;border:1px solid rgba(0,0,0,.12)}
 .mark-text{font-family:var(--display);font-weight:600;color:var(--hero-accent);line-height:1.02;letter-spacing:-.01em}
 .alias{font-family:var(--mono);font-size:11px;letter-spacing:.12em;margin-top:14px;
   color:color-mix(in srgb,var(--hero-fg) 52%,transparent)}
 .hero-desc{font-family:var(--display);font-size:var(--desc-size,29px);line-height:1.32;font-weight:400;
-  max-width:38ch;margin-top:22px;animation:rise .8s .42s both}
+  max-width:38ch;margin-top:22px}
 
 /* classification + cohort cuts — quiet chip strips; corpus-cut keys, deliberately demoted */
-.cohort{padding:18px 0 20px;border-bottom:1px solid var(--rule);animation:rise .8s .5s both}
+.cohort{padding:18px 0 20px;border-bottom:1px solid var(--rule)}
 .cohort>.label{display:block;margin-bottom:11px}
 .cohort .cuts{display:flex;flex-wrap:wrap;gap:8px}
 .cut{font-family:var(--mono);font-size:11px;letter-spacing:.05em;padding:4px 10px;border:1px solid var(--rule)}
@@ -66,7 +38,7 @@ a:hover{border-bottom-color:var(--accent)}
 
 /* tab bar */
 .tabbar{position:sticky;top:0;z-index:60;display:flex;gap:4px;background:var(--paper);
-  margin:0 -64px;padding:0 64px;border-bottom:2px solid var(--ink);animation:rise .8s .6s both}
+  margin:0 -64px;padding:0 64px;border-bottom:2px solid var(--ink)}
 .tabbtn{display:block;cursor:pointer;font-family:var(--mono);
   font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:18px 18px 15px;
   color:color-mix(in srgb,var(--ink) 48%,var(--paper));border-bottom:3px solid transparent;margin-bottom:-2px;
@@ -80,7 +52,7 @@ a:hover{border-bottom-color:var(--accent)}
 #t-profile:checked~.panel[data-t="profile"],
 #t-offer:checked~.panel[data-t="offer"],
 #t-brand:checked~.panel[data-t="brand"],
-#t-trust:checked~.panel[data-t="trust"]{display:block;animation:rise .4s both}
+#t-trust:checked~.panel[data-t="trust"]{display:block}
 #t-profile:checked~.tabbar label[data-t="profile"],
 #t-offer:checked~.tabbar label[data-t="offer"],
 #t-brand:checked~.tabbar label[data-t="brand"],
@@ -217,18 +189,9 @@ blockquote{border-left:2px solid var(--rule);padding-left:16px;font-style:italic
 .fieldnotes p{font-family:var(--mono);font-size:11.5px;line-height:1.8;letter-spacing:.02em;
   color:color-mix(in srgb,var(--paper) 62%,transparent);max-width:none}
 
-/* footer */
-.foot{padding:30px 0 38px;text-align:center}
-.foot p{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
-  color:color-mix(in srgb,var(--ink) 48%,var(--paper));line-height:2.1}
-.foot a{color:inherit}
 
-@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-@keyframes drawX{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important}}
 
 @media (max-width:760px){
-  .sheet{margin:0;padding:0 22px}
   .hero{margin:20px -22px 0;padding:34px 22px 38px}
   .hero-top{flex-direction:column}
   .caprec{text-align:left;min-width:0}
@@ -241,9 +204,6 @@ blockquote{border-left:2px solid var(--rule);padding-left:16px;font-style:italic
   .sec-peek{display:none}
 }
 @media print{
-  body{background:#fff}
-  .sheet{box-shadow:none;margin:0;max-width:none}
-  *{animation:none!important}
   .hero,.prov{print-color-adjust:exact;-webkit-print-color-adjust:exact}
   .tabbar{display:none}
   .panel{display:block!important}
