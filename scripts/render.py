@@ -337,18 +337,22 @@ def load_logomark(slug: str, fm: dict[str, Any], fetch: bool) -> str | None:
     return None
 
 
-def load_screenshot(slug: str) -> dict[str, str] | None:
-    """Latest captured homepage screenshot, sips-compressed to a sane embed size. Local-only."""
+def load_screenshot(slug: str, width: int = 1200) -> dict[str, str] | None:
+    """Latest captured homepage screenshot, sips-compressed to a sane embed size. Local-only.
+
+    width is the resample target: the brief embeds full-column (1200); the comparison sheet
+    shows N narrow specimens and passes something smaller so an N-up file stays AirDrop-able.
+    """
     shots = sorted(glob.glob(os.path.join(STORE, slug, "captures", "*", ".payloads", "homepage.png")))
     if not shots:
         return None
     src = shots[-1]
     cap_date = os.path.basename(os.path.dirname(os.path.dirname(src)))
     os.makedirs(IMGCACHE, exist_ok=True)
-    dst = os.path.join(IMGCACHE, f"{slug}-homepage.jpg")
+    dst = os.path.join(IMGCACHE, f"{slug}-homepage-{width}.jpg")
     if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
         r = subprocess.run(
-            ["sips", "--resampleWidth", "1200", "-s", "format", "jpeg",
+            ["sips", "--resampleWidth", str(width), "-s", "format", "jpeg",
              "-s", "formatOptions", "72", src, "--out", dst],
             capture_output=True)
         if r.returncode != 0:
