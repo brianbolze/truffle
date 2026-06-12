@@ -16,4 +16,5 @@ SCRIPTS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if SCRIPTS not in sys.path:  # sibling engine modules (store.py, offeringscheck.py) resolve from anywhere
     sys.path.insert(0, SCRIPTS)
 
-OUT = os.path.join(SCRIPTS, "_out", "briefs")
+ROOT = os.environ.get("WEB_RESEARCH_HOME") or os.path.dirname(SCRIPTS)
+OUT = os.path.join(ROOT, "_out", "briefs")  # the repo's one derived-artifacts root — never store/

@@ -19,7 +19,12 @@ venv/
 
 # Experiment scratch output (keep READMEs + scripts + FINDINGS, ignore bulk dumps)
 experiments/**/_out/
-# Derived SQLite lens — regenerable from the markdown, never source of truth (scripts/build_db.py)
-scripts/_out/
+# Derived artifacts root — briefs/sheets/index (scripts/present/) + store.db (scripts/build_db.py).
+# Regenerable lenses, never source of truth — and never inside store/ (the agent surface).
+_out/
+scripts/_out/  # legacy path — delete the dir after the 2026-06-12 demo
 # self-contained embedded-image sheets — bulk, regenerable from _out/
 experiments/**/contact-sheet.html
+
+# Temporary files
+_temp/

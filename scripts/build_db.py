@@ -51,7 +51,7 @@ from offeringscheck import SPINE_PREFIXES, parse_roster  # noqa: E402 — after 
 
 ROOT = os.environ.get("WEB_RESEARCH_HOME") or os.path.dirname(SCRIPTS)
 STORE = os.path.join(ROOT, "store")
-OUT = os.path.join(SCRIPTS, "_out")
+OUT = os.path.join(ROOT, "_out")
 
 # The capture-scope completeness signal (offerings.md frontmatter, schema 1.2; designed 2026-06-04). A fact
 # about the *capture*, not the company. Read defensively — anything off-list → `unknown`, so the lens never
@@ -487,7 +487,7 @@ def _summary(conn: sqlite3.Connection, n: dict[str, int]) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser(description="build the corpus-wide derived SQLite lens over the markdown store")
     ap.add_argument("--check", action="store_true", help="drift self-test: build in-memory and assert invariants (exit nonzero on drift)")
-    ap.add_argument("--db", default=os.path.join(OUT, "store.db"), help="output path (default: scripts/_out/store.db)")
+    ap.add_argument("--db", default=os.path.join(OUT, "store.db"), help="output path (default: _out/store.db)")
     args = ap.parse_args()
 
     if args.check:

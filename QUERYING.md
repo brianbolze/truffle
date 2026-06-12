@@ -10,7 +10,7 @@ A `/research-company` agent already paid to capture and structure each company, 
 |---|---|---|
 | **Locate** — does X appear, where, quote it verbatim | `rg` / `grep -r` (the whole corpus is ~100KB) | line-oriented and cheap; you want the raw text |
 | **Structure** — filter / group / aggregate / relate on frontmatter | **parse the YAML** (below) — never `grep \| uniq` | values carry inline `#` comments, and multi-selects aren't order-canonical (`[B2C, B2B]` ≠ `[B2B, B2C]`), so `grep \| uniq` silently fragments the count |
-| **Presentation** — hand a non-technical human a company brief | `python scripts/render.py <company>` → clickable local link to `scripts/_out/briefs/<slug>.html` | static, self-contained, and provenance renders with the artifact |
+| **Presentation** — hand a non-technical human a company brief | `python scripts/render.py <company>` → clickable local link to `_out/briefs/<slug>.html` | static, self-contained, and provenance renders with the artifact |
 | **External signal** — visibility, tenure, review profile, branded search trajectory, similar-site discovery | `tools/<source>.py` → JSON envelope, then match/diff/interpret above it | repeatable source capture with provenance beats one-off web search |
 
 The store is `store/<domain-slug>/`:
@@ -73,7 +73,7 @@ TH = {p.split("/")[1]: frontmatter(p) for p in glob.glob("store/*/telehealth.md"
 ```
 Closed sets live in [`TELEHEALTH.md`](TELEHEALTH.md), not here. **`unclear`/empty is "looked, couldn't tell," not "no"** — a sparse pack (a platform/lab) honestly leaves cuts blank, so check before reporting a within-cohort negative. **Cross-company comparison is computed here, at query time** — it's never stored in the pack (a baked "one of only two who…" rots when the cohort grows; that's the anti-reconciliation line). Judgments (threat/fit) aren't in the pack at all — they're a consumer-side read over it.
 
-**7. Corpus lens + cohort aggregation — SQLite.** When a question wants *many* one-off pivots at once — *"who sells semaglutide anywhere in the corpus?", "semaglutide SKUs by `pharmacy_model`", "who gates vs. publishes", or just browse-and-sort the store in a GUI* — rebuild before reading: `python scripts/build_db.py && python scripts/build_db.py --check`. It writes the stable, gitignored cache at `scripts/_out/store.db`. The markdown store remains source of truth; the database is the rung-3 derived lens, regenerated on demand.
+**7. Corpus lens + cohort aggregation — SQLite.** When a question wants *many* one-off pivots at once — *"who sells semaglutide anywhere in the corpus?", "semaglutide SKUs by `pharmacy_model`", "who gates vs. publishes", or just browse-and-sort the store in a GUI* — rebuild before reading: `python scripts/build_db.py && python scripts/build_db.py --check`. It writes the stable, gitignored cache at `_out/store.db`. The markdown store remains source of truth; the database is the rung-3 derived lens, regenerated on demand.
 
 It's deliberately **scoped + fenced** so it can't hand back a fast, clean, *confident-wrong* answer:
 - **Counts read through `enumeration`, never naked** (Recipe 4's count-trust rule, built into the schema). Every `sku_count` rides beside the `enumeration` cut, and `catalog_breadth` renders a `lines-omitted` count as `≥N (floor)` and an `unknown` one as `N (unverified)` — only an `indexed-complete` count is a bare number safe to rank on.
