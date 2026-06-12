@@ -40,6 +40,14 @@ Rendered all three from current master, no changes yet. Pre-render state notes:
 | 10 | Index easier to find in the folder | **done** (ece3c4d) | Output renamed `00-index.html`; stale `index.html` deleted |
 | 11 | Clear the corpus-index BACKLOG item | **done (uncommitted)** | Item removed from BACKLOG.md; left uncommitted so Brian's pending BACKLOG/.gitignore edits ride with his own commit |
 
+## Round 4 — 2026-06-12 (demo morning): refactor + chrome
+
+| # | Note (Brian, verbatim-ish) | Triage | Resolution |
+|---|---------------------------|--------|------------|
+| 8 | Layer grew by accretion; here to stay — organize, one style home, keep AirDrop | **done** (024d576, ba4feed, c8c9f2f) | `scripts/present/` package (model/assets/md/theme + css files + one module per view); icons.py retired; derived root → top-level `_out/`. Acceptance: all 10 artifacts byte-identical pre/post split |
+| 9 | Chrome reads "over-designed" — wife: "a pretty layer on top"; but don't overcorrect into AI slop | **done** (7de16ab) | Theater out (desk/shadow/grain/crops/animations); house voice kept (paper page, double-rule masthead, mono labels, doc numbers, brand dressing). Principle added to the design doc. Brian = visual QA |
+| 10 | Agent-condensed copy: in-frame, skills-approach, keep light | **next iteration** | Renderer reads cached condensed copy if present, falls back verbatim — per design doc; not built pre-demo |
+
 ## Deferred until after the meeting (post-Scott)
 
 - (per BACKLOG) Reorder for a brand-strategy reader — voice/positioning *leading the

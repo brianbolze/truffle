@@ -53,6 +53,11 @@ consistent quiet zone the technical reader knows to find. Engine vocabulary ("sc
 - **Curated cardinality.** Agents get a composable query surface; humans get a *small set of
   opinionated views*, each earned by a real human ask. This layer must never become "a query
   language, but HTML."
+- **Chrome serves content.** The engine's own dress stays quiet — the demo dry-run read the
+  paper-prop styling (desk, shadow, grain, crop marks) as "just a pretty layer on top," so the
+  theater is out. Equally, quiet ≠ generic: the warm paper, mono labels, and editorial masthead
+  are the house voice, and the *company's* captured identity provides the character. If the
+  chrome is the first thing a reader mentions, it has failed.
 
 ### The vow
 
