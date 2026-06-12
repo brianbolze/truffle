@@ -28,9 +28,8 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
   The brief's first external human (Scott Witt / Parlance) values language extraction, competitor patterns, and visual signals; check whether briefs lead with voice + positioning or with classification fields, and reorder only if the fix is small. Yardstick: lands with a creative director in 5 seconds.
   **Act when:** after the 06-12 meeting — let Scott's actual reactions pick the changes; don't pre-polish.
 
-- **Cross-company comparison view** `[idea]` `[parked]`
-  "Compare X and Y" today = two brief links + chat synthesis, and that's right: a side-by-side artifact drags in exactly the cross-company price/unit normalization judgments the store refuses to hold; cohort SQL covers the structured case.
-  **Act when:** a human consumer asks for the side-by-side twice (rule of two) — and then intra-cohort only.
+- **Cross-company comparison view — `compare.py`** `[shipped 2026-06-12]`
+  Brian called it ahead of the rule of two, for the Scott demo (the "what does this do that chat + WebSearch can't" gap). [`scripts/compare.py`](scripts/compare.py) renders 2-6 companies as one specimen sheet — lens bands (lineup on own grounds / verbatim voice / palette + cohort spectrum / type / audience / offer posture / field specimens / clocks), reusing `render.extract_model`. The normalization judgment that parked it stays designed out: **no prices cross companies** — money renders only as price-visibility posture (`published`/`partial`/`on-request`, closed set). Intra-cohort use still the intent.
 
 ### Schema & taxonomy decisions
 

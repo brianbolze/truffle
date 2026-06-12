@@ -29,7 +29,7 @@ Rendered all three from current master, no changes yet. Pre-render state notes:
 | 4 | Positioning + target audience not prominent enough for a brand strategist | **done** (b1d8ddc) | "Positioning & audience" promoted to slot 2, open by default |
 | 5 | Wife demo: 20+ s to answer "tell me about Parlance" + render | **done (renderer's share)** (b17f0af) | `--all` pre-warm flag; remaining latency is agent synthesis, not render.py — demo choreography: pre-render before the meeting |
 | 6 | Wife demo: "so what / what can't Claude do alone" — built a presentation layer? | **done** (259ec68) | Brian called the gate → `render.py --index` built: 101 companies, per-layer clocks, stat band, links to briefs. The demo opener |
-| 7 | Immersion-phase + comparison value didn't come across | **post-Scott / parked** | Comparison view stays parked per BACKLOG rule-of-two; wife demo ≠ second human ask |
+| 7 | Immersion-phase + comparison value didn't come across | **done** (464b3b6) | Brian overrode the rule-of-two park on 06-12 (demo morning): `compare.py` specimen sheet shipped — lineup/voice/color/type/audience/posture/specimens bands; prices never normalized, posture only |
 
 ## Round 3 — 2026-06-10 (index pass)
 
