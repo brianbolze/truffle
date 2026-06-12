@@ -60,6 +60,7 @@ def _quote_px(q: str) -> int:
 
 # ---------------------------------------------------------------- per-company cells
 
+
 def _posture(off: dict[str, Any] | None) -> Counter:
     c: Counter = Counter()
     if off:
@@ -69,6 +70,29 @@ def _posture(off: dict[str, Any] | None) -> Counter:
                 if v in ("published", "partial", "on-request"):
                     c[v] += 1
     return c
+
+
+_FAMILY_TOKEN = re.compile(r"\[(published|partial|on-request)\]")
+
+
+def _family_posture(section: str) -> Counter:
+    """Price-visibility at family grain, for companies with no per-SKU roster.
+
+    SCHEMA's visibility token is universal on profile offer lines, so the sheet can
+    still show *how openly priced* a company is — it just can't claim roster size.
+    """
+    return Counter(m.group(1) for m in _FAMILY_TOKEN.finditer(section))
+
+
+def _posture_bar(pc: Counter) -> tuple[str, str]:
+    """The stacked visibility bar + its legend — shared by roster and family grain."""
+    seg = "".join(
+        f'<i class="seg-{k}" style="flex:{v}" title="{v} {k}"></i>'
+        for k, v in (("published", pc["published"]), ("partial", pc["partial"]), ("on-request", pc["on-request"]))
+        if v
+    )
+    leg = " / ".join(f"{v} {k}" for k, v in pc.most_common())
+    return seg, leg
 
 
 def _mark_html(m: dict[str, Any]) -> str:
@@ -83,8 +107,10 @@ def _mark_html(m: dict[str, Any]) -> str:
             inner = f'<img src="{logo["data"]}" style="height:{height}px;width:auto;max-width:100%" alt="{esc(m["name"])}">'
         return f'<span class="plate">{inner}</span>' if logo["plate"] else inner
     size = 26 if len(m["name"]) <= 14 else 19
-    return (f'<span style="font-family:{m["fonts"]["display"]};font-size:{size}px;font-weight:600;'
-            f'color:{m["pal"]["hero_accent"]}">{esc(m["name"])}</span>')
+    return (
+        f'<span style="font-family:{m["fonts"]["display"]};font-size:{size}px;font-weight:600;'
+        f'color:{m["pal"]["hero_accent"]}">{esc(m["name"])}</span>'
+    )
 
 
 def _hue_key(hexcode: str) -> tuple[float, float]:
@@ -95,11 +121,14 @@ def _hue_key(hexcode: str) -> tuple[float, float]:
 
 # ---------------------------------------------------------------- bands
 
+
 def _band(no: int, title: str, sub: str, cells: list[str], n: int, extra: str = "") -> str:
     grid = "".join(f'<div class="cell">{c}</div>' for c in cells)
-    return (f'<section class="band"><div class="rail"><span class="rno">{no:02d}</span>'
-            f'<span class="rtitle">{esc(title)}</span><span class="rsub">{esc(sub)}</span></div>'
-            f'<div class="cells" style="grid-template-columns:repeat({n},1fr)">{grid}</div>{extra}</section>')
+    return (
+        f'<section class="band"><div class="rail"><span class="rno">{no:02d}</span>'
+        f'<span class="rtitle">{esc(title)}</span><span class="rsub">{esc(sub)}</span></div>'
+        f'<div class="cells" style="grid-template-columns:repeat({n},1fr)">{grid}</div>{extra}</section>'
+    )
 
 
 def render_compare(models: list[dict[str, Any]]) -> str:
@@ -111,7 +140,7 @@ def render_compare(models: list[dict[str, Any]]) -> str:
     fonts_css.append(scaffold)
     for m in models:  # each model's css repeats the scaffold prefix; keep only the company faces
         fcss = m["fonts"]["css"]
-        fonts_css.append(fcss[len(scaffold):] if scaffold and fcss.startswith(scaffold) else fcss)
+        fonts_css.append(fcss[len(scaffold) :] if scaffold and fcss.startswith(scaffold) else fcss)
 
     # 01 lineup — each mark on its own captured ground
     lineup = []
@@ -119,16 +148,20 @@ def render_compare(models: list[dict[str, Any]]) -> str:
         pal = m["pal"]
         lineup.append(
             f'<div class="ground" style="background:{pal["hero_bg"]};color:{pal["hero_fg"]}">{_mark_html(m)}</div>'
-            f'<div class="who"><b>{esc(m["name"])}</b><span>{esc(m["domain"])}</span></div>')
+            f'<div class="who"><b>{esc(m["name"])}</b><span>{esc(m["domain"])}</span></div>'
+        )
 
     # 02 voice
     voice = []
     for m in models:
         qs = harvest_voice(m["sections"], [m["name"], *m["aliases"]])
         if qs:
-            voice.append("".join(
-                f'<p class="q" style="font-family:{m["fonts"]["display"]};font-size:{_quote_px(q)}px">'
-                f'&ldquo;{esc(q)}&rdquo;</p>' for q in qs))
+            voice.append(
+                "".join(
+                    f'<p class="q" style="font-family:{m["fonts"]["display"]};font-size:{_quote_px(q)}px">&ldquo;{esc(q)}&rdquo;</p>'
+                    for q in qs
+                )
+            )
         else:
             voice.append(f'<p class="q fallback">{esc(_truncate(m["description"], 110))}</p>')
 
@@ -141,22 +174,28 @@ def render_compare(models: list[dict[str, Any]]) -> str:
         stripes = "".join(f'<i style="background:{s["hex"]}" title="{esc(s["key"])} {s["hex"]}"></i>' for s in sw)
         labels = " · ".join(s["hex"] for s in sw)
         scheme = m["pal"]["scheme"] or "—"
-        color.append(f'<div class="stripes">{stripes}</div><div class="hexes">{esc(labels)}</div>'
-                     f'<div class="hexes">{esc(scheme)} scheme</div>')
-    spectrum = "".join(f'<i style="background:{h}" title="{esc(who)} {h}"></i>'
-                       for h, who in sorted(all_sw, key=lambda t: _hue_key(t[0])))
-    spectrum_html = (f'<div class="spectrum"><span class="label">cohort spectrum — every captured color, by hue</span>'
-                     f'<div class="stripes">{spectrum}</div></div>')
+        color.append(
+            f'<div class="stripes">{stripes}</div><div class="hexes">{esc(labels)}</div><div class="hexes">{esc(scheme)} scheme</div>'
+        )
+    spectrum = "".join(f'<i style="background:{h}" title="{esc(who)} {h}"></i>' for h, who in sorted(all_sw, key=lambda t: _hue_key(t[0])))
+    spectrum_html = (
+        f'<div class="spectrum"><span class="label">cohort spectrum — every captured color, by hue</span>'
+        f'<div class="stripes">{spectrum}</div></div>'
+    )
 
     # 04 type
     typo = []
     for m in models:
         specs = m["fonts"]["specs"]
         if specs:
-            typo.append("".join(
-                f'<div class="face"><span class="ag" style="font-family:{sp["css"]}">Ag</span>'
-                f'<span class="fmeta"><b>{esc(sp["name"])}</b>{sp["role"]} · {sp["class"]}'
-                f'{"" if sp["embedded"] else " · substituted"}</span></div>' for sp in specs[:2]))
+            typo.append(
+                "".join(
+                    f'<div class="face"><span class="ag" style="font-family:{sp["css"]}">Ag</span>'
+                    f'<span class="fmeta"><b>{esc(sp["name"])}</b>{sp["role"]} · {sp["class"]}'
+                    f"{'' if sp['embedded'] else ' · substituted'}</span></div>"
+                    for sp in specs[:2]
+                )
+            )
         else:
             typo.append('<p class="none">typefaces not captured</p>')
 
@@ -176,49 +215,61 @@ def render_compare(models: list[dict[str, Any]]) -> str:
         off = m["offerings"]
         if off:
             pc = _posture(off)
-            seg = "".join(
-                f'<i class="seg-{k}" style="flex:{v}" title="{v} {k}"></i>'
-                for k, v in (("published", pc["published"]), ("partial", pc["partial"]),
-                             ("on-request", pc["on-request"])) if v)
-            leg = " / ".join(f"{v} {k}" for k, v in pc.most_common())
+            seg, leg = _posture_bar(pc)
             count = f"≥{off['buyable']}" if off["enumeration"] == "lines-omitted" else str(off["buyable"])
-            offer.append(f'<div class="vitals">{esc(vitals)}</div>'
-                         f'<div class="big">{count}<small> SKUs · {off["families"]} lines</small></div>'
-                         f'<div class="bar">{seg}</div><div class="leg">{esc(leg) or "no visibility tokens"}</div>')
+            offer.append(
+                f'<div class="vitals">{esc(vitals)}</div>'
+                f'<div class="big">{count}<small> SKUs · {off["families"]} lines</small></div>'
+                f'<div class="bar">{seg}</div><div class="leg">{esc(leg) or "no visibility tokens"}</div>'
+            )
+        elif fp := _family_posture(m["sections"].get("what they offer", "")):
+            seg, leg = _posture_bar(fp)
+            offer.append(
+                f'<div class="vitals">{esc(vitals)}</div>'
+                f'<div class="big">{sum(fp.values())}<small> offer lines · family grain</small></div>'
+                f'<div class="bar">{seg}</div><div class="leg">{esc(leg)} · no per-SKU roster</div>'
+            )
         else:
-            offer.append(f'<div class="vitals">{esc(vitals)}</div>'
-                         '<p class="none">family-level capture — no per-SKU roster</p>')
+            offer.append(f'<div class="vitals">{esc(vitals)}</div><p class="none">family-level capture — no per-SKU roster</p>')
 
     # 07 field specimens
     spec = []
     for m in models:
         s = m["screenshot"]
-        spec.append(f'<div class="shot"><img src="{s["data"]}" alt="{esc(m["name"])} homepage, as captured">'
-                    f'<span class="cap">{esc(s["date"])}</span></div>' if s
-                    else '<p class="none">no specimen captured</p>')
+        spec.append(
+            f'<div class="shot"><img src="{s["data"]}" alt="{esc(m["name"])} homepage, as captured">'
+            f'<span class="cap">{esc(s["date"])}</span></div>'
+            if s
+            else '<p class="none">no specimen captured</p>'
+        )
 
     # 08 provenance (dark)
     prov = []
     for m in models:
         age = f"{m['age']}d ago" if m["age"] is not None else "age unknown"
-        prov.append(f'<b>{esc(m["captured_at"] or "undated")}</b><span>{age} · {esc(m["method"] or "—")}</span>'
-                    f'<a href="{esc(m["slug"])}.html">full brief →</a>')
+        prov.append(
+            f"<b>{esc(m['captured_at'] or 'undated')}</b><span>{age} · {esc(m['method'] or '—')}</span>"
+            f'<a href="{esc(m["slug"])}.html">full brief →</a>'
+        )
     prov_cells = "".join(f'<div class="cell">{c}</div>' for c in prov)
 
     names = " · ".join(m["name"] for m in models)
     docno = f"WR/{today.replace('-', '')}/COMPARE·{n}"
-    accents = "".join(
-        f'.cells .cell:nth-child({i + 1})::before{{background:{m["pal"]["accent"]}}}' for i, m in enumerate(models))
+    accents = "".join(f".cells .cell:nth-child({i + 1})::before{{background:{m['pal']['accent']}}}" for i, m in enumerate(models))
 
-    css_vars = (f":root{{--paper:{PAPER};--ink:{INK};"
-                f"--rule:color-mix(in srgb,{INK} 16%,{PAPER});"
-                "--mono:'DM Mono',ui-monospace,'SF Mono',Menlo,monospace;"
-                "--body:'Source Serif 4','Iowan Old Style',Palatino,Georgia,serif}}")
+    css_vars = (
+        f":root{{--paper:{PAPER};--ink:{INK};"
+        f"--rule:color-mix(in srgb,{INK} 16%,{PAPER});"
+        "--mono:'DM Mono',ui-monospace,'SF Mono',Menlo,monospace;"
+        "--body:'Source Serif 4','Iowan Old Style',Palatino,Georgia,serif}}"
+    )
     # The sheet's width, the per-column accent ticks, and the provenance grid all depend on N —
     # they're the only style computed here; everything static is css/compare.css.
-    dyn_css = (f".sheet{{{{max-width:{min(1680, 230 + 300 * n)}px}}}}\n{accents}\n"
-               f".prov .grid{{{{grid-template-columns:108px repeat({n},1fr)}}}}\n"
-               f"@media (max-width:900px){{{{.prov .grid{{{{grid-template-columns:repeat({n},minmax(150px,1fr));overflow-x:auto}}}}}}}}")
+    dyn_css = (
+        f".sheet{{{{max-width:{min(1680, 230 + 300 * n)}px}}}}\n{accents}\n"
+        f".prov .grid{{{{grid-template-columns:108px repeat({n},1fr)}}}}\n"
+        f"@media (max-width:900px){{{{.prov .grid{{{{grid-template-columns:repeat({n},minmax(150px,1fr));overflow-x:auto}}}}}}}}"
+    )
     sheet_css = css("base") + css("compare")
 
     bands = [
