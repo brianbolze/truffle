@@ -21,8 +21,8 @@ def render_index_html(rows: list[dict[str, Any]], fonts: dict[str, Any]) -> str:
     css_vars = (
         f":root{{--paper:{PAPER};--ink:{INK};"
         f"--rule:color-mix(in srgb,{INK} 16%,{PAPER});"
-        f"--accent:#4A4438;--accent-dark:#C9BFA8;"
-        f"--hero-bg:{INK};--hero-fg:{PAPER};--hero-accent:#C9BFA8;"
+        f"--accent:#4D4C47;--accent-dark:#B8B5AD;"
+        f"--hero-bg:{INK};--hero-fg:{PAPER};--hero-accent:#B8B5AD;"
         f"--display:{fonts['display']};--body:{fonts['body']};--mono:{fonts['mono']}}}"
     )
     base_css, view_css = css("base") + css("brief"), css("index")

@@ -10,8 +10,8 @@ from __future__ import annotations
 
 import os
 
-PAPER = "#F5F1E8"
-INK = "#1B1813"
+PAPER = "#FAF9F6"
+INK = "#1D1C1A"
 
 _CSS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "css")
 

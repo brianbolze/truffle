@@ -110,7 +110,7 @@ def palette(brand_colors: dict[str, str] | None, color_scheme: str | None) -> di
         accent = most_sat if _contrast(most_sat, PAPER) >= 3.0 else _darken_until(most_sat, PAPER)
         accent_on_dark = most_sat if _contrast(most_sat, INK) >= 2.6 else hero_accent
     else:
-        accent, accent_on_dark = "#4A4438", "#C9BFA8"
+        accent, accent_on_dark = "#4D4C47", "#B8B5AD"
 
     return {
         "swatches": swatches, "scheme": color_scheme or "",
@@ -193,8 +193,8 @@ def _google_css(family: str, axes: str | None, fetch: bool) -> str | None:
 def build_fonts(company_fonts: list[str], fetch: bool) -> dict[str, Any]:
     """Scaffold faces (Newsreader + Fragment Mono) + the company's own faces where embeddable."""
     css_parts: list[str] = []
-    scaffold_serif = _google_css("Newsreader", "ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400", fetch)
-    scaffold_mono = _google_css("Fragment Mono", None, fetch)
+    scaffold_serif = _google_css("Source Serif 4", "ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400", fetch)
+    scaffold_mono = _google_css("DM Mono", "wght@400;500", fetch)
     if scaffold_serif:
         css_parts.append(scaffold_serif)
     if scaffold_mono:
@@ -213,13 +213,13 @@ def build_fonts(company_fonts: list[str], fetch: bool) -> dict[str, Any]:
             "role": "display" if i == 0 else "body",
         })
 
-    display = specs[0]["css"] if specs else f"'Newsreader',{SERIF_STACK}"
+    display = specs[0]["css"] if specs else f"'Source Serif 4',{SERIF_STACK}"
     return {
         "css": "\n".join(css_parts),
         "specs": specs,
         "display": display,
-        "body": f"'Newsreader',{SERIF_STACK}",
-        "mono": f"'Fragment Mono',{MONO_STACK}",
+        "body": f"'Source Serif 4',{SERIF_STACK}",
+        "mono": f"'DM Mono',{MONO_STACK}",
     }
 
 

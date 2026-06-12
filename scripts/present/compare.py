@@ -212,8 +212,8 @@ def render_compare(models: list[dict[str, Any]]) -> str:
 
     css_vars = (f":root{{--paper:{PAPER};--ink:{INK};"
                 f"--rule:color-mix(in srgb,{INK} 16%,{PAPER});"
-                "--mono:'Fragment Mono',ui-monospace,'SF Mono',Menlo,monospace;"
-                "--body:'Newsreader','Iowan Old Style',Palatino,Georgia,serif}}")
+                "--mono:'DM Mono',ui-monospace,'SF Mono',Menlo,monospace;"
+                "--body:'Source Serif 4','Iowan Old Style',Palatino,Georgia,serif}}")
     # The sheet's width, the per-column accent ticks, and the provenance grid all depend on N —
     # they're the only style computed here; everything static is css/compare.css.
     dyn_css = (f".sheet{{{{max-width:{min(1680, 230 + 300 * n)}px}}}}\n{accents}\n"
