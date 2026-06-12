@@ -47,6 +47,7 @@ Rendered all three from current master, no changes yet. Pre-render state notes:
 | 8 | Layer grew by accretion; here to stay — organize, one style home, keep AirDrop | **done** (024d576, ba4feed, c8c9f2f) | `scripts/present/` package (model/assets/md/theme + css files + one module per view); icons.py retired; derived root → top-level `_out/`. Acceptance: all 10 artifacts byte-identical pre/post split |
 | 9 | Chrome reads "over-designed" — wife: "a pretty layer on top"; but don't overcorrect into AI slop | **done** (7de16ab) | Theater out (desk/shadow/grain/crops/animations); house voice kept (paper page, double-rule masthead, mono labels, doc numbers, brand dressing). Principle added to the design doc. Brian = visual QA |
 | 10 | Agent-condensed copy: in-frame, skills-approach, keep light | **next iteration** | Renderer reads cached condensed copy if present, falls back verbatim — per design doc; not built pre-demo |
+| 11 | Chrome colors + fonts still too opinionated — but not AI-slop either | **done** (fe16c4f) | Source Serif 4 + DM Mono scaffold, paper `#FAF9F6`, ink `#1D1C1A`, engine accent → graphite. One edit point (theme/assets); company identity untouched |
 
 ## Deferred until after the meeting (post-Scott)
 
