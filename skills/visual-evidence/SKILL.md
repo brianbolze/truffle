@@ -58,7 +58,7 @@ Assemble the **active tile list** (all kept tile paths, repo-relative) and the *
 Workflow({ scriptPath: "skills/visual-evidence/mine.workflow.js",
            args: { slug: "<slug>", tiles: [<active tile paths>], exclusions: [{path, reason}] } })
 ```
-It returns `accepted_cards` (with ids), `rejected_cards`, and judge `notes`. The miners/judge inherit the session model — that's the core perception, earned, not a default.
+It returns `accepted_cards` (with ids), `rejected_cards`, and judge `notes`. The four miners default to **Sonnet** — it holds Opus's calibration even on the dark-gradient seduction case at ~⅕ the per-token cost ([experiment](../../experiments/2026-06-14-visual-miner-model-calibration/FINDINGS.md)); override with a `minerModel` arg. The **judge inherits the session model** (Opus on an Opus session) — the cross-family prune/merge is the higher-reasoning step, and it absorbs Sonnet's chattier output.
 
 **4. Synthesize + write `store/<slug>/visual.md`** per [`modules/VISUAL.md`](../../modules/VISUAL.md):
 - Frontmatter: `schema_version: "1.0"`, `domain`, `captured_at` (today), `source_capture` (the capture date), `qa_status` (from step 2).

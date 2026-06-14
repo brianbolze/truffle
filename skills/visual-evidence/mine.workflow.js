@@ -86,7 +86,12 @@ if (typeof input === 'string') {
 }
 const tiles = (input && input.tiles) || []
 const tileList = tiles.map((t) => `- ${t}`).join('\n')
-log(`received ${tiles.length} tiles (args was ${typeof args})`)
+// Miners default to Sonnet: it holds Opus's calibration even on the dark-gradient seduction case at
+// ~1/5 the per-token cost (experiments/2026-06-14-visual-miner-model-calibration). Override via
+// minerModel. The judge is left to inherit the session model — the higher-reasoning prune/merge step.
+const minerModel = (input && input.minerModel) || 'sonnet'
+const minerOpts = { model: minerModel }
+log(`received ${tiles.length} tiles (args was ${typeof args}), miners → ${minerModel}`)
 if (!tiles.length) {
   return { accepted_cards: [], rejected_cards: [], notes: 'no active tiles' }
 }
@@ -102,7 +107,7 @@ const mined = await parallel(
         `Each card: family="${f.key}", polarity, page_or_region, tile_path (one listed path), ` +
         `claim (one calibrated sentence a reader can verify in that tile), visible_tells (≥1 concrete tell), ` +
         `confidence. Optional contrast_with: another listed tile path on the same site.`,
-      { label: `mine:${f.key}`, phase: 'Mine', schema: MINER_SCHEMA },
+      { label: `mine:${f.key}`, phase: 'Mine', schema: MINER_SCHEMA, ...minerOpts },
     ),
   ),
 )

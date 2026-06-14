@@ -1,0 +1,1627 @@
+{
+  "logs": [
+    "A/B miner calibration on 18 goinfusive-com tiles",
+    "\u25b8 running dynamic workflow visual-evidence-mine",
+    "[visual-evidence-mine] received 18 tiles (args was object), miners \u2192 sonnet",
+    "[visual-evidence-mine] mined 54 raw cards across 4/4 families",
+    "\u25b8 visual-evidence-mine done",
+    "sonnet run done: 54 raw cards, 30 accepted, ~36225 out tokens",
+    "\u25b8 running dynamic workflow visual-evidence-mine",
+    "[visual-evidence-mine] received 18 tiles (args was object), miners \u2192 opus",
+    "[visual-evidence-mine] mined 55 raw cards across 4/4 families",
+    "\u25b8 visual-evidence-mine done",
+    "opus run done: 55 raw cards, 38 accepted, ~42705 out tokens"
+  ],
+  "result": {
+    "sonnet": {
+      "tokens_out": 36225,
+      "raw_count": 54,
+      "accepted_count": 30,
+      "rejected_count": 26,
+      "raw_polarity_by_family": {
+        "typography_hierarchy": {
+          "strong": 4,
+          "mixed": 5,
+          "poor": 4
+        },
+        "layout_composition_components": {
+          "strong": 3,
+          "mixed": 7,
+          "poor": 4
+        },
+        "color_brand_imagery": {
+          "strong": 6,
+          "mixed": 6,
+          "poor": 2
+        },
+        "iconography_illustration": {
+          "strong": 1,
+          "mixed": 6,
+          "poor": 6
+        }
+      },
+      "raw_cards": [
+        {
+          "family": "typography_hierarchy",
+          "polarity": "mixed",
+          "page_or_region": "homepage hero",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The hero deploys three distinct weight levels \u2014 bold display for the primary headline, spaced caps for the subhead label, and regular-weight body \u2014 but the mid-tier subhead ('WE HANDLE EVERYTHING:') fights the headline rather than supporting it, because its all-caps tracking reads nearly as loud as the display text above it.",
+          "visible_tells": [
+            "Bold mixed-case headline at ~60px",
+            "All-caps spaced tracking on subhead at similar visual weight",
+            "Regular-weight sentence case body below at much smaller size"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "strong",
+          "page_or_region": "homepage hero CTA area",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The CTA button ('UNLOCK YOUR GROWTH POTENTIAL') and the trust-line beneath it ('Trusted By Leading Wellness Clinics Nationwide') are correctly sized relative to each other \u2014 button label sits mid-hierarchy and the trust line drops to a clearly subordinate small weight \u2014 showing deliberate size stepping at the bottom of the hero.",
+          "visible_tells": [
+            "Button label in caps at readable mid-size",
+            "Trust line in noticeably smaller regular weight below"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "poor",
+          "page_or_region": "homepage profit-leaks section (bottom of tile-00, top of tile-01)",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-01-y01220.png",
+          "claim": "The section heading ('Uncover the Hidden Profit Leaks\u2026') repeats the hero's bold display size and purple-on-dark colour treatment without reduction, so the page never visually steps down from hero pitch to supporting content \u2014 every section screams at equal volume.",
+          "visible_tells": [
+            "Large bold two-line heading in the same colour and weight as the hero headline",
+            "No visible size reduction from hero to this section head"
+          ],
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "mixed",
+          "page_or_region": "homepage 'INFUSIVE' brand section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-01-y01220.png",
+          "claim": "The brand name 'INFUSIVE' in large spaced caps functions as a section heading, followed by a purple italic subhead and then regular body paragraphs \u2014 three levels are present and distinguishable \u2014 but the spaced-caps treatment is decorative rather than informational, making this feel like a logotype dropped mid-page rather than a section anchor.",
+          "visible_tells": [
+            "'INFUSIVE' in large tracked caps acts as H2",
+            "Purple italic line below as subhead",
+            "Regular-weight body paragraphs beneath"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "strong",
+          "page_or_region": "homepage 'Is your clinic ready' section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "claim": "This section shows the clearest three-level hierarchy on the homepage: a large regular-weight question as the H2, a medium bold statement as H3, and small regular labels on the feature cards below \u2014 each level is visually distinct and proportionally stepped.",
+          "visible_tells": [
+            "Large light-weight question headline at top",
+            "Smaller bold subtitle beneath",
+            "Small sentence-case card labels at bottom tier"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "poor",
+          "page_or_region": "homepage 'The Only Supply Chain' section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-03-y03660.png",
+          "claim": "Within a single heading, multiple weight and style treatments are applied ('The Only', 'Built For Wellness Clinics', 'By Industry Insiders') creating fragmentation rather than hierarchy \u2014 the eye has no single anchor and the sentence must be re-read to parse the intended stress.",
+          "visible_tells": [
+            "Three weight/style variants within one heading span",
+            "Bold and regular alternating mid-sentence without a structural break"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "mixed",
+          "page_or_region": "homepage 'How It Works' section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-05-y06100.png",
+          "claim": "The three-card step section ('Apply / Onboard / Grow') uses a consistent card-heading weight and matching body-copy size, which is internally coherent \u2014 but the section-level heading 'How It Works' barely differs in size from the card titles, compressing the scale and reducing the sense of entry into a new content zone.",
+          "visible_tells": [
+            "'How It Works' heading not substantially larger than card-level 'Apply', 'Onboard', 'Grow' labels",
+            "Card body copy at same apparent size as section intro"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "strong",
+          "page_or_region": "homepage newsletter sign-up block",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "claim": "The newsletter block achieves the site's clearest hierarchy in a small area: a bold display heading ('Stay Ahead of the Chaos'), a medium-weight subtitle ('Join the Infusive Insider Newsletter'), a small regular descriptor line, and even smaller bulleted body \u2014 four readable levels in one compact zone.",
+          "visible_tells": [
+            "Bold display heading at largest size",
+            "Semi-bold subtitle one step smaller",
+            "Descriptor and bullet body at clearly smaller regular weight"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "poor",
+          "page_or_region": "platform page sticky navigation tabs",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "claim": "The sticky tab bar ('Seamless Ordering & Vendor Control', 'Direct Pharmacy Integration', etc.) uses white regular-weight text on purple with no size differentiation between the active and inactive tabs \u2014 the typographic system provides no visual feedback about position in the content, forcing the reader to read every label to locate themselves.",
+          "visible_tells": [
+            "All tab labels at identical size and weight",
+            "No bold, underline, or size shift on the active tab",
+            "Tab bar text occupies same visual rank as body copy below it"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "mixed",
+          "page_or_region": "platform page feature sections (Inventory Management System)",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-03-y03660.png",
+          "claim": "Feature sections follow a repeating H2 + italic H3 + body pattern that is legible, but the italic subhead ('Know exactly what you have. Use every dollar wisely.') sits so close in size to the H2 that differentiation relies almost entirely on italics alone \u2014 a fragile distinction especially at small viewport sizes.",
+          "visible_tells": [
+            "H2 and italic H3 differ by only a few pixels in apparent size",
+            "Differentiation collapses to italic vs. roman with minimal size step"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "strong",
+          "page_or_region": "platform page closing CTA",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-07-y08540.png",
+          "claim": "The closing 'Built for Wellness. Designed for Scale.' block correctly uses a large bold display line, a smaller regular-weight explanatory sentence, and a clearly subordinate italic tagline below \u2014 three levels that step down cleanly and read well over a dark background.",
+          "visible_tells": [
+            "Large bold heading at top",
+            "Smaller regular body sentence in the middle",
+            "Smallest italic summary line at bottom"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "poor",
+          "page_or_region": "platform page body copy over photography",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-02-y02440.png",
+          "claim": "Where body copy sits against a desaturated photography bleed (the vendor ordering section), white regular-weight text at small size has insufficient contrast against the mid-tone grey image areas \u2014 legibility relies on luck of the background crop rather than any typographic or overlay decision.",
+          "visible_tells": [
+            "Small regular white body text against mid-grey photographic background",
+            "No scrim, vignette, or background-lock visible behind the paragraph text"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "mixed",
+          "page_or_region": "platform page 'What You Get with Infusive' tab section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "claim": "The 'What You Get with Infusive' section heading is displayed in a clean, moderately-sized semi-bold treatment that stands above the tab row \u2014 this one instance where the section label genuinely outranks the navigation below it \u2014 but the gap to the tab bar is so tight that the heading reads almost as part of the interface rather than an editorial section marker.",
+          "visible_tells": [
+            "Section label 'What You Get with Infusive' in semi-bold above tabs",
+            "Minimal vertical breathing room between label and tab bar compresses the hierarchy"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "mixed",
+          "page_or_region": "Homepage hero",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The hero arranges headline, product screenshot, and testimonial card in a loose three-element composition that works at a glance, but the floating quote card clips awkwardly against the screen mockup with no deliberate overlap logic.",
+          "visible_tells": [
+            "testimonial card overlaps laptop mockup without clear z-layer intention",
+            "center-weighted headline above a left-aligned screenshot creates mild axis tension"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "poor",
+          "page_or_region": "Homepage \u2014 logo marquee / social proof bar",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The partner logo strip is single-row and runs off the right edge with no fade or containment, producing a visually broken strip rather than a polished carousel or contained grid.",
+          "visible_tells": [
+            "logos bleed past the right viewport edge with no gradient mask",
+            "mixed logo sizes \u2014 some large wordmarks next to small icons \u2014 creating uneven visual weight"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "mixed",
+          "page_or_region": "Homepage \u2014 lead-capture form section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-01-y01220.png",
+          "claim": "The inline name/email + CTA form is neatly contained in a single horizontal row, but the section below it switches to a hard left-aligned large wordmark and body copy with no shared left margin discipline between the two zones.",
+          "visible_tells": [
+            "form inputs and CTA button are flush and consistent in height",
+            "the 'INFUSIVE' all-caps block below starts at a noticeably different left inset than the form above it"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "strong",
+          "page_or_region": "Homepage \u2014 problem/before section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "claim": "The before-state layout places a video/image panel on the left and a clean vertical stack of four icon-plus-label cards on the right, with consistent internal padding and even inter-item spacing across all four rows.",
+          "visible_tells": [
+            "four pain-point rows are identically spaced with icon, text, and right-border all aligned",
+            "left panel and right stack share a common vertical midpoint"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "mixed",
+          "page_or_region": "Homepage \u2014 product feature split with laptop mockup",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-03-y03660.png",
+          "claim": "The two-column benefit-card flanking arrangement around a centred laptop mockup is a recognisable SaaS pattern executed competently, but the background bleed from a previous section (blurred figure) sits unresolved behind the laptop, muddying the composition.",
+          "visible_tells": [
+            "purple/blue background photographic bleed visible behind left and right benefit cards",
+            "benefit cards use rounded-rect containers with consistent padding but differ slightly in text density"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "strong",
+          "page_or_region": "Homepage \u2014 'The result?' four-icon grid",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-04-y04880.png",
+          "claim": "The four-up outcome icon grid inside the light card maintains uniform column widths, equal icon sizes, and consistent caption alignment, making it the tightest component on the homepage.",
+          "visible_tells": [
+            "four columns are evenly distributed with no ragged right edge",
+            "icon, bold label, and body text in each column share identical vertical rhythm"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "mixed",
+          "page_or_region": "Homepage \u2014 'How It Works' three-step cards",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-05-y06100.png",
+          "claim": "The three numbered step cards share a consistent rounded-rect shell and equal widths, but card 2 ('Onboard') renders significantly taller than cards 1 and 3, breaking the horizontal baseline alignment.",
+          "visible_tells": [
+            "card 2 bottom edge sits lower than cards 1 and 3",
+            "step number badges are consistent but the photo heights inside each card differ"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "poor",
+          "page_or_region": "Homepage \u2014 vendor logo wall",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "claim": "The vendor logo wall uses two rows of logos at wildly inconsistent sizes with no normalisation to a common optical height, making the grid read as an unedited dump rather than a curated partner display.",
+          "visible_tells": [
+            "'Baxter' wordmark is roughly 3x the visual weight of adjacent logos like 'McGuff'",
+            "rows have different numbers of logos causing visual imbalance between row 1 and row 2"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "mixed",
+          "page_or_region": "Homepage \u2014 newsletter CTA block",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "claim": "The newsletter section pairs a decorative book mockup with a benefit list and form in a two-column layout, and the internal rhythm is clean, but the book graphic and text column are not vertically centred against each other.",
+          "visible_tells": [
+            "book mockup sits higher than the midpoint of the text block beside it",
+            "form fields and CTA button align consistently at the same height"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "poor",
+          "page_or_region": "Platform \u2014 sticky tab nav",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "claim": "The persistent horizontal feature-tab navigation appears twice in the same tile \u2014 once as a full-width purple band and once partially shown below as a redundant repeat \u2014 suggesting the sticky bar and a static instance are stacking without proper z-index or layout containment.",
+          "visible_tells": [
+            "two identical tab bars visible within the same viewport slice",
+            "second instance appears cropped at the bottom edge, confirming an overlap or duplicate render"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "mixed",
+          "page_or_region": "Platform \u2014 feature detail sections (Ordering / Pharmacy / Inventory)",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-02-y02440.png",
+          "claim": "Each feature section follows the same two-column pattern (body copy left, screenshot right) giving the page predictable rhythm, but the split proportions shift between sections \u2014 sometimes 40/60, sometimes closer to 50/50 \u2014 undermining the grid's authority.",
+          "visible_tells": [
+            "Ordering section shows a narrow text column beside a wide screenshot",
+            "Pharmacy Integration section shows text and image at near-equal widths in the adjacent scroll position"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "strong",
+          "page_or_region": "Platform \u2014 compliance four-icon feature row",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-06-y07320.png",
+          "claim": "The 'Built-In 797 Compliance' four-card icon row is the most precisely constructed component on the platform page: uniform card widths, a common icon size and position, and headline copy that breaks consistently across all four.",
+          "visible_tells": [
+            "four rounded-rect cards share identical width and internal top-padding",
+            "icon placement is pixel-consistent in each card's upper region"
+          ],
+          "confidence": "high",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "poor",
+          "page_or_region": "Platform \u2014 section density across scroll",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-04-y04880.png",
+          "claim": "Content density is inconsistent: sections with large data-table screenshots crowd the viewport edge while adjacent text-only sections have generous whitespace, with no consistent outer margin or content-width container holding the two treatments to the same width.",
+          "visible_tells": [
+            "table screenshot extends nearly edge-to-edge of the tile",
+            "text column beside it has substantial left padding that does not match the table's left edge"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "mixed",
+          "page_or_region": "Platform \u2014 footer CTA",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-09-y10287.png",
+          "claim": "The footer CTA reuses the same newsletter layout block (book mockup + form) from the homepage without adaptation, producing a competent but clearly templated repeat rather than a purposefully designed page-specific close.",
+          "visible_tells": [
+            "identical two-column book-plus-form block appears in both the homepage footer and here",
+            "same body copy cadence and button style, confirming a component paste rather than a new composition"
+          ],
+          "confidence": "high",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-07-y08063.png"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "strong",
+          "page_or_region": "Homepage hero",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The brand commits to a narrow deep-purple-to-violet palette and holds it consistently across the hero background, nav bar, and primary CTA button, establishing clear palette discipline from the first visible pixel.",
+          "visible_tells": [
+            "Dark near-black purple fills the entire hero background",
+            "Nav and logo sit on the same dark purple field with no contrast bleed",
+            "Primary CTA 'Apply Now' uses a bright magenta-pink accent that is the only warm departure \u2014 one controlled accent, not a scattered rainbow"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "strong",
+          "page_or_region": "Homepage hero \u2014 background graphic",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The hero uses a bespoke animated-wave graphic in purple and violet rather than a stock photo or generic gradient, giving the brand a distinct, owned visual texture.",
+          "visible_tells": [
+            "Layered translucent wave forms rendered in purple-to-pink tones fill the right two-thirds of the hero",
+            "The graphic is clearly rendered/generative rather than a photograph or off-the-shelf vector pack"
+          ],
+          "confidence": "high",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-05-y06100.png"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "strong",
+          "page_or_region": "Homepage \u2014 CTA sections",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-04-y04880.png",
+          "claim": "The same wave-mesh graphic reappears as a full-bleed CTA band, demonstrating that the bespoke texture is treated as a repeating brand asset rather than a one-off hero flourish.",
+          "visible_tells": [
+            "Purple mesh/wave graphic fills the mid-page CTA band identically in character to the hero",
+            "Magenta-outlined pill button is reused verbatim from the hero accent"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "mixed",
+          "page_or_region": "Homepage \u2014 'How It Works' section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-05-y06100.png",
+          "claim": "The three step-cards use recognisable stock clinic photography (smiling professional in scrubs at a desk, video-call screen, group consultation) that is contextually on-theme but visually generic and not shot-to-match the purple brand palette.",
+          "visible_tells": [
+            "Card 1 shows a woman in blue scrubs at a desk \u2014 standard healthcare stock framing",
+            "Card 2 shows a laptop video-call \u2014 generic tech-meets-health composition",
+            "Card 3 shows a group meeting in natural daylight \u2014 warm tones that sit outside the purple system"
+          ],
+          "confidence": "high",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "mixed",
+          "page_or_region": "Homepage \u2014 founders / closing section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-07-y08063.png",
+          "claim": "The founder photo is a real, natural-light portrait placed on the purple brand background, which partially integrates it, but the image has an assembled feel (cutout figures, no colour grading to match the palette) rather than a purpose-shot brand image.",
+          "visible_tells": [
+            "Two men photographed against a light background, appearing composited onto the dark purple section",
+            "No purple tone-mapping or duotone treatment applied to the portrait \u2014 it reads as a lifted headshot"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "mixed",
+          "page_or_region": "Platform page \u2014 vendor/pharmacy section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-02-y02440.png",
+          "claim": "Background photography of clinic staff leaks through as a faded dark overlay, blending with the purple palette reasonably well, but the technique (dark-overlay-on-stock-photo) is a common shortcut rather than a considered brand image choice.",
+          "visible_tells": [
+            "Desaturated photo of people looking at a device visible through heavy dark overlay in left portion",
+            "The same Acer laptop prop visible in adjacent section confirms this is a pool of generic tech/clinic imagery"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "strong",
+          "page_or_region": "Platform page \u2014 sticky nav tabs",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "claim": "The horizontal feature-tab navigation uses the magenta-pink accent as the active-state color and dark purple as the inactive field, demonstrating that the two-tone accent system is wired into interactive UI chrome, not just decorative surfaces.",
+          "visible_tells": [
+            "Active tab ('Direct Pharmacy Integration') is rendered in vivid magenta-pink on white text",
+            "Inactive tabs are dark-purple-on-white, completing a controlled two-state system"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "poor",
+          "page_or_region": "Homepage \u2014 vendor logo strip",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "claim": "The vendor logo marquee renders partner logos in their native mixed black-and-white form against the dark purple background without any colour-normalisation treatment, producing a visually inconsistent strip that breaks palette discipline.",
+          "visible_tells": [
+            "McKesson, Baxter, Wells Pharmacy, and others appear in raw black/dark logotype \u2014 some near-invisible on the dark ground",
+            "No white-knockout or tinted treatment applied to unify them"
+          ],
+          "confidence": "high",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "mixed",
+          "page_or_region": "Homepage \u2014 'Before' pain-point section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "claim": "A stock photo of a clinician looking stressed in a supply-room is used to illustrate the 'before' pain state; the image reads as lifted stock (standard healthcare frustration pose) rather than a curated brand shot, though it is appropriately thematic.",
+          "visible_tells": [
+            "Professional in white coat with hand on head surrounded by shelves of medical supplies \u2014 textbook 'stressed clinician' stock composition",
+            "A 'Before' label is overlaid to contextualise its use"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "strong",
+          "page_or_region": "Homepage \u2014 newsletter / lead magnet",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "claim": "The newsletter 'book' mockup uses the purple-to-pink gradient system as its cover treatment, extending the palette to a physical/product asset rather than reserving it for screen surfaces only.",
+          "visible_tells": [
+            "Book cover shows purple-to-magenta gradient with white text \u2014 matching the site's primary palette exactly",
+            "The 'Infusive' wordmark appears on the cover, anchoring it as a brand artifact"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "mixed",
+          "page_or_region": "Platform page \u2014 compliance section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-06-y07320.png",
+          "claim": "Icon illustrations in the compliance feature tiles use a mixed treatment \u2014 some are outlined in purple/magenta, some appear closer to neutral grey \u2014 without a visually consistent icon color system.",
+          "visible_tells": [
+            "Four feature icons visible across the compliance row show variation in saturation and stroke weight",
+            "No uniform tint or backdrop shape unifies them as a set"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "strong",
+          "page_or_region": "Homepage \u2014 section transition shapes",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "claim": "Section dividers use a custom curved/pointed shape cutout in the brand purple rather than a flat horizontal rule or simple gradient fade, showing that the brand system extends to micro-layout transitions.",
+          "visible_tells": [
+            "Top of tile shows a downward-pointing chevron-style purple shape cutting into the white section below",
+            "The same motif appears at the bottom of the tile entering the next purple section"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "poor",
+          "page_or_region": "Platform page \u2014 product UI screenshots",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-04-y04880.png",
+          "claim": "Embedded product-UI screenshots show a predominantly white/grey admin interface that sits in hard contrast to the surrounding deep-purple brand surfaces, with no attempt to frame or tint the UI to soften the disconnect.",
+          "visible_tells": [
+            "White-background data table screenshot placed against the dark purple page background creates an abrupt light island",
+            "No device-frame colour treatment or shadow blending is applied to ease the transition"
+          ],
+          "confidence": "high",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "mixed",
+          "page_or_region": "Platform page \u2014 patient management section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-07-y08540.png",
+          "claim": "Background photography of a clinician working with a patient is desaturated and overlaid with dark purple, which is a consistent technique across the site but is so uniformly applied that it flattens visual interest and makes all background photography interchangeable.",
+          "visible_tells": [
+            "Section background shows a near-silhouette image of two people \u2014 the purple overlay is heavy enough that the figures are barely distinguishable",
+            "The same dark-overlay treatment used in at least three other sections produces visual monotony rather than variety"
+          ],
+          "confidence": "medium",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-07-y08063.png"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "mixed",
+          "page_or_region": "homepage \u2014 feature list row",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "claim": "The four problem-state icons (vendor accounts, pricing, allocation, disruptions) share a consistent outline-circle framing and stroke weight, but the glyphs inside are generic stock-library shapes with no custom character.",
+          "visible_tells": [
+            "circular purple border is uniform across all four icons",
+            "inner glyphs (chain-link, price tag, grid, globe) are recognizable stock shapes with no site-specific design",
+            "stroke weight and fill color are consistent \u2014 system exists but is not distinctive"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "mixed",
+          "page_or_region": "homepage \u2014 'The result?' benefit row",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-04-y04880.png",
+          "claim": "The four benefit icons (growth chart, shield/peace, handshake, clock) use the same framing system as the problem row above, maintaining visual rhythm, but all four glyphs are recognizable off-the-shelf metaphors with no custom illustration.",
+          "visible_tells": [
+            "identical circular outline treatment carried across rows",
+            "hockey-stick chart, handshake, and clock are among the most ubiquitous SaaS icon metaphors",
+            "no evidence of a custom-drawn icon set \u2014 frames are the system, not the glyphs"
+          ],
+          "confidence": "high",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-06-y07320.png"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "poor",
+          "page_or_region": "platform \u2014 '797 Compliance' feature grid",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-06-y07320.png",
+          "claim": "The four compliance-feature icons (document, clipboard, training badge, audit report) reuse the same circular-outline shell with generic clip-art glyphs, and at this smaller render size the inner detail collapses to unreadable blobs.",
+          "visible_tells": [
+            "icons appear at roughly 40\u201348px apparent size and inner shapes are indistinct",
+            "clipboard and document glyphs are interchangeable at this scale",
+            "no visual differentiation between the four concepts beyond label text"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "poor",
+          "page_or_region": "platform \u2014 feature tabs nav bar",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "claim": "The sticky-nav tab icons serving as section labels are rendered at a size where they become illegible decorations, undermining their function as wayfinding anchors.",
+          "visible_tells": [
+            "icons in the horizontal tab bar are approximately 16px apparent size",
+            "individual glyphs cannot be distinguished from one another in the tab strip",
+            "active-tab icon is indistinguishable from inactive icons except by color of label text"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "strong",
+          "page_or_region": "platform \u2014 hero section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png",
+          "claim": "The laptop product render in the hero is cleanly composited with a perspective-matched UI screenshot inside the frame, giving it the appearance of a deliberate product mockup rather than a raw flat screenshot.",
+          "visible_tells": [
+            "laptop frame is dark and proportionally credible",
+            "UI screenshot inside tracks the screen angle \u2014 no obvious keystone warp or misalignment",
+            "overall mockup reads as intentional product photography replacement, not a stock device image with mismatched content"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "mixed",
+          "page_or_region": "homepage \u2014 hero section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "A second laptop mockup in the homepage hero contains a recognizable UI screenshot and a floating testimonial card, but the compositing has soft edges and the product UI at this resolution is too small to evaluate as a design asset.",
+          "visible_tells": [
+            "laptop device frame is present and color-matched to the purple palette",
+            "testimonial card floats to the right and is legible",
+            "UI content inside the laptop is a data table rendered too small to assess craft"
+          ],
+          "confidence": "medium",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "poor",
+          "page_or_region": "homepage \u2014 'How It Works' step cards",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-05-y06100.png",
+          "claim": "The three process steps replace icon illustration entirely with stock photography thumbnails inside rounded-rectangle cards, a choice that avoids the icon quality problem but provides no iconography craft evidence at all.",
+          "visible_tells": [
+            "cards show photos of a nurse at a desk, a video-call screen, and a clinic team \u2014 all stock imagery",
+            "no custom icon or illustration represents the Apply/Onboard/Grow steps",
+            "numbered circle badges (1, 2, 3) are the only graphic mark, styled as plain filled circles"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "poor",
+          "page_or_region": "homepage \u2014 newsletter lead-magnet",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "claim": "The 'Stay Ahead of the Chaos' book-cover mockup is a simple purple rectangle with typeset text \u2014 no custom illustration, pattern, or graphic element distinguishes it as designed collateral.",
+          "visible_tells": [
+            "book cover is a flat purple-to-pink gradient with white type only",
+            "no illustration, icon, or texture appears on the cover face",
+            "the mockup itself (three-quarter-view book with shadow) is the only graphic craft here"
+          ],
+          "confidence": "high",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-08-y09760.png"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "mixed",
+          "page_or_region": "platform \u2014 inventory management section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-03-y03660.png",
+          "claim": "The inventory section uses small UI-screenshot panels as illustration rather than icons or diagrams, which is a reasonable product-page convention but produces graphic elements that are too small and low-contrast to read as intentional data visualizations.",
+          "visible_tells": [
+            "two mini UI panels show tabular data and a chart but at ~120px width the content is unreadable",
+            "no annotation or callout overlays help decode what the screenshots show",
+            "the panels are not framed or highlighted \u2014 they blend into the dark background"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "mixed",
+          "page_or_region": "platform \u2014 feature grid, second row",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png",
+          "claim": "The eight-feature grid (Seamless Ordering through Aligned Patient Care) deploys the same circular icon system as the homepage, confirming a deliberate cross-page icon grammar, though glyph quality remains generic.",
+          "visible_tells": [
+            "icons appear in purple-bordered circles matching homepage style exactly",
+            "eight slots use the same shell \u2014 system is consistent, not accidental",
+            "glyphs visible include a shopping-cart, integration symbol, and bar-chart \u2014 all stock metaphors"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "poor",
+          "page_or_region": "platform \u2014 reporting & analytics section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-04-y04880.png",
+          "claim": "The reporting section shows a laptop with a data table screenshot but no custom chart graphics, diagram, or annotated visualization \u2014 the data promise is not backed by illustrated evidence of the reporting experience.",
+          "visible_tells": [
+            "laptop screen shows a plain tabular list with row data, no charts",
+            "a small circular highlight (magnified detail) appears around a cell but adds no clarity at this resolution",
+            "no sparklines, bar charts, or trend graphics appear in the section claiming 'Insight-Driven Reporting'"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "poor",
+          "page_or_region": "platform \u2014 financial integration section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-05-y06100.png",
+          "claim": "A wide data-table screenshot stands in for any diagram or illustration of the financial integration feature, and at this render width the table rows are unreadable text, providing no visual evidence of the product's analytical sophistication.",
+          "visible_tells": [
+            "table spans nearly full width but text in rows is ~8px apparent size",
+            "no callouts, highlights, or annotations direct the eye to meaningful data",
+            "section heading promises 'real-time financial visibility' but the illustration is a raw data dump"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "mixed",
+          "page_or_region": "platform \u2014 background decorative element",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-04-y04880.png",
+          "claim": "The wave/mesh network graphic used as a section-break background (visible in the CTA divider) is a recognizable stock 3D particle-mesh asset, not custom illustration, but it is consistently applied as a brand atmosphere element across sections.",
+          "visible_tells": [
+            "purple particle-wave spans full width behind the CTA",
+            "the same waveform appears in the homepage hero and at least one additional section divider",
+            "asset reads as a purchased or downloaded 3D render \u2014 no unique visual signature"
+          ],
+          "confidence": "high",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png"
+        }
+      ],
+      "rejected_cards": [
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "reason": "CTA-vs-trust-line size-stepping card (typography, strong) flatters generic competence \u2014 a button bigger than a trust line is baseline, no distinctive tell. Cut."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-01-y01220.png",
+          "reason": "'INFUSIVE' brand-section three-level card (typography, mixed) overlaps the kept profit-leaks and INFUSIVE-left-margin cards; its 'logotype dropped mid-page' read is interpretive with no verifiable hierarchy failure. Cut as low-value."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "reason": "Redundant with kept typography_03 for the same 'Is your clinic ready' section \u2014 would duplicate without a new tell. (This is the strong three-level card, kept; the duplicate framing is dropped.)"
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-05-y06100.png",
+          "reason": "'How It Works' heading-vs-card-title compression card (typography, mixed) is a faint, hard-to-verify size claim; the section's clearer issue (card photo heights) is already captured in layout_05. Cut to avoid weak duplication."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-03-y03660.png",
+          "reason": "Italic-H3-too-close-to-H2 card (typography, mixed) rests on a 'few pixels' distinction not reliably verifiable in the tile; speculative ('fragile at small viewport'). Cut."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-02-y02440.png",
+          "reason": "White-text-on-photo contrast card (typography, mixed) \u2014 body copy in this tile sits on solid purple, not on the photographic bleed; the cited legibility failure is not visible. Reject."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "reason": "'What You Get with Infusive' section-label card (typography, mixed) \u2014 the tight-gap-to-tab-bar claim is interpretive and the label/tab relationship is already covered by the kept tab-bar cards. Cut."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-01-y01220.png",
+          "reason": "Lead-capture-form left-margin card (layout, mixed) \u2014 the claimed differing left inset between form and 'INFUSIVE' block is not clearly visible; both read as centered/near-aligned. Weak tell, reject."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-03-y03660.png",
+          "reason": "Laptop-flanked benefit-card split card (layout, mixed) \u2014 the 'unresolved background bleed muddies composition' is a soft taste read; the SaaS-pattern observation flatters competence. Cut."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "reason": "Newsletter book-vs-text vertical-centering card (layout, mixed) \u2014 minor alignment nitpick, lower value than the kept reuse and logo-wall cards on the same/adjacent tiles. Cut."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-02-y02440.png",
+          "reason": "Feature-section split-ratio-shift card (layout, mixed) \u2014 the 40/60-vs-50/50 claim spans non-adjacent scroll positions and is not verifiable within one tile. Reject."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-04-y04880.png",
+          "reason": "Section-density inconsistency card (layout, poor) \u2014 overlaps the kept color_08 light-island observation on the same tile and is a vaguer container-width claim. Cut as duplicative."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "reason": "Bespoke-wave-graphic standalone card (color, strong) merged into kept color_02, which covers the wave in both hero and CTA band. Redundant alone."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-04-y04880.png",
+          "reason": "Wave-as-CTA-band standalone card (color, strong) merged into color_02. Redundant."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "reason": "'Before' stressed-clinician stock-photo card (color, mixed) \u2014 accurate but a single generic stock-photo observation already represented by the broader stock/overlay cards (color_03, color_09); low marginal value. Cut."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-02-y02440.png",
+          "reason": "Vendor/pharmacy dark-overlay-photo card (color, mixed) \u2014 duplicates the kept color_09 uniform-overlay observation; same technique, no new tell. Merge/cut."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "reason": "Newsletter book-cover gradient-as-product card (color, strong) \u2014 thin; the book artifact's brand role is incidental and the palette-discipline point is already carried by color_01. Cut."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-06-y07320.png",
+          "reason": "Compliance-icon mixed-tint card (color, mixed) \u2014 the claimed saturation/stroke variation is not clearly visible at this size; icons read as a uniform set. Overlaps iconography_02. Reject."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-04-y04880.png",
+          "reason": "Result-row icons standalone card (iconography, mixed) merged into kept iconography_01, which covers both the problem row and the matching result row. Redundant."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "reason": "Tab-bar icons-illegible card (iconography, poor) \u2014 tab icons are barely present in the tile and the wayfinding point is already made by typography_06 and layout_07. Low-value duplicate. Cut."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "reason": "Homepage hero laptop-mockup card (iconography, mixed) \u2014 its own tell admits the UI is 'too small to assess craft'; the credible-mockup point is better carried by iconography_03 on the platform hero. Cut."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "reason": "Newsletter book-cover-no-illustration card (iconography, poor) \u2014 flat purple rectangle with type is not meaningful iconography evidence; vague absence-of-craft. Reject."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-03-y03660.png",
+          "reason": "Inventory mini-UI-panels-as-illustration card (iconography, mixed) \u2014 'too small to read' UI screenshots are a capture/scale limitation, not assessable iconography craft. Reject."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-04-y04880.png",
+          "reason": "Reporting-section no-custom-chart card (iconography, poor) \u2014 about content/feature evidence ('data promise not backed') more than visual craft; the screenshot is unreadable at scale (capture caveat). Reject."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-05-y06100.png",
+          "reason": "Financial-integration unreadable-table card (iconography, poor) \u2014 duplicates the platform/tile-04 reporting complaint and rests on ~8px text legibility, a scale/capture limitation. Reject."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-04-y04880.png",
+          "reason": "Wave-as-stock-3D-asset card (iconography, mixed) \u2014 duplicates the wave coverage in color_02 and asserts 'purchased stock' which is not verifiable from the tile (the wave reads as rendered/owned). Cut."
+        }
+      ]
+    },
+    "opus": {
+      "tokens_out": 42705,
+      "raw_count": 55,
+      "accepted_count": 38,
+      "rejected_count": 18,
+      "raw_polarity_by_family": {
+        "typography_hierarchy": {
+          "strong": 4,
+          "mixed": 6,
+          "poor": 4
+        },
+        "layout_composition_components": {
+          "strong": 5,
+          "mixed": 5,
+          "poor": 4
+        },
+        "color_brand_imagery": {
+          "strong": 5,
+          "mixed": 6,
+          "poor": 3
+        },
+        "iconography_illustration": {
+          "strong": 3,
+          "mixed": 6,
+          "poor": 4
+        }
+      },
+      "raw_cards": [
+        {
+          "family": "typography_hierarchy",
+          "polarity": "mixed",
+          "page_or_region": "homepage hero headline",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The hero headline leans on bold weight inside a sentence (\"Easily Scale\", \"ZERO\") rather than a clear size jump to mark emphasis, so hierarchy reads as weight-toggling within one line instead of distinct levels.",
+          "visible_tells": [
+            "\"Easily Scale\" set in heavy bold beside lighter \"Your Wellness Clinic\" at the same point size",
+            "\"ZERO\" set in all-caps bold mid-sentence as the only differentiator"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "poor",
+          "page_or_region": "homepage hero subhead",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The all-caps tracked subhead \"WE HANDLE EVERYTHING:\" set over a busy purple particle field is low-contrast and strains legibility, with the caption \"Trusted by Leading Wellness Clinics\" nearly dissolving into the background.",
+          "visible_tells": [
+            "all-caps light-weight subhead competing with mottled hero texture",
+            "faint grey \"Trusted by\" caption barely separating from the dark band"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "poor",
+          "page_or_region": "homepage section dividers",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-01-y01220.png",
+          "claim": "Repeated section headlines (\"Uncover the Hidden Profit Leaks\") are rendered in a saturated magenta-on-dark-purple that sits near the contrast floor, making the largest type on the page harder to read than smaller body copy.",
+          "visible_tells": [
+            "two-line magenta headline glowing low-contrast against deep purple",
+            "white body line below it reads more cleanly than the heading above"
+          ],
+          "confidence": "high",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "mixed",
+          "page_or_region": "homepage \"Is your clinic ready\" section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "claim": "This section shows a workable three-level structure (white H2, smaller white deck, then card labels) but the levels are close in size so the step-down reads as faint rather than confident.",
+          "visible_tells": [
+            "\"Is your clinic ready to scale...\" H2 only modestly larger than \"Running a clinic shouldn't feel like firefighting\" deck",
+            "card row labels (\"Unstable pricing\") at near-body size with little weight contrast"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "mixed",
+          "page_or_region": "homepage \"Only Supply Chain\" headline",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-03-y03660.png",
+          "claim": "The dark headline over a light panel reads cleanly, but emphasis again relies on bolding scattered words (\"Only\", \"Built For Wellness Clinics\") inside the sentence rather than a separate display level.",
+          "visible_tells": [
+            "bold black phrases interleaved with grey regular weight in the same headline",
+            "subhead \"What You Get with Infusive:\" set in small bold caps below"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "strong",
+          "page_or_region": "homepage \"How It Works\" cards",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "claim": "The three-step cards establish a clear, legible hierarchy: large numerals \"1/2/3\", bold step labels (\"Apply\", \"Onboard\", \"Grow\"), then smaller readable body, each level cleanly separated.",
+          "visible_tells": [
+            "large light numerals top-right of each card",
+            "bold white \"Apply/Onboard/Grow\" labels over photo, then smaller grey paragraph"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "poor",
+          "page_or_region": "homepage vendor logo wall labels",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "claim": "The \"A blackbook of relationships, access & leverage\" tagline and \"Our Vendor Network\" heading sit over a dark photographic band at low contrast, where the magenta subline is markedly harder to read than the white heading above it.",
+          "visible_tells": [
+            "magenta italic-weight tagline dimmed against dark image",
+            "centered white H2 partly overlapping a face in the background photo"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "mixed",
+          "page_or_region": "homepage newsletter block",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-07-y08063.png",
+          "claim": "The newsletter block stacks a clear large heading and magenta sub-heading, but the bulleted list relies on inline bold lead-ins (\"Growth Playbooks\", \"Supply Chain Stability\") for hierarchy rather than a distinct list-label level.",
+          "visible_tells": [
+            "\"Stay Ahead of the Chaos\" large heading over \"Join the Infusive Insider Newsletter\" magenta subhead",
+            "three bullets where only the first 2-3 words are bold, rest regular at the same size"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "strong",
+          "page_or_region": "platform hero headline",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png",
+          "claim": "The platform hero presents a clean two-level hierarchy: a large light-weight serif-feeling headline (\"The Only Software Built For Wellness Practices\") above smaller grey body with a single bolded close, holding contrast well over the dark right panel.",
+          "visible_tells": [
+            "large two-line headline with generous leading at upper right",
+            "smaller multi-line grey deck below, last phrase bolded for closure"
+          ],
+          "confidence": "high",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "poor",
+          "page_or_region": "platform sticky section-nav bar",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "claim": "The persistent multi-tab nav bar packs seven small all-caps labels (\"Seamless Ordering\", \"Direct Pharmacy Integration\", etc.) across colored cells at near-uniform tiny size, crowding the strip with low size variation and tight legibility.",
+          "visible_tells": [
+            "seven equal-weight two-line caption labels jammed edge to edge",
+            "several labels wrap to two lines within their narrow colored cells"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "mixed",
+          "page_or_region": "platform feature-card grid",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png",
+          "claim": "The feature cards use a consistent label-plus-body pattern (magenta bold title, grey body) that is orderly, but the magenta card titles over dark purple sit at modest contrast and read as decorative rather than crisply legible.",
+          "visible_tells": [
+            "card titles like \"Seamless Ordering & Vendor Control\" in magenta on dark card",
+            "uniform small grey body paragraphs beneath each title"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "strong",
+          "page_or_region": "platform \"Inventory Management System\" section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-03-y03660.png",
+          "claim": "This section shows a confident, legible step-down: large white H2, a bold white tagline, then smaller centered grey deck, each level clearly differentiated in size and weight on a dark ground.",
+          "visible_tells": [
+            "\"Inventory Management System\" large white heading",
+            "bold \"Know exactly what you have...\" tagline above smaller grey explanatory line"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "mixed",
+          "page_or_region": "platform \"Reporting & Analytics\" section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-04-y04880.png",
+          "claim": "The section heading collides with the sticky nav bar and a laptop mockup, leaving \"Reporting & Analytics\" partly overlapped so the top hierarchy level is visually broken at this scroll position.",
+          "visible_tells": [
+            "\"Reporting & Analytics\" heading clipped behind the colored tab strip",
+            "checklist body copy fully legible while the heading above it is obscured"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "typography_hierarchy",
+          "polarity": "strong",
+          "page_or_region": "platform \"Built for Wellness\" closing band",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-07-y08540.png",
+          "claim": "The closing statement holds a clear three-level rhythm over imagery: large bold \"Built for Wellness. Designed for Scale.\" headline, lighter centered body, then a bold one-line call \"Streamline operations. Strengthen margins. Scale with confidence.\"",
+          "visible_tells": [
+            "large bold white headline centered over photographic band",
+            "lighter two-line body then a bold summary line, each distinct in weight"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "mixed",
+          "page_or_region": "homepage hero (top fold)",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The hero stacks a centered headline, sub-line, a floating dashboard mock with an attached testimonial card, a pill CTA, and a logo strip into one fold, producing a busy, top-heavy composition rather than a calm focal hierarchy.",
+          "visible_tells": [
+            "Two centered text blocks, a laptop/dashboard image, an overlaid purple testimonial card, a pill CTA, and a logo row all crammed above the next section divider",
+            "Testimonial card overlaps the right edge of the dashboard mock instead of sitting in its own column"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "poor",
+          "page_or_region": "homepage logo strip ('Trusted by Leading Wellness Clinics')",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The trust-logo row mixes wildly different logo weights and sizes with uneven horizontal spacing, so the strip reads as ragged rather than a normalized, optically-balanced lockup.",
+          "visible_tells": [
+            "'REMEDY' set far larger than neighbors like 'hydrate' and 'pause'",
+            "Inconsistent gaps between marks; some logos nearly touch while others have wide gutters",
+            "Last logo on the right is clipped at the tile edge"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "mixed",
+          "page_or_region": "homepage lead-capture form section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-01-y01220.png",
+          "claim": "The inline Name/Email/CTA form is horizontally aligned and the two inputs share a consistent rounded-rect style, but the gradient submit pill is noticeably taller than the input fields, breaking the row's baseline.",
+          "visible_tells": [
+            "Name and Email inputs are equal height and aligned",
+            "'REVEAL MY HIDDEN PROFIT LEAKS' pill sits taller and rounder than the inputs beside it"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "strong",
+          "page_or_region": "homepage 'Is your clinic ready to scale' pain-point list",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "claim": "The four pain-point rows form a clean repeated component system: equal-width pills, consistent icon-left/label-right alignment, and even vertical spacing in a tidy stacked column.",
+          "visible_tells": [
+            "Four rows ('Juggling 10+ vendor accounts', 'Unstable pricing', 'Allocation nightmares', 'Sudden supply disruptions') share identical pill width and corner radius",
+            "Each icon sits in the same left position with the label baseline aligned across rows"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "mixed",
+          "page_or_region": "homepage 'What You Get' benefit columns flanking laptop",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-03-y03660.png",
+          "claim": "The section uses a symmetric three-column layout (benefit chips left, laptop center, benefit chips right) but the laptop's screenshot UI is rendered at a scale where its internal text is illegible, weakening the centerpiece.",
+          "visible_tells": [
+            "Left and right purple benefit chips mirror each other around the centered laptop",
+            "The 'CREATE PURCHASE ORDER' UI inside the laptop screen is too small to read its rows/labels"
+          ],
+          "confidence": "medium",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-04-y04880.png"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "strong",
+          "page_or_region": "homepage 'The result?' four-icon benefit row",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-04-y04880.png",
+          "claim": "The four-up outcome row (Hockey-stick growth / Peace of mind / Stability & trust / Time back) is evenly distributed with consistent line-icon-over-heading-over-caption structure across all four cells.",
+          "visible_tells": [
+            "Four columns share equal width and centered icon-title-body stacking",
+            "Line icons are drawn in a matching stroke weight and size"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "strong",
+          "page_or_region": "homepage 'How It Works' three-step cards",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-05-y06100.png",
+          "claim": "The Apply/Onboard/Grow cards are a disciplined three-card system with equal dimensions, matching numbered badges, consistent image-over-heading-over-copy order, and even gutters.",
+          "visible_tells": [
+            "Three cards of identical width/height with numbered circles (1, 2, 3) in the same top-right position",
+            "Each card stacks a photo, a bold step label, and body copy in the same arrangement"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "poor",
+          "page_or_region": "homepage 'Our Vendor Network' partner logo wall",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "claim": "The vendor logo wall is poorly composited over a busy photo background, with the top row of logos clipped at the tile edge and marks at inconsistent sizes, so it reads as an untidy overlay rather than a structured grid.",
+          "visible_tells": [
+            "Top logo row is sliced off at the upper edge ('MPOWER', partial marks)",
+            "Logos float over a faint product-screenshot/photo with low contrast",
+            "McKesson, ProRx, Baxter, Wells set at visibly different scales in the lower row"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "mixed",
+          "page_or_region": "homepage newsletter ('Stay Ahead of the Chaos') section",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-07-y08063.png",
+          "claim": "The newsletter block uses a competent two-column layout (book mockup left, headline/bullets/form right) with aligned inputs, but the same section appears duplicated across adjacent tiles, suggesting redundant repetition in the page rhythm.",
+          "visible_tells": [
+            "Left book image balanced against right-column copy and an inline Name/Email/Subscribe form",
+            "The identical 'Stay Ahead of the Chaos' newsletter block recurs in tile-08 of the platform page"
+          ],
+          "confidence": "medium",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-08-y09760.png"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "strong",
+          "page_or_region": "platform 'Everything Your Clinic Needs' four feature cards",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png",
+          "claim": "The four feature cards sit on a consistent grid with equal width, matching icon badges, and uniform heading-over-body structure, showing a coherent repeated component system.",
+          "visible_tells": [
+            "Four equal-width rounded cards (Seamless Ordering / Direct Pharmacy / Intelligent Inventory / Insight-Driven Reporting) with same corner radius",
+            "Each card carries an outlined icon in an identical top badge position"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "mixed",
+          "page_or_region": "platform second feature row (tile-01) \u2014 3 cards vs prior 4",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "claim": "The second feature row drops to three cards beneath a first row of four, leaving the grid visually unbalanced (a hanging fourth-column gap) rather than maintaining a consistent column count.",
+          "visible_tells": [
+            "Row of three cards (Real-Time Financial Insights / Automatic 797 Compliance / Aligned Patient Care) under a four-card row above",
+            "Empty space at the right where a fourth card would complete the grid"
+          ],
+          "confidence": "medium",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "poor",
+          "page_or_region": "platform sticky category tab bar (recurring across tiles)",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-05-y06100.png",
+          "claim": "The sticky seven-segment category bar overlaps section content beneath it, with the 'Reporting & Analytics' heading partially hidden behind the bar, indicating a z-index/spacing collision rather than clean sticky behavior.",
+          "visible_tells": [
+            "'Reporting & Analytics' title is clipped/overlapped by the sticky tab strip directly above it",
+            "The seven colored tab segments span full width but crowd the content start"
+          ],
+          "confidence": "medium",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-06-y07320.png"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "poor",
+          "page_or_region": "platform Financial Integration section (tile-06)",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-06-y07320.png",
+          "claim": "The Financial Integration section collides text and imagery: the section heading is overlapped by the sticky tab bar and a dense data screenshot bleeds off the right edge while a second dark device card overlaps it, producing a cluttered, mis-aligned composition.",
+          "visible_tells": [
+            "Heading text ('...ntegration') clipped at top by the sticky bar",
+            "A bright spreadsheet panel and a separate dark device card overlap and both run off the right edge",
+            "Left copy column and right imagery are not aligned to a shared baseline"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "layout_composition_components",
+          "polarity": "strong",
+          "page_or_region": "platform '797 Compliance' four-card row (tile-06/07)",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-06-y07320.png",
+          "claim": "The Built-In 797 Compliance row presents four equal cards with consistent line-icon-over-caption layout and matching corner radius, a clean repeated component instance.",
+          "visible_tells": [
+            "Four uniform pink/magenta cards each with a single outlined icon centered above a short caption",
+            "Equal card widths and even gutters across the row"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "mixed",
+          "page_or_region": "homepage hero (top)",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The site commits to a single purple-to-magenta gradient world across the entire hero, giving an immediately recognizable palette identity.",
+          "visible_tells": [
+            "full-bleed purple-violet hero background with a particle/mesh texture",
+            "magenta-to-coral gradient pill CTA ('APPLY NOW') echoing the same hue family"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "strong",
+          "page_or_region": "homepage 'How It Works' cards",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "claim": "The three numbered step cards share one consistent treatment \u2014 same rounded glassy frame, same numbered badge, same caption color \u2014 reading as one deliberate component set.",
+          "visible_tells": [
+            "uniform purple translucent card frames with rounded corners",
+            "matching white numerals 1/2/3 in identical pill badges",
+            "consistent white-on-purple label/caption styling across all three"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "mixed",
+          "page_or_region": "homepage step-card photography",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "claim": "The lifestyle photos in the Apply/Onboard/Grow cards read as generic stock with no color grading toward the brand palette, clashing against the saturated purple frames.",
+          "visible_tells": [
+            "bright neutral-toned clinical/office stock photos",
+            "no purple duotone or tint applied to bind images to the palette",
+            "cool daylight white-balance sits apart from the surrounding magenta UI"
+          ],
+          "confidence": "medium",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "strong",
+          "page_or_region": "homepage 'Before' comparison image",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "claim": "The 'Before' photo is integrated into the dark purple field with a magenta keyline and label, showing intentional compositing rather than a dropped-in raw image.",
+          "visible_tells": [
+            "photo framed with a thin magenta/pink border matching the accent",
+            "'Before' label set in brand white type with a divider slider device",
+            "image sits flush inside the deep-violet section without a jarring seam"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "poor",
+          "page_or_region": "homepage vendor logo wall",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-07-y08063.png",
+          "claim": "The vendor logo row is assembled from mismatched third-party marks at clashing weights and colors, overlaid on a faint photo, producing a muddy, low-control band.",
+          "visible_tells": [
+            "logos in varied colors/weights (Baxter italic, McKesson, ProRx green) with no unifying monochrome treatment",
+            "ghosted background photograph bleeding through behind the logos",
+            "uneven logo sizing and baseline across the row"
+          ],
+          "confidence": "high",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "poor",
+          "page_or_region": "homepage first logo strip (under hero)",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The 'Trusted by Leading Wellness Clinics' logo strip mixes full-color and varied-weight client marks on dark ground without normalization, reading as a pasted-together band.",
+          "visible_tells": [
+            "client logos rendered in differing colors and stroke weights (REMEDY, Lindora, VYVE, hydrate)",
+            "no shared knockout-to-white or single-tint treatment",
+            "logos float at inconsistent visual sizes along the row"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "strong",
+          "page_or_region": "platform feature-card grid",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png",
+          "claim": "The four feature cards use one disciplined system \u2014 matching outlined line-icons, identical card frames, and a shared purple heading color \u2014 for a coherent brand surface.",
+          "visible_tells": [
+            "consistent thin-line outline icons in matching style atop each card",
+            "uniform rounded translucent purple card containers",
+            "feature titles all set in the same lavender/purple accent"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "mixed",
+          "page_or_region": "platform sticky section-nav bar",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "claim": "The persistent feature tab bar runs a left-to-right purple-to-pink gradient across all seven tabs, a distinctive device that also flattens hierarchy since every tab competes equally.",
+          "visible_tells": [
+            "continuous violet-to-magenta gradient spanning the full tab strip",
+            "seven equally weighted tabs with no clear active-state contrast",
+            "white tab labels uniform in size across the gradient"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "poor",
+          "page_or_region": "platform 'All your vendors. One system.' photo band",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "claim": "The right-side lifestyle photo of people at a counter is generic stock left at native white-balance, breaking the otherwise purple-controlled palette of the section.",
+          "visible_tells": [
+            "bright neutral daylight stock photo of figures in a retail/clinic setting",
+            "no brand tint or duotone bridging it to the magenta UI beside it",
+            "image edge meets the colored content area abruptly"
+          ],
+          "confidence": "medium",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "mixed",
+          "page_or_region": "platform 797 Compliance icon cards",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-06-y07320.png",
+          "claim": "The compliance cards keep palette discipline but the magenta-on-magenta line icons sit so close in value to their card backgrounds that they nearly disappear.",
+          "visible_tells": [
+            "pink/magenta outline icons set on similarly saturated magenta cards",
+            "low icon-to-background contrast across all four cards",
+            "white captions carry the legibility load instead of the icons"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "strong",
+          "page_or_region": "homepage / platform 'Stay Ahead of the Chaos' ebook mockup",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-07-y08063.png",
+          "claim": "The newsletter ebook mockup is rendered in the exact brand purple-magenta gradient with matching logo lockup, an owned brand asset rather than a borrowed image.",
+          "visible_tells": [
+            "book cover uses the same violet-to-pink gradient as the site chrome",
+            "INFUSIVE wordmark and title set in brand white type on the cover",
+            "cover art coheres with the surrounding section palette"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "mixed",
+          "page_or_region": "homepage footer founders photo",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-07-y08063.png",
+          "claim": "The two-person founders photo is dropped onto the dark purple footer with the subjects' cool color cast unreconciled to the warm magenta CTA beside it.",
+          "visible_tells": [
+            "portrait subjects under neutral/cool light against deep-violet ground",
+            "no brand-tinted grade applied to the photograph",
+            "cropped figures sit beside a magenta gradient button with no color bridge"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "mixed",
+          "page_or_region": "homepage software dashboard screenshots",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "claim": "The product UI screenshot uses a dark navy/purple interior that broadly aligns to the palette, but its grey-blue data tables read as a distinct, cooler app world from the magenta marketing chrome.",
+          "visible_tells": [
+            "dark dashboard panel with greyed table rows in cool tones",
+            "product UI accent colors do not match the site's magenta CTA hue",
+            "laptop screenshot framed inside the violet hero without color grading"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "color_brand_imagery",
+          "polarity": "strong",
+          "page_or_region": "platform inventory section laptop screenshot",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-05-y06100.png",
+          "claim": "The reporting/analytics screenshot uses a purple magnifier-loupe highlight callout that ties the product shot back to the brand accent color.",
+          "visible_tells": [
+            "circular loupe overlay rimmed in brand purple magnifying a table region",
+            "screenshot framed in a clean laptop bezel on dark ground",
+            "purple accent reused from the site palette inside the product imagery"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "strong",
+          "page_or_region": "Platform \u2014 'Everything Your Clinic Needs' feature-card icon row",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png",
+          "claim": "The four top feature cards carry thin-line outline icons inside matching rounded-square badges with a consistent light stroke weight, reading as one coherent icon set rather than mixed sources.",
+          "visible_tells": [
+            "Four icons (monitor, network node, document, chart) share the same hairline stroke and sit in identically styled rounded badges",
+            "Uniform purple-on-dark treatment across all four card headers"
+          ],
+          "confidence": "high"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "strong",
+          "page_or_region": "Platform \u2014 '797 Compliance' four-card icon strip",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-06-y07320.png",
+          "claim": "The 797 Compliance row keeps the same outline-icon language (clipboard-with-magnifier, clipboard, figure-with-shield, checklist) at a consistent stroke and scale across all four cards.",
+          "visible_tells": [
+            "All four glyphs use the same hairline outline style and similar bounding size",
+            "Icons share the pink/magenta card-header treatment with no clip-art mismatch"
+          ],
+          "confidence": "medium",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "mixed",
+          "page_or_region": "Homepage \u2014 'The result?' four-icon outcome row",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-04-y04880.png",
+          "claim": "The four outcome icons (upward-chart, head-with-checkmark, handshake, stopwatch) are competent generic line icons but lean on stock metaphors rather than any distinctive custom system.",
+          "visible_tells": [
+            "Handshake and stopwatch are common stock-icon metaphors",
+            "Thin uniform stroke is clean but undifferentiated from default icon-library output"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "strong",
+          "page_or_region": "Homepage \u2014 recurring 'Stay Ahead of the Chaos' book render",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-07-y08063.png",
+          "claim": "The lead-magnet is shown as a 3D book mockup with believable cover curl, page edges and a soft drop shadow, a step above a flat cover image.",
+          "visible_tells": [
+            "Visible page-thickness edge and curved cover spine on the standing book",
+            "Cast shadow grounds the render rather than floating flat"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "mixed",
+          "page_or_region": "Homepage \u2014 'Is your clinic ready to scale' problem-list icons",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "claim": "The four small red problem-row icons are rendered at a size where their detail collapses into near-illegible marks, weakening the icon system at this scale.",
+          "visible_tells": [
+            "Each icon beside 'Juggling 10+ vendor accounts', 'Unstable pricing', etc. is tiny and muddy against the dark card",
+            "Glyph shapes are not individually distinguishable at the captured resolution"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "poor",
+          "page_or_region": "Homepage \u2014 before/after photo slider",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "claim": "The 'Before' panel is a stock photo of a stockroom with a slider handle composited on top, not crafted illustration or product graphic.",
+          "visible_tells": [
+            "Generic stockroom/shelf photo with a person and cardboard boxes",
+            "A draggable divider handle is overlaid mid-image as a UI gimmick"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "mixed",
+          "page_or_region": "Platform \u2014 hero laptop with purchase-order UI",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png",
+          "claim": "The hero product render shows a 'Create Purchase Order' screen comped into a laptop bezel; the form is structured and readable but plainly a flat screenshot rather than a polished device mockup.",
+          "visible_tells": [
+            "Two-column PO form with 'Purchase Order Summary' and dollar totals is legible",
+            "Screenshot sits flat inside a simple laptop frame with no perspective or reflection craft"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "poor",
+          "page_or_region": "Homepage \u2014 laptop product render in 'Infusive is the ONLY...' band",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-01-y01220.png",
+          "claim": "The dashboard render on the pink-lit laptop is reduced to an unreadable grid of rows, so the product graphic conveys 'a table exists' rather than any legible feature.",
+          "visible_tells": [
+            "Table rows on the laptop screen are blurred into indistinct horizontal bands",
+            "Heavy magenta screen glow further washes out any UI detail"
+          ],
+          "confidence": "medium",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "poor",
+          "page_or_region": "Platform \u2014 'Reporting & Analytics' laptop screenshot",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-05-y06100.png",
+          "claim": "The analytics screen presented as data craft is a dense placeholder table with a magnifier loupe overlay and no actual chart or visualization.",
+          "visible_tells": [
+            "On-screen content is a long repetitive list of report rows, not a graph",
+            "A circular magnifier loupe is composited over the laptop to fake a 'zoom on data' effect"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "mixed",
+          "page_or_region": "Platform \u2014 'Inventory Management' stacked feature cards",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-04-y04880.png",
+          "claim": "This inventory section relies entirely on text cards with no accompanying icons or product graphic, so the visual system goes flat compared to the icon-rich cards elsewhere on the page.",
+          "visible_tells": [
+            "Five inventory benefit blocks are pure text panels with no glyphs",
+            "Contrasts with the badge-icon treatment used on the same page's top feature row"
+          ],
+          "confidence": "medium",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "poor",
+          "page_or_region": "Homepage \u2014 vendor 'blackbook' logo wall",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "claim": "The vendor logo wall is composited over a faint background photo, so partner marks at the top edge are clipped and ghosted rather than cleanly presented.",
+          "visible_tells": [
+            "Top row of vendor wordmarks is half-cut and faded against the photo behind",
+            "Inconsistent legibility between the crisp lower-row logos and the washed-out upper row"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "mixed",
+          "page_or_region": "Platform \u2014 'Real-Time Financial Insights' card row (second feature band)",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "claim": "The lower three feature cards drop the badge icons used in the row above and present headers as text only, so icon coverage is uneven across the same component family.",
+          "visible_tells": [
+            "'Real-Time Financial Insights', 'Automatic 797 Compliance', 'Aligned Patient Care' cards show titles without the rounded icon badges seen on the first four cards",
+            "Same card shell, missing the glyph element"
+          ],
+          "confidence": "low",
+          "contrast_with": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png"
+        },
+        {
+          "family": "iconography_illustration",
+          "polarity": "mixed",
+          "page_or_region": "Homepage \u2014 'How It Works' numbered step cards",
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-05-y06100.png",
+          "claim": "The three-step Apply/Onboard/Grow cards use large numerals plus stock photos rather than custom step illustrations, a serviceable but generic device.",
+          "visible_tells": [
+            "Big '1/2/3' numerals sit atop standard stock photos of people at laptops",
+            "No bespoke iconography or diagram ties the three steps into a system"
+          ],
+          "confidence": "medium"
+        }
+      ],
+      "rejected_cards": [
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "reason": "Hero subhead 'low contrast over busy purple field' card: the all-caps subhead and 'Trusted by' caption are actually legible white/grey on the dark band in the tile; the readability strain is overstated and the verifiable tell (weight-toggling) is already carried by typography_01. Drops to avoid a duplicate hero-typography card without a distinct visible defect."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "reason": "'Is your clinic ready' three-level hierarchy card: levels are close in size but the claim is a faint mixed-competence read with no sharp visible tell beyond size proximity; merged value covered better by layout_04 (the pain-point pills) and other mixed-typography cards. Pruned to keep the calibrated set tight."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "reason": "Typography 'How It Works cards' card cites tile-06, but tile-06 shows the vendor-network band and clipped logo wall, not the Apply/Onboard/Grow step cards (those are in tile-05). Tile-path/content mismatch; the real claim is kept as typography_04 against tile-05."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "reason": "Typography 'vendor logo wall labels low contrast' card: the magenta tagline and white H2 are legible in the tile; this overlaps the layout_08 and color_02 logo-wall findings without adding a distinct typographic tell. Duplicate-without-new-tell."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-07-y08063.png",
+          "reason": "Newsletter-block typography card: inline-bold list lead-ins are a minor, generic mixed observation already implied by layout_09 (newsletter block); not a strong enough standalone tell. Pruned for calibration."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png",
+          "reason": "Typography 'feature-card grid magenta-on-purple titles modest contrast' card duplicates the layout/color/iconography coverage of the same feature-card grid (layout_10, color_03, iconography_01); the contrast claim is weak in the tile (titles read clearly). Duplicate-without-new-tell."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "reason": "Color 'How It Works cards consistent treatment' card cites tile-06 but the step cards are in tile-05; tile-path/content mismatch. The step-card consistency is already captured by layout_07 and typography_04."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "reason": "Color 'step-card photography generic stock, no grade' card cites tile-06, but the Apply/Onboard/Grow photos are in tile-05; the cited tile shows the vendor band. Tile-path/content mismatch."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "reason": "Color 'Before comparison image intentionally composited' card: flatters generic compositing competence (thin keyline, flush placement) with no standout brand-imagery tell; the same image is better used as the iconography_04 stock-photo-slider poor card. Avoids double-counting one image as both strong and poor."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "reason": "Color 'first logo strip mixed marks' card duplicates color_02 (vendor logo wall) and layout_02 (trust strip) findings on the same recurring logo-strip weakness; the strongest instance is kept. Duplicate-without-new-tell."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png",
+          "reason": "Color 'dashboard screenshot cooler app world' card: the laptop UI in the hero tile is small and dark; the cool-vs-magenta distinction is hard to verify at this scale and overlaps layout_01's busy-hero read. Low-verifiability mixed card pruned."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-06-y07320.png",
+          "reason": "Iconography '797 Compliance outline-icon set coherent' (strong) card directly conflicts with color_06 / kept set on the SAME cards which note magenta-on-magenta icons nearly disappear; keeping both a strong-coherence and the low-contrast read on identical icons would double-count. Kept the more concrete contrast finding (color_06) and layout_13."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png",
+          "reason": "Iconography 'problem-list icons collapse at small size' card: the four red icons are small but the 'near-illegible' read is a capture-resolution artifact more than a design tell; weak and overlaps layout_04 which praises the same row's structure. Pruned."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-00-y00000.png",
+          "reason": "Iconography 'hero laptop PO screen flat screenshot' card: the PO form is legible and competently comped; the 'flat, no perspective craft' read flatters/penalizes generic screenshot presentation without a sharp tell, and overlaps typography_05/layout_10 on the same hero. Pruned for calibration."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-01-y01220.png",
+          "reason": "Iconography 'laptop dashboard render unreadable rows' card: at this scroll position the laptop UI is small/dark; 'blurred into bands' is largely a capture/scale artifact rather than a design defect, and the illegible-centerpiece point is already made by layout_05. Pruned."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/homepage/tile-06-y07320.png",
+          "reason": "Iconography 'vendor blackbook logo wall clipped/ghosted' card duplicates layout_08 and color_02 on the identical logo wall; no new iconography-specific tell. Duplicate-without-new-tell."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-01-y01220.png",
+          "reason": "Iconography 'Real-Time Financial Insights cards drop badge icons' card (confidence low): in tile-01 the second-row cards do show header glyphs, so the 'missing icons' claim is not verifiable in the cited tile; the icon-coverage point is already neutral. Rejected as not visibly supported."
+        },
+        {
+          "tile_path": "store/goinfusive-com/captures/2026-06-09/tiles/platform/tile-05-y06100.png",
+          "reason": "Layout 'sticky category tab bar overlaps Reporting & Analytics' card: the overlap is real but it is the same z-index/sticky-bar collision already captured by typography_08 (tile-04) and layout_12 (tile-05 Financial Integration); this is a third duplicate of one recurring sticky-bar defect. Merged \u2014 keep two instances, drop the redundant third."
+        }
+      ]
+    }
+  }
+}
