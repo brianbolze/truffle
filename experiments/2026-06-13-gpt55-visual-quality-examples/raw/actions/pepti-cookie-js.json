@@ -1,0 +1,8 @@
+[
+  { "type": "wait", "milliseconds": 3000 },
+  {
+    "type": "executeJavascript",
+    "script": "(() => { const buttons = Array.from(document.querySelectorAll('button')); const accept = buttons.find((button) => /^accept$/i.test((button.textContent || '').trim())); if (accept) { accept.click(); return 'clicked-accept'; } for (const el of Array.from(document.querySelectorAll('.fixed.bottom-0, [role=\"dialog\"]'))) { if (/cookies/i.test(el.textContent || '')) { el.remove(); return 'removed-cookie-ui'; } } return 'cookie-ui-not-found'; })()"
+  },
+  { "type": "wait", "milliseconds": 1000 }
+]

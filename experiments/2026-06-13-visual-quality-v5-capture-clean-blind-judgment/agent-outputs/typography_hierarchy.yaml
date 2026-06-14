@@ -1,0 +1,135 @@
+cards:
+  - family: typography_hierarchy
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/raw/browser-captures/function-homepage-iab-desktop-viewport-tiles/tile-00-y00000.png"
+    claim: "The hero creates a clear editorial hierarchy without letting the cinematic image overwhelm the message."
+    visible_tells:
+      - "Large italic serif headline sits below a small pill label, with smaller sans-serif body copy and compact metrics separated into a lower-right row."
+      - "Navigation, CTA, headline, body copy, and three metric labels each occupy distinct size tiers."
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "scans hero and intro"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-00-y00000.png"
+    claim: "The page uses a disciplined type scale to make the scan offer legible and premium while preserving secondary explanation."
+    visible_tells:
+      - "The small Function and Ezra lockup is visually subordinate to the oversized serif headline."
+      - "The next section repeats the serif headline style at a smaller size, making the transition from hero to explanation easy to scan."
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: strong
+    site: hellopepti.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-00-y00000.png"
+    claim: "The hero has bold typography with enough control that the dense black visual system still scans quickly."
+    visible_tells:
+      - "The three-line white headline is much larger than the eyebrow, paragraph, and CTAs."
+      - "The certification row uses icons and small uppercase labels, keeping trust details subordinate to the primary headline."
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: mixed
+    site: joinamble.com
+    page_or_region: "homepage hero and category cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-00-y00000.png"
+    claim: "The page is spacious and readable, but the type hierarchy is more plain than distinctive."
+    visible_tells:
+      - "The large two-line hero headline clearly dominates, with short supporting copy beneath it."
+      - "The product card titles use nearly the same simple weight and size, relying more on card placement than typographic contrast."
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: mixed
+    site: gogeviti.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-00-y00000.png"
+    claim: "The serif display headline is distinctive, but the surrounding promo and navigation layers make the hierarchy feel busier than it needs to be."
+    visible_tells:
+      - "The italic serif headline is visually memorable and clearly larger than the sans-serif support line."
+      - "The top promotional strip, glassy nav, avatar proof point, icon row, CTA, and no-card note all compete within the same first viewport."
+    confidence: medium
+
+  - family: typography_hierarchy
+    polarity: mixed
+    site: ro.co
+    page_or_region: "pricing product cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-01-y01220.png"
+    claim: "The pricing cards are orderly and readable, but the hierarchy is utilitarian rather than especially refined."
+    visible_tells:
+      - "Product names, dosage rows, prices, CTA buttons, and safety links are consistently separated."
+      - "Most cards repeat the same type weights and spacing, so scan priority comes from layout repetition more than typographic nuance."
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: mixed
+    site: nurx.com
+    page_or_region: "services carousel cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-01-y01220.png"
+    claim: "The service cards are clear, but the section leans on repeated card structure rather than a richer hierarchy."
+    visible_tells:
+      - "Each card has a strong image, rule, bold title, smaller description, eligibility badges, and a black CTA."
+      - "Adjacent cards use nearly identical typographic emphasis, so individual service importance is flat."
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: mixed
+    site: belmarpharmasolutions.com
+    page_or_region: "homepage hero and below-hero actions"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-00-y00000.png"
+    claim: "The page has competent corporate hierarchy, but it stays conventional and slightly crowded below the hero."
+    visible_tells:
+      - "The hero headline has clear size contrast against the paragraph and two buttons."
+      - "The credential strip, trusted-partner block, and four action links introduce several similar mid-weight text groups immediately after the hero."
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: poor
+    site: kingsbergmedical.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-00-y00000.png"
+    claim: "The hero has weak typographic control because many loud text treatments compete at once."
+    visible_tells:
+      - "The logo, nav, phone number, serif hero headline, green CTA, and green centered statement all use heavy emphasis."
+      - "The hero headline sits in a dark translucent box over a busy mountain-and-doctor collage, reducing typographic clarity."
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: poor
+    site: anazaohealth.com
+    page_or_region: "homepage hero and about section"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-00-y00000.png"
+    claim: "The page uses size and color, but the hierarchy is undermined by low-contrast overlay text and oversized section labeling."
+    visible_tells:
+      - "The blue 'Weight Management' hero text and outlined 'Learn More' sit over a bright image with shadowed, low-control contrast."
+      - "The 'ABOUT US' heading is very large while the body copy below is dense and centered in a narrow column."
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: poor
+    site: goinfusive.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-00-y00000.png"
+    claim: "The hero is visually forceful, but typography is over-styled enough that hierarchy feels noisy."
+    visible_tells:
+      - "Navigation, CTA, hero headline, subheadline, testimonial card, and logo strip all use high-contrast or widely tracked text."
+      - "The headline mixes bold words, thin words, all caps, and multiple line breaks inside one primary message."
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: poor
+    site: millspharmacy.com
+    page_or_region: "homepage hero and intro modules"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-00-y00000.png"
+    claim: "The page has readable pieces, but the typography feels fragmented across too many unrelated styles."
+    visible_tells:
+      - "The hero combines an italic date, uppercase sans-serif headline, paragraph text, outlined button, and italic link in one compact panel."
+      - "The next section switches to centered gold uppercase headings, italic inline emphasis, icon labels, and body copy with little shared rhythm."
+    confidence: high
+
+notes: |-
+  Static desktop tiles made first-viewport hierarchy and repeated card systems easy to inspect. Exact font choices, responsive behavior, and interaction states were not assessed; claims are limited to visible screenshot evidence.

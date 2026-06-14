@@ -1,0 +1,148 @@
+---
+- family: layout_composition_components
+  polarity: strong
+  site: functionhealth.com
+  page_or_region: "pricing page / membership card and comparison table"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-01-y01220.png"
+  claim: "The pricing section uses disciplined container geometry to make a dense comparison feel legible rather than busy."
+  visible_tells:
+    - "The membership panel is split into two equal columns with a single vertical divider, keeping price, CTA, and benefit list in a stable frame."
+    - "The comparison table below uses consistent row heights and a highlighted center column that stays aligned with the surrounding columns."
+  contrast_with: "millspharmacy.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/weight_management/tile-01-y01220.png"
+  confidence: high
+
+- family: layout_composition_components
+  polarity: strong
+  site: ro.co
+  page_or_region: "weight-loss page / timeline-to-treatment panel"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-02-y02440.png"
+  claim: "The timeline module turns a large editorial image break into a controlled, task-like composition."
+  visible_tells:
+    - "A centered white panel overlaps the full-bleed image and background band without losing its rectangular alignment."
+    - "The module is split into a left explanation column and a right step accordion, with a thin vertical rule creating a clear interaction zone."
+  contrast_with: "goinfusive.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-02-y02440.png"
+  confidence: high
+
+- family: layout_composition_components
+  polarity: strong
+  site: nurx.com
+  page_or_region: "our services page / service carousel cards"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-01-y01220.png"
+  claim: "The repeated service cards cohere as a component system even while carrying different image crops and copy lengths."
+  visible_tells:
+    - "Each card repeats the same image frame, divider, title block, eligibility row area, and full-width CTA placement."
+    - "The section handoff is clean: carousel controls, filter bar, and the next service category stay on distinct horizontal bands."
+  contrast_with: "jinfiniti.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/shop/tile-01-y01220.png"
+  confidence: high
+
+- family: layout_composition_components
+  polarity: strong
+  site: hallandalerx.com
+  page_or_region: "products page / filter sidebar and product grid"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-01-y01220.png"
+  claim: "The product catalog is plain but structurally strong, with the filter rail and product grid maintaining a predictable scan path."
+  visible_tells:
+    - "The left filter column keeps checkbox groups and the clear action in a narrow fixed rail while product cards occupy the main grid."
+    - "Product cards use consistent image zones, text placement, and gutters across three columns."
+  contrast_with: "hellopepti.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-02-y02440.png"
+  confidence: high
+
+- family: layout_composition_components
+  polarity: mixed
+  site: belmarpharmasolutions.com
+  page_or_region: "account form / practice and medication fields"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/account-form/tile-01-y01220.png"
+  claim: "The form has solid field alignment, but it reads as an undifferentiated administrative slab rather than a shaped intake flow."
+  visible_tells:
+    - "Text inputs and select fields align cleanly to a two- and three-column grid with consistent label spacing."
+    - "Major sections are separated mostly by headings and thin rules, with little visual hierarchy to mark progress or reduce fatigue."
+  contrast_with: "functionhealth.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-01-y01220.png"
+  confidence: high
+
+- family: layout_composition_components
+  polarity: mixed
+  site: joinamble.com
+  page_or_region: "GLP-1 page / how-it-works cards and results section transition"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-01-y01220.png"
+  claim: "The card components are tidy, but the page flow feels template-stacked because of the oversized vertical gap before the next section."
+  visible_tells:
+    - "The three step cards share matching size, icon position, pill labels, copy area, and bottom CTA treatment."
+    - "A large empty band separates the cards from the next headline, making the section transition feel mechanically spaced rather than composed."
+  contrast_with: "ro.co / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-02-y02440.png"
+  confidence: high
+
+- family: layout_composition_components
+  polarity: mixed
+  site: gogeviti.com
+  page_or_region: "homepage / how-it-works and three-steps sections"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-01-y01220.png"
+  claim: "The layout has real grid discipline, but the component language is weakened by decorative assets that do not feel systematized."
+  visible_tells:
+    - "The four 'How Geviti works' cards sit in a balanced two-by-two grid with equal gutters and matching card heights."
+    - "The icons vary in style and dimensionality, and the loose ribbon line behind the three step cards adds motion without clarifying the structure."
+  contrast_with: "nurx.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-01-y01220.png"
+  confidence: medium
+
+- family: layout_composition_components
+  polarity: mixed
+  site: hellopepti.com
+  page_or_region: "homepage / popular peptides carousel"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-02-y02440.png"
+  claim: "The product carousel is ambitious and mostly aligned, but it pushes too many repeated components across the viewport at once."
+  visible_tells:
+    - "Seven product cards share a common product image, category, price, primary button, secondary button, and small disclaimer stack."
+    - "The carousel runs edge-to-edge with partial cards cropped on both sides, and a floating help bubble sits over the rightmost product area."
+  contrast_with: "hallandalerx.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-01-y01220.png"
+  confidence: high
+
+- family: layout_composition_components
+  polarity: poor
+  site: goinfusive.com
+  page_or_region: "platform page / pharmacy integration tabs"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-02-y02440.png"
+  claim: "The tabbed feature section loses layout control by layering navigation, photography, text, and CTA treatments into the same visual band."
+  visible_tells:
+    - "The magenta tab bar crosses over the image and text area, visually covering the beginning of the content block below."
+    - "Large photo overlays, dark gradients, checkmark bullets, and a glossy CTA compete within one section instead of forming a clear hierarchy."
+  contrast_with: "ro.co / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-02-y02440.png"
+  confidence: high
+
+- family: layout_composition_components
+  polarity: poor
+  site: millspharmacy.com
+  page_or_region: "weight management page / GLP-1 content sections"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/weight_management/tile-01-y01220.png"
+  claim: "The page stacks text-heavy blocks without a strong component system, making the section rhythm feel improvised."
+  visible_tells:
+    - "A dense teal text band is followed by a centered white text card, then another large content area with bullets and a photo."
+    - "The same page mixes centered paragraphs, left-aligned bullets, numbered lists, bordered bands, and large image placement without a repeated pattern."
+  contrast_with: "functionhealth.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-01-y01220.png"
+  confidence: high
+
+- family: layout_composition_components
+  polarity: poor
+  site: jinfiniti.com
+  page_or_region: "intracellular NAD test page / results cards and sticky promo bar"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-02-y02440.png"
+  claim: "The sticky commerce/navigation treatment breaks the page composition by interrupting content modules mid-scroll."
+  visible_tells:
+    - "A fixed nav and purple promo bar cuts horizontally through the results-card section, obscuring the lower part of one card row."
+    - "The cards above and below are aligned enough on their own, but the overlay creates a persistent collision with the underlying component grid."
+  contrast_with: "nurx.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-01-y01220.png"
+  confidence: high
+
+- family: layout_composition_components
+  polarity: poor
+  site: kingsbergmedical.com
+  page_or_region: "services page / therapy article layout"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/services/tile-02-y02440.png"
+  claim: "The article layout relies on old page furniture rather than a coherent component system."
+  visible_tells:
+    - "The main content column, right sidebar ad, oversized stock image, green quote box, and next heading all use different widths and alignment logic."
+    - "The sidebar ad is cropped at the top of the tile while the central image dominates the page, leaving the surrounding text hierarchy secondary."
+  contrast_with: "hallandalerx.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-01-y01220.png"
+  confidence: high
+
+---
+notes: |
+  Layout/component evidence was easiest to judge where a tile showed repeated modules: pricing cards, product grids, service cards, accordions, and forms made alignment and rhythm visible. It was harder to judge whole-page section flow from static 1400px slices because some awkward spacing may come from scroll position or carousel state, so the flow claims are limited to visible section handoffs inside the cited tiles.

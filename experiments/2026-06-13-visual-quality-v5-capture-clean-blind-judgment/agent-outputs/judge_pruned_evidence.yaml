@@ -1,0 +1,455 @@
+accepted_cards:
+  - id: typography_hierarchy_01
+    family: typography_hierarchy
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/raw/browser-captures/function-homepage-iab-desktop-viewport-tiles/tile-00-y00000.png"
+    claim: "The hero creates a clear editorial hierarchy without letting the cinematic image overwhelm the message."
+    visible_tells:
+      - "Large italic serif headline sits below a small pill label, with smaller sans-serif body copy and compact metrics separated into a lower-right row."
+      - "Navigation, CTA, headline, body copy, and three metric labels each occupy distinct size tiers."
+    confidence: high
+  - id: typography_hierarchy_02
+    family: typography_hierarchy
+    polarity: strong
+    site: hellopepti.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-00-y00000.png"
+    claim: "The hero has bold typography with enough control that the dense black visual system still scans quickly."
+    visible_tells:
+      - "The three-line white headline is much larger than the eyebrow, paragraph, and CTAs."
+      - "The certification row uses icons and small uppercase labels, keeping trust details subordinate to the primary headline."
+    confidence: high
+  - id: typography_hierarchy_03
+    family: typography_hierarchy
+    polarity: mixed
+    site: joinamble.com
+    page_or_region: "homepage hero and category cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-00-y00000.png"
+    claim: "The page is spacious and readable, but the type hierarchy is more plain than distinctive."
+    visible_tells:
+      - "The large two-line hero headline clearly dominates, with short supporting copy beneath it."
+      - "The product card titles use nearly the same simple weight and size, relying more on card placement than typographic contrast."
+    confidence: high
+  - id: typography_hierarchy_04
+    family: typography_hierarchy
+    polarity: mixed
+    site: gogeviti.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-00-y00000.png"
+    claim: "The serif display headline is distinctive, but the surrounding promo and navigation layers make the hierarchy feel busy."
+    visible_tells:
+      - "The italic serif headline is visually memorable and clearly larger than the sans-serif support line."
+      - "The top promotional strip, glassy nav, avatar proof point, icon row, CTA, and no-card note all compete within the same first viewport."
+    confidence: medium
+  - id: typography_hierarchy_05
+    family: typography_hierarchy
+    polarity: mixed
+    site: ro.co
+    page_or_region: "pricing product cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-01-y01220.png"
+    claim: "The pricing cards are orderly and readable, but the hierarchy is utilitarian rather than especially refined."
+    visible_tells:
+      - "Product names, dosage rows, prices, CTA buttons, and safety links are consistently separated."
+      - "Most cards repeat the same type weights and spacing, so scan priority comes from layout repetition more than typographic nuance."
+    confidence: high
+  - id: typography_hierarchy_06
+    family: typography_hierarchy
+    polarity: poor
+    site: kingsbergmedical.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-00-y00000.png"
+    claim: "The hero has weak typographic control because many loud text treatments compete at once."
+    visible_tells:
+      - "The logo, nav, phone number, serif hero headline, green CTA, and green centered statement all use heavy emphasis."
+      - "The hero headline sits in a dark translucent box over a busy mountain-and-doctor collage, reducing typographic clarity."
+    confidence: high
+  - id: typography_hierarchy_07
+    family: typography_hierarchy
+    polarity: poor
+    site: anazaohealth.com
+    page_or_region: "homepage hero and about section"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-00-y00000.png"
+    claim: "The page uses size and color, but the hierarchy is undermined by low-contrast overlay text and oversized section labeling."
+    visible_tells:
+      - "The blue 'Weight Management' hero text and outlined 'Learn More' sit over a bright image with shadowed, low-control contrast."
+      - "The 'ABOUT US' heading is very large while the body copy below is dense and centered in a narrow column."
+    confidence: high
+  - id: typography_hierarchy_08
+    family: typography_hierarchy
+    polarity: poor
+    site: goinfusive.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-00-y00000.png"
+    claim: "The hero is visually forceful, but typography is over-styled enough that hierarchy feels noisy."
+    visible_tells:
+      - "Navigation, CTA, hero headline, subheadline, testimonial card, and logo strip all use high-contrast or widely tracked text."
+      - "The headline mixes bold words, thin words, all caps, and multiple line breaks inside one primary message."
+    confidence: high
+  - id: typography_hierarchy_09
+    family: typography_hierarchy
+    polarity: poor
+    site: millspharmacy.com
+    page_or_region: "homepage hero and intro modules"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-00-y00000.png"
+    claim: "The page has readable pieces, but the typography feels fragmented across too many unrelated styles."
+    visible_tells:
+      - "The hero combines an italic date, uppercase sans-serif headline, paragraph text, outlined button, and italic link in one compact panel."
+      - "The next section switches to centered gold uppercase headings, italic inline emphasis, icon labels, and body copy with little shared rhythm."
+    confidence: high
+  - id: layout_composition_components_01
+    family: layout_composition_components
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "homepage comparison table"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/raw/browser-captures/function-homepage-iab-desktop-viewport-tiles/tile-05-y06100.png"
+    claim: "The comparison table uses a clear anchored-column component that stays legible across many rows."
+    visible_tells:
+      - "The highlighted Function column is vertically centered over the table and keeps check icons aligned row by row."
+      - "Row dividers, left labels, and the secondary comparison column maintain a consistent horizontal rhythm."
+    confidence: high
+  - id: layout_composition_components_02
+    family: layout_composition_components
+    polarity: strong
+    site: hallandalerx.com
+    page_or_region: "products listing grid"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-01-y01220.png"
+    claim: "The product listing is a restrained, consistent commerce grid."
+    visible_tells:
+      - "Product tiles repeat the same image stage, gutter width, and bottom-left text anchor."
+      - "The left filter rail is visually separate from the three-column product grid."
+    confidence: high
+  - id: layout_composition_components_03
+    family: layout_composition_components
+    polarity: strong
+    site: ro.co
+    page_or_region: "pricing product cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-02-y02440.png"
+    claim: "The pricing cards handle dense plan information with a stable repeated component."
+    visible_tells:
+      - "Each card uses the same product image zone, price rows, CTA position, and safety-information block."
+      - "The two-column card grid aligns cleanly next to the explanatory text column."
+    confidence: high
+  - id: layout_composition_components_04
+    family: layout_composition_components
+    polarity: strong
+    site: hellopepti.com
+    page_or_region: "homepage product catalog"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-04-y04880.png"
+    claim: "The catalog section has a finished ecommerce-card system with clear repeated structure."
+    visible_tells:
+      - "Four product cards share equal widths, image zones, pricing placement, tags, and paired CTA buttons."
+      - "The tab row, catalog heading, and card grid stack in a readable top-to-bottom sequence."
+    confidence: high
+  - id: layout_composition_components_05
+    family: layout_composition_components
+    polarity: mixed
+    site: belmarpharmasolutions.com
+    page_or_region: "account form"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/account-form/tile-01-y01220.png"
+    claim: "The form is operationally clear, but its component rhythm shifts between sections."
+    visible_tells:
+      - "Input and select fields align well in two- and three-column rows with consistent borders."
+      - "Radio and checkbox groups switch to long single-column lists, creating a looser rhythm than the field grid."
+    confidence: high
+  - id: layout_composition_components_06
+    family: layout_composition_components
+    polarity: mixed
+    site: gogeviti.com
+    page_or_region: "pricing infinite tier card"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/pricing/tile-01-y01220.png"
+    claim: "The pricing layout is polished overall, but the large tier card mixes too many component treatments."
+    visible_tells:
+      - "The Infinite card combines icon bullets, right-aligned pricing copy, a large script overlay, and a pill CTA in one module."
+      - "The top plan cards above it use simpler accordions and CTAs, making the lower card feel less systematized."
+    confidence: medium
+  - id: layout_composition_components_07
+    family: layout_composition_components
+    polarity: mixed
+    site: millspharmacy.com
+    page_or_region: "homepage service tiles"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-01-y01220.png"
+    claim: "The section has a coherent grid, but the image-overlay tiles vary in finish."
+    visible_tells:
+      - "The six service tiles form a clean three-column grid with consistent tile dimensions and border treatment."
+      - "Text readability varies by background image, especially where light type sits over brighter image regions."
+    confidence: high
+  - id: layout_composition_components_08
+    family: layout_composition_components
+    polarity: mixed
+    site: anazaohealth.com
+    page_or_region: "homepage solutions and contact transition"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-01-y01220.png"
+    claim: "The solutions grid is orderly, but the surrounding composition feels mechanically stacked."
+    visible_tells:
+      - "The turquoise solution buttons are evenly sized and aligned in two columns."
+      - "A centered YouTube embed floats above the section, then the page jumps directly into another large centered heading."
+    confidence: high
+  - id: layout_composition_components_09
+    family: layout_composition_components
+    polarity: poor
+    site: kingsbergmedical.com
+    page_or_region: "homepage therapy text and steps transition"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-02-y02440.png"
+    claim: "The page loses grid discipline by placing a narrow text stack inside an oversized empty section."
+    visible_tells:
+      - "Several paragraphs occupy a small left column while most of the pale green panel remains blank."
+      - "The next section abruptly switches to large centered numbered icons with a very different spacing system."
+    confidence: high
+  - id: layout_composition_components_10
+    family: layout_composition_components
+    polarity: poor
+    site: goinfusive.com
+    page_or_region: "platform tabbed feature section"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-04-y04880.png"
+    claim: "A tab bar visibly collides with the feature content below it."
+    visible_tells:
+      - "The colored tab row overlaps the top of the 'Reporting & Analytics' heading."
+      - "The active-tab pointer drops into the laptop image area, adding another collision at the section boundary."
+    confidence: high
+  - id: layout_composition_components_11
+    family: layout_composition_components
+    polarity: poor
+    site: jinfiniti.com
+    page_or_region: "shop product grid with sticky page chrome"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/shop/tile-01-y01220.png"
+    claim: "Sticky site chrome competes with and obscures the product grid."
+    visible_tells:
+      - "The sticky navigation and purple promo bar run across the middle of the product listing."
+      - "The bars cover the transition between product rows and visually split product cards that should read as one grid."
+    confidence: high
+  - id: color_brand_imagery_01
+    family: color_brand_imagery
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/raw/browser-captures/function-homepage-iab-desktop-viewport-tiles/tile-00-y00000.png"
+    claim: "The hero uses a restrained, owned-feeling health image system rather than generic clinical stock."
+    visible_tells:
+      - "Full-bleed close side-profile portrait in a desert landscape, with muted olive, sand, and brown tones."
+      - "Rust top bar and CTA color echo the warm image palette instead of introducing a separate accent system."
+    confidence: high
+  - id: color_brand_imagery_02
+    family: color_brand_imagery
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "pricing lab-test categories"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-02-y02440.png"
+    claim: "The pricing page keeps brand control through a narrow cream-and-rust palette and data-adjacent illustration."
+    visible_tells:
+      - "The comparison matrix uses cream backgrounds with one rust-highlighted column instead of many competing plan colors."
+      - "The lower cards pair a pale U.S. map and vertical bar graphic with the same rust accent used in buttons and labels."
+    confidence: high
+  - id: color_brand_imagery_03
+    family: color_brand_imagery
+    polarity: mixed
+    site: ro.co
+    page_or_region: "weight-loss hero and product imagery"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-00-y00000.png"
+    claim: "The page is commercially polished, but the imagery reads more assembled than ownable."
+    visible_tells:
+      - "A celebrity-style portrait, medication pen packshots, and an injection-use crop sit side by side with different photographic languages."
+      - "The brand accents shift between lime banner, green benefit text, coral stamp, and black buttons."
+    confidence: high
+  - id: color_brand_imagery_04
+    family: color_brand_imagery
+    polarity: mixed
+    site: hallandalerx.com
+    page_or_region: "products grid"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-01-y01220.png"
+    claim: "The product photography is consistent, but the overall catalog language is sterile and lightly branded."
+    visible_tells:
+      - "Vials repeat with matching angle, shadow, label placement, and gray card backgrounds."
+      - "Most of the tile is white and light gray, with the blue brand mark appearing only on bottle labels and small UI elements."
+    confidence: high
+  - id: color_brand_imagery_05
+    family: color_brand_imagery
+    polarity: mixed
+    site: gogeviti.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-00-y00000.png"
+    claim: "The sky-and-cream system is coherent, but it leans on familiar longevity and wellness tropes."
+    visible_tells:
+      - "The hero is dominated by bright blue sky, clouds, and soft cream sections."
+      - "Gradient cards and floating metric tiles reinforce polish, but the cloudscape itself is generic wellness imagery."
+    confidence: high
+  - id: color_brand_imagery_06
+    family: color_brand_imagery
+    polarity: strong
+    site: joinamble.com
+    page_or_region: "GLP-1 results section"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-01-y01220.png"
+    claim: "The GLP-1 page uses a controlled color world to make outcome imagery feel branded."
+    visible_tells:
+      - "The orange results panel, radiating line texture, and portrait crop share one warm treatment."
+      - "The upper process cards use the same orange icon accent while keeping the rest of the page mostly white and black."
+    confidence: high
+  - id: color_brand_imagery_07
+    family: color_brand_imagery
+    polarity: mixed
+    site: hellopepti.com
+    page_or_region: "product cards and outcomes charts"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-05-y06100.png"
+    claim: "The page has a recognizable neon-acid palette, but it starts to overpower the product evidence."
+    visible_tells:
+      - "Outcome charts use pale yellow panels with fluorescent yellow lines across all four quadrants."
+      - "The vial product photos are crisp, but the surrounding tint and glow compete with their clinical specificity."
+    confidence: high
+  - id: color_brand_imagery_08
+    family: color_brand_imagery
+    polarity: poor
+    site: millspharmacy.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-00-y00000.png"
+    claim: "The imagery and brand system feel dated and only loosely integrated."
+    visible_tells:
+      - "The storefront photo is boxed beside a gray-blue text panel and sits under a heavy black-and-gray header."
+      - "Credential icons, social icons, the seal mark, and product/service blocks all use different visual treatments."
+    confidence: high
+  - id: color_brand_imagery_09
+    family: color_brand_imagery
+    polarity: poor
+    site: kingsbergmedical.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-00-y00000.png"
+    claim: "The hero relies on dated compositing rather than a credible owned image system."
+    visible_tells:
+      - "Two doctor cutouts are layered over a mountain landscape with a semi-transparent text box."
+      - "The apple logo, green CTA bar, mountain background, and isolated doctor cutouts compete as separate visual ideas."
+    confidence: high
+  - id: color_brand_imagery_10
+    family: color_brand_imagery
+    polarity: poor
+    site: anazaohealth.com
+    page_or_region: "homepage hero and about section"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-00-y00000.png"
+    claim: "The page uses generic wellness imagery with weak brand ownership."
+    visible_tells:
+      - "The hero is a washed-out outdoor fitness couple photo with blue headline text overlaid."
+      - "Below it, the embedded video thumbnail introduces a different facility/signage image style."
+    confidence: high
+  - id: iconography_illustration_01
+    family: iconography_illustration
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "homepage lab testing proof cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/raw/browser-captures/function-homepage-iab-desktop-viewport-tiles/tile-04-y04880.png"
+    claim: "The lab-testing graphics feel like a coherent evidence system rather than decoration."
+    visible_tells:
+      - "The U.S. map is built from the same warm dotted-circle motif used elsewhere on the page."
+      - "The adjacent statistic card uses restrained scale and spacing, keeping the numeric graphic aligned with the editorial photography cards above."
+    confidence: high
+  - id: iconography_illustration_02
+    family: iconography_illustration
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "scans CT scan cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-03-y03660.png"
+    claim: "The medical iconography is simple, consistent, and well-integrated with the product-card system."
+    visible_tells:
+      - "Heart and lung icons share the same thin copper outline style, scale, and placement."
+      - "Small check icons, CTA arrows, and organ icons all use the same accent color, avoiding a mixed icon-library feel."
+    confidence: high
+  - id: iconography_illustration_03
+    family: iconography_illustration
+    polarity: strong
+    site: ro.co
+    page_or_region: "homepage product tiles and treatment modules"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-00-y00000.png"
+    claim: "The product art direction turns medication objects into a recognizable modular visual language."
+    visible_tells:
+      - "Packshots, pills, and pens sit on shared pale blue and gray product-stage backgrounds."
+      - "Hero tiles, small promo tiles, and product thumbnails repeat the same object-forward composition rather than switching into unrelated illustration."
+    confidence: high
+  - id: iconography_illustration_04
+    family: iconography_illustration
+    polarity: strong
+    site: hellopepti.com
+    page_or_region: "homepage app and logistics mockups"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-03-y03660.png"
+    claim: "The app and logistics graphics form a polished product narrative with consistent UI-device styling."
+    visible_tells:
+      - "Progress chart, prescription approval cards, delivery tracker, and shipment timeline all use the same mint field, lime accent, and translucent panel treatment."
+      - "The large order-status mockup repeats the same check-circle and progress-bar devices introduced in the smaller cards above."
+    confidence: high
+  - id: iconography_illustration_05
+    family: iconography_illustration
+    polarity: mixed
+    site: gogeviti.com
+    page_or_region: "blueprint chat mockup"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/blueprint/tile-02-y02440.png"
+    claim: "The AI-chat product graphic is clean, but the surrounding visual devices feel under-systematized."
+    visible_tells:
+      - "The central phone-style chat mockup has consistent bubbles, shadow, rounded corners, and message hierarchy."
+      - "Floating question cards use oversized blue question-mark icons that feel more generic than the polished central UI."
+    confidence: medium
+  - id: iconography_illustration_06
+    family: iconography_illustration
+    polarity: mixed
+    site: goinfusive.com
+    page_or_region: "platform hero and feature grid"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-00-y00000.png"
+    claim: "The software graphics are cohesive, but the heavy effects compete with the product UI."
+    visible_tells:
+      - "Feature cards repeat white line icons in circular caps, purple panels, and beveled borders."
+      - "The laptop mockup, smoky purple background, glow button, and large feature cards create a dense visual stack around the actual interface."
+    confidence: high
+  - id: iconography_illustration_07
+    family: iconography_illustration
+    polarity: poor
+    site: jinfiniti.com
+    page_or_region: "intracellular NAD product page hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-00-y00000.png"
+    claim: "The product graphics mix too many visual languages to read as one system."
+    visible_tells:
+      - "A rendered test box, chemical-structure diagram, magenta benefit icons, thumbnail rail, ratings, and sticky promo bars all compete in the same viewport."
+      - "The benefit icons share square purple backgrounds but vary from shield to clipboard to pie chart to medical cross without a refined common style."
+    confidence: high
+rejected_cards:
+  - source_family: typography_hierarchy
+    site: functionhealth.com
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-00-y00000.png"
+    reason: "polarity_too_generous"
+  - source_family: typography_hierarchy
+    site: nurx.com
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-01-y01220.png"
+    reason: "duplicate"
+  - source_family: typography_hierarchy
+    site: belmarpharmasolutions.com
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-00-y00000.png"
+    reason: "generic"
+  - source_family: layout_composition_components
+    site: nurx.com
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-01-y01220.png"
+    reason: "duplicate"
+  - source_family: color_brand_imagery
+    site: nurx.com
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-01-y01220.png"
+    reason: "duplicate"
+  - source_family: color_brand_imagery
+    site: belmarpharmasolutions.com
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-00-y00000.png"
+    reason: "generic"
+  - source_family: iconography_illustration
+    site: nurx.com
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-00-y00000.png"
+    reason: "duplicate"
+  - source_family: iconography_illustration
+    site: hellopepti.com
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-06-y07320.png"
+    reason: "duplicate"
+  - source_family: iconography_illustration
+    site: belmarpharmasolutions.com
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-01-y01220.png"
+    reason: "generic"
+  - source_family: iconography_illustration
+    site: kingsbergmedical.com
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/services/tile-00-y00000.png"
+    reason: "duplicate"
+  - source_family: iconography_illustration
+    site: anazaohealth.com
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-01-y01220.png"
+    reason: "duplicate"
+notes: |-
+  Kept 36 cards with concrete visible tells and active tile paths. Rejections mostly remove duplicate Nurx/Belmar service-card observations, generic corporate-polish claims, and extra poor examples already represented by stronger typography, layout, or imagery cards. No cards rely on excluded Hallandale homepage tile 02, live web, company context, scoring, or reference labels.

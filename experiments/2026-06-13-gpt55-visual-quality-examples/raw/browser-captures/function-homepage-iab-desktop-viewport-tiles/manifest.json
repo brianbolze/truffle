@@ -1,0 +1,77 @@
+{
+  "pageInfo": {
+    "innerHeight": 1400,
+    "innerWidth": 1920,
+    "scrollHeight": 12249
+  },
+  "step": 1220,
+  "captures": [
+    {
+      "i": 0,
+      "requestedY": 0,
+      "actualY": 0,
+      "name": "tile-00-y00000.png"
+    },
+    {
+      "i": 1,
+      "requestedY": 1220,
+      "actualY": 1220,
+      "name": "tile-01-y01220.png"
+    },
+    {
+      "i": 2,
+      "requestedY": 2440,
+      "actualY": 2440,
+      "name": "tile-02-y02440.png"
+    },
+    {
+      "i": 3,
+      "requestedY": 3660,
+      "actualY": 3660,
+      "name": "tile-03-y03660.png"
+    },
+    {
+      "i": 4,
+      "requestedY": 4880,
+      "actualY": 4880,
+      "name": "tile-04-y04880.png"
+    },
+    {
+      "i": 5,
+      "requestedY": 6100,
+      "actualY": 6100,
+      "name": "tile-05-y06100.png"
+    },
+    {
+      "i": 6,
+      "requestedY": 7320,
+      "actualY": 7320,
+      "name": "tile-06-y07320.png"
+    },
+    {
+      "i": 7,
+      "requestedY": 8540,
+      "actualY": 8540,
+      "name": "tile-07-y08540.png"
+    },
+    {
+      "i": 8,
+      "requestedY": 9760,
+      "actualY": 9760,
+      "name": "tile-08-y09760.png"
+    },
+    {
+      "i": 9,
+      "requestedY": 10849,
+      "actualY": 10849,
+      "name": "tile-09-y10849.png"
+    }
+  ],
+  "finalImageInfo": {
+    "badImages": [
+      "https://cdn.prod.website-files.com/68823b2fd9cc28b78fb3ee65/6a024a3e95a0c306e20dd064_GETLABS.png"
+    ],
+    "loadedImages": 34,
+    "totalImages": 35
+  }
+}

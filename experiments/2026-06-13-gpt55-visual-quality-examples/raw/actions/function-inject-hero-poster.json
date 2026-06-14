@@ -1,0 +1,13 @@
+[
+  { "type": "wait", "milliseconds": 3000 },
+  {
+    "type": "executeJavascript",
+    "script": "(async () => { const hero = document.querySelector('#canvasContainer'); if (!hero) return 'hero-not-found'; const desktop = 'https://pm3i9nzo0jeqag2m.public.blob.vercel-storage.com/lucid/hero/desktop/images/3vid_1920x1080.webp'; const mobile = 'https://pm3i9nzo0jeqag2m.public.blob.vercel-storage.com/lucid/hero/mobile/images/3vid_1080x1920.webp'; const src = window.innerWidth < 768 ? mobile : desktop; const old = hero.querySelector('.fc-hero-poster'); if (old) old.remove(); const img = new Image(); img.className = 'fc-hero-poster'; img.alt = 'Abstract glass helix in motion'; Object.assign(img.style, { position: 'absolute', inset: '0', width: '100%', height: '100%', objectFit: 'cover', zIndex: '0', pointerEvents: 'none' }); const canvas = hero.querySelector('.flute-canvas'); if (canvas && (canvas.classList.contains('is-hidden') || getComputedStyle(canvas).visibility === 'hidden' || getComputedStyle(canvas).opacity === '0')) { canvas.style.display = 'none'; } const content = hero.querySelector('.flute-hero'); if (content) Object.assign(content.style, { position: 'relative', zIndex: '2' }); hero.prepend(img); await new Promise((resolve) => { img.onload = resolve; img.onerror = resolve; img.src = src; if (img.complete) resolve(); }); return JSON.stringify({ injected: true, src, complete: img.complete, naturalWidth: img.naturalWidth, naturalHeight: img.naturalHeight, canvasClass: canvas ? canvas.className : null, canvasStyle: canvas ? canvas.getAttribute('style') : null }); })()"
+  },
+  { "type": "wait", "milliseconds": 1500 },
+  { "type": "scroll", "to": "bottom", "step": 700, "delay": 250 },
+  { "type": "wait", "milliseconds": 1000 },
+  { "type": "scroll", "to": "top", "step": 700, "delay": 150 },
+  { "type": "wait", "milliseconds": 1000 },
+  { "type": "screenshot", "fullPage": true, "quality": 90 }
+]

@@ -1,0 +1,5 @@
+[
+  { "type": "wait", "milliseconds": 3000 },
+  { "type": "click", "selector": ".fixed.bottom-0 button.text-white" },
+  { "type": "wait", "milliseconds": 1000 }
+]

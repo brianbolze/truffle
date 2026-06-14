@@ -1,0 +1,146 @@
+- family: color_brand_imagery
+  polarity: strong
+  site: functionhealth.com
+  page_or_region: "scans page hero and first follow-on section"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-00-y00000.png"
+  claim: "The scan page uses a restrained black, cream, and rust image system that feels deliberately owned rather than generic wellness stock."
+  visible_tells:
+    - "The hero photo is nearly monochrome black with a side-profile face and rust scan-line rings, matching the rust announcement bar and CTA."
+    - "The next section shifts to cream but keeps the same warm photographic palette and thin diagnostic overlay lines on the body image."
+  contrast_with: "goinfusive.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-00-y00000.png"
+  confidence: high
+
+- family: color_brand_imagery
+  polarity: strong
+  site: functionhealth.com
+  page_or_region: "pricing page hero and membership card"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-00-y00000.png"
+  claim: "The pricing page extends the brand system through warm surfaces, rust accents, and softly clinical product photography without adding extra decorative languages."
+  visible_tells:
+    - "Cream backgrounds, rust italic emphasis, the logo color, and CTA buttons all sit in the same narrow warm palette."
+    - "The phone photo is bright and desaturated enough to support the UI instead of becoming a separate stock-photo moment."
+  contrast_with: "belmarpharmasolutions.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-00-y00000.png"
+  confidence: high
+
+- family: color_brand_imagery
+  polarity: strong
+  site: ro.co
+  page_or_region: "homepage sexual-health product feature"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-02-y02440.png"
+  claim: "Ro's product imagery is commercially polished and specific, using real product close-ups and intimate editorial crops instead of generic condition imagery."
+  visible_tells:
+    - "The large hero crop uses skin-toned photography with a translucent product callout, then repeats the product as a red gummy in the first card."
+    - "The carousel mixes pills, gummies, and branded medication photography on controlled studio surfaces while keeping black CTAs and a consistent card rhythm."
+  contrast_with: "jinfiniti.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/shop/tile-02-y02440.png"
+  confidence: high
+
+- family: color_brand_imagery
+  polarity: strong
+  site: nurx.com
+  page_or_region: "homepage hero and care cards"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/tile-00-y00000.png"
+  claim: "Nurx pairs warm editorial photography with a tight yellow-peach surface system, giving the homepage a coherent consumer-health language."
+  visible_tells:
+    - "The yellow top bar, orange icon strip, pale grid texture, and peach card bodies all reinforce the same warm accent system."
+    - "The care cards use close-cropped lifestyle and product images with similar warmth, rather than mixing unrelated hospital or lab stock."
+  contrast_with: "millspharmacy.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-01-y01220.png"
+  confidence: high
+
+- family: color_brand_imagery
+  polarity: strong
+  site: hallandalerx.com
+  page_or_region: "homepage hero"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-00-y00000.png"
+  claim: "Hallandale's hero turns a pharmacy bottle into the primary brand image, making the blue system feel product-led rather than template-led."
+  visible_tells:
+    - "The oversized hand-held blue bottle carries the same bright blue as the logo and CTA, making the pack shot do real brand work."
+    - "The pale blue-gray background leaves generous empty space around the product, avoiding the usual pharmacy collage of doctors, pills, and facility photos."
+  contrast_with: "kingsbergmedical.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-00-y00000.png"
+  confidence: high
+
+- family: color_brand_imagery
+  polarity: mixed
+  site: gogeviti.com
+  page_or_region: "homepage hero and late-page founder/story section"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-06-y07320.png"
+  claim: "Geviti has distinctive atmosphere, but its imagery shifts from sky-led whimsy into generic family-photo aspiration before the system fully coheres."
+  visible_tells:
+    - "The blue-purple gradient, star speckles, and oversized italic headline create a recognizable dreamlike surface."
+    - "The overlapping family photos are warm and attractive, but they read like familiar lifestyle stock cards layered onto the gradient."
+  contrast_with: "gogeviti.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-00-y00000.png"
+  confidence: medium
+
+- family: color_brand_imagery
+  polarity: mixed
+  site: joinamble.com
+  page_or_region: "homepage product carousel and weight-loss panel"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-02-y02440.png"
+  claim: "Amble's color panels are appealing, but the system leans on campaign-by-campaign color swaps more than a stable visual language."
+  visible_tells:
+    - "The top product cards are mostly white with tiny vial images, while the next section abruptly becomes a saturated orange portrait panel."
+    - "The orange panel has a clear art direction, but the translucent icon strip and product carousel above feel like separate modules."
+  contrast_with: "ro.co / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-02-y02440.png"
+  confidence: medium
+
+- family: color_brand_imagery
+  polarity: mixed
+  site: hellopepti.com
+  page_or_region: "homepage treatment-goals section"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-11-y13420.png"
+  claim: "Pepti's lime-and-fashion imagery is memorable, but this tile exposes a mismatch between premium photography, tiny product thumbnails, and loud process graphics."
+  visible_tells:
+    - "The top uses a glamorous teal portrait crop with a soft fade, while the treatment cards rely on very small vial thumbnails inside pale green boxes."
+    - "The next section starts a bright lime wavy background with a badge-like logo treatment, creating a louder surface mode than the section above."
+  contrast_with: "nurx.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/tile-00-y00000.png"
+  confidence: high
+
+- family: color_brand_imagery
+  polarity: poor
+  site: goinfusive.com
+  page_or_region: "homepage hero"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-00-y00000.png"
+  claim: "Infusive's glossy purple treatment looks designed, but the color and media choices are generic B2B SaaS rather than ownable healthcare art direction."
+  visible_tells:
+    - "The hero stacks purple gradients, magenta pill buttons, bokeh dots, and an abstract wave background in a familiar tech-template combination."
+    - "The central laptop mockup and floating testimonial card could be swapped into many software sites without changing the visual language."
+  contrast_with: "functionhealth.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-00-y00000.png"
+  confidence: high
+
+- family: color_brand_imagery
+  polarity: poor
+  site: belmarpharmasolutions.com
+  page_or_region: "homepage hero"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-00-y00000.png"
+  claim: "Belmar's green healthcare palette and angular photo mask are competent but visually generic."
+  visible_tells:
+    - "The hero combines a smiling person in front of glass buildings with translucent green-blue diagonal overlays, a common corporate-health treatment."
+    - "The same green is used for logo, buttons, credential bar, icons, and rules, making the page feel monotone rather than richly branded."
+  contrast_with: "hallandalerx.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-00-y00000.png"
+  confidence: high
+
+- family: color_brand_imagery
+  polarity: poor
+  site: jinfiniti.com
+  page_or_region: "homepage NAD education section"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-01-y01220.png"
+  claim: "Jinfiniti's science imagery feels amateur because chart, icons, and color accents do not share a mature visual system."
+  visible_tells:
+    - "The NAD chart uses a rainbow gradient line, basic axis labels, and a separate hexagon badge that looks like presentation art."
+    - "The symptom cards below switch to thin outlined clip-art icons on pale lavender circles, while the sticky purple promotion bar adds another unrelated brand layer."
+  contrast_with: "functionhealth.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-00-y00000.png"
+  confidence: high
+
+- family: color_brand_imagery
+  polarity: poor
+  site: kingsbergmedical.com
+  page_or_region: "homepage hero"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-00-y00000.png"
+  claim: "Kingsberg's homepage hero reads as a stock composite rather than a controlled brand image."
+  visible_tells:
+    - "The mountain landscape, two posed clinicians, and green ribbon headline are layered together without a believable shared photographic scene."
+    - "The pale green body band, dark green nav, and small black CTA all compete with the busy hero image instead of forming a refined palette."
+  contrast_with: "hallandalerx.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-00-y00000.png"
+  confidence: high
+
+- notes: |-
+    Color and imagery were easiest to judge when a tile showed a hero plus the next module, because palette continuity or breakage was visible in one screenshot. It was harder to separate intentional campaign variety from weak brand cohesion on long pages, especially for sites with attractive photography but repeated template modules. Static tiles also hide motion and carousel sequencing, so claims stay limited to visible crops, surfaces, and image treatments.

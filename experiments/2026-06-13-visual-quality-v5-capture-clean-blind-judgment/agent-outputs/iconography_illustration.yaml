@@ -1,0 +1,135 @@
+cards:
+  - family: iconography_illustration
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "homepage lab testing proof cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/raw/browser-captures/function-homepage-iab-desktop-viewport-tiles/tile-04-y04880.png"
+    claim: "The lab-testing graphics feel like a coherent evidence system rather than decoration."
+    visible_tells:
+      - "The U.S. map is built from the same warm dotted-circle motif used elsewhere on the page."
+      - "The adjacent statistic card uses restrained scale and spacing, keeping the numeric graphic aligned with the editorial photography cards above."
+    confidence: high
+
+  - family: iconography_illustration
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "scans CT scan cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-03-y03660.png"
+    claim: "The medical iconography is simple, consistent, and well-integrated with the product-card system."
+    visible_tells:
+      - "Heart and lung icons share the same thin copper outline style, scale, and placement."
+      - "Small check icons, CTA arrows, and organ icons all use the same accent color, avoiding a mixed icon-library feel."
+    confidence: high
+
+  - family: iconography_illustration
+    polarity: strong
+    site: ro.co
+    page_or_region: "homepage product tiles and treatment modules"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-00-y00000.png"
+    claim: "The product art direction turns medication objects into a recognizable modular visual language."
+    visible_tells:
+      - "Packshots, pills, and pens sit on shared pale blue and gray product-stage backgrounds."
+      - "Hero tiles, small promo tiles, and product thumbnails repeat the same object-forward composition rather than switching into unrelated illustration."
+    confidence: high
+
+  - family: iconography_illustration
+    polarity: mixed
+    site: nurx.com
+    page_or_region: "our services category grid"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-00-y00000.png"
+    claim: "The service imagery is tidy and consistent, but it behaves more like categorized stock photography than a distinctive visual system."
+    visible_tells:
+      - "Six category cards use matching rounded photo crops and repeated label placement."
+      - "The images shift between face closeups, product still life, and lifestyle portraits without a shared graphic treatment beyond the crop."
+    confidence: high
+
+  - family: iconography_illustration
+    polarity: strong
+    site: hellopepti.com
+    page_or_region: "homepage app and logistics mockups"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-03-y03660.png"
+    claim: "The app and logistics graphics form a polished product narrative with consistent UI-device styling."
+    visible_tells:
+      - "Progress chart, prescription approval cards, delivery tracker, and shipment timeline all use the same mint field, lime accent, and translucent panel treatment."
+      - "The large order-status mockup repeats the same check-circle and progress-bar devices introduced in the smaller cards above."
+    confidence: high
+
+  - family: iconography_illustration
+    polarity: mixed
+    site: hellopepti.com
+    page_or_region: "homepage treatment cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-06-y07320.png"
+    claim: "The treatment-card system is coherent but visually thin."
+    visible_tells:
+      - "Most goal cards repeat the same small vial thumbnail, pale card background, and two-column grid."
+      - "One card switches to a photographic action crop, which weakens the otherwise repeated product-thumbnail rule."
+    confidence: high
+
+  - family: iconography_illustration
+    polarity: mixed
+    site: gogeviti.com
+    page_or_region: "blueprint chat mockup"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/blueprint/tile-02-y02440.png"
+    claim: "The AI-chat product graphic is clean, but the surrounding visual devices feel under-systematized."
+    visible_tells:
+      - "The central phone-style chat mockup has consistent bubbles, shadow, rounded corners, and message hierarchy."
+      - "Floating question cards use oversized blue question-mark icons that feel more generic than the polished central UI."
+    confidence: medium
+
+  - family: iconography_illustration
+    polarity: mixed
+    site: belmarpharmasolutions.com
+    page_or_region: "homepage Why Belmar cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-01-y01220.png"
+    claim: "The icon cards are legible and consistent enough, but the icon family is generic."
+    visible_tells:
+      - "Four cards use similar oversized line icons, large white cards, and accent-colored strokes."
+      - "The icons switch between teal, pink, and green without a visible semantic rule beyond variety."
+    confidence: high
+
+  - family: iconography_illustration
+    polarity: mixed
+    site: goinfusive.com
+    page_or_region: "platform hero and feature grid"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-00-y00000.png"
+    claim: "The software graphics are cohesive, but the heavy effects compete with the product UI."
+    visible_tells:
+      - "Feature cards repeat white line icons in circular caps, purple panels, and beveled borders."
+      - "The laptop mockup, smoky purple background, glow button, and large feature cards create a dense visual stack around the actual interface."
+    confidence: high
+
+  - family: iconography_illustration
+    polarity: poor
+    site: jinfiniti.com
+    page_or_region: "intracellular NAD product page hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-00-y00000.png"
+    claim: "The product graphics mix too many visual languages to read as one system."
+    visible_tells:
+      - "A rendered test box, chemical-structure diagram, magenta benefit icons, thumbnail rail, ratings, and sticky promo bars all compete in the same viewport."
+      - "The benefit icons share square purple backgrounds but vary from shield to clipboard to pie chart to medical cross without a refined common style."
+    confidence: high
+
+  - family: iconography_illustration
+    polarity: poor
+    site: kingsbergmedical.com
+    page_or_region: "services hero and hormone therapy section"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/services/tile-00-y00000.png"
+    claim: "The visual system relies on unrelated stock composites rather than coherent product or medical graphics."
+    visible_tells:
+      - "The hero combines mountain scenery, cutout doctors, a translucent text slab, a green play-button CTA, and an apple logo mark."
+      - "The content area shifts to a generic prescription clipboard photo while the sidebar uses a bright tree image with no matching visual rule."
+    confidence: high
+
+  - family: iconography_illustration
+    polarity: poor
+    site: anazaohealth.com
+    page_or_region: "homepage solutions section"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-01-y01220.png"
+    claim: "The section has almost no icon or illustration system beyond flat labeled buttons over a faded lab photo."
+    visible_tells:
+      - "The service options are plain teal rectangles with text only, repeated over a washed-out background image."
+      - "A YouTube embed above introduces a different visual language, including the red play mark and embedded video chrome."
+    confidence: high
+
+notes: |-
+  Static tiles made product mockups, icon-family consistency, and repeated graphic devices easy to inspect. Motion-dependent illustration behavior and whether some UI mockups are interactive could not be verified from the screenshots alone.

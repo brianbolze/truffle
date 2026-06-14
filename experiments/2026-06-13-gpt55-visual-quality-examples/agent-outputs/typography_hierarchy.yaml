@@ -1,0 +1,148 @@
+cards:
+  - family: typography_hierarchy
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "pricing hero and membership lead-in"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-00-y00000.png"
+    claim: "The hero uses a restrained serif/sans contrast to make price, promise, body copy, and CTA read in a deliberate order."
+    visible_tells:
+      - "The headline splits the serif statement from the rust italic price phrase, so '$365 annually' becomes the focal detail without needing extra badges."
+      - "The supporting sentence, button, and membership card all step down cleanly in size, leaving wide quiet space around the primary message."
+    contrast_with: "kingsbergmedical.com experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-00-y00000.png"
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "scans hero and first content section"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-00-y00000.png"
+    claim: "The scans page sustains expressive display type while preserving a clear clinical reading path."
+    visible_tells:
+      - "The hero headline gives 'MRI & CT scans' and the italic 'early detection' distinct roles inside one compact lockup."
+      - "Below the fold, 'Don't wait for symptoms' repeats the same display voice while the paragraph and bullet copy stay calmer and easier to scan."
+    contrast_with: "goinfusive.com experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-00-y00000.png"
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: strong
+    site: hallandalerx.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-00-y00000.png"
+    claim: "The homepage hero uses a plain but well-controlled type scale that makes the pharmacy positioning immediately legible."
+    visible_tells:
+      - "The large multiline headline has generous leading and sits in a clear left column, separate from the bottle image."
+      - "The eyebrow, headline, and blue CTA form three distinct levels without competing with the accreditation strip below."
+    contrast_with: "anazaohealth.com experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-00-y00000.png"
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: strong
+    site: nurx.com
+    page_or_region: "weight management hero and science cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-00-y00000.png"
+    claim: "The page builds hierarchy with confident spacing and consistent label, headline, body, and CTA levels."
+    visible_tells:
+      - "The hero stacks a small all-caps label, large headline, bold subhead, bullets, and button with enough separation that each level is distinct."
+      - "The two science cards use matching rules, labels, large claims, and footnotes, making dense clinical claims feel orderly."
+    contrast_with: "jinfiniti.com experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-01-y01220.png"
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: strong
+    site: gogeviti.com
+    page_or_region: "homepage hero and early explainer"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-00-y00000.png"
+    claim: "The page uses expressive italic display type as a recurring hierarchy device rather than a one-off decoration."
+    visible_tells:
+      - "The hero separates the plain setup line from the large italic 'Built For More Healthy Years' line, creating a clear title sequence."
+      - "The next section repeats the pattern with 'Your Health Data Is Everywhere' above the italic 'We Bring It Together,' so the typographic system continues below the hero."
+    contrast_with: "anazaohealth.com experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-00-y00000.png"
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: mixed
+    site: hellopepti.com
+    page_or_region: "homepage product carousel"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-02-y02440.png"
+    claim: "The product grid is legible and on-brand, but the repeated card typography gives too many elements the same priority."
+    visible_tells:
+      - "Product category labels, names, descriptions, shipping notes, prices, and two buttons repeat across every card in nearly identical rhythm."
+      - "The section heading is clear, but the repeated dark 'Start assessment' buttons dominate the card row more than the product names or prices."
+    contrast_with: "nurx.com experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-01-y01220.png"
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: mixed
+    site: ro.co
+    page_or_region: "pricing category rail and product cards"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-00-y00000.png"
+    claim: "The pricing system has strong card-level hierarchy, but the sticky category rail visibly interferes with the section heading."
+    visible_tells:
+      - "The top headline 'Transparent pricing, always' is strong, with the orange phrase setting the page frame cleanly."
+      - "Lower in the tile, the sticky category row cuts across the 'Erectile dysfunction' section title, breaking the otherwise orderly reading flow."
+    contrast_with: "functionhealth.com experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-02-y02440.png"
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: mixed
+    site: goinfusive.com
+    page_or_region: "homepage hero and lead form"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-00-y00000.png"
+    claim: "The page has real typographic ambition, but too many headline treatments and CTA styles compete for attention."
+    visible_tells:
+      - "The hero mixes huge thin display text, bold emphasis words, all-caps subheads, letter-spaced navigation, a testimonial card, and a glossy all-caps CTA in one view."
+      - "The next section begins with another large gradient headline before the first hero message has visually settled."
+    contrast_with: "functionhealth.com experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-00-y00000.png"
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: poor
+    site: jinfiniti.com
+    page_or_region: "homepage hero to press band transition"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-00-y00000.png"
+    claim: "The page loses hierarchy because persistent navigation and promotion text repeat over the content area."
+    visible_tells:
+      - "A second header and purple offer bar appear again near the bottom of the tile, sitting directly over the press-logo band."
+      - "The hero headline is large and airy, but the repeated nav, promo message, and 'Learn More' button create a competing text layer."
+    contrast_with: "hallandalerx.com experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-00-y00000.png"
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: poor
+    site: kingsbergmedical.com
+    page_or_region: "homepage hero and first sections"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-00-y00000.png"
+    claim: "The page relies on dated, conflicting type treatments that make the first viewport feel loud but not well ordered."
+    visible_tells:
+      - "The hero combines a large serif text block, all-caps navigation, a large all-caps green CTA, and a separate centered green mission sentence."
+      - "The long centered green sentence below the hero is set almost like another headline, competing with the following 'Get Started' section title."
+    contrast_with: "functionhealth.com experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-00-y00000.png"
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: poor
+    site: anazaohealth.com
+    page_or_region: "homepage hero and about section"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-00-y00000.png"
+    claim: "The type scale is blunt and uneven, with oversized cyan headings but weak paragraph rhythm."
+    visible_tells:
+      - "The hero text floats over a bright photo with low contrast and shadow, while the 'Learn More' button sits at nearly the same visual weight."
+      - "The 'ABOUT US' heading is oversized and all caps, but the following paragraphs are centered in a narrow block with dense line breaks."
+    contrast_with: "nurx.com experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-00-y00000.png"
+    confidence: high
+
+  - family: typography_hierarchy
+    polarity: mixed
+    site: millspharmacy.com
+    page_or_region: "homepage hero and first content section"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-00-y00000.png"
+    claim: "The clean homepage is readable, but its decorative all-caps headings and centered copy flatten the type hierarchy."
+    visible_tells:
+      - "The hero panel stacks an italic eyebrow, all-caps headline, paragraph copy, boxed button, and italic text link without a strong focal jump after the headline."
+      - "The next section repeats a centered all-caps tan heading and centered paragraph, making the content feel formal but not especially scannable."
+    contrast_with: "belmarpharmasolutions.com experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-00-y00000.png"
+    confidence: high
+
+notes: |-
+  Easy to judge from static tiles: headline scale, serif/sans contrast, obvious CTA priority, paragraph measure, repeated card rhythm, and cases where sticky headers visibly collide with content.
+  Harder to judge from static tiles: whether some sticky-header collisions are capture-position artifacts versus live interaction defects, and whether small body copy remains readable at actual device zoom. I treated only visible tile evidence as usable and avoided Function Health homepage images per the protocol.

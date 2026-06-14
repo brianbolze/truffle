@@ -1,0 +1,135 @@
+cards:
+  - family: color_brand_imagery
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/raw/browser-captures/function-homepage-iab-desktop-viewport-tiles/tile-00-y00000.png"
+    claim: "The hero uses a restrained, owned-feeling health image system rather than generic clinical stock."
+    visible_tells:
+      - "Full-bleed close side-profile portrait in a desert landscape, with muted olive, sand, and brown tones."
+      - "Rust top bar and CTA color echo the warm image palette instead of introducing a separate accent system."
+    confidence: high
+
+  - family: color_brand_imagery
+    polarity: strong
+    site: functionhealth.com
+    page_or_region: "pricing lab-test categories"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-02-y02440.png"
+    claim: "The pricing page keeps brand control through a narrow cream-and-rust palette and data-adjacent illustration."
+    visible_tells:
+      - "The comparison matrix uses cream backgrounds with one rust-highlighted column instead of many competing plan colors."
+      - "The lower cards pair a pale U.S. map and vertical bar graphic with the same rust accent used in buttons and labels."
+    confidence: high
+
+  - family: color_brand_imagery
+    polarity: mixed
+    site: ro.co
+    page_or_region: "weight-loss hero and product imagery"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-00-y00000.png"
+    claim: "The page is commercially polished, but the imagery reads more assembled than ownable."
+    visible_tells:
+      - "A celebrity-style portrait, medication pen packshots, and an injection-use crop sit side by side with different photographic languages."
+      - "The brand accents shift between lime banner, green benefit text, coral stamp, and black buttons."
+    confidence: high
+
+  - family: color_brand_imagery
+    polarity: strong
+    site: nurx.com
+    page_or_region: "services catalog"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-01-y01220.png"
+    claim: "The service catalog turns broad healthcare categories into a consistent editorial shopping system."
+    visible_tells:
+      - "Warm cream section bands repeat behind service cards, keeping acne, hair, eyelash, and melasma imagery in one visual family."
+      - "Cropped skin and face photos share soft lighting and similar card proportions rather than mixed thumbnail styles."
+    confidence: high
+
+  - family: color_brand_imagery
+    polarity: mixed
+    site: hallandalerx.com
+    page_or_region: "products grid"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-01-y01220.png"
+    claim: "The product photography is consistent, but the overall catalog language is sterile and lightly branded."
+    visible_tells:
+      - "Vials repeat with matching angle, shadow, label placement, and gray card backgrounds."
+      - "Most of the tile is white and light gray, with the blue brand mark appearing only on bottle labels and small UI elements."
+    confidence: high
+
+  - family: color_brand_imagery
+    polarity: mixed
+    site: gogeviti.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-00-y00000.png"
+    claim: "The sky-and-cream system is coherent, but it leans on familiar longevity/wellness tropes."
+    visible_tells:
+      - "The hero is dominated by bright blue sky, clouds, and soft cream sections."
+      - "Gradient cards and floating metric tiles reinforce polish, but the cloudscape itself is generic wellness imagery."
+    confidence: high
+
+  - family: color_brand_imagery
+    polarity: strong
+    site: joinamble.com
+    page_or_region: "GLP-1 results section"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-01-y01220.png"
+    claim: "The GLP-1 page uses a controlled color world to make outcome imagery feel branded."
+    visible_tells:
+      - "The orange results panel, radiating line texture, and portrait crop share one warm treatment."
+      - "The upper process cards use the same orange icon accent while keeping the rest of the page mostly white and black."
+    confidence: high
+
+  - family: color_brand_imagery
+    polarity: mixed
+    site: hellopepti.com
+    page_or_region: "product cards and outcomes charts"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-05-y06100.png"
+    claim: "The page has a recognizable neon-acid palette, but it starts to overpower the product evidence."
+    visible_tells:
+      - "Outcome charts use pale yellow panels with fluorescent yellow lines across all four quadrants."
+      - "The vial product photos are crisp, but the surrounding tint and glow compete with their clinical specificity."
+    confidence: high
+
+  - family: color_brand_imagery
+    polarity: mixed
+    site: belmarpharmasolutions.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-00-y00000.png"
+    claim: "The green brand system is consistent, though the hero image feels like broad corporate healthcare stock."
+    visible_tells:
+      - "Green logo, buttons, credential band, and link rules create a clear palette spine."
+      - "The smiling person in front of glass office architecture is polished but not visually specific to pharmacy or compounding."
+    confidence: high
+
+  - family: color_brand_imagery
+    polarity: poor
+    site: millspharmacy.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-00-y00000.png"
+    claim: "The imagery and brand system feel dated and only loosely integrated."
+    visible_tells:
+      - "The storefront photo is boxed beside a gray-blue text panel and sits under a heavy black-and-gray header."
+      - "Credential icons, social icons, the seal mark, and product/service blocks all use different visual treatments."
+    confidence: high
+
+  - family: color_brand_imagery
+    polarity: poor
+    site: kingsbergmedical.com
+    page_or_region: "homepage hero"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-00-y00000.png"
+    claim: "The hero relies on dated compositing rather than a credible owned image system."
+    visible_tells:
+      - "Two doctor cutouts are layered over a mountain landscape with a semi-transparent text box."
+      - "The apple logo, green CTA bar, mountain background, and isolated doctor cutouts compete as separate visual ideas."
+    confidence: high
+
+  - family: color_brand_imagery
+    polarity: poor
+    site: anazaohealth.com
+    page_or_region: "homepage hero and about section"
+    tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-00-y00000.png"
+    claim: "The page uses generic wellness imagery with weak brand ownership."
+    visible_tells:
+      - "The hero is a washed-out outdoor fitness couple photo with blue headline text overlaid."
+      - "Below it, the embedded video thumbnail introduces a different facility/signage image style."
+    confidence: high
+
+notes: |-
+  Static tiles made palette control and image consistency easy to detect, especially where pages repeated product cards, hero photos, or accent colors. Image provenance and whether photos are custom could not be verified from screenshots alone, so claims are limited to visible specificity, crop quality, and how owned the visual system appears.

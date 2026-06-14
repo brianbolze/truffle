@@ -1,0 +1,2416 @@
+[
+  {
+    "site": "functionhealth.com",
+    "slug": "functionhealth-com",
+    "capture": "2026-06-01",
+    "anchor": "high control; Brian rating snapshot 10; homepage excluded because Firecrawl rendered the real hero media as a flat grey block",
+    "pages": [
+      {
+        "page": "pricing",
+        "source": "store/functionhealth-com/captures/2026-06-01/.payloads/pricing.png",
+        "width": 1920,
+        "height": 7654,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 6254,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-06-y06254.png"
+          }
+        ]
+      },
+      {
+        "page": "scans",
+        "source": "store/functionhealth-com/captures/2026-06-01/.payloads/scans.png",
+        "width": 1920,
+        "height": 9461,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 8061,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-07-y08061.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "site": "ro.co",
+    "slug": "ro-co",
+    "capture": "2026-06-04",
+    "anchor": "high control; Brian rating snapshot 8",
+    "pages": [
+      {
+        "page": "homepage",
+        "source": "store/ro-co/captures/2026-06-04/.payloads/homepage.png",
+        "width": 1920,
+        "height": 8861,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 7461,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-07-y07461.png"
+          }
+        ]
+      },
+      {
+        "page": "weight-loss",
+        "source": "store/ro-co/captures/2026-06-04/.payloads/weight-loss.png",
+        "width": 1920,
+        "height": 10327,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 8540,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-07-y08540.png"
+          },
+          {
+            "index": 8,
+            "y": 8927,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-08-y08927.png"
+          }
+        ]
+      },
+      {
+        "page": "pricing",
+        "source": "store/ro-co/captures/2026-06-04/.payloads/pricing.png",
+        "width": 1920,
+        "height": 11071,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 8540,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-07-y08540.png"
+          },
+          {
+            "index": 8,
+            "y": 9671,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/pricing/tile-08-y09671.png"
+          }
+        ]
+      },
+      {
+        "page": "os",
+        "source": "store/ro-co/captures/2026-06-04/.payloads/os.png",
+        "width": 1920,
+        "height": 8946,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/os/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/os/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/os/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/os/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/os/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/os/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/os/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/os/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 7546,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/os/tile-07-y07546.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "site": "nurx.com",
+    "slug": "nurx-com",
+    "capture": "2026-06-04",
+    "anchor": "high control; Brian rating snapshot 7",
+    "pages": [
+      {
+        "page": "homepage",
+        "source": "store/nurx-com/captures/2026-06-04/.payloads/homepage.png",
+        "width": 1920,
+        "height": 7806,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 6406,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/tile-06-y06406.png"
+          }
+        ]
+      },
+      {
+        "page": "our_services",
+        "source": "store/nurx-com/captures/2026-06-04/.payloads/our_services.png",
+        "width": 1920,
+        "height": 10674,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 8540,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-07-y08540.png"
+          },
+          {
+            "index": 8,
+            "y": 9274,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-08-y09274.png"
+          }
+        ]
+      },
+      {
+        "page": "team",
+        "source": "store/nurx-com/captures/2026-06-04/.payloads/team.png",
+        "width": 1920,
+        "height": 3597,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/team/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/team/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/team/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2197,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/team/tile-02-y02197.png"
+          }
+        ]
+      },
+      {
+        "page": "weight_management",
+        "source": "store/nurx-com/captures/2026-06-04/.payloads/weight_management.png",
+        "width": 1920,
+        "height": 11133,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 8540,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-07-y08540.png"
+          },
+          {
+            "index": 8,
+            "y": 9733,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-08-y09733.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "site": "hallandalerx.com",
+    "slug": "hallandalerx-com",
+    "capture": "2026-06-02",
+    "anchor": "high-ish control; Brian rating snapshot 8",
+    "pages": [
+      {
+        "page": "homepage",
+        "source": "store/hallandalerx-com/captures/2026-06-02/.payloads/homepage.png",
+        "width": 1920,
+        "height": 6524,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 5124,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-05-y05124.png"
+          }
+        ]
+      },
+      {
+        "page": "products",
+        "source": "store/hallandalerx-com/captures/2026-06-02/.payloads/products.png",
+        "width": 1920,
+        "height": 5916,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4516,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-04-y04516.png"
+          }
+        ]
+      },
+      {
+        "page": "quality",
+        "source": "store/hallandalerx-com/captures/2026-06-02/.payloads/quality.png",
+        "width": 1920,
+        "height": 3456,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/quality/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/quality/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/quality/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2056,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/quality/tile-02-y02056.png"
+          }
+        ]
+      },
+      {
+        "page": "new-provider-landing",
+        "source": "store/hallandalerx-com/captures/2026-06-02/.payloads/new-provider-landing.png",
+        "width": 1920,
+        "height": 2659,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/new-provider-landing/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/new-provider-landing/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/new-provider-landing/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 1259,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/new-provider-landing/tile-02-y01259.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "site": "gogeviti.com",
+    "slug": "gogeviti-com",
+    "capture": "2026-06-03",
+    "anchor": "mid/high control; Brian rating snapshot 7; prior distinctive-art-direction trap",
+    "pages": [
+      {
+        "page": "homepage",
+        "source": "store/gogeviti-com/captures/2026-06-03/.payloads/homepage.png",
+        "width": 1920,
+        "height": 9413,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 8013,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/homepage/tile-07-y08013.png"
+          }
+        ]
+      },
+      {
+        "page": "pricing",
+        "source": "store/gogeviti-com/captures/2026-06-03/.payloads/pricing.png",
+        "width": 1920,
+        "height": 6854,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/pricing/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/pricing/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/pricing/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/pricing/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/pricing/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/pricing/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 5454,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/pricing/tile-05-y05454.png"
+          }
+        ]
+      },
+      {
+        "page": "blueprint",
+        "source": "store/gogeviti-com/captures/2026-06-03/.payloads/blueprint.png",
+        "width": 1920,
+        "height": 6750,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/blueprint/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/blueprint/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/blueprint/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/blueprint/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/blueprint/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/blueprint/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 5350,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/blueprint/tile-05-y05350.png"
+          }
+        ]
+      },
+      {
+        "page": "clinic",
+        "source": "store/gogeviti-com/captures/2026-06-03/.payloads/clinic.png",
+        "width": 1920,
+        "height": 6426,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/clinic/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/clinic/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/clinic/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/clinic/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/clinic/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/clinic/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 5026,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/clinic/tile-05-y05026.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "site": "joinamble.com",
+    "slug": "joinamble-com",
+    "capture": "2026-06-13",
+    "anchor": "mid control; Brian rating snapshot 7; prior overrating trap; recaptured with Transcend consent dismissed",
+    "pages": [
+      {
+        "page": "homepage",
+        "source": "store/joinamble-com/captures/2026-06-13/.payloads/homepage.png",
+        "width": 1920,
+        "height": 8358,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 6958,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-06-y06958.png"
+          }
+        ]
+      },
+      {
+        "page": "glp1",
+        "source": "store/joinamble-com/captures/2026-06-13/.payloads/glp1.png",
+        "width": 1920,
+        "height": 9467,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 8067,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-07-y08067.png"
+          }
+        ]
+      },
+      {
+        "page": "sermorelin",
+        "source": "store/joinamble-com/captures/2026-06-13/.payloads/sermorelin.png",
+        "width": 1920,
+        "height": 7062,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/sermorelin/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/sermorelin/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/sermorelin/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/sermorelin/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/sermorelin/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/sermorelin/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 5662,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/sermorelin/tile-05-y05662.png"
+          }
+        ]
+      },
+      {
+        "page": "nad",
+        "source": "store/joinamble-com/captures/2026-06-13/.payloads/nad.png",
+        "width": 1920,
+        "height": 7255,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/nad/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/nad/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/nad/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/nad/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/nad/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/nad/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 5855,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/nad/tile-05-y05855.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "site": "hellopepti.com",
+    "slug": "hellopepti-com",
+    "capture": "2026-06-13",
+    "anchor": "mid control; Brian rating snapshot 6; prior visual-ambition trap; recaptured with cookie bar removed",
+    "pages": [
+      {
+        "page": "homepage",
+        "source": "store/hellopepti-com/captures/2026-06-13/.payloads/homepage.png",
+        "width": 1920,
+        "height": 23687,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 8540,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-07-y08540.png"
+          },
+          {
+            "index": 8,
+            "y": 9760,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-08-y09760.png"
+          },
+          {
+            "index": 9,
+            "y": 10980,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-09-y10980.png"
+          },
+          {
+            "index": 10,
+            "y": 12200,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-10-y12200.png"
+          },
+          {
+            "index": 11,
+            "y": 13420,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-11-y13420.png"
+          },
+          {
+            "index": 12,
+            "y": 14640,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-12-y14640.png"
+          },
+          {
+            "index": 13,
+            "y": 15860,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-13-y15860.png"
+          },
+          {
+            "index": 14,
+            "y": 17080,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-14-y17080.png"
+          },
+          {
+            "index": 15,
+            "y": 18300,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-15-y18300.png"
+          },
+          {
+            "index": 16,
+            "y": 19520,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-16-y19520.png"
+          },
+          {
+            "index": 17,
+            "y": 20740,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-17-y20740.png"
+          },
+          {
+            "index": 18,
+            "y": 21960,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-18-y21960.png"
+          },
+          {
+            "index": 19,
+            "y": 22287,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-19-y22287.png"
+          }
+        ]
+      },
+      {
+        "page": "how_it_works",
+        "source": "store/hellopepti-com/captures/2026-06-13/.payloads/how_it_works.png",
+        "width": 1920,
+        "height": 7392,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/how_it_works/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/how_it_works/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/how_it_works/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/how_it_works/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/how_it_works/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/how_it_works/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 5992,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/how_it_works/tile-05-y05992.png"
+          }
+        ]
+      },
+      {
+        "page": "about",
+        "source": "store/hellopepti-com/captures/2026-06-13/.payloads/about.png",
+        "width": 1920,
+        "height": 5573,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/about/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/about/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/about/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/about/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/about/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4173,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/about/tile-04-y04173.png"
+          }
+        ]
+      },
+      {
+        "page": "providers",
+        "source": "store/hellopepti-com/captures/2026-06-13/.payloads/providers.png",
+        "width": 1920,
+        "height": 3731,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/providers/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/providers/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/providers/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2331,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/providers/tile-02-y02331.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "site": "belmarpharmasolutions.com",
+    "slug": "belmarpharmasolutions-com",
+    "capture": "2026-06-13",
+    "anchor": "low/mid control; Brian rating snapshot 4; coherent-B2B-template trap; recaptured with CookieYes banner rejected",
+    "pages": [
+      {
+        "page": "homepage",
+        "source": "store/belmarpharmasolutions-com/captures/2026-06-13/.payloads/homepage.png",
+        "width": 1920,
+        "height": 6002,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4602,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-04-y04602.png"
+          }
+        ]
+      },
+      {
+        "page": "clinicians",
+        "source": "store/belmarpharmasolutions-com/captures/2026-06-13/.payloads/clinicians.png",
+        "width": 1920,
+        "height": 4124,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/clinicians/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/clinicians/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/clinicians/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/clinicians/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 2724,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/clinicians/tile-03-y02724.png"
+          }
+        ]
+      },
+      {
+        "page": "open-account",
+        "source": "store/belmarpharmasolutions-com/captures/2026-06-13/.payloads/open-account.png",
+        "width": 1920,
+        "height": 4319,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/open-account/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/open-account/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/open-account/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/open-account/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 2919,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/open-account/tile-03-y02919.png"
+          }
+        ]
+      },
+      {
+        "page": "account-form",
+        "source": "store/belmarpharmasolutions-com/captures/2026-06-13/.payloads/account-form.png",
+        "width": 1920,
+        "height": 4216,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/account-form/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/account-form/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/account-form/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/account-form/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 2816,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/account-form/tile-03-y02816.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "site": "millspharmacy.com",
+    "slug": "millspharmacy-com",
+    "capture": "2026-06-13",
+    "anchor": "low control; Brian rating snapshot 4; duplicated vendor-template blocks; recaptured to remove newsletter/cookie overlays",
+    "pages": [
+      {
+        "page": "homepage",
+        "source": "store/millspharmacy-com/captures/2026-06-13/.payloads/homepage.png",
+        "width": 1920,
+        "height": 4536,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3136,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-03-y03136.png"
+          }
+        ]
+      },
+      {
+        "page": "compounding",
+        "source": "store/millspharmacy-com/captures/2026-06-13/.payloads/compounding.png",
+        "width": 1920,
+        "height": 1981,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/compounding/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/compounding/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 581,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/compounding/tile-01-y00581.png"
+          }
+        ]
+      },
+      {
+        "page": "quality_safety",
+        "source": "store/millspharmacy-com/captures/2026-06-13/.payloads/quality_safety.png",
+        "width": 1920,
+        "height": 2976,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/quality_safety/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/quality_safety/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/quality_safety/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 1576,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/quality_safety/tile-02-y01576.png"
+          }
+        ]
+      },
+      {
+        "page": "weight_management",
+        "source": "store/millspharmacy-com/captures/2026-06-13/.payloads/weight_management.png",
+        "width": 1920,
+        "height": 3556,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/weight_management/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/weight_management/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/weight_management/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2156,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/weight_management/tile-02-y02156.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "site": "jinfiniti.com",
+    "slug": "jinfiniti-com",
+    "capture": "2026-06-09",
+    "anchor": "low control; Brian rating snapshot 3; amateur charts/illustration target",
+    "pages": [
+      {
+        "page": "homepage",
+        "source": "store/jinfiniti-com/captures/2026-06-09/.payloads/homepage.png",
+        "width": 1920,
+        "height": 8871,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 7471,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-07-y07471.png"
+          }
+        ]
+      },
+      {
+        "page": "agingsos_advanced_panel",
+        "source": "store/jinfiniti-com/captures/2026-06-09/.payloads/agingsos_advanced_panel.png",
+        "width": 1920,
+        "height": 8673,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/agingsos_advanced_panel/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/agingsos_advanced_panel/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/agingsos_advanced_panel/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/agingsos_advanced_panel/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/agingsos_advanced_panel/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/agingsos_advanced_panel/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/agingsos_advanced_panel/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7273,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/agingsos_advanced_panel/tile-06-y07273.png"
+          }
+        ]
+      },
+      {
+        "page": "intracellular_nad_test",
+        "source": "store/jinfiniti-com/captures/2026-06-09/.payloads/intracellular_nad_test.png",
+        "width": 1920,
+        "height": 10239,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 8540,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-07-y08540.png"
+          },
+          {
+            "index": 8,
+            "y": 8839,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-08-y08839.png"
+          }
+        ]
+      },
+      {
+        "page": "shop",
+        "source": "store/jinfiniti-com/captures/2026-06-09/.payloads/shop.png",
+        "width": 1920,
+        "height": 7312,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/shop/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/shop/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/shop/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/shop/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/shop/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/shop/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 5912,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/shop/tile-05-y05912.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "site": "kingsbergmedical.com",
+    "slug": "kingsbergmedical-com",
+    "capture": "2026-06-09",
+    "anchor": "low control; Brian rating snapshot 2",
+    "pages": [
+      {
+        "page": "homepage",
+        "source": "store/kingsbergmedical-com/captures/2026-06-09/.payloads/homepage.png",
+        "width": 1920,
+        "height": 6357,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 4957,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-05-y04957.png"
+          }
+        ]
+      },
+      {
+        "page": "services",
+        "source": "store/kingsbergmedical-com/captures/2026-06-09/.payloads/services.png",
+        "width": 1920,
+        "height": 7784,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/services/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/services/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/services/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/services/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/services/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/services/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/services/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 6384,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/services/tile-06-y06384.png"
+          }
+        ]
+      },
+      {
+        "page": "testosterone",
+        "source": "store/kingsbergmedical-com/captures/2026-06-09/.payloads/testosterone.png",
+        "width": 1920,
+        "height": 6938,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/testosterone/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/testosterone/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/testosterone/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/testosterone/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/testosterone/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/testosterone/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 5538,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/testosterone/tile-05-y05538.png"
+          }
+        ]
+      },
+      {
+        "page": "semaglutide",
+        "source": "store/kingsbergmedical-com/captures/2026-06-09/.payloads/semaglutide.png",
+        "width": 1920,
+        "height": 7762,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/semaglutide/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/semaglutide/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/semaglutide/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/semaglutide/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/semaglutide/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/semaglutide/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/semaglutide/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 6362,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/semaglutide/tile-06-y06362.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "site": "anazaohealth.com",
+    "slug": "anazaohealth-com",
+    "capture": "2026-06-09",
+    "anchor": "low control; Brian rating snapshot 2; stock/clipart/template target",
+    "pages": [
+      {
+        "page": "homepage",
+        "source": "store/anazaohealth-com/captures/2026-06-09/.payloads/homepage.png",
+        "width": 1920,
+        "height": 3786,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2386,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-02-y02386.png"
+          }
+        ]
+      },
+      {
+        "page": "hormone_replacement_therapy",
+        "source": "store/anazaohealth-com/captures/2026-06-09/.payloads/hormone_replacement_therapy.png",
+        "width": 1920,
+        "height": 3618,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/hormone_replacement_therapy/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/hormone_replacement_therapy/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/hormone_replacement_therapy/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2218,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/hormone_replacement_therapy/tile-02-y02218.png"
+          }
+        ]
+      },
+      {
+        "page": "weight_management",
+        "source": "store/anazaohealth-com/captures/2026-06-09/.payloads/weight_management.png",
+        "width": 1920,
+        "height": 2904,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/weight_management/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/weight_management/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/weight_management/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 1504,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/weight_management/tile-02-y01504.png"
+          }
+        ]
+      },
+      {
+        "page": "quality",
+        "source": "store/anazaohealth-com/captures/2026-06-09/.payloads/quality.png",
+        "width": 1920,
+        "height": 1787,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/quality/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/quality/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 387,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/quality/tile-01-y00387.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "site": "goinfusive.com",
+    "slug": "goinfusive-com",
+    "capture": "2026-06-09",
+    "anchor": "low control; Brian rating snapshot 2.5; dark-gradient template seduction trap",
+    "pages": [
+      {
+        "page": "homepage",
+        "source": "store/goinfusive-com/captures/2026-06-09/.payloads/homepage.png",
+        "width": 1920,
+        "height": 9463,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 8063,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-07-y08063.png"
+          }
+        ]
+      },
+      {
+        "page": "services",
+        "source": "store/goinfusive-com/captures/2026-06-09/.payloads/services.png",
+        "width": 1920,
+        "height": 13970,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 8540,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-07-y08540.png"
+          },
+          {
+            "index": 8,
+            "y": 9760,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-08-y09760.png"
+          },
+          {
+            "index": 9,
+            "y": 10980,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-09-y10980.png"
+          },
+          {
+            "index": 10,
+            "y": 12200,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-10-y12200.png"
+          },
+          {
+            "index": 11,
+            "y": 12570,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-11-y12570.png"
+          }
+        ]
+      },
+      {
+        "page": "platform",
+        "source": "store/goinfusive-com/captures/2026-06-09/.payloads/platform.png",
+        "width": 1920,
+        "height": 11687,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 2440,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-02-y02440.png"
+          },
+          {
+            "index": 3,
+            "y": 3660,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-03-y03660.png"
+          },
+          {
+            "index": 4,
+            "y": 4880,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-04-y04880.png"
+          },
+          {
+            "index": 5,
+            "y": 6100,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-05-y06100.png"
+          },
+          {
+            "index": 6,
+            "y": 7320,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-06-y07320.png"
+          },
+          {
+            "index": 7,
+            "y": 8540,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-07-y08540.png"
+          },
+          {
+            "index": 8,
+            "y": 9760,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-08-y09760.png"
+          },
+          {
+            "index": 9,
+            "y": 10287,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-09-y10287.png"
+          }
+        ]
+      },
+      {
+        "page": "qualify",
+        "source": "store/goinfusive-com/captures/2026-06-09/.payloads/qualify.png",
+        "width": 1920,
+        "height": 2690,
+        "overview": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/qualify/overview-480w.png",
+        "tiles": [
+          {
+            "index": 0,
+            "y": 0,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/qualify/tile-00-y00000.png"
+          },
+          {
+            "index": 1,
+            "y": 1220,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/qualify/tile-01-y01220.png"
+          },
+          {
+            "index": 2,
+            "y": 1290,
+            "height": 1400,
+            "path": "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/qualify/tile-02-y01290.png"
+          }
+        ]
+      }
+    ]
+  }
+]

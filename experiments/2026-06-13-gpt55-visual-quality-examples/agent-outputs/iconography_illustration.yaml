@@ -1,0 +1,148 @@
+---
+- family: iconography_illustration
+  polarity: strong
+  site: functionhealth.com
+  page_or_region: "scans page / scan locations and baseline section"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-04-y04880.png"
+  claim: "The scan page uses a coherent dot-and-line graphic vocabulary that makes abstract medical scanning feel owned rather than generic."
+  visible_tells:
+    - "The U.S. map is built from evenly spaced warm dots, matching the restrained circular check icons in the benefit list."
+    - "The portrait on the right uses thin orbital and body-contour lines that echo the map's measured, diagnostic feel."
+  contrast_with: "jinfiniti.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-03-y03660.png"
+  confidence: high
+
+- family: iconography_illustration
+  polarity: strong
+  site: ro.co
+  page_or_region: "weight-loss page / membership benefits and GLP-1 options"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-04-y04880.png"
+  claim: "Ro's small icon system is plain, but it stays consistent and legible across benefit lists and product-option summaries."
+  visible_tells:
+    - "The membership list uses matching black outline icons with similar stroke weight, scale, and left alignment."
+    - "The lower GLP-1 options repeat the same icon size and spacing rather than switching to decorative badges or mismatched illustrations."
+  contrast_with: "belmarpharmasolutions.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-01-y01220.png"
+  confidence: high
+
+- family: iconography_illustration
+  polarity: strong
+  site: hellopepti.com
+  page_or_region: "homepage / online convenience and order-tracking panels"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-03-y03660.png"
+  claim: "The product-style UI graphics turn the process story into a coherent visual system instead of relying on loose spot icons."
+  visible_tells:
+    - "The progress chart, prescription approval rows, order tracker, and shipment card share the same mint background, soft translucent panels, and rounded progress elements."
+    - "Small status marks, profile chips, package icons, and timeline dots repeat a consistent miniature-app language across separate panels."
+  contrast_with: "anazaohealth.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-01-y01220.png"
+  confidence: high
+
+- family: iconography_illustration
+  polarity: mixed
+  site: gogeviti.com
+  page_or_region: "blueprint page / six data sources cards"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/gogeviti-com/blueprint/tile-01-y01220.png"
+  claim: "The section has a strong data-product premise, but the source icons drift into mixed clip-art styles."
+  visible_tells:
+    - "The dashboard mockup cards above are polished and dimensional, with a consistent device/report visual language."
+    - "The data-source icons below mix a red blood drop, colorful DNA helix, gut illustration, pill bottle, and prescription clipboard with noticeably different rendering styles."
+  contrast_with: "functionhealth.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-04-y04880.png"
+  confidence: high
+
+- family: iconography_illustration
+  polarity: mixed
+  site: goinfusive.com
+  page_or_region: "services page / partnership tiers and feature cards"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/services/tile-06-y07320.png"
+  claim: "The partnership icon set is internally consistent, but the surrounding treatment makes the graphic system feel heavy and overworked."
+  visible_tells:
+    - "White outline icons in circular tabs repeat across the numbered cards, and the larger tier bar icons use a related line-art style."
+    - "The magenta tier bar cuts across the card icons and headings, so the icons become part of a crowded overlay rather than clear wayfinding."
+  contrast_with: "ro.co / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-04-y04880.png"
+  confidence: high
+
+- family: iconography_illustration
+  polarity: mixed
+  site: belmarpharmasolutions.com
+  page_or_region: "homepage / why Belmar cards"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-01-y01220.png"
+  claim: "The four-card icon row is coherent enough to scan, but it reads as generic template illustration rather than a distinctive system."
+  visible_tells:
+    - "All four cards use oversized outline icons above the heading, with similar stroke weight and whitespace."
+    - "The icon colors switch between teal, pink, green, and blue without an obvious semantic reason, weakening the system's discipline."
+  contrast_with: "ro.co / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/weight-loss/tile-04-y04880.png"
+  confidence: high
+
+- family: iconography_illustration
+  polarity: mixed
+  site: hellopepti.com
+  page_or_region: "homepage / treatment-goal cards"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-11-y13420.png"
+  claim: "The treatment-goal cards are neatly componentized, but the thumbnail system is too thin and partly inconsistent."
+  visible_tells:
+    - "Five of the six cards use the same tiny vial photo as their pictogram, making different goals look visually interchangeable."
+    - "The 'Recover faster' card switches to a different action-photo thumbnail, breaking the repeated vial logic without adding a broader illustration system."
+  contrast_with: "hellopepti.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-03-y03660.png"
+  confidence: high
+
+- family: iconography_illustration
+  polarity: mixed
+  site: joinamble.com
+  page_or_region: "homepage / weight-loss data card"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-02-y02440.png"
+  claim: "The page uses bold pictograms to support the results story, but the execution is more atmospheric than precise."
+  visible_tells:
+    - "The orange results panel includes oversized translucent pictograms for clothing, a scale, a downward trend, and pants."
+    - "Those pictograms sit behind a testimonial portrait and glassy overlay, so they add brand texture but are hard to read as functional icons."
+  contrast_with: "functionhealth.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-04-y04880.png"
+  confidence: medium
+
+- family: iconography_illustration
+  polarity: poor
+  site: jinfiniti.com
+  page_or_region: "intracellular NAD test page / optimization approach graphic"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-03-y03660.png"
+  claim: "The page mixes scientific graphic conventions without turning them into a finished illustration system."
+  visible_tells:
+    - "A blue photo/video panel of the test kit sits above a separate teal chemical-hexagon diagram, with different lighting, color, and rendering styles."
+    - "The purple check icons, video play button, hexagon molecule callouts, and sticky promo/nav bar all compete as unrelated graphic devices."
+  contrast_with: "functionhealth.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/scans/tile-04-y04880.png"
+  confidence: high
+
+- family: iconography_illustration
+  polarity: poor
+  site: jinfiniti.com
+  page_or_region: "shop page / product card imagery"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/shop/tile-01-y01220.png"
+  claim: "The product graphic system is visibly inconsistent across adjacent cards."
+  visible_tells:
+    - "The row combines a large supplement jar with loose tablets, a jar in a grey studio frame, and a green test-kit box with a different label style."
+    - "The next visible row shifts again to botanical ingredient props, turmeric powder, and kit bundles, so the catalog lacks one shared product-art direction."
+  contrast_with: "hallandalerx.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-00-y00000.png"
+  confidence: high
+
+- family: iconography_illustration
+  polarity: poor
+  site: millspharmacy.com
+  page_or_region: "homepage / service links and medication categories"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-01-y01220.png"
+  claim: "The page uses decorative marks and stock-photo tiles in place of a real service iconography system."
+  visible_tells:
+    - "The left-side plus-pattern texture, circular '75+ Years' badge, and small arrow marks do not connect visually to the service categories."
+    - "The medication category grid relies on darkened stock photos with text overlays, making very different services share the same generic treatment."
+  contrast_with: "hellopepti.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hellopepti-com/homepage/tile-03-y03660.png"
+  confidence: high
+
+- family: iconography_illustration
+  polarity: poor
+  site: anazaohealth.com
+  page_or_region: "homepage / solutions menu"
+  tile_path: "experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-01-y01220.png"
+  claim: "The solutions section has no meaningful pictogram system and falls back to flat buttons over a washed-out lab background."
+  visible_tells:
+    - "Ten different solution areas are represented only by identical teal rectangular labels, with no visual distinction between categories."
+    - "The YouTube play button above, logo mark, tiny square divider, and solution buttons are unrelated graphic cues rather than one coherent illustration language."
+  contrast_with: "belmarpharmasolutions.com / experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-01-y01220.png"
+  confidence: high
+
+---
+notes: |
+  Iconography and product-graphic evidence was easiest to judge where tiles showed repeated systems: benefit icons, product cards, treatment cards, maps, diagrams, and app-like panels. It was harder to judge illustration quality when pages relied mainly on photography, because static tiles show whether photos are coherent but not whether motion, hover states, or off-screen carousel states add a stronger icon system elsewhere.

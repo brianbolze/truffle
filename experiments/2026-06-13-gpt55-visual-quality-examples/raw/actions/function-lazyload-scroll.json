@@ -1,0 +1,9 @@
+[
+  { "type": "wait", "milliseconds": 3000 },
+  { "type": "scroll", "to": "bottom", "step": 800, "delay": 300 },
+  { "type": "wait", "milliseconds": 1500 },
+  { "type": "wait", "selector": "img[src], video, canvas" },
+  { "type": "scroll", "to": "top", "step": 800, "delay": 200 },
+  { "type": "wait", "milliseconds": 1500 },
+  { "type": "screenshot", "fullPage": true, "quality": 90 }
+]

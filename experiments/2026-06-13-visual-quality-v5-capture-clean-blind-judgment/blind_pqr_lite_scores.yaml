@@ -1,0 +1,398 @@
+site_scores:
+  - site: functionhealth.com
+    dimensions:
+      typography_hierarchy:
+        score: 5
+        evidence:
+          - typography_hierarchy_01
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-00-y00000.png
+      layout_components:
+        score: 5
+        evidence:
+          - layout_composition_components_01
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/functionhealth-com/pricing/tile-02-y02440.png
+      color_brand_imagery:
+        score: 5
+        evidence:
+          - color_brand_imagery_01
+          - color_brand_imagery_02
+      iconography_graphics:
+        score: 5
+        evidence:
+          - iconography_illustration_01
+          - iconography_illustration_02
+      overall_visual_quality:
+        score: 5
+        evidence:
+          - typography_hierarchy_01
+          - layout_composition_components_01
+          - color_brand_imagery_01
+          - iconography_illustration_02
+    rationale: "This is the most consistently controlled visual system in the active evidence: typography, tables, color, imagery, and medical graphics all reinforce the same editorial health brand. The site earns the top score because the craft holds across homepage, pricing, and scans evidence rather than depending on one attractive hero."
+
+  - site: ro.co
+    dimensions:
+      typography_hierarchy:
+        score: 3
+        evidence:
+          - typography_hierarchy_05
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-00-y00000.png
+      layout_components:
+        score: 4
+        evidence:
+          - layout_composition_components_03
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-04-y04880.png
+      color_brand_imagery:
+        score: 3
+        evidence:
+          - color_brand_imagery_03
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-01-y01220.png
+      iconography_graphics:
+        score: 4
+        evidence:
+          - iconography_illustration_03
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/ro-co/homepage/tile-02-y02440.png
+      overall_visual_quality:
+        score: 4
+        evidence:
+          - layout_composition_components_03
+          - iconography_illustration_03
+          - color_brand_imagery_03
+    rationale: "Ro is commercially polished and component-driven, especially in product cards and object-forward treatment modules. It is held below the top tier because the typography is mostly utilitarian and the imagery/accent system feels assembled rather than fully ownable."
+
+  - site: nurx.com
+    dimensions:
+      typography_hierarchy:
+        score: 3
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-00-y00000.png
+      layout_components:
+        score: 3
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-01-y01220.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-03-y03660.png
+      color_brand_imagery:
+        score: 3
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-00-y00000.png
+      iconography_graphics:
+        score: 3
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-01-y01220.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-01-y01220.png
+      overall_visual_quality:
+        score: 3
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/our_services/tile-01-y01220.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/nurx-com/weight_management/tile-03-y03660.png
+    rationale: "Nurx is coherent and usable, with warm panels, simple cards, and readable page structure. The accepted evidence set had no retained Nurx cards, and direct tile inspection supports competent but generic execution rather than above-generic craft."
+
+  - site: hallandalerx.com
+    dimensions:
+      typography_hierarchy:
+        score: 3
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-00-y00000.png
+      layout_components:
+        score: 4
+        evidence:
+          - layout_composition_components_02
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-01-y01220.png
+      color_brand_imagery:
+        score: 3
+        evidence:
+          - color_brand_imagery_04
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-00-y00000.png
+      iconography_graphics:
+        score: 3
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/products/tile-01-y01220.png
+      overall_visual_quality:
+        score: 3
+        evidence:
+          - layout_composition_components_02
+          - color_brand_imagery_04
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/hallandalerx-com/homepage/tile-03-y03660.png
+    rationale: "Hallandale has a disciplined product-grid system and clean product photography. It stays at 3 overall because the broader brand expression is sparse and sterile; the excluded homepage media tile was not used."
+
+  - site: gogeviti.com
+    dimensions:
+      typography_hierarchy:
+        score: 3
+        evidence:
+          - typography_hierarchy_04
+      layout_components:
+        score: 3
+        evidence:
+          - layout_composition_components_06
+      color_brand_imagery:
+        score: 3
+        evidence:
+          - color_brand_imagery_05
+      iconography_graphics:
+        score: 3
+        evidence:
+          - iconography_illustration_05
+      overall_visual_quality:
+        score: 3
+        evidence:
+          - typography_hierarchy_04
+          - layout_composition_components_06
+          - color_brand_imagery_05
+          - iconography_illustration_05
+    rationale: "GeViti has polish and some distinctive display choices, but the system repeatedly gets busy or familiar. The score stays centered because the ambition is visible, while the hierarchy, pricing modules, and product graphics do not show enough control for a 4."
+
+  - site: joinamble.com
+    dimensions:
+      typography_hierarchy:
+        score: 3
+        evidence:
+          - typography_hierarchy_03
+      layout_components:
+        score: 4
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-01-y01220.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-02-y02440.png
+      color_brand_imagery:
+        score: 4
+        evidence:
+          - color_brand_imagery_06
+      iconography_graphics:
+        score: 3
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-00-y00000.png
+      overall_visual_quality:
+        score: 4
+        evidence:
+          - typography_hierarchy_03
+          - color_brand_imagery_06
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/joinamble-com/glp1/tile-01-y01220.png
+    rationale: "Amble is spacious, consistent, and strongest where warm outcome panels make the imagery feel branded. It is a low 4 overall: above generic competence, but typography and graphics remain comparatively plain."
+
+  - site: hellopepti.com
+    dimensions:
+      typography_hierarchy:
+        score: 4
+        evidence:
+          - typography_hierarchy_02
+      layout_components:
+        score: 4
+        evidence:
+          - layout_composition_components_04
+      color_brand_imagery:
+        score: 3
+        evidence:
+          - color_brand_imagery_07
+      iconography_graphics:
+        score: 4
+        evidence:
+          - iconography_illustration_04
+      overall_visual_quality:
+        score: 4
+        evidence:
+          - typography_hierarchy_02
+          - layout_composition_components_04
+          - color_brand_imagery_07
+          - iconography_illustration_04
+    rationale: "Pepti is visually ambitious and often well-finished, with strong catalog components and polished app/logistics mockups. The neon-acid palette is memorable but sometimes overpowers the clinical product evidence, keeping it below the rare-control tier."
+
+  - site: belmarpharmasolutions.com
+    dimensions:
+      typography_hierarchy:
+        score: 3
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/account-form/tile-00-y00000.png
+      layout_components:
+        score: 3
+        evidence:
+          - layout_composition_components_05
+      color_brand_imagery:
+        score: 3
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-02-y02440.png
+      iconography_graphics:
+        score: 3
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-01-y01220.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/account-form/tile-01-y01220.png
+      overall_visual_quality:
+        score: 3
+        evidence:
+          - layout_composition_components_05
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/belmarpharmasolutions-com/account-form/tile-01-y01220.png
+    rationale: "Belmar is competent corporate healthcare design: clear enough, operationally usable, and visually consistent. The evidence does not support a 4 because the typography, icons, and photography read generic rather than especially crafted."
+
+  - site: millspharmacy.com
+    dimensions:
+      typography_hierarchy:
+        score: 2
+        evidence:
+          - typography_hierarchy_09
+      layout_components:
+        score: 3
+        evidence:
+          - layout_composition_components_07
+      color_brand_imagery:
+        score: 2
+        evidence:
+          - color_brand_imagery_08
+      iconography_graphics:
+        score: 2
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/millspharmacy-com/homepage/tile-01-y01220.png
+      overall_visual_quality:
+        score: 2
+        evidence:
+          - typography_hierarchy_09
+          - layout_composition_components_07
+          - color_brand_imagery_08
+    rationale: "Mills has some orderly grids, but the visual system feels dated and fragmented across type styles, image overlays, seals, icons, and service modules. The mixed layout card prevents a bottom score, but weak foundations cap overall quality at 2."
+
+  - site: jinfiniti.com
+    dimensions:
+      typography_hierarchy:
+        score: 2
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-00-y00000.png
+      layout_components:
+        score: 2
+        evidence:
+          - layout_composition_components_11
+      color_brand_imagery:
+        score: 2
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-01-y01220.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/intracellular_nad_test/tile-00-y00000.png
+      iconography_graphics:
+        score: 2
+        evidence:
+          - iconography_illustration_07
+      overall_visual_quality:
+        score: 2
+        evidence:
+          - layout_composition_components_11
+          - iconography_illustration_07
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/jinfiniti-com/homepage/tile-01-y01220.png
+    rationale: "Jinfiniti has moments of clean scientific styling, but the active tiles show sticky chrome competing with content and product graphics that mix too many languages. Those fundamentals keep the site in weak territory despite some competent individual assets."
+
+  - site: kingsbergmedical.com
+    dimensions:
+      typography_hierarchy:
+        score: 2
+        evidence:
+          - typography_hierarchy_06
+      layout_components:
+        score: 2
+        evidence:
+          - layout_composition_components_09
+      color_brand_imagery:
+        score: 2
+        evidence:
+          - color_brand_imagery_09
+      iconography_graphics:
+        score: 2
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/kingsbergmedical-com/services/tile-00-y00000.png
+      overall_visual_quality:
+        score: 2
+        evidence:
+          - typography_hierarchy_06
+          - layout_composition_components_09
+          - color_brand_imagery_09
+    rationale: "Kingsberg is visibly under-finished at the system level: loud type treatments, dated compositing, and weak grid discipline recur in the active evidence. It remains a 2 rather than a 1 because the pages are still readable and structured."
+
+  - site: anazaohealth.com
+    dimensions:
+      typography_hierarchy:
+        score: 2
+        evidence:
+          - typography_hierarchy_07
+      layout_components:
+        score: 3
+        evidence:
+          - layout_composition_components_08
+      color_brand_imagery:
+        score: 2
+        evidence:
+          - color_brand_imagery_10
+      iconography_graphics:
+        score: 2
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/homepage/tile-01-y01220.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/anazaohealth-com/quality/tile-00-y00000.png
+      overall_visual_quality:
+        score: 2
+        evidence:
+          - typography_hierarchy_07
+          - layout_composition_components_08
+          - color_brand_imagery_10
+    rationale: "Anazao has a few orderly modules, but the main visual impression is generic wellness imagery, low-control overlay typography, and mechanically stacked sections. The solutions grid is competent, yet not enough to lift the site above weak overall quality."
+
+  - site: goinfusive.com
+    dimensions:
+      typography_hierarchy:
+        score: 2
+        evidence:
+          - typography_hierarchy_08
+      layout_components:
+        score: 2
+        evidence:
+          - layout_composition_components_10
+      color_brand_imagery:
+        score: 2
+        evidence:
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/homepage/tile-00-y00000.png
+          - experiments/2026-06-13-gpt55-visual-quality-examples/tiles-clean/goinfusive-com/platform/tile-00-y00000.png
+      iconography_graphics:
+        score: 3
+        evidence:
+          - iconography_illustration_06
+      overall_visual_quality:
+        score: 2
+        evidence:
+          - typography_hierarchy_08
+          - layout_composition_components_10
+          - iconography_illustration_06
+    rationale: "Infusive is ambitious and cohesive in its dark software aesthetic, but the active tiles show noisy typography, heavy effects, and at least one clear layout collision. The graphic system has some consistency, yet broken fundamentals cap the overall score at 2."
+
+ranking:
+  - site: functionhealth.com
+    overall_visual_quality: 5
+  - site: hellopepti.com
+    overall_visual_quality: 4
+  - site: ro.co
+    overall_visual_quality: 4
+  - site: joinamble.com
+    overall_visual_quality: 4
+  - site: gogeviti.com
+    overall_visual_quality: 3
+  - site: nurx.com
+    overall_visual_quality: 3
+  - site: hallandalerx.com
+    overall_visual_quality: 3
+  - site: belmarpharmasolutions.com
+    overall_visual_quality: 3
+  - site: goinfusive.com
+    overall_visual_quality: 2
+  - site: jinfiniti.com
+    overall_visual_quality: 2
+  - site: kingsbergmedical.com
+    overall_visual_quality: 2
+  - site: anazaohealth.com
+    overall_visual_quality: 2
+  - site: millspharmacy.com
+    overall_visual_quality: 2
+notes: |-
+  Scoring used only accepted pruned card IDs and active cleaned-manifest tile paths. Sites with thin or no accepted cards, especially Nurx and Belmar, were scored from active tiles and defaulted down to generic competence. Hallandale homepage tile-02-y02440 was not cited. The main uncertainty is that static full-page tiles can understate interaction polish, but visible overlap, sticky chrome competition, and weak contrast were treated as real visual evidence when present in active tiles.

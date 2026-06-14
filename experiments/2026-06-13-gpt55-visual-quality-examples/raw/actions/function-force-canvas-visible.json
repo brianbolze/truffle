@@ -1,0 +1,9 @@
+[
+  { "type": "wait", "milliseconds": 5000 },
+  {
+    "type": "executeJavascript",
+    "script": "(() => { const hero = document.querySelector('#canvasContainer'); const canvas = hero && hero.querySelector('.flute-canvas'); const status = hero && hero.querySelector('.flute-status'); const before = canvas ? { className: canvas.className, style: canvas.getAttribute('style'), width: canvas.width, height: canvas.height } : null; if (canvas) { canvas.classList.remove('is-hidden'); Object.assign(canvas.style, { opacity: '1', visibility: 'visible', display: 'block', transition: 'none', position: 'absolute', inset: '0', width: '100%', height: '100%', zIndex: '0' }); } const content = hero && hero.querySelector('.flute-hero'); if (content) Object.assign(content.style, { position: 'relative', zIndex: '2' }); return JSON.stringify({ forced: Boolean(canvas), before, after: canvas ? { className: canvas.className, style: canvas.getAttribute('style'), width: canvas.width, height: canvas.height } : null, status: status ? status.textContent.trim() : null }); })()"
+  },
+  { "type": "wait", "milliseconds": 1500 },
+  { "type": "screenshot", "fullPage": true, "quality": 90 }
+]

@@ -1,0 +1,8 @@
+[
+  { "type": "wait", "milliseconds": 3000 },
+  {
+    "type": "executeJavascript",
+    "script": "(() => { const hit = /(personalized care starts here|message consent|privacy preferences|cookie consent|sign up|first name|email)/i; let removed = 0; for (const el of Array.from(document.querySelectorAll('body *'))) { const text = (el.innerText || el.textContent || '').slice(0, 1200); if (!hit.test(text)) continue; const style = window.getComputedStyle(el); const z = Number.parseInt(style.zIndex || '0', 10) || 0; const rect = el.getBoundingClientRect(); const overlayish = ['fixed', 'sticky'].includes(style.position) || z >= 100 || (rect.width > window.innerWidth * 0.45 && rect.height > window.innerHeight * 0.15); if (overlayish) { el.remove(); removed += 1; } } return `removed-${removed}`; })()"
+  },
+  { "type": "wait", "milliseconds": 1000 }
+]
