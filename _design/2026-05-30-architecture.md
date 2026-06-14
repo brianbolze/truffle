@@ -45,7 +45,7 @@ Steps 4–6 are cache-aware: a warm, fresh company skips straight to "serve." v1
 |---|---|---|
 | **Capture** | Pull + persist external signal with provenance | `captures/<date>/` + `.payloads/` |
 | **Enrichment** | AI-at-ingestion: structured fields from the capture | `profile.md` frontmatter, `offerings.md` |
-| **Synthesis** | Derived understanding across the capture | `profile.md` body, `brand.md` |
+| **Synthesis** | Derived understanding across the capture | `profile.md` body, `visual.md`, `brand.md` |
 | **Promotion** | Propose structured output to a project's KB | project destination (Notion) — propose-only |
 
 ## The store
@@ -56,6 +56,7 @@ One company = one folder = its whole story. Top docs are the latest view; you ra
 store/<domain-slug>/              # e.g. hone-health
   profile.md                      # State — the current snapshot (frontmatter + body)
   offerings.md                    # a module doc, opt-in, its own freshness
+  visual.md                       # a module doc (visual evidence), opt-in, own freshness
   captures/
     <date>/                       # one self-contained folder per run
       homepage.md  pricing.md     # cleaned observations
@@ -71,9 +72,9 @@ cohorts/<category-slug>/          # (later) cross-company signals that don't key
 
 ## Modules: recipes, not just schemas
 
-> **A module is a *recipe + schema + destination* — a mini-verb.** It carries its own way to *gather* (which sources, which pages, what to trust), not just fields to fill — the way `/research-company` carries its capture playbook. The core capture writes `profile.md`; an enabled module runs its recipe to write its own doc. **`offerings.md` is the first exemplar** (`brand.md` next).
+> **A module is a *recipe + schema + destination* — a mini-verb.** It carries its own way to *gather* (which sources, which pages, what to trust), not just fields to fill — the way `/research-company` carries its capture playbook. The core capture writes `profile.md`; an enabled module runs its recipe to write its own doc. **`offerings.md` is the first exemplar** (`visual.md` the second, live; `brand.md` next).
 
-**Two module species** (since the `telehealth` pack — see [`SCHEMA.md` → Tier-1 modules](../SCHEMA.md#tier-1-modules-opt-in-separate-docs) + [design](2026-06-04-telehealth-cohort.md)): **depth modules** extend a *universal* dimension at finer grain (`offerings.md`, `brand.md`) with a real gather recipe; **cohort packs** carry *vertical-specific classification* cuts (`telehealth.md`) that go flat in the universal schema, with only a thin recipe (they ride the `profile.md` pages). A cohort pack is per-domain **State** — distinct from the store-level `cohorts/<category-slug>/` *signals* layer below, which the name unfortunately echoes.
+**Two module species** (since the `telehealth` pack — see [`SCHEMA.md` → Tier-1 modules](../SCHEMA.md#tier-1-modules-opt-in-separate-docs) + [design](2026-06-04-telehealth-cohort.md)): **depth modules** extend a *universal* dimension at finer grain (`offerings.md`, `visual.md`, `brand.md`) with a real gather recipe — `visual.md` is the one that runs *after* capture as a blind sibling skill, not inside the enrich step; **cohort packs** carry *vertical-specific classification* cuts (`telehealth.md`) that go flat in the universal schema, with only a thin recipe (they ride the `profile.md` pages). A cohort pack is per-domain **State** — distinct from the store-level `cohorts/<category-slug>/` *signals* layer below, which the name unfortunately echoes.
 
 **Where a module's output lands is decided by the *kind* of fact** (the Frame's State / Signals / Judgments):
 

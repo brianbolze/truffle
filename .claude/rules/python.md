@@ -16,4 +16,4 @@ Tooling is [`ruff.toml`](ruff.toml): `ruff check` (lint, `--fix` to autofix) + `
 - **No single-letter public parameters.** `resolve(query, profiles)`, not `resolve(query, P)`. Short locals (`p`, `fm`) are fine inside a tight scope.
 - **Keep the why-first docstrings.** Every module and non-trivial function says *why* it exists, not just what it does — this is the codebase's signature, preserve it.
 - **CLI scripts guard execution**: a `main()` plus `if __name__ == "__main__":`, never logic at import time (so the module stays importable + testable). The `DISPATCH = {cmd: fn}` pattern is the house idiom.
-- **Stdlib-first.** PyYAML is the only dependency; `fc.py` is stdlib-only on purpose. Earn any new dep.
+- **Stdlib-first.** PyYAML is the only pip dependency in the core engine; `fc.py` is stdlib-only on purpose. Earn any new dep. **One quarantined exception:** `scripts/shoot.py` (Tier-B visual capture) imports `playwright` and drives system Chrome — opt-in, never imported by a core script. Recipe-time CLI tools (`sips`, `magick`, `rsvg-convert`) aren't pip deps: shell out to them, never add a Python image dep.

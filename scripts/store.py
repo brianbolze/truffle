@@ -204,7 +204,7 @@ def _profile_line(query: str, slug: str, fm: dict[str, Any]) -> str:
         d = _days_ago(ca)
         parts.append(f"captured {ca} ({d}d)")
     slug_dir = os.path.join(STORE, slug)
-    for mod in ("offerings", "telehealth"):
+    for mod in ("offerings", "telehealth", "visual"):
         mod_path = os.path.join(slug_dir, f"{mod}.md")
         if os.path.exists(mod_path):
             mca = _frontmatter(mod_path).get("captured_at")
@@ -324,7 +324,7 @@ def _cli_health(profiles: dict[str, dict[str, Any]], *_: str) -> None:
         if pd is None:
             continue
         slug_dir = os.path.join(STORE, slug)
-        for mod in ("offerings", "telehealth"):
+        for mod in ("offerings", "telehealth", "visual"):
             mod_path = os.path.join(slug_dir, f"{mod}.md")
             if not os.path.exists(mod_path):
                 continue
