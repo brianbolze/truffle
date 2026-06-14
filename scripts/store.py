@@ -41,6 +41,7 @@ STORE = os.path.join(ROOT, "store")
 FIELD_VERSIONS: dict[str, str] = {
     "price-visibility": "2.3",
     "logos": "2.5",
+    "legal_entity": "2.6",
 }
 
 

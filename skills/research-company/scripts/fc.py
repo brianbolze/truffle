@@ -9,17 +9,18 @@ profile-writing (that's the agent's enrichment job, per SCHEMA.md).
 
 Usage:
   fc.py map    <url> --slug <slug> [--search TERM] [--limit 500] [--subdomains] [--date YYYY-MM-DD]
-  fc.py scrape <url> --slug <slug> --name <name> [--homepage] [--images] [--wait 3500] [--proxy auto] [--date ...]
+  fc.py scrape <url> --slug <slug> --name <name> [--homepage] [--images] [--wait 3500] [--actions-json FILE] [--mobile] [--headers-json FILE] [--proxy auto] [--date ...]
   fc.py hero    --slug <slug> --name <name> [--top 15] [--date ...]  # recall-first hero-image candidates to pick (opt-in asset, §1.1)
   fc.py logos   --slug <slug> [--name homepage] [--wordmark URL|PATH] [--date ...]  # measure the multi-ratio mark set (opt-in, §1.2)
-  fc.py verify  --slug <slug> [--date ...]  # scrapes: md5-dedup + sourceURL match + junk soft-404 gate; + lint profile.md once written
+  fc.py verify  --slug <slug> [--date ...]  # scrapes: md5-dedup + sourceURL match + junk soft-404 gate; + lint profile.md once written (incl. logos:{} measurements)
   fc.py spend   --slug <slug> [--date ...]  # this run's attributed cost, summed from per-call creditsUsed
   fc.py signals --slug <slug> [--name homepage] [--date ...]  # slice rawHtml's JSON-LD + nav region (step-7 hint read, free)
   fc.py credits                             # GET /v2/team/credit-usage — global headroom only (free, 0 credits)
 
 verify runs at two points: pre-write (step 6) it checks scrape integrity; re-run post-write
 (step 7) it also lints the written profile.md (leaked tool-call tags, ## Provenance, required
-frontmatter keys). Exits nonzero if anything is wrong. Stdlib-only on purpose — no PyYAML.
+frontmatter keys, and logos:{} slot measurements). Exits nonzero if anything is wrong. Stdlib-only
+on purpose — no PyYAML.
 
 Credit accounting: each billable call records its own billed credits to the manifest —
 scrapes from the response's metadata.creditsUsed, map from its documented flat 1/call. `spend`
@@ -171,6 +172,9 @@ def do_scrape(
     proxy: str | None,
     images: bool,
     date: str,
+    actions_json: str | None = None,
+    mobile: bool = False,
+    headers_json: str | None = None,
 ) -> None:
     if homepage:
         formats = [
@@ -196,6 +200,20 @@ def do_scrape(
         "waitFor": wait,
         "onlyMainContent": only_main,
     }
+    if actions_json:
+        with open(actions_json, encoding="utf-8") as f:
+            actions = json.load(f)
+        if not isinstance(actions, list):
+            raise SystemExit("--actions-json must point to a JSON array of Firecrawl scrape actions")
+        body["actions"] = actions
+    if mobile:
+        body["mobile"] = True
+    if headers_json:
+        with open(headers_json, encoding="utf-8") as f:
+            headers = json.load(f)
+        if not isinstance(headers, dict):
+            raise SystemExit("--headers-json must point to a JSON object of request headers")
+        body["headers"] = headers
     if proxy:
         body["proxy"] = proxy
     t0 = time.time()
@@ -236,6 +254,9 @@ def do_scrape(
         "not_found": not_found,
         "credits": credits,
         "proxy": proxy_used,
+        "actions": bool(actions_json),
+        "mobile": mobile,
+        "headers": bool(headers_json),
     }
     append_manifest(d, rec)
     flag = "" if rec["match"] else "  <-- sourceURL MISMATCH"
@@ -289,9 +310,36 @@ def frontmatter_keys(text: str) -> list[str] | None:
     return [m.group(1) for line in parts[1].splitlines() if (m := re.match(r"([A-Za-z_][A-Za-z0-9_]*):", line))]
 
 
+# Per-slot measurement requirements for the opt-in logos:{} module (SCHEMA §Logos-lint).
+# The measurement IS the fact a slide/Notion consumer gates on, so a RECORDED slot must carry it —
+# a sizeless mark is decoration, not state. A slot may be omitted (true absence); an absent or
+# empty (`logos: {}`) block means the module didn't run (predates 2.5), so the check stays silent.
+LOGO_SLOT_KEYS = {"wordmark": ("w", "h"), "logomark": ("px", "transparent"), "og": ("w", "h")}
+
+
+def logo_issues(frontmatter: str) -> list[str]:
+    """Slots present in a `logos:{}` block must carry their measurements. Returns one string
+    per sizeless slot; [] when there's no block, an empty block, or every recorded slot is measured.
+
+    Fires only on a slot LINE that's actually present (`wordmark: { ... }`) — omitting a slot is
+    legal. Body is a single-line inline dict, so a `[^}]*` span + a per-key `\\b<key>:` scan suffices
+    (the `src` URL's `?w=1200` uses `=`, never `:`, so it can't satisfy a `w:`/`h:` requirement)."""
+    issues: list[str] = []
+    for slot, required in LOGO_SLOT_KEYS.items():
+        m = re.search(rf"^\s{{2,}}{slot}:\s*\{{([^}}]*)\}}", frontmatter, re.M)
+        if not m:
+            continue
+        body = m.group(1)
+        missing = [k for k in required if not re.search(rf"\b{k}:", body)]
+        if missing:
+            issues.append(f"logos.{slot} recorded without {', '.join(missing)} — the measurement is the fact (SCHEMA §Logos-lint)")
+    return issues
+
+
 def lint_profile(slug: str) -> bool:
     """Lint the written store/<slug>/profile.md: no leaked tool-call tags, a
-    ## Provenance section, and the required frontmatter keys. Returns True on issues.
+    ## Provenance section, the required frontmatter keys, and — when a logos:{} block is
+    present — its per-slot measurements (§Logos-lint). Returns True on issues.
     Absent profile (pre-write step 6) is not a failure — the lint just defers."""
     p = ROOT / "store" / slug / "profile.md"
     if not p.exists():
@@ -316,7 +364,10 @@ def lint_profile(slug: str) -> bool:
         if missing:
             print(f"  MISSING FRONTMATTER KEYS: {', '.join(missing)}")
             bad = True
-    print("  profile.md OK — no leaked tags, Provenance present, required keys present" if not bad else "  ^^ profile.md ISSUES above")
+        for issue in logo_issues(text.split("---", 2)[1]):
+            print(f"  LOGOS: {issue}")
+            bad = True
+    print("  profile.md OK — no leaked tags, Provenance present, required keys + logo measurements present" if not bad else "  ^^ profile.md ISSUES above")
     return bad
 
 
@@ -845,6 +896,9 @@ def main() -> None:
     s.add_argument("--homepage", action="store_true")
     s.add_argument("--images", action="store_true", help="add the free `images` format (hero capture on a flagship PDP, §1.1)")
     s.add_argument("--wait", type=int, default=3500)
+    s.add_argument("--actions-json", help="JSON array of Firecrawl scrape actions to run before capture")
+    s.add_argument("--mobile", action="store_true", help="enable Firecrawl mobile emulation for this scrape")
+    s.add_argument("--headers-json", help="JSON object of extra request headers for this scrape")
     s.add_argument("--proxy")
     s.add_argument("--date", default=TODAY)
     v = sub.add_parser("verify")
@@ -875,7 +929,19 @@ def main() -> None:
     if a.cmd == "map":
         do_map(a.url, a.slug, a.search, a.limit, a.date, a.subdomains)
     elif a.cmd == "scrape":
-        do_scrape(a.url, a.slug, a.name, a.homepage, a.wait, a.proxy, a.images, a.date)
+        do_scrape(
+            a.url,
+            a.slug,
+            a.name,
+            a.homepage,
+            a.wait,
+            a.proxy,
+            a.images,
+            a.date,
+            a.actions_json,
+            a.mobile,
+            a.headers_json,
+        )
     elif a.cmd == "verify":
         do_verify(a.slug, a.date)
     elif a.cmd == "spend":

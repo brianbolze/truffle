@@ -1,0 +1,92 @@
+[
+  {
+    "sample_id": "telehealth_joinamble",
+    "slug": "joinamble-com",
+    "domain": "joinamble.com",
+    "capture_date": "2026-06-13",
+    "profile_modules": ["logos"],
+    "requested_outputs": ["profile.md", "offerings.md", "telehealth.md"],
+    "why": "Recent telehealth capture with GLP-1, NAD, and sermorelin treatment pages."
+  },
+  {
+    "sample_id": "telehealth_hellopepti",
+    "slug": "hellopepti-com",
+    "domain": "hellopepti.com",
+    "capture_date": "2026-06-13",
+    "profile_modules": ["logos"],
+    "requested_outputs": ["profile.md", "offerings.md", "telehealth.md"],
+    "why": "Recent clean recapture after prior overlay contamination; compact telehealth offering surface."
+  },
+  {
+    "sample_id": "telehealth_ro",
+    "slug": "ro-co",
+    "domain": "ro.co",
+    "capture_date": "2026-06-04",
+    "profile_modules": ["logos"],
+    "requested_outputs": ["profile.md", "offerings.md", "telehealth.md"],
+    "why": "Broad multi-condition telehealth brand with pricing and founder-letter pages."
+  },
+  {
+    "sample_id": "telehealth_noom",
+    "slug": "noom-com",
+    "domain": "noom.com",
+    "capture_date": "2026-06-04",
+    "profile_modules": ["logos"],
+    "requested_outputs": ["profile.md", "offerings.md", "telehealth.md"],
+    "why": "Hybrid consumer-health and B2B surface; good test for avoiding over-simple classification."
+  },
+  {
+    "sample_id": "pharmacy_belmar",
+    "slug": "belmarpharmasolutions-com",
+    "domain": "belmarpharmasolutions.com",
+    "capture_date": "2026-06-13",
+    "profile_modules": ["logos"],
+    "requested_outputs": ["profile.md"],
+    "why": "Healthcare/pharmacy operator that should not be forced into a DTC telehealth module."
+  },
+  {
+    "sample_id": "pharmacy_mills",
+    "slug": "millspharmacy-com",
+    "domain": "millspharmacy.com",
+    "capture_date": "2026-06-13",
+    "profile_modules": ["logos"],
+    "requested_outputs": ["profile.md"],
+    "why": "Compounding-pharmacy site with quality and weight-management pages."
+  },
+  {
+    "sample_id": "labs_jinfiniti",
+    "slug": "jinfiniti-com",
+    "domain": "jinfiniti.com",
+    "capture_date": "2026-06-09",
+    "profile_modules": ["logos"],
+    "requested_outputs": ["profile.md"],
+    "why": "Longevity diagnostics/supplement commerce; useful healthcare-adjacent control."
+  },
+  {
+    "sample_id": "services_redantler",
+    "slug": "redantler-com",
+    "domain": "redantler.com",
+    "capture_date": "2026-06-12",
+    "profile_modules": ["logos"],
+    "requested_outputs": ["profile.md"],
+    "why": "Services/agency control with less enumerable pricing and more positioning prose."
+  },
+  {
+    "sample_id": "fitness_peloton",
+    "slug": "onepeloton-com",
+    "domain": "onepeloton.com",
+    "capture_date": "2026-06-10",
+    "profile_modules": ["logos"],
+    "requested_outputs": ["profile.md"],
+    "why": "Consumer hardware/subscription hybrid with several product surfaces."
+  },
+  {
+    "sample_id": "fintech_stripe",
+    "slug": "stripe-com",
+    "domain": "stripe.com",
+    "capture_date": "2026-06-04",
+    "profile_modules": ["logos"],
+    "requested_outputs": ["profile.md"],
+    "why": "Large B2B fintech/software platform with broad product taxonomy and pricing surface."
+  }
+]
