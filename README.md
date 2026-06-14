@@ -9,7 +9,7 @@ A project-agnostic company-research engine: Firecrawl for company-site capture, 
 ```
 SCHEMA.md TAXONOMIES.md   # the store contract — what a capture writes
 QUERYING.md               # how to read the store back — consumer recipes
-OFFERINGS.md TELEHEALTH.md  # opt-in module contracts — per-SKU offerings.md (depth module) + the telehealth.md cohort pack; top-level for now (see SCHEMA → Tier-1 modules)
+modules/OFFERINGS.md TELEHEALTH.md  # opt-in module contracts — per-SKU offerings.md (depth module) in modules/; TELEHEALTH.md cohort pack at root (see SCHEMA → Tier-1 modules)
 BACKLOG.md                # system-level weaknesses / ideas (capped, tagged, curated)
 _design/      # frame / vision docs (source of truth for intent)
 _archive/     # superseded docs

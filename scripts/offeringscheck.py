@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """offeringscheck — lint an opt-in `offerings.md` against the module contract.
 
-`offerings.md` is the per-SKU layer (contract: OFFERINGS.md; rationale: _design/2026-06-03-offerings.md):
+`offerings.md` is the per-SKU layer (contract: modules/OFFERINGS.md; rationale: _design/2026-06-03-offerings.md):
 a roster table whose load-bearing invariant is that every price is real. The tournament that designed it
 caught exactly two failure modes a human eye misses — a *misattributed price* and a *molecule guessed from
 the brand name* — so this script asserts the structural rules that make those greppable:

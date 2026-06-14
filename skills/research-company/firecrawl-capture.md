@@ -98,7 +98,7 @@ company is ~10–20 cr.
     path from the flagship's `## Deep block`, and note image capture in the `### Run profile`.
 
 **Output:** a roster-first `offerings.md` (`## Portfolio overview` → `## Roster` → earned `## Deep blocks`) per
-the [`OFFERINGS.md`](../../OFFERINGS.md) contract. **Lint it:** `python3 scripts/offeringscheck.py --slug <slug>`
+the [`OFFERINGS.md`](../../modules/OFFERINGS.md) contract. **Lint it:** `python3 scripts/offeringscheck.py --slug <slug>`
 — roster columns present, `price_visibility` closed-set, every row slug-keyed, **every `$` price greppable in a
 cited capture**, no cross-company canonical key. It exits nonzero on any miss (the misattributed-price guard).
 

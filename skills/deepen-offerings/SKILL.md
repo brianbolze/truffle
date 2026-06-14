@@ -36,7 +36,7 @@ stopped early and now *reads* as a small catalog, so any count under-reports it.
    frontmatter `enumeration`** to the achieved state — `indexed-complete` if every line was reached, or
    `lines-omitted` (naming the residual line in the scope note) if one was found but still deferred — bumping
    `schema_version` to `"1.2"` if the file predates it. That one token is what graduates a count from "floor" to
-   trustworthy-as-breadth (contract: [`OFFERINGS.md`](../../OFFERINGS.md) → `enumeration`).
+   trustworthy-as-breadth (contract: [`OFFERINGS.md`](../../modules/OFFERINGS.md) → `enumeration`).
 
 **Scope:** offerings only (a full refresh or first capture is `/research-company`); it spends Firecrawl, so
 research-company's credit pre-flight applies.

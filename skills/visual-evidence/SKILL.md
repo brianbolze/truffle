@@ -1,0 +1,75 @@
+---
+name: visual-evidence
+description: >
+  Mine an already-captured company's screenshots into a blind, cited visual-evidence layer at
+  store/<domain>/visual.md — falsifiable cards across typography / layout / color-brand-imagery /
+  iconography, plus a ~5-second Visual & brand impression. Use when the user wants a visual-quality
+  read, a brand/design impression, or "how good does X's site look" from captured screenshots:
+  "/visual-evidence acme.com", "visual evidence for X", "mine X's design", "what's my read on X's
+  site". Reads cached captures (Tier-A) and re-renders contaminated pages in a real browser (Tier-B);
+  zero Firecrawl spend. It emits observable visual STATE — evidence + impression — and never a score,
+  quality field, or ranking (that layer is parked). Runs on a company already in the store; if there's
+  no capture yet, capture it first with /research-company.
+---
+
+# /visual-evidence — mine a company's visual evidence (blind)
+
+Turn `visual-evidence X` into `store/<domain>/visual.md`: cited, blind, falsifiable evidence cards + a prose impression a creative director reads in ~5 seconds. **The contract is [`modules/VISUAL.md`](../../modules/VISUAL.md)** — read it first (the card schema, the closed sets, and the boundary). This skill is the recipe half; the lint is [`scripts/visualcheck.py`](../../scripts/visualcheck.py).
+
+**What this does NOT do:** no score, no quality field, no ranking. If you catch yourself wanting a number, stop — that's the parked layer ([BACKLOG](../../BACKLOG.md)). `visualcheck.py` fails the file if a `score:` field appears.
+
+**The whole game is blinding.** The miners must judge only what's visible — never the company's reputation, dossier, or live site. So: **do not read `profile.md`, Notion, or the live web during this run**, and synthesize the impression only from the returned cards. The capturing agent saw the dossier; that's why visual evidence is a *separate, blind* pass, never folded into `/research-company`.
+
+## Resolve the engine root + the capture
+
+```bash
+ENGINE="$(cd "$(dirname "$(realpath "$0")")/../.." 2>/dev/null && pwd)"   # the repo holding this skill
+# canonical fallback: "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research"
+```
+
+The company must already be captured. `store/<slug>/captures/<date>/.payloads/<page>.png` is the input. No capture → tell the user to run `/research-company <domain>` first (this skill never scrapes).
+
+## The loop
+
+**1. Tile the cached screenshots (Tier-A, free).**
+```bash
+python3 scripts/tile.py --slug <slug> --pages homepage pricing <…>   # curate to real page screenshots
+```
+Pick the pages that carry the visual system (homepage + 2–4 signal pages); skip capture-experiment variants (`homepage_enhanced_lazyload.png`, etc.). Tiles + `overview-480w.png` land in `captures/<date>/tiles/`.
+
+**2. QA gate — clean tiles, or remediate (vision, the load-bearing step).** Read each page's `overview-480w.png` and spot-check tiles. Capture hygiene is phase one, not cleanup — a contaminated tile is *unusable evidence*, not a poor-design example. Flag:
+- **modal / cookie banner / newsletter overlay** covering content,
+- **grey or blank hero** (WebGL/canvas that didn't render), **black media/video cards**, **lazy-load gaps**,
+- **mid-animation** capture (faded reveals, count-ups still at 0.0), **full-page compositing artifacts** (repeated hero).
+
+For each flagged page, decide:
+- **Exclude** the contaminated *tile(s)* if the rest of the page is clean → note them; `qa_status: exclusions-noted`.
+- **Re-render (Tier-B)** if the page's evidence depends on the broken region — a hero, a chart, an animated section:
+  ```bash
+  python3 scripts/shoot.py "https://<the page url>" --out-dir store/<slug>/captures/<today>/tiles/<page>
+  ```
+  `shoot.py` drives system Chrome (real WebGL), warm-scrolls to load lazy media, settles motion, then tiles. Replace that page's tiles with the re-rendered set; `qa_status: recapture-used`. (No Firecrawl; needs `playwright` — `pip install playwright` once.)
+- If a page can't be made clean at all, drop it. If *nothing* is clean, **decline** and record it in `## Provenance` — don't mine defects out of broken captures.
+
+Assemble the **active tile list** (all kept tile paths, repo-relative) and the **exclusions** (path + reason).
+
+**3. Blind mining + judge (the workflow).** Hand the active tiles to the fan-out — 4 family miners in parallel (each a fresh, tiles-only agent) → judge/prune. The miners are blind by construction; StructuredOutput validates every card:
+```
+Workflow({ scriptPath: "skills/visual-evidence/mine.workflow.js",
+           args: { slug: "<slug>", tiles: [<active tile paths>], exclusions: [{path, reason}] } })
+```
+It returns `accepted_cards` (with ids), `rejected_cards`, and judge `notes`. The miners/judge inherit the session model — that's the core perception, earned, not a default.
+
+**4. Synthesize + write `store/<slug>/visual.md`** per [`modules/VISUAL.md`](../../modules/VISUAL.md):
+- Frontmatter: `schema_version: "1.0"`, `domain`, `captured_at` (today), `source_capture` (the capture date), `qa_status` (from step 2).
+- `## Visual & brand impression` — ≤120 words, **only from the accepted cards**, every claim citing a card id (`[typography_01]`). A lens over the cards, never new assertion. This is the brief's deliverable.
+- `## Evidence cards` — the accepted cards as a `yaml` block (the schema in VISUAL.md).
+- `## Provenance` — tiles read, exclusions named, whether Tier-B was used and for which pages, and a snapshot caveat.
+
+**5. Lint.** `python3 scripts/visualcheck.py --slug <slug>` — must exit 0 (tile paths valid + active, closed sets, ≥1 tell per card, impression cites ids, and **no score anywhere**). Fix anything it flags.
+
+**6. Report.** One line: company → `store/<slug>/visual.md`, N cards across the four families, `qa_status`, any pages that needed Tier-B re-render.
+
+## Why a workflow (not hand-rolled sub-agents)
+
+The fan-out is 4 blind miners + a judge with schema-validated card output. The workflow buys three things a loose `Agent` fan-out doesn't: **structural blinding** (each miner is a fresh context with only tile paths — it can't reach the dossier), **schema validation** (vision agents emit messy YAML; StructuredOutput retries until each card is well-formed), and **determinism + reuse** (the same script, re-runnable, validate-many in parallel). The miner and judge prompts live in [`mine.workflow.js`](mine.workflow.js) — that's their single source of truth, so there's no protocol doc to drift from it.
