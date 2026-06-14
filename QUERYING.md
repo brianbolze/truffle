@@ -17,7 +17,7 @@ The store is `store/<domain-slug>/`:
 - `profile.md` — **frontmatter** (structured, closed-set, valid YAML) + **body** (the prose sections SCHEMA defines: Overview, What they offer, …).
 - `captures/<date>/*.md` — cleaned pages, **verbatim** primary source.
 - `captures/<date>/images/<sku>.<ext>` — **product reference imagery** (opt-in; absent on most companies): a flagship's clean **hero product render**, captured for a design / rendering-reference consumer and cited from the `offerings.md` deep block. A binary asset, not greppable — look here when you need the picture, not the text.
-- `offerings.md` / `visual.md` / `telehealth.md` — **opt-in per-company module layers** (absent on most companies), each with its **own `captured_at`** clock: the per-SKU roster, the blind visual-evidence cards + `Visual & brand impression`, and the telehealth cohort cuts. Parse their frontmatter like `profile.md`; recipes at 4 (offerings) / 6 (telehealth), contract `modules/VISUAL.md` for visual.
+- `offerings.md` / `visual.md` / `telehealth.md` — **opt-in per-company module layers** (absent on most companies), each with its **own `captured_at`** clock: the per-SKU roster, the blind visual-evidence cards + `Visual & brand impression`, and the telehealth cohort cuts. Parse their frontmatter like `profile.md`; offerings/telehealth have aggregation recipes (4 / 6), while `visual.md` is a brief-consumer — no grep/SQL recipe, its `## Visual & brand impression` renders via `render.py` (contract `modules/VISUAL.md`).
 
 A folder **without** `profile.md` is a **stub** — a raw capture cache, not a dossier. `python scripts/store.py find <x>` distinguishes profiles from stubs explicitly; "is X captured?" means "does `store/<x>/profile.md` exist?"
 

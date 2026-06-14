@@ -84,7 +84,7 @@ Order: `## Visual & brand impression` → `## Evidence cards` → `## Provenance
 
 `python3 scripts/visualcheck.py --slug <slug>` is the gate — it must pass. The load-bearing rules:
 
-1. **No score, ever.** No `score:` / `rating:` field, and no `N/5` or `N/10` quality figure, anywhere in the file. This is the parked-line guard — the one rule that makes "evidence, not score" mechanical.
+1. **No score, ever.** No `score:` / `rating:` / `quality:` field, and no `N/5` or `N/10` quality figure, anywhere in the file. This is the parked-line guard — the one rule that makes "evidence, not score" mechanical.
 2. **Tile paths valid + active.** Every card's `tile_path` (and `contrast_with`) **exists on disk** under the company's `captures/<date>/tiles/`, and is **not** in the run's exclusion list. A card can't cite a tile that isn't there or was excluded for contamination.
 3. **Falsifiable.** Every card has a non-empty `claim` and **≥1 `visible_tell`**. A card with no tell is a vibe, not evidence.
 4. **Closed sets.** `family`, `polarity`, `confidence`, and `qa_status` each hold a value from their set above.
