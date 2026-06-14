@@ -102,7 +102,8 @@ def _roster_html(m: dict[str, Any]) -> str:
 
 def _brand_system_html(m: dict[str, Any]) -> str:
     out = []
-    prose = m["sections"].get("visual & brand impression")
+    vis = m.get("visual")
+    prose = vis["impression"] if vis and vis.get("impression") else m["sections"].get("visual & brand impression")
     if prose:
         out.append(md_blocks(prose))
     else:
@@ -178,6 +179,8 @@ def _provenance_html(m: dict[str, Any]) -> str:
         clocks.append(("offerings roster", m["offerings"]["captured_at"], m["offerings"]["age"]))
     if m["telehealth"]:
         clocks.append(("cohort pack", m["telehealth"]["captured_at"], _age_days(m["telehealth"]["captured_at"])))
+    if m.get("visual"):
+        clocks.append(("visual evidence", m["visual"]["captured_at"], m["visual"]["age"]))
     out.append('<div class="prov-clocks">')
     for label, dt, age in clocks:
         age_s = f" <small>{age}d ago</small>" if age is not None else ""

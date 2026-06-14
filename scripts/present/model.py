@@ -104,6 +104,25 @@ def extract_telehealth(slug: str) -> dict[str, Any] | None:
     return {"captured_at": _datestr(fm.get("captured_at")), "cuts": cuts}
 
 
+def extract_visual(slug: str) -> dict[str, Any] | None:
+    """The blind visual-evidence layer's brief-facing read: the cited prose impression (card-id
+    citations stripped for the reader — the cards stay in visual.md as the audit trail) + its own
+    freshness clock. None when no visual.md exists. The brief prefers this over profile.md's body
+    section: same slot, but blind and evidence-backed."""
+    path = os.path.join(STORE, slug, "visual.md")
+    if not os.path.exists(path):
+        return None
+    fm, body = store_read_doc(path)
+    impression = _split_sections(body).get("visual & brand impression", "").strip()
+    impression = re.sub(r"\s*\[[a-z0-9_]+\]", "", impression)
+    return {
+        "captured_at": _datestr(fm.get("captured_at")),
+        "age": _age_days(fm.get("captured_at")),
+        "qa_status": str(fm.get("qa_status") or ""),
+        "impression": impression,
+    }
+
+
 def _index_mark(slug: str, domain: str, fetch: bool) -> str | None:
     """Newest locally-captured logomark, else the company favicon (Google s2) disk-cached on first
     fetch — so the index renders offline after one warm run. No mark, no fetch → letter tile."""
@@ -204,5 +223,6 @@ def extract_model(query: str, fetch: bool = True) -> dict[str, Any] | None:
         "extras": extras,
         "offerings": extract_offerings(slug),
         "telehealth": extract_telehealth(slug),
+        "visual": extract_visual(slug),
         "generated": str(date.today()),
     }
