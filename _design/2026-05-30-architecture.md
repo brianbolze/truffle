@@ -141,6 +141,8 @@ The store will hold **several** entity types, but primarily "Companies".
 
     **Refused (the anti-Doro line):** Postgres/Neo4j/S3/Temporal; embeddings / vector RAG; a datapoint reconciliation engine; complex entity-resolution machinery (domain *is* the key); multi-tenant schemas; a served API / webhooks; per-market taxonomy + normalization services; and change-tracking/diffing as a core concern. Each was right for a VC-backed PE tool; each is wrong for a single-user file-first engine.
 
+    **Convergent external validation:** Karpathy's "LLM wiki" note (Apr 2026) and the Datasette / local-first lineage independently arrive at the same immutable-source → owned-synthesis → regenerable-lens shape. Cited as confirmation of the pattern, not a framework we adopt.
+
 </details>
 
 ## What's in scope — a guideline, not a roadmap
