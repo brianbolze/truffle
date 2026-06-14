@@ -1,0 +1,353 @@
+{
+  "tool": "wayback_pair_diff",
+  "baseline_dir": "experiments/2026-06-08-wayback-telehealth-pilot",
+  "rerun_dir": "experiments/2026-06-11-wayback-telehealth-repeat",
+  "rows": [
+    {
+      "name": "brellohealth-sermorelin-tenure",
+      "mode": "tenure",
+      "url": "https://www.brellohealth.com/product/compounded-sermorelin",
+      "changed_fields": [
+        "tenure_days"
+      ],
+      "baseline": {
+        "first_seen": "2026-05-03T13:25:36Z",
+        "last_seen": "2026-05-03T13:25:36Z",
+        "first_seen_confidence": "provisional",
+        "tenure_days": 36,
+        "snapshot_count": 1
+      },
+      "rerun": {
+        "first_seen": "2026-05-03T13:25:36Z",
+        "last_seen": "2026-05-03T13:25:36Z",
+        "first_seen_confidence": "provisional",
+        "tenure_days": 39,
+        "snapshot_count": 1
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:24:53Z",
+        "rerun": "2026-06-11T17:54:58Z"
+      }
+    },
+    {
+      "name": "honehealth-nad-diff-2023-2026",
+      "mode": "diff",
+      "url": "https://honehealth.com/longevity/nad",
+      "changed_fields": [],
+      "baseline": {
+        "selection_state": "selected",
+        "cdx_snapshot_count": 12,
+        "selected_timestamps": [
+          "2024-09-21T12:23:03Z",
+          "2026-01-04T00:16:33Z"
+        ],
+        "text_sha256": [
+          "2f99e078c769bda23a700eb79e4ba290e2667f690dafed2cbd073cf85f7fd389",
+          "365568760cf78305fc1d9b85f080a6867115f1b1b3beb13af5ead3955043e8b2"
+        ],
+        "text_changed": true,
+        "ok": true
+      },
+      "rerun": {
+        "selection_state": "selected",
+        "cdx_snapshot_count": 12,
+        "selected_timestamps": [
+          "2024-09-21T12:23:03Z",
+          "2026-01-04T00:16:33Z"
+        ],
+        "text_sha256": [
+          "2f99e078c769bda23a700eb79e4ba290e2667f690dafed2cbd073cf85f7fd389",
+          "365568760cf78305fc1d9b85f080a6867115f1b1b3beb13af5ead3955043e8b2"
+        ],
+        "text_changed": true,
+        "ok": true
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:24:17Z",
+        "rerun": "2026-06-11T17:59:02Z"
+      }
+    },
+    {
+      "name": "honehealth-nad-tenure",
+      "mode": "tenure",
+      "url": "https://honehealth.com/longevity/nad",
+      "changed_fields": [
+        "tenure_days"
+      ],
+      "baseline": {
+        "first_seen": "2024-09-21T12:23:03Z",
+        "last_seen": "2026-04-10T09:51:23Z",
+        "first_seen_confidence": "measured",
+        "tenure_days": 625,
+        "snapshot_count": 12
+      },
+      "rerun": {
+        "first_seen": "2024-09-21T12:23:03Z",
+        "last_seen": "2026-04-10T09:51:23Z",
+        "first_seen_confidence": "measured",
+        "tenure_days": 628,
+        "snapshot_count": 12
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:23:55Z",
+        "rerun": "2026-06-11T17:54:49Z"
+      }
+    },
+    {
+      "name": "joinamble-nad-diff-2023-2026",
+      "mode": "diff",
+      "url": "https://joinamble.com/nad-injections",
+      "changed_fields": [],
+      "baseline": {
+        "selection_state": "selected",
+        "cdx_snapshot_count": 5,
+        "selected_timestamps": [
+          "2025-08-05T23:57:48Z",
+          "2025-12-15T02:36:12Z"
+        ],
+        "text_sha256": [
+          "1087fcad5a559d2d885d4838213df080a87b82864cb45e2da9d1cba664c890eb",
+          "638bf7f0438dcd5e517e76208c7d727fe9e878b9b125974c8befdfb22a5b51bd"
+        ],
+        "text_changed": true,
+        "ok": true
+      },
+      "rerun": {
+        "selection_state": "selected",
+        "cdx_snapshot_count": 5,
+        "selected_timestamps": [
+          "2025-08-05T23:57:48Z",
+          "2025-12-15T02:36:12Z"
+        ],
+        "text_sha256": [
+          "1087fcad5a559d2d885d4838213df080a87b82864cb45e2da9d1cba664c890eb",
+          "638bf7f0438dcd5e517e76208c7d727fe9e878b9b125974c8befdfb22a5b51bd"
+        ],
+        "text_changed": true,
+        "ok": true
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:20:58Z",
+        "rerun": "2026-06-11T17:55:58Z"
+      }
+    },
+    {
+      "name": "joinamble-nad-diff-20250805-20260311",
+      "mode": "diff",
+      "url": "https://joinamble.com/nad-injections",
+      "changed_fields": [],
+      "baseline": {
+        "selection_state": "selected",
+        "cdx_snapshot_count": 5,
+        "selected_timestamps": [
+          "2025-08-05T23:57:48Z",
+          "2026-03-11T10:38:40Z"
+        ],
+        "text_sha256": [
+          "1087fcad5a559d2d885d4838213df080a87b82864cb45e2da9d1cba664c890eb",
+          "3f0b4ceb7dd4a6471960a7d258a3ce985166fb6c62276c31135347ca7ca689a8"
+        ],
+        "text_changed": true,
+        "ok": true
+      },
+      "rerun": {
+        "selection_state": "selected",
+        "cdx_snapshot_count": 5,
+        "selected_timestamps": [
+          "2025-08-05T23:57:48Z",
+          "2026-03-11T10:38:40Z"
+        ],
+        "text_sha256": [
+          "1087fcad5a559d2d885d4838213df080a87b82864cb45e2da9d1cba664c890eb",
+          "3f0b4ceb7dd4a6471960a7d258a3ce985166fb6c62276c31135347ca7ca689a8"
+        ],
+        "text_changed": true,
+        "ok": true
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:27:34Z",
+        "rerun": "2026-06-11T17:59:34Z"
+      }
+    },
+    {
+      "name": "joinamble-nad-tenure",
+      "mode": "tenure",
+      "url": "https://joinamble.com/nad-injections",
+      "changed_fields": [
+        "tenure_days"
+      ],
+      "baseline": {
+        "first_seen": "2025-08-05T23:57:48Z",
+        "last_seen": "2026-03-11T10:38:40Z",
+        "first_seen_confidence": "measured",
+        "tenure_days": 306,
+        "snapshot_count": 5
+      },
+      "rerun": {
+        "first_seen": "2025-08-05T23:57:48Z",
+        "last_seen": "2026-03-11T10:38:40Z",
+        "first_seen_confidence": "measured",
+        "tenure_days": 309,
+        "snapshot_count": 5
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:20:37Z",
+        "rerun": "2026-06-11T17:52:47Z"
+      }
+    },
+    {
+      "name": "joinamble-sermorelin-diff-2023-2026",
+      "mode": "diff",
+      "url": "https://joinamble.com/sermorelin-injections",
+      "changed_fields": [],
+      "baseline": {
+        "selection_state": "selected",
+        "cdx_snapshot_count": 4,
+        "selected_timestamps": [
+          "2025-08-05T22:32:41Z",
+          "2025-12-15T02:02:36Z"
+        ],
+        "text_sha256": [
+          "576f246f565ba81706bf0f776649b3f8da2a673f3ded0a98257a1bd214284638",
+          "7c37322e4527c806abf38944407728dc348158b00dd1b1622dda1767d49dfefa"
+        ],
+        "text_changed": true,
+        "ok": true
+      },
+      "rerun": {
+        "selection_state": "selected",
+        "cdx_snapshot_count": 4,
+        "selected_timestamps": [
+          "2025-08-05T22:32:41Z",
+          "2025-12-15T02:02:36Z"
+        ],
+        "text_sha256": [
+          "576f246f565ba81706bf0f776649b3f8da2a673f3ded0a98257a1bd214284638",
+          "7c37322e4527c806abf38944407728dc348158b00dd1b1622dda1767d49dfefa"
+        ],
+        "text_changed": true,
+        "ok": true
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:18:43Z",
+        "rerun": "2026-06-11T17:55:23Z"
+      }
+    },
+    {
+      "name": "joinamble-sermorelin-tenure",
+      "mode": "tenure",
+      "url": "https://joinamble.com/sermorelin-injections",
+      "changed_fields": [
+        "tenure_days"
+      ],
+      "baseline": {
+        "first_seen": "2025-08-05T22:32:41Z",
+        "last_seen": "2025-12-15T02:02:36Z",
+        "first_seen_confidence": "measured",
+        "tenure_days": 306,
+        "snapshot_count": 4
+      },
+      "rerun": {
+        "first_seen": "2025-08-05T22:32:41Z",
+        "last_seen": "2025-12-15T02:02:36Z",
+        "first_seen_confidence": "measured",
+        "tenure_days": 309,
+        "snapshot_count": 4
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:16:45Z",
+        "rerun": "2026-06-11T17:52:34Z"
+      }
+    },
+    {
+      "name": "rexmd-sermorelin-diff-20260212-20260312",
+      "mode": "diff",
+      "url": "https://rexmd.com/our-medications/testosterone-program/sermorelin/",
+      "changed_fields": [],
+      "baseline": {
+        "selection_state": "selected",
+        "cdx_snapshot_count": 2,
+        "selected_timestamps": [
+          "2026-02-12T01:22:31Z",
+          "2026-03-12T17:37:02Z"
+        ],
+        "text_sha256": [
+          "1426907812c987eb51b2e76f80dcfed6ab52b2087f812bba49b6241f951ca2b0",
+          "8b46327390f8307171637aece8815dbe2327b4d58156305a9efc50dca8ab036b"
+        ],
+        "text_changed": true,
+        "ok": true
+      },
+      "rerun": {
+        "selection_state": "selected",
+        "cdx_snapshot_count": 2,
+        "selected_timestamps": [
+          "2026-02-12T01:22:31Z",
+          "2026-03-12T17:37:02Z"
+        ],
+        "text_sha256": [
+          "1426907812c987eb51b2e76f80dcfed6ab52b2087f812bba49b6241f951ca2b0",
+          "8b46327390f8307171637aece8815dbe2327b4d58156305a9efc50dca8ab036b"
+        ],
+        "text_changed": true,
+        "ok": true
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:23:41Z",
+        "rerun": "2026-06-11T17:58:47Z"
+      }
+    },
+    {
+      "name": "rexmd-sermorelin-tenure",
+      "mode": "tenure",
+      "url": "https://rexmd.com/our-medications/testosterone-program/sermorelin/",
+      "changed_fields": [
+        "tenure_days"
+      ],
+      "baseline": {
+        "first_seen": "2026-02-12T01:22:31Z",
+        "last_seen": "2026-03-12T17:37:02Z",
+        "first_seen_confidence": "measured",
+        "tenure_days": 116,
+        "snapshot_count": 2
+      },
+      "rerun": {
+        "first_seen": "2026-02-12T01:22:31Z",
+        "last_seen": "2026-03-12T17:37:02Z",
+        "first_seen_confidence": "measured",
+        "tenure_days": 119,
+        "snapshot_count": 2
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:23:14Z",
+        "rerun": "2026-06-11T17:54:37Z"
+      }
+    },
+    {
+      "name": "trtnation-anti-aging-tenure",
+      "mode": "tenure",
+      "url": "https://trtnation.com/anti-aging/",
+      "changed_fields": [
+        "tenure_days"
+      ],
+      "baseline": {
+        "first_seen": "2026-02-03T11:38:59Z",
+        "last_seen": "2026-02-03T11:38:59Z",
+        "first_seen_confidence": "provisional",
+        "tenure_days": 125,
+        "snapshot_count": 1
+      },
+      "rerun": {
+        "first_seen": "2026-02-03T11:38:59Z",
+        "last_seen": "2026-02-03T11:38:59Z",
+        "first_seen_confidence": "provisional",
+        "tenure_days": 128,
+        "snapshot_count": 1
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:21:48Z",
+        "rerun": "2026-06-11T17:53:41Z"
+      }
+    }
+  ]
+}

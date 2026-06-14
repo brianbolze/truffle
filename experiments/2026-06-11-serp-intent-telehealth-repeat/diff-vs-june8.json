@@ -1,0 +1,352 @@
+{
+  "tool": "serp_intent_panel_diff",
+  "baseline_path": "experiments/2026-06-08-serp-intent-telehealth-smoke/panel-calibrated.json",
+  "rerun_path": "experiments/2026-06-11-serp-intent-telehealth-repeat/panel-live.json",
+  "baseline_generated_at": "2026-06-08T19:19:52Z",
+  "rerun_generated_at": "2026-06-11T17:41:19Z",
+  "query_ids_match": true,
+  "rows": [
+    {
+      "id": "compounded-tirzepatide-online",
+      "query": "compounded tirzepatide online",
+      "organic_top10_match_count": {
+        "baseline": 4,
+        "rerun": 3
+      },
+      "own_pages": {
+        "new": [],
+        "dropped": [],
+        "moved": {
+          "brello-health": {
+            "baseline": [
+              2
+            ],
+            "rerun": [
+              1
+            ]
+          },
+          "ivim-health": {
+            "baseline": [
+              8
+            ],
+            "rerun": [
+              6
+            ]
+          }
+        },
+        "unchanged": {}
+      },
+      "mentions": {
+        "new": [],
+        "dropped": [
+          "brello-health"
+        ],
+        "moved": {},
+        "unchanged": {
+          "ro": [
+            5
+          ]
+        }
+      },
+      "aio_present": {
+        "baseline": true,
+        "rerun": true
+      },
+      "aio_references": {
+        "new": [
+          "ro"
+        ],
+        "dropped": [
+          "brello-health"
+        ],
+        "moved": {
+          "ivim-health": {
+            "baseline": [
+              3
+            ],
+            "rerun": [
+              8,
+              9
+            ]
+          }
+        },
+        "unchanged": {}
+      },
+      "aio_ranked_brand_count": {
+        "baseline": 0,
+        "rerun": 0
+      },
+      "off_cohort_count": {
+        "baseline": 6,
+        "rerun": 6
+      },
+      "labels": {
+        "baseline": [
+          "noisy"
+        ],
+        "rerun": [
+          "noisy"
+        ]
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:10:29Z",
+        "rerun": "2026-06-11T17:41:19Z"
+      }
+    },
+    {
+      "id": "nad-injection-online",
+      "query": "NAD injection online",
+      "organic_top10_match_count": {
+        "baseline": 3,
+        "rerun": 3
+      },
+      "own_pages": {
+        "new": [],
+        "dropped": [],
+        "moved": {
+          "hydramed": {
+            "baseline": [
+              8
+            ],
+            "rerun": [
+              9
+            ]
+          }
+        },
+        "unchanged": {
+          "agelessrx": [
+            3
+          ],
+          "hone-health": [
+            6
+          ]
+        }
+      },
+      "mentions": {
+        "new": [],
+        "dropped": [],
+        "moved": {},
+        "unchanged": {}
+      },
+      "aio_present": {
+        "baseline": true,
+        "rerun": true
+      },
+      "aio_references": {
+        "new": [],
+        "dropped": [],
+        "moved": {
+          "agelessrx": {
+            "baseline": [
+              7
+            ],
+            "rerun": [
+              5,
+              6
+            ]
+          },
+          "hone-health": {
+            "baseline": [
+              2
+            ],
+            "rerun": [
+              7
+            ]
+          }
+        },
+        "unchanged": {}
+      },
+      "aio_ranked_brand_count": {
+        "baseline": 0,
+        "rerun": 0
+      },
+      "off_cohort_count": {
+        "baseline": 7,
+        "rerun": 7
+      },
+      "labels": {
+        "baseline": [
+          "noisy"
+        ],
+        "rerun": [
+          "noisy"
+        ]
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:10:13Z",
+        "rerun": "2026-06-11T17:41:18Z"
+      }
+    },
+    {
+      "id": "sermorelin-online-prescription",
+      "query": "sermorelin online prescription",
+      "organic_top10_match_count": {
+        "baseline": 5,
+        "rerun": 5
+      },
+      "own_pages": {
+        "new": [],
+        "dropped": [],
+        "moved": {
+          "hone-health": {
+            "baseline": [
+              9
+            ],
+            "rerun": [
+              8
+            ]
+          },
+          "hydramed": {
+            "baseline": [
+              8
+            ],
+            "rerun": [
+              9
+            ]
+          }
+        },
+        "unchanged": {
+          "agelessrx": [
+            1
+          ],
+          "strut-health": [
+            4,
+            10
+          ]
+        }
+      },
+      "mentions": {
+        "new": [],
+        "dropped": [],
+        "moved": {},
+        "unchanged": {}
+      },
+      "aio_present": {
+        "baseline": true,
+        "rerun": true
+      },
+      "aio_references": {
+        "new": [
+          "brello-health"
+        ],
+        "dropped": [],
+        "moved": {
+          "strut-health": {
+            "baseline": [
+              2,
+              3,
+              8
+            ],
+            "rerun": [
+              2,
+              5
+            ]
+          }
+        },
+        "unchanged": {
+          "agelessrx": [
+            0
+          ],
+          "hone-health": [
+            1
+          ]
+        }
+      },
+      "aio_ranked_brand_count": {
+        "baseline": 0,
+        "rerun": 0
+      },
+      "off_cohort_count": {
+        "baseline": 5,
+        "rerun": 5
+      },
+      "labels": {
+        "baseline": [
+          "clean"
+        ],
+        "rerun": [
+          "clean"
+        ]
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:09:56Z",
+        "rerun": "2026-06-11T17:40:20Z"
+      }
+    },
+    {
+      "id": "trt-online-prescription",
+      "query": "TRT online prescription",
+      "organic_top10_match_count": {
+        "baseline": 5,
+        "rerun": 3
+      },
+      "own_pages": {
+        "new": [],
+        "dropped": [],
+        "moved": {
+          "trt-nation": {
+            "baseline": [
+              5
+            ],
+            "rerun": [
+              4
+            ]
+          }
+        },
+        "unchanged": {
+          "hims": [
+            1
+          ],
+          "hone-health": [
+            2
+          ]
+        }
+      },
+      "mentions": {
+        "new": [],
+        "dropped": [
+          "hone-health",
+          "peter-md"
+        ],
+        "moved": {},
+        "unchanged": {}
+      },
+      "aio_present": {
+        "baseline": true,
+        "rerun": false
+      },
+      "aio_references": {
+        "new": [],
+        "dropped": [
+          "hims",
+          "hone-health",
+          "trt-nation"
+        ],
+        "moved": {},
+        "unchanged": {}
+      },
+      "aio_ranked_brand_count": {
+        "baseline": 0,
+        "rerun": 0
+      },
+      "off_cohort_count": {
+        "baseline": 6,
+        "rerun": 7
+      },
+      "labels": {
+        "baseline": [
+          "listicle-heavy",
+          "noisy"
+        ],
+        "rerun": [
+          "listicle-heavy",
+          "noisy"
+        ]
+      },
+      "captured_at": {
+        "baseline": "2026-06-08T19:09:49Z",
+        "rerun": "2026-06-11T17:40:18Z"
+      }
+    }
+  ]
+}

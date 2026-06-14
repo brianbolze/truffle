@@ -1,0 +1,120 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-11T17:58:47Z",
+  "ok": true,
+  "input": {
+    "mode": "diff",
+    "url": "https://rexmd.com/our-medications/testosterone-program/sermorelin/",
+    "from": "20260212",
+    "to": "20260312",
+    "context_lines": 1,
+    "max_diff_lines": 120
+  },
+  "schema_drift": [],
+  "selection": {
+    "strategy": "nearest_targets",
+    "state": "selected",
+    "note": null,
+    "snapshot_count": 2
+  },
+  "selected_snapshots": [
+    {
+      "timestamp": "2026-02-12T01:22:31Z",
+      "raw_timestamp": "20260212012231",
+      "original_url": "https://rexmd.com/our-medications/testosterone-program/sermorelin/?",
+      "replay_url": "https://web.archive.org/web/20260212012231/https://rexmd.com/our-medications/testosterone-program/sermorelin/?",
+      "raw_replay_url": "https://web.archive.org/web/20260212012231id_/https://rexmd.com/our-medications/testosterone-program/sermorelin/?",
+      "status": "200",
+      "digest": "BQFZD3K555CXFLCUZSIOWLUHFOAPITLE",
+      "mimetype": "text/html",
+      "length": 43762
+    },
+    {
+      "timestamp": "2026-03-12T17:37:02Z",
+      "raw_timestamp": "20260312173702",
+      "original_url": "https://rexmd.com/our-medications/testosterone-program/sermorelin/",
+      "replay_url": "https://web.archive.org/web/20260312173702/https://rexmd.com/our-medications/testosterone-program/sermorelin/",
+      "raw_replay_url": "https://web.archive.org/web/20260312173702id_/https://rexmd.com/our-medications/testosterone-program/sermorelin/",
+      "status": "200",
+      "digest": "PC3AKVZDOBIHBUOFQWYBGWHKXED2CBW2",
+      "mimetype": "text/html",
+      "length": 43955
+    }
+  ],
+  "contents": [
+    {
+      "timestamp": "2026-02-12T01:22:31Z",
+      "raw_timestamp": "20260212012231",
+      "original_url": "https://rexmd.com/our-medications/testosterone-program/sermorelin/?",
+      "replay_url": "https://web.archive.org/web/20260212012231/https://rexmd.com/our-medications/testosterone-program/sermorelin/?",
+      "raw_replay_url": "https://web.archive.org/web/20260212012231id_/https://rexmd.com/our-medications/testosterone-program/sermorelin/?",
+      "status": "200",
+      "digest": "BQFZD3K555CXFLCUZSIOWLUHFOAPITLE",
+      "mimetype": "text/html",
+      "length": 43762,
+      "fetch_status": 200,
+      "fetch_ok": true,
+      "fetch_error": null,
+      "final_url": "https://web.archive.org/web/20260212012231id_/https://rexmd.com/our-medications/testosterone-program/sermorelin/?",
+      "content_type": "text/html; charset=UTF-8",
+      "byte_count": 191747,
+      "content_sha256": "2fd4c7f9e8230a3327a6e68a618f5407ab7491ffa1cb9bfad6ca7f170d88a5de",
+      "text_char_count": 37976,
+      "text_line_count": 469,
+      "text_sha256": "1426907812c987eb51b2e76f80dcfed6ab52b2087f812bba49b6241f951ca2b0"
+    },
+    {
+      "timestamp": "2026-03-12T17:37:02Z",
+      "raw_timestamp": "20260312173702",
+      "original_url": "https://rexmd.com/our-medications/testosterone-program/sermorelin/",
+      "replay_url": "https://web.archive.org/web/20260312173702/https://rexmd.com/our-medications/testosterone-program/sermorelin/",
+      "raw_replay_url": "https://web.archive.org/web/20260312173702id_/https://rexmd.com/our-medications/testosterone-program/sermorelin/",
+      "status": "200",
+      "digest": "PC3AKVZDOBIHBUOFQWYBGWHKXED2CBW2",
+      "mimetype": "text/html",
+      "length": 43955,
+      "fetch_status": 200,
+      "fetch_ok": true,
+      "fetch_error": null,
+      "final_url": "https://web.archive.org/web/20260312173702id_/https://rexmd.com/our-medications/testosterone-program/sermorelin/",
+      "content_type": "text/html; charset=UTF-8",
+      "byte_count": 192287,
+      "content_sha256": "db084e2775459589a4613ae406f6c6ef7cfc8b758e27cb48e8c5e4c09ccf79d6",
+      "text_char_count": 38002,
+      "text_line_count": 469,
+      "text_sha256": "8b46327390f8307171637aece8815dbe2327b4d58156305a9efc50dca8ab036b"
+    }
+  ],
+  "text_changed": true,
+  "diff": {
+    "format": "unified_diff",
+    "context_lines": 1,
+    "max_diff_lines": 120,
+    "truncated": false,
+    "line_counts": {
+      "from": 469,
+      "to": 469,
+      "common": 466,
+      "added": 3,
+      "removed": 3
+    },
+    "lines": [
+      "--- 2026-02-12T01:22:31Z https://rexmd.com/our-medications/testosterone-program/sermorelin/?",
+      "+++ 2026-03-12T17:37:02Z https://rexmd.com/our-medications/testosterone-program/sermorelin/",
+      "@@ -2,5 +2,5 @@",
+      " LIMITED TIME OFFER",
+      "-VALENTINE'S DAY SPECIAL OFFER",
+      "+St. Patrick\u2019s Day SPECIAL",
+      " LIMITED TIME OFFER",
+      "-SAVE UP TO 95% OFF ED MEDS & PAY $2 PER TABLET.",
+      "+SAVE UP TO 95% OFF ED MEDS & PAY $2 PER TABLET",
+      " SAVE UP TO 95% OFF ED MEDS",
+      "@@ -103,3 +103,3 @@",
+      " Dynamic questionnaire & lab work",
+      "-Answer questions online about your symptoms and medical history. Once prequalified, you\u2019ll complete lab work at a local Quest or LabCorp facility in advance of your virtual consultation with a Rex MD affiliated provider.",
+      "+Answer questions online about your symptoms and medical history. Once prequalified, you\u2019ll complete lab work either at a local Quest or LabCorp facility or via an at-home lab test kit before your virtual consultation with a Rex MD affiliated provider.",
+      " Virtual Consultation"
+    ]
+  }
+}

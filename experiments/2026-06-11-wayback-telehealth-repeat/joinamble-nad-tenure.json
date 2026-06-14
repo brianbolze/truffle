@@ -1,0 +1,57 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-11T17:52:47Z",
+  "ok": true,
+  "input": {
+    "url": "https://joinamble.com/nad-injections"
+  },
+  "schema_drift": [],
+  "first_seen": "2025-08-05T23:57:48Z",
+  "last_seen": "2026-03-11T10:38:40Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 309,
+  "snapshot_count": 5,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2025-08-05T23:57:48Z",
+      "to": "2026-03-11T10:38:40Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20250805235748/https://www.joinamble.com/nad-injections",
+  "last_snapshot_url": "https://web.archive.org/web/20260311103840/https://joinamble.com/nad-injections",
+  "snapshots": [
+    {
+      "timestamp": "2025-08-05T23:57:48Z",
+      "url": "https://www.joinamble.com/nad-injections",
+      "status": "200",
+      "digest": "BNYLKDSENNUYJPBNKDYSWFI3YZPIEWLJ"
+    },
+    {
+      "timestamp": "2025-08-30T00:25:38Z",
+      "url": "https://www.joinamble.com/nad-injections",
+      "status": "200",
+      "digest": "RZAPWMCYJOKGJMLLOJKUQWT3LRNRGU54"
+    },
+    {
+      "timestamp": "2025-12-08T14:10:39Z",
+      "url": "https://www.joinamble.com/nad-injections",
+      "status": "200",
+      "digest": "VOHQKBF76BMAPQBDXJX4XIKUNJZ6ZXZM"
+    },
+    {
+      "timestamp": "2025-12-15T02:36:12Z",
+      "url": "https://joinamble.com/nad-injections",
+      "status": "200",
+      "digest": "TSGLGI5VFCSATVJPG2GQYHBDIQ674BLL"
+    },
+    {
+      "timestamp": "2026-03-11T10:38:40Z",
+      "url": "https://joinamble.com/nad-injections",
+      "status": "200",
+      "digest": "PJK7P3QDB3OXADOAO34NPMRIEJ5ENADG"
+    }
+  ]
+}

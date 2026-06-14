@@ -1,0 +1,29 @@
+{
+  "defaults": {
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "queries": [
+    {
+      "id": "trt-online-prescription",
+      "category": "TRT",
+      "query": "TRT online prescription"
+    },
+    {
+      "id": "sermorelin-online-prescription",
+      "category": "peptides",
+      "query": "sermorelin online prescription"
+    },
+    {
+      "id": "nad-injection-online",
+      "category": "NAD",
+      "query": "NAD injection online"
+    },
+    {
+      "id": "compounded-tirzepatide-online",
+      "category": "GLP-1",
+      "query": "compounded tirzepatide online"
+    }
+  ]
+}

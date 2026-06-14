@@ -1,0 +1,800 @@
+{
+  "tool": "serp_intent_panel",
+  "source": "serpapi_envelopes",
+  "generated_at": "2026-06-11T17:41:19Z",
+  "ok": true,
+  "input": {
+    "query_count": 4,
+    "cohort_count": 11,
+    "fetch_missing": true,
+    "organic_only_for_live_fetch": false,
+    "fetched_live_count": 2
+  },
+  "summary": {
+    "query_count": 4,
+    "captured_query_count": 4,
+    "missing_query_count": 0,
+    "schema_drift_query_count": 0,
+    "clean_query_count": 1,
+    "no_cohort_signal_query_count": 0,
+    "noisy_query_count": 3
+  },
+  "queries": [
+    {
+      "id": "trt-online-prescription",
+      "category": "TRT",
+      "query": "TRT online prescription",
+      "capture_status": "captured",
+      "capture": {
+        "captured_at": "2026-06-11T17:40:18Z",
+        "path": "experiments/2026-06-11-serp-intent-telehealth-repeat/captures/20260611T174018Z-trt-online-prescription.json",
+        "ok": true,
+        "schema_drift": [],
+        "input": {
+          "query": "TRT online prescription",
+          "gl": "us",
+          "hl": "en",
+          "device": "desktop"
+        }
+      },
+      "organic_top10_match_count": 3,
+      "organic_matched_result_count": 3,
+      "organic_distinct_cohort_count": 3,
+      "own_page_matches": [
+        {
+          "slug": "hims",
+          "kind": "own_page",
+          "match_method": "domain",
+          "position": 1,
+          "title": "Testosterone Support, Prescribed Online",
+          "link": "https://www.hims.com/testosterone",
+          "domain": "hims.com",
+          "matched_text": null
+        },
+        {
+          "slug": "hone-health",
+          "kind": "own_page",
+          "match_method": "both",
+          "position": 2,
+          "title": "Online Testosterone Replacement Therapy",
+          "link": "https://honehealth.com/mens/testosterone-replacement-therapy/?srsltid=AfmBOorLM7w7z7yuZ14QUXt7_a7ss-Lq5-wpGc3bTCuJJeUlqWORvDLC",
+          "domain": "honehealth.com",
+          "matched_text": "Hone"
+        },
+        {
+          "slug": "trt-nation",
+          "kind": "own_page",
+          "match_method": "domain",
+          "position": 4,
+          "title": "America's Clinic | Testosterone Replacement Therapy $99/mo",
+          "link": "https://trtnation.com/",
+          "domain": "trtnation.com",
+          "matched_text": null
+        }
+      ],
+      "third_party_mention_matches": [],
+      "ai_overview": {
+        "present": false,
+        "skipped": false,
+        "ranked_brand_match_count": 0,
+        "ranked_brand_matches": [],
+        "reference_match_count": 0,
+        "reference_matches": []
+      },
+      "serp_character": {
+        "organic_result_count": 10,
+        "unmatched_result_count": 7,
+        "type_counts": {
+          "listicle_like": 3,
+          "off_cohort": 7,
+          "supplement_retail_like": 1,
+          "unclassified": 6
+        },
+        "matched_type_counts": {
+          "unclassified": 3
+        },
+        "unmatched_type_counts": {
+          "listicle_like": 3,
+          "supplement_retail_like": 1,
+          "unclassified": 3
+        },
+        "top_unmatched_domains": [
+          {
+            "domain": "goodrx.com",
+            "count": 1
+          },
+          {
+            "domain": "forbes.com",
+            "count": 1
+          },
+          {
+            "domain": "pharmacy.amazon.com",
+            "count": 1
+          },
+          {
+            "domain": "helloklarity.com",
+            "count": 1
+          },
+          {
+            "domain": "rxoutreach.org",
+            "count": 1
+          },
+          {
+            "domain": "innerbody.com",
+            "count": 1
+          },
+          {
+            "domain": "drb.ai",
+            "count": 1
+          }
+        ],
+        "sample_unmatched_results": [
+          {
+            "position": 3,
+            "title": "Testosterone Replacement Therapy (TRT): Side Effects ...",
+            "link": "https://www.goodrx.com/classes/androgens/testosterone-replacement-options-for-treatment-have-just-gotten-better?srsltid=AfmBOopCgwFOlFRDusHGCzIPhbOyFtw0TMPtu4MkSwL2cNVwosxF-qHC",
+            "domain": "goodrx.com",
+            "result_character": [
+              "listicle_like"
+            ]
+          },
+          {
+            "position": 5,
+            "title": "How To Find The Best Online TRT Clinic",
+            "link": "https://www.forbes.com/health/wellness/best-testosterone-replacement-therapy/",
+            "domain": "forbes.com",
+            "result_character": [
+              "listicle_like"
+            ]
+          },
+          {
+            "position": 6,
+            "title": "TESTOSTERONE CYPIONATE (SINGLE USE) 200 MG/ML ...",
+            "link": "https://pharmacy.amazon.com/TESTOSTERONE-CYPIONATE-SINGLE-USE-200-MG-ML-VIAL/dp/B084BXK3NL",
+            "domain": "pharmacy.amazon.com",
+            "result_character": [
+              "supplement_retail_like"
+            ]
+          },
+          {
+            "position": 7,
+            "title": "Online Doctors Who Prescribe Testosterone (TRT)",
+            "link": "https://www.helloklarity.com/post/how-to-get-a-prescription-for-testosterone-online/",
+            "domain": "helloklarity.com",
+            "result_character": [
+              "unclassified"
+            ]
+          },
+          {
+            "position": 8,
+            "title": "Men",
+            "link": "https://rxoutreach.org/men/",
+            "domain": "rxoutreach.org",
+            "result_character": [
+              "unclassified"
+            ]
+          }
+        ]
+      },
+      "query_usefulness_labels": [
+        "listicle-heavy",
+        "noisy"
+      ]
+    },
+    {
+      "id": "sermorelin-online-prescription",
+      "category": "peptides",
+      "query": "sermorelin online prescription",
+      "capture_status": "captured",
+      "capture": {
+        "captured_at": "2026-06-11T17:40:20Z",
+        "path": "experiments/2026-06-11-serp-intent-telehealth-repeat/captures/20260611T174020Z-sermorelin-online-prescription.json",
+        "ok": true,
+        "schema_drift": [],
+        "input": {
+          "query": "sermorelin online prescription",
+          "gl": "us",
+          "hl": "en",
+          "device": "desktop"
+        }
+      },
+      "organic_top10_match_count": 5,
+      "organic_matched_result_count": 5,
+      "organic_distinct_cohort_count": 4,
+      "own_page_matches": [
+        {
+          "slug": "agelessrx",
+          "kind": "own_page",
+          "match_method": "domain",
+          "position": 1,
+          "title": "Sermorelin Injection",
+          "link": "https://agelessrx.com/sermorelin/?srsltid=AfmBOoozGp4-TrOIhoQ9gfS1OI6Ab8uXAGNKg5hxzdvkPAzf1Hwbat-v",
+          "domain": "agelessrx.com",
+          "matched_text": null
+        },
+        {
+          "slug": "strut-health",
+          "kind": "own_page",
+          "match_method": "domain",
+          "position": 4,
+          "title": "Sermorelin Prescription Online: Safety, Process & What to ...",
+          "link": "https://www.struthealth.com/blog/sermorelin-prescription-online",
+          "domain": "struthealth.com",
+          "matched_text": null
+        },
+        {
+          "slug": "hone-health",
+          "kind": "own_page",
+          "match_method": "both",
+          "position": 8,
+          "title": "Buy Sermorelin Injections - Online Prescriptions",
+          "link": "https://honehealth.com/mens/sermorelin/?srsltid=AfmBOorIsVU2U_qsi36xYeja_-JvS7KxiKvU1c4lNvx2guttE8kezDfc",
+          "domain": "honehealth.com",
+          "matched_text": "Hone"
+        },
+        {
+          "slug": "hydramed",
+          "kind": "own_page",
+          "match_method": "domain",
+          "position": 9,
+          "title": "Buy Sermorelin Online | Safe & Effective Growth Hormone ...",
+          "link": "https://hydramed.com/rx/semorelin/injections",
+          "domain": "hydramed.com",
+          "matched_text": null
+        },
+        {
+          "slug": "strut-health",
+          "kind": "own_page",
+          "match_method": "domain",
+          "position": 10,
+          "title": "\u200dWhere to Get Sermorelin Safely? Here's What Actually Works",
+          "link": "https://www.struthealth.com/blog/where-to-get-sermorelin",
+          "domain": "struthealth.com",
+          "matched_text": null
+        }
+      ],
+      "third_party_mention_matches": [],
+      "ai_overview": {
+        "present": true,
+        "skipped": false,
+        "ranked_brand_match_count": 0,
+        "ranked_brand_matches": [],
+        "reference_match_count": 5,
+        "reference_matches": [
+          {
+            "slug": "agelessrx",
+            "kind": "own_page",
+            "match_method": "both",
+            "reference_index": 0,
+            "source": "AgelessRx",
+            "title": "Sermorelin Injection - AgelessRx",
+            "link": "https://agelessrx.com/sermorelin/",
+            "domain": "agelessrx.com",
+            "matched_text": "AgelessRx"
+          },
+          {
+            "slug": "hone-health",
+            "kind": "own_page",
+            "match_method": "both",
+            "reference_index": 1,
+            "source": "Hone Health",
+            "title": "Buy Sermorelin Injections - Online Prescriptions - Hone Health",
+            "link": "https://honehealth.com/mens/sermorelin/",
+            "domain": "honehealth.com",
+            "matched_text": "Hone Health"
+          },
+          {
+            "slug": "strut-health",
+            "kind": "own_page",
+            "match_method": "both",
+            "reference_index": 2,
+            "source": "Strut Health",
+            "title": "Sermorelin Prescription Online: Safety, Process & What to Expect",
+            "link": "https://www.struthealth.com/blog/sermorelin-prescription-online",
+            "domain": "struthealth.com",
+            "matched_text": "Strut Health"
+          },
+          {
+            "slug": "strut-health",
+            "kind": "own_page",
+            "match_method": "both",
+            "reference_index": 5,
+            "source": "Strut Health",
+            "title": "\u200dWhere to Get Sermorelin Safely? Here's What Actually Works",
+            "link": "https://www.struthealth.com/blog/where-to-get-sermorelin",
+            "domain": "struthealth.com",
+            "matched_text": "Strut Health"
+          },
+          {
+            "slug": "brello-health",
+            "kind": "own_page",
+            "match_method": "both",
+            "reference_index": 8,
+            "source": "Brello Health",
+            "title": "Compounded Sermorelin - BrelloHealth",
+            "link": "https://www.brellohealth.com/product/compounded-sermorelin",
+            "domain": "brellohealth.com",
+            "matched_text": "Brello Health"
+          }
+        ]
+      },
+      "serp_character": {
+        "organic_result_count": 10,
+        "unmatched_result_count": 5,
+        "type_counts": {
+          "off_cohort": 5,
+          "supplement_retail_like": 2,
+          "unclassified": 8
+        },
+        "matched_type_counts": {
+          "unclassified": 5
+        },
+        "unmatched_type_counts": {
+          "supplement_retail_like": 2,
+          "unclassified": 3
+        },
+        "top_unmatched_domains": [
+          {
+            "domain": "cfspharmacy.pharmacy",
+            "count": 1
+          },
+          {
+            "domain": "eden.health",
+            "count": 1
+          },
+          {
+            "domain": "joinmidi.com",
+            "count": 1
+          },
+          {
+            "domain": "mayoclinic.org",
+            "count": 1
+          },
+          {
+            "domain": "olympiapharmacy.com",
+            "count": 1
+          }
+        ],
+        "sample_unmatched_results": [
+          {
+            "position": 2,
+            "title": "Sermorelin Compounded",
+            "link": "https://www.cfspharmacy.pharmacy/sermorelin-compounded",
+            "domain": "cfspharmacy.pharmacy",
+            "result_character": [
+              "unclassified"
+            ]
+          },
+          {
+            "position": 3,
+            "title": "Sermorelin Prescription Online: Safe & Legal Options",
+            "link": "https://www.eden.health/post/sermorelin-prescriptions-online-understanding-the-process-and-considerations?srsltid=AfmBOoqKYb_4PSXMTLQ24iQSP37MjSlnWKmGNe9YyFNfuS7aj48w3Do9",
+            "domain": "eden.health",
+            "result_character": [
+              "unclassified"
+            ]
+          },
+          {
+            "position": 5,
+            "title": "Sermorelin",
+            "link": "https://www.joinmidi.com/store/sermorelin",
+            "domain": "joinmidi.com",
+            "result_character": [
+              "supplement_retail_like"
+            ]
+          },
+          {
+            "position": 6,
+            "title": "Sermorelin (injection route) - Side effects & dosage",
+            "link": "https://www.mayoclinic.org/drugs-supplements/sermorelin-injection-route/description/drg-20065923",
+            "domain": "mayoclinic.org",
+            "result_character": [
+              "supplement_retail_like"
+            ]
+          },
+          {
+            "position": 7,
+            "title": "Compounded Sermorelin Injections | Peptides",
+            "link": "https://www.olympiapharmacy.com/product/sermorelin-injections/?srsltid=AfmBOoq8cPWq5T2Y6iPNiZa02bNRI8b7QX2nAzwDADfaaTnED4ZnOriU",
+            "domain": "olympiapharmacy.com",
+            "result_character": [
+              "unclassified"
+            ]
+          }
+        ]
+      },
+      "query_usefulness_labels": [
+        "clean"
+      ]
+    },
+    {
+      "id": "nad-injection-online",
+      "category": "NAD",
+      "query": "NAD injection online",
+      "capture_status": "fetched_live",
+      "capture": {
+        "captured_at": "2026-06-11T17:41:18Z",
+        "path": null,
+        "ok": true,
+        "schema_drift": [],
+        "input": {
+          "query": "NAD injection online",
+          "gl": "us",
+          "hl": "en",
+          "device": "desktop"
+        }
+      },
+      "organic_top10_match_count": 3,
+      "organic_matched_result_count": 3,
+      "organic_distinct_cohort_count": 3,
+      "own_page_matches": [
+        {
+          "slug": "agelessrx",
+          "kind": "own_page",
+          "match_method": "domain",
+          "position": 3,
+          "title": "Explore NAD+ Treatments",
+          "link": "https://agelessrx.com/all-nad-support/?srsltid=AfmBOooXTiIGyAIS_cCVxtm9IcdY7eUqtDgcDxO06qwQW0ZNeh84I2_m",
+          "domain": "agelessrx.com",
+          "matched_text": null
+        },
+        {
+          "slug": "hone-health",
+          "kind": "own_page",
+          "match_method": "both",
+          "position": 6,
+          "title": "NAD+ Injections - Get an NAD Prescription Online",
+          "link": "https://honehealth.com/longevity/nad/?srsltid=AfmBOop8Oro1_16DcaHTjkJKghwa4wUB2ummrC-uQIa28Ati5dt6MLLu",
+          "domain": "honehealth.com",
+          "matched_text": "Hone Health"
+        },
+        {
+          "slug": "hydramed",
+          "kind": "own_page",
+          "match_method": "both",
+          "position": 9,
+          "title": "Buy NAD+ Injections | Boost Health & Energy | Free Shipping",
+          "link": "https://hydramed.com/rx/nad/injections",
+          "domain": "hydramed.com",
+          "matched_text": "HydraMed"
+        }
+      ],
+      "third_party_mention_matches": [],
+      "ai_overview": {
+        "present": true,
+        "skipped": false,
+        "ranked_brand_match_count": 0,
+        "ranked_brand_matches": [],
+        "reference_match_count": 3,
+        "reference_matches": [
+          {
+            "slug": "agelessrx",
+            "kind": "own_page",
+            "match_method": "both",
+            "reference_index": 5,
+            "source": "AgelessRx",
+            "title": "Explore NAD+ Treatments - AgelessRx",
+            "link": "https://agelessrx.com/all-nad-support/?srsltid=AfmBOoqn3ngKKZKDEI6aDipHuTVh5GIlbBngu1mEWmZ8Nn7ovrqYtpe9",
+            "domain": "agelessrx.com",
+            "matched_text": "AgelessRx"
+          },
+          {
+            "slug": "agelessrx",
+            "kind": "own_page",
+            "match_method": "both",
+            "reference_index": 6,
+            "source": "AgelessRx",
+            "title": "Buy NAD Injection - Fast NAD+ Injection Delivery - AgelessRx",
+            "link": "https://agelessrx.com/nad-injection/?srsltid=AfmBOoqurxtpEJm72kfQ-EWJ9CUgX3JnAtoFFQAJ5UKVSNQgpBKy2oIi",
+            "domain": "agelessrx.com",
+            "matched_text": "AgelessRx"
+          },
+          {
+            "slug": "hone-health",
+            "kind": "own_page",
+            "match_method": "both",
+            "reference_index": 7,
+            "source": "Hone Health",
+            "title": "NAD+ Injections - Get an NAD Prescription Online - Hone Health",
+            "link": "https://honehealth.com/longevity/nad/?srsltid=AfmBOoowrg9wP5jkV2vpVEueLDx2U-Q-e_EAplJrVD97uUb4FyaQKJyG",
+            "domain": "honehealth.com",
+            "matched_text": "Hone Health"
+          }
+        ]
+      },
+      "serp_character": {
+        "organic_result_count": 10,
+        "unmatched_result_count": 7,
+        "type_counts": {
+          "listicle_like": 1,
+          "off_cohort": 7,
+          "supplement_retail_like": 3,
+          "unclassified": 6
+        },
+        "matched_type_counts": {
+          "supplement_retail_like": 1,
+          "unclassified": 2
+        },
+        "unmatched_type_counts": {
+          "listicle_like": 1,
+          "supplement_retail_like": 2,
+          "unclassified": 4
+        },
+        "top_unmatched_domains": [
+          {
+            "domain": "hellowisp.com",
+            "count": 1
+          },
+          {
+            "domain": "empowerpharmacy.com",
+            "count": 1
+          },
+          {
+            "domain": "vaccinealliance.org",
+            "count": 1
+          },
+          {
+            "domain": "driphydration.com",
+            "count": 1
+          },
+          {
+            "domain": "mediverarx.com",
+            "count": 1
+          },
+          {
+            "domain": "vitastir.com",
+            "count": 1
+          },
+          {
+            "domain": "olympiapharmacy.com",
+            "count": 1
+          }
+        ],
+        "sample_unmatched_results": [
+          {
+            "position": 1,
+            "title": "Buy NAD+ Injections Online: Provider-Guided Care",
+            "link": "https://hellowisp.com/products/nad-injection-solution?srsltid=AfmBOope-h5zF3yOXQsZhBIm-B1MYazdQWSqdtqY1LPn_1Sc3UHIkfiL",
+            "domain": "hellowisp.com",
+            "result_character": [
+              "unclassified"
+            ]
+          },
+          {
+            "position": 2,
+            "title": "NAD+ Injection (Lyo)",
+            "link": "https://www.empowerpharmacy.com/compounding-pharmacy/nad-injection/",
+            "domain": "empowerpharmacy.com",
+            "result_character": [
+              "unclassified"
+            ]
+          },
+          {
+            "position": 4,
+            "title": "Best Online Sources for NAD+ Injections - Vaccine Alliance",
+            "link": "https://www.vaccinealliance.org/nad-injections/best/",
+            "domain": "vaccinealliance.org",
+            "result_character": [
+              "listicle_like"
+            ]
+          },
+          {
+            "position": 5,
+            "title": "NAD+ Injection Therapy",
+            "link": "https://driphydration.com/nad-injections/?srsltid=AfmBOopcNrbxoRajW2iti0ay1OQheTiJAcD7ClOdH1HiIABu_hPGyNgH",
+            "domain": "driphydration.com",
+            "result_character": [
+              "supplement_retail_like"
+            ]
+          },
+          {
+            "position": 7,
+            "title": "NAD+ Injection",
+            "link": "https://mediverarx.com/medication/nad-injection/",
+            "domain": "mediverarx.com",
+            "result_character": [
+              "unclassified"
+            ]
+          }
+        ]
+      },
+      "query_usefulness_labels": [
+        "noisy"
+      ]
+    },
+    {
+      "id": "compounded-tirzepatide-online",
+      "category": "GLP-1",
+      "query": "compounded tirzepatide online",
+      "capture_status": "fetched_live",
+      "capture": {
+        "captured_at": "2026-06-11T17:41:19Z",
+        "path": null,
+        "ok": true,
+        "schema_drift": [],
+        "input": {
+          "query": "compounded tirzepatide online",
+          "gl": "us",
+          "hl": "en",
+          "device": "desktop"
+        }
+      },
+      "organic_top10_match_count": 3,
+      "organic_matched_result_count": 3,
+      "organic_distinct_cohort_count": 3,
+      "own_page_matches": [
+        {
+          "slug": "brello-health",
+          "kind": "own_page",
+          "match_method": "both",
+          "position": 1,
+          "title": "Compounded Tirzepatide With B6 (Pyridoxine)",
+          "link": "https://www.brellohealth.com/product/tirzepatide-b6",
+          "domain": "brellohealth.com",
+          "matched_text": "Brello"
+        },
+        {
+          "slug": "ivim-health",
+          "kind": "own_page",
+          "match_method": "both",
+          "position": 6,
+          "title": "Compounded tirzepatide and the Iv\u00edm weight loss program",
+          "link": "https://www.ivimhealth.com/compounded-tirzepatide/?srsltid=AfmBOopZjAIAK_ZLNxOeS2Nva9HPXPLH3mrUhhcg41YQqeA0gK2Mon2Z",
+          "domain": "ivimhealth.com",
+          "matched_text": "Iv\u00edm"
+        }
+      ],
+      "third_party_mention_matches": [
+        {
+          "slug": "ro",
+          "kind": "mention",
+          "match_method": "text",
+          "position": 5,
+          "title": "Best Online Tirzepatide Compounding Providers Compared ...",
+          "link": "https://policylab.us/tirzepatide/best-online-compounding-pharmacy/",
+          "domain": "policylab.us",
+          "matched_text": "Ro"
+        }
+      ],
+      "ai_overview": {
+        "present": true,
+        "skipped": false,
+        "ranked_brand_match_count": 0,
+        "ranked_brand_matches": [],
+        "reference_match_count": 3,
+        "reference_matches": [
+          {
+            "slug": "ro",
+            "kind": "own_page",
+            "match_method": "both",
+            "reference_index": 4,
+            "source": "Ro",
+            "title": "Zepbound (Tirzepatide) Prescription Online for Weight Loss - Ro",
+            "link": "https://ro.co/weight-loss/zepbound/",
+            "domain": "ro.co",
+            "matched_text": "Ro"
+          },
+          {
+            "slug": "ivim-health",
+            "kind": "own_page",
+            "match_method": "both",
+            "reference_index": 8,
+            "source": "Ivim Health",
+            "title": "Compounded Tirzepatide for Weight Loss - Iv\u00edm Health",
+            "link": "https://www.ivimhealth.com/compounded-tirzepatide/",
+            "domain": "ivimhealth.com",
+            "matched_text": "Ivim Health"
+          },
+          {
+            "slug": "ivim-health",
+            "kind": "own_page",
+            "match_method": "both",
+            "reference_index": 9,
+            "source": "Ivim Health",
+            "title": "tirzepatide Archives - Iv\u00edm Health",
+            "link": "https://www.ivimhealth.com/tag/tirzepatide/",
+            "domain": "ivimhealth.com",
+            "matched_text": "Ivim Health"
+          }
+        ]
+      },
+      "serp_character": {
+        "organic_result_count": 9,
+        "unmatched_result_count": 6,
+        "type_counts": {
+          "listicle_like": 4,
+          "off_cohort": 6,
+          "unclassified": 5
+        },
+        "matched_type_counts": {
+          "listicle_like": 2,
+          "unclassified": 1
+        },
+        "unmatched_type_counts": {
+          "listicle_like": 2,
+          "unclassified": 4
+        },
+        "top_unmatched_domains": [
+          {
+            "domain": "myalloy.com",
+            "count": 1
+          },
+          {
+            "domain": "fifty410.com",
+            "count": 1
+          },
+          {
+            "domain": "goodrx.com",
+            "count": 1
+          },
+          {
+            "domain": "forbes.com",
+            "count": 1
+          },
+          {
+            "domain": "plushcare.com",
+            "count": 1
+          },
+          {
+            "domain": "empowerpharmacy.com",
+            "count": 1
+          }
+        ],
+        "sample_unmatched_results": [
+          {
+            "position": 2,
+            "title": "Compounded Tirzepatide Injections $100",
+            "link": "https://www.myalloy.com/solutions/compounded-tirzepatide",
+            "domain": "myalloy.com",
+            "result_character": [
+              "unclassified"
+            ]
+          },
+          {
+            "position": 3,
+            "title": "Tirzepatide Pricing | GLP-1/GIP Weight Loss Programs",
+            "link": "https://www.fifty410.com/pricing/tirzepatide",
+            "domain": "fifty410.com",
+            "result_character": [
+              "unclassified"
+            ]
+          },
+          {
+            "position": 4,
+            "title": "Is Compounded Tirzepatide Safe?",
+            "link": "https://www.goodrx.com/classes/gip-receptor-glp-1-receptor-agonists/compounded-tirzepatide?srsltid=AfmBOoogjSU3yxr60hJN9Ma6x8HhIb5GuHbQb1Gs8nEbiPW4zjdZXSpH",
+            "domain": "goodrx.com",
+            "result_character": [
+              "listicle_like"
+            ]
+          },
+          {
+            "position": 7,
+            "title": "6 Best Affordable Online Tirzepatide Providers (2026)",
+            "link": "https://www.forbes.com/health/weight-loss/best-affordable-online-tirzepatide-providers/",
+            "domain": "forbes.com",
+            "result_character": [
+              "listicle_like"
+            ]
+          },
+          {
+            "position": 8,
+            "title": "Compounded Tirzepatide Online for Diabetes & Weight Loss",
+            "link": "https://plushcare.com/compounded-tirzepatide",
+            "domain": "plushcare.com",
+            "result_character": [
+              "unclassified"
+            ]
+          }
+        ]
+      },
+      "query_usefulness_labels": [
+        "noisy"
+      ]
+    }
+  ],
+  "notes": [
+    "Measures buyer-intent SERP visibility for a cohort; does not measure demand, spend, conversion, market share, or traction.",
+    "Capture provenance remains in each query row; repeat panels should compare like-for-like query, gl, hl, device, and capture source."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-11T17:54:58Z",
+  "ok": true,
+  "input": {
+    "url": "https://www.brellohealth.com/product/compounded-sermorelin"
+  },
+  "schema_drift": [],
+  "first_seen": "2026-05-03T13:25:36Z",
+  "last_seen": "2026-05-03T13:25:36Z",
+  "first_seen_confidence": "provisional",
+  "tenure_days": 39,
+  "snapshot_count": 1,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2026-05-03T13:25:36Z",
+      "to": "2026-05-03T13:25:36Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20260503132536/https://www.brellohealth.com/product/compounded-sermorelin",
+  "last_snapshot_url": "https://web.archive.org/web/20260503132536/https://www.brellohealth.com/product/compounded-sermorelin",
+  "snapshots": [
+    {
+      "timestamp": "2026-05-03T13:25:36Z",
+      "url": "https://www.brellohealth.com/product/compounded-sermorelin",
+      "status": "200",
+      "digest": "7AAE2EXMGBHZIAQVNBVUXOSBVYBHQ65D"
+    }
+  ]
+}

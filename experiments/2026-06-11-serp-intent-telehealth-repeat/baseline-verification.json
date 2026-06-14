@@ -1,0 +1,248 @@
+{
+  "tool": "serp_intent_panel_baseline_verification",
+  "generated_at": "2026-06-11T16:34:53Z",
+  "ok": true,
+  "comparison": "current cache-only rerun versus June 8 calibrated panel; ignored only panel generated_at",
+  "baseline_path": "experiments/2026-06-08-serp-intent-telehealth-smoke/panel-calibrated.json",
+  "rerun_path": "experiments/2026-06-11-serp-intent-telehealth-repeat/baseline-june8-cached-current.json",
+  "summary_match": true,
+  "query_row_count_match": true,
+  "stable_query_count": 4,
+  "query_count": 4,
+  "rows": [
+    {
+      "id": "trt-online-prescription",
+      "query": "TRT online prescription",
+      "stable": true,
+      "baseline": {
+        "id": "trt-online-prescription",
+        "query": "TRT online prescription",
+        "capture_status": "captured",
+        "captured_at": "2026-06-08T19:09:49Z",
+        "organic_top10_match_count": 5,
+        "own_pages": [
+          "hims@1",
+          "hone-health@2",
+          "trt-nation@5"
+        ],
+        "mentions": [
+          "peter-md@4",
+          "hone-health@4"
+        ],
+        "aio_ranked_count": 0,
+        "aio_ref_count": 6,
+        "aio_refs": [
+          "hims@ref0",
+          "hone-health@ref1",
+          "trt-nation@ref3",
+          "hone-health@ref5",
+          "hims@ref7",
+          "hone-health@ref9"
+        ],
+        "labels": [
+          "listicle-heavy",
+          "noisy"
+        ],
+        "off_cohort": 6
+      },
+      "rerun": {
+        "id": "trt-online-prescription",
+        "query": "TRT online prescription",
+        "capture_status": "captured",
+        "captured_at": "2026-06-08T19:09:49Z",
+        "organic_top10_match_count": 5,
+        "own_pages": [
+          "hims@1",
+          "hone-health@2",
+          "trt-nation@5"
+        ],
+        "mentions": [
+          "peter-md@4",
+          "hone-health@4"
+        ],
+        "aio_ranked_count": 0,
+        "aio_ref_count": 6,
+        "aio_refs": [
+          "hims@ref0",
+          "hone-health@ref1",
+          "trt-nation@ref3",
+          "hone-health@ref5",
+          "hims@ref7",
+          "hone-health@ref9"
+        ],
+        "labels": [
+          "listicle-heavy",
+          "noisy"
+        ],
+        "off_cohort": 6
+      }
+    },
+    {
+      "id": "sermorelin-online-prescription",
+      "query": "sermorelin online prescription",
+      "stable": true,
+      "baseline": {
+        "id": "sermorelin-online-prescription",
+        "query": "sermorelin online prescription",
+        "capture_status": "captured",
+        "captured_at": "2026-06-08T19:09:56Z",
+        "organic_top10_match_count": 5,
+        "own_pages": [
+          "agelessrx@1",
+          "strut-health@4",
+          "hydramed@8",
+          "hone-health@9",
+          "strut-health@10"
+        ],
+        "mentions": [],
+        "aio_ranked_count": 0,
+        "aio_ref_count": 5,
+        "aio_refs": [
+          "agelessrx@ref0",
+          "hone-health@ref1",
+          "strut-health@ref2",
+          "strut-health@ref3",
+          "strut-health@ref8"
+        ],
+        "labels": [
+          "clean"
+        ],
+        "off_cohort": 5
+      },
+      "rerun": {
+        "id": "sermorelin-online-prescription",
+        "query": "sermorelin online prescription",
+        "capture_status": "captured",
+        "captured_at": "2026-06-08T19:09:56Z",
+        "organic_top10_match_count": 5,
+        "own_pages": [
+          "agelessrx@1",
+          "strut-health@4",
+          "hydramed@8",
+          "hone-health@9",
+          "strut-health@10"
+        ],
+        "mentions": [],
+        "aio_ranked_count": 0,
+        "aio_ref_count": 5,
+        "aio_refs": [
+          "agelessrx@ref0",
+          "hone-health@ref1",
+          "strut-health@ref2",
+          "strut-health@ref3",
+          "strut-health@ref8"
+        ],
+        "labels": [
+          "clean"
+        ],
+        "off_cohort": 5
+      }
+    },
+    {
+      "id": "nad-injection-online",
+      "query": "NAD injection online",
+      "stable": true,
+      "baseline": {
+        "id": "nad-injection-online",
+        "query": "NAD injection online",
+        "capture_status": "captured",
+        "captured_at": "2026-06-08T19:10:13Z",
+        "organic_top10_match_count": 3,
+        "own_pages": [
+          "agelessrx@3",
+          "hone-health@6",
+          "hydramed@8"
+        ],
+        "mentions": [],
+        "aio_ranked_count": 0,
+        "aio_ref_count": 2,
+        "aio_refs": [
+          "hone-health@ref2",
+          "agelessrx@ref7"
+        ],
+        "labels": [
+          "noisy"
+        ],
+        "off_cohort": 7
+      },
+      "rerun": {
+        "id": "nad-injection-online",
+        "query": "NAD injection online",
+        "capture_status": "captured",
+        "captured_at": "2026-06-08T19:10:13Z",
+        "organic_top10_match_count": 3,
+        "own_pages": [
+          "agelessrx@3",
+          "hone-health@6",
+          "hydramed@8"
+        ],
+        "mentions": [],
+        "aio_ranked_count": 0,
+        "aio_ref_count": 2,
+        "aio_refs": [
+          "hone-health@ref2",
+          "agelessrx@ref7"
+        ],
+        "labels": [
+          "noisy"
+        ],
+        "off_cohort": 7
+      }
+    },
+    {
+      "id": "compounded-tirzepatide-online",
+      "query": "compounded tirzepatide online",
+      "stable": true,
+      "baseline": {
+        "id": "compounded-tirzepatide-online",
+        "query": "compounded tirzepatide online",
+        "capture_status": "captured",
+        "captured_at": "2026-06-08T19:10:29Z",
+        "organic_top10_match_count": 4,
+        "own_pages": [
+          "brello-health@2",
+          "ivim-health@8"
+        ],
+        "mentions": [
+          "ro@5",
+          "brello-health@9"
+        ],
+        "aio_ranked_count": 0,
+        "aio_ref_count": 2,
+        "aio_refs": [
+          "brello-health@ref1",
+          "ivim-health@ref3"
+        ],
+        "labels": [
+          "noisy"
+        ],
+        "off_cohort": 6
+      },
+      "rerun": {
+        "id": "compounded-tirzepatide-online",
+        "query": "compounded tirzepatide online",
+        "capture_status": "captured",
+        "captured_at": "2026-06-08T19:10:29Z",
+        "organic_top10_match_count": 4,
+        "own_pages": [
+          "brello-health@2",
+          "ivim-health@8"
+        ],
+        "mentions": [
+          "ro@5",
+          "brello-health@9"
+        ],
+        "aio_ranked_count": 0,
+        "aio_ref_count": 2,
+        "aio_refs": [
+          "brello-health@ref1",
+          "ivim-health@ref3"
+        ],
+        "labels": [
+          "noisy"
+        ],
+        "off_cohort": 6
+      }
+    }
+  ]
+}

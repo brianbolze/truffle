@@ -1,0 +1,176 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-11T17:41:18Z",
+  "ok": true,
+  "input": {
+    "query": "NAD injection online",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "Buying NAD+ injections online typically involves a telehealth consultation with a licensed medical provider who must issue a prescription before the medication is shipped from a pharmacy to your home. Wisp +2",
+    "These platforms offer streamlined medical assessments, prescriptions, and home delivery kits: www.vaccinealliance.org +1",
+    "Prices vary based on dosage (e.g., 500mg vs. 1000mg vials) and whether you choose a subscription or one-time purchase. www.vaccinealliance.org +1"
+  ],
+  "headings": [
+    "Top Online Sources for NAD+ Injections",
+    "How the Online Process Works",
+    "Typical Pricing & Specs"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "Wisp",
+      "title": "Buy NAD+ Injections Online: Provider-Guided Care | Wisp",
+      "link": "https://hellowisp.com/products/nad-injection-solution?srsltid=AfmBOop4iOYgLKiEiDE6ZYOukcnhZWSo9wffOxnGxHLUsWWfRZxVHRvo"
+    },
+    {
+      "index": 1,
+      "source": "Heally",
+      "title": "Get NAD+ Injection Prescription Online - Heally",
+      "link": "https://getheally.com/patients/nad-injection"
+    },
+    {
+      "index": 2,
+      "source": "Empower Pharmacy",
+      "title": "NAD+ Injection (Aqueous) - Empower Pharmacy",
+      "link": "https://www.empowerpharmacy.com/compounding-pharmacy/nad-injection-aqueous/"
+    },
+    {
+      "index": 3,
+      "source": "www.vaccinealliance.org",
+      "title": "Best Online Sources for NAD+ Injections - Vaccine Alliance",
+      "link": "https://www.vaccinealliance.org/nad-injections/best/"
+    },
+    {
+      "index": 4,
+      "source": "Everyday Health",
+      "title": "10 Best Platforms for Obtaining NAD+ Online in 2026",
+      "link": "https://www.everydayhealth.com/medical-products/best-nad-online/"
+    },
+    {
+      "index": 5,
+      "source": "AgelessRx",
+      "title": "Explore NAD+ Treatments - AgelessRx",
+      "link": "https://agelessrx.com/all-nad-support/?srsltid=AfmBOoqn3ngKKZKDEI6aDipHuTVh5GIlbBngu1mEWmZ8Nn7ovrqYtpe9"
+    },
+    {
+      "index": 6,
+      "source": "AgelessRx",
+      "title": "Buy NAD Injection - Fast NAD+ Injection Delivery - AgelessRx",
+      "link": "https://agelessrx.com/nad-injection/?srsltid=AfmBOoqurxtpEJm72kfQ-EWJ9CUgX3JnAtoFFQAJ5UKVSNQgpBKy2oIi"
+    },
+    {
+      "index": 7,
+      "source": "Hone Health",
+      "title": "NAD+ Injections - Get an NAD Prescription Online - Hone Health",
+      "link": "https://honehealth.com/longevity/nad/?srsltid=AfmBOoowrg9wP5jkV2vpVEueLDx2U-Q-e_EAplJrVD97uUb4FyaQKJyG"
+    },
+    {
+      "index": 8,
+      "source": "www.helimeds.com",
+      "title": "NAD+ Injections | Boost Cellular Energy \\u0026 Vitality | Helimeds",
+      "link": "https://www.helimeds.com/treatments/NAD"
+    },
+    {
+      "index": 9,
+      "source": "Refills",
+      "title": "NAD+ Injections Prescription Online | Anti-Aging Peptides - Refills",
+      "link": "https://www.refills.com/daily-health/nad-injections"
+    },
+    {
+      "index": 10,
+      "source": "MediVera Compounding Pharmacy",
+      "title": "NAD+ Injection - MediVera Compounding Pharmacy",
+      "link": "https://mediverarx.com/medication/nad-injection/"
+    },
+    {
+      "index": 11,
+      "source": "AquafyIV",
+      "title": "NAD+ IV and Intramuscular Injection Therapy \u2014 AquafyIV",
+      "link": "https://www.aquafyiv.com/nad"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Buy NAD+ Injections Online: Provider-Guided Care",
+      "link": "https://hellowisp.com/products/nad-injection-solution?srsltid=AfmBOope-h5zF3yOXQsZhBIm-B1MYazdQWSqdtqY1LPn_1Sc3UHIkfiL",
+      "snippet": "Explore NAD+ injection therapy from home. Provider-reviewed prescriptions designed to support energy, focus, and long-term wellness.",
+      "displayed_link": "https://hellowisp.com \u203a products \u203a nad-injection-solution"
+    },
+    {
+      "position": 2,
+      "title": "NAD+ Injection (Lyo)",
+      "link": "https://www.empowerpharmacy.com/compounding-pharmacy/nad-injection/",
+      "snippet": "Never purchase NAD+ injections directly online without a prescription; not only is it illegal, but product quality and sterility would be uncertain. With a ...",
+      "displayed_link": "https://www.empowerpharmacy.com \u203a Products"
+    },
+    {
+      "position": 3,
+      "title": "Explore NAD+ Treatments",
+      "link": "https://agelessrx.com/all-nad-support/?srsltid=AfmBOooXTiIGyAIS_cCVxtm9IcdY7eUqtDgcDxO06qwQW0ZNeh84I2_m",
+      "snippet": "Without NAD, life would cease to exist ; NAD+ Injection \u00b7 Starting at $99 ; NAD+ Patches \u00b7 Starting at $160 ; NAD+ Nasal Spray \u00b7 Starting at $125 ; NAD+ Face Cream.",
+      "displayed_link": "https://agelessrx.com \u203a all-nad-support"
+    },
+    {
+      "position": 4,
+      "title": "Best Online Sources for NAD+ Injections - Vaccine Alliance",
+      "link": "https://www.vaccinealliance.org/nad-injections/best/",
+      "snippet": "9 Best Online Sources for NAD+ Injections (Ranked and Reviewed) ; Eden \u00b7 4.9. Best for Patient-Friendly Support \u00b7 $186/mo ; Shed \u00b7 4.8. Best for Affordability \u00b7 $169/ ...",
+      "displayed_link": "https://www.vaccinealliance.org \u203a NAD Injections"
+    },
+    {
+      "position": 5,
+      "title": "NAD+ Injection Therapy",
+      "link": "https://driphydration.com/nad-injections/?srsltid=AfmBOopcNrbxoRajW2iti0ay1OQheTiJAcD7ClOdH1HiIABu_hPGyNgH",
+      "snippet": "NAD injections are delivered directly to your home; Faster effects than oral NAD+ supplements; Supports brain health, energy levels, and cellular health ...",
+      "displayed_link": "https://driphydration.com \u203a nad-injections"
+    },
+    {
+      "position": 6,
+      "title": "NAD+ Injections - Get an NAD Prescription Online",
+      "link": "https://honehealth.com/longevity/nad/?srsltid=AfmBOop8Oro1_16DcaHTjkJKghwa4wUB2ummrC-uQIa28Ati5dt6MLLu",
+      "snippet": "Energize your life with NAD+ Injections: Boost longevity, vitality, and brain power. Replenish your NAD+ levels today with Hone Health.",
+      "displayed_link": "https://honehealth.com \u203a Longevity"
+    },
+    {
+      "position": 7,
+      "title": "NAD+ Injection",
+      "link": "https://mediverarx.com/medication/nad-injection/",
+      "snippet": "MediVera Compounding Pharmacy\u2122 prepares NAD+ injections for metabolic support, available by prescription from MediVera Compounding Pharmacy\u2122.",
+      "displayed_link": "https://mediverarx.com \u203a Medications"
+    },
+    {
+      "position": 8,
+      "title": "NAD+ (Active Form) Injection HOMEKIT",
+      "link": "https://www.vitastir.com/product/nad-injection/?srsltid=AfmBOooTSXvMhqYUV3WXoLCNjZu_FLADeIwQvXPv8JeiwSHZnnoe88Ev",
+      "snippet": "Our NAD Injection are used for Energy, Focus, Anti-Aging, Depression, athletic performance and recovery. Improvements in endurance, strength.",
+      "displayed_link": "https://www.vitastir.com \u203a Shop"
+    },
+    {
+      "position": 9,
+      "title": "Buy NAD+ Injections | Boost Health & Energy | Free Shipping",
+      "link": "https://hydramed.com/rx/nad/injections",
+      "snippet": "Buy NAD+ injections from HydraMed to enhance energy, improve cellular health, and promote anti-aging. Order now for doorstep delivery and start boosting ...",
+      "displayed_link": "https://hydramed.com \u203a nad \u203a injections"
+    },
+    {
+      "position": 10,
+      "title": "NAD Injection | Nicotinamide Adenine Dinucleotide |",
+      "link": "https://www.olympiapharmacy.com/product/nad-injections/?srsltid=AfmBOooeHHP26uiA0EG7tvJavIlvmffIbr2MrEULBHPol9dexIzXBGe0",
+      "snippet": "Overview of NAD Injection. Injectable NAD and NAD+ Injections occur naturally in the body. They play a major role in the chemical process of generating energy.",
+      "displayed_link": "https://www.olympiapharmacy.com \u203a product \u203a nad-inj..."
+    }
+  ]
+}
