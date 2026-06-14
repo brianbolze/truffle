@@ -68,7 +68,7 @@ cohorts/<category-slug>/          # (later) cross-company signals that don't key
 - **Top = the latest view, `captures/` = the source** you rarely open. A `captured_at` stamp is the freshness pointer — no fragile symlinks (they break across iCloud + git + cloud).
 - **Every consumer also gets a primary-source cache.** Beyond the synthesized `profile.md`, the cleaned `captures/` and raw `.payloads/` let an agent quote exact wording or inspect a page *without re-fetching* — pre-fetched primary source, ready to cite.
 
-> **The store holds snapshots today.** The **Signals** layer (funding, traffic-over-time, review/visibility movement) is a *different record shape* — dated, append-only — and is **not in the store yet**. `tools/` now provides reusable source captures for some signals, but not a durable timeline. *Whether web-research grows its own domain-keyed signal store is an [open question](2026-05-29-frame.md)* — the deliberate call worth resolving before the aggregation layer hardens.
+> **The store holds snapshots today.** The **Signals** layer (funding, traffic-over-time, review/visibility movement) is a *different record shape* — dated, append-only — and is **not in the store yet**. `tools/` now provides reusable source captures for some signals, but not a durable timeline. *Whether web-research grows its own domain-keyed signal store is an [open question](2026-05-29-frame.md)* — the deliberate call worth resolving before the aggregation layer hardens. The [traction frame](2026-06-14-traction-frame.md) now frames this decision (Open Qs #1, #6).
 
 ## Modules: recipes, not just schemas
 

@@ -40,7 +40,7 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
   Trends window changes, Wayback tenure/content changes. Build a generic comparator that understands
   the shared envelope spine and has small source-aware payload branches, but emits deltas and
   comparability notes only. No blended score, no market-share read.
-  **Act when:** there are two captures of the same panel or source.
+  **Act when:** there are two captures of the same panel or source. The [traction frame](../_design/2026-06-14-traction-frame.md) names this its first real build step (Open Q#3).
 
 - **Trustpilot velocity + integrity comparator belongs beside the capture tool** `[idea]`
   `trustpilot.py` correctly captures profile state and raw flags; velocity and comparability need a
