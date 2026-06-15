@@ -8,7 +8,7 @@ Early days — this dir will grow and the conventions will shift as we learn. Wh
 
 - **Generic, not project-bound.** No Notion, cohort, or vertical baked in — pass those as inputs. A tool should run from a bare shell.
 - **Capture, not judgment.** Fetch, parse, emit. Classifying or synthesizing the result is the caller's job, not the tool's.
-- **Print, don't write.** A tool emits JSON / "vanilla" output to stdout; the caller decides _where_ the capture lands (the store, a project overlay, wherever).
+- **Print, don't write.** A tool emits JSON / "vanilla" output to stdout; the caller decides _where_ the capture lands (the store, a project overlay, wherever). To accumulate captures for the `signal_delta.py` comparator, the company-grain home is `store/<domain>/signals/<source_type>/<captured_at>.json` (the [architecture](../_design/2026-05-30-architecture.md)'s convention — a path, not a writer).
 - **Keep the gotchas with the code.** The hard-won API quirks (rate limits, schema drift, auth headers) live in each tool's docstring or companion markdown doc — that's most of the value.
 - **Stay small.** One source per tool; extend an existing one before adding a new one.
 
@@ -36,6 +36,7 @@ turning into project judgment:
 |---|---|---|
 | [`serp_match.py`](serp_match.py) | one `serpapi.py` envelope + cohort JSON | **live bridge** |
 | [`serp_intent_panel.py`](serp_intent_panel.py) · [docs](serp_intent_panel.md) | query set + cohort JSON + captured `serpapi.py` envelopes | **live** |
+| [`signal_delta.py`](signal_delta.py) · [docs](signal_delta.md) | two captures/runs of the same source (the comparator) | **live** |
 
 ## Conventions (the reference shape)
 

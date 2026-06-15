@@ -35,20 +35,6 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
   stderr + cost, and emits JSONL or one combined run envelope. Keep destination writes out of scope.
   **Act when:** running the same capture across a panel by hand feels silly twice.
 
-- **Envelope comparator / delta layer before any traction score** `[idea]`
-  We need repeat captures to become comparable evidence: Trustpilot review deltas, SERP rank movement,
-  Trends window changes, Wayback tenure/content changes. Build a generic comparator that understands
-  the shared envelope spine and has small source-aware payload branches, but emits deltas and
-  comparability notes only. No blended score, no market-share read.
-  **Act when:** there are two captures of the same panel or source. The [traction frame](../_design/2026-06-14-traction-frame.md) names this its first real build step (Open Q#3).
-
-- **Trustpilot velocity + integrity comparator belongs beside the capture tool** `[idea]`
-  `trustpilot.py` correctly captures profile state and raw flags; velocity and comparability need a
-  separate consumer over two or more envelopes. Output review-count deltas, monthly velocity,
-  profile-state vetoes, paid/merged comparability flags, solicitation flags, and duplicate/template
-  hints. Keep SKU/category claims out unless review text names the SKU.
-  **Act when:** the D7/D14 review panel is run from captured JSON instead of a markdown hand table.
-
 ## Tool hardening
 
 - **Clarify partial-capture exit semantics for orchestration** `[tbd]`
@@ -77,6 +63,16 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
   **Act when:** preparing the tools directory for commit or handoff.
 
 ## Graduated
+
+- **Envelope comparator / delta layer** `[done]`
+  `signal_delta.py` diffs two captures of the same source into per-metric deltas + comparability vetoes —
+  raw envelopes in, **no blended score** (structural: every number bound to one metric+source+unit). Source
+  branches: trustpilot (cumulative velocity, rolling-window level-read), serpapi (organic + AIO diffed
+  independently, run-level batch-outage veto), trends (basis-aware via `peak_date`); fallback names the gap.
+  Subsumes the separate **Trustpilot velocity + integrity comparator** item (it's the trustpilot branch).
+  De-risked by [probe](../experiments/2026-06-15-signal-delta-trustpilot/FINDINGS.md); committed the
+  `store/<domain>/signals/` path convention + added `trends.py peak_date` alongside. **Next:** a `wayback`
+  branch (thin over `wayback.py diff`).
 
 - **Wayback content fetch + diff** `[done]`
   `wayback.py diff <url>` now selects two exact-URL CDX snapshots, fetches raw `id_` replay content,
