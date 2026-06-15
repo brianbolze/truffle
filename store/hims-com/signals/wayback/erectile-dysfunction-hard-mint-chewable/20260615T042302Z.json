@@ -1,0 +1,333 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-15T04:23:02Z",
+  "ok": true,
+  "input": {
+    "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable"
+  },
+  "schema_drift": [],
+  "first_seen": "2023-09-28T00:21:28Z",
+  "last_seen": "2026-02-14T16:55:45Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 991,
+  "snapshot_count": 51,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2023-09-28T00:21:28Z",
+      "to": "2026-02-14T16:55:45Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20230928002128/https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+  "last_snapshot_url": "https://web.archive.org/web/20260214165545/https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+  "snapshots": [
+    {
+      "timestamp": "2023-09-28T00:21:28Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "4GH6GSB5TKNARQVUJJFQC4IJ72BZ7GQD"
+    },
+    {
+      "timestamp": "2023-09-29T17:56:12Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "AHORPF47CL2DDBJRZNELRBPHJBAA6YL5"
+    },
+    {
+      "timestamp": "2023-10-27T03:51:00Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "QBMPQERVQZ7PFERCOUBA5JZIKNRIM7IE"
+    },
+    {
+      "timestamp": "2023-11-09T18:00:02Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "2MDQSW3NIN6X7IO75UNQPOEFNIXDXAKY"
+    },
+    {
+      "timestamp": "2024-01-09T22:57:39Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "SFQWEHNXQY6XTLGRILGH3N7UE6OUX2MB"
+    },
+    {
+      "timestamp": "2024-01-09T22:58:11Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "XKWK22TBTN42GXS7T546HRXEHXZI5PY7"
+    },
+    {
+      "timestamp": "2024-01-18T07:55:24Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "M2YMD2XV2KTJ7KJM25UAF3AQKAV5OD2G"
+    },
+    {
+      "timestamp": "2024-02-01T17:07:58Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "RFYNWENOXIET2GH2RAGDDIXL5RJMBXTL"
+    },
+    {
+      "timestamp": "2024-02-01T17:25:54Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "ZOHE2P6ZRZ34OJXWCK6CW7R2TOBMPQDN"
+    },
+    {
+      "timestamp": "2024-02-24T20:50:38Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "EPEIDNH4KIDPF6V7KKNQICK4UOKZMZEG"
+    },
+    {
+      "timestamp": "2024-02-28T12:23:52Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "YHIY2GWRJEERY3J4A5GYXWDTL7MTPLM7"
+    },
+    {
+      "timestamp": "2024-03-02T21:20:57Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "TNS3KQYQLYAP6GZMFST4U6JXEJLJQE5V"
+    },
+    {
+      "timestamp": "2024-03-03T00:32:34Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "GUAU3QI5DCSEUOLGRQIEG3K2YGEEHIEP"
+    },
+    {
+      "timestamp": "2024-04-06T18:53:02Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "XD6DYEOBOJNT3PDKP5HOO2RXMN22HVDJ"
+    },
+    {
+      "timestamp": "2024-04-25T17:27:15Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "CTFJRFSIHQMHVT7W2CW6NNYFAC7EQ33E"
+    },
+    {
+      "timestamp": "2024-05-04T19:19:45Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "42BOM35RSV5PMDNNI2NINMV2DMN4XYBF"
+    },
+    {
+      "timestamp": "2024-05-07T18:53:07Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "Z3FV7BQYJ6XXLU4UEYZZT53YQ4ZWSXLZ"
+    },
+    {
+      "timestamp": "2024-05-11T12:12:52Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "NH6ZS3EW7K65QOABXP2A5DXSUJ7LN7PD"
+    },
+    {
+      "timestamp": "2024-06-19T11:41:45Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "WPSCK2TKQ3FAKCY6MSVXZH6CW3N4TEPE"
+    },
+    {
+      "timestamp": "2024-06-28T21:40:16Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "IENDPTFIDZQP6WN7NGI6SFA4SHIIHJKT"
+    },
+    {
+      "timestamp": "2024-07-05T22:21:08Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "JDCSOR3QXDHCFZ7KMM4JXKGUU5SDGKOB"
+    },
+    {
+      "timestamp": "2024-07-12T22:35:11Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "PDVRUBH5JN24ONJWMHNIIY3GEDVBSXDS"
+    },
+    {
+      "timestamp": "2024-07-13T10:32:40Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "UA4D3P6YKQJIY43SGH3Z4UQMVNYU2346"
+    },
+    {
+      "timestamp": "2024-07-20T13:29:44Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "YX5G5E6FFEIQ4NEBTJXLIUALZ4ZLPUZP"
+    },
+    {
+      "timestamp": "2024-07-27T12:21:48Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "I6KBNVQ755H3QADODUP6E5EU4VIYDLCX"
+    },
+    {
+      "timestamp": "2024-08-03T12:50:56Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "LA5UUEAJIMZMCNN67BM2QGHCDXUKSS3H"
+    },
+    {
+      "timestamp": "2024-08-11T22:37:18Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "U643NBA6XGPV44UYSIUY7C7A2FHHZMKA"
+    },
+    {
+      "timestamp": "2024-08-19T00:00:52Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "OJJC7EMB3PUUBUQZC4UACX7YQ5S44BOJ"
+    },
+    {
+      "timestamp": "2024-08-19T16:32:19Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "7AHGSK2KRS4KFI6HXEARPEP5R3XD3LBQ"
+    },
+    {
+      "timestamp": "2024-09-02T18:10:26Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "7VSNQXAPZ6VV5WTVRRSUMKDDT62ERBC5"
+    },
+    {
+      "timestamp": "2024-09-09T19:04:10Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "H2OPTW5E3C2IRB25OC3UOMX4N3CYSPCN"
+    },
+    {
+      "timestamp": "2024-09-15T12:45:58Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "O5YQQ6MJB5EE737E2WLCTRFSCOTLUD2G"
+    },
+    {
+      "timestamp": "2024-09-16T19:54:44Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "3JJYTTPWO5OA4ILTI7M3YWKHNLRKRYB5"
+    },
+    {
+      "timestamp": "2024-09-17T15:46:45Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "ZVJDKAMTH2VFX4OTUFHKTBNG5UWGX5PP"
+    },
+    {
+      "timestamp": "2024-10-03T17:57:44Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "5KFHOD4XYK32JLENDMA5RG7XDMY7XFFO"
+    },
+    {
+      "timestamp": "2024-10-08T02:36:56Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "DMTNWZRHBPIG7NBTYUAN2BQM3OJ6GT2F"
+    },
+    {
+      "timestamp": "2024-12-02T04:20:21Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "MRWHLJZL26QNJB3G7EQOGGU6ULXTRRDG"
+    },
+    {
+      "timestamp": "2024-12-27T03:36:48Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "2N2O3SPVED3FSVIVKU75HJB24USLV33L"
+    },
+    {
+      "timestamp": "2025-01-25T13:53:35Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "T46QXNBYIAVRPYZPRJW3FKLCULZR7JCS"
+    },
+    {
+      "timestamp": "2025-03-14T21:47:49Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "SNT6FBVIO5OMNTWCKUKLNX5333TAKJ7M"
+    },
+    {
+      "timestamp": "2025-03-16T16:53:46Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "2RSS5CGFQRMZVYX2S6B7CREUZMUX6PBS"
+    },
+    {
+      "timestamp": "2025-03-24T14:41:15Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "PYDBJTZ2IOY5BQIVFMNARJRGXBWXSKRD"
+    },
+    {
+      "timestamp": "2025-03-31T00:44:26Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "SLKL6YWEYJFFBKAKAUA6MP6XBGNBWDCY"
+    },
+    {
+      "timestamp": "2025-04-19T01:31:04Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "U6C6HTX52NPLDX7AL6OR6HNPVDXQCBCE"
+    },
+    {
+      "timestamp": "2025-04-21T15:21:45Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "GPZODTAT22E2X47IEZZ6EC363WKWCRVA"
+    },
+    {
+      "timestamp": "2025-04-27T05:29:06Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "JIDYGOODCMILZ3VLMLZBZSJUMBN4FPGI"
+    },
+    {
+      "timestamp": "2025-04-29T12:41:50Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "PYKDBU65LY5AGHTQPJ2NRMRSTPVHUTDQ"
+    },
+    {
+      "timestamp": "2025-08-11T09:25:26Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "RMPPECYZQSDLAPMMHQVOR75D5KXCAZXH"
+    },
+    {
+      "timestamp": "2025-08-11T15:07:46Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "TFKITS5ZIKCTSPU4RS4QKRFT7CTJEG4A"
+    },
+    {
+      "timestamp": "2025-09-17T20:01:22Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "YVWNTIQMGHX2J5J7L3DYDMV6RSIT2VEN"
+    },
+    {
+      "timestamp": "2026-02-14T16:55:45Z",
+      "url": "https://www.hims.com/erectile-dysfunction/hard-mint-chewable",
+      "status": "200",
+      "digest": "RHSO7HEHUVS6GEBZ7YOAKXLHV5PAFHFW"
+    }
+  ]
+}

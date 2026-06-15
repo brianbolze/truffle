@@ -1,0 +1,358 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T04:16:42Z",
+  "ok": true,
+  "input": {
+    "slug": "hims.com",
+    "wait_ms": 12000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/hims.com",
+  "profile_state": "active",
+  "review_count": 8554,
+  "reviews_last_12m": 2052,
+  "trust_score": 3.0,
+  "rating_label": "Average",
+  "rating_distribution": {
+    "5": "39%",
+    "4": "11%",
+    "3": "13%",
+    "2": "9%",
+    "1": "28%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": true,
+    "merged_profile": true,
+    "negative_reply_rate_pct": 83
+  },
+  "people_also_looked_at": [
+    {
+      "name": "Ro",
+      "domain": "ro.co",
+      "trust_score": 3.7,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "MANUAL",
+      "domain": "manual.co",
+      "trust_score": 4.3,
+      "review_count_label": "12K"
+    },
+    {
+      "name": "Voy",
+      "domain": "www.joinvoy.com",
+      "trust_score": 4.7,
+      "review_count_label": "21K"
+    },
+    {
+      "name": "MEDVi",
+      "domain": "medvi.org",
+      "trust_score": 4.4,
+      "review_count_label": "14K"
+    },
+    {
+      "name": "hers",
+      "domain": "forhers.com",
+      "trust_score": 3.3,
+      "review_count_label": "8K"
+    },
+    {
+      "name": "Sons",
+      "domain": "sons.co.uk",
+      "trust_score": 4.2,
+      "review_count_label": "3K"
+    },
+    {
+      "name": "BlueChew",
+      "domain": "bluechew.com",
+      "trust_score": 3.9,
+      "review_count_label": "2K"
+    },
+    {
+      "name": "Noom",
+      "domain": "noom.com",
+      "trust_score": 4.5,
+      "review_count_label": "66K"
+    }
+  ],
+  "recent_reviews": [
+    {
+      "review_id": "6a2f3c30f93ed02ba8fb7ac3",
+      "rating": 1,
+      "title": "What an absolute joke",
+      "body": "What an absolute joke. Charged me $39 just to have a so called provider \u201creview\u201d my health history. It did not include any medication which was stated on their website ad that the $39 did include my first month. Don\u2019t be fooled by their lies. It\u2019s $149-299 per month for Zepbound plus $139 per month just to have a subscription so you can \u201cmessage\u201d a provider. It\u2019s cheaper just to bite the bullet and pay cash at your local pharmacy. This is a goat rope joke of a company that is very deceitful with their billing practices. I have reported the $39 dollar charge as fraud on my credit card because that\u2019s exactly what it was. A big fraud!",
+      "date_of_experience": "June 14, 2026",
+      "posted": "3 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "JUSTIN",
+      "reviewer_country": "US",
+      "reviewer_review_count": 4
+    },
+    {
+      "review_id": "6a2f0dd7971fec22411f2807",
+      "rating": 5,
+      "title": "answered my questions very quickly",
+      "body": null,
+      "date_of_experience": "May 18, 2026",
+      "posted": "6 hours ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Jim Verna",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2f0d8f37e02cfc03b00026",
+      "rating": 1,
+      "title": "I want to cancel this prescription\u2026",
+      "body": "I want to cancel this prescription immediately, and NO way of finding how to do it!",
+      "date_of_experience": "May 1, 2026",
+      "posted": "6 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Larry Bauer",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2eccd62e6cd49d40f3f408",
+      "rating": 2,
+      "title": "Have not experienced side effects or\u2026",
+      "body": "Have not experienced side effects or results.",
+      "date_of_experience": "June 14, 2026",
+      "posted": "10 hours ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Mike E.",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a2e36c9c4c31ab520447c6c",
+      "rating": 4,
+      "title": "Rapid and Professional Response",
+      "body": "I appreciate how quickly someone from hims respond to my inquiries. Everyone has been very professional, and that's important for me.",
+      "date_of_experience": "June 14, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Bill",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2df87578bb54ddd199620a",
+      "rating": 1,
+      "title": "My subscription was cancelled because I\u2026",
+      "body": "My subscription was cancelled because I questioned a charge to my credit card.",
+      "date_of_experience": "June 6, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Steve Barr",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2ddcdd894731fbd3d6e2e6",
+      "rating": 3,
+      "title": "There is no way to talk to someone\u2026",
+      "body": "There is no way to talk to someone about issues you are having with account information , contact information, I accidentally created two user accounts and have no way to fix it.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Neil Howard",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2dc6f9684ea1ead50c8c1e",
+      "rating": 5,
+      "title": "Easy",
+      "body": "Easy, quick and they modified my medication to what I wanted.",
+      "date_of_experience": "June 11, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "CD Cunningham",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2db790c7a83a2b2d0c6b72",
+      "rating": 5,
+      "title": "So far so good",
+      "body": "So far so good. Quick response to my questions. Treatment is finally working after a change of meds and a higher dose.",
+      "date_of_experience": "June 11, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "jon oakley",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a2d791800f9b6de4567735c",
+      "rating": 3,
+      "title": "I\u2019m not getting the same results as I\u2026",
+      "body": "I\u2019m not getting the same results as I did when I was on the injectable. I seem to be hungry all the time whereas I rarely felt hungry on the injectable, even with the increased dose.",
+      "date_of_experience": "June 13, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Kenneth Swope",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2d6bc53a883e39ac1d4e3a",
+      "rating": 1,
+      "title": "Predatory subscription charges will be\u2026",
+      "body": "Predatory subscription charges will be billed even though you never agreed to continued service. I\u2019m sure it\u2019s in fine print but it\u2019s not fair business practice. Beware if you enter details and make and account your signing up for the 149 subscription charges",
+      "date_of_experience": "June 13, 2026",
+      "posted": "1 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Wayne Eldreth",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2d4e9c2f854a64f64ca28a",
+      "rating": 5,
+      "title": "Ease of service and the privacy is very\u2026",
+      "body": "Ease of service and the privacy is very important to me.",
+      "date_of_experience": "June 13, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Gary",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2c952958e9d8ef526dc347",
+      "rating": 5,
+      "title": "Slow weight loss but get heartburn at\u2026",
+      "body": "Slow weight loss but get heartburn at night really bad any suggestions I take medium in the morning",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Michael Kerns",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a2c67f10792211c6bef5f3f",
+      "rating": 4,
+      "title": "So far so good",
+      "body": "I don't yet know how to rate the hair growth as I am currently shedding approximately 50 hairs a day from my rough approximation. As for the ordering experience it has been easy. Better than with keeps. The packaging is also really nice. The containers the pills come in are nice and the pills themselves are tasty which for me is the finasteride/ minoxidil chew tab and the biotin gummy.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Harley Hatfield",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2c665bda9e5be722d06aa0",
+      "rating": 2,
+      "title": "I\u2019ve had to repeat myself over and over\u2026",
+      "body": "I\u2019ve had to repeat myself over and over again. I don\u2019t understand why they can\u2019t read my file.",
+      "date_of_experience": "June 11, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Katie Parry",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2c39053855820be62ecd2c",
+      "rating": 3,
+      "title": "Check billing",
+      "body": "Check billing. and the e-mail.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Robert Denk",
+      "reviewer_country": "US",
+      "reviewer_review_count": 4
+    },
+    {
+      "review_id": "6a2c33249b01296693ca6a69",
+      "rating": 2,
+      "title": "Honestly I do not know exactly what I\u2026",
+      "body": "Honestly I do not know exactly what I was shiopped? Looks like a vitamin? And I am not sure why I am being asked for a blood test.",
+      "date_of_experience": "June 1, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Steve Emminger",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a2c228c9644fb65125ef01b",
+      "rating": 1,
+      "title": "Buyer Beware",
+      "body": "Buyer Beware. Malpractice My experience with Hims Weight Loss has been deeply disappointing and raises serious concerns regarding continuity of care. I enrolled in and paid for a 360-day weight loss program, completed all required intake forms, check-ins, and program requirements, and followed the prescribed treatment plan exactly as directed. The problem began when Hims failed to ship a scheduled medication refill. As my medication supply ran out, I repeatedly contacted support seeking assistance to maintain continuity of treatment. What followed was a revolving door of customer service representatives and physicians. Over multiple interactions, I was required to repeatedly explain my situation to new providers who appeared unfamiliar with the history of my case. Despite numerous messages, no single provider or case manager assumed ownership of the issue. Rather than addressing the immediate problem of maintaining continuity of treatment, discussions shifted toward changing medications, pricing alternatives, and partial refunds. While refunds may address financial concerns, they do not address the interruption of a medical treatment plan already in progress. My concern is not merely customer service. It is continuity of care, care coordination, and accountability. I encourage prospective customers to carefully consider whether a highly distributed telehealth model with multiple rotating providers is consistent with their expectations for ongoing medical management. This review reflects my personal experience and is supported by documented communications with Hims.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Edward Dorman",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2c0dcd10b35ebb4781bfa4",
+      "rating": 1,
+      "title": "Horrible customer service",
+      "body": "So unbelievably disappointed with this company and how they handle any problem. I call customer service about an email I received saying my account was cancelled right after they charged me $149.99 for my medication which was never sent. Confused I called and waited an hour on hold. Was greeted by a person who could barely speak English and the communication was totally scripted and useless. When I asked for a supervisor I was placed on hold for another 44 minutes just to be hung up on. So I called back waited another 37 minutes on hold and this time got a little information about a duplicate account that was created and was removed but assured that everything thing was fine and still active. When I explain my frustration with all the waiting and BS with customer service I was considering canceling my account so she cancelled it before I even got through with our conversation. It was the most frustrating and ridiculous process. They would not refund my money for the exam but they refunded me for the meds. I asked for my medical eval and the scrip that I was approved for and they have refused to send anything to me. I paid $39!to get assessed and provided a script for the meds yet they refuse to provide them to me and refuse to refund me for that service. Why should I pay anything if your not giving me what I paid for. This company is trash and once they have a hook in you don\u2019t expect any help resolving any concerns your might have.",
+      "date_of_experience": "June 10, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Clifford Sissel",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2b5e25c76ed4bbfd9f4329",
+      "rating": 2,
+      "title": "Medication not working as promoted.",
+      "body": "Medication not working as promoted.",
+      "date_of_experience": "June 11, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Chad Reiter",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    }
+  ],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 32.0,
+    "source_url": "https://www.trustpilot.com/review/hims.com",
+    "markdown_chars": 31400
+  },
+  "recent_reviews_sample_size": 20
+}

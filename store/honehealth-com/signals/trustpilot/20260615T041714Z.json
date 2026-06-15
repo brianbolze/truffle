@@ -1,0 +1,358 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T04:17:14Z",
+  "ok": true,
+  "input": {
+    "slug": "honehealth.com",
+    "wait_ms": 12000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/honehealth.com",
+  "profile_state": "active",
+  "review_count": 11644,
+  "reviews_last_12m": 5627,
+  "trust_score": 4.8,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "93%",
+    "4": "2%",
+    "3": "<1%",
+    "2": "<1%",
+    "1": "3%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": true,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 99
+  },
+  "people_also_looked_at": [
+    {
+      "name": "Male Excel",
+      "domain": "maleexcel.com",
+      "trust_score": 4.6,
+      "review_count_label": "5K"
+    },
+    {
+      "name": "Titan",
+      "domain": "www.jointitan.com",
+      "trust_score": 2.2,
+      "review_count_label": "9"
+    },
+    {
+      "name": "Midi Health",
+      "domain": "joinmidi.com",
+      "trust_score": 4.0,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Superpower",
+      "domain": "superpower.com",
+      "trust_score": 4.5,
+      "review_count_label": "272"
+    },
+    {
+      "name": "Maximus",
+      "domain": "maximustribe.com",
+      "trust_score": 4.4,
+      "review_count_label": "982"
+    },
+    {
+      "name": "SkinnyRx",
+      "domain": "skinnyrx.com",
+      "trust_score": 4.8,
+      "review_count_label": "5K"
+    },
+    {
+      "name": "By Winona",
+      "domain": "bywinona.com",
+      "trust_score": 4.6,
+      "review_count_label": "7K"
+    },
+    {
+      "name": "trtnation.com",
+      "domain": "trtnation.com",
+      "trust_score": 2.3,
+      "review_count_label": "18"
+    }
+  ],
+  "recent_reviews": [
+    {
+      "review_id": "6a2f4145a47b4b751aa80b63",
+      "rating": 1,
+      "title": "How do I even speak with anyone",
+      "body": "How do I even speak with anyone? Will update if fixed. What\u2019s going on? Did I just get robbed of 65$ for an at home test? I\u2019ll be disputing this and logging everything until I see this is resolved.",
+      "date_of_experience": "June 13, 2026",
+      "posted": "2 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Consumer",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a2f2a4495d28062d505e322",
+      "rating": 4,
+      "title": "personable",
+      "body": "personable, direct, informative, no B.S., relayed the information,clearly and concisely, giving me options as far as a treatment plan goes, is definitely what I wanted to hear. Thank you.",
+      "date_of_experience": "June 14, 2026",
+      "posted": "4 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Dan Sheldon",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2ef5d0b2d922f38f367b93",
+      "rating": 5,
+      "title": "Great to talk to and also listened",
+      "body": "Great to talk to and also listened. VeryKnowledgable",
+      "date_of_experience": "June 14, 2026",
+      "posted": "8 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Frank Kaczmarczyk",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2ed8d27146f4ca29c6da1d",
+      "rating": 1,
+      "title": "Horrible company to deal with",
+      "body": "Horrible company to deal with. They pulled a bait-and-switch on me with their ridiculous membership fees. All of a sudden, they give me what I thought I needed to start buying my medication from them, and they send me an additional charge of $149.95 a month, plus other fees, totaling $1870.00 for the year. They say it\u2019s for talking to a health professional once a month. What a rip-off. No way am I paying close to $2000.00 for testosterone injections plus the cost of the medication, which was another $199.99 a month. This place is a total waste of money and time. Buyer beware.",
+      "date_of_experience": "May 1, 2026",
+      "posted": "10 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Matthew Yates",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2e45de935254688cf2fad9",
+      "rating": 1,
+      "title": "I cancelled my account",
+      "body": "I cancelled my account, prescriptions in April. I called 3 times, filled out the online cancellation form 3 times and sent countless emails- I am still being billed! Fraudulent business practices! 100% Do not recommend!",
+      "date_of_experience": "June 14, 2026",
+      "posted": "20 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Nancy Williams",
+      "reviewer_country": "US",
+      "reviewer_review_count": 4
+    },
+    {
+      "review_id": "6a2de188f8f82ceb5ead6b5a",
+      "rating": 5,
+      "title": "The doctor answered all my questions\u2026",
+      "body": "The doctor answered all my questions did a great job of explaining everything with my blood work",
+      "date_of_experience": "June 13, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Rodney Schelhouse",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2d97b43819165453757d5a",
+      "rating": 1,
+      "title": "Horrible experience",
+      "body": "Horrible experience! No communication! I\u2019ve repeatedly emailed about issues with a delivery and nothing\u2026 Once they contacted me they could not accommodate my delivery successfully! Now I\u2019ve been trying to cancel my membership and nothing.. I filled out appropriate paperwork on their website. Caution! Buyer Beware! They are a very shady company, not caring for health and concerns of their clients. I do not recommend. Be careful! Response to their response The Proof Is In The Pudding Be careful They still have not responded to my emails. But they can get on a review site within hours of posting and actually say I\u2019m not a client! Deceptive Practices. Here\u2019s my last order below Hone Payment Confirmati... Congratulations, Lisa! Your order is confirmed. Here's a full summary of your order. CHARGED TODAY TOTAL CHARGED TODAY $0.00 BILLED WHEN PRESCRIPTION IS FINALIZED Estrace Subscription - Women \u00d7 1 $40.00 Pending These items will be charged once they go to our partner pharmacy for compounding and shipping.",
+      "date_of_experience": "June 2, 2026",
+      "posted": "Updated a day ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Lisa Fischer Malinowski",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2d511c44e48c2abfd6fb92",
+      "rating": 5,
+      "title": "I like that we are trying different\u2026",
+      "body": "I like that we are trying different options and checking other avenues to make sure that the correct treatment is being applied to achieve optimal results.",
+      "date_of_experience": "June 13, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Matt G",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a2d4d6aae3e555ffe8827d5",
+      "rating": 5,
+      "title": "The doctor great and the process was\u2026",
+      "body": "The doctor great and the process was very easy.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Sean",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2cb1f82a354a3aba4c467f",
+      "rating": 5,
+      "title": "Doctor actually listens to you on how\u2026",
+      "body": "Doctor actually listens to you on how you feel. Treat accordingly which is really nice vs they know better than the person that is going through it because the schoolhouse told them that.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Joe Burkhalter",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a2c8c0a5cef61a7fa7afe75",
+      "rating": 4,
+      "title": "Fabulous business model",
+      "body": "Fabulous business model, Home makes this experience affordable and attainable with everything you need.",
+      "date_of_experience": "June 9, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Kimberly Haughton",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2c61cf0932e594140eac25",
+      "rating": 5,
+      "title": "The doctor answered all my questions\u2026",
+      "body": "The doctor answered all my questions and advised a treatment to improve my well being.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Larry",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a2c60baa88ea8d7c0b24fe0",
+      "rating": 5,
+      "title": "Thankfull for a doctor to listen to me\u2026",
+      "body": "Thankfull for a doctor to listen to me and run the labs I needed.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Travis",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2c46c180c7522bf66a36b5",
+      "rating": 5,
+      "title": "Great doctor",
+      "body": "Great doctor He listened to my concerns and answered all my questions",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Lucas Beckwith",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2c3f345b11f6278635cf1b",
+      "rating": 5,
+      "title": "Excellent experience",
+      "body": "Excellent experience. Definitely help and care.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "scott gunter",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2c34db6a79c84629544e56",
+      "rating": 5,
+      "title": "Dr was nice and very helpful i don't\u2026",
+      "body": "Dr was nice and very helpful i don't normally go to doctors this was a very pleasant experience",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Larry Brooks",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2c32cacba1f96fb81045a8",
+      "rating": 5,
+      "title": "She explains the process",
+      "body": "She explains the process, clear instructions, and has me excited on my health journey",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Amanda Worthington",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a2c12ae174df38e3e984dcd",
+      "rating": 5,
+      "title": "Very professional",
+      "body": "Very professional, great experience",
+      "date_of_experience": "June 12, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "craig babb",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2bfc2125ca8947e932a747",
+      "rating": 5,
+      "title": "Hormone Therapy",
+      "body": "Finally getting some help with menopause issues from a doctor and in a timely manner with blood work.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Deborah Dickerson",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2b7f00f7ac8569005fa040",
+      "rating": 5,
+      "title": "Great Experience So Far!",
+      "body": "Dr. Dante was very knowledgeable and understood what I was going through. I felt like he made a great recommendation for treatment and we will see how things go for my specific situation. Hone so far has been great to work with and is affordable. Highly recommend!",
+      "date_of_experience": "June 11, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Dustin Fisher",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    }
+  ],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 29.9,
+    "source_url": "https://www.trustpilot.com/review/honehealth.com",
+    "markdown_chars": 31213
+  },
+  "recent_reviews_sample_size": 20
+}
