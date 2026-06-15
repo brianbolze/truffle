@@ -84,7 +84,21 @@ let input = args
 if (typeof input === 'string') {
   try { input = JSON.parse(input) } catch (err) { input = {} }
 }
-const tiles = (input && input.tiles) || []
+// Path duality: miners run in the project cwd and need ABSOLUTE paths to read the PNGs, but the
+// store wants REPO-RELATIVE tile_path (lint + portability). So absolutize on the way in (against the
+// passed engineRoot) and relativize every returned card on the way out — the caller passes/keeps
+// repo-relative throughout and never hand-rewrites. No engineRoot → both are no-ops (back-compat).
+const engineRoot = ((input && input.engineRoot) || '').replace(/\/+$/, '')
+const toAbs = (p) => (engineRoot && p && !p.startsWith('/') ? `${engineRoot}/${p}` : p)
+const toRel = (p) => (engineRoot && p && p.startsWith(`${engineRoot}/`) ? p.slice(engineRoot.length + 1) : p)
+const relCard = (c) => {
+  if (!c) return c
+  const out = { ...c }
+  if (out.tile_path) out.tile_path = toRel(out.tile_path)
+  if (out.contrast_with) out.contrast_with = toRel(out.contrast_with)
+  return out
+}
+const tiles = ((input && input.tiles) || []).map(toAbs)
 const tileList = tiles.map((t) => `- ${t}`).join('\n')
 // Miners default to Sonnet: it holds Opus's calibration even on the dark-gradient seduction case at
 // ~1/5 the per-token cost (experiments/2026-06-14-visual-miner-model-calibration). Override via
@@ -103,7 +117,8 @@ const mined = await parallel(
       `${BLIND}\n\nYou are mining **${f.key}** evidence from a company's website screenshots.\n` +
         `Focus on ${f.focus}.\n\nCalibration: ${CALIBRATION}\n\n` +
         `Read these native-resolution tiles, and cite only these paths:\n${tileList}\n\n` +
-        `Return 8–14 evidence cards spanning strong, mixed, and poor where the tiles support it. ` +
+        `Return one card per distinct visible tell the tiles genuinely support — spanning strong, mixed, and poor. ` +
+        `Be comprehensive, not padded: no fixed count, but don't invent tells to hit one. ` +
         `Each card: family="${f.key}", polarity, page_or_region, tile_path (one listed path), ` +
         `claim (one calibrated sentence a reader can verify in that tile), visible_tells (≥1 concrete tell), ` +
         `confidence. Optional contrast_with: another listed tile path on the same site.`,
@@ -122,14 +137,17 @@ const judged = await agent(
     `it duplicates another card without adding a new tell; or its polarity flatters generic competence or visual ambition without finish.\n` +
     `KEEP or MERGE when a reader can verify the claim in the cited tile, it carries a concrete visible tell, ` +
     `or it adds useful within-site contrast. Keep a calibrated mix of strong/mixed/poor.\n` +
+    `Aim for ONE CARD PER DISTINCT VISIBLE TELL: merge cards that point at the same tell (even across families or tiles), ` +
+    `but otherwise keep the full comprehensive set. There is NO target count — do not prune to hit a number. ` +
+    `The impression downstream is the tight read; these cards are the audit trail.\n` +
     `Give each accepted card an id "<family-stem>_<NN>" (e.g. typography_01, layout_03, color_02, iconography_01).\n\n` +
     `Active tiles:\n${tileList}\n\nCards (${allCards.length}):\n${JSON.stringify(allCards, null, 2)}`,
   { label: 'judge', phase: 'Judge', schema: JUDGE_SCHEMA },
 )
 
 return {
-  accepted_cards: judged.accepted_cards,
-  rejected_cards: judged.rejected_cards || [],
+  accepted_cards: (judged.accepted_cards || []).map(relCard),
+  rejected_cards: (judged.rejected_cards || []).map(relCard),
   notes: judged.notes || '',
   mined_count: allCards.length,
 }
