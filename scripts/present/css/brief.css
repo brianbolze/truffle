@@ -26,9 +26,16 @@
   color:color-mix(in srgb,var(--hero-fg) 52%,transparent)}
 .hero-desc{font-family:var(--display);font-size:var(--desc-size,29px);line-height:1.32;font-weight:400;
   max-width:38ch;margin-top:22px}
+/* one quiet character line — the blind visual read, surfaced without dominating the description */
+.hero-read{font-family:var(--body);font-size:14.5px;line-height:1.55;font-style:italic;max-width:46ch;
+  margin-top:20px;color:color-mix(in srgb,var(--hero-fg) 72%,transparent)}
+.hero-read .lbl{font-family:var(--mono);font-style:normal;font-size:9px;letter-spacing:.22em;
+  text-transform:uppercase;display:block;margin-bottom:5px;color:color-mix(in srgb,var(--hero-fg) 48%,transparent)}
 
 /* classification + cohort cuts — quiet chip strips; corpus-cut keys, deliberately demoted */
 .cohort{padding:18px 0 20px;border-bottom:1px solid var(--rule)}
+/* .foot = relocated to the tail of the Profile read: separate above, no trailing rule */
+.cohort.foot{border-bottom:none;border-top:1px solid var(--ink);margin-top:10px;padding:24px 0 8px}
 .cohort>.label{display:block;margin-bottom:11px}
 .cohort .cuts{display:flex;flex-wrap:wrap;gap:8px}
 .cut{font-family:var(--mono);font-size:11px;letter-spacing:.05em;padding:4px 10px;border:1px solid var(--rule)}
@@ -154,6 +161,16 @@ blockquote{border-left:2px solid var(--rule);padding-left:16px;font-style:italic
 .marktile .tile{display:flex;align-items:center;justify-content:center;height:110px;padding:18px}
 .marktile .cap{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
   padding:7px 10px;border-top:1px solid var(--rule);color:color-mix(in srgb,var(--ink) 55%,var(--paper))}
+/* specimen strip — a few cropped real screens (selected via the evidence cards) */
+.tilegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px;margin:14px 0 34px}
+.tile-spec{border:1px solid var(--rule);display:flex;flex-direction:column}
+.tile-spec img{display:block;width:100%;height:172px;object-fit:cover;object-position:top;background:color-mix(in srgb,var(--ink) 5%,var(--paper))}
+.tile-spec figcaption{padding:11px 13px;border-top:1px solid var(--rule)}
+.tl-pol{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.tl-strong{color:var(--accent)}
+.tl-mixed,.tl-poor{color:color-mix(in srgb,var(--ink) 50%,var(--paper))}
+.tl-claim{font-size:12.5px;line-height:1.5;color:color-mix(in srgb,var(--ink) 76%,var(--paper))}
+
 .specimen{margin:10px 0 16px;border:1px solid var(--rule)}
 .specimen img{display:block;width:100%;max-height:540px;object-fit:cover;object-position:top;
   -webkit-mask-image:linear-gradient(to bottom,#000 78%,transparent);mask-image:linear-gradient(to bottom,#000 78%,transparent)}

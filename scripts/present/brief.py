@@ -136,8 +136,11 @@ def _brand_system_html(m: dict[str, Any]) -> str:
     if m["fonts"]["specs"]:
         for sp in m["fonts"]["specs"]:
             status = "embedded from Google Fonts" if sp["embedded"] else "substituted — face not freely embeddable"
+            # The bare `fonts` list carries no role/serif metadata, so don't assert heading/body or
+            # serif/sans — both are guessed (role from list position, class from the name) and wrong on
+            # faces like CheltenhamPro. State only what's verifiable; the Ag specimen shows the letterforms.
             out.append(f'<div class="typespec"><span class="ag" style="font-family:{sp["css"]}">Ag</span>'
-                       f'<span class="tmeta"><b>{esc(sp["name"])}</b><br>{sp["role"]} · {sp["class"]} · {status}</span></div>')
+                       f'<span class="tmeta"><b>{esc(sp["name"])}</b><br>{status}</span></div>')
     else:
         out.append('<p class="notcaptured">Typefaces — not captured in this dossier.</p>')
     out.append("</div></div>")
@@ -146,6 +149,18 @@ def _brand_system_html(m: dict[str, Any]) -> str:
     if shot:
         out.append(f'<div class="specimen"><img src="{shot["data"]}" alt="Homepage as captured">'
                    f'<div class="cap"><span>Field specimen — homepage, as captured</span><span>{shot["date"]}</span></div></div>')
+
+    # Specimen strip last — a few more captured screens (cropped tiles) below the homepage shot, selected
+    # via the evidence cards and captioned with each card's one-line claim. The cards stay in visual.md.
+    tiles = vis.get("tiles") if vis else None
+    if tiles:
+        out.append('<h4 class="subhead" style="margin-top:30px">More specimens — captured screens</h4>')
+        out.append('<div class="tilegrid">')
+        for t in tiles:
+            out.append(f'<figure class="tile-spec"><img src="{t["data"]}" alt="{esc(t["label"])}">'
+                       f'<figcaption><span class="tl-pol tl-{esc(t["polarity"])}">{esc(t["label"])}</span>'
+                       f'<span class="tl-claim">{esc(_truncate(t["claim"], 150))}</span></figcaption></figure>')
+        out.append("</div>")
     return "".join(out)
 
 
@@ -207,14 +222,45 @@ def _provenance_html(m: dict[str, Any]) -> str:
     return "".join(out)
 
 
+def _class_chips_html(m: dict[str, Any]) -> str:
+    """The engine's corpus-cut classification (+ any cohort cuts) as a quiet chip strip at the foot of
+    the read — structured filing for the technical reader, kept out of the hero so the human read
+    leads (the design doc's "machinery in the quiet zone"). "Sells to" leads; default Company is noise."""
+    cls = m["classification"]
+    chips: list[tuple[str, str]] = []
+    if cls["market"]:
+        chips.append(("sells to", " · ".join(cls["market"])))
+    if cls["industry"]:
+        chips.append(("industry", cls["industry"]))
+    if cls["model"]:
+        chips.append(("model", cls["model"]))
+    if cls["category"]:
+        chips.append(("offering", " · ".join(cls["category"])))
+    if cls["shape"]:
+        chips.append(("portfolio", cls["shape"]))
+    if cls["entity"] and cls["entity"] != "Company":
+        chips.append(("entity", cls["entity"]))
+    out: list[str] = []
+    if chips:
+        cuts = "".join(f'<span class="cut">{esc(lbl)} <b>{esc(val)}</b></span>' for lbl, val in chips)
+        out.append(f'<div class="cohort foot"><span class="label">classification</span><div class="cuts">{cuts}</div></div>')
+    if m["telehealth"]:
+        cuts = "".join(f'<span class="cut{" unclear" if v == "unclear" else ""}">{esc(k.replace("_", " "))} <b>{esc(v)}</b></span>'
+                       for k, v in m["telehealth"]["cuts"].items())
+        out.append(f'<div class="cohort foot"><span class="label">telehealth cohort cuts</span>'
+                   f'<div class="cuts">{cuts}</div></div>')
+    return "".join(out)
+
+
 def _profile_panel(m: dict[str, Any]) -> str:
-    # Positioning rides second and open: the brief's first external reader is a brand strategist —
-    # who a company sells to and how it talks to them outranks how it monetizes.
+    # Lead with the read: what they are (Overview) → the so-what (Strategic read) → how they position.
+    # Monetization and proof are machinery, collapsed below; the classification chips sit at the very
+    # foot, out of the read path. (General reader-first ordering, not tuned to any one persona.)
     order = [("overview", "Overview", True),
-             ("positioning & audience", "Positioning & audience", True),
+             ("strategic read", "Strategic read", True),
+             ("positioning & audience", "Positioning & audience", False),
              ("how it works / model", "Model & monetization", False),
-             ("credibility & proof", "Proof & trust signals", False),
-             ("strategic read", "Strategic read", False)]
+             ("credibility & proof", "Proof & trust signals", False)]
     parts = []
     for key, title, open_ in order:
         content = m["sections"].get(key)
@@ -229,6 +275,7 @@ def _profile_panel(m: dict[str, Any]) -> str:
     if nav:
         parts.append(_dsec("Site structure", md_blocks(nav),
                            peek="navigation tree, as serialized from the captured homepage"))
+    parts.append(_class_chips_html(m))
     return "".join(parts)
 
 
@@ -266,32 +313,14 @@ def render_html(m: dict[str, Any]) -> str:
     if others:
         alias_html = f'<div class="alias">a.k.a. {esc(" · ".join(others))}</div>'
 
-    # Classification is the store's corpus-cut vocabulary — deliberately generic, so it renders as
-    # one quiet chip strip, not a datasheet. "Sells to" leads; the default entity (Company) is noise.
-    chips: list[tuple[str, str]] = []
-    if cls["market"]:
-        chips.append(("sells to", " · ".join(cls["market"])))
-    if cls["industry"]:
-        chips.append(("industry", cls["industry"]))
-    if cls["model"]:
-        chips.append(("model", cls["model"]))
-    if cls["category"]:
-        chips.append(("offering", " · ".join(cls["category"])))
-    if cls["shape"]:
-        chips.append(("portfolio", cls["shape"]))
-    if cls["entity"] and cls["entity"] != "Company":
-        chips.append(("entity", cls["entity"]))
-    specs_html = ""
-    if chips:
-        cuts = "".join(f'<span class="cut">{esc(lbl)} <b>{esc(val)}</b></span>' for lbl, val in chips)
-        specs_html = f'<div class="cohort"><span class="label">classification</span><div class="cuts">{cuts}</div></div>'
-
-    cohort_html = ""
-    if m["telehealth"]:
-        cuts = "".join(f'<span class="cut{" unclear" if v == "unclear" else ""}">{esc(k.replace("_", " "))} <b>{esc(v)}</b></span>'
-                       for k, v in m["telehealth"]["cuts"].items())
-        cohort_html = (f'<div class="cohort"><span class="label">telehealth cohort cuts</span>'
-                       f'<div class="cuts">{cuts}</div></div>')
+    # A quiet visual-character read in the hero (first sentence of the blind visual impression, when
+    # visual.md exists) — surfaces the brand read without burying it three tabs deep, held to one muted
+    # line so it never competes with the description above. The full impression stays in Brand system.
+    hero_read_html = ""
+    vis = m.get("visual")
+    if vis and vis.get("impression"):
+        first = re.split(r"(?<=[.!?])\s", vis["impression"].strip(), maxsplit=1)[0]
+        hero_read_html = f'<p class="hero-read"><span class="lbl">visual read</span>{esc(first)}</p>'
 
     offer_meta = f" · {m['offerings']['buyable']}" if m["offerings"] else ""
     tab_defs = [
@@ -350,9 +379,8 @@ def render_html(m: dict[str, Any]) -> str:
   <div class="hero-mark">{_hero_mark_html(m)}</div>
   {alias_html}
   <p class="hero-desc" style="--desc-size:{desc_size}px">{desc}</p>
+  {hero_read_html}
 </section>
-{specs_html}
-{cohort_html}
 {tab_inputs}
 {tabbar}
 {panels_html}

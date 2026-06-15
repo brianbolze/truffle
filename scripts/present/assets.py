@@ -335,3 +335,23 @@ def load_screenshot(slug: str, width: int = 1200) -> dict[str, str] | None:
         return None
     data = _b64_file(dst)
     return {"data": data, "date": cap_date} if data else None
+
+
+def load_tile(tile_path: str, width: int = 540) -> str | None:
+    """Compress one visual-evidence tile (a native-res PNG crop) to an embeddable JPEG data-URI,
+    cached. Tiles are large and the brief shows a few as a specimen strip, so resample down hard.
+    `tile_path` is repo-root-relative (as written in visual.md); resolved against the store's parent."""
+    src = tile_path if os.path.isabs(tile_path) else os.path.join(os.path.dirname(STORE), tile_path)
+    if not os.path.exists(src):
+        return None
+    os.makedirs(IMGCACHE, exist_ok=True)
+    key = re.sub(r"[^a-z0-9]+", "-", tile_path.lower()).strip("-")
+    dst = os.path.join(IMGCACHE, f"tile-{key}-{width}.jpg")
+    if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
+        r = subprocess.run(
+            ["sips", "--resampleWidth", str(width), "-s", "format", "jpeg",
+             "-s", "formatOptions", "68", src, "--out", dst],
+            capture_output=True)
+        if r.returncode != 0:
+            return _b64_file(src) if os.path.getsize(src) < 1_500_000 else None
+    return _b64_file(dst)

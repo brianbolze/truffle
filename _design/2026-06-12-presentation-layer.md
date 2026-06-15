@@ -95,9 +95,10 @@ The brief composes the profile dossier plus any opt-in module layers a company c
 feeds the brief's *Brand system* tab: its ≤120-word **Visual & brand impression** is preferred
 over `profile.md`'s own section when present (card-id citations stripped for the reader; the
 cards stay in `visual.md` as the audit trail), with its own capture clock shown in the provenance
-zone. The renderer reads only the synthesized impression — **never the evidence cards or tiles**:
-the brief is a read, not the audit trail (tile-level evidence is a live-query / consumer concern,
-deliberately out of the human surface).
+zone. The renderer also shows a **curated specimen strip** at the foot of the Brand system tab —
+a few cropped tiles selected *via* the cards (the cards are the curation index; their one-line claims
+become captions), so the brief *shows* the brand, not just describes it. It never renders the raw
+card records themselves — the brief is a read, not the audit trail.
 
 ### Code layout
 
