@@ -43,7 +43,7 @@ with empty metrics, never a dropped row**.
 
 | `tool` | grain | what it diffs | key vetoes / guards |
 |---|---|---|---|
-| `trustpilot` | company | cumulative `review_count` delta + velocity (gap surfaced) | `reviews_last_12m` is **level-read only** (rolling window); removed/merged → veto; templated/paid/bursty → comparability flags |
+| `trustpilot` | company | cumulative `review_count` delta + velocity (gap surfaced) | `reviews_last_12m` is **level-read only** (rolling window); removed / merged-*between-captures* → veto (a stable-merged profile diffs fine); templated/paid/bursty → comparability flags |
 | `serpapi` | category_query | organic rank movement **and** AIO presence, **diffed independently** | run-level **batch-outage veto**: ≥60% of previously-present AIO rows blanking at once → probable surface outage, not N real drops |
 | `trends` | company | within-keyword trajectory (always) + a **basis-gated** `peak_value` point delta | `renorm_basis_mismatch` when a capture's `peak_date` falls outside the date-overlap (different normalization anchor) |
 | `wayback` | page | archive presence, snapshot-count growth, last-seen movement, content-digest change — over two tenure captures | reads the digests `wayback.py` already captured (never re-fetches); the per-snapshot content diff stays `wayback.py diff`'s job |
