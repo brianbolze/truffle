@@ -77,6 +77,7 @@ PROFILE_FIELDS = [
     "name",
     "domain",
     "aliases",
+    "legal_entity",
     "parent",
     "owns",
     "entity_type",
