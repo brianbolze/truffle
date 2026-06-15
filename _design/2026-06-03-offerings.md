@@ -20,8 +20,7 @@ four telehealth brands): the separate roster won **8.3 to 5.5**, and was the onl
 brands' GLP-1s.
 
 It's **durable State** — what the company sells, from its own pages — keyed *within* the company by slug, opt-in
-per cohort, with its own freshness TTL. And it's **near-free over the baseline capture** (same category and PDP —
-product-detail — pages, no new endpoints), which is why it's a separate module, not a heavier `profile.md`.
+per cohort, with its own freshness TTL. And it's **near-free over the baseline capture** (same category and PDP pages, no new endpoints), which is why it's a separate module, not a heavier `profile.md`.
 
 *(Doro, referenced throughout, is the prior PE-era research tool whose heavy entity-resolution machinery the
 engine deliberately refuses — see [`engine-dev.md`](../.claude/rules/engine-dev.md).)*

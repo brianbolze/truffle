@@ -46,6 +46,6 @@ The contracts stay **top-level CAPS files** for now (`OFFERINGS.md`, `TELEHEALTH
 
 ## De-risked
 
-Validated on a real **Hone** `telehealth.md` (the contract's first instance) before scaling — two cuts honestly `unclear` (its site doesn't state pharmacy ownership or insurance stance), and `audience: all-genders` from its co-equal men/women hubs (the men-origin read is a consumer-side judgment, kept in a body note). Rolling the pack across the rest of the captured telehealth cohort is capture work, deferred on purpose.
+Validated on a real **Hone** `telehealth.md` (the contract's first instance) — two cuts honestly `unclear` (its site doesn't state pharmacy ownership or insurance stance), and `audience: all-genders` from its co-equal men/women hubs (the men-origin read is a consumer-side judgment, kept in a body note). Rolling the pack across the remaining cohort is deferred capture work.
 
 *Designed in a Teleprescribe CSO pass (the venture is the first consumer); the contract is venture-neutral so any project researching telehealth competitors can read it.*

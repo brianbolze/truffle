@@ -4,13 +4,11 @@
 
 ## Why the boundary moved
 
-The Frame said "not a product" when every consumer was an agent or a SQL-literate human. A third consumer type has appeared: **outside humans** (first: a brand strategist evaluating the engine through its output). For them the rendered artifact *is* the engine — they never see schemas, recipes, or a CLI. The dossier-render experiment proved the store already holds what a beautiful brief needs (identity assets, structured offer data, trust metadata), and that one script can turn it into a deliverable worth handing over.
-
-What did **not** move: no served API, no hosting, no accounts, no multi-tenancy. The engine produces artifacts; it never serves them. Outsiders receive files; only we run the machine.
+A third consumer type has appeared: **outside humans** (first: a brand strategist evaluating the engine through its output). For them the rendered artifact *is* the engine — they never see schemas, recipes, or a CLI. The dossier-render experiment proved the store already holds what a beautiful brief needs (identity assets, structured offer data, trust metadata), and that one script can turn it into a deliverable worth handing over.
 
 ## The framing: a second kind of lens
 
-The repo's deepest rule already covers this: **markdown is the source of truth; everything derived is a regenerable lens.** Lenses now come in two kinds:
+Lenses now come in two kinds:
 
 | Kind | Exemplar | Consumer |
 |---|---|---|
@@ -32,7 +30,7 @@ Run it directly: `python scripts/render.py <company>`.
 
 *The backlog for this layer — append here, **not** [`BACKLOG.md`](../BACKLOG.md) (which stays engine-level). Same discipline as there: bias to remove, graduate via an `experiments/` probe on a trigger, prune stale entries at retro. Presentation ideas multiply fast; most should die here.*
 
-- **Compare sheet** — N slugs side by side (positioning, posture, palette, type, offer breadth); reuses `extract_model()` untouched, only the render half is new. Compares price *visibility*, quotes verbatim strings, never sorts magnitudes (Recipe 4's wall). **Act when:** the Scott session generates the ask.
+- **Compare sheet** — N slugs side by side (positioning, posture, palette, type, offer breadth); reuses `extract_model()` untouched, only the render half is new. Compares price *visibility*, quotes verbatim strings, never sorts magnitudes (Recipe 4's wall).
 - **Store wants-list from the brief renderer** — 8 capture-side gaps the renderer worked around with heuristics (wordmark ink/ground, brand-color roles, founded/HQ, verbatim tagline, structured proof numbers, font roles, committed hero crop, price magnitude-by-design): see [FINDINGS §wants](../experiments/2026-06-09-dossier-render/FINDINGS.md). These are SCHEMA candidates, not renderer fixes — promote individually when a second consumer wants the same field.
 - **Gallery / corpus index page** `[parked]` — logo-grid browse over the store. Wait for someone to actually ask to browse.
 - **`/brief` verb** `[parked]` — a skill wrapping `render.py`. Wait until "make me a brief for X" is a recurring spoken ask; until then the one-liner is fine.

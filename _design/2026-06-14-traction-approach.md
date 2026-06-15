@@ -11,11 +11,11 @@ Date: 2026-06-14 · Status: solution design (Proposal). Companion to the [tracti
 | **#3 Comparator** | **Build `tools/_delta.py`** — importable lib (the `_match.py` shape, *not* a CLI). 2+ same-source envelopes → per-axis deltas + comparability notes. Deltas only; vetoes *suppress-and-note*, never reconcile. **The one build.** |
 | **#1 Storage** | **Defer** the durable home (frame left Open Q#1 open on purpose). The comparator decides nothing — it prints. When a run *must* persist, default to a clean sibling `store/<domain>/signals/<date>/` — **never `captures/`** (that's State's raw source). No `log.md`, no cohort ledger, no index.md yet. |
 | **#2 Grain** | **Don't pick one.** Keep each tool's native grain; `grain` is a passthrough field (derived from `tool`+`input`); consumers filter by it; the comparator *refuses* cross-grain diffs. |
-| **#6 Ownership** | **Confirm v2's line**, one field short of the interpreted card. Engine owns envelopes + comparator + structural grain/axis-name/`metric_direction` + a no-verdict lint. Labels, judgment-polarity, reads stay project-side until maps (deferred) earns lifting them. |
+| **#6 Ownership** | **Confirm v2's line**, one field short of the interpreted card. Engine owns envelopes + comparator + structural grain/axis-name/`metric_direction` + a no-verdict lint. Labels and judgment-polarity stay project-side; whether and how the engine emits them is an open edge, not a closed sequence. |
 | **#4 Capital** | Probe says **sparse — 2/15 public, 0/15 first-party rounds. Build no funding tool.** Ticker = State (already captured); EDGAR scale = opportunistic Signal for the rare public anchor; refuse all aggregators. |
 | **Deferred** | #7 delivery shape (verb/module/tools-only) and comparative/cohort (market maps) — untouched, per frame. Design keeps maps *non-blocked*, builds nothing for it. |
 
-**The one guardrail over all of it:** don't let the pieces stack into a signals database (last section).
+**The one guardrail over all of it:** don't let the pieces stack into an authoritative signals database (last section).
 
 ---
 
@@ -77,7 +77,7 @@ These operationalize the frame rather than open a fork.
 **#6 Ownership — recommended: confirm v2's line, one field short of the interpreted card.**
 
 - **Engine owns:** the six tools + their envelope · the comparator · `grain` (structural passthrough) · neutral source/axis *names* bound to metric identity (`serp-organic-rank-delta`, not "visibility") · `metric_direction` (did the raw number rise/fall) · integrity flags passed through verbatim · a **no-verdict/no-blend lint** mirroring `visualcheck.py`'s `score:` ban.
-- **Project owns:** the interpretive labels (supply only / visibility / trust-flow proxy / plausible movement / vetoed) · judgment-polarity (good/bad-for-thesis) · the full card · calibration anchors/controls · the interpretation memo · the verdict.
+- **Project owns:** the interpretive labels (supply only / visibility / trust-flow proxy / plausible movement / vetoed) · judgment-polarity (good/bad-for-thesis) · the full card · calibration anchors/controls · the interpretation memo · the verdict (open edge — under rework).
 - The labels *feel* generic but encode a project's theory of what an axis *means* (esp. `vetoed` — deciding an integrity flag disqualifies an axis is a judgment) → they stay project-side until the second consumer (maps, deferred) needs the *same* card.
 *Alternative — graduate the generic card skeleton now:* rejected as premature (infra ahead of the second user), and the skeleton drags `evidence_label`/`signal_polarity` (interpretive values) across the State/Signals line. Lifting the card later is cheap (markdown + JSONL); building it early and finding maps wants a different shape is the costly direction.
 
@@ -124,14 +124,14 @@ The frame said "prove what's gettable before building." This session's count-pro
 
 The sharpest finding from the adversarial pass. Each piece is innocent alone; stacked, they reconstruct what the anti-Doro line refuses:
 
-> committed storage home (#1) + per-tool delta engine (#3) + `grain` stamped on every record (#2) = a dated, grain-keyed signals store with a diff layer = **"change-tracking/diffing as a core concern"** — explicitly on the architecture's refused list.
+> committed storage home (#1) + per-tool delta engine (#3) + `grain` stamped on every record (#2) = a dated, grain-keyed *authoritative* signals store with a diff layer = **"change-tracking/diffing as a core concern"** — explicitly on the architecture's refused list.
 
 Five invariants keep it a *convention*, not a database:
 
 - **Storage stays undecided** — don't commit a durable home; the comparator prints, decides nothing.
 - **The comparator is a stdout pure-function** — never a standing indexed layer.
 - **`grain` is a passthrough fact on a record, never a partition/index key** — the moment you build a directory tree or SQLite *around* grain, it tips.
-- **Any SQLite stays unbuilt + regenerable** (`build_db.py` lens, earned only on repeated cross-run pain).
+- **Any SQLite is a regenerable lens only, never authoritative** — built only on repeated cross-run pain (the `build_db.py` precedent).
 - **Vetoes suppress-and-note, never reconcile; integrity flags surface, never act** (from #3 and #6).
 
 **Naming:** `tools/_delta.py`, **not** `compare.py` — `scripts/compare.py` already exists (the presentation sheet). Verified.

@@ -67,7 +67,7 @@ adding facts the dossier doesn't hold is forbidden.
 
 ### Non-goals
 
-- Not an agent surface — agents keep `store.py` / SQL; the HTML is not for parsing.
+- Not an agent surface — agents keep `store.py`; the HTML is not for parsing.
 - Not interactive or live; no feedback channel from artifact back into the store.
 - Not per-recipient views — **one house view** per artifact (navigation inside it is fine).
 - Not an operational dashboard — coverage/staleness triage is a different tool, not the index.
@@ -87,6 +87,17 @@ adding facts the dossier doesn't hold is forbidden.
 
 New views are rationed by a real human ask (rule of two), and every view is a **regenerable
 lens** — derived from the store, never authoritative, cheap to throw away.
+
+### What the brief draws from
+
+The brief composes the profile dossier plus any opt-in module layers a company carries —
+`offerings.md` (the per-SKU roster), `telehealth.md` (cohort cuts), and `visual.md`. The last
+feeds the brief's *Brand system* tab: its ≤120-word **Visual & brand impression** is preferred
+over `profile.md`'s own section when present (card-id citations stripped for the reader; the
+cards stay in `visual.md` as the audit trail), with its own capture clock shown in the provenance
+zone. The renderer reads only the synthesized impression — **never the evidence cards or tiles**:
+the brief is a read, not the audit trail (tile-level evidence is a live-query / consumer concern,
+deliberately out of the human surface).
 
 ### Code layout
 
@@ -110,7 +121,7 @@ same code behind a new dependency.
 
 ### Output location
 
-All derived artifacts in **top-level `_out/`** (briefs, sheets, index, `store.db`) — one
+All derived artifacts in **top-level `_out/`** (briefs, sheets, index, `store.db` (regenerable lens)) — one
 gitignored derived-root. Never in `store/`: the store is the agent surface, and a stale
 rendered copy beside a fresher record quietly lies.
 
