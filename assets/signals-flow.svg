@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 292" role="img">
+  <title>Traction signals data flow</title>
+  <desc>Five external sources feed capture tools that print JSON envelopes; scripts/signals.py persists each to the store path; signal_delta.py diffs two captures into per-axis deltas and comparability vetoes — never a blended score or verdict.</desc>
+  <style>
+    text { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+    .t  { font-size: 14px; font-weight: 400; }
+    .ts { font-size: 12px; font-weight: 400; }
+    .th { font-size: 14px; font-weight: 500; }
+    .heading { font-size: 14px; font-weight: 500; fill: #2C2C2A; }
+    .note { fill: #5F5E5A; }
+    rect.card { stroke-width: 1.5; }
+    .gray rect  { fill: #F1EFE8; stroke: #B4B2A9; }
+    .gray text  { fill: #2C2C2A; }
+    .teal rect  { fill: #E1F5EE; stroke: #0F6E56; }
+    .teal text  { fill: #04342C; }
+    .coral rect { fill: #FAECE7; stroke: #993C1D; }
+    .coral text { fill: #4A1B0C; }
+    .arr { stroke: #5F5E5A; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1,1 L6,4 L1,7" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="292" fill="#FFFFFF"/>
+
+  <text class="heading" x="40" y="40">How a traction signal flows</text>
+
+  <!-- sources strip -->
+  <g class="gray">
+    <rect class="card" x="40" y="54" width="600" height="30" rx="6"/>
+    <text class="ts" x="340" y="73" text-anchor="middle">Sources · Trustpilot · SERP · Wayback · Trends · SEC EDGAR</text>
+  </g>
+  <line class="arr" x1="130" y1="84" x2="130" y2="102"/>
+
+  <!-- capture -->
+  <g class="teal">
+    <rect class="card" x="40" y="102" width="180" height="76" rx="6"/>
+    <text class="th" x="130" y="128" text-anchor="middle">Capture</text>
+    <text class="ts" x="130" y="147" text-anchor="middle">tools/*.py</text>
+    <text class="ts" x="130" y="163" text-anchor="middle">prints an envelope</text>
+  </g>
+  <line class="arr" x1="220" y1="140" x2="250" y2="140"/>
+
+  <!-- persist -->
+  <g class="teal">
+    <rect class="card" x="250" y="102" width="180" height="76" rx="6"/>
+    <text class="th" x="340" y="128" text-anchor="middle">Persist</text>
+    <text class="ts" x="340" y="147" text-anchor="middle">scripts/signals.py</text>
+    <text class="ts" x="340" y="163" text-anchor="middle">writes to the store</text>
+  </g>
+  <line class="arr" x1="430" y1="140" x2="460" y2="140"/>
+
+  <!-- diff -->
+  <g class="teal">
+    <rect class="card" x="460" y="102" width="180" height="76" rx="6"/>
+    <text class="th" x="550" y="128" text-anchor="middle">Diff</text>
+    <text class="ts" x="550" y="147" text-anchor="middle">signal_delta.py</text>
+    <text class="ts" x="550" y="163" text-anchor="middle">reports what moved</text>
+  </g>
+
+  <!-- store path note -->
+  <text class="ts note" x="340" y="197" text-anchor="middle">store/&lt;domain&gt;/signals/&lt;source&gt;/&lt;captured_at&gt;.json</text>
+  <text class="ts note" x="340" y="211" text-anchor="middle">one file per capture — accumulates over time</text>
+
+  <line class="arr" x1="550" y1="178" x2="550" y2="226"/>
+
+  <!-- output / integrity boundary -->
+  <g class="coral">
+    <rect class="card" x="40" y="226" width="600" height="46" rx="6"/>
+    <text class="th" x="340" y="248" text-anchor="middle">Per-axis evidence — never a score, never a verdict</text>
+    <text class="ts" x="340" y="264" text-anchor="middle">deltas + comparability vetoes; the "formidable?" call stays with you</text>
+  </g>
+</svg>
