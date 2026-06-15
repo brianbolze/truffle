@@ -62,6 +62,22 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
   current rather than planned. Also keep generated `__pycache__/` files out of staged changes.
   **Act when:** preparing the tools directory for commit or handoff.
 
+- **`signals/` path + comparator need a sub-subject slot for multi-URL-per-domain sources** `[weakness]`
+  The convention `store/<domain>/signals/<source_type>/<captured_at>.json` assumes one subject per
+  source_type, but wayback is page-grain — many URLs per domain collide on that path, and
+  `signal_delta.py`'s dir-mode glob is non-recursive so it can't see captures nested a level deeper. The
+  2026-06-15 salvage worked around it with `…/wayback/<url-slug>/<captured_at>.json` (pairwise per-URL diff
+  reads it fine), but whole-domain wayback run-vs-run can't discover them. Add a URL/sub-subject slot to
+  the convention + a recursive loader.
+  **Act when:** whole-domain wayback run-vs-run is needed (pairwise per-URL works today).
+
+- **Wayback slash-variant subject twins — dedup at capture** `[idea]`
+  Real seed-panel data held the same URL captured with and without a trailing `/` seconds apart;
+  `signal_delta.py` canonicalizes the subject by `rstrip("/")`, so co-storing both collides on load (the
+  salvage deduped by hand). Canonicalize the subject — or drop slash-variant twins — in `wayback.py` so
+  they never reach the store.
+  **Act when:** persisting wayback captures to `signals/` routinely (the salvage hit it once).
+
 ## Graduated
 
 - **Envelope comparator / delta layer** `[done]`
