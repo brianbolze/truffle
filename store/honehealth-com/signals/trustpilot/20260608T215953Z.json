@@ -1,0 +1,358 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-08T21:59:53Z",
+  "ok": true,
+  "input": {
+    "slug": "honehealth.com",
+    "wait_ms": 12000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/honehealth.com",
+  "profile_state": "active",
+  "review_count": 11579,
+  "reviews_last_12m": 5553,
+  "trust_score": 4.8,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "93%",
+    "4": "2%",
+    "3": "<1%",
+    "2": "<1%",
+    "1": "3%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": true,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 97
+  },
+  "people_also_looked_at": [
+    {
+      "name": "Titan",
+      "domain": "www.jointitan.com",
+      "trust_score": 2.2,
+      "review_count_label": "14"
+    },
+    {
+      "name": "Male Excel",
+      "domain": "maleexcel.com",
+      "trust_score": 4.5,
+      "review_count_label": "5K"
+    },
+    {
+      "name": "Midi Health",
+      "domain": "joinmidi.com",
+      "trust_score": 4.0,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Superpower",
+      "domain": "superpower.com",
+      "trust_score": 4.5,
+      "review_count_label": "271"
+    },
+    {
+      "name": "Maximus",
+      "domain": "maximustribe.com",
+      "trust_score": 4.4,
+      "review_count_label": "975"
+    },
+    {
+      "name": "SkinnyRx",
+      "domain": "skinnyrx.com",
+      "trust_score": 4.8,
+      "review_count_label": "5K"
+    },
+    {
+      "name": "By Winona",
+      "domain": "bywinona.com",
+      "trust_score": 4.6,
+      "review_count_label": "7K"
+    },
+    {
+      "name": "trtnation.com",
+      "domain": "trtnation.com",
+      "trust_score": 2.1,
+      "review_count_label": "16"
+    }
+  ],
+  "recent_reviews": [
+    {
+      "review_id": "6a270d8d2884a049250e2632",
+      "rating": 5,
+      "title": "Great place",
+      "body": "Connecting with hone is super easy. They have good doctors on staff who can explain things to you where it makes sense. They dont just read your levels to you, they tell you what they are, what they mean and how to improve them.",
+      "date_of_experience": "June 8, 2026",
+      "posted": "An hour ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Brent Barnett",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a26fa44f1fefa5a5ce9bb2a",
+      "rating": 1,
+      "title": "Stay away from this company!",
+      "body": "I had blood drawn for t labs. I never received lab results! All their communication is limited to some impersonal robotic test messages. No one to talk to. They've asked me to use their website to schedule an appointment with some DR and verify my ID but their website HAS NO OPTIONS for anything outside of purchasing the same labs I already paid for! Stay away from this company!",
+      "date_of_experience": "June 8, 2026",
+      "posted": "3 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Jedidiah Moncayo",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a26ec89cb1088b6d6d8a50d",
+      "rating": 5,
+      "title": "Dr. Deb is the best!",
+      "body": "Very easy to schedule the labs and meet with the doctor online. Dr. Deb is the best and this is the first time in my history of all my doctors that she made me feel heard without having to fight for it. She is compassionate, intelligent and I would highly recommend her.",
+      "date_of_experience": "June 8, 2026",
+      "posted": "4 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Sara K",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a26e8b940bc4dc20700df01",
+      "rating": 5,
+      "title": "I decided to restart my TRT treatment\u2026",
+      "body": "I decided to restart my TRT treatment and chose Hone Health after researching several options. So far, the experience has been excellent. While there are multiple steps involved\u2014as with any medical provider\u2014the entire process has been smooth, easy to follow, and well organized. Dr. Qablawi was professional, knowledgeable, and well prepared for my appointment. She took the time to review my results, answer my questions, and recommend a few supplements that may help support my overall health goals. The onboarding process was straightforward, communication was clear, and I never felt rushed. I'm looking forward to starting treatment and continuing my health journey with Hone Health. Based on my experience so far, I would definitely recommend them to anyone considering TRT.",
+      "date_of_experience": "June 8, 2026",
+      "posted": "4 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Jesse Avila",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a26e4e9aa01e9c436eac786",
+      "rating": 5,
+      "title": "he's fast and accurate and explains\u2026",
+      "body": "he's fast and accurate and explains what is happening. I appreciate that",
+      "date_of_experience": "June 8, 2026",
+      "posted": "4 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "customer",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a26e4cd84b9fa3bf36feca6",
+      "rating": 5,
+      "title": "Great doc for busy people",
+      "body": "Dr Hardman was personable, knowledgeable and efficient. Exactly what I was looking for.",
+      "date_of_experience": "June 8, 2026",
+      "posted": "4 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Justin Onstot",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a26dcf1a251a077bbb20a00",
+      "rating": 5,
+      "title": "Dr Russo",
+      "body": "Dr. Russo is easy to talk to and thorough in his assessment.",
+      "date_of_experience": "June 8, 2026",
+      "posted": "5 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Walter Goble",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a26b8b703a5650490415201",
+      "rating": 5,
+      "title": "Easy and thorough.",
+      "body": "Easy and thorough.",
+      "date_of_experience": "June 8, 2026",
+      "posted": "7 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Jason",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a26224a017c1c1ce8ae7f2e",
+      "rating": 5,
+      "title": "It was my first consult so we shall see\u2026",
+      "body": "It was my first consult so we shall see ,but my instincts tell me they will actually care and be supportive during the time with them. Thanks",
+      "date_of_experience": "June 7, 2026",
+      "posted": "18 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Jeff",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a25f254d7d2a9a27eb0eb97",
+      "rating": 5,
+      "title": "Dr Chvotzkin was very patient and took\u2026",
+      "body": "Dr Chvotzkin was very patient and took the time to explain everything about my current treatment plan and put me at ease. It is rare that a Dr. these takes time to help educate clients and make them feel empowered in their healthcare.",
+      "date_of_experience": "June 7, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "ashly fox",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a25adf438b7ea380aaf321c",
+      "rating": 5,
+      "title": "Great Job",
+      "body": "All the information was very thoroughly explained and it was more information I've ever got from any simple doctors visit so I am very glad I used Hone. It's a great service",
+      "date_of_experience": "June 7, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Edward Salerno",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a253d378ed7a0635de7bc81",
+      "rating": 1,
+      "title": "Don't forget to delete your account",
+      "body": "Don't forget to delete your account. Renewed my membership, emailed them the same day, and they refuse to give me my money back. So now I've paid for a \"membership\" for the next year for something I won't use.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "A day ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Allen Skidmore",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a247e105f8d4476b4a4687b",
+      "rating": 5,
+      "title": "My first consultation was extremely informative and professional",
+      "body": "My first consultation was extremely informative and professionally done. Hone has kept me informed each step of the way. I would highly recommend using Hone Health.",
+      "date_of_experience": "June 6, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Bobby Woods",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a23621d668ce3bebc40d4e4",
+      "rating": 5,
+      "title": "Dr Reed",
+      "body": "Dr. Reed was thorough, complete and very understanding. I did not feel rushed at all and she really seemed to care for my needs. Appreciated the call very much and will continue with Hone long term.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Eric Lillis",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a22dd1c5575a7d9314581e5",
+      "rating": 5,
+      "title": "I initially gave them a one star review\u2026",
+      "body": "I initially gave them a one star review because I didn't assure that my lab order was made but after a process of having my order shipped to me I can look back and say that this is a good company and are worth the business thank you.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Lester Dobos",
+      "reviewer_country": "US",
+      "reviewer_review_count": 7
+    },
+    {
+      "review_id": "6a22c1d7363bf19146366b0d",
+      "rating": 5,
+      "title": "He was very helpful and knowledgeable\u2026",
+      "body": "He was very helpful and knowledgeable about the different results from my tests. He helped pick a treatment plan for me and my future plans.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "turner",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a223e75e5e09eed3806d385",
+      "rating": 5,
+      "title": "The comfort of the visit paired with\u2026",
+      "body": "The comfort of the visit paired with the physicians extreme knowledge in the subjects we discussed made this my favorite doctors appointment ever. Give that man man a raise.",
+      "date_of_experience": "June 4, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Chris Rann",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a21f0f7a7ced006670f6de2",
+      "rating": 5,
+      "title": "Very thorough and thoughtful\u2026",
+      "body": "Very thorough and thoughtful experience! Highly recommend.",
+      "date_of_experience": "June 4, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Matt",
+      "reviewer_country": "US",
+      "reviewer_review_count": 7
+    },
+    {
+      "review_id": "6a21d35fc8ab70adb0538843",
+      "rating": 5,
+      "title": "Dr Mooney",
+      "body": "Dr. Mooney was very professional and knowledgeable. He was very personable and very easy to get along with probably the coolest doctor I\u2019ve ever met.",
+      "date_of_experience": "June 4, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Robert DeArmon",
+      "reviewer_country": "US",
+      "reviewer_review_count": 4
+    },
+    {
+      "review_id": "6a21cd5704680d466532a76b",
+      "rating": 5,
+      "title": "Very informative and helpful",
+      "body": "Very informative and helpful",
+      "date_of_experience": "June 4, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Michael Coron",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    }
+  ],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 32.4,
+    "source_url": "https://www.trustpilot.com/review/honehealth.com",
+    "markdown_chars": 30243
+  },
+  "recent_reviews_sample_size": 20
+}

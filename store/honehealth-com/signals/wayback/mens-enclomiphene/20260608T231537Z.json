@@ -1,0 +1,45 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-08T23:15:37Z",
+  "ok": true,
+  "input": {
+    "url": "https://honehealth.com/mens/enclomiphene"
+  },
+  "schema_drift": [],
+  "first_seen": "2025-12-05T05:27:24Z",
+  "last_seen": "2026-04-10T09:04:40Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 185,
+  "snapshot_count": 3,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2025-12-05T05:27:24Z",
+      "to": "2026-04-10T09:04:40Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20251205052724/https://honehealth.com/mens/enclomiphene/",
+  "last_snapshot_url": "https://web.archive.org/web/20260410090440/https://honehealth.com/mens/enclomiphene/",
+  "snapshots": [
+    {
+      "timestamp": "2025-12-05T05:27:24Z",
+      "url": "https://honehealth.com/mens/enclomiphene/",
+      "status": "200",
+      "digest": "4HPGTE3D67XV2GNIASVAZNQS4G2VGCUL"
+    },
+    {
+      "timestamp": "2026-01-13T21:35:54Z",
+      "url": "https://honehealth.com/mens/enclomiphene/",
+      "status": "200",
+      "digest": "DNPK3QLN4JY6WS64XCAKCTB3T3RRTI4L"
+    },
+    {
+      "timestamp": "2026-04-10T09:04:40Z",
+      "url": "https://honehealth.com/mens/enclomiphene/",
+      "status": "200",
+      "digest": "JSPGUSIPBWPTJCKDGMOKXLCCQVLNL6GV"
+    }
+  ]
+}

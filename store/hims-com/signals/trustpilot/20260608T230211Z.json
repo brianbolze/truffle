@@ -1,0 +1,96 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-08T23:02:11Z",
+  "ok": true,
+  "input": {
+    "slug": "hims.com",
+    "wait_ms": 12000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/hims.com",
+  "profile_state": "active",
+  "review_count": 8500,
+  "reviews_last_12m": 1991,
+  "trust_score": 3.0,
+  "rating_label": "Average",
+  "rating_distribution": {
+    "5": "40%",
+    "4": "11%",
+    "3": "12%",
+    "2": "9%",
+    "1": "28%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": true,
+    "merged_profile": true,
+    "negative_reply_rate_pct": 85
+  },
+  "people_also_looked_at": [
+    {
+      "name": "Ro",
+      "domain": "ro.co",
+      "trust_score": 3.8,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "MANUAL",
+      "domain": "manual.co",
+      "trust_score": 4.3,
+      "review_count_label": "12K"
+    },
+    {
+      "name": "Voy",
+      "domain": "www.joinvoy.com",
+      "trust_score": 4.7,
+      "review_count_label": "21K"
+    },
+    {
+      "name": "MEDVi",
+      "domain": "medvi.org",
+      "trust_score": 4.4,
+      "review_count_label": "13K"
+    },
+    {
+      "name": "hers",
+      "domain": "forhers.com",
+      "trust_score": 3.3,
+      "review_count_label": "8K"
+    },
+    {
+      "name": "BlueChew",
+      "domain": "bluechew.com",
+      "trust_score": 3.9,
+      "review_count_label": "2K"
+    },
+    {
+      "name": "Sons",
+      "domain": "sons.co.uk",
+      "trust_score": 4.2,
+      "review_count_label": "3K"
+    },
+    {
+      "name": "Noom",
+      "domain": "noom.com",
+      "trust_score": 4.5,
+      "review_count_label": "66K"
+    }
+  ],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 41.6,
+    "source_url": "https://www.trustpilot.com/review/hims.com",
+    "markdown_chars": 31542
+  },
+  "recent_reviews_sample_size": 20
+}

@@ -1,0 +1,141 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-08T23:14:36Z",
+  "ok": true,
+  "input": {
+    "url": "https://www.maximustribe.com/testosterone/enclomiphene-only"
+  },
+  "schema_drift": [],
+  "first_seen": "2024-12-01T14:52:33Z",
+  "last_seen": "2026-06-03T18:48:05Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 554,
+  "snapshot_count": 19,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2024-12-01T14:52:33Z",
+      "to": "2026-06-03T18:48:05Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20241201145233/https://www.maximustribe.com/testosterone/enclomiphene-only",
+  "last_snapshot_url": "https://web.archive.org/web/20260603184805/https://www.maximustribe.com/testosterone/enclomiphene-only",
+  "snapshots": [
+    {
+      "timestamp": "2024-12-01T14:52:33Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "FMTXZJPIRWDTLFRXW573PHHKB5WL5XMY"
+    },
+    {
+      "timestamp": "2024-12-06T14:54:40Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "KTQSRNS564I2VGGOMOOTG56SPSAAHN3K"
+    },
+    {
+      "timestamp": "2024-12-15T00:49:31Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "4BBXY5BK5WRDTPPR4A2VGHPEJA3UEFQ4"
+    },
+    {
+      "timestamp": "2025-01-08T11:18:24Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "44RVTC34PBTHUM5RTRCSC7ZZS2HPFSI3"
+    },
+    {
+      "timestamp": "2025-02-26T09:59:19Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "CJYMNV4JAJ6GZSSPNCTBKYSMKRV45HPT"
+    },
+    {
+      "timestamp": "2025-02-27T05:32:56Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "VGCJCQQF5AYWGPWNBXSRIN2DUW7CXYEI"
+    },
+    {
+      "timestamp": "2025-03-21T01:57:59Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "VKJPG2H2W4BFV6MDNUWHUDBHXVOQ6ZA4"
+    },
+    {
+      "timestamp": "2025-03-29T17:56:02Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "NMQAFHVHU5C7FZS6FGJ6DMMJBG3N7XU4"
+    },
+    {
+      "timestamp": "2025-05-13T00:42:16Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "CKB36WACTEKDQ4BYCJZFZCKM7E7TKQYN"
+    },
+    {
+      "timestamp": "2025-05-13T02:47:51Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "PG54RPT3NAGYE347EQ4YYDJUHPV7YOYT"
+    },
+    {
+      "timestamp": "2025-05-16T21:31:18Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "DY7ZT3LUVDISHMNORS2COZ3Z7PSU72HK"
+    },
+    {
+      "timestamp": "2025-05-17T12:10:26Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "P7I2B37UTS533UBCOQUAQ3ZQEBYWTB3L"
+    },
+    {
+      "timestamp": "2025-07-21T15:38:29Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "KRT6JAW35W3KBLTC33OH6JQLL22FBUQ5"
+    },
+    {
+      "timestamp": "2025-12-11T00:29:14Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "T2RSHV3ZNCAAA3YB5MPXG5JQZMKTTT2D"
+    },
+    {
+      "timestamp": "2026-01-14T00:54:56Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "OC6II7MS5EF66KQ3TTL6TVXPBCLCRR2L"
+    },
+    {
+      "timestamp": "2026-03-09T19:33:55Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "ETFLBM4H3ZPPQJYED4RLOM7U5GLRL6XK"
+    },
+    {
+      "timestamp": "2026-04-16T23:50:18Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "OKS5HIGEJKLALI5SJ2SEFGTNBAANFK5N"
+    },
+    {
+      "timestamp": "2026-05-26T10:31:48Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "ANJNWIPSJBG3OQWA3VFUF4ASRQRURV3F"
+    },
+    {
+      "timestamp": "2026-06-03T18:48:05Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-only",
+      "status": "200",
+      "digest": "ECADA2JDPJLZBMYC5UGSSZU7RZ6IPVEX"
+    }
+  ]
+}

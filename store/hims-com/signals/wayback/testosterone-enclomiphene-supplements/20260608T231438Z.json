@@ -1,0 +1,20 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-08T23:14:38Z",
+  "ok": true,
+  "input": {
+    "url": "https://www.hims.com/testosterone/enclomiphene-supplements"
+  },
+  "schema_drift": [],
+  "first_seen": null,
+  "last_seen": null,
+  "first_seen_confidence": "insufficient",
+  "tenure_days": null,
+  "snapshot_count": 0,
+  "snapshots_truncated": false,
+  "status_trail": [],
+  "first_snapshot_url": null,
+  "last_snapshot_url": null,
+  "snapshots": []
+}
