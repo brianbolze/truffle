@@ -55,7 +55,7 @@ Order: `## Visual & brand impression` → `## Evidence cards` → `## Provenance
 
 - **`## Visual & brand impression`** — a short, cited prose read (≤120 words) a creative director judges in ~5 seconds: what the site's visual presentation *is* — its character, where it's controlled, where it falls down. **Every claim points at a card id** (`[typography_01]`) — the impression is a *lens over the cards*, never new assertions. It synthesizes only from **accepted** cards; if the cards don't support a line, it doesn't go in. This is the brief's deliverable.
 
-- **`## Evidence cards`** — the falsifiable core. One card per visible tell, in YAML (schema below). 8–14 cards typical, spanning the four families and a mix of polarities.
+- **`## Evidence cards`** — the falsifiable core. **One card per distinct visible tell**, in YAML (schema below) — comprehensive, not capped to a number. Spans the four families and a mix of polarities. The impression up top is the tight read; these cards are the full audit trail, so depth here is a feature. (Merge only true duplicates — cards pointing at the *same* tell.)
 
 - **`## Provenance`** — tiles read (the `captures/<date>/tiles/` set), the **QA note** (exclusions named, whether Tier-B re-render was used and for which pages), and a point-in-time caveat (the site changes; this is a snapshot of the captured tiles).
 
