@@ -69,6 +69,8 @@ The card *schema* — **and the `evidence_label` / `signal_polarity` enums with 
 
 **Judgments — the open edge, door designed, not built.** The formidability verdict stays entirely consumer-side (no `formidable` field anywhere in the store). The sanctioned *future* shape, built **only if a consuming project asks**: a `judgments/<viewer>/<subject>` artifact — viewer-keyed, provenance-bearing (`inputs:` = card hashes), regenerable/disposable, physically segregated from `store/`. Designed so it *can* exist without ever leaking a verdict into the shared facts; built when earned.
 
+> **What the overlay composes (incl. the VISUAL layer).** When this read is built, it weighs *several* cited axes the engine already supplies — the traction Signals (SERP / reviews / Trends / wayback), the funding events, and the **State-side `visual.md` evidence** as a *"design execution"* input. Visual is the **weakest, most gameable** axis (a seed startup buys a great site; a dominant incumbent runs a dated one — v5 showed the score inverts on exactly these), so weight it low and tilt toward *consistency* (the cards' `strong|mixed|poor` direction) over gloss. Do **not** build a visual *Signal*: a redesign is already caught by the comparator's wayback content-hash diff (cheaper), and "did it get *better*" is the deliberately-parked visual score. The engine supplies the axis; the consumer composes the verdict.
+
 ---
 
 ## #4 — Capital / growth boundary
