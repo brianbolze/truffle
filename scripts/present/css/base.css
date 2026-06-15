@@ -19,6 +19,9 @@ a:hover{border-bottom-color:var(--accent)}
 .mh-row{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:10px}
 .mh-left{font-family:var(--mono);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase}
 .mh-left b{font-weight:400;color:var(--accent)}
+/* back-to-index home link — masthead wordmark; resting look unchanged, underline on hover */
+a.home{color:inherit;border-bottom:none}
+a.home:hover{text-decoration:underline}
 .mh-right{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:color-mix(in srgb,var(--ink) 55%,var(--paper))}
 .rule-heavy{height:3px;background:var(--ink)}
 .rule-thin{height:1px;background:var(--rule);margin-top:2px}

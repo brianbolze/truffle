@@ -366,7 +366,7 @@ def render_html(m: dict[str, Any]) -> str:
 {sheet_css}</style></head><body>
 <div class="sheet">
 <header class="masthead">
-  <div class="mh-row"><span class="mh-left">Web&middot;Research — <b>Company Brief</b></span>
+  <div class="mh-row"><span class="mh-left"><a class="home" href="00-index.html">Web&middot;Research</a> — <b>Company Brief</b></span>
   <span class="mh-right">{esc(docno)}</span></div>
   <div class="rule-heavy"></div><div class="rule-thin"></div>
 </header>

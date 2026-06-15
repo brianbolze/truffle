@@ -147,8 +147,9 @@ def render_compare(models: list[dict[str, Any]]) -> str:
     for m in models:
         pal = m["pal"]
         lineup.append(
+            f'<a class="linkcell" href="{esc(m["slug"])}.html">'
             f'<div class="ground" style="background:{pal["hero_bg"]};color:{pal["hero_fg"]}">{_mark_html(m)}</div>'
-            f'<div class="who"><b>{esc(m["name"])}</b><span>{esc(m["domain"])}</span></div>'
+            f'<div class="who"><b>{esc(m["name"])}</b><span>{esc(m["domain"])}</span></div></a>'
         )
 
     # 02 voice
@@ -254,6 +255,7 @@ def render_compare(models: list[dict[str, Any]]) -> str:
     prov_cells = "".join(f'<div class="cell">{c}</div>' for c in prov)
 
     names = " · ".join(m["name"] for m in models)
+    names_linked = " · ".join(f'<a href="{esc(m["slug"])}.html">{esc(m["name"])}</a>' for m in models)
     docno = f"WR/{today.replace('-', '')}/COMPARE·{n}"
     accents = "".join(f".cells .cell:nth-child({i + 1})::before{{background:{m['pal']['accent']}}}" for i, m in enumerate(models))
 
@@ -291,11 +293,11 @@ def render_compare(models: list[dict[str, Any]]) -> str:
 {dyn_css}</style></head><body>
 <div class="sheet">
 <header class="masthead">
-  <div class="mh-row"><span class="mh-left">Web&middot;Research — <b>Comparison Sheet</b></span>
+  <div class="mh-row"><span class="mh-left"><a class="home" href="00-index.html">Web&middot;Research</a> — <b>Comparison Sheet</b></span>
   <span class="mh-right">{esc(docno)}</span></div>
   <div class="rule-heavy"></div><div class="rule-thin"></div>
 </header>
-<div class="title"><h1>{esc(names)}</h1>
+<div class="title"><h1>{names_linked}</h1>
 <div class="sub">{n} companies · one lens · captured {esc(caps)}</div></div>
 {"".join(bands)}
 <section class="prov"><div class="grid"><div class="cell"><span class="plabel">captured</span></div>{prov_cells}</div></section>
