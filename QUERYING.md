@@ -86,15 +86,17 @@ It's deliberately **scoped + fenced** so it can't hand back a fast, clean, *conf
 
 `python scripts/build_db.py --check` is the drift self-test — a renamed roster column, cohort cut, missing `coverage` row, reintroduced price magnitude, or roster that parses to zero rows fails loudly instead of misbuilding silently. The engine owns this faithful, fenced corpus lens; projects own judgment lenses built on the parsers (canonical molecule, normalized price, enrichment). For a *single* pivot the Recipe 4/6 one-liners beat SQL — reach for the lens when the *number* of cuts makes ad-hoc SQL (or a GUI) win.
 
-**8. Source-signal capture — tools before generic web search.** The store is site-derived State; it does not automatically know whether a brand is visible in Google, how old a SKU URL is, whether a Trustpilot profile is active, or how branded search interest moved. For those questions, run the focused capture in [`tools/`](tools/README.md) and keep interpretation above it:
+**8. Source-signal capture — tools before generic web search.** The store is site-derived State; it does not automatically know whether a brand is visible in Google, how old a SKU URL is, whether a Trustpilot profile is active, how branded search interest moved, or whether a company filed a funding round. For those questions, run the focused capture in [`tools/`](tools/README.md) and keep interpretation above it:
 - `serpapi.py` — organic + AI Overview visibility for a query; match with `_match.py` / `serp_match.py` when a cohort is involved.
 - `serp_intent_panel.py` — query-set + cohort buyer-intent SERP panels over captured `serpapi.py` envelopes; use this when deciding whether category queries are worth tracking. Live capture happens only with explicit `--fetch-missing`.
 - `wayback.py` — exact-URL archived tenure; reads as a lower bound, not a launch date.
 - `trustpilot.py` — one Trustpilot profile state at one `captured_at`; velocity needs repeat captures.
 - `trends.py` — branded search trajectory within each keyword, not absolute cross-brand volume.
 - `exa_similar.py` — neighbor discovery / blind-spot finding.
+- `sec_edgar.py` — first-party funding from keyless SEC EDGAR: ticker/exchange → State, Form-D / 8-K filings → dated Signal (existence + date, amount-free; identity match flagged `confirmed`/`name_match_unconfirmed`).
+- `signal_delta.py` — the comparator: diffs **two** captures of the same source (Trustpilot velocity, SERP rank/AIO movement, Trends trajectory, Wayback presence) into axis-specific deltas + comparability vetoes — never a blended score.
 
-These tools print JSON envelopes to stdout and do **not** write the store. Save captures project-side or in an experiment until a reusable method earns a home.
+These tools print JSON envelopes to stdout (they don't write the store themselves). Persist **company-grain** captures verbatim to `store/<domain>/signals/<source_type>/<captured_at>.json` so repeat captures accumulate where `signal_delta.py` can diff them; **category/query-grain** panels (SERP intent) stay project-side or in an experiment until the architecture's `cohorts/` home graduates.
 
 ## Gotchas & limits
 

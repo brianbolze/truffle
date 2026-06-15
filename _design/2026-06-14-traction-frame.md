@@ -1,6 +1,6 @@
 # FRAME — External traction signals for companies
 
-Date: 2026-06-14 · Status: problem frame (not system design). Graduates the parked **Traction module / verb** ([BACKLOG](../BACKLOG.md)). Solution shape is deliberately out of scope.
+Date: 2026-06-14 · Status: problem frame (not system design) — **v1 built 2026-06-15** ([approach](2026-06-15-traction-approach.md): comparator + funding tool + `signals/` path). Graduates the parked **Traction module / verb** ([BACKLOG](../BACKLOG.md)). Solution shape is deliberately out of scope *for this frame*.
 
 ## Short answer
 

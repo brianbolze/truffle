@@ -1,6 +1,6 @@
 # APPROACH — External traction Signals (v1)
 
-Date: 2026-06-15 · Status: solution proposal — **v1, hardened by an adversarial pass** (verdict: survives-with-fixes; folded in). Supersedes the 2026-06-14 drafts (archived). Companion to the [traction frame](2026-06-14-traction-frame.md); answers Open Qs #1–#4 + #6.
+Date: 2026-06-15 · Status: **shipped 2026-06-15** — v1 built (`tools/signal_delta.py` comparator, `tools/sec_edgar.py` funding, the `signals/` path convention, `trends.py peak_date`, both probes); was a solution proposal hardened by an adversarial pass (verdict: survives-with-fixes; folded in). Supersedes the 2026-06-14 drafts (archived). Companion to the [traction frame](2026-06-14-traction-frame.md); answers Open Qs #1–#4 + #6.
 
 > **Synthesis note.** This keeps the prior draft's strong *judgments* (the funding boundary, the no-blend-by-construction comparator, the facts-vs-verdicts line, the integrity-veto discipline) and cuts its *build list* to what a probe or a second caller actually earns now. The prior draft built a six-piece card layer before anything needed it; this builds **one comparator + one funding tool**, commits **one findable path convention** (no abstraction), and lets the schema / lint / writer / lens layer graduate when an automated writer **and** a second consumer are real.
 
