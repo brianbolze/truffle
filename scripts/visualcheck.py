@@ -82,7 +82,8 @@ def cards_in(cards_section: str) -> list[tuple[str, str]]:
     out = []
     for i, match in enumerate(starts):
         end = starts[i + 1].start() if i + 1 < len(starts) else len(cards_section)
-        out.append((match.group(1), cards_section[match.start():end]))
+        # strip quotes so a scripted `id: 'typography_01'` still matches the impression's [typography_01]
+        out.append((match.group(1).strip("\"'"), cards_section[match.start():end]))
     return out
 
 
