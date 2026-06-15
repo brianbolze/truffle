@@ -1,6 +1,6 @@
 # FRAME — External traction signals for companies
 
-Date: 2026-06-14 · Status: problem frame (not system design) — **v1 built 2026-06-15** ([approach](2026-06-15-traction-approach.md): comparator + funding tool + `signals/` path). Graduates the parked **Traction module / verb** ([BACKLOG](../BACKLOG.md)). Solution shape is deliberately out of scope *for this frame*.
+Date: 2026-06-14 · Status: problem frame (not system design) — **v1 built 2026-06-15**: comparator + funding tool + `signals/` path ([approach](2026-06-15-traction-approach.md) · [`SIGNALS.md`](../SIGNALS.md) front door). Graduates the parked **Traction module / verb** ([BACKLOG](../BACKLOG.md)). Solution shape is deliberately out of scope *for this frame*.
 
 ## Short answer
 
@@ -98,7 +98,7 @@ First to graduate is narrow on purpose: **the per-company evidence layer.**
 
 ## Open questions
 
-1. **Where do time-series Signals live?** The architecture's deferred Signals-layer call: domain-keyed `log.md`, category/cohort ledgers, project-side, or comparator-only. OKF's `log.md` inspires but underspecifies; prior art's per-period files are the concrete precedent.
+1. **Where do time-series Signals live?** The architecture's deferred Signals-layer call: domain-keyed `log.md`, category/cohort ledgers, project-side, or comparator-only. OKF's `log.md` inspires but underspecifies; prior art's per-period files are the concrete precedent. *(Resolved in v1: `store/<domain>/signals/<source_type>/<captured_at>.json`, written by `scripts/signals.py` — see [approach](2026-06-15-traction-approach.md).)*
 2. **Capture grain** — per-company vs. category-keyed (prior art favors category for comparison). How do the triage and maps consumers share one shape?
 3. **The comparability primitive** — the generic envelope delta/velocity comparator (`tools/BACKLOG`'s top item). First real step regardless of storage.
 4. **Capital/growth boundary** — which easy first-party funding signals are reliably gettable, and where's the line against the paid-data swamp?

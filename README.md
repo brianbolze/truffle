@@ -9,6 +9,7 @@ A project-agnostic company-research engine: Firecrawl for company-site capture, 
 ```
 SCHEMA.md TAXONOMIES.md   # the store contract — what a capture writes
 QUERYING.md               # how to read the store back — consumer recipes
+SIGNALS.md                # the traction Signals layer — front door (capture → persist → diff, run commands, sources)
 modules/OFFERINGS.md modules/VISUAL.md   # opt-in module contracts — offerings.md (per-SKU depth) + visual.md (blind brand-evidence)
 TELEHEALTH.md             # the telehealth cohort pack — at root for now (see SCHEMA → Tier-1 modules)
 BACKLOG.md                # system-level weaknesses / ideas (capped, tagged, curated)
