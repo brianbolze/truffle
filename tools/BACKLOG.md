@@ -26,15 +26,6 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
 
 ---
 
-## Highest leverage
-
-- **Batch runner for repeated captures, not per-project loops** `[idea]`
-  SERP, Trustpilot, Exa, and Wayback each do one focused capture; agents should not keep writing
-  throwaway loops for 15-brand panels or 50-URL ledgers. Add a generic runner that reads CSV / JSON /
-  JSONL / stdin rows, invokes one capture command repeatedly, records row id + args + exit code +
-  stderr + cost, and emits JSONL or one combined run envelope. Keep destination writes out of scope.
-  **Act when:** running the same capture across a panel by hand feels silly twice.
-
 ## Tool hardening
 
 - **Clarify partial-capture exit semantics for orchestration** `[tbd]`
@@ -62,23 +53,24 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
   current rather than planned. Also keep generated `__pycache__/` files out of staged changes.
   **Act when:** preparing the tools directory for commit or handoff.
 
-- **`signals/` path + comparator need a sub-subject slot for multi-URL-per-domain sources** `[weakness]`
-  The convention `store/<domain>/signals/<source_type>/<captured_at>.json` assumes one subject per
-  source_type, but wayback is page-grain — many URLs per domain collide on that path, and
-  `signal_delta.py`'s dir-mode glob is non-recursive so it can't see captures nested a level deeper. The
-  2026-06-15 salvage worked around it with `…/wayback/<url-slug>/<captured_at>.json` (pairwise per-URL diff
-  reads it fine), but whole-domain wayback run-vs-run can't discover them. Add a URL/sub-subject slot to
-  the convention + a recursive loader.
-  **Act when:** whole-domain wayback run-vs-run is needed (pairwise per-URL works today).
-
-- **Wayback slash-variant subject twins — dedup at capture** `[idea]`
-  Real seed-panel data held the same URL captured with and without a trailing `/` seconds apart;
-  `signal_delta.py` canonicalizes the subject by `rstrip("/")`, so co-storing both collides on load (the
-  salvage deduped by hand). Canonicalize the subject — or drop slash-variant twins — in `wayback.py` so
-  they never reach the store.
-  **Act when:** persisting wayback captures to `signals/` routinely (the salvage hit it once).
+- **`signal_delta` dir-glob should recurse for page-slug subdirs** `[weakness]`
+  `scripts/signals.py persist` now writes wayback under `…/wayback/<url-slug>/<captured_at>.json` (the
+  multi-URL-per-domain path slot) and folds slash-variant twins onto one slug — but `signal_delta.py`'s
+  dir-mode glob is non-recursive, so a whole-domain run-vs-run can't discover captures nested under a slug.
+  Pairwise per-URL diff works today. Add a recursive loader.
+  **Act when:** whole-domain wayback run-vs-run is needed.
 
 ## Graduated
+
+- **Signals-store writer — `persist()` + batch runner + importer** `[done]`
+  `scripts/signals.py` writes capture envelopes to the path convention — `persist`: envelope →
+  `store/<domain>/signals/<source_type>[/<page-slug>]/<captured_at>.json` — with **run** (batch-invoke
+  captures across a panel, interpreter-pinned, persist each) and **import** (consolidate scattered
+  envelopes) as thin verbs over it. Graduates the *automated writer* exactly as the [traction approach](../_design/2026-06-15-traction-approach.md)
+  scoped it (automated writer + second consumer now both exist); the salvage + velocity dogfoods earned it.
+  Folds in the wayback page-slug slot + slash-variant dedup. Schema-as-contract / lint / SQLite lens stay
+  deferred — every consumer still eats raw envelopes, not cards. (Lives in `scripts/`, not `tools/`: it
+  writes the store; the capture tools still only print.)
 
 - **Envelope comparator / delta layer** `[done]`
   `signal_delta.py` diffs two captures of the same source into per-metric deltas + comparability vetoes —
