@@ -40,7 +40,17 @@ FINAL_STATE_CSS = """
 }
 """
 
-CONSENT_LABELS = ["I understand", "Accept", "Accept all", "Got it", "Agree"]
+CONSENT_LABELS = ["I understand", "Accept", "Accept all", "Got it", "Agree", "I consent"]
+
+# Consent/cookie managers render a fixed overlay pinned to a viewport corner — on a
+# viewport-tile re-render it stamps onto every tile, and click-dismissal misses it when the
+# widget duplicates itself or mounts a closed shadow root (e.g. Transcend on goodlifemeds).
+# Hiding the known vendor mounts is more reliable than clicking through them.
+CONSENT_MOUNTS = (
+    "#transcend-consent-manager,#onetrust-consent-sdk,#onetrust-banner-sdk,"
+    "#CybotCookiebotDialog,#didomi-host,#termly-code-snippet-support,#usercentrics-root,"
+    ".osano-cm-window,#cookie-law-info-bar{display:none!important}"
+)
 
 
 def tile_offsets(scroll_height: int, viewport_height: int, overlap: int) -> list[int]:
@@ -92,6 +102,7 @@ def capture(url: str, out_dir: Path, width: int, height: int, overlap: int,
         page.add_style_tag(
             content="[class*='intercom'],iframe[src*='intercom'],[aria-label*='chat' i]{display:none!important}"
         )
+        page.add_style_tag(content=CONSENT_MOUNTS)
 
         # Finer warm scroll (600px steps) so every intersection-observer fires and lazy media loads.
         scroll_height = page.evaluate("document.documentElement.scrollHeight")
