@@ -38,8 +38,9 @@ Exit codes:
    never the comparator's own drift.)
 
 Source-aware branches (keyed on the envelope's `tool`): trustpilot (pairwise), serpapi (run-grained
-AIO/organic), trends (multi-subject, basis-aware). Unknown source_types hit the fallback (a named veto,
-never a guessed delta). wayback is the next branch (thin over `wayback.py diff`).
+AIO/organic), trends (multi-subject, basis-aware), wayback (per-URL presence/snapshot/content-digest over
+two tenure captures — never re-fetches). Unknown source_types hit the fallback (a named veto, never a
+guessed delta).
 """
 
 from __future__ import annotations
@@ -59,6 +60,7 @@ GRAIN: dict[str, str] = {
     "trustpilot": "company",
     "serpapi": "category_query",
     "trends": "company",  # per-brand-keyword search interest; subject = the keyword, caller maps it to a domain
+    "wayback": "page",  # per-URL archive record; subject = the URL (a page on the company's domain)
 }
 OUTAGE_FRACTION = 0.6  # >= this share of previously-present AIO rows blanking at once => surface-outage veto
 TEMPLATE_DUPES = 2  # >= this many identical review bodies in a recent sample => templated/farmed signature
@@ -88,6 +90,8 @@ def subject_of(env: dict[str, Any]) -> str:
         return inp.get("query", "").strip().lower()
     if src == "trends":
         return src  # a trends envelope is multi-subject; its real subjects are per-keyword (handled in-branch)
+    if src == "wayback":
+        return inp.get("url", "").strip().lower().rstrip("/")  # the exact URL keys the archive record
     return canon(inp.get("url", "") or inp.get("slug", "") or env.get("source", src))
 
 
@@ -350,6 +354,67 @@ def branch_trends(a_envs: list[dict[str, Any]], b_envs: list[dict[str, Any]]) ->
     return {"comparisons": rows, "run_vetoes": []}
 
 
+# --------------------------------------------------------------------------- wayback branch (pairwise, per-URL)
+def _latest_digest(env: dict[str, Any]) -> str | None:
+    """The content digest of the most-recent archived snapshot — the Wayback CDX hash, captured already
+    (no re-fetch). A change in this between two captures means the archive holds new page content."""
+    snaps = env.get("snapshots") or []
+    if not snaps:
+        return None
+    return max(snaps, key=lambda s: s.get("timestamp", "")).get("digest")
+
+
+def _delta_wayback(earlier: dict[str, Any], later: dict[str, Any]) -> dict[str, Any]:
+    """Two tenure captures of one URL: archive presence, snapshot growth, last-seen movement, content-digest
+    change — a thin run-to-run read over the digests `wayback.py` already captured (never re-fetches). The
+    per-snapshot content diff stays `wayback.py diff`'s job; this is movement between OUR capture runs."""
+    subject = subject_of(later)
+    if (blocked := _fence(earlier, later)):
+        return _row("wayback", subject, vetoes=[blocked])
+    e_present, l_present = earlier.get("snapshot_count", 0) > 0, later.get("snapshot_count", 0) > 0
+    row = _row("wayback", subject, gap_days=_gap_days(earlier, later))
+    row["metrics"].append({
+        "metric": "archive_presence", "basis": "URL has >=1 archived snapshot",
+        "d0": e_present, "d7": l_present,
+        "movement": "lost" if e_present and not l_present else "gained" if l_present and not e_present else "stable",
+        "unit": "present(bool)",
+    })
+    row["metrics"].append({
+        "metric": "snapshot_count", "basis": "distinct-content captures (CDX collapse=digest)",
+        "d0": earlier.get("snapshot_count"), "d7": later.get("snapshot_count"),
+        "delta": (later.get("snapshot_count") or 0) - (earlier.get("snapshot_count") or 0), "unit": "snapshots",
+    })
+    row["metrics"].append({
+        "metric": "last_seen", "basis": "latest archived snapshot timestamp",
+        "d0": earlier.get("last_seen"), "d7": later.get("last_seen"),
+        "advanced": bool(later.get("last_seen") and earlier.get("last_seen") and later["last_seen"] > earlier["last_seen"]),
+        "unit": "timestamp",
+    })
+    e_dig, l_dig = _latest_digest(earlier), _latest_digest(later)
+    row["metrics"].append({
+        "metric": "content_digest", "basis": "digest of the most-recent archived snapshot (no re-fetch)",
+        "d0": e_dig, "d7": l_dig, "changed": bool(e_dig and l_dig and e_dig != l_dig), "unit": "sha-ish digest",
+    })
+    return row
+
+
+def branch_wayback(a_envs: list[dict[str, Any]], b_envs: list[dict[str, Any]]) -> dict[str, Any]:
+    """Group by URL; delta where paired, level (presence + current digest) where solo."""
+    by_a = {subject_of(e): e for e in a_envs}
+    by_b = {subject_of(e): e for e in b_envs}
+    rows = []
+    for subj in sorted(by_a.keys() | by_b.keys()):
+        if subj in by_a and subj in by_b:
+            rows.append(_delta_wayback(by_a[subj], by_b[subj]))
+        else:
+            env = by_b.get(subj) or by_a[subj]
+            rows.append(_row("wayback", subj, read_mode="level",
+                             metrics=[{"metric": "archive_presence", "value": env.get("snapshot_count", 0) > 0,
+                                       "digest": _latest_digest(env), "unit": "present(bool)"}],
+                             comparability_flags=[{"flag": "unpaired_capture", "effect": "one capture for this URL — no delta"}]))
+    return {"comparisons": rows, "run_vetoes": []}
+
+
 # --------------------------------------------------------------------------- fallback
 def branch_fallback(a_envs: list[dict[str, Any]], b_envs: list[dict[str, Any]]) -> dict[str, Any]:
     """Unknown source_type: a named veto, never a guessed delta over a payload the comparator can't read."""
@@ -363,6 +428,7 @@ DISPATCH: dict[str, Callable[[list[dict[str, Any]], list[dict[str, Any]]], dict[
     "trustpilot": branch_trustpilot,
     "serpapi": branch_serp,
     "trends": branch_trends,
+    "wayback": branch_wayback,
 }
 
 

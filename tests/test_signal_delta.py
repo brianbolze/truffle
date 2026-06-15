@@ -36,6 +36,15 @@ def serp(query: str, captured_at: str, *, organic: list | None = None, aio: bool
     }
 
 
+def wb(url: str, captured_at: str, *, count: int, last_seen: str, digest: str) -> dict:
+    """A minimal wayback tenure envelope carrying the fields the branch reads."""
+    return {
+        "tool": "wayback", "source": "web.archive.org/cdx", "captured_at": captured_at, "ok": True,
+        "input": {"url": url}, "schema_drift": [], "snapshot_count": count, "last_seen": last_seen,
+        "snapshots": [{"timestamp": last_seen, "digest": digest}],
+    }
+
+
 def trends_env(captured_at: str, items: list[dict]) -> dict:
     return {"tool": "trends", "source": "trends.google.com", "captured_at": captured_at, "ok": True,
             "input": {}, "schema_drift": [], "series": items}
@@ -152,6 +161,26 @@ class TrendsBasisTests(unittest.TestCase):
         self.assertTrue(any("renorm_basis_mismatch" in v for v in row["vetoes"]))
         # trajectory is the robust read — still emitted even when point levels are vetoed
         self.assertTrue(any(m["metric"] == "within_capture_trajectory" for m in row["metrics"]))
+
+
+class WaybackTests(unittest.TestCase):
+    def test_content_change_and_snapshot_growth(self) -> None:
+        a = wb("https://x.com/p", "2026-06-08T00:00:00Z", count=3, last_seen="2026-05-01T00:00:00Z", digest="AAA")
+        b = wb("https://x.com/p", "2026-06-15T00:00:00Z", count=5, last_seen="2026-06-10T00:00:00Z", digest="BBB")
+        row = only(sd.compare([a], [b])["comparisons"], "https://x.com/p")
+        sc = next(m for m in row["metrics"] if m["metric"] == "snapshot_count")
+        cd = next(m for m in row["metrics"] if m["metric"] == "content_digest")
+        ls = next(m for m in row["metrics"] if m["metric"] == "last_seen")
+        self.assertEqual(sc["delta"], 2)
+        self.assertTrue(cd["changed"])
+        self.assertTrue(ls["advanced"])
+
+    def test_lost_presence(self) -> None:
+        a = wb("https://x.com/p", "2026-06-08T00:00:00Z", count=2, last_seen="2026-05-01T00:00:00Z", digest="AAA")
+        b = {**wb("https://x.com/p", "2026-06-15T00:00:00Z", count=0, last_seen="", digest=""), "snapshots": []}
+        row = only(sd.compare([a], [b])["comparisons"], "https://x.com/p")
+        ap = next(m for m in row["metrics"] if m["metric"] == "archive_presence")
+        self.assertEqual(ap["movement"], "lost")
 
 
 class NoScoreTests(unittest.TestCase):

@@ -71,8 +71,8 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
   independently, run-level batch-outage veto), trends (basis-aware via `peak_date`); fallback names the gap.
   Subsumes the separate **Trustpilot velocity + integrity comparator** item (it's the trustpilot branch).
   De-risked by [probe](../experiments/2026-06-15-signal-delta-trustpilot/FINDINGS.md); committed the
-  `store/<domain>/signals/` path convention + added `trends.py peak_date` alongside. **Next:** a `wayback`
-  branch (thin over `wayback.py diff`).
+  `store/<domain>/signals/` path convention + added `trends.py peak_date` alongside. The `wayback` branch
+  (per-URL presence/snapshot/content-digest over two tenure captures) is now in too.
 
 - **Wayback content fetch + diff** `[done]`
   `wayback.py diff <url>` now selects two exact-URL CDX snapshots, fetches raw `id_` replay content,
