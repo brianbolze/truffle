@@ -138,6 +138,10 @@ def summarize_series(item: dict[str, str], series: Any, captured_at: str) -> dic
     """
     points = [{"date": idx.strftime("%Y-%m-%d"), "value": int(v)} for idx, v in series.items()]
     peak = float(series.max())
+    # peak_date is the per-keyword normalization ANCHOR: pytrends pins this keyword's 0-100 scale to its
+    # own peak day, so a point-level value is only comparable across captures that share that anchor. The
+    # comparator (signal_delta.py) reads peak_date to veto a renorm-basis mismatch between two captures.
+    peak_date = series.idxmax().strftime("%Y-%m-%d") if peak > 0 else None
     mean = float(series.mean())
     mean_to_peak = round(mean / peak, 3) if peak > 0 else None
 
@@ -156,7 +160,8 @@ def summarize_series(item: dict[str, str], series: Any, captured_at: str) -> dic
         **item,
         "captured_at": captured_at,
         "ok": True,
-        "peak": round(peak, 2),
+        "peak_value": round(peak, 2),  # the keyword's peak 0-100 in-window (was `peak`); pairs with peak_date
+        "peak_date": peak_date,  # the per-keyword normalization anchor — signal_delta's basis-aware veto reads it
         "mean": round(mean, 2),
         "mean_to_peak_ratio": mean_to_peak,  # tier proxy: ~sustained (high) vs spiky (low)
         "delta_7d_vs_prior_7d_pct": delta_pct,  # within-keyword momentum; null if <14 points or prior==0

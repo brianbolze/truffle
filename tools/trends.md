@@ -119,7 +119,8 @@ key is omitted rather than set to zero). `schema_drift` stays `[]` for envelope 
       "label": "Hone Health", "query": "Hone Health",
       "captured_at": "2026-06-08T17:51:13Z",   // THIS keyword's fetch time (run start + sleeps/retries)
       "ok": true,
-      "peak": 100.0, "mean": 49.31,
+      "peak_value": 100.0, "peak_date": "2026-05-19",  // peak 0-100 + its date (the normalization anchor)
+      "mean": 49.31,
       "mean_to_peak_ratio": 0.493,             // tier proxy: sustained (high) vs spiky (low)
       "delta_7d_vs_prior_7d_pct": 7.6,         // within-keyword momentum; null if <14 points or prior==0
       "trajectory": "flat",                    // rising | flat | fading | unknown
@@ -131,9 +132,12 @@ key is omitted rather than set to zero). `schema_drift` stays `[]` for envelope 
 }
 ```
 
-`points` is the raw signal; `peak`/`mean`/`mean_to_peak_ratio`/`delta`/`trajectory` are all derived
-from it — a consumer that wants a different window can recompute from `points`. Tiers and
-cross-keyword rankings are **not** emitted: those are cohort-relative judgments for the consumer.
+`points` is the raw signal; `peak_value`/`peak_date`/`mean`/`mean_to_peak_ratio`/`delta`/`trajectory`
+are all derived from it — a consumer that wants a different window can recompute from `points`.
+`peak_date` is the per-keyword normalization anchor (pytrends pins the 0-100 scale to the peak day), so
+a cross-capture point-level delta is only comparable when both captures share it — the comparator
+(`signal_delta.py`) reads it to veto a renorm-basis mismatch. Tiers and cross-keyword rankings are
+**not** emitted: those are cohort-relative judgments for the consumer.
 
 ## Exit codes
 
