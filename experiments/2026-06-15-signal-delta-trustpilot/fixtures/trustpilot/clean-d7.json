@@ -1,0 +1,34 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T12:00:00Z",
+  "ok": true,
+  "input": { "slug": "honehealth.com", "wait_ms": 12000 },
+  "schema_drift": [],
+  "cost": { "firecrawl_credits": 1 },
+  "trustpilot_url": "https://www.trustpilot.com/review/honehealth.com",
+  "profile_state": "active",
+  "review_count": 11380,
+  "reviews_last_12m": 3050,
+  "trust_score": 4.6,
+  "rating_label": "Excellent",
+  "rating_distribution": { "5": "88%", "4": "6%", "3": "2%", "2": "1%", "1": "3%" },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": false,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 42
+  },
+  "people_also_looked_at": [],
+  "recent_reviews": [
+    { "review_id": "b1", "rating": 5, "title": "Excellent care", "body": "My provider answered every question and the labs were quick.", "date_of_experience": "June 13, 2026", "reviewer_name": "tanya", "reviewer_country": "US" },
+    { "review_id": "b2", "rating": 5, "title": "Happy customer", "body": "Smooth onboarding and clear pricing, no surprises.", "date_of_experience": "June 12, 2026", "reviewer_name": "phil", "reviewer_country": "US" },
+    { "review_id": "b3", "rating": 4, "title": "Good", "body": "Shipping was a touch slow but the protocol is working.", "date_of_experience": "June 10, 2026", "reviewer_name": "omar", "reviewer_country": "US" }
+  ],
+  "recent_reviews_sample_size": 3,
+  "capture": { "via": "firecrawl-stealth", "status_code": 200, "fetch_seconds": 29.8, "markdown_chars": 41710 }
+}

@@ -1,0 +1,33 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-08T12:05:00Z",
+  "ok": true,
+  "input": { "slug": "getpetermd.com", "wait_ms": 12000 },
+  "schema_drift": [],
+  "cost": { "firecrawl_credits": 1 },
+  "trustpilot_url": "https://www.trustpilot.com/review/getpetermd.com",
+  "profile_state": "active",
+  "review_count": 850,
+  "reviews_last_12m": 820,
+  "trust_score": 4.1,
+  "rating_label": "Great",
+  "rating_distribution": { "5": "76%", "4": "9%", "3": "3%", "2": "2%", "1": "10%" },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 12
+  },
+  "people_also_looked_at": [],
+  "recent_reviews": [
+    { "review_id": "p1", "rating": 5, "title": "Quick", "body": "Easy to get my prescription renewed online.", "date_of_experience": "June 6, 2026", "reviewer_name": "lena", "reviewer_country": "US" },
+    { "review_id": "p2", "rating": 1, "title": "Slow support", "body": "Took a week to hear back about a billing issue.", "date_of_experience": "June 2, 2026", "reviewer_name": "rob", "reviewer_country": "US" }
+  ],
+  "recent_reviews_sample_size": 2,
+  "capture": { "via": "firecrawl-stealth", "status_code": 200, "fetch_seconds": 30.5, "markdown_chars": 22890 }
+}

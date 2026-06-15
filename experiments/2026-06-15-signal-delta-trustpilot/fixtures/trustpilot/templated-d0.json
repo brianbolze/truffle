@@ -1,0 +1,33 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-08T12:10:00Z",
+  "ok": true,
+  "input": { "slug": "boostrx-co", "wait_ms": 12000 },
+  "schema_drift": [],
+  "cost": { "firecrawl_credits": 1 },
+  "trustpilot_url": "https://www.trustpilot.com/review/boostrx-co",
+  "profile_state": "active",
+  "review_count": 200,
+  "reviews_last_12m": 200,
+  "trust_score": 4.3,
+  "rating_label": "Excellent",
+  "rating_distribution": { "5": "91%", "4": "4%", "3": "1%", "2": "1%", "1": "3%" },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": false,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 30
+  },
+  "people_also_looked_at": [],
+  "recent_reviews": [
+    { "review_id": "t01", "rating": 5, "title": "Good", "body": "Reliable service and fast shipping, very happy.", "date_of_experience": "June 6, 2026", "reviewer_name": "amy", "reviewer_country": "US" },
+    { "review_id": "t02", "rating": 4, "title": "Decent", "body": "Worked for me, would use again.", "date_of_experience": "June 5, 2026", "reviewer_name": "greg", "reviewer_country": "US" }
+  ],
+  "recent_reviews_sample_size": 2,
+  "capture": { "via": "firecrawl-stealth", "status_code": 200, "fetch_seconds": 27.7, "markdown_chars": 15400 }
+}

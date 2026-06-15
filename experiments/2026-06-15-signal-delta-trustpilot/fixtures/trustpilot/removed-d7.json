@@ -1,0 +1,30 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T12:05:00Z",
+  "ok": true,
+  "input": { "slug": "getpetermd.com", "wait_ms": 12000 },
+  "schema_drift": [],
+  "cost": { "firecrawl_credits": 1 },
+  "trustpilot_url": "https://www.trustpilot.com/review/getpetermd.com",
+  "profile_state": "removed",
+  "review_count": null,
+  "reviews_last_12m": null,
+  "trust_score": null,
+  "rating_label": null,
+  "rating_distribution": null,
+  "rating_distribution_source": null,
+  "profile_flags": {
+    "claimed": false,
+    "paid_profile": false,
+    "asks_for_reviews": null,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": null
+  },
+  "people_also_looked_at": [],
+  "recent_reviews": [],
+  "recent_reviews_sample_size": 0,
+  "capture": { "via": "firecrawl-stealth", "status_code": 200, "fetch_seconds": 28.1, "markdown_chars": 6120 }
+}
