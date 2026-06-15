@@ -62,11 +62,14 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
 
 ## Graduated
 
-- **Signals-store writer — `persist()` + batch runner + importer** `[done]`
+- **Signals-store writer — `capture` front door + `persist()` + batch runner + importer** `[done]`
   `scripts/signals.py` writes capture envelopes to the path convention — `persist`: envelope →
-  `store/<domain>/signals/<source_type>[/<page-slug>]/<captured_at>.json` — with **run** (batch-invoke
-  captures across a panel, interpreter-pinned, persist each) and **import** (consolidate scattered
-  envelopes) as thin verbs over it. Graduates the *automated writer* exactly as the [traction approach](../_design/2026-06-15-traction-approach.md)
+  `store/<domain>/signals/<source_type>[/<page-slug>]/<captured_at>.json`, folding the key through
+  `store.resolve()` so an alias capture (trustpilot's tryeden.com) lands under the canonical company
+  (eden-health), never an orphan dir — with **capture** (one-company ergonomic front door: resolves
+  the company, drives the default tool set, alias-aware subject reuse, confirms paid calls), **run**
+  (batch-invoke captures across a panel, interpreter-pinned, persist each), and **import** (consolidate
+  scattered envelopes) as verbs over it. Graduates the *automated writer* exactly as the [traction approach](../_design/2026-06-15-traction-approach.md)
   scoped it (automated writer + second consumer now both exist); the salvage + velocity dogfoods earned it.
   Folds in the wayback page-slug slot + slash-variant dedup. Schema-as-contract / lint / SQLite lens stay
   deferred — every consumer still eats raw envelopes, not cards. (Lives in `scripts/`, not `tools/`: it

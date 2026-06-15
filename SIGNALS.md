@@ -5,7 +5,7 @@
 **Three things to know:**
 
 - **It's evidence, never a score.** Every output is a per-axis delta bound to one source — "+65 reviews/week," "AI Overview dropped for this query," "Form-D filed Apr 8." There's no blended number and no "formidable?" verdict — that call stays with you.
-- **The loop is capture → persist → diff.** Three small tools, one storage path. You'll mostly use the [commands below](#how-to-run-it).
+- **The loop is capture → persist → diff.** A few small tools, one storage path. You'll mostly use the [commands below](#how-to-run-it).
 - **It's deliberately small.** A handful of sources (some free, some paid); everything richer — labeled cards, cohort maps, verdicts — is [deferred](#whats-deferred) until something actually needs it.
 
 ## How it works
@@ -35,17 +35,24 @@
 
 ## How to run it
 
-**Capture one company and store it** — pipe a tool straight into the writer:
+**Capture one company** — name it once; `capture` resolves the company, drives a default tool set (Trustpilot + Wayback), and stores each under the canonical domain. It **asks if you omit the name**, and **confirms before any paid call**:
+
+```bash
+python3 scripts/signals.py capture eden.health                  # default set; confirms before the paid trustpilot call
+python3 scripts/signals.py capture                              # no name → asks "Company (domain / name)?"
+python3 scripts/signals.py capture eden.health --tools wayback  # pick the tools (--yes skips the paid confirm)
+```
+
+Aliases just work: Eden's Trustpilot profile lives under `tryeden.com`, and `capture` reuses the subject that last succeeded — landing the signal under `eden-health`, never an orphan `tryeden-com/`. (Trends/SERP are keyword/category-grain, so they stay on the pipe below.)
+
+**Lower-level: pipe one tool into the writer** — for a single source, or a keyword tool `capture` doesn't drive:
 
 ```bash
 python3 tools/trustpilot.py hims.com | python3 scripts/signals.py persist -
-```
-
-Keyword sources (Trends) can't derive the domain — pass it:
-
-```bash
 python3 tools/trends.py "Hims::hims" | python3 scripts/signals.py persist - --domain hims.com
 ```
+
+The writer folds aliases to the canonical domain here too — a `tryeden.com` capture still lands under `eden-health`.
 
 **See what moved** — two captures of one source (or two *directories* to diff whole runs):
 
@@ -83,7 +90,7 @@ Built only when a consumer pulls it — never on a schedule:
 - **Labeled "cards"** — evidence labels + good/bad-for-whom polarity. *Today the store holds raw envelopes only.*
 - **Cohort maps** — category crowdedness / dominance / hotness. Its own design frame.
 - **A "formidable?" verdict** — viewer-specific, kept *outside* the shared store by design.
-- **Smaller items** — a SQLite query lens, whole-domain Wayback diffing, a one-command verb. On the [backlog](tools/BACKLOG.md).
+- **Smaller items** — a SQLite query lens, whole-domain Wayback diffing. On the [backlog](tools/BACKLOG.md).
 
 ---
 
