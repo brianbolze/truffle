@@ -41,9 +41,10 @@ A reusable visual-quality module that, given clean captured screenshots of a sit
 
 ## 6. Primary Use Cases
 
-- **Brief enrichment** — a cited visual/brand impression for the human-facing handoff. *Needs only the evidence layer.*
+- **Brief enrichment** — a cited visual/brand impression **+ a curated specimen strip** (a few tiles selected via the cards) for the human-facing handoff. *Needs only the evidence layer.*
 - **Calibration library** — accumulated strong/weak exemplars for tuning future judgment and onboarding new raters.
 - **Competitor visual reads at scale** — consistent look-overs across a cohort without manual re-derivation.
+- **Execution-quality signal for formidability reads** — the evidence feeds a *consumer-side* judgment of company formidability ("does this company execute well?") as one signal alongside funding, SEO presence, catalog breadth, etc. The engine supplies the signal; the project makes the call (consistent with Non-Goals §11). Same downstream consumer as the adaptive-capture-depth frame.
 - **(Future) quality scoring** — a tunable rubric score, once calibration is trusted.
 - **(Future, consumer-owned) decision gates** — e.g. depth-gating a capture. The depth-gate never needed a *score* — it's a Judgment of its own ("how much does this company matter to me"), framed separately in the forthcoming adaptive-capture-depth frame. This layer *feeds* that gate one cheap signal (a homepage-glance "real company or template slop?"); it doesn't own it. Don't build scoring to serve it.
 
@@ -114,7 +115,7 @@ The first graduated module is narrow on purpose: **the evidence layer only.**
 1. **Can the scoring offset actually be killed**, or is "evidence + human-priced verdict" the honest permanent shape? (The decisive question.) Before chasing the offset, name the consumer who needs a *number* — both consumers today (human judgment via the brief; relative triage, which already orders well) are served without one.
 2. **Which lever first** — deterministic caps, anchored comparison, or cue-detection + deterministic scoring? They're not mutually exclusive; what's the cheapest decisive test?
 3. **Where does the evidence layer live** — inside `/research-company` capture, a sibling preset, or an offline helper over cached artifacts?
-4. **What's the output contract** — pure cards, prose impression, both? What does the brief actually consume? (Leaning: the brief's creative-director consumer wants a cited prose *impression* he can judge in 5 seconds; the cards are the audit trail behind it, not the deliverable.)
+4. ~~**What's the output contract** — pure cards, prose impression, both?~~ **Resolved (shipped `b710aeb`):** the brief renders the prose **impression** (its primary deliverable) + a **curated specimen strip** in the Brand system tab — a few tiles selected *via* the cards (cards as the curation index; their one-line claims become captions). The raw card records stay the audit trail, never rendered.
 5. **How is calibration re-measured over time** as the ground-truth bar drifts (±1 re-look) and as cohorts change?
 6. **Does a single-rater taste bar generalize**, or does any reliable score stay personal to its rater?
 

@@ -22,7 +22,7 @@
 - **Describe the company, not the engine.** A profile records what the company *is* — never commentary about the schema itself. Observations about the contract (missing values, taxonomy gaps, capture-tooling quirks) go to [`BACKLOG.md`](BACKLOG.md), not into prose or comments. The one exception is the inline `# STRAIN:` note on a frontmatter line, which explains *that field's* value to a grep-consumer in a few words.
 - **Everything traces to the capture.** Fill only what the captured pages support; else `unverified_fields`, never a guess. Every fact — *especially* volatile ones (prices, counts, dates, "current X") — must point to a captured page: greppable in the markdown or legible in a screenshot. Can't point to where it came from? It doesn't go in. And don't invent a reason or date to reconcile two captures that disagree — report the discrepancy. The lone exception: a prior used purely to **resolve identity** (a ticker, the domain behind a named brand) may land *marked* on the `Enriched (model knowledge)` Provenance line — kept near-empty, never for what the company does, sells, or claims. *(Funding stage, headcount, revenue are rarely on a marketing site — leave them out; that's a deep-research job, not this one.)*
 - **Verbatim where the exact words are the data.** Quote, don't paraphrase, wherever the wording or number is itself the signal — prices and tiers, the company's own product and category names, quantified or regulated claims, proof points, guarantees, named certifications and partners (among others). A verbatim string can't survive the grep if it was invented, and it stops a prior leaking into a paraphrase. Paraphrase only connective prose.
-- **Use the screenshots.** The visual read (design maturity, imagery, tone) is yours to make and a text scraper can't. Write it in *Visual & brand impression*.
+- **Use the screenshots.** The visual read (design maturity, imagery, tone) is yours to make and a text scraper can't. Write it in *Visual & brand impression* — a lightweight read; when the `/visual-evidence` module is active, the blind, cited `visual.md` supersedes it (see [Tier-1 modules](#tier-1-modules-opt-in-separate-docs)).
 - **Reconcile across the whole site you captured.** The homepage is one input, not the answer. Apply this to every section, not just the first.
 - **Prominence is an observation, not a verdict.** Record what a site foregrounds — hero, repeated CTAs — as what they make *salient*; never infer flagship status, market position, or adoption from placement. Who leads a market is a consumer-layer call, not capture.
 - **Keep each body section tight** — a few sentences or bullets. Earn a section with evidence; omit it rather than pad with "N/A".
@@ -155,7 +155,7 @@ The bold lead-in is the load-bearing part — `rg '^- \*\*'` enumerates the item
 
 | Section | What goes here |
 |---|---|
-| **Visual & brand impression** | The screenshot-derived read: design maturity, imagery, motifs, overall feel. |
+| **Visual & brand impression** | The screenshot-derived read: design maturity, imagery, motifs, overall feel. *(Lightweight; superseded by `visual.md` when the [`/visual-evidence`](#tier-1-modules-opt-in-separate-docs) module is active.)* |
 | **Strategic read** | The "so what" — anything distinctive, surprising, or strategically relevant. |
 
 <details>
