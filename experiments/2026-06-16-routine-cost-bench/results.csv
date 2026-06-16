@@ -1,0 +1,7 @@
+variant,brand,slug,date,credits,minutes,tokens_in,tokens_out,tokens_cache_create,tokens_cache_read,notes
+E,niagenplus.com,niagenplus-com,2026-06-16,0,0.6,85879,6686,114100,667453,"warm, default freshness (0 calls)"
+A,altrx.com,altrx-com,2026-06-16,6,13.6,98996,79515,619018,8432760,"cold core, no modules (6 calls)"
+C,henrymeds-com,henrymeds-com,2026-06-16,0,12.7,86085,74683,245970,4118952,"visual-evidence, 0 Firecrawl credits (9 tool calls)"
+D,getopt.com,getopt-com,2026-06-16,8,15.9,86039,94114,284263,8465319,deepen-offerings (8 calls)
+F,niagenplus.com,niagenplus-com,2026-06-16,10,15.1,88418,39308,219827,4480041,warm forced full (10 calls)
+B,hellowisp.com,hellowisp-com,2026-06-16,24,43.1,92507,209434,1156832,25789355,cold full cohort+offerings+logos (24 calls)
