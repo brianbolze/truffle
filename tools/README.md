@@ -16,7 +16,7 @@ Early days — this dir will grow and the conventions will shift as we learn. Wh
 
 ## What's here
 
-Seven tools live; the last two deferred on purpose — see [`BACKLOG.md`](BACKLOG.md) for why:
+These capture tools are live; two more stay deferred on purpose — see [`BACKLOG.md`](BACKLOG.md) for why:
 
 | Tool | Source | Auth | Status |
 |---|---|---|---|

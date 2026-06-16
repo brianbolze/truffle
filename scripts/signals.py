@@ -3,7 +3,7 @@
 
 The capture tools (`tools/*.py`) print envelopes to stdout and never touch the store ("print, don't
 write"). This is the one place those envelopes LAND: `persist()` writes a capture verbatim to the path
-convention `store/<domain>/signals/<source_type>/<captured_at>.json`, so repeat captures accumulate where
+convention `store/<domain>/signals/<source_type>/…` (exact filename in `persist()`'s docstring), so repeat captures accumulate where
 `tools/signal_delta.py` can diff them. It lives in `scripts/` because writing the store is a scripts job,
 not a capture job.
 
