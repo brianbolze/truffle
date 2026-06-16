@@ -1,23 +1,73 @@
 # web-research
 
-A project-agnostic company-research engine: Firecrawl for company-site capture, shared source-signal tools for repeatable external evidence, Claude Max for reasoning, and a file-first store any project can read.
+**Fresh, cited company intelligence — captured once, then queried forever, by you or any agent.**
 
-> **Start here:** [`_design/2026-05-29-frame.md`](_design/2026-05-29-frame.md) — the Frame (goal, scope, principles, non-goals). Everything else serves that doc.
+Generic AI research forages the open web — paraphrased, undated, often bot-blocked — and discards it after every question. **web-research is a farm instead:** it captures a company's real pages *once* — verbatim, cited, dated — and keeps them. So every later answer is built from fresh primary sources, not reheated scraps.
 
-## Layout
+The payoff: ask *"how do a dozen telehealth brands price semaglutide?"* and get a complete, cited answer in one shot — the thing generic Claude + web search can't cheaply rebuild.
 
-```
-SCHEMA.md TAXONOMIES.md   # the store contract — what a capture writes
-QUERYING.md               # how to read the store back — consumer recipes
-SIGNALS.md                # the traction Signals layer — front door (capture → persist → diff, run commands, sources)
-modules/OFFERINGS.md modules/VISUAL.md   # opt-in module contracts — offerings.md (per-SKU depth) + visual.md (blind brand-evidence)
-TELEHEALTH.md             # the telehealth cohort pack — at root for now (see SCHEMA → Tier-1 modules)
-BACKLOG.md                # system-level weaknesses / ideas (capped, tagged, curated)
-_design/      # frame / vision docs (source of truth for intent)
-_archive/     # superseded docs
-experiments/  # throwaway probes to de-risk decisions before building
-scripts/      # engine utilities (querycheck.py — QUERYING.md drift self-test; store.py — resolve()/relations(); signals.py — the Signals-store writer (capture = one-company front door, alias-aware; persist an envelope to signals/<source_type>/; run = batch capture, import = consolidate); offeringscheck.py + cohortcheck.py + visualcheck.py — module-contract linters; tile.py + shoot.py — visual-evidence capture tiers (cached-screenshot crop + Playwright browser re-render); build_db.py — corpus-wide SQLite lens with cohort-gated views, --check-guarded; render.py + compare.py — CLIs over the present/ package, the human-facing lens: briefs, comparison sheets, corpus index; runcost.py — read-only corpus cost roll-up: Firecrawl capture credits (from the per-call manifests) + signal-tool spend, cut by verb/slug/date — for routine budgeting)
-tools/        # reusable source-signal capture + a comparator (SERP, Wayback, Trustpilot, Trends, Exa, SEC EDGAR); signal_delta.py diffs two captures of the same source into axis-specific deltas; no project judgment
-skills/       # company verbs — query-companies/ (read-only store router), research-company/ (capture + Firecrawl playbook), deepen-offerings/ (offerings-comprehensiveness preset), visual-evidence/ (blind brand-evidence, post-capture); global via ~/.claude/skills and ~/.agents/skills
-store/        # the shared company store (store/<domain-slug>/) — profile.md + module docs, plus signals/<source_type>/<captured_at>.json (append-only external captures)
-```
+<!-- TODO: hero demo GIF — /research-company producing a cited dossier (record with VHS) -->
+
+## What you get
+
+- **A cited dossier per company** — what it sells, how it's priced, who's behind it, its visual identity — drawn from the company's *own* pages, every claim traceable to a captured source.
+- **A queryable store** — ask across one company or a whole cohort; answers come from local files, not a fresh crawl, so they're complete and ~free to re-ask.
+- **Human briefs** — render any company into a one-page HTML brief that wears its own captured brand.
+
+## How it works
+
+web-research is a set of **Claude Code skills** plus a **file store**. You drive it by typing slash-commands *inside Claude Code* (CLI, desktop, or IDE) — not in a plain terminal. Two verbs do most of the work:
+
+| Command | What it does |
+|---|---|
+| `/research-company <domain>` | Capture a company into the store (spends a Firecrawl credit; a warm company is ~free) |
+| `/query-companies <question>` | Answer from the store — cited, no re-scraping |
+
+Captured once, a company stays warm for every future question, in any project. The only metered cost is the initial capture; reasoning rides your Claude subscription.
+
+## Quickstart
+
+**Setup (one-time):**
+
+1. **Clone** this repo.
+2. **Point Claude Code at it** — add to `~/.claude/settings.json`:
+   ```json
+   {
+     "env": {
+       "WEB_RESEARCH_HOME": "/absolute/path/to/Web Research",
+       "FIRECRAWL_API_KEY": "fc-..."
+     }
+   }
+   ```
+   (Or `cp .env.example .env` and put the key there. Grab a key at [firecrawl.dev](https://firecrawl.dev).)
+3. **Install deps:** `pip install -r requirements.txt` (Python 3.11). For the visual layer: `playwright install chromium`.
+4. **Link the verbs** so Claude Code sees them:
+   ```bash
+   export WEB_RESEARCH_HOME="/absolute/path/to/Web Research"
+   mkdir -p ~/.claude/skills
+   for s in research-company query-companies deepen-offerings visual-evidence; do
+     ln -s "$WEB_RESEARCH_HOME/skills/$s" ~/.claude/skills/"$s"
+   done
+   ```
+
+**Your first capture:**
+
+5. In Claude Code, type **`/research-company stripe.com`** → it maps the site, reads the key pages, and writes a cited dossier to `store/stripe-com/profile.md`.
+6. Ask about it: **`/query-companies what does Stripe charge?`** → answered from the store, cited, no new web hit.
+7. *(Optional)* Render a brief: `python scripts/render.py stripe.com` → `_out/briefs/stripe-com.html`.
+
+## Find your way around
+
+| You want to… | Start here |
+|---|---|
+| **Use it** — capture & query companies | the two verbs above |
+| **Read the store** — query recipes | [`QUERYING.md`](QUERYING.md) |
+| **Capture external signals** — SERP, funding, reviews over time | [`SIGNALS.md`](SIGNALS.md) |
+| **Understand why it exists** — the design | [`_design/2026-05-29-frame.md`](_design/2026-05-29-frame.md) |
+| **Build on the engine** — contracts, rules, agent routing | [`SCHEMA.md`](SCHEMA.md) · [`MAINTAINING.md`](MAINTAINING.md) · [`CLAUDE.md`](CLAUDE.md) |
+
+*New to the vocabulary (cohort, signals, warm, module)? A short glossary is coming next.*
+
+## Status
+
+A working tool, used daily, now being smoothed for a handful of trusted users — open-sourcing in progress. macOS-first today (the visual layer shells out to `sips` + ImageMagick). Licensed under [Apache-2.0](LICENSE).
