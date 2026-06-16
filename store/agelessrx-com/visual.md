@@ -1,14 +1,14 @@
 ---
 schema_version: "1.0"
 domain: agelessrx.com
-captured_at: 2026-06-14
+captured_at: 2026-06-16
 source_capture: 2026-05-31
 qa_status: clean
 ---
 
 ## Visual & brand impression
 
-A controlled wellness-brand system: forest-green and ice-blue fields with a single amber CTA, held from hero to footer [color_01][color_03], over a serif-headline / sans-body hierarchy that reads confidently top-down [typography_01][typography_02]. The standout is an owned product-render language — amber bottles, teal caps, uniform angle and shadow on matching tiles [iconography_01] — backed by disciplined components: a clean three-up product grid, mirrored explainer cards, and in-palette custom charts [layout_01][layout_03][iconography_05]. It frays where third-party assets intrude: partner packshots break the render grid [iconography_02], and stock lab photos plus a grayscale logo wall sit off-system [color_02][color_04]. Smaller weaknesses are low-contrast type over photos and a broken comparison table [typography_04][layout_04]. Competent and coherent, let down at the edges.
+A disciplined wellness system built on two tokens — a dominant deep teal and an amber reserved strictly for CTAs, held page to page over a controlled white / pale-blue / teal section structure [color_01][color_02][color_03]. Its strongest asset is owned craft: a uniform amber-bottle / teal-cap product-render language that extends from catalog to product hero [iconography_03], and genuinely custom, on-brand data illustrations — a Now-vs-Future healthspan bar chart, a biological-age scatter, a 70% donut, a BioAge timeline [iconography_05][iconography_06][iconography_07][iconography_08] — over a confident serif-headline hierarchy [typography_01][typography_02]. It frays at the seams: third-party packshots break the render grid [iconography_04], off-palette pink / magenta / lavender intrusions creep in [color_04][color_06][color_09], stock photos and library icons read generic [color_05][iconography_01], a core comparison table renders broken [layout_11], and the partner-logo strip is un-normalized [iconography_09]. Competent and coherent, let down at the edges.
 
 ## Evidence cards
 
@@ -16,208 +16,421 @@ A controlled wellness-brand system: forest-green and ice-blue fields with a sing
 - id: typography_01
   family: typography_hierarchy
   polarity: strong
-  page_or_region: Homepage hero headline
+  page_or_region: homepage hero
   tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-00-y00000.png
-  claim: The hero pairs a high-contrast serif headline with a roman/italic switch on 'more' for emphasis, set well above a small sans subhead, giving an immediate three-step read.
+  claim: "The hero headline is a large serif with an italic 'more' set against a dark teal band, sitting clearly above one small sans-serif subtitle line — a confident, legible two-level entry."
   visible_tells:
-  - Serif headline 'What would you do with more healthy years?' with 'more' in italic
-  - subhead in a much smaller sans weight directly under it
-  - clear size jump from headline to subhead to amber pill CTA
+  - "Serif headline 'What would you do with more healthy years?' with 'more' in italic, set noticeably larger than all surrounding type"
+  - "Single small sans-serif subtitle sits directly below, establishing a clean two-level hierarchy"
   confidence: high
 - id: typography_02
   family: typography_hierarchy
   polarity: strong
-  page_or_region: BioAge test hero
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/bioage_test/tile-00-y00000.png
-  claim: An all-caps tracked eyebrow ('BIOAGE TESTS') sits over a large serif headline with an italic 'really?', then a centered sans paragraph, producing a confident, legible four-level hierarchy on a dark ground.
+  page_or_region: homepage — section headings + 3-up feature subheads
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-02-y02440.png
+  claim: "Section titles ('Slowing aging has never been easier', 'Real people, real results') are a consistent large serif sitting above bold sans-serif feature subheads and lighter body, sustaining a legible three-level hierarchy down the scroll."
   visible_tells:
-  - Tracked all-caps teal eyebrow above the headline
-  - serif headline 'How old are you really?' with italicized final word
-  - white body copy stays legible over the flat dark-green field
+  - "Serif h2 headings are clearly larger and a different face than the sans-serif body below"
+  - "Feature subheads ('Simple online assessments', 'Fast, free shipping') sit at a distinct mid-weight level between title and description"
   confidence: high
-  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-00-y00000.png
 - id: typography_03
   family: typography_hierarchy
-  polarity: mixed
-  page_or_region: Homepage stats row
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-01-y01220.png
-  claim: The three big teal stats ('82.7%', '30+', '5,200+') establish clear emphasis, but their captions sit in tiny grey sans and the dense footnote beneath drops to a hard-to-read micro size.
+  polarity: strong
+  page_or_region: bioage_test — page header (eyebrow / headline / subhead)
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/bioage_test/tile-00-y00000.png
+  claim: "The header runs a small spaced all-caps eyebrow ('BIOAGE TESTS'), a large serif headline mixing roman and italic ('How old are you really?'), and a sans subhead — a practiced three-tier entry pattern."
   visible_tells:
-  - Large teal numerals far outweigh their grey caption lines
-  - multi-line footnote under the stats set in very small grey type
-  confidence: medium
+  - "All-caps spaced eyebrow 'BIOAGE TESTS' sits a full size-level below the headline"
+  - "Italic 'really?' creates emphasis within the headline without a typeface change"
+  confidence: high
 - id: typography_04
   family: typography_hierarchy
-  polarity: poor
-  page_or_region: About hero body copy
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-00-y00000.png
-  claim: Below the serif hero headline the mission paragraph is set in tiny low-contrast type over a dark foliage photo, rendering it close to illegible at this scale; the lower 'Science has given us a new perspective' paragraph repeats the problem over a blurred photo.
+  polarity: strong
+  page_or_region: metformin — product detail info card
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/metformin/tile-00-y00000.png
+  claim: "The info card stacks four readable levels in a compact space — display-serif product name 'Metformin', a small 'Pill' badge, sans body copy, and a price with the numeral '$25' set larger than the 'Starting at' label."
   visible_tells:
-  - Multi-line paragraph under 'We believe aging is a puzzle that can be solved' is very small and dim
-  - lower paragraph set in tiny low-contrast white type over a soft blurred photo rather than a solid field
-  confidence: medium
-  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/bioage_test/tile-00-y00000.png
+  - "Product name at display serif size, small pill badge below, body paragraph in small sans, price with bold larger numeral — four distinct levels"
+  - "Price numeral '$25' is visually larger than the surrounding 'Starting at' label"
+  confidence: high
+  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-00-y00000.png
 - id: typography_05
   family: typography_hierarchy
-  polarity: poor
-  page_or_region: About 'Designing a future' timeline overlay labels
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-01-y01220.png
-  claim: The 'Now' vs 'Future' timeline bars carry tiny inline labels ('Well / Transition / Sick', age ranges) crammed into colored segments, where the type is too small to scan and competes with the body paragraph beside it.
+  polarity: mixed
+  page_or_region: treatments — product card grid titles vs body
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-00-y00000.png
+  claim: "Product card titles are legible but only modestly larger than their description copy, and 'Learn More' links carry the same weight as body text, so the card's levels stack loosely rather than crisply."
   visible_tells:
-  - Micro labels inside the two horizontal gradient bars
-  - age annotations ('~80 years', '100+ years') in faint small type at the bar ends
+  - "Card titles ('NAD+ Injection', 'Women's Hormone Care') are only slightly larger than the 2-3 line description below, with little weight contrast"
+  - "'Learn More' links read at the same weight as body copy, adding an undifferentiated level"
+  confidence: high
+  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/metformin/tile-00-y00000.png
+- id: typography_06
+  family: typography_hierarchy
+  polarity: mixed
+  page_or_region: about — 'Your genes are not your destiny' section
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-03-y03660.png
+  claim: "This section leans on weight alone as its only hierarchy lever — bolded inline words ('Lifespan', 'Healthspan') inside body copy, with the heading and explanatory paragraph at roughly the same size."
+  visible_tells:
+  - "'Lifespan' and 'Healthspan' are bolded inline without any size change, reading as emphasis rather than a true level"
+  - "Section head and the paragraph below share roughly the same size, separated only by weight"
+  confidence: medium
+- id: typography_07
+  family: typography_hierarchy
+  polarity: mixed
+  page_or_region: metformin — safety-information block
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/metformin/tile-05-y06100.png
+  claim: "The dense safety block uses bolded inline labels ('Most common Metformin side effects', 'Note:') and same-size bullet lists as its only structure, giving the section a flat, document-like density."
+  visible_tells:
+  - "Bolded inline lead-ins sit within running paragraphs with no size distinction from body text"
+  - "Side-effect bullet lists share the body type size, leaving the long block visually dense"
+  confidence: high
+- id: typography_08
+  family: typography_hierarchy
+  polarity: poor
+  page_or_region: about — 'Letter from our co-founder'
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-02-y02440.png
+  claim: "The founder letter is a wall of near-uniform body text under one heading, with a single bolded mission sentence as the only internal break — minimal scannable structure for its length."
+  visible_tells:
+  - "Heading 'Letter from our co-founder' sits above paragraphs that are all the same small body size"
+  - "Only one bolded sentence mid-block; no subheads, pull quotes, or size breaks to skim by"
+  confidence: high
+- id: typography_09
+  family: typography_hierarchy
+  polarity: poor
+  page_or_region: homepage — footer column headers vs links
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-03-y03024.png
+  claim: "Footer column headers ('Treatments', 'Product Science', 'Learn', 'Contact') are only marginally heavier than the teal links beneath them, with no spacing or rule to reinforce the column structure — parseable but barely."
+  visible_tells:
+  - "White headers sit just slightly heavier than the teal link text below, with negligible size difference"
+  - "No divider, rule, or extra spacing separates header from link list beyond the small weight shift"
   confidence: medium
 - id: layout_01
   family: layout_composition_components
   polarity: strong
-  page_or_region: Treatments catalog grid (top of listing)
+  page_or_region: treatments — 3-column product card grid
   tile_path: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-00-y00000.png
-  claim: The treatments listing runs a disciplined three-column product-card grid where every card shares the same pale-blue image panel, white text well, title-description-'Learn More' stack, and gutter, producing clean horizontal and vertical alignment across rows.
+  claim: "The 3-column product grid holds consistent internal structure — image zone, title, body, and 'Learn More' align reliably across cards with uniform borders and rounded corners."
   visible_tells:
-  - Three columns of equal-width cards with identical image-panel top and matching title baselines (NAD+ Injection / Women's Hormone Care / Microdosing GLP-1) in row one
-  - consistent gutter spacing and a left filter rail aligned to the same top edge as the first card row
+  - "Top-row cards (NAD+ Injection, Women's Hormone Care, Microdosing GLP-1) share image height, title position, body start-point, and CTA placement"
+  - "Card borders and corner radius are uniform across the grid"
   confidence: high
 - id: layout_02
   family: layout_composition_components
-  polarity: strong
-  page_or_region: Global footer (repeated across pages)
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-03-y03024.png
-  claim: The dark four-column footer (Treatments / Product Science / Learn / Contact) is rendered identically across homepage, about, and bioage pages with consistent column alignment, link spacing, and a tidy bottom legal row.
+  polarity: mixed
+  page_or_region: treatments — promotional card injected mid-grid
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-00-y00000.png
+  claim: "A dark-teal 'Not sure what product is right for you?' CTA card occupies the center cell of row 2, flanked by standard product cards, and runs taller than its neighbors — an uneven break in the otherwise uniform grid."
   visible_tells:
-  - Four evenly spaced heading columns with left-aligned link lists and matching baseline grid
-  - identical copyright row, social icon set, and legal disclaimer block repeated verbatim on multiple tiles
+  - "Dark teal card sits in the exact center cell of row 2, between Sermorelin (left) and PT-141 (right)"
+  - "Its longer copy and 'Get started' button make it taller than the flanking product cards, leaving the row uneven"
   confidence: high
-  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-06-y06536.png
 - id: layout_03
   family: layout_composition_components
   polarity: strong
-  page_or_region: BioAge — 'Methylation vs Phenotypic' paired cards
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/bioage_test/tile-03-y02871.png
-  claim: Two side-by-side explainer cards mirror each other exactly — image cap, centered heading, and a bulleted list — set against a dark-green band so the comparison reads as a deliberate, balanced pair.
+  page_or_region: treatments — left filter sidebar + main grid
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-00-y00000.png
+  claim: "A clean two-column document structure pairs a narrow left filter rail with the wide product grid; the 'By Need' and 'By Treatment Type' checkbox lists are consistently sized and spaced, and the rail width holds across the tile."
   visible_tells:
-  - Both cards share identical width, rounded corners, image-header height, and bullet indentation
-  - headings 'How Methylation works' and 'How Phenotypic age works' sit at the same baseline
+  - "Filter checkboxes use identical label sizing and line spacing across both filter groups"
+  - "Left-column width stays constant relative to the grid down the full tile"
   confidence: high
 - id: layout_04
   family: layout_composition_components
-  polarity: poor
-  page_or_region: BioAge — 'Which BioAge test is right for you?' comparison table
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/bioage_test/tile-01-y01220.png
-  claim: The comparison table's Accuracy, Emailed Results, Portal Access, and Level of Detail rows render as broken-image placeholders (empty boxes and overlapping garbled fragments) instead of the intended rating glyphs, leaving several cells visually unresolved.
+  polarity: strong
+  page_or_region: homepage — 3-column value-prop strip
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-02-y02440.png
+  claim: "The three-column icon + heading + body strip ('Simple online assessments / Fast, free shipping / Ongoing support') is evenly spaced with equal column widths, matched icon sizing, and centered alignment — one of the cleaner sections on the site."
   visible_tells:
-  - Tiny broken-image icons with garbled 'stista' alt-text overlaps in the Accuracy and Level of Detail rows
-  - empty bordered placeholder squares in the Emailed Results and Portal Access cells across all three columns
-  confidence: medium
+  - "Icons sit at identical vertical positions within each of the three columns"
+  - "Body text is centered and each column terminates at roughly the same depth"
+  confidence: high
 - id: layout_05
   family: layout_composition_components
-  polarity: poor
-  page_or_region: Treatments grid — cross-row card-height inconsistency
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-03-y03660.png
-  claim: Within the catalog, cards in the same row settle at unequal heights because descriptions vary widely in length, so neighboring white wells end at different baselines and leave ragged bottom edges down the grid.
+  polarity: mixed
+  page_or_region: homepage — testimonials row ('Real people, real results')
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-02-y02440.png
+  claim: "The three testimonial columns are structurally consistent but the right quote ('Jeff') is far shorter than the others, leaving a visible vertical gap with no card fill or border to equalize the columns."
   visible_tells:
-  - Glucose Biosensors card body runs many lines while the Glucose Control and Glutathione Nasal Spray cards beside it end higher
-  - misaligned 'Learn More' link positions and uneven white-space gaps below shorter cards in the row
+  - "Left and center columns carry multi-sentence quotes; the right column is a single short sentence"
+  - "No card background or border is used to balance the unequal column heights"
+  confidence: high
+- id: layout_06
+  family: layout_composition_components
+  polarity: strong
+  page_or_region: homepage — hero composition
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-00-y00000.png
+  claim: "The hero is tightly composed on one center axis: headline, one-line subhead, single amber CTA, a row of four equal category cards, and a Trustpilot badge — clear top-to-bottom order with no clutter."
+  visible_tells:
+  - "Four category cards (Live healthier longer, Manage weight, Support heart health, Boost energy) sit in one even row, equal widths, matched rounded crop"
+  - "CTA, headline, and subhead are all center-aligned on the same axis"
+  confidence: high
+- id: layout_07
+  family: layout_composition_components
+  polarity: mixed
+  page_or_region: homepage — stat row ('Treatments you can feel, backed by science')
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-01-y01220.png
+  claim: "The stat split (82.7% / 30+ / 5,200+ text block left, product photo right) crams stats, body, and a fine-print disclaimer into a dense left column while the right image side sits in generous empty space — an unbalanced split."
+  visible_tells:
+  - "Stats, body paragraph, and asterisked disclaimer stack tightly in the left half with little vertical breathing room"
+  - "Right side is a single product image with large empty space above and below it"
   confidence: medium
+- id: layout_08
+  family: layout_composition_components
+  polarity: strong
+  page_or_region: footer — consistent across all captured pages
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-03-y03024.png
+  claim: "The four-column footer (Treatments / Product Science / Learn / Contact) is identically structured and column-aligned across every page captured — a reliable shared component with no collisions or mis-stacking."
+  visible_tells:
+  - "Column headers and link lists hold the same x-positions across homepage, about, and metformin footer tiles"
+  - "Social icons, address, and legal row keep an identical layout in every captured footer"
+  confidence: high
+  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-06-y06536.png
+- id: layout_09
+  family: layout_composition_components
+  polarity: strong
+  page_or_region: metformin — product hero split layout
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/metformin/tile-00-y00000.png
+  claim: "The product hero is a clean 50/50 split — oversized bottle photo left, structured info card right — with the card's pill badge, price, compare-aside callout, and full-width CTA each well separated by padding."
+  visible_tells:
+  - "Right card holds clearly delineated tiers (name, pill badge, description, price, compare callout box, CTA) with visible padding between each"
+  - "Bottle photo fills the left half with generous top/bottom breathing room on a pale-blue field"
+  confidence: high
+- id: layout_10
+  family: layout_composition_components
+  polarity: mixed
+  page_or_region: metformin — 'How it works' + pricing card density shift
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/metformin/tile-03-y03660.png
+  claim: "The 'How it works' icons render notably smaller than the homepage equivalent and the heading sits top-left while content is centered; below, the generously padded 'Quarterly' pricing card abuts a dense small-type disclaimer row, creating a jarring density change with no transition."
+  visible_tells:
+  - "Icons here are visibly smaller than the homepage triptych, and 'How it works' is left-aligned over centered content"
+  - "Padded pricing card sits directly above a cramped row of small icon + fine-print blocks with no spacing break"
+  confidence: medium
+  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-02-y02440.png
+- id: layout_11
+  family: layout_composition_components
+  polarity: poor
+  page_or_region: bioage_test — 'Which BioAge test is right for you?' comparison table
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/bioage_test/tile-01-y01220.png
+  claim: "In the BioAge comparison table the Accuracy, Emailed Results, Portal Access, and Level of Detail rows show broken-image placeholders (alt-text stubs like 'st:st:' / 'st:fi') instead of icons or checkmarks — a visible render failure in a core decision-support component."
+  visible_tells:
+  - "Multiple cells display broken-image boxes with 'st:' alt-text artifacts instead of icons"
+  - "'Emailed Results' and 'Portal Access' rows show empty broken-image slots across all three columns, while text rows render fine"
+  confidence: high
+- id: layout_12
+  family: layout_composition_components
+  polarity: strong
+  page_or_region: bioage_test — test-type category cards
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/bioage_test/tile-00-y00000.png
+  claim: "The three test-type cards (At-Home Saliva, Lab-Based Blood, Online Calculator) share a clean layout — image zone, title, body, price — with uniform card height and corner radius, more polished than the general catalog grid."
+  visible_tells:
+  - "All three cards hold identical image zones and proportions"
+  - "Price lines ('Starting at $170 / $75 / FREE') land at matching vertical positions near each card bottom"
+  confidence: high
   contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-00-y00000.png
+- id: layout_13
+  family: layout_composition_components
+  polarity: mixed
+  page_or_region: about — expert headshots carousel
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-01-y01220.png
+  claim: "The 'Meet our experts' carousel shows four headshot cards with a visible left chevron, but the rightmost card clips at the tile edge with no right chevron shown — the scroll affordance reads incomplete in the static capture."
+  visible_tells:
+  - "Four headshot cards with a left '<' chevron; no matching right '>' chevron visible"
+  - "Rightmost card clips at the tile boundary, signaling more content that the static layout doesn't surface"
+  confidence: medium
 - id: color_01
   family: color_brand_imagery
   polarity: strong
-  page_or_region: Site-wide palette
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-01-y01220.png
-  claim: The palette is disciplined to three roles — deep forest green, pale ice-blue, and a single amber CTA — held consistent across hero, stats, and footer bands, with teal stats drawn from the same green family.
+  page_or_region: site-wide — deep teal as the dominant brand color
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-00-y00000.png
+  claim: "A deep teal is applied with discipline as the single dominant brand color — the hero band, nav bar, and category-card arrows all share it on the homepage, and interior pages reuse the same teal hero fill, confirming it as a structural token rather than an editorial choice."
   visible_tells:
-  - Deep green section bands top and bottom
-  - amber 'See the science' / 'Explore' buttons as the lone warm accent
-  - teal stat numerals (82.7%, 5,200+) drawn from the same green family
+  - "Full-width teal hero band behind the category cards plus a teal nav bar at top"
+  - "Category card arrows are teal; the bioage_test interior hero uses the identical teal fill"
   confidence: high
-  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-00-y00000.png
+  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/bioage_test/tile-00-y00000.png
 - id: color_02
   family: color_brand_imagery
-  polarity: mixed
-  page_or_region: Homepage 'research' / lifestyle imagery
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-01-y01220.png
-  claim: Photography leans on generic stock tropes (blue-gloved hands pipetting, man reading a pill bottle) that carry no brand-specific styling and a neutral grade untied to the green/amber system.
+  polarity: strong
+  page_or_region: site-wide — amber accent reserved for primary CTAs
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-00-y00000.png
+  claim: "A warm amber-orange is used as a single accent reserved for primary CTA buttons ('Explore all Treatments', 'Take the quiz', 'See the science', 'Start online visit'), recurring across pages at a consistent hue and never appearing decoratively — a defined token."
   visible_tells:
-  - Blue-nitrile-glove lab pipette image
-  - stock-style man-with-supplement-bottle photo
-  - neutral grading not tied to the green/amber system
-  confidence: medium
-  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-00-y00000.png
+  - "'Explore all Treatments' is the only amber element in the hero tile"
+  - "The same amber button shape and hue recur as 'Take the quiz' / 'See the science' in teal sections elsewhere"
+  confidence: high
+  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-02-y02440.png
 - id: color_03
   family: color_brand_imagery
   polarity: strong
-  page_or_region: Footer / logo lockup
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-03-y03024.png
-  claim: The footer carries a consistent brand lockup — the lowercase 'a' mark with teal accent dot and a tidy teal-on-green link system — closing the page in the same palette it opened with.
+  page_or_region: about — three-value section background structure
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-02-y02440.png
+  claim: "Sections alternate among white/off-white, a pale blue-grey tint, and deep teal fills — a controlled three-value color structure that recurs across pages as the primary section-separation device."
   visible_tells:
-  - White 'a' monogram with teal dot on dark-green footer
-  - teal column links over the forest-green field
-  - single-weight monochrome social icons aligned in a row
+  - "Pale blue-grey field behind the value-prop section, deep teal fill on the CTA panel, lighter tinted footer band"
+  - "All three background values appear within a single scroll"
   confidence: high
 - id: color_04
   family: color_brand_imagery
   polarity: mixed
-  page_or_region: About page — partner logo wall
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-06-y06536.png
-  claim: The partner logo row is a grayscale assembly of mismatched marks at inconsistent visual weight, reading as collected third-party assets rather than a unified band.
+  page_or_region: treatments — magenta 'NEW' badge outside the palette
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-00-y00000.png
+  claim: "The 'NEW' product badge uses a hot-pink/magenta that sits outside the teal+amber system, acting as an unintegrated third accent."
   visible_tells:
-  - 'FIGHT AGING!' shown as a heavy black-box knockout among thin line logos
-  - wildly varying logo weights (Betterhumans script vs. serif 'Age Reversal Network')
-  - uneven sizing across the six marks
+  - "Magenta 'NEW' pill-badge on multiple cards in this tile"
+  - "No other magenta element appears in the surrounding palette"
+  confidence: high
+- id: color_05
+  family: color_brand_imagery
+  polarity: mixed
+  page_or_region: about — lifestyle people photography (stock register)
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-00-y00000.png
+  claim: "The people photography (smiling woman outdoors, circular crop) is clean and aspirational but reads as stock — no distinctive lighting signature, setting, or color grade marks it as owned imagery."
+  visible_tells:
+  - "Circular-cropped portrait of a smiling woman on a light background in the mid-section"
+  - "No identifiable lighting, setting, or grade that differentiates it from category-default stock"
   confidence: medium
+  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-03-y03660.png
+- id: color_06
+  family: color_brand_imagery
+  polarity: poor
+  page_or_region: metformin — off-palette lavender-field photograph
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/metformin/tile-01-y01220.png
+  claim: "A purple lavender-field photograph illustrating Metformin's plant origin introduces a purple-dominant image unrelated to the teal/amber palette, with no art direction tying it back to the brand."
+  visible_tells:
+  - "Purple flowering-plant photo fills the right of the 'Background and history' section"
+  - "Its color temperature and subject are unrelated to the amber/teal system used elsewhere"
+  confidence: high
+  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/metformin/tile-00-y00000.png
+- id: color_07
+  family: color_brand_imagery
+  polarity: mixed
+  page_or_region: bioage_test — comparison-section editorial photos
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/bioage_test/tile-02-y02440.png
+  claim: "The two photos in the Methylation-vs-Phenotypic comparison (cool blue DNA close-up, warm elderly-hands shot) differ in color temperature and mood, reading as separate stock sources rather than a curated shoot."
+  visible_tells:
+  - "DNA-strand image carries a cool blue cast; the clasped-hands image carries a warm tone"
+  - "The two sit side by side with no grading bridge between them"
+  confidence: medium
+- id: color_08
+  family: color_brand_imagery
+  polarity: mixed
+  page_or_region: metformin — gold DNA image as palette nod on teal
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/metformin/tile-02-y02440.png
+  claim: "A gold/amber-toned DNA-strand photo on the teal 'science of Metformin' band reads as an intentional palette nod (amber rhymes with the CTA hue) but is a repurposed stock image, not commissioned."
+  visible_tells:
+  - "Warm golden DNA close-up on a teal field, its amber tone echoing the CTA color"
+  - "Generic scientific-stock quality with no brand-specific differentiation"
+  confidence: medium
+- id: color_09
+  family: color_brand_imagery
+  polarity: mixed
+  page_or_region: metformin — pink stat icons outside the brand palette
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/metformin/tile-02-y02440.png
+  claim: "The four statistics-row icons (line chart, droplet-with-plus, apple, declining bar chart) are drawn in a pink/salmon outline that matches neither the teal nor the amber token, leaving them detached from the brand palette."
+  visible_tells:
+  - "Apple and droplet icons render in pink/salmon stroke above the stat percentages"
+  - "No teal or amber is applied to any icon in the row"
+  confidence: high
 - id: iconography_01
   family: iconography_illustration
-  polarity: strong
-  page_or_region: Treatments grid — AgelessRx-branded product bottles
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-01-y01220.png
-  claim: The own-brand product renders form a tightly consistent system: amber pill bottles with dark-teal caps and white 'agelessrx' labels, all shot at the same angle, lighting, and drop-shadow on identical pale-blue tiles.
+  polarity: mixed
+  page_or_region: site-wide — outline process-icon set (clipboard / box / chat)
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-02-y02440.png
+  claim: "The three-step process icons (clipboard-with-check, shipping box, speech bubble) are a matched thin-outline set reused verbatim on the metformin 'How it works' row — consistent across pages, but generic library shapes with no distinctive twist and a limited depth that doesn't extend beyond a small stock set."
   visible_tells:
-  - Low Dose Naltrexone, B12/MIC, B12, and Metformin bottles share identical cap color, label layout, angle, and shadow direction
-  - uniform pale-blue tile background behind every render
+  - "Outline-only icons at equal size with a shared stroke weight, stacked above labels"
+  - "The same clipboard / box / speech-bubble trio reappears on the metformin page at matching scale and color"
   confidence: high
+  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/metformin/tile-03-y03660.png
 - id: iconography_02
   family: iconography_illustration
   polarity: mixed
-  page_or_region: Treatments grid — third-party packshots inside own-brand grid
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-01-y01220.png
-  claim: Third-party regulatory packshots are dropped into the otherwise uniform render grid and break it, sitting at a different scale, sharpness, and lighting than the house bottles around them.
+  page_or_region: metformin — stat icons use off-brand health clichés
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/metformin/tile-02-y02440.png
+  claim: "The four statistics icons share the thin-outline style of the process set but lean on generic health-app tropes (an apple for 'appetite control', a droplet) that read as clichés for a clinical longevity product, and are arranged at identical size/spacing — templated rather than composed."
   visible_tells:
-  - Wegovy 2.4mg carton-and-pen composite looks photographic and busy next to the clean matte house bottles
-  - scale and shadow of the Wegovy box differ from adjacent cards
+  - "Apple icon used for appetite control; droplet-with-plus for blood sugar — stock health-app shapes"
+  - "All four icons sit at identical size and spacing, evenly templated"
   confidence: high
-  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-04-y04880.png
 - id: iconography_03
   family: iconography_illustration
   polarity: strong
-  page_or_region: Homepage — 'Slowing aging has never been easier' three-up icons
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/homepage/tile-02-y02440.png
-  claim: The three benefit icons (clipboard with pencil, shipping box, chat bubbles) read as one custom line-icon set with a consistent stroke weight and a single muted tan/coral fill accent.
+  page_or_region: treatments + metformin — own-brand product photography system
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-00-y00000.png
+  claim: "Own-brand product renders share a tight system — amber-glass bottles with teal caps and a white label (teal footer band, agelessrx wordmark), all on the same pale powder-blue card with matched lighting and shadow — and the metformin hero shot extends the identical system, giving the catalog catalog-level cohesion."
   visible_tells:
-  - all three icons share the same outlined style, corner radius, and tan fill accent
-  - no clip-art mismatch in weight or perspective between the trio
-  confidence: medium
+  - "Amber bottle + teal cap + white label repeated across 10+ catalog cards on one pale-blue background"
+  - "The enlarged metformin hero bottle uses the same pale-blue field, label system, and lighting direction"
+  confidence: high
+  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-03-y03660.png
 - id: iconography_04
   family: iconography_illustration
   polarity: mixed
-  page_or_region: About — biological-vs-chronological-age scatter plot
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-03-y03660.png
-  claim: The biological-vs-chronological-age scatter plot is custom-built and on-brand in color, but its craft is generic: a plain stippled point cloud with thin unlabeled axes and no legend or trend line.
+  page_or_region: treatments — third-party packaging breaks the product system
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-03-y03660.png
+  claim: "Third-party products (Galleri, Wegovy box, Metagenics) drop into the same card template but their real retail packaging — multicolor logos, foreign palettes — visibly breaks the amber/teal/pale-blue language the own-brand bottles establish."
   visible_tells:
-  - green-to-orange dot gradient plotted on bare X/Y axes labeled only 'Chronological age' and 'Biological age'
-  - no trend line, gridlines, or callouts to guide reading
-  confidence: medium
+  - "Galleri box shows a multicolor butterfly-style logo on white packaging, unlike the amber-cap bottles"
+  - "Wegovy/Metagenics appear as full-color retail packs in the same card slot, visually dissonant"
+  confidence: high
+  contrast_with: store/agelessrx-com/captures/2026-05-31/tiles/treatments/tile-00-y00000.png
 - id: iconography_05
   family: iconography_illustration
   polarity: strong
-  page_or_region: BioAge test — 'Tracking your BioAge over time' line chart
-  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/bioage_test/tile-02-y02440.png
-  claim: The Calendar-Age vs Biological-Age line chart is a clean custom diagram with year columns, numbered node markers, and a dashed projection to a '?' future point that communicates the diverging-gap concept clearly.
+  page_or_region: about — 'Now vs Future' healthspan bar chart
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-01-y01220.png
+  claim: "The 'Now vs Future' healthspan bar chart is a custom-composed diagram in brand teal and the site's type — segmented horizontal bars with clean labels and no chart junk — above-average data-illustration craft for the category."
   visible_tells:
-  - two labeled crossing lines with circular age-number nodes (40/41/39/42) across 2022-2024 columns
-  - dashed teal segment ending in a '?' node to imply the next reading
+  - "Segmented horizontal bars in teal/salmon/grey using the brand palette"
+  - "Labels ('Now', 'Future', '80 years', '100+ years') set in the site sans, no gridlines or axis ticks"
+  confidence: high
+- id: iconography_06
+  family: iconography_illustration
+  polarity: strong
+  page_or_region: about — biological-vs-chronological scatter plot
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-03-y03660.png
+  claim: "The biological-vs-chronological-age scatter plot is a custom data illustration — color-coded dot cloud on clean labeled axes, floated on a white card over a blurred landscape — a deliberate editorial presentation, not a spreadsheet export."
+  visible_tells:
+  - "Multi-color dot cloud (orange/green/grey) on clean axes with minimal labeling"
+  - "Axis labels ('Biological age', 'Chronological age') typeset in the brand font on a card floated over a scenic photo"
+  confidence: high
+- id: iconography_07
+  family: iconography_illustration
+  polarity: strong
+  page_or_region: about — '70% factors we can control' donut
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-03-y03660.png
+  claim: "The '70% factors we can control' donut is a well-composed data callout — large white bold '70%' inside a teal/white arc against a dark microscopy background — working as both data and visual anchor."
+  visible_tells:
+  - "Partial donut arc in white/teal over a dark purple-blue micrograph"
+  - "'70%' in large bold white numerals centered in the arc, with a small '30% genetics' label outside it"
+  confidence: high
+- id: iconography_08
+  family: iconography_illustration
+  polarity: strong
+  page_or_region: bioage_test — 'Tracking your BioAge over time' line chart
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/bioage_test/tile-02-y02440.png
+  claim: "The BioAge tracking chart is a custom illustration: two diverging line paths (Calendar Age vs Biological Age) with numbered teal node circles across 2022-2024 year columns and a '?' future node — compositionally clear and on-brand."
+  visible_tells:
+  - "Solid and dashed teal line paths diverging rightward with numbered nodes (40, 41, 42) in teal-outlined circles"
+  - "'Calendar Age' / 'Biological Age' labels in the brand type, with a '?' node marking the future state"
+  confidence: high
+- id: iconography_09
+  family: iconography_illustration
+  polarity: poor
+  page_or_region: about — partner / advocacy logo strip (un-normalized)
+  tile_path: store/agelessrx-com/captures/2026-05-31/tiles/about/tile-06-y06536.png
+  claim: "The six partner logos sit in a loose 3+3 grid with no normalization — 'FIGHT AGING!' is a heavy dark-filled slab box dominating its row while neighbors are lightweight wordmarks, and the set mixes text-only marks, icon lockups, and a detailed seal at unequal sizes with no common plate, padding, or grayscale treatment."
+  visible_tells:
+  - "'FIGHT AGING!' renders as a heavy dark box at far greater visual weight than the surrounding wordmarks"
+  - "SENS, Age Reversal Network (plain serif), Betterhumans, and the Alliance seal all sit at different sizes/styles with no unifying treatment"
   confidence: high
 ```
 
 ## Provenance
 
-Tiles read: homepage (4) + treatments (8) + about (7) + metformin (7) + glp1_support (5) + bioage_test (4) from `captures/2026-05-31/tiles/` — all 35 active, no exclusions, no Tier-B re-render (the capture was clean; the `2026-06-03` and `2026-06-04` captures hold product-catalog and logo refreshes with no homepage, so the homepage-bearing `2026-05-31` set was tiled). Of 54 raw mined cards the judge accepted 38; this file ships a curated 19 spanning all four families and a strong/mixed/poor mix, dropping redundant strong cards while keeping every weak-edge tell. Run provenance: generated from **Claude Code on macOS with Claude Opus 4.8, Extra effort**, on 2026-06-14, from the active tiles only — no `profile.md`, dossier, Notion, or live web was consulted (the read is blind by construction). Snapshot caveat: reflects the 2026-05-31 capture; the live site changes.
+Tiles read: homepage (4) + treatments (8) + about (7) + bioage_test (4) + metformin (7) from `captures/2026-05-31/tiles/` — **30 native tiles, all active, no exclusions, no Tier-B re-render**. The cached Firecrawl capture rendered statically correct (no grey/WebGL hero, black media, lazy-load gaps, or unsettled count-ups), so Tier-A native crops sufficed; `qa_status: clean`. The `2026-06-03` and `2026-06-04` captures hold a deep product-catalog crawl with no homepage, so the system-bearing `2026-05-31` set was tiled (the `--capture` date was pinned, since the auto-newest default would otherwise pick the homepage-less `2026-06-03`).
+
+Mining: blind fan-out — **4 Sonnet family miners → Opus judge**. Of 59 raw mined cards the judge accepted 41 (merging cross-family duplicates and dropping two cards factually falsified by the tiles). One accepted card was then **dropped in the post-judge structural spot-check**: a homepage typography card praised the "You're investing in movement / in clarity / in presence…" copy-stack as deliberate weight rhythm, but that band is a **scroll-driven animation captured mid-reveal** (one line highlighted, the rest fading by opacity) — an animation frame, not a stable design tell. Its tile (`homepage/tile-00`) is otherwise clean and stays cited by other cards, so no tile was excluded and `qa_status` remains `clean`. **40 cards ship** — 9 typography, 13 layout, 9 color, 9 iconography; 19 strong / 16 mixed / 5 poor.
+
+Run provenance: generated from **Claude Code on macOS with Claude Opus 4.8 (1M context)** on 2026-06-16, from the active tiles only — no `profile.md`, dossier, Notion, or live web was consulted (the read is blind by construction). Snapshot caveat: reflects the 2026-05-31 capture; the live site changes.
