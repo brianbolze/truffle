@@ -67,10 +67,10 @@ The final canonical host is the **store folder slug** (dots→dashes, e.g. `hone
 
 **3. Map + homepage, together (2 credits).** Different endpoints — safe to run in one batch:
 ```bash
-python3 scripts/fc.py map     https://<domain>        --slug <slug>
-python3 scripts/fc.py scrape  https://<domain>        --slug <slug> --name homepage --homepage
+python3 scripts/fc.py map     https://<domain>        --slug <slug> --verb research-company
+python3 scripts/fc.py scrape  https://<domain>        --slug <slug> --name homepage --homepage --verb research-company
 ```
-`map` is subdomains-off by default — a clean marketing-host inventory (the docs/dev subdomain is dropped, §5.3). It's still a **sample** (big sites) or can be **empty** (custom SPAs), so homepage `links` are the reliable discovery surface. Pull both.
+`--verb research-company` tags each manifest line so `scripts/runcost.py` can attribute credit cost by verb (the `/deepen-offerings` preset passes its own — §below). `map` is subdomains-off by default — a clean marketing-host inventory (the docs/dev subdomain is dropped, §5.3). It's still a **sample** (big sites) or can be **empty** (custom SPAs), so homepage `links` are the reliable discovery surface. Pull both.
 
 **4. Pick key pages (judgment, free).** The map seeds candidates, but **select from homepage `links`** — the durable surface that also catches signal subdomains the map drops (`investors.`, `careers.`). **Only ever scrape a URL in the captured inventory — never hand-type a path from convention or prior knowledge** (`/about`, `/pricing`, `/ai`, …): a guessed path can return a real-sized 404 stub that poisons the profile (the Qualtrics run burned 4 credits this way; see BACKLOG "junk soft-404 stubs"). `verify` now fingerprints these (§5.6 junk soft-404 gate), but prevention is cheaper — it saves the wasted credit *and* the cleanup. Missing an expected page? Run `map --search "<term>"` to surface it, don't guess. **Filter map noise first** (playbook §5.3): content/funnel paths (`/blog`, `/learning`, `/case-studies`, `/partner`, `/sweepstakes`, …) + locale prefixes (`/en-uk`, `/de-eu`, …).
 
@@ -80,7 +80,7 @@ Then pick **~4-8 signal pages**: pricing, products/treatments, how-it-works, abo
 
 **5. Scrape key pages — serially, no burst (1 credit each).** A parallel burst is what trips the geo/cache shell + 429s (§5.1/5.2). One at a time:
 ```bash
-python3 scripts/fc.py scrape  https://<domain>/<path>  --slug <slug> --name <short_name>
+python3 scripts/fc.py scrape  https://<domain>/<path>  --slug <slug> --name <short_name> --verb research-company
 ```
 Use a clear `--name` per page (`pricing`, `weight_loss`, `about`). Include linked PDFs if they add signal (pricing/spec sheets — 1 credit/page, prime primary source).
 

@@ -14,7 +14,9 @@ A focused preset of [`/research-company`](../research-company/SKILL.md): re-capt
 drive its `offerings.md` to **complete at the indexed level across every product line**. It fixes a roster that
 stopped early and now *reads* as a small catalog, so any count under-reports it. **Follow research-company's
 `SKILL.md` + `firecrawl-capture.md` for all capture mechanics** (offerings ladder = §1.1; contract =
-`OFFERINGS.md`) — this skill only presets the focus and the gap-targeting below.
+`OFFERINGS.md`) — this skill only presets the focus and the gap-targeting below. **One override:** pass
+`--verb deepen-offerings` (not `research-company`) on every `fc.py map`/`scrape` call, so `runcost.py`
+attributes this preset's credit cost to its own routine.
 
 ## Steps
 

@@ -26,7 +26,9 @@ Credit accounting: each billable call records its own billed credits to the mani
 scrapes from the response's metadata.creditsUsed, map from its documented flat 1/call. `spend`
 sums them for an attributable run total. We never diff the global balance: the key is shared,
 so the delta is polluted by other projects' calls (the old "can't attribute" hedge). credits
-stays only for pre-flight headroom.
+stays only for pre-flight headroom. An optional `--verb` tag (e.g. `research-company`,
+`deepen-offerings`) labels each manifest line with the skill that drove the call, so
+`scripts/runcost.py` can cut corpus credit cost by verb — absent on legacy/untagged runs.
 """
 
 from __future__ import annotations
@@ -83,6 +85,7 @@ def do_map(
     limit: int,
     date: str,
     subdomains: bool = False,
+    verb: str | None = None,
 ) -> None:
     # includeSubdomains defaults FALSE: a docs/dev subdomain (developers./docs.)
     # otherwise swamps the map AND starves the marketing host's crawl — Cloudflare
@@ -107,16 +110,16 @@ def do_map(
     (d / ".payloads" / f"{tag}.json").write_text(json.dumps(out, indent=2))
     # map bills a flat 1 credit/call and returns no per-call creditsUsed — record
     # the documented constant so the manifest stays a complete spend ledger.
-    append_manifest(
-        d,
-        {
-            "kind": "map",
-            "name": tag,
-            "requested": url,
-            "credits": 1,
-            "urls": len(links),
-        },
-    )
+    rec: dict[str, Any] = {
+        "kind": "map",
+        "name": tag,
+        "requested": url,
+        "credits": 1,
+        "urls": len(links),
+    }
+    if verb:
+        rec["verb"] = verb
+    append_manifest(d, rec)
     print(f"[map] {url}  search={search!r}  -> {len(links)} urls  (1 credit, saved {tag}.json)")
     for item in links[:600]:
         u = item.get("url") if isinstance(item, dict) else item
@@ -175,6 +178,7 @@ def do_scrape(
     actions_json: str | None = None,
     mobile: bool = False,
     headers_json: str | None = None,
+    verb: str | None = None,
 ) -> None:
     if homepage:
         formats = [
@@ -258,6 +262,8 @@ def do_scrape(
         "mobile": mobile,
         "headers": bool(headers_json),
     }
+    if verb:
+        rec["verb"] = verb
     append_manifest(d, rec)
     flag = "" if rec["match"] else "  <-- sourceURL MISMATCH"
     cr = "?" if credits is None else credits
@@ -889,6 +895,7 @@ def main() -> None:
         help="include subdomains (default: off — drops the docs/dev swamp, §5.3)",
     )
     m.add_argument("--date", default=TODAY)
+    m.add_argument("--verb", help="skill that drove this call (research-company | deepen-offerings) — tags the manifest for runcost.py")
     s = sub.add_parser("scrape")
     s.add_argument("url")
     s.add_argument("--slug", required=True)
@@ -901,6 +908,7 @@ def main() -> None:
     s.add_argument("--headers-json", help="JSON object of extra request headers for this scrape")
     s.add_argument("--proxy")
     s.add_argument("--date", default=TODAY)
+    s.add_argument("--verb", help="skill that drove this call (research-company | deepen-offerings) — tags the manifest for runcost.py")
     v = sub.add_parser("verify")
     v.add_argument("--slug", required=True)
     v.add_argument("--date", default=TODAY)
@@ -927,7 +935,7 @@ def main() -> None:
     sub.add_parser("credits")
     a = ap.parse_args()
     if a.cmd == "map":
-        do_map(a.url, a.slug, a.search, a.limit, a.date, a.subdomains)
+        do_map(a.url, a.slug, a.search, a.limit, a.date, a.subdomains, a.verb)
     elif a.cmd == "scrape":
         do_scrape(
             a.url,
@@ -941,6 +949,7 @@ def main() -> None:
             a.actions_json,
             a.mobile,
             a.headers_json,
+            a.verb,
         )
     elif a.cmd == "verify":
         do_verify(a.slug, a.date)
