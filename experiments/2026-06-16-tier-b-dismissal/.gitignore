@@ -1,0 +1,5 @@
+# Bulk screenshot dumps — kept locally for evidence, never committed.
+# Per experiments/README.md: keep READMEs, scripts, and FINDINGS in git;
+# bulk dumps stay out. Total of ~36 MB on the 2026-06-16 run.
+probe/
+recon/
