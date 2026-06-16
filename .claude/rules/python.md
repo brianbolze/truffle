@@ -11,7 +11,7 @@ Tooling is [`ruff.toml`](ruff.toml): `ruff check` (lint, `--fix` to autofix) + `
 ## Rules
 
 - **Type hints are required** on every function — args and return.
-- **Python 3.9 interpreter**, so start each file with `from __future__ import annotations`. That lets you write modern `str | None` / `dict[str, Any]` annotations without a runtime cost — no `typing.Optional`/`Dict` imports.
+- **Python 3.11 floor.** Start each file with `from __future__ import annotations` — it keeps annotations lazy (no runtime cost, clean forward refs) and is the house convention. Write `str | None` / `dict[str, Any]` directly; never `typing.Optional`/`Dict`.
 - **Read files with `with open(...)`** (never a bare `open(p).read()` that leaks the handle to GC), and always pass `encoding="utf-8"` on text reads.
 - **No single-letter public parameters.** `resolve(query, profiles)`, not `resolve(query, P)`. Short locals (`p`, `fm`) are fine inside a tight scope.
 - **Keep the why-first docstrings.** Every module and non-trivial function says *why* it exists, not just what it does — this is the codebase's signature, preserve it.

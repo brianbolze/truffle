@@ -1,6 +1,8 @@
 # Secrets
 .env
 .env.*
+# ...but DO track the template
+!.env.example
 
 # Payload sidecars — raw Firecrawl JSON + screenshots. Large, regenerable, iCloud-synced.
 **/.payloads/
