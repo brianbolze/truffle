@@ -1,0 +1,90 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-15T19:08:50Z",
+  "ok": false,
+  "input": {
+    "query": "at home NAD+ injection",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [
+    "ai_overview missing 'references'"
+  ],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [],
+  "headings": [],
+  "references": [],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "NAD+ (Active Form) Injection HOMEKIT",
+      "link": "/goto?url=CAESqAEB7keqTRKS88SWXxsQK08L7n1t0frmk4mBuS3UdyAD3-mWpT9LiMeCsNeXLMM1YQvufnl3g25odqOf_9WlTZ6stgG0_FdvSr3rl03GGkSirnxyRkJX8-R59fwrRZ6Ep1gUHUG4uPaIktHFelfx4kIAoDhJD4m-CstYyXaZnyTSTF2NgXMbcaVAlRbg1g4fs3B66OyEkMnYIr646Kz-upVm4Kgwe1tYVvM=",
+      "snippet": "NAD+ is an Alpha life Injection used for Energy, Focus, Anti-Aging, Increasing athletic performance, stamina, endurance and strength.",
+      "displayed_link": "https://www.vitastir.com \u203a Shop"
+    },
+    {
+      "position": 2,
+      "title": "NAD+ Injection (Lyo)",
+      "link": "/goto?url=CAESewHuR6pNHSW4KxPD43wq0zhGdY0Mf6TfzMKmse8brDZoLgiXmrDwrbt1434TFDlI2lcef2S_-iE-fPYGdor1Q2kwBrElA32Qn7fQL8gmELzGnQ68b03XUljVijMODQoIlbzsVN6NKWTvtq8fdmuVNZuj2aWK2M9KxoH6xQ==",
+      "snippet": "Importantly, NAD+ injections can be administered either in a clinic or self-administered at home if the patient has been properly instructed; the subcutaneous ...",
+      "displayed_link": "https://www.empowerpharmacy.com \u203a Products"
+    },
+    {
+      "position": 3,
+      "title": "NAD+ Injection Therapy",
+      "link": "/goto?url=CAESogEB7keqTTRD5rMXut_f7Sib0mrvIqPmL3zYIhKfz1wTw2RriMENu6aqEsakK62Ua0yhjNmyuXP5ISnM8n7qzVk-sUus6BrSOR_mZKl4yFeZhiUuoDfzgDzh3sWVf1RyEOL9dw_olMFpb-6OO0sTUGUBN3XPOSKYzVEayUbLpVyAEPm9xsbn6PbI0vCiIblzmnV5XkxY_VHlYM0qysunpr6ju68=",
+      "snippet": "Our self-administered NAD+ injections quickly replenish NAD levels to promote potential anti-aging benefits such as increased energy, improved brain clarity ...",
+      "displayed_link": "https://driphydration.com \u203a nad-injections"
+    },
+    {
+      "position": 4,
+      "title": "how to perform a home NAD+ injection",
+      "link": "/goto?url=CAESYwHuR6pN6RNLVDz-LSVRFQ_S7AjF-nIVtNWfElZ6XsvZudIR_jJvNlnTNLJdJzK8C252XgcMDvVKISdKSMq5Q1l_lR8UUeEgZdqN6Go5O-GfPVpDEhqJ-TR-nQllJCyHZh99hw==",
+      "snippet": "In this 8-minute video, Dr. Kogan demonstrates how to perform a home NAD+ injection. But what exactly is NAD? It can be described as \u201cliquid ...",
+      "displayed_link": "65.6K+ views \u00b7 2 years ago"
+    },
+    {
+      "position": 5,
+      "title": "Nad+ At Home Injections | Boost Energy Today\u2014Get Started",
+      "link": "/goto?url=CAESawHuR6pNacdJ91_z7gPM-SeyFx_j1j8xwbO_Cmekdw9jI4qVpo9Tj_xKVXvdEvkmmXqBlx_7xKzauLjOeQ_jNnfX9KjQjs0YdT66DSLAq1zyACTAGH6FzPDwl5-e2E0Y6Ydg8al8zfQ2r_FB",
+      "snippet": "Explore NAD+ at Home Injections for improved energy, mental clarity, and anti-aging benefits. Safe, effective, and administered under medical guidance.",
+      "displayed_link": "https://stefaniemccainmd.com \u203a nad-at-home-injections"
+    },
+    {
+      "position": 6,
+      "title": "Niagen At-Home Injection Kit | Prescription NAD+ Therapy",
+      "link": "/goto?url=CAESeAHuR6pNlhAI9VWrozXsZELJr8gug9gSVj_ebBxlQIbvfV07180ELAj6gvoucI0lnsVSHRiiAE_88RUlvr6iz2wFv4JlIfqV8P9clCrjzY2gofiC5vCSUk1fCryk_H7qzaRJI8FSHlTnmJxA126cKiskzsKIKq94HQ==",
+      "snippet": "Patented Niagen (NRCl) prescription injection kit for at-home subcutaneous administration. Pharmaceutical-grade NAD+ therapy, delivered to your door.",
+      "displayed_link": "https://www.niagenplus.com \u203a products \u203a niagen-at-ho..."
+    },
+    {
+      "position": 7,
+      "title": "NAD+ Injection SOP: Dosage, Storage, And Safety ...",
+      "link": "/goto?url=CAESiQEB7keqTUBe-spIhIeCa7cOLax7z7Ea0-TfZrRI9qCzHetPQCAM2IQH7ZqOqDobmgjgHWTMDsOBr-NYdhmaIoXYScmR_aYoJz-ceAGzilvzcoFyYcLXBSvov_tC3AZTSAC2MRUIWNydpl3AxFMQfvN48_ed5Y3JOuMWSyELIkatSppFwFRH72nPNQ==",
+      "snippet": "Learn the comprehensive protocol for administering NAD+ injections, focusing on best practices, dosage accuracy, and effective patient safety strategies.",
+      "displayed_link": "https://walnutcreekaesthetics.com \u203a NAD+ Injection"
+    },
+    {
+      "position": 8,
+      "title": "NAD+ Injections Before & After: See Real Results & Benefits",
+      "link": "/goto?url=CAEStgEB7keqTceo59aEN6Lz1XBX8upnzNmUkKJrCIY3wUYjRj0F_8ZNfMTD6qoRygmE2gz2iLGI0d5DFsQ8kIpXawqYgNmfiKdRHXo6QpODymQHtz-u5A2DVsL5C2JLJwumWiKlSQiEn8kfq3N9nci38lNfW9mqnnI6E6zY3rjyT0jA2AYTFH-Ajy-KNUMvQKUNKUEZEpJBKAmDrv9Z-cgOaViLTOFaUVWRR_cxaqtuK5xkeHuEERQyMw==",
+      "snippet": "At-home NAD+ therapy. Ideal for busy clients or anyone who prefers a familiar environment; A licensed nurse travels to your home, office, or hotel for the ...",
+      "displayed_link": "https://ivconcierge.com \u203a blog \u203a nad-injections-before-..."
+    },
+    {
+      "position": 9,
+      "title": "Ever wondered how I inject my own NAD+? Here's the full ...",
+      "link": "/goto?url=CAESaQHuR6pNjMq5g0Dtoby9PNxf1pDTCj8cTLUgVtNzLNSX5nTV52L3kV1fr-eV4b-8Dl-ZW6wYA7Bzx43Y1i-GbXy4gkZ1hOFoxJVgoMK69siZGAANJ-VAFlNYhgDNs1lc-sMG8XSUGVjPdg==",
+      "snippet": "I prefer the subcutaneous injection method for a steady release and easy at-home use! Have you tried NAD+? Thinking about it? Drop a in the ...",
+      "displayed_link": "60+ likes \u00b7 1 year ago"
+    }
+  ]
+}

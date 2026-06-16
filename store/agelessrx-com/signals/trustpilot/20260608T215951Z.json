@@ -1,0 +1,358 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-08T21:59:51Z",
+  "ok": true,
+  "input": {
+    "slug": "agelessrx.com",
+    "wait_ms": 12000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/agelessrx.com",
+  "profile_state": "active",
+  "review_count": 2271,
+  "reviews_last_12m": 771,
+  "trust_score": 4.4,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "80%",
+    "4": "6%",
+    "3": "4%",
+    "2": "3%",
+    "1": "7%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": true,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 98
+  },
+  "people_also_looked_at": [
+    {
+      "name": "ReadyRx",
+      "domain": "readyrx.com",
+      "trust_score": 4.6,
+      "review_count_label": "558"
+    },
+    {
+      "name": "Good Life Meds",
+      "domain": "goodlifemeds.com",
+      "trust_score": 4.5,
+      "review_count_label": "2K"
+    },
+    {
+      "name": "Fridays Health",
+      "domain": "joinfridays.com",
+      "trust_score": 4.4,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "TrimRx",
+      "domain": "trimrx.com",
+      "trust_score": 3.2,
+      "review_count_label": "3K"
+    },
+    {
+      "name": "Eden",
+      "domain": "tryeden.com",
+      "trust_score": 4.5,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "bmiMD",
+      "domain": "bmimd.com",
+      "trust_score": 4.4,
+      "review_count_label": "791"
+    },
+    {
+      "name": "Gimme",
+      "domain": "gimme.care",
+      "trust_score": 4.2,
+      "review_count_label": "962"
+    },
+    {
+      "name": "Direct Meds",
+      "domain": "directmeds.com",
+      "trust_score": 4.6,
+      "review_count_label": "10K"
+    }
+  ],
+  "recent_reviews": [
+    {
+      "review_id": "6a26fad7b8d43a374da17456",
+      "rating": 3,
+      "title": "My NAD+ was warm upon opening the\u2026",
+      "body": "My NAD+ was warm upon opening the package.",
+      "date_of_experience": "June 7, 2026",
+      "posted": "3 hours ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Steven B",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a26c4345521d5f6cf682dde",
+      "rating": 5,
+      "title": "Great Experience",
+      "body": "Great support, effective and easy to work with.",
+      "date_of_experience": "June 8, 2026",
+      "posted": "6 hours ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Jim Webber",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a260b8117f1e7ccf3dace01",
+      "rating": 5,
+      "title": "Really helps me feel better and\u2026",
+      "body": "Really helps me feel better and energetic!!",
+      "date_of_experience": "June 7, 2026",
+      "posted": "20 hours ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Donald Whitt",
+      "reviewer_country": "US",
+      "reviewer_review_count": 14
+    },
+    {
+      "review_id": "6a25f7332edf1bb585b40113",
+      "rating": 5,
+      "title": "Very helpful Medical experts and the\u2026",
+      "body": "Very helpful Medical experts and the medicine was a great price!",
+      "date_of_experience": "June 7, 2026",
+      "posted": "A day ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Tosha Latiolais",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a25de8eb8f27c0a304e2bc8",
+      "rating": 5,
+      "title": "No Drama. No B.S.",
+      "body": "Very easy to obtain the medication that I needed. No drama. No b.s. There are some minor tech glitches in their system though.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "J Doe",
+      "reviewer_country": "US",
+      "reviewer_review_count": 8
+    },
+    {
+      "review_id": "6a25dc9b259caa3c3a75a1f1",
+      "rating": 1,
+      "title": "I was charged",
+      "body": "I was charged, yet no reason was given why. Unable to call anyone or chat with anyone to find out why?",
+      "date_of_experience": "May 31, 2026",
+      "posted": "A day ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Wow!!",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a246a4919f13daab48b1c66",
+      "rating": 5,
+      "title": "Great customer service",
+      "body": "Great customer service. Teleamed appt went great answered all questions very knowledgeable",
+      "date_of_experience": "May 26, 2026",
+      "posted": "2 days ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Deborah White",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a23979486faebc892315ac4",
+      "rating": 5,
+      "title": "It\u2019s a fully guided experience and\u2026",
+      "body": "It\u2019s a fully guided experience and support is reliable. Not complicated.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "customer",
+      "reviewer_country": "DE",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a2290f3ecd0e7f91d58e8d6",
+      "rating": 5,
+      "title": "Metformin for diabetes prevention",
+      "body": "Receiving Metformin for diabetes prevention, something my PCP was reluctant to prescribe despite the clear medical evidence, AgelessRx delivers on-time, is affordable and provides access to solid medical literature to back up its claims.",
+      "date_of_experience": "December 27, 2025",
+      "posted": "3 days ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "ONS (Millbrae)",
+      "reviewer_country": "US",
+      "reviewer_review_count": 5
+    },
+    {
+      "review_id": "6a21b5635f36dbd33eca208c",
+      "rating": 3,
+      "title": "I want to know why the peptides do not\u2026",
+      "body": "I want to know why the peptides do not get delivered cold.. but I have to keep it refrigerated",
+      "date_of_experience": "June 4, 2026",
+      "posted": "4 days ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Megan Garcia",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a21862d1d0d8678582fa07a",
+      "rating": 5,
+      "title": "Good communication and easy to use.",
+      "body": null,
+      "date_of_experience": "April 17, 2026",
+      "posted": "4 days ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Jeff",
+      "reviewer_country": "US",
+      "reviewer_review_count": 5
+    },
+    {
+      "review_id": "6a215664f85d9f326b00f465",
+      "rating": 5,
+      "title": "Agelessrx is the leader in cutting edge\u2026",
+      "body": "Agelessrx is the leader in cutting edge anti-aging therapies. Thier leadership and employees truly care about your health and wellbeing.",
+      "date_of_experience": "May 28, 2026",
+      "posted": "4 days ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Ross",
+      "reviewer_country": "US",
+      "reviewer_review_count": 9
+    },
+    {
+      "review_id": "6a215527a5d22813e506e160",
+      "rating": 3,
+      "title": "I find that my messages are not worked\u2026",
+      "body": "I find that my messages are not worked on until I send a follow up message.",
+      "date_of_experience": "June 4, 2026",
+      "posted": "4 days ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Audrey Fleming",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a1ea1ca112c6bc597f45f52",
+      "rating": 1,
+      "title": "Felt no change",
+      "body": "Felt no change",
+      "date_of_experience": "May 26, 2026",
+      "posted": "6 days ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Ann",
+      "reviewer_country": "US",
+      "reviewer_review_count": 7
+    },
+    {
+      "review_id": "6a1df64f83a03f8aad8d4eab",
+      "rating": 4,
+      "title": "LDN renewal",
+      "body": "I get my LDN through this company and their customer service is generally good. I had to put my prescription on hold for a while and they would not renew it with the same level that I was on and started me way back on my beginning dose again which is not effective for me. They do deliver on time and I haven't had any other problems with them. I am grateful",
+      "date_of_experience": "May 30, 2026",
+      "posted": "7 days ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Dianahersheygmail.com",
+      "reviewer_country": "US",
+      "reviewer_review_count": 6
+    },
+    {
+      "review_id": "6a1dc4379bb362b93c94c148",
+      "rating": 5,
+      "title": "Ageless has made making myself\u2026back to myself but better than ever!",
+      "body": "Ageless has made making myself healthier and achieving optimal health SO much easier than any method I\u2019ve tried, so far! I have a short term memory disorder from a gas leak in a house I was renting. From NAD+ to Sermorelin, I have been feeling like I\u2019m finally on the road to getting, not only back to \u201cold me\u201d, but even better!",
+      "date_of_experience": "June 2, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Abbie Blackwell",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a1d6482f8f69678bf763bb4",
+      "rating": 5,
+      "title": "Great customer service",
+      "body": "Shipping is a little slow but the customer service is great",
+      "date_of_experience": "June 1, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Jessica M",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a1c6d8d5b8e271d8c136c02",
+      "rating": 5,
+      "title": "Working with AgelessRx is a godsend",
+      "body": null,
+      "date_of_experience": "May 31, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Jon Peterson",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a1aed2928e569e10b9fcbee",
+      "rating": 5,
+      "title": "-Excellent feedback from the ageless \u2026",
+      "body": null,
+      "date_of_experience": "May 30, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "satisfied consumer",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a1acaf41d0751ca9653d3c3",
+      "rating": 5,
+      "title": "Very simple process",
+      "body": null,
+      "date_of_experience": "May 30, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Robert Brown",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    }
+  ],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 31.6,
+    "source_url": "https://www.trustpilot.com/review/agelessrx.com",
+    "markdown_chars": 39245
+  },
+  "recent_reviews_sample_size": 20
+}

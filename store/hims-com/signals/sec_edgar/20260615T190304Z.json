@@ -1,0 +1,233 @@
+{
+  "tool": "sec_edgar",
+  "source": "efts.sec.gov + data.sec.gov",
+  "captured_at": "2026-06-15T19:03:04Z",
+  "ok": true,
+  "input": {
+    "name": "Hims & Hers Health",
+    "ticker": "HIMS",
+    "domain": "hims.com"
+  },
+  "schema_drift": [],
+  "subject": "hims.com",
+  "state": {
+    "is_public": true,
+    "ticker": "HIMS",
+    "cik": "0001773751",
+    "exchange": "NYSE",
+    "registered_name": "Hims & Hers Health, Inc.",
+    "sic": "Services-Offices & Clinics of  Doctors of  Medicine"
+  },
+  "filings": [
+    {
+      "form": "8-K",
+      "date": "2026-06-02",
+      "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000091/hims-20260529.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2026-05-21",
+      "url": "https://www.sec.gov/Archives/edgar/data/1773751/000119312526234847/d264371d8k.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2026-05-19",
+      "url": "https://www.sec.gov/Archives/edgar/data/1773751/000119312526229749/d227898d8k.htm"
+    },
+    {
+      "form": "10-Q",
+      "date": "2026-05-11",
+      "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000076/hims-20260331.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2026-05-11",
+      "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000074/hims-20260511.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2026-03-11",
+      "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000033/hims-20260309.htm"
+    },
+    {
+      "form": "10-K",
+      "date": "2026-02-23",
+      "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000022/hims-20251231.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2026-02-23",
+      "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000019/hims-20260223.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2026-02-19",
+      "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000010/hims-20260219.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2025-11-17",
+      "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375125000362/hims-20251113.htm"
+    }
+  ],
+  "form_d": {
+    "query_name": "Hims & Hers Health",
+    "total_hits": 0,
+    "distinct_ciks": 0,
+    "match": "no_issuer_form_d",
+    "candidates": [],
+    "scoped_to_cik": "0001773751"
+  },
+  "funding_signals": [
+    {
+      "subject": "hims.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-06-02",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001773751",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000091/hims-20260529.htm"
+    },
+    {
+      "subject": "hims.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-05-21",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001773751",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1773751/000119312526234847/d264371d8k.htm"
+    },
+    {
+      "subject": "hims.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-05-19",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001773751",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1773751/000119312526229749/d227898d8k.htm"
+    },
+    {
+      "subject": "hims.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-05-11",
+      "amount": null,
+      "observation": "factual",
+      "form": "10-Q",
+      "cik": "0001773751",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000076/hims-20260331.htm"
+    },
+    {
+      "subject": "hims.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-05-11",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001773751",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000074/hims-20260511.htm"
+    },
+    {
+      "subject": "hims.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-03-11",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001773751",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000033/hims-20260309.htm"
+    },
+    {
+      "subject": "hims.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-02-23",
+      "amount": null,
+      "observation": "factual",
+      "form": "10-K",
+      "cik": "0001773751",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000022/hims-20251231.htm"
+    },
+    {
+      "subject": "hims.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-02-23",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001773751",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000019/hims-20260223.htm"
+    },
+    {
+      "subject": "hims.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-02-19",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001773751",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000010/hims-20260219.htm"
+    },
+    {
+      "subject": "hims.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2025-11-17",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001773751",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1773751/000177375125000362/hims-20251113.htm"
+    }
+  ]
+}

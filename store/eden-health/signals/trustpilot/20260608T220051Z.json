@@ -1,0 +1,358 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-08T22:00:51Z",
+  "ok": true,
+  "input": {
+    "slug": "tryeden.com",
+    "wait_ms": 12000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/tryeden.com",
+  "profile_state": "active",
+  "review_count": 4077,
+  "reviews_last_12m": 2664,
+  "trust_score": 4.5,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "78%",
+    "4": "5%",
+    "3": "3%",
+    "2": "2%",
+    "1": "12%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 99
+  },
+  "people_also_looked_at": [
+    {
+      "name": "TrimRx",
+      "domain": "trimrx.com",
+      "trust_score": 3.2,
+      "review_count_label": "3K"
+    },
+    {
+      "name": "Fridays Health",
+      "domain": "joinfridays.com",
+      "trust_score": 4.4,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "MEDVi",
+      "domain": "medvi.org",
+      "trust_score": 4.4,
+      "review_count_label": "13K"
+    },
+    {
+      "name": "Iv\u00edm Health",
+      "domain": "ivimhealth.com",
+      "trust_score": 4.9,
+      "review_count_label": "38K"
+    },
+    {
+      "name": "Gimme",
+      "domain": "gimme.care",
+      "trust_score": 4.2,
+      "review_count_label": "962"
+    },
+    {
+      "name": "Mochi Health",
+      "domain": "joinmochi.com",
+      "trust_score": 4.4,
+      "review_count_label": "16K"
+    },
+    {
+      "name": "Coreagerx",
+      "domain": "coreagerx.com",
+      "trust_score": 4.6,
+      "review_count_label": "2K"
+    },
+    {
+      "name": "Remedy Meds",
+      "domain": "remedymeds.com",
+      "trust_score": 4.6,
+      "review_count_label": "12K"
+    }
+  ],
+  "recent_reviews": [
+    {
+      "review_id": "6a271a916fd01a45ce5a8ba9",
+      "rating": 5,
+      "title": "Phenomenal Experience from Start to Finish!",
+      "body": "I cannot recommend Eden enough for anyone looking for a reliable, professional, and seamless way to receive Tirzepatide. Every aspect of their service has exceeded my expectations:The Providers: The medical team and customer service staff are highly professional, compassionate, and incredibly responsive. They made the virtual consultation and approval process simple, clear, and completely stress-free.The Product: The quality of the Tirzepatide is excellent. It has been highly effective for my health journey, and I feel confident knowing it is sourced reliably.The Delivery: Shipping is consistently fast, discreet, and perfectly packaged. My orders arrive right on schedule with all the necessary supplies securely included.If you are looking for a trustworthy online company with top-tier care, flat-rate transparent pricing, and excellent delivery, Eden is the absolute best choice!",
+      "date_of_experience": "June 8, 2026",
+      "posted": "20 minutes ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "customer",
+      "reviewer_country": "US",
+      "reviewer_review_count": 11
+    },
+    {
+      "review_id": "6a26fc3c96400d6adab54549",
+      "rating": 5,
+      "title": "Minimal wait time to chat",
+      "body": "Minimal wait time to chat, prompt response with a complete resolution to an issue. Worked with Zee, the associate.",
+      "date_of_experience": "June 8, 2026",
+      "posted": "2 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Kristin Merritt",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a26fb1a9a44fbf0bb656272",
+      "rating": 5,
+      "title": "Zee was amazing",
+      "body": "Zee was amazing! She helped me understand my dosage better and pointed me in the right direction for updating my payment method. Zee rocks! :)",
+      "date_of_experience": "June 8, 2026",
+      "posted": "3 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "GingerRu",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a26f5cd88844864889eceff",
+      "rating": 5,
+      "title": "Great helpful call",
+      "body": null,
+      "date_of_experience": "June 8, 2026",
+      "posted": "3 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Lori",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a26f050ffac0d8480e0a2d1",
+      "rating": 5,
+      "title": "Every interaction I have had with EDEN\u2026",
+      "body": "Every interaction I have had with EDEN & the support members, have been exceptional customer service. Extremely impressed with how prompt courteous and kind everyone on the team is.",
+      "date_of_experience": "June 8, 2026",
+      "posted": "3 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "KaySandra Bland",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a26d47f1ee0e3e022542a9b",
+      "rating": 1,
+      "title": "The link to customer service chat never\u2026",
+      "body": "The link to customer service chat never works. I've been texted about completing a check-in, and the link should take you directly to that. However, the link just goes to the portal and the check in isn't there. But then, the chat with customer service doesn't work, and calling in is a joke. How am I supposed to submit a check-in to keep going with the program??",
+      "date_of_experience": "June 5, 2026",
+      "posted": "5 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "J.E.",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a25bfeac962c6ee9111ff25",
+      "rating": 5,
+      "title": "Worth It!",
+      "body": "I\u2019ve been using Eden for about 4 months. I\u2019m almost at my goal already, Melanie in customer service is absolutely amazing, and I\u2019m satisfied with my choice! Definitely worth the investment if you\u2019re a medium-needs customer!",
+      "date_of_experience": "June 5, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Ashley S",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a255a2ed25333d834213b5c",
+      "rating": 5,
+      "title": "So far so good.",
+      "body": null,
+      "date_of_experience": "May 24, 2026",
+      "posted": "A day ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Kenton Stevens",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a248e9e24a9302e5d42e6bf",
+      "rating": 5,
+      "title": "Excellent products and works for me",
+      "body": "Excellent products and works for me. Excellent Care Team and quick response to my shipping problem. Solved.",
+      "date_of_experience": "June 6, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "John",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a24699cd03075b76691f4a3",
+      "rating": 5,
+      "title": "My experience with Eden has been good",
+      "body": "My experience with Eden has been good. If I have an issue they\u2019re always there to help. My medication always arrives in a timely manner. The Doctors are always knowledgeable and have the best advice. My weight loss journey has been pleasant and I have had no issues or symptoms, side effects or problems.",
+      "date_of_experience": "June 6, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Gee gee",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a241223d6dc5342659df738",
+      "rating": 5,
+      "title": "Melanie was great and solved a minor\u2026assistant told me I should have planned better..Remember humans are irreplaceable.",
+      "body": "Melanie was great and solved a minor problem which could have become a customer ending problem. Your AI assistant told me I should have planned my vacation better when I told the dates I would not be home to get my shipment off a hot front porch. Humans are irreplaceable.",
+      "date_of_experience": "June 3, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Rita",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a232d126c310887eded811c",
+      "rating": 1,
+      "title": "They billed AFTER I canceled my treatment and account",
+      "body": "They kept billing me even when I paused my treatment. Instead of a refund, they gave me credit. So, I unpaused, received another one month vial. AND CANCELED On",
+      "date_of_experience": "May 14, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Heather",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a232565e477186448f6f683",
+      "rating": 5,
+      "title": "Responsiveness was quick",
+      "body": "Responsiveness was quick, request was handled efficiently, and Melanie did a great job with my customer service experience. Thank you for making my request for help quick and easy.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Ariel Knight",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2318d3c5763f5da89e95c7",
+      "rating": 5,
+      "title": "Melanie was more than helpful!",
+      "body": "I needed help with both an address change AND making sure a credit on my account was applied correctly to my order. Melanie was able to take care of both issues quickly.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Lori Brecken",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a230b9796e7e475d383389c",
+      "rating": 5,
+      "title": "Zee was very helpful and answered my\u2026",
+      "body": "Zee was very helpful and answered my questions quickly!",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Gabrielle Lee",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a22ff6c6fe97b32f9114320",
+      "rating": 5,
+      "title": "Customer service",
+      "body": "Customer service",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Grace Carter",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a22f612f18b76f4734f6394",
+      "rating": 5,
+      "title": "Quick response & meds",
+      "body": "I love how quickly the provider responded and how fast the medication was sent!!",
+      "date_of_experience": "May 22, 2026",
+      "posted": "3 days ago",
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Jennifer",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a22ebec8f676a754b62117d",
+      "rating": 4,
+      "title": "Nick did a great job resolving my issue\u2026",
+      "body": "Nick did a great job resolving my issue and resolved in less than a few hour!",
+      "date_of_experience": "June 4, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "LB",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a22e57d8ac37fd6f0c87277",
+      "rating": 1,
+      "title": "Not Happy With Customer Service",
+      "body": "I have been using semaglutide for awhile and I was on vacation for three weeks. My last does was the end of April. I was told that I have to start from the absolute beginning again since it was a lapse in treatment. I feel like that is just taking my money because it takes a while to ramp up from the beginning to where I was at. Is it possible to get compensated for 1 month for miscommunication on having to start from the beginning again? Thanks I was told due to cancellation policy, I'm not eligible for a refund. That is find except they should have reached out to me before they just decided to take my money out of my account. If I would have known that I have to start from the beginning, I would have just cancelled the whole treatment. I am requesting a refund of 296 dollars.",
+      "date_of_experience": "June 4, 2026",
+      "posted": "Updated 4 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Shawn Stone",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a22105a7ec8f64590505d17",
+      "rating": 4,
+      "title": "Nathalie Senerez was great but the hold time wasn\u2019t",
+      "body": "Nathalie Senerez was very good at answering my questions. And was kind and patient and I appreciated being able to talk with her. The reason I gave 4 stars instead of 5 is because I called but the wait time was over 35 minutes and I had to hang up. I called back shortly after that and encountered another hold time was again over 30 minutes. But I held on the second time and finally spoke with Nathalie, who was great.",
+      "date_of_experience": "June 4, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "PJGrimes",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    }
+  ],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 32.3,
+    "source_url": "https://www.trustpilot.com/review/tryeden.com",
+    "markdown_chars": 36438
+  },
+  "recent_reviews_sample_size": 20
+}

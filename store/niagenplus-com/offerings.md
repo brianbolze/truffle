@@ -2,8 +2,8 @@
 # Query contract for this store: ../../QUERYING.md — parse frontmatter; grep the body to locate.
 schema_version: "1.1"
 domain: niagenplus.com
-captured_at: 2026-06-03
-site_notes: "Shopify storefront (prod-niagen-plus-mdi.myshopify.com). /products.json lists ONLY the 2 at-home SKUs ($299 each) — the in-clinic Niagen IV + Niagen Shots are NOT in the product registry (clinician-administered, no e-commerce price; access via clinic locator), so enumerate them from the /collections/niagen-iv page, not the registry. At-home prices include a $20 consult fee (in the $299, not on top) and are Rx-gated (intake → physician review). Prices/stock are a point-in-time snapshot ('More stock coming soon' on the kit)."
+captured_at: 2026-06-15
+site_notes: "Shopify storefront (prod-niagen-plus-mdi.myshopify.com). /products.json lists ONLY the 2 at-home SKUs ($299 each, both available=True as of 2026-06-15 — the Jun-03 capture had 'More stock coming soon'; stock is a point-in-time snapshot) — the in-clinic Niagen IV + Niagen Shots are NOT in the product registry (clinician-administered, no e-commerce price; access via clinic locator), so enumerate them from the /collections/niagen-iv page, not the registry. At-home prices include a $20 consult fee (in the $299, not on top) and are Rx-gated (intake → physician review). Kit contents (PDP how-to): one (500 mg) vial + a 2-piece reconstitution syringe set + 10× 1 mL injection syringes + swabs + QR-code instructions → a ~10-dose, 'daily injection routine' regimen, dose/frequency provider-set."
 ---
 
 ## Portfolio overview
@@ -40,7 +40,7 @@ A `Flagship + companions` shape: deepen the kit, note the rest.
 
 ## Provenance
 
-- **Pages read:** at-home kit (PDP), at-home refill (PDP), in-clinic Niagen IV collection, homepage, FAQs — cited `captures/2026-06-03/`.
+- **Pages read:** at-home kit (PDP), at-home refill (PDP), at-home how-to, in-clinic Niagen IV collection, homepage, FAQs — cited `captures/2026-06-15/` (refresh of the 2026-06-03 capture, archived under `captures/_archive/`).
 - **Scope:** 5 offerings enumerated (2 buyable at-home SKUs + a Niagen In-Clinic family spanning 2 administered formats). The buyable set was cross-checked against the Shopify `/products.json` registry (2 SKUs, both $299) — **agreement**; the in-clinic line is non-commerce (absent from the registry) and was enumerated from the collection page.
 - **Gated / unreachable:** in-clinic Niagen IV / Shots pricing is clinic-set (on-request, no online figure); at-home SKUs are Rx-gated (intake → physician review, approval not guaranteed).
 - **Point-in-time:** at-home stock flagged *"More stock coming soon"*; all prices are a snapshot, not fixed.

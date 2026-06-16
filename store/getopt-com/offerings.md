@@ -2,9 +2,9 @@
 # Query contract for this store: ../../QUERYING.md — parse frontmatter; grep the body to locate.
 schema_version: "1.2"
 domain: getopt.com           # company key; each offering's slug (its relative url) is its key *within* Opt Health
-captured_at: 2026-06-04       # own freshness; roster ← captures/2026-06-04/
-enumeration: lines-omitted    # men's memberships + TRT/ED/peptides reached; women's-vertical pricing/protocols + dedicated weight-loss/hair-loss pages NOT captured — see scope note
-site_notes: "Membership-centric catalog, NOT a per-SKU storefront (contrast Hone). The 3 priced tiers live on /memberships (server-rendered, clean). Treatments are gated: TRT's price IS the Optimization/Longevity membership floor ($245/$645 + a one-time lab fee); peptides/ED/weight-loss are 'contact us to inquire' or in-app (on-request); supplements/micronutrients are bundled by tier (Foundation ≤2, Optimization ≤3). NO per-SKU PDPs with prices exist — molecules come from the /learn/protocols/* education pages + the /memberships 'Unique treatments' grid. The parallel WOMEN'S vertical (/women/*) mirrors the model with its own /women/memberships + protocols — not captured this run. Live commerce + per-treatment pricing sit behind app.getopt.com (signup). WordPress/WP Engine; no A/B-test instrumentation observed, but treatment availability/pricing is gated so treat the public roster as a floor."
+captured_at: 2026-06-16       # own freshness; roster ← captures/2026-06-04/ (men's core) + captures/2026-06-16/ (women's vertical + hair/weight breadth)
+enumeration: indexed-complete # every line reached at the indexed level: men's memberships + TRT/ED/peptides/hair-loss/weight-loss, AND the women's vertical's published tier prices + its HRT/peptide/longevity/weight-loss protocols. Residual leaves (women's per-goal landing pages; per-SKU in-app prices) are by-design omissions — see scope note
+site_notes: "Membership-centric catalog, NOT a per-SKU storefront (contrast Hone). The 3 priced tiers live on /memberships (server-rendered, clean). Treatments are gated: TRT's price IS the Optimization/Longevity membership floor ($245/$645 + a one-time lab fee); peptides/ED/weight-loss are 'contact us to inquire' or in-app (on-request); supplements/micronutrients are bundled by tier (Foundation ≤2, Optimization ≤3). NO per-SKU PDPs with prices exist — molecules come from the /learn/protocols/* education pages + the /memberships 'Unique treatments' grid. The parallel WOMEN'S vertical (/women/*) mirrors the model at IDENTICAL published tier prices ($95/$245/$645 + the same intake fees) but is WAITLIST-gated (/women/waitlist) — published prices, not-yet-open commerce — with its own HRT (incl. vaginal form), peptide, longevity + weight-loss protocols (captured 2026-06-16; women's tier footnote shows a higher supplement cap than men's, ≤3/≤4 vs ≤2/≤3). Dedicated hair-loss (men's androgenic alopecia → DHT-blocker, molecule not named) + weight-loss (TRT/HRT + lifestyle; the only weight-loss *drug* is semaglutide, filed under peptides) program lines now captured. Live commerce + per-treatment pricing sit behind app.getopt.com (signup). WordPress/WP Engine; no A/B-test instrumentation observed, but treatment availability/pricing is gated so treat the public roster as a floor."
 ---
 
 ## Portfolio overview
@@ -47,8 +47,9 @@ grid is **[LOW]** (a rotating/illustrative grid, not a ranked catalog).
 
 ## Roster
 
-Complete at the indexed level for the **men's** memberships + TRT/ED/peptides; the women's vertical and the
-weight-loss/hair-loss program-goal lines are present but under-enumerated (see Provenance). Within-company key =
+Complete at the indexed level across **all lines** — men's memberships + TRT/ED/peptides/hair-loss/weight-loss
+**and** the women's parallel vertical (its published tier prices + HRT/peptide/longevity/weight-loss protocols),
+captured 2026-06-16 (see Provenance). Within-company key =
 **Slug** (relative URL, quoted; the membership tiers share `/memberships` as there are no per-tier URLs).
 Prices quoted verbatim; **every `$` here is greppable** in `captures/2026-06-04/memberships.md` or `…/trt.md`.
 Molecule/form is **page-attested only**, never inferred. An offering here is never asserted equal to a
@@ -78,15 +79,21 @@ same-molecule offering at another brand.
 | Supplements & micronutrients | buyable | Membership treatment menu | `/memberships` | — | partial | page-named items — **Vitamin D3, D3 with K2, Omega-3, Zinc, Magnesium** (supplements) · oral · included up to the tier cap; the displayed "membership" price is the all-in floor, item count tier-set. |
 | Hormone / metabolic add-ons | buyable | Membership treatment menu | `/memberships` | — | on-request | page-named — **Testosterone, Thyroid (T3/T4), DHEA, Clomiphene** · form not stated · physician-prescribed within a tier, priced in-app. |
 | Hair-loss & weight-loss meds | buyable | Membership treatment menu | `/memberships` | — | on-request | hair-loss medication + weight-loss (semaglutide, see Peptides) referenced in membership benefits ("ordering medications, including peptides, hair loss medication, ED medication, and more on the Opt app") · molecule not enumerated beyond semaglutide · in-app fees. |
-| **Women's vertical (parallel)** | family | — | `/women` | — | — | A full parallel membership for peri/menopause at `/women/*` — own memberships + medical team + protocols. **Not deeply captured this run** (overview only). |
-| Women's HRT | buyable | Women's vertical | `/learn/protocols/hrt` | — | on-request | hormone replacement therapy ("restoring sex hormone levels"; specific molecules **not enumerated** on captured pages) · membership-gated. |
-| Women's Longevity Medicine | buyable | Women's vertical | `/program-goals/women-longevity` | — | on-request | longevity/anti-aging protocol · gated. |
-| Women's Peptide Therapy | buyable | Women's vertical | `/learn/protocols/women-peptide-therapy` | — | on-request | peptide therapy, women's track · gated. |
+| **Hair loss** | family | — | `/learn/protocols/hair-loss` | — | — | Dedicated men's hair-loss protocol — its own education/treatment page (the membership-menu "hair loss medication" of the row above lands here). |
+| Hair-loss treatment | buyable | Hair loss | `/learn/protocols/hair-loss` | — | on-request | **DHT-blocker** ("blocking DHT, the hormone responsible for androgenic alopecia"; specific molecule — finasteride/minoxidil — **not stated**, described as "a potent formula of densifying active ingredients") · targets male-pattern baldness / androgenic alopecia · online Rx, in-app. Women's hair growth is addressed via peptides instead (see Women's Peptide Therapy). |
+| **Weight management** | family | — | `/program-goals/lose-weight` | — | — | Goal-framed weight-loss programs (men's `/program-goals/lose-weight`, women's `/program-goals/women-weight-loss`) — **not a standalone drug SKU**: the page route is TRT/HRT + nutrition/behavioral/fitness coaching; the only weight-loss *medication* named anywhere is **semaglutide**, filed under Peptide therapy. |
+| Weight-loss program (men) | buyable | Weight management | `/program-goals/lose-weight` | — | on-request | doctor-guided weight management · components: customized nutrition + behavioral coaching + fitness guidance + **TRT** "if low T is a contributing factor"; semaglutide via Peptides · in-app (app.getopt.com signup). |
+| Weight-loss program (women) | buyable | Weight management | `/program-goals/women-weight-loss` | — | on-request | women's track, same structure · nutrition + behavioral coaching + fitness + **HRT** "if low hormone levels are a contributing factor" · **waitlist-gated** (`/women/waitlist`). |
+| **Women's vertical (parallel)** | family | — | `/women/memberships` | `$95` / `$245` / `$645` `/month` (the same 3 tiers + intake fees as men's) | published | A full parallel membership for peri/menopause at `/women/*` — own memberships + medical team + protocols, at **identical published tier prices** to men's, but **WAITLIST-gated** (`/women/waitlist`): published prices, not-yet-open commerce. Tier footnote shows a higher supplement cap than men's (Foundation ≤3, Optimization ≤4 + 2 Rx). [anchor: women-price] |
+| Women's HRT | buyable | Women's vertical | `/learn/protocols/hrt` | the women's tier floor (`$95`–`$645`/mo + intake) | partial | **sex hormones** — estrogen page-named ("Regulating your estrogen levels"); specific molecules otherwise **not enumerated** · **injectable / oral / topical (creams, patches) / vaginal (tablets, creams, rings)** · membership-gated + physician Rx; waitlist. |
+| Women's Peptide Therapy | buyable | Women's vertical | `/learn/protocols/women-peptide-therapy` | — | on-request | women's peptide track for anti-aging / weight management / sexual function / hair growth · molecules page-named in copy: **PT-141, Thymosin Alpha-1, Epithalon, GHK-Cu** (+ "HGH peptides") · gated; waitlist. |
+| Women's Longevity Medicine | buyable | Women's vertical | `/program-goals/women-longevity` | — | on-request | longevity / anti-aging protocol · gated; waitlist. (Women's weight-loss is rostered under Weight management above.) |
 
-**Buyable count (in scope): 21** — 3 membership tiers + 1 TRT + 9 named peptides + 1 ED + 3 membership-menu
-bundles + 3 women's-vertical lines + 1 (TRT family is non-buyable). The `family` rows are non-buyable groupings.
-**Only the 3 membership prices are `published`; everything else is `partial`/`on-request`** — the public catalog
-is a floor, not a priced census.
+**Buyable count (in scope): 23** — 3 membership tiers + 1 TRT + 9 named peptides + 1 ED + 3 membership-menu
+bundles + 1 hair-loss + 2 weight-loss programs + 3 women's-vertical treatment lines. The `family` rows are
+non-buyable groupings. **The only `published` prices are the 3 men's membership tiers + the 3 mirrored women's
+tiers** (identical numbers; the women's behind a `/women/waitlist` gate) — everything else is `partial`/`on-request`,
+so the public catalog is a floor, not a priced census.
 
 ### Verbatim anchors
 
@@ -96,6 +103,16 @@ The footnotes the Price/Visibility columns point at, quoted exactly from the cit
   fixed. Foundation plan includes up to 2 supplements. Optimization plan includes up to 2 prescriptions and up
   to 3 supplements. ** Medications prescribed only after physician review and approval."* Each tier card reads
   *"After a one-time initial intake and lab fee of $195"* (Foundation, Optimization) / *"…of $695"* (Longevity).
+- **[anchor: women-price] Women's tiers = identical to men's, waitlist-gated (verbatim, /women/memberships):**
+  *"Foundation … $95 /month \* … After a one-time initial intake and lab fee of $195"*; *"MOST POPULAR …
+  Optimization … $245 /month \* … fee of $195"*; *"Longevity … $645 /month \* … fee of $695."* Footnote (note
+  the higher supplement cap vs men's): *"All plan pricing is fixed. Foundation plan includes up to 3 supplements.
+  Optimization plan includes up to 2 prescriptions and up to 4 supplements."* The page's every CTA is
+  *"[Get Started]"* → `/women/waitlist` (the vertical is waitlisted, not open commerce).
+- **[anchor: hair-loss] Hair loss = DHT-blocker, molecule unnamed (verbatim, /learn/protocols/hair-loss):**
+  *"Androgenic alopecia (otherwise known as male pattern baldness) is the most common cause of hair loss in
+  men."* + *"Block DHT — A potent formula of densifying active ingredients that promotes hair growth by blocking
+  DHT, the hormone responsible for androgenic alopecia."* → no finasteride/minoxidil named; `on-request`.
 - **[anchor: trt-price] TRT price = the membership floor (verbatim, /trt FAQ):** *"Opt Health offers TRT to
   clients who qualify as part of our Optimization and Longevity plans, **starting at $245 per month plus a $195
   initial lab fee**."* → TRT has no standalone price; its floor is the Optimization tier → `partial`.
@@ -146,21 +163,27 @@ semaglutide?") is **unanswerable from the public site** for Opt Health.
 
 ## Provenance
 
-- **Pages read (5 fresh, all `captures/2026-06-04/`):** `memberships` (the 3 priced tiers + the treatment grid
-  + the public FAQ), `trt` (TRT forms + the tier-gated price), `peptides` (the 9-named peptide menu + the
+- **Pages read — base (5 fresh, all `captures/2026-06-04/`):** `memberships` (the 3 priced tiers + the treatment
+  grid + the public FAQ), `trt` (TRT forms + the tier-gated price), `peptides` (the 9-named peptide menu + the
   quote-only pricing), `ed` (PDE5-class), `women` (the parallel vertical, overview). Context: homepage +
-  `medical_team` + `about` (per `store/getopt-com/profile.md`). All verified — sourceURLs match, bodies
-  md5-unique, no junk soft-404s.
-- **Method / cost:** part of the 11-credit profile capture (1 map + 10 rich `--homepage`/standard scrapes,
-  `maxAge:0`, `location:US`, `waitFor:3500`); **no extra credits** beyond the profile run (the offerings rode
-  the same pages).
-- **Scope — enumerated:** the **3 membership tiers** (the only published prices), the **TRT** line, the **9
-  page-named peptides**, **ED**, and the **/memberships treatment grid** (supplements + hormone add-ons) at the
-  grain the site exposes. **`enumeration: lines-omitted`** — deliberately **not captured this run:** (1) the
-  entire **women's vertical's pricing + protocols** (`/women/memberships`, women's `/learn/protocols/*`) — only
-  the `/women` overview was pulled, so the women's lines are rostered as families without prices; (2) dedicated
-  **weight-loss and hair-loss** protocol pages (characterized from the peptides page + membership benefits
-  instead). A `/deepen-offerings` pass on `/women/*` + the weight-loss/hair-loss protocols would close these.
+  `medical_team` + `about` (per `store/getopt-com/profile.md`).
+- **Pages read — deepen pass (6 fresh, all `captures/2026-06-16/`):** `women_memberships` (the women's 3 priced
+  tiers + treatment grid — the published-price gap closed), `women_hrt` (the 4 HRT forms incl. vaginal),
+  `women_peptides` (the named-molecule women's peptide track), `hair_loss` (the dedicated men's androgenic-alopecia
+  / DHT-blocker page), `weight_loss` + `women_weight_loss` (the TRT/HRT + lifestyle program-goal pages). All
+  verified — sourceURLs match, bodies md5-unique, no junk soft-404s (`fc.py verify` clean).
+- **Method / cost:** base offerings rode the 11-credit `2026-06-04` profile capture (no extra credits then). This
+  **`/deepen-offerings` pass (2026-06-16)** spent **8 Firecrawl credits** — 2 `map --search` (1 redundant, an
+  early downstream parse error) + 6 standard/`--homepage` scrapes, `maxAge:0`, `location:US`, `waitFor:3500`,
+  serialized (no burst). Tagged `--verb deepen-offerings` for `runcost.py`.
+- **Scope — enumerated (`indexed-complete`):** every line is now reached at the indexed level — men's **3
+  membership tiers** + **TRT** + **9 peptides** + **ED** + the **/memberships treatment grid**, plus the dedicated
+  **hair-loss** (androgenic alopecia → DHT-blocker) and **weight-loss** (TRT/HRT + lifestyle) program lines, and
+  the **women's parallel vertical** — its **published tier prices** ($95/$245/$645, identical to men's, behind a
+  `/women/waitlist` gate) + its **HRT / peptide / longevity / weight-loss** protocols. **`enumeration:
+  indexed-complete`.** By-design leaves still not rostered (not breadth gaps): the women's per-goal landing pages
+  (`/program-goals/women-{better-sleep,mental-clarity,more-energy,improved-physique}`, goal-framings not distinct
+  SKUs) and all per-SKU in-app prices.
 - **Gated / unreachable:** **all** medication/treatment pricing except the 3 membership tiers — TRT med cost on
   top of the tier, peptide pricing ("contact us"), ED/weight-loss/hair-loss pricing, and women's tier pricing
   all sit behind `app.getopt.com` (post-consult) or a phone call. Esters/specific molecules for testosterone
@@ -174,6 +197,8 @@ semaglutide?") is **unanswerable from the public site** for Opt Health.
 
 Express `/research-company` invocation with **+offerings** (this file), **+telehealth**, **+logos** — module
 intent pre-carried, step-2.5 question batch skipped. The roster is **membership-centric by necessity**: Opt
-Health exposes no per-SKU PDPs, so this captures the 3 published membership prices + a page-attested treatment
-menu at `on-request`/`partial` grain, rather than a priced SKU census. `enumeration: lines-omitted` records the
-deliberately-skipped women's vertical + weight-loss/hair-loss protocol detail.
+Health exposes no per-SKU PDPs, so this captures the published membership prices + a page-attested treatment
+menu at `on-request`/`partial` grain, rather than a priced SKU census. A **`/deepen-offerings` pass on 2026-06-16**
+(8 credits) then closed the original `lines-omitted` gap — the women's parallel vertical (now with its published,
+waitlist-gated tier prices + HRT/peptide/longevity/weight-loss protocols) and the dedicated hair-loss + weight-loss
+program lines — graduating the file to **`enumeration: indexed-complete`**.

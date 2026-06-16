@@ -1,0 +1,358 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T18:56:03Z",
+  "ok": true,
+  "input": {
+    "slug": "defymedical.com",
+    "wait_ms": 12000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/defymedical.com",
+  "profile_state": "active",
+  "review_count": 3829,
+  "reviews_last_12m": 202,
+  "trust_score": 4.8,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "95%",
+    "4": "2%",
+    "3": "<1%",
+    "2": "<1%",
+    "1": "1%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": false,
+    "ai_assisted_replies": true,
+    "merged_profile": true,
+    "negative_reply_rate_pct": 90
+  },
+  "people_also_looked_at": [
+    {
+      "name": "Hone Health",
+      "domain": "honehealth.com",
+      "trust_score": 4.8,
+      "review_count_label": "12K"
+    },
+    {
+      "name": "Thrivelab",
+      "domain": "thrivelab.com",
+      "trust_score": 4.9,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Marek Health",
+      "domain": "marekhealth.com",
+      "trust_score": 4.9,
+      "review_count_label": "924"
+    },
+    {
+      "name": "Midi Health",
+      "domain": "joinmidi.com",
+      "trust_score": 4.0,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "myalloy.com",
+      "domain": "myalloy.com",
+      "trust_score": 4.3,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "By Winona",
+      "domain": "bywinona.com",
+      "trust_score": 4.6,
+      "review_count_label": "7K"
+    },
+    {
+      "name": "trtnation.com",
+      "domain": "trtnation.com",
+      "trust_score": 2.3,
+      "review_count_label": "18"
+    },
+    {
+      "name": "SkinnyRx",
+      "domain": "skinnyrx.com",
+      "trust_score": 4.8,
+      "review_count_label": "5K"
+    }
+  ],
+  "recent_reviews": [
+    {
+      "review_id": "6a3002f33ee451f9ad23c5d9",
+      "rating": 5,
+      "title": "Great provider!",
+      "body": "Mike Linkous consistently provides clear, insightful explanations of all lab markers, making each follow-up both informative and valuable. I\u2019ve been working with him for over seven years, and every conversation is engaging and educational. I especially appreciate how he stays up to date on advancements in HRT and shares that knowledge during our visits. Highly recommended. Thanks, Mike.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "3 hours ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Anthony",
+      "reviewer_country": "US",
+      "reviewer_review_count": 5
+    },
+    {
+      "review_id": "6a2fe38d4257f60cfaf2ccda",
+      "rating": 5,
+      "title": "Robin was great",
+      "body": "Robin was great! I really felt that she listened to my concerns.",
+      "date_of_experience": "June 11, 2026",
+      "posted": "5 hours ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Nina Wright",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a2ee9889ee0a8615737d0b7",
+      "rating": 5,
+      "title": "Robin was great!",
+      "body": null,
+      "date_of_experience": "June 14, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Simone Smith",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a2df6d8d41d19e38b96ba02",
+      "rating": 5,
+      "title": "Wonderful Experience with Defy Medical",
+      "body": "My experience with the clinical staff at Defy Medical has been phenomenal. Talking about personal medical and hormonal issues isn't always easy, but the providers make you feel entirely comfortable and heard. Defy Medical provides top-tier concierge health care. Their telemedicine platform is incredibly convenient, and the medical staff is lightyears ahead of standard clinics in their knowledge of hormone optimization and overall wellness. The initial lab review was highly detailed, and the treatment plan they built for me was completely customized to my body. Medications are delivered right to my door, and customer service is always prompt and helpful. I cannot recommend them enough for anyone wanting to restore their energy and take control of their health.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Shawna Filley",
+      "reviewer_country": "US",
+      "reviewer_review_count": 4
+    },
+    {
+      "review_id": "6a2d56e9edc71b0e36a0e3b4",
+      "rating": 5,
+      "title": "THEY SPEAK CLEARLY AND WITH GREAT\u2026",
+      "body": "THEY SPEAK CLEARLY AND WITH GREAT PROFESSIONALISM",
+      "date_of_experience": "June 13, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "GARCIA SR,EDWIN",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2d39c30b68738284060b8c",
+      "rating": 5,
+      "title": "She listened to my concerns and\u2026",
+      "body": "She listened to my concerns and history, we talked about a plan I was comfortable with",
+      "date_of_experience": "June 13, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "HIRSH,ALEXANDRA",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2caeb7afe6bb90a8890dcf",
+      "rating": 5,
+      "title": "Marissa",
+      "body": "Good communicator-took her time. Provided time for questions.",
+      "date_of_experience": "June 11, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "HEINO,SUSAN",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2c73875ea655c946fc1946",
+      "rating": 5,
+      "title": "Knowledgeable",
+      "body": "courteous, knowledgeable, and friendly. Looking forward to our next interaction to see how the medications are working.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "AGT",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2c60f30fa158f61dd479df",
+      "rating": 5,
+      "title": "The staff is very efficient",
+      "body": "The staff is very efficient, courteous and knowledgeable. Great job!",
+      "date_of_experience": "June 12, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "WALKER,BENJAMIN I",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2c3b0512b28e5fd28db609",
+      "rating": 5,
+      "title": "So happy I switched to Defy",
+      "body": "So happy I switched to Defy. They listen to you. They don\u2019t gatekeep medications. They know that women naturally produce testosterone along with estrogen and progesterone, so they are happy to prescribe a complete hormone replacement package. Hopefully someday insurance companies will catch up and these life changing medications will be covered for women the way they already are for men.",
+      "date_of_experience": "June 11, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "CLEER,LORRI",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2be3130867e0d5ea082ad4",
+      "rating": 5,
+      "title": "It was a very informative appointment.",
+      "body": null,
+      "date_of_experience": "June 12, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "KOWACH PARZICK,KATHLEEN",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2b6667a1f1f8204b20fa6c",
+      "rating": 5,
+      "title": "Women's HRT with Defy",
+      "body": "My telehealth appointment went very well. I've been a patient for almost two years, and it is always easy to schedule follow up appointments. I never feel rushed during the appointment, allowing plenty of time to talk about my concerns and questions.",
+      "date_of_experience": "June 10, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Megan S",
+      "reviewer_country": "US",
+      "reviewer_review_count": 12
+    },
+    {
+      "review_id": "6a2b6347ec5913422396165e",
+      "rating": 5,
+      "title": "Thorough",
+      "body": "Thorough, insightful, and helpful televisit. Didn't feel rushed, we spoke in terms I comprehended and she listened well. Overall great visit.",
+      "date_of_experience": "June 10, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "KING,SARAH",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2af829cb0f272d82c2e39c",
+      "rating": 5,
+      "title": "Ben is a great advocate for his patience",
+      "body": "Ben took the time to not only talk to me but listen to me and my concerns .. too",
+      "date_of_experience": "June 11, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "CHARLES MACDOUGALL",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a2adf9e9fd62c78eaa853a8",
+      "rating": 5,
+      "title": "Mike is the best",
+      "body": "Mike is the best. Very thoughtful and thorough visit. Defy continues to be an excellent provider.",
+      "date_of_experience": "June 11, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "CALVIN,RAYMOND",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2adf99a804fa4833141ba3",
+      "rating": 5,
+      "title": "My consultation was informative and\u2026",
+      "body": "My consultation was informative and helpful.",
+      "date_of_experience": "June 11, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Jeremy",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a2aa96774150761dbf3163b",
+      "rating": 3,
+      "title": "10 minutes late to call",
+      "body": "10 minutes late to call. bad connection when on it. been a couple days and im still waiting for the follow up call so i can purchase the TRT he recommended.",
+      "date_of_experience": "June 11, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "BRUGGER,KEVIN LUKE",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2a1a5378ba3126ee258672",
+      "rating": 5,
+      "title": "Very knowledgeable and professional.",
+      "body": null,
+      "date_of_experience": "June 9, 2026",
+      "posted": "5 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "AJ",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a2a04aae81037f35938dddb",
+      "rating": 5,
+      "title": "Easy process and kind people",
+      "body": "Easy process and kind people. Thank you",
+      "date_of_experience": "June 9, 2026",
+      "posted": "5 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "John Trischler",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a29b5aa19fb9d1af0927935",
+      "rating": 5,
+      "title": "Doctor was very helpful and understanding!",
+      "body": "Doctor went over everything with me and discussed together our plan for my health. It wasn't a doctor telling me what I should or shouldn't do. I felt like I had a say in my treatment which is very new and different from the care I have received for most of my life. I am very excited to start my treatment plan! I love they have a contact phone number for their patients.",
+      "date_of_experience": "June 10, 2026",
+      "posted": "5 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Heather",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    }
+  ],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 29.0,
+    "source_url": "https://www.trustpilot.com/review/defymedical.com",
+    "markdown_chars": 34216
+  },
+  "recent_reviews_sample_size": 20
+}

@@ -1,0 +1,98 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T11:34:22Z",
+  "ok": true,
+  "input": {
+    "slug": "agelessrx.com",
+    "wait_ms": 15000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/agelessrx.com",
+  "profile_state": "active",
+  "review_count": 2288,
+  "reviews_last_12m": 792,
+  "trust_score": 4.4,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "80%",
+    "4": "6%",
+    "3": "4%",
+    "2": "3%",
+    "1": "7%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": true,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 96
+  },
+  "people_also_looked_at": [
+    {
+      "name": "ReadyRx",
+      "domain": "readyrx.com",
+      "trust_score": 4.6,
+      "review_count_label": "594"
+    },
+    {
+      "name": "Good Life Meds",
+      "domain": "goodlifemeds.com",
+      "trust_score": 4.5,
+      "review_count_label": "2K"
+    },
+    {
+      "name": "Fridays Health",
+      "domain": "joinfridays.com",
+      "trust_score": 4.4,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "TrimRx",
+      "domain": "trimrx.com",
+      "trust_score": 3.2,
+      "review_count_label": "3K"
+    },
+    {
+      "name": "bmiMD",
+      "domain": "bmimd.com",
+      "trust_score": 4.4,
+      "review_count_label": "806"
+    },
+    {
+      "name": "Direct Meds",
+      "domain": "directmeds.com",
+      "trust_score": 4.6,
+      "review_count_label": "10K"
+    },
+    {
+      "name": "Gimme",
+      "domain": "gimme.care",
+      "trust_score": 4.2,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Eden",
+      "domain": "tryeden.com",
+      "trust_score": 4.5,
+      "review_count_label": "4K"
+    }
+  ],
+  "recent_reviews_sample_size": 20,
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 36.2,
+    "source_url": "https://www.trustpilot.com/review/agelessrx.com",
+    "markdown_chars": 37736
+  },
+  "_company_slug": "agelessrx-com",
+  "_company_name": "AgelessRx"
+}

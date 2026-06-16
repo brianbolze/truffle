@@ -1,0 +1,481 @@
+{
+  "tool": "sec_edgar",
+  "source": "efts.sec.gov + data.sec.gov",
+  "captured_at": "2026-06-15T19:03:17Z",
+  "ok": true,
+  "input": {
+    "name": "ChromaDex",
+    "ticker": "CDXC",
+    "domain": "niagenplus.com"
+  },
+  "schema_drift": [],
+  "subject": "niagenplus.com",
+  "state": {
+    "is_public": true,
+    "ticker": "CDXC",
+    "cik": "0001386570",
+    "exchange": "Nasdaq",
+    "registered_name": "Niagen Bioscience, Inc.",
+    "sic": "Medicinal Chemicals & Botanical Products"
+  },
+  "filings": [
+    {
+      "form": "8-K",
+      "date": "2026-05-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1386570/000138657026000031/cdxc-20260506.htm"
+    },
+    {
+      "form": "10-Q",
+      "date": "2026-05-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1386570/000138657026000030/cdcx-20260331.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2026-03-19",
+      "url": "https://www.sec.gov/Archives/edgar/data/1386570/000138657026000017/cdxc-20260319.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2026-03-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1386570/000138657026000014/cdxc-20260304.htm"
+    },
+    {
+      "form": "10-K",
+      "date": "2026-03-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1386570/000138657026000013/cdxc-20251231.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2026-02-26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1386570/000138657026000003/cdxc-20260224.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2025-12-22",
+      "url": "https://www.sec.gov/Archives/edgar/data/1386570/000138657025000030/cdxc-20251218.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2025-11-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1386570/000138657025000025/cdxc-20251106.htm"
+    },
+    {
+      "form": "8-K",
+      "date": "2025-11-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1386570/000138657025000021/cdxc-20251104.htm"
+    },
+    {
+      "form": "10-Q",
+      "date": "2025-11-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1386570/000138657025000020/cdcx-20250930.htm"
+    }
+  ],
+  "form_d": {
+    "query_name": "ChromaDex",
+    "total_hits": 15,
+    "distinct_ciks": 1,
+    "match": "confirmed",
+    "candidates": [
+      {
+        "cik": "0001386570",
+        "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+        "dates": [
+          "2010-05-27",
+          "2012-02-22",
+          "2013-10-24",
+          "2014-10-14",
+          "2016-03-16",
+          "2017-03-22",
+          "2017-05-05",
+          "2017-06-06",
+          "2017-08-31",
+          "2017-11-29",
+          "2019-05-24",
+          "2019-08-29",
+          "2020-05-20",
+          "2021-03-03",
+          "2022-10-14"
+        ],
+        "is_vehicle": false
+      }
+    ],
+    "scoped_to_cik": "0001386570"
+  },
+  "funding_signals": [
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-05-06",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001386570",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1386570/000138657026000031/cdxc-20260506.htm"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-05-06",
+      "amount": null,
+      "observation": "factual",
+      "form": "10-Q",
+      "cik": "0001386570",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1386570/000138657026000030/cdcx-20260331.htm"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-03-19",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001386570",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1386570/000138657026000017/cdxc-20260319.htm"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-03-04",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001386570",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1386570/000138657026000014/cdxc-20260304.htm"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-03-04",
+      "amount": null,
+      "observation": "factual",
+      "form": "10-K",
+      "cik": "0001386570",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1386570/000138657026000013/cdxc-20251231.htm"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2026-02-26",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001386570",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1386570/000138657026000003/cdxc-20260224.htm"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2025-12-22",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001386570",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1386570/000138657025000030/cdxc-20251218.htm"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2025-11-06",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001386570",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1386570/000138657025000025/cdxc-20251106.htm"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2025-11-04",
+      "amount": null,
+      "observation": "factual",
+      "form": "8-K",
+      "cik": "0001386570",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1386570/000138657025000021/cdxc-20251104.htm"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "filing",
+      "date": "2025-11-04",
+      "amount": null,
+      "observation": "factual",
+      "form": "10-Q",
+      "cik": "0001386570",
+      "match": "confirmed",
+      "flags": [
+        "material_filing"
+      ],
+      "citation": "https://www.sec.gov/Archives/edgar/data/1386570/000138657025000020/cdcx-20250930.htm"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2022-10-14",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2021-03-03",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2020-05-20",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2019-08-29",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2019-05-24",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2017-11-29",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2017-08-31",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2017-06-06",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2017-05-05",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2017-03-22",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2016-03-16",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2014-10-14",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2013-10-24",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2012-02-22",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "niagenplus.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2010-05-27",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001386570",
+      "filer": "ChromaDex Corp.  (CDXC)  (CIK 0001386570)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    }
+  ]
+}

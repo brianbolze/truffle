@@ -1,0 +1,98 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T11:36:16Z",
+  "ok": true,
+  "input": {
+    "slug": "honehealth.com",
+    "wait_ms": 25000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/honehealth.com",
+  "profile_state": "active",
+  "review_count": 11645,
+  "reviews_last_12m": 5627,
+  "trust_score": 4.8,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "93%",
+    "4": "2%",
+    "3": "<1%",
+    "2": "<1%",
+    "1": "3%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": true,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 99
+  },
+  "people_also_looked_at": [
+    {
+      "name": "Male Excel",
+      "domain": "maleexcel.com",
+      "trust_score": 4.6,
+      "review_count_label": "5K"
+    },
+    {
+      "name": "Titan",
+      "domain": "www.jointitan.com",
+      "trust_score": 2.2,
+      "review_count_label": "9"
+    },
+    {
+      "name": "Midi Health",
+      "domain": "joinmidi.com",
+      "trust_score": 4.0,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Superpower",
+      "domain": "superpower.com",
+      "trust_score": 4.5,
+      "review_count_label": "272"
+    },
+    {
+      "name": "Maximus",
+      "domain": "maximustribe.com",
+      "trust_score": 4.4,
+      "review_count_label": "982"
+    },
+    {
+      "name": "SkinnyRx",
+      "domain": "skinnyrx.com",
+      "trust_score": 4.8,
+      "review_count_label": "5K"
+    },
+    {
+      "name": "By Winona",
+      "domain": "bywinona.com",
+      "trust_score": 4.6,
+      "review_count_label": "7K"
+    },
+    {
+      "name": "trtnation.com",
+      "domain": "trtnation.com",
+      "trust_score": 2.3,
+      "review_count_label": "18"
+    }
+  ],
+  "recent_reviews_sample_size": 20,
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 58.1,
+    "source_url": "https://www.trustpilot.com/review/honehealth.com",
+    "markdown_chars": 30964
+  },
+  "_company_slug": "honehealth-com",
+  "_company_name": "Hone Health"
+}

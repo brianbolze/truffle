@@ -1,0 +1,358 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T19:01:09Z",
+  "ok": true,
+  "input": {
+    "slug": "marekhealth.com",
+    "wait_ms": 18000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/marekhealth.com",
+  "profile_state": "active",
+  "review_count": 924,
+  "reviews_last_12m": 312,
+  "trust_score": 4.9,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "97%",
+    "4": "<1%",
+    "3": "<1%",
+    "2": "<1%",
+    "1": "<1%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 50
+  },
+  "people_also_looked_at": [
+    {
+      "name": "Hone Health",
+      "domain": "honehealth.com",
+      "trust_score": 4.8,
+      "review_count_label": "12K"
+    },
+    {
+      "name": "Superpower",
+      "domain": "superpower.com",
+      "trust_score": 4.5,
+      "review_count_label": "272"
+    },
+    {
+      "name": "SkinnyRx",
+      "domain": "skinnyrx.com",
+      "trust_score": 4.8,
+      "review_count_label": "5K"
+    },
+    {
+      "name": "Thrivelab",
+      "domain": "thrivelab.com",
+      "trust_score": 4.9,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Sedona Soul Adventures",
+      "domain": "sedonasouladventures.com",
+      "trust_score": 5.0,
+      "review_count_label": "972"
+    },
+    {
+      "name": "Center for Vein Restoration",
+      "domain": "www.centerforvein.com",
+      "trust_score": 4.9,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "NUFORM",
+      "domain": "nuformhealth.com",
+      "trust_score": 4.9,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Oshala Farm",
+      "domain": "oshalafarm.com",
+      "trust_score": 5.0,
+      "review_count_label": "743"
+    }
+  ],
+  "recent_reviews": [
+    {
+      "review_id": "6a2b79740755e1aebc756d9d",
+      "rating": 5,
+      "title": "I tried another company similar to\u2026",
+      "body": "I tried another company similar to Marek for over 2 years and this company is DAY AND NIGHT different than them. My Health coach Elijah Kim is absolutely phenomenal. I would rate him an 11/10 if I could. He is extremely knowledgeable and cares about my health almost as much as I do. Very extremely appreciated!",
+      "date_of_experience": "June 11, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Marc Ferguson",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2b678cea3ab18821899c85",
+      "rating": 5,
+      "title": "I had a geat experience working with Benjamin Magaziner",
+      "body": "I had a great experience through Marek working with Benjamin. I went with good expecations and I was still impressed at the level of effort and detail put in. I cant recommend Benjamin enough!",
+      "date_of_experience": "June 11, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Connor",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a273cf1acec77dbe09ee8e0",
+      "rating": 1,
+      "title": "paid for a guided consultation for one\u2026",
+      "body": "paid for a guided consultation for one specific purpose, but the company wants to harp on every detail of the labwork. wants you to order 4-500 dollars worth of bloodwork and then talk about supplements like d3 and zinc that i'm already taking. basically flushed 300 bucks down the toilet. either go to a real doctor or a different optimization company that doesnt have a clear agenda to push as many supplements and unnecessary labs as possible pretty obvious to tell all these positive reviews are fake / AI generated.",
+      "date_of_experience": "June 1, 2026",
+      "posted": "7 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Ben",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a23a144c29c12041e67b9c3",
+      "rating": 5,
+      "title": "Andrew and the providers at Marek are\u2026",
+      "body": "Andrew and the providers at Marek are outstanding If you care enough to get lab work done and follow a plan, you might as well do it with a company that understands what they're doing and has a higher standard in every aspect.",
+      "date_of_experience": "May 2, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Tony",
+      "reviewer_country": "GR",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a20550e9b2e2a1cdf2a34f3",
+      "rating": 5,
+      "title": "The Best Investment I've Made in My Health",
+      "body": "I've been working with Marek Health since the winter of 2024, and honestly it's been one of the few health-related decisions I've made that has actually delivered on what it promised. My coach, Josh Hidock, has been fantastic to work with\u2014he takes the time to explain what's going on, answers my endless questions, and helps me focus on the things that will actually move the needle instead of chasing trends or shortcuts. Over the past year and a half I've lost weight, gotten stronger, dramatically improved my mobility, increased my energy levels, and learned more about my own health than I had in the previous decade. What I've appreciated most is that I've never felt like just another client or a number in a system. Josh genuinely cares about helping me reach my goals and has been a consistent source of guidance through the ups and downs of training, work, military commitments, and everyday life. I can confidently say I'm healthier, performing better, and feeling better today than I was when I started, and I highly recommend Marek and Josh to anyone who's serious about improving their health.",
+      "date_of_experience": "May 27, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Erik Johnson",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a1d4fb0660c81b299637b3c",
+      "rating": 5,
+      "title": "Very nice",
+      "body": "Very nice. Excellent customer service.",
+      "date_of_experience": "June 1, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Morales S",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a1cc23995e7a85fe6942175",
+      "rating": 5,
+      "title": "I feel like I'm doing it \"right\" with\u2026",
+      "body": null,
+      "date_of_experience": "May 31, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "STEPHEN",
+      "reviewer_country": "US",
+      "reviewer_review_count": 9
+    },
+    {
+      "review_id": "6a1b0e5bf2a908f8721dff52",
+      "rating": 5,
+      "title": "I've been collaborating with Andrew for\u2026",
+      "body": null,
+      "date_of_experience": "May 30, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Lauren Smith",
+      "reviewer_country": "DE",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a1a7ca6ad1c7cbc8e8047c0",
+      "rating": 5,
+      "title": "I would like to recognize Joshua Hidock\u2026",
+      "body": null,
+      "date_of_experience": "May 30, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "customer",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a19acac034b51a1e3f872da",
+      "rating": 5,
+      "title": "Joshua Hidock stays abreast on the\u2026",
+      "body": null,
+      "date_of_experience": "May 29, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Jp",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a18d51d366973f795dd6487",
+      "rating": 5,
+      "title": "Everything about the company is top\u2026",
+      "body": null,
+      "date_of_experience": "May 28, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Mike Ocvirk",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a18ac0fe94e592d8ae4e8f2",
+      "rating": 5,
+      "title": "Attentive and genuine support",
+      "body": null,
+      "date_of_experience": "May 28, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Kim",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a17255116339424061c6cf6",
+      "rating": 5,
+      "title": "I have been working with Marek Health\u2026",
+      "body": null,
+      "date_of_experience": "May 27, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Maria Mazza",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a16de037bbf09c7a124fc77",
+      "rating": 5,
+      "title": "Medical advice that actually makes a difference",
+      "body": null,
+      "date_of_experience": "May 27, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Austin Ivey",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a15c03d86d66c806fd6701a",
+      "rating": 5,
+      "title": "My health coach Josh Hidock has been\u2026",
+      "body": null,
+      "date_of_experience": "May 26, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Mrs Pamela Fitzgerald",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a10dbbbb76a796fafa93a15",
+      "rating": 5,
+      "title": "I can confidently say that working with\u2026",
+      "body": null,
+      "date_of_experience": "May 22, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Jesse Moreno",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a0f4a9744a4810326c4c12f",
+      "rating": 5,
+      "title": "Marek Health has made a major impact\u2026",
+      "body": null,
+      "date_of_experience": "May 21, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": false,
+      "reviewer_name": "Brett Williams",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a0cfc366e4ed705d15afdc8",
+      "rating": 5,
+      "title": "Marek Health has been great for me and my athletes!",
+      "body": null,
+      "date_of_experience": "May 19, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Settlage Strength",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a0cd4942b7c5eca7e2359c0",
+      "rating": 5,
+      "title": "My health coach Alexandra Hamby has\u2026",
+      "body": null,
+      "date_of_experience": "May 19, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Tanja",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a0cc97c049f0e4883725e39",
+      "rating": 5,
+      "title": "My experience has been phenomenal",
+      "body": null,
+      "date_of_experience": "May 19, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Nathan Radabaugh",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    }
+  ],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 65.2,
+    "source_url": "https://www.trustpilot.com/review/marekhealth.com",
+    "markdown_chars": 43674
+  },
+  "recent_reviews_sample_size": 20
+}

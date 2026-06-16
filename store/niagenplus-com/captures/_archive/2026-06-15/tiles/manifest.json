@@ -1,0 +1,167 @@
+{
+  "slug": "niagenplus-com",
+  "capture": "2026-06-15",
+  "source": "tile",
+  "pages": [
+    {
+      "page": "homepage",
+      "width": 1920,
+      "height": 4263,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/homepage/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/homepage/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/homepage/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 2863,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/homepage/tile-03-y02863.png"
+        }
+      ]
+    },
+    {
+      "page": "about",
+      "width": 1920,
+      "height": 5969,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/about/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/about/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/about/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/about/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4569,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/about/tile-04-y04569.png"
+        }
+      ]
+    },
+    {
+      "page": "niagen_iv",
+      "width": 1920,
+      "height": 8902,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/niagen_iv/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/niagen_iv/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/niagen_iv/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/niagen_iv/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/niagen_iv/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 6100,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/niagen_iv/tile-05-y06100.png"
+        },
+        {
+          "index": 6,
+          "y": 7320,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/niagen_iv/tile-06-y07320.png"
+        },
+        {
+          "index": 7,
+          "y": 7502,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/niagen_iv/tile-07-y07502.png"
+        }
+      ]
+    },
+    {
+      "page": "kit",
+      "width": 1920,
+      "height": 6151,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/kit/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/kit/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/kit/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/kit/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4751,
+          "height": 1400,
+          "path": "store/niagenplus-com/captures/2026-06-15/tiles/kit/tile-04-y04751.png"
+        }
+      ]
+    }
+  ]
+}

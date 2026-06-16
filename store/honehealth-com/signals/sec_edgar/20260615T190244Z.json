@@ -1,0 +1,46 @@
+{
+  "tool": "sec_edgar",
+  "source": "efts.sec.gov + data.sec.gov",
+  "captured_at": "2026-06-15T19:02:44Z",
+  "ok": true,
+  "input": {
+    "name": "Hone Health",
+    "ticker": null,
+    "domain": "honehealth.com"
+  },
+  "schema_drift": [],
+  "subject": "honehealth.com",
+  "state": {
+    "is_public": false,
+    "ticker": null,
+    "cik": null,
+    "exchange": null,
+    "registered_name": null
+  },
+  "filings": [],
+  "form_d": {
+    "query_name": "Hone Health",
+    "total_hits": 2,
+    "distinct_ciks": 2,
+    "match": "name_match_unconfirmed",
+    "candidates": [
+      {
+        "cik": "0002005783",
+        "filer": "Gaingels Hone Health 2023 LLC  (CIK 0002005783)",
+        "dates": [
+          "2024-01-23"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001923680",
+        "filer": "Gaingels Hone Health LLC  (CIK 0001923680)",
+        "dates": [
+          "2022-05-03"
+        ],
+        "is_vehicle": false
+      }
+    ]
+  },
+  "funding_signals": []
+}

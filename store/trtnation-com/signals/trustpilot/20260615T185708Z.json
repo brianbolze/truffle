@@ -1,0 +1,332 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T18:57:08Z",
+  "ok": true,
+  "input": {
+    "slug": "trtnation.com",
+    "wait_ms": 12000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/trtnation.com",
+  "profile_state": "active",
+  "review_count": 18,
+  "reviews_last_12m": 13,
+  "trust_score": 2.3,
+  "rating_label": "Poor",
+  "rating_distribution": {
+    "5": "22%",
+    "4": "0%",
+    "3": "6%",
+    "2": "11%",
+    "1": "61%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": false,
+    "asks_for_reviews": false,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": null
+  },
+  "people_also_looked_at": [
+    {
+      "name": "Hone Health",
+      "domain": "honehealth.com",
+      "trust_score": 4.8,
+      "review_count_label": "12K"
+    },
+    {
+      "name": "Male Excel",
+      "domain": "maleexcel.com",
+      "trust_score": 4.6,
+      "review_count_label": "5K"
+    },
+    {
+      "name": "Titan",
+      "domain": "www.jointitan.com",
+      "trust_score": 2.2,
+      "review_count_label": "9"
+    },
+    {
+      "name": "Maximus",
+      "domain": "maximustribe.com",
+      "trust_score": 4.4,
+      "review_count_label": "982"
+    },
+    {
+      "name": "FountainTRT",
+      "domain": "fountaintrt.com",
+      "trust_score": 4.4,
+      "review_count_label": "292"
+    },
+    {
+      "name": "Defy Medical",
+      "domain": "defymedical.com",
+      "trust_score": 4.8,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "NUFORM",
+      "domain": "nuformhealth.com",
+      "trust_score": 4.9,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Dudemeds",
+      "domain": "dudemeds.com",
+      "trust_score": 2.5,
+      "review_count_label": "8"
+    }
+  ],
+  "recent_reviews": [
+    {
+      "review_id": "6a2c0b084ccd0897031b9394",
+      "rating": 1,
+      "title": "I don't usually leave reviews",
+      "body": "I don't usually leave reviews, but this is literally extortionate prices. They get people on test, which once you're on you need to be taking, then charge them through the ROOF. They take $40 items and make them $400. Without providing ANYTHING else. Besides writing a prescription. A truly gross/immoral business.",
+      "date_of_experience": "June 12, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Michael",
+      "reviewer_country": "KH",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a289d5af26cde7b4c484d9c",
+      "rating": 5,
+      "title": "Pricing is out of this world and\u2026",
+      "body": "Pricing is out of this world and unbeatable for prescribed therapeutic materials. While the company may not respond right away by email with an answer, they\u2019re a phone call away. Never had an issue with lapse in medication. They use at least one compounding pharmacy that I know of, and there\u2019s a little lag between when you order and pay and when the pharmacy receives the order and then it ships. Maybe two weeks from payment to doorstep. Faster than some new medications my family had been prescribed. They setup an initial blood test, followed by a phone consultation and confirm you\u2019re at least stable enough to start any of the therapies offered.",
+      "date_of_experience": "March 5, 2026",
+      "posted": "6 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "AtoDaJ",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a21a6034e62251b83f9a411",
+      "rating": 1,
+      "title": "If I could give these people no stars I\u2026",
+      "body": "If I could give these people no stars I would. Horrible service and junk quality testosterone. Lab testing results are incoming on the product itself and I will be doing a full YT video on them on a well known influencers channel. They took my money and gave me a hassle about shipping even though they shipped to a similar address. I asked for a full refund of all money spent and nothing yet. When the lab tests come back with anything besides testosterone in the bottle I am going to sue them and let the world know it. They are a hassle and you are better off trying a different company or going to a local MD or clinic. They are completely unorganized and incompetent. DO NOT USE AVOID AT ALL COSTS. ALSO NOTICE HOW THE OWNER RESPONDS TO THE OTHER CUSTOMER COMPLAINTS EVEN IF THE COMPANY WAS IN THE RIGHT THEY ARE NOT PROFESSIONAL AT ALL AND IT SHOWS IN THEIR COMMENTS AND BUSINESS ACTIONS. DO NOT DO BUSINESS WITH THIS COMPANY>",
+      "date_of_experience": "June 4, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "William",
+      "reviewer_country": "US",
+      "reviewer_review_count": 4
+    },
+    {
+      "review_id": "69d6401c4b531cda64d09b46",
+      "rating": 1,
+      "title": "Don\u2019t trust this biz",
+      "body": "I wouldn\u2019t trust my health to anyone who hides from there customers behind anonymous accounts, the ownership of this company is rude and unprofessional to its customers and hides their identity from the public.",
+      "date_of_experience": "April 6, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "John Maynard",
+      "reviewer_country": "US",
+      "reviewer_review_count": 7
+    },
+    {
+      "review_id": "69c57ff3d2380dd3ef761776",
+      "rating": 1,
+      "title": "WARNING \u2013 Do not use this company",
+      "body": "My biggest mistake was not reading the reviews first. After this experience, I went back and saw similar issues reported by others. This appears to be a pattern. I paid upfront, waited two weeks, and asked what they later described as a \u201csimple question\u201d about how injections are administered. What followed was conflicting information from multiple staff members, including a written message that contradicted itself (confirming subcutaneous while stating it would still be intramuscular), followed by the same contradiction verbally. If this is a \u201csimple question,\u201d it should not result in inconsistent answers across multiple people, including in writing. When I tried to clarify, I was told to wait another week to talk to someone. I agreed to wait and continue. Instead, my care was canceled without any further discussion. I was later told this decision was made by \u201cupper management,\u201d yet I was never given any opportunity to speak with anyone at that level. The decision appears to have been made without hearing directly from me. When I attempted to escalate, my calls were disconnected multiple times and I was unable to reach anyone further. There is effectively no escalation process available to patients. They also characterized my attempt to get clarification as \u201cdissatisfaction,\u201d when in reality I was trying to make an informed decision about medical care based on conflicting information they provided. After reviewing other feedback, it\u2019s clear this is not an isolated experience. Proceed with caution.",
+      "date_of_experience": "March 26, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Consumer",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6986736912eaec4add94e40a",
+      "rating": 1,
+      "title": "They suck",
+      "body": "TRT Nation was a complete waste of time and felt like a straight-up cash grab. They ask for specific blood tests upfront. I provided exactly what they requested, then heard nothing for almost two weeks. No email, no call. I finally reached out myself\u2014which is a nightmare because they rarely answer the phone\u2014only to be told I was \u201cmissing\u201d labs that aren\u2019t even listed as required on their own site. Conveniently, they offer paid lab work through their own vendor. It honestly felt like they were intentionally dragging things out because I didn\u2019t pay for their labs. I assumed once labs were submitted I\u2019d quickly get a consultation with a doctor. Nope. It took three weeks, and when the appointment finally happened, it wasn\u2019t even with a doctor\u2014it was a nurse. During the call, she kept asking for additional tests. Every time I told her I already had the labs she wanted, she\u2019d respond by requesting more. It never ended. At that point it was obvious what was going on: delay, delay, delay until you give in and pay out of pocket for their lab work. I canceled and walked away. I can get TRT for free through the VA, without the games, excuses, or pressure tactics. If you\u2019re considering TRT Nation, be warned\u2014poor communication, constant moving of the goalposts, and a strong impression they\u2019re pushing you toward their paid labs rather than actually helping patients.",
+      "date_of_experience": "February 3, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "DreamCrusher619",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "693345fff3fc9f6efb825f11",
+      "rating": 2,
+      "title": "I spent a few thousand dollars with\u2026",
+      "body": "I spent a few thousand dollars with this operation. I received 1 questionable issue on blood labs(psa) and was told by on of there prescribing MD's that I probably had prostate cancer and my treatment was immediately terminated. Obviously,I was terrified. I didn't sleep for a week. I finally was seen by a Urologist and after an uncomfortable digital exam and completing blood labs was informed zero abnormalities. I contacted TRTNATION.COM with the attempt to start back on treatment and was told that I couldn't start treatment again without a Dr's consult with there specialists( how the world would I coordinate that?). I explained that, that would be impossible, I had hired them for treatment because my local Doctors are prejudiced and wouldn't consider treatment and certainly wouldn't make time. I was told sorry about your situation. Why in the world would a Dr who specializes in trt therapy request a consultation with a local Dr who wouldn't even consider TRT?",
+      "date_of_experience": "November 12, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Steve Cook",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6930ad2db416f31e3d97ef59",
+      "rating": 1,
+      "title": "Horrible costumer service",
+      "body": "Stay far away from there! Extremely poor service and rude people! They don\u2019t answer or return phone calls, are sarcastic when you get a hold on them; specially the Indians who work there!",
+      "date_of_experience": "December 3, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "MO",
+      "reviewer_country": "US",
+      "reviewer_review_count": 5
+    },
+    {
+      "review_id": "68c9afdb1d5399e4a9f1b8f7",
+      "rating": 1,
+      "title": "Malpractice and unprofessionalism",
+      "body": "This is one of the worst TRT clinics in the country, at least based on my experience. For the price, all you get is a vial of testosterone and some insulin syringes. They don\u2019t even provide drawing needles. Their staff aggressively insists they \u201cdon\u2019t believe in drawing needles\u201d and tells patients to pull thick oil with a 31G insulin needle, which can take 10\u201315 minutes and is simply not how it should be done. Their communication system is dysfunctional. You need to enter a code to even open their emails, and they routinely go silent for a week or more, later claiming they replied, but I somehow didn\u2019t receive it. I have zero problems receiving emails from anyone else - it\u2019s only them. Doctor consultations are meaningless. They\u2019re just formalities, with no real guidance provided. You\u2019re left on your own to figure things out. Overall, clinics like this push people toward the grey market, because what you get here is barely any better, except you pay 10x the price.",
+      "date_of_experience": "September 14, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Jeremy",
+      "reviewer_country": "US",
+      "reviewer_review_count": 12
+    },
+    {
+      "review_id": "688b98a057864acbbe771a30",
+      "rating": 1,
+      "title": "Too troublesome to deal with and you\u2026",
+      "body": "Too troublesome to deal with and you can get few times cheaper elsewhere with better service.",
+      "date_of_experience": "July 31, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Tk",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "688b52253806a580ead3e8bd",
+      "rating": 1,
+      "title": "Not A Great Experience",
+      "body": "I\u2019ll start by saying they are a bit deceptive in their pricing. My refills were suppose to be $80 and when I went to refill, they went up to $135. I inquired about it, but got the run around.. Their refill process is absolutely horrible. It takes about 8-10 days for them to actually review your refill, sign off on it, and get it to the lab. Then the lab takes their time. Your looking at 7-10 days for delivery. Totally unacceptable. I\u2019ve used different companies and you got your meds in about 4 days after submitting a refill. Anytime you call, someone working from home takes your call and it\u2019s on speaker phone. You can hear the dog barking and kids playing in the background. lol Not too professional I do like the fact that they don\u2019t hold your hand during your treatment. I won\u2019t be doing business with them anymore. Too many places out there with equal or better pricing",
+      "date_of_experience": "July 1, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Antonio",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6878443cb4fe2426aeb5de2d",
+      "rating": 2,
+      "title": "Beware - they charge you, then hold your order",
+      "body": "Beware, they will accept your payment, and then tell you that your labs are outdated. This has happened 3x with me. I get it that I may need to update labs to get the prescription, but why charge my card for the order when you know you won't send it?",
+      "date_of_experience": "June 24, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Kevin McKeand",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "68700855473424a1bb603484",
+      "rating": 1,
+      "title": "Stay away from this clinic",
+      "body": "Stay away from this clinic. All they care about is making money. No patient support what so ever. I was running out of medication and was looking for a refill. The doctor was unavailable for the next 10 days. I explained to the support that I will run out before the doctor even sees me. Basically they were ok if I ran out and could have serious withdrawals.",
+      "date_of_experience": "July 4, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Rehan Mirza",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "67f07103faf4413241c06d3d",
+      "rating": 5,
+      "title": "They Made it work",
+      "body": "The stress they went through over the phone was with good reason. I was concerned about a few things about my previous order and I noticed a mistake, but it's milk now. The employees there took my concerns seriously, made a note about my preference, and it arrived better than expected. The industry can be quite a snake and I want to thank TRTNation for witholding their fangs. Unlike many other suppliers based on personal research, when you're seeking a smooth experience it's a better choice.",
+      "date_of_experience": "March 28, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Jay Shelters",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "678efc7ea3b056ff44d082ff",
+      "rating": 1,
+      "title": "They are liars",
+      "body": "They are liars! They are deceptive! They increased their prices after the first 2.5 months They Advertise as 99$ but you have to buy 2.5 months to start. My first payment was 250$. Then after my first 2.5 months they started to charge me 325. When I said they increased prices on me on their Facebook page, they emailed me saying it was slander and discontinued my services. I wrote a previous review that the business owner responded to and he called me a troglodyte. I tried to edit my comment to respond to him but I accidentally deleted it. He said that they increased my prices because I was in California so they had to increase my prices, and that they only honored the first 2.5 months at the 99$ they promised. The issue is he never told me about any of this, they never made it made known to me that the 99$ a month, was only for first vial. If they would have let me know that the price was going to increase after the first 2.5 months, I may have reconsidered. Anyway they are not trustworthy, the business owner also said that I was only writing a reply because I was upset I couldn't find anyone as cheap as them, Henrys meds is cheaper ( for me in California) and more trustworthy.",
+      "date_of_experience": "January 20, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "David Campbell",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "676227b76bd7639a7fdaffec",
+      "rating": 3,
+      "title": "I switched to them from another company\u2026",
+      "body": "I switched to them from another company and they cut my testosterone dose by more than half, they put me on a starter dose even though I provided them with my prescription. They don't tell you this until after you pay, they won't tell you anything until after you pay",
+      "date_of_experience": "December 17, 2024",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "fred McGovern",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6721a89a9352c33e82f8d5c8",
+      "rating": 5,
+      "title": "awesome customer service",
+      "body": "awesome customer service. The best at helping men obtain their full potential",
+      "date_of_experience": "October 29, 2024",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Gregory",
+      "reviewer_country": "US",
+      "reviewer_review_count": 11
+    },
+    {
+      "review_id": "66e707c1e949be111c9fca33",
+      "rating": 5,
+      "title": "Great service for those who are looking\u2026",
+      "body": "Great service for those who are looking to achieve their goals in not only physical health, but also their mental wellbeing. Affordable for those who already have a trt regimen dialed in.",
+      "date_of_experience": "September 13, 2024",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Shawn Sloan",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    }
+  ],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 35.0,
+    "source_url": "https://www.trustpilot.com/review/trtnation.com",
+    "markdown_chars": 31938
+  },
+  "recent_reviews_sample_size": 18
+}

@@ -1,0 +1,55 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-08T22:02:09Z",
+  "ok": true,
+  "input": {
+    "slug": "hydramed.com",
+    "wait_ms": 20000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/hydramed.com",
+  "profile_state": "empty",
+  "review_count": 0,
+  "reviews_last_12m": null,
+  "trust_score": null,
+  "rating_label": null,
+  "rating_distribution": null,
+  "rating_distribution_source": null,
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": false,
+    "asks_for_reviews": null,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": null
+  },
+  "people_also_looked_at": [
+    {
+      "name": "In Home Infusion",
+      "domain": "inhomeinfusion.com",
+      "trust_score": 4.7,
+      "review_count_label": "53"
+    },
+    {
+      "name": "America's Best Franchises",
+      "domain": "americasbestfranchises.com",
+      "trust_score": 3.7,
+      "review_count_label": "5"
+    }
+  ],
+  "recent_reviews": [],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 50.2,
+    "source_url": "https://www.trustpilot.com/review/hydramed.com",
+    "markdown_chars": 10727
+  },
+  "recent_reviews_sample_size": 0
+}

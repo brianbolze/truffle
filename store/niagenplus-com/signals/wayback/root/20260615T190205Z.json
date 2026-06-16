@@ -1,0 +1,482 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-15T19:02:05Z",
+  "ok": true,
+  "input": {
+    "url": "https://niagenplus.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2024-04-02T23:57:39Z",
+  "last_seen": "2026-05-08T09:00:37Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 803,
+  "snapshot_count": 60,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "-",
+      "from": "2024-04-02T23:57:39Z",
+      "to": "2024-04-02T23:57:39Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-07-02T21:16:32Z",
+      "to": "2024-07-02T21:16:32Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-07-28T23:19:41Z",
+      "to": "2024-07-28T23:19:41Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-07-28T23:19:57Z",
+      "to": "2024-07-30T06:18:28Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-07-30T06:21:46Z",
+      "to": "2024-07-30T06:21:46Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-07-30T06:21:47Z",
+      "to": "2024-09-23T15:29:54Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-09-26T22:43:54Z",
+      "to": "2024-09-26T22:43:54Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-26T22:43:54Z",
+      "to": "2024-12-10T22:04:31Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-12-13T02:04:56Z",
+      "to": "2024-12-13T02:04:56Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-13T02:05:01Z",
+      "to": "2024-12-24T18:06:37Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-12-28T21:45:35Z",
+      "to": "2024-12-28T21:45:35Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-28T21:45:35Z",
+      "to": "2025-02-19T19:10:21Z"
+    },
+    {
+      "status": "403",
+      "from": "2025-02-28T20:10:07Z",
+      "to": "2025-02-28T20:10:07Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-02T07:51:07Z",
+      "to": "2025-06-16T06:05:22Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-06-18T15:20:16Z",
+      "to": "2025-06-18T15:20:16Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-06-18T15:20:16Z",
+      "to": "2025-07-16T11:26:35Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-07-21T22:17:03Z",
+      "to": "2025-07-21T22:17:03Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-07T03:48:13Z",
+      "to": "2025-11-18T18:53:27Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-12-07T01:05:39Z",
+      "to": "2025-12-07T01:05:39Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-12-07T01:05:39Z",
+      "to": "2026-05-08T09:00:37Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20240402235739/https://www.niagenplus.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260508090037/https://www.niagenplus.com/",
+  "snapshots": [
+    {
+      "timestamp": "2024-04-02T23:57:39Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-07-02T21:16:32Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "BOPFQBGSNUJZS5GUKG3RDQOXJKKNTJ5R"
+    },
+    {
+      "timestamp": "2024-07-28T23:19:41Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-07-28T23:19:57Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "NPO72ODXYMTCALRZ2INMVYG3WEFACH47"
+    },
+    {
+      "timestamp": "2024-07-30T06:18:28Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "52C4WLUA6RYKBOPS3HP5ABJEIDOPHEKL"
+    },
+    {
+      "timestamp": "2024-07-30T06:21:46Z",
+      "url": "http://niagenplus.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-07-30T06:21:47Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "OXLCCZB53VHEUL67RV6LMRPARS74PFMQ"
+    },
+    {
+      "timestamp": "2024-09-23T15:29:54Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "Z776O7GHOH4VSZLWLOXPIS2OIBUCIF4U"
+    },
+    {
+      "timestamp": "2024-09-26T22:43:54Z",
+      "url": "http://niagenplus.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-09-26T22:43:54Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "FBTDTIGJ6ERBGTTZJHVHENJPPLRIXLDA"
+    },
+    {
+      "timestamp": "2024-10-09T04:34:18Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "VLJW7UW2XRLPBMREHJYVQOEX4EJY4JAT"
+    },
+    {
+      "timestamp": "2024-10-13T17:04:27Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "2BEEK7SFK47WZSKENMJ4W6XRDKNWGQCD"
+    },
+    {
+      "timestamp": "2024-11-23T23:05:22Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "VPDKHVZEPTVHZR7C3NQW2DMWUZLSBLNZ"
+    },
+    {
+      "timestamp": "2024-12-07T06:15:42Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "7R4RCA7JBZUBVMWLUDJ53RTFY5IJGLL3"
+    },
+    {
+      "timestamp": "2024-12-10T22:04:31Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "37S6HQZOMLSPUE6I7XT242BXUBMWHIA3"
+    },
+    {
+      "timestamp": "2024-12-13T02:04:56Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-12-13T02:05:01Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "NGZX2ESLR4I56XWJU3GJQHCI6LPWQXXH"
+    },
+    {
+      "timestamp": "2024-12-23T05:15:17Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "VD4M7V6E4B6AHRYJGK2WFCUECSJS63XI"
+    },
+    {
+      "timestamp": "2024-12-24T18:06:37Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "GHQEYDQXOXKGJZRPIF5N7Q6FT7CKY7TI"
+    },
+    {
+      "timestamp": "2024-12-28T21:45:35Z",
+      "url": "http://niagenplus.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-12-28T21:45:35Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "YS2YURS3ODLT2QC3C4R6RRJGXZVINBVL"
+    },
+    {
+      "timestamp": "2025-01-06T16:17:42Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "BAPSOMGLNK2EVQNHIYV7DTZBQFGFTDYY"
+    },
+    {
+      "timestamp": "2025-01-17T22:02:38Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "NNCVUXKAC7QSZY7QSK2HB55J7EF3QN2E"
+    },
+    {
+      "timestamp": "2025-01-30T06:59:55Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "DHTC3ZZFEA32TTKGISWMWXC4DMBAI4FU"
+    },
+    {
+      "timestamp": "2025-02-07T08:46:05Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "QZ23DINW7KOG5P7XBZSJGK5C76RJTY4D"
+    },
+    {
+      "timestamp": "2025-02-11T19:11:00Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "I7BT7XPENWXDNSI3SR656ESWOV6Y7S2V"
+    },
+    {
+      "timestamp": "2025-02-19T19:10:21Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "JZJBETDSDYWMF2Z5NG7RA7AZ4NT7IRVH"
+    },
+    {
+      "timestamp": "2025-02-28T20:10:07Z",
+      "url": "https://niagenplus.com/",
+      "status": "403",
+      "digest": "IDKKXKQDQ7BT7QXMPIJ76GWSWMZI6GHA"
+    },
+    {
+      "timestamp": "2025-03-02T07:51:07Z",
+      "url": "https://niagenplus.com/",
+      "status": "200",
+      "digest": "XT3BC2CQ2RV7GMV7OGKHXMEBKMHNI2EE"
+    },
+    {
+      "timestamp": "2025-03-16T00:41:16Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "CES6Y6WKN5VLCREQQMWIKO3GJ6BQ6E3W"
+    },
+    {
+      "timestamp": "2025-04-19T02:45:19Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "4D77SXMOAEZI2GOCPIRR2LZUSU6J6I3Y"
+    },
+    {
+      "timestamp": "2025-04-23T23:59:31Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "HECOBMNPU7KZJ2Y353F73WKF7VBNFNTL"
+    },
+    {
+      "timestamp": "2025-04-29T20:22:53Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "ZYT6I7NYUKTZ6IAQESWQG5DV5MXAPFK2"
+    },
+    {
+      "timestamp": "2025-05-18T07:49:15Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "4PAMQEJQEYXEQ4XU7YTMF27QGMACQR3V"
+    },
+    {
+      "timestamp": "2025-05-23T04:35:27Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "ZUXQIUIGWLJ52L3PE3BOS55TXR7DWEW7"
+    },
+    {
+      "timestamp": "2025-06-14T14:29:10Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "KQPN5G6GOK2IGSZSRLFEV2EUNI556CTN"
+    },
+    {
+      "timestamp": "2025-06-16T06:05:22Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "EHSBWUKGIGBYGRWQKJT7Z74HCJPR4D45"
+    },
+    {
+      "timestamp": "2025-06-18T15:20:16Z",
+      "url": "https://niagenplus.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-06-18T15:20:16Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "55YDVPT3N3EKK5X4UNSS2UZ3YXSI7BRM"
+    },
+    {
+      "timestamp": "2025-07-16T11:26:35Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "UYHQB6TXVMZAU3X3A6HIT4LFMXJTR67I"
+    },
+    {
+      "timestamp": "2025-07-21T22:17:03Z",
+      "url": "https://niagenplus.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-08-07T03:48:13Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "2TPSDQ7AYPU5T3SZJCNM4NZQNX5IA6CL"
+    },
+    {
+      "timestamp": "2025-08-10T09:27:00Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "NYWZ6A2HXW55LOXPMED7DH6DY6JQQEKI"
+    },
+    {
+      "timestamp": "2025-09-09T15:40:50Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "TWJ65DCRFG2RISTMEXNRPRPY2D7EBA5J"
+    },
+    {
+      "timestamp": "2025-09-10T02:26:08Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "4HIM5TS3Z32E5AO7ITWZJUB4OAPIJ6ZW"
+    },
+    {
+      "timestamp": "2025-09-23T23:18:41Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "3VABRWJHVQXWPBGXLV22SCSB74PYXEUG"
+    },
+    {
+      "timestamp": "2025-10-08T13:26:27Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "VLGZPABPFOPPPEJGVYMGVGDZ6ZKFF7OQ"
+    },
+    {
+      "timestamp": "2025-10-09T13:55:42Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "RFURDNJ2SUS2QR4JJISM57JPMD6KICYA"
+    },
+    {
+      "timestamp": "2025-10-17T16:32:04Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "I77XTMMYERU43IM6PU4P52ELVNXOVQQU"
+    },
+    {
+      "timestamp": "2025-11-15T06:26:12Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "R6PFZ6O3FMSVHC5KANSYBGDMN4TUNQIT"
+    },
+    {
+      "timestamp": "2025-11-18T18:53:27Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "AF6U2NSP2RUAICUWFODS3PB72WKCF7XI"
+    },
+    {
+      "timestamp": "2025-12-07T01:05:39Z",
+      "url": "https://niagenplus.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-12-07T01:05:39Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "HKJUHFKJWDB7MYCJSZYDOMIYMEUW7N7O"
+    },
+    {
+      "timestamp": "2025-12-15T08:45:59Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "23FH3KO322OBVYPZZR4WE3QBRSSBGWWA"
+    },
+    {
+      "timestamp": "2026-01-12T19:57:30Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "LJPWZYC43DKL4VQEYEEHLXAEA2OKV7L2"
+    },
+    {
+      "timestamp": "2026-01-16T16:07:50Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "TPREINL5P74LXWSCO6RYAJT2J63RXLLN"
+    },
+    {
+      "timestamp": "2026-02-04T17:07:04Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "52D2VPRWMD7XF5MZXEMZHNNY2EAOLHAU"
+    },
+    {
+      "timestamp": "2026-02-09T06:12:31Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "QMDW5VG2E4BOLRZKWHLSBY3QWNVZFDA4"
+    },
+    {
+      "timestamp": "2026-03-07T06:22:20Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "YQ64KSQXMCSYTDGZB57LVEZ6MRVPE37B"
+    },
+    {
+      "timestamp": "2026-05-08T09:00:37Z",
+      "url": "https://www.niagenplus.com/",
+      "status": "200",
+      "digest": "MLD4FDOCOFF77O5T7THTZTU4C2LCFXT3"
+    }
+  ]
+}

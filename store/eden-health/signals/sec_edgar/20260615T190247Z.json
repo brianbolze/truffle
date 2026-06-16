@@ -1,0 +1,104 @@
+{
+  "tool": "sec_edgar",
+  "source": "efts.sec.gov + data.sec.gov",
+  "captured_at": "2026-06-15T19:02:47Z",
+  "ok": true,
+  "input": {
+    "name": "Eden Health",
+    "ticker": null,
+    "domain": "eden.health"
+  },
+  "schema_drift": [],
+  "subject": "eden.health",
+  "state": {
+    "is_public": false,
+    "ticker": null,
+    "cik": "0001721728",
+    "exchange": null,
+    "registered_name": "Eden Health, Inc.",
+    "sic": ""
+  },
+  "filings": [
+    {
+      "form": "D",
+      "date": "2021-02-19",
+      "url": "https://www.sec.gov/Archives/edgar/data/1721728/000172172821000001/xslFormDX01/primary_doc.xml"
+    },
+    {
+      "form": "D",
+      "date": "2018-12-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1721728/000172172818000002/xslFormDX01/primary_doc.xml"
+    },
+    {
+      "form": "D",
+      "date": "2017-11-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1721728/000172172817000001/xslFormDX01/primary_doc.xml"
+    }
+  ],
+  "form_d": {
+    "query_name": "Eden Health",
+    "total_hits": 4,
+    "distinct_ciks": 1,
+    "match": "confirmed",
+    "candidates": [
+      {
+        "cik": "0001721728",
+        "filer": "Eden Health, Inc.  (CIK 0001721728)",
+        "dates": [
+          "2017-11-27",
+          "2018-12-28",
+          "2021-02-19"
+        ],
+        "is_vehicle": false
+      }
+    ],
+    "scoped_to_cik": "0001721728"
+  },
+  "funding_signals": [
+    {
+      "subject": "eden.health",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2021-02-19",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001721728",
+      "filer": "Eden Health, Inc.  (CIK 0001721728)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "eden.health",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2018-12-28",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001721728",
+      "filer": "Eden Health, Inc.  (CIK 0001721728)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    },
+    {
+      "subject": "eden.health",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2017-11-27",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001721728",
+      "filer": "Eden Health, Inc.  (CIK 0001721728)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    }
+  ]
+}

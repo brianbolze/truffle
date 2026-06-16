@@ -1,0 +1,62 @@
+{
+  "tool": "sec_edgar",
+  "source": "efts.sec.gov + data.sec.gov",
+  "captured_at": "2026-06-15T19:03:11Z",
+  "ok": true,
+  "input": {
+    "name": "Lifeforce Digital",
+    "ticker": null,
+    "domain": "mylifeforce.com"
+  },
+  "schema_drift": [],
+  "subject": "mylifeforce.com",
+  "state": {
+    "is_public": false,
+    "ticker": null,
+    "cik": "0001911639",
+    "exchange": null,
+    "registered_name": "Lifeforce Digital Inc.",
+    "sic": ""
+  },
+  "filings": [
+    {
+      "form": "D",
+      "date": "2022-02-17",
+      "url": "https://www.sec.gov/Archives/edgar/data/1911639/000191163922000001/xslFormDX01/primary_doc.xml"
+    }
+  ],
+  "form_d": {
+    "query_name": "Lifeforce Digital",
+    "total_hits": 1,
+    "distinct_ciks": 1,
+    "match": "confirmed",
+    "candidates": [
+      {
+        "cik": "0001911639",
+        "filer": "Lifeforce Digital Inc.  (CIK 0001911639)",
+        "dates": [
+          "2022-02-17"
+        ],
+        "is_vehicle": false
+      }
+    ],
+    "scoped_to_cik": "0001911639"
+  },
+  "funding_signals": [
+    {
+      "subject": "mylifeforce.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2022-02-17",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0001911639",
+      "filer": "Lifeforce Digital Inc.  (CIK 0001911639)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    }
+  ]
+}

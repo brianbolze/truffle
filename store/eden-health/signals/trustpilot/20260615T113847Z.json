@@ -1,0 +1,98 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T11:38:47Z",
+  "ok": true,
+  "input": {
+    "slug": "tryeden.com",
+    "wait_ms": 15000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/tryeden.com",
+  "profile_state": "active",
+  "review_count": 4153,
+  "reviews_last_12m": 2745,
+  "trust_score": 4.5,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "78%",
+    "4": "5%",
+    "3": "3%",
+    "2": "2%",
+    "1": "12%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 99
+  },
+  "people_also_looked_at": [
+    {
+      "name": "TrimRx",
+      "domain": "trimrx.com",
+      "trust_score": 3.2,
+      "review_count_label": "3K"
+    },
+    {
+      "name": "Fridays Health",
+      "domain": "joinfridays.com",
+      "trust_score": 4.4,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "MEDVi",
+      "domain": "medvi.org",
+      "trust_score": 4.4,
+      "review_count_label": "14K"
+    },
+    {
+      "name": "Iv\u00edm Health",
+      "domain": "ivimhealth.com",
+      "trust_score": 4.9,
+      "review_count_label": "38K"
+    },
+    {
+      "name": "Gimme",
+      "domain": "gimme.care",
+      "trust_score": 4.2,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Mochi Health",
+      "domain": "joinmochi.com",
+      "trust_score": 4.4,
+      "review_count_label": "16K"
+    },
+    {
+      "name": "Remedy Meds",
+      "domain": "remedymeds.com",
+      "trust_score": 4.6,
+      "review_count_label": "13K"
+    },
+    {
+      "name": "OrderlyMeds",
+      "domain": "orderlymeds.com",
+      "trust_score": 3.7,
+      "review_count_label": "584"
+    }
+  ],
+  "recent_reviews_sample_size": 20,
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 43.5,
+    "source_url": "https://www.trustpilot.com/review/tryeden.com",
+    "markdown_chars": 30766
+  },
+  "_company_slug": "tryeden-com",
+  "_company_name": "Eden"
+}

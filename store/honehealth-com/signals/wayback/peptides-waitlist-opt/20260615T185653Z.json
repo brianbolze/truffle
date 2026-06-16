@@ -1,0 +1,20 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-15T18:56:53Z",
+  "ok": true,
+  "input": {
+    "url": "https://honehealth.com/peptides-waitlist-opt/"
+  },
+  "schema_drift": [],
+  "first_seen": null,
+  "last_seen": null,
+  "first_seen_confidence": "insufficient",
+  "tenure_days": null,
+  "snapshot_count": 0,
+  "snapshots_truncated": false,
+  "status_trail": [],
+  "first_snapshot_url": null,
+  "last_snapshot_url": null,
+  "snapshots": []
+}

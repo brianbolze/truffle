@@ -1,0 +1,14 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "captured_at": "2026-06-08T22:01:21Z",
+  "ok": false,
+  "input": {
+    "slug": "sermorelin.com",
+    "wait_ms": 20000
+  },
+  "schema_drift": [],
+  "profile_state": "transport_error",
+  "error": "HTTP Error 500: Internal Server Error",
+  "note": "Caller-generated failure envelope after two Firecrawl transport failures; this is not evidence that a Trustpilot profile is absent."
+}

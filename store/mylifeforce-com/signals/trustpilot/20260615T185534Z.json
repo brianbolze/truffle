@@ -1,0 +1,358 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T18:55:34Z",
+  "ok": true,
+  "input": {
+    "slug": "mylifeforce.com",
+    "wait_ms": 12000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/mylifeforce.com",
+  "profile_state": "active",
+  "review_count": 184,
+  "reviews_last_12m": 101,
+  "trust_score": 4.3,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "67%",
+    "4": "9%",
+    "3": "4%",
+    "2": "8%",
+    "1": "12%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 100
+  },
+  "people_also_looked_at": [
+    {
+      "name": "Hone Health",
+      "domain": "honehealth.com",
+      "trust_score": 4.8,
+      "review_count_label": "12K"
+    },
+    {
+      "name": "Function Health",
+      "domain": "functionhealth.com",
+      "trust_score": 4.3,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Superpower",
+      "domain": "superpower.com",
+      "trust_score": 4.5,
+      "review_count_label": "272"
+    },
+    {
+      "name": "MEDVi",
+      "domain": "medvi.org",
+      "trust_score": 4.4,
+      "review_count_label": "14K"
+    },
+    {
+      "name": "Marek Health",
+      "domain": "marekhealth.com",
+      "trust_score": 4.9,
+      "review_count_label": "924"
+    },
+    {
+      "name": "ReadyRx",
+      "domain": "readyrx.com",
+      "trust_score": 4.6,
+      "review_count_label": "595"
+    },
+    {
+      "name": "10X Health System",
+      "domain": "10xhealthsystem.com",
+      "trust_score": 4.0,
+      "review_count_label": "2K"
+    },
+    {
+      "name": "OmegaQuant",
+      "domain": "omegaquant.com",
+      "trust_score": 4.8,
+      "review_count_label": "2K"
+    }
+  ],
+  "recent_reviews": [
+    {
+      "review_id": "6a2afae7b201cd99ee4fb4b0",
+      "rating": 1,
+      "title": "I\u2019ve been a Lifeforce member for\u2026",
+      "body": "I\u2019ve been a Lifeforce member for several years, and my recent experiences have been extremely disappointing. Most recently, I was prescribed 30 tablets but received only 17 in my shipment. This is a serious medication error, not a minor issue. When I contacted customer service, I was told this was \u201cnot a big deal,\u201d which is unacceptable given that this involves my health. What\u2019s even more concerning is that this is not an isolated incident. In the past, my prescription was delayed/held back by a customer service representative for no clear reason, causing unnecessary stress and disruption. At the same time, I am paying $129/month for membership and $80 for prescription. Being charged in full while dealing with repeated issues, lack of accountability, and poor customer service is simply not acceptable. For a company operating in the healthcare space, accuracy, reliability, and responsiveness should be basic standards. Unfortunately, my experience has been the opposite. I hope Lifeforce takes this seriously and makes significant improvements.",
+      "date_of_experience": "June 11, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "HA",
+      "reviewer_country": "US",
+      "reviewer_review_count": 5
+    },
+    {
+      "review_id": "6a289f89c0d0482988871cf0",
+      "rating": 5,
+      "title": "Very Impressed with Quality of Advice & Care",
+      "body": "After a rocky start scheduling my zoom appointment to review the results of my blood work I had an excellent interaction with Dr Rob Rogers. Dr Rogers gave a comprehensive explanation and review of the results. He was extremely well prepared, informed, measured and deliberate. Thoroughly enjoyed the interaction and experience with him and looking forward to dialing in and optimizing my biomarkers",
+      "date_of_experience": "May 29, 2026",
+      "posted": "6 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Bruce Campbell",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a0c7b4302a328ad7570b6ba",
+      "rating": 2,
+      "title": "There is a lot of pushing vitamins",
+      "body": null,
+      "date_of_experience": "May 19, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Christy Olsen",
+      "reviewer_country": "US",
+      "reviewer_review_count": 5
+    },
+    {
+      "review_id": "6a064c6b5c8e285121adc40c",
+      "rating": 5,
+      "title": "I am very satisfied with my service so\u2026",
+      "body": null,
+      "date_of_experience": "May 14, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Renso",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a026abd1a50c8c5294f10cb",
+      "rating": 5,
+      "title": "life Force is the way to healthy living",
+      "body": null,
+      "date_of_experience": "May 11, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Jeffrey & Zina Mroczka",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "69f886eb35db7e0237fcdb3e",
+      "rating": 5,
+      "title": "Excellent care and knowledgeable\u2026",
+      "body": null,
+      "date_of_experience": "May 5, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Jeffrey Paul Mroczka",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "69f7998fe2c02e3138e95c8e",
+      "rating": 5,
+      "title": "Super easy process with my doctor",
+      "body": null,
+      "date_of_experience": "May 3, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Andy R",
+      "reviewer_country": "US",
+      "reviewer_review_count": 4
+    },
+    {
+      "review_id": "69f65d65eb0005dc2dcf6bfb",
+      "rating": 5,
+      "title": "The DR....was clear",
+      "body": null,
+      "date_of_experience": "May 2, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "customer",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "69eea0a4bbaf31c6dbd91b43",
+      "rating": 5,
+      "title": "Knowledgeable",
+      "body": "Knowledgeable. Easy to communicate with.",
+      "date_of_experience": "April 18, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Robin Garcia",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "69ee7f1bf68b91718d09af49",
+      "rating": 5,
+      "title": "Get the energy of life with LIFEFORCE!!!",
+      "body": "Lifeforce is what you want to live an exceptional life HEALTHY. It brings you real information on how your body is functioning and recommends what is necessary for a high level of functioning. My Lifeforce doctor explains what is needed to achieve a higher level!!! All I can say is try it & you will feel it within and leap into the challenges of life ready to have fun with lots of energy!!!",
+      "date_of_experience": "April 18, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Wendy Garzella",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "69ee31faec9218eea753dbd2",
+      "rating": 5,
+      "title": "A dream postpartum partner, twice over",
+      "body": "I've been a Lifeforce member for almost 4 years and it's truly changed my life. I started about a year after having my first child, when I knew something was off. Turns out my hormones were a complete mess (shocker). My Lifeforce doctor actually listened, took my concerns seriously, and worked with me on lifestyle changes and small tweaks to my supplementation that made a world of difference. Meanwhile, my OBGYN dismissed everything as normal postpartum stuff. And sure, it might be normal, but that doesn't mean we have to accept it. I just had my second baby, and with Lifeforce in my corner I'm significantly better prepared and having a much better postpartum experience this time around. I tell every new mom I know about it. My outcomes have been better than my friends seeing expensive functional medicine doctors. Cannot recommend enough.",
+      "date_of_experience": "April 18, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Meg",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "69eabe6e56d772c3dcd7e136",
+      "rating": 2,
+      "title": "Extra blood work to sell you unnecessary meds",
+      "body": "They did an in depth blood work panel and ended up recommending 3 prescriptions and multiple supplements that had me taking over 20 pills a day and spending around $500/month not including the $149 monthly fee for the service. Between appointments I could not get in touch with my NP at all, emailing took 1 to 2 days for a response and it took FOREVER to find a phone number to call support. After explaining I was not experiencing any symptom relief, I was told well that's all they can do on their end and referred me back to my PCP. Refused to retest by blood work earlier that just a week before they felt it should be done (which was 3+months) as well as realizing that I was put on meds for this that were in normal ranges and also were not meant to be taken long term. I followed up with my own research into scientific research, peer reviewed articles and journals as well as several meta studies, concluding it seems they are just like everyone else they are pushing pills for profit. No thank you. One more note when I asked for documentation to provide my job due to the HEALTH ISSUES AND AUTO IMMUNE DISORDER they are giving me PRESCRIPTIONS for, I was told no sorry, we don't give documentation because we're providing proactive services. What a waste of my money time and health.",
+      "date_of_experience": "March 18, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Meshell Carter",
+      "reviewer_country": "US",
+      "reviewer_review_count": 6
+    },
+    {
+      "review_id": "69dc1e3e77c467dabfe48a8f",
+      "rating": 5,
+      "title": "In home lab draw",
+      "body": "In home lab draw. Brilliant doctor and dashboard!",
+      "date_of_experience": "April 10, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "john",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "69d7b94a8c4db0cd546a6c7d",
+      "rating": 5,
+      "title": "Awesome",
+      "body": "Awesome! I highly recommend",
+      "date_of_experience": "April 8, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "John Johnson",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "69d57463853374fe750d6c57",
+      "rating": 5,
+      "title": "High Value / High Convenience",
+      "body": "The service overall is high value and high convenience. I have never felt more connected to my own health. Scheduling and going through the blood draw is extremely convenient, scheduling and connecting with doc / RNA is extremely convenient. Relationship with doc / RNA is very positive and I get value from our interactions.",
+      "date_of_experience": "March 30, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Tom",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "69c9c24e7c790d0440db6984",
+      "rating": 2,
+      "title": "I\u2019ve been working with Lifeforce for\u2026",
+      "body": "I\u2019ve been working with Lifeforce for about four months now. I signed up for the subscription, which included a blood draw and a consultation with a PA to review the results. The initial experience was excellent. The blood draw was done at my home, right on time, and the whole process was smooth and easy. About a week later, I had my consultation with the PA, who walked me through my elevated markers and recommended a supplement protocol. My main goals were improving sleep (I deal with interrupted sleep), balancing hormones, and supporting muscle recovery. I followed the protocol exactly as prescribed, which included about five supplements over roughly 3\u20134 months. After staying fully compliant, I did a follow-up blood test\u2014and unfortunately, my markers were even more elevated than before. That was frustrating and disappointing, especially since I was consistent with everything. To their credit, the team suggested making adjustments and fine-tuning the protocol, which I appreciate. But at the same time, it\u2019s hard to ignore that the results didn\u2019t move in the right direction after several months of commitment. Overall, the service, communication, and convenience were all excellent. The blood draw and consultation process were top-notch. But for me, the outcome is what matters most\u2014and based on my experience so far, I\u2019m not seeing the results I was hoping for. I share this simply so others know that, while the process is professional and well run, the results aren\u2019t guaranteed and may take more trial and error than expected. For now, I\u2019ll likely be canceling my subscription.",
+      "date_of_experience": "March 28, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Bill B",
+      "reviewer_country": "US",
+      "reviewer_review_count": 4
+    },
+    {
+      "review_id": "69c2ffb88a16d6160cee4f9b",
+      "rating": 1,
+      "title": "Lifeforce sells pills you don\u2019t need",
+      "body": "Lifeforce recommended I take 3 different hormone supplements, as well as testosterone therapy based off their lab results which I had performed at same time as my primary dr. Lifeforce\u2019s lab showed much more dramatic results than my primary which should have been my first warning sign. I refused to take most of the supplements and meds the Lifeforce clinician said I needed over a zoom call, but did agree to try DHEA supplementation for 3 months. Now, 3 months later none of my lab results are much different but my life is in shambles after becoming an angry and aggressive jerk on the supplement and not identifying it as the cause in time to protect my loved ones from my severe mood swings, anger and depression that developed. These mood changes, it turns out, are quite common with these supplements and hormone therapies but were never spoken of in my consultation with the clinician aka supplement sales rep. This company is selling pseudo science with real world dangers for individual health outcomes and should be stopped. Go see a real Dr and skip this scam of an operation. I am a healthy 47 male with no history of mood disorders fyi. This company doesn\u2019t care about health outcomes\u2014they care about selling supplements and taking your $$.",
+      "date_of_experience": "March 23, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Reviewer",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "69c05d33e904a536b69ec99f",
+      "rating": 5,
+      "title": "Great process",
+      "body": "Great process. Solid insight and action plan. I thought I knew a lot about my health but walked away from my consultation with new information and direction. Thank you LifeForce!",
+      "date_of_experience": "March 21, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "David Inns",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "69bdf4401e1c988bd17abd84",
+      "rating": 5,
+      "title": "Great providers that guided me in a\u2026",
+      "body": "Great providers that guided me in a good direction to improve my overall health. I appreciate it very much.",
+      "date_of_experience": "March 8, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "Bill & Vivian CORBETT",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "69b163b01f82e9a6490b1f9e",
+      "rating": 5,
+      "title": "very professional",
+      "body": "very professional. quality service. I would highly recommend Lifeforce.",
+      "date_of_experience": "March 10, 2026",
+      "posted": null,
+      "verified": true,
+      "unprompted": false,
+      "reviewer_name": "CG",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    }
+  ],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 32.0,
+    "source_url": "https://www.trustpilot.com/review/mylifeforce.com",
+    "markdown_chars": 44847
+  },
+  "recent_reviews_sample_size": 20
+}

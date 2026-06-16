@@ -1,0 +1,148 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-15T19:09:59Z",
+  "ok": true,
+  "input": {
+    "query": "Niagen Plus",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 1
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "Niagen Plus is a clinician-directed platform offering pharmaceutical-grade Nicotinamide Riboside (NR) to boost cellular NAD+ levels. Designed to bypass digestion, it is available via in-clinic IV/intramuscular therapies or a prescription-only At-Home Injection Kit, aiming to support healthy aging and cellular repair more efficiently than oral supplements. Niagen Plus +1",
+    "Because Niagen Plus provides pharmaceutical-grade support, it requires a medical evaluation. You can access it in two ways: Niagen Plus",
+    "For more details on the ingredients, dosing, and science, visit the Niagen Plus Website."
+  ],
+  "headings": [
+    "Key Features & Offerings",
+    "How to Access"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "Niagen Plus",
+      "title": "Niagen Plus | Pharmaceutical-Grade NAD+ Therapy with Niagen IV ...",
+      "link": "https://www.niagenplus.com/"
+    },
+    {
+      "index": 1,
+      "source": "Niagen Plus",
+      "title": "Find a Niagen Plus Clinic Near You | NAD+ IV & Shots",
+      "link": "https://www.niagenplus.com/pages/niagen-plus-clinic-locator"
+    },
+    {
+      "index": 2,
+      "source": "Niagen Plus",
+      "title": "Niagen Plus FAQs | NAD+ Therapy & Niagen Questions",
+      "link": "https://www.niagenplus.com/pages/niagen-plus-faqs"
+    },
+    {
+      "index": 3,
+      "source": "Restore Hyper Wellness",
+      "title": "Niagen (NR) IV Drip Therapy | Benefits and What to Expect",
+      "link": "https://www.restore.com/services/niagen-nr-iv-drips"
+    },
+    {
+      "index": 4,
+      "source": "NexGen Health",
+      "title": "Niagen Plus IV Therapy - NexGen Health",
+      "link": "https://www.mynexgenhealth.com/niagen-iv-therapy/"
+    },
+    {
+      "index": 5,
+      "source": "Morningstar",
+      "title": "Niagen Bioscience Launches Niagen Plus Telehealth Platform, Unveiling ...",
+      "link": "https://www.morningstar.com/news/business-wire/20260504495993/niagen-bioscience-launches-niagen-plus-telehealth-platform-unveiling-at-home-injection-kit-offering"
+    },
+    {
+      "index": 6,
+      "source": "Wells Pharmacy Network",
+      "title": "Niagen\u00ae Plus At-Home Injectable Kit - Wells Pharmacy Network",
+      "link": "https://wellsrx.com/niagen-plus-at-home-injectable-kit/"
+    },
+    {
+      "index": 7,
+      "source": "FirstWord Pharma",
+      "title": "ChromaDex Announces Expansion of Pharmaceutical-Grade Niagen\u00ae IV and Injection Offerings to Additional Leading Wellness Clinics",
+      "link": "https://firstwordpharma.com/story/5894102"
+    },
+    {
+      "index": 8,
+      "source": "Niagen Plus",
+      "title": "NAD+ IV vs. Niagen IV: Which Is Better?",
+      "link": "https://www.niagenplus.com/blogs/niagen-plus-blog/nad-iv-vs-niagen-iv-which-nad-boosting-iv-is-better-1"
+    },
+    {
+      "index": 9,
+      "source": "ojjaarahcp.com",
+      "title": "JAKi Na\u00efve Patients with Anemia | Efficacy",
+      "link": "https://ojjaarahcp.com/efficacy/jak-inhibitor-naive/"
+    },
+    {
+      "index": 10,
+      "source": "s205.q4cdn.com",
+      "title": "Niagen Bioscience Secures Exclusive License to Develop and Commercialize its NAD+ Precursor, Patented Nicotinamide Riboside (Nia",
+      "link": "https://s205.q4cdn.com/770776702/files/doc_news/Niagen-Bioscience-Secures-Exclusive-License-to-Develop-and-Commercialize-its-NAD-Precursor-Patented-Nicotinamide-Riboside-Niagen-as-a-IW4N1.pdf"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Niagen Plus | Pharmaceutical-Grade NAD+ Therapy with ...",
+      "link": "https://www.niagenplus.com/",
+      "snippet": "Niagen Plus delivers a pharmaceutical-grade form of vitamin B3 that supports the production of NAD+, a coenzyme involved in over 500 cellular processes ...",
+      "displayed_link": "https://www.niagenplus.com"
+    },
+    {
+      "position": 2,
+      "title": "Tru Niagen\u00ae | Clinically Studied NAD+ Booster for Cellular ...",
+      "link": "https://www.truniagen.com/?srsltid=AfmBOopMEEA52NtdyYX67hm5mDOVTVvdEmzldgf4lzDyhMvb07HfY8lo",
+      "snippet": "The original NAD+ research brand. Patented Niagen\u00ae NR backed by 45+ studies and endorsed by Nobel laureates. Clinically shown to boost cellular energy and ...",
+      "displayed_link": "https://www.truniagen.com"
+    },
+    {
+      "position": 3,
+      "title": "Niagen\u00ae Plus At-Home Injectable Kit",
+      "link": "https://wellsrx.com/niagen-plus-at-home-injectable-kit/",
+      "snippet": "Niagen\u00ae (Nicotinamide Riboside Chloride) is a patented NAD+ precursor studied for its role in supporting cellular energy and overall wellness. Niagen At-Home ...",
+      "displayed_link": "https://wellsrx.com \u203a niagen-plus-at-home-injectable-kit"
+    },
+    {
+      "position": 4,
+      "title": "Niagen Plus (@niagenplus)",
+      "link": "https://www.instagram.com/niagenplus/?hl=en",
+      "snippet": "Healthy aging is shaped by what you prioritize over time. Recovery. Cellular health. The ability to keep doing ...",
+      "displayed_link": "3.9K+ followers"
+    },
+    {
+      "position": 5,
+      "title": "Niagen (NR) IV Drip Therapy | Benefits and What to Expect",
+      "link": "https://www.restore.com/services/niagen-nr-iv-drips",
+      "snippet": "The Niagen IV Drip Therapy experience does not require a loading dose and offers a 75% faster infusion time, compared to NAD+ IV Drip Therapy.",
+      "displayed_link": "https://www.restore.com \u203a services \u203a niagen-nr-iv-drips"
+    },
+    {
+      "position": 6,
+      "title": "Why We're Switching from NAD+ to Niagen IV (And Why It ...",
+      "link": "https://blumcenterforhealth.com/why-were-switching-from-nad-to-niagen-iv-and-why-it-matters-for-your-health/",
+      "snippet": "Anti-aging support; Cognitive function; Recovery support; Metabolic health. You'll now experience these benefits with greater efficiency and ...",
+      "displayed_link": "https://blumcenterforhealth.com \u203a Healthy Living"
+    },
+    {
+      "position": 7,
+      "title": "Niagen vs. NAD: What's the Difference?",
+      "link": "https://www.olympiapharmacy.com/blog/niagen-vs-nad-whats-the-difference/?srsltid=AfmBOopOs81PyQREmb-4Uo5W8HNerFpoNWjEPJuZtzTxZn9Mg_qiEzFr",
+      "snippet": "We offer Niagen\u2122 as a liquid injectable option for those looking to support energy levels, healthy aging, and cellular function. Because it helps the body ...",
+      "displayed_link": "https://www.olympiapharmacy.com \u203a Uncategorized"
+    }
+  ]
+}

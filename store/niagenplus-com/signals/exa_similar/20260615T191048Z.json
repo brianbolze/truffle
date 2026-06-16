@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-15T19:10:48Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://niagenplus.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Nadclinic- Producers Of The Worlds Premium Nad+",
+      "url": "https://nadclinic.com",
+      "domain": "nadclinic.com"
+    },
+    {
+      "rank": 2,
+      "title": "Longevity Plus",
+      "url": "https://longevityplus.com",
+      "domain": "longevityplus.com"
+    },
+    {
+      "rank": 3,
+      "title": "Ageless Nad+ Age Less, Age Well.",
+      "url": "https://agelessnad.com.au",
+      "domain": "agelessnad.com.au"
+    },
+    {
+      "rank": 4,
+      "title": "Health Iv",
+      "url": "https://healthiv.com",
+      "domain": "healthiv.com"
+    },
+    {
+      "rank": 5,
+      "title": "Premium Iv Therapy",
+      "url": "https://premiumivtherapy.com",
+      "domain": "premiumivtherapy.com"
+    },
+    {
+      "rank": 6,
+      "title": "The Hydra+",
+      "url": "https://thehydraplus.com",
+      "domain": "thehydraplus.com"
+    },
+    {
+      "rank": 7,
+      "title": "Essential Infusions Plus",
+      "url": "https://essentialinfusionsplus.com",
+      "domain": "essentialinfusionsplus.com"
+    },
+    {
+      "rank": 8,
+      "title": "Revive Iv Lounge",
+      "url": "https://reviveivloungebuford.com",
+      "domain": "reviveivloungebuford.com"
+    },
+    {
+      "rank": 9,
+      "title": "You+health",
+      "url": "https://youplushealthusa.com",
+      "domain": "youplushealthusa.com"
+    },
+    {
+      "rank": 10,
+      "title": "Vascular Access Plus",
+      "url": "https://vapivhydration.com",
+      "domain": "vapivhydration.com"
+    },
+    {
+      "rank": 11,
+      "title": "Nad Medica",
+      "url": "https://nadmedica.com",
+      "domain": "nadmedica.com"
+    },
+    {
+      "rank": 12,
+      "title": "101+",
+      "url": "https://101.plus",
+      "domain": "101.plus"
+    },
+    {
+      "rank": 13,
+      "title": "Nutriplus Ltd",
+      "url": "https://nutriplushealth.com",
+      "domain": "nutriplushealth.com"
+    },
+    {
+      "rank": 14,
+      "title": "Iv Vitamin Therapy",
+      "url": "https://ivvitamintherapy.com",
+      "domain": "ivvitamintherapy.com"
+    },
+    {
+      "rank": 15,
+      "title": "The Ivy Luxury Iv Lounge",
+      "url": "https://ivylounge.co",
+      "domain": "ivylounge.co"
+    },
+    {
+      "rank": 16,
+      "title": "Renew Iv Wellness",
+      "url": "https://renewivwellness.com",
+      "domain": "renewivwellness.com"
+    },
+    {
+      "rank": 17,
+      "title": "Iv Wellness",
+      "url": "https://iv-well.com",
+      "domain": "iv-well.com"
+    },
+    {
+      "rank": 18,
+      "title": "Neuage Health + Wellness",
+      "url": "https://neuagehealthwellness.com",
+      "domain": "neuagehealthwellness.com"
+    },
+    {
+      "rank": 19,
+      "title": "Ivluxury",
+      "url": "https://ivluxury.com",
+      "domain": "ivluxury.com"
+    },
+    {
+      "rank": 20,
+      "title": "Infusion Iv",
+      "url": "https://infusionivlounge.com",
+      "domain": "infusionivlounge.com"
+    },
+    {
+      "rank": 21,
+      "title": "Sericin Plus",
+      "url": "https://sericinplus.com",
+      "domain": "sericinplus.com"
+    },
+    {
+      "rank": 22,
+      "title": "Prime Iv Hydration & Wellness Apex",
+      "url": "https://primeivhydration.com/locations/north-carolina/apex-nc",
+      "domain": "primeivhydration.com"
+    },
+    {
+      "rank": 23,
+      "title": "918 Iv",
+      "url": "https://918iv.com",
+      "domain": "918iv.com"
+    },
+    {
+      "rank": 24,
+      "title": "Striveiv Infusions",
+      "url": "https://striveiv.com",
+      "domain": "striveiv.com"
+    },
+    {
+      "rank": 25,
+      "title": "Nad&me",
+      "url": "https://nadandme.com",
+      "domain": "nadandme.com"
+    }
+  ],
+  "neighbor_count": 25
+}

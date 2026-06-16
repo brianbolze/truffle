@@ -1,0 +1,306 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T18:58:08Z",
+  "ok": true,
+  "input": {
+    "slug": "truniagen.com",
+    "wait_ms": 12000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/truniagen.com",
+  "profile_state": "active",
+  "review_count": 16,
+  "reviews_last_12m": 8,
+  "trust_score": 2.4,
+  "rating_label": "Poor",
+  "rating_distribution": {
+    "5": "19%",
+    "4": "6%",
+    "3": "0%",
+    "2": "12%",
+    "1": "63%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": false,
+    "asks_for_reviews": false,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": null
+  },
+  "people_also_looked_at": [
+    {
+      "name": "renuebyscience.com",
+      "domain": "renuebyscience.com",
+      "trust_score": 4.3,
+      "review_count_label": "216"
+    },
+    {
+      "name": "Life Extension",
+      "domain": "lifeextension.com",
+      "trust_score": 4.3,
+      "review_count_label": "674"
+    },
+    {
+      "name": "Partiqlar",
+      "domain": "partiqlar.com",
+      "trust_score": 4.2,
+      "review_count_label": "441"
+    },
+    {
+      "name": "IM8",
+      "domain": "im8health.com",
+      "trust_score": 4.6,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Thorne",
+      "domain": "www.thorne.com",
+      "trust_score": 2.1,
+      "review_count_label": "60"
+    },
+    {
+      "name": "Elysium Health",
+      "domain": "www.elysiumhealth.com",
+      "trust_score": 3.7,
+      "review_count_label": "14"
+    },
+    {
+      "name": "ProHealth Longevity",
+      "domain": "www.prohealth.com",
+      "trust_score": 3.7,
+      "review_count_label": "72"
+    },
+    {
+      "name": "Now Foods",
+      "domain": "nowfoods.com",
+      "trust_score": 3.5,
+      "review_count_label": "25"
+    }
+  ],
+  "recent_reviews": [
+    {
+      "review_id": "69f265a82040e66519b3c300",
+      "rating": 1,
+      "title": "The Worst Customer Services",
+      "body": "The Worst Customer Services or as they have named Customer (POOR) Experience",
+      "date_of_experience": "April 29, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "adam",
+      "reviewer_country": "GB",
+      "reviewer_review_count": 94
+    },
+    {
+      "review_id": "69dcfe6584b7c61652f16027",
+      "rating": 1,
+      "title": "Unscrupulous business practices",
+      "body": "Unscrupulous business practices! I\u2019ve tried to cancel my auto renewal twice. They ignore my requests and continue to send me the product. Now I have to go through a big hassle to find a way to stop my auto renewal. This is ridiculous!",
+      "date_of_experience": "April 13, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "customer",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "697bd4628ab0c44c6e7cd28d",
+      "rating": 2,
+      "title": "Makes Me Sleepy",
+      "body": "Does nothing for me with regards to energy or helping with fatigue. I take mid morning and can fall asleep afterwards!",
+      "date_of_experience": "January 29, 2026",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Debra Largent",
+      "reviewer_country": "US",
+      "reviewer_review_count": 48
+    },
+    {
+      "review_id": "695916a99e7ec07e3c1f69e4",
+      "rating": 5,
+      "title": "I have been buying from them for over a\u2026",
+      "body": "I have been buying from them for over a year and everything working fine for me. There are so many fake websites and counterfeit products.",
+      "date_of_experience": "December 23, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Hung Chau",
+      "reviewer_country": "CA",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6921ef136e188c4f69a72c3f",
+      "rating": 1,
+      "title": "Fraud alert",
+      "body": "I have made several purchases of Tru Niagen directly from the website but after about 2 years with no noteworthy results, I decided to discontinue. Since then I have twice been charged for new purchases. The first time someone at Tru Niagen admitted the error and refunded me right away. Now that it has happened again, they are refusing to look into it or refund me the 230 USD that they have taken from my credit card. I've had to cancel my card to avoid it happening again, but am still fighting with anonymous \"customer service\" people about the money they have stolen.",
+      "date_of_experience": "November 17, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Ida",
+      "reviewer_country": "DK",
+      "reviewer_review_count": 10
+    },
+    {
+      "review_id": "69131fec30f4d9c3a3e7f180",
+      "rating": 1,
+      "title": "Poor customer service and refusal to take responsibility",
+      "body": "I\u2019ve ordered Tru Niagen several times directly from their website, with free shipping included. Despite that, I\u2019ve had to pay an extra $35 to UPS every time because Tru Niagen declares the wrong package weight. When I contacted their customer service, they replied: \u201cOur product (the box and bottle) weighs 900 grams. UPS packaging may cause an increase in weight. We do not have control over UPS's packaging rules and regulations.\u201d This is clearly a matter between Tru Niagen and UPS, not me as the customer. If their shipping partner is making mistakes, that\u2019s something they need to resolve internally. Expecting customers to pay extra charges on \u201cfree shipping\u201d orders is unreasonable and unprofessional. Verdict: Great product, but very poor customer service. Until Tru Niagen takes ownership of their logistics, I can\u2019t recommend buying directly from them.",
+      "date_of_experience": "November 11, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Stein Jacobsen",
+      "reviewer_country": "NO",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "689eb96cc883ff629c9245de",
+      "rating": 1,
+      "title": "Made an order and right after",
+      "body": "Made an order and right after, was charged every month. Contacted them and got a response saying the see only one order. Its not clear why they keep charging me.",
+      "date_of_experience": "June 11, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Michael Haephrati",
+      "reviewer_country": "US",
+      "reviewer_review_count": 11
+    },
+    {
+      "review_id": "6865f088279ece107d554ce4",
+      "rating": 5,
+      "title": "Tru Niagen, a Blessing.",
+      "body": "Tru Niagen is a pill that has no side effects and it actually does what it states. I have been taking 500 mg for a couple years. Before that, I took 300 mg for a couple years prior. The boost with 500 mg is recognizable. I will continue to take Tru Niagen for the rest of my life. And it did lower my bad Cholesterol levels and my blood pressure. I am 76 years old and I have the energy, flexibility and vitality of a 40 year old. Thank you Tru Niagen, you have given me my life back. I take no prescription medication and am an avid walker.",
+      "date_of_experience": "July 2, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Phyllis Bako",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "68409b50178d86ba2abf4b42",
+      "rating": 5,
+      "title": "All good!!!!!!!!",
+      "body": null,
+      "date_of_experience": "June 3, 2025",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "michael runer",
+      "reviewer_country": "IT",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "67e46bf7a817955cc927a77b",
+      "rating": 1,
+      "title": "I signed up for a monthly subscription",
+      "body": "I signed up for a monthly subscription. Initial purchase went fine. Second month I never received the product. The purchase was 101.50 and they\u2019re refusing to refund. Pretty insane when my usps box needs a lock to get into it so I know it wasn\u2019t a stolen package. They continue to try and draw a monthly subscription amount without delivering product. I do not recommend using this company unless you want the headache.",
+      "date_of_experience": "December 21, 2024",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Mandi",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6777c91be870f4561fd22c68",
+      "rating": 1,
+      "title": "Never received my order",
+      "body": "Never received my order. I have sent several emails to customer service, but they did not responded. I have called the numer, it is a scam. Be carefull. Never buy.",
+      "date_of_experience": "December 5, 2024",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Sanaz",
+      "reviewer_country": "SE",
+      "reviewer_review_count": 5
+    },
+    {
+      "review_id": "67735074958f1185ca868cc4",
+      "rating": 1,
+      "title": "Shady company, bad experience",
+      "body": "Was a subscriber for years. Suddenly got a message that there was an issue with my delivery (there wasn\u2019t - in fact there was no delivery scheduled) and they would be suspending my subscription. All attempts at contact were ignored. I had no other communication at all besides my subscription with this company before this, still totally confused what happened. There are MANY other identical supplements available at a similar price point, I\u2019d recommend steering clear of Tru Niagen as they clearly do not value their customers at all.",
+      "date_of_experience": "September 1, 2024",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Dan Blakeman",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "66cca1a6ceefa6e6c28d7c4b",
+      "rating": 1,
+      "title": "Dangerous practices",
+      "body": "I was a regular customer buying True Niagen on Amazon Spain. Last purchase, I got the product box with the seal cut, the bottle inside was evidently opened before. Contacted Amazon and Tru Niagen. they wanted me to send back that. I am not sending a supplement back to be reselled by them. I got no money back, they did not offer me a new sealed product. I do not trust in this company and do not recommend it at all!",
+      "date_of_experience": "August 22, 2024",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "mauro soppe",
+      "reviewer_country": "ES",
+      "reviewer_review_count": 9
+    },
+    {
+      "review_id": "667c318bd114c15d58ed88c2",
+      "rating": 1,
+      "title": "They make it very hard to cancel the\u2026",
+      "body": "They make it very hard to cancel the subscription. I did not really see an improvement in anyway after 8 months of taking it.",
+      "date_of_experience": "June 26, 2024",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Roger Garcia",
+      "reviewer_country": "US",
+      "reviewer_review_count": 6
+    },
+    {
+      "review_id": "64f86d37d4b64bdf50ad6f86",
+      "rating": 4,
+      "title": "Order arrived very quick!",
+      "body": null,
+      "date_of_experience": "January 2, 2023",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Gene Williams",
+      "reviewer_country": "GB",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "5db7a98360485808b8168f69",
+      "rating": 2,
+      "title": "Be careful!",
+      "body": "Bought this product on the recommendation of a friend. On the second day of use, I noticed a faster heart rate. This became progressively worse. On the 3rd day, pimples appeared on my face and the skin on my arms itched. That\u2019s when I stopped taking it. It took another 3 days for the symptoms to disappear. It is clearly not safe for everyone and shouldn\u2019t be so readily available.",
+      "date_of_experience": "October 29, 2019",
+      "posted": null,
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Karin",
+      "reviewer_country": "AU",
+      "reviewer_review_count": 37
+    }
+  ],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 29.0,
+    "source_url": "https://www.trustpilot.com/review/truniagen.com",
+    "markdown_chars": 24919
+  },
+  "recent_reviews_sample_size": 16
+}

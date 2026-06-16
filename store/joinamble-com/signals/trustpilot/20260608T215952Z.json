@@ -1,0 +1,358 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-08T21:59:52Z",
+  "ok": true,
+  "input": {
+    "slug": "joinamble.com",
+    "wait_ms": 12000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/joinamble.com",
+  "profile_state": "active",
+  "review_count": 3984,
+  "reviews_last_12m": 3073,
+  "trust_score": 4.6,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "81%",
+    "4": "6%",
+    "3": "1%",
+    "2": "1%",
+    "1": "11%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": false,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 71
+  },
+  "people_also_looked_at": [
+    {
+      "name": "TrimRx",
+      "domain": "trimrx.com",
+      "trust_score": 3.2,
+      "review_count_label": "3K"
+    },
+    {
+      "name": "Fridays Health",
+      "domain": "joinfridays.com",
+      "trust_score": 4.4,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "Gimme",
+      "domain": "gimme.care",
+      "trust_score": 4.2,
+      "review_count_label": "962"
+    },
+    {
+      "name": "Brello Health",
+      "domain": "brellohealth.com",
+      "trust_score": 4.1,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "Coreagerx",
+      "domain": "coreagerx.com",
+      "trust_score": 4.6,
+      "review_count_label": "2K"
+    },
+    {
+      "name": "MEDVi",
+      "domain": "medvi.org",
+      "trust_score": 4.4,
+      "review_count_label": "13K"
+    },
+    {
+      "name": "Mochi Health",
+      "domain": "joinmochi.com",
+      "trust_score": 4.4,
+      "review_count_label": "16K"
+    },
+    {
+      "name": "Iv\u00edm Health",
+      "domain": "ivimhealth.com",
+      "trust_score": 4.9,
+      "review_count_label": "38K"
+    }
+  ],
+  "recent_reviews": [
+    {
+      "review_id": "6a26ff6e848bf8d6ff4545a1",
+      "rating": 5,
+      "title": "Awesome customer service",
+      "body": "Awesome customer service, answered all my questions and was very quick and helpful, would definitely recommend!",
+      "date_of_experience": "June 8, 2026",
+      "posted": "2 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Jessicuh Lopez",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a26c90066874fca0ecb6ec9",
+      "rating": 5,
+      "title": "Very helpful and answered my questions\u2026",
+      "body": "Very helpful and answered my questions clearly!",
+      "date_of_experience": "June 4, 2026",
+      "posted": "6 hours ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Jahaira Garcia",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a25c3cdd56cb848b36ffc5d",
+      "rating": 5,
+      "title": "Customer service was great",
+      "body": "Customer service was great , Emma was polite patient with me answered all my questions and was very helpful.",
+      "date_of_experience": "June 7, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Sheri Cyr",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2562faeeca03c54b6f0915",
+      "rating": 5,
+      "title": "Emma was helpful with my questions.",
+      "body": "Emma was helpful with my questions.",
+      "date_of_experience": "June 6, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Heidi Martinez",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a255cfda7a1ba32bc449df5",
+      "rating": 5,
+      "title": "It was so easy to get started and\u2026",
+      "body": "It was so easy to get started and getting answers from a professional about weight loss. Got my order quickly and started the program and it is going great. Thanks Amble",
+      "date_of_experience": "May 16, 2026",
+      "posted": "A day ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Tina Arledge",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a24225939a73ea356bc5d10",
+      "rating": 5,
+      "title": "Great response time and answered all of\u2026",
+      "body": "Great response time and answered all of my questions. Can\u2019t wait to get started !",
+      "date_of_experience": "June 6, 2026",
+      "posted": "2 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Hannah",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2369b9a44b29df63418dcd",
+      "rating": 5,
+      "title": "Smooth and comforting!",
+      "body": "So far, this has been so comfortable and easy. I started this feeling nervous and lost, but the company has great information and the customer service team is knowledgeable and easy to talk to. Emma helped me with all my concerns and made this a smooth process. Free shipping too! Amazing! Can\u2019t wait to get my fort order.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Ali Zendejas",
+      "reviewer_country": "US",
+      "reviewer_review_count": 4
+    },
+    {
+      "review_id": "6a2338142fc75ca85bc5ce47",
+      "rating": 5,
+      "title": "Everyone has been so helpful",
+      "body": "Everyone has been so helpful, especially Emma from customer service. I\u2019m very excited to try join the amble team!",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Sabra Savage",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2326af315d7653a7375427",
+      "rating": 5,
+      "title": "Emma was great",
+      "body": "Emma was great. Fast response and was able to help me better understand.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "LeAndra Hazelwood",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a231ea41874250c90bdabc5",
+      "rating": 5,
+      "title": "Easy to join.",
+      "body": "Easy to join.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Laura Eddy Speegle",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a231129e262cd387aeb3640",
+      "rating": 5,
+      "title": "I had a great experience",
+      "body": "I had a great experience. All my questions that I had at the moment were answered. Even when I thought of a question all I had to do was text my person and she responded.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Amanda",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a230c735e94ec05e2813501",
+      "rating": 5,
+      "title": "Fast",
+      "body": "Fast, easy, and extremely responsive! I am so excited to partner with Amble. They truly care and support all needs. I worked with Emma and she was so very helpful.",
+      "date_of_experience": "June 2, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Alaina Pisarra",
+      "reviewer_country": "US",
+      "reviewer_review_count": 2
+    },
+    {
+      "review_id": "6a2300f052e1c0eebf120974",
+      "rating": 5,
+      "title": "Excellent service!",
+      "body": "A representative reach out to me as I was still deciding and was able to help me with my referral process and questions immediately. No wait time for responses.",
+      "date_of_experience": "June 5, 2026",
+      "posted": "3 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "D.J.S",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2250881afd655b1d0c9ecd",
+      "rating": 5,
+      "title": "It works so fast with appetite\u2026",
+      "body": "It works so fast with appetite suppression, the food noise it finally gone",
+      "date_of_experience": "June 5, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Katelyn McLean",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a2209562dee309f7756f837",
+      "rating": 5,
+      "title": "Easy and definitely asked the right\u2026",
+      "body": "Easy and definitely asked the right questions, best part is no membership fees!! Journey is starting strong!!",
+      "date_of_experience": "May 12, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Laura Jenkins",
+      "reviewer_country": "US",
+      "reviewer_review_count": 3
+    },
+    {
+      "review_id": "6a2205e0826ca128c6e980c9",
+      "rating": 5,
+      "title": "Emma has been very patient and helpful",
+      "body": "Emma has been very patient and helpful. She has made the process easier.",
+      "date_of_experience": "June 4, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Emily",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a21e528a8f8c137c9fd6f8d",
+      "rating": 5,
+      "title": "Great customer service from Emma",
+      "body": "Great customer service from Emma, she answered all my questions and provided information to me.",
+      "date_of_experience": "June 3, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Jennifer Jones",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a21c6567f22fbdc2c546c9d",
+      "rating": 5,
+      "title": "Great communication",
+      "body": "Great communication, very helpful through the process",
+      "date_of_experience": "June 4, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Kaitlyn",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a21c1e243083c9155bd7d9d",
+      "rating": 5,
+      "title": "Very helpful and quick with all my\u2026",
+      "body": "Very helpful and quick with all my questions.",
+      "date_of_experience": "June 4, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Stephanie",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    },
+    {
+      "review_id": "6a21b7f30c932a04aa3cde34",
+      "rating": 5,
+      "title": "Don\u2019t amble around when it comes to finding a weight loss drug provider; join Amble today!",
+      "body": "I\u2019ve been with Amble for about 8 months, and since then I\u2019ve lost 30lbs. Amble is helping me reach my weight goals with a great product and with excellent customer service. Emma has been extremely helpful in my journey and she is always available to answer and questions and provides more information on the topics we discuss.",
+      "date_of_experience": "June 4, 2026",
+      "posted": "4 days ago",
+      "verified": false,
+      "unprompted": true,
+      "reviewer_name": "Heather Cole",
+      "reviewer_country": "US",
+      "reviewer_review_count": 1
+    }
+  ],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 30.9,
+    "source_url": "https://www.trustpilot.com/review/joinamble.com",
+    "markdown_chars": 35186
+  },
+  "recent_reviews_sample_size": 20
+}

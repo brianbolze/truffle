@@ -1,0 +1,155 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-15T19:10:42Z",
+  "ok": true,
+  "input": {
+    "query": "prescription NAD+ injection",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "Prescription NAD+ injections contain nicotinamide adenine dinucleotide, a vital coenzyme essential for cellular energy production, DNA repair, and metabolism. Because natural NAD+ levels decline with age, these injections are utilized in functional medicine to combat fatigue, enhance cognitive clarity, support healthy aging, and promote tissue repair. Empower Pharmacy +1",
+    "NAD+ acts as a coenzyme that drives cellular energy (ATP) synthesis. By delivering it directly into the bloodstream or tissues, it bypasses digestion to maximize availability for your body's cells. Wisp +1"
+  ],
+  "headings": [
+    "How It Works"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "Empower Pharmacy",
+      "title": "NAD+ Injection (Lyo) - Empower Pharmacy",
+      "link": "https://www.empowerpharmacy.com/compounding-pharmacy/nad-injection/"
+    },
+    {
+      "index": 1,
+      "source": "Pro Health Wellness Clinic",
+      "title": "What is an NAD+ injection and who is it good for?",
+      "link": "https://prohealthmemphis.com/what-is-an-nad-injection-and-who-is-it-good-for/"
+    },
+    {
+      "index": 2,
+      "source": "Wisp",
+      "title": "Buy NAD+ Injections Online: Provider-Guided Care | Wisp",
+      "link": "https://hellowisp.com/products/nad-injection-solution?srsltid=AfmBOopdztWywvYOFUa4W2bxrYEybM3DmaoRFjfTAnM_gp_8CyhkIveb"
+    },
+    {
+      "index": 3,
+      "source": "MediVera Compounding Pharmacy",
+      "title": "NAD+ Injection - MediVera Compounding Pharmacy",
+      "link": "https://mediverarx.com/medication/nad-injection/"
+    },
+    {
+      "index": 4,
+      "source": "Strive Pharmacy",
+      "title": "NAD+ - Strive Pharmacy",
+      "link": "https://www.strivepharmacy.com/medications/nicotinamide-adenine-dinucleotide-nad"
+    },
+    {
+      "index": 5,
+      "source": "Alan Health",
+      "title": "Instructions for NAD+ Injection | Alan Health",
+      "link": "https://www.alanmeds.com/instructions/nad-injection?srsltid=AfmBOorE30P6I5zeViMkvFW_vlw846eNA3PA45Vauqus01VY-BOlbOJM"
+    },
+    {
+      "index": 6,
+      "source": "Empower Pharmacy",
+      "title": "NAD+ Injection (Aqueous) - Empower Pharmacy",
+      "link": "https://www.empowerpharmacy.com/compounding-pharmacy/nad-injection-aqueous/"
+    },
+    {
+      "index": 7,
+      "source": "Hone Health",
+      "title": "What Are NAD+ Injections? Benefits, Cost \\u0026 Safety - Hone Health",
+      "link": "https://honehealth.com/edge/nad-injections/?srsltid=AfmBOoo3UCftgVsEcGcMy4AJXW9kB5nLD8mwbTQhEd7ZMk8dX9r2xl52"
+    },
+    {
+      "index": 8,
+      "source": "Kare Pharmacy",
+      "title": "NAD+ Injection - Kare Pharmacy",
+      "link": "https://kare-rx.com/products/nad-plus-injection"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Buy NAD+ Injections Online: Provider-Guided Care",
+      "link": "https://hellowisp.com/products/nad-injection-solution?srsltid=AfmBOoq-UTz_u2sXzf-WA5tUNwun6OFIpEAm7wWHYR9U4x1MWYYTLILa",
+      "snippet": "Explore NAD+ injection therapy from home. Provider-reviewed prescriptions designed to support energy, focus, and long-term wellness.",
+      "displayed_link": "https://hellowisp.com \u203a products \u203a nad-injection-solution"
+    },
+    {
+      "position": 2,
+      "title": "NAD+ Injection (Lyo)",
+      "link": "https://www.empowerpharmacy.com/compounding-pharmacy/nad-injection/",
+      "snippet": "Yes, NAD+ Injection requires a prescription from a licensed healthcare provider. It is a compounded medication made by specialized pharmacies, so you can only ...",
+      "displayed_link": "https://www.empowerpharmacy.com \u203a Products"
+    },
+    {
+      "position": 3,
+      "title": "NAD+",
+      "link": "https://www.strivepharmacy.com/medications/nicotinamide-adenine-dinucleotide-nad",
+      "snippet": "Inject 10 units (0.1 mL) three times weekly for 1 week, increase by 10 units (0.1 mL) weekly to a maximum dose of 50 units (0.5 mL) three times weekly.",
+      "displayed_link": "https://www.strivepharmacy.com \u203a medications \u203a nicoti..."
+    },
+    {
+      "position": 4,
+      "title": "NAD+ Injection",
+      "link": "https://mediverarx.com/medication/nad-injection/",
+      "snippet": "MediVera Compounding Pharmacy\u2122 prepares NAD+ injections for metabolic support, available by prescription from MediVera Compounding Pharmacy\u2122.",
+      "displayed_link": "https://mediverarx.com \u203a Medications"
+    },
+    {
+      "position": 5,
+      "title": "Instructions for NAD+ Injection",
+      "link": "https://www.alanmeds.com/instructions/nad-injection?srsltid=AfmBOorJgsZyRSL51PWWD7BR4u1EtNtWsTPi8ABZjfuOFFNCXhMCbbLL",
+      "snippet": "NAD+ Injection is prescribed with a customized, clinically-guided titration plan. Starting low and increasing gradually helps your body adapt to the ...",
+      "displayed_link": "https://www.alanmeds.com \u203a Instructions"
+    },
+    {
+      "position": 6,
+      "title": "Explore NAD+ Treatments",
+      "link": "https://agelessrx.com/all-nad-support/?srsltid=AfmBOorcIiVAyvRo5OaPfVLnf2lGz7sCDkt1GnqZrgsomEgezQZMuQzP",
+      "snippet": "Explore NAD+ treatments like high-quality NAD+ patches, injections, face cream, and nasal spray. Visit for free with a US-licensed prescriber today.",
+      "displayed_link": "https://agelessrx.com \u203a all-nad-support"
+    },
+    {
+      "position": 7,
+      "title": "8 Benefits of NAD+ Injection Therapy",
+      "link": "https://revivlounge.com/blog/8-benefits-of-nad-injection-therapy",
+      "snippet": "NAD Injection therapy has been used to help patients detoxify from alcohol, opioid, chemical, and prescription drug dependencies. 4.Help With Weight Loss",
+      "displayed_link": "https://revivlounge.com \u203a blog \u203a 8-benefits-of-nad-inje..."
+    },
+    {
+      "position": 8,
+      "title": "NAD+ Injection",
+      "link": "https://kare-rx.com/products/nad-plus-injection",
+      "snippet": "NAD+ is a coenzyme found in every cell and is involved in making energy. Your healthcare provider may prescribe it to support overall wellness, energy levels, ...",
+      "displayed_link": "https://kare-rx.com \u203a products \u203a nad-plus-injection"
+    },
+    {
+      "position": 9,
+      "title": "NAD Dosage Chart & NAD Dosage Per Day",
+      "link": "https://www.olympiapharmacy.com/blog/nad-dosage-chart-nad-dosage-per-day/?srsltid=AfmBOoq_iqD9urQTRwXIFe8i5zQ0IoD1dhR05GTD_YiwqUvTo57p3KAe",
+      "snippet": "Quick NAD+ Dosage Chart (IV, IM, SubQ) ; IM injection, 50 mg (0.5 mL or 50 units), Up to 3\u00d7/week, Per clinical direction, this will be spaced out across the week ...",
+      "displayed_link": "https://www.olympiapharmacy.com \u203a Uncategorized"
+    },
+    {
+      "position": 10,
+      "title": "Best Online Sources for NAD+ Injections - Vaccine Alliance",
+      "link": "https://www.vaccinealliance.org/nad-injections/best/",
+      "snippet": "Medication Costs. Medication, Monthly price. NAD+ injections (500 mg vial), $155 first month, then $205. NAD+ injections (1000 mg vial), $290 first month, then ...",
+      "displayed_link": "https://www.vaccinealliance.org \u203a NAD Injections"
+    }
+  ]
+}

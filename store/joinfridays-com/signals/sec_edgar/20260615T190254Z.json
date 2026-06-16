@@ -1,0 +1,29 @@
+{
+  "tool": "sec_edgar",
+  "source": "efts.sec.gov + data.sec.gov",
+  "captured_at": "2026-06-15T19:02:54Z",
+  "ok": true,
+  "input": {
+    "name": "Fridays Health",
+    "ticker": null,
+    "domain": "joinfridays.com"
+  },
+  "schema_drift": [],
+  "subject": "joinfridays.com",
+  "state": {
+    "is_public": false,
+    "ticker": null,
+    "cik": null,
+    "exchange": null,
+    "registered_name": null
+  },
+  "filings": [],
+  "form_d": {
+    "query_name": "Fridays Health",
+    "total_hits": 0,
+    "distinct_ciks": 0,
+    "match": "no_match",
+    "candidates": []
+  },
+  "funding_signals": []
+}

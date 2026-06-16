@@ -1,6 +1,6 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.2"
+schema_version: "2.5"
 
 # Identity
 domain: maximustribe.com
@@ -39,7 +39,11 @@ business_model: Subscription
 primary_industry: Healthcare & Life Sciences
 
 # Visual identity
-logo_url: https://www.maximustribe.com/favicon-32x32.png   # branding.images.logo is an inline data-URI SVG; favicon fallback
+logo_url: assets/wordmark.svg   # canonicalized to the wordmark (2.5); was favicon-32x32.png fallback
+logos:
+  wordmark: { src: assets/wordmark.svg, w: 577, h: 78 }   # white condensed "MAXIMUS" — extracted inline header SVG from branding.images.logo data-URI (viewBox 0 0 577 78)
+  logomark: { src: "https://www.maximustribe.com/icons/icon-512x512.png?v=2d96447ba880fd304d694eaec71dd039", px: 512, transparent: true }   # black crown "M" mark (apple-touch-icon); transparent bg — confirmed on dark+checker tile
+  og:       { src: "https://www.maximustribe.com/images/share.png", w: 1266, h: 916 }   # crowned-lion emblem + "MAXIMUS™" wordmark on navy
 brand_colors: { primary: "#0053C5", secondary: "#01429B", background: "#FFFFFF" }  # deep blue — confirmed against screenshot (CTAs, stat panels)
 fonts: [Inter, Victor Serif]         # Inter body, Victor Serif headings
 color_scheme: light
@@ -120,3 +124,4 @@ Premium, masculine, clinical-but-aspirational. White background with deep-blue (
 - **Credits:** not recorded this run.
 - **Couldn't get:** full pricing ladders (sit behind intake flow on `app.maximustribe.com`; public "Starting at" anchors only).
 - **Structured layer (schema 2.2):** read this capture's homepage JSON-LD via `fc.py signals` ($0 re-enrichment from the persisted 2026-05-31 rawHtml, hint-to-verify) — filled `socials` (fb/youtube/ig/discord); JSON-LD `logo` was an OG share image (`share.png`) — kept the current favicon; no `external`. Re-stamped 2.0→2.2.
+- **Logos (schema 2.5):** added the `logos:{}` module via `fc.py logos` (2026-06-15, zero-credit — reads the cached 2026-05-31 homepage payload). Wordmark extracted from the `branding.images.logo` data-URI SVG → committed `assets/wordmark.svg` (577×78, white condensed "MAXIMUS"); logomark = apple-touch `icon-512x512.png` (px 512, `transparent: true` confirmed by compositing on a dark+checker tile — beat the 256px google-s2 mark); og = `/images/share.png` (1266×916, crowned-lion emblem + wordmark on navy). `logo_url` canonicalized favicon → wordmark. Re-stamped 2.2→2.5.

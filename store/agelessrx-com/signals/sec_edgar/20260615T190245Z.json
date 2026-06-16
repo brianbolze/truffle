@@ -1,0 +1,62 @@
+{
+  "tool": "sec_edgar",
+  "source": "efts.sec.gov + data.sec.gov",
+  "captured_at": "2026-06-15T19:02:45Z",
+  "ok": true,
+  "input": {
+    "name": "AgelessRx",
+    "ticker": null,
+    "domain": "agelessrx.com"
+  },
+  "schema_drift": [],
+  "subject": "agelessrx.com",
+  "state": {
+    "is_public": false,
+    "ticker": null,
+    "cik": "0002109810",
+    "exchange": null,
+    "registered_name": "AgelessRx, Inc.",
+    "sic": ""
+  },
+  "filings": [
+    {
+      "form": "D",
+      "date": "2026-03-17",
+      "url": "https://www.sec.gov/Archives/edgar/data/2109810/000210981026000001/xslFormDX01/primary_doc.xml"
+    }
+  ],
+  "form_d": {
+    "query_name": "AgelessRx",
+    "total_hits": 1,
+    "distinct_ciks": 1,
+    "match": "confirmed",
+    "candidates": [
+      {
+        "cik": "0002109810",
+        "filer": "AgelessRx, Inc.  (CIK 0002109810)",
+        "dates": [
+          "2026-03-17"
+        ],
+        "is_vehicle": false
+      }
+    ],
+    "scoped_to_cik": "0002109810"
+  },
+  "funding_signals": [
+    {
+      "subject": "agelessrx.com",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2026-03-17",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0002109810",
+      "filer": "AgelessRx, Inc.  (CIK 0002109810)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    }
+  ]
+}

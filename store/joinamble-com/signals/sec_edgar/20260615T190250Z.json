@@ -1,0 +1,134 @@
+{
+  "tool": "sec_edgar",
+  "source": "efts.sec.gov + data.sec.gov",
+  "captured_at": "2026-06-15T19:02:50Z",
+  "ok": true,
+  "input": {
+    "name": "Amble",
+    "ticker": null,
+    "domain": "joinamble.com"
+  },
+  "schema_drift": [],
+  "subject": "joinamble.com",
+  "state": {
+    "is_public": false,
+    "ticker": null,
+    "cik": null,
+    "exchange": null,
+    "registered_name": null
+  },
+  "filings": [],
+  "form_d": {
+    "query_name": "Amble",
+    "total_hits": 34,
+    "distinct_ciks": 10,
+    "match": "name_match_unconfirmed",
+    "candidates": [
+      {
+        "cik": "0001816017",
+        "filer": "Spire Global, Inc.  (SPIR)  (CIK 0001816017)",
+        "dates": [
+          "2025-03-21",
+          "2026-04-20"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0002090133",
+        "filer": "Amble Activewear  (CIK 0002090133)",
+        "dates": [
+          "2025-10-07"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001377801",
+        "filer": "JenaValve Technology Inc  (CIK 0001377801)",
+        "dates": [
+          "2013-07-24",
+          "2014-11-14",
+          "2015-08-07",
+          "2016-08-11",
+          "2017-08-02",
+          "2018-02-06",
+          "2018-07-25",
+          "2019-06-21",
+          "2020-02-13",
+          "2020-10-07",
+          "2022-01-04"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001852669",
+        "filer": "Freedom Seven Fund, LP  (CIK 0001852669)",
+        "dates": [
+          "2021-08-10"
+        ],
+        "is_vehicle": true
+      },
+      {
+        "cik": "0001663802",
+        "filer": "Waterfund LLC  (CIK 0001663802)",
+        "dates": [
+          "2018-01-23",
+          "2018-11-05",
+          "2019-01-11",
+          "2019-03-21"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001603756",
+        "filer": "Axonics Modulation Technologies, Inc.  (AXNX)  (CIK 0001603756)",
+        "dates": [
+          "2015-04-29",
+          "2015-12-21",
+          "2017-05-12",
+          "2018-04-12"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001407973",
+        "filer": "Sonendo, Inc.  (SONX)  (CIK 0001407973)",
+        "dates": [
+          "2012-07-19",
+          "2013-06-04",
+          "2014-01-15",
+          "2014-09-04",
+          "2016-05-31",
+          "2017-01-04",
+          "2017-05-16"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001583764",
+        "filer": "EaglEyeMed, Inc.  (CIK 0001583764)",
+        "dates": [
+          "2013-08-06"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0000013222",
+        "filer": "Booz Allen Hamilton Inc.  (CIK 0000013222)",
+        "dates": [
+          "2013-05-28"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001460369",
+        "filer": "MarketForceOne, Inc.  (CIK 0001460369)",
+        "dates": [
+          "2010-04-20",
+          "2010-04-21"
+        ],
+        "is_vehicle": false
+      }
+    ]
+  },
+  "funding_signals": []
+}

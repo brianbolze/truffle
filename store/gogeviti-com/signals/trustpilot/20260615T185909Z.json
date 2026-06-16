@@ -1,0 +1,91 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T18:59:09Z",
+  "ok": true,
+  "input": {
+    "slug": "gogeviti.com",
+    "wait_ms": 12000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/gogeviti.com",
+  "profile_state": "empty",
+  "review_count": 0,
+  "reviews_last_12m": null,
+  "trust_score": null,
+  "rating_label": null,
+  "rating_distribution": null,
+  "rating_distribution_source": null,
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": false,
+    "asks_for_reviews": null,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": null
+  },
+  "people_also_looked_at": [
+    {
+      "name": "ways2well.com",
+      "domain": "ways2well.com",
+      "trust_score": 2.1,
+      "review_count_label": "82"
+    },
+    {
+      "name": "Function Health",
+      "domain": "functionhealth.com",
+      "trust_score": 4.3,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Secure Mark Consulting",
+      "domain": "securemarkconsulting.com",
+      "trust_score": 2.3,
+      "review_count_label": "6"
+    },
+    {
+      "name": "Trademark Prestige",
+      "domain": "trademarkprestige.com",
+      "trust_score": 3.8,
+      "review_count_label": "2"
+    },
+    {
+      "name": "Mito Health",
+      "domain": "mitohealth.com",
+      "trust_score": 4.8,
+      "review_count_label": "106"
+    },
+    {
+      "name": "Trademark Royal",
+      "domain": "trademarkroyal.com",
+      "trust_score": 2.8,
+      "review_count_label": "19"
+    },
+    {
+      "name": "Secure Mark USA",
+      "domain": "securemarkusa.com",
+      "trust_score": 4.8,
+      "review_count_label": "127"
+    },
+    {
+      "name": "Kit",
+      "domain": "kit.com",
+      "trust_score": 4.1,
+      "review_count_label": "133"
+    }
+  ],
+  "recent_reviews": [],
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 30.0,
+    "source_url": "https://www.trustpilot.com/review/gogeviti.com",
+    "markdown_chars": 12674
+  },
+  "recent_reviews_sample_size": 0
+}

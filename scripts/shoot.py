@@ -49,7 +49,7 @@ CONSENT_LABELS = ["I understand", "Accept", "Accept all", "Got it", "Agree", "I 
 CONSENT_MOUNTS = (
     "#transcend-consent-manager,#onetrust-consent-sdk,#onetrust-banner-sdk,"
     "#CybotCookiebotDialog,#didomi-host,#termly-code-snippet-support,#usercentrics-root,"
-    ".osano-cm-window,#cookie-law-info-bar{display:none!important}"
+    ".osano-cm-window,#cookie-law-info-bar,#cookie-consent-dialog{display:none!important}"
 )
 
 

@@ -1,0 +1,49 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T11:37:28Z",
+  "ok": true,
+  "input": {
+    "slug": "maximustribe.com",
+    "wait_ms": 15000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/maximustribe.com",
+  "profile_state": "active",
+  "review_count": 982,
+  "reviews_last_12m": 494,
+  "trust_score": 4.4,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "82%",
+    "4": "5%",
+    "3": "2%",
+    "2": "2%",
+    "1": "9%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 100
+  },
+  "people_also_looked_at": [],
+  "recent_reviews_sample_size": 20,
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 36.5,
+    "source_url": "https://www.trustpilot.com/review/maximustribe.com",
+    "markdown_chars": 31331
+  },
+  "_company_slug": "maximustribe-com",
+  "_company_name": "Maximus"
+}

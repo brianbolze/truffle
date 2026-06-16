@@ -1,0 +1,98 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T11:39:26Z",
+  "ok": true,
+  "input": {
+    "slug": "sermorelin.com",
+    "wait_ms": 15000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/sermorelin.com",
+  "profile_state": "active",
+  "review_count": 49,
+  "reviews_last_12m": 49,
+  "trust_score": 4.5,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "88%",
+    "4": "2%",
+    "3": "2%",
+    "2": "4%",
+    "1": "4%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": false,
+    "asks_for_reviews": true,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": null
+  },
+  "people_also_looked_at": [
+    {
+      "name": "malemd.com",
+      "domain": "malemd.com",
+      "trust_score": 4.4,
+      "review_count_label": "2K"
+    },
+    {
+      "name": "Everlife",
+      "domain": "everlifemd.com",
+      "trust_score": 4.9,
+      "review_count_label": "2K"
+    },
+    {
+      "name": "Quant28",
+      "domain": "quant28.io",
+      "trust_score": 3.7,
+      "review_count_label": "71"
+    },
+    {
+      "name": "Tnw",
+      "domain": "www.tnwmarketing.com",
+      "trust_score": 3.5,
+      "review_count_label": "65"
+    },
+    {
+      "name": "Profitgpt",
+      "domain": "profitgpt.io",
+      "trust_score": 4.6,
+      "review_count_label": "33"
+    },
+    {
+      "name": "DK Closers",
+      "domain": "dkclosers.com",
+      "trust_score": 4.2,
+      "review_count_label": "39"
+    },
+    {
+      "name": "bmiMD",
+      "domain": "bmimd.com",
+      "trust_score": 4.4,
+      "review_count_label": "806"
+    },
+    {
+      "name": "www.nassaustreetpartners.com",
+      "domain": "www.nassaustreetpartners.com",
+      "trust_score": 2.5,
+      "review_count_label": "27"
+    }
+  ],
+  "recent_reviews_sample_size": 20,
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 38.5,
+    "source_url": "https://www.trustpilot.com/review/sermorelin.com",
+    "markdown_chars": 28176
+  },
+  "_company_slug": "sermorelin-com",
+  "_company_name": "Sermorelin.com"
+}

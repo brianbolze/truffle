@@ -1,0 +1,98 @@
+{
+  "tool": "trustpilot",
+  "source": "trustpilot.com",
+  "parser_version": "v1",
+  "captured_at": "2026-06-15T11:34:58Z",
+  "ok": true,
+  "input": {
+    "slug": "joinamble.com",
+    "wait_ms": 15000
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits": 1
+  },
+  "trustpilot_url": "https://www.trustpilot.com/review/joinamble.com",
+  "profile_state": "active",
+  "review_count": 4035,
+  "reviews_last_12m": 3122,
+  "trust_score": 4.6,
+  "rating_label": "Excellent",
+  "rating_distribution": {
+    "5": "81%",
+    "4": "6%",
+    "3": "1%",
+    "2": "1%",
+    "1": "11%"
+  },
+  "rating_distribution_source": "trustpilot_all_reviews",
+  "profile_flags": {
+    "claimed": true,
+    "paid_profile": true,
+    "asks_for_reviews": false,
+    "ai_assisted_replies": false,
+    "merged_profile": false,
+    "negative_reply_rate_pct": 72
+  },
+  "people_also_looked_at": [
+    {
+      "name": "TrimRx",
+      "domain": "trimrx.com",
+      "trust_score": 3.2,
+      "review_count_label": "3K"
+    },
+    {
+      "name": "Fridays Health",
+      "domain": "joinfridays.com",
+      "trust_score": 4.4,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "Gimme",
+      "domain": "gimme.care",
+      "trust_score": 4.2,
+      "review_count_label": "1K"
+    },
+    {
+      "name": "Mochi Health",
+      "domain": "joinmochi.com",
+      "trust_score": 4.4,
+      "review_count_label": "16K"
+    },
+    {
+      "name": "Brello Health",
+      "domain": "brellohealth.com",
+      "trust_score": 4.1,
+      "review_count_label": "4K"
+    },
+    {
+      "name": "Iv\u00edm Health",
+      "domain": "ivimhealth.com",
+      "trust_score": 4.9,
+      "review_count_label": "38K"
+    },
+    {
+      "name": "MEDVi",
+      "domain": "medvi.org",
+      "trust_score": 4.4,
+      "review_count_label": "14K"
+    },
+    {
+      "name": "Eden",
+      "domain": "tryeden.com",
+      "trust_score": 4.5,
+      "review_count_label": "4K"
+    }
+  ],
+  "recent_reviews_sample_size": 20,
+  "capture": {
+    "via": "firecrawl-stealth",
+    "status_code": 200,
+    "proxy_used": "stealth",
+    "fetch_seconds": 35.9,
+    "source_url": "https://www.trustpilot.com/review/joinamble.com",
+    "markdown_chars": 29101
+  },
+  "_company_slug": "joinamble-com",
+  "_company_name": "Amble"
+}
