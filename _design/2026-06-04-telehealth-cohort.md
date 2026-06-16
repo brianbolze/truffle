@@ -1,6 +1,6 @@
 # Design: the `telehealth` cohort pack — the engine's first *cohort pack*
 
-> **What this is.** The reasoning behind the engine's first **cohort pack** — `store/<domain>/telehealth.md`, the per-company telehealth-specific classification the universal `profile.md` can't carry. The spec you *obey* is [`TELEHEALTH.md`](../TELEHEALTH.md); this doc is the *why*. Companion to the [frame](2026-05-29-frame.md) (scope) and [architecture](2026-05-30-architecture.md) (lifecycle, modules).
+> **What this is.** The reasoning behind the engine's first **cohort pack** — `store/<domain>/telehealth.md`, the per-company telehealth-specific classification the universal `profile.md` can't carry. The spec you *obey* is [`TELEHEALTH.md`](../modules/TELEHEALTH.md); this doc is the *why*. Companion to the [frame](2026-05-29-frame.md) (scope) and [architecture](2026-05-30-architecture.md) (lifecycle, modules).
 
 ## Why it exists
 
@@ -34,7 +34,7 @@ The exemplar is `pharmacy_model`: sites **lie** about owning their pharmacy (a b
 
 ## One contract, one generic linter
 
-The 8 cuts and their closed sets live in [`TELEHEALTH.md`](../TELEHEALTH.md) — **not** `TAXONOMIES.md`, which holds the *universal* sets; a cohort owns its own vocabulary. The contract carries a **machine-readable closed-set block**, so [`scripts/cohortcheck.py`](../scripts/cohortcheck.py) is **one generic linter for every cohort pack**, not one script per cohort: `cohortcheck.py --cohort telehealth` reads telehealth's block. The next cohort ships a contract, not a script.
+The 8 cuts and their closed sets live in [`TELEHEALTH.md`](../modules/TELEHEALTH.md) — **not** `TAXONOMIES.md`, which holds the *universal* sets; a cohort owns its own vocabulary. The contract carries a **machine-readable closed-set block**, so [`scripts/cohortcheck.py`](../scripts/cohortcheck.py) is **one generic linter for every cohort pack**, not one script per cohort: `cohortcheck.py --cohort telehealth` reads telehealth's block. The next cohort ships a contract, not a script.
 
 ## Registration, not a version bump
 
