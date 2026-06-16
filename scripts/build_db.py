@@ -47,29 +47,18 @@ except ImportError:
 SCRIPTS = os.path.dirname(os.path.abspath(__file__))
 if SCRIPTS not in sys.path:  # so the sibling import works library-side too, not just when run as a script
     sys.path.insert(0, SCRIPTS)
-from offeringscheck import SPINE_PREFIXES, parse_roster  # noqa: E402 — after the sys.path insert above
+from cohortcheck import load_contract  # noqa: E402 — after the sys.path insert above
+from offeringscheck import ENUMERATION_OK, SPINE_PREFIXES, VISIBILITY_OK, parse_roster  # noqa: E402
 
 ROOT = os.environ.get("WEB_RESEARCH_HOME") or os.path.dirname(SCRIPTS)
 STORE = os.path.join(ROOT, "store")
 OUT = os.path.join(ROOT, "_out")
 
-# The capture-scope completeness signal (offerings.md frontmatter, schema 1.2; designed 2026-06-04). A fact
-# about the *capture*, not the company. Read defensively — anything off-list → `unknown`, so the lens never
-# over-claims; the lint (offeringscheck) is what enforces the value in the file.
-ENUMERATION_VALUES = {"indexed-complete", "lines-omitted", "unknown"}
-
-# The 8 telehealth cohort cuts (TELEHEALTH.md), in pack order — the cuts that actually separate players within
-# the cohort (the universal profile classification reads ~identical across it). Drift-guarded by --check.
-TELEHEALTH_CUTS = [
-    "value_chain_role",
-    "pharmacy_model",
-    "audience",
-    "compounding_posture",
-    "anchor_category",
-    "modality",
-    "access_model",
-    "pay_model",
-]
+# Closed sets + cohort cuts are read from their one home, never re-listed here, so the lens can't drift from
+# the contract: ENUMERATION_OK / VISIBILITY_OK come from offeringscheck (the lint that enforces them in the
+# files, imported above); the 8 telehealth cuts come from TELEHEALTH.md itself via cohortcheck's contract
+# reader, in pack order. A rename in either source now propagates to the table, the inserts, and the view.
+TELEHEALTH_CUTS = list(load_contract("telehealth")["fields"])
 
 # The standard profile.md frontmatter, carried verbatim for browsing (lists/maps → JSON text so the column
 # stays queryable with json_extract / LIKE). No magnitude here — classification only, safe to GROUP BY.
@@ -125,7 +114,7 @@ def enumeration_of(fm: dict[str, Any], text: str) -> str:
         m = re.search(r"enumeration[\"'`:\s]+(indexed-complete|lines-omitted|unknown)", text, re.I)
         raw = m.group(1) if m else None
     val = str(raw).strip().strip("`").lower() if raw is not None else ""
-    return val if val in ENUMERATION_VALUES else "unknown"
+    return val if val in ENUMERATION_OK else "unknown"
 
 
 def roster_rows(text: str) -> list[dict[str, str]]:
@@ -233,13 +222,13 @@ def build(conn: sqlite3.Connection) -> dict[str, int]:
         """
     )
     cur.execute("CREATE TABLE companies (slug TEXT PRIMARY KEY, " + ", ".join(f'"{f}" TEXT' for f in PROFILE_FIELDS) + ")")
+    cur.execute(
+        "CREATE TABLE telehealth (slug TEXT PRIMARY KEY, domain TEXT, "
+        + ", ".join(f"{c} TEXT" for c in TELEHEALTH_CUTS)
+        + ", captured_at TEXT)"
+    )
     cur.executescript(
         """
-        CREATE TABLE telehealth (
-          slug TEXT PRIMARY KEY, domain TEXT, value_chain_role TEXT, pharmacy_model TEXT,
-          audience TEXT, compounding_posture TEXT, anchor_category TEXT, modality TEXT,
-          access_model TEXT, pay_model TEXT, captured_at TEXT
-        );
         CREATE TABLE offerings (
           slug TEXT, domain TEXT, offering TEXT, kind TEXT, parent TEXT, sku_slug TEXT,
           price_verbatim TEXT, visibility TEXT, what TEXT,
@@ -251,6 +240,7 @@ def build(conn: sqlite3.Connection) -> dict[str, int]:
     n = {"folders": len(slugs), "coverage": 0, "companies": 0, "telehealth": 0, "offerings": 0, "skus": 0}
 
     insert_company = "INSERT INTO companies VALUES (" + ",".join("?" * (1 + len(PROFILE_FIELDS))) + ")"
+    insert_telehealth = "INSERT INTO telehealth VALUES (" + ",".join("?" * (3 + len(TELEHEALTH_CUTS))) + ")"
     for slug in slugs:
         slug_dir = os.path.join(STORE, slug)
         profile_path = os.path.join(slug_dir, "profile.md")
@@ -269,7 +259,7 @@ def build(conn: sqlite3.Connection) -> dict[str, int]:
 
         if os.path.exists(telehealth_path):
             cur.execute(
-                "INSERT INTO telehealth VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+                insert_telehealth,
                 (slug, telehealth_fm.get("domain"), *[telehealth_fm.get(cut) for cut in TELEHEALTH_CUTS], captured_at(telehealth_fm)),
             )
             n["telehealth"] += 1
@@ -344,12 +334,12 @@ def build(conn: sqlite3.Connection) -> dict[str, int]:
     # regenerates with the build, never goes stale. enumeration + catalog_breadth sit BEFORE the raw sku_count
     # so a count is never read naked: a `lines-omitted` count renders `≥N (floor)`, an `unknown` one `N
     # (unverified)`, and only an `indexed-complete` count is a bare number safe to rank on.
+    cut_cols = ", ".join(f"t.{c}" for c in TELEHEALTH_CUTS)
     cur.execute(
-        """
+        f"""
         CREATE VIEW telehealth_full AS
         SELECT c.*,
-               t.value_chain_role, t.pharmacy_model, t.audience, t.compounding_posture,
-               t.anchor_category, t.modality, t.access_model, t.pay_model,
+               {cut_cols},
                t.captured_at AS telehealth_captured_at,
                s.offerings_captured_at,
                s.enumeration,
@@ -393,9 +383,7 @@ def check(conn: sqlite3.Connection) -> list[str]:
     # Footgun columns must stay gone everywhere — a regression guard against re-adding the laundered price /
     # fake key. SQLite will happily coerce leading-digit TEXT in AVG(); the fence is that no numeric price
     # column exists in the lens.
-    relations = q(
-        "SELECT name, type FROM sqlite_master WHERE type IN ('table','view') AND name NOT LIKE 'sqlite_%'"
-    ).fetchall()
+    relations = q("SELECT name, type FROM sqlite_master WHERE type IN ('table','view') AND name NOT LIKE 'sqlite_%'").fetchall()
     for name, _kind in relations:
         cols = q(f'PRAGMA table_info("{name}")').fetchall()
         for col in cols:
@@ -412,9 +400,7 @@ def check(conn: sqlite3.Connection) -> list[str]:
     folders = set(store_slugs())
     covered = {r[0] for r in q("SELECT slug FROM coverage").fetchall()}
     if folders != covered:
-        fails.append(
-            f"coverage: folder manifest mismatch — missing {sorted(folders - covered)}, extra {sorted(covered - folders)}."
-        )
+        fails.append(f"coverage: folder manifest mismatch — missing {sorted(folders - covered)}, extra {sorted(covered - folders)}.")
 
     # join density: every roster on disk must have contributed rows (not just telehealth). This catches the
     # silent-drop bug this corpus-wide lens exists to kill.
@@ -430,22 +416,33 @@ def check(conn: sqlite3.Connection) -> list[str]:
     if stats_stray:
         fails.append(f"offerings_stats: {stats_stray} non-telehealth row(s) — cohort ranking fence leaked.")
 
-    # the 8 cohort cuts are present as columns (a rename in TELEHEALTH.md would silently drop one).
+    # every cohort cut derived from TELEHEALTH.md became a column — a smoke test that the contract parsed to a
+    # non-empty, well-formed cut list (the cuts and columns now share one source, so they can't silently skew).
     tcols = {r[1] for r in q("PRAGMA table_info(telehealth)").fetchall()}
     for cut in TELEHEALTH_CUTS:
         if cut not in tcols:
-            fails.append(f"telehealth: cohort cut '{cut}' is not a column — renamed in TELEHEALTH.md?")
+            fails.append(f"telehealth: cohort cut '{cut}' is not a column — TELEHEALTH.md contract parse failed?")
 
     # enumeration only ever holds closed-set values (the never-read-naked guard depends on it).
     vals = {r[0] for r in q("SELECT DISTINCT enumeration FROM offerings").fetchall()}
-    bad = vals - ENUMERATION_VALUES
+    bad = vals - ENUMERATION_OK
     if bad:
-        fails.append(f"offerings: off-list enumeration value(s) {sorted(bad)} — not in {sorted(ENUMERATION_VALUES)}.")
+        fails.append(f"offerings: off-list enumeration value(s) {sorted(bad)} — not in {sorted(ENUMERATION_OK)}.")
 
     cvals = {r[0] for r in q("SELECT DISTINCT enumeration FROM coverage WHERE enumeration IS NOT NULL").fetchall()}
-    cbad = cvals - ENUMERATION_VALUES
+    cbad = cvals - ENUMERATION_OK
     if cbad:
-        fails.append(f"coverage: off-list enumeration value(s) {sorted(cbad)} — not in {sorted(ENUMERATION_VALUES)}.")
+        fails.append(f"coverage: off-list enumeration value(s) {sorted(cbad)} — not in {sorted(ENUMERATION_OK)}.")
+
+    # the offerings_stats view buckets visibility by literal value; assert every contract value
+    # (offeringscheck.VISIBILITY_OK) still appears in the view SQL, so a rename there can't silently zero a
+    # bucket. Visibility is a value→column mapping embedded in SQL, so it's guarded here, not imported.
+    view_sql = q("SELECT sql FROM sqlite_master WHERE name='offerings_stats'").fetchone()[0] or ""
+    for v in sorted(VISIBILITY_OK):
+        if f"'{v}'" not in view_sql:
+            fails.append(
+                f"offerings_stats: visibility value '{v}' (offeringscheck.VISIBILITY_OK) isn't bucketed in the view — rename drift?"
+            )
 
     meta_items = {r[0] for r in q("SELECT item FROM _meta").fetchall()}
     for item in ("built_at", "counts_are_floors", "no_price_number", "cohort_gated_ranking"):
