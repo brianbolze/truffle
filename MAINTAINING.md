@@ -2,7 +2,7 @@
 
 The markdown **contracts** are the source of truth: [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md) (the `profile.md` record), [`modules/OFFERINGS.md`](modules/OFFERINGS.md), [`modules/VISUAL.md`](modules/VISUAL.md), [`TELEHEALTH.md`](TELEHEALTH.md) (and any future cohort pack), [`SIGNALS.md`](SIGNALS.md). Code (`scripts/`, `scripts/present/`, `tools/`) and the `store/` records are **downstream** — a contract edit can silently break a consumer that still assumes the old shape.
 
-This table is the blast radius: change a thing on the left, move the things in the middle, and the right-hand **check** is your mechanical backstop. **Where the check column is `—`, nothing guards it yet** — that's exactly where a human sweep (the planned `/drift-sweep`) earns its keep.
+This table is the blast radius: change a thing on the left, move the things in the middle, and the right-hand **check** is your mechanical backstop. **Where the check column is `—`, nothing guards it yet** — that's exactly where a human sweep (`/drift-sweep`) earns its keep.
 
 ## After any contract change, run the gate
 
