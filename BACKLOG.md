@@ -43,6 +43,10 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
   Cached `.md` payloads carry no `source_url`, so Tier-B re-render (`shoot.py`) must *infer* each page's URL from nav links (on functionhealth, grep pulled CTA links instead). Structural — it bites every Tier-B run, not capture-flakiness. Cheap fix on the capture side: `/research-company` records the URL it scraped per page (the data exists at capture time); `shoot.py` reads it instead of guessing.
   **Act when:** the `shoot.py` Tier-B work lands — pair the capture-side `source_url` with it.
 
+- **Re-arming modal evades single-pass `--dismiss`** `[weakness]`
+  2026-06-16 sanity re-run of `shoot.py --dismiss` on the [probe](experiments/2026-06-16-tier-b-dismissal/FINDINGS.md) sites: sequoia + functionhealth cleared cleanly (tile-00 at y=0), but gethealthspan's "10% off" newsletter modal *re-armed* during the warm-scroll loop after the initial dismiss → `scroll_locked: true` fired loudly + tile-00 landed at y=12684. The probe never saw this because it ran dismiss → screenshot in a <1s window with no warm scroll between; the full shoot.py pipeline runs ~10s of warm-scrolling + animation injection where a timed modal can re-arm. Loud-not-silent worked (the `WARNING` + `scroll_locked` flag tells the operator to exclude or caveat — the same "re-arming modal" call SKILL.md already names), but the recoverability the 06-16 retro saw with `/tmp/reshoot.py` is gone.
+  **Act when:** the next Tier-B run hits this on a second site — try a second `dismiss()` pass right before the scroll-lock check (so the warm-scroll re-arm gets caught), or a periodic re-dismiss inside the warm-scroll loop. Don't add a "modal is timed" heuristic — that's denylist drift.
+
 ### Parked
 
 - **Visual-quality SCORE — parked (calibration offset)** `[idea]` `[parked]` `[@brian]`
