@@ -105,9 +105,37 @@ FIND_DISMISS_TARGETS = """
 }
 """
 
-# Forced scroll-lock release: overflow/position/top reset on both html + body. The probe
-# never had to fire this — dismissal always sufficed — so it's unproven belt-and-suspenders
-# for the "locked but un-dismissable" edge, not a validated path.
+# Max viewport-coverage of any non-nav fixed/sticky element — the footprint an overlay occupies.
+# Measured before and after dismiss so a no-op dismissal (footprint didn't shrink) fails loud
+# instead of silently emitting tiles that still carry the overlay. The silent miss this catches:
+# goodlifemeds' Transcend CMP behind a *closed shadow root* — unreachable by the affordance
+# finder's querySelectorAll, so --dismiss was a verified no-op yet reported dismissed=true with no
+# warning (2026-06-16 dogfood). Same overlay scope as FIND_DISMISS_TARGETS: a top-pinned
+# full-width short strip is nav, not an overlay.
+OVERLAY_COVERAGE = """
+() => {
+  const vw = innerWidth, vh = innerHeight, area = vw*vh;
+  let max = 0;
+  for (const el of document.querySelectorAll('body *')) {
+    const cs = getComputedStyle(el);
+    if (cs.position !== 'fixed' && cs.position !== 'sticky') continue;
+    if (cs.display === 'none' || cs.visibility === 'hidden' || parseFloat(cs.opacity) === 0) continue;
+    const r = el.getBoundingClientRect();
+    const cover = (Math.max(0, Math.min(r.right,vw)-Math.max(r.left,0)) *
+                   Math.max(0, Math.min(r.bottom,vh)-Math.max(r.top,0)))/area;
+    if (cover < 0.02) continue;
+    const shortNav = r.top <= 5 && r.width >= 0.6*vw && r.height <= 0.18*vh;
+    if (shortNav) continue;
+    if (cover > max) max = cover;
+  }
+  return max;
+}
+"""
+
+# Forced scroll-lock release: overflow/position/top reset on both html + body. alange-soehne
+# (2026-06-16 dogfood) exercised this live and it FAILED to release — so it's a best-effort flag,
+# not a fix: when it can't unlock, `scroll_locked` stays true and the page should fall back to
+# cached / be excluded, never trusted. (The probe's 8 sites never had to fire it at all.)
 RELEASE_SCROLL_LOCK = """
 () => {
   for (const el of [document.documentElement, document.body]) {
@@ -174,6 +202,11 @@ def reachable_top(page: Page) -> int:
     return page.evaluate("() => { window.scrollTo(0, 0); return window.scrollY; }")
 
 
+def max_overlay_coverage(page: Page) -> float:
+    """Largest viewport fraction covered by a non-nav fixed/sticky element (0.0 if none ≥ 2%)."""
+    return page.evaluate(OVERLAY_COVERAGE)
+
+
 def dismiss(page: Page) -> None:
     """Affordance-only overlay dismissal — Escape + click the page's *own* dismiss controls scoped to overlays.
 
@@ -207,8 +240,10 @@ def release_scroll_lock(page: Page) -> bool:
     """Dismiss-then-reverify, with a forced overflow/position reset as fallback. True if the top is reachable.
 
     In the probe, dismissal released both locked sites' locks for free (bodyOverflow:
-    hidden → visible the instant the overlay closed). The forced reset is the unproven
-    belt-and-suspenders for the "locked but un-dismissable" edge that didn't occur in 8 sites.
+    hidden → visible the instant the overlay closed). The forced reset is *best-effort, not a
+    fix*: alange-soehne (2026-06-16 dogfood) exercised it live and it failed to release. So a
+    False return is a genuine "still locked" — the caller flags `scroll_locked` and the page
+    should fall back to cached / be excluded, never trusted as correctly-tiled.
     """
     if reachable_top(page) <= 50:
         return True
@@ -220,6 +255,12 @@ def capture(url: str, out_dir: Path, width: int, height: int, overlap: int,
             settle_ms: int, chrome: str, do_dismiss: bool) -> dict:
     """Drive system Chrome to warm-scroll `url`, settle motion, then write viewport tiles to out_dir."""
     out_dir.mkdir(parents=True, exist_ok=True)
+    # Clear our own prior artifacts so a re-render with different tile geometry can't leave orphans
+    # (a taller Tier-B page writes tile-07-y07874 without overwriting a stale tile-07-y07546, seen on
+    # ro-co). Scoped to the files shoot.py/tile.py own — never the whole dir, so a mis-passed
+    # --out-dir can't nuke unrelated content.
+    for stale in (*out_dir.glob("tile-*.png"), out_dir / "overview-480w.png"):
+        stale.unlink(missing_ok=True)
     with sync_playwright() as p:
         browser = p.chromium.launch(
             executable_path=chrome,
@@ -241,7 +282,10 @@ def capture(url: str, out_dir: Path, width: int, height: int, overlap: int,
             pass
         page.wait_for_timeout(2500)
 
+        overlay_before = 0.0
+        dismiss_cleared: bool | None = None
         if do_dismiss:
+            overlay_before = max_overlay_coverage(page)
             dismiss(page)
 
         # Finer warm scroll (600px steps) so every intersection-observer fires and lazy media loads.
@@ -265,6 +309,18 @@ def capture(url: str, out_dir: Path, width: int, height: int, overlap: int,
               })"""
         )
 
+        # Thin-page / interstitial guard. A real marketing page is tall with many images; a bot-wall
+        # challenge, login gate, or coming-soon splash is ~1 viewport with almost none. Structural,
+        # no vendor strings — a Cloudflare challenge captured *as* the page on doordash www was the
+        # silent miss this catches (2026-06-16 dogfood). Non-fatal: warn so QA excludes it.
+        if info["scrollHeight"] < 2000 and info["imageCount"] < 3:
+            print(
+                f"WARNING [{url}]: page looks thin/interstitial (scrollHeight={info['scrollHeight']}px, "
+                f"{info['imageCount']} images) — likely a bot-wall, login gate, or coming-soon splash, "
+                "not the real page. Verify before mining; capture via a non-walled path or exclude.",
+                file=sys.stderr,
+            )
+
         # Scroll-lock guard. Under --dismiss the probe showed dismissal releases the lock for
         # free; we run the forced reset only as a fallback and flag `scroll_locked` if both
         # paths fail. Without --dismiss we only detect and warn — unchanged from today.
@@ -279,6 +335,23 @@ def capture(url: str, out_dir: Path, width: int, height: int, overlap: int,
                 "QA this page before mining; re-run with --dismiss or exclude the page.",
                 file=sys.stderr,
             )
+
+        # No-op-dismiss guard. `dismissed` says --dismiss *ran*; this says whether it *worked*.
+        # Measured as a footprint delta (relative, not an absolute px size) so a corner CMP below
+        # any fixed threshold still trips it: a real dismissal shrinks or clears the overlay
+        # (stripe's proactive bubble → small launcher; mydrhank's banner → gone), a no-op leaves it
+        # unchanged (goodlifemeds' shadow-root CMP). Catches a re-arm during warm-scroll too.
+        if do_dismiss:
+            overlay_after = max_overlay_coverage(page)
+            dismiss_cleared = overlay_after < 0.02 or overlay_after <= 0.5 * overlay_before
+            if not dismiss_cleared:
+                print(
+                    f"WARNING [{url}]: --dismiss did not clear the overlay — a fixed element still "
+                    f"covers {overlay_after:.0%} of the viewport (was {overlay_before:.0%}). It may sit "
+                    "behind a closed shadow root or use off-list button labels; the tiles still carry "
+                    "it. Compare against the cached/faithful view and exclude or caveat this page.",
+                    file=sys.stderr,
+                )
 
         tiles: list[dict] = []
         for index, y in enumerate(tile_offsets(info["scrollHeight"], height, overlap)):
@@ -298,6 +371,7 @@ def capture(url: str, out_dir: Path, width: int, height: int, overlap: int,
         "viewport": {"width": width, "height": height},
         "overlap": overlap,
         "dismissed": do_dismiss,  # --dismiss ran affordance-only overlay dismissal
+        "dismiss_cleared": dismiss_cleared,  # did it WORK (footprint dropped)? null when --dismiss didn't run
         "scroll_locked": scroll_locked,  # tile-00 ≠ top when true → tiles mislabeled, QA before mining
         "overview": "overview-480w.png" if overview_made else None,
         "page": info,
@@ -344,6 +418,7 @@ def main() -> None:
         "scrollHeight": page["scrollHeight"],
         "tiles": len(manifest["tiles"]),
         "dismissed": manifest["dismissed"],
+        "dismissCleared": manifest["dismiss_cleared"],
         "scrollLocked": manifest["scroll_locked"],
         "title": page["title"],
     }, indent=2))
