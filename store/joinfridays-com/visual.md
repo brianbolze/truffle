@@ -11,460 +11,548 @@ qa_status: recapture-used
 
 ## Visual & brand impression
 
-Fridays presents as a systematized, on-brand telehealth site. Color works as a navigation code — each vertical owns a hue wash carried from section into its product cards [color_01], anchored by a custom lowercase-serif "fridays" wordmark used as an owned mark [color_03] over a reused section template across treatments [layout_03]. Product vials are high-quality 3-D renders, a clear step above stock pharma photography [iconography_01], peaking on the monochrome burgundy testosterone hero [color_02, iconography_02]. Typography holds a disciplined eyebrow-over-display rhythm [typography_02]. Friction clusters in three spots: the hero's coupon-code panel pulls the editorial fold toward bargain e-commerce [color_06, typography_05]; brand-name med cutouts sit a visible tier below the compound renders [iconography_03]; and the off-system Happy Sleep co-brand page drops the hue system [color_08]. Tiny low-contrast legal type recurs [typography_07].
+Fridays reads as a systematized, on-brand telehealth site. A disciplined per-category color system — sage GLP-1, teal longevity, rose-red testosterone — carries from full-bleed sections into product cards and dedicated landing pages [color_01, color_02], anchored by a forest-green footer and a chunky-serif 'fridays' wordmark used inline and at display scale [color_03, typography_02, typography_05]. Card grids hold strict parity across pages [layout_03, layout_09, layout_17]; coordinated 3-D vial renders share one language [iconography_02]. Friction clusters: the hero bolts a dense lime coupon grid onto editorial content [typography_06, color_04, layout_01]; snapshot before/afters sit beside studio photography [color_06]; check glyphs and app badges stay off-the-shelf [iconography_01, iconography_09]; the footer legal block is illegible [typography_10]; and Happy Sleep co-brand drops the system [typography_08, color_05].
 
 ## Evidence cards
 
 ```yaml
-- id: typography_01
-  family: typography_hierarchy
-  polarity: strong
-  page_or_region: Homepage hero — 'Spring reset starts now' headline
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png
-  claim: The hero headline sets a clear top-of-scale with a heavy large-display serif that outranks everything
-    else on the fold, and embeds the lowercase 'fridays' logotype as a second register inside the line.
+- id: 'typography_01'
+  family: 'typography_hierarchy'
+  polarity: 'strong'
+  page_or_region: 'homepage hero — left panel headline'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png'
+  claim: 'The hero headline pairs a large white serif with a single green-accented phrase to split brand voice from informational copy in one glance.'
   visible_tells:
-  - '''Spring reset starts now'' rendered in a heavy serif at roughly 3-4x the nav text size'
-  - '''starts now'' set in a lime accent color, ''Spring reset'' in white, within the same headline'
-  confidence: high
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-01-y01220.png
-- id: typography_02
-  family: typography_hierarchy
-  polarity: strong
-  page_or_region: Homepage — section heads throughout scroll (weight loss, longevity, microdosing)
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-05-y06100.png
-  claim: A consistent two-level rhythm — small all-caps eyebrow label above a large display head — repeats
-    reliably across every content section, establishing a disciplined hierarchy.
+  - 'Large white serif ''Spring reset starts now'' with ''starts now'' set in lime-green'
+  - 'Caption ''Hannah: A real Fridays patient'' sits at a clearly subordinate size below the before/after photos'
+  confidence: 'high'
+- id: 'typography_02'
+  family: 'typography_hierarchy'
+  polarity: 'strong'
+  page_or_region: 'homepage — ''A weight loss journey that feels like fridays'' headline'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png'
+  claim: 'The ''fridays'' logotype is embedded inline inside the display headline, so the custom rounded letterform doubles as brand signature and emphasis against the surrounding serif.'
   visible_tells:
-  - Small all-caps label 'GLP-1 MICRODOSING' sits above the display head 'Small doses. Big difference.'
-  - Same eyebrow-over-head pattern visible for 'LONGEVITY / Feel better, age smarter' (tile-04) and 'GLP-1
-    WEIGHT LOSS / Lose weight your way' (tile-01)
-  confidence: high
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-04-y04880.png
-- id: typography_03
-  family: typography_hierarchy
-  polarity: strong
-  page_or_region: Testosterone landing page hero — 'No more excuses'
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-00-y00000.png
-  claim: 'The testosterone hero shifts to white-on-dark-red but holds the same multi-step type scale:
-    large headline, medium subhead, smaller offer line, then small benefit bullets — the system carries
-    across color contexts.'
+  - 'Multi-line display serif ''A weight loss journey that feels like fridays'' dominates the section'
+  - 'The ''fridays'' wordmark switches to its custom rounded letterform, visually distinct from the rest of the headline'
+  confidence: 'high'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-09-y10980.png'
+- id: 'typography_03'
+  family: 'typography_hierarchy'
+  polarity: 'strong'
+  page_or_region: 'homepage — ''Lose weight your way'' section intro'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-01-y01220.png'
+  claim: 'A clean three-level hierarchy is reliably executed: small uppercase kicker, large centered display headline, then a small arrow link — each level distinct and well separated.'
   visible_tells:
-  - '''No more excuses'' headline in large weight, with ''excuses'' bolder than ''No more'''
-  - '''Your testosterone didn''t ghost you — it moved out'' subhead is one clear step smaller and lighter'
-  - '''Here''s $100 off to get it back'' reads as a third distinct level above the red CTA pill'
-  confidence: high
-- id: typography_04
-  family: typography_hierarchy
-  polarity: strong
-  page_or_region: Pricing page — FAQ section 'Get the answers you need'
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-05-y06100.png
-  claim: 'The FAQ block uses a clean three-level hierarchy: large display head, a small grey sub-paragraph,
-    then bold accordion questions in light bordered pills — visually distinct without relying on color
-    alone.'
+  - 'Small all-caps label ''GLP-1 WEIGHT LOSS'' above'
+  - 'Large centered ''Lose weight your way.'' at roughly 3x the label size'
+  - 'Small underlined ''Learn more about GLP-1 treatments →'' in a clearly lighter weight below'
+  confidence: 'high'
+- id: 'typography_04'
+  family: 'typography_hierarchy'
+  polarity: 'strong'
+  page_or_region: 'homepage — ''Better health, one Friday at a time'' 3-step section'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-05-y06100.png'
+  claim: 'Step numbering (''01/02/03'') over a bold heading over small body copy delivers a disciplined three-level hierarchy held consistent across all three columns.'
   visible_tells:
-  - '''Get the answers you need'' is roughly 3x the accordion question size'
-  - A small grey body paragraph below the head creates a mid level before the list
-  - Accordion questions are bold dark text inside individually bordered rounded containers, grouping them
-    as a fourth visual tier
-  confidence: high
-- id: typography_05
-  family: typography_hierarchy
-  polarity: mixed
-  page_or_region: Homepage hero — right-panel promo / coupon-code block
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png
-  claim: The promo panel stacks too many competing type levels — banner headline, 'BEST OFFER', dollar-off
-    figures, month tiers, and coupon pills — at near-equal weight, producing local hierarchy confusion.
+  - 'Numbered prefixes (''01. Take your quiz'', etc.) separate step identity from label'
+  - 'Body copy under each heading sits at a visibly smaller, lighter size'
+  - 'Column rhythm is consistent across all three steps with no size drift'
+  confidence: 'high'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/weight_loss/tile-02-y02440.png'
+- id: 'typography_05'
+  family: 'typography_hierarchy'
+  polarity: 'strong'
+  page_or_region: 'footer — ''fridays'' logotype display treatment'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-09-y10980.png'
+  claim: 'The footer renders the ''fridays'' wordmark at display scale filling the lower band, an editorial brand-close anchor sitting in a wholly different register from the small nav links above it.'
   visible_tells:
-  - '''SAVE BIG! Up to $500 off!'' banner competes with the yellow ''BEST OFFER!'' tag and the ''$500
-    OFF 12 MONTHS'' row at similar visual weight'
-  - Dark coupon-code pills (NEWYOU12, NYNY12) sit at the same prominence as the dollar-off figures beside
-    them
-  confidence: high
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-05-y06100.png
-- id: typography_06
-  family: typography_hierarchy
-  polarity: poor
-  page_or_region: Whats_included (Happy Sleep) — 'WHAT'S INCLUDED' checklist
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/whats_included/tile-00-y00000.png
-  claim: The 'WHAT'S INCLUDED' checklist is set in small, thin, low-contrast grey with no item emphasized
-    — individual inclusions are uniform and not quickly scannable at reading distance.
+  - 'White ''fridays'' wordmark at very large scale in a chunky custom serif spans the footer width'
+  - 'Nav links sit at a fraction of that size in a plain sans register'
+  confidence: 'high'
+- id: 'typography_06'
+  family: 'typography_hierarchy'
+  polarity: 'mixed'
+  page_or_region: 'homepage hero — right-panel promo/coupon grid'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png'
+  claim: 'The coupon grid in the hero''s right panel trades hierarchy for density — discount, duration, and code rows sit at near-uniform weight, making the table hard to scan.'
   visible_tells:
-  - Checklist lines ('Multiple nights of FDA-cleared testing', etc.) are uniform small grey type with
-    no bold or size variation
-  - No lead inclusion is differentiated to guide the eye down the list
-  confidence: medium
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-05-y06100.png
-- id: typography_07
-  family: typography_hierarchy
-  polarity: poor
-  page_or_region: Homepage / pricing footer — legal & disclaimer copy
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-09-y10980.png
-  claim: Footer legal and disclaimer copy is set in very small grey-on-dark-green type that is effectively
-    illegible at normal reading distance.
+  - 'Rows like ''$500 OFF / 12 MONTHS / NEWYOU12'' set in near-uniform small caps with little weight differentiation between price, duration, and code'
+  - 'Multiple stacked rows at the same visual weight with no single primary emphasis'
+  confidence: 'high'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-01-y01220.png'
+- id: 'typography_07'
+  family: 'typography_hierarchy'
+  polarity: 'mixed'
+  page_or_region: 'testosterone landing — hero headline register shift'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-00-y00000.png'
+  claim: 'The testosterone hero shifts to a heavy all-white sans headline (''No more excuses''), departing from the serif-led display type the homepage and weight-loss pages use and loosening typographic consistency across the property.'
   visible_tells:
-  - The 'Fridays whitepapers' disclaimer paragraph is the smallest text block on the page
-  - Grey text on the deep forest-green footer further suppresses contrast
-  confidence: high
-- id: typography_08
-  family: typography_hierarchy
-  polarity: strong
-  page_or_region: Whats_included (Happy Sleep) — 'No surprise costs' pricing table
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/whats_included/tile-02-y02440.png
-  claim: 'The cost-comparison table carries the value read with type weight alone: the Fridays ''$199''
-    total is set heavy while competitor totals stay light, and the ''Total Out-of-Pocket Costs'' summary
-    row is bolded to signal the bottom line.'
+  - 'Bold white sans ''No more excuses'' on a dark-red field, versus the serif display style elsewhere'
+  - 'Mixed-weight sub-lines (''Here''s $100 off to get it back'') add a third register in the same hero'
+  confidence: 'medium'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png'
+- id: 'typography_08'
+  family: 'typography_hierarchy'
+  polarity: 'mixed'
+  page_or_region: 'whats_included (Happy Sleep) — co-branded typographic register'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/whats_included/tile-02-y02440.png'
+  claim: 'The co-branded Happy Sleep pages use a lighter centered sans display register (''No surprise costs.'', ''Members love Happy.'') that does not match the chunky-serif system of the core Fridays site, reading as an external template.'
   visible_tells:
-  - '''$199'' is visibly heavier than the ''$4,500'' and ''$750'' in adjacent columns'
-  - The 'Total Out-of-Pocket Costs' row sits on a highlighted band and reads as the summary, distinct
-    from the 'Included / $500 / $200' rows above
-  confidence: high
-- id: layout_01
-  family: layout_composition_components
-  polarity: strong
-  page_or_region: Homepage hero — two-zone split
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png
-  claim: The hero splits into two cleanly aligned zones — a before/after photo panel left and a structured
-    promo-code table right — each on its own tight internal grid with no bleed between them.
+  - '''No surprise costs.'' and ''Members love Happy.'' centered in a light sans, distinct from the Fridays serif'
+  - 'Table row labels and testimonial cards use a different, plainer type treatment than the core site sections'
+  confidence: 'medium'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-09-y10980.png'
+- id: 'typography_09'
+  family: 'typography_hierarchy'
+  polarity: 'mixed'
+  page_or_region: 'weight_loss — ''Step 01/02/03'' cards'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/weight_loss/tile-02-y02440.png'
+  claim: 'On the weight-loss step cards the large ''Step 01'' number dominates, but the subhead (''Take our quiz'') and body copy below it sit at very similar weight, collapsing two hierarchy levels into one band.'
   visible_tells:
-  - 'Left: two portrait photos with yellow ''Before''/''After'' pills, caption line, and Klarna badge
-    flush to a common left margin'
-  - 'Right: promo table with alternating dark/light rows and right-justified coupon pills on an independent
-    grid'
-  confidence: high
-- id: layout_02
-  family: layout_composition_components
-  polarity: strong
-  page_or_region: Homepage — 2x2 category card grid
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png
-  claim: The four category cards form a consistent 2x2 grid with identical card height, pill label position,
-    and trailing-edge product image.
+  - '''Step 01/02/03'' rendered large and bold, while subhead and descriptor share near-identical size and weight'
+  - 'Little leading or weight shift separating the step subhead from its body line'
+  confidence: 'medium'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-05-y06100.png'
+- id: 'typography_10'
+  family: 'typography_hierarchy'
+  polarity: 'poor'
+  page_or_region: 'homepage footer — legal/whitepaper disclaimer block'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-09-y10980.png'
+  claim: 'The legal disclaimer renders as a dense full-width paragraph at micro size in low-contrast gray-on-green, with no internal hierarchy to orient scanning — effectively illegible without zooming.'
   visible_tells:
-  - GLP-1 Weight Loss, Longevity, Testosterone, GLP-1 Microdosing share the same rounded-rect container
-    and image-at-right placement
-  - Color-coded background per card (sage, teal, rose, olive) differentiates without breaking the grid
-  confidence: high
-- id: layout_03
-  family: layout_composition_components
-  polarity: strong
-  page_or_region: Homepage — product category sections (template reuse)
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-01-y01220.png
-  claim: Each treatment category section reuses one layout module — eyebrow + headline, a checklist with
-    a lifestyle photo, then a row of product cards below — indicating a disciplined template system across
-    verticals.
+  - 'Paragraph beginning ''The assessment available on the Fridays website…'' spans full width at very small, low-contrast type'
+  - 'No heading or emphasis breaks the block; every line shares the same micro size'
+  confidence: 'high'
+- id: 'typography_11'
+  family: 'typography_hierarchy'
+  polarity: 'poor'
+  page_or_region: 'pricing — ''Why pay more for less results?'' comparison table labels'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-03-y03660.png'
+  claim: 'Every comparison-table row label sits at the same small size and weight, so ''Membership Fee'', ''Insurance Management'', and feature rows are flat in hierarchy with no grouping or emphasis to prioritize the eye.'
   visible_tells:
-  - 'Weight Loss section (tile-01) mirrors Longevity (tile-04) and Testosterone (tile-07): label / headline
-    / checklist / photo / product-card row'
-  - Product cards repeat identical anatomy (name, subline, vial render, dark CTA button) across categories
-  confidence: high
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-04-y04880.png
-- id: layout_04
-  family: layout_composition_components
-  polarity: strong
-  page_or_region: Homepage — three-step process row
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-05-y06100.png
-  claim: The 'Better health, one Friday at a time' section is three equal-width columns with 01/02/03
-    labels, short copy, and phone mockups at uniform scale and registration — evenly spaced, no crowding.
+  - 'Row labels (''Membership Fee'', ''Insurance Management'', ''Video Provider Visits'', etc.) all at identical size with no bold/color/spacing cue'
+  - 'Header brand row (''ro'', ''hims'') sits at small muted weight, barely distinct from the data rows'
+  confidence: 'high'
+- id: 'layout_01'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'homepage hero — split two-zone promo banner'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png'
+  claim: 'The hero is a hard split between a dark olive left zone (before/after photos) and a light-green right zone (coupon panel), separating content by clean color field with no borders or shadows.'
   visible_tells:
-  - '''01 Take our quiz / 02 Meet your provider / 03 Begin your journey'' columns are equal width with
-    phone mockups aligned on a common baseline'
-  confidence: high
-- id: layout_05
-  family: layout_composition_components
-  polarity: strong
-  page_or_region: Pricing page — two-plan card comparison
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-01-y01220.png
-  claim: The Semaglutide and Tirzepatide plan cards are structurally identical — render, name, tag, price,
-    checklist, CTA in the same sequence — with the Tirzepatide card gaining a green outline and 'MOST
-    POPULAR / RATED FOR RESULTS' badge to elevate it without breaking the template.
+  - 'Left: dark olive field, two photo columns with yellow ''Before''/''After'' badges flush to the bottom edge'
+  - 'Right: light-green field, tiered coupon rows with right-aligned dark-green pill code buttons'
+  - 'Clean color-field boundary down the middle with no gutter bleed'
+  confidence: 'high'
+- id: 'layout_02'
+  family: 'layout_composition_components'
+  polarity: 'mixed'
+  page_or_region: 'homepage — category pill grid below hero'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png'
+  claim: 'The four category tiles sit in a 2x2 grid of pill rows with inset product images, but the inset vials are cropped at the cell edge and do not fully land within their tiles.'
   visible_tells:
-  - Both cards share identical internal anatomy in the same order; Tirzepatide adds a green border and
-    badge
-  - Feature checklists are left-aligned with consistent checkmarks across both cards
-  confidence: high
-- id: layout_06
-  family: layout_composition_components
-  polarity: strong
-  page_or_region: Pricing page — competitor comparison table (Fridays / ro / hims)
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-03-y03660.png
-  claim: The feature comparison is a clean three-column grid with the Fridays column tinted sage and competitor
-    columns plain, check/X marks uniformly sized and centered — easy to scan with no ragged rows.
+  - 'GLP-1 Weight Loss / Longevity / Testosterone / GLP-1 Microdosing in a 2x2 pill grid'
+  - 'Inset vial imagery is clipped at the tile boundary rather than fully contained'
+  confidence: 'medium'
+- id: 'layout_03'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'homepage — GLP-1 product card 3-up grid'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-01-y01220.png'
+  claim: 'The three GLP-1 product cards form a consistent 3-column grid — matching card height, centered vial on a dark field, identical ''Get started'' CTAs, and aligned label/CTA placement.'
   visible_tells:
-  - Row labels flush-left; check/X cells centered in each column with no orphaned or misaligned rows
-  - Fridays column carries a sage highlight band that anchors the brand against the white 'ro' and 'hims'
-    columns
-  confidence: high
-- id: layout_07
-  family: layout_composition_components
-  polarity: mixed
-  page_or_region: Homepage hero — register collision across the split
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png
-  claim: The hero split is structurally clean but tonally collides — the left half is editorial (dark-green
-    photo panel) while the right is a transactional coupon table on light green, with no visual bridge
-    tying the headline to the offer grid.
+  - 'All three cards share the dark-green background, centered vial photography, and bottom-aligned equal-width CTA'
+  - 'Card tops align flush across the row with no stagger or size variance'
+  confidence: 'high'
+- id: 'layout_04'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'homepage — ''3-step'' how-it-works section'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-05-y06100.png'
+  claim: 'The 3-step section uses an even horizontal 3-column grid — step number, title, body, and a phone mockup per column — with columns flush top and bottom and equal gaps.'
   visible_tells:
-  - 'Left: dark green panel with before/after imagery and a ''real Fridays patient'' caption'
-  - 'Right: light green panel densely packed with promo-code rows; the ''Spring reset starts now'' headline
-    does not connect across the seam'
-  confidence: medium
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-04-y04880.png
-- id: layout_08
-  family: layout_composition_components
-  polarity: mixed
-  page_or_region: Homepage — lead-gen split (protein cheat sheet + weight calculator)
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-03-y03660.png
-  claim: Two lead-gen widgets sit side by side but do not share a component language — the left is a green-backed
-    card with image and email opt-in, the right is a bare white calculator with a slider and large number
-    output and no matching container.
+  - 'Steps 01/02/03 (''Take your quiz'', ''Meet your provider'', ''Begin your journey'') share vertical alignment for number, label, body, and phone image'
+  - 'Outer margins appear equal and the three columns are evenly divided'
+  confidence: 'high'
+- id: 'layout_05'
+  family: 'layout_composition_components'
+  polarity: 'mixed'
+  page_or_region: 'homepage — stats / social-proof ticker bar'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-01-y01220.png'
+  claim: 'The edge-to-edge stats strip is evenly spaced, but mixing a Trustpilot badge component with plain-text stats gives items uneven visual weight, and whitespace-only separation makes item boundaries ambiguous.'
   visible_tells:
-  - 'Left: green card, protein-guide image, checkbox, email field with CTA'
-  - 'Right: borderless white box with a slider, ''200 lbs / 30 lbs'' figures, and a green button — no
-    card background to match the left'
-  confidence: medium
-- id: layout_09
-  family: layout_composition_components
-  polarity: mixed
-  page_or_region: Homepage — 'Fridays Portal' feature block
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-06-y07320.png
-  claim: The portal block is a sound two-column text-left / phone-right layout but compositionally thin
-    — the phone floats ungrounded in a large empty right column and the text column carries far more whitespace
-    than the dense product sections around it.
+  - 'Trustpilot star+logo badge at left reads heavier than the plain-text follower/success-rate stats to its right'
+  - 'Items separated only by whitespace, no dividers'
+  confidence: 'medium'
+- id: 'layout_06'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'homepage — Portal feature section (text-left, mockup-right)'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-06-y07320.png'
+  claim: 'The Portal block uses a clean asymmetric two-column layout — copy and single CTA on the left, phone app mockup on the right — with generous whitespace and a distinct off-white background separating it from the dark sections around it.'
   visible_tells:
-  - Small phone mockup centered in a large empty right column with no background treatment
-  - Three lines of copy plus a CTA leave conspicuous empty space below, unlike the packed sections above
-  confidence: medium
-- id: layout_10
-  family: layout_composition_components
-  polarity: mixed
-  page_or_region: Weight_loss page — medication card grid breaks to 2-up
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/weight_loss/tile-01-y01220.png
-  claim: The weight-loss medication grid is 2-column with tall cards and large vial photos, versus the
-    3-column product rows on the homepage — the system adapts but the column-count change reads as inconsistent
-    rather than an intentional breakpoint.
+  - 'Left: ''Everything you need, all in one place.'' headline, one-line body, single ''Get started'' pill — uncrowded'
+  - 'Right: device mockup with breathing room; section background is a lighter green than the dark bands above/below'
+  confidence: 'high'
+- id: 'layout_07'
+  family: 'layout_composition_components'
+  polarity: 'mixed'
+  page_or_region: 'homepage — success stories carousel'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-02-y02440.png'
+  claim: 'The testimonial carousel flanks a center video card with two text+photo cards, but the video card is visibly taller and wider, producing mismatched row heights with no deliberate stagger logic.'
   visible_tells:
-  - Two wide cards (Tirzepatide, Semaglutide) each with a full-bleed vial render filling roughly half
-    the card
-  - Homepage product rows use three equal cards in the same viewport width
-  confidence: medium
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-01-y01220.png
-- id: layout_12
-  family: layout_composition_components
-  polarity: poor
-  page_or_region: Homepage / pricing — footer nav and contact cluster
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-09-y10980.png
-  claim: The footer is a single dot-separated row of seven nav items with the contact links and social
-    icons in a free-floating right cluster — it lacks the column grid discipline the product sections
-    show.
+  - 'Center ''Tati'' video card sits taller and wider than the left/right testimonial cards'
+  - 'Left and right card tops do not align to a shared baseline with the video card'
+  confidence: 'high'
+- id: 'layout_08'
+  family: 'layout_composition_components'
+  polarity: 'poor'
+  page_or_region: 'homepage — lead-capture / weight-loss calculator row'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-03-y03660.png'
+  claim: 'The ''Download our Protein Cheat Sheet'' opt-in card and the weight-loss calculator widget sit side by side but use different card depth, padding, and background, reading as two unrelated components placed adjacent rather than a designed pair.'
   visible_tells:
-  - Seven nav items (Blog, GLP-1 Weight Loss, Longevity, GLP-1 Microdosing, Merch, Fridays Meals, Contact
-    Us) in one row with dot separators, no grouping
-  - Contact links and social icons sit as a right-aligned cluster with no enclosing column aligned to
-    the nav
-  confidence: medium
-- id: layout_13
-  family: layout_composition_components
-  polarity: poor
-  page_or_region: Testosterone page — crowded hero left column
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-00-y00000.png
-  claim: The testosterone hero packs headline, subhead, offer line, red CTA, benefit bullets, and a Klarna
-    badge into a tight left column beside an oversized vial render, producing a dense stack of small elements
-    against very spacious product imagery.
+  - 'Left: bordered/elevated card with cover image, checkbox, email input and CTA crowded inside'
+  - 'Right: flat widget with large ''30 lbs'' output and slider, no matching card border'
+  - 'The two panels'' vertical midpoints do not align'
+  confidence: 'high'
+- id: 'layout_09'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'pricing — Semaglutide vs Tirzepatide plan cards'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-01-y01220.png'
+  claim: 'The two signature plan cards hold strict structural parity — image, name, injection badge, price with savings, feature checklist, full-width CTA — aligning across the two-column grid with no vertical drift.'
   visible_tells:
-  - Below the 'Use code BEGIN100' CTA, two benefit lines and a Klarna badge stack with minimal leading
-  - The cramped left column contrasts sharply with the large, airy Testosterone Cypionate render filling
-    the right half
-  confidence: medium
-- id: color_01
-  family: color_brand_imagery
-  polarity: strong
-  page_or_region: Homepage + category pages — per-vertical color-coding system
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-07-y08540.png
-  claim: Each product vertical owns a dedicated hue applied as a full-bleed section wash and carried down
-    into its product cards — sage for GLP-1/weight loss, blue-teal for longevity, dusty rose-red for testosterone
-    — making color a consistent navigational code, not a spot accent.
+  - 'Both cards: same image height, badge row, price line, checklist icons, and bottom CTA alignment'
+  - 'The Tirzepatide card adds a green ''recommended'' border that differentiates state, not structure'
+  confidence: 'high'
+- id: 'layout_10'
+  family: 'layout_composition_components'
+  polarity: 'mixed'
+  page_or_region: 'pricing — brand-name Ozempic / Zepbound cards'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-02-y02440.png'
+  claim: 'The brand-name drug cards switch to a horizontal image-left/details-right layout directly below the vertical compounded plan cards, with no transition — the break reads as a template switch rather than a deliberate hierarchy choice.'
   visible_tells:
-  - 'Testosterone section: warm rose-red wash with deep-red vials and cards matching it'
-  - 'Longevity section (tile-04): cool blue-green wash with cards inheriting the same hue'
-  - Hue transitions between sections are sharp and deliberate, not gradient bleed
-  confidence: high
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-04-y04880.png
-- id: color_02
-  family: color_brand_imagery
-  polarity: strong
-  page_or_region: Testosterone page — monochrome burgundy hero
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-00-y00000.png
-  claim: The testosterone hero sustains one deep burgundy-red across background, product vials, and CTA
-    with no competing accent — object color and accent color are the same hue, tightening brand coherence
-    on this vertical.
+  - 'Ozempic/Zepbound: pen image left, feature list + ''Select'' button right'
+  - 'Immediately above, the Semaglutide/Tirzepatide cards were vertical with full-width CTAs — no shared structural cues'
+  confidence: 'high'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-01-y01220.png'
+- id: 'layout_11'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'pricing — ''Why pay more for less results?'' comparison table'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-03-y03660.png'
+  claim: 'The three-brand comparison table (Fridays, ro, hims) is cleanly built — fixed header, equal-height rows, check/X iconography, and a green-filled Fridays column that reads as the recommended column with no misalignment.'
   visible_tells:
-  - Dark crimson hero background, Testosterone Cypionate vials, and the 'Use code BEGIN100' CTA all share
-    the same red family
-  - No off-hue accent intrudes on the fold
-  confidence: high
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-01-y01220.png
-- id: color_03
-  family: color_brand_imagery
-  polarity: strong
-  page_or_region: Footer + in-body — 'fridays' wordmark
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-08-y09760.png
-  claim: A controlled lowercase serif 'fridays' wordmark is used consistently — reversed white-on-forest-green
-    at display scale in the footer and embedded inside body headlines — reading as an owned brand mark
-    rather than a generic logotype.
+  - 'Fridays column has a distinct green fill (''Lowest Price!''); ro/hims columns sit in muted tone'
+  - 'Feature rows are equal height with icon and label in the same horizontal band; table edges align to the content width'
+  confidence: 'high'
+- id: 'layout_12'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'pricing — FAQ section (text left, accordion right)'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-05-y06100.png'
+  claim: 'The FAQ uses a clean two-column split — heading/body/contact CTA left, five accordion rows right — with large decorative circle shapes behind the left copy that add depth without obscuring it.'
   visible_tells:
-  - Large white 'fridays' wordmark on a deep forest-green footer block
-  - Same custom serif appears inside in-body callouts ('Your fridays feeling awaits', tile-08) and repeated
-    in the pricing footer
-  confidence: high
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-05-y06100.png
-- id: color_04
-  family: color_brand_imagery
-  polarity: strong
-  page_or_region: Homepage hero — before/after photography treatment
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png
-  claim: The before/after patient photos share an identical dark olive-green backdrop and matching full-body
-    crop with branded yellow 'Before'/'After' pills — a controlled image language, not raw user-generated
-    content.
+  - 'Left: ''Get the answers you need'' heading + body + ''Contact us'' pill, all left-aligned'
+  - 'Right: five accordion rows with consistent padding and right-aligned ''+'' icons'
+  - 'Soft peach circle shapes sit behind the left text with contrast preserved'
+  confidence: 'high'
+- id: 'layout_13'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'weight_loss — medication product cards (2-up grid)'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/weight_loss/tile-01-y01220.png'
+  claim: 'The medication listing uses a consistent 2-column grid — full-bleed dark image area, ''In Stock'' badge, name, price, ''Get Started'' button — with cards matching in height and internal order and the pattern continuing in the next row.'
   visible_tells:
-  - Both photos share the same dark green-tinted backdrop and centered full-body framing
-  - Yellow 'Before' and 'After' labels in identical rounded-pill format
-  confidence: high
-- id: color_05
-  family: color_brand_imagery
-  polarity: mixed
-  page_or_region: Homepage — testimonial carousel mixes formats
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-02-y02440.png
-  claim: The 'Our success stories' carousel mixes produced before/after pairs with a dark unbranded TikTok-style
-    video panel ('Tati'), breaking the otherwise controlled image language against the pale sage section.
+  - 'Tirzepatide and Semaglutide cards share identical height, image-zone proportions, and badge/label/price/CTA order'
+  - 'The next 2-up row (Ozempic, Zepbound) continues the same pattern'
+  confidence: 'high'
+- id: 'layout_14'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'weight_loss — ''We make it easy'' Step 01/02/03 section'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/weight_loss/tile-02-y02440.png'
+  claim: 'The three-step section uses equal-width columns with a progressive light-to-dark olive background across Step 01→03, creating a left-to-right reading cue without breaking the grid.'
   visible_tells:
-  - Two styled before/after pairs flank a dark phone-style video thumbnail
-  - The video panel is unbranded and dark, incongruous with the pale section background and color-coordinated
-    cards beside it
-  confidence: medium
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png
-- id: color_06
-  family: color_brand_imagery
-  polarity: mixed
-  page_or_region: Homepage hero — coupon palette pulls toward bargain e-commerce
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png
-  claim: The hero's right half places a functional coupon-code panel — promo pills, dollar-off tiers,
-    and an amber 'BEST OFFER' badge — directly beside editorial content, pulling the otherwise restrained
-    palette toward a discount-store aesthetic.
+  - 'Step 01 lightest, Step 02 mid-tone, Step 03 darkest olive — left-to-right progression'
+  - 'All three column tops and bottoms are flush'
+  confidence: 'high'
+- id: 'layout_15'
+  family: 'layout_composition_components'
+  polarity: 'mixed'
+  page_or_region: 'weight_loss — ''A Holistic Approach'' (accordion left, collage right)'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/weight_loss/tile-03-y03660.png'
+  claim: 'The left accordion list and right photo/app collage are compositionally mismatched — the collage stacks photos and a phone screenshot at varying scale and angle with no grid anchor, while the accordion rows are evenly spaced.'
   visible_tells:
-  - Light-green promo panel with pill-shaped codes (NEWYOU12, NYNY12) and an amber/gold 'BEST OFFER!'
-    tag
-  - The bargain-styled right half seams against the muted editorial left half
-  confidence: high
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-04-y04880.png
-- id: color_07
-  family: color_brand_imagery
-  polarity: mixed
-  page_or_region: Weight_loss page — uneven step-card tints
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/weight_loss/tile-02-y02440.png
-  claim: The three 'We make it easy' step cards stay in the sage family but darken progressively — Step
-    03 renders as a much deeper forest green than Steps 01-02 — reading like an active/selected state
-    that is never labeled.
+  - 'Right: overlapping photos, a phone screenshot, and a separate app badge at varying scales/angles with no shared grid line'
+  - 'Left: four accordion rows with consistent ''+'' icon and even spacing'
+  confidence: 'medium'
+- id: 'layout_16'
+  family: 'layout_composition_components'
+  polarity: 'poor'
+  page_or_region: 'testosterone — hero (text-left, floated product-right)'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-00-y00000.png'
+  claim: 'The testosterone hero floats two oversized vials at different scales and angles in the right half with no grid logic, while the left stacks headline, offer code, Klarna badge, and benefits at inconsistent widths.'
   visible_tells:
-  - 'Step 01: pale sage fill; Step 02: mid-tone sage; Step 03: noticeably darker forest green'
-  - The darkest card draws the eye as if selected though no such state exists
-  confidence: medium
-- id: color_08
-  family: color_brand_imagery
-  polarity: poor
-  page_or_region: Whats_included (Happy Sleep) — co-brand drops the hue system
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/whats_included/tile-00-y00000.png
-  claim: The Happy Sleep co-branded page runs on a flat white/neutral background with no per-vertical
-    brand wash, breaking from the hue-coding system used everywhere else on the site and reading as a
-    different, off-system template.
+  - 'Right: a large rotated vial with a smaller second vial behind it, neither anchored to a column or edge'
+  - 'Left: ''Use code BEGIN100'' button and Klarna badge at different widths, stacked without a consistent left edge'
+  confidence: 'high'
+- id: 'layout_17'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'testosterone — TRT product card 3-up (Injectable / Oral / Enclomiphene)'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-01-y01220.png'
+  claim: 'The three TRT product cards form a uniform 3-column grid — consistent height, vial centered on a rose field, matching label/bullets/price/CTA order, and flush top/bottom alignment.'
   visible_tells:
-  - Full white background through the visible tile with no sage, rose, teal, or forest wash
-  - Only color present is the Trustpilot star orange and neutral UI chrome
-  confidence: medium
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-07-y08540.png
-- id: iconography_01
-  family: iconography_illustration
-  polarity: strong
-  page_or_region: Homepage + category pages — 3-D product vial renders
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/weight_loss/tile-01-y01220.png
-  claim: Compound-medication vials are rendered as high-quality 3-D objects with specular highlights,
-    soft drop shadows, and labels wrapped onto curved glass — consistent lighting and shadow hold across
-    multiple cards, indicating a controlled render pipeline well above flat stock-bottle photography.
+  - 'All three cards share identical height and internal order: label, vial, bullet list, ''$129/$169'' price, CTA'
+  - 'Equal column gutters within one full-width rose section'
+  confidence: 'high'
+- id: 'layout_18'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'whats_included (Happy Sleep) — cost comparison table'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/whats_included/tile-02-y02440.png'
+  claim: 'The ''No surprise costs'' table on the dark section is well-structured — left-label / three value columns, equal row heights, a highlighted Fridays total cell, and a single centered CTA below.'
   visible_tells:
-  - Tirzepatide and Semaglutide renders share the same warm-green gradient background, lighting direction,
-    and shadow depth
-  - Labels sit on the curved glass rather than as flat overlays; highlights read as a dedicated render
-    pass
-  - Same render quality recurs on the pricing cards (tile-01) and homepage hero vials
-  confidence: high
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-02-y02440.png
-- id: iconography_02
-  family: iconography_illustration
-  polarity: strong
-  page_or_region: Testosterone page — oversized hero vial render
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-00-y00000.png
-  claim: The testosterone hero uses an oversized, dramatically lit 3-D vial render with bokeh depth of
-    field and a metallic cap catching directional light — the highest-production-value product graphic
-    on the site.
+  - 'Row labels flush-left; three brand value columns of equal width to the right'
+  - 'Total row: the Fridays ''$199'' cell is highlighted with a tinted background versus $4,500 / $750'
+  - '''Fix My Sleep'' CTA centered below the table'
+  confidence: 'high'
+- id: 'layout_19'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'whats_included (Happy Sleep) — ''Members love Happy'' 3-up testimonial grid'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/whats_included/tile-02-y02440.png'
+  claim: 'The three testimonial cards are uniform in height, padding, and internal order — name/location, star rating, quote, and ''Best Streak'' stat all stack identically across the row.'
   visible_tells:
-  - Two Testosterone Cypionate vials rendered large with warm lighting and background-bottle blur
-  - The deep burgundy background is purpose-built for the render rather than a generic tile
-  confidence: high
-- id: iconography_03
-  family: iconography_illustration
-  polarity: poor
-  page_or_region: Weight_loss / pricing — flat brand-name pen cutouts beside 3-D renders
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/weight_loss/tile-01-y01220.png
-  claim: Brand-name medication images (Ozempic pen, Zepbound auto-injector) are flat photographic cutouts
-    at smaller scale, stylistically inconsistent with the high-quality 3-D compound renders beside them,
-    creating a visible two-tier product presentation.
+  - 'All three card tops/bottoms flush with equal gutters'
+  - 'Name, gold stars, quote, and ''Best Streak N Nights'' appear at the same vertical positions across all three'
+  confidence: 'high'
+- id: 'layout_20'
+  family: 'layout_composition_components'
+  polarity: 'strong'
+  page_or_region: 'whats_included (Happy Sleep) — alternating editorial feature sections'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/whats_included/tile-06-y07320.png'
+  claim: 'The ''comprehensive sleep care program'' section alternates copy-left with a large editorial photo-right, keeping consistent vertical spacing and equal column proportions.'
   visible_tells:
-  - Ozempic blue pen and Zepbound injector appear as plain cutouts with no render treatment, smaller than
-    the adjacent compound vials
-  - Same flat brand-name cutouts recur on the pricing page (tile-02), undermining visual parity with the
-    compound renders
-  confidence: high
-  contrast_with: store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-02-y02440.png
-- id: iconography_04
-  family: iconography_illustration
-  polarity: mixed
-  page_or_region: Homepage — checklist tick icons
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-01-y01220.png
-  claim: Feature-list checkmarks are generic filled-circle ticks with no house styling — they function
-    but add no visual character, the same default glyph found in most UI kits.
+  - 'Text-left / image-right pattern repeats with equal gutter and section padding'
+  - 'Both image slots occupy the same proportional right-column width'
+  confidence: 'high'
+- id: 'layout_21'
+  family: 'layout_composition_components'
+  polarity: 'mixed'
+  page_or_region: 'homepage footer — large logotype + right-clustered contact block'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-09-y10980.png'
+  claim: 'The footer pairs a well-distributed bottom nav row with an upper band where the contact links cluster top-right and the large wordmark sits lower-left, leaving the upper-left empty and the band feeling asymmetrically unbalanced.'
   visible_tells:
-  - Small solid-circle check icons beside 'Dietitians', 'Live workouts', 'Support groups'
-  - No stroke, weight, or corner-radius treatment distinguishes them from a stock icon set
-  confidence: medium
-- id: iconography_05
-  family: iconography_illustration
-  polarity: mixed
-  page_or_region: Homepage — process steps rely on app screenshots, not custom glyphs
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-05-y06100.png
-  claim: The three-step flow is carried by numbered labels plus cropped app screenshots rather than purpose-drawn
-    icons or illustrations — functional but not distinctively crafted.
+  - 'Contact us / support / Live Chat links cluster top-right with no mirroring content top-left'
+  - 'Bottom nav: seven items evenly distributed full-width with consistent separator dots'
+  confidence: 'medium'
+- id: 'color_01'
+  family: 'color_brand_imagery'
+  polarity: 'strong'
+  page_or_region: 'homepage — per-category section color system'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-07-y08540.png'
+  claim: 'The site runs a deliberate per-category color system — sage green for weight loss, teal-blue for longevity, rose-red for testosterone — applied to full-bleed section backgrounds, product card fills, and buttons within each lane.'
   visible_tells:
-  - Step headers '01/02/03' are typographic with no accompanying pictogram
-  - Each step's visual is a cropped smartphone screenshot, not an original illustration
-  confidence: medium
-- id: iconography_06
-  family: iconography_illustration
-  polarity: poor
-  page_or_region: Whats_included (Happy Sleep) — low-fidelity partner logo icon in table
-  tile_path: store/joinfridays-com/captures/2026-06-16/tiles/whats_included/tile-01-y01220.png
-  claim: The Happy Sleep comparison table uses a small dotted/pixelated logo mark as its column-header
-    icon, reading as low-fidelity at display size against the otherwise clean table.
+  - 'Testosterone homepage section is a dusty rose/red full-bleed with rose-tinted product cards'
+  - 'Longevity section (tile-04) is muted teal-blue; GLP-1 sections (tile-01) are sage green'
+  confidence: 'high'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-04-y04880.png'
+- id: 'color_02'
+  family: 'color_brand_imagery'
+  polarity: 'strong'
+  page_or_region: 'testosterone landing — red palette carried end-to-end'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-00-y00000.png'
+  claim: 'The testosterone landing page carries the red lane end-to-end — near-black wine hero, warm-red vial renders, red CTA — showing the per-category convention extends to dedicated pages, not just the homepage.'
   visible_tells:
-  - Happy Sleep header icon is a small dashed/dotted motif, not a crisp mark at this scale
-  - The 'Typical Sleep Labs' and 'Other Home Tests' columns are text-only, making the branded icon feel
-    like an afterthought
-  confidence: medium
+  - 'Dark wine/maroon full-bleed hero'
+  - 'Vials rendered with warm-red labels; red pill CTA (''Use code BEGIN100'')'
+  confidence: 'high'
+- id: 'color_03'
+  family: 'color_brand_imagery'
+  polarity: 'strong'
+  page_or_region: 'homepage — dark-green footer as brand anchor'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-09-y10980.png'
+  claim: 'The dark forest-green footer with its large white wordmark uses the same green family as the GLP-1 product elements, signaling green (not black or navy) as the brand''s primary anchor neutral.'
+  visible_tells:
+  - 'Dark olive-green footer band spanning full width'
+  - 'Large white ''fridays'' wordmark in the chunky serif over it'
+  confidence: 'high'
+- id: 'color_04'
+  family: 'color_brand_imagery'
+  polarity: 'mixed'
+  page_or_region: 'homepage hero — dark-promo left vs lime coupon right'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-00-y00000.png'
+  claim: 'The hero splits a dark promotional left panel against a bright lime coupon panel with no bridging device, putting a retail-urgency lime next to the cleaner brand greens used elsewhere on the page.'
+  visible_tells:
+  - 'Left: dark field with snapshot before/after photos; Right: bright lime field with tabular promo-code blocks'
+  - 'No common framing or transition between the two halves'
+  confidence: 'high'
+- id: 'color_05'
+  family: 'color_brand_imagery'
+  polarity: 'mixed'
+  page_or_region: 'whats_included (Happy Sleep) — palette discontinuity'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/whats_included/tile-03-y03660.png'
+  claim: 'The co-branded Happy Sleep section drops the Fridays green/teal/rose palette for a near-white cream ground with warm natural-light photography, creating a visible brand discontinuity.'
+  visible_tells:
+  - 'Cream/off-white background unlike any Fridays palette tile'
+  - 'Warm natural-light lifestyle photography (hands, sleeping figures), no green/teal/rose applied'
+  confidence: 'high'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-04-y04880.png'
+- id: 'color_06'
+  family: 'color_brand_imagery'
+  polarity: 'mixed'
+  page_or_region: 'homepage — before/after snapshots vs editorial photography'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-02-y02440.png'
+  claim: 'Before/after patient photos are uncontrolled snapshots (varying backgrounds, lighting, angles) placed in the same scroll as polished editorial lifestyle imagery, with no shared crop, grade, or framing unifying the two registers.'
+  visible_tells:
+  - 'Snapshot-quality before/after pairs with mismatched backgrounds and flat consumer lighting'
+  - 'Same scroll carries studio-grade editorial portraits — no consistent crop ratio or color grade between them'
+  confidence: 'high'
+- id: 'color_07'
+  family: 'color_brand_imagery'
+  polarity: 'strong'
+  page_or_region: 'homepage — editorial lifestyle photography coordinated to palette'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-01-y01220.png'
+  claim: 'The branded editorial lifestyle photo (smiling woman, white tank, sage background) is soft-lit, desaturated, and coordinated to the section''s sage palette — above-average production coherence for a DTC telehealth brand.'
+  visible_tells:
+  - 'Soft natural-light studio shot with background matching the sage section'
+  - 'Model''s white clothing chosen not to compete with the background hue'
+  confidence: 'medium'
+- id: 'color_08'
+  family: 'color_brand_imagery'
+  polarity: 'poor'
+  page_or_region: 'pricing — promotional sticky bar third-accent'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-00-y00000.png'
+  claim: 'The pricing sticky bar introduces a yellow ''SPRING SALE'' highlight and lime CTA chips that appear nowhere else in the page''s dark-green/sage system, adding a third accent tone that undercuts palette discipline.'
+  visible_tells:
+  - 'Yellow-highlighted ''SPRING SALE / LOWEST PRICE EVER!'' badge in the sticky bar'
+  - 'Lime promo-code chips in the bar; main page below uses dark green and sage with no yellow'
+  confidence: 'medium'
+- id: 'color_09'
+  family: 'color_brand_imagery'
+  polarity: 'poor'
+  page_or_region: 'homepage — success-stories video thumbnail (social register)'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-02-y02440.png'
+  claim: 'The ''Tati'' video thumbnail imports a high-contrast social-content look with a bold yellow caption overlay that breaks from the muted editorial register of the branded sections around it.'
+  visible_tells:
+  - 'High-contrast video frame with social-caption-style ''Tati'' overlay'
+  - 'Saturated framing contrasts with the desaturated editorial palette in the same carousel'
+  confidence: 'medium'
+- id: 'iconography_01'
+  family: 'iconography_illustration'
+  polarity: 'mixed'
+  page_or_region: 'homepage — feature checklist glyphs'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-01-y01220.png'
+  claim: 'Feature-list check icons are consistent in style and weight across the site but are standard minimal UI glyphs with no custom character or branded touch.'
+  visible_tells:
+  - 'Feature rows (Dietitians, Live workouts, Support groups, Meal prep, Mental health coaching) each use the same small circular check at identical size/color'
+  - 'No stroke variation or corner personality distinguishing them from a generic UI kit'
+  confidence: 'high'
+- id: 'iconography_02'
+  family: 'iconography_illustration'
+  polarity: 'strong'
+  page_or_region: 'homepage / testosterone — coordinated 3D vial product renders'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-01-y01220.png'
+  claim: 'Medication vials are rendered as stylized 3D product shots with coordinated tonal backgrounds and shadow/glow, giving the icon-like product imagery a unified illustration language across the grid and into the dedicated pages.'
+  visible_tells:
+  - 'Tirzepatide, Semaglutide, and Zepbound vials float on matching saturated backgrounds with a subtle shadow/glow'
+  - 'Color, angle, and scale are unified across the cards — treated like product illustration, not raw catalog photos'
+  confidence: 'high'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-00-y00000.png'
+- id: 'iconography_03'
+  family: 'iconography_illustration'
+  polarity: 'mixed'
+  page_or_region: 'homepage / testosterone — small biomarker line charts rendered thin'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-08-y09760.png'
+  claim: 'The biomarker line charts (TRT progress on homepage, Testosterone-vs-Placebo on the testosterone page) are functional but visually thin — sparse axis ticks, no styled data points or legend icons, minimal craft.'
+  visible_tells:
+  - 'Two-line chart on a card with no Y-axis label, no data callouts, and a plain legend'
+  - 'Chart sits small relative to its card with no styled markers'
+  confidence: 'medium'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-03-y03660.png'
+- id: 'iconography_04'
+  family: 'iconography_illustration'
+  polarity: 'mixed'
+  page_or_region: 'homepage — ''3-step'' phone-frame mockups as illustration stand-in'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-05-y06100.png'
+  claim: 'The 3-step flow uses app-screenshot mockups in plain phone frames as its illustration rather than bespoke iconography — competent but no custom illustration investment.'
+  visible_tells:
+  - 'Each numbered step pairs text with a rectangular phone-frame mockup of an app screenshot'
+  - 'Phone frames are plain rectangles with no device chrome, perspective, or stylization'
+  confidence: 'high'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-06-y07320.png'
+- id: 'iconography_05'
+  family: 'iconography_illustration'
+  polarity: 'strong'
+  page_or_region: 'homepage — Portal app mockup in styled phone frame'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-06-y07320.png'
+  claim: 'The Portal section presents a cropped app screenshot in a styled phone frame with rounded bezel and soft drop shadow — a cleaner product-render treatment than the flat phone frames in the step section above it.'
+  visible_tells:
+  - 'Phone frame shows a dashboard UI with a rounded device bezel'
+  - 'Soft shadow over an off-white ground gives it a deliberate lift versus the flat inline screenshots'
+  confidence: 'medium'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-05-y06100.png'
+- id: 'iconography_06'
+  family: 'iconography_illustration'
+  polarity: 'poor'
+  page_or_region: 'pricing — comparison table check/X glyphs'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/pricing/tile-03-y03660.png'
+  claim: 'The comparison table uses generic filled green check and red X glyphs identical to default table patterns across the category — no custom icon style or stroke variation between the Fridays and competitor columns.'
+  visible_tells:
+  - 'Three-column table (Fridays, ro, hims) with round green checks and red X marks — standard icon-font glyphs'
+  - 'No size/shape/stroke variation distinguishing the Fridays column icons from the competitors'''
+  confidence: 'high'
+- id: 'iconography_07'
+  family: 'iconography_illustration'
+  polarity: 'mixed'
+  page_or_region: 'weight_loss — ''A Holistic Approach'' layered collage'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/weight_loss/tile-03-y03660.png'
+  claim: 'The holistic-approach collage layers a floating vial render, lifestyle photos, and a phone screenshot with rotation and drop shadows — an intentional compositing device, though the individual assets are stock-level.'
+  visible_tells:
+  - 'Overlapping rectangular photo tiles at slight rotation with white-border card styling'
+  - 'A floating vial render sits above the collage as a separate graphic layer, not a single photo'
+  confidence: 'medium'
+- id: 'iconography_08'
+  family: 'iconography_illustration'
+  polarity: 'mixed'
+  page_or_region: 'testosterone — ''Male Hormone Assessment'' kit render'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-02-y02440.png'
+  claim: 'The biomarker test kit is presented as a styled product shot (box + syringe on a warm surface) consistent with the vial-render treatment on the same page.'
+  visible_tells:
+  - '''Male Hormone Assessment'' box with syringe accessory on a warm beige surface, matching the burgundy section palette'
+  - 'Soft shadow and angled presentation align it with the vial hero render'
+  confidence: 'medium'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-00-y00000.png'
+- id: 'iconography_09'
+  family: 'iconography_illustration'
+  polarity: 'poor'
+  page_or_region: 'footer — social and app-store badges (off-the-shelf)'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/homepage/tile-09-y10980.png'
+  claim: 'Footer social icons and App Store / Google Play badges are stock platform assets with no brand adaptation — confirming the icon vocabulary is not extended into utility areas.'
+  visible_tells:
+  - 'Default circular social icons in a row plus standard App Store / Google Play badge lockups'
+  - 'No brand tinting, custom outline weight, or unification with the site''s check-icon system'
+  confidence: 'high'
+- id: 'iconography_10'
+  family: 'iconography_illustration'
+  polarity: 'mixed'
+  page_or_region: 'whats_included (Happy Sleep) — on-white appliance/CPAP photos'
+  tile_path: 'store/joinfridays-com/captures/2026-06-16/tiles/whats_included/tile-04-y04880.png'
+  claim: 'The sleep-appliance and CPAP product images are plain on-white photography rather than styled 3D renders, inconsistent with the vial-render treatment on the core medication pages.'
+  visible_tells:
+  - 'Custom-Fit Oral Appliance shown as a plain white-background photo with no styled backdrop or shadow composition'
+  - 'Contrasts with the tonal backgrounds and specular highlights of the medication vial renders elsewhere'
+  confidence: 'medium'
+  contrast_with: 'store/joinfridays-com/captures/2026-06-16/tiles/testosterone/tile-00-y00000.png'
 ```
 
 ## Provenance
 
-Mined blind from native-resolution tiles of five pages — homepage, pricing, weight-loss, testosterone, and whats-included (Happy Sleep) — sliced from the 2026-06-04 capture.
+Mined blind from native-resolution tiles of five pages — homepage, pricing, weight-loss, testosterone, and whats-included (Happy Sleep) — by four family miners (Sonnet) → judge (Opus). 60 raw cards → 51 accepted (24 strong / 19 mixed / 8 poor). No tiles excluded.
 
-**QA — `recapture-used`.** Every page's cached hero tile carried a fixed `#cookie-consent-dialog` consent widget pinned bottom-right (a custom container shoot.py's vendor list didn't cover; that selector was added). All five pages were Tier-B re-rendered in system Chrome on 2026-06-16 (`scripts/shoot.py`, real WebGL + warm-scroll + motion-settle, no Firecrawl spend) — the widget is gone and the heroes are clean. Re-rendered tiles live under `captures/2026-06-16/tiles/`; drift vs. the cached shots is negligible (identical heroes, only a rotating hero word differs). No tiles excluded.
+**QA — `recapture-used`.** Every page's cached `2026-06-04` hero tile carried a fixed `#cookie-consent-dialog` "Cookie Settings" widget (Accept All / Reject All / Customize) pinned bottom-right, overlaying real content (category cards, testimonial carousel, the testosterone symptom selector, the Happy Sleep how-it-works steps). All five pages were Tier-B re-rendered in system Chrome on 2026-06-16 with `scripts/shoot.py --dismiss` (affordance-only overlay dismissal — Escape + a click on the dialog's own dismiss control; no vendor denylist, no CSS-hide; real WebGL + warm-scroll + motion-settle; no Firecrawl spend). The widget cleared on all five with the top nav and hero content intact (`manifest.json`: `dismissed: true`, `scroll_locked: false` on every page) — no `scroll_locked` or missing-overview WARNING fired. Re-rendered tiles live under `captures/2026-06-16/tiles/`; the faithful cached baseline (with the widget) is kept on disk under `captures/2026-06-04/tiles/`. Drift vs. the cached shots is negligible (identical heroes; only the rotating hero word differs).
 
-One mined card was dropped at synthesis as a capture artifact: a "truncated stats ticker" (homepage) — the value clipped at the viewport edge is an auto-scrolling marquee frozen mid-scroll, not a broken component.
-
-Point-in-time snapshot: the live site changes; this reflects the captured/re-rendered tiles, not today's site.
+Point-in-time snapshot: the live site changes; this reflects the captured / re-rendered tiles, not today's site.

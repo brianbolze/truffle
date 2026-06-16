@@ -1,14 +1,14 @@
 ---
 schema_version: "1.0"
 domain: ro.co
-captured_at: 2026-06-14
+captured_at: 2026-06-16
 source_capture: 2026-06-04
 qa_status: recapture-used
 ---
 
 ## Visual & brand impression
 
-Restrained, editorial DTC-health design that reads premium because it is disciplined, not decorated. A large coral-on-black display headline over a one-accent palette sets a confident tone [typography_01][color_01], and the same rigor recurs as component systems — aligned pricing-card grids [layout_01], a reused left-rail category rhythm [layout_02], and an evenly-built goal selector [layout_06]. The ro.OS pages are the high point: product UIs floated on owned watercolor-gradient blobs [color_04] beside a custom monogram-token set [iconography_01][layout_07], with photography art-directed to brand color [color_03]. It frays at small scale — literal loose-pill ED thumbnails [iconography_06] and a mismatched product-photo category strip [color_06] read inventory-driven, and a competing magenta Most-popular tag [color_02] nicks the otherwise tight accent discipline.
+Restrained DTC-health design that reads premium through discipline, not decoration: a near-white/near-black system with a single warm terracotta accent [color_01], used even as the hierarchy device in the two-tone pricing headline [typography_02]. The strength is systematized structure — tightly repeating pricing cards [layout_02], a uniform GLP-1 carousel [layout_03], and a controlled hero grid [layout_01]. The ro.OS page is the high point: one reused left-text/right-mockup template [layout_04] over a custom gradient-blob illustration system [iconography_01] with a high-fidelity dashboard render [iconography_02]. It frays at the seams — flat secondary-text hierarchy [typography_07][typography_08], photo- and numeral-as-icon stand-ins [iconography_05][iconography_07], and palette breaks: a dark-red sexual-health mood [color_07], a one-off lavender band [color_05], and a cool ro.OS split from the warm consumer pages [color_06].
 
 ## Evidence cards
 
@@ -16,303 +16,311 @@ Restrained, editorial DTC-health design that reads premium because it is discipl
 - id: typography_01
   family: typography_hierarchy
   polarity: strong
-  page_or_region: pricing page hero
-  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-00-y00000.png
-  claim: The hero headline 'Transparent pricing, always' is set at a large display grotesque that dominates the viewport and clearly outranks the smaller gray supporting line beneath it.
+  page_or_region: homepage hero — 'Healthier on Ro' page heading
+  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-00-y00000.png
+  claim: The hero heading 'Healthier on Ro' is set at a large size in a light-to-medium-weight sans, left-aligned with generous white-space above and below, establishing a clean top of the type scale that reads instantly.
   visible_tells:
-  - Headline spans roughly half the page width at a single line height
-  - Color split (coral 'Transparent pricing' vs black 'always') reinforces emphasis within one type size
-  - Supporting paragraph below drops to a markedly smaller gray weight
+  - Heading runs roughly 3-4x the nav link size
+  - Ample whitespace separates it from the nav row and the card modules below
   confidence: high
 - id: typography_02
   family: typography_hierarchy
   polarity: strong
-  page_or_region: pricing — left-rail category heading ("Hair loss")
-  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-02-y02440.png
-  claim: The left-rail category title 'Hair loss' is set several steps larger than its explanatory body paragraph with generous leading, the same heading tier reused down the whole pricing page for a consistent scan rhythm.
+  page_or_region: pricing page — hero heading 'Transparent pricing, always' (two-tone)
+  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-00-y00000.png
+  claim: The display headline splits one phrase into two colors — 'Transparent pricing,' in warm terracotta-orange and 'always' in black at the same face and size — using color rather than weight as the hierarchy device, and it is the only colored text on the page.
   visible_tells:
-  - '''Hair loss'' title is set well above body size in the same grotesque'
-  - Body paragraph sits in a narrow left column with even line spacing
-  - A wide whitespace gutter separates the heading tier from the product-card grid
+  - First clause rendered in terracotta-orange, second clause in black, identical size and weight
+  - No other heading or body text on the tile uses color, so the accent reads as deliberate
   confidence: high
+  contrast_with: store/ro-co/captures/2026-06-04/tiles/pricing/tile-01-y01220.png
 - id: typography_03
   family: typography_hierarchy
   polarity: strong
-  page_or_region: weight-loss FAQ block
-  tile_path: store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-07-y08540.png
-  claim: The 'Weight loss FAQs' and 'Important safety information' headings sit at a clearly larger weight than the uniformly-sized accordion questions, giving a legible two-level hierarchy.
+  page_or_region: pricing page — left-column category headings
+  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-05-y06100.png
+  claim: Category headings ('Genital herpes', 'Men's Multivitamin') are set at a consistent large size that is clearly 2-3x the body copy beneath them, giving every product section a legible H2 that anchors the left navigation column.
   visible_tells:
-  - Section heading is roughly double the question text size
-  - Each FAQ row uses identical size/weight with a right-aligned chevron, reading as one consistent tier
-  - '''Show more'' link is demoted with smaller underlined text'
+  - "'Genital herpes' heading is visibly several times larger than the prose paragraph below it"
+  - Same treatment recurs at every category section down the page
   confidence: high
 - id: typography_04
   family: typography_hierarchy
   polarity: strong
-  page_or_region: homepage category list (above footer)
-  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-07-y07461.png
-  claim: The vertical category list (Weight loss / Sexual health / Hair loss / Fertility / Skin) is set in a calm, evenly-leaded medium weight that reads as a single clean navigational tier, distinct from the smaller two-line article-card titles above.
+  page_or_region: homepage — '3,000,000+ members' stat callout
+  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-04-y04880.png
+  claim: The '3,000,000+' figure is rendered at display scale as the largest numeral on the tile, with a small eyebrow label above and a caption beneath, producing a clean two-level stat hierarchy.
   visible_tells:
-  - Five list items share identical size, weight, and vertical spacing
-  - Article-card titles above use a smaller two-line size, keeping tiers distinct
-  - '''min read'' metadata is demoted to small gray text'
+  - Numeral towers over the surrounding text at several lines of body-height
+  - Small label sits directly above it and a caption/pull-quote sits below at much smaller size
   confidence: high
 - id: typography_05
   family: typography_hierarchy
   polarity: strong
-  page_or_region: os page 'Pharmacy App' section intro
-  tile_path: store/ro-co/captures/2026-06-04/tiles/os/tile-03-y03660.png
-  claim: The 'Pharmacy App' block pairs a small green eyebrow, a large bold title, and a measured body paragraph into a clean three-tier hierarchy with comfortable leading in a fixed-width column.
+  page_or_region: weight-loss page — hero heading over white panel
+  tile_path: store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-00-y00000.png
+  claim: The hero heading 'Get access to prescription weight loss medication online' is large, left-aligned black type set on the white page panel above the photo strip, keeping it fully legible without resorting to a text-shadow or photo overlay.
   visible_tells:
-  - Green 'Powered by ro.OS' eyebrow sits small above the title
-  - Title is set several steps larger and bold
-  - Body sits at readable size with consistent line height in a fixed-width left column
+  - Heading sits on clean white above the three-panel photo row, not over imagery
+  - It is the largest text unit on the tile, spanning two lines at display size
   confidence: high
 - id: typography_06
   family: typography_hierarchy
   polarity: mixed
-  page_or_region: pricing ED product card (Ro Sparks)
-  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-00-y00000.png
-  claim: Inside the ED pricing cards the dose-plan rows and prices are legible but flat, with the price and label at near-identical weight so the column lacks a clear emphasis anchor.
+  page_or_region: ro.OS page — feature-section text levels (Care Delivery / Pharmacy App)
+  tile_path: store/ro-co/captures/2026-06-04/tiles/os/tile-02-y02440.png
+  claim: Each ro.OS feature block opens well with a tiny green 'Powered by ro.OS' eyebrow and an H2-scale product name, but the supporting body paragraph drops to a small size very close to the eyebrow's register, so below the heading the levels compress.
   visible_tells:
-  - '''4x dose plan'' label and ''$48/mo'' price share similar size and weight'
-  - Multiple stacked rows read as undifferentiated until the eye lands on the dollar figure
-  - Only the 'Most popular' tag adds a color cue to a row elsewhere on the page
+  - "Eyebrow 'Powered by ro.OS' is the smallest level; 'Care Delivery App' is the clear H2"
+  - Body paragraph beneath the heading sits at a small size with little weight separation from the eyebrow
   confidence: medium
+  contrast_with: store/ro-co/captures/2026-06-04/tiles/os/tile-03-y03660.png
 - id: typography_07
   family: typography_hierarchy
-  polarity: mixed
-  page_or_region: pricing 'Ro Body' weight-management card
-  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-07-y08540.png
-  claim: The Latisse/Custom-Rx pricing cells crowd plan label and a long parenthetical supply caveat into a tight block where the price competes with wrapped fine print rather than stepping above it.
+  polarity: poor
+  page_or_region: homepage — 'Backed by the country's leading health experts' block
+  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-05-y06100.png
+  claim: The advisory section's body paragraph, credential bullets, and doctor name/title labels are all set at small, near-identical sizes with no weight contrast, flattening the block so no element reads as more important than another.
   visible_tells:
-  - '''Monthly plan (3 mL, 1 month supply)'' wraps to two lines beside the ''$110'' price'
-  - Caveat text sits at the same size as the plan label with no clear size step to the price
-  - Adjacent 'Custom Rx Treatment' rows compress label + 'Most popular' + price into one cramped line
+  - Body copy, the three credential bullets, and the doctor captions all render at similar compact size
+  - Doctor name labels ('Dr. Malyeda Barnes, MD') carry the same weight as the institution line below them
   confidence: medium
+  contrast_with: store/ro-co/captures/2026-06-04/tiles/homepage/tile-00-y00000.png
 - id: typography_08
   family: typography_hierarchy
   polarity: poor
-  page_or_region: weight-loss overlaid member video-card captions
-  tile_path: store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-07-y08540.png
-  claim: Caption text burned onto the member video cards ('lack self-discipline.', 'and a half on Ro.') sits as small white type over busy mid-tone footage where legibility drops and words compete with the image.
+  page_or_region: pricing page — expanded product-card safety text
+  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-05-y06100.png
+  claim: Inside the product cards the expanded Valacyclovir safety paragraph sits at the same small size as the 'Important safety information' disclosure label above it, with no size or weight step between the heading and the multi-sentence body — a flat disclosure zone.
   visible_tells:
-  - White caption text overlaps detailed clothing/background imagery
-  - Caption size is small relative to the card
-  - Contrast varies across the frame, some words fade into lighter areas
-  confidence: medium
+  - Multi-line safety warning runs at near-footnote size, indistinguishable from the disclosure link label
+  - No graduated hierarchy separates the disclosure headline from its paragraph
+  confidence: high
 - id: layout_01
   family: layout_composition_components
   polarity: strong
-  page_or_region: pricing page — ED pricing card grid
-  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-01-y01220.png
-  claim: The ED pricing section runs a disciplined two-column card system where each card repeats the same anatomy (product-box mark + title + Rx glyph, a left-label/right-price dose table, a pill 'Get started' CTA, then a tinted disclosure block) so rows align cleanly across cards.
+  page_or_region: homepage hero — dual card + shortcut grid
+  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-00-y00000.png
+  claim: The above-fold uses a controlled two-column card grid sharing a precise baseline and corner radius, with a row of three shortcut tiles below repeating the same gutter — a coherent grid rather than ad-hoc placement.
   visible_tells:
-  - Generic Viagra and Branded Viagra cards share width, corner radius, and a common baseline grid
-  - Dose rows (25/50/100 mg) align horizontally between cards with prices flush-right
-  - '''Most popular'' inline tag and the grey safety-info block repeat in the same position per card'
+  - "Two equal-width image cards ('New GLP-1 options', 'Lose weight on GLP-1s') align on a shared horizontal baseline with matching radius"
+  - Three shortcut tiles below carry the same gutter and alignment as the cards above
   confidence: high
 - id: layout_02
   family: layout_composition_components
   polarity: strong
-  page_or_region: pricing page — left-rail section rhythm (Hair loss)
-  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-02-y02440.png
-  claim: 'The page sustains a left-rail label pattern: each category sets a large left-aligned heading plus body copy in a narrow left column while product cards occupy the right two-thirds, giving every section the same predictable scan rhythm.'
+  page_or_region: pricing page — product-card component system
+  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-01-y01220.png
+  claim: Pricing cards are a tightly controlled component — thumbnail, name, dose/price rows, 'Get started' button, collapsible safety footer — repeating identically across every card with no padding or height drift.
   visible_tells:
-  - '''Hair loss'' heading and its paragraph anchor the left column while a 2x2 card grid fills the right'
-  - The same left-column width is reused as in the ED section above
-  - Generous whitespace gutter separates the text rail from the card cluster
+  - Four cards (Generic/Branded Viagra, Generic/Daily Generic Cialis) share identical internal padding, label positions, and button width
+  - "The 'Most popular' tag sits at the same inline position within each card that carries it"
   confidence: high
-  contrast_with: store/ro-co/captures/2026-06-04/tiles/pricing/tile-04-y04880.png
+  contrast_with: store/ro-co/captures/2026-06-04/tiles/pricing/tile-03-y03660.png
 - id: layout_03
   family: layout_composition_components
   polarity: strong
-  page_or_region: os page — Care Delivery / Pharmacy feature blocks
-  tile_path: store/ro-co/captures/2026-06-04/tiles/os/tile-02-y02440.png
-  claim: The ro.OS feature sections use a calm editorial layout — left eyebrow/heading/body/CTA stack balanced against a floated product-UI mock on a soft gradient blob — with deliberate large whitespace giving each module breathing room.
+  page_or_region: homepage — GLP-1 product carousel
+  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-01-y01220.png
+  claim: The medication carousel holds each card to a fixed width with image, name, availability badge, two-button CTA and safety link in a uniform vertical stack, with availability badges pinned at the same top offset on every card.
   visible_tells:
-  - '''Care Delivery App'' eyebrow/heading/body/CTA stack is left-aligned with wide margins'
-  - The Patient Overview UI mock floats right over a soft blue gradient shape
-  - Very high whitespace-to-content ratio isolates the single module on the tile
+  - Five visible cards (Wegovy pill, Zepbound KwikPen, Foundayo, Wegovy pen, Zepbound) share identical height and slot order
+  - "Status badges ('In stock', 'New', 'New and in stock') sit at the same top-left offset on each card"
   confidence: high
-  contrast_with: store/ro-co/captures/2026-06-04/tiles/os/tile-03-y03660.png
 - id: layout_04
   family: layout_composition_components
   polarity: strong
-  page_or_region: weight-loss / homepage — FAQ accordion + four-column footer
-  tile_path: store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-07-y08540.png
-  claim: 'The FAQ accordion and four-column footer are cleanly aligned systems: each FAQ row is a full-width rule-divided line with a right-aligned chevron, and the footer columns (Popular / About Ro / Support / Legal) sit on a shared baseline with even gutters.'
+  page_or_region: ro.OS page — left-text / right-mockup section template
+  tile_path: store/ro-co/captures/2026-06-04/tiles/os/tile-02-y02440.png
+  claim: The ro.OS feature sections reuse one left-text / right-UI-mockup split — eyebrow, heading, body, pill CTA in the same slot order on the left, the app render floated right inside a soft gradient blob — applied without drift across Patient, Care Delivery and Pharmacy App.
   visible_tells:
-  - '''Weight loss FAQs'' rows each end with a chevron at a consistent right margin and equal vertical spacing'
-  - Footer's four link columns start at the same top baseline with matching label-to-link spacing
-  - Background shift (light-grey FAQ vs near-black footer) cleanly demarcates the two modules
+  - Left column slot order (eyebrow + heading + body + pill button) is identical between Care Delivery and Pharmacy sections
+  - UI mockup is right-aligned within a soft gradient blob at the same relative scale each time
   confidence: high
+  contrast_with: store/ro-co/captures/2026-06-04/tiles/os/tile-03-y03660.png
 - id: layout_05
   family: layout_composition_components
   polarity: mixed
-  page_or_region: pricing page — uneven paired-card heights
-  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-01-y01220.png
-  claim: 'Within a single row the paired cards are not height-matched: the Generic Viagra card carries an extra tinted safety block while the Branded Viagra card leaves a tall empty gap before its CTA, so the two cards end at different heights.'
+  page_or_region: weight-loss page — stacked sections run together
+  tile_path: store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-04-y04880.png
+  claim: Two distinct sections — 'What's included in the Ro Body membership?' and 'Explore your GLP-1 options' — stack on the same white ground at the same body size with no divider, color shift, or generous gap, so they visually run together as one unit.
   visible_tells:
-  - Generic Viagra card has a grey safety-info panel filling its lower third
-  - Branded Viagra card shows a large blank gap between its 100 mg price row and the 'Get started' button
-  - The two cards' bottom edges do not terminate level despite being a horizontal pair
+  - The membership bullet list ends and the next headline begins with little vertical breathing room
+  - No rule, background change, or spacing signals the section break
   confidence: medium
-  contrast_with: store/ro-co/captures/2026-06-04/tiles/pricing/tile-02-y02440.png
-- id: layout_06
-  family: layout_composition_components
-  polarity: strong
-  page_or_region: homepage — treatment-goal selector grid
-  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-03-y03660.png
-  claim: The 'Prescription treatments for your health goals' block lays a six-cell goal grid (Lose weight, Unlock better sex, Regrow hair, Improve skin, Get fertility insights, New from Ro) as evenly sized tiles each with a leading icon and trailing circular arrow, a consistently built selector component.
-  visible_tells:
-  - Six goal tiles arranged in a 3x2 grid with equal cell sizing
-  - Each tile pairs a small left thumbnail with a circular arrow button at right
-  - The grid sits in a band with uniform tile padding
-  confidence: high
-- id: layout_07
-  family: layout_composition_components
-  polarity: strong
-  page_or_region: os page — 'Explore all ro.OS capabilities' chip grid
-  tile_path: store/ro-co/captures/2026-06-04/tiles/os/tile-04-y04880.png
-  claim: The capabilities row is a clean repeated badge-tile system — seven equal tiles each with a circular two-letter monogram and a label below — evenly spaced with a pager, reading as a deliberate component set.
-  visible_tells:
-  - Seven tiles (Patient Intake, Care Comms, Patient Identity, Health Tasks, Insurance, Quality & Safety, Health Data) at equal width
-  - Each carries a colored circular monogram (Pi, Cc, Id, Ht, In, Qu, Hd) in matching style
-  - Consistent gutters and a centered pager beneath the row
-  confidence: high
 - id: color_01
   family: color_brand_imagery
   polarity: strong
-  page_or_region: pricing page hero accent
-  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-00-y00000.png
-  claim: A single saturated coral-red accent is used with discipline, coloring only the 'Transparent pricing' phrase against otherwise black/white type, signaling a controlled one-accent system.
+  page_or_region: homepage — overall palette discipline
+  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-00-y00000.png
+  claim: The site runs a disciplined near-white / near-black palette with a single warm terracotta-blush accent reserved for a marketing moment, not scattered through the UI chrome.
   visible_tells:
-  - '''Transparent pricing,'' set in vivid coral-red while ''always'' stays black'
-  - Same coral reappears only in the product-box marks below, not scattered through the layout
+  - Nav and body are black-on-white with no secondary UI colors
+  - The blush/terracotta tone appears only in a hero band, not in nav, cards, or utility copy
   confidence: high
-  contrast_with: store/ro-co/captures/2026-06-04/tiles/pricing/tile-01-y01220.png
 - id: color_02
   family: color_brand_imagery
-  polarity: mixed
-  page_or_region: pricing — 'Most popular' label hue
-  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-01-y01220.png
-  claim: A purple/magenta 'Most popular' label introduces a second accent hue that competes with the coral brand red, slightly diluting palette discipline on the pricing tables.
+  polarity: strong
+  page_or_region: homepage — GLP-1 product photography language
+  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-01-y01220.png
+  claim: Product photography across the medication rail shares one close-crop studio treatment — clean neutral/pastel gradient grounds, no clutter — and the availability badge chips are a single uniform muted teal/sage, giving the row a coherent image language.
   visible_tells:
-  - '''Most popular'' rendered in purple-magenta next to dose rows'
-  - This purple does not match the coral red used in the same page's hero and packaging
-  confidence: medium
-  contrast_with: store/ro-co/captures/2026-06-04/tiles/pricing/tile-00-y00000.png
+  - Each drug card (Wegovy pill, Zepbound, Foundayo, Wegovy pen) uses the same neutral-gradient studio ground at matching scale
+  - "'New' / 'New and in stock' badge chips are the same muted green on every card"
+  confidence: high
 - id: color_03
   family: color_brand_imagery
   polarity: strong
-  page_or_region: weight-loss 'Healthier on Ro' band
-  tile_path: store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-03-y03660.png
-  claim: A full-bleed lavender-purple band with a color-matched portrait shows owned, art-directed photography keyed to a brand color rather than dropped-in stock.
+  page_or_region: hair-loss page — Ro private-label product photography
+  tile_path: store/ro-co/captures/2026-06-04/tiles/hair-loss/tile-04-y04880.png
+  claim: Ro's own products (Revive Shampoo, Restore Conditioner) are shot as identical matte-black bottles against the same neutral off-white ground, signalling a coherent private-label identity that matches the site's restraint.
   visible_tells:
-  - Even lavender-purple background filling the band
-  - Subject's top tinted the same lavender, white headline and black pill button reading cleanly on top
+  - Two matte-black cylindrical bottles with minimal label and 'ro' mark at the same angle and scale
+  - No props or colored backdrops — pure white-ground studio photography
   confidence: high
 - id: color_04
   family: color_brand_imagery
-  polarity: strong
-  page_or_region: os page — app-UI gradient treatment
-  tile_path: store/ro-co/captures/2026-06-04/tiles/os/tile-02-y02440.png
-  claim: Product-UI screenshots float on soft blue/green watercolor gradients applied consistently across the Care Delivery, Pharmacy, and Lab app sections, giving the OS imagery a unified owned treatment.
+  polarity: mixed
+  page_or_region: homepage — UGC testimonial video grid
+  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-04-y04880.png
+  claim: The testimonial section breaks the controlled photographic palette with a grid of vertical smartphone-shot member videos whose mixed lighting, settings, and color casts contrast visibly with the produced imagery elsewhere.
   visible_tells:
-  - Patient Overview UI card sits on a pale blue gradient cloud
-  - The same gradient-cloud-behind-floating-UI device repeats on the Pharmacy and Lab tiles
+  - Video stills show mixed domestic settings with uncontrolled warm/cool casts
+  - Adjacent produced sections (doctor portraits) use even neutral studio light, making the contrast plain
   confidence: high
-  contrast_with: store/ro-co/captures/2026-06-04/tiles/os/tile-03-y03660.png
+  contrast_with: store/ro-co/captures/2026-06-04/tiles/homepage/tile-05-y06100.png
 - id: color_05
   family: color_brand_imagery
-  polarity: strong
-  page_or_region: footer (site-wide)
-  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-07-y07461.png
-  claim: The near-black footer with white wordmark and a single LegitScript trust badge is applied identically across pages, reinforcing a consistent brand frame and restrained palette.
+  polarity: mixed
+  page_or_region: weight-loss page — lavender one-off section
+  tile_path: store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-03-y03660.png
+  claim: A full-width solid lavender/purple band appears behind a posed member photo as a one-off color that is not drawn from the rest of the palette, loosening the otherwise tight color discipline.
   visible_tells:
-  - Charcoal-black footer, white 'ro' wordmark, hexagonal LegitScript badge
-  - Identical layout repeats on the weight-loss and pricing footers
+  - "Full-bleed lavender background behind the 'Healthier on Ro' member section"
+  - This lavender does not recur on any other tile in the set
   confidence: high
-  contrast_with: store/ro-co/captures/2026-06-04/tiles/pricing/tile-08-y09671.png
+  contrast_with: store/ro-co/captures/2026-06-04/tiles/homepage/tile-00-y00000.png
 - id: color_06
   family: color_brand_imagery
-  polarity: poor
-  page_or_region: pricing category icon strip
-  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-00-y00000.png
-  claim: The horizontal category nav uses tiny mismatched product-photo thumbnails (varied bottle colors, sprays, blister packs) instead of a unified icon set, reading as assembled product shots rather than a designed system.
+  polarity: mixed
+  page_or_region: ro.OS page — cool teal/blue palette vs warm consumer pages
+  tile_path: store/ro-co/captures/2026-06-04/tiles/os/tile-06-y07320.png
+  claim: The ro.OS page closes on a wide cool teal-to-white gradient behind the 'ro.OS' logotype — a blue palette disconnected from the warm terracotta accent used on the consumer pages, creating a cross-page palette split.
   visible_tells:
-  - Row of inconsistent mini product shots for Hair loss, Cold sores, Men's multivitamin, Testosterone support, etc.
-  - Differing product silhouettes, scales, and colors with no shared icon language
-  confidence: medium
+  - "Blue-teal gradient fills the band full-width behind the large 'ro.OS' type"
+  - The warm terracotta accent from the consumer pages appears nowhere on this page
+  confidence: high
+  contrast_with: store/ro-co/captures/2026-06-04/tiles/pricing/tile-00-y00000.png
+- id: color_07
+  family: color_brand_imagery
+  polarity: poor
+  page_or_region: homepage — sexual-health block dark/red mood break
+  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-02-y02440.png
+  claim: The sexual-health block uses a dark full-bleed close-up of bodies with a glowing red product callout, a mood and color temperature jarringly different from the white/pastel system that returns immediately in the product cards below it.
+  visible_tells:
+  - "Dark/black-dominant full-bleed image behind 'Better sex with fast-acting, long-lasting Ro Sparks'"
+  - "Red 'Starts working in 15 mins' product callout with a glowing red ring, clashing with the muted system"
+  - Product cards directly beneath snap back to the white-ground pastel look in the same scroll
+  confidence: high
+  contrast_with: store/ro-co/captures/2026-06-04/tiles/homepage/tile-01-y01220.png
+- id: color_08
+  family: color_brand_imagery
+  polarity: poor
+  page_or_region: hair-loss page — before/after scalp photo strip
+  tile_path: store/ro-co/captures/2026-06-04/tiles/hair-loss/tile-01-y01220.png
+  claim: The before/after results strip uses raw clinical top-of-head scalp photos with uneven, ungraded lighting that reads as unbranded reference imagery rather than the produced photography used elsewhere on the same page.
+  visible_tells:
+  - Row of cropped overhead scalp photos with visible cool/warm light shifts frame to frame
+  - No consistent background or post-production grade matching the white-ground product shots on the page
+  confidence: high
+  contrast_with: store/ro-co/captures/2026-06-04/tiles/hair-loss/tile-04-y04880.png
 - id: iconography_01
   family: iconography_illustration
   polarity: strong
-  page_or_region: os page — capability monogram chips
-  tile_path: store/ro-co/captures/2026-06-04/tiles/os/tile-04-y04880.png
-  claim: The 'Explore all ro.OS capabilities' row uses a custom set of circular two-letter monogram tokens (Pi, Cc, Id, Ht, In, Qu, Hd), each in its own pastel hue, giving a consistent and distinctive token set.
+  page_or_region: ro.OS page — gradient-blob backdrops behind app renders
+  tile_path: store/ro-co/captures/2026-06-04/tiles/os/tile-01-y01220.png
+  claim: The ro.OS sections float polished app/dashboard renders over soft custom multi-color gradient blobs (orange-teal, blue, yellow-green, red-purple variants) — a repeated, clearly-designed illustrative system that is the most considered visual treatment on the site.
   visible_tells:
-  - Seven uniform circular badges with bold two-letter abbreviations
-  - Each badge a different pastel fill over a light card, at matched size and type treatment
+  - Patient App phone mockup sits over a soft orange-teal gradient blob with deliberate depth and shadow
+  - The same blob device recurs in matching softness/opacity behind the Care Delivery, Pharmacy and Lab renders
   confidence: high
-  contrast_with: store/ro-co/captures/2026-06-04/tiles/pricing/tile-00-y00000.png
+  contrast_with: store/ro-co/captures/2026-06-04/tiles/homepage/tile-03-y03660.png
 - id: iconography_02
   family: iconography_illustration
   polarity: strong
-  page_or_region: hair-loss — feature-strip icons under hero
-  tile_path: store/ro-co/captures/2026-06-04/tiles/hair-loss/tile-00-y00000.png
-  claim: The three-up benefit strip pairs thin-line outline icons (spray/serum mark, shipping box, chat bubble) at a single consistent stroke weight and size.
+  page_or_region: ro.OS page — Care Delivery App dashboard render fidelity
+  tile_path: store/ro-co/captures/2026-06-04/tiles/os/tile-02-y02440.png
+  claim: The Care Delivery dashboard mockup is rendered with convincing UI fidelity — a 'Patient Overview' header, a real weight-trend line chart with axis structure, and small legible sidebar glyphs — showing more craft than the decorative chart elements on the consumer pages.
   visible_tells:
-  - Three monoline icons centered above 'Spray, serum...', 'Free shipping...', 'Unlimited messaging' labels
-  - Uniform thin stroke and matched optical size across all three
-  confidence: medium
+  - "Dashboard shows a labelled weight-trend line chart ('20 lbs (8.8%)') with genuine data structure"
+  - Sidebar icons (bell, chart, message) are small but consistent and legible at thumbnail scale
+  confidence: high
 - id: iconography_03
   family: iconography_illustration
-  polarity: strong
-  page_or_region: pricing — branded product-box marks (SIL/CIA)
-  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-01-y01220.png
-  claim: The Generic/Branded Viagra and Cialis cards reuse crisp branded box marks ('SIL', 'CIA' in red on black) that are sharp and consistently lit across multiple cards.
+  polarity: mixed
+  page_or_region: ro.OS page — capabilities row colored letter-avatars
+  tile_path: store/ro-co/captures/2026-06-04/tiles/os/tile-04-y04880.png
+  claim: The 'Explore all ro.OS capabilities' row replaces icons with saturated colored circles holding two-letter abbreviations (Pi, Cc, Id, Ht, In, Qu, Hd) — identity by initial rather than symbol; uniform sizing and type give the row coherence, but the multi-color circles are the busiest color moment on the site versus its two-color restraint elsewhere.
   visible_tells:
-  - Repeated red-on-black 'SIL' and 'CIA' box thumbnails beside each card title
-  - Clean edges and consistent framing at small thumbnail size
+  - Eight circles in distinct saturated colors (blue, teal, lime, orange, burgundy, red, green) each carry a two-letter label, no symbol inside
+  - No other surface in the tile set uses this many colors at once
   confidence: high
 - id: iconography_04
   family: iconography_illustration
-  polarity: strong
-  page_or_region: weight-loss — Rx product photography
-  tile_path: store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-01-y01220.png
-  claim: The GLP-1 product cards (Wegovy pill, Zepbound KwikPen, Foundayo pill, Wegovy pen) use studio product photography with even lighting and soft shadows on tinted card backgrounds.
+  polarity: poor
+  page_or_region: homepage — hero trust-signal checkmark bullets
+  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-00-y00000.png
+  claim: The upper-right trust-signal list uses tiny circle-check glyphs with no stroke variation or brand character — interchangeable with any default SaaS checklist.
   visible_tells:
-  - Four product shots on tinted card backgrounds with consistent soft shadowing
-  - Pill and pen renders sharp with realistic material detail
-  confidence: medium
+  - Four bullets with identical small circle-check marks at roughly caption scale, no color or weight differentiation
+  confidence: high
 - id: iconography_05
   family: iconography_illustration
-  polarity: strong
-  page_or_region: pricing — Rx (Rx) glyph beside product names
-  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-01-y01220.png
-  claim: A consistent Rx glyph sits immediately after every prescription product name (Generic Viagra, Generic of Cialis, Branded Cialis), a coherent typographic mark applied uniformly.
+  polarity: poor
+  page_or_region: homepage — '100% convenient' feature row uses photos as icons
+  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-03-y03660.png
+  claim: The four '100% online, 100% convenient' callouts each carry a small square photo or product render in place of a designed icon — one a phone-UI screenshot, another an assorted-product shot — giving the row a patchwork rather than systematized look.
   visible_tells:
-  - Identical small Rx symbol trailing each bold product title
-  - Mark reused at matched size across all Rx cards on the tile
+  - Four distinct photographic thumbnails of inconsistent visual register sit where icons would go
+  - One card shows a phone screen, another a product cluster — different visual languages within one component
   confidence: high
+  contrast_with: store/ro-co/captures/2026-06-04/tiles/os/tile-04-y04880.png
 - id: iconography_06
   family: iconography_illustration
-  polarity: poor
-  page_or_region: homepage — ED carousel literal-pill thumbnails
-  tile_path: store/ro-co/captures/2026-06-04/tiles/homepage/tile-02-y02440.png
-  claim: The ED product carousel relies on literal loose-pill photography in mixed colors (red, yellow, white, blue) each on a differently-toned backdrop, so the thumbnail set feels inventory-driven rather than a controlled icon/imagery system.
+  polarity: mixed
+  page_or_region: weight-loss page — hero sub-value line icons
+  tile_path: store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-00-y00000.png
+  claim: Three thin line icons under the hero (provider coaching, GLP-1 options, hunger help) are internally consistent in stroke but generic stock healthcare forms, matching the undistinguished checkmark register seen on the homepage.
   visible_tells:
-  - Row of red, yellow, white, and blue loose pills as the product thumbnails
-  - Each pill on a different grey/blue/tan backdrop rather than one shared treatment
+  - Three monoline glyphs of even stroke weight below the headline
+  - Forms read as standard stock icons (person/chat, plus, clock) with no brand-specific character
   confidence: medium
-  contrast_with: store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-01-y01220.png
+- id: iconography_07
+  family: iconography_illustration
+  polarity: poor
+  page_or_region: hair-loss page — process steps as numbered photo cards
+  tile_path: store/ro-co/captures/2026-06-04/tiles/hair-loss/tile-04-y04880.png
+  claim: The 'How treating hair loss with Ro works' step strip uses photo cards with superimposed numerals instead of any iconographic language — the 'icon' is just a number over photography, with no illustrative craft.
+  visible_tells:
+  - Three-step row is photo cards (person, branded box, spray bottle) with plain numerals overlaid
+  - No icon or illustration system carries the steps beyond the superimposed numbers
+  confidence: medium
+- id: iconography_08
+  family: iconography_illustration
+  polarity: mixed
+  page_or_region: pricing page — product photos as category tab icons
+  tile_path: store/ro-co/captures/2026-06-04/tiles/pricing/tile-00-y00000.png
+  claim: The pricing category tab strip uses small product-photo thumbnails as navigation icons rather than a drawn icon system; the renders are clean, evenly sized and neutral-ground, so the row stays orderly even though identity is carried by the product object itself.
+  visible_tells:
+  - Roughly a dozen tabs each pair a small product photo (pill bottle, syringe, tube) with a label at consistent scale
+  - No custom icon appears — the product photography is the icon
+  confidence: high
 ```
 
 ## Provenance
 
-Tiles read: homepage (8) + weight-loss (9) + pricing (9) + hair-loss (7) sliced from the cached `captures/2026-06-04/.payloads/` screenshots (Tier-A), plus os (8) browser re-rendered (Tier-B) — 41 tiles, all active, no exclusions. **Tier-B re-render:** the `os` page's cached Firecrawl capture left the Care Delivery / Pharmacy / Lab app-illustration columns empty (scroll-triggered lazy media that never fired); `scripts/shoot.py` drove system Chrome to warm-scroll and settle, recovering the product-UI mockups on their gradient blobs (19/23 images loaded) — hence `qa_status: recapture-used`. The other four pages tiled clean from cached payloads.
+Tiles read: homepage (8) + weight-loss (9) + pricing (9) + hair-loss (7) sliced from the cached `captures/2026-06-04/.payloads/` screenshots (Tier-A), plus os (8) browser re-rendered (Tier-B) — 41 tiles, all active, no exclusions. **Tier-B re-render:** the `os` page's cached Firecrawl capture left the Care Delivery / Pharmacy / Lab app-illustration columns empty (scroll-triggered lazy media that never fired); `scripts/shoot.py` drove system Chrome (faithful default — **no `--dismiss`**, since no overlay covered the page) to warm-scroll and settle, recovering the product-UI mockups on their gradient blobs (19/23 images loaded). The shoot manifest recorded `dismissed: false`, `scroll_locked: false`, and emitted `overview-480w.png` with no stderr WARNING — hence `qa_status: recapture-used`. The other four pages tiled clean from cached payloads.
 
-Mined blind + judged per [`/visual-evidence`](../../skills/visual-evidence/SKILL.md): four family miners saw only the tile paths (no dossier, no web), returning 56 raw cards; the judge verified each against the cited PNG and kept 28. A synthesis verification pass against a hand-built tile-content map then dropped 1 redundant card (a duplicate read of the pricing category strip) and retargeted 1 mis-cited card (`typography_02`, which cited a 'Cold sores' heading not present in its tile — corrected to the 'Hair loss' heading the tile actually shows) → **27 final cards**. The judge flagged a render-scale split in this capture set (several homepage / weight-loss / os / hair-loss tiles are zoomed-out captures where the page shrinks into the upper frame); 'tiny illegible text' reads on those were treated as capture caveats, not design defects.
+Mined blind + judged per [`/visual-evidence`](../../skills/visual-evidence/SKILL.md): four family miners (Sonnet) saw only the tile paths (no dossier, no web), returning 49 raw cards; the judge (Opus) verified each against the cited PNG and kept 32, merging cross-family duplicates (the ro.OS gradient-blob system → one card; the capabilities letter-avatar circles → one card) and rejecting one capture artifact (a homepage card with a blank/grey image area). A final sighted spot-check of the `poor` *structural* cards against their native tiles then dropped 3 over-calls — a pricing "dead column" whose tell mis-placed the product card, a hair-loss carousel peek read as a mis-sized frame, and the homepage goal-selector grid (a uniform 2×3 grid) read as a ragged content-sized row — → **29 final cards** (14 strong / 8 mixed / 7 poor).
 
-Snapshot caveat: reflects the 2026-06-04 capture (os section re-rendered 2026-06-14); the live site changes. Run note: executed from **Claude Code on macOS**, model **Claude Opus 4.8**, **Extra effort** reasoning.
+Snapshot caveat: reflects the 2026-06-04 capture (os section re-rendered 2026-06-16); the live site changes. Run note: executed from **Claude Code on macOS**, model **Claude Opus 4.8**.
