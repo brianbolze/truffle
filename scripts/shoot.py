@@ -26,6 +26,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import subprocess
 import sys
 import tempfile
 from pathlib import Path
@@ -36,6 +37,9 @@ from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
 # System Chrome (not Playwright's bundled Chromium) — it ships real GPU/WebGL, which is the
 # whole point: it renders the marketing media Firecrawl's browser can't.
 DEFAULT_CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+
+# Matches tile.py — the recipe-time `magick` shell-out resizes a full-page PNG to this width.
+OVERVIEW_WIDTH = 480
 
 # Injected only after the warm scroll: forces any lingering opacity/transform reveal to its
 # resting state and zeroes transition/animation time, so a tile never catches mid-animation.
@@ -130,6 +134,39 @@ def tile_offsets(scroll_height: int, viewport_height: int, overlap: int) -> list
     if not offsets or offsets[-1] != last:
         offsets.append(last)
     return offsets
+
+
+def emit_overview(page: Page, out_dir: Path, url: str) -> bool:
+    """Write `overview-480w.png` beside the tiles via a full-page screenshot + `magick -resize`.
+
+    Mirrors tile.py's overview shape so the QA gate reads re-rendered pages the same way it
+    reads cached ones — without this, Tier-B was blind-flying and the hand-rolled montage
+    workaround once double-rendered a footer and manufactured a false defect (functionhealth
+    retro). Warns + returns False on failure; never breaks the tile write.
+    """
+    dst = out_dir / "overview-480w.png"
+    tmp_path: str | None = None
+    try:
+        page.evaluate("() => window.scrollTo(0, 0)")
+        page.wait_for_timeout(300)
+        with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+            tmp_path = tmp.name
+        page.screenshot(path=tmp_path, full_page=True, type="png")
+        subprocess.check_call(
+            ["magick", tmp_path, "-resize", f"{OVERVIEW_WIDTH}x", str(dst)],
+            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+        )
+        return True
+    except (subprocess.CalledProcessError, FileNotFoundError, OSError) as err:
+        print(
+            f"WARNING [{url}]: overview-480w emission failed ({err}) — QA falls back to "
+            "tile spot-check on this page. Check that `magick` (ImageMagick) is on PATH.",
+            file=sys.stderr,
+        )
+        return False
+    finally:
+        if tmp_path and os.path.exists(tmp_path):
+            os.unlink(tmp_path)
 
 
 def reachable_top(page: Page) -> int:
@@ -251,6 +288,8 @@ def capture(url: str, out_dir: Path, width: int, height: int, overlap: int,
             page.screenshot(path=str(out_dir / name), full_page=False, type="png")
             tiles.append({"index": index, "y": round(actual_y), "file": name})
 
+        overview_made = emit_overview(page, out_dir, url)
+
         browser.close()
 
     manifest = {
@@ -260,6 +299,7 @@ def capture(url: str, out_dir: Path, width: int, height: int, overlap: int,
         "overlap": overlap,
         "dismissed": do_dismiss,  # --dismiss ran affordance-only overlay dismissal
         "scroll_locked": scroll_locked,  # tile-00 ≠ top when true → tiles mislabeled, QA before mining
+        "overview": "overview-480w.png" if overview_made else None,
         "page": info,
         "tiles": tiles,
     }
