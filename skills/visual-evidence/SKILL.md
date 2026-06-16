@@ -25,6 +25,7 @@ Turn `visual-evidence X` into `store/<domain>/visual.md`: cited, blind, falsifia
 ```bash
 ENGINE="$(cd "$(dirname "$(realpath "$0")")/../.." 2>/dev/null && pwd)"   # the repo holding this skill
 # canonical fallback: "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research"
+cd "$ENGINE"   # run every `python3 scripts/…` command below from here — the paths are engine-root-relative
 ```
 
 The company must already be captured. `store/<slug>/captures/<date>/.payloads/<page>.png` is the input. No capture → tell the user to run `/research-company <domain>` first (this skill never scrapes).
@@ -46,10 +47,11 @@ For each flagged page, decide:
 - **Exclude** the contaminated *tile(s)* if the rest of the page is clean → note them; `qa_status: exclusions-noted`.
 - **Re-render (Tier-B)** when the page's evidence depends on a region the cached shot rendered *statically* wrong — a grey/WebGL hero, black media, lazy-load gaps, unsettled animation:
   ```bash
-  python3 scripts/shoot.py "https://<the page url>" --out-dir store/<slug>/captures/<today>/tiles/<page>
+  python3 "$ENGINE/scripts/shoot.py" "https://<the page url>" --out-dir "$ENGINE/store/<slug>/captures/<today>/tiles/<page>"
   ```
   `shoot.py` drives system Chrome (real WebGL), warm-scrolls to load lazy media, settles motion, hides known consent vendors (OneTrust/Transcend/Cookiebot/Didomi), then tiles. Replace that page's tiles with the re-rendered set; `qa_status: recapture-used`. (No Firecrawl; needs `playwright` — `pip install playwright` once.)
   - **Don't Tier-B a timed/marketing modal** (newsletter, "10% off") — a fresh load just re-arms it, often over different content; exclude or caveat the tile instead.
+  - **Pass `--out-dir` absolute** (as above), and **never disable the sandbox** to dodge a path-permission / `getcwd` error — that once left a sticky lockdown that killed a run. The fix is the absolute path, not a bigger hammer.
 - If a page can't be made clean at all, drop it. If *nothing* is clean, **decline** and record it in `## Provenance` — don't mine defects out of broken captures.
 
 Assemble the **active tile list** (all kept tile paths, repo-relative) and the **exclusions** (path + reason).
@@ -63,7 +65,7 @@ It returns `accepted_cards` (with ids), `rejected_cards`, and judge `notes`, wit
 
 **4. Synthesize + write `store/<slug>/visual.md`** per [`modules/VISUAL.md`](../../modules/VISUAL.md):
 - **First, spot-check every `poor` *structural* card against its native tile.** Miners and judge are both blind — neither can tell a mid-animation/compositing artifact (double-rendered row, cards mid-flight, blank icons) from a genuine layout defect, so a capture artifact can slip through as a `poor` card. This is the one check the workflow can't self-perform; drop any such card before writing.
-- Frontmatter: `schema_version: "1.0"`, `domain`, `captured_at` (today), `source_capture` (the capture date), `qa_status` (from step 2).
+- Frontmatter: `schema_version: "1.0"`, `domain`, `captured_at` (today — when tiles were mined), `source_capture` (the **dossier** capture date this layer pairs with; stays the dossier date even when Tier-B re-renders fresh tiles today — see VISUAL.md), `qa_status` (from step 2).
 - `## Visual & brand impression` — ≤120 words, **only from the accepted cards**, every claim citing a card id (`[typography_01]`). A lens over the cards, never new assertion. This is the brief's deliverable.
 - `## Evidence cards` — the accepted cards as a `yaml` block (the schema in VISUAL.md).
 - `## Provenance` — tiles read, exclusions named, whether Tier-B was used and for which pages, and a snapshot caveat.

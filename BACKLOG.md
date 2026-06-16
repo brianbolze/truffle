@@ -39,6 +39,10 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 - **Hero-image module is physical-product-only** `[idea]` `[s]`
   `fc.py hero` + the step-2.5 "offerings.md with flagship product images" option presume a physical render (bottle / vial / pen). On a software/API company there's nothing to capture — the Stripe run (2026-06-04) path-scored 15 candidates that were all lifestyle photography / demo-merchant goods / UI mockups (every score 0.0); the run correctly returned **N/A**, but the guided menu offered it anyway. **Cheap fix:** in the step-2.5 batch, suppress (or label "physical products only") the hero-image option when `offering_category` carries no `Physical Products / Hardware` / CPG — same logic likely applies to `Marketplace / Platform` and `Financial / Fintech`.
 
+- **Captures don't store each page's source URL** `[weakness]` `[@brian]`
+  Cached `.md` payloads carry no `source_url`, so Tier-B re-render (`shoot.py`) must *infer* each page's URL from nav links (on functionhealth, grep pulled CTA links instead). Structural — it bites every Tier-B run, not capture-flakiness. Cheap fix on the capture side: `/research-company` records the URL it scraped per page (the data exists at capture time); `shoot.py` reads it instead of guessing.
+  **Act when:** the `shoot.py` Tier-B work lands — pair the capture-side `source_url` with it.
+
 ### Parked
 
 - **Visual-quality SCORE — parked (calibration offset)** `[idea]` `[parked]` `[@brian]`

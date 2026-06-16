@@ -145,9 +145,19 @@ const judged = await agent(
   { label: 'judge', phase: 'Judge', schema: JUDGE_SCHEMA },
 )
 
+const accepted = (judged.accepted_cards || []).map(relCard)
+const rejected = (judged.rejected_cards || []).map(relCard)
+// Counts come from the arrays, never the judge's prose — its self-count has been wrong (claimed
+// 30 for a 33-card array). Surface the polarity split too, so the operator sees any strong-skew.
+const polarity = accepted.reduce((acc, c) => ({ ...acc, [c.polarity]: (acc[c.polarity] || 0) + 1 }), {})
+log(`judge kept ${accepted.length} / rejected ${rejected.length} of ${allCards.length} mined — ` +
+    `${polarity.strong || 0} strong / ${polarity.mixed || 0} mixed / ${polarity.poor || 0} poor`)
 return {
-  accepted_cards: (judged.accepted_cards || []).map(relCard),
-  rejected_cards: (judged.rejected_cards || []).map(relCard),
+  accepted_cards: accepted,
+  rejected_cards: rejected,
+  accepted_count: accepted.length,
+  rejected_count: rejected.length,
+  polarity,
   notes: judged.notes || '',
   mined_count: allCards.length,
 }

@@ -70,11 +70,21 @@ def tile_offsets(scroll_height: int, tile_height: int, overlap: int) -> list[int
 
 
 def latest_capture(slug: str) -> str:
-    """Newest dated capture dir under the slug (excludes _archive) — the default tiling source."""
+    """Newest dated capture dir with a populated `.payloads/` — the default tiling source.
+
+    Skips `_archive` and *empty* dated dirs: an empty `2026-06-04/` would otherwise sort newest
+    and crash the default run (it has no screenshots to tile).
+    """
     captures = os.path.join(ROOT, "store", slug, "captures")
-    dates = [d for d in os.listdir(captures) if d[:4].isdigit() and os.path.isdir(os.path.join(captures, d))]
+
+    def has_payloads(date: str) -> bool:
+        payloads = os.path.join(captures, date, ".payloads")
+        return os.path.isdir(payloads) and any(f.endswith(".png") for f in os.listdir(payloads))
+
+    dates = [d for d in os.listdir(captures)
+             if d[:4].isdigit() and os.path.isdir(os.path.join(captures, d)) and has_payloads(d)]
     if not dates:
-        raise SystemExit(f"no dated capture under store/{slug}/captures")
+        raise SystemExit(f"no dated capture with screenshots under store/{slug}/captures")
     return sorted(dates)[-1]
 
 

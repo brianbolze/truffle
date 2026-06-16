@@ -41,13 +41,14 @@ Run it through the [`/visual-evidence`](../skills/visual-evidence/SKILL.md) skil
 # Query contract for this store: ../../QUERYING.md — parse frontmatter; grep the body to locate.
 schema_version: "1.0"
 domain: functionhealth.com        # company key (matches profile.md)
-captured_at: 2026-06-14           # own freshness — when these tiles were mined
-source_capture: 2026-06-01        # the captures/<date>/ the tiles were derived from
+captured_at: 2026-06-14           # own freshness — when these tiles were mined/rendered
+source_capture: 2026-06-01        # the dossier capture this layer pairs with (see note below)
 qa_status: clean | exclusions-noted | recapture-used   # closed set (below)
 ---
 ```
 
 - **`qa_status`** (closed set) — the capture-health verdict the QA gate reached: `clean` (all cited tiles came straight from cached payloads, no exclusions) · `exclusions-noted` (≥1 tile excluded for contamination; the `## Provenance` exclusion note names them) · `recapture-used` (Tier-B browser re-render supplied ≥1 page's tiles because the cached Firecrawl screenshot was contaminated — WebGL/lazy/animation; the note names which pages).
+- **`captured_at` vs `source_capture`** — `captured_at` is when *these tiles* were mined/rendered (today); `source_capture` is the **dossier capture date this visual layer pairs with** (`profile.md`'s capture). When Tier-B re-renders fresh tiles today, `source_capture` **stays the dossier date** (not today) — the pixels are newer, but the layer still pairs with the company capture; the `## Provenance` note records the re-render and its drift.
 
 ## Body — impression first, cards as the audit trail
 

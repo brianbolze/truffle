@@ -19,6 +19,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import sys
+import tempfile
 from pathlib import Path
 
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
@@ -125,6 +128,21 @@ def capture(url: str, out_dir: Path, width: int, height: int, overlap: int,
               })"""
         )
 
+        # Scroll-lock guard (detect, don't fix). A modal that locks body scroll (the position:fixed /
+        # top:-Ypx trick) makes scrollTo(0,0) land far down the page, so tile-00 captures the page
+        # *bottom* and the blind miners mislabel it as the hero (seen on gethealthspan). Safely unfreezing
+        # every lock pattern is the Tier-B redesign's job — here we only refuse to fail *silently*: probe
+        # whether the top is reachable and flag loudly if it isn't, so a contaminated run never looks clean.
+        top_y = page.evaluate("() => { window.scrollTo(0, 0); return window.scrollY; }")
+        scroll_locked = top_y > 100
+        if scroll_locked:
+            print(
+                f"WARNING [{url}]: scrollTo(0,0) landed at y={top_y} — page scroll looks locked "
+                "(modal/overlay?). tile-00 will NOT be the page top and the tiles will be mislabeled. "
+                "QA this page before mining; dismiss the overlay or exclude the page.",
+                file=sys.stderr,
+            )
+
         tiles: list[dict] = []
         for index, y in enumerate(tile_offsets(info["scrollHeight"], height, overlap)):
             actual_y = page.evaluate("(y) => { window.scrollTo(0, y); return window.scrollY; }", y)
@@ -140,6 +158,7 @@ def capture(url: str, out_dir: Path, width: int, height: int, overlap: int,
         "source": "shoot",  # Tier-B browser re-render (vs tile.py's cached crop)
         "viewport": {"width": width, "height": height},
         "overlap": overlap,
+        "scroll_locked": scroll_locked,  # tile-00 ≠ top when true → tiles mislabeled, QA before mining
         "page": info,
         "tiles": tiles,
     }
@@ -159,16 +178,27 @@ def main() -> None:
     parser.add_argument("--chrome", default=DEFAULT_CHROME)
     args = parser.parse_args()
 
+    # Tier-B's one footgun: launched from the iCloud project dir, a getcwd() deep in Chrome/Playwright
+    # can hit a path the harness sandbox doesn't allow — which once tempted a sandbox-disable that
+    # bricked a whole run. Resolve --out-dir while the launch cwd is still valid, then move cwd to a
+    # neutral temp dir so getcwd() always succeeds. The skill passes --out-dir absolute, so the
+    # cwd-dependent branch below never fires in normal use.
+    out_dir = Path(args.out_dir)
+    if not out_dir.is_absolute():
+        out_dir = Path.cwd() / out_dir
+    os.chdir(tempfile.gettempdir())
+
     manifest = capture(
-        args.url, Path(args.out_dir), args.width, args.height,
+        args.url, out_dir, args.width, args.height,
         args.overlap, args.settle_ms, args.chrome,
     )
     page = manifest["page"]
     print(json.dumps({
-        "outDir": args.out_dir,
+        "outDir": str(out_dir),
         "loaded": f"{page['loadedImages']}/{page['imageCount']}",
         "scrollHeight": page["scrollHeight"],
         "tiles": len(manifest["tiles"]),
+        "scrollLocked": manifest["scroll_locked"],
         "title": page["title"],
     }, indent=2))
 

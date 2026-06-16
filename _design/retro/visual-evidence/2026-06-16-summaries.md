@@ -77,3 +77,78 @@ Session restart re-initializes the allowlist. Tiles persist on disk, so re-runni
 ## Substantive finding (not lost)
 Medvi runs two visual systems: a green/cream wellness brand (home/weightloss/meals/about)
 and a dark "QUAD" men's-performance sub-brand at quad.medvi.org. Worth a card on the re-run.
+
+### functionhealth.com — the no-consent, all-rendering case
+
+The clean contrast to joinfridays/mydrhank: **no cookie or pop-up ever engaged.** Neither the
+cached tiles nor the Tier-B re-renders showed a consent overlay — I never touched consent
+handling or probed the DOM. (Absence isn't proof: can't say whether the site shows no banner to
+this UA or shoot.py suppressed one silently — nothing was contaminating content, so it never
+came up.) The whole problem was **WebGL + lazy-load**: cached Firecrawl homepage = grey WebGL
+hero + black lazy media cards. Tier-B re-rendered all 3 pages cleanly. So the consent machinery
+the other runs fought is one failure mode, not the failure mode.
+
+**New (not yet in this doc):**
+
+- **`source_capture` got resolved the *opposite* way.** I set it to the re-render date
+  (2026-06-16), reading the field literally — "the capture the tiles were derived from." joinfridays
+  and mydrhank kept it at the *dossier* capture date and explained the re-render in prose. Two
+  operators, same ambiguity, opposite answers — concrete proof the contract is underspecified, not
+  just muddy. Needs a one-line rule in VISUAL.md (my lean: source = the dossier capture it pairs
+  with; let Provenance + `captured_at` carry the re-render date — but that contradicts the current
+  frontmatter comment, so the comment or the convention has to move).
+- **No source-URL in the cached capture.** Page `.md` files carry no `source_url`; grep pulled CTA
+  links instead. Had to infer `/`, `/pricing`, `/scans` from nav. Tier-B *requires* a URL —
+  shoot.py already writes the one it shot, but the cached capture doesn't expose page→URL. Cheap fix.
+- **This hero fails deterministically.** The Jun-14 run hit the identical grey WebGL homepage hero
+  and also Tier-B'd it. Two independent runs, same failure — reproducible for this site, not capture
+  flakiness. (Not worth a maintained denylist — that's living infra; the QA→Tier-B flow already
+  covers it.)
+
+**Confirms prior findings:**
+
+- **shoot.py emits no `overview-480w` — and the workaround bites back** (mydrhank). Hand-rolled a
+  PIL montage to QA full pages; stacking the 180px-overlap tiles duplicated ~180px between them, so
+  the footer rendered twice and briefly read as a double-render defect. The missing overview doesn't
+  just slow QA, it forces a hack that manufactures its own false positives. Strongest case yet for
+  giving shoot.py the same overview tile.py already makes.
+- **Judge self-count doesn't reconcile** (rugiet/mydrhank). 41 mined, 36 accepted + 4 rejected = 40.
+  One card vanished unlogged. Array's authoritative, prose tally isn't.
+- **Ticker/marquee spot-check class recurred** (joinfridays). The conditions ticker raised the same
+  "real edge-clip vs. frozen mid-scroll?" question — genuine design this time, but only the human
+  spot-check could call it.
+- **Strong-skew, un-forced** (rugiet). 20/36 = 56% strong. Defensible (owned system), but nothing in
+  the pipeline made me ask the down-calibration question.
+
+### gethealthspan.com — two overlays in one run
+
+**New:**
+
+- **A timed newsletter modal is a new overlay class — and it's recoverable, not just excludable.** A
+  centered "Get 10% Off" modal with a dim backdrop covered the homepage. The skill says don't Tier-B
+  timed modals because they re-arm — and it *did* re-arm on the first re-render, confirming that. But it
+  has a "No, thanks" dismiss and closes on Escape, so dismissing *once before tiling* cleared it for the
+  whole render. The rule should split: load-time modal with a dismiss affordance → dismiss; exit-intent /
+  re-arm-after-dismiss → exclude.
+- **A scroll-locked modal corrupts tile indexing, which then mislabels a card.** The modal's scroll-lock
+  made shoot.py's first `scrollTo(0,0)` return y=12684, so `tile-00` was the page *bottom*, not the top.
+  The blind miners then labeled that lower band the "hero / above fold"; the spot-check caught it. This is
+  a concrete reason to **dismiss, not exclude** — exclusion leaves the scramble (and the mislabel) intact.
+- **The shoot.py fix evaporated into a throwaway.** shoot.py was being edited in parallel, so I added the
+  dismissal logic (Escape + dismiss-labels + broad `[class*=cookie i]` hide) in `/tmp/reshoot.py` instead.
+  Worked one-pass across all 6 pages — but the fix doesn't persist. Same probe→patch→re-render friction
+  joinfridays logged, just routed around the engine.
+
+**Confirms prior findings:**
+
+- **Custom CMP defeats shoot.py's vendor list — third run** (joinfridays, mydrhank). A custom bottom-right
+  cookie banner stamped every subpage tile; the stock "Accept" click missed it. Now a clear pattern, not
+  anecdote: shoot.py needs generic overlay dismissal (Escape + attribute-hide + dismiss-labels), not a
+  vendor-id allowlist.
+- **No `overview-480w` → montage hack manufactures a false positive** (functionhealth). The 180px tile
+  overlap double-rendered the footer in my stacked montage. Strongest case yet for giving shoot.py the
+  overview tile.py already makes.
+- **Judge self-count doesn't reconcile.** Notes said "kept 41"; array had 40; 40+10 ≠ 51 mined.
+- **`source_capture` resolved to the dossier date** (06-04), re-render in Provenance — matching
+  joinfridays/mydrhank. Now **3:1** vs. functionhealth's literal reading; the convention is converging,
+  VISUAL.md just needs the one line.

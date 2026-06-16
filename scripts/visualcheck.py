@@ -62,7 +62,8 @@ def parse_frontmatter(text: str) -> dict[str, str] | None:
     for line in text[3:end].splitlines():
         match = re.match(r"^([a-z_]+):\s*(.*)$", line)
         if match:
-            fm[match.group(1)] = match.group(2).strip().strip('"').strip("'")
+            val = re.sub(r"\s+#.*$", "", match.group(2).strip())  # drop an inline YAML comment
+            fm[match.group(1)] = val.strip().strip('"').strip("'")
     return fm
 
 
@@ -154,6 +155,7 @@ def check(path: str) -> list[str]:
         if tells_count(block) < 1:
             errors.append(f"{rel}: card {cid}: needs >=1 visible_tell")
         # 2 — tile paths active
+        tpath = field(block, "tile_path")
         for key in ("tile_path", "contrast_with"):
             val = field(block, key)
             if key == "contrast_with" and not val:
@@ -165,6 +167,8 @@ def check(path: str) -> list[str]:
                 errors.append(f"{rel}: card {cid}: {key} `{val}` is not under a tiles/ dir")
             if not os.path.exists(os.path.join(ROOT, val)):
                 errors.append(f"{rel}: card {cid}: {key} `{val}` does not exist on disk")
+            if key == "contrast_with" and val == tpath:
+                errors.append(f"{rel}: card {cid}: contrast_with points at its own tile_path (no contrast)")
 
     # 5 — impression is a lens (cites >=1 real card id)
     if impression is not None:
