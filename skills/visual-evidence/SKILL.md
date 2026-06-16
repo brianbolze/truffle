@@ -45,13 +45,15 @@ Pick the pages that carry the visual system (homepage + 2–4 signal pages); ski
 
 For each flagged page, decide:
 - **Exclude** the contaminated *tile(s)* if the rest of the page is clean → note them; `qa_status: exclusions-noted`.
-- **Re-render (Tier-B)** when the page's evidence depends on a region the cached shot rendered *statically* wrong — a grey/WebGL hero, black media, lazy-load gaps, unsettled animation:
+- **Re-render (Tier-B)** when the page's evidence depends on a region the cached shot got *statically* wrong — grey/WebGL hero, black media, lazy-load gaps, unsettled animation — **or** an overlay covers the content. Add `--dismiss` for the overlay case:
   ```bash
-  python3 "$ENGINE/scripts/shoot.py" "https://<the page url>" --out-dir "$ENGINE/store/<slug>/captures/<today>/tiles/<page>"
+  python3 "$ENGINE/scripts/shoot.py" "https://<page url>" --out-dir "$ENGINE/store/<slug>/captures/<today>/tiles/<page>" [--dismiss]
   ```
-  `shoot.py` drives system Chrome (real WebGL), warm-scrolls to load lazy media, settles motion, hides known consent vendors (OneTrust/Transcend/Cookiebot/Didomi), then tiles. Replace that page's tiles with the re-rendered set; `qa_status: recapture-used`. (No Firecrawl; needs `playwright` — `pip install playwright` once.)
-  - **Don't Tier-B a timed/marketing modal** (newsletter, "10% off") — a fresh load just re-arms it, often over different content; exclude or caveat the tile instead.
-  - **Pass `--out-dir` absolute** (as above), and **never disable the sandbox** to dodge a path-permission / `getcwd` error — that once left a sticky lockdown that killed a run. The fix is the absolute path, not a bigger hammer.
+  `shoot.py` drives system Chrome (real WebGL), warm-scrolls to load lazy media, then reduced-motion + settles, tiles, and emits `overview-480w.png` for the QA gate. `--dismiss` clears overlays through the page's *own* affordances — Escape + clicks on dismiss-buttons scoped to overlay-shaped elements; no vendor denylist, no CSS-hide ([probe](../../experiments/2026-06-16-tier-b-dismissal/FINDINGS.md): structural-hide harmed real nav 4/8 sites; affordance-only cleared 5/5 dismissable overlays, 0/8 harm). Replace the page's tiles with the re-rendered set; `qa_status: recapture-used`. (No Firecrawl; needs `playwright` — `pip install playwright` once.)
+  - **Dual-render only when WebGL/lazy *and* an overlay contaminate one page** — the cached payload can't be the faithful baseline, so render twice into sibling dirs: `tiles/<page>` (faithful, no flag) + `tiles/<page>__dismissed` (`--dismiss`). Cards cite the `__dismissed` set; the faithful tiles are kept on disk as the comparison view.
+  - **Timed/marketing modals** (newsletter, "10% off") — if there's a dismiss control (Escape, "No thanks", "×"), `--dismiss` clears it in one shot (proven on gethealthspan). If it re-arms or has no dismiss path, exclude or caveat the tile instead.
+  - **Pass `--out-dir` absolute** (as above), and **never disable the sandbox** to dodge a path-permission / `getcwd` error — that once left a sticky lockdown that killed a run.
+  - **Loud-not-silent.** A `WARNING` on stderr means a guard fired — `scroll_locked` (re-run with `--dismiss`, or exclude) or a missing `overview-480w.png` (magick failed — QA falls back to tile spot-check). Don't ignore them.
 - If a page can't be made clean at all, drop it. If *nothing* is clean, **decline** and record it in `## Provenance` — don't mine defects out of broken captures.
 
 Assemble the **active tile list** (all kept tile paths, repo-relative) and the **exclusions** (path + reason).
