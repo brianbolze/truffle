@@ -5,6 +5,7 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 **Not this file:**
 - [`SCHEMA.md`](SCHEMA.md) / [`TAXONOMIES.md`](TAXONOMIES.md) — the store contract. A hard rule that cost a real lesson lands there as a one-liner, not here.
 - [`_design/`](_design/) — frame, architecture, references. Durable intent.
+- **Notion Roadmap** (the *Truffle — Teamspace Home* teamspace) — big, user-facing initiatives, grouped by [Pillar / Theme](https://app.notion.com/p/getdoro/Product-Pillars-Themes-afdbc4660a084f009ac2df226c3dfd23) + status. This file keeps the *smaller* engine items + **system hardening** (schema / verbs / workflow). When a backlog idea grows into a real user-facing feature, it graduates to the [Roadmap](https://app.notion.com/p/getdoro/2362eca6edf441c18aaa7c0105c4cc23?v=d0d7ab1da3734cf097a2b14408b1c187).
 
 **Item format.** A bold punchline + tags on one scannable line (tags in this order), then 1–3 tight sentences. An optional **Act when** line names the trigger that graduates the item — point at cited experiments rather than restating them.
 - **kind** — `[weakness]` gap likely to bite · `[idea]` possible improvement · `[bug]` confirmed defect · `[tbd]` pending decision · `[simplification]` removes surface area / prescriptiveness
