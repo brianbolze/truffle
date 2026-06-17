@@ -34,13 +34,13 @@ Example:
 | `record_version` | Required quoted MAJOR.MINOR for this JSON envelope. Current: `"0.1"`. Not a markdown `schema_version` — see **Versioning** below. |
 | `verb` | Required: `research-company` · `deepen-offerings` · `visual-evidence`. The filename derives from this value. |
 | `status` | Required: `complete` · `partial`. Skips, crashes, and aborts write no record. |
-| `tool` | Required stable slug for the lead tool, e.g. `claude-code`, `codex`. Claude Code is env-detected; otherwise agent-supplied. |
-| `model` | Required stable id for the lead model, e.g. `claude-opus-4-8`, `gpt-5.5`. Use canonical ids, not friendly labels. |
-| `effort` | Optional raw per-tool effort string. Claude Code uses `CLAUDE_EFFORT`; if Claude Code is detected and effort is empty, write `"unknown"`. For tools without a reliable effort source, omit it unless the agent knows it. |
-| `trust` | Required: `env` when tool/effort came from deterministic environment, `agent` when self-reported. `model` is agent-known and not separately trust-tagged. |
+| `tool` | Required stable slug for the lead tool. **Both Claude Code and Codex are env-detected** (`CLAUDECODE` / `CODEX_SHELL`·`CODEX_THREAD_ID`·`__CFBundleIdentifier`), so neither needs `--tool`; other tools pass `--tool`. An undetected, unnamed tool is recorded `unknown` (the record still lands) rather than failing the write. |
+| `model` | Stable lead-model id, e.g. `claude-opus-4-8`, `gpt-5.5`. The env doesn't carry it (neither tool exposes it), so it's the one field nobody can env-stamp. Source order: **`RUNREC_MODEL`** (your session declaration — authoritative) → `--model` (agent best-known) → `"unknown"`. Use canonical ids, not friendly labels; normalize synonyms at read time. |
+| `effort` | Optional raw per-tool effort string. Source order: **`RUNREC_EFFORT`** (your declaration) → `--effort` → Claude Code's `CLAUDE_EFFORT` (auto). Omitted when none of those exist (Codex exposes no effort env). |
+| `trust` | Required: `env` when the tool was env-detected **or** an explicit `--tool` the environment corroborates; `agent` when self-reported (or an explicit tool the env can't confirm). `model` is agent-known and not separately trust-tagged. |
 | `started_at` | Required ISO-Z instant. It names the file as `<YYYYMMDDTHHMMSSZ>-<verb>.json`; UTC avoids cross-midnight ambiguity. |
 | `ended_at` | Optional ISO-Z instant, stamped only on clean write. Wall time is derived from `ended_at - started_at`; do not store `wall_seconds`. |
-| `artifacts` | Required list of repo-relative markdown artifacts touched, e.g. `["profile.md"]`. Empty list is allowed for a partial run that produced no markdown. Assets ride with their markdown artifact. |
+| `artifacts` | Required list of **bare, company-dir-relative** markdown filenames, e.g. `["profile.md"]` — **not** `store/<slug>/profile.md` (the writer strips a stray prefix). Empty list is allowed for a partial run that produced no markdown. Assets ride with their markdown artifact. |
 | `components` | Optional list of LLM helpers only, each `{ "tool": "...", "model": "...", "role": "..." }`; omit for single-agent runs. Deterministic shell tools (`fc.py`, Playwright, ImageMagick) are not components. |
 | `note` | Optional one-line run color. Never make it the sole home of a company fact. |
 
@@ -65,7 +65,15 @@ python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" write \
   --artifact profile.md
 ```
 
-Use `--tool codex --trust agent` when the tool cannot be env-detected. Add `--artifact offerings.md`, `--artifact visual.md`, `--components-json '[...]'`, or `--note "..."` only when they apply.
+Both Claude Code and Codex are env-detected, so `--tool`/`--trust` are rarely needed — pass `--tool <slug>` only for a tool the env can't identify. Add `--artifact offerings.md`, `--artifact visual.md`, `--components-json '[...]'`, or `--note "..."` only when they apply.
+
+**Declaring model/effort (optional).** The env can't see the model or effort. To pin them for a whole session — robust even if the agent forgets to pass flags — `export` them once at session start; the writer treats them as authoritative:
+
+```sh
+export RUNREC_MODEL=gpt-5.5 RUNREC_EFFORT=high
+```
+
+Forgot? The record still lands: `model` falls back to the agent's `--model` (or `"unknown"`), and `effort` is simply omitted.
 
 Do not write warm-skip records. Do not write crash/abort records. Absence of a run record means "not recorded" for pre-0.1 history, or "no completed write reached the recorder" for a new run.
 

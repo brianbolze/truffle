@@ -102,19 +102,20 @@ Treat the structured layer **exactly like `branding` — a hint to verify, never
 
 Then **lint the written profile**: re-run `python3 scripts/fc.py verify --slug <slug>`. Now that `profile.md` exists it also checks for leaked tool-call tags (`</invoke>`, `</content>` — these reached 4 profiles in the first batch), the `## Provenance` section, the required frontmatter keys, and — when a `logos:{}` block is present — its per-slot measurements. Fix anything it flags (nonzero exit) before step 8.
 
-**8. Record + summarize (free).** Update `site_notes` with anything this run learned about the site (JS-walls, map noise, geo quirks, where pricing hides) — that's the carry-forward for next time. Then `python3 scripts/fc.py spend --slug <slug>` for this run's **attributed** cost (summed from each call's own `creditsUsed` — defensible, no "shared key, can't attribute" hedge), and optionally `fc.py credits` for remaining headroom. Report a run summary:
-> Captured **<name>** (`<domain>`) → `store/<slug>/profile.md`. N pages, M credits spent (X remaining). Notable: <1-line site quirk or finding>. <Any `unverified_fields` worth flagging.>
+**8. Record the run, then summarize (free).** Update `site_notes` with anything this run learned about the site (JS-walls, map noise, geo quirks, where pricing hides) — that's the carry-forward for next time. Then `python3 scripts/fc.py spend --slug <slug>` for this run's **attributed** cost (summed from each call's own `creditsUsed` — defensible, no "shared key, can't attribute" hedge), and optionally `fc.py credits` for remaining headroom.
 
-Also write the per-company run record, using the lead model's stable id and only the markdown artifacts this run touched:
+**Write the run record _before_ you report back — the run is not done until it's written** (this is the bookkeeping step agents drop). List only the markdown artifacts this run actually wrote:
 ```bash
 python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" write \
   --slug <slug> \
   --verb research-company \
   --started-at "$RUN_STARTED_AT" \
-  --model <lead-model-id> \
   --artifact profile.md
 ```
-Add `--artifact offerings.md`, `--artifact telehealth.md`, `--artifact productivity_saas.md`, or `--artifact visual.md` only if this run actually wrote them. For Codex or another tool whose shell cannot expose its identity, add `--tool codex --trust agent`; Claude Code is env-detected. If a second LLM materially helped (claim-audit, specialist pass), add `--components-json '[{"tool":"codex","model":"gpt-5.5","role":"claim-audit"}]'`. Keep `--note` to one line of run color, never company State.
+Tool is env-detected for **both Claude Code and Codex** — no `--tool` needed. Add `--artifact offerings.md` / `--artifact telehealth.md` / `--artifact productivity_saas.md` / `--artifact visual.md` only if this run wrote them. Pass `--model <id>` if you know it (a session `export RUNREC_MODEL=…` is authoritative; otherwise it falls back to `unknown`); add `--status partial` if the run fell short of a clean capture. If a *second* LLM materially helped (a GPT-5.5 claim-audit, a specialist pass), add `--components-json '[{"tool":"codex","model":"gpt-5.5","role":"claim-audit"}]'` — **list only helpers that actually ran**. Keep `--note` to one line of run color, never company State.
+
+Finally, report a run summary:
+> Captured **<name>** (`<domain>`) → `store/<slug>/profile.md`. N pages, M credits spent (X remaining). Notable: <1-line site quirk or finding>. <Any `unverified_fields` worth flagging.>
 
 ## Enrichment is the product — don't shortchange step 7
 

@@ -63,10 +63,12 @@ def normalize_tool(value: str | None) -> str | None:
 
 
 def detect_tool(env: dict[str, str] | None = None) -> tuple[str | None, bool]:
-    """(tool, env_trusted). Claude Code exposes deterministic env; Codex usually does not."""
+    """(tool, env_trusted). Both Claude Code and Codex stamp deterministic env signatures."""
     e = env if env is not None else os.environ
     if e.get("CLAUDECODE") or e.get("CLAUDE_CODE_SESSION_ID"):
         return "claude-code", True
+    if e.get("CODEX_SHELL") or e.get("CODEX_THREAD_ID") or e.get("__CFBundleIdentifier") == "com.openai.codex":
+        return "codex", True
     if tool := normalize_tool(e.get("AI_AGENT")):
         return tool, True
     return None, False
@@ -97,7 +99,12 @@ def parse_components(raw: str | None) -> list[dict[str, str]] | None:
 
 
 def clean_artifacts(items: list[str]) -> list[str]:
-    """Artifacts are bare, repo-relative markdown paths. Empty list is valid."""
+    """Artifacts are bare, company-dir-relative markdown filenames (e.g. `profile.md`).
+
+    Normalize to that form: a `store/<slug>/…` prefix (one agent recorded the full repo-relative
+    path) is stripped to the bare filename, so the slug — already the record's location — isn't
+    duplicated and the column stays joinable across runs. Empty list is valid.
+    """
     out: list[str] = []
     for item in items:
         path = item.strip()
@@ -105,6 +112,9 @@ def clean_artifacts(items: list[str]) -> list[str]:
             continue
         if path.startswith("/") or ".." in Path(path).parts:
             raise ValueError(f"artifact must be a repo-relative path: {item!r}")
+        parts = Path(path).parts
+        if len(parts) >= 3 and parts[0] == "store":
+            path = Path(*parts[2:]).as_posix()  # store/<slug>/profile.md -> profile.md
         if not path.endswith(".md"):
             raise ValueError(f"artifact must be a markdown file: {item!r}")
         out.append(path)
@@ -116,8 +126,8 @@ def build_record(
     verb: str,
     status: str,
     started_at: str,
-    model: str,
     artifacts: list[str],
+    model: str | None = None,
     tool: str | None = None,
     effort: str | None = None,
     trust: str | None = None,
@@ -134,26 +144,33 @@ def build_record(
     parse_iso_z(started_at)
     if ended_at:
         parse_iso_z(ended_at)
-    if not model.strip():
-        raise ValueError("model is required")
 
     e = env if env is not None else os.environ
-    # An explicit --tool is a self-report; honor it over env detection, which can leak — a Codex
-    # run spawned inside a Claude Code shell still carries CLAUDECODE and would otherwise stamp a
-    # falsely-confident `claude-code` / trust:env over the caller's `--tool codex`. Self-report ⇒ agent.
+    # An explicit --tool is a self-report; honor its VALUE over env detection (which can leak — a
+    # Codex run inside a Claude Code shell still carries CLAUDECODE). But `trust` reflects whether the
+    # environment independently CORROBORATES that value: env-detected, or an explicit tool the env
+    # confirms, is "env"; an explicit tool the env can't back (Codex self-report, or a leaked override)
+    # is "agent". Undetected + unnamed ⇒ never lose the record — stamp tool "unknown" / trust "agent"
+    # (a hard error here made agents abandon the bookkeeping step and drop the record entirely).
     explicit_tool = normalize_tool(tool)
+    env_tool, env_trusted = detect_tool(e)
     if explicit_tool:
-        final_tool, default_trust = explicit_tool, "agent"
-    else:
-        env_tool, env_trusted = detect_tool(e)
+        final_tool = explicit_tool
+        default_trust = "env" if (env_trusted and env_tool == explicit_tool) else "agent"
+    elif env_tool:
         final_tool, default_trust = env_tool, ("env" if env_trusted else "agent")
-    if not final_tool:
-        raise ValueError("tool could not be detected; pass --tool")
+    else:
+        final_tool, default_trust = "unknown", "agent"
     final_trust = trust or default_trust
     if final_trust not in TRUST:
         raise ValueError(f"trust must be one of {sorted(TRUST)}")
 
-    final_effort = effort
+    # model: a RUNREC_MODEL env override (Brian's session declaration) is authoritative; else the
+    # agent's --model (best-known); else "unknown" — never block the write on a model nobody named.
+    final_model = (e.get("RUNREC_MODEL") or model or "").strip() or "unknown"
+    # effort: a RUNREC_EFFORT declaration (authoritative, like RUNREC_MODEL) wins over the agent's
+    # --effort guess; else Claude Code's CLAUDE_EFFORT; else omit.
+    final_effort = e.get("RUNREC_EFFORT") or effort
     if final_effort is None and final_tool == "claude-code":
         final_effort = e.get("CLAUDE_EFFORT") or "unknown"
 
@@ -162,7 +179,7 @@ def build_record(
         "verb": verb,
         "status": status,
         "tool": final_tool,
-        "model": model.strip(),
+        "model": final_model,
         "trust": final_trust,
         "started_at": utc_now_from(started_at),
         "artifacts": clean_artifacts(artifacts),
@@ -238,8 +255,8 @@ def main() -> int:
     write.add_argument("--ended-at", help="defaults to now; mostly for deterministic tests/replays")
     write.add_argument("--no-ended-at", action="store_true", help="omit ended_at (rare; normal completed runs stamp it)")
     write.add_argument("--tool", help="tool slug when env cannot detect it, e.g. codex")
-    write.add_argument("--model", required=True, help="stable lead-model id, e.g. claude-opus-4-8")
-    write.add_argument("--effort", help="raw per-tool effort string; Claude Code uses CLAUDE_EFFORT when omitted")
+    write.add_argument("--model", help="stable lead-model id, e.g. claude-opus-4-8; or set RUNREC_MODEL in the session. Falls back to 'unknown'.")
+    write.add_argument("--effort", help="raw per-tool effort string; or set RUNREC_EFFORT. Claude Code auto-reads CLAUDE_EFFORT.")
     write.add_argument("--trust", choices=sorted(TRUST), help="defaults to env when tool was env-detected, else agent")
     write.add_argument("--artifact", action="append", default=[], help="repo-relative markdown artifact, repeatable")
     write.add_argument("--components-json", help='optional JSON list, e.g. \'[{"tool":"codex","model":"gpt-5.5","role":"claim-audit"}]\'')

@@ -45,16 +45,15 @@ attributes this preset's credit cost to its own routine.
    `schema_version` to `"1.2"` if the file predates it. That one token is what graduates a count from "floor" to
    trustworthy-as-breadth (contract: [`OFFERINGS.md`](../../modules/OFFERINGS.md) → `enumeration`).
 
-4. **Record the run.** After `offeringscheck.py` passes, write a run record:
+4. **Record the run (required — the run is not done until this is written).** After `offeringscheck.py` passes, write a run record:
    ```bash
    python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" write \
      --slug <slug> \
      --verb deepen-offerings \
      --started-at "$RUN_STARTED_AT" \
-     --model <lead-model-id> \
      --artifact offerings.md
    ```
-   Add `--tool codex --trust agent` when the shell cannot detect the tool. Omit the record only if the preset declined before doing work.
+   Tool is env-detected for **both Claude Code and Codex** — no `--tool` needed. Pass `--model <id>` if you know it (a session `export RUNREC_MODEL=…` is authoritative; else it falls back to `unknown`); add `--status partial` if the run fell short. Omit the record only if the preset declined before doing any work.
 
 **Scope:** offerings only (a full refresh or first capture is `/research-company`); it spends Firecrawl, so
 research-company's credit pre-flight applies.

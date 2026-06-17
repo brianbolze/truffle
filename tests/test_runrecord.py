@@ -116,6 +116,61 @@ class RunRecordTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             rr.clean_artifacts(["profile.json"])
 
+    def test_explicit_tool_corroborated_by_env_is_env_trust(self) -> None:
+        # marek/trt fix: --tool claude-code while CLAUDECODE is set must read as env-trust (the env
+        # confirms it), not agent — so two identical Claude runs don't diverge on trust.
+        rec = rr.build_record(
+            verb="visual-evidence", status="complete", started_at=STARTED, ended_at=ENDED,
+            tool="claude-code", model="claude-opus-4-8", artifacts=["visual.md"],
+            env={"CLAUDECODE": "1"},
+        )
+        self.assertEqual(rec["tool"], "claude-code")
+        self.assertEqual(rec["trust"], "env")
+
+    def test_undetected_tool_writes_unknown_not_raises(self) -> None:
+        # The footgun fix: no env signal and no --tool must still produce a record (tool "unknown",
+        # trust "agent") rather than erroring and dropping the bookkeeping step.
+        rec = rr.build_record(
+            verb="research-company", status="complete", started_at=STARTED,
+            model="gpt-5", artifacts=["profile.md"], env={},
+        )
+        self.assertEqual(rec["tool"], "unknown")
+        self.assertEqual(rec["trust"], "agent")
+
+    def test_artifacts_strip_store_slug_prefix(self) -> None:
+        # One agent recorded the full repo path; normalize to the bare company-dir filename.
+        self.assertEqual(rr.clean_artifacts(["store/directmeds-com/visual.md"]), ["visual.md"])
+        self.assertEqual(rr.clean_artifacts(["profile.md"]), ["profile.md"])
+
+    def test_codex_env_is_auto_detected(self) -> None:
+        # Codex stamps deterministic env (CODEX_SHELL / CODEX_THREAD_ID / bundle id) — detect it like
+        # Claude so a Codex agent needn't pass --tool, killing the "tool could not be detected" footgun.
+        rec = rr.build_record(
+            verb="visual-evidence", status="complete", started_at=STARTED, ended_at=ENDED,
+            model="gpt-5", artifacts=["visual.md"],
+            env={"CODEX_SHELL": "1", "CODEX_THREAD_ID": "019ed727", "__CFBundleIdentifier": "com.openai.codex"},
+        )
+        self.assertEqual(rec["tool"], "codex")
+        self.assertEqual(rec["trust"], "env")
+
+    def test_runrec_env_overrides_declare_model_and_effort(self) -> None:
+        # Brian's session declaration via env is authoritative over the agent's --model/--effort guess.
+        rec = rr.build_record(
+            verb="research-company", status="complete", started_at=STARTED,
+            model="gpt-5", effort="low", artifacts=["profile.md"],
+            env={"CODEX_SHELL": "1", "RUNREC_MODEL": "gpt-5.5", "RUNREC_EFFORT": "high"},
+        )
+        self.assertEqual(rec["model"], "gpt-5.5")
+        self.assertEqual(rec["effort"], "high")
+
+    def test_model_defaults_unknown_when_unnamed(self) -> None:
+        # No --model and no RUNREC_MODEL: record still lands with model "unknown", never an error.
+        rec = rr.build_record(
+            verb="research-company", status="complete", started_at=STARTED,
+            artifacts=["profile.md"], env={"CODEX_SHELL": "1"},
+        )
+        self.assertEqual(rec["model"], "unknown")
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

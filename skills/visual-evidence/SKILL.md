@@ -82,19 +82,20 @@ It returns `accepted_cards` (with ids), `rejected_cards`, and judge `notes`, wit
 
 **5. Lint.** `python3 scripts/visualcheck.py --slug <slug>` — must exit 0 (tile paths valid + active, closed sets, ≥1 tell per card, impression cites ids, and **no score anywhere**). Fix anything it flags.
 
-**6. Report.** One line: company → `store/<slug>/visual.md`, N cards across the four families, `qa_status`, any pages that needed Tier-B re-render.
+**6. Record the run, then report.**
 
-Then write the run record:
+**Write the run record _before_ you report — the run is not done until it's written** (this is the step agents drop). Record what *actually ran*:
 ```bash
 python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" write \
   --slug <slug> \
   --verb visual-evidence \
   --started-at "$RUN_STARTED_AT" \
-  --model <lead-model-id> \
   --artifact visual.md \
   --components-json '[{"tool":"claude-code","model":"sonnet","role":"visual-miner:typography_hierarchy"},{"tool":"claude-code","model":"sonnet","role":"visual-miner:layout_composition_components"},{"tool":"claude-code","model":"sonnet","role":"visual-miner:color_brand_imagery"},{"tool":"claude-code","model":"sonnet","role":"visual-miner:iconography_illustration"}]'
 ```
-If `minerModel` was overridden, use that model in the four visual-miner component objects. Add `--tool codex --trust agent` when the shell cannot detect the lead tool. A Tier-B Playwright render is deterministic shell work, not an LLM component; mention it in `--note` only if it matters.
+Tool is env-detected for **both Claude Code and Codex** — no `--tool` needed. Pass `--model <id>` if you know it (a session `export RUNREC_MODEL=…` is authoritative; else `unknown`). **`components` must be the miners that actually ran — never copy the four above as boilerplate.** The four-miner list is correct *only* when you ran the `mine.workflow.js` blind fan-out (use the `minerModel` model if it was overridden). **If the workflow runner was unavailable and you did a degraded manual pass** (no fan-out — e.g. a Codex session without the Workflow tool), drop the four miners, record the single pass you actually did (or omit `--components-json`), **and pass `--status partial`.** A Tier-B Playwright render is deterministic shell work, not an LLM component; mention it in `--note` only if it matters.
+
+Then report. One line: company → `store/<slug>/visual.md`, N cards across the four families, `qa_status`, any pages that needed Tier-B re-render.
 
 ## Why a workflow (not hand-rolled sub-agents)
 
