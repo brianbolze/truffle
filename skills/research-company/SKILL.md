@@ -47,6 +47,12 @@ Run in order. Steps 3–6 are the credit spend (~7–10 credits for a clean basi
 
 The final canonical host is the **store folder slug** (dots→dashes, e.g. `honehealth.com` → `honehealth-com`) **and** the `domain:` field — but **strip a bare leading `www.`** (it's a canonicalizing redirect, not a meaningful subdomain), so `www.maximustribe.com` → slug `maximustribe-com`, `domain: maximustribe.com`. Keep meaningful subdomains (`aws.amazon.com` → `aws-amazon-com`). The domain you were handed, if different, goes in `aliases:`. If it resolves to a *different live company*, flag a collision and stop to confirm — don't key on it. (A 403/429 here just means bot-defended; proceed to Firecrawl.)
 
+Once the slug is known, stamp the run clock before any work this verb may perform:
+```bash
+RUN_STARTED_AT="$(python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" now)"
+```
+Warm-skip runs write **no** run record; this clock is only carried forward if the run actually writes an artifact. (Contract: [`RUNS.md`](../../RUNS.md).)
+
 **2. Seed from the store + freshness gate (free).** If `store/<slug>/profile.md` exists:
 
    - Read its `site_notes` (the capture playbook for *this* site — inherit it, don't rediscover), `key_pages`, and `captured_at`
@@ -98,6 +104,17 @@ Then **lint the written profile**: re-run `python3 scripts/fc.py verify --slug <
 
 **8. Record + summarize (free).** Update `site_notes` with anything this run learned about the site (JS-walls, map noise, geo quirks, where pricing hides) — that's the carry-forward for next time. Then `python3 scripts/fc.py spend --slug <slug>` for this run's **attributed** cost (summed from each call's own `creditsUsed` — defensible, no "shared key, can't attribute" hedge), and optionally `fc.py credits` for remaining headroom. Report a run summary:
 > Captured **<name>** (`<domain>`) → `store/<slug>/profile.md`. N pages, M credits spent (X remaining). Notable: <1-line site quirk or finding>. <Any `unverified_fields` worth flagging.>
+
+Also write the per-company run record, using the lead model's stable id and only the markdown artifacts this run touched:
+```bash
+python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" write \
+  --slug <slug> \
+  --verb research-company \
+  --started-at "$RUN_STARTED_AT" \
+  --model <lead-model-id> \
+  --artifact profile.md
+```
+Add `--artifact offerings.md`, `--artifact telehealth.md`, `--artifact productivity_saas.md`, or `--artifact visual.md` only if this run actually wrote them. For Codex or another tool whose shell cannot expose its identity, add `--tool codex --trust agent`; Claude Code is env-detected. If a second LLM materially helped (claim-audit, specialist pass), add `--components-json '[{"tool":"codex","model":"gpt-5.5","role":"claim-audit"}]'`. Keep `--note` to one line of run color, never company State.
 
 ## Enrichment is the product — don't shortchange step 7
 

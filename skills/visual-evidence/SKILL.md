@@ -30,6 +30,11 @@ cd "$ENGINE"   # run every `python3 scripts/…` command below from here — the
 
 The company must already be captured. `store/<slug>/captures/<date>/.payloads/<page>.png` is the input. No capture → tell the user to run `/research-company <domain>` first (this skill never scrapes).
 
+After resolving the slug and confirming the capture exists, stamp the run clock:
+```bash
+RUN_STARTED_AT="$(python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" now)"
+```
+
 ## The loop
 
 **1. Tile the cached screenshots (Tier-A, free).**
@@ -78,6 +83,18 @@ It returns `accepted_cards` (with ids), `rejected_cards`, and judge `notes`, wit
 **5. Lint.** `python3 scripts/visualcheck.py --slug <slug>` — must exit 0 (tile paths valid + active, closed sets, ≥1 tell per card, impression cites ids, and **no score anywhere**). Fix anything it flags.
 
 **6. Report.** One line: company → `store/<slug>/visual.md`, N cards across the four families, `qa_status`, any pages that needed Tier-B re-render.
+
+Then write the run record:
+```bash
+python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" write \
+  --slug <slug> \
+  --verb visual-evidence \
+  --started-at "$RUN_STARTED_AT" \
+  --model <lead-model-id> \
+  --artifact visual.md \
+  --components-json '[{"tool":"claude-code","model":"sonnet","role":"visual-miner:typography_hierarchy"},{"tool":"claude-code","model":"sonnet","role":"visual-miner:layout_composition_components"},{"tool":"claude-code","model":"sonnet","role":"visual-miner:color_brand_imagery"},{"tool":"claude-code","model":"sonnet","role":"visual-miner:iconography_illustration"}]'
+```
+If `minerModel` was overridden, use that model in the four visual-miner component objects. Add `--tool codex --trust agent` when the shell cannot detect the lead tool. A Tier-B Playwright render is deterministic shell work, not an LLM component; mention it in `--note` only if it matters.
 
 ## Why a workflow (not hand-rolled sub-agents)
 

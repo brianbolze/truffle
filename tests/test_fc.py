@@ -9,10 +9,13 @@ load-bearing guarantees are: the body stays byte-verbatim below the header, and 
 
 from __future__ import annotations
 
+import json
 import re
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "skills" / "research-company" / "scripts"))
@@ -50,6 +53,19 @@ class SourceStamp(unittest.TestCase):
         )
         stamped = fc.source_stamp("https://www.functionhealth.com", "2026-06-17") + link_soup
         self.assertEqual(_read_source_url(stamped), "https://www.functionhealth.com")
+
+    def test_map_manifest_records_verb(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            old_root = fc.ROOT
+            fc.ROOT = Path(tmp)
+            try:
+                with patch.object(fc, "post", return_value={"links": ["https://example.com"]}):
+                    fc.do_map("https://example.com", "example-com", None, 500, "2026-06-17", verb="research-company")
+                manifest = Path(tmp) / "store" / "example-com" / "captures" / "2026-06-17" / ".payloads" / "manifest.jsonl"
+                rec = json.loads(manifest.read_text().strip())
+                self.assertEqual(rec["verb"], "research-company")
+            finally:
+                fc.ROOT = old_root
 
 
 if __name__ == "__main__":

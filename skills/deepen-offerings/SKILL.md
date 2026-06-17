@@ -24,6 +24,11 @@ attributes this preset's credit cost to its own routine.
    name / alias / slug) to the key. **NOT in store** → nothing to deepen; run `/research-company "$ARGUMENTS"`
    for a first capture instead, then stop.
 
+   When there is something to deepen, stamp the run clock after slug resolution:
+   ```bash
+   RUN_STARTED_AT="$(python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" now)"
+   ```
+
 2. **Find the gaps.** First read the frontmatter **`enumeration`** flag — it's the explicit TODO: **`lines-omitted`**
    (a whole line was skipped — the `## Provenance` scope note names it) or **`unknown`/absent** (scope unverified) is
    the work; **`indexed-complete` is already comprehensive → decline with reason** (nothing to deepen). Then read
@@ -39,6 +44,17 @@ attributes this preset's credit cost to its own routine.
    `lines-omitted` (naming the residual line in the scope note) if one was found but still deferred — bumping
    `schema_version` to `"1.2"` if the file predates it. That one token is what graduates a count from "floor" to
    trustworthy-as-breadth (contract: [`OFFERINGS.md`](../../modules/OFFERINGS.md) → `enumeration`).
+
+4. **Record the run.** After `offeringscheck.py` passes, write a run record:
+   ```bash
+   python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" write \
+     --slug <slug> \
+     --verb deepen-offerings \
+     --started-at "$RUN_STARTED_AT" \
+     --model <lead-model-id> \
+     --artifact offerings.md
+   ```
+   Add `--tool codex --trust agent` when the shell cannot detect the tool. Omit the record only if the preset declined before doing work.
 
 **Scope:** offerings only (a full refresh or first capture is `/research-company`); it spends Firecrawl, so
 research-company's credit pre-flight applies.
