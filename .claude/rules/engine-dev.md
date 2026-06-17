@@ -22,6 +22,9 @@ The contract is [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md); why
 - **Propose, don't write** across a project's boundary. The engine never silently mutates a project's KB.
 - **Commit per logical change**, terse imperative subject. `git log` is the changelog — no CHANGELOG file.
 
+## Gotchas
+- **Overfitting.** When making fixes, especially coming from backlog / feedback items from individual runs or retros - always ask whether the proposed solution is actually generalizable to all types of data / scenarios we may encounter.
+
 ## Prior art — mine it, don't reinvent it
 
 Capture mechanics + Firecrawl quirks are already distilled in-repo at [`firecrawl-capture.md`](skills/research-company/firecrawl-capture.md) — the capture playbook that ships with the `/research-company` skill (it reconciles agent-workflows' `competitor-watch` + `INVARIANTS`). Beyond capture, two prior systems solved pieces of this — read the relevant one before designing, then keep ours lighter.
