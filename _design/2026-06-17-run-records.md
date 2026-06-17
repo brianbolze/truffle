@@ -1,6 +1,6 @@
 # Run records — capturing what produced each capture
 
-Date: 2026-06-17 · Status: **proposal, ready for implementation hand-off.** From a Brian session (this date): a Codex/GPT-5.5 proposal → a 6-lens anti-bloat critique panel → The Founder synthesis → the calls below. Anti-bloat carried decisive weight throughout.
+Date: 2026-06-17 · Status: **implemented** ([PR #1](https://github.com/brianbolze/truffle/pull/1)) — contract shipped at [`modules/RUNS.md`](../modules/RUNS.md). Originated as a proposal: a Codex/GPT-5.5 proposal → a 6-lens anti-bloat critique panel → The Founder synthesis → the calls below. Anti-bloat carried decisive weight throughout.
 
 ## Short answer
 
@@ -77,7 +77,7 @@ Typical run ≈ 9 keys. `effort`, `ended_at`, `components`, `note` are **omit-wh
 
 ### Where it lives, who writes it
 
-- **Contract doc:** a short standalone contract in the telemetry family (sibling to [`SIGNALS.md`](../SIGNALS.md) / the `parser_version` envelope) — not a markdown depth-module. Keep it to the table above + the omit-when-absent rules.
+- **Contract doc:** a thin per-file contract. **Shipped at [`modules/RUNS.md`](../modules/RUNS.md)** — placed beside `OFFERINGS`/`VISUAL` to keep root uncluttered, and flagged there as the lone telemetry (non-State) member; in *form* a sibling to [`SIGNALS.md`](../SIGNALS.md)'s envelope (the `parser_version` family), not a State depth-module. Keep it to the table above + the omit-when-absent rules.
 - **Writer:** a ~30-line helper the skill calls **at the end** of a run, from values it already holds — read env (`AI_AGENT`/`CLAUDE_EFFORT`/`CLAUDE_CODE_SESSION_ID`), take agent-supplied `model`/`verb`/`status`/`artifacts`/`components`/`note`, stamp `ended_at`. **No start/finish/record lifecycle object, no hook.** The one moving part: stamp `started_at` at run start (skill step after slug resolution) and carry it. Mirrors [`fc.py source_stamp`](../skills/research-company/scripts/fc.py) — code stamps the facts it can read; the agent supplies only what it knows.
 - **Independent quick win — ship regardless:** add a `--verb` tag to `fc.py`'s per-call manifest write so [`runcost.py`](../scripts/runcost.py) gets cost-by-verb immediately, without waiting on any aggregator walking `runs/`. The record's `verb` and the manifest's `verb` tag are independent wins.
 - **Wire three skills:** [`research-company`](../skills/research-company/SKILL.md), `deepen-offerings`, `visual-evidence` — each stamps `started_at` at start and calls the writer at end.
@@ -114,4 +114,4 @@ The design was stress-tested against these; the implementer should keep them as 
 
 ## Hand-off
 
-**Build:** (1) the writer helper + `started_at` stamp wired into the three skills; (2) the `fc.py --verb` manifest tag for `runcost.py` (independent, ship first); (3) a short contract doc in the telemetry family; (4) a small `tests/` file over the scenario battery. **Defer:** the `runs/*.json` aggregator (trivial later), any linter, any skip/crash records. **Gate:** the [`MAINTAINING.md`](../MAINTAINING.md) change-map needs a row for the run-record envelope; run the standard gate (`ruff`, `pytest`) after.
+**Build:** (1) the writer helper + `started_at` stamp wired into the three skills; (2) the `fc.py --verb` manifest tag for `runcost.py` (independent, ship first); (3) the contract doc, shipped at [`modules/RUNS.md`](../modules/RUNS.md); (4) a small `tests/` file over the scenario battery. **Defer:** the `runs/*.json` aggregator (trivial later), any linter, any skip/crash records. **Gate:** the [`MAINTAINING.md`](../MAINTAINING.md) change-map needs a row for the run-record envelope; run the standard gate (`ruff`, `pytest`) after.
