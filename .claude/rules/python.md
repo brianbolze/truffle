@@ -4,7 +4,7 @@ paths:
 ---
 # Python house style
 
-Applies to the **durable** surface — `scripts/`, `skills/`. Code under `experiments/<date>-*/` is throwaway de-risking probes (see [engine-dev.md](.claude/rules/engine-dev.md)) and is **exempt**: don't retro-type or restyle frozen probes.
+Applies to the **durable** surface — `scripts/`, `skills/`, `routines/`. Code under `experiments/<date>-*/` is throwaway de-risking probes (see [engine-dev.md](.claude/rules/engine-dev.md)) and is **exempt**: don't retro-type or restyle frozen probes.
 
 Tooling is [`ruff.toml`](ruff.toml): `ruff check` (lint, `--fix` to autofix) + `ruff format`. Ruff replaces flake8.
 

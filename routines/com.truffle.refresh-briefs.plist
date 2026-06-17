@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Canonical copy of the launchd timer for the refresh-briefs routine. Committed here so the schedule
+  is reviewable in git; the live copy lives at ~/Library/LaunchAgents/ (see routines/README.md).
+
+  Note the indirection: launchd runs the non-iCloud Python *interpreter* and points it at the in-repo
+  .py — because macOS blocks launchd from executing a script *file* inside iCloud (EPERM), while a
+  launchd-run interpreter may read an iCloud .py as its program. Edit Hour/Minute to retime. If you
+  change pyenv versions, update the interpreter path below (the routine itself uses sys.executable).
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.truffle.refresh-briefs</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/brianbolze/.pyenv/versions/3.11.9/bin/python3</string>
+    <string>/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/routines/refresh_briefs.py</string>
+  </array>
+
+  <!-- Daily at 06:00 local. If the Mac is asleep, launchd runs it on the next wake. -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>6</integer>
+    <key>Minute</key><integer>0</integer>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+  <!-- Catastrophic-only: the routine writes its own .log/.out; this catches an interpreter that can't start. -->
+  <key>StandardErrorPath</key>
+  <string>/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/_out/routines/launchd.err</string>
+</dict>
+</plist>

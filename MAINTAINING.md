@@ -9,7 +9,7 @@ This table is the blast radius: change a thing on the left, move the things in t
 Cheap + deterministic — run it before you call the change done:
 
 ```sh
-ruff check scripts tools && python3 -m pytest tests/ -q
+ruff check scripts tools routines && python3 -m pytest tests/ -q
 python3 scripts/querycheck.py --strict     # profiles vs SCHEMA/TAXONOMIES + FIELD_VERSIONS sync
 python3 scripts/offeringscheck.py          # offerings.md roster contract + price-greppability
 python3 scripts/cohortcheck.py --cohort telehealth          # once per active cohort pack…
