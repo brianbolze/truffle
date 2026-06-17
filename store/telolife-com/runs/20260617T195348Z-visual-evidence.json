@@ -1,0 +1,14 @@
+{
+  "record_version": "0.1",
+  "verb": "visual-evidence",
+  "status": "complete",
+  "tool": "codex",
+  "model": "gpt-5",
+  "trust": "agent",
+  "started_at": "2026-06-17T19:53:48Z",
+  "artifacts": [
+    "store/telolife-com/visual.md"
+  ],
+  "ended_at": "2026-06-17T20:00:11Z",
+  "note": "Tiles-only manual fallback: Workflow runner unavailable in Codex; no profile, dossier, Notion, or live web consulted."
+}

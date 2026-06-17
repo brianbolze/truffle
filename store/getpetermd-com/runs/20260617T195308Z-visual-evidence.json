@@ -1,0 +1,36 @@
+{
+  "record_version": "0.1",
+  "verb": "visual-evidence",
+  "status": "complete",
+  "tool": "codex",
+  "model": "gpt-5-codex",
+  "trust": "agent",
+  "started_at": "2026-06-17T19:53:08Z",
+  "artifacts": [
+    "visual.md"
+  ],
+  "ended_at": "2026-06-17T20:04:00Z",
+  "components": [
+    {
+      "tool": "codex",
+      "model": "gpt-5-codex",
+      "role": "visual-miner:typography_hierarchy"
+    },
+    {
+      "tool": "codex",
+      "model": "gpt-5-codex",
+      "role": "visual-miner:layout_composition_components"
+    },
+    {
+      "tool": "codex",
+      "model": "gpt-5-codex",
+      "role": "visual-miner:color_brand_imagery"
+    },
+    {
+      "tool": "codex",
+      "model": "gpt-5-codex",
+      "role": "visual-miner:iconography_illustration"
+    }
+  ],
+  "note": "Tier-A cached tiles; excluded about/tile-05-y06100 lazy/team gap; no Tier-B."
+}

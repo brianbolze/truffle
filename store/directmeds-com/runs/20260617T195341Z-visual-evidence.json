@@ -1,0 +1,21 @@
+{
+  "record_version": "0.1",
+  "verb": "visual-evidence",
+  "status": "complete",
+  "tool": "codex",
+  "model": "gpt-5",
+  "trust": "agent",
+  "started_at": "2026-06-17T19:53:41Z",
+  "artifacts": [
+    "store/directmeds-com/visual.md"
+  ],
+  "ended_at": "2026-06-17T19:59:59Z",
+  "components": [
+    {
+      "tool": "codex",
+      "model": "gpt-5",
+      "role": "visual-evidence:manual-tile-pass"
+    }
+  ],
+  "note": "Tile-only manual pass because skills/visual-evidence/mine.workflow.js runner was not exposed in this Codex session; no dossier or live-web read."
+}

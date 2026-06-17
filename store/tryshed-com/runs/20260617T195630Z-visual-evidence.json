@@ -1,0 +1,14 @@
+{
+  "record_version": "0.1",
+  "verb": "visual-evidence",
+  "status": "complete",
+  "tool": "codex",
+  "model": "gpt-5",
+  "trust": "agent",
+  "started_at": "2026-06-17T19:56:30Z",
+  "artifacts": [
+    "visual.md"
+  ],
+  "ended_at": "2026-06-17T20:03:05Z",
+  "note": "Codex tile-only visual pass; no Tier-B re-render; dynamic Workflow runner not exposed in this thread."
+}

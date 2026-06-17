@@ -1,0 +1,37 @@
+{
+  "record_version": "0.1",
+  "verb": "visual-evidence",
+  "status": "complete",
+  "tool": "claude-code",
+  "model": "claude-opus-4-8",
+  "trust": "agent",
+  "started_at": "2026-06-17T19:49:57Z",
+  "artifacts": [
+    "visual.md"
+  ],
+  "effort": "xhigh",
+  "ended_at": "2026-06-17T20:02:38Z",
+  "components": [
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:typography_hierarchy"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:layout_composition_components"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:color_brand_imagery"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:iconography_illustration"
+    }
+  ],
+  "note": "Tier-A only (no Firecrawl, no Tier-B). 5 pages tiled (homepage, testosterone, diagnostics_home, performance, about); telehealth dropped as legal-text page. Author-corrected color_09 tile_path (perf tile-02 -> tile-01)."
+}

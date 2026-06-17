@@ -1,0 +1,14 @@
+{
+  "record_version": "0.1",
+  "verb": "visual-evidence",
+  "status": "complete",
+  "tool": "codex",
+  "model": "gpt-5",
+  "trust": "agent",
+  "started_at": "2026-06-17T19:56:19Z",
+  "artifacts": [
+    "store/struthealth-com/visual.md"
+  ],
+  "ended_at": "2026-06-17T20:05:18Z",
+  "note": "Manual blind tiles-only visual-evidence pass; Workflow runner unavailable in this Codex session; no Tier-B rerender."
+}
