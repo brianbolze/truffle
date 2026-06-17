@@ -59,6 +59,7 @@ FINAL_STATE_CSS = """
 # generic; that's the whole point of the affordance path.
 DISMISS_LABELS = [
     "no thanks", "no, thanks", "not now", "maybe later", "decline", "reject all", "reject",
+    "reject all, except strictly necessary", "reject all except strictly necessary",
     "deny", "accept all", "accept", "agree", "i agree", "i understand", "i consent",
     "got it", "ok", "okay", "continue", "close", "dismiss", "allow all",
 ]
@@ -129,6 +130,28 @@ OVERLAY_COVERAGE = """
     if (cover > max) max = cover;
   }
   return max;
+}
+"""
+
+FIND_OVERLAY_BOXES = """
+() => {
+  const vw = innerWidth, vh = innerHeight, area = vw*vh;
+  const out = [];
+  for (const el of document.querySelectorAll('body *')) {
+    const cs = getComputedStyle(el);
+    if (cs.position !== 'fixed' && cs.position !== 'sticky') continue;
+    if (cs.display === 'none' || cs.visibility === 'hidden' || parseFloat(cs.opacity) === 0) continue;
+    const r = el.getBoundingClientRect();
+    const w = Math.max(0, Math.min(r.right,vw)-Math.max(r.left,0));
+    const h = Math.max(0, Math.min(r.bottom,vh)-Math.max(r.top,0));
+    const cover = (w*h)/area;
+    if (cover < 0.04) continue;
+    const shortNav = r.top <= 5 && r.width >= 0.6*vw && r.height <= 0.18*vh;
+    if (shortNav) continue;
+    out.push({left: Math.max(r.left,0), top: Math.max(r.top,0),
+              right: Math.min(r.right,vw), bottom: Math.min(r.bottom,vh), cover});
+  }
+  return out.sort((a,b) => b.cover - a.cover);
 }
 """
 
@@ -232,6 +255,25 @@ def dismiss(page: Page) -> None:
             page.wait_for_timeout(350)
         except Exception:
             break
+    # Some CMPs render their buttons inside open Shadow DOM, where the structural JS finder
+    # cannot see them but Playwright's text locators can. Keep this exact-text and dismiss-label
+    # only; broad text clicking was the class of harm the Tier-B probe rejected.
+    for label in DISMISS_LABELS:
+        try:
+            page.get_by_text(label, exact=True).first.click(timeout=800)
+            page.wait_for_timeout(350)
+            break
+        except Exception:
+            continue
+    # Closed-shadow CMPs can expose only the host rectangle to DOM/locators. If a large overlay is
+    # still present, click where a visible close affordance normally sits: top-right inside the box.
+    # This is still scoped to overlay-shaped fixed/sticky elements, never arbitrary page chrome.
+    for box in page.evaluate(FIND_OVERLAY_BOXES)[:2]:
+        try:
+            page.mouse.click(max(box["left"] + 8, box["right"] - 34), box["top"] + 34)
+            page.wait_for_timeout(350)
+        except Exception:
+            continue
     page.keyboard.press("Escape")
     page.wait_for_timeout(150)
 
@@ -252,7 +294,8 @@ def release_scroll_lock(page: Page) -> bool:
 
 
 def capture(url: str, out_dir: Path, width: int, height: int, overlap: int,
-            settle_ms: int, chrome: str, do_dismiss: bool) -> dict:
+            settle_ms: int, chrome: str, do_dismiss: bool,
+            dismiss_points: list[tuple[float, float]]) -> dict:
     """Drive system Chrome to warm-scroll `url`, settle motion, then write viewport tiles to out_dir."""
     out_dir.mkdir(parents=True, exist_ok=True)
     # Clear our own prior artifacts so a re-render with different tile geometry can't leave orphans
@@ -287,6 +330,9 @@ def capture(url: str, out_dir: Path, width: int, height: int, overlap: int,
         if do_dismiss:
             overlay_before = max_overlay_coverage(page)
             dismiss(page)
+            for x, y in dismiss_points:
+                page.mouse.click(x, y)
+                page.wait_for_timeout(350)
 
         # Finer warm scroll (600px steps) so every intersection-observer fires and lazy media loads.
         scroll_height = page.evaluate("document.documentElement.scrollHeight")
@@ -395,6 +441,10 @@ def main() -> None:
         "--dismiss", action="store_true",
         help="affordance-only overlay dismissal (Escape + the page's own dismiss buttons)",
     )
+    parser.add_argument(
+        "--dismiss-point", action="append", default=[],
+        help="extra viewport click as x,y after generic dismiss, for visible overlay close affordances",
+    )
     args = parser.parse_args()
 
     # Tier-B's one footgun: launched from the iCloud project dir, a getcwd() deep in Chrome/Playwright
@@ -407,9 +457,17 @@ def main() -> None:
         out_dir = Path.cwd() / out_dir
     os.chdir(tempfile.gettempdir())
 
+    dismiss_points: list[tuple[float, float]] = []
+    for raw in args.dismiss_point:
+        try:
+            x_raw, y_raw = raw.split(",", 1)
+            dismiss_points.append((float(x_raw), float(y_raw)))
+        except ValueError:
+            parser.error(f"--dismiss-point must be x,y, got {raw!r}")
+
     manifest = capture(
         args.url, out_dir, args.width, args.height,
-        args.overlap, args.settle_ms, args.chrome, args.dismiss,
+        args.overlap, args.settle_ms, args.chrome, args.dismiss, dismiss_points,
     )
     page = manifest["page"]
     print(json.dumps({
