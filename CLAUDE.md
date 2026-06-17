@@ -1,6 +1,6 @@
-# web-research — agent orientation
+# Truffle — agent orientation
 
-A project-agnostic **company-research engine**: Firecrawl captures company sites, `tools/` captures repeatable external source signals, Claude reasons, and a file-first store any project can query. This is the shared engine — not any one project's knowledge base. Status + layout: [`README.md`](README.md).
+Truffle is a project-agnostic **company-research engine**: Firecrawl captures company sites, `tools/` captures repeatable external source signals, Claude reasons, and a file-first store any project can query. This is the shared engine — not any one project's knowledge base. Status + layout: [`README.md`](README.md).
 
 ## Find your path
 

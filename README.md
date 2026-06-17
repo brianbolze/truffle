@@ -1,10 +1,18 @@
-# web-research
+<p align="center">
+  <img src="assets/truffle.webp" alt="Truffle" width="220">
+</p>
 
-**Fresh, cited company intelligence — captured once, then queried forever, by you or any agent.**
+<h1 align="center">Truffle</h1>
 
-Generic AI research forages the open web — paraphrased, undated, often bot-blocked — and discards it after every question. **web-research is a farm instead:** it captures a company's real pages *once* — verbatim, cited, dated — and keeps them. So every later answer is built from fresh primary sources, not reheated scraps.
+<p align="center">
+  <strong>Fresh, cited company intelligence — captured once, then queried forever, by you or any agent.</strong>
+</p>
 
-The payoff: ask *"how do a dozen telehealth brands price semaglutide?"* and get a complete, cited answer in one shot — the thing generic Claude + web search can't cheaply rebuild.
+---
+
+Generic AI research forages the open web — paraphrased, undated, often bot-blocked — and tosses the scraps the moment it answers. Truffle goes to the source instead: it takes a company's real pages whole — verbatim, cited, dated — and keeps them. Every later answer draws on the real thing, not a reheated summary.
+
+Ask *"how do a dozen telehealth brands price semaglutide?"* and get one complete, cited answer — what generic Claude + web search can't cheaply rebuild.
 
 <!-- TODO: hero demo GIF — /research-company producing a cited dossier (record with VHS) -->
 
@@ -16,7 +24,7 @@ The payoff: ask *"how do a dozen telehealth brands price semaglutide?"* and get 
 
 ## How it works
 
-web-research is a set of **Claude Code skills** plus a **file store**. You drive it by typing slash-commands *inside Claude Code* (CLI, desktop, or IDE) — not in a plain terminal. Two verbs do most of the work:
+Truffle is a set of **Claude Code skills** plus a **file store**. You drive it by typing slash-commands *inside Claude Code* (CLI, desktop, or IDE) — not in a plain terminal. Two verbs do most of the work:
 
 | Command | What it does |
 |---|---|
@@ -29,12 +37,15 @@ Captured once, a company stays warm for every future question, in any project. T
 
 **Setup (one-time):**
 
-1. **Clone** this repo.
-2. **Point Claude Code at it** — add to `~/.claude/settings.json`:
+1. **Clone** the repo:
+   ```bash
+   git clone https://github.com/brianbolze/truffle
+   ```
+2. **Point Claude Code at it** — add to `~/.claude/settings.json` (`WEB_RESEARCH_HOME` is the engine's internal name):
    ```json
    {
      "env": {
-       "WEB_RESEARCH_HOME": "/absolute/path/to/Web Research",
+       "WEB_RESEARCH_HOME": "/absolute/path/to/truffle",
        "FIRECRAWL_API_KEY": "fc-..."
      }
    }
@@ -43,7 +54,7 @@ Captured once, a company stays warm for every future question, in any project. T
 3. **Install deps:** `pip install -r requirements.txt` (Python 3.11). For the visual layer: `playwright install chromium`.
 4. **Link the verbs** so Claude Code sees them:
    ```bash
-   export WEB_RESEARCH_HOME="/absolute/path/to/Web Research"
+   export WEB_RESEARCH_HOME="/absolute/path/to/truffle"
    mkdir -p ~/.claude/skills
    for s in research-company query-companies deepen-offerings visual-evidence; do
      ln -s "$WEB_RESEARCH_HOME/skills/$s" ~/.claude/skills/"$s"
@@ -71,3 +82,7 @@ Captured once, a company stays warm for every future question, in any project. T
 ## Status
 
 A working tool, used daily, now being smoothed for a handful of trusted users — open-sourcing in progress. macOS-first today (the visual layer shells out to `sips` + ImageMagick). Licensed under [Apache-2.0](LICENSE).
+
+---
+
+<sub>Truffle is the brand; **web-research** is the engine's internal name — you'll see it in `WEB_RESEARCH_HOME` and across the design docs.</sub>

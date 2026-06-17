@@ -1,4 +1,4 @@
-# web-research — Python dependencies
+# Truffle — Python dependencies
 #
 # Runtime: Python 3.11 (see .python-version). The engine is deliberately near-stdlib
 # (HTTP is urllib, not requests; images via system tools, not Pillow), so this list is short.
