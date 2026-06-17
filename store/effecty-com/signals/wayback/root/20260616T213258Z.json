@@ -1,0 +1,576 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:32:58Z",
+  "ok": true,
+  "input": {
+    "url": "https://effecty.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2006-09-02T09:43:45Z",
+  "last_seen": "2026-05-19T18:48:44Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 7227,
+  "snapshot_count": 64,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2006-09-02T09:43:45Z",
+      "to": "2010-01-11T06:42:05Z"
+    },
+    {
+      "status": "404",
+      "from": "2011-01-11T03:37:37Z",
+      "to": "2011-01-11T03:37:37Z"
+    },
+    {
+      "status": "403",
+      "from": "2013-05-30T03:34:10Z",
+      "to": "2013-05-30T03:34:10Z"
+    },
+    {
+      "status": "200",
+      "from": "2014-10-17T00:10:10Z",
+      "to": "2015-08-01T08:51:13Z"
+    },
+    {
+      "status": "301",
+      "from": "2016-01-11T04:48:04Z",
+      "to": "2016-01-11T04:48:04Z"
+    },
+    {
+      "status": "200",
+      "from": "2016-10-04T08:08:47Z",
+      "to": "2018-03-24T23:03:21Z"
+    },
+    {
+      "status": "403",
+      "from": "2018-08-06T08:10:44Z",
+      "to": "2018-08-06T08:10:44Z"
+    },
+    {
+      "status": "301",
+      "from": "2018-12-27T04:01:22Z",
+      "to": "2018-12-27T04:01:22Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-01-21T17:38:00Z",
+      "to": "2019-04-04T02:30:01Z"
+    },
+    {
+      "status": "302",
+      "from": "2021-12-02T10:29:46Z",
+      "to": "2021-12-02T10:29:46Z"
+    },
+    {
+      "status": "404",
+      "from": "2023-10-30T22:25:51Z",
+      "to": "2023-10-30T22:25:51Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-01-08T21:43:04Z",
+      "to": "2024-01-08T21:43:04Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-28T01:52:36Z",
+      "to": "2024-05-28T01:52:36Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-09-04T20:35:47Z",
+      "to": "2024-09-04T20:35:47Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-04T20:35:47Z",
+      "to": "2024-09-04T20:35:47Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-09-04T23:58:43Z",
+      "to": "2024-09-04T23:58:43Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-05T04:09:43Z",
+      "to": "2024-09-05T04:09:43Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-23T06:50:31Z",
+      "to": "2024-09-23T06:50:31Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-10-04T05:27:18Z",
+      "to": "2024-11-26T19:33:26Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-11-29T01:15:29Z",
+      "to": "2024-11-29T01:15:29Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-13T00:01:17Z",
+      "to": "2024-12-13T00:01:17Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-12-13T10:19:13Z",
+      "to": "2024-12-13T10:19:13Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-15T21:41:08Z",
+      "to": "2025-01-22T07:38:31Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-15T21:31:44Z",
+      "to": "2025-02-16T03:33:24Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-16T03:33:52Z",
+      "to": "2025-02-16T20:32:36Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-26T10:39:02Z",
+      "to": "2025-02-26T10:39:02Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-26T10:39:03Z",
+      "to": "2025-02-26T16:42:58Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-27T03:04:08Z",
+      "to": "2025-02-27T12:46:31Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-05-14T03:03:25Z",
+      "to": "2025-06-21T23:06:09Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-07-11T06:09:57Z",
+      "to": "2025-08-02T10:17:58Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-08-02T14:45:15Z",
+      "to": "2025-08-02T14:45:15Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-04T06:10:35Z",
+      "to": "2025-12-13T13:07:36Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-12-28T00:01:30Z",
+      "to": "2025-12-28T00:01:30Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-12-29T07:20:42Z",
+      "to": "2026-05-19T18:48:44Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20060902094345/http://effecty.com:80/",
+  "last_snapshot_url": "https://web.archive.org/web/20260519184844/https://www.effecty.com/",
+  "snapshots": [
+    {
+      "timestamp": "2006-09-02T09:43:45Z",
+      "url": "http://effecty.com:80/",
+      "status": "200",
+      "digest": "QZ5QBX5DLO3AX6INHXA2KQ4SIZOXWOI7"
+    },
+    {
+      "timestamp": "2006-11-15T23:44:00Z",
+      "url": "http://www.effecty.com:80/",
+      "status": "200",
+      "digest": "O4G4GBH3TDZFMZJFT2QVUEMD4SM4LDKV"
+    },
+    {
+      "timestamp": "2009-07-06T15:27:06Z",
+      "url": "http://effecty.com:80/",
+      "status": "200",
+      "digest": "UC66EBK7UTIPW45CUS5ZR4OADVTU2EHC"
+    },
+    {
+      "timestamp": "2009-07-25T17:45:02Z",
+      "url": "http://effecty.com:80/?",
+      "status": "200",
+      "digest": "3ZUBEFTMEYHJ3QM6YA75ZKDLXXAEFNLA"
+    },
+    {
+      "timestamp": "2010-01-11T06:42:05Z",
+      "url": "http://effecty.com:80/",
+      "status": "200",
+      "digest": "HQ7G2PMTSOOP22DZ6X7GJCUL4O76BYOY"
+    },
+    {
+      "timestamp": "2011-01-11T03:37:37Z",
+      "url": "http://effecty.com:80/",
+      "status": "404",
+      "digest": "ZGXQOZ4R3PKCFUIJVSBOEXZ324V3YHFI"
+    },
+    {
+      "timestamp": "2013-05-30T03:34:10Z",
+      "url": "http://effecty.com/",
+      "status": "403",
+      "digest": "ZGQIB3YDDSV7RJKOEIUSQGGBPAPSYJLW"
+    },
+    {
+      "timestamp": "2014-10-17T00:10:10Z",
+      "url": "http://effecty.com:80/",
+      "status": "200",
+      "digest": "P7KXICHCV7B6KMMJ6BCERL2LT46VLJGG"
+    },
+    {
+      "timestamp": "2015-08-01T08:51:13Z",
+      "url": "http://effecty.com/",
+      "status": "200",
+      "digest": "IBO3R37PH7NBZFAJSLGKO6CN4ZJ6RGN4"
+    },
+    {
+      "timestamp": "2016-01-11T04:48:04Z",
+      "url": "http://effecty.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2016-10-04T08:08:47Z",
+      "url": "http://effecty.com/",
+      "status": "200",
+      "digest": "UUYJKTZRQMF2RCB2CVL3LQIRZ2PR4AXC"
+    },
+    {
+      "timestamp": "2016-12-02T07:33:40Z",
+      "url": "http://effecty.com/",
+      "status": "200",
+      "digest": "PIG4TE4ZAR4RRPVMVTDWG7TNPQ4LT65W"
+    },
+    {
+      "timestamp": "2017-06-05T12:41:43Z",
+      "url": "http://effecty.com/",
+      "status": "200",
+      "digest": "N7SNZNIY6HYVPALTOAANBE5FSICOLAZB"
+    },
+    {
+      "timestamp": "2017-06-05T12:41:46Z",
+      "url": "http://effecty.com/",
+      "status": "200",
+      "digest": "FN4SNLZY7VASWDLPRFZIITNL3OCIONF5"
+    },
+    {
+      "timestamp": "2017-09-20T17:02:31Z",
+      "url": "http://effecty.com/",
+      "status": "200",
+      "digest": "L4JBTPQU26AGKYAX43CXKB7GXGWN2FSN"
+    },
+    {
+      "timestamp": "2018-03-24T23:03:21Z",
+      "url": "http://effecty.com/",
+      "status": "200",
+      "digest": "XDV4DKNEJYC6ATYCFQ3PHUNHEZKIXFMK"
+    },
+    {
+      "timestamp": "2018-08-06T08:10:44Z",
+      "url": "http://effecty.com/",
+      "status": "403",
+      "digest": "H4AJVRYMBC2EANAGZXIDROY2N3MUWCB7"
+    },
+    {
+      "timestamp": "2018-12-27T04:01:22Z",
+      "url": "http://effecty.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2019-01-21T17:38:00Z",
+      "url": "https://effecty.com/",
+      "status": "200",
+      "digest": "3OESMHWIQZPOTGT7PVLY5DWWTE65WVYG"
+    },
+    {
+      "timestamp": "2019-04-04T02:30:01Z",
+      "url": "http://www.effecty.com:80/",
+      "status": "200",
+      "digest": "MP5C4KQZNBL4WUBD7GOX4UT77UDSDMAU"
+    },
+    {
+      "timestamp": "2021-12-02T10:29:46Z",
+      "url": "http://effecty.com/",
+      "status": "302",
+      "digest": "BAUNPEJVK4ZHMAC3AS7EFV42RIZJCKJL"
+    },
+    {
+      "timestamp": "2023-10-30T22:25:51Z",
+      "url": "http://www.effecty.com/",
+      "status": "404",
+      "digest": "FCXCXJS4ZW2YHV47QW4MZFIJ7LTJOSJ3"
+    },
+    {
+      "timestamp": "2024-01-08T21:43:04Z",
+      "url": "http://effecty.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-05-28T01:52:36Z",
+      "url": "https://effecty.com/",
+      "status": "200",
+      "digest": "6VRNIQ3HMH4L65CRRNNCZZDXZTKZEKVW"
+    },
+    {
+      "timestamp": "2024-09-04T20:35:47Z",
+      "url": "http://effecty.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-09-04T20:35:47Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "NIQEDXT24KOVKIXWFPKCCSKTZZCDJRAM"
+    },
+    {
+      "timestamp": "2024-09-04T23:58:43Z",
+      "url": "https://effecty.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-09-05T04:09:43Z",
+      "url": "http://www.effecty.com/",
+      "status": "200",
+      "digest": "QJCFYBO3KRBDN46WSORWLX4AN5TPJQXX"
+    },
+    {
+      "timestamp": "2024-09-23T06:50:31Z",
+      "url": "https://effecty.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-10-04T05:27:18Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "EMFTNQVPUMH62QUIIIQX2FPD4BQMFC5A"
+    },
+    {
+      "timestamp": "2024-11-26T19:33:26Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "75CFI474RQXH7KXYYLNBNWYT4TIE72T4"
+    },
+    {
+      "timestamp": "2024-11-29T01:15:29Z",
+      "url": "http://effecty.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-12-13T00:01:17Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "XN34OPAE4CHHG7MAHFRHZ64XCUNAWZSB"
+    },
+    {
+      "timestamp": "2024-12-13T10:19:13Z",
+      "url": "http://www.effecty.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-01-15T21:41:08Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "ST4KUNF5TJ6OMAVOWRCYNTKAH4R4F2JE"
+    },
+    {
+      "timestamp": "2025-01-22T07:38:31Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "34W32QLBU5HZJJNKCASOC5275M2MDQ74"
+    },
+    {
+      "timestamp": "2025-02-15T21:31:44Z",
+      "url": "http://effecty.com/",
+      "status": "301",
+      "digest": "TICV2GKYHLHUWOKQTDKBYHSOPO4L3MB7"
+    },
+    {
+      "timestamp": "2025-02-16T03:33:24Z",
+      "url": "https://effecty.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-02-16T03:33:52Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "HAATZFWJIN3UMAPBDDIPAEPJA7D7YUVM"
+    },
+    {
+      "timestamp": "2025-02-16T20:32:36Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "EJFRKA3I4PQQOQQXW6B47EIZ7IV4JLH3"
+    },
+    {
+      "timestamp": "2025-02-26T10:39:02Z",
+      "url": "http://effecty.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-02-26T10:39:02Z",
+      "url": "https://effecty.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-02-26T10:39:03Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "HHR6T5HIRMQQDLN6KPVP7TFQDXAW4WCO"
+    },
+    {
+      "timestamp": "2025-02-26T16:42:58Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "SZMF3N3CGKKTGV2EYATTF2USTBGUFI4G"
+    },
+    {
+      "timestamp": "2025-02-27T03:04:08Z",
+      "url": "http://www.effecty.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-02-27T12:46:31Z",
+      "url": "https://effecty.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-05-14T03:03:25Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "6DTIZTQDR3BQLFMEKAHQ6E6ZRHWIT6RP"
+    },
+    {
+      "timestamp": "2025-05-15T22:18:39Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "V5SIF4C676EVB2OGCXKOE7ERK3P2B2EQ"
+    },
+    {
+      "timestamp": "2025-06-21T23:06:09Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "AWSQ2LFSBEX63PJ3UTVGNE3DD6LQEW6F"
+    },
+    {
+      "timestamp": "2025-07-11T06:09:57Z",
+      "url": "http://effecty.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-08-02T10:17:58Z",
+      "url": "https://effecty.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-08-02T14:45:15Z",
+      "url": "https://www.effecty.com/",
+      "status": "-",
+      "digest": "RULGFXXKVHNTET7HJ6EQD5VVC4WHIDN5"
+    },
+    {
+      "timestamp": "2025-08-04T06:10:35Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "5XSQ4VGSGIPYJESVJH5XM6CTMGK2R5AQ"
+    },
+    {
+      "timestamp": "2025-09-06T13:15:53Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "24W5WRWFF4ZEL7BTANHEUVCLKZR3ZUGA"
+    },
+    {
+      "timestamp": "2025-10-17T16:54:39Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "MOO4U3SXVCHWEZ3JEPPIRX6P7J2SYJPS"
+    },
+    {
+      "timestamp": "2025-11-12T01:44:51Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "DKWIWCUPHOCM6GH7JVOPBW7GV2WE5RSP"
+    },
+    {
+      "timestamp": "2025-12-13T13:07:36Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "MQOJZ5CFDSBLLO76LG2H5SUJNEBHAMXX"
+    },
+    {
+      "timestamp": "2025-12-28T00:01:30Z",
+      "url": "https://effecty.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-12-29T07:20:42Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "XYDEKSACKBWRJQ5XENFYM3MEEADHCL46"
+    },
+    {
+      "timestamp": "2026-01-13T21:34:35Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "ZIUJXFFKTDTMO4BH4JNKRTF2OMV4HPTA"
+    },
+    {
+      "timestamp": "2026-01-14T22:56:18Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "RSWFKYA5VIRJWKEL3ENUCTRDVBBTIZEM"
+    },
+    {
+      "timestamp": "2026-02-13T00:51:35Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "3X3XHJ3RZ5DTQMJU7T53LT623NOVOAB7"
+    },
+    {
+      "timestamp": "2026-03-06T08:21:40Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "TCIPVA4B35WFB3HGKUVNKAMUVRPGZ23H"
+    },
+    {
+      "timestamp": "2026-05-19T18:48:44Z",
+      "url": "https://www.effecty.com/",
+      "status": "200",
+      "digest": "LINILX2MCTANEZ6ZNVBSQ4SUEMKFPLNR"
+    }
+  ]
+}

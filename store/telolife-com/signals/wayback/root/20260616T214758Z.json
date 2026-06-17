@@ -1,0 +1,349 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:47:58Z",
+  "ok": true,
+  "input": {
+    "url": "https://telolife.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2004-03-12T04:56:00Z",
+  "last_seen": "2026-05-21T04:58:56Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 8131,
+  "snapshot_count": 37,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2004-03-12T04:56:00Z",
+      "to": "2009-06-29T04:55:40Z"
+    },
+    {
+      "status": "301",
+      "from": "2011-02-02T02:22:34Z",
+      "to": "2011-02-02T02:22:34Z"
+    },
+    {
+      "status": "200",
+      "from": "2017-02-04T15:45:11Z",
+      "to": "2017-02-04T15:45:11Z"
+    },
+    {
+      "status": "301",
+      "from": "2017-04-20T15:41:52Z",
+      "to": "2017-09-11T16:31:22Z"
+    },
+    {
+      "status": "302",
+      "from": "2018-01-28T16:23:21Z",
+      "to": "2018-01-28T16:23:21Z"
+    },
+    {
+      "status": "403",
+      "from": "2018-03-23T15:21:17Z",
+      "to": "2018-03-23T15:21:17Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-12-27T09:48:44Z",
+      "to": "2021-12-27T09:48:44Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-08-01T12:24:15Z",
+      "to": "2024-08-01T12:24:15Z"
+    },
+    {
+      "status": "404",
+      "from": "2024-08-01T12:24:15Z",
+      "to": "2024-08-01T12:24:15Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-01-22T19:56:18Z",
+      "to": "2025-02-19T21:57:21Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-19T21:57:24Z",
+      "to": "2025-02-19T21:57:24Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-20T05:27:26Z",
+      "to": "2025-03-14T22:15:02Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-14T22:15:20Z",
+      "to": "2025-03-14T22:15:20Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-17T10:48:17Z",
+      "to": "2025-03-17T10:48:17Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-17T10:48:19Z",
+      "to": "2025-03-23T15:19:31Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-23T15:27:32Z",
+      "to": "2025-03-23T15:27:32Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-23T15:27:32Z",
+      "to": "2025-03-23T15:27:32Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-23T15:52:45Z",
+      "to": "2025-03-28T14:12:43Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-28T14:12:43Z",
+      "to": "2025-03-28T14:12:43Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-28T22:53:59Z",
+      "to": "2025-07-13T21:20:57Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-04T13:06:06Z",
+      "to": "2026-05-21T04:58:56Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20040312045600/http://www.telolife.com:80/",
+  "last_snapshot_url": "https://web.archive.org/web/20260521045856/https://www.telolife.com/",
+  "snapshots": [
+    {
+      "timestamp": "2004-03-12T04:56:00Z",
+      "url": "http://www.telolife.com:80/",
+      "status": "200",
+      "digest": "2OZKTDUNZFVL5RTFMVEXPO4ALWXLDZJE"
+    },
+    {
+      "timestamp": "2004-11-25T22:11:58Z",
+      "url": "http://www.telolife.com:80/",
+      "status": "200",
+      "digest": "Z2T3H6IZWLJNCZP6OGM2SFMKPRFNCP6W"
+    },
+    {
+      "timestamp": "2009-06-29T04:55:40Z",
+      "url": "http://www.telolife.com:80/",
+      "status": "200",
+      "digest": "RCPOLDP545VRHVIWEWGMIOLR6W4JIILP"
+    },
+    {
+      "timestamp": "2011-02-02T02:22:34Z",
+      "url": "http://telolife.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2017-02-04T15:45:11Z",
+      "url": "http://www.telolife.com:80/",
+      "status": "200",
+      "digest": "OEOJT2W4EN3MPBS4XSVRYFKIRQMSLVZZ"
+    },
+    {
+      "timestamp": "2017-04-20T15:41:52Z",
+      "url": "http://telolife.com/",
+      "status": "301",
+      "digest": "V6Z3WF6OYZYOM4W277TASBMK3BR3E27E"
+    },
+    {
+      "timestamp": "2017-09-11T16:31:22Z",
+      "url": "http://telolife.com/",
+      "status": "301",
+      "digest": "6ZNK7A4VZS44RQWZNHLYGXYKRE4JNGNM"
+    },
+    {
+      "timestamp": "2018-01-28T16:23:21Z",
+      "url": "http://telolife.com:80/",
+      "status": "302",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2018-03-23T15:21:17Z",
+      "url": "http://telolife.com/",
+      "status": "403",
+      "digest": "JPYNP3FXA4BYK7DQFF2U7IBKOSLDCO3D"
+    },
+    {
+      "timestamp": "2021-12-27T09:48:44Z",
+      "url": "http://telolife.com/",
+      "status": "200",
+      "digest": "C2N2OZ6CORQ5LMSJLMQF4VDE4QDWNR3C"
+    },
+    {
+      "timestamp": "2024-08-01T12:24:15Z",
+      "url": "http://www.telolife.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-08-01T12:24:15Z",
+      "url": "https://www.telolife.com/",
+      "status": "404",
+      "digest": "QVOFHXX45C5ICFLBZN535ZFBDCGM5HM7"
+    },
+    {
+      "timestamp": "2025-01-22T19:56:18Z",
+      "url": "http://www.telolife.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-02-19T21:57:20Z",
+      "url": "http://telolife.com/",
+      "status": "301",
+      "digest": "TICV2GKYHLHUWOKQTDKBYHSOPO4L3MB7"
+    },
+    {
+      "timestamp": "2025-02-19T21:57:21Z",
+      "url": "https://telolife.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-02-19T21:57:24Z",
+      "url": "https://www.telolife.com/",
+      "status": "200",
+      "digest": "THJLROAZA2WEQ5NGQXNJM5R2KEOL6GNN"
+    },
+    {
+      "timestamp": "2025-02-20T05:27:26Z",
+      "url": "https://telolife.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-14T22:15:02Z",
+      "url": "http://telolife.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-14T22:15:02Z",
+      "url": "https://telolife.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-14T22:15:20Z",
+      "url": "https://www.telolife.com/",
+      "status": "200",
+      "digest": "2KOSYHYGZUWLKM7ASC7MWKFD2ZVEVUFG"
+    },
+    {
+      "timestamp": "2025-03-17T10:48:17Z",
+      "url": "http://www.telolife.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-17T10:48:19Z",
+      "url": "https://www.telolife.com/",
+      "status": "200",
+      "digest": "2KOSYHYGZUWLKM7ASC7MWKFD2ZVEVUFG"
+    },
+    {
+      "timestamp": "2025-03-23T15:19:31Z",
+      "url": "https://www.telolife.com/",
+      "status": "200",
+      "digest": "EMKPPAJC6FCGBCBY63W5TJ6FZWJ2KDRV"
+    },
+    {
+      "timestamp": "2025-03-23T15:27:32Z",
+      "url": "https://telolife.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-23T15:27:32Z",
+      "url": "https://www.telolife.com/",
+      "status": "200",
+      "digest": "EMKPPAJC6FCGBCBY63W5TJ6FZWJ2KDRV"
+    },
+    {
+      "timestamp": "2025-03-23T15:52:45Z",
+      "url": "http://www.telolife.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-28T14:12:43Z",
+      "url": "https://telolife.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-28T14:12:43Z",
+      "url": "https://www.telolife.com/",
+      "status": "200",
+      "digest": "EMKPPAJC6FCGBCBY63W5TJ6FZWJ2KDRV"
+    },
+    {
+      "timestamp": "2025-03-28T22:53:59Z",
+      "url": "http://telolife.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-28T22:53:59Z",
+      "url": "https://telolife.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-07-13T21:20:57Z",
+      "url": "http://telolife.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-08-04T13:06:06Z",
+      "url": "https://www.telolife.com/",
+      "status": "200",
+      "digest": "RWJDP3SYXZEKJ5LIC2S7AFPFF3Q4SE7K"
+    },
+    {
+      "timestamp": "2025-10-08T13:37:12Z",
+      "url": "https://telolife.com/",
+      "status": "200",
+      "digest": "SM4BTZQCS5ZB4PIQWRED6U7D5DY6QSEZ"
+    },
+    {
+      "timestamp": "2025-10-10T12:29:32Z",
+      "url": "https://telolife.com/",
+      "status": "200",
+      "digest": "RN4KSLKS7X5XYSXEP24MDXNGTSRDULF4"
+    },
+    {
+      "timestamp": "2025-11-17T13:07:54Z",
+      "url": "https://telolife.com/",
+      "status": "200",
+      "digest": "MI3WWR42PPOD7FB325YN2IZXCY7CFMSU"
+    },
+    {
+      "timestamp": "2025-12-08T07:47:44Z",
+      "url": "https://telolife.com/",
+      "status": "200",
+      "digest": "3O3EGU33VEVWAQVZMNTIUUU5OKWLDIC5"
+    },
+    {
+      "timestamp": "2026-05-21T04:58:56Z",
+      "url": "https://www.telolife.com/",
+      "status": "200",
+      "digest": "2N7M6DM7FIUW2ZX355E3HEWWNS2GLF25"
+    }
+  ]
+}

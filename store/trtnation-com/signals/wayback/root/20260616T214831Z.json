@@ -1,0 +1,1273 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:48:31Z",
+  "ok": true,
+  "input": {
+    "url": "https://trtnation.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2017-05-20T22:14:43Z",
+  "last_seen": "2026-02-03T03:25:24Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 3313,
+  "snapshot_count": 161,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "302",
+      "from": "2017-05-20T22:14:43Z",
+      "to": "2017-09-14T21:45:47Z"
+    },
+    {
+      "status": "200",
+      "from": "2020-01-21T16:52:38Z",
+      "to": "2021-05-27T22:04:39Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-06-02T06:47:18Z",
+      "to": "2021-06-02T06:47:18Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-06-02T06:47:20Z",
+      "to": "2021-11-30T11:18:11Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-28T22:54:15Z",
+      "to": "2021-12-28T22:54:15Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-01-21T15:14:11Z",
+      "to": "2023-01-05T01:11:09Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-01-09T21:27:58Z",
+      "to": "2023-01-09T21:27:58Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-02-05T00:20:22Z",
+      "to": "2023-03-11T10:26:43Z"
+    },
+    {
+      "status": "-",
+      "from": "2023-03-24T09:30:02Z",
+      "to": "2023-03-24T09:30:02Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-03-26T20:54:29Z",
+      "to": "2023-04-03T10:42:22Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-05-02T22:38:26Z",
+      "to": "2023-05-02T22:38:26Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-05-06T03:19:09Z",
+      "to": "2023-05-06T03:19:09Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-05-10T21:42:17Z",
+      "to": "2023-05-10T21:42:17Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-06-01T20:36:29Z",
+      "to": "2023-09-29T19:22:02Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-11-02T15:24:00Z",
+      "to": "2023-11-02T15:24:00Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-11-16T16:47:30Z",
+      "to": "2024-02-28T09:12:52Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-02-28T09:14:04Z",
+      "to": "2024-02-28T09:14:04Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-02-29T07:36:14Z",
+      "to": "2024-03-24T08:55:11Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-03-24T08:55:20Z",
+      "to": "2024-03-24T08:55:20Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-03-24T08:55:32Z",
+      "to": "2024-03-24T08:55:32Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-04-25T02:08:09Z",
+      "to": "2024-05-10T22:11:18Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-05-10T22:11:45Z",
+      "to": "2024-05-10T22:11:45Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-10T22:21:45Z",
+      "to": "2024-05-10T22:21:45Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-05-10T22:21:55Z",
+      "to": "2024-05-10T22:21:55Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-10T22:41:23Z",
+      "to": "2024-07-22T22:29:34Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-07-24T11:08:07Z",
+      "to": "2024-07-24T11:08:07Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-07-24T11:08:07Z",
+      "to": "2024-07-24T20:25:09Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-07-24T20:25:13Z",
+      "to": "2024-07-24T20:25:13Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-07-29T18:53:33Z",
+      "to": "2024-08-14T18:26:28Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-05T12:48:52Z",
+      "to": "2024-09-05T12:48:52Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-05T12:48:54Z",
+      "to": "2024-09-15T14:14:12Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-16T05:51:37Z",
+      "to": "2024-09-16T05:51:37Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-16T05:51:38Z",
+      "to": "2024-12-14T20:27:31Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-12-16T08:37:01Z",
+      "to": "2024-12-16T08:37:01Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-16T08:37:02Z",
+      "to": "2024-12-16T08:37:02Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-01-01T13:40:07Z",
+      "to": "2025-01-01T13:40:07Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-04T14:47:40Z",
+      "to": "2025-01-04T14:47:40Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-01-14T15:00:11Z",
+      "to": "2025-01-14T15:00:11Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-14T16:52:57Z",
+      "to": "2025-02-10T10:59:28Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-16T10:04:57Z",
+      "to": "2025-02-16T10:04:57Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-16T10:04:58Z",
+      "to": "2025-02-20T19:19:46Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-03-01T12:19:45Z",
+      "to": "2025-03-01T12:19:45Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-01T12:19:45Z",
+      "to": "2025-03-01T12:19:45Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-03-12T07:19:42Z",
+      "to": "2025-03-12T07:19:42Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-12T07:19:42Z",
+      "to": "2025-03-12T07:19:42Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-15T00:38:08Z",
+      "to": "2025-03-15T00:38:08Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-15T00:38:09Z",
+      "to": "2025-03-28T13:26:21Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-03-28T18:23:42Z",
+      "to": "2025-03-28T18:23:42Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-28T18:23:42Z",
+      "to": "2025-05-28T12:35:07Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-05-30T19:15:04Z",
+      "to": "2025-05-30T19:15:04Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-05-30T19:15:04Z",
+      "to": "2025-12-18T00:04:06Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-01-07T13:10:09Z",
+      "to": "2026-01-07T13:10:09Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-01-07T13:10:12Z",
+      "to": "2026-01-07T13:10:12Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-01-15T11:30:24Z",
+      "to": "2026-01-15T11:30:24Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-01-16T14:45:17Z",
+      "to": "2026-01-30T17:15:24Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-01-31T00:09:31Z",
+      "to": "2026-01-31T00:09:31Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-01-31T00:09:34Z",
+      "to": "2026-02-03T03:25:24Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20170520221443/http://trtnation.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260203032524/https://trtnation.com/",
+  "snapshots": [
+    {
+      "timestamp": "2017-05-20T22:14:43Z",
+      "url": "http://trtnation.com/",
+      "status": "302",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2017-09-14T21:45:47Z",
+      "url": "http://trtnation.com/",
+      "status": "302",
+      "digest": "2GPG2WGZ42J3SU4OLQ3GKGYWMO7Y7O7G"
+    },
+    {
+      "timestamp": "2020-01-21T16:52:38Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "2PSE6FHLBGGLNPPMMBUFRVPUWCGJQD37"
+    },
+    {
+      "timestamp": "2021-05-27T22:04:39Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "DDMWGMZTSVM6ACYP7V4KWIDTQDTRUO6P"
+    },
+    {
+      "timestamp": "2021-06-02T06:47:18Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2021-06-02T06:47:20Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "JXUJ4PB5DHSNN7TG2C6BZXN6DMTFJ23Q"
+    },
+    {
+      "timestamp": "2021-10-25T15:54:35Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "VLW5DEIEAXVPPLO254DOIQEBB3OJJ2XL"
+    },
+    {
+      "timestamp": "2021-11-15T06:35:59Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "REURCCPTTICVCIYRCC2FUJ2TIRLX6RYU"
+    },
+    {
+      "timestamp": "2021-11-30T11:18:11Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "POLQCVR5EMOTTAUBL7H7YJBONBMGI5RT"
+    },
+    {
+      "timestamp": "2021-12-28T22:54:15Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-01-21T15:14:11Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "4LB2JJVX4U42EUCF7J3VAVKMSTTYLKGK"
+    },
+    {
+      "timestamp": "2022-01-22T07:44:43Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "GXGYAFHIQAD6XQUG3AXUUY4AAFJZHHO3"
+    },
+    {
+      "timestamp": "2022-02-01T17:12:24Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "IMGZZXADR2NMPFOXB4TM2KL4L2SH7JHC"
+    },
+    {
+      "timestamp": "2022-02-04T01:02:33Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "M7TP3RV4ZUNXO7S4R3UZ37AAJZXWX2RE"
+    },
+    {
+      "timestamp": "2022-04-02T08:49:17Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "43LSG2BPNZF4PHKRYW54AXC6OZMJ757A"
+    },
+    {
+      "timestamp": "2022-05-04T20:00:58Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "MLLVGUJ3TBANHPTKBHRDZJ6F33HWXXIG"
+    },
+    {
+      "timestamp": "2022-05-27T02:11:10Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "5UHC3W2U5VIKI5RXAJFEIAYMYGNMPWUN"
+    },
+    {
+      "timestamp": "2022-06-19T23:08:51Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "L66KXYIAQGJGHN5HK7JD7TL6ZFU7YPVJ"
+    },
+    {
+      "timestamp": "2022-06-26T04:11:58Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "MTAH7ZA4LJTVDPYKHQ5XSAOUVDDQXK3B"
+    },
+    {
+      "timestamp": "2022-07-01T15:01:14Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "XB3JKPGJ6SCNLOHMZMWPCQLN5ZUHCY7M"
+    },
+    {
+      "timestamp": "2022-07-06T00:09:20Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "VLAEOEYNJIIZH7VGJXZL4XEF5ICPIHJF"
+    },
+    {
+      "timestamp": "2022-08-08T09:34:03Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "HEHY64CRW33TQPFTVZ4XI3XVCWJXA2NT"
+    },
+    {
+      "timestamp": "2022-08-16T01:06:31Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "VKFX726LR423VNXAIENQKPYXTZXA4N6P"
+    },
+    {
+      "timestamp": "2022-09-01T01:42:58Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "5RJY3WWMAJXL7WIEP3N7UWVH473K2FFO"
+    },
+    {
+      "timestamp": "2022-09-23T13:20:01Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "6DY2XFW7FWYJ3Q25VMCXRN3CSMCZ453X"
+    },
+    {
+      "timestamp": "2022-10-05T21:18:36Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "TJLBPOW5SXULGE65AKA5NQL7O7RPEBO7"
+    },
+    {
+      "timestamp": "2022-10-07T05:09:32Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "LHB25YIMRBZSPM3EGSVZF5I7V4VPHANF"
+    },
+    {
+      "timestamp": "2022-10-23T05:53:25Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "XA4DEQHG5GGSL32YKN76YVXAC6TERO4Q"
+    },
+    {
+      "timestamp": "2022-11-05T01:06:01Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "D6KQDI4JJ556OZSDUN5SNZP6YB5RKR3G"
+    },
+    {
+      "timestamp": "2022-11-09T10:59:09Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "66PXS5AQ3E2PYFUALXI5U3SPQPDE3GHH"
+    },
+    {
+      "timestamp": "2022-12-04T00:58:29Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "HXZRJGHDOQ2AIKR3F44CH75Y6PW6OKDQ"
+    },
+    {
+      "timestamp": "2022-12-04T16:32:22Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "ZLMOIHYZHY7IHEN3SYGQGRLWAWN3WU23"
+    },
+    {
+      "timestamp": "2022-12-12T23:05:31Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "QMWEYYHSZWUSBIX3L7DIOPRZHPFCJJRF"
+    },
+    {
+      "timestamp": "2022-12-14T18:30:15Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "MMR5R7GY5AA5QAQU45AAZY2LCOEYME5Y"
+    },
+    {
+      "timestamp": "2023-01-05T01:11:09Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "HMRV3W7ZUEUUTFTRC5EDYOREQITSTHWS"
+    },
+    {
+      "timestamp": "2023-01-09T21:27:58Z",
+      "url": "http://www.trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-02-05T00:20:22Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "G2XQ2TUVOV4T2IS4NNGYO6YHZX3S5P5H"
+    },
+    {
+      "timestamp": "2023-02-09T22:09:23Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "FWKAFVOV26QN6YJKXEOQMHCSMCP4224E"
+    },
+    {
+      "timestamp": "2023-03-11T10:26:43Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "64ZYQITO5Q6WZTRVSNBDE42D25BYRAZM"
+    },
+    {
+      "timestamp": "2023-03-24T09:30:02Z",
+      "url": "http://www.trtnation.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-03-26T20:54:29Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "ZOBFISHABOFG5NSTBBATJSMA7CIVLO2Q"
+    },
+    {
+      "timestamp": "2023-04-03T10:42:22Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "VHUNBEXQAIJNLYM4IGUP3AEJLFAQCZJN"
+    },
+    {
+      "timestamp": "2023-05-02T22:38:26Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-05-06T03:19:09Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "B34VUWRA5NXS3JSCYIV4JKKGLUCZB75S"
+    },
+    {
+      "timestamp": "2023-05-10T21:42:17Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-06-01T20:36:29Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "S77Y3N6A6E25EYUNSAFZ4CHH5JY5BT77"
+    },
+    {
+      "timestamp": "2023-06-07T08:06:39Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "YTRRR5G7TAIBHYEJ44TQPL7FRO3C34XJ"
+    },
+    {
+      "timestamp": "2023-07-03T08:38:29Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "IHK3ATQYU2WPZSURBCP2FXKE7SMM7C76"
+    },
+    {
+      "timestamp": "2023-07-28T16:38:25Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "N3DE3M4UPLWWF24HF7ZBDDNYGHOAUGVX"
+    },
+    {
+      "timestamp": "2023-08-02T19:52:17Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "RKZUHRMJOISQCOGWCPJPN4HJ6R234SZE"
+    },
+    {
+      "timestamp": "2023-09-29T19:22:02Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "WH347AQTHLRWHB3NLF6HLVBUAUROMYRM"
+    },
+    {
+      "timestamp": "2023-11-02T15:24:00Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-11-16T16:47:30Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "MTI4J4U2Z6HD7PMNGCOIBT44NDNIZR3T"
+    },
+    {
+      "timestamp": "2023-12-09T23:52:19Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "Q76Y3XZECI5C7LDHLL3ZSZCVIKJWCPBN"
+    },
+    {
+      "timestamp": "2024-01-13T19:42:06Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "4WMFXTX2RJLE43H5OGHYW4S6WHWC5HUR"
+    },
+    {
+      "timestamp": "2024-02-28T09:12:52Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "YPQIO2RXCGFJ5XS6ISJWILF6CCJZFT5A"
+    },
+    {
+      "timestamp": "2024-02-28T09:14:04Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-02-29T07:36:14Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "CL5Y3Y74B4EQ5NI42F2FRWHTRDGESYWZ"
+    },
+    {
+      "timestamp": "2024-03-24T08:55:10Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "PICWKSKWUSHCA4OG7EDMVPLPWTXX3OLY"
+    },
+    {
+      "timestamp": "2024-03-24T08:55:11Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "3CNQDR3FUSQKZQSH7MYDMBTICETC7ITR"
+    },
+    {
+      "timestamp": "2024-03-24T08:55:20Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-03-24T08:55:32Z",
+      "url": "https://trtnation.com/",
+      "status": "-",
+      "digest": "3CNQDR3FUSQKZQSH7MYDMBTICETC7ITR"
+    },
+    {
+      "timestamp": "2024-04-25T02:08:09Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "5EXNFM2XTQZNW4WSUSOL47MKWAGLB4DK"
+    },
+    {
+      "timestamp": "2024-05-10T22:11:18Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "MQOGHYOZ2XXUTHI4RBKKH62O2KBCNCAR"
+    },
+    {
+      "timestamp": "2024-05-10T22:11:45Z",
+      "url": "http://www.trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-05-10T22:21:45Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "MKXUJHEHE4H7LVAXHIQJMM2BDQEL26N4"
+    },
+    {
+      "timestamp": "2024-05-10T22:21:55Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-05-10T22:41:23Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "MKXUJHEHE4H7LVAXHIQJMM2BDQEL26N4"
+    },
+    {
+      "timestamp": "2024-05-22T17:07:54Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "SL6PQSYWNI46LO5OQUYSRQU3NLH6AXVO"
+    },
+    {
+      "timestamp": "2024-05-29T20:22:07Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "45PBCSQ4DED33O5BYUK5YTMZLOPT7GZQ"
+    },
+    {
+      "timestamp": "2024-05-30T16:58:40Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "IKOHSRE75Z2ZZEK35ZDOWGGZVLGIF4GA"
+    },
+    {
+      "timestamp": "2024-06-01T13:41:58Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "IJZZSNRRUSM3TGXA34NWJL7OREQU4A5E"
+    },
+    {
+      "timestamp": "2024-07-03T12:29:51Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "H4P5FGL6SZQLM6VIRTVPFS65IQRA44G4"
+    },
+    {
+      "timestamp": "2024-07-08T03:06:44Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "EHDI6MVK6CEFRLTZH4SGJK3JX2CPQC7G"
+    },
+    {
+      "timestamp": "2024-07-22T22:29:34Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "FQ4V3RC74ITH4IL4BXJF3WNQXT7JFHSC"
+    },
+    {
+      "timestamp": "2024-07-24T11:08:07Z",
+      "url": "http://www.trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-07-24T11:08:07Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "NBN4DE6IBH54A46TEZTFADE4QGBUYIIH"
+    },
+    {
+      "timestamp": "2024-07-24T20:25:09Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "YZKDLRATMGHZ24L2AEQVE6AF47FTKKYV"
+    },
+    {
+      "timestamp": "2024-07-24T20:25:13Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-07-29T18:53:33Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "OW3HJIM3BBZEYHYUHM2FMCIOTJNRIEOC"
+    },
+    {
+      "timestamp": "2024-08-06T11:12:42Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "WE2YZK6UMVQOUVYCQCN3SN34GCCMPIGS"
+    },
+    {
+      "timestamp": "2024-08-14T18:26:28Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "AZFVM6IRC7L6MBDRK66NAQ6NYIL2IMJ6"
+    },
+    {
+      "timestamp": "2024-09-05T12:48:52Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-09-05T12:48:54Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "7P6DUDIYXW2AOTDUY5ARJJ2JZEEM3CPD"
+    },
+    {
+      "timestamp": "2024-09-05T16:05:04Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "JFGCXM3NDU4LXYJJAF7K3L7XGXF3YZGA"
+    },
+    {
+      "timestamp": "2024-09-09T04:25:45Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "KJ6C6U4RG3GNQJASG6PLWCFSJZ5R3N3T"
+    },
+    {
+      "timestamp": "2024-09-15T14:14:12Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "XWWXAW2MCQPLD2WEDBVTDDRNSMDV5DLX"
+    },
+    {
+      "timestamp": "2024-09-16T05:51:37Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-09-16T05:51:38Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "FCAQ6VEND5KVRXPSHYMU6GCVWAQLZFHT"
+    },
+    {
+      "timestamp": "2024-10-01T02:03:45Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "LSVYNYCZH72QJSDMAQISUVGLHBNUTNP3"
+    },
+    {
+      "timestamp": "2024-10-07T22:50:44Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "USRUQSKOS46JHJKEP22C7CWOIDPELTZN"
+    },
+    {
+      "timestamp": "2024-11-01T15:19:19Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "2DAHTCN4JY2CYVAXWCVIC3OEOIPMJDHD"
+    },
+    {
+      "timestamp": "2024-11-06T07:19:03Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "DFYB555KHF6ZFZKZU3XHIYM43QCSIXYB"
+    },
+    {
+      "timestamp": "2024-11-15T04:50:57Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "BGOOSAYD3BBUHEZTCCFDNOFDP6YJ67XB"
+    },
+    {
+      "timestamp": "2024-11-15T07:20:59Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "HDGNTWI6U3LUQNGYJSUDQ6FR4WNV3RC2"
+    },
+    {
+      "timestamp": "2024-12-02T13:11:51Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "N7EGHLVBSUMIML43A5IY7TY4UERNGCQS"
+    },
+    {
+      "timestamp": "2024-12-14T20:27:31Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "6H4O4PFFVKH4SEWRWRQ5TE6UF4Y56IC3"
+    },
+    {
+      "timestamp": "2024-12-16T08:37:01Z",
+      "url": "http://www.trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-12-16T08:37:02Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "MUDAFFCB6W6RUEJN45IPNBLVG45PXORO"
+    },
+    {
+      "timestamp": "2025-01-01T13:40:07Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-01-04T14:47:40Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "PTQDHGGGXDAWPCEBRQ5E7RYBIX2MJMTC"
+    },
+    {
+      "timestamp": "2025-01-14T15:00:11Z",
+      "url": "http://www.trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-01-14T16:52:57Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "M6GE2PQHPPIM6A322ZVVJFAG5J6PVAHM"
+    },
+    {
+      "timestamp": "2025-01-25T21:51:12Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "FMYN3TNAKK24GCCIQ7EYLROHCE7R7GNF"
+    },
+    {
+      "timestamp": "2025-01-25T23:26:44Z",
+      "url": "https://trtnation.com",
+      "status": "200",
+      "digest": "RYAJRTMSB7ELNLJVQEHKKVNXHTZF2BY3"
+    },
+    {
+      "timestamp": "2025-01-26T05:40:31Z",
+      "url": "https://trtnation.com",
+      "status": "200",
+      "digest": "YYLKDBDI25EEVYJTHV556ONZGRFO54ZB"
+    },
+    {
+      "timestamp": "2025-02-07T18:36:39Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "YQY3554C4EDZB7GV5ANGLI6K4LVHI472"
+    },
+    {
+      "timestamp": "2025-02-10T10:59:28Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "WV7OLWUUK4S7VEQFLXVCCOKVDLTF6PDJ"
+    },
+    {
+      "timestamp": "2025-02-16T10:04:57Z",
+      "url": "http://www.trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-02-16T10:04:58Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "GUQYZZ5Z7PZLI54L454NE3WEY6GQPG47"
+    },
+    {
+      "timestamp": "2025-02-16T16:22:03Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "4PABIHQWES7FS5I2NHMZGPU7IYE44VCG"
+    },
+    {
+      "timestamp": "2025-02-19T10:50:27Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "FP5AFOA7F7ZS3QX3I2VFJ2ZBEEZNCFNR"
+    },
+    {
+      "timestamp": "2025-02-20T19:15:58Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "VHBGX3LNBE2RAEN7NAMFKIOBYYR4M32T"
+    },
+    {
+      "timestamp": "2025-02-20T19:19:46Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "SKH57JDIRRYGC3YWJVV5TGR25B6PHMH3"
+    },
+    {
+      "timestamp": "2025-03-01T12:19:45Z",
+      "url": "http://trtnation.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-03-01T12:19:45Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "MH4VKASGOLLQNREG3G3S3O2PDJ4UGVFJ"
+    },
+    {
+      "timestamp": "2025-03-01T12:19:45Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "VXVZOX3IGAC7X7SXCWCVH2WEWX6YQ2CQ"
+    },
+    {
+      "timestamp": "2025-03-12T07:19:42Z",
+      "url": "http://TRTNation.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-03-12T07:19:42Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "A34D3KW3P27LC5KHCDUG2V7UT6BJPIKB"
+    },
+    {
+      "timestamp": "2025-03-15T00:38:08Z",
+      "url": "http://www.trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-03-15T00:38:09Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "EWZY3SVKTFUOCPK3MXXOFFOBYU2ULVOK"
+    },
+    {
+      "timestamp": "2025-03-15T00:38:19Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "4YNBJIGA7CLWN2WGTCBZ64BTCGXPXKQL"
+    },
+    {
+      "timestamp": "2025-03-19T11:58:28Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "ZTDGEDAX7VXULZ7NDZVEQ3Z24FVELGEA"
+    },
+    {
+      "timestamp": "2025-03-21T20:01:27Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "M3XEWLVGE7OP2Y4FMRTPYCQY4GC2IC6E"
+    },
+    {
+      "timestamp": "2025-03-28T13:26:21Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "NDIHZBDDUDTNOI542GL6JKH67FTETBLL"
+    },
+    {
+      "timestamp": "2025-03-28T18:23:42Z",
+      "url": "http://trtnation.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-03-28T18:23:42Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "55OH3P6MW6FDCYQSXOR4AYBHSYU2P2LI"
+    },
+    {
+      "timestamp": "2025-04-01T18:37:38Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "NAFV24RYV5DFAFWBRG7YYD63KSLMH45E"
+    },
+    {
+      "timestamp": "2025-04-18T23:37:35Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "LBIHBEBW6RU5VFUINNQCJJ5IGA6L42XZ"
+    },
+    {
+      "timestamp": "2025-04-29T18:04:53Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "HY372FFRUYOBR5SYCQGLAS6UT2DHOBDS"
+    },
+    {
+      "timestamp": "2025-05-05T13:48:33Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "FUQOST6MBV32PFG3J62SHDIKAJBBE6AR"
+    },
+    {
+      "timestamp": "2025-05-28T12:35:07Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "AIA324G22FEQNYYRCUWOA4JYZ6QNVGQR"
+    },
+    {
+      "timestamp": "2025-05-30T19:15:04Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-05-30T19:15:04Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "XBMGKNAWH7YJ5UYOQWI3BRAA3UZHGBHS"
+    },
+    {
+      "timestamp": "2025-05-31T21:25:06Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "LHWU337LY3FIEQIS6EQYPPWMUM5TEXEL"
+    },
+    {
+      "timestamp": "2025-06-08T06:05:23Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "RMVT6JFFOVD5RHFUYSWZOIZDSE4JTJPX"
+    },
+    {
+      "timestamp": "2025-06-15T06:54:00Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "XARYUHTEIJ5HPAXTEJCX7WAN2MH6YKY2"
+    },
+    {
+      "timestamp": "2025-06-17T19:30:59Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "YSZ5LEWCPW6FPJPVCS75UOZ6ZHPBN57G"
+    },
+    {
+      "timestamp": "2025-06-20T12:17:32Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "RAZV7HGO7LUIGBV5ZRAMBC4LWXFL7XYS"
+    },
+    {
+      "timestamp": "2025-07-03T01:27:04Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "YYIKU346Q5JOWHE5F7QTD6LOJHM7ZA23"
+    },
+    {
+      "timestamp": "2025-07-20T20:23:30Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "N6KGIP2OG63OPCYOOBV23EDESLZ7HEE4"
+    },
+    {
+      "timestamp": "2025-08-04T16:46:02Z",
+      "url": "https://www.trtnation.com/",
+      "status": "200",
+      "digest": "5ZXMYBLLI6LAVSSNGZJCRPA2OH45T7WK"
+    },
+    {
+      "timestamp": "2025-08-06T14:20:58Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "REWAEHADXIJ2N5OJK6IGZ6U2V6C6V6NC"
+    },
+    {
+      "timestamp": "2025-08-15T13:40:27Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "P6O4C4FI5NVGPN5KXIQDDTDVP3F5O5LQ"
+    },
+    {
+      "timestamp": "2025-08-19T11:45:45Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "ALTBSJKVAPJ5RXKAG2ATZM4VLXF3L7ZW"
+    },
+    {
+      "timestamp": "2025-09-12T14:09:32Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "DS47KU7VJRJELVOFQHSPH3CCBWFQI2LG"
+    },
+    {
+      "timestamp": "2025-09-17T13:55:59Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "6SBMFJ7LSOATY2A7MALRIUX7C6MCN4FU"
+    },
+    {
+      "timestamp": "2025-09-20T01:49:54Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "TQQ46FQCCZADYKKIJDAUITUZ6IHQUIGS"
+    },
+    {
+      "timestamp": "2025-10-02T11:43:49Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "WFBBJKS5HYIGRX4K6DZPCL7WD7KBDAYD"
+    },
+    {
+      "timestamp": "2025-10-13T14:41:14Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "U2XEHD4RPIRBNRPGOBIWDSDQUGREXRKR"
+    },
+    {
+      "timestamp": "2025-11-04T03:14:06Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "QNKKTQV76LJKN2A3K3QR4ZVRWTFLLDTT"
+    },
+    {
+      "timestamp": "2025-12-18T00:04:06Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "346HUQMHW3AZ4KIYSAL5YNMP25LQCVEU"
+    },
+    {
+      "timestamp": "2026-01-07T13:10:09Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2026-01-07T13:10:12Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "G7TFEB4AQEXDOAXKWJLE3UQHVBVQNEXN"
+    },
+    {
+      "timestamp": "2026-01-15T11:30:24Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2026-01-16T14:45:17Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "HQYGHJD3OQO32QULRW3RVBPF7GL22HPJ"
+    },
+    {
+      "timestamp": "2026-01-29T15:58:57Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "35NHIRSRXZEYEWFGJ2TT5XAZLZUSSOD3"
+    },
+    {
+      "timestamp": "2026-01-30T17:15:24Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "LBHTU7QY6GZACV3JW52JHH7VR5ZAREHW"
+    },
+    {
+      "timestamp": "2026-01-31T00:09:31Z",
+      "url": "http://trtnation.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2026-01-31T00:09:34Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "SPXZRR26HKE7MXJ7BY22M37JSY25G5MW"
+    },
+    {
+      "timestamp": "2026-02-03T03:25:24Z",
+      "url": "https://trtnation.com/",
+      "status": "200",
+      "digest": "PJOSUPSD2TJ3BALHXQVFMKYUNFB2UDDL"
+    }
+  ]
+}

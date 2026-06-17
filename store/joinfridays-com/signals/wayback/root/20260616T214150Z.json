@@ -1,0 +1,595 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:41:50Z",
+  "ok": true,
+  "input": {
+    "url": "https://joinfridays.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2023-07-22T04:49:14Z",
+  "last_seen": "2026-05-29T09:51:58Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 1060,
+  "snapshot_count": 68,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "301",
+      "from": "2023-07-22T04:49:14Z",
+      "to": "2023-07-22T04:49:14Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-07-22T05:54:41Z",
+      "to": "2023-07-22T06:33:57Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-10-30T03:11:22Z",
+      "to": "2023-10-30T03:11:22Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-02-23T06:02:16Z",
+      "to": "2024-04-16T20:06:19Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-04-16T20:06:37Z",
+      "to": "2024-04-16T20:06:37Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-04-20T19:38:55Z",
+      "to": "2024-04-20T19:38:55Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-05-23T01:06:42Z",
+      "to": "2024-05-23T01:06:42Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-07-08T21:01:35Z",
+      "to": "2024-07-08T21:01:35Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-08-09T07:32:06Z",
+      "to": "2024-08-09T07:32:06Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-13T21:29:00Z",
+      "to": "2024-09-18T20:13:28Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-18T20:13:31Z",
+      "to": "2024-09-18T20:13:31Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-09-18T20:13:31Z",
+      "to": "2024-09-18T20:13:31Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-18T22:18:01Z",
+      "to": "2024-09-18T22:18:01Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-10-03T14:56:25Z",
+      "to": "2024-10-03T14:56:25Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-11-29T01:15:29Z",
+      "to": "2024-11-29T01:15:29Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-11-29T01:15:30Z",
+      "to": "2025-01-23T16:12:12Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-01-27T21:22:13Z",
+      "to": "2025-01-27T21:22:13Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-27T21:22:14Z",
+      "to": "2025-01-27T21:22:14Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-01-30T10:32:23Z",
+      "to": "2025-01-30T10:32:23Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-31T00:53:16Z",
+      "to": "2025-01-31T00:53:16Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-01-31T14:57:36Z",
+      "to": "2025-01-31T14:57:36Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-31T14:57:36Z",
+      "to": "2025-02-10T09:54:35Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-20T00:41:45Z",
+      "to": "2025-02-20T00:41:45Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-21T22:15:13Z",
+      "to": "2025-02-21T22:15:13Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-21T23:36:21Z",
+      "to": "2025-02-21T23:36:21Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-21T23:36:21Z",
+      "to": "2025-02-21T23:36:21Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-22T02:39:06Z",
+      "to": "2025-02-22T10:01:03Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-06T17:12:38Z",
+      "to": "2025-03-06T17:12:38Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-20T03:52:35Z",
+      "to": "2025-03-20T03:52:35Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-20T03:52:35Z",
+      "to": "2025-11-19T01:21:57Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-11-21T09:04:16Z",
+      "to": "2025-11-21T09:04:16Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-12-03T02:12:43Z",
+      "to": "2026-05-03T13:15:40Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-05-29T09:51:58Z",
+      "to": "2026-05-29T09:51:58Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20230722044914/https://joinfridays.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260529095158/http://joinfridays.com/",
+  "snapshots": [
+    {
+      "timestamp": "2023-07-22T04:49:14Z",
+      "url": "https://joinfridays.com/",
+      "status": "301",
+      "digest": "ZU7A3SPLSKVWNE3O4C42GHYEPKMKJKVS"
+    },
+    {
+      "timestamp": "2023-07-22T05:54:41Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "AGV47DLZFGAGIZBDEE5Y5XSAXHAEWDBC"
+    },
+    {
+      "timestamp": "2023-07-22T06:33:57Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "KYR27CZS7SZCSJD6SSYFDF67XZMVHG4O"
+    },
+    {
+      "timestamp": "2023-10-30T03:11:22Z",
+      "url": "http://www.joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-02-23T06:02:16Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "CP2BYGZDDATC5IQ22DI2Y5G4I7E3WI55"
+    },
+    {
+      "timestamp": "2024-04-16T20:06:19Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "GNQILGVJQOTA7WZ6C326W7LU6HFPYCJT"
+    },
+    {
+      "timestamp": "2024-04-16T20:06:37Z",
+      "url": "http://www.joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-04-20T19:38:55Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "Z3KZS3NS545BNXJL7VYFHY6ALK4QN2P5"
+    },
+    {
+      "timestamp": "2024-05-23T01:06:42Z",
+      "url": "http://joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-07-08T21:01:35Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "WP5MTYURM4QHSSLT62M5I2FPXZAIAWZX"
+    },
+    {
+      "timestamp": "2024-08-09T07:32:06Z",
+      "url": "http://joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-08-13T21:29:00Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "Q4C7FCMHHMNXRKSCDZ4BQT6EUCP2DFQ4"
+    },
+    {
+      "timestamp": "2024-09-18T20:13:28Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "CTMEZBR5BJ4QYWCAAJZIVHPFFXRRLPV7"
+    },
+    {
+      "timestamp": "2024-09-18T20:13:31Z",
+      "url": "http://www.joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-09-18T20:13:31Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "-",
+      "digest": "CTMEZBR5BJ4QYWCAAJZIVHPFFXRRLPV7"
+    },
+    {
+      "timestamp": "2024-09-18T22:18:01Z",
+      "url": "http://joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-10-03T14:56:25Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "SNXXADICSSMLDZGVWSLBNMDIOVFRVESQ"
+    },
+    {
+      "timestamp": "2024-11-29T01:15:29Z",
+      "url": "http://joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-11-29T01:15:30Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "5QPZT4VPE53S4CUZEJL2HU5Z6SDTSFNV"
+    },
+    {
+      "timestamp": "2025-01-23T16:12:12Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "MTBAQMOVO4WBXG7BV66436LGMLI6G2WS"
+    },
+    {
+      "timestamp": "2025-01-27T21:22:13Z",
+      "url": "https://joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-01-27T21:22:14Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "Y44AEMO3CXZTYI5SDP7KVPXEJNR4BBDZ"
+    },
+    {
+      "timestamp": "2025-01-30T10:32:23Z",
+      "url": "https://joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-01-31T00:53:16Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "MS7AKHX4KXHEXDH6PT6GYCUTHVYVKHGO"
+    },
+    {
+      "timestamp": "2025-01-31T14:57:36Z",
+      "url": "http://joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-01-31T14:57:36Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "MS7AKHX4KXHEXDH6PT6GYCUTHVYVKHGO"
+    },
+    {
+      "timestamp": "2025-02-01T18:30:10Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "XXECGYJDEQPRE5DEXWPHEAB6LQH52KSV"
+    },
+    {
+      "timestamp": "2025-02-10T09:54:35Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "GWWGHSK6XCGRZDJOMCRXWPY54LNLCXDT"
+    },
+    {
+      "timestamp": "2025-02-20T00:41:45Z",
+      "url": "http://www.joinfridays.com/",
+      "status": "301",
+      "digest": "TICV2GKYHLHUWOKQTDKBYHSOPO4L3MB7"
+    },
+    {
+      "timestamp": "2025-02-21T22:15:13Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "K5PASJCCQT7XNECUGCBZ23TL234GKIB4"
+    },
+    {
+      "timestamp": "2025-02-21T23:36:21Z",
+      "url": "http://www.joinfridays.com/",
+      "status": "301",
+      "digest": "TICV2GKYHLHUWOKQTDKBYHSOPO4L3MB7"
+    },
+    {
+      "timestamp": "2025-02-21T23:36:21Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "K5PASJCCQT7XNECUGCBZ23TL234GKIB4"
+    },
+    {
+      "timestamp": "2025-02-22T02:39:06Z",
+      "url": "http://joinfridays.com/",
+      "status": "301",
+      "digest": "TICV2GKYHLHUWOKQTDKBYHSOPO4L3MB7"
+    },
+    {
+      "timestamp": "2025-02-22T10:01:03Z",
+      "url": "https://joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-06T17:12:38Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "6ZRSWIAU4QSRTOG7B2QXGICSV6NVOWMR"
+    },
+    {
+      "timestamp": "2025-03-20T03:52:35Z",
+      "url": "http://www.joinfridays.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-20T03:52:35Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "7MHJKZ7GYFPZZ3Y3LUCPL6G5WZTBHWR6"
+    },
+    {
+      "timestamp": "2025-03-22T02:50:55Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "3GRSVRHZKGJP3S6ISRZHCDOP37HHNZIH"
+    },
+    {
+      "timestamp": "2025-03-25T12:02:13Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "E23JELUJB67AVXXP4DSH3ZLNQN3NWFDS"
+    },
+    {
+      "timestamp": "2025-04-06T16:28:18Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "W5X26QKU6J3DX4IFNA76XDJB35B5KRIZ"
+    },
+    {
+      "timestamp": "2025-04-17T18:04:34Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "VONR22UG6D5V2MUD7LJ4OKTTN6TMFSCQ"
+    },
+    {
+      "timestamp": "2025-05-09T18:45:50Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "755CO7AKX4XXHZNSMIOQIURMG2N3GBI7"
+    },
+    {
+      "timestamp": "2025-06-18T16:54:24Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "DMLMYXIYQKQET3COF76C7SJKCQNQWRJK"
+    },
+    {
+      "timestamp": "2025-06-21T17:09:04Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "57H6WWQVBSJUE5ANX6G2LIR3FAQBC3GW"
+    },
+    {
+      "timestamp": "2025-07-10T22:45:31Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "3R7OZ36P44YFRQS54MPM2NMUFAXMIZUB"
+    },
+    {
+      "timestamp": "2025-07-17T18:00:19Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "MPQYFBWKK5ZL6GAWWZ3IES7ZHDMY46MN"
+    },
+    {
+      "timestamp": "2025-07-19T08:24:22Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "HVWODCZUYTYMJIP4LMACDEA3HRYROOAI"
+    },
+    {
+      "timestamp": "2025-07-20T04:26:53Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "WRWP5EXAAFFCMHWQ4CN5RA7LMUSFBZO6"
+    },
+    {
+      "timestamp": "2025-08-03T17:52:23Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "M2NYDZ5AZI6TRPQCEKTWQATOC33253NG"
+    },
+    {
+      "timestamp": "2025-08-13T03:45:38Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "JCE3ONP6QB65ZA53LTDHJ2V6WBDWZ5Q4"
+    },
+    {
+      "timestamp": "2025-09-07T20:43:53Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "EZ2TEC5BWK3LDA7LYJHW7RG3PMLCIYYH"
+    },
+    {
+      "timestamp": "2025-10-15T14:42:22Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "4VPJJEZLWXJQDZBBZORQ5MRJEIIIPDDD"
+    },
+    {
+      "timestamp": "2025-10-29T23:12:49Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "UYPPHNJZ4OR7TKIPVVXCO4KXD3E64I2N"
+    },
+    {
+      "timestamp": "2025-11-10T18:25:00Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "YPXEF7JQNGWBSTM6B7AQS6JT64H7SDV5"
+    },
+    {
+      "timestamp": "2025-11-19T01:21:57Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "GDKEH73LKNGSTS54R6FDJJJSXTKQVFAI"
+    },
+    {
+      "timestamp": "2025-11-21T09:04:16Z",
+      "url": "https://joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-12-03T02:12:43Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "RAEGHQ3C63HK7TS7VR2FWOSDUGDOSZEX"
+    },
+    {
+      "timestamp": "2025-12-03T13:36:42Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "WGSCTIPTUPZELURW75EOJBS75DN7VHNU"
+    },
+    {
+      "timestamp": "2025-12-13T00:52:27Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "QXBRM22TQI6L42BHI7VYVAHWTANRVE6R"
+    },
+    {
+      "timestamp": "2025-12-14T14:54:07Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "Y2PCDQ3PKL33ZXQP35QFDPN4SZTV2XQT"
+    },
+    {
+      "timestamp": "2026-01-16T15:35:35Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "NW56IEBCTGG3K24OHYRGN6FZIX365KJP"
+    },
+    {
+      "timestamp": "2026-01-29T19:37:27Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "6ZVCTVOHKIAEK4TL3MGB5X7X2Y2TMEXD"
+    },
+    {
+      "timestamp": "2026-01-29T23:22:29Z",
+      "url": "https://joinfridays.com/",
+      "status": "200",
+      "digest": "LOYAYUYRUB6LHG4QPUI76XMMHH4PPAP7"
+    },
+    {
+      "timestamp": "2026-02-12T21:59:29Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "BIXPWA7OOW5U6AIMG47LBUSAMZMYAC45"
+    },
+    {
+      "timestamp": "2026-03-09T21:13:11Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "ZAGGVTRRF7SBBF5YLWHFJ5OVJXENBW54"
+    },
+    {
+      "timestamp": "2026-04-22T19:12:29Z",
+      "url": "https://www.joinfridays.com/",
+      "status": "200",
+      "digest": "USVE5JLCF6NOBAR4MDWF7ZZFGW6M22D5"
+    },
+    {
+      "timestamp": "2026-05-03T13:15:40Z",
+      "url": "https://joinfridays.com/",
+      "status": "200",
+      "digest": "OKDJMZGGI5PCUGCJKOHDGDSK7DDRQINV"
+    },
+    {
+      "timestamp": "2026-05-29T09:51:58Z",
+      "url": "http://joinfridays.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    }
+  ]
+}

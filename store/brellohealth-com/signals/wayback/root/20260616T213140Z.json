@@ -1,0 +1,535 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:31:40Z",
+  "ok": true,
+  "input": {
+    "url": "https://brellohealth.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2024-09-03T16:49:25Z",
+  "last_seen": "2026-05-03T13:25:54Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 651,
+  "snapshot_count": 58,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "301",
+      "from": "2024-09-03T16:49:25Z",
+      "to": "2024-09-03T16:49:25Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-03T16:49:25Z",
+      "to": "2024-09-03T16:49:28Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-03T16:50:16Z",
+      "to": "2024-09-03T16:50:16Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-11-20T17:14:15Z",
+      "to": "2024-11-20T17:14:15Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-11-20T17:27:23Z",
+      "to": "2024-11-20T17:27:23Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-11-20T17:27:24Z",
+      "to": "2024-11-20T17:27:24Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-01-21T10:48:52Z",
+      "to": "2025-01-21T10:48:52Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-22T14:32:36Z",
+      "to": "2025-01-22T14:32:36Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-01-29T23:53:29Z",
+      "to": "2025-01-29T23:53:29Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-29T23:53:34Z",
+      "to": "2025-02-14T14:41:07Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-16T00:31:42Z",
+      "to": "2025-02-16T00:31:42Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-16T00:31:46Z",
+      "to": "2025-03-10T02:06:33Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-18T01:30:01Z",
+      "to": "2025-03-18T01:30:01Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-18T01:30:02Z",
+      "to": "2025-03-18T01:30:02Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-22T06:55:02Z",
+      "to": "2025-03-22T06:55:02Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-22T06:55:22Z",
+      "to": "2025-03-22T06:55:22Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-23T02:40:58Z",
+      "to": "2025-03-23T02:40:58Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-23T02:40:58Z",
+      "to": "2025-03-23T02:40:58Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-23T02:52:47Z",
+      "to": "2025-03-23T02:52:47Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-29T17:40:24Z",
+      "to": "2025-04-07T17:45:30Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-04-07T18:30:49Z",
+      "to": "2025-04-07T18:30:49Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-07T18:30:55Z",
+      "to": "2025-07-09T22:30:21Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-07-10T23:43:51Z",
+      "to": "2025-07-10T23:43:51Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-07-11T15:23:49Z",
+      "to": "2025-07-14T05:09:20Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-08-13T23:59:12Z",
+      "to": "2025-08-13T23:59:12Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-13T23:59:12Z",
+      "to": "2025-09-22T08:51:12Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-10-19T06:32:55Z",
+      "to": "2025-10-19T06:32:55Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-10-26T21:41:52Z",
+      "to": "2025-10-30T16:34:32Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-10-31T22:00:54Z",
+      "to": "2025-10-31T22:00:54Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-11-01T18:11:05Z",
+      "to": "2026-01-20T04:50:47Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-01-21T14:47:00Z",
+      "to": "2026-01-21T14:47:34Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-02-01T14:16:54Z",
+      "to": "2026-03-19T20:25:23Z"
+    },
+    {
+      "status": "503",
+      "from": "2026-05-03T13:25:54Z",
+      "to": "2026-05-03T13:25:54Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20240903164925/http://www.brellohealth.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260503132554/https://www.brellohealth.com/",
+  "snapshots": [
+    {
+      "timestamp": "2024-09-03T16:49:25Z",
+      "url": "http://www.brellohealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-09-03T16:49:25Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "I3DGIPYHVJ7WX7TRDDPJE24G336FBB6E"
+    },
+    {
+      "timestamp": "2024-09-03T16:49:28Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "HYQ6NWHQNY2NMDFI6NBCWVCS7TES62OE"
+    },
+    {
+      "timestamp": "2024-09-03T16:50:16Z",
+      "url": "http://brellohealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-11-20T17:14:15Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "JYFP43BIMJ7IAW4DYVZ6E3TFFUQCATIV"
+    },
+    {
+      "timestamp": "2024-11-20T17:27:23Z",
+      "url": "http://brellohealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-11-20T17:27:24Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "-",
+      "digest": "JYFP43BIMJ7IAW4DYVZ6E3TFFUQCATIV"
+    },
+    {
+      "timestamp": "2025-01-21T10:48:52Z",
+      "url": "http://brellohealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-01-22T14:32:36Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "EZNCWB5HYCOEPBXVNZTWB5PYUEF3V2CP"
+    },
+    {
+      "timestamp": "2025-01-29T23:53:29Z",
+      "url": "https://brellohealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-01-29T23:53:34Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "6XPP567BIC7YUN3OHWUMMXRJCO6NKYA2"
+    },
+    {
+      "timestamp": "2025-02-14T14:41:07Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "BP3ZKZW7LI3XUBBQ56LN22PVANJ6FSZY"
+    },
+    {
+      "timestamp": "2025-02-16T00:31:42Z",
+      "url": "https://brellohealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-02-16T00:31:46Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "65GSYOHLMOYW3RH74GMYYOHTHIJYUD6T"
+    },
+    {
+      "timestamp": "2025-03-01T18:43:48Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "EEXELVST7FPLEYOE46TKTCKWRRRISS5W"
+    },
+    {
+      "timestamp": "2025-03-10T02:06:33Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "LPTASR6PEAPYCD7AJFBKG3Y57ZUEVZPW"
+    },
+    {
+      "timestamp": "2025-03-18T01:30:01Z",
+      "url": "http://brellohealth.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-18T01:30:01Z",
+      "url": "https://brellohealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-18T01:30:02Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "LPTASR6PEAPYCD7AJFBKG3Y57ZUEVZPW"
+    },
+    {
+      "timestamp": "2025-03-22T06:55:02Z",
+      "url": "http://brellohealth.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-22T06:55:22Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "IRZAGBDVD3M2SSQRZZYAYPJSFJF3ZCH5"
+    },
+    {
+      "timestamp": "2025-03-23T02:40:58Z",
+      "url": "https://brellohealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-23T02:40:58Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "IRZAGBDVD3M2SSQRZZYAYPJSFJF3ZCH5"
+    },
+    {
+      "timestamp": "2025-03-23T02:52:47Z",
+      "url": "http://brellohealth.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-23T02:52:47Z",
+      "url": "https://brellohealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-29T17:40:24Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "7Q2BXI3J4MYY5QWLRU5NTZB3QMQJQBQT"
+    },
+    {
+      "timestamp": "2025-04-07T17:45:30Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "H2JNHPYKAXP2HQMOABHZOPBB3TM6RLTC"
+    },
+    {
+      "timestamp": "2025-04-07T18:30:49Z",
+      "url": "http://www.brellohealth.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-04-07T18:30:55Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "CTNTHVISFQCHICM76A6DORKA2KKECRGZ"
+    },
+    {
+      "timestamp": "2025-05-24T09:54:43Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "FRGRRSH3E75XLN67X22QI7KSDB2YOYZA"
+    },
+    {
+      "timestamp": "2025-06-14T01:39:07Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "MPCJQFE25NP2U2COS2VVHSJM5YT3LB45"
+    },
+    {
+      "timestamp": "2025-07-09T22:30:21Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "GSFCERGSOLM7KHRU2ZA6LPUQPGJ5EUGI"
+    },
+    {
+      "timestamp": "2025-07-10T23:43:51Z",
+      "url": "http://brellohealth.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-07-11T15:23:49Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "GSFCERGSOLM7KHRU2ZA6LPUQPGJ5EUGI"
+    },
+    {
+      "timestamp": "2025-07-14T05:09:20Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "7KG24ZPDVD6JET5A4VWPHYJJKK643MGD"
+    },
+    {
+      "timestamp": "2025-08-13T23:59:12Z",
+      "url": "http://www.brellohealth.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-08-13T23:59:12Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "Z3OBHAMA7LXHI3OD7IRSAHFLWNE6O36Q"
+    },
+    {
+      "timestamp": "2025-09-22T08:51:12Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "W4TBELKTTNSUFATOTU252W3HOKVO23DC"
+    },
+    {
+      "timestamp": "2025-10-19T06:32:55Z",
+      "url": "http://www.brellohealth.com/",
+      "status": "301",
+      "digest": "NJOGTVI7R5XR5ZCAUWHDBZKT36NOGPDW"
+    },
+    {
+      "timestamp": "2025-10-26T21:41:52Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "P56CV3TVOSLBWUT7UASBPSO237PAXQ66"
+    },
+    {
+      "timestamp": "2025-10-27T01:47:51Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "HWUS2T4KBTRFJYPVAKOJQOAXIXXBREXE"
+    },
+    {
+      "timestamp": "2025-10-30T16:34:32Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "CVZHK42Y4JA5VVGZEPIBC7TT3N7BGJ5M"
+    },
+    {
+      "timestamp": "2025-10-31T22:00:54Z",
+      "url": "https://brellohealth.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-11-01T18:11:05Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "6DIHF7ABXONC2GOAE6Z2PWLFO7R5DRUF"
+    },
+    {
+      "timestamp": "2025-11-02T05:22:11Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "5VJX7KRI543I3Y3HROJ4JS3DSZUNB4QS"
+    },
+    {
+      "timestamp": "2025-11-02T14:45:18Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "7N5LQSVOXL4A5YGZPSOISY2JFG42BZQV"
+    },
+    {
+      "timestamp": "2025-11-03T18:27:10Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "TNQ6NTHTKVRLJEKGDETQ6TYTJU77HFTW"
+    },
+    {
+      "timestamp": "2025-11-04T04:53:43Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "HIR6X43DZKSNVL26BTKMSN2INGS3HXUQ"
+    },
+    {
+      "timestamp": "2026-01-15T05:48:03Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "TZF6NAFP77CPBHVGAFHPF5V6P45NBHV7"
+    },
+    {
+      "timestamp": "2026-01-20T04:41:40Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "EFNN4PJILJDBD2A3T5WAIFHJKL3NRHAL"
+    },
+    {
+      "timestamp": "2026-01-20T04:47:17Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "TF4WHHILDZP46BWHBEZEDRCHVH5EQX4H"
+    },
+    {
+      "timestamp": "2026-01-20T04:50:47Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "2ZR6HIJF3ZCT2MKPRGA5OF6SMC6AQDN6"
+    },
+    {
+      "timestamp": "2026-01-21T14:47:00Z",
+      "url": "http://brellohealth.com/",
+      "status": "301",
+      "digest": "NJOGTVI7R5XR5ZCAUWHDBZKT36NOGPDW"
+    },
+    {
+      "timestamp": "2026-01-21T14:47:34Z",
+      "url": "https://brellohealth.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2026-02-01T14:16:54Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "HUF7LQS6P5OG6O5OSAPJRHZ5HA5TNTH7"
+    },
+    {
+      "timestamp": "2026-03-01T09:27:53Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "HJBJQM3EFIJGFG5TYI7NKVUPGTHNYVUH"
+    },
+    {
+      "timestamp": "2026-03-19T20:25:23Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "200",
+      "digest": "ZHLKCOD6WFHDHBI6NPBPOSZF7E4JYFZ3"
+    },
+    {
+      "timestamp": "2026-05-03T13:25:54Z",
+      "url": "https://www.brellohealth.com/",
+      "status": "503",
+      "digest": "EATAFRHMJJPCJGHD2JFD5UBFZZYL65E4"
+    }
+  ]
+}

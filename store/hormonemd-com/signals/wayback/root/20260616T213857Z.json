@@ -1,0 +1,830 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:38:57Z",
+  "ok": true,
+  "input": {
+    "url": "https://hormonemd.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2010-04-02T09:04:44Z",
+  "last_seen": "2026-01-25T00:43:08Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 5919,
+  "snapshot_count": 98,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2010-04-02T09:04:44Z",
+      "to": "2015-07-02T10:02:42Z"
+    },
+    {
+      "status": "302",
+      "from": "2015-08-01T16:26:32Z",
+      "to": "2015-08-01T16:26:32Z"
+    },
+    {
+      "status": "200",
+      "from": "2015-10-20T02:10:42Z",
+      "to": "2018-11-15T21:15:33Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-05-11T15:29:06Z",
+      "to": "2019-11-08T03:04:48Z"
+    },
+    {
+      "status": "302",
+      "from": "2019-11-08T03:04:48Z",
+      "to": "2019-11-08T03:04:48Z"
+    },
+    {
+      "status": "301",
+      "from": "2020-01-11T11:37:06Z",
+      "to": "2020-01-11T11:37:06Z"
+    },
+    {
+      "status": "302",
+      "from": "2020-01-11T11:37:06Z",
+      "to": "2020-01-11T11:37:06Z"
+    },
+    {
+      "status": "301",
+      "from": "2020-03-17T11:23:24Z",
+      "to": "2020-03-17T11:23:24Z"
+    },
+    {
+      "status": "302",
+      "from": "2020-03-17T11:23:24Z",
+      "to": "2020-03-17T11:23:24Z"
+    },
+    {
+      "status": "301",
+      "from": "2020-05-17T05:56:58Z",
+      "to": "2020-05-17T05:56:58Z"
+    },
+    {
+      "status": "302",
+      "from": "2020-05-17T05:56:58Z",
+      "to": "2020-05-17T05:56:58Z"
+    },
+    {
+      "status": "301",
+      "from": "2020-07-16T19:08:35Z",
+      "to": "2020-07-16T19:08:35Z"
+    },
+    {
+      "status": "302",
+      "from": "2020-07-16T19:08:35Z",
+      "to": "2020-07-16T19:08:35Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-09-25T07:02:26Z",
+      "to": "2021-10-21T18:04:05Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-07T21:47:40Z",
+      "to": "2021-12-07T21:47:40Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-12-09T10:33:53Z",
+      "to": "2022-06-30T10:35:47Z"
+    },
+    {
+      "status": "302",
+      "from": "2022-08-02T17:32:17Z",
+      "to": "2022-08-02T17:32:17Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-08-02T17:32:19Z",
+      "to": "2022-08-02T17:32:19Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-08-02T17:58:52Z",
+      "to": "2022-08-02T17:58:52Z"
+    },
+    {
+      "status": "302",
+      "from": "2022-08-02T17:58:52Z",
+      "to": "2022-08-02T17:58:52Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-08-02T18:13:57Z",
+      "to": "2022-08-02T18:57:43Z"
+    },
+    {
+      "status": "302",
+      "from": "2022-08-02T18:57:43Z",
+      "to": "2022-08-02T18:57:43Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-08-02T21:20:41Z",
+      "to": "2024-04-17T02:35:20Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-04-17T02:35:27Z",
+      "to": "2024-04-17T02:35:27Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-26T09:31:05Z",
+      "to": "2024-09-24T17:43:01Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-09-24T17:54:06Z",
+      "to": "2024-09-24T17:54:06Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-24T17:54:06Z",
+      "to": "2024-09-24T17:54:06Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-10-07T09:21:37Z",
+      "to": "2024-10-07T10:07:02Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-10-29T20:58:11Z",
+      "to": "2024-10-29T20:58:11Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-12-08T07:52:28Z",
+      "to": "2024-12-08T07:52:28Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-08T07:52:28Z",
+      "to": "2024-12-08T07:52:28Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-12-08T07:54:49Z",
+      "to": "2024-12-08T16:15:32Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-08T16:15:32Z",
+      "to": "2024-12-08T16:15:32Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-12-24T00:39:14Z",
+      "to": "2024-12-24T00:39:14Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-12-24T00:39:14Z",
+      "to": "2024-12-24T00:39:14Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-21T09:05:55Z",
+      "to": "2025-01-21T09:05:55Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-01T03:16:08Z",
+      "to": "2025-02-01T03:16:08Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-01T03:16:18Z",
+      "to": "2025-02-01T03:16:18Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-24T05:11:21Z",
+      "to": "2025-02-24T05:11:21Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-24T05:11:21Z",
+      "to": "2025-02-24T05:11:21Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-03-02T07:07:12Z",
+      "to": "2025-03-02T07:07:12Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-02T07:07:12Z",
+      "to": "2025-03-02T07:07:12Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-04-16T18:19:43Z",
+      "to": "2025-04-16T18:19:43Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-16T18:19:43Z",
+      "to": "2026-01-25T00:43:08Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20100402090444/http://www.hormonemd.com:80/",
+  "last_snapshot_url": "https://web.archive.org/web/20260125004308/https://www.hormonemd.com/",
+  "snapshots": [
+    {
+      "timestamp": "2010-04-02T09:04:44Z",
+      "url": "http://www.hormonemd.com:80/",
+      "status": "200",
+      "digest": "QNIN4DU5YBAPIEHAY6VZT3WAQFB3PILQ"
+    },
+    {
+      "timestamp": "2011-02-07T23:10:21Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "5QNWVGQSYY4K2U3SIQP56FCAQOAKVZ2W"
+    },
+    {
+      "timestamp": "2012-09-26T02:08:15Z",
+      "url": "http://www.hormonemd.com:80/",
+      "status": "200",
+      "digest": "3RMKCRDIGUOWXW5ANPDEL6QMYU5THBYR"
+    },
+    {
+      "timestamp": "2013-04-20T05:59:00Z",
+      "url": "http://www.hormonemd.com",
+      "status": "200",
+      "digest": "QZELHBKZMC3IAYIC5JKB3KP4U7L3MW6W"
+    },
+    {
+      "timestamp": "2013-05-04T17:55:45Z",
+      "url": "http://hormonemd.com",
+      "status": "200",
+      "digest": "3RMKCRDIGUOWXW5ANPDEL6QMYU5THBYR"
+    },
+    {
+      "timestamp": "2013-05-11T18:08:08Z",
+      "url": "http://www.hormonemd.com",
+      "status": "200",
+      "digest": "QZELHBKZMC3IAYIC5JKB3KP4U7L3MW6W"
+    },
+    {
+      "timestamp": "2013-05-20T06:47:38Z",
+      "url": "http://www.hormonemd.com",
+      "status": "200",
+      "digest": "3RMKCRDIGUOWXW5ANPDEL6QMYU5THBYR"
+    },
+    {
+      "timestamp": "2013-05-25T05:45:34Z",
+      "url": "http://www.hormonemd.com",
+      "status": "200",
+      "digest": "QZELHBKZMC3IAYIC5JKB3KP4U7L3MW6W"
+    },
+    {
+      "timestamp": "2013-06-03T05:57:09Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "3RMKCRDIGUOWXW5ANPDEL6QMYU5THBYR"
+    },
+    {
+      "timestamp": "2013-06-16T17:09:19Z",
+      "url": "http://www.hormonemd.com",
+      "status": "200",
+      "digest": "QZELHBKZMC3IAYIC5JKB3KP4U7L3MW6W"
+    },
+    {
+      "timestamp": "2013-06-24T05:48:35Z",
+      "url": "http://hormonemd.com",
+      "status": "200",
+      "digest": "3RMKCRDIGUOWXW5ANPDEL6QMYU5THBYR"
+    },
+    {
+      "timestamp": "2013-07-16T16:26:26Z",
+      "url": "http://hormonemd.com",
+      "status": "200",
+      "digest": "QZELHBKZMC3IAYIC5JKB3KP4U7L3MW6W"
+    },
+    {
+      "timestamp": "2014-01-06T19:39:38Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "E6ZYGPNKMMDFFUJFVFLN25GOJGQCAOSM"
+    },
+    {
+      "timestamp": "2014-05-17T12:43:13Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "4T2GIPK47PIQJNVTVE6XWSN3UJR5BTGA"
+    },
+    {
+      "timestamp": "2014-12-17T16:41:00Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "IBFO2MKQWSCRAKGU5VERZPUD55X63VBQ"
+    },
+    {
+      "timestamp": "2015-02-25T12:55:51Z",
+      "url": "http://hormonemd.com:80/?",
+      "status": "200",
+      "digest": "72HZNTJ7YRKCHHHNZ2ASM4E5N55SLRIK"
+    },
+    {
+      "timestamp": "2015-03-03T06:50:25Z",
+      "url": "http://www.hormonemd.com:80/",
+      "status": "200",
+      "digest": "FX3KUJNNFFZCW7CKPLJRZENURW675OP4"
+    },
+    {
+      "timestamp": "2015-03-28T05:28:59Z",
+      "url": "http://hormonemd.com:80/?",
+      "status": "200",
+      "digest": "P6VEJC6JTFHL7NLI2BXR46OMY3SQ7U5K"
+    },
+    {
+      "timestamp": "2015-04-28T04:50:31Z",
+      "url": "http://hormonemd.com:80/?",
+      "status": "200",
+      "digest": "MI7UM7POYYQKPBN4J5V4SRMT652WJIDU"
+    },
+    {
+      "timestamp": "2015-05-31T09:42:46Z",
+      "url": "http://hormonemd.com:80/?",
+      "status": "200",
+      "digest": "3M4QPIDYZRHQLSUBQAMWF6UMYT6U4SNG"
+    },
+    {
+      "timestamp": "2015-07-01T00:29:56Z",
+      "url": "http://www.hormonemd.com:80/",
+      "status": "200",
+      "digest": "QJ3DD3ZFTO6YJLHHRNO65J36CNJBAYIP"
+    },
+    {
+      "timestamp": "2015-07-02T10:02:42Z",
+      "url": "http://hormonemd.com:80/?",
+      "status": "200",
+      "digest": "YLTTWU7DA7PUDDEXZQWOS6WJZ2AMJYGH"
+    },
+    {
+      "timestamp": "2015-08-01T16:26:32Z",
+      "url": "http://hormonemd.com/",
+      "status": "302",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2015-10-20T02:10:42Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "FIACX23JQYCASMNOS2HF4XB4RG7R5XFH"
+    },
+    {
+      "timestamp": "2016-01-10T04:49:14Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "PPONNLDWXR3UROFRE6P2GDWWF6INULO7"
+    },
+    {
+      "timestamp": "2016-03-04T05:11:08Z",
+      "url": "http://www.hormonemd.com:80/",
+      "status": "200",
+      "digest": "HGH7WFJY7RVV3KBBOGGMDQ2RTDW2BWSU"
+    },
+    {
+      "timestamp": "2016-03-11T10:30:34Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "MWW2VKSRE2ZXNUF2QPJY4BRCP46WOYU3"
+    },
+    {
+      "timestamp": "2016-03-26T05:26:45Z",
+      "url": "http://www.hormonemd.com/",
+      "status": "200",
+      "digest": "LBY7R6P6VDLL2MVIFZKPH3S4BC2YFVPV"
+    },
+    {
+      "timestamp": "2016-10-03T20:21:47Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "2PIBQXPM6EBNCORK2OOGYHJKVVREJGKW"
+    },
+    {
+      "timestamp": "2017-06-26T05:58:07Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "S4YH4LUWNGCXESARKLRNSBXG7DAOQVII"
+    },
+    {
+      "timestamp": "2017-09-26T04:32:34Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "SQCRBQJQ7SJ5ZHKI45DHVUTT4MKLHO43"
+    },
+    {
+      "timestamp": "2018-03-22T07:05:09Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "3UPUY4LVTB7TFNGPYJS33LCKXMOZOC4D"
+    },
+    {
+      "timestamp": "2018-08-07T06:55:35Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "US4LEIWL2VU3VIPHS6FTB2HX357U3LIE"
+    },
+    {
+      "timestamp": "2018-11-15T21:15:33Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "O6WNVKXSAXAFKDMUBHEE2EHZ5ATCX6JO"
+    },
+    {
+      "timestamp": "2019-05-11T15:29:06Z",
+      "url": "http://hormonemd.com/",
+      "status": "301",
+      "digest": "BDUFKOMTESROR6BC5ZRTYNAYNT3LE6LQ"
+    },
+    {
+      "timestamp": "2019-11-08T03:04:48Z",
+      "url": "http://hormonemd.com:80/",
+      "status": "301",
+      "digest": "TMAK2VANWAPZWVTX4DEZCANPOEQ2XQUV"
+    },
+    {
+      "timestamp": "2019-11-08T03:04:48Z",
+      "url": "http://www.hormonemd.com:80/",
+      "status": "302",
+      "digest": "4SENR7R5FSQAAJZ3AFIRA6ZRHXB7W6GY"
+    },
+    {
+      "timestamp": "2020-01-11T11:37:06Z",
+      "url": "http://hormonemd.com:80/",
+      "status": "301",
+      "digest": "TMAK2VANWAPZWVTX4DEZCANPOEQ2XQUV"
+    },
+    {
+      "timestamp": "2020-01-11T11:37:06Z",
+      "url": "http://www.hormonemd.com:80/",
+      "status": "302",
+      "digest": "4SENR7R5FSQAAJZ3AFIRA6ZRHXB7W6GY"
+    },
+    {
+      "timestamp": "2020-03-17T11:23:24Z",
+      "url": "http://hormonemd.com:80/",
+      "status": "301",
+      "digest": "TMAK2VANWAPZWVTX4DEZCANPOEQ2XQUV"
+    },
+    {
+      "timestamp": "2020-03-17T11:23:24Z",
+      "url": "http://www.hormonemd.com:80/",
+      "status": "302",
+      "digest": "4SENR7R5FSQAAJZ3AFIRA6ZRHXB7W6GY"
+    },
+    {
+      "timestamp": "2020-05-17T05:56:58Z",
+      "url": "http://hormonemd.com:80/",
+      "status": "301",
+      "digest": "TMAK2VANWAPZWVTX4DEZCANPOEQ2XQUV"
+    },
+    {
+      "timestamp": "2020-05-17T05:56:58Z",
+      "url": "http://www.hormonemd.com:80/",
+      "status": "302",
+      "digest": "4SENR7R5FSQAAJZ3AFIRA6ZRHXB7W6GY"
+    },
+    {
+      "timestamp": "2020-07-16T19:08:35Z",
+      "url": "http://hormonemd.com:80/",
+      "status": "301",
+      "digest": "TMAK2VANWAPZWVTX4DEZCANPOEQ2XQUV"
+    },
+    {
+      "timestamp": "2020-07-16T19:08:35Z",
+      "url": "http://www.hormonemd.com:80/",
+      "status": "302",
+      "digest": "4SENR7R5FSQAAJZ3AFIRA6ZRHXB7W6GY"
+    },
+    {
+      "timestamp": "2021-09-25T07:02:26Z",
+      "url": "https://hormonemd.com/",
+      "status": "200",
+      "digest": "G7UNVHPWVGWB5M54VKUNBR6AEKNUC6X4"
+    },
+    {
+      "timestamp": "2021-10-21T18:04:05Z",
+      "url": "https://hormonemd.com/",
+      "status": "200",
+      "digest": "SDXMMFZQB2PZWEYCXWOKYBENEOOSNY5T"
+    },
+    {
+      "timestamp": "2021-12-07T21:47:40Z",
+      "url": "http://hormonemd.com/",
+      "status": "301",
+      "digest": "GOXBQPPZLKZ3DY4JFRNUCPDVT7LFCMET"
+    },
+    {
+      "timestamp": "2021-12-09T10:33:53Z",
+      "url": "https://hormonemd.com/",
+      "status": "200",
+      "digest": "UR7J42SEBEYXOHJDXCQMVVKV74KY7A6J"
+    },
+    {
+      "timestamp": "2022-01-21T11:26:55Z",
+      "url": "https://hormonemd.com/",
+      "status": "200",
+      "digest": "PNUYY4OKPZAD32KXHPIUE4AWJANFTNKE"
+    },
+    {
+      "timestamp": "2022-05-21T12:36:03Z",
+      "url": "https://hormonemd.com/",
+      "status": "200",
+      "digest": "PEBTKRE6IPDZAHNCR5XLTYLZUWTFSBDH"
+    },
+    {
+      "timestamp": "2022-06-30T10:35:47Z",
+      "url": "https://hormonemd.com/",
+      "status": "200",
+      "digest": "JQRHZIBJ4CJCZ4RHFQ37OH7MTLVDEIGD"
+    },
+    {
+      "timestamp": "2022-08-02T17:32:17Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "302",
+      "digest": "ZS5DJWWKYYOK7IJTGSROEGJV6YG5HC5Y"
+    },
+    {
+      "timestamp": "2022-08-02T17:32:19Z",
+      "url": "https://hormonemd.com/",
+      "status": "200",
+      "digest": "NEB5FMIOGITPMWH47Z3EKUXGEN4YLUS2"
+    },
+    {
+      "timestamp": "2022-08-02T17:58:52Z",
+      "url": "http://hormonemd.com/",
+      "status": "301",
+      "digest": "GOXBQPPZLKZ3DY4JFRNUCPDVT7LFCMET"
+    },
+    {
+      "timestamp": "2022-08-02T17:58:52Z",
+      "url": "http://www.hormonemd.com/",
+      "status": "302",
+      "digest": "4SENR7R5FSQAAJZ3AFIRA6ZRHXB7W6GY"
+    },
+    {
+      "timestamp": "2022-08-02T18:13:57Z",
+      "url": "https://hormonemd.com/",
+      "status": "200",
+      "digest": "5R6A557CRZHQSSGSEZOMEGS73RSGCBYX"
+    },
+    {
+      "timestamp": "2022-08-02T18:57:43Z",
+      "url": "https://hormonemd.com/",
+      "status": "200",
+      "digest": "VCW7CLQW6K6G275DBSMRXILVS4BZUVXS"
+    },
+    {
+      "timestamp": "2022-08-02T18:57:43Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "302",
+      "digest": "ZS5DJWWKYYOK7IJTGSROEGJV6YG5HC5Y"
+    },
+    {
+      "timestamp": "2022-08-02T21:20:41Z",
+      "url": "https://hormonemd.com/",
+      "status": "200",
+      "digest": "N2OGXEK3TTKRQ4UECBEL243ICQWQGBAZ"
+    },
+    {
+      "timestamp": "2022-08-12T03:05:54Z",
+      "url": "https://hormonemd.com/",
+      "status": "200",
+      "digest": "2WSDD6YBII3UG6U4LZFIA7C2372JXHZ6"
+    },
+    {
+      "timestamp": "2022-09-25T14:45:46Z",
+      "url": "https://hormonemd.com/",
+      "status": "200",
+      "digest": "OMQPMEQK2OVHXDLZ6MWHBUVO3R2YTV4P"
+    },
+    {
+      "timestamp": "2023-01-16T02:11:51Z",
+      "url": "http://hormonemd.com/",
+      "status": "200",
+      "digest": "VBXQ62VCEJSTAE76HQ3NINHWOBL4QXTE"
+    },
+    {
+      "timestamp": "2023-05-29T15:39:11Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "Z32JMHLF2QMORLYT4RF7GCSKQDS6FZ2J"
+    },
+    {
+      "timestamp": "2024-03-03T03:22:50Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "COS4W7C4XF2DYJSG7PXYQ7RIFSWKWJHJ"
+    },
+    {
+      "timestamp": "2024-04-13T13:25:32Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "QZ2HJTDY64JS72MT5YQNOKCMA2ONQ3VJ"
+    },
+    {
+      "timestamp": "2024-04-17T02:35:20Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "FZYQTXNXXWTHWYY6YNQGQ5RXSI3YFUO5"
+    },
+    {
+      "timestamp": "2024-04-17T02:35:27Z",
+      "url": "http://www.hormonemd.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-05-26T09:31:05Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "AWK6BZ6NDLBIZFN7RLFUKA6MTDHX2PT2"
+    },
+    {
+      "timestamp": "2024-06-25T06:14:46Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "KE5BOQM372DOEAUBY6INV3O2JO5U6KDE"
+    },
+    {
+      "timestamp": "2024-07-25T04:21:33Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "6TXOFN2OLNATGNMZKLSMLQYUGPF2PB7S"
+    },
+    {
+      "timestamp": "2024-09-24T17:43:01Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "CGEYDEDGHNS32L7B4ZK76AO6OU4DMYL6"
+    },
+    {
+      "timestamp": "2024-09-24T17:54:06Z",
+      "url": "http://www.hormonemd.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-09-24T17:54:06Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "TZ6ASOH5FRUTM64OYLOONZ4PIYABX6H4"
+    },
+    {
+      "timestamp": "2024-10-07T09:21:37Z",
+      "url": "https://hormonemd.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2024-10-07T10:07:02Z",
+      "url": "http://hormonemd.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-10-29T20:58:11Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "BLVAHGVSP725OQIDQSTAML7Y5VVWEFWN"
+    },
+    {
+      "timestamp": "2024-12-08T07:52:28Z",
+      "url": "http://hormonemd.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-12-08T07:52:28Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "KCTEUPMMT6WTPODEWHYZPF4SYX3YPKOQ"
+    },
+    {
+      "timestamp": "2024-12-08T07:54:49Z",
+      "url": "https://hormonemd.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2024-12-08T16:15:32Z",
+      "url": "http://www.hormonemd.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-12-08T16:15:32Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "KCTEUPMMT6WTPODEWHYZPF4SYX3YPKOQ"
+    },
+    {
+      "timestamp": "2024-12-24T00:39:14Z",
+      "url": "http://hormonemd.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-12-24T00:39:14Z",
+      "url": "https://hormonemd.com/",
+      "status": "-",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-01-21T09:05:55Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "RIL2V4KQPJFKOBWFQBPDKL7RRTRFXUOH"
+    },
+    {
+      "timestamp": "2025-02-01T03:16:08Z",
+      "url": "https://hormonemd.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-02-01T03:16:18Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "OA6UAKGG2PAPW7TQ5YVYHXHAPOT2JB6Z"
+    },
+    {
+      "timestamp": "2025-02-24T05:11:21Z",
+      "url": "https://hormonemd.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-02-24T05:11:21Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "A2W7CS7AACUQFKNEYFDNKZENHB6SJH3N"
+    },
+    {
+      "timestamp": "2025-02-24T05:11:21Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "OA6UAKGG2PAPW7TQ5YVYHXHAPOT2JB6Z"
+    },
+    {
+      "timestamp": "2025-03-02T07:07:12Z",
+      "url": "http://www.hormonemd.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-03-02T07:07:12Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "OA6UAKGG2PAPW7TQ5YVYHXHAPOT2JB6Z"
+    },
+    {
+      "timestamp": "2025-04-16T18:19:43Z",
+      "url": "https://hormonemd.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-04-16T18:19:43Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "2XWXALBVJZLLXPELS72Q7XXDPXXVIQM2"
+    },
+    {
+      "timestamp": "2025-04-22T03:59:59Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "SB3BRZ4WIDSIVSABAPA67YU6IVSWWK4U"
+    },
+    {
+      "timestamp": "2025-07-09T19:11:03Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "46N2R6ZNLHK4WP3776PUFCZGFJM2IUVA"
+    },
+    {
+      "timestamp": "2025-10-08T16:44:20Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "WL5TKNR76NZHJN5MIHO2SZMMKLC47NZH"
+    },
+    {
+      "timestamp": "2026-01-25T00:43:08Z",
+      "url": "https://www.hormonemd.com/",
+      "status": "200",
+      "digest": "E745XB3Z6N4GO4BNUAZVACB2FPQDGWQU"
+    }
+  ]
+}

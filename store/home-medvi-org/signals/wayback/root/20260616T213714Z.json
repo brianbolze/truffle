@@ -1,0 +1,116 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:37:14Z",
+  "ok": true,
+  "input": {
+    "url": "https://home.medvi.org/"
+  },
+  "schema_drift": [],
+  "first_seen": "2026-03-08T04:06:06Z",
+  "last_seen": "2026-05-23T04:58:07Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 100,
+  "snapshot_count": 14,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2026-03-08T04:06:06Z",
+      "to": "2026-05-09T19:58:12Z"
+    },
+    {
+      "status": "-",
+      "from": "2026-05-23T04:58:07Z",
+      "to": "2026-05-23T04:58:07Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20260308040606/https://home.medvi.org/",
+  "last_snapshot_url": "https://web.archive.org/web/20260523045807/https://home.medvi.org/",
+  "snapshots": [
+    {
+      "timestamp": "2026-03-08T04:06:06Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "GHKKWVVDTCQXQ5DUIQYJCXVQJ6BWHSOO"
+    },
+    {
+      "timestamp": "2026-03-11T06:13:01Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "VQK342O5ABHJ3ILIMXCLLPKHLR6FMQMJ"
+    },
+    {
+      "timestamp": "2026-03-14T16:47:38Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "HF2DFP7U7XMAMT7I66DEMCOS42KBVS5E"
+    },
+    {
+      "timestamp": "2026-03-14T22:22:33Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "3YN77B2747MDPH5S6E6W7VBALX4XUV7X"
+    },
+    {
+      "timestamp": "2026-03-17T06:25:47Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "6TYTDJWMEGMU6HGEG2IHZ3RUJSJJZPL4"
+    },
+    {
+      "timestamp": "2026-04-02T14:11:58Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "KE4VQ4VFLMIVEIFZODJYJ4NMLCA5WC3N"
+    },
+    {
+      "timestamp": "2026-04-04T04:14:07Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "XUCS7OS5655G2HJIC74MXYUFX6DQUJUJ"
+    },
+    {
+      "timestamp": "2026-04-05T10:20:29Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "KE4VQ4VFLMIVEIFZODJYJ4NMLCA5WC3N"
+    },
+    {
+      "timestamp": "2026-04-11T06:56:38Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "LIN4KQABHYHXMIC3WFIAKURIZBEZK2BK"
+    },
+    {
+      "timestamp": "2026-04-23T18:55:19Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "I5QSZ2XD7KM4OKVJTZLTSCZFJ3UN7D3X"
+    },
+    {
+      "timestamp": "2026-04-23T20:21:24Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "Y4OZRBT4EONVB6ZHHLMUWVXUCC3GX3YE"
+    },
+    {
+      "timestamp": "2026-05-03T09:22:04Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "4IT5U5A6ZMJD3RBL5YPHGKAZ4DO2TZ4J"
+    },
+    {
+      "timestamp": "2026-05-09T19:58:12Z",
+      "url": "https://home.medvi.org/",
+      "status": "200",
+      "digest": "HO5ABHYHCDXXCSNO7JHJZUVLGKDAPCAR"
+    },
+    {
+      "timestamp": "2026-05-23T04:58:07Z",
+      "url": "https://home.medvi.org/",
+      "status": "-",
+      "digest": "4IT5U5A6ZMJD3RBL5YPHGKAZ4DO2TZ4J"
+    }
+  ]
+}

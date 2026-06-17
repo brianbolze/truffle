@@ -1,0 +1,629 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:34:54Z",
+  "ok": true,
+  "input": {
+    "url": "https://goodlifemeds.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2006-08-30T18:00:18Z",
+  "last_seen": "2026-05-21T10:21:48Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 7230,
+  "snapshot_count": 77,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2006-08-30T18:00:18Z",
+      "to": "2021-12-03T13:35:07Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-12-23T15:30:41Z",
+      "to": "2023-12-23T15:30:41Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-12-23T15:31:22Z",
+      "to": "2024-02-27T21:32:15Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-02-27T21:33:02Z",
+      "to": "2024-02-27T21:33:02Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-16T11:01:35Z",
+      "to": "2024-05-16T11:01:35Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-05-16T11:06:05Z",
+      "to": "2024-05-16T11:06:05Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-07-07T14:54:41Z",
+      "to": "2024-08-01T23:37:07Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-08-01T23:37:10Z",
+      "to": "2024-08-01T23:37:10Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-07T13:51:50Z",
+      "to": "2024-08-07T13:51:50Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-08-07T14:05:21Z",
+      "to": "2024-08-07T14:05:21Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-07T14:05:26Z",
+      "to": "2024-10-05T13:15:32Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-11-11T13:00:32Z",
+      "to": "2024-11-11T13:00:32Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-11-14T08:36:41Z",
+      "to": "2024-12-08T03:53:03Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-12-18T17:38:28Z",
+      "to": "2024-12-18T17:38:28Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-16T17:48:19Z",
+      "to": "2025-02-20T23:51:51Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-21T06:38:20Z",
+      "to": "2025-02-21T06:38:20Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-21T06:38:21Z",
+      "to": "2025-02-28T16:11:38Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-10T22:58:55Z",
+      "to": "2025-03-10T22:58:55Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-10T22:58:55Z",
+      "to": "2025-03-10T22:58:55Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-10T22:58:56Z",
+      "to": "2025-03-11T01:21:15Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-11T01:21:15Z",
+      "to": "2025-03-11T01:21:15Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-23T19:37:20Z",
+      "to": "2025-03-23T19:37:20Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-23T19:37:20Z",
+      "to": "2025-03-23T19:37:20Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-23T23:03:41Z",
+      "to": "2025-03-23T23:03:41Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-03-23T23:03:41Z",
+      "to": "2025-03-23T23:03:41Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-04-02T07:55:10Z",
+      "to": "2025-04-02T07:55:10Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-02T07:55:10Z",
+      "to": "2026-02-08T17:44:03Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-03-04T13:13:04Z",
+      "to": "2026-03-04T13:13:04Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-03-04T13:13:04Z",
+      "to": "2026-05-21T10:21:48Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20060830180018/http://www.goodlifemeds.com:80/",
+  "last_snapshot_url": "https://web.archive.org/web/20260521102148/https://www.goodlifemeds.com/",
+  "snapshots": [
+    {
+      "timestamp": "2006-08-30T18:00:18Z",
+      "url": "http://www.goodlifemeds.com:80/",
+      "status": "200",
+      "digest": "QEV7JKLTG6RW43LNKZGABNK5BH7Q3YSW"
+    },
+    {
+      "timestamp": "2007-01-04T00:51:54Z",
+      "url": "http://www.goodlifemeds.com:80/",
+      "status": "200",
+      "digest": "CRTD3BVBGZFBF5ZO5HZBVOGFRC4BNZFO"
+    },
+    {
+      "timestamp": "2009-04-19T09:31:22Z",
+      "url": "http://goodlifemeds.com:80/",
+      "status": "200",
+      "digest": "BI5FSDCHCCTXYRZEVKTSKZ7HT2ATAPX4"
+    },
+    {
+      "timestamp": "2010-11-15T10:18:14Z",
+      "url": "http://www.goodlifemeds.com:80/",
+      "status": "200",
+      "digest": "PCTZ7XXTLTVX4SIL2EWKSASFB2IM7CMQ"
+    },
+    {
+      "timestamp": "2011-03-01T16:48:16Z",
+      "url": "http://goodlifemeds.com/",
+      "status": "200",
+      "digest": "BJKLS5TTOQVIN27E2WQRRRDV6DEJYLRZ"
+    },
+    {
+      "timestamp": "2013-03-09T02:47:05Z",
+      "url": "http://goodlifemeds.com:80/",
+      "status": "200",
+      "digest": "6C4AXLB5Z7GUDCB6WWSWOR2FPRS35YI6"
+    },
+    {
+      "timestamp": "2013-06-11T23:22:18Z",
+      "url": "http://goodlifemeds.com/",
+      "status": "200",
+      "digest": "K3DQ2MWPWY4IQMI2UMB5TICUE5MOD7NK"
+    },
+    {
+      "timestamp": "2013-10-21T00:44:26Z",
+      "url": "http://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "AJKLOJQDIGSVTAZIV2O3AT7PAWSHUK2L"
+    },
+    {
+      "timestamp": "2014-12-17T10:41:50Z",
+      "url": "http://goodlifemeds.com/",
+      "status": "200",
+      "digest": "TEQ7VUQBY76ZZTUZDDDPW46LMXH565OT"
+    },
+    {
+      "timestamp": "2015-04-19T13:48:30Z",
+      "url": "http://goodlifemeds.com/",
+      "status": "200",
+      "digest": "IL7TZ647F2QIX634OWMBTZ34AZKP5OR6"
+    },
+    {
+      "timestamp": "2015-08-01T17:58:22Z",
+      "url": "http://goodlifemeds.com/",
+      "status": "200",
+      "digest": "ZZNKBLFY3SHF37GXMRPAG47S7CLAJWAT"
+    },
+    {
+      "timestamp": "2016-01-10T11:25:12Z",
+      "url": "http://goodlifemeds.com/",
+      "status": "200",
+      "digest": "B3X4OEM7GG6HLH4SM6BHXIJSEOY43A4F"
+    },
+    {
+      "timestamp": "2016-03-06T10:39:05Z",
+      "url": "http://goodlifemeds.com/",
+      "status": "200",
+      "digest": "WNSIRKNPNAN2LLNMP3SG2EGCBMB3I2KX"
+    },
+    {
+      "timestamp": "2020-10-01T21:33:21Z",
+      "url": "https://goodlifemeds.com/",
+      "status": "200",
+      "digest": "3U2L3QJKNHXQPWSDW4JTFOA7EJ6DDVRY"
+    },
+    {
+      "timestamp": "2021-12-03T13:35:07Z",
+      "url": "http://goodlifemeds.com/",
+      "status": "200",
+      "digest": "C2N2OZ6CORQ5LMSJLMQF4VDE4QDWNR3C"
+    },
+    {
+      "timestamp": "2023-12-23T15:30:41Z",
+      "url": "https://goodlifemeds.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2023-12-23T15:31:22Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "KVOLTWJPQOCRWX3FNZSHMCT4ZLWQ6J2U"
+    },
+    {
+      "timestamp": "2024-02-27T21:32:15Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "FNXFIBE76VFQ6IIGTGZQN2IU746NRCX7"
+    },
+    {
+      "timestamp": "2024-02-27T21:33:02Z",
+      "url": "http://www.goodlifemeds.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-05-16T11:01:35Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "5HLWZFSHJ7TDCI6GCGADNE4HJUV3IJUH"
+    },
+    {
+      "timestamp": "2024-05-16T11:06:05Z",
+      "url": "http://www.goodlifemeds.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-07-07T14:54:41Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "KDNPKYKVRMN2UNGYM4KHX7RSUWKMUHAB"
+    },
+    {
+      "timestamp": "2024-08-01T23:37:07Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "3ITULPUKO6NUNA7CKH5X2UZH3QZBOVP4"
+    },
+    {
+      "timestamp": "2024-08-01T23:37:10Z",
+      "url": "http://www.goodlifemeds.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-08-07T13:51:50Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "3ITULPUKO6NUNA7CKH5X2UZH3QZBOVP4"
+    },
+    {
+      "timestamp": "2024-08-07T14:05:21Z",
+      "url": "http://goodlifemeds.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-08-07T14:05:26Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "3ITULPUKO6NUNA7CKH5X2UZH3QZBOVP4"
+    },
+    {
+      "timestamp": "2024-08-29T15:12:34Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "7ZIDFGANMIKFO626OQHCAAX2PD5XA2BB"
+    },
+    {
+      "timestamp": "2024-09-18T21:16:56Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "GV554S4EETUIPPKHLXO246TLCBVEO7NV"
+    },
+    {
+      "timestamp": "2024-10-05T13:15:32Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "WIKTLQFUSQCZHHXSROSWELS7DADXJUHO"
+    },
+    {
+      "timestamp": "2024-11-11T13:00:32Z",
+      "url": "http://goodlifemeds.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-11-14T08:36:41Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "IKATDMQTFK6ALQDYSMFADBVFCCERVL4U"
+    },
+    {
+      "timestamp": "2024-11-28T14:19:49Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "6DRXRV6USQITZM7ALWKGGPPHVLSJJSLJ"
+    },
+    {
+      "timestamp": "2024-12-08T03:53:03Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "Q5BEY3LAOLUYCRL5A2PN2QA23ESMBNPN"
+    },
+    {
+      "timestamp": "2024-12-18T17:38:28Z",
+      "url": "http://www.goodlifemeds.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-01-16T17:48:19Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "DYNHWKKBI5VWYMQQ2CHJ47YPXR7GGFN4"
+    },
+    {
+      "timestamp": "2025-01-17T15:45:38Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "5K5L72ARUXMOEQA64ODCCAI3TAXMCFMH"
+    },
+    {
+      "timestamp": "2025-02-09T18:27:18Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "253A3X3EDCAQOCSAD2ZURJ5P37FMM4B5"
+    },
+    {
+      "timestamp": "2025-02-20T23:51:51Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "YRGVEPVFK5CI3T4LYPWVN2IJSH3T275W"
+    },
+    {
+      "timestamp": "2025-02-21T06:38:20Z",
+      "url": "http://www.goodlifemeds.com/",
+      "status": "301",
+      "digest": "TICV2GKYHLHUWOKQTDKBYHSOPO4L3MB7"
+    },
+    {
+      "timestamp": "2025-02-21T06:38:21Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "YRGVEPVFK5CI3T4LYPWVN2IJSH3T275W"
+    },
+    {
+      "timestamp": "2025-02-28T16:11:38Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "M44KBJMVDYM3EPS4WFH5DDVAO2JIVCPT"
+    },
+    {
+      "timestamp": "2025-03-10T22:58:55Z",
+      "url": "http://goodlifemeds.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-10T22:58:55Z",
+      "url": "https://goodlifemeds.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-10T22:58:55Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "PJETKWBTIZ6NRVMC2OL57S5MJL4LH7EF"
+    },
+    {
+      "timestamp": "2025-03-10T22:58:56Z",
+      "url": "https://goodlifemeds.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-11T01:21:15Z",
+      "url": "http://www.goodlifemeds.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-11T01:21:15Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "PJETKWBTIZ6NRVMC2OL57S5MJL4LH7EF"
+    },
+    {
+      "timestamp": "2025-03-23T19:37:20Z",
+      "url": "http://goodlifemeds.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-23T19:37:20Z",
+      "url": "https://goodlifemeds.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-23T19:37:20Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "ZVTC5PLVYV2X53CERFGQZPXQ3RCOQTJ2"
+    },
+    {
+      "timestamp": "2025-03-23T23:03:41Z",
+      "url": "http://www.goodlifemeds.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-23T23:03:41Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "-",
+      "digest": "ZVTC5PLVYV2X53CERFGQZPXQ3RCOQTJ2"
+    },
+    {
+      "timestamp": "2025-04-02T07:55:10Z",
+      "url": "http://www.goodlifemeds.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-04-02T07:55:10Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "GHYYHXOI4MY432OTRSMFGH3UG7SI6EIG"
+    },
+    {
+      "timestamp": "2025-04-04T21:52:21Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "ZMUDGZRBL4UML5N5IAD522XZT3C5FXMQ"
+    },
+    {
+      "timestamp": "2025-04-27T07:30:09Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "A73ATHSVC54HHNFJR6YETOFNJZJQ5EZW"
+    },
+    {
+      "timestamp": "2025-05-13T07:44:12Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "KGJLBPCM2NLW7YGRGLP4LMZUJ4PWDQAX"
+    },
+    {
+      "timestamp": "2025-06-10T07:23:54Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "MP3YYYIDJMB5PPAUBGRCLMYI3HCWE3B7"
+    },
+    {
+      "timestamp": "2025-06-20T20:07:27Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "B4SW2JL7BPYO5MOEYCRZQ7MBCEKPOISQ"
+    },
+    {
+      "timestamp": "2025-07-10T07:16:49Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "UQXFLUQG5RMUE6TB3E2KEY577MF5LXEG"
+    },
+    {
+      "timestamp": "2025-07-19T08:48:10Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "AQIUIWGXBPCP34KZWLVNYJE4I4SZFGV6"
+    },
+    {
+      "timestamp": "2025-08-14T08:28:12Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "J4HTINQEEQ6DVWETYT7EKABZV4FJWGRD"
+    },
+    {
+      "timestamp": "2025-08-16T10:34:00Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "K4RHKTRGDC7JZ5RSPZ5LTAKNXFF5PY32"
+    },
+    {
+      "timestamp": "2025-09-08T06:41:02Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "6YS52JHZHLXSCNANPGYBZI3R7XSWOSOW"
+    },
+    {
+      "timestamp": "2025-10-14T17:26:44Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "3DY6HYWESZCFL3Q4F22BQQTMRJQBROX4"
+    },
+    {
+      "timestamp": "2025-11-11T14:40:38Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "XGPI6XZVGWWYYFPZBSQ4JJG6MHP6DGXT"
+    },
+    {
+      "timestamp": "2025-12-08T17:00:51Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "L4IJXBTANYJW2U5CBYLYDJHIBAYJHSJY"
+    },
+    {
+      "timestamp": "2026-01-08T20:09:36Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "P5H4FCFC5WXWVSISMJCQY5YY64YSQRLP"
+    },
+    {
+      "timestamp": "2026-01-15T12:20:34Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "HK2PKFRPD5G4DTMWALLGW57AVX4SU3OD"
+    },
+    {
+      "timestamp": "2026-02-04T03:25:44Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "QT3JFU4QGQKA52ZNCCIE4L6XZC3JX3T5"
+    },
+    {
+      "timestamp": "2026-02-08T17:44:03Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "JYKZNRFZB7OK4RXEBOJMSZJV3VDQ5WVI"
+    },
+    {
+      "timestamp": "2026-03-04T13:13:04Z",
+      "url": "https://goodlifemeds.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2026-03-04T13:13:04Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "SMHNEFB4YRSGQABKAH3AOMKX2TOO4P2B"
+    },
+    {
+      "timestamp": "2026-03-08T11:03:25Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "77KJXSPYSL2ESZCPAQKY64UNJU2PP5EL"
+    },
+    {
+      "timestamp": "2026-05-09T23:41:17Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "4P7CR5JNMA2AC4ZAJKATNXOUPA3NWRSF"
+    },
+    {
+      "timestamp": "2026-05-21T10:21:48Z",
+      "url": "https://www.goodlifemeds.com/",
+      "status": "200",
+      "digest": "CRH5U3Z5QI6HGT2VAQ2354KAMXH7NAF5"
+    }
+  ]
+}

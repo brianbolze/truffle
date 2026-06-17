@@ -1,0 +1,39 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:43:14Z",
+  "ok": true,
+  "input": {
+    "url": "https://www.maximustribe.com/testosterone/enclomiphene-tadalafil-testosterone-cream"
+  },
+  "schema_drift": [],
+  "first_seen": "2026-01-19T05:34:33Z",
+  "last_seen": "2026-03-09T19:33:55Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 148,
+  "snapshot_count": 2,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2026-01-19T05:34:33Z",
+      "to": "2026-03-09T19:33:55Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20260119053433/https://www.maximustribe.com/testosterone/enclomiphene-tadalafil-testosterone-cream",
+  "last_snapshot_url": "https://web.archive.org/web/20260309193355/https://www.maximustribe.com/testosterone/enclomiphene-tadalafil-testosterone-cream",
+  "snapshots": [
+    {
+      "timestamp": "2026-01-19T05:34:33Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-tadalafil-testosterone-cream",
+      "status": "200",
+      "digest": "MMEHX3DS6JOVPLPFOI6CO6KZNNNRNJPM"
+    },
+    {
+      "timestamp": "2026-03-09T19:33:55Z",
+      "url": "https://www.maximustribe.com/testosterone/enclomiphene-tadalafil-testosterone-cream",
+      "status": "200",
+      "digest": "L3P6EVUB355LDJHXMT7CKD46CIXJZLZU"
+    }
+  ]
+}

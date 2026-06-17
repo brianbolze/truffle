@@ -1,0 +1,796 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:48:58Z",
+  "ok": true,
+  "input": {
+    "url": "https://vitalityrx.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2003-06-18T21:23:13Z",
+  "last_seen": "2026-05-21T04:03:52Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 8399,
+  "snapshot_count": 89,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2003-06-18T21:23:13Z",
+      "to": "2009-10-12T04:07:07Z"
+    },
+    {
+      "status": "301",
+      "from": "2011-02-02T14:31:33Z",
+      "to": "2011-02-02T14:31:33Z"
+    },
+    {
+      "status": "200",
+      "from": "2017-08-18T11:07:47Z",
+      "to": "2018-01-20T02:40:12Z"
+    },
+    {
+      "status": "301",
+      "from": "2018-03-18T11:23:48Z",
+      "to": "2018-03-18T11:23:48Z"
+    },
+    {
+      "status": "200",
+      "from": "2018-04-13T09:19:08Z",
+      "to": "2018-04-13T09:19:08Z"
+    },
+    {
+      "status": "301",
+      "from": "2018-07-11T00:27:57Z",
+      "to": "2018-07-11T00:27:57Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-01-19T22:40:53Z",
+      "to": "2019-01-19T22:40:53Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-08-31T07:57:30Z",
+      "to": "2019-08-31T07:57:30Z"
+    },
+    {
+      "status": "200",
+      "from": "2020-09-20T15:01:15Z",
+      "to": "2020-10-25T07:47:59Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-20T02:47:26Z",
+      "to": "2021-12-20T02:47:26Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-01-03T16:43:07Z",
+      "to": "2022-03-23T11:56:11Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-04-01T09:48:37Z",
+      "to": "2022-04-01T09:48:37Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-04-13T15:34:46Z",
+      "to": "2022-04-13T15:34:46Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-05-19T20:59:44Z",
+      "to": "2022-05-19T20:59:44Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-06-06T15:55:59Z",
+      "to": "2022-06-06T15:56:24Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-07-26T03:59:16Z",
+      "to": "2022-07-26T03:59:40Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-07-26T04:00:16Z",
+      "to": "2022-07-26T04:00:16Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-07-26T04:00:21Z",
+      "to": "2022-07-26T04:00:21Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-07-26T04:00:55Z",
+      "to": "2022-12-04T05:03:40Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-01-20T19:28:28Z",
+      "to": "2023-01-20T19:28:28Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-02-05T11:52:07Z",
+      "to": "2023-02-05T11:52:07Z"
+    },
+    {
+      "status": "-",
+      "from": "2023-03-14T04:46:21Z",
+      "to": "2023-03-14T04:46:21Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-06-07T11:37:33Z",
+      "to": "2023-06-07T11:37:33Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-08-11T09:30:49Z",
+      "to": "2024-01-31T16:07:58Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-02-24T00:13:42Z",
+      "to": "2024-03-07T22:45:54Z"
+    },
+    {
+      "status": "404",
+      "from": "2024-04-14T17:42:31Z",
+      "to": "2024-04-14T17:42:31Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-04-14T17:42:32Z",
+      "to": "2024-04-14T17:42:32Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-04-15T02:00:47Z",
+      "to": "2024-04-15T02:00:47Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-04-15T02:00:47Z",
+      "to": "2024-04-15T02:00:47Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-04-23T08:49:21Z",
+      "to": "2024-04-23T08:49:21Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-04-23T08:50:12Z",
+      "to": "2024-04-23T08:50:12Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-04-23T08:50:14Z",
+      "to": "2024-04-23T08:50:14Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-07-08T19:19:37Z",
+      "to": "2024-07-22T16:23:59Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-08-08T09:35:54Z",
+      "to": "2024-08-08T09:35:54Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-08T09:35:54Z",
+      "to": "2024-08-08T09:35:54Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-08-21T14:25:22Z",
+      "to": "2024-08-21T14:25:22Z"
+    },
+    {
+      "status": "404",
+      "from": "2024-08-21T14:25:22Z",
+      "to": "2024-08-21T14:25:22Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-13T12:58:09Z",
+      "to": "2024-11-21T04:45:03Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-01-23T11:15:07Z",
+      "to": "2025-01-23T11:15:07Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-20T04:43:52Z",
+      "to": "2025-02-20T04:43:52Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-20T23:58:23Z",
+      "to": "2025-02-20T23:58:23Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-20T23:58:24Z",
+      "to": "2025-02-20T23:58:24Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-21T02:09:09Z",
+      "to": "2025-03-12T18:52:29Z"
+    },
+    {
+      "status": "404",
+      "from": "2025-03-12T18:52:29Z",
+      "to": "2025-03-12T18:52:29Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-18T04:19:24Z",
+      "to": "2025-03-18T04:19:24Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-18T04:19:30Z",
+      "to": "2025-03-18T05:58:18Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-22T05:30:21Z",
+      "to": "2025-03-22T05:30:21Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-22T05:30:22Z",
+      "to": "2026-05-21T04:03:52Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20030618212313/http://vitalityrx.com:80/",
+  "last_snapshot_url": "https://web.archive.org/web/20260521040352/https://vitalityrx.com/",
+  "snapshots": [
+    {
+      "timestamp": "2003-06-18T21:23:13Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "NWHNDRMPGW4XFP2RUAEKYKHO6KQK3IB5"
+    },
+    {
+      "timestamp": "2004-03-16T20:02:19Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "FV7FLYPGRVLNR7LEP5VHPVPZXIGAR32X"
+    },
+    {
+      "timestamp": "2004-05-23T23:31:44Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "F24GQZFQCTZLHHRGEMERIYMLXHZY2EOG"
+    },
+    {
+      "timestamp": "2004-06-08T14:31:25Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "NJUO6E5QE4IGBMUFIUQU5XPMKF2YI3EE"
+    },
+    {
+      "timestamp": "2004-06-10T00:42:44Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "6Y72NYCIKZFRVIVOEIMSQLLOOVDVHTLX"
+    },
+    {
+      "timestamp": "2004-08-28T16:43:55Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "UQNL5YSA7CQ4SFU66LWHRGJFSD75NV5H"
+    },
+    {
+      "timestamp": "2004-12-14T10:51:16Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "44ELDX6NFSYBHWP3NUGZTSSV2TZFJVRP"
+    },
+    {
+      "timestamp": "2005-01-28T10:16:56Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "MIRWNMS5B6JW3XXI2WWMEIXPE5F42MTQ"
+    },
+    {
+      "timestamp": "2009-10-12T04:07:07Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "35EVPLN5I2CCUBBI3KIOC7BH7O5KK6WV"
+    },
+    {
+      "timestamp": "2011-02-02T14:31:33Z",
+      "url": "http://vitalityrx.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2017-08-18T11:07:47Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "JDLJBJHS36PCT2ZZQKJKAUQTXMBVIYP7"
+    },
+    {
+      "timestamp": "2017-09-11T13:51:11Z",
+      "url": "http://vitalityrx.com/",
+      "status": "200",
+      "digest": "TCYRUTFUWFT22ISK7ZM36OCLPB54HGN4"
+    },
+    {
+      "timestamp": "2017-10-08T00:54:52Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "XTMPHIYM5RDHLEOBUP4T2XWNN3E4G2YM"
+    },
+    {
+      "timestamp": "2017-11-09T11:10:24Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "UD77FSDDC4PF4QQULMSUBSNXAIUD4HKO"
+    },
+    {
+      "timestamp": "2017-12-12T19:24:58Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "3JVUZCRIIGG5RRP2VU6WG7IYXZ7UZP6F"
+    },
+    {
+      "timestamp": "2018-01-04T13:00:52Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "GYSJCFNM3JCZKTLEX5LEZIVNNSDKNZ5L"
+    },
+    {
+      "timestamp": "2018-01-20T02:40:12Z",
+      "url": "http://vitalityrx.com:80/",
+      "status": "200",
+      "digest": "ZE6MGH75KWWYJJICRMH7LRA34SKFYT5G"
+    },
+    {
+      "timestamp": "2018-03-18T11:23:48Z",
+      "url": "http://vitalityrx.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2018-04-13T09:19:08Z",
+      "url": "https://www.vitalityrx.com/",
+      "status": "200",
+      "digest": "SIZ4ZEMOV3GDDL4PHHP22J3EEJYFHZFK"
+    },
+    {
+      "timestamp": "2018-07-11T00:27:57Z",
+      "url": "http://www.vitalityrx.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2019-01-19T22:40:53Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "OIILITGZSYHZ42I63XUD3U5LROTM2XUC"
+    },
+    {
+      "timestamp": "2019-08-31T07:57:30Z",
+      "url": "http://vitalityrx.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2020-09-20T15:01:15Z",
+      "url": "https://www.vitalityrx.com/",
+      "status": "200",
+      "digest": "VCEJEXBSQC57ZGRVEFAQPXJKELSGLBYJ"
+    },
+    {
+      "timestamp": "2020-10-25T07:47:59Z",
+      "url": "https://www.vitalityrx.com/",
+      "status": "200",
+      "digest": "XMOAD63S5MF4UTYY2DZSPWCOHNBKLUQT"
+    },
+    {
+      "timestamp": "2021-12-20T02:47:26Z",
+      "url": "http://vitalityrx.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2022-01-03T16:43:07Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "WSTEGWO5A7P772S3YDQY3MSOA4ZBXEUE"
+    },
+    {
+      "timestamp": "2022-03-23T11:56:11Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "VMXX22DNHUIPQYYP2LQZPBTYYRJW4N7V"
+    },
+    {
+      "timestamp": "2022-04-01T09:48:37Z",
+      "url": "http://vitalityrx.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2022-04-13T15:34:46Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "3KRSVRUQZTMDWLCLXLGQB7PWDK6RPHYR"
+    },
+    {
+      "timestamp": "2022-05-19T20:59:44Z",
+      "url": "http://www.vitalityrx.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2022-06-06T15:55:59Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "QYWBPE772SHKR2UZLQNWJV6REOT5YM6K"
+    },
+    {
+      "timestamp": "2022-06-06T15:56:24Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "VUEPVFRS27KSQ5OSXULYQCEFDTBNHNEE"
+    },
+    {
+      "timestamp": "2022-07-26T03:59:16Z",
+      "url": "http://www.vitalityrx.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2022-07-26T03:59:40Z",
+      "url": "https://www.vitalityrx.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-07-26T04:00:16Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "TU4VICS3FD6SLEWZVWD46XQ2E52WNJ56"
+    },
+    {
+      "timestamp": "2022-07-26T04:00:21Z",
+      "url": "https://www.vitalityrx.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-07-26T04:00:55Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "TU4VICS3FD6SLEWZVWD46XQ2E52WNJ56"
+    },
+    {
+      "timestamp": "2022-10-28T14:42:42Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "A6NAUFG5JISP3W6RC2ENBTUWZOJL7QA4"
+    },
+    {
+      "timestamp": "2022-11-18T12:46:46Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "UW6JXO3MPACLYIB3KCUXJEOSGV2XXTTH"
+    },
+    {
+      "timestamp": "2022-11-18T20:02:19Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "F4DEPXSCA3DGXHP3DBK6R7HFW25KSEQ2"
+    },
+    {
+      "timestamp": "2022-12-02T22:14:55Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "T45YVTEDUXDF3DJFINQQUMX3RYTX4PWU"
+    },
+    {
+      "timestamp": "2022-12-04T05:03:40Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "ONSWY6HEXCRAK7VQCDCWYVOLMR33K7KL"
+    },
+    {
+      "timestamp": "2023-01-20T19:28:28Z",
+      "url": "http://vitalityrx.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2023-02-05T11:52:07Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "J63RI2LGC24XJBYA6HQOJ6KRMZI4NLQX"
+    },
+    {
+      "timestamp": "2023-03-14T04:46:21Z",
+      "url": "http://www.vitalityrx.com/",
+      "status": "-",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2023-06-07T11:37:33Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "CUWEH5AKJJVZW4CPKAVRCDIGOSRHJS4X"
+    },
+    {
+      "timestamp": "2023-08-11T09:30:49Z",
+      "url": "http://www2.vitalityrx.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2023-12-21T09:39:21Z",
+      "url": "http://www.vitalityrx.com/",
+      "status": "301",
+      "digest": "NJOGTVI7R5XR5ZCAUWHDBZKT36NOGPDW"
+    },
+    {
+      "timestamp": "2024-01-31T16:07:58Z",
+      "url": "http://www2.vitalityrx.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-02-24T00:13:42Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "BKIXEHCBJAPOGFVLGN7ORPRMTLRNAZIP"
+    },
+    {
+      "timestamp": "2024-03-07T22:45:54Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "HN3LAXLME3OYRHQ5CYOCK57BOEKXQDZE"
+    },
+    {
+      "timestamp": "2024-04-14T17:42:31Z",
+      "url": "https://www2.vitalityrx.com/",
+      "status": "404",
+      "digest": "QOGJLNFNWZPHGITDM36XFB5V6HBXYXQT"
+    },
+    {
+      "timestamp": "2024-04-14T17:42:32Z",
+      "url": "http://www2.vitalityrx.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-04-15T02:00:47Z",
+      "url": "http://www.vitalityrx.com/",
+      "status": "-",
+      "digest": "UAYOXERQ2JLWQX2OWBEJPAHXLSG7OTIB"
+    },
+    {
+      "timestamp": "2024-04-15T02:00:47Z",
+      "url": "https://www.vitalityrx.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-04-23T08:49:21Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "RP7BADKY3K533QT2KJIKTGG6Y7ILLHIZ"
+    },
+    {
+      "timestamp": "2024-04-23T08:50:12Z",
+      "url": "http://vitalityrx.com/",
+      "status": "301",
+      "digest": "NJOGTVI7R5XR5ZCAUWHDBZKT36NOGPDW"
+    },
+    {
+      "timestamp": "2024-04-23T08:50:14Z",
+      "url": "https://vitalityrx.com/",
+      "status": "-",
+      "digest": "RP7BADKY3K533QT2KJIKTGG6Y7ILLHIZ"
+    },
+    {
+      "timestamp": "2024-07-08T19:19:37Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "FS5HTBSHTPE6KLJHA75KZZEMSIPM5XCK"
+    },
+    {
+      "timestamp": "2024-07-22T16:23:59Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "YST6I5S5SHUPRSWJUJ3M7GIPMPIE7XWM"
+    },
+    {
+      "timestamp": "2024-08-08T09:35:54Z",
+      "url": "http://vitalityrx.com/",
+      "status": "301",
+      "digest": "NJOGTVI7R5XR5ZCAUWHDBZKT36NOGPDW"
+    },
+    {
+      "timestamp": "2024-08-08T09:35:54Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "N5FPG6SCVFIVMZD76HDKF2RHWKN64EXP"
+    },
+    {
+      "timestamp": "2024-08-21T14:25:22Z",
+      "url": "http://www2.vitalityrx.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-08-21T14:25:22Z",
+      "url": "https://www2.vitalityrx.com/",
+      "status": "404",
+      "digest": "MO7N4IVX6OOUZG7T4D7UULO6PKHY7J5C"
+    },
+    {
+      "timestamp": "2024-09-13T12:58:09Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "YCGHQNMFIXL72ORSEAELG43IWNZ6E7KY"
+    },
+    {
+      "timestamp": "2024-09-18T05:09:49Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "UPHCM4HUSOSQQGXKZHBTZGPGRPYXMM6V"
+    },
+    {
+      "timestamp": "2024-10-01T15:15:39Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "5KC7SXRKUALPURI5XNBCQWQGECFB3ZNZ"
+    },
+    {
+      "timestamp": "2024-11-18T10:06:45Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "W3UPQT4VIOY64G2PCYOH4IED76B3JQ26"
+    },
+    {
+      "timestamp": "2024-11-21T04:45:03Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "I4VAAPBASSUZ5EIXNJF52W4QWFBUNASQ"
+    },
+    {
+      "timestamp": "2025-01-23T11:15:07Z",
+      "url": "http://www.vitalityrx.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-02-20T04:43:52Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "JE6KO7RAOJQR42CPT7FH4ZDJYMNZJWFK"
+    },
+    {
+      "timestamp": "2025-02-20T23:58:23Z",
+      "url": "https://www.vitalityrx.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-02-20T23:58:24Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "3HQ63TZ6B6HPLLH4RMWFC7S7DLUZOX3I"
+    },
+    {
+      "timestamp": "2025-02-21T02:09:09Z",
+      "url": "http://www.vitalityrx.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-02-21T02:09:10Z",
+      "url": "https://www.vitalityrx.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-03-12T18:52:29Z",
+      "url": "http://www2.vitalityrx.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-12T18:52:29Z",
+      "url": "https://www2.vitalityrx.com/",
+      "status": "404",
+      "digest": "2V44PILG5FWLGTVCSF6674QV3VUELURD"
+    },
+    {
+      "timestamp": "2025-03-18T04:19:24Z",
+      "url": "http://vitalityrx.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-18T04:19:30Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "6EY6GDRM6LTJSDPIQIUKE64JNIWANDQY"
+    },
+    {
+      "timestamp": "2025-03-18T05:58:18Z",
+      "url": "http://www.vitalityrx.com/",
+      "status": "200",
+      "digest": "5RBZYSUUS4UK3XM7PELA5YJBWFLBQZTY"
+    },
+    {
+      "timestamp": "2025-03-22T05:30:21Z",
+      "url": "http://vitalityrx.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-22T05:30:22Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "S7KA2WDBZ74TLJE7UG22Y7DYBEQ7VJES"
+    },
+    {
+      "timestamp": "2025-03-22T06:08:18Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "LBLRWNZFDZDBJSHXZA6YQDJJHNWKVW6S"
+    },
+    {
+      "timestamp": "2025-12-05T02:23:19Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "KUEWZUIWVX3GC2GCUCOF5RLZ74JBSE55"
+    },
+    {
+      "timestamp": "2026-01-21T15:17:08Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "4LXBDWPLYZTSN2OQPWOYB3KDFGMGPAQP"
+    },
+    {
+      "timestamp": "2026-02-12T12:14:00Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "5O3NMI275M62FOC2QLVGRINOSFR6UZYY"
+    },
+    {
+      "timestamp": "2026-03-09T22:04:17Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "CVHONQV3VCWI4KOCL5NCSGXCX7NQ3N4Q"
+    },
+    {
+      "timestamp": "2026-04-10T08:52:10Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "DY4UH6PJR445JMV6JWZNU4J7KV4RSBRP"
+    },
+    {
+      "timestamp": "2026-05-21T04:03:52Z",
+      "url": "https://vitalityrx.com/",
+      "status": "200",
+      "digest": "YXGIINMR2GLPUCQW7V6CKJI5FS4BCSKZ"
+    }
+  ]
+}

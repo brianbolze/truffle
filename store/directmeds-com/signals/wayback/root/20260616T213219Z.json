@@ -1,0 +1,497 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:32:19Z",
+  "ok": true,
+  "input": {
+    "url": "https://directmeds.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2008-05-15T02:04:21Z",
+  "last_seen": "2026-05-14T12:02:29Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 6606,
+  "snapshot_count": 70,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2008-05-15T02:04:21Z",
+      "to": "2016-10-21T06:39:14Z"
+    },
+    {
+      "status": "302",
+      "from": "2017-09-22T20:33:16Z",
+      "to": "2017-09-22T20:33:16Z"
+    },
+    {
+      "status": "200",
+      "from": "2018-08-04T20:06:18Z",
+      "to": "2022-01-24T12:58:28Z"
+    },
+    {
+      "status": "302",
+      "from": "2022-12-07T13:38:57Z",
+      "to": "2022-12-07T13:38:57Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-24T21:33:22Z",
+      "to": "2025-03-24T21:33:22Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-05-14T14:00:11Z",
+      "to": "2025-05-14T14:00:11Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-05-26T12:06:52Z",
+      "to": "2025-06-20T23:14:51Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-07-01T17:18:11Z",
+      "to": "2025-07-01T17:18:11Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-07-10T06:02:12Z",
+      "to": "2026-01-18T11:15:32Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-01-20T03:52:04Z",
+      "to": "2026-01-20T03:52:04Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-01-20T03:52:05Z",
+      "to": "2026-05-14T12:02:29Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20080515020421/http://www.directmeds.com:80/",
+  "last_snapshot_url": "https://web.archive.org/web/20260514120229/https://directmeds.com/",
+  "snapshots": [
+    {
+      "timestamp": "2008-05-15T02:04:21Z",
+      "url": "http://www.directmeds.com:80/",
+      "status": "200",
+      "digest": "7HFC6QFKDEKNWFCLHOQKNPP3XR7XKMW2"
+    },
+    {
+      "timestamp": "2008-06-15T02:06:45Z",
+      "url": "http://www.directmeds.com:80/",
+      "status": "200",
+      "digest": "57UXVSEFW6UDN2FQUS3ALODIXRVW2CID"
+    },
+    {
+      "timestamp": "2011-02-02T22:09:06Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "VHX5QPSPY6LRQ7GG7435UI7HAKKQAYSY"
+    },
+    {
+      "timestamp": "2012-06-09T05:53:25Z",
+      "url": "http://www.directmeds.com:80/",
+      "status": "200",
+      "digest": "SV34VUUPWLWGHFGTT3L2PP33D77SBVS5"
+    },
+    {
+      "timestamp": "2012-07-12T11:09:44Z",
+      "url": "http://www.directmeds.com:80/",
+      "status": "200",
+      "digest": "PXGGSSHBW7WCTTVMMF2DB2N7IZ5CRSI2"
+    },
+    {
+      "timestamp": "2013-06-01T14:10:19Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "JDLCQATTRC5IJLZGKYR4CQ2KOC773QLV"
+    },
+    {
+      "timestamp": "2014-12-17T04:15:56Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "HWIZODE6XO5HN7KVQ5E3H7G2UDICHFP6"
+    },
+    {
+      "timestamp": "2015-08-01T06:49:53Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "TJ62PEZHZJWILOK3TBIK7V5MQD5JEFBS"
+    },
+    {
+      "timestamp": "2015-08-13T04:04:24Z",
+      "url": "http://www.directmeds.com:80/",
+      "status": "200",
+      "digest": "BQLLWBEUPD6XMOTKOA3XDQCV3YSJIADV"
+    },
+    {
+      "timestamp": "2015-08-13T04:17:26Z",
+      "url": "http://www.directmeds.com:80/?",
+      "status": "200",
+      "digest": "L2IZ55CA3ZV25YVYK4E3VPGR7KYVIT3V"
+    },
+    {
+      "timestamp": "2016-01-10T17:38:26Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "77MYC3HM34NB6XHATXSRIV47JOK5UQD6"
+    },
+    {
+      "timestamp": "2016-10-21T06:39:14Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "XGAL4BQK2ZB6R2YI5CCFBXZW632IHA6D"
+    },
+    {
+      "timestamp": "2017-09-22T20:33:16Z",
+      "url": "http://directmeds.com/",
+      "status": "302",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2018-08-04T20:06:18Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "6RG2GD6VG2XVGYGJHAC364NDHQY7VKYM"
+    },
+    {
+      "timestamp": "2019-05-22T20:19:32Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "D3CXB2VSQVTLVBYBSM5DB4QHLGLHSN7N"
+    },
+    {
+      "timestamp": "2019-07-21T07:46:18Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "POIM76V4WBDAVMGMVI2ROB57CV2VWZLY"
+    },
+    {
+      "timestamp": "2019-08-21T08:24:13Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "WHNZFNHUV7WSDT3LXMAFKEIKFMOO5AKT"
+    },
+    {
+      "timestamp": "2019-09-16T13:27:29Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "EGIAXP3JWKGT2GZDT4IDP5PWG4K6MZNV"
+    },
+    {
+      "timestamp": "2019-10-23T14:13:35Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "AU7QAKEDPHDBE2E5M5QXVSUIFGVNJ7MU"
+    },
+    {
+      "timestamp": "2019-11-17T17:08:51Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "H6JEJEMXF2YIDKEEAEX6A33KJI3WSXN2"
+    },
+    {
+      "timestamp": "2019-11-24T11:46:43Z",
+      "url": "http://www.directmeds.com:80/",
+      "status": "200",
+      "digest": "JDLCQATTRC5IJLZGKYR4CQ2KOC773QLV"
+    },
+    {
+      "timestamp": "2019-12-13T02:05:11Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "3MTLT6EWKRLBVAEASJF4VB3VK72GOXHU"
+    },
+    {
+      "timestamp": "2019-12-24T17:33:18Z",
+      "url": "http://www.directmeds.com:80/",
+      "status": "200",
+      "digest": "JDLCQATTRC5IJLZGKYR4CQ2KOC773QLV"
+    },
+    {
+      "timestamp": "2020-08-10T14:54:53Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "EBBEKCV6TDXLG2GC5QTCUYQNPLSMHSU4"
+    },
+    {
+      "timestamp": "2020-09-20T03:21:52Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "T32F6VHL5GTBJWIPV4SDVGCLDGNKDSJS"
+    },
+    {
+      "timestamp": "2020-10-21T23:54:32Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "7BIBKETVFZQS52H55HENXAOJRMAZOAYD"
+    },
+    {
+      "timestamp": "2020-11-26T08:50:45Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "GPZPO4W54WKMMGG27P4VWPAOVVEJF6K5"
+    },
+    {
+      "timestamp": "2021-01-24T11:19:00Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "L7KKONLSANZJDSEXMTAWZCVC64NF3YST"
+    },
+    {
+      "timestamp": "2021-03-01T21:35:10Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "DRP2XLKHEB3GC6YMJGHP676N4SPOU5DW"
+    },
+    {
+      "timestamp": "2021-09-27T18:28:24Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "U5C5FQEQC32AUO2LYETHCMJEEQZFQYTD"
+    },
+    {
+      "timestamp": "2021-10-24T02:04:12Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "HGP2CI2I2KS4JZFJZIXFSUZ2FZDHYZZX"
+    },
+    {
+      "timestamp": "2021-11-30T23:33:58Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "CQHNLWOHD7F7O6HGKEUCRROUEOJXHXU3"
+    },
+    {
+      "timestamp": "2021-12-08T14:57:52Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "ASNATWS2I4VJG44LWBO5YY6CWPQMPJTB"
+    },
+    {
+      "timestamp": "2022-01-24T12:58:28Z",
+      "url": "http://directmeds.com/",
+      "status": "200",
+      "digest": "JDLCQATTRC5IJLZGKYR4CQ2KOC773QLV"
+    },
+    {
+      "timestamp": "2022-12-07T13:38:57Z",
+      "url": "https://directmeds.com/",
+      "status": "302",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-03-24T21:33:22Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "NLARGV3BPHIUWPKU2AHXZ4SVS5PGZJA7"
+    },
+    {
+      "timestamp": "2025-05-14T14:00:11Z",
+      "url": "http://directmeds.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-05-26T12:06:52Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "NFTIMQF6C7FS36XL34THEMCBFC5QDPXP"
+    },
+    {
+      "timestamp": "2025-06-20T23:14:51Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "ESJ6QPY5LKV5PUFZPSHQ7RDKZDTFVK5B"
+    },
+    {
+      "timestamp": "2025-07-01T17:18:11Z",
+      "url": "https://www.directmeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-07-10T06:02:12Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "RAGG7HROMVR5DYGAQQNKOOCDIK2A3DIT"
+    },
+    {
+      "timestamp": "2025-07-11T21:47:28Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "WZAYNPVTQLKLJ6RZ2GMJHNIGINKZAWNJ"
+    },
+    {
+      "timestamp": "2025-08-04T00:34:14Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "TUUCPMGQ5QFOM4QVBYTWPGBN27GLF3HE"
+    },
+    {
+      "timestamp": "2025-08-14T20:51:38Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "43J2ZPU2WFH5IUS76LKXNJAOQVNZPU3V"
+    },
+    {
+      "timestamp": "2025-09-01T18:40:07Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "667OJGTE2TNCYOI4HPLK4WVY4ULYR2C7"
+    },
+    {
+      "timestamp": "2025-09-06T20:08:42Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "IB3HSUBDXLE3WVO44FSYVCQSZFBXMM33"
+    },
+    {
+      "timestamp": "2025-09-22T12:48:27Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "YYYQ7CMZFWR3Q6WQVIOAVR4V4TPWOLZI"
+    },
+    {
+      "timestamp": "2025-10-01T14:05:08Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "RUPTQ2KAQOGPYGVHJRHK2RGDEQWMKHAQ"
+    },
+    {
+      "timestamp": "2025-10-13T00:00:29Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "ZCOP6ZCQDOOCNTOPC2LJ5SME2FP7RNBD"
+    },
+    {
+      "timestamp": "2025-11-09T07:19:25Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "AS3C7RQ5UXTLHZSFF3KF3WWKVTT7Q64K"
+    },
+    {
+      "timestamp": "2025-11-09T19:30:13Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "MOXSWQKFEOKYIEBXVJJZ6CPRXT34OPZT"
+    },
+    {
+      "timestamp": "2025-12-01T22:10:07Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "354TTQQFOWKFV6SNZZNN2RHS56HXHM7N"
+    },
+    {
+      "timestamp": "2025-12-10T00:06:08Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "ORK4RBVM2FV34YZIAWGPMJPAQO6O7OC5"
+    },
+    {
+      "timestamp": "2025-12-16T12:38:09Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "W5RFFPJ5OD6E6BXIHRKJWYA3FHOHX5SG"
+    },
+    {
+      "timestamp": "2025-12-17T13:00:15Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "K6ENHZNMFMHPKXESFENDVG6TRGVV7Q7F"
+    },
+    {
+      "timestamp": "2025-12-25T14:31:01Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "3Q6WQO2JHWTRL2CDSKOT3PIRLZRIG52J"
+    },
+    {
+      "timestamp": "2026-01-08T07:23:38Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "ZLQBIMGJSV7EVC4Y5KTWEWPGDBBPYP5D"
+    },
+    {
+      "timestamp": "2026-01-18T11:15:32Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "GHEKPPKM5NY5AFCJT4JDCPL4U7IFOJDP"
+    },
+    {
+      "timestamp": "2026-01-20T03:52:04Z",
+      "url": "http://directmeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2026-01-20T03:52:05Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "II7JC6TY7ESNRMQIT5ZNIYC6S3FZBTBD"
+    },
+    {
+      "timestamp": "2026-01-24T01:41:14Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "PXYR6ZL5QQ6T3UG4FMKEKGBIAMIAPJ75"
+    },
+    {
+      "timestamp": "2026-02-08T23:22:44Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "XK4PFIOPK735FOUXVYNQTZO5TRTR7GBG"
+    },
+    {
+      "timestamp": "2026-02-13T04:43:07Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "4LZW3A345APNY7VNOWVG37QI3W6X6VMI"
+    },
+    {
+      "timestamp": "2026-02-15T08:21:27Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "W4MPDV3WBB7HHILMBRH6HCTKODEZDY2C"
+    },
+    {
+      "timestamp": "2026-02-28T17:11:36Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "3N3FRHBWVLN4KBQ3JTSL3OK2USQWTPCV"
+    },
+    {
+      "timestamp": "2026-03-01T01:53:51Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "PNGICDQEZSYDLJVJINVYW7HA6LDAGBVA"
+    },
+    {
+      "timestamp": "2026-03-02T12:26:06Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "OF4T6AH5ZIYK54X5PGKO2U4BTY7TGSZN"
+    },
+    {
+      "timestamp": "2026-03-11T16:39:38Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "SVRKVU2UBCQXXAPJSSSKWIVANLPBADOO"
+    },
+    {
+      "timestamp": "2026-04-03T11:27:00Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "PUQN5NFU4YFYDE66DUQDTDFF2UTI4YEY"
+    },
+    {
+      "timestamp": "2026-05-14T12:02:29Z",
+      "url": "https://directmeds.com/",
+      "status": "200",
+      "digest": "2DZQDKV4CWH2KEPBEMEAECU2RGPDROLR"
+    }
+  ]
+}

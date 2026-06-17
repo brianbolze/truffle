@@ -1,0 +1,398 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:47:46Z",
+  "ok": true,
+  "input": {
+    "url": "https://rugiet.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2014-12-18T00:56:07Z",
+  "last_seen": "2026-03-12T09:09:53Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 4198,
+  "snapshot_count": 51,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2014-12-18T00:56:07Z",
+      "to": "2014-12-18T00:56:07Z"
+    },
+    {
+      "status": "302",
+      "from": "2016-01-09T18:41:00Z",
+      "to": "2016-01-09T18:41:00Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-04-26T18:35:30Z",
+      "to": "2024-12-06T13:03:33Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-16T18:54:37Z",
+      "to": "2025-05-31T23:46:22Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-06-10T22:47:16Z",
+      "to": "2025-06-10T22:47:16Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-06-15T08:35:08Z",
+      "to": "2025-08-10T19:38:08Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-08-11T06:57:05Z",
+      "to": "2025-08-11T06:57:05Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-08-11T06:57:09Z",
+      "to": "2025-08-11T06:57:09Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-12T18:04:54Z",
+      "to": "2025-09-18T06:14:50Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-09-23T12:47:05Z",
+      "to": "2025-09-23T12:47:05Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-10-05T19:28:09Z",
+      "to": "2025-10-17T09:26:40Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-11-12T02:29:40Z",
+      "to": "2025-11-12T02:29:40Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-11-12T02:48:55Z",
+      "to": "2026-03-12T07:47:33Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-03-12T09:09:53Z",
+      "to": "2026-03-12T09:09:53Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20141218005607/http://rugiet.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260312090953/https://rugiet.com/",
+  "snapshots": [
+    {
+      "timestamp": "2014-12-18T00:56:07Z",
+      "url": "http://rugiet.com/",
+      "status": "200",
+      "digest": "PELHPS7RYPPU3CXCRGIAHIJU56JF7RWF"
+    },
+    {
+      "timestamp": "2016-01-09T18:41:00Z",
+      "url": "http://rugiet.com/",
+      "status": "302",
+      "digest": "ZE44NM5DR2JCBLSONLJXPM7VQFB47SI3"
+    },
+    {
+      "timestamp": "2021-04-26T18:35:30Z",
+      "url": "http://www.rugiet.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2021-12-23T08:21:20Z",
+      "url": "http://rugiet.com/",
+      "status": "301",
+      "digest": "GIX2OECJ7LPQP4DPWRH62QCLTH6LZ7IO"
+    },
+    {
+      "timestamp": "2022-10-18T15:11:04Z",
+      "url": "http://rugiet.com/",
+      "status": "301",
+      "digest": "ZJMZRSJBPBEEVTGA4JBRFTFB3FVB4MV7"
+    },
+    {
+      "timestamp": "2024-12-06T13:03:33Z",
+      "url": "https://rugiet.com/",
+      "status": "301",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-01-16T18:54:37Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "JFTDLVTFJLTSBLILOJGQIM4W3WNYNILX"
+    },
+    {
+      "timestamp": "2025-02-01T13:35:24Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "KHO7HXBOZZQZ7JMAUZPMFQBGBCDILIEW"
+    },
+    {
+      "timestamp": "2025-02-17T20:59:47Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "E37XARU7NWEGRQI6U7AIFIR6EXIH54SB"
+    },
+    {
+      "timestamp": "2025-02-21T01:22:04Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "D7FVLF7VR7TMI3RL7T5B7ZR4E5VG6FJW"
+    },
+    {
+      "timestamp": "2025-02-28T19:19:04Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "VSGLZV5NFPIEIKUJ7MQONXJB4NDYEZ2O"
+    },
+    {
+      "timestamp": "2025-03-24T06:56:46Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "Z6XGJGJYMBFRTXU4MQMDRMHOAVMWK5XP"
+    },
+    {
+      "timestamp": "2025-04-04T04:56:24Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "L2SW5OOXWKXUKLDEHEI2O3INLSQSVLBD"
+    },
+    {
+      "timestamp": "2025-04-30T04:14:09Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "SL4KEHU73UMGCCQSFUFTY5IIYNFMJZJD"
+    },
+    {
+      "timestamp": "2025-05-16T01:39:53Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "EGPG2FO3PD5GVO2NPVXW5RR2P654LPYE"
+    },
+    {
+      "timestamp": "2025-05-24T06:54:27Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "UUIYRA4ZLPHJQHHXVOL2OGRGGJLR4PV5"
+    },
+    {
+      "timestamp": "2025-05-31T23:46:22Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "NPMHUK3G7BTVRYJFC3PUEBOJ6HJRKL4C"
+    },
+    {
+      "timestamp": "2025-06-10T22:47:16Z",
+      "url": "https://rugiet.com/",
+      "status": "301",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-06-15T08:35:08Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "G6SJQIQE464BYPW3QH3YM5RKZDCBDCR7"
+    },
+    {
+      "timestamp": "2025-07-15T13:44:03Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "A7AJBQYUUMJU7CIQULWJWKCKYWSFOKGP"
+    },
+    {
+      "timestamp": "2025-07-30T23:50:08Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "KQ2FPENJFKQXGNKQRG6AJGGB3JID77BH"
+    },
+    {
+      "timestamp": "2025-08-10T19:38:08Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "NSYTDUDYBPSSPSXGTYICFCBSXEQP6MHJ"
+    },
+    {
+      "timestamp": "2025-08-11T06:57:05Z",
+      "url": "http://rugiet.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-08-11T06:57:09Z",
+      "url": "https://rugiet.com/",
+      "status": "301",
+      "digest": "BCGBSHMEQGBG3XHQXM3SW4I56MDC4I6E"
+    },
+    {
+      "timestamp": "2025-08-12T18:04:54Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "5AY475E2OXUGW6GQMBVXGWLL6WZ2EDT5"
+    },
+    {
+      "timestamp": "2025-08-12T20:02:29Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "GQMCR76K4FU2XWVJWLVZ7PQSHD6O3F7P"
+    },
+    {
+      "timestamp": "2025-09-04T19:35:53Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "5SJ4WPN6CK27A66I56IHF6LKNQIDEGTU"
+    },
+    {
+      "timestamp": "2025-09-11T11:38:00Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "TG7MVTTYGNFDKHIAAA37ARL7VJHBWEXT"
+    },
+    {
+      "timestamp": "2025-09-18T06:14:50Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "L2YVOHSCXWKOMRF7YF22NBLGIGALU3JF"
+    },
+    {
+      "timestamp": "2025-09-23T12:47:05Z",
+      "url": "https://rugiet.com/",
+      "status": "301",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-10-05T19:28:09Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "442G7JPYGKYIB2VW6FZR2SQNGWT3PMFM"
+    },
+    {
+      "timestamp": "2025-10-09T20:55:38Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "M6TTZGZWE77W26EWTAIPUXUJCLTA3UQB"
+    },
+    {
+      "timestamp": "2025-10-17T09:26:40Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "H7TPLKCF5J6F2GCZAFCH5QZV2H3ARWQ3"
+    },
+    {
+      "timestamp": "2025-11-12T02:29:40Z",
+      "url": "https://rugiet.com/",
+      "status": "301",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-11-12T02:48:55Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "S5EEGYW7UA252UKA3KZE4FTLKQYXJ4UI"
+    },
+    {
+      "timestamp": "2025-11-13T05:41:01Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "2PTGBZC5VZRS5OHM4MJQIHKDFIXCYSCE"
+    },
+    {
+      "timestamp": "2025-11-13T08:55:26Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "R3PKDY5IAZZHRFPRP5RV3KGJMS4F5H32"
+    },
+    {
+      "timestamp": "2025-12-05T12:02:53Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "NGLQ24IQRH33LPBJIXSXJXPKW3WQVQKF"
+    },
+    {
+      "timestamp": "2025-12-06T01:09:56Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "4T7COSEDOA2436RGWNZVCXVZBOWAARYQ"
+    },
+    {
+      "timestamp": "2025-12-06T23:53:07Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "BNINDKX3ITWXYB4CEB6A757GHGDO6OEJ"
+    },
+    {
+      "timestamp": "2025-12-13T19:46:05Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "QS72F7H3TGQ2LIJXJQN67DAYKJLIPWHP"
+    },
+    {
+      "timestamp": "2025-12-20T01:50:52Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "OMSURUWD67UIMVTV3J5CYL7JDYRV7BQO"
+    },
+    {
+      "timestamp": "2026-01-04T05:33:32Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "HGBVDU3OSFIYFT3VOYHK4TKGIVJ2JAHF"
+    },
+    {
+      "timestamp": "2026-01-15T04:40:52Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "GJFTNL4SK56K75WMDEQUFWTVHNTOM2DN"
+    },
+    {
+      "timestamp": "2026-01-20T12:08:13Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "L2IH5NFJOLJZ2S6VYY3DTYES6WYEV5FO"
+    },
+    {
+      "timestamp": "2026-01-24T12:05:36Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "2WBPIIDTWQAEBJFJGX2GUNVO4BHRD5RN"
+    },
+    {
+      "timestamp": "2026-02-12T10:21:25Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "7QZWK2ACBG2RN765EYHL4PZC37RVHPHA"
+    },
+    {
+      "timestamp": "2026-02-28T14:23:49Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "LLSDXME76HTTJCBDSNYBIT7WTPJG4TUA"
+    },
+    {
+      "timestamp": "2026-03-03T09:18:00Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "4GRHZ6C2FOV5QSWCPKQOAY5GYU5CEP7N"
+    },
+    {
+      "timestamp": "2026-03-12T07:47:33Z",
+      "url": "https://www.rugiet.com/",
+      "status": "200",
+      "digest": "3A2LYZ6Q6WDDXBCTTXTQTOOB3LORAYIW"
+    },
+    {
+      "timestamp": "2026-03-12T09:09:53Z",
+      "url": "https://rugiet.com/",
+      "status": "301",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:30:48Z",
+  "ok": true,
+  "input": {
+    "url": "https://agelessrx.com/sermorelin/"
+  },
+  "schema_drift": [],
+  "first_seen": "2025-08-21T21:14:52Z",
+  "last_seen": "2026-06-02T13:45:54Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 299,
+  "snapshot_count": 11,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2025-08-21T21:14:52Z",
+      "to": "2026-06-02T13:45:54Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20250821211452/https://agelessrx.com/sermorelin/",
+  "last_snapshot_url": "https://web.archive.org/web/20260602134554/https://agelessrx.com/sermorelin/",
+  "snapshots": [
+    {
+      "timestamp": "2025-08-21T21:14:52Z",
+      "url": "https://agelessrx.com/sermorelin/",
+      "status": "200",
+      "digest": "XL3Z24LOBPTW3EOGBBA3G32J7RVPNDWC"
+    },
+    {
+      "timestamp": "2025-08-30T21:39:36Z",
+      "url": "https://agelessrx.com/sermorelin/",
+      "status": "200",
+      "digest": "3DQZ5A7UYM5PKGCTISJFONS3ADKEPLHC"
+    },
+    {
+      "timestamp": "2025-09-16T13:14:59Z",
+      "url": "https://agelessrx.com/sermorelin/",
+      "status": "200",
+      "digest": "EJONBAB3CMOYI7ZSOMDQROAYK2356Z24"
+    },
+    {
+      "timestamp": "2025-09-21T14:30:56Z",
+      "url": "https://agelessrx.com/sermorelin/",
+      "status": "200",
+      "digest": "ED6TC7NFDY63HQ7U4XFCIOWBISF25JNJ"
+    },
+    {
+      "timestamp": "2025-11-25T01:16:15Z",
+      "url": "https://agelessrx.com/sermorelin/",
+      "status": "200",
+      "digest": "CDW6IKQBDSIP3RSYG7KQSF4RIZT37Q4G"
+    },
+    {
+      "timestamp": "2026-01-14T19:36:49Z",
+      "url": "https://agelessrx.com/sermorelin/",
+      "status": "200",
+      "digest": "JXI4DFCMX5NGYYKGL7SJR4ZOWR3I7NWO"
+    },
+    {
+      "timestamp": "2026-01-29T14:19:05Z",
+      "url": "https://agelessrx.com/sermorelin/",
+      "status": "200",
+      "digest": "YL2M476GRTO55WHFOJ623QJSCHYDHV4F"
+    },
+    {
+      "timestamp": "2026-04-16T22:24:56Z",
+      "url": "https://agelessrx.com/sermorelin/",
+      "status": "200",
+      "digest": "D4ITQALT4IJAXK6FNXKGUURO72HSJO6N"
+    },
+    {
+      "timestamp": "2026-04-17T00:26:29Z",
+      "url": "https://agelessrx.com/sermorelin/",
+      "status": "200",
+      "digest": "EDFOW7EEJSKMYFKXLRBZIKQWIAOY6PEY"
+    },
+    {
+      "timestamp": "2026-05-19T06:18:03Z",
+      "url": "https://agelessrx.com/sermorelin/",
+      "status": "200",
+      "digest": "32QP7DTOJF2XO5FC2CCEV5VQK2MVY3VG"
+    },
+    {
+      "timestamp": "2026-06-02T13:45:54Z",
+      "url": "https://agelessrx.com/sermorelin/",
+      "status": "200",
+      "digest": "BUJIFQZ5VYXUQ3HJ2JN4RAPKDAWKXG2S"
+    }
+  ]
+}

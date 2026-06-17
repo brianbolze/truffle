@@ -1,0 +1,2143 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:42:59Z",
+  "ok": true,
+  "input": {
+    "url": "https://marekhealth.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2020-12-01T15:25:54Z",
+  "last_seen": "2026-05-15T14:25:10Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 2023,
+  "snapshot_count": 281,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2020-12-01T15:25:54Z",
+      "to": "2021-02-27T09:10:59Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-03-08T07:29:48Z",
+      "to": "2021-03-08T07:29:48Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-03-08T07:29:49Z",
+      "to": "2021-05-19T03:27:57Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-05-25T02:57:56Z",
+      "to": "2021-05-25T02:57:56Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-05-25T02:58:00Z",
+      "to": "2021-05-31T11:36:27Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-07-19T20:33:39Z",
+      "to": "2021-07-19T20:33:39Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-07-19T20:33:53Z",
+      "to": "2021-07-29T06:35:33Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-07-30T09:52:35Z",
+      "to": "2021-07-30T09:52:36Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-07-30T09:52:43Z",
+      "to": "2021-07-30T21:07:05Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-08-14T22:00:12Z",
+      "to": "2021-08-14T22:00:12Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-08-14T22:00:12Z",
+      "to": "2021-08-14T22:00:12Z"
+    },
+    {
+      "status": "303",
+      "from": "2021-10-01T07:07:19Z",
+      "to": "2021-10-01T07:07:19Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-10-01T08:22:32Z",
+      "to": "2021-11-04T05:50:09Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-11-10T01:34:32Z",
+      "to": "2021-11-10T01:34:32Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-11-10T01:34:34Z",
+      "to": "2021-11-27T12:57:15Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-01T10:23:19Z",
+      "to": "2021-12-01T10:23:19Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-12-01T10:23:20Z",
+      "to": "2021-12-01T10:23:20Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-01T10:23:51Z",
+      "to": "2021-12-01T10:23:51Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-12-01T10:24:12Z",
+      "to": "2021-12-01T10:24:12Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-01T10:24:12Z",
+      "to": "2021-12-01T10:24:12Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-12-02T07:38:16Z",
+      "to": "2021-12-08T04:24:48Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-16T10:32:18Z",
+      "to": "2021-12-16T10:32:18Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-12-18T11:49:30Z",
+      "to": "2022-03-28T08:19:22Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-03-28T09:55:03Z",
+      "to": "2022-03-28T09:55:03Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-03-28T11:35:24Z",
+      "to": "2022-09-01T11:41:43Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-09-07T15:24:52Z",
+      "to": "2022-09-07T15:24:52Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-09-30T10:37:28Z",
+      "to": "2022-11-04T17:12:31Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-11-07T22:19:45Z",
+      "to": "2022-11-07T22:19:45Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-11-07T22:20:09Z",
+      "to": "2022-11-29T14:17:30Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-12-08T18:24:45Z",
+      "to": "2022-12-08T18:24:45Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-12-08T23:36:11Z",
+      "to": "2022-12-08T23:36:11Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-12-09T04:28:35Z",
+      "to": "2022-12-09T04:28:35Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-12-10T23:32:34Z",
+      "to": "2023-01-13T11:25:51Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-01-13T17:47:21Z",
+      "to": "2023-01-13T17:47:21Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-01-20T12:50:52Z",
+      "to": "2023-03-01T19:09:17Z"
+    },
+    {
+      "status": "-",
+      "from": "2023-03-01T19:13:30Z",
+      "to": "2023-03-01T19:13:30Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-03-06T00:38:58Z",
+      "to": "2023-03-15T17:06:36Z"
+    },
+    {
+      "status": "-",
+      "from": "2023-03-24T00:50:55Z",
+      "to": "2023-03-24T00:50:55Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-03-27T13:55:55Z",
+      "to": "2023-03-27T13:55:55Z"
+    },
+    {
+      "status": "-",
+      "from": "2023-03-27T13:58:29Z",
+      "to": "2023-03-27T13:58:29Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-03-27T13:58:30Z",
+      "to": "2023-04-22T19:28:11Z"
+    },
+    {
+      "status": "403",
+      "from": "2023-04-24T20:09:23Z",
+      "to": "2023-04-24T20:09:23Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-04-25T14:31:12Z",
+      "to": "2023-05-11T10:50:58Z"
+    },
+    {
+      "status": "403",
+      "from": "2023-05-26T22:19:33Z",
+      "to": "2023-05-26T22:19:33Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-05-27T10:08:26Z",
+      "to": "2023-05-28T10:58:59Z"
+    },
+    {
+      "status": "403",
+      "from": "2023-06-06T02:04:52Z",
+      "to": "2023-06-06T02:04:52Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-07-14T17:43:42Z",
+      "to": "2023-07-14T17:43:42Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-07-14T17:43:56Z",
+      "to": "2023-07-14T17:43:56Z"
+    },
+    {
+      "status": "403",
+      "from": "2023-08-01T13:23:11Z",
+      "to": "2023-08-01T13:23:11Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-08-10T00:12:23Z",
+      "to": "2023-09-15T20:00:43Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-09-25T22:48:17Z",
+      "to": "2023-09-25T22:48:17Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-09-25T22:48:17Z",
+      "to": "2024-01-05T21:58:46Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-01-18T02:04:12Z",
+      "to": "2024-01-18T02:04:12Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-02-27T06:11:57Z",
+      "to": "2024-09-07T09:15:17Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-10T05:05:08Z",
+      "to": "2024-09-10T05:05:08Z"
+    },
+    {
+      "status": "403",
+      "from": "2024-09-10T05:05:09Z",
+      "to": "2024-09-10T05:05:09Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-11T14:13:24Z",
+      "to": "2024-09-17T10:16:04Z"
+    },
+    {
+      "status": "403",
+      "from": "2024-09-17T13:33:21Z",
+      "to": "2024-09-17T13:33:21Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-18T02:11:26Z",
+      "to": "2024-09-25T15:21:14Z"
+    },
+    {
+      "status": "403",
+      "from": "2024-09-30T16:30:33Z",
+      "to": "2024-09-30T16:30:33Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-11-03T17:38:24Z",
+      "to": "2024-11-25T05:19:20Z"
+    },
+    {
+      "status": "403",
+      "from": "2024-11-26T20:23:15Z",
+      "to": "2024-11-26T20:23:15Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-13T03:20:41Z",
+      "to": "2024-12-13T03:20:41Z"
+    },
+    {
+      "status": "403",
+      "from": "2024-12-13T14:04:51Z",
+      "to": "2024-12-13T14:04:51Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-20T05:37:22Z",
+      "to": "2025-02-14T03:00:16Z"
+    },
+    {
+      "status": "403",
+      "from": "2025-02-23T19:18:41Z",
+      "to": "2025-02-23T19:18:41Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-19T00:31:13Z",
+      "to": "2025-08-11T18:34:10Z"
+    },
+    {
+      "status": "403",
+      "from": "2025-08-13T12:55:23Z",
+      "to": "2025-08-13T12:55:23Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-24T20:06:10Z",
+      "to": "2025-08-25T22:32:56Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-09-01T19:05:40Z",
+      "to": "2025-09-01T19:05:40Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-09-13T08:37:00Z",
+      "to": "2025-10-01T21:53:09Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-10-01T22:32:56Z",
+      "to": "2025-10-01T22:32:56Z"
+    },
+    {
+      "status": "403",
+      "from": "2025-10-01T22:32:56Z",
+      "to": "2025-10-01T22:32:56Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-10-12T03:57:46Z",
+      "to": "2025-10-12T03:57:46Z"
+    },
+    {
+      "status": "403",
+      "from": "2025-11-06T19:38:13Z",
+      "to": "2025-11-06T19:38:13Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-11-07T16:33:19Z",
+      "to": "2025-11-12T23:25:46Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-11-22T23:34:27Z",
+      "to": "2025-11-22T23:34:27Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-12-06T21:42:11Z",
+      "to": "2025-12-06T21:42:11Z"
+    },
+    {
+      "status": "403",
+      "from": "2025-12-24T04:46:40Z",
+      "to": "2025-12-24T04:46:40Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-01-01T13:25:29Z",
+      "to": "2026-01-14T23:23:28Z"
+    },
+    {
+      "status": "403",
+      "from": "2026-02-08T02:51:35Z",
+      "to": "2026-02-08T02:51:35Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-02-11T13:06:32Z",
+      "to": "2026-02-11T13:06:32Z"
+    },
+    {
+      "status": "403",
+      "from": "2026-03-04T05:22:55Z",
+      "to": "2026-03-04T05:22:55Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-03-06T05:59:00Z",
+      "to": "2026-03-09T12:20:40Z"
+    },
+    {
+      "status": "403",
+      "from": "2026-03-16T03:59:46Z",
+      "to": "2026-03-16T03:59:46Z"
+    },
+    {
+      "status": "307",
+      "from": "2026-05-15T14:21:44Z",
+      "to": "2026-05-15T14:21:44Z"
+    },
+    {
+      "status": "403",
+      "from": "2026-05-15T14:25:10Z",
+      "to": "2026-05-15T14:25:10Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20201201152554/https://marekhealth.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260515142510/https://marekhealth.com/",
+  "snapshots": [
+    {
+      "timestamp": "2020-12-01T15:25:54Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "MEKW4FNLGFU62WWUBKNEK5JOK5H7LN5Q"
+    },
+    {
+      "timestamp": "2021-01-26T17:44:16Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "OBUECUUVYYMYXYWWBB7GK6U6JI2EUN6A"
+    },
+    {
+      "timestamp": "2021-02-17T21:36:48Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "P623LUWDDDQ6DNFDOZFCUOWMVYWO4UWB"
+    },
+    {
+      "timestamp": "2021-02-27T09:10:59Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "OPGK4EVE7ORIATW4TXADG3FTWQ3XKORA"
+    },
+    {
+      "timestamp": "2021-03-08T07:29:48Z",
+      "url": "http://marekhealth.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2021-03-08T07:29:49Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "UYTBZX5ULJ43755BDDOCEJZJMYINQJH3"
+    },
+    {
+      "timestamp": "2021-04-15T07:13:41Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "DLQCXQY6V335PR74ARQU3EMTNAVXCR33"
+    },
+    {
+      "timestamp": "2021-05-10T02:41:20Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "Z62QEC6NDKTBMDAY4OCSWDDOH6QCG4RR"
+    },
+    {
+      "timestamp": "2021-05-19T03:27:57Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "FWKZMLTHBS5VR6B3WQJUY2YYKEE2GZX2"
+    },
+    {
+      "timestamp": "2021-05-25T02:57:56Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2021-05-25T02:58:00Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "KQGGPSSWIRQO7TCDJSNZYMNA7KXX5RHB"
+    },
+    {
+      "timestamp": "2021-05-31T11:36:27Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "4F4MO7VKQUUGFL4SNLCXKFWEGYRQXV2Y"
+    },
+    {
+      "timestamp": "2021-07-19T20:33:39Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2021-07-19T20:33:53Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "I7EFM4ZE4WCIS2UO6JDCVDKPBJZVNE2R"
+    },
+    {
+      "timestamp": "2021-07-22T01:14:47Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "AJN76I5CJ22SQFKXADF5T7IFMLZGSNAB"
+    },
+    {
+      "timestamp": "2021-07-29T06:35:33Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "3SDBEYAPT2P2QJRMKLY7NRAT3CUAGK5A"
+    },
+    {
+      "timestamp": "2021-07-30T09:52:35Z",
+      "url": "http://www.marekhealth.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2021-07-30T09:52:36Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2021-07-30T09:52:43Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "RLMXADAHTQM4HNSLJCFPJC5OGLVHC6A2"
+    },
+    {
+      "timestamp": "2021-07-30T21:07:05Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "PTQ4K4MXAEP44VZG4Y5SRAYAF3O3SZGB"
+    },
+    {
+      "timestamp": "2021-08-14T22:00:12Z",
+      "url": "http://marekhealth.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2021-08-14T22:00:12Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "AHE6WJIRN7OVPPSK5XXPNHHZO64WVDME"
+    },
+    {
+      "timestamp": "2021-10-01T07:07:19Z",
+      "url": "https://marekhealth.com/",
+      "status": "303",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2021-10-01T08:22:32Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "4L6QWE5HXKNQQOXGTX7EAZNEI5PJMZE5"
+    },
+    {
+      "timestamp": "2021-10-17T01:12:21Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "RVJ7RC73PRF34ZZG7G7XUHIM7NEAEFKS"
+    },
+    {
+      "timestamp": "2021-11-04T05:50:09Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "ZCSFQT4GRFPAFBHAWJNXZASK25QAMUUS"
+    },
+    {
+      "timestamp": "2021-11-10T01:34:32Z",
+      "url": "http://www.marekhealth.com/",
+      "status": "301",
+      "digest": "2VMMIGEOHEQ7TPIJGSLDQVCWO7GQUZEG"
+    },
+    {
+      "timestamp": "2021-11-10T01:34:34Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "WMMF6KNVKHBAE3EYPCOWNFE3TST4PZN7"
+    },
+    {
+      "timestamp": "2021-11-16T12:35:43Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "7ZR2TFBZF3J7FS5U5YMJCYHBDWQH5N6X"
+    },
+    {
+      "timestamp": "2021-11-17T10:51:06Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "DPYRL7J5XYXCEA36B6WPBRISGANJVK5N"
+    },
+    {
+      "timestamp": "2021-11-27T12:57:15Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "CBSNEXPYISKRRJJI3I5CHBKCYB2YGRHV"
+    },
+    {
+      "timestamp": "2021-12-01T10:23:19Z",
+      "url": "https://marekhealth.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2021-12-01T10:23:20Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "32F3ITZKIAPKUX24XR3EGWXWEP6JMZYJ"
+    },
+    {
+      "timestamp": "2021-12-01T10:23:51Z",
+      "url": "https://marekhealth.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2021-12-01T10:24:12Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "32F3ITZKIAPKUX24XR3EGWXWEP6JMZYJ"
+    },
+    {
+      "timestamp": "2021-12-01T10:24:12Z",
+      "url": "https://marekhealth.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2021-12-02T07:38:16Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "4SAJH7R3AXQBO7XM57GOJZ35SI4TIO42"
+    },
+    {
+      "timestamp": "2021-12-08T04:24:48Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "7UPLUINVEL43EZLSNHKDQ7AZVB447GDR"
+    },
+    {
+      "timestamp": "2021-12-16T10:32:18Z",
+      "url": "http://marekhealth.com/",
+      "status": "301",
+      "digest": "H2XUZPUDQ2U74FSVLVE5ZBE7M4EQO544"
+    },
+    {
+      "timestamp": "2021-12-18T11:49:30Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "N44F4SNP5CHUBGPJBWNBJVAZD254OGWI"
+    },
+    {
+      "timestamp": "2021-12-18T16:46:08Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "WEIOCGTDPB66M5MCX553AI6NGR4L5N3L"
+    },
+    {
+      "timestamp": "2021-12-19T11:24:37Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "VG73IMO27YF76WSMKQHKZBVJH4S2P6XN"
+    },
+    {
+      "timestamp": "2021-12-22T13:19:31Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "4K6VYPKLLDVWT3BLGRVYGOT6G2XOEK7Q"
+    },
+    {
+      "timestamp": "2021-12-29T19:50:29Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "UK3HDO6BT5FQ3BH3R6NCUGTYQ4MX2P7S"
+    },
+    {
+      "timestamp": "2021-12-30T11:23:18Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "VL4JNS6WTQ5WFTH2ROFGHDETKFK3NLED"
+    },
+    {
+      "timestamp": "2021-12-30T14:46:52Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "45JSCEE5TR6RFPTDGMHHSVSPF35KM5LN"
+    },
+    {
+      "timestamp": "2022-01-07T20:41:36Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "5RS2NIDHVM5GRAQZOUUC6QQJREAEJSZM"
+    },
+    {
+      "timestamp": "2022-01-10T15:59:31Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "YIGH3TJVHKDAJZKFSR2Q2YLLCF75NFZY"
+    },
+    {
+      "timestamp": "2022-01-11T18:41:38Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "TRAMJTIDKJ3G7AV75ZGBNTIFJKEEJ6KN"
+    },
+    {
+      "timestamp": "2022-01-14T21:19:59Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "7AK226ZSWEDXXCT5EK4OYKZJTKTI7YOA"
+    },
+    {
+      "timestamp": "2022-01-15T15:49:00Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "K3UUGQKY4MA5W4BRYKQPMCDP5UG5XIB5"
+    },
+    {
+      "timestamp": "2022-01-18T13:10:20Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "LORRGGTIA3WDYC7PGTZASYM3VR7NCU6V"
+    },
+    {
+      "timestamp": "2022-01-19T00:55:59Z",
+      "url": "https://marekhealth.com",
+      "status": "200",
+      "digest": "RXSPJLOUEQU2YGXQ6XSW7UNPNCDOO65L"
+    },
+    {
+      "timestamp": "2022-01-20T23:16:59Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "P7JT6L6FYIYOKS6MECUJNEXOPVBOAE2H"
+    },
+    {
+      "timestamp": "2022-01-21T12:22:07Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "742JUDREWFFQP6B357Y7WSUAW4FNA543"
+    },
+    {
+      "timestamp": "2022-01-21T22:28:11Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "JVXZBSVEHJRQTTN5IT5WE7JDZGM46SDM"
+    },
+    {
+      "timestamp": "2022-01-24T14:13:56Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "BFTFMFKOORTFKPHF3WLO7FUH3ZW4YUZG"
+    },
+    {
+      "timestamp": "2022-01-25T21:05:51Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "V3NU2FFQWMHOBB4GZAMINJZJH4HLFW5V"
+    },
+    {
+      "timestamp": "2022-01-27T00:17:04Z",
+      "url": "https://marekhealth.com",
+      "status": "200",
+      "digest": "3OQFPJ65RJL5NFOX4ZWH7VXPST4KRAIX"
+    },
+    {
+      "timestamp": "2022-01-27T11:16:37Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "LTIIOP26T6ELUV24SYXF44OOSVAP2LWS"
+    },
+    {
+      "timestamp": "2022-01-28T16:49:01Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "DGXFUMA2GCI2CSR4KO7RVB4U7KZOZK2A"
+    },
+    {
+      "timestamp": "2022-01-31T16:42:23Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "SALJ6EA3MFYSYPORMTPQKYQJUHGZPU5G"
+    },
+    {
+      "timestamp": "2022-02-02T11:20:34Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "IJKTLYNKLO6HS2GYCXT5B4LHVDKXK6VQ"
+    },
+    {
+      "timestamp": "2022-02-04T21:15:11Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "6RPKLXNMJB5SVGYVDO5BGIDYK3JYPR4U"
+    },
+    {
+      "timestamp": "2022-02-10T11:41:47Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "VDQXFAD3E7B6OTJCVHDGOHZURTJSXLFG"
+    },
+    {
+      "timestamp": "2022-02-12T17:23:17Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "G6IQNFYLEKJKFYPTW4MMXBHC5WSMBL7F"
+    },
+    {
+      "timestamp": "2022-02-14T13:30:39Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "4B32N6W4W3CSFEP7I6OMXYPPVLFQF5HO"
+    },
+    {
+      "timestamp": "2022-02-15T14:04:34Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "W6EKYWWLIZFWIPCZNM65QTNXGNNBHXTL"
+    },
+    {
+      "timestamp": "2022-02-16T14:30:38Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "UY5ECMRF247HGHW5PL5EG4EK2VOBZOZ2"
+    },
+    {
+      "timestamp": "2022-02-19T12:13:10Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "SUHK2Z6JTAH73KP6RIGDNE6EPHQLRJX6"
+    },
+    {
+      "timestamp": "2022-02-19T19:39:59Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "B47PNY7YMKU6FTEHU6V7VXWXQFL5SDUM"
+    },
+    {
+      "timestamp": "2022-02-22T16:32:53Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "OQMHZDTZNAPGJSY6NN3JT5ZEZYXN7CRH"
+    },
+    {
+      "timestamp": "2022-02-25T17:40:04Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "46H3WXXY7SBXPSC4Q7WFFFRZRC43ANHJ"
+    },
+    {
+      "timestamp": "2022-02-27T16:45:06Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "CMXP7E7LEF67UEX3Q3R23SAEWM4NGBMY"
+    },
+    {
+      "timestamp": "2022-03-01T11:02:56Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "EV2L2IPLPJRAWVL6FCDN5RAYNZYKT2OB"
+    },
+    {
+      "timestamp": "2022-03-01T22:32:10Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "TQJZQ2MSXCARJKFD7S7JQWQC2AUYPKMM"
+    },
+    {
+      "timestamp": "2022-03-02T20:36:46Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "PWMPMHP35FVZTJD7QRQUPMTLHCLLJL4I"
+    },
+    {
+      "timestamp": "2022-03-04T20:42:25Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "FPEQKBZB47P3UGXQDM4GPQHWWOCFBSZH"
+    },
+    {
+      "timestamp": "2022-03-08T21:51:57Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "7V4AQA24VL33IRHV24H67ZTRE3W65WD2"
+    },
+    {
+      "timestamp": "2022-03-09T21:49:30Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "2R626BUXDWNRZTQUOONVMKNBX7M27TQX"
+    },
+    {
+      "timestamp": "2022-03-11T19:37:19Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "BP6Z3OVREUB7K5AQ3SA5Y6LUYOII4SRZ"
+    },
+    {
+      "timestamp": "2022-03-12T18:17:42Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "FCW3AONKXCRZSDLEU5IEG5WZ2SCBSMRJ"
+    },
+    {
+      "timestamp": "2022-03-13T14:16:25Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "AC46TM3VZL6LCAKTKQCO7MPOBYRSL6NN"
+    },
+    {
+      "timestamp": "2022-03-14T14:42:31Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "LOVYN63RT35CIF7OVPUYOTOG3UKHF2VJ"
+    },
+    {
+      "timestamp": "2022-03-15T19:53:57Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "ZRMIUSCYCR2BQW6PJPA2U4XJK6AVWN64"
+    },
+    {
+      "timestamp": "2022-03-16T19:31:02Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "RQJ622OUXJNY63XVIAUONCNYOBVPQXL3"
+    },
+    {
+      "timestamp": "2022-03-17T21:10:47Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "PBG4OBQZGPKKYDI52ABA2JM2ZAHGDFHE"
+    },
+    {
+      "timestamp": "2022-03-18T19:57:08Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "OTQCD77QPSQF4A6YZNLGYX7YUPVL2W5F"
+    },
+    {
+      "timestamp": "2022-03-19T19:22:26Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "ZKT3X5ZZYPLEI6LL3F5U5PR4IWDJC55J"
+    },
+    {
+      "timestamp": "2022-03-21T18:43:27Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "AK3AHXRDPEOFGLTZMV7EVOZPR5K2OYEV"
+    },
+    {
+      "timestamp": "2022-03-25T13:03:30Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "VCXO2KT2TGY4OCR2UCETU66I7TNBZCWJ"
+    },
+    {
+      "timestamp": "2022-03-28T08:19:22Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "COBGYHNACW5IOTOLFUSYPROXAFTKBPZY"
+    },
+    {
+      "timestamp": "2022-03-28T09:55:03Z",
+      "url": "http://marekhealth.com/",
+      "status": "301",
+      "digest": "H2XUZPUDQ2U74FSVLVE5ZBE7M4EQO544"
+    },
+    {
+      "timestamp": "2022-03-28T11:35:24Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "COBGYHNACW5IOTOLFUSYPROXAFTKBPZY"
+    },
+    {
+      "timestamp": "2022-03-30T20:07:35Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "FLKMCXZNLCMESU5YGTA3YLUQ24CSASQE"
+    },
+    {
+      "timestamp": "2022-03-31T12:02:50Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "SAV2MBQEN2GEIH4BD33C4UB4AT2TVL76"
+    },
+    {
+      "timestamp": "2022-04-02T08:56:50Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "DVACYL37JCPUX2B6GUIA7TM3DDPODDVM"
+    },
+    {
+      "timestamp": "2022-04-04T14:50:08Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "ZJM5O7DZQF66LZCXUJCBDGTTDELPD7IX"
+    },
+    {
+      "timestamp": "2022-04-05T01:20:35Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "HNRIGVZPBWUITOSUZDRDGC77SV66LOQT"
+    },
+    {
+      "timestamp": "2022-04-07T08:47:48Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "BE2E3WS6KVQX3CFG7EZPRCYNK2H4ISQS"
+    },
+    {
+      "timestamp": "2022-04-07T20:09:30Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "CSZRONBBMGJOJA4NZSH7U4ZMOJWMMOEM"
+    },
+    {
+      "timestamp": "2022-04-09T15:22:41Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "QVIS3NHJ67EQOTCBX62V6QURWCDAJ6OU"
+    },
+    {
+      "timestamp": "2022-04-10T17:03:21Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "DTXGX3IY3ZCOD4IFBLANROE4Y6IUYFCU"
+    },
+    {
+      "timestamp": "2022-04-11T20:15:18Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "F4SM6N2DTAFLXLGMO5LQZRTOG36V7HKU"
+    },
+    {
+      "timestamp": "2022-04-12T19:45:16Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "JWQOVAVRPXS2VG53L2D3QZ66V3YDAPFB"
+    },
+    {
+      "timestamp": "2022-04-15T19:56:15Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "B7V2WCN5J4SDSFZ5MTV6FF4ERI4F46BM"
+    },
+    {
+      "timestamp": "2022-04-18T20:27:16Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "VOIGG47NQAGKJXHTMFENCD6WI6ZADPSJ"
+    },
+    {
+      "timestamp": "2022-04-20T15:58:17Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "HAG7S4IMPDKHQ7CNDMOF3UJE2LWHSUKJ"
+    },
+    {
+      "timestamp": "2022-04-21T18:46:55Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "U6EPVE47KW2ZI3M77D47Y5ZCUTBT7QBZ"
+    },
+    {
+      "timestamp": "2022-04-26T20:41:32Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "PMR54LREQYBHYSLITQIHXS444VDUP5QU"
+    },
+    {
+      "timestamp": "2022-04-27T18:48:00Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "DLFSH3WI5DTJTIABQIBO6MB3OFIXRXG7"
+    },
+    {
+      "timestamp": "2022-04-28T10:39:22Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "7BEFD24JCOW6AN3SLDOW6MCUTBV3BET2"
+    },
+    {
+      "timestamp": "2022-05-05T09:56:50Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "BVVUZZL26KYFNFL3ZC33NSK4IE3G4WYC"
+    },
+    {
+      "timestamp": "2022-05-08T10:15:30Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "FSQMK2A6LAF57DV6OHJQ5XC4YTFT7W4Q"
+    },
+    {
+      "timestamp": "2022-05-10T20:28:16Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "FHSLW2XFGG6OMUCDQXXRMBVESR4LIW5P"
+    },
+    {
+      "timestamp": "2022-05-11T20:20:32Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "Z32NIFMERVVTU7CSSDT3K53ZFZAAQDU3"
+    },
+    {
+      "timestamp": "2022-05-12T11:14:07Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "BW6ZCCO6VWZJXJZPMIHL6UHNSLY2NYOC"
+    },
+    {
+      "timestamp": "2022-05-14T08:36:56Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "XPZPQNAU4WQN2XSJVVCWDPNJL6CNCVKT"
+    },
+    {
+      "timestamp": "2022-05-17T18:35:36Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "JDY34QD2P3WMAVNO3ZPMBOG5PHKBS2NV"
+    },
+    {
+      "timestamp": "2022-05-18T16:34:14Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "G3LGBMS247AJEWHOC2YL74B3D5IZERT7"
+    },
+    {
+      "timestamp": "2022-05-18T19:14:24Z",
+      "url": "https://marekhealth.com",
+      "status": "200",
+      "digest": "GLAHC5TRWXMTYCKXEI22ESDLI46QIA3O"
+    },
+    {
+      "timestamp": "2022-05-18T20:53:02Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "MKTXZ6FWUKEMUY5VYYWAM4ST6GUBNCOD"
+    },
+    {
+      "timestamp": "2022-05-21T18:27:09Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "VJHNRTJHKELOHVT2G6CN3XXLIFLOP76H"
+    },
+    {
+      "timestamp": "2022-05-25T08:20:08Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "PR65536B6X7XWI33GJGXGAH522GE2F2H"
+    },
+    {
+      "timestamp": "2022-05-26T19:07:52Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "YTRO6AJEM5CGROYLNSJ3I5CG4QW2PI5H"
+    },
+    {
+      "timestamp": "2022-05-28T14:20:19Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "OLMNXSJ6PVQHB4SO4SVZTGZ2VUPFAYSC"
+    },
+    {
+      "timestamp": "2022-05-30T12:19:01Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "J7WH7LY5VZTERAXMWFLTIO6CP7B6DHY5"
+    },
+    {
+      "timestamp": "2022-05-31T19:50:59Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "YBVEJJXLZKJCS7YBBWXHKBT3LJ667NFY"
+    },
+    {
+      "timestamp": "2022-06-02T20:35:12Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "PFMTESMVID7CVFNVX53E4OL32KPCS7LT"
+    },
+    {
+      "timestamp": "2022-06-03T17:24:08Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "PMTEJ2S4AT6DWOAD4YIKF3E6PNGPCCSO"
+    },
+    {
+      "timestamp": "2022-06-04T16:40:44Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "RNOPPKP37FCB2H2HCJXCEMPQMJT4EDF7"
+    },
+    {
+      "timestamp": "2022-06-08T18:26:09Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "YQ5RMJKNXGY5PMPKVTXKREB224KTMDMT"
+    },
+    {
+      "timestamp": "2022-06-24T10:29:51Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "ARWPLBWNC3CW3TYINJEQQUHOIC27GETM"
+    },
+    {
+      "timestamp": "2022-07-05T03:45:43Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "RCIPERERVQVVVIXAKAVRIQ2Q2PZNR3EA"
+    },
+    {
+      "timestamp": "2022-07-15T15:09:55Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "OHXD4HZ7EF2AGTRQDWPB5QXZ6AIMUKS7"
+    },
+    {
+      "timestamp": "2022-08-02T11:30:01Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "GUJWRZ4CUESSNO2GAIM2QULPU2SLCFLK"
+    },
+    {
+      "timestamp": "2022-08-04T10:59:34Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "DQ3CC5YYTL3337LWXWRKOMTKKKSXCK5U"
+    },
+    {
+      "timestamp": "2022-08-10T08:03:45Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "PGEJE3BDS4FYMVKVCV43RGBGA4T36VEP"
+    },
+    {
+      "timestamp": "2022-08-10T13:56:09Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "K5UBRVOGMJCDBR7GAF2PIRXCJ7HXSDZN"
+    },
+    {
+      "timestamp": "2022-08-20T04:51:51Z",
+      "url": "https://marekhealth.com",
+      "status": "200",
+      "digest": "YKL74NP4RD63DLPQLK5RGESLAWCJPEGQ"
+    },
+    {
+      "timestamp": "2022-08-23T01:06:19Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "QWIK7VDHNBR4UEES5FA57EVWOPQXECGS"
+    },
+    {
+      "timestamp": "2022-09-01T11:41:43Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "UIRRGPF3IT56GVOFYMSVSPM46KI3SGOX"
+    },
+    {
+      "timestamp": "2022-09-07T15:24:52Z",
+      "url": "http://marekhealth.com/",
+      "status": "301",
+      "digest": "H2XUZPUDQ2U74FSVLVE5ZBE7M4EQO544"
+    },
+    {
+      "timestamp": "2022-09-30T10:37:28Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "SFOF4FHH2QMNBJ6EDEI55TBDLLBHARQI"
+    },
+    {
+      "timestamp": "2022-10-09T19:29:45Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "T7UITHZTUSGCN5FWJTJW2D26TBSLGDPN"
+    },
+    {
+      "timestamp": "2022-10-11T19:39:31Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "WOAIQCGAXFZGJHMXQLGYIFVX7HUPGWQ5"
+    },
+    {
+      "timestamp": "2022-10-17T12:19:39Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "OEA4KQAFNQHTTAD5BI7Z4X4DI5GTT6XG"
+    },
+    {
+      "timestamp": "2022-10-25T12:44:40Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "K5ML6B374DQCDU5E67EDUVZFW346IQVM"
+    },
+    {
+      "timestamp": "2022-10-27T18:29:23Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "YZI742F55ZU4SD4T26AW4S3EPUMASHI6"
+    },
+    {
+      "timestamp": "2022-11-04T17:12:31Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "JIZJHJV34CFSHYM4EV6HYRIRYZAYW3ZP"
+    },
+    {
+      "timestamp": "2022-11-07T22:19:45Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-11-07T22:20:09Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "RDWPCXGIFNKCIHQVHF7VGQ37DI3MT3M5"
+    },
+    {
+      "timestamp": "2022-11-09T15:25:58Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "JHUDBODRUER75MGSS7DSM4CDDLRNHCKF"
+    },
+    {
+      "timestamp": "2022-11-10T19:19:14Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "MV5Y2EB4NPNMQE45GCJ7FDXI7FPZDYQJ"
+    },
+    {
+      "timestamp": "2022-11-16T10:15:21Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "CFFJKM2MITPTMXFYT2FXRZHAMZUJ2BO3"
+    },
+    {
+      "timestamp": "2022-11-17T22:55:39Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "DKREXOOPW5NBKUVLOZQ2QHYUOS5ZODN3"
+    },
+    {
+      "timestamp": "2022-11-21T10:07:19Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "FVKDCDD5OL7QAKFJP6TTMDTYCHNH32GT"
+    },
+    {
+      "timestamp": "2022-11-24T05:52:31Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "3XFB2BMS4OC4KV32FF65T2BT54AIZAX6"
+    },
+    {
+      "timestamp": "2022-11-24T13:54:59Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "366G4VRL7NCEJZARZBWOYYRIBL6MWX6T"
+    },
+    {
+      "timestamp": "2022-11-27T20:02:41Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "FBZMC4MWYIOO4TD5MVJ5BHJKK6PWPPNP"
+    },
+    {
+      "timestamp": "2022-11-29T14:17:30Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "W3PD4W2EJBN3DD46VTB7AHPJTS2KALUP"
+    },
+    {
+      "timestamp": "2022-12-08T18:24:45Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-12-08T23:36:11Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "U77UE4YJFOYPTYLRFYNBYR56OYIC4U7A"
+    },
+    {
+      "timestamp": "2022-12-09T04:28:35Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-12-10T23:32:34Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "CGOY2FS7ESXFFPHGFEW455DFMHHVMTWX"
+    },
+    {
+      "timestamp": "2022-12-11T14:51:50Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "45BP6A2WBQRXJ3UFU74MJODDEXYRTGKT"
+    },
+    {
+      "timestamp": "2022-12-12T16:32:45Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "F7LQP3PDC4HCUZFCRY36FXORT52LFURW"
+    },
+    {
+      "timestamp": "2022-12-20T03:32:51Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "5TJNDEJ34CMMWW5IJDVBDTNXTQ7YJBL4"
+    },
+    {
+      "timestamp": "2023-01-06T11:00:32Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "7B63BOCDFOWEH4ARSS54JI5G435IL7AR"
+    },
+    {
+      "timestamp": "2023-01-06T18:36:05Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "7GHLO2KXV4JDL6AM566YPGA7BVXMHEN6"
+    },
+    {
+      "timestamp": "2023-01-13T11:25:51Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "GYQKIYETR7AARODESCGCWPF3HNKYE2Y2"
+    },
+    {
+      "timestamp": "2023-01-13T17:47:21Z",
+      "url": "http://marekhealth.com/",
+      "status": "301",
+      "digest": "H2XUZPUDQ2U74FSVLVE5ZBE7M4EQO544"
+    },
+    {
+      "timestamp": "2023-01-20T12:50:52Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "RLBAVQYS6FQBFNYRWR4Q67WYK2SN7ZTK"
+    },
+    {
+      "timestamp": "2023-01-28T14:41:39Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "V65K4UKR2XKYDGV7TM32TTXSUEFXBJE6"
+    },
+    {
+      "timestamp": "2023-02-01T01:08:50Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "2DP5GO35OJHC2J3U2F36II64VQLYNM4D"
+    },
+    {
+      "timestamp": "2023-02-02T14:42:18Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "TXUVD3S4ROCG7HQ2A6BN6HA3KJ4NIA6N"
+    },
+    {
+      "timestamp": "2023-02-04T06:03:55Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "W364BPGCQNJTZC72AVNU7LXQAKXCAF2P"
+    },
+    {
+      "timestamp": "2023-02-13T14:01:20Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "VGQQ74TKZCKKF2P55J73G4AN3DOEMIAN"
+    },
+    {
+      "timestamp": "2023-03-01T19:09:17Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "E3OZZTG2YWLC2SH5H7PSTLQTFQW6BTFW"
+    },
+    {
+      "timestamp": "2023-03-01T19:13:30Z",
+      "url": "http://marekhealth.com/",
+      "status": "-",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2023-03-06T00:38:58Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "XQYXMM5LTYAISN4DP7JCKBFKYOGWLLBM"
+    },
+    {
+      "timestamp": "2023-03-08T02:25:29Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "44WF2VHE4Z52UL5WXZQBHDYQQ45J53BD"
+    },
+    {
+      "timestamp": "2023-03-13T14:02:00Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "EPMEIVDHYBBDNPJMLSZHMJHHVAMNCTGE"
+    },
+    {
+      "timestamp": "2023-03-15T17:06:36Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "BUF2TIDT5PA7OU2ECCN4WXDPFMQXG2E7"
+    },
+    {
+      "timestamp": "2023-03-24T00:50:55Z",
+      "url": "http://marekhealth.com/",
+      "status": "-",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2023-03-27T13:55:55Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "MEPHXY3YFIMDJCCBCXUNL5HNTP2KP5G3"
+    },
+    {
+      "timestamp": "2023-03-27T13:58:29Z",
+      "url": "http://marekhealth.com/",
+      "status": "-",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2023-03-27T13:58:30Z",
+      "url": "https://marekhealth.com:443/",
+      "status": "200",
+      "digest": "MEPHXY3YFIMDJCCBCXUNL5HNTP2KP5G3"
+    },
+    {
+      "timestamp": "2023-03-28T18:38:34Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "OZNW6GUVNKBIFZTT7XG4DV7XPPVGRVJ2"
+    },
+    {
+      "timestamp": "2023-03-29T16:30:55Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "V7AG3KSJDBNMJ2UCUDAEKPS4FDRHAA2S"
+    },
+    {
+      "timestamp": "2023-04-01T02:23:14Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "PQCHWDHWTZH2O3JBHRIP7NKOENZT4YU6"
+    },
+    {
+      "timestamp": "2023-04-08T14:34:02Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "JCL4QSTE7D5QLEBQ4K6JCHMERCSXLLKA"
+    },
+    {
+      "timestamp": "2023-04-12T18:04:15Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "6MBD2FA5LKDUKFGD5NKOKJZONV7FAQ3O"
+    },
+    {
+      "timestamp": "2023-04-19T18:32:03Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "BUBU2Q5D4HSYCXBJIAPY6TNFLXYGRYGA"
+    },
+    {
+      "timestamp": "2023-04-22T19:28:11Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "TFOY77BOMIOS5SMVHWDHKWIKKZQ4CI5N"
+    },
+    {
+      "timestamp": "2023-04-24T20:09:23Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "O5Y6JWOGBYBM4ISGWXLRXMR7SK47XCUQ"
+    },
+    {
+      "timestamp": "2023-04-25T14:31:12Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "NEYZPLFXRG3PWZ6BVBZAIC5G53AUT45Y"
+    },
+    {
+      "timestamp": "2023-04-30T00:37:31Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "DEZ7P2LKIGBJIRPHXZXJKGS4EFZPGNFC"
+    },
+    {
+      "timestamp": "2023-05-11T10:50:58Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "RUIO4LLYDHTMJUE24Z6TZEJ4IGZ4BCH6"
+    },
+    {
+      "timestamp": "2023-05-26T22:19:33Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "403",
+      "digest": "O5Y6JWOGBYBM4ISGWXLRXMR7SK47XCUQ"
+    },
+    {
+      "timestamp": "2023-05-27T10:08:26Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "C4S3HCTRX6MYD6ALKJH6VZZ57JBQWCCQ"
+    },
+    {
+      "timestamp": "2023-05-28T10:58:59Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "2MUJAVMFN6PILZG6MSQ7Z2J3C5O6RDBX"
+    },
+    {
+      "timestamp": "2023-06-06T02:04:52Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "O5Y6JWOGBYBM4ISGWXLRXMR7SK47XCUQ"
+    },
+    {
+      "timestamp": "2023-07-14T17:43:42Z",
+      "url": "http://marekhealth.com/",
+      "status": "301",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2023-07-14T17:43:56Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "YBKBVKDKB3SE777IXRFE4AMJY5LVPDML"
+    },
+    {
+      "timestamp": "2023-08-01T13:23:11Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "O5Y6JWOGBYBM4ISGWXLRXMR7SK47XCUQ"
+    },
+    {
+      "timestamp": "2023-08-10T00:12:23Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "QIU5J66QWIQ7TL2W2INGUCUT5CGH4OYN"
+    },
+    {
+      "timestamp": "2023-09-15T20:00:43Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "DVH5U53MJM4SM7IVJMTI7DAUSBE4X2H4"
+    },
+    {
+      "timestamp": "2023-09-25T22:48:17Z",
+      "url": "http://marekhealth.com/",
+      "status": "301",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2023-09-25T22:48:17Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "J6JQ2A3XGI7M6G3O3YJPWC6J4HINVBON"
+    },
+    {
+      "timestamp": "2023-09-29T01:45:23Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "3QCLHQ5C6GT6SDKMI5BI25IYTVNA3VYF"
+    },
+    {
+      "timestamp": "2023-10-22T14:20:31Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "GUV2RBAABM7G4ZMYPHPW7PZOGUG7OHKU"
+    },
+    {
+      "timestamp": "2023-10-26T14:00:45Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "55ZMRCEQGDEYXABCZPORQXOCCMZOWOHD"
+    },
+    {
+      "timestamp": "2023-12-01T16:26:27Z",
+      "url": "https://marekhealth.com/?",
+      "status": "200",
+      "digest": "W2FMNYNYR7T5KX2QY5BEJNU554AMI2IK"
+    },
+    {
+      "timestamp": "2024-01-05T21:58:46Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "B2DVM3XGV7YTQ44JZNIWQS5EZLXILK47"
+    },
+    {
+      "timestamp": "2024-01-18T02:04:12Z",
+      "url": "http://marekhealth.com/",
+      "status": "301",
+      "digest": "WMCR2F5G5SGJ4FTL6CNGFNECMGVYNFL3"
+    },
+    {
+      "timestamp": "2024-02-27T06:11:57Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "7RFGPCB6UUKBK6EL5I5COO7LRVJD77OG"
+    },
+    {
+      "timestamp": "2024-02-29T10:59:13Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "YHRY2N7ZUB3BFZ35OXIKRJMTU5JCIUO6"
+    },
+    {
+      "timestamp": "2024-03-01T22:13:23Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "C3JV5VWPVRV3SAHOEAG3WX3753RT6EJG"
+    },
+    {
+      "timestamp": "2024-03-15T22:36:27Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "XBKB7FXZKZTEACH73O7RN45WA5MQADEI"
+    },
+    {
+      "timestamp": "2024-05-16T10:37:01Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "ANNXTOOCH7FIU6ERMFRHRHFNCZR6C5F6"
+    },
+    {
+      "timestamp": "2024-06-12T08:13:50Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "ICMMFXT3K6VGGI7IJBSB3S3UBZPUZZWE"
+    },
+    {
+      "timestamp": "2024-06-29T01:34:12Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "ZOUQFS3ZEH5D3SJAB6JYSLJSV6RSBJEN"
+    },
+    {
+      "timestamp": "2024-07-03T05:27:14Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "200",
+      "digest": "YSYP4FKLAAIE2YLVEI3VGTXN4GPQ77QS"
+    },
+    {
+      "timestamp": "2024-07-05T06:44:06Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "E3W2QLQ5DEHUIB25FHT327KAKV34C5E3"
+    },
+    {
+      "timestamp": "2024-08-23T03:34:51Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "Z5OTTQWDTPBFOXZDWAUM6SVUDS3VKHYE"
+    },
+    {
+      "timestamp": "2024-08-28T00:03:10Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "IIF62IBNAWA3WXNY2C34AHA5Y74VKZRJ"
+    },
+    {
+      "timestamp": "2024-09-07T09:15:17Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "NBJTN5WVGEUOUQ3DLB5S3FCYTNV7NWGP"
+    },
+    {
+      "timestamp": "2024-09-10T05:05:08Z",
+      "url": "http://marekhealth.com/",
+      "status": "301",
+      "digest": "WMCR2F5G5SGJ4FTL6CNGFNECMGVYNFL3"
+    },
+    {
+      "timestamp": "2024-09-10T05:05:09Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "O5Y6JWOGBYBM4ISGWXLRXMR7SK47XCUQ"
+    },
+    {
+      "timestamp": "2024-09-11T14:13:24Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "EASYFHEX33CIADMHAADH7Z3WEOVVTMPX"
+    },
+    {
+      "timestamp": "2024-09-17T10:16:04Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "D3DXTIH3ILXMEP5RCMPQ4BFTZAOQHPAS"
+    },
+    {
+      "timestamp": "2024-09-17T13:33:21Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "O5Y6JWOGBYBM4ISGWXLRXMR7SK47XCUQ"
+    },
+    {
+      "timestamp": "2024-09-18T02:11:26Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "D3DXTIH3ILXMEP5RCMPQ4BFTZAOQHPAS"
+    },
+    {
+      "timestamp": "2024-09-25T15:21:14Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "H4RZWHKLJFNUWFDNBL4XDTYRGWI2ABQJ"
+    },
+    {
+      "timestamp": "2024-09-30T16:30:33Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "O5Y6JWOGBYBM4ISGWXLRXMR7SK47XCUQ"
+    },
+    {
+      "timestamp": "2024-11-03T17:38:24Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "6BNT7CCA74UUXQ5E3WHTBFTMWVIKIBO3"
+    },
+    {
+      "timestamp": "2024-11-04T15:08:58Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "FP3JFIXP5BYKZJPNLUGU56KRYTRR6R2U"
+    },
+    {
+      "timestamp": "2024-11-17T07:27:50Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "KOLYPDYJCLXHNMNVDJO24UZCH2LL5KYR"
+    },
+    {
+      "timestamp": "2024-11-25T05:19:20Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "543SR7GWAITASYAFRVAPTMZQWCLK3RQE"
+    },
+    {
+      "timestamp": "2024-11-26T20:23:15Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "7I7XXYBWTIJAV6DMGHPS2OTVOJHRBHDU"
+    },
+    {
+      "timestamp": "2024-12-13T03:20:41Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "Y3WOFLQWLEMWWMV5UXFKPTODTTOK5KC7"
+    },
+    {
+      "timestamp": "2024-12-13T14:04:51Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "4CXK6QGHY2HFZSCGAZMRXLWXSCZP6GDS"
+    },
+    {
+      "timestamp": "2024-12-20T05:37:22Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "FCP4ROLF5GPKOXAUCFWI7ZYZHJQYGRTV"
+    },
+    {
+      "timestamp": "2025-01-24T11:02:07Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "INZ7XI2B3B5H7DOGZIVUT3NDQ5WMPABM"
+    },
+    {
+      "timestamp": "2025-02-07T22:37:15Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "FCRWXYDGMABQXVDDAPK7VK3D6PLIXXEU"
+    },
+    {
+      "timestamp": "2025-02-14T03:00:16Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "O2KLJRAZGT3KZATWFOFJPCQIUPKZICY4"
+    },
+    {
+      "timestamp": "2025-02-23T19:18:41Z",
+      "url": "http://marekhealth.com/",
+      "status": "403",
+      "digest": "V4JSOBI3TT72L7JWESXT5X37HGI6Y7KB"
+    },
+    {
+      "timestamp": "2025-03-19T00:31:13Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "DWQIA6QDXNMDLOPNMGSCZHAWPESVTBWQ"
+    },
+    {
+      "timestamp": "2025-04-29T02:40:25Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "OLYICIOYLTR526B776I3WQTTWQZ3NMPC"
+    },
+    {
+      "timestamp": "2025-05-17T23:54:49Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "CYNK4ILOJJASGW3NZBISJTQNLGQAH6HE"
+    },
+    {
+      "timestamp": "2025-05-19T21:30:17Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "200",
+      "digest": "IWYVCPH5EMFKGHUBOLIMKUZ2FRL3Z44J"
+    },
+    {
+      "timestamp": "2025-06-13T23:20:43Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "KC66MM6YKTWQU6BQOFJM3SIKTZ2SZ25D"
+    },
+    {
+      "timestamp": "2025-07-13T04:44:12Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "WPOJH5VZBM4VYM6552W3JLMDLA5IJF5I"
+    },
+    {
+      "timestamp": "2025-07-29T14:39:22Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "CULUEIHQRH4NGD47WRVUY42S566ZCKE3"
+    },
+    {
+      "timestamp": "2025-08-11T18:34:10Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "N2OJG5QLDEOV3NFK3I4QW6PWLFMIS2YY"
+    },
+    {
+      "timestamp": "2025-08-13T12:55:23Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "EG63M7P6J3H7KW4NJ3TTO5KVBVRKOSVT"
+    },
+    {
+      "timestamp": "2025-08-24T20:06:10Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "BYD3VUCKAZHDIDOLKDDLIJ2DMHONY7BE"
+    },
+    {
+      "timestamp": "2025-08-25T22:32:56Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "6PEN6Y6TA7E2DN37RFDQRMHXH4SZVT47"
+    },
+    {
+      "timestamp": "2025-09-01T19:05:40Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "-",
+      "digest": "EG63M7P6J3H7KW4NJ3TTO5KVBVRKOSVT"
+    },
+    {
+      "timestamp": "2025-09-13T08:37:00Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "LK3YMMX2XMMNU2C3GSRIPGJRHEGUVBVO"
+    },
+    {
+      "timestamp": "2025-10-01T21:53:09Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "HI7PR4OY7HQ5YWY4PDC6QRWOIRDZUM7U"
+    },
+    {
+      "timestamp": "2025-10-01T22:32:56Z",
+      "url": "http://www.marekhealth.com/",
+      "status": "301",
+      "digest": "WMCR2F5G5SGJ4FTL6CNGFNECMGVYNFL3"
+    },
+    {
+      "timestamp": "2025-10-01T22:32:56Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "403",
+      "digest": "EG63M7P6J3H7KW4NJ3TTO5KVBVRKOSVT"
+    },
+    {
+      "timestamp": "2025-10-12T03:57:46Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "TXGXGDRUBMI5THFUHYVTKIA5AYIEOBMZ"
+    },
+    {
+      "timestamp": "2025-11-06T19:38:13Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "EG63M7P6J3H7KW4NJ3TTO5KVBVRKOSVT"
+    },
+    {
+      "timestamp": "2025-11-07T16:33:19Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "V2MAXSDRT3CTYYHK4LSEJA4DEX4B4NCN"
+    },
+    {
+      "timestamp": "2025-11-12T23:25:46Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "FUBPD6KWNPGFU3EVDL67U45BM5J6G7BW"
+    },
+    {
+      "timestamp": "2025-11-22T23:34:27Z",
+      "url": "http://marekhealth.com/",
+      "status": "301",
+      "digest": "WMCR2F5G5SGJ4FTL6CNGFNECMGVYNFL3"
+    },
+    {
+      "timestamp": "2025-12-06T21:42:11Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "MPYOG3JXODQTRQJY6YBS27CEIIUCDLCN"
+    },
+    {
+      "timestamp": "2025-12-24T04:46:40Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "EG63M7P6J3H7KW4NJ3TTO5KVBVRKOSVT"
+    },
+    {
+      "timestamp": "2026-01-01T13:25:29Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "ZT6YM77GLH6BDGWGDJRD2463TOWWPSCD"
+    },
+    {
+      "timestamp": "2026-01-14T23:23:28Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "Y2PWLEEC2GRQAQG6G3YMPWY2O4NG2O7M"
+    },
+    {
+      "timestamp": "2026-02-08T02:51:35Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "403",
+      "digest": "EG63M7P6J3H7KW4NJ3TTO5KVBVRKOSVT"
+    },
+    {
+      "timestamp": "2026-02-11T13:06:32Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "200",
+      "digest": "C45Y3LKAPFJD3XNGW5FP7RHN5D6WRWGC"
+    },
+    {
+      "timestamp": "2026-03-04T05:22:55Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "EG63M7P6J3H7KW4NJ3TTO5KVBVRKOSVT"
+    },
+    {
+      "timestamp": "2026-03-06T05:59:00Z",
+      "url": "https://www.marekhealth.com/",
+      "status": "200",
+      "digest": "BKXPORDCGMYWXQWDFYIR67KY6T3GBHQ6"
+    },
+    {
+      "timestamp": "2026-03-09T12:20:40Z",
+      "url": "https://marekhealth.com/",
+      "status": "200",
+      "digest": "P5W2QBLVIFZMS55UZJFOK7Y5HCS6XHUZ"
+    },
+    {
+      "timestamp": "2026-03-16T03:59:46Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "EG63M7P6J3H7KW4NJ3TTO5KVBVRKOSVT"
+    },
+    {
+      "timestamp": "2026-05-15T14:21:44Z",
+      "url": "https://marekhealth.com/",
+      "status": "307",
+      "digest": "7M3FYEQWWWPBZ7EGSUCCLBTQA6TA6RBV"
+    },
+    {
+      "timestamp": "2026-05-15T14:25:10Z",
+      "url": "https://marekhealth.com/",
+      "status": "403",
+      "digest": "WD2TXONYVKWHHJFJUYRUEYZTD4S4A7ZR"
+    }
+  ]
+}

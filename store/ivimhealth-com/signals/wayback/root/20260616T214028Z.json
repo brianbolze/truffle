@@ -1,0 +1,889 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:40:28Z",
+  "ok": true,
+  "input": {
+    "url": "https://ivimhealth.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2023-01-08T18:18:22Z",
+  "last_seen": "2026-05-21T19:06:58Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 1255,
+  "snapshot_count": 122,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2023-01-08T18:18:22Z",
+      "to": "2023-01-08T18:18:22Z"
+    },
+    {
+      "status": "-",
+      "from": "2023-01-21T20:38:47Z",
+      "to": "2023-01-21T20:38:47Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-02-12T11:13:13Z",
+      "to": "2023-02-12T11:13:13Z"
+    },
+    {
+      "status": "-",
+      "from": "2023-03-04T13:39:31Z",
+      "to": "2023-03-16T09:18:33Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-04-23T23:16:49Z",
+      "to": "2024-04-22T13:20:55Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-05-11T00:35:44Z",
+      "to": "2024-05-12T00:19:31Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-13T08:32:48Z",
+      "to": "2024-09-10T19:31:07Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-15T05:02:34Z",
+      "to": "2024-09-15T05:02:34Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-15T05:02:35Z",
+      "to": "2024-11-16T18:34:59Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-11-16T18:35:16Z",
+      "to": "2024-11-16T18:35:16Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-11-29T01:15:28Z",
+      "to": "2025-02-22T12:25:38Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-27T13:53:24Z",
+      "to": "2025-02-27T13:53:34Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-27T13:53:43Z",
+      "to": "2025-02-27T13:53:43Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-27T16:07:35Z",
+      "to": "2025-02-27T16:07:35Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-17T02:24:25Z",
+      "to": "2025-03-26T23:16:20Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-04-04T23:53:07Z",
+      "to": "2025-04-04T23:53:07Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-04T23:53:08Z",
+      "to": "2025-04-05T10:00:55Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-04-06T15:44:20Z",
+      "to": "2025-04-06T15:44:20Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-06T16:36:02Z",
+      "to": "2025-04-23T03:59:27Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-04-25T20:17:27Z",
+      "to": "2025-04-25T20:17:27Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-05-14T00:23:14Z",
+      "to": "2025-05-14T04:59:45Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-05-14T06:51:01Z",
+      "to": "2025-05-14T06:51:01Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-05-23T18:07:44Z",
+      "to": "2025-08-11T01:15:33Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-08-12T03:12:57Z",
+      "to": "2025-08-12T03:13:57Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-13T06:49:12Z",
+      "to": "2025-08-15T04:48:38Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-08-20T19:21:50Z",
+      "to": "2025-08-20T19:21:50Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-09-04T02:57:33Z",
+      "to": "2026-05-21T19:06:58Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20230108181822/https://www.ivimhealth.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260521190658/https://www.ivimhealth.com/",
+  "snapshots": [
+    {
+      "timestamp": "2023-01-08T18:18:22Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "6Q3FESB6VDFRZ4VBI2PIQA63QMRXADOU"
+    },
+    {
+      "timestamp": "2023-01-21T20:38:47Z",
+      "url": "http://ivimhealth.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-02-12T11:13:13Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "HXKOVVBCKT5FZ6XS5ARR5SDCVLTRSXJB"
+    },
+    {
+      "timestamp": "2023-03-04T13:39:31Z",
+      "url": "http://www.ivimhealth.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-03-16T09:18:33Z",
+      "url": "http://ivimhealth.com/",
+      "status": "-",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2023-04-23T23:16:49Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "OHOYUDC42H7T4VGSLTS7DLEK3POL5PZR"
+    },
+    {
+      "timestamp": "2023-04-28T18:40:43Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "3UM2WBX7BWZ3QEZDQRGFYYC3EIA34ZPQ"
+    },
+    {
+      "timestamp": "2023-05-18T14:09:49Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "3ATP6DWZA3Y4Q2HHL7PJP23GRCBPZKQA"
+    },
+    {
+      "timestamp": "2023-06-06T03:06:04Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "ACRAFQNUN5BU5JQ4DDN4P6XSRYAGBLMM"
+    },
+    {
+      "timestamp": "2023-10-23T19:10:26Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "GEWMGJZMRVXJHAJVNVRYQPXPW64NAC43"
+    },
+    {
+      "timestamp": "2023-11-29T14:52:20Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "G7P74TEKJS6OMNPDIENHMTUF46WMYQ6Q"
+    },
+    {
+      "timestamp": "2023-12-14T16:01:07Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "J3ESBR4NBK242KPTU2NDIQ63YOBQLDOJ"
+    },
+    {
+      "timestamp": "2024-01-07T05:33:25Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "V5YP7GEVDSMJZWIGF3IUC5OHDMFJ7WW7"
+    },
+    {
+      "timestamp": "2024-02-22T13:14:53Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "RBV6T5IRNCGM3NCKAR676S3YEJNEH4DY"
+    },
+    {
+      "timestamp": "2024-02-28T22:44:41Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "NO7RH75BF4N5DMRDUQ4QSOFIVIW6CQLS"
+    },
+    {
+      "timestamp": "2024-04-22T13:20:55Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "53DCDLCNSHOBX276WXHLZBZG5XO6KECG"
+    },
+    {
+      "timestamp": "2024-05-11T00:35:44Z",
+      "url": "https://ivimhealth.com/",
+      "status": "301",
+      "digest": "ZATAYQBT4GSQHFYQYLFL3YLZCH52YA5A"
+    },
+    {
+      "timestamp": "2024-05-11T00:36:05Z",
+      "url": "http://ivimhealth.com/",
+      "status": "301",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2024-05-12T00:19:31Z",
+      "url": "https://ivimhealth.com/",
+      "status": "301",
+      "digest": "ZATAYQBT4GSQHFYQYLFL3YLZCH52YA5A"
+    },
+    {
+      "timestamp": "2024-05-13T08:32:48Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "2NZV66Q3WODU4YP62QPD5BV4Y5FYFDXG"
+    },
+    {
+      "timestamp": "2024-05-22T01:34:11Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "W264RB2EFCI4FHFL65UDMGSUCFTHFKIY"
+    },
+    {
+      "timestamp": "2024-05-23T12:16:33Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "IHCNPGLD6BWPROH3LEAESOO5S5ISDWL6"
+    },
+    {
+      "timestamp": "2024-06-06T06:48:28Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "6LAOOCLWYFWFU2Y6NGLJ2WIVIGYQCWRX"
+    },
+    {
+      "timestamp": "2024-06-17T11:06:38Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "EJH5YGVXSW7QQPQRJEQPOMM3G7Y5KTDY"
+    },
+    {
+      "timestamp": "2024-06-18T07:51:00Z",
+      "url": "https://www.ivimhealth.com",
+      "status": "200",
+      "digest": "53VYANUIYMJFONNIB3TWE7BGK6DA2FSQ"
+    },
+    {
+      "timestamp": "2024-06-24T00:10:07Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "4AEH5TCASUXG4XPR5BG6TPANY4FP6DZL"
+    },
+    {
+      "timestamp": "2024-07-12T20:22:48Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "LYIIOXWUFYUU4TVKVBMOH76HDJ7AJ67U"
+    },
+    {
+      "timestamp": "2024-07-13T05:22:54Z",
+      "url": "https://www.ivimhealth.com",
+      "status": "200",
+      "digest": "JQXWT7ORJ24SPCTS5IBOGPZH4YLNXPFZ"
+    },
+    {
+      "timestamp": "2024-07-15T16:19:04Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "RYS3KFF6JUMEVP5LIXI5WHLIOJ4CPHYI"
+    },
+    {
+      "timestamp": "2024-07-16T06:04:49Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "T2IOOFEIQGDWEK4CH4LQZJ6FEW7BSE2F"
+    },
+    {
+      "timestamp": "2024-07-18T22:50:22Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "REVA7ZUU5UIIKANKMN4RHW3IVQGUWLKL"
+    },
+    {
+      "timestamp": "2024-07-21T01:38:58Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "6JMQQGY2NK5BZPKVAQNFE7K3WU57L3N2"
+    },
+    {
+      "timestamp": "2024-08-05T05:39:04Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "PKE22MMWZXMROYYHIZ6D2WOSXRY4AGZY"
+    },
+    {
+      "timestamp": "2024-08-07T20:17:21Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "WTR6P4DPN3WTJGKJ7PTB5HGIOTEHZ6OS"
+    },
+    {
+      "timestamp": "2024-08-11T20:45:28Z",
+      "url": "https://www.ivimhealth.com",
+      "status": "200",
+      "digest": "DREYOPP2PSHLFBUEXKRZHYFHPJNEN63L"
+    },
+    {
+      "timestamp": "2024-08-14T10:20:12Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "CPGQVE46BEJH42JJSWAVYSDRUUORPT3L"
+    },
+    {
+      "timestamp": "2024-08-23T18:17:17Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "WUQ5VYILHKRST6TSYJUJEQ222MORJ73F"
+    },
+    {
+      "timestamp": "2024-09-06T10:14:34Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "URKAWHXWZUPUIQG3GFIRPZ77G3TCCUJ4"
+    },
+    {
+      "timestamp": "2024-09-10T19:31:07Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "ZTQ33MSTPGIGXDUGHEIWVK2EVBUIVZQI"
+    },
+    {
+      "timestamp": "2024-09-15T05:02:34Z",
+      "url": "https://ivimhealth.com/",
+      "status": "301",
+      "digest": "ZATAYQBT4GSQHFYQYLFL3YLZCH52YA5A"
+    },
+    {
+      "timestamp": "2024-09-15T05:02:35Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "MLFFP2PPBLEBKKROJGE3IHUPIE5OSOUD"
+    },
+    {
+      "timestamp": "2024-10-04T23:17:29Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "FVXKHPN3MFZPH5OKQXBSCLSNCR75TRXR"
+    },
+    {
+      "timestamp": "2024-10-13T03:22:23Z",
+      "url": "https://www.ivimhealth.com",
+      "status": "200",
+      "digest": "DJAHYUTPDB5UJKMYDRRMMO3WTIIXSL42"
+    },
+    {
+      "timestamp": "2024-11-03T09:24:16Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "RAKO6ZB33C7ANUA2CYQIF46Z734HBDA5"
+    },
+    {
+      "timestamp": "2024-11-08T18:42:02Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "DMIY3Q5REEKT6SQR2GI2P4M7XS4KMSJM"
+    },
+    {
+      "timestamp": "2024-11-08T20:40:40Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "RJM5V4ZE2WNXNM5K6SPMYIGMJXAM5H4A"
+    },
+    {
+      "timestamp": "2024-11-16T18:34:59Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "JROKSQPGQOHUUHP3RXWUZMAFEZZDAJO5"
+    },
+    {
+      "timestamp": "2024-11-16T18:35:16Z",
+      "url": "http://www.ivimhealth.com/",
+      "status": "301",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2024-11-29T01:15:28Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "7GXNCMJS7PFN2KVJZMQTV3WMATNBBMIT"
+    },
+    {
+      "timestamp": "2024-12-01T04:52:33Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "232RU4Q5LODTTTEWQCZFXOVWIFTRBFYK"
+    },
+    {
+      "timestamp": "2024-12-05T00:14:47Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "2GHWH6T3ORSVMVIHRUNW4TW3IXY3PZNN"
+    },
+    {
+      "timestamp": "2024-12-13T18:48:18Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "XJN33JY6VI4C5LQGHI5WZLD72FA7NLTO"
+    },
+    {
+      "timestamp": "2024-12-19T20:09:04Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "DHSWZLAEC2LS25LY4PGGJF76U3HJ2FXG"
+    },
+    {
+      "timestamp": "2025-01-15T01:07:12Z",
+      "url": "https://www.ivimhealth.com",
+      "status": "200",
+      "digest": "DNBARVKXH2W4CIUCL3OSRZAJQYLQCPDG"
+    },
+    {
+      "timestamp": "2025-01-15T08:57:48Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "ILSWJR4PHWZACCT3OPJYTYPH5UY3CL3I"
+    },
+    {
+      "timestamp": "2025-01-21T00:24:29Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "6SZ3QWENFELOJHJZADMUB6DPAMNMGWKM"
+    },
+    {
+      "timestamp": "2025-01-21T11:13:33Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "KFQBVQL2MMXYB4YLDEKRZPVHDGD6L4GS"
+    },
+    {
+      "timestamp": "2025-02-06T17:48:47Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "2POMYFZ5EB2SWWAJWXFU4XFOZEKX363I"
+    },
+    {
+      "timestamp": "2025-02-10T22:42:36Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "HZK7W4F57UC7IZR7QP5C5SEQEGQ6TNHZ"
+    },
+    {
+      "timestamp": "2025-02-16T14:17:04Z",
+      "url": "https://www.ivimhealth.com",
+      "status": "200",
+      "digest": "V2Q6C5XQJRYMZXQNMUG344JGOFBYH7Q7"
+    },
+    {
+      "timestamp": "2025-02-22T12:25:38Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "OKRLAT5LUT5O75UPFATA5HEQVOYQ5Q6S"
+    },
+    {
+      "timestamp": "2025-02-27T13:53:24Z",
+      "url": "http://Ivimhealth.com/",
+      "status": "301",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2025-02-27T13:53:34Z",
+      "url": "https://ivimhealth.com:443/",
+      "status": "301",
+      "digest": "ZATAYQBT4GSQHFYQYLFL3YLZCH52YA5A"
+    },
+    {
+      "timestamp": "2025-02-27T13:53:43Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "V3CENOZFS4WH2D4ISL5FQRI227RQODEE"
+    },
+    {
+      "timestamp": "2025-02-27T16:07:35Z",
+      "url": "http://Ivimhealth.com/",
+      "status": "301",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2025-03-17T02:24:25Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "VDJZUKN3SRZ5ZYLI7AH4GAYVWWRBV77B"
+    },
+    {
+      "timestamp": "2025-03-19T17:33:54Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "3N53CIER6KE3QPFNPXG5FA5JJQOLCYMQ"
+    },
+    {
+      "timestamp": "2025-03-20T09:17:44Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "A5S656ZUUB5OT37E2CI5IOGJ3BTCI5IR"
+    },
+    {
+      "timestamp": "2025-03-24T19:39:49Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "I64I5JNNQPW52PZ7WRNUXMQJK2TCZZNC"
+    },
+    {
+      "timestamp": "2025-03-26T23:16:20Z",
+      "url": "https://www.ivimhealth.com",
+      "status": "200",
+      "digest": "T5WGXUAVROPVY3VJSFL4MWH5C3WQAQLJ"
+    },
+    {
+      "timestamp": "2025-04-04T23:53:07Z",
+      "url": "http://Ivimhealth.com/",
+      "status": "301",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2025-04-04T23:53:08Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "XDEZH43NQ3P7WBVJVMPD4JQG62YRJ2KK"
+    },
+    {
+      "timestamp": "2025-04-05T10:00:55Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "HCMIEM227FG3NWECRTJOZKN5S6P5LX7O"
+    },
+    {
+      "timestamp": "2025-04-06T15:44:20Z",
+      "url": "http://ivimhealth.com/",
+      "status": "301",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2025-04-06T16:36:02Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "WOHN5YOB7CJWOPD3V4QPIBVU3CHTF3NV"
+    },
+    {
+      "timestamp": "2025-04-06T19:31:26Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "ZLDCNSDNDB2IXKDL7VRRFIX7OFXEXBMW"
+    },
+    {
+      "timestamp": "2025-04-22T16:12:25Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "TMDPP2EWWWBPVALBI4FE6DL4BT5YTL4C"
+    },
+    {
+      "timestamp": "2025-04-23T03:59:27Z",
+      "url": "https://www.ivimhealth.com",
+      "status": "200",
+      "digest": "3L3S5XC5HDU6RGDVML3AJ25OVQABXZZ5"
+    },
+    {
+      "timestamp": "2025-04-25T20:17:27Z",
+      "url": "http://www.ivimhealth.com/",
+      "status": "301",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2025-05-14T00:23:14Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "D27HMC63N5XYDNVLKNMQR6CKGNXNXICF"
+    },
+    {
+      "timestamp": "2025-05-14T04:59:45Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "RHSXGVXUYQSTPPQQVP75U4676F4RN5IA"
+    },
+    {
+      "timestamp": "2025-05-14T06:51:01Z",
+      "url": "https://ivimhealth.com/",
+      "status": "301",
+      "digest": "ZATAYQBT4GSQHFYQYLFL3YLZCH52YA5A"
+    },
+    {
+      "timestamp": "2025-05-23T18:07:44Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "CDND45BAVJV64IXDI6TRLV66XPZS72TQ"
+    },
+    {
+      "timestamp": "2025-05-24T12:26:46Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "ANCCELPIOH2VXLIIWUTR4YOUMFABWHSM"
+    },
+    {
+      "timestamp": "2025-06-20T13:21:27Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "DH2LQBQSNFWODSQL64GTTO4N27NAKH6N"
+    },
+    {
+      "timestamp": "2025-06-21T13:44:49Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "4O7GZPPLSTVASXRJHJO4JWCN3O352Q24"
+    },
+    {
+      "timestamp": "2025-07-09T06:15:28Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "TGZBMG5Y4VFNIAOBVLWQQIR2CGW6QGCN"
+    },
+    {
+      "timestamp": "2025-07-11T14:00:18Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "DF74RSQVNTU5KJKIHAKKTFIZYL2THK6K"
+    },
+    {
+      "timestamp": "2025-07-14T20:14:05Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "RVHPHMQMIHWLHUOWVHT4FBT46LODV6OF"
+    },
+    {
+      "timestamp": "2025-08-05T21:15:21Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "EAQ6TTBT4IESOJGWD3HB3BDG7ART5YHP"
+    },
+    {
+      "timestamp": "2025-08-11T01:15:33Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "VCSDE4PJBAHS5S562H2XGGKET7OGBUCK"
+    },
+    {
+      "timestamp": "2025-08-12T03:12:57Z",
+      "url": "http://ivimhealth.com/",
+      "status": "301",
+      "digest": "DFS4JFJMZDAIFJRQP3LHAYNFPKVWMMX2"
+    },
+    {
+      "timestamp": "2025-08-12T03:13:57Z",
+      "url": "https://ivimhealth.com/",
+      "status": "301",
+      "digest": "OGCTYYMXU2T7EIW3B4MXRR6LEMVYPRPO"
+    },
+    {
+      "timestamp": "2025-08-13T06:49:12Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "ST3C4AMV7QEYMGALJB3B3CWMFRYFGBDO"
+    },
+    {
+      "timestamp": "2025-08-15T04:48:38Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "4JOZU6PABYKUGD6VX6LNRLGTLH34GUH6"
+    },
+    {
+      "timestamp": "2025-08-20T19:21:50Z",
+      "url": "https://ivimhealth.com/",
+      "status": "301",
+      "digest": "OGCTYYMXU2T7EIW3B4MXRR6LEMVYPRPO"
+    },
+    {
+      "timestamp": "2025-09-04T02:57:33Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "BLIUUDWKXNWVDS3ZYDN5E2NIHMZEATUV"
+    },
+    {
+      "timestamp": "2025-09-10T20:24:18Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "CVFVU3E3BPHY3VTHNBSWLBZCTEG2LWNP"
+    },
+    {
+      "timestamp": "2025-09-14T05:11:54Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "F3GCYFRPTJL4HLCUZ2CGGI6FFJUVC5HZ"
+    },
+    {
+      "timestamp": "2025-09-27T09:15:40Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "RDMLZNGZBGY7AHT2EKT5YJUZUYDANX7V"
+    },
+    {
+      "timestamp": "2025-10-02T21:04:05Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "44HUA6GMFB4QPH42ISPPYDOQY5HUT7LC"
+    },
+    {
+      "timestamp": "2025-10-05T18:52:02Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "TCL4EHETNNDRPNLU4MYILANJ65QP4CSF"
+    },
+    {
+      "timestamp": "2025-10-18T23:07:04Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "XDBJ7UUUIRCKACIVR5K7GU6N3BO7CQ6G"
+    },
+    {
+      "timestamp": "2025-10-22T23:02:39Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "B7B2QAFMCJPZ6AFJYAZIRALEUI6VV2WN"
+    },
+    {
+      "timestamp": "2025-10-24T12:40:12Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "W6E2K4LCBWCWATTTUSACO22BJVDHKW2R"
+    },
+    {
+      "timestamp": "2025-11-08T22:25:18Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "PVCV44DQJRKW7EVFQITRKSXWQ74CKPTG"
+    },
+    {
+      "timestamp": "2025-11-09T16:19:20Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "YTLM2Q7PDX2CPWDZBEKSGVX6G7OPWK3A"
+    },
+    {
+      "timestamp": "2025-12-07T02:47:58Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "LRK5AVZWQFRA5HVZL23QMB7PCIKB2KKP"
+    },
+    {
+      "timestamp": "2025-12-09T19:28:23Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "BSANNQYC3QYIFKIAB4JAGKAEHZV2WBTD"
+    },
+    {
+      "timestamp": "2025-12-14T19:57:02Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "SZ3VKQJ4YAIIO7EHR5X6MUSQBGJG6FHB"
+    },
+    {
+      "timestamp": "2026-01-08T13:42:28Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "DKHSQF6CEWODDLGX3HQ5IUA2S5XTQ6Z2"
+    },
+    {
+      "timestamp": "2026-01-22T04:06:56Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "XKFHJEBQE7WHTDNL5BGRMYXP5JLMQXAV"
+    },
+    {
+      "timestamp": "2026-01-23T05:05:15Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "6Y7IXKJQ6YSXS5H6DGO677AJCKCDN5M4"
+    },
+    {
+      "timestamp": "2026-02-14T22:46:46Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "AYPCQYGKORIDFH75QHJHITL5P6FVVAEU"
+    },
+    {
+      "timestamp": "2026-02-18T14:14:38Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "5FLG5REIWWN2IL5E6WJW6DPAWG6W243X"
+    },
+    {
+      "timestamp": "2026-02-18T15:07:40Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "SKZYLMJ66CPDKFOQAA24J5W2IV6PUGJE"
+    },
+    {
+      "timestamp": "2026-02-22T21:49:42Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "HPBEHKIZWRLALDF6UNEXDTKZOHAZAKZB"
+    },
+    {
+      "timestamp": "2026-02-25T18:54:15Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "K2QUCHXZADO5LMJYYWLVX46HRIPB5TTW"
+    },
+    {
+      "timestamp": "2026-03-05T10:47:46Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "OFE77VPVNAID5W2JX4HIMFQ4AX63RIBJ"
+    },
+    {
+      "timestamp": "2026-03-10T21:53:45Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "I7JD7AEVMTOAF6REB72TT5KRTECXFLRH"
+    },
+    {
+      "timestamp": "2026-04-19T19:55:36Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "WOGSRGMIM5ROQ57UDTW5Z4KXQAVGHA3R"
+    },
+    {
+      "timestamp": "2026-05-21T19:06:58Z",
+      "url": "https://www.ivimhealth.com/",
+      "status": "200",
+      "digest": "Q2277YKT3MPLVIJ56JLPS2L5SMU7NY54"
+    }
+  ]
+}

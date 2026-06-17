@@ -1,0 +1,1017 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:43:49Z",
+  "ok": true,
+  "input": {
+    "url": "https://mydrhank.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2019-05-09T04:07:17Z",
+  "last_seen": "2026-03-02T03:27:06Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 2595,
+  "snapshot_count": 125,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "301",
+      "from": "2019-05-09T04:07:17Z",
+      "to": "2019-05-09T04:07:17Z"
+    },
+    {
+      "status": "200",
+      "from": "2020-12-04T23:15:24Z",
+      "to": "2021-11-29T17:34:25Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-18T14:46:04Z",
+      "to": "2021-12-18T14:46:04Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-01-24T22:49:10Z",
+      "to": "2022-01-27T13:37:14Z"
+    },
+    {
+      "status": "-",
+      "from": "2022-02-03T22:57:26Z",
+      "to": "2022-02-03T22:57:26Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-03-05T21:33:12Z",
+      "to": "2022-03-05T21:33:12Z"
+    },
+    {
+      "status": "-",
+      "from": "2022-03-05T21:33:13Z",
+      "to": "2022-03-05T21:33:13Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-03-05T21:33:25Z",
+      "to": "2022-03-05T21:33:25Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-03-08T20:49:15Z",
+      "to": "2022-03-08T20:49:15Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-03-27T04:12:46Z",
+      "to": "2022-07-07T06:43:49Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-07-22T07:34:04Z",
+      "to": "2022-07-22T07:34:04Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-08-14T17:47:10Z",
+      "to": "2023-02-21T20:49:41Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-03-22T18:04:58Z",
+      "to": "2023-03-22T18:04:58Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-03-22T18:05:04Z",
+      "to": "2023-04-22T19:58:01Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-04-26T20:37:17Z",
+      "to": "2023-04-26T20:37:17Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-05-23T05:18:10Z",
+      "to": "2023-05-23T05:18:10Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-05-28T16:10:44Z",
+      "to": "2023-05-28T16:10:44Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-07-12T11:38:04Z",
+      "to": "2023-09-22T01:27:46Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-09-26T11:01:46Z",
+      "to": "2023-09-26T11:01:46Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-09-29T05:23:13Z",
+      "to": "2023-11-22T12:14:09Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-12-14T15:40:24Z",
+      "to": "2023-12-14T15:40:24Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-12-28T18:32:17Z",
+      "to": "2024-03-09T21:06:19Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-03-16T22:52:52Z",
+      "to": "2024-03-16T22:52:52Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-03-17T19:21:38Z",
+      "to": "2024-04-21T17:43:18Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-05-11T05:18:05Z",
+      "to": "2024-05-11T05:18:05Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-11T05:18:06Z",
+      "to": "2024-05-11T05:18:26Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-05-11T05:18:36Z",
+      "to": "2024-05-11T05:18:36Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-11T05:18:48Z",
+      "to": "2024-07-08T13:11:59Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-08-07T22:35:46Z",
+      "to": "2024-08-07T22:35:46Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-07T22:35:46Z",
+      "to": "2024-09-09T08:14:42Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-10T20:00:35Z",
+      "to": "2024-09-10T20:00:35Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-09-10T20:00:35Z",
+      "to": "2024-09-10T20:00:35Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-12T16:31:51Z",
+      "to": "2024-09-12T16:31:51Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-13T09:10:46Z",
+      "to": "2024-11-25T23:36:12Z"
+    },
+    {
+      "status": "403",
+      "from": "2024-11-25T23:55:09Z",
+      "to": "2024-11-25T23:55:09Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-11-25T23:57:23Z",
+      "to": "2024-11-25T23:57:23Z"
+    },
+    {
+      "status": "403",
+      "from": "2024-11-25T23:57:26Z",
+      "to": "2024-11-25T23:57:26Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-12-25T00:56:09Z",
+      "to": "2024-12-25T00:56:09Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-25T00:56:09Z",
+      "to": "2024-12-25T00:56:09Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-12-25T01:03:18Z",
+      "to": "2024-12-25T01:03:18Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-22T07:40:09Z",
+      "to": "2025-01-27T13:14:41Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-02-04T10:51:07Z",
+      "to": "2025-02-04T10:51:07Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-04T10:51:09Z",
+      "to": "2025-03-23T04:17:59Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-03-26T04:39:18Z",
+      "to": "2025-03-26T04:39:18Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-26T04:39:18Z",
+      "to": "2025-03-26T04:39:30Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-04-05T14:03:14Z",
+      "to": "2025-04-05T14:03:14Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-05T14:03:14Z",
+      "to": "2025-07-11T11:45:07Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-07-12T10:56:08Z",
+      "to": "2025-07-12T10:56:08Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-05T04:34:19Z",
+      "to": "2026-03-02T03:27:06Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20190509040717/http://mydrhank.com:80/",
+  "last_snapshot_url": "https://web.archive.org/web/20260302032706/https://mydrhank.com/",
+  "snapshots": [
+    {
+      "timestamp": "2019-05-09T04:07:17Z",
+      "url": "http://mydrhank.com:80/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2020-12-04T23:15:24Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "32XIQTU6IM3FLFKIJ7MN24AALIJIAEHP"
+    },
+    {
+      "timestamp": "2021-03-06T14:00:51Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "KMK7S4MS5Y4PB5PIVNWCLRUXAY3VGKJS"
+    },
+    {
+      "timestamp": "2021-05-07T21:17:52Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "UNT7BDWAEQOTC76ANWYYJ3W3J7MHXUKD"
+    },
+    {
+      "timestamp": "2021-06-25T12:47:28Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "GIJ5AR634C6VAPPD5G2GKGCD4ZPT5W42"
+    },
+    {
+      "timestamp": "2021-09-21T20:04:17Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "QEC43O3CTAT5PRUVU3ZPVEHTHIPKQUZY"
+    },
+    {
+      "timestamp": "2021-10-20T17:12:21Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "PFXUZDKMF63O5BQSSME3537VM43KVPQS"
+    },
+    {
+      "timestamp": "2021-10-26T08:25:51Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "GVRUKTYM22UEK4LG2PDZUKY4DO346IEW"
+    },
+    {
+      "timestamp": "2021-11-29T17:34:25Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "ZFJRPP2Z5RSTTYTBQ5TNKQWG7ZGNEI2I"
+    },
+    {
+      "timestamp": "2021-12-18T14:46:04Z",
+      "url": "http://mydrhank.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-01-24T22:49:10Z",
+      "url": "https://www.mydrhank.com/",
+      "status": "200",
+      "digest": "2LCC4PJ7ET7CI72BICHA7ZWCBRARTGGL"
+    },
+    {
+      "timestamp": "2022-01-27T13:37:14Z",
+      "url": "https://www.mydrhank.com/",
+      "status": "200",
+      "digest": "YTIDMZTEHSEJAMLARIPPNIQIRNNETUC2"
+    },
+    {
+      "timestamp": "2022-02-03T22:57:26Z",
+      "url": "https://mydrhank.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-03-05T21:33:12Z",
+      "url": "https://www.mydrhank.com/",
+      "status": "200",
+      "digest": "APG6OM4O7WT5AWNSE45TDLCHVO7O4BDN"
+    },
+    {
+      "timestamp": "2022-03-05T21:33:13Z",
+      "url": "https://mydrhank.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-03-05T21:33:25Z",
+      "url": "https://www.mydrhank.com/",
+      "status": "200",
+      "digest": "APG6OM4O7WT5AWNSE45TDLCHVO7O4BDN"
+    },
+    {
+      "timestamp": "2022-03-08T20:49:15Z",
+      "url": "https://mydrhank.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-03-27T04:12:46Z",
+      "url": "https://www.mydrhank.com/",
+      "status": "200",
+      "digest": "UTFLLOAOHUPCPQYHMDYKYHSUTDUW4WCI"
+    },
+    {
+      "timestamp": "2022-03-27T04:14:54Z",
+      "url": "https://www.mydrhank.com/",
+      "status": "200",
+      "digest": "7ILILSHX6OZW3I3VIWUV3T4O57RTWGAQ"
+    },
+    {
+      "timestamp": "2022-05-25T02:50:13Z",
+      "url": "https://www.mydrhank.com/",
+      "status": "200",
+      "digest": "YCEPHWMXB3VTWGUGEPBJWNP7AKZWX4NA"
+    },
+    {
+      "timestamp": "2022-07-07T06:43:49Z",
+      "url": "https://www.mydrhank.com/",
+      "status": "200",
+      "digest": "BARKTMB2JBBC5GOHDZICGCGDAIX6YDEK"
+    },
+    {
+      "timestamp": "2022-07-22T07:34:04Z",
+      "url": "https://mydrhank.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-08-14T17:47:10Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "ZABCYB6QMZOAQTHI2GQZXVQGHMJM3S4V"
+    },
+    {
+      "timestamp": "2022-08-25T18:58:45Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "TJ343IUJQE33IXZCYDGCWLGQXPUGFCR4"
+    },
+    {
+      "timestamp": "2022-09-24T19:06:16Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "T3XYG4N6F7KC3PGBGHAHSYJFI3YE57VH"
+    },
+    {
+      "timestamp": "2022-10-02T22:19:44Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "7TP7GA6V75BMMEULY3MFY3J34NAD5RFQ"
+    },
+    {
+      "timestamp": "2022-10-25T02:26:44Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "ZKTM3VZCHBEBZLPTDJE3YHXH4JY4MBKV"
+    },
+    {
+      "timestamp": "2022-11-23T19:33:01Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "NCDZVFHSHMUXWM74UDTNXRILK7FGIQHA"
+    },
+    {
+      "timestamp": "2022-12-01T17:37:35Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "KOOBZSI6EW7HGDEYMMIJ55VEQ6PCQGF4"
+    },
+    {
+      "timestamp": "2022-12-23T19:28:53Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "OUYQ5LPDAXQAL3QXVMVVO6ZKIH7PCV5Q"
+    },
+    {
+      "timestamp": "2023-01-22T23:16:07Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "CEOFGAR672VN52VR5DLGYEP6OK7H7Z5U"
+    },
+    {
+      "timestamp": "2023-02-21T20:49:41Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "GCNHEZRGJTGKNJ2YIXKC4P5ATE5R6XKL"
+    },
+    {
+      "timestamp": "2023-03-22T18:04:58Z",
+      "url": "http://mydrhank.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-03-22T18:05:04Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "XW6KMW6HRFCPTBA37NFD54YQ3S2C3BXO"
+    },
+    {
+      "timestamp": "2023-03-23T19:16:02Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "2NHMOYZCGUQQNG6HSNFSRYYBQGO3S5UW"
+    },
+    {
+      "timestamp": "2023-03-24T12:30:10Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "XW6KMW6HRFCPTBA37NFD54YQ3S2C3BXO"
+    },
+    {
+      "timestamp": "2023-04-22T19:58:01Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "O52ZP7KMYI4PFSUODM6PTQHRT72A7FWQ"
+    },
+    {
+      "timestamp": "2023-04-26T20:37:17Z",
+      "url": "http://www.mydrhank.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-05-23T05:18:10Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "YL56EBDBMPFARP3LA6LHLMUFCE5RXWT7"
+    },
+    {
+      "timestamp": "2023-05-28T16:10:44Z",
+      "url": "http://mydrhank.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-07-12T11:38:04Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "WQ3UZTJM7HWBWLR2YMTT2ZBGBNUFEUNJ"
+    },
+    {
+      "timestamp": "2023-07-24T16:55:39Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "2FNA423PYDCEYNNY35POZRAEJS2R7MO5"
+    },
+    {
+      "timestamp": "2023-08-08T21:28:50Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "MWPFK3BAQHZGQHC3HTRCJP7XHAD7DWFG"
+    },
+    {
+      "timestamp": "2023-09-22T01:27:46Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "3IHXCJYR46R7IWJOYG2ZESZ5HL5Z5Y3R"
+    },
+    {
+      "timestamp": "2023-09-26T11:01:46Z",
+      "url": "http://www.mydrhank.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-09-29T05:23:13Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "BT2FUNQFXW7CEPFLIODO54XMUEOWXJZI"
+    },
+    {
+      "timestamp": "2023-11-22T12:14:09Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "YCHEEYKXGDZ4XOXETBIXPXTUHGP7VQEP"
+    },
+    {
+      "timestamp": "2023-12-14T15:40:24Z",
+      "url": "http://mydrhank.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-12-28T18:32:17Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "JWLAZ5DA23NXQLCDNVO7PVKZHUJILLNQ"
+    },
+    {
+      "timestamp": "2024-02-02T10:09:39Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "RC6PMQCX6IJPOYMUZFJPHNGMORURJPEA"
+    },
+    {
+      "timestamp": "2024-02-10T09:30:46Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "HKJV66IQOJF37SD6FUE2X4WNCHFOC6Q6"
+    },
+    {
+      "timestamp": "2024-02-17T03:28:02Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "S2PBNSXGMNVMXTBIZNQTYC7BYYZHVQI4"
+    },
+    {
+      "timestamp": "2024-03-01T16:11:39Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "MIGOE7MYFNT7RNP4TTBGQVWIZ5IDSARU"
+    },
+    {
+      "timestamp": "2024-03-09T21:06:19Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "FSZP7MFRMH7ULYC2MCLMPQYDCHT2AMCA"
+    },
+    {
+      "timestamp": "2024-03-16T22:52:52Z",
+      "url": "http://mydrhank.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-03-17T19:21:38Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "VRGU3O44QY2SURVPWLKH2J25NG7P26ZQ"
+    },
+    {
+      "timestamp": "2024-04-16T20:29:24Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "IW2UMR4UKXPIVOICQ3GXBNNCBU3QFK5R"
+    },
+    {
+      "timestamp": "2024-04-21T17:43:18Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "FJFAXRNKWK7LE7E3ZK4Z6TXBCTN72CFO"
+    },
+    {
+      "timestamp": "2024-05-11T05:18:05Z",
+      "url": "https://www.mydrhank.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-05-11T05:18:06Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "BDQSLGJQ5Y7NNPFPBGEXKVP5KCSTTPQ2"
+    },
+    {
+      "timestamp": "2024-05-11T05:18:26Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "BCKLUQCLLSNER2QCN6WI4WWRVK6WUH3P"
+    },
+    {
+      "timestamp": "2024-05-11T05:18:36Z",
+      "url": "http://www.mydrhank.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-05-11T05:18:48Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "3VP5WNMBXLC7JKAOTTUFD46U3EPYCEJF"
+    },
+    {
+      "timestamp": "2024-05-11T05:19:00Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "5V5B2YZ2PSXSBCVK4GZCKOCYW5QUP4RG"
+    },
+    {
+      "timestamp": "2024-05-16T20:11:18Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "BRLVQ4LY256SRZT2JAA64IN4B3FZOAQ4"
+    },
+    {
+      "timestamp": "2024-06-15T23:54:11Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "HHA7NJO7THC54ECEPHFSVNC2NYRSKMQG"
+    },
+    {
+      "timestamp": "2024-06-25T18:04:51Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "X44QVH72JTBHXGKYN7E7AOYXPK4ISLBP"
+    },
+    {
+      "timestamp": "2024-07-08T13:11:59Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "RIVC7AF6PVDQNHH4Q4FWTV5SQ2K64OSA"
+    },
+    {
+      "timestamp": "2024-08-07T22:35:46Z",
+      "url": "http://mydrhank.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-08-07T22:35:46Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "F6KCARHN3WLBNACKTV3Y5BZ7JERHJPV6"
+    },
+    {
+      "timestamp": "2024-08-09T15:10:39Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "J7X6ATYIFCAEA575KMEZQWLZOP4E6EFV"
+    },
+    {
+      "timestamp": "2024-08-28T19:18:36Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "SL7PCQGQQRSB2BW255IQGV6LTFT4M4N4"
+    },
+    {
+      "timestamp": "2024-09-04T03:14:57Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "HDOQEWBWQYFHNOMQZMYLFLQUWK2TC2MO"
+    },
+    {
+      "timestamp": "2024-09-09T08:14:42Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "XLIKJATOWJ46ORH6UAUUSP4M2PN3EMQU"
+    },
+    {
+      "timestamp": "2024-09-10T20:00:35Z",
+      "url": "http://www.mydrhank.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-09-10T20:00:35Z",
+      "url": "https://www.mydrhank.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-09-12T16:31:51Z",
+      "url": "http://mydrhank.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-09-13T09:10:46Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "PSFXX3WLSY52TRJ3BZDBL5CUMMEMKZOT"
+    },
+    {
+      "timestamp": "2024-09-17T00:44:20Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "FX7OQ3FXMKTPKYCX2ATYKMXGN7EHYU57"
+    },
+    {
+      "timestamp": "2024-09-18T10:57:58Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "3FSURZ4GUU6KCHGNCKCOE5LLAOQRHXGB"
+    },
+    {
+      "timestamp": "2024-10-13T22:48:50Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "HXC4HLVIRL7N4KGLEZ7Y3SY3PBR3XXHD"
+    },
+    {
+      "timestamp": "2024-11-07T22:33:28Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "PFDVS2UXZ23EUSFSNE32Z4WOGP7GFB5U"
+    },
+    {
+      "timestamp": "2024-11-09T23:57:28Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "ARBIXML32LFEJFH6AHN3XB7QAOTZR2BC"
+    },
+    {
+      "timestamp": "2024-11-25T23:36:12Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "EQ36ZTO33PLUVKZQDFAMUSKMMO4I2TOW"
+    },
+    {
+      "timestamp": "2024-11-25T23:55:09Z",
+      "url": "https://www.mydrhank.com/",
+      "status": "403",
+      "digest": "M2OO7OG6TTY4NK2OTKDY6J22WYDA6R3P"
+    },
+    {
+      "timestamp": "2024-11-25T23:57:23Z",
+      "url": "http://www.mydrhank.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-11-25T23:57:26Z",
+      "url": "https://www.mydrhank.com/",
+      "status": "403",
+      "digest": "B5CCQKMV755JSZKXIOJJVJE52RUVPW7F"
+    },
+    {
+      "timestamp": "2024-12-25T00:56:09Z",
+      "url": "http://mydrhank.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-12-25T00:56:09Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "W5ZTEKMY5DIUBZN6JZSCABOO2YDXP4Q5"
+    },
+    {
+      "timestamp": "2024-12-25T01:03:18Z",
+      "url": "http://www.mydrhank.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-01-22T07:40:09Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "DAGWZB5UAN4IWSD7P44NAOQRPDZPLMF2"
+    },
+    {
+      "timestamp": "2025-01-27T13:14:41Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "SBHHQHAV7RS5ESU2GRNURYHQEX6SZK5W"
+    },
+    {
+      "timestamp": "2025-02-04T10:51:07Z",
+      "url": "http://mydrhank.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-02-04T10:51:09Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "Y3V7ULP2LVCMT4ECZ3YUJMIDO7AECMAG"
+    },
+    {
+      "timestamp": "2025-02-09T08:00:07Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "Z2XBRWWBYIWPFZPY5ARNTZBWXNNV6KTE"
+    },
+    {
+      "timestamp": "2025-03-23T04:17:59Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "SA2KIOXACK7VL2FNYCK5VYA7PRPQUFGD"
+    },
+    {
+      "timestamp": "2025-03-26T04:39:18Z",
+      "url": "http://mydrhank.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-03-26T04:39:18Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "HJLZSWGXH7Z6EQ6U2JZHFMBQIOM6B5NP"
+    },
+    {
+      "timestamp": "2025-03-26T04:39:30Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "ATAY6UXIXJKX7YTZECMO6EEHTLHQK73A"
+    },
+    {
+      "timestamp": "2025-04-05T14:03:14Z",
+      "url": "http://mydrhank.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-04-05T14:03:14Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "KOVCIRUILROG4BJMJVKKPJ2PZTLAMQUK"
+    },
+    {
+      "timestamp": "2025-04-09T06:56:05Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "LD66JLZ3P25H6VP5APRCTQHAMBXVSXO3"
+    },
+    {
+      "timestamp": "2025-04-24T01:04:59Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "EMZVAHOYJBZBBY5U4ES3XV6QOONNUAKN"
+    },
+    {
+      "timestamp": "2025-05-22T12:05:17Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "NEZBXU7YSXVPFPY2X3KWBAALNN2OUJ4B"
+    },
+    {
+      "timestamp": "2025-05-22T15:16:01Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "TTSNS25JQOKT7YWE4S5IU7T4LQIN56ZD"
+    },
+    {
+      "timestamp": "2025-06-19T12:36:35Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "DDTC7RYOL3JX37OQDQG4ISZ6TWVIZ6F5"
+    },
+    {
+      "timestamp": "2025-07-11T11:45:07Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "UMHVFAUXDAT4ASIJYL65HVBFX6IK4YLS"
+    },
+    {
+      "timestamp": "2025-07-12T10:56:08Z",
+      "url": "http://mydrhank.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-08-05T04:34:19Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "C5WXE4SQP5TLBTRHDYF7SUMOY6VSK2BF"
+    },
+    {
+      "timestamp": "2025-08-05T04:36:00Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "XZM6O5G7PBYHSHDD7XDTXV6KMHGTGFEG"
+    },
+    {
+      "timestamp": "2025-08-11T19:54:24Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "FOMKT4EY6NAVPBL6EEN7SU2HACGII6CU"
+    },
+    {
+      "timestamp": "2025-08-13T06:48:59Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "QQUESX4ZTRTECLZBVBOFMOHBIFGUVQ2V"
+    },
+    {
+      "timestamp": "2025-09-09T06:52:00Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "TQYODZOOEV6ZEHUXODXTCJCC3CB65D6C"
+    },
+    {
+      "timestamp": "2025-09-30T22:25:33Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "PSNOQ66UYL3LHVKD2FCJMD4XXXAQS7RS"
+    },
+    {
+      "timestamp": "2025-10-01T07:34:10Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "DPZSNYYPZ2TOHPBK3J3CEEZPFLYAWVXW"
+    },
+    {
+      "timestamp": "2025-10-09T14:17:51Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "7SLPNJR7PU2SZVGA42UVU6GGFVWP4B2V"
+    },
+    {
+      "timestamp": "2025-11-15T15:06:53Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "CFDZ6SWWLYC3NN7O6GSNJXHAWD3A6CTP"
+    },
+    {
+      "timestamp": "2025-12-12T12:36:33Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "HH5VUIALTB65AQ6XHYY7F2FS3IV4SKQI"
+    },
+    {
+      "timestamp": "2026-01-14T06:01:08Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "PZ3UU5SOCB6UQFNFBS5F6UXCXJQCYBJH"
+    },
+    {
+      "timestamp": "2026-01-23T20:11:16Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "MQPD2U6QFT65HU5WBM4AECMXBIRJ7U7M"
+    },
+    {
+      "timestamp": "2026-01-28T03:46:24Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "CUJ26RR5PVEIKWTJOVRBBA2QH42OZUIV"
+    },
+    {
+      "timestamp": "2026-02-14T19:53:24Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "CJ5IUBMQJQFOE2PAFDKM42MQMKMPTIR5"
+    },
+    {
+      "timestamp": "2026-02-19T12:59:41Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "57FGYGQYIXBOZP3JXCVLMWCF2GAW55IZ"
+    },
+    {
+      "timestamp": "2026-02-20T14:42:56Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "QZAIYQ6TK6YUSAV3O2C5B3U6HUOH4HEC"
+    },
+    {
+      "timestamp": "2026-03-02T03:27:06Z",
+      "url": "https://mydrhank.com/",
+      "status": "200",
+      "digest": "Y6PZDSH5YRKSPC3J24DXFQGZ2Y45CTBM"
+    }
+  ]
+}

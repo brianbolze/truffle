@@ -1,0 +1,3019 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-16T21:31:58Z",
+  "ok": true,
+  "input": {
+    "url": "https://defymedical.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2012-01-28T21:54:56Z",
+  "last_seen": "2026-05-21T05:32:15Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 5252,
+  "snapshot_count": 402,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2012-01-28T21:54:56Z",
+      "to": "2016-04-26T13:56:01Z"
+    },
+    {
+      "status": "-",
+      "from": "2016-05-03T19:05:00Z",
+      "to": "2016-05-03T19:05:00Z"
+    },
+    {
+      "status": "200",
+      "from": "2016-05-15T19:06:40Z",
+      "to": "2018-03-01T08:41:48Z"
+    },
+    {
+      "status": "301",
+      "from": "2018-03-18T07:33:58Z",
+      "to": "2018-05-24T12:36:46Z"
+    },
+    {
+      "status": "403",
+      "from": "2018-06-20T03:22:10Z",
+      "to": "2018-07-25T18:21:24Z"
+    },
+    {
+      "status": "301",
+      "from": "2018-08-07T21:03:46Z",
+      "to": "2018-08-07T21:03:46Z"
+    },
+    {
+      "status": "403",
+      "from": "2018-08-20T09:20:20Z",
+      "to": "2018-08-25T19:29:24Z"
+    },
+    {
+      "status": "200",
+      "from": "2018-08-26T18:11:49Z",
+      "to": "2018-08-26T18:11:49Z"
+    },
+    {
+      "status": "403",
+      "from": "2018-08-26T23:50:47Z",
+      "to": "2018-12-23T03:39:29Z"
+    },
+    {
+      "status": "301",
+      "from": "2018-12-29T14:15:13Z",
+      "to": "2018-12-29T14:15:13Z"
+    },
+    {
+      "status": "403",
+      "from": "2018-12-30T00:50:52Z",
+      "to": "2019-01-04T00:08:56Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-01-20T15:26:44Z",
+      "to": "2019-01-20T15:26:44Z"
+    },
+    {
+      "status": "403",
+      "from": "2019-01-23T04:59:32Z",
+      "to": "2019-07-03T14:41:43Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-07-20T16:35:00Z",
+      "to": "2019-07-23T05:42:59Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-07-28T17:09:01Z",
+      "to": "2019-07-31T21:05:21Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-08-02T05:43:51Z",
+      "to": "2019-08-02T05:43:51Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-08-03T14:08:28Z",
+      "to": "2019-08-09T19:26:34Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-08-18T13:56:58Z",
+      "to": "2019-08-21T19:08:44Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-08-30T12:36:15Z",
+      "to": "2019-09-03T20:42:55Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-09-22T18:55:19Z",
+      "to": "2019-09-23T07:43:38Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-09-30T09:02:18Z",
+      "to": "2019-10-23T14:59:23Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-10-23T19:03:02Z",
+      "to": "2019-12-14T11:29:03Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-12-22T20:01:42Z",
+      "to": "2020-06-28T06:46:24Z"
+    },
+    {
+      "status": "200",
+      "from": "2020-08-03T08:50:54Z",
+      "to": "2020-10-24T02:37:34Z"
+    },
+    {
+      "status": "301",
+      "from": "2020-10-31T11:23:51Z",
+      "to": "2020-10-31T11:23:51Z"
+    },
+    {
+      "status": "200",
+      "from": "2020-10-31T11:23:51Z",
+      "to": "2020-10-31T11:23:51Z"
+    },
+    {
+      "status": "301",
+      "from": "2020-11-01T01:37:34Z",
+      "to": "2020-11-01T01:37:34Z"
+    },
+    {
+      "status": "200",
+      "from": "2020-11-01T01:37:35Z",
+      "to": "2020-11-01T01:37:35Z"
+    },
+    {
+      "status": "301",
+      "from": "2020-11-01T08:24:01Z",
+      "to": "2020-11-01T08:24:01Z"
+    },
+    {
+      "status": "200",
+      "from": "2020-11-01T08:24:02Z",
+      "to": "2020-11-01T22:52:54Z"
+    },
+    {
+      "status": "301",
+      "from": "2020-11-06T16:04:51Z",
+      "to": "2020-11-06T16:04:51Z"
+    },
+    {
+      "status": "200",
+      "from": "2020-11-06T17:06:05Z",
+      "to": "2020-11-12T00:20:47Z"
+    },
+    {
+      "status": "301",
+      "from": "2020-11-12T01:21:50Z",
+      "to": "2020-11-12T01:21:50Z"
+    },
+    {
+      "status": "200",
+      "from": "2020-11-12T01:21:50Z",
+      "to": "2020-12-31T22:56:30Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-01-11T18:23:56Z",
+      "to": "2021-01-11T18:23:56Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-01-11T18:23:58Z",
+      "to": "2021-11-28T21:21:33Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-11-30T08:21:04Z",
+      "to": "2022-01-10T16:03:36Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-01-17T10:10:25Z",
+      "to": "2022-01-27T12:16:18Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-01-27T17:08:24Z",
+      "to": "2022-01-27T17:08:24Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-01-27T17:08:24Z",
+      "to": "2022-02-06T03:31:17Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-02-11T21:12:35Z",
+      "to": "2022-02-11T21:12:35Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-02-11T21:12:35Z",
+      "to": "2022-03-03T17:28:50Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-03-16T09:28:31Z",
+      "to": "2022-03-16T09:28:31Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-03-16T09:28:31Z",
+      "to": "2022-04-04T15:15:14Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-04-04T15:15:18Z",
+      "to": "2022-04-04T15:15:18Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-04-04T15:15:18Z",
+      "to": "2022-05-07T01:27:18Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-05-07T17:53:06Z",
+      "to": "2022-05-08T15:12:55Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-05-08T15:12:56Z",
+      "to": "2022-05-22T17:10:27Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-06-09T15:43:10Z",
+      "to": "2022-06-09T15:43:10Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-06-12T14:39:10Z",
+      "to": "2022-06-27T13:10:52Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-07-15T15:17:52Z",
+      "to": "2022-07-15T15:17:52Z"
+    },
+    {
+      "status": "-",
+      "from": "2022-07-15T15:17:53Z",
+      "to": "2022-07-15T15:17:53Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-07-15T15:17:53Z",
+      "to": "2022-07-22T18:15:41Z"
+    },
+    {
+      "status": "-",
+      "from": "2022-07-31T08:31:47Z",
+      "to": "2022-07-31T08:31:47Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-07-31T08:31:47Z",
+      "to": "2022-10-02T12:01:45Z"
+    },
+    {
+      "status": "-",
+      "from": "2022-10-14T10:16:15Z",
+      "to": "2022-10-14T10:16:15Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-11-03T14:22:56Z",
+      "to": "2022-11-03T14:22:56Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-11-04T00:43:05Z",
+      "to": "2022-11-04T00:43:05Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-12-05T15:32:15Z",
+      "to": "2023-03-07T14:07:43Z"
+    },
+    {
+      "status": "-",
+      "from": "2023-03-12T13:19:40Z",
+      "to": "2023-03-26T08:10:44Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-03-27T11:27:34Z",
+      "to": "2023-03-27T11:27:34Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-04-03T16:59:36Z",
+      "to": "2023-04-03T16:59:36Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-04-04T04:49:36Z",
+      "to": "2023-05-06T21:43:33Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-05-20T00:45:26Z",
+      "to": "2023-05-20T00:45:27Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-05-20T00:45:28Z",
+      "to": "2024-03-20T06:20:25Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-03-20T06:20:30Z",
+      "to": "2024-03-29T14:55:51Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-03-29T14:57:04Z",
+      "to": "2024-03-29T14:57:04Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-04-02T10:54:36Z",
+      "to": "2024-04-02T10:54:38Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-04-02T10:54:41Z",
+      "to": "2024-04-14T18:11:45Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-05-11T16:44:52Z",
+      "to": "2024-05-11T16:44:57Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-12T02:20:29Z",
+      "to": "2024-05-18T10:40:04Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-05-18T10:43:23Z",
+      "to": "2024-05-18T10:43:23Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-05-18T10:43:28Z",
+      "to": "2024-05-18T10:43:28Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-18T23:40:25Z",
+      "to": "2024-07-16T09:08:41Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-07-16T09:09:15Z",
+      "to": "2024-08-10T02:45:53Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-17T18:11:40Z",
+      "to": "2024-09-01T16:09:39Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-13T14:20:17Z",
+      "to": "2024-09-13T14:20:17Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-13T14:20:17Z",
+      "to": "2024-09-14T09:00:02Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-17T20:51:06Z",
+      "to": "2024-09-17T20:51:06Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-17T20:51:06Z",
+      "to": "2024-09-17T20:51:06Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-17T20:51:07Z",
+      "to": "2024-09-17T20:51:07Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-17T20:51:10Z",
+      "to": "2024-09-17T20:51:10Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-17T20:51:11Z",
+      "to": "2024-09-17T20:51:11Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-09-17T20:51:12Z",
+      "to": "2024-09-17T20:51:12Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-22T19:51:03Z",
+      "to": "2024-09-22T19:51:09Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-10-03T12:27:27Z",
+      "to": "2025-01-18T18:08:58Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-01-30T16:45:18Z",
+      "to": "2025-01-30T16:45:18Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-01-30T16:45:19Z",
+      "to": "2025-01-30T16:45:19Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-30T16:45:24Z",
+      "to": "2025-01-30T16:45:24Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-14T10:18:40Z",
+      "to": "2025-02-14T10:18:40Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-14T18:40:03Z",
+      "to": "2025-02-14T18:40:03Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-16T09:20:23Z",
+      "to": "2025-02-16T09:20:23Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-02-19T12:03:14Z",
+      "to": "2025-02-19T12:03:14Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-19T12:03:14Z",
+      "to": "2025-02-19T12:03:14Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-07T18:31:58Z",
+      "to": "2025-03-07T18:31:58Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-03-07T18:31:58Z",
+      "to": "2025-03-07T18:31:58Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-07T18:31:58Z",
+      "to": "2025-03-07T18:31:58Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-07T18:31:58Z",
+      "to": "2025-03-07T18:31:58Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-03-09T19:11:56Z",
+      "to": "2025-03-09T19:11:56Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-09T19:11:56Z",
+      "to": "2025-03-17T20:56:17Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-03-20T02:42:41Z",
+      "to": "2025-03-20T02:42:41Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-20T02:42:41Z",
+      "to": "2025-03-20T02:42:41Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-20T02:42:41Z",
+      "to": "2025-03-20T02:42:41Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-20T02:48:34Z",
+      "to": "2025-03-20T02:48:34Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-03-21T21:04:59Z",
+      "to": "2025-03-21T21:04:59Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-21T21:04:59Z",
+      "to": "2025-03-21T21:04:59Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-03-31T11:08:45Z",
+      "to": "2025-03-31T11:08:45Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-31T11:08:45Z",
+      "to": "2025-03-31T11:08:45Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-31T11:08:46Z",
+      "to": "2025-03-31T11:08:46Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-31T18:11:29Z",
+      "to": "2025-03-31T18:11:29Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-18T03:36:34Z",
+      "to": "2025-07-23T06:29:12Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-08-06T23:33:56Z",
+      "to": "2025-08-08T16:36:27Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-08T16:36:30Z",
+      "to": "2025-08-18T02:27:40Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-08-26T23:44:51Z",
+      "to": "2025-08-26T23:44:51Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-09-19T13:53:59Z",
+      "to": "2026-02-17T14:16:18Z"
+    },
+    {
+      "status": "403",
+      "from": "2026-03-15T21:25:40Z",
+      "to": "2026-03-15T21:25:40Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-03-17T16:13:15Z",
+      "to": "2026-05-21T05:32:15Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20120128215456/http://www.defymedical.com:80/",
+  "last_snapshot_url": "https://web.archive.org/web/20260521053215/https://www.defymedical.com/",
+  "snapshots": [
+    {
+      "timestamp": "2012-01-28T21:54:56Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "7RBVX2UBOCBO2LHBEU6JIEMDAAVKDILJ"
+    },
+    {
+      "timestamp": "2012-02-28T20:50:37Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "3V5KEYACW5NWHRYLOLMREAIH3YW52RBQ"
+    },
+    {
+      "timestamp": "2012-03-27T08:52:40Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "LHHWTM3O6NEFOUZGIR2627E6WPUKVGF7"
+    },
+    {
+      "timestamp": "2012-04-27T03:55:40Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "2CCSPWMWJSZIIBJYU2RNJHMHXEYGITXO"
+    },
+    {
+      "timestamp": "2012-05-20T02:34:08Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "5ZMQET3SUZSBCOZB7F6VHZCG4OEWYBFY"
+    },
+    {
+      "timestamp": "2012-06-16T03:16:39Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "F6J7JUULENGNJMTZ7T3BIB25BNNTZ5MS"
+    },
+    {
+      "timestamp": "2012-07-17T05:28:04Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "KYH2Q3AQXQLCKMQZ6HXAEAPU3WPAP7J5"
+    },
+    {
+      "timestamp": "2012-08-17T08:31:41Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "JXAGTLCGLP27QLHRLIJS7ZYK5SVG3UXF"
+    },
+    {
+      "timestamp": "2012-09-17T08:59:26Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "Q52RSFT3N3OCXMT5VYBKYGWCU435INH2"
+    },
+    {
+      "timestamp": "2012-10-22T10:45:15Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "M6VTICGEML7HP5U7HGQ35AR56NFF2RWB"
+    },
+    {
+      "timestamp": "2012-11-23T05:31:38Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "Q4LXO5FFFFUT7EAXBQVPX5PCD27LZUKL"
+    },
+    {
+      "timestamp": "2012-12-25T14:23:53Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "MHWKNE46Z4VYTCNDQIYACCQPQKOKPFCS"
+    },
+    {
+      "timestamp": "2013-01-27T09:49:15Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "MAJYJVDXL7TTM4TOAOHI5TOOWL7PAVOI"
+    },
+    {
+      "timestamp": "2013-03-02T08:19:41Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "F3MMK7ODQ7WBNFBFNB2TQP7DPM5AALVD"
+    },
+    {
+      "timestamp": "2013-04-09T16:51:00Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "CRKPARLVV653NFGJXWOA6WFEXDVT5UIR"
+    },
+    {
+      "timestamp": "2013-05-13T11:42:37Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "R2JLTWFUTGQYELV2YONQH5NQEUYILV5K"
+    },
+    {
+      "timestamp": "2013-05-30T09:54:32Z",
+      "url": "http://defymedical.com/",
+      "status": "200",
+      "digest": "CZSZD6ZZJKIUWCNCC2BOBQ6FGHJVZAWK"
+    },
+    {
+      "timestamp": "2013-06-27T05:42:53Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "R2JLTWFUTGQYELV2YONQH5NQEUYILV5K"
+    },
+    {
+      "timestamp": "2013-08-27T08:00:11Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "BESAWNNJQEU67IB6V465AWF5YVJSBKJS"
+    },
+    {
+      "timestamp": "2013-11-13T20:19:14Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "TEPUBT256NCLQ7GLGWCHACLZYTJAUAMQ"
+    },
+    {
+      "timestamp": "2013-11-14T16:04:06Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "NHPHBPVAGS35TLESEXYZQXGA4QB5RE63"
+    },
+    {
+      "timestamp": "2013-12-16T15:09:28Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "DJDY4OKCPOZA5HKDGAB2LLBEQWHI3M2Z"
+    },
+    {
+      "timestamp": "2014-01-09T10:04:43Z",
+      "url": "http://defymedical.com/",
+      "status": "200",
+      "digest": "4APCHLY6TBZESBILH4F7OQ6SIC4N5AMX"
+    },
+    {
+      "timestamp": "2014-01-17T03:55:31Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "DJDY4OKCPOZA5HKDGAB2LLBEQWHI3M2Z"
+    },
+    {
+      "timestamp": "2014-02-07T18:47:45Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "LAN7RQTYZGGVCIYTJQ2WQI3ZTPAWXKE4"
+    },
+    {
+      "timestamp": "2014-02-08T01:39:58Z",
+      "url": "http://defymedical.com/",
+      "status": "200",
+      "digest": "OP4WJ3LF7AAG46H6M2HFJHG74S2A5DN2"
+    },
+    {
+      "timestamp": "2014-02-09T19:28:57Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "LAN7RQTYZGGVCIYTJQ2WQI3ZTPAWXKE4"
+    },
+    {
+      "timestamp": "2014-02-16T22:38:59Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "SPS5L4HRQGXJC36473LUDHUWW4KKFNBB"
+    },
+    {
+      "timestamp": "2014-03-17T04:32:51Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "JB6VDUWAZVM6IU72SVJ2KSUCBPJ7SG26"
+    },
+    {
+      "timestamp": "2014-04-19T08:16:55Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "UA5GHJRDKUMJRPV7LK6HL4YEDR3AKHCR"
+    },
+    {
+      "timestamp": "2014-05-17T07:34:10Z",
+      "url": "http://defymedical.com/",
+      "status": "200",
+      "digest": "LHNCNNBAJ6A4DUOOJMNXQWZ5YQC4QOEY"
+    },
+    {
+      "timestamp": "2014-06-24T07:22:56Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "EX7WVDG353XZKUSAEGXLNFEE2TC2NSIQ"
+    },
+    {
+      "timestamp": "2014-07-30T16:41:27Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "LHNCNNBAJ6A4DUOOJMNXQWZ5YQC4QOEY"
+    },
+    {
+      "timestamp": "2014-09-07T03:46:49Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "LAGCBUAMCVANVNDC53VOCBQBTD4AEI2I"
+    },
+    {
+      "timestamp": "2014-10-01T20:45:12Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "DFDBTDK74OUOWPJOFKNPY37EMP7MPMSW"
+    },
+    {
+      "timestamp": "2014-10-05T19:30:23Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "7ZS3UTNMNOUSNXJS2ENQLR2THR7JGIUH"
+    },
+    {
+      "timestamp": "2014-11-05T10:39:34Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "Z6MHICNDEFJ2YQPSIET4OR5LHCJE7SUP"
+    },
+    {
+      "timestamp": "2014-12-17T03:03:22Z",
+      "url": "http://defymedical.com/",
+      "status": "200",
+      "digest": "5Y5HMGT4NKRRBDD2BGCVRYDRWEGXEE5L"
+    },
+    {
+      "timestamp": "2014-12-19T03:30:46Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "Z6MHICNDEFJ2YQPSIET4OR5LHCJE7SUP"
+    },
+    {
+      "timestamp": "2015-01-30T17:38:53Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "X5OLVICVNCZXTTMC7TN7EIZ23F6XKHKO"
+    },
+    {
+      "timestamp": "2015-02-05T22:03:30Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "LIZ2OQ2VYIRHHXSJ73WP7DTO3GCQL4JJ"
+    },
+    {
+      "timestamp": "2015-02-19T22:29:48Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "SZHYHDX5AIFGATPCQA6WZ2GHLKR2M5J2"
+    },
+    {
+      "timestamp": "2015-03-12T13:27:35Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "VLHBMT73U56SHDX3BWUINL3253STY3FD"
+    },
+    {
+      "timestamp": "2015-05-09T22:48:19Z",
+      "url": "http://defymedical.com/",
+      "status": "200",
+      "digest": "P2567KPWE3HH4ZR54AXQI54NNB73UQX2"
+    },
+    {
+      "timestamp": "2015-05-29T13:56:57Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "VLHBMT73U56SHDX3BWUINL3253STY3FD"
+    },
+    {
+      "timestamp": "2015-06-29T08:52:52Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "IPPY2CKRMDCTP4EM76GBRSFTXVFAU3FH"
+    },
+    {
+      "timestamp": "2015-07-15T13:11:39Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "PWKZHNBJJXZVDO5KEJPRDOH2EOI5V2JH"
+    },
+    {
+      "timestamp": "2015-07-30T08:08:26Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "TE6KSRN42UU7FMYAWSV3N3AD5OWYL23K"
+    },
+    {
+      "timestamp": "2015-08-01T11:14:17Z",
+      "url": "http://defymedical.com/",
+      "status": "200",
+      "digest": "KXXYTHX432DKXFEVGXGXL6H54QJMNZ3L"
+    },
+    {
+      "timestamp": "2015-08-27T03:09:40Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "Q5RH5Y452TOGOHTYNWOO6UFT7SQC3SE7"
+    },
+    {
+      "timestamp": "2015-09-23T23:37:07Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "AMYJIGN3KOSJK37VZBXPAWVZEXPBLOMZ"
+    },
+    {
+      "timestamp": "2015-10-18T23:55:52Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "3QAJP7JUX67DTBD5FTD2JCYAQMPEWD5G"
+    },
+    {
+      "timestamp": "2015-11-18T19:46:09Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "D5NXSIFHIXE2IEQOBDVYNWRDXPISDFGC"
+    },
+    {
+      "timestamp": "2015-12-19T05:50:56Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "L47CZUIUVU3FCJCILV2WGV44NVDMNBFY"
+    },
+    {
+      "timestamp": "2016-01-03T05:10:25Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "TM4CBYJ4JR74ZU2UDMUTYZMCRKYUAR6Z"
+    },
+    {
+      "timestamp": "2016-01-12T02:44:33Z",
+      "url": "http://defymedical.com/",
+      "status": "200",
+      "digest": "BBKCLNT3XHCKOMAOK6EO5XVOIEF3XTQ7"
+    },
+    {
+      "timestamp": "2016-01-20T16:09:33Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "J2KB3RT2BXGDDCFXF2G76BO36O5BMTVN"
+    },
+    {
+      "timestamp": "2016-02-06T09:11:52Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "6IMT7UIWQCIXVQS4255UDOSXAX4OICVF"
+    },
+    {
+      "timestamp": "2016-02-27T11:31:04Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "ESRYJWDHHQLAX5IZO2PY2XY5YL4VVG74"
+    },
+    {
+      "timestamp": "2016-03-10T11:52:31Z",
+      "url": "http://defymedical.com/",
+      "status": "200",
+      "digest": "BBDDJEY4VC2Q3SY2ANPXH5GOLG3FCAHM"
+    },
+    {
+      "timestamp": "2016-03-20T13:23:27Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "ESRYJWDHHQLAX5IZO2PY2XY5YL4VVG74"
+    },
+    {
+      "timestamp": "2016-04-26T13:56:01Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "BBDDJEY4VC2Q3SY2ANPXH5GOLG3FCAHM"
+    },
+    {
+      "timestamp": "2016-05-03T19:05:00Z",
+      "url": "http://www.defymedical.com/",
+      "status": "-",
+      "digest": "ESRYJWDHHQLAX5IZO2PY2XY5YL4VVG74"
+    },
+    {
+      "timestamp": "2016-05-15T19:06:40Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "F5UACCKCQ5M42EXU6652B23BIUYCXDYW"
+    },
+    {
+      "timestamp": "2016-06-14T19:06:52Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "AQ4KOIGVR7STTMDBA367CWENHQVHGHJK"
+    },
+    {
+      "timestamp": "2016-07-28T17:13:23Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "7RJW2OLHSONLFCZ6ZGQSJN47IOL2CWHH"
+    },
+    {
+      "timestamp": "2016-07-29T20:14:34Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "RLI22MXEZYUIYSO4O2BCOQF5LL2C5E2G"
+    },
+    {
+      "timestamp": "2016-09-24T02:33:18Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "44D3W6J5KACJ5DZCK5HLUSXNBGQMO62M"
+    },
+    {
+      "timestamp": "2016-10-05T10:35:39Z",
+      "url": "http://defymedical.com/",
+      "status": "200",
+      "digest": "FG55NCZ3OSL24LYS5W7JKKUAL4KE3HR6"
+    },
+    {
+      "timestamp": "2016-10-16T22:29:48Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "44D3W6J5KACJ5DZCK5HLUSXNBGQMO62M"
+    },
+    {
+      "timestamp": "2016-10-24T11:40:10Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "FG55NCZ3OSL24LYS5W7JKKUAL4KE3HR6"
+    },
+    {
+      "timestamp": "2016-12-13T07:43:54Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "EBFRC3JRUMK6RRSFUT4675PQCBJP7PVD"
+    },
+    {
+      "timestamp": "2016-12-17T19:40:50Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "SXKMV2R4G3B2NTZQTR6TNY5B4TBZFSL4"
+    },
+    {
+      "timestamp": "2016-12-17T19:46:46Z",
+      "url": "http://defymedical.com:80/?",
+      "status": "200",
+      "digest": "V4ZJDSKVXSU4MWUP6RSDKH5F4JA6O6GI"
+    },
+    {
+      "timestamp": "2016-12-31T18:36:58Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "EBFRC3JRUMK6RRSFUT4675PQCBJP7PVD"
+    },
+    {
+      "timestamp": "2017-04-23T19:26:29Z",
+      "url": "http://defymedical.com/",
+      "status": "200",
+      "digest": "K6BXJ5ML4MV27COWOYU43E7GZ347ATXP"
+    },
+    {
+      "timestamp": "2017-05-07T10:38:01Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "HZXWFAPNJIG2R2BPFXT4L7KOLFGDEWDP"
+    },
+    {
+      "timestamp": "2017-05-10T10:08:31Z",
+      "url": "http://defymedical.com:80/?",
+      "status": "200",
+      "digest": "SMWLY2XGLD4X42OUCIQKXAVQMATAWVJO"
+    },
+    {
+      "timestamp": "2017-05-13T10:58:59Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "K6BXJ5ML4MV27COWOYU43E7GZ347ATXP"
+    },
+    {
+      "timestamp": "2017-06-06T10:07:34Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "HZXWFAPNJIG2R2BPFXT4L7KOLFGDEWDP"
+    },
+    {
+      "timestamp": "2017-06-11T09:19:44Z",
+      "url": "http://defymedical.com:80/?",
+      "status": "200",
+      "digest": "SMWLY2XGLD4X42OUCIQKXAVQMATAWVJO"
+    },
+    {
+      "timestamp": "2017-06-14T01:51:27Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "K6BXJ5ML4MV27COWOYU43E7GZ347ATXP"
+    },
+    {
+      "timestamp": "2017-06-29T01:57:46Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "GQIUBUKZ2AQWDUTR2ITILL5BOCJLQ2WC"
+    },
+    {
+      "timestamp": "2017-07-02T10:42:48Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "OTQ7XGGRGIO7GSCXSUZDRSPPRQN4OEMX"
+    },
+    {
+      "timestamp": "2017-07-09T12:31:07Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "WXAIKJIUBPXVDTXYBJE5WHBGADGRKSTH"
+    },
+    {
+      "timestamp": "2017-07-12T03:34:38Z",
+      "url": "http://defymedical.com:80/?",
+      "status": "200",
+      "digest": "FY77W5JZIOK6NQY6KYD5K3BF2BSQ7WQ7"
+    },
+    {
+      "timestamp": "2017-07-15T20:39:18Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "OWSSCG5QMMH26AQ6W4DM4URILZSEYHXD"
+    },
+    {
+      "timestamp": "2017-08-09T10:22:48Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "I2AMF7TOLDUTN7T7HPX3Y5KAPHPQL4VO"
+    },
+    {
+      "timestamp": "2017-08-12T02:47:01Z",
+      "url": "http://defymedical.com:80/?",
+      "status": "200",
+      "digest": "C2R4AT5DUXBBHN44UBGESCHMUCAV4636"
+    },
+    {
+      "timestamp": "2017-08-16T01:13:03Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "MWGR4LEATV7CSM6CIGQGWNAL6RITKAS5"
+    },
+    {
+      "timestamp": "2017-09-10T07:10:16Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "JBDLANMABF32OQYZDCKNM3BC3IQPJJP3"
+    },
+    {
+      "timestamp": "2017-09-12T08:44:49Z",
+      "url": "http://defymedical.com:80/?",
+      "status": "200",
+      "digest": "GVTCJ3ODW4EUAWUWLRLNCU7IWRGLXCGX"
+    },
+    {
+      "timestamp": "2017-09-16T20:08:56Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "J5ZKDHCRD7VYNGWK56SWUOXFKLBYQG4G"
+    },
+    {
+      "timestamp": "2017-09-28T19:50:31Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "PV6N5WITZHTXHYKINZPVSZXKQVMMBF6S"
+    },
+    {
+      "timestamp": "2017-10-14T02:46:13Z",
+      "url": "http://defymedical.com:80/?",
+      "status": "200",
+      "digest": "HM4UJTMED66R3MESRT3CBGXC2FV74N4N"
+    },
+    {
+      "timestamp": "2017-10-19T03:13:59Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "JLKPAVRNMVHHBC7ZPVZ43TIMW2LHFP7X"
+    },
+    {
+      "timestamp": "2017-10-28T06:12:28Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "ZGSCLAPETCHPDSWR7QDMZYLLUY5YXDZJ"
+    },
+    {
+      "timestamp": "2017-11-13T06:51:43Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "200",
+      "digest": "DHMPQOXSXEVN5RCFKXUOI34DJ6FYW64M"
+    },
+    {
+      "timestamp": "2017-11-18T22:57:46Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "VDZGWHJY3DXL57UQMSSGVQQPSYJXATLL"
+    },
+    {
+      "timestamp": "2017-11-28T03:55:34Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "JEBP36INVBUV74HNB6YLJABBUDFL5CVS"
+    },
+    {
+      "timestamp": "2017-12-13T23:04:23Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "200",
+      "digest": "FEK4KQ5E6EXHXVQBE2A63WXSPMZGP37M"
+    },
+    {
+      "timestamp": "2017-12-14T19:11:05Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "WL3GP4JO2JXTSC7NLY4ZXKRZGMGJGOFV"
+    },
+    {
+      "timestamp": "2017-12-27T22:14:01Z",
+      "url": "http://www.defymedical.com/",
+      "status": "200",
+      "digest": "F4AG6ZCGLPXCPNAS6R5BXNXDFGSUMCPV"
+    },
+    {
+      "timestamp": "2017-12-30T04:12:17Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "EAXZQ724PS4JDO5CWYDUJJCO3CFH746O"
+    },
+    {
+      "timestamp": "2018-01-13T20:20:24Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "200",
+      "digest": "6PZLISX7RTZOKDHOR437W4FFJVS3PMOA"
+    },
+    {
+      "timestamp": "2018-01-14T22:45:29Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "UBNX423FMJHBGK2VOVZKVGZEKFIDEBGN"
+    },
+    {
+      "timestamp": "2018-01-14T23:02:46Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "200",
+      "digest": "HYNOT7GWPCD4UIH2BWWOM4DQUNKKJVRD"
+    },
+    {
+      "timestamp": "2018-01-15T23:00:29Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "ZLBJRKMQJEGIYHT7MOSP75CQJ2U2BUOF"
+    },
+    {
+      "timestamp": "2018-02-15T04:33:49Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "200",
+      "digest": "GFTRYJ4WMUZYPCAYXOQQ7VCI2DZCH2AK"
+    },
+    {
+      "timestamp": "2018-02-17T04:48:34Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "200",
+      "digest": "TDWUU52IG76UPB5ZV3DZWZFXE7GSLKCO"
+    },
+    {
+      "timestamp": "2018-02-24T03:22:52Z",
+      "url": "http://defymedical.com/",
+      "status": "200",
+      "digest": "7K23CQZBWTZNOPBKJICC2XC4JOL6OEMU"
+    },
+    {
+      "timestamp": "2018-03-01T08:41:48Z",
+      "url": "http://defymedical.com:80/",
+      "status": "200",
+      "digest": "BDLUR4PHN3KXOKHUZ7E4R654ADBFPTKD"
+    },
+    {
+      "timestamp": "2018-03-18T07:33:58Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "301",
+      "digest": "TUGQUK4VYSNGTG6Q7SN25BXEOWTJFPQC"
+    },
+    {
+      "timestamp": "2018-03-20T14:56:44Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "301",
+      "digest": "POVM24V3WDTIMCL2XMBRJUWCIK5Y4NJL"
+    },
+    {
+      "timestamp": "2018-04-18T04:19:54Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "301",
+      "digest": "TUGQUK4VYSNGTG6Q7SN25BXEOWTJFPQC"
+    },
+    {
+      "timestamp": "2018-04-22T07:51:26Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "301",
+      "digest": "POVM24V3WDTIMCL2XMBRJUWCIK5Y4NJL"
+    },
+    {
+      "timestamp": "2018-05-02T23:25:11Z",
+      "url": "http://defymedical.com:80/",
+      "status": "301",
+      "digest": "OJTSPD6D4BV2AFO3PVW2DGCYMZEXMFFD"
+    },
+    {
+      "timestamp": "2018-05-20T05:23:47Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "301",
+      "digest": "TUGQUK4VYSNGTG6Q7SN25BXEOWTJFPQC"
+    },
+    {
+      "timestamp": "2018-05-24T12:36:46Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "301",
+      "digest": "POVM24V3WDTIMCL2XMBRJUWCIK5Y4NJL"
+    },
+    {
+      "timestamp": "2018-06-20T03:22:10Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "ASLULOPPHJXZ7W7UZNTRLHWQRSOIUACA"
+    },
+    {
+      "timestamp": "2018-06-24T17:34:24Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "ZR6TUOK7UXIF3O754KLAKA2TQTOIC5YV"
+    },
+    {
+      "timestamp": "2018-07-03T15:08:44Z",
+      "url": "http://defymedical.com:80/",
+      "status": "403",
+      "digest": "EDENR3ZUD56ASDQXQSYGN25BPES7WHYO"
+    },
+    {
+      "timestamp": "2018-07-20T15:26:11Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "5LYPZQHJCYR5TXZNNKQT3FLNBYKWKX36"
+    },
+    {
+      "timestamp": "2018-07-25T18:21:24Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "EWLMDKDP6PIIUVLR3ZQGJKATCYG5NRE3"
+    },
+    {
+      "timestamp": "2018-08-07T21:03:46Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "OJTSPD6D4BV2AFO3PVW2DGCYMZEXMFFD"
+    },
+    {
+      "timestamp": "2018-08-20T09:20:20Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "3PDTE7F35GU3CEPQA6NDH6JON4P6ABQQ"
+    },
+    {
+      "timestamp": "2018-08-25T19:29:24Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "4MVNBY5XSFVBPHHZDVLLYZSKAMKBWDBG"
+    },
+    {
+      "timestamp": "2018-08-26T18:11:49Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "URM7OFNL2HV5PTQP33YKRSUIZSSFMNRY"
+    },
+    {
+      "timestamp": "2018-08-26T23:50:47Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "DB5DFNZXYQ2YCMLPHK4KMTQTJW4TEHQ2"
+    },
+    {
+      "timestamp": "2018-09-03T08:46:48Z",
+      "url": "http://defymedical.com:80/",
+      "status": "403",
+      "digest": "2AN53KGYIMJJ7FXS65STRI6VYWPMEUTA"
+    },
+    {
+      "timestamp": "2018-09-20T19:42:30Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "6WBDH75ACZWRVICZ36HLNXHRSULZQQ42"
+    },
+    {
+      "timestamp": "2018-09-27T16:28:45Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "ZIP3RSBT2AF5SLM7BOG4MBOONZOU6RKZ"
+    },
+    {
+      "timestamp": "2018-10-21T14:15:48Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "6Z34KJDIRPQRLWR34ENTRVBLZPPSV5N5"
+    },
+    {
+      "timestamp": "2018-10-28T20:52:56Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "XYW43UJEKH4XNUGULKLN3RRIQD3DXVVK"
+    },
+    {
+      "timestamp": "2018-11-03T21:26:38Z",
+      "url": "http://defymedical.com:80/",
+      "status": "403",
+      "digest": "U5DTTQ4MUIBTWATZQREFUC7NOJPEUTM2"
+    },
+    {
+      "timestamp": "2018-11-21T14:25:45Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "ER272YQ7EQKBRDQ5PFQ7IGNBFRRVZRET"
+    },
+    {
+      "timestamp": "2018-11-28T21:17:14Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "CX5U6Y3LWVZAPNOSBRRPSBDQGYSJRE5J"
+    },
+    {
+      "timestamp": "2018-12-23T03:39:29Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "TUFFWWOWJRHZ5AOYHEKBJMZ5RPTRJGIY"
+    },
+    {
+      "timestamp": "2018-12-29T14:15:13Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "OJTSPD6D4BV2AFO3PVW2DGCYMZEXMFFD"
+    },
+    {
+      "timestamp": "2018-12-30T00:50:52Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "3UAZKN7VPEQKZEO37YVDAKOTRA7VZTGS"
+    },
+    {
+      "timestamp": "2019-01-04T00:08:56Z",
+      "url": "http://defymedical.com:80/",
+      "status": "403",
+      "digest": "VINVUR3FQVM6PWZUXOUAK7J4ONUCFWEP"
+    },
+    {
+      "timestamp": "2019-01-20T15:26:44Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "BHRHNCBPYXOCD3GXMBT6ESTL2EZCKSWD"
+    },
+    {
+      "timestamp": "2019-01-23T04:59:32Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "ZTQP3JIAAP277G57LQRZCTCYMACADN77"
+    },
+    {
+      "timestamp": "2019-01-30T00:37:23Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "R2QK4TM5VAGX3CAJDB4E55VE5WWBNUKX"
+    },
+    {
+      "timestamp": "2019-02-23T03:28:50Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "B36ZIPPTIV5DBBGYLHSI4TMRTALTJU7S"
+    },
+    {
+      "timestamp": "2019-03-01T20:28:05Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "UKPE6T5YQSB36AAEXVXGDDGPI3S7FTY4"
+    },
+    {
+      "timestamp": "2019-03-06T02:05:15Z",
+      "url": "http://defymedical.com:80/",
+      "status": "403",
+      "digest": "XBERGCVRQZDXEIIQIDA3AB6RDLROVGAU"
+    },
+    {
+      "timestamp": "2019-03-26T08:12:14Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "Y6KLDM3EIT3DVPT2HYWY5YZYMZ7R6VCJ"
+    },
+    {
+      "timestamp": "2019-03-29T03:37:02Z",
+      "url": "http://defymedical.com:80/",
+      "status": "403",
+      "digest": "QRPBJ5PTGUYHKQHXZ2K6AC4MXXUUKE7P"
+    },
+    {
+      "timestamp": "2019-04-01T12:42:33Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "KBSEWFLKP4OCCGCSH67OM3T6Z5CXDTNB"
+    },
+    {
+      "timestamp": "2019-04-26T05:31:47Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "CDFOIMWP7FSFMZKADMPCRBVZLS6Q7TJV"
+    },
+    {
+      "timestamp": "2019-05-03T00:39:17Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "7LHXY6ZQWBAENOGOATLRPIAE5VDDUSRX"
+    },
+    {
+      "timestamp": "2019-05-27T05:59:00Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "ZCSLDUPALIJU2FP4KQMIMLO67LT2YFZ3"
+    },
+    {
+      "timestamp": "2019-05-30T03:44:42Z",
+      "url": "http://defymedical.com:80/",
+      "status": "403",
+      "digest": "V3MM4MJWFCK7SRUGSJ43S5DYZYOPQ47W"
+    },
+    {
+      "timestamp": "2019-06-02T15:25:36Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "HBLPBOJQ3KLAVFMQZCJ3NCIEHI4NDJ44"
+    },
+    {
+      "timestamp": "2019-06-27T06:13:34Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "403",
+      "digest": "JUJOUUSXOLHQHFQYYYR2KNOUSI4BKO6P"
+    },
+    {
+      "timestamp": "2019-07-03T14:41:43Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "403",
+      "digest": "POKR4JMJ4KSJIVMEOCWNOZHT36USEBDM"
+    },
+    {
+      "timestamp": "2019-07-20T16:35:00Z",
+      "url": "https://defymedical.com/",
+      "status": "200",
+      "digest": "FRYP74W4N4533ATBQMYBD2HS6TXR22KV"
+    },
+    {
+      "timestamp": "2019-07-23T05:42:59Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "IZIGUE2OONGT4DKCPNMOAQC7HB6BR5SK"
+    },
+    {
+      "timestamp": "2019-07-28T17:09:01Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "301",
+      "digest": "WAM3EB6ZHEDJ5JNBKUYWP7FBR3LGPFJ5"
+    },
+    {
+      "timestamp": "2019-07-31T21:05:21Z",
+      "url": "http://defymedical.com:80/",
+      "status": "301",
+      "digest": "SXAYMNANXXZCUNOVR63QYKPK3DMVTVRW"
+    },
+    {
+      "timestamp": "2019-08-02T05:43:51Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "NEWQWKCWLYSAOBFMEWY6F4PPHV2RSQ7Z"
+    },
+    {
+      "timestamp": "2019-08-03T14:08:28Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "301",
+      "digest": "JK3OIHKU66RVTSG4OHYDLVTBJTG7B5TM"
+    },
+    {
+      "timestamp": "2019-08-09T19:26:34Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "SXAYMNANXXZCUNOVR63QYKPK3DMVTVRW"
+    },
+    {
+      "timestamp": "2019-08-18T13:56:58Z",
+      "url": "https://defymedical.com/",
+      "status": "200",
+      "digest": "PPA3YEAC57CGQETL2TT77YRYREVYFQRT"
+    },
+    {
+      "timestamp": "2019-08-21T19:08:44Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "PAEVIC62X4UWBVMS5F6PF23LZDIPRSBP"
+    },
+    {
+      "timestamp": "2019-08-30T12:36:15Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "301",
+      "digest": "WAM3EB6ZHEDJ5JNBKUYWP7FBR3LGPFJ5"
+    },
+    {
+      "timestamp": "2019-09-03T20:42:55Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "301",
+      "digest": "JK3OIHKU66RVTSG4OHYDLVTBJTG7B5TM"
+    },
+    {
+      "timestamp": "2019-09-22T18:55:19Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "FXP7P3UNQLKKUVB4FNW54JSRLMMV5FYV"
+    },
+    {
+      "timestamp": "2019-09-23T07:43:38Z",
+      "url": "https://defymedical.com/",
+      "status": "200",
+      "digest": "U6YIOR3VSWV3ZSQOZCNKH32QFFAHH4RB"
+    },
+    {
+      "timestamp": "2019-09-30T09:02:18Z",
+      "url": "http://www.defymedical.com:80/?",
+      "status": "301",
+      "digest": "WAM3EB6ZHEDJ5JNBKUYWP7FBR3LGPFJ5"
+    },
+    {
+      "timestamp": "2019-10-01T11:34:48Z",
+      "url": "http://defymedical.com:80/",
+      "status": "301",
+      "digest": "SXAYMNANXXZCUNOVR63QYKPK3DMVTVRW"
+    },
+    {
+      "timestamp": "2019-10-23T14:59:23Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "301",
+      "digest": "JK3OIHKU66RVTSG4OHYDLVTBJTG7B5TM"
+    },
+    {
+      "timestamp": "2019-10-23T19:03:02Z",
+      "url": "https://defymedical.com/",
+      "status": "200",
+      "digest": "VRVIJNBB2V5WNYAVJQ5BBM2HY4J74KVW"
+    },
+    {
+      "timestamp": "2019-11-15T08:26:43Z",
+      "url": "https://defymedical.com/",
+      "status": "200",
+      "digest": "AD2OOAAGO46Q2C7E6ORMG2YSR75K5YNY"
+    },
+    {
+      "timestamp": "2019-11-15T21:12:54Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "EVXEPY4SMOWDIF2T322DUWK3KCO77GCZ"
+    },
+    {
+      "timestamp": "2019-12-14T11:20:11Z",
+      "url": "https://defymedical.com/",
+      "status": "200",
+      "digest": "Q3VN6WXVIDM6A5SUPJD6QFD43KZENPN6"
+    },
+    {
+      "timestamp": "2019-12-14T11:29:03Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "HUB6NHYWYEJIS443FKTAURAMAFSUPED4"
+    },
+    {
+      "timestamp": "2019-12-22T20:01:42Z",
+      "url": "http://www.defymedical.com:80/",
+      "status": "301",
+      "digest": "JK3OIHKU66RVTSG4OHYDLVTBJTG7B5TM"
+    },
+    {
+      "timestamp": "2020-02-25T10:41:47Z",
+      "url": "http://defymedical.com:80/",
+      "status": "301",
+      "digest": "SXAYMNANXXZCUNOVR63QYKPK3DMVTVRW"
+    },
+    {
+      "timestamp": "2020-06-28T06:46:24Z",
+      "url": "http://defymedical.com:80/",
+      "status": "301",
+      "digest": "XUB6ZP5A6AWLZRGVWULD2MX4PMU3ZCXY"
+    },
+    {
+      "timestamp": "2020-08-03T08:50:54Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "VCUOSXOGQUJRNO6DFDQECW5L777AZUTV"
+    },
+    {
+      "timestamp": "2020-08-08T19:50:54Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "YKN2XMZIEEZ24F4PNMXADGJD5WAIWSYR"
+    },
+    {
+      "timestamp": "2020-08-09T17:56:11Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "33NXXCR6X42C6HBVKDCVT2WUL7I5XFV7"
+    },
+    {
+      "timestamp": "2020-08-11T10:12:29Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "ZXSV3VVQ2PSZTOBO2IHSYDXN47S2BVLI"
+    },
+    {
+      "timestamp": "2020-08-11T22:42:06Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "NKHXGJ22D7HO26AKFLGJHLDXAKFCJGFP"
+    },
+    {
+      "timestamp": "2020-09-24T01:09:41Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "3EHSRX62N62DOCAQBL34JCABHSNUGN2W"
+    },
+    {
+      "timestamp": "2020-09-26T17:48:48Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "LI6KIAJEKLWQY6GQIYZ2AMBVB4ZRUFJL"
+    },
+    {
+      "timestamp": "2020-10-17T22:52:02Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "BYDMMCFWMEXKWTKYX3224E2PJ43HWSFS"
+    },
+    {
+      "timestamp": "2020-10-24T02:37:34Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "XLAGIHA45OF23EFFWTS65SGMVA4JOR6P"
+    },
+    {
+      "timestamp": "2020-10-31T11:23:51Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "XUB6ZP5A6AWLZRGVWULD2MX4PMU3ZCXY"
+    },
+    {
+      "timestamp": "2020-10-31T11:23:51Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "MMHUXVQXKF5XUCGWOYRWFUAVBVWCEICH"
+    },
+    {
+      "timestamp": "2020-11-01T01:37:34Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "H3DW4AK5AKKK4BIOTEHJKAY2CQZU7UOG"
+    },
+    {
+      "timestamp": "2020-11-01T01:37:35Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "PLEHU7YF2YSRXVOMLZCPDD467W7IZWGP"
+    },
+    {
+      "timestamp": "2020-11-01T08:24:01Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "XUB6ZP5A6AWLZRGVWULD2MX4PMU3ZCXY"
+    },
+    {
+      "timestamp": "2020-11-01T08:24:02Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "HSFUBPOK2EPOZSAPSHA7BPYU73N25T3F"
+    },
+    {
+      "timestamp": "2020-11-01T22:52:54Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "3ZZWT5UDTOV7X4OE6HMXBLRFA5YOHALC"
+    },
+    {
+      "timestamp": "2020-11-06T16:04:51Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "H3DW4AK5AKKK4BIOTEHJKAY2CQZU7UOG"
+    },
+    {
+      "timestamp": "2020-11-06T17:06:05Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "E6R7XG5T75JCWOTTTCSHW5ZDPLZ3QTBW"
+    },
+    {
+      "timestamp": "2020-11-11T23:17:53Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "4JJMUSGFAC6Q7ISGUH6WQSEGYAV5Q4OG"
+    },
+    {
+      "timestamp": "2020-11-12T00:20:47Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "IC7T4EP72ZCLNKVL7RTMFVQSJ3LPBWXA"
+    },
+    {
+      "timestamp": "2020-11-12T01:21:50Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "XUB6ZP5A6AWLZRGVWULD2MX4PMU3ZCXY"
+    },
+    {
+      "timestamp": "2020-11-12T01:21:50Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "MVYK4OQJKNZ6Z2U4N2KU7ZTOR37VT67Z"
+    },
+    {
+      "timestamp": "2020-11-16T23:57:50Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "3HGI3BGMAZ2OF2XPSEUNOXX6RPUJPPS3"
+    },
+    {
+      "timestamp": "2020-12-16T22:57:02Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "HO5A6PZWWRN5ONGN76IPYVIE7AYKXA4E"
+    },
+    {
+      "timestamp": "2020-12-31T22:56:30Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "YYPT5EXZ634MGHQVSTLWRIM4OWDRWFGW"
+    },
+    {
+      "timestamp": "2021-01-11T18:23:56Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "XUB6ZP5A6AWLZRGVWULD2MX4PMU3ZCXY"
+    },
+    {
+      "timestamp": "2021-01-11T18:23:58Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "JQ7JVZTA6WT4JMY6LN2JU5PZ7UPQQ6SZ"
+    },
+    {
+      "timestamp": "2021-01-21T18:35:29Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "TEARC25MX3WALAN4BTMMIP4H26YBIGNP"
+    },
+    {
+      "timestamp": "2021-02-12T00:20:28Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "ORQMPDRXALY75ADWW4VWAXNW47PSTX36"
+    },
+    {
+      "timestamp": "2021-02-12T01:22:20Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "AZO7IGNZNLDNQGA5OY5DM535BTEOW4QF"
+    },
+    {
+      "timestamp": "2021-03-07T21:10:34Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "3Z6PBVQHWH32LFH2BBGAJ2TWF53LVSDI"
+    },
+    {
+      "timestamp": "2021-04-10T20:31:18Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "6T7KHHQUOPIYJQJWCC2QDH6UTNRKEM6Q"
+    },
+    {
+      "timestamp": "2021-04-20T08:25:25Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "TLOTPSOI5MAZQ3F44JTQ6HGE55XHEG7D"
+    },
+    {
+      "timestamp": "2021-05-11T17:28:31Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "ZY5LANUEU4WDZZS7Y6FWCPJFJELRDQRQ"
+    },
+    {
+      "timestamp": "2021-06-10T09:02:57Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "RJKRUU74BWITCVVY4QFDOZP4SCLUOSJU"
+    },
+    {
+      "timestamp": "2021-06-18T06:29:43Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "O7UTRLUP6HYOLIDDXBJRWXKP2OLX5HEF"
+    },
+    {
+      "timestamp": "2021-08-05T09:01:11Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "V564MZDFUTDTCUKDZ6JPGDF3F44YUDPE"
+    },
+    {
+      "timestamp": "2021-09-16T18:05:03Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "BJIKCSWS3L4XHZVHLMYIOH465EVXXWZQ"
+    },
+    {
+      "timestamp": "2021-09-28T05:11:50Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "CLI6FKMGGC5ON7KR7JKWEMBTEMF7WWPF"
+    },
+    {
+      "timestamp": "2021-10-27T07:35:57Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "3QI5KIPRUXBAEXLHCE47CB4FEJAJ4T6T"
+    },
+    {
+      "timestamp": "2021-11-20T09:30:57Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "HAJI6WU25RW6SBLJBHGDE74ML227DNMK"
+    },
+    {
+      "timestamp": "2021-11-28T21:21:33Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "I3BVTT4562QJGYJERHPPK4Q5QJBQHBYX"
+    },
+    {
+      "timestamp": "2021-11-30T08:21:04Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "H3DW4AK5AKKK4BIOTEHJKAY2CQZU7UOG"
+    },
+    {
+      "timestamp": "2022-01-03T23:09:21Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-01-10T16:03:36Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "XUB6ZP5A6AWLZRGVWULD2MX4PMU3ZCXY"
+    },
+    {
+      "timestamp": "2022-01-17T10:10:25Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "YY7X6AXLIOLN2H5AGYSST2DULE2BT7MX"
+    },
+    {
+      "timestamp": "2022-01-27T12:16:18Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "SAG5CENCELOXM77TOO32HXGBKUZGQEZL"
+    },
+    {
+      "timestamp": "2022-01-27T17:08:24Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-01-27T17:08:24Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "GK7Y5C7IHRL5ZC3NTEO5OEDVHR2ODWJQ"
+    },
+    {
+      "timestamp": "2022-01-27T17:08:26Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "EY46MERBMSZK6FZN57CVTGWCPF6GLBKP"
+    },
+    {
+      "timestamp": "2022-02-06T03:31:17Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "SGGSUO7KAZKYISYPHYDBOBM5SOFG456T"
+    },
+    {
+      "timestamp": "2022-02-11T21:12:35Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-02-11T21:12:35Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "3YVUYTXBLQCKD5Y6RXH23TBTRYL43QR4"
+    },
+    {
+      "timestamp": "2022-03-03T17:28:50Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "QIJ5PPT7XUODQFPDDWJZVM6IDQYHLEVF"
+    },
+    {
+      "timestamp": "2022-03-16T09:28:31Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-03-16T09:28:31Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "VQ2ARL7JVHL6JIJ7TCDVM4VTKP45JJHW"
+    },
+    {
+      "timestamp": "2022-04-04T15:15:14Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "EE6IJSLDJKPFKNA3PDGHSAQBNHCXXTBN"
+    },
+    {
+      "timestamp": "2022-04-04T15:15:18Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "XUB6ZP5A6AWLZRGVWULD2MX4PMU3ZCXY"
+    },
+    {
+      "timestamp": "2022-04-04T15:15:18Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "S6EGC5MG2J2PBSWW4MSRQTV5EIN73GQK"
+    },
+    {
+      "timestamp": "2022-05-05T21:03:16Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "OS6G4NVUEB627POAQYVMAMO6IHNGBNIO"
+    },
+    {
+      "timestamp": "2022-05-07T01:27:18Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "MNAEPHKMDJOH5TRZFIA7CCTE5WWFGBA2"
+    },
+    {
+      "timestamp": "2022-05-07T17:53:06Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "XUB6ZP5A6AWLZRGVWULD2MX4PMU3ZCXY"
+    },
+    {
+      "timestamp": "2022-05-08T15:12:55Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-05-08T15:12:56Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "XVZ3G2U2SWOPZTLIRL4WHLJK2B4FP5E6"
+    },
+    {
+      "timestamp": "2022-05-13T03:15:41Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "DZJPDGJEFVBV67QGUTNSXPG3QV5DZ4QG"
+    },
+    {
+      "timestamp": "2022-05-17T08:27:27Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "TEFOGBIB5FDTUPMAGNKXZWOLJYUWK7AI"
+    },
+    {
+      "timestamp": "2022-05-19T10:14:21Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "3MCEISV3DI73TW32FDR3BOVYPA7K37LB"
+    },
+    {
+      "timestamp": "2022-05-22T17:10:27Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "ZFPDAAEHOY5I3CFYR2F62TD4IAPQDMNZ"
+    },
+    {
+      "timestamp": "2022-06-09T15:43:10Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "XUB6ZP5A6AWLZRGVWULD2MX4PMU3ZCXY"
+    },
+    {
+      "timestamp": "2022-06-12T14:39:10Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "IZM73ITP3MRXBWEP5HKAAGZJPTCHARHQ"
+    },
+    {
+      "timestamp": "2022-06-26T18:00:23Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "6XWWXOSOUCAP6NXV6HF622V3PDHHMQL7"
+    },
+    {
+      "timestamp": "2022-06-27T13:10:52Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "T3CDVU5ZDEV2Q77YHLR67LJ22E5B4TMW"
+    },
+    {
+      "timestamp": "2022-07-15T15:17:52Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2022-07-15T15:17:53Z",
+      "url": "http://www.defymedical.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-07-15T15:17:53Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "3DAQOA7U76CDVYBSZPZ7AXIS5YOHTK2W"
+    },
+    {
+      "timestamp": "2022-07-15T15:17:53Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "D3Q27R7NHVD4N2L6XM3XZJ77V644I7NK"
+    },
+    {
+      "timestamp": "2022-07-15T15:17:53Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "HXXVG7GTJTJYTIO3BZE2BMV6TZOQLTBL"
+    },
+    {
+      "timestamp": "2022-07-15T15:17:53Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "KLDBI6E2ITFC6C5BJXRD7MCCLX5HJSSD"
+    },
+    {
+      "timestamp": "2022-07-15T15:17:53Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "PMTYFW46MUEEZKQOFZWPM7IGFNVK4NLD"
+    },
+    {
+      "timestamp": "2022-07-15T15:17:54Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "HXXVG7GTJTJYTIO3BZE2BMV6TZOQLTBL"
+    },
+    {
+      "timestamp": "2022-07-15T15:17:54Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "NCUZEGCGXMCHVSSXVUBJXZESHHZMLTY7"
+    },
+    {
+      "timestamp": "2022-07-22T18:15:41Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "7JGGVYDTOIH37NOMZVO2EWN34CI54AIZ"
+    },
+    {
+      "timestamp": "2022-07-31T08:31:47Z",
+      "url": "http://www.defymedical.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-07-31T08:31:47Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "LTMCUVUP275DDOMC5R3CVXFF7EGU5DCK"
+    },
+    {
+      "timestamp": "2022-08-05T22:14:51Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "3LVTMXVLBRGJLXWKM6WG4WVD4YRFNEXZ"
+    },
+    {
+      "timestamp": "2022-08-08T05:11:41Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "BEV7KIRV6ZVQO5M6GMXCEBQDYXF3PDVX"
+    },
+    {
+      "timestamp": "2022-09-23T15:13:20Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "RA4ZKRQWGG36BXVD3QEN373JTBJAWC2K"
+    },
+    {
+      "timestamp": "2022-10-01T05:57:47Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "K7BT26HUXKMAKSAD4XPURRDL23IYUFMZ"
+    },
+    {
+      "timestamp": "2022-10-02T12:01:45Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "QKP4DUYP624WQFNO52XYPLNBS4DSKREO"
+    },
+    {
+      "timestamp": "2022-10-14T10:16:15Z",
+      "url": "http://www.defymedical.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-11-03T14:22:56Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "SZ6OGLD4TW7T7U43RPP2X5ZMYR6W2ATE"
+    },
+    {
+      "timestamp": "2022-11-04T00:43:05Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2022-12-05T15:32:15Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "UOAEA52GTCXNZALKXYFQVDAYPIC3PUGN"
+    },
+    {
+      "timestamp": "2022-12-06T01:49:13Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "CD3SNH3B3NYTZH3ROO5HAOYZ5JTWMGVE"
+    },
+    {
+      "timestamp": "2022-12-06T06:40:37Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "65S3KYA3PBKIYHINR5LBXABLMB3ZIB4J"
+    },
+    {
+      "timestamp": "2023-01-20T15:14:29Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "VR6R5XLOT4Z33NLN4OZWP6VGBPNLIRMW"
+    },
+    {
+      "timestamp": "2023-01-28T23:57:51Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "CBIXBLJYJ56LMY66XEUE62QCCJP5ZRK3"
+    },
+    {
+      "timestamp": "2023-03-05T23:35:06Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "GYQN4BED4VZRE3PIIHH7VWX4SVHLG4WL"
+    },
+    {
+      "timestamp": "2023-03-07T14:07:43Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "BWRK7UZ4IQNHL3EEVTRZ5OV7Q6R3OSR6"
+    },
+    {
+      "timestamp": "2023-03-12T13:19:40Z",
+      "url": "http://defymedical.com/",
+      "status": "-",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2023-03-20T10:01:19Z",
+      "url": "http://www.defymedical.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-03-26T08:10:44Z",
+      "url": "http://defymedical.com/",
+      "status": "-",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2023-03-27T11:27:34Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "FL4JZMIBVIGUZQYOEB2EYHNGQXSFFM6X"
+    },
+    {
+      "timestamp": "2023-04-03T16:59:36Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2023-04-04T04:49:36Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "PWXXQUVRCZTSHKTHAABYGSF5PJ3PZ7XC"
+    },
+    {
+      "timestamp": "2023-05-06T21:43:33Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "NLGBPXFMLSNM3ZAQQVNCGOK62OHHZVNA"
+    },
+    {
+      "timestamp": "2023-05-20T00:45:26Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2023-05-20T00:45:27Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-05-20T00:45:28Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "42VFPWMIOWK5CQLJ5GEIGKEZT6PSASME"
+    },
+    {
+      "timestamp": "2023-06-06T18:47:20Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "F4NX2PXH2ZZ64WGTHSCMXP65OZNSJVKP"
+    },
+    {
+      "timestamp": "2023-06-10T08:38:18Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "GWXMFDCGGRRPELJ7F7WIPVFBYKBKAIHB"
+    },
+    {
+      "timestamp": "2023-07-02T08:20:09Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "VMZJZTR74YDN37QSWVYLYQTEJSSRKWKP"
+    },
+    {
+      "timestamp": "2023-08-03T12:29:32Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "ZMBA3NFZRDIYMQ67QCMKE33ELAO6H5R4"
+    },
+    {
+      "timestamp": "2023-09-29T01:16:05Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "P3EO26ZP6HGUAJ4R2CBG3HDBHLJQCMZK"
+    },
+    {
+      "timestamp": "2023-11-16T19:28:05Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "K3UC3HNYWNEY3VVEZKBV47XVB2YOOQUW"
+    },
+    {
+      "timestamp": "2023-12-02T01:23:01Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "2DM254O77PWTENKZ34UCANJ7HX6BIYN2"
+    },
+    {
+      "timestamp": "2023-12-05T22:52:44Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "CHTIZDAGX7NWYR7XFQXT5XSHWTSLP3R4"
+    },
+    {
+      "timestamp": "2023-12-19T19:42:32Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "XG4LNLXRWD5RJIZ2W7ZTZJQ6OHXLVAQZ"
+    },
+    {
+      "timestamp": "2024-01-16T21:27:20Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "R5XNXO6FPZBMHK5IDHHUX5WV3PETI6SR"
+    },
+    {
+      "timestamp": "2024-02-07T10:37:22Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "KSIBF3YIM7BN5GEC4DWYH3PN2EFDY4A3"
+    },
+    {
+      "timestamp": "2024-03-02T04:24:16Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "RNFGCLPCXIKHCVI64R67L2DUT3C6O7JH"
+    },
+    {
+      "timestamp": "2024-03-20T06:20:25Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "MBFZVBOORRILO6F7LTMQIITZQUEXNAHQ"
+    },
+    {
+      "timestamp": "2024-03-20T06:20:30Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-03-29T14:55:51Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2024-03-29T14:57:04Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "Z3E6G3745OP7N4YDS7QBWFW3NTHLPLXK"
+    },
+    {
+      "timestamp": "2024-04-02T10:54:36Z",
+      "url": "http://danielled@defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2024-04-02T10:54:38Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-04-02T10:54:41Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "JMSIMMCPK5FLDINIJS5XP3ZEQNGTD7Y6"
+    },
+    {
+      "timestamp": "2024-04-07T17:32:09Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "T5EB3CYUAIORNF72UOVZLFSDSEWU7KJ5"
+    },
+    {
+      "timestamp": "2024-04-14T01:19:05Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "XJOHJQK72HE63MXTFYLQ2OQZDESZQNXW"
+    },
+    {
+      "timestamp": "2024-04-14T18:11:45Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "5P2DFUQ2CEGCCDFUV5PHEXMYWUUNBX67"
+    },
+    {
+      "timestamp": "2024-05-11T16:44:52Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2024-05-11T16:44:57Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-05-12T02:20:29Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "6B7O6EM56FLLNQW77OUNNYSV4AMKHC3E"
+    },
+    {
+      "timestamp": "2024-05-15T22:47:44Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "VMV5OC5V2BLMQLAERR2ZYJALAAMUPP7F"
+    },
+    {
+      "timestamp": "2024-05-18T10:40:04Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "GNLBKAJ7IOHWH6EGQOH2T7Y3OALMOXBT"
+    },
+    {
+      "timestamp": "2024-05-18T10:43:23Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-05-18T10:43:28Z",
+      "url": "https://www.defymedical.com/",
+      "status": "-",
+      "digest": "GNLBKAJ7IOHWH6EGQOH2T7Y3OALMOXBT"
+    },
+    {
+      "timestamp": "2024-05-18T23:40:25Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "BGT2HNZRGSPROMSMXCDLIDVWWNPH4ZSK"
+    },
+    {
+      "timestamp": "2024-05-19T15:17:14Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "MS7QLT6JR4PINNNAMZEOUPQ5HV64IOP3"
+    },
+    {
+      "timestamp": "2024-06-02T01:12:31Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "VD3VFZCFREJNORN6YOBBVWNT4DDVQ3SB"
+    },
+    {
+      "timestamp": "2024-07-02T17:48:52Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "VQBBHSXIOSXQKVVDI3ZA5AULEGKOAXGH"
+    },
+    {
+      "timestamp": "2024-07-16T09:08:41Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "TD3F4ID3QS4GVBU4UEEOHG3RRZX6IOWD"
+    },
+    {
+      "timestamp": "2024-07-16T09:09:15Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-08-10T02:45:51Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2024-08-10T02:45:53Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-08-17T18:11:40Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "KPE4XLLSAUIIJJIBKKTWF6T4XRYCIK5V"
+    },
+    {
+      "timestamp": "2024-09-01T15:25:01Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "KVQDIWGRWB4M5OMZAOUWSGLF3ZMLNZH5"
+    },
+    {
+      "timestamp": "2024-09-01T16:09:39Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "CW5IXATBPMTPFWPE6ILGGRAOROMWAT7L"
+    },
+    {
+      "timestamp": "2024-09-13T14:20:17Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-09-13T14:20:17Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "KME7KEXVP7BRVDC7BYSYPQVK7NSZV2U6"
+    },
+    {
+      "timestamp": "2024-09-13T15:56:05Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "GSZ4TGTZHZCVHLSZ7S2SSCW5I4UOY5H5"
+    },
+    {
+      "timestamp": "2024-09-13T19:22:15Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "LVH526IN2CUTJ5NGDWQMJRBMSVXM3BT4"
+    },
+    {
+      "timestamp": "2024-09-14T09:00:02Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "OQSCPFULAKWQAHU6L2NDCUF3TPLUYZSM"
+    },
+    {
+      "timestamp": "2024-09-17T20:51:06Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-09-17T20:51:06Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "Y2EZJW3KNXXIYCJ3PNP7FAES43JFDJMR"
+    },
+    {
+      "timestamp": "2024-09-17T20:51:07Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-09-17T20:51:10Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "Y2EZJW3KNXXIYCJ3PNP7FAES43JFDJMR"
+    },
+    {
+      "timestamp": "2024-09-17T20:51:11Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-09-17T20:51:12Z",
+      "url": "https://www.defymedical.com/",
+      "status": "-",
+      "digest": "Y2EZJW3KNXXIYCJ3PNP7FAES43JFDJMR"
+    },
+    {
+      "timestamp": "2024-09-22T19:51:03Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-09-22T19:51:09Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2024-10-03T12:27:27Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "MLM2DC4LIQ3NJYNNMLM6AFDKBNBAGSKG"
+    },
+    {
+      "timestamp": "2024-10-04T19:12:16Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "DJXAWSELISVPKSDKG25ZO7BWS4QIXGU5"
+    },
+    {
+      "timestamp": "2024-10-05T04:59:33Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "DXZR7JGGMLC6P4BGYSB35VHVX3MHVGZU"
+    },
+    {
+      "timestamp": "2024-11-17T10:48:24Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "JYNRDAVWRBO5RLF5FWO2UJHZL6AYL3FV"
+    },
+    {
+      "timestamp": "2024-11-17T18:59:04Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "MJ5EOXD73F63CV7MIKOLVUGK5VK2HQPH"
+    },
+    {
+      "timestamp": "2024-11-18T03:32:50Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "LWUIZFYJTHQFO2TLQOUIXOM4JN3XCXX7"
+    },
+    {
+      "timestamp": "2024-11-20T19:14:32Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "N34JK62NV5O7PM54KSKZ776SPWRORDJL"
+    },
+    {
+      "timestamp": "2024-12-11T07:15:00Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "F6EB642QM47HIIFJMQ7SJ4Q4UNW6KLZF"
+    },
+    {
+      "timestamp": "2025-01-10T13:12:30Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "GHJQUIC7G5NOX7JYJIAQZOM5Q5LF6W2S"
+    },
+    {
+      "timestamp": "2025-01-12T22:54:58Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "K4TLPEAXKKL26UAG5SAO64OEGBNFEVXK"
+    },
+    {
+      "timestamp": "2025-01-12T23:11:42Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "LZEXMEVGGLPGLOZ3N5DPOVOVLK7VXZ2L"
+    },
+    {
+      "timestamp": "2025-01-18T18:08:58Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "6BOTH7ZVSR76IU5VQL5KTJRSNXGPG4OA"
+    },
+    {
+      "timestamp": "2025-01-30T16:45:18Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-01-30T16:45:19Z",
+      "url": "http://www.defymedical.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-01-30T16:45:24Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "BTGNY4QTPDDADIXSQ3NNGNF64OHMVWJH"
+    },
+    {
+      "timestamp": "2025-02-14T10:18:40Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-02-14T18:40:03Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "MQG64CNMYNZNGHZGRHW75TBABGA4ASJ5"
+    },
+    {
+      "timestamp": "2025-02-16T09:20:23Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-02-19T12:03:14Z",
+      "url": "http://www.defymedical.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-02-19T12:03:14Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "FKQLWDEQFOT5L24HCBL4SJIBHJGBE5BM"
+    },
+    {
+      "timestamp": "2025-03-07T18:31:58Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-07T18:31:58Z",
+      "url": "http://www.defymedical.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-03-07T18:31:58Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-07T18:31:58Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "MXEOWGW5TD5DPLITKZTU5DGNEOMWRIGT"
+    },
+    {
+      "timestamp": "2025-03-09T19:11:56Z",
+      "url": "http://www.defymedical.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-03-09T19:11:56Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "HPKQYBSBXLMSPTB7VJQPMUGTZN2CV43S"
+    },
+    {
+      "timestamp": "2025-03-17T20:56:17Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "DPFWBKZNRRWQSMEEGSDIYFDMTHP2TTLQ"
+    },
+    {
+      "timestamp": "2025-03-20T02:42:41Z",
+      "url": "http://www.defymedical.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-03-20T02:42:41Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-20T02:42:41Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "OG3QJRQ3PRJJSVMQQEUMYIPIAEYHFTPF"
+    },
+    {
+      "timestamp": "2025-03-20T02:48:34Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-21T21:04:59Z",
+      "url": "http://www.defymedical.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-03-21T21:04:59Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "2Y65OFGLZ7OHKJ2V3O6QJFYXF4B533RF"
+    },
+    {
+      "timestamp": "2025-03-31T11:08:45Z",
+      "url": "http://www.defymedical.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-03-31T11:08:45Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-31T11:08:46Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "Y64RAOYTT4YQRADLUNWYY7F6S6DDGFTO"
+    },
+    {
+      "timestamp": "2025-03-31T18:11:29Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-04-18T03:36:34Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "LOPVTDBZ2MLHLRYSOBF6CMG5ZTVL3CDR"
+    },
+    {
+      "timestamp": "2025-04-19T12:11:33Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "W7TN4AIHIPH6MVPFIJOZ56V5H3RRV65Q"
+    },
+    {
+      "timestamp": "2025-05-21T21:45:41Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "KSWLMWDYJDXBNOEEVCCTYCPATUA7Z3JP"
+    },
+    {
+      "timestamp": "2025-06-13T04:43:25Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "GINJTVNBKKU23S2NT42SWXCGBKMOLZDR"
+    },
+    {
+      "timestamp": "2025-07-21T10:31:56Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "KB3ONIF65AFQ4TTLNG5JHZTRCSHYXJJA"
+    },
+    {
+      "timestamp": "2025-07-23T06:29:12Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "RT2OL7QIRRIGDYBB2KDACCK4LKOAGX2K"
+    },
+    {
+      "timestamp": "2025-08-06T23:33:56Z",
+      "url": "http://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-08-08T16:36:27Z",
+      "url": "http://www.defymedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-08-08T16:36:30Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "XTODUWZN656YBMN5HDCIGVVK45Q7UTIE"
+    },
+    {
+      "timestamp": "2025-08-18T02:27:40Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "7VALKJIOLUYJCNVU4465XRLV7IIQQSNR"
+    },
+    {
+      "timestamp": "2025-08-26T23:44:51Z",
+      "url": "https://defymedical.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-09-19T13:53:59Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "4GDOLGO3WDSR3UFNOW6IFP77I6LJGKXG"
+    },
+    {
+      "timestamp": "2025-09-26T10:07:26Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "WXZ4NPKNRJFZDOSBMR3CQZ33FBZKGF6N"
+    },
+    {
+      "timestamp": "2025-11-08T22:43:44Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "6GQFKV6336RTSU7UIQP3OUVQ3LGEXK3Q"
+    },
+    {
+      "timestamp": "2025-11-16T22:59:05Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "VUH4FICHSK53VAVET3EWJJRQ7Y5VYI6E"
+    },
+    {
+      "timestamp": "2026-01-01T02:12:02Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "XQJSEYEFOWXD3RKFE4NEADUAILSF7ELE"
+    },
+    {
+      "timestamp": "2026-02-04T09:53:47Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "ICYH7TLA46D6EZQ7OKZTRMTI3UYQAR2Q"
+    },
+    {
+      "timestamp": "2026-02-09T22:16:15Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "BLYNOKP6NZ6G7IOKP7J67CYNZWRFKOUI"
+    },
+    {
+      "timestamp": "2026-02-17T14:16:18Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "UTGG4DVH6W2RRNE3P3NGOEVNK7J44RRB"
+    },
+    {
+      "timestamp": "2026-03-15T21:25:40Z",
+      "url": "https://www.defymedical.com/",
+      "status": "403",
+      "digest": "XEQ52QRGIRKV226EI2O5B4W33SWFK2YR"
+    },
+    {
+      "timestamp": "2026-03-17T16:13:15Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "NVILCTYL7OY5PEZEVX244VMIE2CKRINC"
+    },
+    {
+      "timestamp": "2026-05-21T05:32:15Z",
+      "url": "https://www.defymedical.com/",
+      "status": "200",
+      "digest": "U7UIMEPALK2WYILJIXL4Z36NJEWWGRSW"
+    }
+  ]
+}
