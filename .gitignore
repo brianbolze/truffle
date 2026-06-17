@@ -19,6 +19,7 @@ __pycache__/
 .venv/
 venv/
 .ruff_cache
+.pytest_cache/
 
 # OS / iCloud
 .DS_Store
