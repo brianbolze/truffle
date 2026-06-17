@@ -105,14 +105,33 @@ def extract_offerings(slug: str) -> dict[str, Any] | None:
     }
 
 
-def extract_telehealth(slug: str) -> dict[str, Any] | None:
-    path = os.path.join(STORE, slug, "telehealth.md")
-    if not os.path.exists(path):
-        return None
-    fm, _ = store_read_doc(path)
-    cuts = {k: str(v) for k, v in fm.items()
-            if k not in ("schema_version", "domain", "captured_at") and v is not None and not isinstance(v, (dict, list))}
-    return {"captured_at": _datestr(fm.get("captured_at")), "cuts": cuts}
+COHORT_PACKS = os.path.join(os.path.dirname(STORE), "modules", "cohort-packs")
+
+
+def _cohort_names() -> list[str]:
+    """Registered cohort packs, lowercased — modules/cohort-packs/<COHORT>.md is the registry
+    cohortcheck.py already lints against, so the brief surfaces a newly-shipped pack with no
+    per-cohort wiring here ("the next cohort ships a contract, not a script")."""
+    return sorted(os.path.splitext(os.path.basename(p))[0].lower()
+                  for p in glob.glob(os.path.join(COHORT_PACKS, "*.md")))
+
+
+def extract_cohorts(slug: str) -> list[dict[str, Any]]:
+    """Every opt-in cohort pack this company carries (store/<slug>/<cohort>.md) — label, its cuts,
+    and its own clock. One generic reader for all packs (telehealth, productivity_saas, the next),
+    so adding a pack needs no edit here. In practice a company is in exactly one (packs are mutually
+    exclusive by construction), but the list keeps the renderer honest if that ever changes."""
+    out: list[dict[str, Any]] = []
+    for cohort in _cohort_names():
+        path = os.path.join(STORE, slug, f"{cohort}.md")
+        if not os.path.exists(path):
+            continue
+        fm, _ = store_read_doc(path)
+        cuts = {k: str(v) for k, v in fm.items()
+                if k not in ("schema_version", "domain", "captured_at") and v is not None and not isinstance(v, (dict, list))}
+        out.append({"cohort": cohort, "label": cohort.replace("_", " "),
+                    "captured_at": _datestr(fm.get("captured_at")), "cuts": cuts})
+    return out
 
 
 def _select_visual_tiles(cards_md: str, limit: int = 4) -> list[dict[str, Any]]:
@@ -203,7 +222,7 @@ def extract_index(fetch: bool = True) -> list[dict[str, Any]]:
             "age": _age_days(fm.get("captured_at")),
             "buyable": off["buyable"] if off else None,
             "roster_at": off["captured_at"] if off else "",
-            "cohort": extract_telehealth(slug) is not None,
+            "cohort": bool(extract_cohorts(slug)),
             "mark": _index_mark(slug, str(fm.get("domain") or ""), fetch),
         })
     return rows
@@ -265,7 +284,7 @@ def extract_model(query: str, fetch: bool = True) -> dict[str, Any] | None:
         "sections": raw_sections,
         "extras": extras,
         "offerings": extract_offerings(slug),
-        "telehealth": extract_telehealth(slug),
+        "cohorts": extract_cohorts(slug),
         "visual": extract_visual(slug),
         "generated": str(date.today()),
     }

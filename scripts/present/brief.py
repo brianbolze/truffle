@@ -192,8 +192,8 @@ def _provenance_html(m: dict[str, Any]) -> str:
     clocks = [("profile", m["captured_at"], m["age"])]
     if m["offerings"]:
         clocks.append(("offerings roster", m["offerings"]["captured_at"], m["offerings"]["age"]))
-    if m["telehealth"]:
-        clocks.append(("cohort pack", m["telehealth"]["captured_at"], _age_days(m["telehealth"]["captured_at"])))
+    for c in m["cohorts"]:
+        clocks.append((f'{c["label"]} cohort', c["captured_at"], _age_days(c["captured_at"])))
     if m.get("visual"):
         clocks.append(("visual evidence", m["visual"]["captured_at"], m["visual"]["age"]))
     out.append('<div class="prov-clocks">')
@@ -244,10 +244,10 @@ def _class_chips_html(m: dict[str, Any]) -> str:
     if chips:
         cuts = "".join(f'<span class="cut">{esc(lbl)} <b>{esc(val)}</b></span>' for lbl, val in chips)
         out.append(f'<div class="cohort foot"><span class="label">classification</span><div class="cuts">{cuts}</div></div>')
-    if m["telehealth"]:
+    for c in m["cohorts"]:
         cuts = "".join(f'<span class="cut{" unclear" if v == "unclear" else ""}">{esc(k.replace("_", " "))} <b>{esc(v)}</b></span>'
-                       for k, v in m["telehealth"]["cuts"].items())
-        out.append(f'<div class="cohort foot"><span class="label">telehealth cohort cuts</span>'
+                       for k, v in c["cuts"].items())
+        out.append(f'<div class="cohort foot"><span class="label">{esc(c["label"])} cohort cuts</span>'
                    f'<div class="cuts">{cuts}</div></div>')
     return "".join(out)
 
