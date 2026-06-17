@@ -1,0 +1,142 @@
+{
+  "slug": "kingsbergmedical-com",
+  "capture": "2026-06-09",
+  "source": "tile",
+  "pages": [
+    {
+      "page": "homepage",
+      "width": 1920,
+      "height": 6357,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/homepage/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/homepage/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/homepage/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/homepage/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/homepage/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 4957,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/homepage/tile-05-y04957.png"
+        }
+      ]
+    },
+    {
+      "page": "services",
+      "width": 1920,
+      "height": 7784,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/services/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/services/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/services/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/services/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/services/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 6100,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/services/tile-05-y06100.png"
+        },
+        {
+          "index": 6,
+          "y": 6384,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/services/tile-06-y06384.png"
+        }
+      ]
+    },
+    {
+      "page": "testosterone",
+      "width": 1920,
+      "height": 6938,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/testosterone/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/testosterone/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/testosterone/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/testosterone/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/testosterone/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 5538,
+          "height": 1400,
+          "path": "store/kingsbergmedical-com/captures/2026-06-09/tiles/testosterone/tile-05-y05538.png"
+        }
+      ]
+    }
+  ]
+}

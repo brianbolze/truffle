@@ -1,125 +1,104 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.5"
+schema_version: "2.6"
 domain: kingsbergmedical.com
 name: Kingsberg Medical
 aliases: ["Kingsberg Medical Clinic"]
-parent:
+legal_entity: ""
+parent: []
 owns: []
-socials:
-  facebook: "https://www.facebook.com/KingsbergMedicalFL"
-  x: "https://twitter.com/KingsbergM"
+socials: {}
 external: {}
-captured_at: "2026-06-09"
+captured_at: 2026-06-17
 capture_method: firecrawl
-site_notes: "Vanilla company run; no offerings.md, telehealth.md, or logos module. WordPress site with large SEO-style nav/page sprawl. Homepage screenshot shows older stock/template visuals and a blank dark-green medication section. No public treatment pricing captured."
+site_notes: "WordPress/WP Rocket site with a large SEO-style route set; the indexed product catalog lives at /product/ and the homepage repeats a medication detail carousel. Public product prices are sparse: treatment ranges live on cost/FAQ pages, not PDP buy boxes. Testosterone Cypionate, Propionate, and Enanthate nav URLs returned duplicate /testosterone-injections/ bodies, so keep one canonical injection page in active captures. JSON-LD logo URL is stale/404; wordmark is a verified header screenshot crop."
 key_pages:
-  - url: "https://www.kingsbergmedical.com/"
-    title: "Kingsberg Medical: Human Growth Hormone (HGH), Testosterone Therapies"
-    role: homepage
-    captured: true
-  - url: "https://www.kingsbergmedical.com/about-us/"
-    title: "About Us"
-    role: about
-    captured: true
-  - url: "https://www.kingsbergmedical.com/services/"
-    title: "Services"
-    role: services
-    captured: true
-  - url: "https://www.kingsbergmedical.com/growth-hormone/"
-    title: "Growth Hormone"
-    role: category
-    captured: true
-  - url: "https://www.kingsbergmedical.com/testosterone/"
-    title: "Testosterone"
-    role: category
-    captured: true
-  - url: "https://www.kingsbergmedical.com/hormone-testing/"
-    title: "Hormone Testing"
-    role: diagnostics
-    captured: true
-  - url: "https://www.kingsbergmedical.com/product/semaglutide/"
-    title: "Semaglutide"
-    role: product
-    captured: true
-  - url: "https://www.kingsbergmedical.com/get-started/"
-    title: "Get Started"
-    role: funnel
-    captured: true
+  homepage: /
+  product_index: /product/
+  about: /about-us/
+  services: /services/
+  get_started: /get-started/
+  hormone_testing: /hormone-testing/
+  growth_hormone: /growth-hormone/
+  testosterone: /testosterone/
+  testosterone_injections: /testosterone-injections/
+  semaglutide: /product/semaglutide/
+  sermorelin: /product/sermorelin/
 unverified_fields:
-  - Public treatment pricing was not captured.
-  - State-by-state availability and physician licensure were not enumerated.
-  - Pharmacy partners were not named in captured pages.
-  - Patient-count and physician claims were not independently verified.
-description: "A Fort Lauderdale hormone-replacement clinic that routes consumers through consultations, lab testing, and prescriptions for growth hormone, testosterone, sermorelin, semaglutide, and related panels."
+  - "State-by-state availability list — site says services depend on physician licensure and state law, but does not enumerate states."
+  - "Named pharmacy partners and 503A/503B lane — site says licensed US pharmacies, but names no pharmacy."
+  - "Exact all-in per-patient treatment prices — ranges are public, final cost depends on prescription, dose, labs, and insurance."
+  - "Legal entity — no site-derived legalName or footer entity found in the captured packet."
+  - "Insurance billing posture — site says some costs may be covered by insurance, but does not state Kingsberg bills insurance."
+description: "Runs a Fort Lauderdale hormone-replacement clinic that routes adults through consultation, lab testing, and prescriptions for HGH, testosterone, sermorelin, semaglutide, and hormone panels."
 entity_type: Company
 target_market: [B2C]
 offering_category: [Services / Consulting, Biotech / Pharma Products]
 portfolio_shape: Multi-product
 business_model: Transactional / One-time
 primary_industry: Healthcare & Life Sciences
-logo_url: "https://www.kingsbergmedical.com/wp-content/themes/UDFT/img/header-logo.png"
-brand_colors:
-  primary: "#394F37"
-  secondary: "#EDF9E5"
-  accent: "#79A352"
-  background: "#FFFFFF"
-fonts: [Bloger, Fira Sans, Georgia]
+logo_url: assets/wordmark.png
+logos:
+  wordmark: { src: assets/wordmark.png, w: 340, h: 120 }
+  logomark: { src: "https://www.google.com/s2/favicons?domain=kingsbergmedical.com&sz=256", px: 32, transparent: true }
+brand_colors: { primary: "#3D5B35", secondary: "#EDF9E5", accent: "#49A942", background: "#FFFFFF" }
+fonts: [Bloger, "Fira Sans", Georgia]
 color_scheme: light
 design_framework: wordpress
 ---
 
 ## Overview
 
-- **Business:** Hormone-replacement and longevity-oriented medical clinic based in Fort Lauderdale, Florida.
-- **Core focus:** Growth hormone, testosterone, sermorelin, hormone testing, and related therapies.
-- **Service model:** Consumers start with a consultation/contact path, complete lab testing, then receive doctor review and prescriptions when appropriate.
-- **Availability caveat:** Footer says services are provided only in states where physicians are licensed and services are permitted by law.
+Kingsberg Medical is a hormone-replacement and longevity-oriented clinic based in Fort Lauderdale. The site focuses on adult growth hormone deficiency, low testosterone, sermorelin, semaglutide, and hormone testing, with a funnel that starts online or by phone and then routes through labs, physical exam, physician review, and prescriptions where appropriate.
 
-## What They Offer
+The page-attested compliance posture is state-limited: services are available only where the physicians are licensed and the service is permitted. The pharmacy statement is also narrow: "All prescriptions from Kingsberg Medical are filled by licensed US pharmacies."
 
-- **Growth hormone therapy:** Evaluation and prescription pathway for adult growth hormone deficiency, with brands such as Omnitrope, Zomacton, Genotropin, Norditropin, Humatrope, and Saizen referenced. `[on-request]`
-- **Testosterone therapy:** Low-testosterone evaluation and treatment for men, including testosterone replacement positioning. `[on-request]`
-- **Sermorelin therapy:** Alternative or adjunctive peptide/hormone-related therapy described in service content. `[on-request]`
-- **Hormone testing:** Male and female hormone panels through LabCorp, with IGF-1 testing discussed for growth hormone evaluation. `[on-request]`
-- **Semaglutide medical weight loss:** Weekly injectable prescription weight-loss option routed through pre-screening and virtual consultation. `[on-request]`
-- **Consultation funnel:** Free consultation/contact and medical-history intake paths. `[on-request]`
+## What they offer
 
-## How It Works / Model
+- **Growth hormone therapy:** HGH evaluation and prescriptions, with Omnitrope, Zomacton, Genotropin, Norditropin, Humatrope, and Saizen surfaced in the medication carousel; public range says "$500.00 to $1000.00 or more per month" `[partial]`
+- **Testosterone therapy:** Low-testosterone diagnosis and TRT, including testosterone injection pages and references to cypionate, propionate, enanthate, Depo Testosterone, and Watson Testosterone; public range says "$200.00 to $350.00 per month" `[partial]`
+- **Sermorelin:** Compounded injectable secretagogue line, positioned as a growth-hormone-related therapy; no price on captured PDP `[on-request]`
+- **Semaglutide:** Compounded injectable GLP-1 weight-loss medication routed through pre-screening and virtual consultation; no price on captured PDP `[on-request]`
+- **Hormone testing:** Super and Complete male/female panels through LabCorp, with results typically in "24-72 business hours"; no panel price captured `[on-request]`
+- **Consultation / intake:** Get Started form, medical history form, and phone/contact path before lab review and physician prescription `[on-request]`
 
-- **Step 1:** User contacts Kingsberg Medical by form or phone and completes intake.
-- **Step 2:** Blood work and diagnostic testing are ordered and reviewed.
-- **Step 3:** A doctor determines whether treatment is appropriate and issues prescriptions through licensed U.S. pharmacies.
-- **Pricing:** Treatment and medication prices were not publicly captured.
+Per-SKU detail, images, and price-source anchors live in `offerings.md`.
 
-## Positioning & Audience
+## How it works / model
 
-- **Primary audience:** Consumers seeking hormone testing and replacement therapy, especially growth hormone or testosterone treatment.
-- **Positioning:** Specialist hormone-replacement clinic emphasizing doctor oversight, personalized plans, and experience with thousands of patients.
-- **Claims:** Site says Kingsberg has helped more than 14,000 men and women over the past 10 years; not independently verified here.
+- **Intake:** Users fill out a form, medical history, or call; the get-started page asks for a ZIP code.
+- **Testing:** Kingsberg says it schedules blood testing and a physical exam near the patient's home or office.
+- **Prescription:** If lab work indicates growth hormone deficiency or low testosterone, "one of our local doctors" prescribes hormone replacement therapy.
+- **Fulfillment:** Prescriptions are filled by licensed US pharmacies, with dispensing limited to states where the pharmacies are authorized to operate.
 
-## Nav Structure
+## Positioning & audience
 
-- **Primary nav:** About Us, Services, Growth Hormone, Testosterone, Hormone Testing, Get Started, and contact.
-- **SEO/content structure:** Large route set around hormone topics, medications, benefits, symptoms, and treatment explainers.
-- **Product/service routes:** Semaglutide appears under a product-style route, while core hormone services use informational category pages.
+The site targets adults, both men and women, seeking hormone optimization rather than a narrow men's-health-only offer. Its own proof language emphasizes specialization in hormone replacement therapy, "more than 14,000 men and women," and a decade-plus patient-experience claim. Growth hormone and testosterone are co-led in the hero, nav, and medication carousel; semaglutide appears as a newer product-card addition rather than the core front door.
 
-## Credibility & Proof
+## Nav structure
 
-- **Medical staff:** Structured data and pages name Dr. Paul Calise and Dr. Gordon Crozier.
-- **Operational claims:** Site references licensed U.S. pharmacies, LabCorp testing, physician review, and state-law restrictions.
-- **Caveat:** This vanilla run did not verify medical licensure, prescription fulfillment partners, state coverage, or patient counts.
+- **Primary:** Home, About Us, Services, Growth Hormone, Testosterone, Hormone Testing, Get Started, contact.
+- **Growth Hormone:** growth hormone overview, injections, cost pages, brand/PDP routes for Omnitrope, Zomacton, Genotropin, Norditropin, Humatrope, Saizen, and related how-to/FAQ articles.
+- **Testosterone:** low-testosterone overview, testosterone injections, testosterone therapy cost, insurance, cypionate/propionate/enanthate article routes, and related doctor/how-to pages.
+- **Sermorelin:** product PDP plus benefits, prescription, comparison, and combination/FAQ article routes.
+- **Product index:** Semaglutide; Super Male Panel; Super Female Panel; Complete Male Panel; Complete Female Panel; Sermorelin; Saizen; Humatrope; Norditropin; Genotropin; Zomacton; Omnitrope.
 
-## Visual & Brand Impression
+## Credibility & proof
 
-- **Presentation:** Older green-and-white clinic site with mountain/doctor stock imagery, dense SEO copy, medication sections, and physician cards.
-- **Quality read:** Usable and content-rich but dated; presentation feels template-heavy and less polished than newer healthcare ecommerce or clinic sites.
-- **Capture caveats:** Homepage screenshot includes a large blank dark-green medication section; some captured markdown includes empty SVG/image placeholders.
+- **Patient claim:** "Over the past 10 years we have helped more than 14,000 men and women" — self-reported on About/Homepage, not independently verified.
+- **Named clinicians:** The captured pages name Dr. Paul Calise and Dr. Gordon J. Crozier.
+- **Labs:** Hormone panel pages say Kingsberg uses LabCorp and emails results or provides a patient-portal path.
+- **Pharmacy:** The site claims prescriptions are filled by licensed US pharmacies; no named pharmacy partner or accreditation surfaced.
+
+## Visual & brand impression
+
+The June 17 homepage screenshot shows an older green-and-white WordPress clinic presentation: mountain/doctor stock hero imagery, dense nav, green CTA buttons, and long medical explainers. It is content-rich and clearly medical-service oriented, but visually dated and template-heavy; the homepage medication carousel section captured as a dark-green band with lazy/blank product media in places. The blind visual layer in `visual.md` supersedes this lightweight read.
 
 ## Provenance
 
-- **Pages captured:** Homepage, About Us, Services, Growth Hormone, Testosterone, Hormone Testing, Semaglutide, Get Started.
-- **Verify:** Firecrawl scrape verification passed for 8 captured pages before profile writing.
-- **Credits:** Firecrawl spend report showed 9 credits for this vanilla run.
-- **Couldn’t get:** Public prices, state availability list, pharmacy partners, external verification of physician/patient claims.
-- **Enriched:** No external enrichment beyond captured site artifacts.
+- **Pages:** Firecrawl map plus 29 active scrapes: homepage, product index, about/services/get-started/intake pages, growth hormone/testosterone/hormone-testing pages, 12 PDPs/panel pages, and 6 cost/insurance pages.
+- **Verify:** Active scrape ledger passed sourceURL, md5 uniqueness, and junk soft-404 checks before writing; duplicate testosterone ester alias pages were probed and excluded because they returned the same body as `/testosterone-injections/`.
+- **Credits:** Active packet records 30 Firecrawl credits in the manifest (1 map + 29 active scrapes); 3 extra duplicate-alias probes were performed then excluded from the active ledger.
+- **Couldn’t get:** Exact all-in treatment pricing, state coverage list, named pharmacy partners, legal entity, or external verification of physician/patient claims.
+- **Structured layer:** Homepage JSON-LD described a MedicalBusiness with areaServed US, `priceRange: "$$"`, HRT/endocrinology keywords, and an empty `sameAs`; its logo URL was stale/404, so logos were resolved from the header screenshot and Google S2 favicon.
+- **Run profile:** guided — full `/research-company` scope requested with cohort pack, logos, offerings, and visual evidence.
