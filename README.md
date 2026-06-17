@@ -23,7 +23,7 @@ Ask *"how do a dozen telehealth brands price semaglutide?"* and get one complete
 <p align="center">
   <img src="assets/ro-co-brief.webp" alt="Scrolling through Truffle's rendered brief for Ro" width="760">
   <br>
-  <sub><em>A real capture, rendered — <a href="https://ro.co">ro.co</a> wearing its own brand. To explore the full interactive page, open <code>assets/ro-co.html</code> from your clone in any browser — one self-contained file, no setup.</em></sub>
+  <sub><em>A real capture, rendered — <a href="https://ro.co">ro.co</a> wearing its own brand. To explore the full interactive page, open <code><a href="assets/ro-co.html">assets/ro-co.html</a></code> from your clone in any browser — one self-contained file, no setup.</em></sub>
 </p>
 
 <!-- TODO: capture-process demo GIF — /research-company producing a cited dossier (record with VHS) -->
