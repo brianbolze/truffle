@@ -1,6 +1,6 @@
 # Design: the `telehealth` cohort pack — the engine's first *cohort pack*
 
-> **What this is.** The reasoning behind the engine's first **cohort pack** — `store/<domain>/telehealth.md`, the per-company telehealth-specific classification the universal `profile.md` can't carry. The spec you *obey* is [`TELEHEALTH.md`](../modules/TELEHEALTH.md); this doc is the *why*. Companion to the [frame](2026-05-29-frame.md) (scope) and [architecture](2026-05-30-architecture.md) (lifecycle, modules).
+> **What this is.** The reasoning behind the engine's first **cohort pack** — `store/<domain>/telehealth.md`, the per-company telehealth-specific classification the universal `profile.md` can't carry. The spec you *obey* is [`TELEHEALTH.md`](../modules/cohort-packs/TELEHEALTH.md); this doc is the *why*. Companion to the [frame](2026-05-29-frame.md) (scope) and [architecture](2026-05-30-architecture.md) (lifecycle, modules).
 
 ## Why it exists
 
@@ -34,15 +34,17 @@ The exemplar is `pharmacy_model`: sites **lie** about owning their pharmacy (a b
 
 ## One contract, one generic linter
 
-The 8 cuts and their closed sets live in [`TELEHEALTH.md`](../modules/TELEHEALTH.md) — **not** `TAXONOMIES.md`, which holds the *universal* sets; a cohort owns its own vocabulary. The contract carries a **machine-readable closed-set block**, so [`scripts/cohortcheck.py`](../scripts/cohortcheck.py) is **one generic linter for every cohort pack**, not one script per cohort: `cohortcheck.py --cohort telehealth` reads telehealth's block. The next cohort ships a contract, not a script.
+The 8 cuts and their closed sets live in [`TELEHEALTH.md`](../modules/cohort-packs/TELEHEALTH.md) — **not** `TAXONOMIES.md`, which holds the *universal* sets; a cohort owns its own vocabulary. The contract carries a **machine-readable closed-set block**, so [`scripts/cohortcheck.py`](../scripts/cohortcheck.py) is **one generic linter for every cohort pack**, not one script per cohort: `cohortcheck.py --cohort telehealth` reads telehealth's block. The next cohort ships a contract, not a script.
 
 ## Registration, not a version bump
 
 A cohort pack is a separate file with its own `schema_version` — it changes nothing in `profile.md`, so registering it is a **docs edit to SCHEMA's Tier-1 modules section, not a `profile.md` version bump** (exactly how `offerings.md` was added). Membership is **file existence** — an absent `telehealth.md` reads "not in this cohort"; no universal pointer field (parity with `offerings.md`).
 
-## Open: the directory layout
+## Resolved: the directory layout
 
 The contracts stay **top-level CAPS files** for now (`OFFERINGS.md`, `TELEHEALTH.md`) — one depth module + one cohort pack isn't enough to earn a directory. **Deferred, with a flag:** the natural `cohorts/` name **collides** with the architecture's store-level [`cohorts/<category-slug>/`](2026-05-30-architecture.md) cross-company *signals* layer (a different thing — Signals, keyed by category, not per-domain State). So when a 2nd module earns a directory, the likely move is **one `modules/` dir for all contracts** (species noted inside, as SCHEMA's Tier-1 section already does), leaving `cohorts/` free for the signals concept. Don't prematurely pick `cohorts/`.
+
+**[Resolved 2026-06-16]** With `PRODUCTIVITY_SAAS.md` as the 2nd cohort pack, the packs moved to **`modules/cohort-packs/`** — named precisely (not bare `cohorts/`) to keep that word free for the store-level signals layer, exactly as flagged above.
 
 ## De-risked
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """cohortcheck — lint an opt-in cohort pack (store/<domain>/<cohort>.md) against its contract.
 
-A *cohort pack* (contract: `modules/<COHORT>.md`, e.g. modules/TELEHEALTH.md; species note: SCHEMA → Tier-1 modules) is the
+A *cohort pack* (contract: `modules/cohort-packs/<COHORT>.md`, e.g. modules/cohort-packs/TELEHEALTH.md; species note: SCHEMA → Tier-1 modules) is the
 vertical-specific classification layer the universal `profile.md` can't carry — its load-bearing invariant is
 that every cut is a declared closed-set value, so the cohort stays queryable. This is **one generic linter for
 every cohort pack**, not one script per cohort: it reads the cohort's own machine-readable closed-set block out
@@ -43,15 +43,15 @@ _FENCE_RE = re.compile(r"```ya?ml\n(.*?)```", re.S)
 
 
 def load_contract(cohort: str) -> dict[str, Any]:
-    """The cohort's machine-readable spec, sliced from `modules/<COHORT>.md` — `{cohort, doc_meta, fields:{name:[...]}}`.
+    """The cohort's machine-readable spec, sliced from `modules/cohort-packs/<COHORT>.md` — `{cohort, doc_meta, fields:{name:[...]}}`.
 
     Scans the contract's fenced yaml blocks and returns the first that declares both `cohort` and `fields` (so
     the human file-shape *template* block, which has neither, is skipped). This indirection is the whole point:
     the contract owns its closed sets, so one linter serves every cohort.
     """
-    path = os.path.join(ROOT, "modules", f"{cohort.upper()}.md")
+    path = os.path.join(ROOT, "modules", "cohort-packs", f"{cohort.upper()}.md")
     if not os.path.isfile(path):
-        sys.exit(f"cohortcheck: no contract modules/{cohort.upper()}.md — is '{cohort}' a real cohort?")
+        sys.exit(f"cohortcheck: no contract modules/cohort-packs/{cohort.upper()}.md — is '{cohort}' a real cohort?")
     with open(path, encoding="utf-8") as f:
         text = f.read()
     for block in _FENCE_RE.findall(text):
@@ -115,7 +115,7 @@ def check(slug: str, cohort: str, spec: dict[str, Any]) -> list[str]:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description="lint a cohort pack against its modules/<COHORT>.md contract")
-    ap.add_argument("--cohort", required=True, help="cohort name, e.g. telehealth (resolves to modules/TELEHEALTH.md)")
+    ap.add_argument("--cohort", required=True, help="cohort name, e.g. telehealth (resolves to modules/cohort-packs/TELEHEALTH.md)")
     ap.add_argument("--slug", help="lint one company (default: every store/*/<cohort>.md)")
     args = ap.parse_args()
 

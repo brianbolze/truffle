@@ -1,6 +1,6 @@
 # MAINTAINING — the contract change-map
 
-The markdown **contracts** are the source of truth: [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md) (the `profile.md` record), [`modules/OFFERINGS.md`](modules/OFFERINGS.md), [`modules/VISUAL.md`](modules/VISUAL.md), [`TELEHEALTH.md`](modules/TELEHEALTH.md) (and any future cohort pack), [`SIGNALS.md`](SIGNALS.md). Code (`scripts/`, `scripts/present/`, `tools/`) and the `store/` records are **downstream** — a contract edit can silently break a consumer that still assumes the old shape.
+The markdown **contracts** are the source of truth: [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md) (the `profile.md` record), [`modules/OFFERINGS.md`](modules/OFFERINGS.md), [`modules/VISUAL.md`](modules/VISUAL.md), the cohort packs [`TELEHEALTH.md`](modules/cohort-packs/TELEHEALTH.md) + [`PRODUCTIVITY_SAAS.md`](modules/cohort-packs/PRODUCTIVITY_SAAS.md) (and any future pack), [`SIGNALS.md`](SIGNALS.md). Code (`scripts/`, `scripts/present/`, `tools/`) and the `store/` records are **downstream** — a contract edit can silently break a consumer that still assumes the old shape.
 
 This table is the blast radius: change a thing on the left, move the things in the middle, and the right-hand **check** is your mechanical backstop. **Where the check column is `—`, nothing guards it yet** — that's exactly where a human sweep (`/drift-sweep`) earns its keep.
 
@@ -12,7 +12,8 @@ Cheap + deterministic — run it before you call the change done:
 ruff check scripts tools && python3 -m pytest tests/ -q
 python3 scripts/querycheck.py --strict     # profiles vs SCHEMA/TAXONOMIES + FIELD_VERSIONS sync
 python3 scripts/offeringscheck.py          # offerings.md roster contract + price-greppability
-python3 scripts/cohortcheck.py --cohort telehealth   # once per active cohort pack
+python3 scripts/cohortcheck.py --cohort telehealth          # once per active cohort pack…
+python3 scripts/cohortcheck.py --cohort productivity_saas   # …(telehealth + productivity_saas today)
 python3 scripts/visualcheck.py             # visual.md contract (no score/quality)
 python3 scripts/build_db.py --check        # the SQLite lens's structural invariants
 python3 scripts/store.py health            # staleness, stubs, module clock skew

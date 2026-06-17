@@ -4,7 +4,7 @@
 
 > **CAPS vs lowercase.** `TELEHEALTH.md` (this file, in `modules/`) = the **contract**. `store/<domain>/telehealth.md` = the **instances** that obey it. Same word, two roles — the case tells them apart.
 
-*Companion to [`SCHEMA.md`](../SCHEMA.md) (the always-on `profile.md` contract), [`TAXONOMIES.md`](../TAXONOMIES.md), and [`QUERYING.md`](../QUERYING.md). Lint: [`scripts/cohortcheck.py`](../scripts/cohortcheck.py). Module registration + the species distinction: [`SCHEMA.md` → Tier-1 modules](../SCHEMA.md#tier-1-modules-opt-in-separate-docs).*
+*Companion to [`SCHEMA.md`](../../SCHEMA.md) (the always-on `profile.md` contract), [`TAXONOMIES.md`](../../TAXONOMIES.md), and [`QUERYING.md`](../../QUERYING.md). Lint: [`scripts/cohortcheck.py`](../../scripts/cohortcheck.py). Module registration + the species distinction: [`SCHEMA.md` → Tier-1 modules](../../SCHEMA.md#tier-1-modules-opt-in-separate-docs).*
 
 ## What a cohort pack is (and isn't)
 
