@@ -1,0 +1,14 @@
+{
+  "record_version": "0.1",
+  "verb": "visual-evidence",
+  "status": "complete",
+  "tool": "codex",
+  "model": "gpt-5",
+  "trust": "agent",
+  "started_at": "2026-06-17T20:07:09Z",
+  "artifacts": [
+    "visual.md"
+  ],
+  "ended_at": "2026-06-17T20:13:45Z",
+  "note": "Manual visual-evidence fallback over cached clean tiles; workflow runtime unavailable in this thread."
+}
