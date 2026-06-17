@@ -14,6 +14,12 @@ Generic AI research forages the open web — paraphrased, undated, often bot-blo
 
 Ask *"how do a dozen telehealth brands price semaglutide?"* and get one complete, cited answer — what generic Claude + web search can't cheaply rebuild.
 
+## What you get
+
+- **A cited dossier per company** — what it sells, how it's priced, who's behind it, its visual identity — drawn from the company's *own* pages, every claim traceable to a captured source.
+- **A queryable store** — ask across one company or a whole cohort; answers come from local files, not a fresh crawl, so they're complete and ~free to re-ask.
+- **Human briefs** — render any company into a one-page HTML brief that wears its own captured brand.
+
 <p align="center">
   <img src="assets/ro-co-brief.webp" alt="Scrolling through Truffle's rendered brief for Ro" width="760">
   <br>
@@ -21,12 +27,6 @@ Ask *"how do a dozen telehealth brands price semaglutide?"* and get one complete
 </p>
 
 <!-- TODO: capture-process demo GIF — /research-company producing a cited dossier (record with VHS) -->
-
-## What you get
-
-- **A cited dossier per company** — what it sells, how it's priced, who's behind it, its visual identity — drawn from the company's *own* pages, every claim traceable to a captured source.
-- **A queryable store** — ask across one company or a whole cohort; answers come from local files, not a fresh crawl, so they're complete and ~free to re-ask.
-- **Human briefs** — render any company into a one-page HTML brief that wears its own captured brand.
 
 ## How it works
 
