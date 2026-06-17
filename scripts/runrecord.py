@@ -3,7 +3,7 @@
 
 Run records answer the operational question "what produced this capture?" without
 putting engine telemetry into company State. They are small JSON envelopes under
-`store/<slug>/runs/<UTC-compact-Z>-<verb>.json`; see RUNS.md for the contract.
+`store/<slug>/runs/<UTC-compact-Z>-<verb>.json`; see modules/RUNS.md for the contract.
 
 CLI:
   python3 scripts/runrecord.py now
@@ -52,14 +52,6 @@ def compact_stamp(value: str) -> str:
     return parse_iso_z(value).strftime("%Y%m%dT%H%M%SZ")
 
 
-def canon_slug(value: str) -> str:
-    """Store-dir slug fallback: lowercase, strip scheme/www, dots -> dashes."""
-    s = value.strip().lower()
-    s = re.sub(r"^https?://", "", s).rstrip("/")
-    s = re.sub(r"^www\.", "", s)
-    return s.replace(".", "-")
-
-
 def normalize_tool(value: str | None) -> str | None:
     """Tool labels are query keys, so normalize common spellings to stable slugs."""
     if not value:
@@ -72,7 +64,7 @@ def normalize_tool(value: str | None) -> str | None:
 
 def detect_tool(env: dict[str, str] | None = None) -> tuple[str | None, bool]:
     """(tool, env_trusted). Claude Code exposes deterministic env; Codex usually does not."""
-    e = env or os.environ
+    e = env if env is not None else os.environ
     if e.get("CLAUDECODE") or e.get("CLAUDE_CODE_SESSION_ID"):
         return "claude-code", True
     if tool := normalize_tool(e.get("AI_AGENT")):
@@ -145,12 +137,19 @@ def build_record(
     if not model.strip():
         raise ValueError("model is required")
 
-    e = env or os.environ
-    env_tool, env_trusted = detect_tool(e)
-    final_tool = env_tool or normalize_tool(tool)
+    e = env if env is not None else os.environ
+    # An explicit --tool is a self-report; honor it over env detection, which can leak — a Codex
+    # run spawned inside a Claude Code shell still carries CLAUDECODE and would otherwise stamp a
+    # falsely-confident `claude-code` / trust:env over the caller's `--tool codex`. Self-report ⇒ agent.
+    explicit_tool = normalize_tool(tool)
+    if explicit_tool:
+        final_tool, default_trust = explicit_tool, "agent"
+    else:
+        env_tool, env_trusted = detect_tool(e)
+        final_tool, default_trust = env_tool, ("env" if env_trusted else "agent")
     if not final_tool:
         raise ValueError("tool could not be detected; pass --tool")
-    final_trust = trust or ("env" if env_trusted else "agent")
+    final_trust = trust or default_trust
     if final_trust not in TRUST:
         raise ValueError(f"trust must be one of {sorted(TRUST)}")
 
@@ -186,9 +185,11 @@ def utc_now_from(value: str) -> str:
 
 def record_path(slug: str, record: dict[str, Any], root: Path | None = None) -> Path:
     """Destination path for a record. run_id is path-only, never a JSON field."""
+    from store import canon  # sibling module — the store's one domain-folding rule, so no local copy can drift
+
     store_root = root or STORE
     run_id = f"{compact_stamp(record['started_at'])}-{record['verb']}"
-    return store_root / canon_slug(slug) / "runs" / f"{run_id}.json"
+    return store_root / canon(slug) / "runs" / f"{run_id}.json"
 
 
 def write_record(slug: str, record: dict[str, Any], root: Path | None = None) -> Path:

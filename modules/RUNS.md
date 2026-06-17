@@ -31,7 +31,7 @@ Example:
 
 | Field | Contract |
 |---|---|
-| `record_version` | Required quoted MAJOR.MINOR for this JSON envelope. Current: `"0.1"`. This is not a markdown `schema_version`. |
+| `record_version` | Required quoted MAJOR.MINOR for this JSON envelope. Current: `"0.1"`. Not a markdown `schema_version` — see **Versioning** below. |
 | `verb` | Required: `research-company` · `deepen-offerings` · `visual-evidence`. The filename derives from this value. |
 | `status` | Required: `complete` · `partial`. Skips, crashes, and aborts write no record. |
 | `tool` | Required stable slug for the lead tool, e.g. `claude-code`, `codex`. Claude Code is env-detected; otherwise agent-supplied. |
@@ -43,6 +43,8 @@ Example:
 | `artifacts` | Required list of repo-relative markdown artifacts touched, e.g. `["profile.md"]`. Empty list is allowed for a partial run that produced no markdown. Assets ride with their markdown artifact. |
 | `components` | Optional list of LLM helpers only, each `{ "tool": "...", "model": "...", "role": "..." }`; omit for single-agent runs. Deterministic shell tools (`fc.py`, Playwright, ImageMagick) are not components. |
 | `note` | Optional one-line run color. Never make it the sole home of a company fact. |
+
+**Versioning.** `record_version` versions *this envelope only*. Every artifact keeps its own `schema_version` **inside itself** — a run that writes `profile.md` (2.6) + `offerings.md` (1.2) + `telehealth.md` (1.0) still stamps `record_version` `"0.1"` here. `artifacts` lists **paths, never versions**; to read an artifact's contract version, open the artifact (it's also in `store.db`).
 
 ## Write Rule
 

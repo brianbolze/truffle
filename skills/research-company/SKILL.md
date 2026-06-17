@@ -51,7 +51,7 @@ Once the slug is known, stamp the run clock before any work this verb may perfor
 ```bash
 RUN_STARTED_AT="$(python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" now)"
 ```
-Warm-skip runs write **no** run record; this clock is only carried forward if the run actually writes an artifact. (Contract: [`RUNS.md`](../../RUNS.md).)
+Warm-skip runs write **no** run record; this clock is only carried forward if the run actually writes an artifact. (Contract: [`RUNS.md`](../../modules/RUNS.md).)
 
 **2. Seed from the store + freshness gate (free).** If `store/<slug>/profile.md` exists:
 

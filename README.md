@@ -80,7 +80,7 @@ Captured once, a company stays warm for every future question, in any project. T
 | **Use it** — capture & query companies | the two verbs above |
 | **Read the store** — query recipes | [`QUERYING.md`](QUERYING.md) |
 | **Capture external signals** — SERP, funding, reviews over time | [`SIGNALS.md`](SIGNALS.md) |
-| **Inspect capture telemetry** — tool/model/effort per run | [`RUNS.md`](RUNS.md) |
+| **Inspect capture telemetry** — tool/model/effort per run | [`modules/RUNS.md`](modules/RUNS.md) |
 | **Understand why it exists** — the design | [`_design/2026-05-29-frame.md`](_design/2026-05-29-frame.md) |
 | **Build on the engine** — contracts, rules, agent routing | [`SCHEMA.md`](SCHEMA.md) · [`MAINTAINING.md`](MAINTAINING.md) · [`CLAUDE.md`](CLAUDE.md) |
 

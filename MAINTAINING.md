@@ -1,6 +1,6 @@
 # MAINTAINING — the contract change-map
 
-The markdown **contracts** are the source of truth: [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md) (the `profile.md` record), [`modules/OFFERINGS.md`](modules/OFFERINGS.md), [`modules/VISUAL.md`](modules/VISUAL.md), the cohort packs [`TELEHEALTH.md`](modules/cohort-packs/TELEHEALTH.md) + [`PRODUCTIVITY_SAAS.md`](modules/cohort-packs/PRODUCTIVITY_SAAS.md) (and any future pack), [`SIGNALS.md`](SIGNALS.md), [`RUNS.md`](RUNS.md). Code (`scripts/`, `scripts/present/`, `tools/`) and the `store/` records are **downstream** — a contract edit can silently break a consumer that still assumes the old shape.
+The markdown **contracts** are the source of truth: [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md) (the `profile.md` record), [`modules/OFFERINGS.md`](modules/OFFERINGS.md), [`modules/VISUAL.md`](modules/VISUAL.md), the cohort packs [`TELEHEALTH.md`](modules/cohort-packs/TELEHEALTH.md) + [`PRODUCTIVITY_SAAS.md`](modules/cohort-packs/PRODUCTIVITY_SAAS.md) (and any future pack), [`SIGNALS.md`](SIGNALS.md), [`modules/RUNS.md`](modules/RUNS.md). Code (`scripts/`, `scripts/present/`, `tools/`) and the `store/` records are **downstream** — a contract edit can silently break a consumer that still assumes the old shape.
 
 This table is the blast radius: change a thing on the left, move the things in the middle, and the right-hand **check** is your mechanical backstop. **Where the check column is `—`, nothing guards it yet** — that's exactly where a human sweep (`/drift-sweep`) earns its keep.
 
@@ -31,7 +31,7 @@ python3 scripts/store.py health            # staleness, stubs, module clock skew
 | **New cohort pack** | ship a `<COHORT>.md` with a machine-readable ```yaml``` block (`cohort` + `fields`) — **no new linter** (`cohortcheck` serves every pack); add a `<cohort>_full` view to `build_db.py` only if you want corpus aggregation | `cohortcheck --cohort <new>` |
 | **`visual.md` contract** (`VISUAL.md`) | `visualcheck.py`; the visual section in `present/model.py` | `visualcheck` |
 | **Signals path / envelope shape** (`SIGNALS.md`) | `signals.py persist()` owns the path; `signal_delta.py` if envelope keys change; the tool's paired `.md` | `tests/test_signals.py`, `tests/test_signal_delta.py` |
-| **Run-record envelope** (`RUNS.md`) | `scripts/runrecord.py`; the three capture skills if required/optional fields or write timing change | `tests/test_runrecord.py` |
+| **Run-record envelope** (`modules/RUNS.md`) | `scripts/runrecord.py`; the three capture skills if required/optional fields or write timing change | `tests/test_runrecord.py` |
 | **New capture tool** (`tools/`) | paired `tools/<tool>.md`; the `tools/README.md` table; `TOOL_SPEC` in `signals.py` if it's domain-drivable; `SIGNALS.md` if it's central | the tool's `tests/` file |
 
 ## Version + migration (don't restate — decide it in SCHEMA.md)
