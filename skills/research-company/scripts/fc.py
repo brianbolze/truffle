@@ -166,6 +166,21 @@ def is_not_found(title: str | None, md: str) -> bool:
     return bool(head and NOT_FOUND_RE.match(head))
 
 
+def source_stamp(source_url: str, captured: str) -> str:
+    """The provenance header prepended to every cleaned capture `.md` at write time.
+
+    The cleaned markdown is the durable, git-tracked primary-source cache; the
+    `.payloads/manifest.jsonl` that *also* records the URL is gitignored and pruned on a
+    curve (firecrawl-capture.md §"persist"), so a consumer can't rely on it. The source URL
+    is load-bearing for the Tier-B re-render (`scripts/shoot.py`), which otherwise has to
+    grep the body for a URL and mis-picks a nav/CTA link (the functionhealth miss) — so it
+    must be recorded here, at capture time, in the file the consumer already opens. HTML-comment
+    form (not a YAML `---` fence) matches the prior-art capture convention: it renders invisible
+    and keeps the verbatim page body pristine for quoting. Read it back with a first-match grep
+    on `^source_url:`."""
+    return f"<!--\nsource_url: {source_url}\ncaptured: {captured}\n-->\n\n"
+
+
 def do_scrape(
     url: str,
     slug: str,
@@ -235,7 +250,10 @@ def do_scrape(
     not_found = is_not_found(title, md)
     d = store(slug, date)
     (d / ".payloads" / f"{name}.json").write_text(json.dumps(out, indent=2))
-    (d / f"{name}.md").write_text(md)
+    # Stamp the resolved source URL (requested URL if Firecrawl returned none) so the cleaned
+    # body carries its own provenance — see source_stamp(). md5 above hashes the unstamped
+    # markdown, so the dedup/verify ledger is unaffected by this header.
+    (d / f"{name}.md").write_text(source_stamp(src or url, date) + md)
     shot = data.get("screenshot")
     shot_ok = ""
     if shot:

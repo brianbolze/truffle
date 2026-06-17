@@ -101,7 +101,7 @@ def release_scroll_lock(page) -> bool:   # dismiss-then-reverify; force reset on
 
 `FIND_DISMISS_TARGETS` / `RELEASE_SCROLL_LOCK` / the overlay classifier are written and proven in [`probe.py`](../experiments/2026-06-16-tier-b-dismissal/probe.py) — promotion is porting them into `shoot.py` and meeting [`.claude/rules/python.md`](../.claude/rules/python.md) (type hints, why-first docstrings; `shoot.py` is the one sanctioned `playwright` import).
 
-**Paired doc edits** (same change, propose-don't-write): SKILL.md step 2 — the "hides known consent vendors (OneTrust/Transcend/…)" line is now false; it becomes "faithful-first; on overlay contamination re-run with `--dismiss` (Escape + the page's own dismiss buttons); keep both views." VISUAL.md — one line that overlay dismissal is a Tier-B sub-mode logged in Provenance + manifest `dismissed:`, under `qa_status: recapture-used`. `source_url` upstream (#7) pairs with the same touch.
+**Paired doc edits** (same change, propose-don't-write): SKILL.md step 2 — the "hides known consent vendors (OneTrust/Transcend/…)" line is now false; it becomes "faithful-first; on overlay contamination re-run with `--dismiss` (Escape + the page's own dismiss buttons); keep both views." VISUAL.md — one line that overlay dismissal is a Tier-B sub-mode logged in Provenance + manifest `dismissed:`, under `qa_status: recapture-used`. `source_url` upstream (#7) pairs with the same touch. *(Done 2026-06-17 — `fc.py source_stamp`; see [BACKLOG](../BACKLOG.md) history.)*
 
 ---
 

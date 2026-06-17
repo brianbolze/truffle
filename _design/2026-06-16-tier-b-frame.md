@@ -48,7 +48,7 @@ Holistic — the whole capture → clean-tiles → evidence loop (`tile.py` over
 4. **`shoot.py` overview emission.** Give it the `overview-480w` `tile.py` already makes, so QA isn't blind on re-rendered pages (and the montage hack dies).
 5. **The two-pass trigger + cost.** How the sighted look decides "clean this page," and the ~2× render cost on contaminated pages (only they pay it).
 6. **Instrumentation.** Log what the agent flags / cleans / excludes (the mistakes-log) so zero-touch is *audited*, not assumed.
-7. **Upstream dependency.** Captures don't store page `source_url` ([BACKLOG](../BACKLOG.md)) — Tier-B needs it; pair the fix.
+7. **Upstream dependency.** Captures don't store page `source_url` ([BACKLOG](../BACKLOG.md)) — Tier-B needs it; pair the fix. — **Resolved 2026-06-17:** `fc.py source_stamp` stamps each cleaned `.md`; Tier-B reads it.
 
 Separate, parallel track (not this session): widen the spot-check scope; build the mistakes-log itself.
 
