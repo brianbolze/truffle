@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/pt-141
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/pt-141#main-content) PT-141 Peptide Therapy for Enhanced Libido \| Lifeforce
 
 ![PT141_PDP_1](https://www.mylifeforce.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F130005%2F3600x4512%2Fc13a58a760%2Fpt141_pdp_1_mobile.jpg&w=3840&q=70)

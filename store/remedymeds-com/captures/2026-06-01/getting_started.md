@@ -1,3 +1,8 @@
+<!--
+source_url: https://remedymeds.com/documents/getting-started
+captured: 2026-06-01
+-->
+
 # Welcome to...
 
 # The \#1 weight-loss prescription company for patients. Your health is our \#1 priority

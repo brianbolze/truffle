@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.firstround.com/who-we-back
+captured: 2026-06-14
+-->
+
 # You’re not for everyone.  _Neither are we._
 
 We back founders who go unreasonably deep to

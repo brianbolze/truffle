@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.patek.com/manufacture/a-story-of-independence
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.patek.com/manufacture/a-story-of-independence/our-values#content)
 
 ![PP_banner_OUR_VALUES_HOR](https://patek-res.cloudinary.com/dfsmedia/0906caea301d42b3b8bd23bd656d1711/306007-51882)

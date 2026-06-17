@@ -1,3 +1,8 @@
+<!--
+source_url: https://invigormedical.com/function/sexual-health/
+captured: 2026-06-04
+-->
+
 ![Revisit consent button](https://cdn-cookieyes.com/assets/images/revisit.svg)
 
 We value your privacy

@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/nad-injection/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/nad-injection/#primary)
 
 [![AgelessRx](https://agelessrx.com/wp-content/themes/agelessrx-2024/assets/images/arx-ui/logos/agelessrx-teal.svg)](https://agelessrx.com/)

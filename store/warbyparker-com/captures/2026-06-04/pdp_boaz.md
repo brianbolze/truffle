@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.warbyparker.com/sunglasses/boaz/jet-black
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.warbyparker.com/sunglasses/boaz/jet-black?w=wide#main-content)
 
 Boaz image carousel

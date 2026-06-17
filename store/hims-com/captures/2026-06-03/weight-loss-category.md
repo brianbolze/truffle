@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.hims.com/weight-loss
+captured: 2026-06-03
+-->
+
 The GLP-1 pill is here.
 
 [Check it out ➜](https://www.hims.com/weight-loss/wegovy-pill)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ideo.com/playlab
+captured: 2026-06-04
+-->
+
 ![The human-centered design company](https://cdn.prod.website-files.com/67cb2dd62d5110e2973d39d7/692e1f10f82e5d902e36fd31_lab_play_hero.png)
 
 ## Applying the power of play far beyond the world of toys.

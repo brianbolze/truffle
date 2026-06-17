@@ -1,3 +1,8 @@
+<!--
+source_url: https://sequoiacap.com/legal/
+captured: 2026-06-14
+-->
+
 [Skip to main content](https://sequoiacap.com/legal/#main)
 
 # Legal

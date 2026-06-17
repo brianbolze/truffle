@@ -1,3 +1,8 @@
+<!--
+source_url: https://electra.aero/defense
+captured: 2026-06-14
+-->
+
 [![Electra](https://electra-aero.s3.us-east-1.amazonaws.com/electra-logo.svg)](https://electra.aero/)
 
 # **Delivering Runway Independence**

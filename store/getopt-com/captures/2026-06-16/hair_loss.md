@@ -1,3 +1,8 @@
+<!--
+source_url: https://getopt.com/learn/protocols/hair-loss
+captured: 2026-06-16
+-->
+
 ## Hair Loss
 
 Androgenic alopecia (otherwise known as male pattern baldness) is the most common cause of hair loss in men. This form of hair loss is usually related to your genetics. If you have a close relative with androgenic alopecia, you’re likely to experience it as well.

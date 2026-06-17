@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.nurx.com/weight-management/glp1-injections/
+captured: 2026-06-04
+-->
+
 ![Three different injectable medication pens are displayed upright and lying down on clear rectangular stands against a gradient background.](https://nurx-www.imgix.net/wp-content/uploads/2025/05/25092444/Nurx_WM_PDP_GLP1Injections_1.png?w=320&auto=format,compress&fit=crop&h=320)
 
 ![Three injectable medication pens, labeled as ZepBound, Saxenda, and Wegovy, are arranged diagonally on a pastel gradient background with their caps removed or nearby.](https://nurx-www.imgix.net/wp-content/uploads/2025/05/25092454/Nurx_WM_PDP_GLP1Injections_2.png?w=320&auto=format,compress&fit=crop&h=320)

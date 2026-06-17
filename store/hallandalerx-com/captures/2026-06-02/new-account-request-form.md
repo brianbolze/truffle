@@ -1,3 +1,8 @@
+<!--
+source_url: https://partner.hallandalerx.com/new-account-request-case
+captured: 2026-06-02
+-->
+
 Skip to Main
 
 ![Hallandale Pharmacy Logo](https://assets.hallandalerx.com/images/logos/Hallandale+Pharmacy+Horizontal.svg)

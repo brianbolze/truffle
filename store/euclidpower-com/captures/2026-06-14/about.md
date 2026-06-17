@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.euclidpower.com/about
+captured: 2026-06-14
+-->
+
 [Skip to main content](https://www.euclidpower.com/#main)
 
 [Euclid acquires Thresh to expand AI-powered diligence capabilities for investors and developers](https://www.euclidpower.com/thresh-acquisition)

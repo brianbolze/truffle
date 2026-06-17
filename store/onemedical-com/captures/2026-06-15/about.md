@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.onemedical.com/about-us/
+captured: 2026-06-15
+-->
+
 One Medical is a primary care practice on a mission to make getting quality care more affordable, accessible, and enjoyable for all through a blend of human-centered design, technology, and an exceptional team. Our members enjoy seamless access to comprehensive care at calming offices near where they work, live, and shop in nineteen major U.S. cities, as well as 24/7 access to virtual care. In addition to a direct-to-consumer membership model, we work with more than 8,500 companies to provide One Medical health benefits to their employees.
 
 ![Services](https://www.onemedical.com/media/images/media-about-1_jWULUF1.original.jpg)

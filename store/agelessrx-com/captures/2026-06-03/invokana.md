@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/invokana/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/invokana/#primary)
 
 ![Product image #1 for Invokana®](https://agelessrx.com/wp-content/uploads/SGLT2-2.png)

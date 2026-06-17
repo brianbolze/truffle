@@ -1,3 +1,8 @@
+<!--
+source_url: https://directmeds.com/all-solutions/pain-management/
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://directmeds.com/all-solutions/pain-management/#main-content)Open Mobile Menu
 
 [![Direct Meds](https://directmeds.com/app/uploads/2025/06/logo.svg)](https://directmeds.com/)

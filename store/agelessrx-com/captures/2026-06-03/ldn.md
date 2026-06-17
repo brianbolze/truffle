@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/ldn/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/ldn/#primary)
 
 ![Product image #1 for Low Dose Naltrexone](https://agelessrx.com/wp-content/uploads/ldn-product-img.png)

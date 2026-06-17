@@ -1,3 +1,8 @@
+<!--
+source_url: https://joinfound.com/medication/compounded-semaglutide
+captured: 2026-06-04
+-->
+
 [Get up to $100 off your membership plan today!‡](https://clinic.joinfound.com/health-assessment-survey/welcome)
 
 [home](https://joinfound.com/)

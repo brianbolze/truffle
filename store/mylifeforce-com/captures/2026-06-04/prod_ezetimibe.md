@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/ezetimibe
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/ezetimibe#main-content)
 
 Buy Ezetimibe Online: Affordable Cholesterol Support

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.functionhealth.com/scans
+captured: 2026-06-01
+-->
+
 [How it works](https://www.functionhealth.com/how-it-works) [What we test](https://www.functionhealth.com/what-we-test) [About](https://www.functionhealth.com/about) [MRI & CT scans](https://www.functionhealth.com/scans) [FAQ](https://www.functionhealth.com/faq) [Gift Function](https://www.functionhealth.com/gifting) [Pricing](https://www.functionhealth.com/pricing) [For employers](https://www.functionhealth.com/for-business) [Contact us](https://www.functionhealth.com/contact-us)
 
 #### Scans were always essential.Now they’re _accessible, too._

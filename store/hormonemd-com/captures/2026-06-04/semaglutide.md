@@ -1,3 +1,8 @@
+<!--
+source_url: https://hormonemd.com/semaglutide
+captured: 2026-06-04
+-->
+
 ![Wave](https://imagedelivery.net/X2fm99A2m4ExYgx0B_biNQ/329a43e5-9d5e-488b-67c8-e3e4a1c0b200/public)
 
 # Compounded Semaglutide

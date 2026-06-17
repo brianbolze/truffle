@@ -1,3 +1,8 @@
+<!--
+source_url: https://getopt.com/how-it-works
+captured: 2026-06-04
+-->
+
 Call for a free consultation: [855-409-7235](tel:8554097235)
 
 ## Understanding Our Approach to ![](https://getopt.com/wp-content/uploads/2024/05/Icon-1.svg) Your Health

@@ -1,3 +1,8 @@
+<!--
+source_url: https://spero.vc/about/
+captured: 2026-06-14
+-->
+
 ## Spero is a boutique venture capital firm for the purposeful
 
 We back founders who are using tech to tackle humanity’s biggest challenges, pursuing venture-scale change through disciplined, daily execution.

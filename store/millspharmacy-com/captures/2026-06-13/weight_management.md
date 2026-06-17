@@ -1,3 +1,8 @@
+<!--
+source_url: https://millspharmacy.com/compounding/specialties/weight-management/
+captured: 2026-06-13
+-->
+
 ![Spinner: Black decorative](https://cdn.userway.org/widgetapp/images/spin_bl.svg)
 
 ![](https://cdn.userway.org/widgetapp/images/body_bl.svg)

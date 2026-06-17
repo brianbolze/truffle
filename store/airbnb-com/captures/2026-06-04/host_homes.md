@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.airbnb.com/host/homes
+captured: 2026-06-04
+-->
+
 [Skip to content](https://www.airbnb.com/host/homes#site-content) Open Questions?
 
 [Get started](https://www.airbnb.com/become-a-host?present_over_modals=true)

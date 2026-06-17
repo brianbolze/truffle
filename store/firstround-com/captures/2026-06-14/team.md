@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.firstround.com/team
+captured: 2026-06-14
+-->
+
 # Some investors create work for you.  We do the work with you.
 
 You'll get deep-in-the-weeds working sessions, emails answered at all hours, and someone to bring the hard conversations to.

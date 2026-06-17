@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/iollo-advanced-at-home-metabolic-test/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/iollo-advanced-at-home-metabolic-test/#primary)
 
 ![Product image #1 for iollo Advanced At-Home Metabolic Test](https://agelessrx.com/wp-content/uploads/iollo-kit.png)

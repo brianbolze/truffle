@@ -1,3 +1,8 @@
+<!--
+source_url: https://honehealth.com/hypothyroidism/men
+captured: 2026-06-03
+-->
+
 [skip to content](https://honehealth.com/hypothyroidism/men/#main)
 
 Low EnergyHot FlashesInflammationCognitionTRTBrain Fog

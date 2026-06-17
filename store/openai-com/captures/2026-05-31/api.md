@@ -1,3 +1,8 @@
+<!--
+source_url: https://openai.com/api/
+captured: 2026-05-31
+-->
+
 API Platform \| OpenAI
 
 # Build leading AI products on OpenAI’s platform

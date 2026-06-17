@@ -1,3 +1,8 @@
+<!--
+source_url: https://mdintegrations.com/ecommerce
+captured: 2026-06-02
+-->
+
 [![MD Integrations Logo](https://mdintegrations.com/hubfs/logo.svg)Homepage](https://mdintegrations.com/ecommerce#)
 
 [Get started](https://mdintegrations.com/?hsLang=en)

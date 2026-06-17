@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.warbyparker.com/buy-a-pair-give-a-pair
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.warbyparker.com/buy-a-pair-give-a-pair#main-content)
 
 ![A collage of images with the phrases "Buy a Pair" on the left and "Give a Pair" on the right. In the center, a young person wearing glasses is smiling and reading a book in a library setting. Overlapping this is an image of a person sitting outdoors. The background is dark blue.](https://img.warbyparker.com/v2/CFM-29910%20-%2020MEcomBAPGAPLandingPageRefresh_Mobile_Module01_Hero-e7435e23d3074312baf8582e66946af7.gif?quality=80&width=3840)

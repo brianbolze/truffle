@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ivyrx.com/weight-loss
+captured: 2026-06-04
+-->
+
 [Important Update Banner](https://www.ivyrx.com/weight-loss#)
 Close Announcement Banner
 

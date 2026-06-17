@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/compounded-liraglutide/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/compounded-liraglutide/#primary)
 
 ![Product image #1 for Compounded Liraglutide](https://agelessrx.com/wp-content/uploads/compounded-liraglutide-1-1.png)

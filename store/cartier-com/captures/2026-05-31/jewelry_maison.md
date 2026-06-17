@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.cartier.com/en-us/jewelry/cartier-jewelry
+captured: 2026-05-31
+-->
+
 Cartier
 
 [Skip to main content](https://www.cartier.com/en-us/jewelry/cartier-jewelry/#main "Skip to main content")

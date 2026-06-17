@@ -1,3 +1,8 @@
+<!--
+source_url: https://norexi.org
+captured: 2026-06-02
+-->
+
 # Take your practice to the next level with Norexi Semaglutide and Tirzepatide Injections.
 
 AVAILABLE TO PHYSICIANS ONLY

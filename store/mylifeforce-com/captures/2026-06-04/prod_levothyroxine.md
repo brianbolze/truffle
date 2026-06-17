@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/levothyroxine
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/levothyroxine#main-content) Levothyroxine
 
 ![Levothyroxine](https://www.mylifeforce.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F130005%2F1800x2256%2F042e0f1b2c%2Flevothyroxine_pdp_s_pdp_asset.jpg&w=3840&q=70)

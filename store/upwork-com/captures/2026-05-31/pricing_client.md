@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.upwork.com/pricing/client
+captured: 2026-05-31
+-->
+
 [Upwork Homepage](https://www.upwork.com/)
 
 Hire talent

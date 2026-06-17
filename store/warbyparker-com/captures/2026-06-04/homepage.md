@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.warbyparker.com
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.warbyparker.com/#main-content)
 
 - [Premium eyewear, starting at $95](https://www.warbyparker.com/eyeglasses)

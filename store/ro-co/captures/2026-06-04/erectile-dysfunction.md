@@ -1,3 +1,8 @@
+<!--
+source_url: https://ro.co/erectile-dysfunction/
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://ro.co/erectile-dysfunction/#skip-nav-target)
 
 # ED medication, prescribed online

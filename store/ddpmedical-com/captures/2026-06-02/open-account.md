@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ddpmedical.com/pages/open-an-account-medical-partner-dme-physician-offices-surgical-centers
+captured: 2026-06-02
+-->
+
 [Skip to content](https://www.ddpmedical.com/pages/open-an-account-medical-partner-dme-physician-offices-surgical-centers#MainContent)
 
 ## Item added to your cart

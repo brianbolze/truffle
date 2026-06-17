@@ -1,3 +1,8 @@
+<!--
+source_url: https://openloophealth.com/clinicians/clinician-network
+captured: 2026-06-11
+-->
+
 # The OpenLoop Clinician Network
 
 Top providers dedicated to delivering meaningful patient care.

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.struthealth.com/faq
+captured: 2026-06-04
+-->
+
 #### Select a treatment to   get started
 
 [For him](https://www.struthealth.com/faq#w-tabs-0-data-w-pane-0) [For her](https://www.struthealth.com/faq#w-tabs-0-data-w-pane-1)

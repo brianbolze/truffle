@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.warbyparker.com/history
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.warbyparker.com/history#main-content)
 
 ## History

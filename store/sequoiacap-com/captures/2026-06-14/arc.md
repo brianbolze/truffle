@@ -1,3 +1,8 @@
+<!--
+source_url: https://sequoiacap.com/arc/
+captured: 2026-06-14
+-->
+
 ![](https://cdn.prod.website-files.com/62a7870a627de0500c174a85/687e7723d277095739b0296a_Rectangle%204170.jpg)
 
 ![](https://cdn.prod.website-files.com/62ab9f5883102f5c9a585b63/63bd2cd98eb5267d83a44310_Arc%20Logo.svg)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.noom.com/lose-weight/
+captured: 2026-06-04
+-->
+
 # NOOM WEIGHT
 
 Lose the Weight For Good.

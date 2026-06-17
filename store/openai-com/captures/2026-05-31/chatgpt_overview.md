@@ -1,3 +1,8 @@
+<!--
+source_url: https://openai.com/chatgpt/overview/
+captured: 2026-05-31
+-->
+
 Log in
 
 Sign up for free

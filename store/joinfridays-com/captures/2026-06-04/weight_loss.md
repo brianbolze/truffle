@@ -1,3 +1,8 @@
+<!--
+source_url: https://joinfridays.com/weight-loss
+captured: 2026-06-04
+-->
+
 ##### Disclaimer
 
 Medications will only be prescribed by a licensed clinician if deemed medically appropriate after a thorough consultation. Not available in all 50 states. Results are not guaranteed and may vary by individual as part of a personalized weight loss program. Benefits outlined are based on third party studies.Providers may prescribe compounded medications as needed to meet patient requirements. Please visit our website for important drug safety information. The FDA does not approve nor review compounded products for safety, effectiveness, or quality.‍

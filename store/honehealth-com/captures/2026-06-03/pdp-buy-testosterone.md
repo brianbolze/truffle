@@ -1,3 +1,8 @@
+<!--
+source_url: https://honehealth.com/mens/buy-testosterone
+captured: 2026-06-03
+-->
+
 [skip to content](https://honehealth.com/mens/buy-testosterone/#main)
 
 Low EnergyHot FlashesInflammationCognitionTRTBrain Fog

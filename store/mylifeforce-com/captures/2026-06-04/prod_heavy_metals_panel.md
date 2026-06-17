@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/heavy-metals-panel
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/heavy-metals-panel#main-content)
 
 Heavy Metals Panel Lab Analysis For Detox Support

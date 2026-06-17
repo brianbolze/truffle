@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.patek.com/service/our-commitment-to-service
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.patek.com/service/our-commitment-to-service/our-commitment-to-service#content)
 
 ![PP_banner_importance-of-maintenance_3840x2160](https://patek-res.cloudinary.com/dfsmedia/0906caea301d42b3b8bd23bd656d1711/306064-51882)

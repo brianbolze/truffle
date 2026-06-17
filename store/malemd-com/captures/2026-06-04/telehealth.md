@@ -1,3 +1,8 @@
+<!--
+source_url: https://malemd.com/telehealth
+captured: 2026-06-04
+-->
+
 [Skip to Content](https://malemd.com/telehealth#main-content)
 
 # Telehealth

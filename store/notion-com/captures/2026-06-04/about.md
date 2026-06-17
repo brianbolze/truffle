@@ -1,3 +1,8 @@
+<!--
+source_url: https://notion.com/about
+captured: 2026-06-04
+-->
+
 # About Notion
 
 ## A story of tools and the future of work

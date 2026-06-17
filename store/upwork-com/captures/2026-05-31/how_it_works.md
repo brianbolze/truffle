@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.upwork.com/i/how-it-works/client/
+captured: 2026-05-31
+-->
+
 [Skip to content](https://www.upwork.com/i/how-it-works/client/#)
 
 [Upwork Homepage](https://www.upwork.com/)

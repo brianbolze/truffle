@@ -1,3 +1,8 @@
+<!--
+source_url: https://goinfusive.com
+captured: 2026-06-09
+-->
+
 [![Site Logo](https://goinfusive.com/wp-content/uploads/2025/11/site-logo.svg)](https://goinfusive.com/)
 
 - About

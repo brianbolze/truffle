@@ -1,3 +1,8 @@
+<!--
+source_url: https://ro.co/weight-loss/
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://ro.co/weight-loss/#skip-nav-target)
 
 # Get access to prescription weight loss medication online

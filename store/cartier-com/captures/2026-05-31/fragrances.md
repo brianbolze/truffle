@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.cartier.com/en-us/fragrances/signatures
+captured: 2026-05-31
+-->
+
 Cartier
 
 [Skip to main content](https://www.cartier.com/en-us/fragrances/signatures/#main "Skip to main content")

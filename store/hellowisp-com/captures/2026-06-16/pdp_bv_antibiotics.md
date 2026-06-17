@@ -1,3 +1,8 @@
+<!--
+source_url: https://hellowisp.com/products/bv-antibiotics
+captured: 2026-06-16
+-->
+
 [Bacterial Vaginosis \| Prescription](https://hellowisp.com/shop/vaginal-health/bacterial-vaginosis)
 
 # BV Antibiotics (Tablets or Gel)

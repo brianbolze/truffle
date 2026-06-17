@@ -1,3 +1,8 @@
+<!--
+source_url: https://bluechew.com/about
+captured: 2026-06-04
+-->
+
 Healthcare should not be expensive or a hassle. BlueChew customers get easy access to a medical professional dedicated to helping patients achieve stronger and longer-lasting erections.
 
 If prescribed, we ship directly to your front door.

@@ -1,3 +1,8 @@
+<!--
+source_url: https://swatch.com
+captured: 2026-05-31
+-->
+
 [Skip to content (press Enter)](https://www.swatch.com/en-us/#maincontent) [Skip to footer (press Enter)](https://www.swatch.com/en-us/#footercontent)
 
 Alert

@@ -1,3 +1,8 @@
+<!--
+source_url: https://openai.com/about/
+captured: 2026-05-31
+-->
+
 About \| OpenAI
 
 Company

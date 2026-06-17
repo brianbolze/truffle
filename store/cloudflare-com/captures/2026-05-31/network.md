@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.cloudflare.com/network/
+captured: 2026-05-31
+-->
+
 ## Cloudflare Global Network
 
 One of the world's largest networks — running every service in every data center for unmatched performance, security, and reliability.

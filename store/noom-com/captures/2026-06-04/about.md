@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.noom.com/about-us/
+captured: 2026-06-04
+-->
+
 ![Smiling woman with curly hair and white headphones around her neck, set against a circular coral background. Represents joy, energy, and the supportive Noom community.](https://www.noom.com/tachyon/2025/04/mask-group1.png?w=1080)
 
 ![Smiling woman with curly hair wearing a white top, set against a circular coral background. Represents positivity, confidence, and Noom’s diverse and supportive user community.](https://www.noom.com/tachyon/2025/04/mask-group-3.png?w=1080)

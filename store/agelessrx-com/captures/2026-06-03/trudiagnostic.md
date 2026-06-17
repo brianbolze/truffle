@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/trudiagnostic/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/trudiagnostic/#primary)
 
 ![Product image #1 for At-Home BioAge Blood Test](https://agelessrx.com/wp-content/uploads/trudiagnostic-product-img.png)

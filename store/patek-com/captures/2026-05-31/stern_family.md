@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.patek.com/manufacture/a-story-of-independence/the-stern-family
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.patek.com/manufacture/a-story-of-independence/the-stern-family#content)
 
 ![pp-philippe-thierry-stern-architectural-model-pp6-hor](https://patek-res.cloudinary.com/dfsmedia/0906caea301d42b3b8bd23bd656d1711/250207-51882)

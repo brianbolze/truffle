@@ -1,3 +1,8 @@
+<!--
+source_url: https://getopt.com/program-goals/women-weight-loss
+captured: 2026-06-16
+-->
+
 ## Weight Loss
 
 Carrying excess weight can impact your health, energy levels, and self-esteem. At Opt Health, we understand the challenges of losing weight and keeping it off. That's why we offer personalized programs designed to help you achieve sustainable weight loss under the guidance of our licensed physicians.

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.airbnb.com
+captured: 2026-06-04
+-->
+
 [Skip to content](https://www.airbnb.com/#site-content)
 
 # Airbnb homepage

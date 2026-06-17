@@ -1,3 +1,8 @@
+<!--
+source_url: https://joiandblokes.com/shop/men/
+captured: 2026-06-04
+-->
+
 [MEN’S HEALTH MONTH: 25% OFF SITE-WIDE + 65% OFF LABS ⚡ USE CODE: MENSHEALTH](https://joiandblokes.com/?rc=MENSHEALTH)
 
 Your Bag

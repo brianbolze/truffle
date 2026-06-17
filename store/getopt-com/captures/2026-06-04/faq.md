@@ -1,3 +1,8 @@
+<!--
+source_url: https://getopt.com/faq
+captured: 2026-06-04
+-->
+
 FAQ
 
 

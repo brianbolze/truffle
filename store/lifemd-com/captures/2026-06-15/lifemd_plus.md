@@ -1,3 +1,8 @@
+<!--
+source_url: https://lifemd.com/lifemd-plus
+captured: 2026-06-15
+-->
+
 Please note: This website includes an accessibility system. Press Control-F11 to adjust the website to people with visual disabilities who are using a screen reader; Press Control-F10 to open an accessibility menu.
 
 Accessibility

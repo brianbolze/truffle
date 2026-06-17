@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/biological-age-calculator/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/biological-age-calculator/#primary)
 
 ![Product image #1 for Online Phenotypic Calculator](https://agelessrx.com/wp-content/uploads/bioage-calculator-product-img.png)

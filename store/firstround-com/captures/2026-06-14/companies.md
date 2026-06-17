@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.firstround.com/companies
+captured: 2026-06-14
+-->
+
 # We invest in companies long before anyone knows their name.
 
 (Often before they even have one.)

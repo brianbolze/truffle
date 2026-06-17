@@ -1,3 +1,8 @@
+<!--
+source_url: https://parlance.cc/scottwitt
+captured: 2026-06-10
+-->
+
 # About&Contact
 
 ## Scott Witt \| Founder

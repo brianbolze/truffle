@@ -1,3 +1,8 @@
+<!--
+source_url: https://bluechew.com/vardenafil
+captured: 2026-06-04
+-->
+
 ![VAR Product](https://static.bluechew.com/assets/images/funnels_assets/var-slide-1.jpg)
 
 ![VAR Product](https://static.bluechew.com/assets/images/funnels_assets/var-slide-2.jpg)

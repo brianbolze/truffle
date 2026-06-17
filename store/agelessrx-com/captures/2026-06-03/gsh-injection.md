@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/gsh-injection/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/gsh-injection/#primary)
 
 ![Product image #1 for Glutathione Injection](https://agelessrx.com/wp-content/uploads/glutathione-injection-product-img.png)

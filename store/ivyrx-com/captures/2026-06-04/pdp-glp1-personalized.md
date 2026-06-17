@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ivyrx.com/products/personalized-glp-1-injections
+captured: 2026-06-04
+-->
+
 [home](https://www.ivyrx.com/)
 
 [login](https://patient.ivyrx.com/) login

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.sorafuel.com/terms-of-use
+captured: 2026-06-14
+-->
+
 [Skip to content](https://www.sorafuel.com/terms-of-use#main-content)
 
 [← Back to home](https://www.sorafuel.com/)

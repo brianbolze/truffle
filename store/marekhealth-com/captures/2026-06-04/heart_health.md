@@ -1,3 +1,8 @@
+<!--
+source_url: https://marekhealth.com/heart-health
+captured: 2026-06-04
+-->
+
 We use cookies to improve site functionality, analyze traffic, and deliver personalized content and ads. Some cookies are essential, while others help us understand how you use our site. You can manage your preferences at any time. Visit our [Privacy Policy](https://marekhealth.com/privacy-policy) to learn more.
 
 Manage preferencesAccept All

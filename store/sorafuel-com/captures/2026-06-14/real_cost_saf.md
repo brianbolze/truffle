@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.sorafuel.com/news/the-real-cost-of-saf-why-the-unit-economics-of-feedstock-will-decide-which-approach-replaces-fossil-fuels
+captured: 2026-06-14
+-->
+
 [Skip to content](https://www.sorafuel.com/news/the-real-cost-of-saf-why-the-unit-economics-of-feedstock-will-decide-which-approach-replaces-fossil-fuels#main-content)
 
 [← Back to home](https://www.sorafuel.com/)

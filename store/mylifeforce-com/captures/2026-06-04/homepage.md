@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/#static-page)
 
 [How It Works](https://www.mylifeforce.com/pages/how-it-works)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://electra.aero/team
+captured: 2026-06-14
+-->
+
 [![Electra](https://electra-aero.s3.us-east-1.amazonaws.com/electra-logo.svg)](https://electra.aero/)
 
 # **Meet the Innovators Behind the Flight**

@@ -1,3 +1,8 @@
+<!--
+source_url: https://alange-soehne.com
+captured: 2026-05-31
+-->
+
 Skip to main contentEnable accessibility for low visionOpen the accessibility menu
 
 ![](https://www.alange-soehne.com/us-en)

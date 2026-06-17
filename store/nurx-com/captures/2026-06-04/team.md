@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.nurx.com/team/
+captured: 2026-06-04
+-->
+
 ## Everyone is saying that healthcare is broken. We're here to fix it.
 
 We believe healthcare should be unconditional. It doesn’t matter who you are or what you get up to in your own time. You deserve to be treated quickly and with compassion. That’s why we’re pioneering a new type of healthcare that’s easier and smarter, one in which vital medications and tests are accessible and affordable to everyone. No ifs, no buts.

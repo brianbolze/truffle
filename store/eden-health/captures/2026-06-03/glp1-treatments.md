@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.eden.health/treatment/glp-1-treatments
+captured: 2026-06-03
+-->
+
 [skip to main](https://www.eden.health/treatment/glp-1-treatments#)
 
 [Eden Logo, Go to Home Page](https://www.eden.health/)

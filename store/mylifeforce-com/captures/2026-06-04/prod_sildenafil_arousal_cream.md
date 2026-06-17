@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/sildenafil-arousal-cream
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/sildenafil-arousal-cream#main-content)
 
 Sildenafil Arousal Cream For Enhanced Sensation & Confidence

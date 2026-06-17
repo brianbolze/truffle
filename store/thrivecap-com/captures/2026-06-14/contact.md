@@ -1,3 +1,8 @@
+<!--
+source_url: https://thrivecap.com/contact
+captured: 2026-06-14
+-->
+
 Thrive Capital
 
 New York, New York

@@ -1,3 +1,8 @@
+<!--
+source_url: https://verdegoaero.com/product/aircraft-integration/
+captured: 2026-06-14
+-->
+
 ![](https://verdegoaeropro.wpengine.com/wp-content/uploads/va-logo-color.svg)
 
 # SEAMLESS INTEGRATION FOR MAXIMUM PERFORMANCE

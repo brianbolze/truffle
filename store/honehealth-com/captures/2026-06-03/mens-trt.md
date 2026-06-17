@@ -1,3 +1,8 @@
+<!--
+source_url: https://honehealth.com/mens/testosterone-replacement-therapy
+captured: 2026-06-03
+-->
+
 [skip to content](https://honehealth.com/mens/testosterone-replacement-therapy/#main)
 
 Low EnergyHot FlashesInflammationCognitionTRTBrain Fog

@@ -1,3 +1,8 @@
+<!--
+source_url: https://granola.ai/ai-note-taker
+captured: 2026-05-31
+-->
+
 # More than an AI note-taker
 
 Discover the difference between an AI note-taker and an AI notepad. Learn about how Granola helps you stay focused in meetings and in control of your notes.

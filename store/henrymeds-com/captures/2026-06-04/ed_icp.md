@@ -1,3 +1,8 @@
+<!--
+source_url: https://henrymeds.com/treatments/erectile-dysfunction/icp
+captured: 2026-06-04
+-->
+
 ![Two smiling, gray-haired people in aprons, heads touching. Man has a striped apron, woman wears a white one.](https://framerusercontent.com/images/bsOxt7jNavEG6A35dRXRYmjn4w.jpg?width=1030&height=1030)
 
 ![Three vials of Henry compounded injection medicines for erectile dysfunction,  named Bimix,  Trimix](https://framerusercontent.com/images/mTTBxi6mfRLKiLMEwgrEQ4UFE3w.png?width=1030&height=830)

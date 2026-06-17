@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.onepeloton.com/bike
+captured: 2026-06-10
+-->
+
 [Now extended! Start your journey with a Refurbished Original Bike for just $695. Ends June 15.\*\\
 \\
 Shop now](https://www.onepeloton.com/shop/refurbished/bike) [Skip to main content](https://www.onepeloton.com/bike#main)

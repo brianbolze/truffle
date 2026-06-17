@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ideo.com/ai
+captured: 2026-06-04
+-->
+
 ![](https://cdn.prod.website-files.com/67cb2dd62d5110e2973d39d7/696119d149ec78bf16b3590c_Lab_AI_Hero2.webp)
 
 ## Design for agency, before agents.

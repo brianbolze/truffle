@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.firstround.com/pmf
+captured: 2026-06-14
+-->
+
 # _Increase your odds_ of finding extreme product-market fit
 
 Join a free, intensive 4-day experience designed for exceptional B2B founders early in building epic companies.

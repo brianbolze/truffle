@@ -1,3 +1,8 @@
+<!--
+source_url: https://malemd.com/HammerRx
+captured: 2026-06-04
+-->
+
 [Skip to Content](https://malemd.com/HammerRx#main-content)
 
 ![](https://malemd.com/app-client/images/alpha_knockout21/new-badge.png)

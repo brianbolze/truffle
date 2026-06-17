@@ -1,3 +1,8 @@
+<!--
+source_url: https://openai.com/sora/
+captured: 2026-05-31
+-->
+
 [![OpenAI](https://help.openai.com/logo.png)](https://help.openai.com/en)
 
 # What to know about the Sora discontinuation

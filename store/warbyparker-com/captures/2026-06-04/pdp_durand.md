@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.warbyparker.com/eyeglasses/durand/whiskey-tortoise
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.warbyparker.com/eyeglasses/durand/whiskey-tortoise?w=medium#main-content)
 
 Durand image carousel

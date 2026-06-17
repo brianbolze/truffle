@@ -1,3 +1,8 @@
+<!--
+source_url: https://henrymeds.com/treatments/weight-management/glp-1-weight-management
+captured: 2026-06-04
+-->
+
 Weight Management
 
 [Women's HRT](https://henrymeds.com/treatments/hrt)

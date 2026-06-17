@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/metformin/
+captured: 2026-05-31
+-->
+
 [Skip to content](https://agelessrx.com/metformin/#primary)
 
 ![Product image #1 for Metformin](https://agelessrx.com/wp-content/uploads/metformin-product-img.png)

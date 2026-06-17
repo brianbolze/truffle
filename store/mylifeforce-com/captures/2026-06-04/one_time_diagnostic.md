@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/pages/one-time-diagnostic
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/pages/one-time-diagnostic#static-page)
 
 ![woman checking lifeforce on phone](https://www.mylifeforce.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F130005%2F2880x1602%2Fc3b9227a04%2Fsave-now-hero-desktop-image.jpg&w=3840&q=75)

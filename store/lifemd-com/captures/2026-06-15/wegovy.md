@@ -1,3 +1,8 @@
+<!--
+source_url: https://lifemd.com/wegovy
+captured: 2026-06-15
+-->
+
 [**Start for just $199‡ today** for Wegovy® weight loss medication.](https://rx.lifemd.com/wc-primary/?force=1)
 
 - ![](https://lifemd.com/wegovy/img/Hero/DT/main-2.webp?02)

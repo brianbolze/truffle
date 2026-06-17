@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/nad-nasal-spray/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/nad-nasal-spray/#primary)
 
 ![Product image #1 for NAD+ Nasal Spray](https://agelessrx.com/wp-content/uploads/nad-nasal-spray-product-img.png)

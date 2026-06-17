@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.standishspring.com
+captured: 2026-06-14
+-->
+
 ![Historical illustration of Standish Spring hotel in Duxbury](https://www.standishspring.com/_next/image?url=%2Fstandish-homepage.webp&w=3840&q=75)
 
 BASED IN DUXBURY, MA 02332

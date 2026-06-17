@@ -1,3 +1,8 @@
+<!--
+source_url: https://hallandalerx.com/quality/
+captured: 2026-06-02
+-->
+
 [Skip to content](https://hallandalerx.com/quality/#content)
 
 - [X](https://x.com/hallandalerx)

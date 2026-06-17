@@ -1,3 +1,8 @@
+<!--
+source_url: https://marekdiagnostics.com
+captured: 2026-06-04
+-->
+
 We use cookies to enhance your experience, analyze traffic, and personalize content. Some cookies are essential, while others help us understand how you interact with our site. You can manage your preferences at any time. [Privacy Policy](https://marekdiagnostics.com/policies/terms-of-service)
 
 AcceptPreferences

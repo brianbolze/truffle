@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.etsy.com/impact
+captured: 2026-05-31
+-->
+
 [Etsy](https://www.etsy.com/)
 Impact
 

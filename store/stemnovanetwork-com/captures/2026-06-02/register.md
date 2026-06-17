@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.stemnovanetwork.com/account/register
+captured: 2026-06-02
+-->
+
 [Skip to content](https://www.stemnovanetwork.com/account/register#MainContent)
 
 # Create Account

@@ -1,3 +1,8 @@
+<!--
+source_url: https://openai.com/our-structure/
+captured: 2026-05-31
+-->
+
 Our structure \| OpenAI
 
 # Our structure

@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/powers-hair-solution/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/powers-hair-solution/#primary)
 
 ![Product image #1 for Powers Hair Solution v5.1](https://agelessrx.com/wp-content/uploads/powers-hair-solution-product-img.png)

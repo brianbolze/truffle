@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/gsh-patch/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/gsh-patch/#primary)
 
 ![Product image #1 for Glutathione Patches](https://agelessrx.com/wp-content/uploads/glutathione-patch-product-img.png)

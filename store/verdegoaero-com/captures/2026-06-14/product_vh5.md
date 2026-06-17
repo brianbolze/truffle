@@ -1,3 +1,8 @@
+<!--
+source_url: https://verdegoaero.com/product/vh-5/
+captured: 2026-06-14
+-->
+
 ![](https://verdegoaeropro.wpengine.com/wp-content/uploads/va-logo-color.svg)
 
 # VH-5 Blended Turbofan

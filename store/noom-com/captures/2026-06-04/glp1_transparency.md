@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.noom.com/glp-1-access-and-transparency/
+captured: 2026-06-04
+-->
+
 # GLP-1 Trust  and Transparency
 
 Our commitment to safe, responsible GLP-1 care

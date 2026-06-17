@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/metformin
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/metformin#main-content)
 
 Metformin Oral Tablets: Alleviates Insulin Resistance

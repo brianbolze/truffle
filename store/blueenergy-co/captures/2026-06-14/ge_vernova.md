@@ -1,3 +1,8 @@
+<!--
+source_url: https://blueenergy.co/blue-energy-and-ge-vernova-accelerate-gas-plus-nuclear-approach/
+captured: 2026-06-14
+-->
+
 [Skip to content](https://blueenergy.co/blue-energy-and-ge-vernova-accelerate-gas-plus-nuclear-approach/#content)
 
 # Blue Energy and GE Vernova Accelerate Gas-Plus-Nuclear Approach for Powering American Communities and Fueling Global AI Leadership

@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/about
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/about#static-page)
 
 ![LF_About_Hero](https://www.mylifeforce.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F130005%2F5760x3200%2Faac9fe1e1c%2Flf_about_hero.jpg&w=3840&q=75)

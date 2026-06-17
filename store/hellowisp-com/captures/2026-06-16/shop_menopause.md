@@ -1,3 +1,8 @@
+<!--
+source_url: https://hellowisp.com/shop/menopause
+captured: 2026-06-16
+-->
+
 # The menopause mystery ends here
 
 **Ongoing care that knows what’s next.**

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.hims.com/weight-loss/meal-replacement
+captured: 2026-06-03
+-->
+
 New
 
 # _Meal replacements_

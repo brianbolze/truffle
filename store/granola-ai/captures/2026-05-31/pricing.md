@@ -1,3 +1,8 @@
+<!--
+source_url: https://granola.ai/pricing
+captured: 2026-05-31
+-->
+
 # Granola how you wanna
 
 Get the Granola plan that's right for you and your team, so everyone can be on the same page.

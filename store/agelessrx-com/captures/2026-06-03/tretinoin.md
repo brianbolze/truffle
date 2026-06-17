@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/tretinoin/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/tretinoin/#primary)
 
 ![Product image #1 for Tretinoin](https://agelessrx.com/wp-content/uploads/tretinoin-product-img.png)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.gogeviti.com/clinic
+captured: 2026-06-02
+-->
+
 ![Troche medication](https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fproduct-troche.png&w=3840&q=75)
 
 ![Injection vial](https://www.gogeviti.com/_next/image?url=%2Fimages%2Fclinic%2Fproduct-injection.png&w=3840&q=75)

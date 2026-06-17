@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ivyrx.com/products/ozempic
+captured: 2026-06-04
+-->
+
 [Important Update Banner](https://www.ivyrx.com/products/ozempic#)
 Close Announcement Banner
 

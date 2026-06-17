@@ -1,3 +1,8 @@
+<!--
+source_url: https://parlance.cc/news/sprints
+captured: 2026-06-10
+-->
+
 Parlance
 
 # Sprints

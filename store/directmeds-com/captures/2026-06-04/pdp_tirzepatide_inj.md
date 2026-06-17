@@ -1,3 +1,8 @@
+<!--
+source_url: https://directmeds.com/medications/tirzepatide/
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://directmeds.com/medications/tirzepatide/#main-content)Open Mobile Menu
 
 [![Direct Meds](https://directmeds.com/app/uploads/2025/06/logo.svg)](https://directmeds.com/)

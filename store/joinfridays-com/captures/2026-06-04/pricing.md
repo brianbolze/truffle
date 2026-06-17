@@ -1,3 +1,8 @@
+<!--
+source_url: https://joinfridays.com/pricing
+captured: 2026-06-04
+-->
+
 ![](https://cdn.prod.website-files.com/66c8a0fb54f84ec4a09643c7/699efe44d035887c7fa66f41_sema-oralDropper-noLogo-trans%20(1).webp)![](https://cdn.prod.website-files.com/66c8a0fb54f84ec4a09643c7/69a6cdbdcef4cea6ffbadd0e_Weightloss_sema_NOlogo_1vial.webp)![](https://cdn.prod.website-files.com/66c8a0fb54f84ec4a09643c7/69a6cdbd5d6907a952d0de2e_Weightloss_tirz_NOlogo_2vials.webp)
 
 **🎉 SPRING SALE: Save Up to** **50% OFF Retail!**

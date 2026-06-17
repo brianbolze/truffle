@@ -1,3 +1,8 @@
+<!--
+source_url: https://sermorelin.com/enclomifene
+captured: 2026-06-16
+-->
+
 [Optimize Your Testosterone Naturally.](https://sermorelin.com/intake)
 
 [![](https://cdn.prod.website-files.com/694bd7eea6624d2162babab6/6a125e7f5d4aa63df2a2ac74_logo.svg)](https://sermorelin.com/enclomifene#)

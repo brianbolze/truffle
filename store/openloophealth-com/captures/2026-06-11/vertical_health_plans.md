@@ -1,3 +1,8 @@
+<!--
+source_url: https://openloophealth.com/companies/health-plans
+captured: 2026-06-11
+-->
+
 # Flexible, custom care solutions for health plans
 
 Optimize your care programs and reduce readmittance rates by as much as 30% with OpenLoop’s proven, consumer-centric virtual care offerings.

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.casio.com/us/calculators
+captured: 2026-05-31
+-->
+
 [Skip to content](https://www.casio.com/us/calculators/#mainContent)
 
 # Shop All Calculators - Basic Graphing + Scientific Calculators \| CASIO

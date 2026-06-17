@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.etsy.com/sell
+captured: 2026-05-31
+-->
+
 # Millions of shoppers can’t wait to see what you have in store
 
 [Get started](https://www.etsy.com/your/shop/create?us_sell_create_value)

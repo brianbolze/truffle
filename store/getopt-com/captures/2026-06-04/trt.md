@@ -1,3 +1,8 @@
+<!--
+source_url: https://getopt.com/learn/protocols/testosterone-replacement-therapy
+captured: 2026-06-04
+-->
+
 TRT
 
 

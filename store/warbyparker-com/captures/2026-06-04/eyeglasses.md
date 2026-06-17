@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.warbyparker.com/eyeglasses
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.warbyparker.com/eyeglasses?page=26#main-content)
 
 - [![](https://img.warbyparker.com/v2/white%20glasses-a7529002b5ae4bbf96539c27854ce782.svg?originWidth=32&originHeight=32)](https://www.warbyparker.com/eyeglasses)

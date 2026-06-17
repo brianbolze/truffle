@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.bullish.co/about/creative
+captured: 2026-06-12
+-->
+
 # We are multifaceted makers with a system-oriented approach that moves businesses forward.
 
 #### Approach

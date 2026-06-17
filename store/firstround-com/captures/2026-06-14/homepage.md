@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.firstround.com
+captured: 2026-06-14
+-->
+
 Take a tour of Notion's SF headquarters in our new series, "In Office"
 
 [Watch](https://www.youtube.com/watch?v=4qkyxm4jppc)

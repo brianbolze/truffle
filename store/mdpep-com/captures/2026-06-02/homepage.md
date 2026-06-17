@@ -1,3 +1,8 @@
+<!--
+source_url: https://mdpep.com
+captured: 2026-06-02
+-->
+
 [Skip to content](https://mdpep.com/#content)
 
 ## 503B Tirzepatide and Semaglutide

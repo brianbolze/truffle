@@ -1,3 +1,8 @@
+<!--
+source_url: https://malemd.com/hairsy/v2n/cj/h
+captured: 2026-06-04
+-->
+
 [Skip to Content](https://malemd.com/hairsy/v2n/cj/h#main-content)
 
 ### ![](https://malemd.com/app-client/images/hairsy_v2n/sale_ban.png) Save Up To 40% On Hairsy

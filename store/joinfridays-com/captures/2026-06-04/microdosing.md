@@ -1,3 +1,8 @@
+<!--
+source_url: https://joinfridays.com/microdosing
+captured: 2026-06-04
+-->
+
 ![](https://cdn.prod.website-files.com/66c8a0fb54f84ec4a09643c7/681e45623f3063ac1c5633cb_close-icon.svg)
 
 \*Medications will only be prescribed by a licensed clinician if deemed medically appropriate after a thorough consultation. Not available in all 50 states. The FDA does not approve nor review compounded products for safety, effectiveness, or quality.

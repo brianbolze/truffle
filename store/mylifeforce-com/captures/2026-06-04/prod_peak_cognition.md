@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/peak-cognition
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/peak-cognition#main-content)
 
 Peak Cognition Supplement: Elevate Focus, Memory & Brain Health

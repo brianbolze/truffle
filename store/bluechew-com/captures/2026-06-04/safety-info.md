@@ -1,3 +1,8 @@
+<!--
+source_url: https://bluechew.com/safety-info
+captured: 2026-06-04
+-->
+
 # IMPORTANT SAFETY INFORMATION
 
 ## **BlueChew PDE5 Inhibitors Only** _(sildenafil, tadalafil, vardenafil)_

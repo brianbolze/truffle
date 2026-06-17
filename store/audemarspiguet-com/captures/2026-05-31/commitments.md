@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.audemarspiguet.com/com/en/about/commitments.html
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.audemarspiguet.com/com/en/about/commitments.html#maincontent)
 
 ![](https://dynamicmedia.audemarspiguet.com/is/image/audemarspiguet/commitments_header_manifesto_02?wid=3000&dpr=off)

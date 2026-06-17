@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/testosterone-gel
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/testosterone-gel#main-content)
 
 Testosterone Gel For Sale Online \| Boost Energy & Vitality

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.etsy.com/about
+captured: 2026-05-31
+-->
+
 [Etsy](https://www.etsy.com/)
 About
 

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.casio.com/us/watches
+captured: 2026-05-31
+-->
+
 [Skip to content](https://www.casio.com/us/watches/#mainContent)
 
 # Watches \| CASIO

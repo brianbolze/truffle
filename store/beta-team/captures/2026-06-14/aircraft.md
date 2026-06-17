@@ -1,3 +1,8 @@
+<!--
+source_url: https://beta.team/aircraft
+captured: 2026-06-14
+-->
+
 ![CX300 Night web](https://47449398.fs1.hubspotusercontent-na1.net/hub/47449398/hubfs/Photos/CX300%20Night%20web.jpg?length=1920&name=CX300%20Night%20web.jpg)
 
 ![](https://beta.team/hubfs/ALIA_ICON.svg)

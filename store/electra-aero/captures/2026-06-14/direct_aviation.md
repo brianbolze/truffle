@@ -1,3 +1,8 @@
+<!--
+source_url: https://electra.aero/direct-aviation
+captured: 2026-06-14
+-->
+
 [![Electra](https://electra-aero.s3.us-east-1.amazonaws.com/electra-logo.svg)](https://electra.aero/)
 
 [![Introduction](https://electra-aero.s3.us-east-1.amazonaws.com/img.png)Introduction](https://electra.aero/direct-aviation#introduction) [![Regional Mobility](https://electra-aero.s3.us-east-1.amazonaws.com/img-(1).png)Regional Mobility](https://electra.aero/direct-aviation#regional-mobility) [![Direct Aviation](https://electra-aero.s3.us-east-1.amazonaws.com/frame-2147208384.png)Direct Aviation](https://electra.aero/direct-aviation#direct-aviation) [![Current Snapshot](https://electra-aero.s3.us-east-1.amazonaws.com/frame-2147208385.png)Current Snapshot](https://electra.aero/direct-aviation#current-snapshot) [![See the Fleet Size](https://electra-aero.s3.us-east-1.amazonaws.com/img-(2).png)See the Fleet Size](https://electra.aero/direct-aviation#see-the-fleet-size) [![See the Routes](https://electra-aero.s3.us-east-1.amazonaws.com/frame-2147208386.png)See the Routes](https://electra.aero/direct-aviation#see-the-routes) [![New Ecosystem](https://electra-aero.s3.us-east-1.amazonaws.com/frame-2147208387.png)New Ecosystem](https://electra.aero/direct-aviation#new-ecosystem) [![Electra EL9](https://electra-aero.s3.us-east-1.amazonaws.com/composite-img.png)Electra EL9](https://electra.aero/direct-aviation#electra-el9) [![New Access Points](https://electra-aero.s3.us-east-1.amazonaws.com/frame-2147208388.png)New Access Points](https://electra.aero/direct-aviation#new-access-points) [![See the Use Cases](https://electra-aero.s3.us-east-1.amazonaws.com/frame-2147208389.png)See the Use Cases](https://electra.aero/direct-aviation#see-the-use-cases)

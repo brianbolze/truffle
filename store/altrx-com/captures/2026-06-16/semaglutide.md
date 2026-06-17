@@ -1,3 +1,8 @@
+<!--
+source_url: https://altrx.com/products/compounded-semaglutide
+captured: 2026-06-16
+-->
+
 ![Product bg](https://www.altrx.com/assets/images/misc/product-bg.svg)![Compounded GLP-1](https://www.altrx.com/assets/images/products/unbranded/altRx_vial_glp1_noshadow.webp)
 
 injection

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.struthealth.com/mens-wellness-longevity/injectable-sermorelin-peptide-therapy
+captured: 2026-06-04
+-->
+
 #### Select a treatment to   get started
 
 [Men’s Hair Loss\\

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.gogeviti.com
+captured: 2026-06-02
+-->
+
 [Limited Time Father's Day Offer·20% OFF Gift CardsUse CodeHISTURN·\\
 \\
 Limited Time Father's Day Offer·20% OFF Gift CardsUse CodeHISTURN·\\

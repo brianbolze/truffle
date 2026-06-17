@@ -1,3 +1,8 @@
+<!--
+source_url: https://notion.com/product/calendar
+captured: 2026-06-04
+-->
+
 Notion Calendar
 
 # It’s time.

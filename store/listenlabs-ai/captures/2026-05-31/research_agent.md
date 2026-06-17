@@ -1,3 +1,8 @@
+<!--
+source_url: https://listenlabs.ai/features/research-agent
+captured: 2026-05-31
+-->
+
 New Feature
 
 Research Agent

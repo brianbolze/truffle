@@ -1,3 +1,8 @@
+<!--
+source_url: https://altrx.com/about
+captured: 2026-06-16
+-->
+
 ![About Background](https://ik.imagekit.io/t9fldaz6d/About%20Background%201.svg)![About Background](https://ik.imagekit.io/t9fldaz6d/About%20Background.svg)
 
 # About altRx.

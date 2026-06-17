@@ -1,3 +1,8 @@
+<!--
+source_url: https://honehealth.com/womens/weight-loss
+captured: 2026-06-03
+-->
+
 [skip to content](https://honehealth.com/womens/weight-loss/#main)
 
 Low EnergyHot FlashesInflammationCognitionTRTBrain Fog

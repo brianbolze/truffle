@@ -1,3 +1,8 @@
+<!--
+source_url: https://henrymeds.com/treatments/hrt
+captured: 2026-06-04
+-->
+
 ![A woman.](https://framerusercontent.com/images/JIDXWis2MVqXavKlFR0mf1fQS0.jpg?width=1024&height=1024)
 
 ![The image displays Henry brand HRT medications: patches, oral tablets, body and vaginal creams.](https://framerusercontent.com/images/us8TjTwKWiy14BgTZCjo1zYg8.webp?width=546&height=400)

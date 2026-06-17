@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.clerky.com/about
+captured: 2026-06-04
+-->
+
 # We build software to help people get legal paperwork done.
 
 Legal paperwork is a slog, but it needs to get done.  Our mission is to make it as easy and painless as possible, building software to handle the mundane clerical tasks.  More businesses get started, more deals get done, and more interesting work for attorneys.

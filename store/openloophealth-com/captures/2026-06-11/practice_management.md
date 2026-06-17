@@ -1,3 +1,8 @@
+<!--
+source_url: https://openloophealth.com/practice-management
+captured: 2026-06-11
+-->
+
 Practice Management
 
 # Scale your operations with confidence

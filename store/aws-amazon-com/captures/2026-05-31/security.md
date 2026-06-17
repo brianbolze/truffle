@@ -1,3 +1,8 @@
+<!--
+source_url: https://aws.amazon.com/security/
+captured: 2026-05-31
+-->
+
 ## Select your cookie preferences
 
 We use essential cookies and similar tools that are necessary to provide our site and services. We use performance cookies to collect anonymous statistics, so we can understand how customers use our site and make improvements. Essential cookies cannot be deactivated, but you can choose “Customize” or “Decline” to decline performance cookies.

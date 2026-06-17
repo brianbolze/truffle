@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.defymedical.com/services/trt/
+captured: 2026-06-04
+-->
+
 [Skip to content](https://www.defymedical.com/services/trt/#main-content)
 
 Search Site

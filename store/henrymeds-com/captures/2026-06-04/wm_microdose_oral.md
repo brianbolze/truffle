@@ -1,3 +1,8 @@
+<!--
+source_url: https://henrymeds.com/treatments/weight-management/microdose-oral
+captured: 2026-06-04
+-->
+
 ![A smiling man holds a towel on a tennis court,.](https://framerusercontent.com/images/IoihDT1U6kBLcm1qIRn6h33eZ1A.jpg?width=1030&height=1030)
 
 ![Green bottle of Henry compounded Semaglutide oral tablets with a white cap.](https://framerusercontent.com/images/UqJ2qm8X4F0kb4EQ2MR0LGJ0.png?width=538&height=1000)

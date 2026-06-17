@@ -1,3 +1,8 @@
+<!--
+source_url: https://mdintegrations.com/faq
+captured: 2026-06-02
+-->
+
 # Frequently Asked Questions about MD Integrations
 
 ###### 1\. Do I need to integrate with the API?

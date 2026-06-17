@@ -1,3 +1,8 @@
+<!--
+source_url: https://ro.co
+captured: 2026-06-04
+-->
+
 [FDA-approved GLP-1s at their lowest prices. See if youqualify](https://start.ro.co/fdalgd/?utm_term=promo_bar_cs&ro_term=promo_bar_cs&referrer=https%3A%2F%2Fwww.google.com%2F&referring_domain=www.google.com)
 
 [Skip to main content](https://ro.co/#skip-nav-target)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.hims.com/hair-loss/finasteride
+captured: 2026-06-03
+-->
+
 - ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_532/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/hair/lp/gs/hair-oral-finasteride/02-12-2025/Hims-Hair-Oral-Finasteride-ATF-01)
 - ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_532/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/hair/lp/gs/hair-oral-finasteride/05-01-2025/Hims-Hair-Chewable-ATF-BA-oral)
 - ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_532/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/hair/lp/gs/hair-oral-finasteride/02-12-2025/Hims-Hair-Oral-Finasteride-ATF-02)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/testosterone-injection
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/testosterone-injection#main-content)
 
 Testosterone Cypionate For Sale \| Enhanced Energy & Vitality

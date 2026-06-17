@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.patek.com/collection
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.patek.com/collection#content)
 
 A legacy of timepieces

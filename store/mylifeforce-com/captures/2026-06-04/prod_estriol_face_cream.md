@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/estriol-face-cream
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/estriol-face-cream#main-content)
 
 Estriol Face Cream: Enhance Collagen & Reduce Fine Lines

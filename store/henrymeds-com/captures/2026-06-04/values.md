@@ -1,3 +1,8 @@
+<!--
+source_url: https://henrymeds.com/values
+captured: 2026-06-04
+-->
+
 ![Smiling woman.](https://framerusercontent.com/images/dpIjeKJO8pLtxekVtlK9RiHX7DU.jpg?width=1030&height=1030)
 
 # Our Values

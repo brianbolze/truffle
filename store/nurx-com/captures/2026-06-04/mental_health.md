@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.nurx.com/mental-health/
+captured: 2026-06-04
+-->
+
 ![affordable-with-or-without-insurance](https://nurx-www.imgix.net/wp-content/uploads/2024/03/20121141/Affordable-with-or-without-insurance.webp?w=320&auto=format,compress&fit=clip)**Affordable with or without insurance**
 
 ![unlimited-messaging-with-providers](https://nurx-www.imgix.net/wp-content/uploads/2024/03/20121141/Unlimited-messaging-with-providers.webp?w=320&auto=format,compress&fit=clip)**Unlimited messaging with providers**

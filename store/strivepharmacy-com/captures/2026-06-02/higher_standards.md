@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.strivepharmacy.com/higher-standards
+captured: 2026-06-02
+-->
+
 ## Higher Standards.             Healthier Outcomes.
 
 At Strive, quality isn’t a checkbox; it’s the foundation of everything we do. From

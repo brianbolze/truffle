@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/b12-mic-injection/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/b12-mic-injection/#primary)
 
 ![Product image #1 for B12/MIC Injection](https://agelessrx.com/wp-content/uploads/b12-mic-injection-product-img.png)

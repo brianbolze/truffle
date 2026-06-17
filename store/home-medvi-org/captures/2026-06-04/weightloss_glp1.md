@@ -1,3 +1,8 @@
+<!--
+source_url: https://glp1.medvi.org/
+captured: 2026-06-04
+-->
+
 [![](https://framerusercontent.com/images/1BRDkIzVV7TxG8fJDyUWdUDDE.png?width=500&height=105)](https://glp1.medvi.org/)
 
 [Get Approved](https://glp1.medvi.org/intake)

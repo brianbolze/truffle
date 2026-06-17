@@ -1,3 +1,8 @@
+<!--
+source_url: https://hellopepti.com/how-it-works
+captured: 2026-06-07
+-->
+
 Doctor-prescribed peptide care, reviewed by licensed providers. [Start your free assessment →](https://hellopepti.com/assessment)
 
 \[pepti\]

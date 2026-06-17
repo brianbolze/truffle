@@ -1,3 +1,8 @@
+<!--
+source_url: https://shop.honehealth.com/supplements
+captured: 2026-06-04
+-->
+
 [Hone homepage](https://honehealth.com/)
 
 - [BLOG](https://honehealth.com/edge/)

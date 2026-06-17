@@ -1,3 +1,8 @@
+<!--
+source_url: https://mydrhank.com/products/daily-tadalafil
+captured: 2026-06-03
+-->
+
 [![MyDrHank](https://mydrhank.com/assets/logo-Dk6R4bNG.png)](https://mydrhank.com/)
 
 [Weight Loss](https://mydrhank.com/weight-loss)

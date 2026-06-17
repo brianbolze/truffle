@@ -1,3 +1,8 @@
+<!--
+source_url: https://henrymeds.com/treatments/weight-management/liraglutide
+captured: 2026-06-04
+-->
+
 ![Man Smiling at phone](https://framerusercontent.com/images/N3KiLjnadePQQJ5lPesZTB7INk.jpg?width=1030&height=1030)
 
 ![Medication Bottles](https://framerusercontent.com/images/kvICSchlXcJsUdaX8sGpu4igTQ.png?width=188&height=400)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.strivepharmacy.com/about
+captured: 2026-06-02
+-->
+
 ![](https://cdn.prod.website-files.com/67ae6add43dacf04f7579286/67dc85b01bb6a3dc0267c54d_About-Brandi-GrantPuckett.avif)
 
 # TAILORED  MEDICINE  MADE  PRECISELY

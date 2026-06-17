@@ -1,3 +1,8 @@
+<!--
+source_url: https://goodlifemeds.com/products/viagra
+captured: 2026-06-04
+-->
+
 Sexual Health
 
 Trusted by over 100K subscribers

@@ -1,3 +1,8 @@
+<!--
+source_url: https://goodlifemeds.com/products/zepbound
+captured: 2026-06-04
+-->
+
 Weight Loss
 
 Trusted by over 100K subscribers

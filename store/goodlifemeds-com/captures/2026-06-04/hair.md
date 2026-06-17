@@ -1,3 +1,8 @@
+<!--
+source_url: https://goodlifemeds.com/hair
+captured: 2026-06-04
+-->
+
 Trusted by over 100K subscribers
 
 100% online process

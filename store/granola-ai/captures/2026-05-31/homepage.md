@@ -1,3 +1,8 @@
+<!--
+source_url: https://granola.ai
+captured: 2026-05-31
+-->
+
 Features
 
 [![Notepad icon](https://www.granola.ai/nav-icon-notes-rebrand.png)\\

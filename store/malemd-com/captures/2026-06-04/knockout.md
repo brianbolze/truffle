@@ -1,3 +1,8 @@
+<!--
+source_url: https://malemd.com/knockout
+captured: 2026-06-04
+-->
+
 [Skip to Content](https://malemd.com/knockout#main-content)
 
 ![](https://malemd.com/app-client/images/home_v2/ham.png)

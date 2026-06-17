@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ford.com/new-trucks
+captured: 2026-06-04
+-->
+
 # Ford Trucks and Vans
 
 Whether you’re hauling tools and equipment to a job site or your family to a weekend getaway, count on the lineup of versatile, hardworking Ford trucks and vans to get the job done. Their rugged capability, outstanding performance and legendary dependability earns them all the label of BUILT FORD TOUGH®.

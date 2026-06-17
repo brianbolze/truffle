@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.hims.com/psychiatry
+captured: 2026-06-03
+-->
+
 [Navigate to homepage](https://www.hims.com/)
 
 - [Log in](https://www.hims.com/account)

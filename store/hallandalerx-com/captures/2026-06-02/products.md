@@ -1,3 +1,8 @@
+<!--
+source_url: https://hallandalerx.com/products
+captured: 2026-06-02
+-->
+
 [Skip to content](https://hallandalerx.com/products/#content)
 
 - [X](https://x.com/hallandalerx)

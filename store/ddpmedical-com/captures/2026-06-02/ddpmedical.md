@@ -1,3 +1,8 @@
+<!--
+source_url: https://ddpmedical.com
+captured: 2026-06-02
+-->
+
 [Skip to content](https://www.ddpmedical.com/#MainContent)
 
 ## Item added to your cart

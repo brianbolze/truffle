@@ -1,3 +1,8 @@
+<!--
+source_url: https://listenlabs.ai/compare
+captured: 2026-05-31
+-->
+
 INSIGHTS IN HOURS, NOT WEEKS
 
 ## Listen outperforms every AI and traditional alternative

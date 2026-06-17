@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.gethealthspan.com/medications
+captured: 2026-06-04
+-->
+
 We use cookies to personalize your experience.
 
 DECLINE

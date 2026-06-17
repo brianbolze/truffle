@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/rosuvastatin
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/rosuvastatin#main-content)
 
 Buy Rosuvastatin Online: Affordable Prices \| Lifeforce

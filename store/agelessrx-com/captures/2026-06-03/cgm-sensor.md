@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/cgm-sensor/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/cgm-sensor/#primary)
 
 ![Product image #1 for Glucose Biosensors](https://agelessrx.com/wp-content/uploads/Nutrisense-1.png)

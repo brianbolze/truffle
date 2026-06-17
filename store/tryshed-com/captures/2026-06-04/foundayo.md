@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.tryshed.com/products/foundayo
+captured: 2026-06-04
+-->
+
 [Start today](https://www.tryshed.com/products/foundayo#)
 
 [Login](https://portal.tryshed.com/)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://bluechew.com/vardenafil-tadalafil-combo
+captured: 2026-06-04
+-->
+
 ![VMAX Product](https://static.bluechew.com/assets/images/funnels_assets/vmax-slide-1.jpg)
 
 ![VMAX Product](https://static.bluechew.com/assets/images/funnels_assets/vmax-slide-2.jpg)

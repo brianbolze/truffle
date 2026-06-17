@@ -1,3 +1,8 @@
+<!--
+source_url: https://rugiet.com/premature-ejaculation/go-long
+captured: 2026-06-07
+-->
+
 [Skip to content](https://www.rugiet.com/premature-ejaculation/go-long#content "Skip to content")
 
 15% off Go Long with code GOLONG15

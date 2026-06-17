@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.casio.com/us/electronic-musical-instruments
+captured: 2026-05-31
+-->
+
 [Skip to content](https://www.casio.com/us/electronic-musical-instruments/#mainContent)
 
 # Best Digital Pianos & Keyboards \| CASIO

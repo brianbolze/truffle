@@ -1,3 +1,8 @@
+<!--
+source_url: https://shop.honehealth.com/thrive-thyroid-complex
+captured: 2026-06-04
+-->
+
 [Supplements](https://shop.honehealth.com/supplements)
 
 # Thrive - Thyroid Complex

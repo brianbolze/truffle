@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.onemedical.com/services/
+captured: 2026-06-15
+-->
+
 ## A true partner in your health and wellness
 
 At One Medical, we care for everything from common illnesses to chronic diseases and mental health concerns. Primary care isn’t just for when you’re sick — we’re also here to help you prevent illness and maintain your optimal health. We’ll always take the time to listen to you, respect your opinion, and care for you as a whole person.

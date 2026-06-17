@@ -1,3 +1,8 @@
+<!--
+source_url: https://verdegoaero.com/hybrid/
+captured: 2026-06-14
+-->
+
 ![](https://verdegoaeropro.wpengine.com/wp-content/uploads/va-logo-color.svg)
 
 ## What is a Hybrid Powerplant?

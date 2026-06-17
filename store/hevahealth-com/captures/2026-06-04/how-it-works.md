@@ -1,3 +1,8 @@
+<!--
+source_url: https://hevahealth.com/how-it-works
+captured: 2026-06-04
+-->
+
 How It Works
 
 # Heva works.

@@ -1,3 +1,8 @@
+<!--
+source_url: https://store.vitalityrx.com/test-kit
+captured: 2026-06-04
+-->
+
 THE VITALITY TEST™
 
 # One Click At-home Test Kit

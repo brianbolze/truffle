@@ -1,3 +1,8 @@
+<!--
+source_url: https://world.casio.com
+captured: 2026-05-31
+-->
+
 [Skip to content](https://world.casio.com/#mainContent)
 
 ![](https://world.casio.com/content/casio/locales/intl/en/corporate/_jcr_content/root/responsivegrid/container_copy_copy_/container/teaser_copy.casiocoreimg.jpeg/1774998386332/corporate-main--img-en.jpeg)

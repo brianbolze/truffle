@@ -1,3 +1,8 @@
+<!--
+source_url: https://granola.ai/security
+captured: 2026-05-31
+-->
+
 # Security, privacy, and how it all works
 
 Your security and privacy are of utmost importance to us. Find the most important details below, followed by FAQs, and then links to all our terms and policies at the bottom of this page.

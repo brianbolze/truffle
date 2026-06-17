@@ -1,3 +1,8 @@
+<!--
+source_url: https://dasher.doordash.com/en-us/
+captured: 2026-05-31
+-->
+
 # **Work when you want.**  **Earn what you need.**
 
 10% cash back\* on gas — because your time and your money both matter.

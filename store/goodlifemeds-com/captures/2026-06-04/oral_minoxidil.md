@@ -1,3 +1,8 @@
+<!--
+source_url: https://goodlifemeds.com/products/oral-minoxidil
+captured: 2026-06-04
+-->
+
 Hair
 
 Trusted by over 100K subscribers

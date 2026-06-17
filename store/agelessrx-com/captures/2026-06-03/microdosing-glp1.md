@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/microdosing-glp1/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/microdosing-glp1/#primary)
 
 ![Product image #1 for Microdosing GLP-1](https://agelessrx.com/wp-content/uploads/microdosing-glp1-injection.png)

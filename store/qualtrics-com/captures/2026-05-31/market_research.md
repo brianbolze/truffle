@@ -1,3 +1,8 @@
+<!--
+source_url: https://qualtrics.com/market-research
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.qualtrics.com/market-research/#main-content)
 
 # MARKET RESEARCH SOFTWARE

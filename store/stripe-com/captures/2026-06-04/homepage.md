@@ -1,3 +1,8 @@
+<!--
+source_url: https://stripe.com
+captured: 2026-06-04
+-->
+
 [Stripe homepage](https://stripe.com/)
 
 - Products

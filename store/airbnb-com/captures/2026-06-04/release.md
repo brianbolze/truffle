@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.airbnb.com/release
+captured: 2026-06-04
+-->
+
 Last year, we expanded Airbnb beyond homes with the launch of Airbnb Experiences and Airbnb Services. For the first time, you could book a place to stay, explore a city with a local, and have a private chef cook you dinner, all on Airbnb. Since then, millions of people around the world have done exactly that.
 
 This summer, we’re going further. We’re adding new categories of services to make every part of your trip easier, and new experiences you can only find on Airbnb—including exclusive access to the FIFA World Cup 2026. We’re also bringing boutique and independent hotels to Airbnb. And we’re upgrading the app with AI-powered tools to help you find the perfect place to stay, plan your trip, and get help the moment you need it.

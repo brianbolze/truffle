@@ -1,3 +1,8 @@
+<!--
+source_url: https://sermorelin.com/glp1-combination
+captured: 2026-06-16
+-->
+
 [**Limited Time Offer:** Save $50 every month of Sermorelin.](https://sermorelin.com/intake)
 
 ![](https://cdn.prod.website-files.com/694bd7eea6624d2162babab6/6988cfe96dc881dd91435686_solarbolt-linear.svg)

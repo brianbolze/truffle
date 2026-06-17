@@ -1,3 +1,8 @@
+<!--
+source_url: https://rugiet.com/recharge-lander
+captured: 2026-06-07
+-->
+
 [Skip to content](https://www.rugiet.com/recharge-lander#content "Skip to content")
 
 [10% off Recharge with code GOODNIGHT10](https://start.rugiet.com/products/recharge/pre_questionnaire)

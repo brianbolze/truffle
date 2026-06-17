@@ -1,3 +1,8 @@
+<!--
+source_url: https://blueenergy.co/news/
+captured: 2026-06-14
+-->
+
 [Skip to content](https://blueenergy.co/news/#content)
 
 - [Blue Energy\\

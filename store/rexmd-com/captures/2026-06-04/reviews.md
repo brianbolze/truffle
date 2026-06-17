@@ -1,3 +1,8 @@
+<!--
+source_url: https://rexmd.com/reviews/
+captured: 2026-06-04
+-->
+
 [**Memorial Day Sale** Save Up To 95% Off ED Meds & Pay $2 Per Tablet](https://ed.rexmd.com/X1HRT/)
 
 ## Real Members.   Verified Reviews.

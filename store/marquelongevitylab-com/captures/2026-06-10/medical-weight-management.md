@@ -1,3 +1,8 @@
+<!--
+source_url: https://marquelongevitylab.com/services/medical-weight-management
+captured: 2026-06-10
+-->
+
 ![Avatar](https://images.leadconnectorhq.com/image/f_webp/q_100/r_180/u_https://assets.cdn.filesafe.space/RkyYoPdBrZSwYszeSg3h/media/698b61b3a41b878eea572582.jpg)
 
 Hi 👋 How can we help? Text Us.

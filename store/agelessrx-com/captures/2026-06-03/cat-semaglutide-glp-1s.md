@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/semaglutide-glp-1s/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/semaglutide-glp-1s/#primary)
 
 Boost energy, lean muscle, and focus \| [Save $50 on Sermorelin](https://agelessrx.com/sermorelin/)

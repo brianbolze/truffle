@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.brellohealth.com/product/compounded-nad
+captured: 2026-06-04
+-->
+
 ![wire-tracking-pixel](https://api.wire.spbx.app/wire?token=O86XVuVq787NnF6mZG4kW7dG%2FS%2BZRsAsg8cKHztQiaOQgjGakyBqaDe3Uihoud%2Fe2JL5tqip%2BwCzuOw5FVsVFcjGlu51gy1R5X7cdfFTIn4%3D&u=https%3A%2F%2Fwww.brellohealth.com%2Fproduct%2Fcompounded-nad)[Skip to content](https://www.brellohealth.com/product/compounded-nad#content)
 
 # Compounded NAD+

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.alpha-sense.com/platform/
+captured: 2026-05-31
+-->
+
 # A single integrated platform for a limitless strategic advantage
 
 AlphaSense connects and accelerates every element of your research process, using purpose-built AI to deliver unique insights and empower smarter decisions.

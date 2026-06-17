@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.doordash.com/about/
+captured: 2026-05-31
+-->
+
 # Your Door to More
 
 At DoorDash, our mission is to empower and grow local economies by opening the doors that connect us to each other. When you order something you need, local merchants get business, and Dashers get paid.

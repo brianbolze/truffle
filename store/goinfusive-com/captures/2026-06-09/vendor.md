@@ -1,3 +1,8 @@
+<!--
+source_url: https://goinfusive.com/vendor/
+captured: 2026-06-09
+-->
+
 # Our Vendor Network
 
 ## A Blackbook of Relationships. Years in the Making.

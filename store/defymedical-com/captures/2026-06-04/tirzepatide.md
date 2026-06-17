@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.defymedical.com/tirzepatide-online/
+captured: 2026-06-04
+-->
+
 [Skip to content](https://www.defymedical.com/tirzepatide-online/#main-content)
 
 Search Site

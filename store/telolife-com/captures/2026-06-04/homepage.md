@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.telolife.com
+captured: 2026-06-04
+-->
+
 [![TeloLife](https://www.telolife.com/assets/telolife-logo-CkOYrw01.png)](https://www.telolife.com/)
 
 [Home](https://www.telolife.com/) [How it works](https://www.telolife.com/#how) [Packages](https://www.telolife.com/packages) [Pricing](https://www.telolife.com/pricing) [Financing](https://www.telolife.com/financing) [Questionnaire](https://www.telolife.com/apply) [Pay by Card](https://www.telolife.com/checkout) [Cherry Checkout](https://www.telolife.com/commit) [Stories](https://www.telolife.com/#stories) [FAQ](https://www.telolife.com/packages#faq)

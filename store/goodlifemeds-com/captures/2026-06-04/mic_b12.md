@@ -1,3 +1,8 @@
+<!--
+source_url: https://goodlifemeds.com/products/mic-b12
+captured: 2026-06-04
+-->
+
 Daily Wellness
 
 Trusted by over 100K subscribers

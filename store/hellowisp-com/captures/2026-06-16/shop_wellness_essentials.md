@@ -1,3 +1,8 @@
+<!--
+source_url: https://hellowisp.com/shop/wellness-essentials
+captured: 2026-06-16
+-->
+
 # Wellness Essentials
 
 **Trusted by 1.8 Million+ Nationwide.**

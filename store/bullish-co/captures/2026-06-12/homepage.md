@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.bullish.co
+captured: 2026-06-12
+-->
+
 ### We are a marketing operating partner, blending the worlds of capital, consulting and creation to design the most remarkable businesses in the world.
 
 [Go to homepage](https://www.bullish.co/)

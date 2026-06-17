@@ -1,3 +1,8 @@
+<!--
+source_url: https://notion.com/product/enterprise-search
+captured: 2026-06-04
+-->
+
 ![](https://www.notion.com/product/enterprise-search)
 
 Pause

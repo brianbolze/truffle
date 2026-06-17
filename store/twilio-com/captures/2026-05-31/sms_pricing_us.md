@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.twilio.com/en-us/sms/pricing/us
+captured: 2026-05-31
+-->
+
 # Transparent, scalable, usage-based pricing for Twilio SMS and RCS
 
 Only pay for what you use. Don't get stalled by contracts, capacity planning, and rigid price models.

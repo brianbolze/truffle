@@ -1,3 +1,8 @@
+<!--
+source_url: https://joinfound.com/microdosing
+captured: 2026-06-04
+-->
+
 [NEW\\
 \\
 Lower starting weights now accepted](https://clinic.joinfound.com/health-assessment-survey/welcome?marketingKey=micro)

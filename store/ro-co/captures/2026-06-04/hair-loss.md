@@ -1,3 +1,8 @@
+<!--
+source_url: https://ro.co/hair-loss/
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://ro.co/hair-loss/#skip-nav-target)
 
 # Effective treatments for a fuller head of hair

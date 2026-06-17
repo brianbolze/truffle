@@ -1,3 +1,8 @@
+<!--
+source_url: https://henrymeds.com/how-it-works
+captured: 2026-06-04
+-->
+
 # How Henry Works
 
 Get started with no insurance required.

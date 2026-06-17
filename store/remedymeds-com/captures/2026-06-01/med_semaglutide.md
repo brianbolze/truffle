@@ -1,3 +1,8 @@
+<!--
+source_url: https://remedymeds.com/medication/comp-sema-inj
+captured: 2026-06-01
+-->
+
 ![Forbes Best of 2026](https://remedymeds.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fforbes-best-of-2026.06wh98vch16nv.png&w=384&q=75)
 
 In-Stock

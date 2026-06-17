@@ -1,3 +1,8 @@
+<!--
+source_url: https://joinfridays.com/testosterone
+captured: 2026-06-04
+-->
+
 [**$50 OFF FIRST ORDER!** Use Code: **TRT50**](https://app.joinfridays.com/onboarding/main-info)
 
 [![joinFridays logo](https://cdn.prod.website-files.com/66c8a0fb54f84ec4a09643c7/68e819cf770a887582875818_logo.avif)](https://joinfridays.com/)

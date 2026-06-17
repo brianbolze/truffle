@@ -1,3 +1,8 @@
+<!--
+source_url: https://bluechew.com/energy
+captured: 2026-06-04
+-->
+
 ![ENERGY Product](https://static.bluechew.com/assets/images/landing/energy/energy-banner-slide-1.jpg)
 
 ![ENERGY Product](https://static.bluechew.com/assets/images/landing/energy/energy-banner-slide-2.jpg)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.warbyparker.com/intelligent-eyewear
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.warbyparker.com/intelligent-eyewear#main-content)
 
 ## Warby Parker Intelligent Eyewear

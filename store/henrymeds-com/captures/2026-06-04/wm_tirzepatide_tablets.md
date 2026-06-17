@@ -1,3 +1,8 @@
+<!--
+source_url: https://henrymeds.com/treatments/weight-management/tirzepatide-tablets
+captured: 2026-06-04
+-->
+
 ![Woman smiling holding phone with provider on screen and a compounded semaglutide bottle next to her.](https://framerusercontent.com/images/hD3cYflN2N42V935LYhaFx0QBqQ.jpg?width=1030&height=1030)
 
 ![Woman smiling holding phone with provider on screen and a compounded semaglutide bottle next to her.](https://framerusercontent.com/images/97SurAyKC76NRzOJLVUPLdhtr8.png?width=282&height=527)

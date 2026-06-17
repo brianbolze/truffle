@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.kingsbergmedical.com
+captured: 2026-06-09
+-->
+
 [About Us](https://www.kingsbergmedical.com/about-us/) [Medical History Form](https://www.kingsbergmedical.com/medical-history-form/) [contact us](https://www.kingsbergmedical.com/contact-us/)
 
 [800-787-0408](tel:800-787-0408)

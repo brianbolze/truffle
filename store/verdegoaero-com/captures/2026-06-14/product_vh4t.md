@@ -1,3 +1,8 @@
+<!--
+source_url: https://verdegoaero.com/product/250kw-to-500kw-high-performance-hybrids/
+captured: 2026-06-14
+-->
+
 ![](https://verdegoaeropro.wpengine.com/wp-content/uploads/va-logo-color.svg)
 
 # VH-4T 400 kW

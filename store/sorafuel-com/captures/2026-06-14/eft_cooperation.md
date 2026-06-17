@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.sorafuel.com/news/sora-fuel-corp-and-emerging-fuels-technology-inc-announce-a-technology-cooperation-agreement
+captured: 2026-06-14
+-->
+
 [Skip to content](https://www.sorafuel.com/news/sora-fuel-corp-and-emerging-fuels-technology-inc-announce-a-technology-cooperation-agreement#main-content)
 
 [← Back to home](https://www.sorafuel.com/)

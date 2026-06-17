@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/pt-141-injection/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/pt-141-injection/#primary)
 
 ![Product image #1 for PT-141 Injection](https://agelessrx.com/wp-content/uploads/PT-141-injection.png)

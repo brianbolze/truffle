@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ford.com/finance/why-ford-credit
+captured: 2026-06-04
+-->
+
 ![Leaving behind the signature of the name Lucy in the dirt](https://www.ford.com/finance/content/dam/ucl/brandsites/images/why_ford_credit_landing_hero_image.jpg)
 
 # Why Ford Credit?

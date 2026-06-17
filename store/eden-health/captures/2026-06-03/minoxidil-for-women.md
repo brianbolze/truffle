@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.eden.health/treatment/minoxidil-for-women
+captured: 2026-06-03
+-->
+
 Back
 
 Treatment Categories

@@ -1,3 +1,8 @@
+<!--
+source_url: https://henrymeds.com/treatments/weight-management/phentermine
+captured: 2026-06-04
+-->
+
 ![Woman smiling holding phone with provider on screen and a compounded semaglutide bottle next to her.](https://framerusercontent.com/images/K9PToiWOf3YdGvgJHGa9drP6I.jpg?width=1030&height=1030)
 
 ![Medication](https://framerusercontent.com/images/xBY0UtfawSWOCNo8hZkn8DRLI.png?width=700&height=772)

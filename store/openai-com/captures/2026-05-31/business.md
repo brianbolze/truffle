@@ -1,3 +1,8 @@
+<!--
+source_url: https://openai.com/business/
+captured: 2026-05-31
+-->
+
 AI Platforms to Accelerate your Business \| OpenAI \| OpenAI
 
 The next era of work is here

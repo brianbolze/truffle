@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.nurx.com/birthcontrol/
+captured: 2026-06-04
+-->
+
 [BIRTH CONTROL FOR AS LOW AS $0 WITH INSURANCE, NO IN PERSON VISIT NEEDED. GET STARTED](https://with.nurx.com/sexual-health/initial-assessment?service_line=birth_control) [BIRTH CONTROL FOR AS LOW AS $0 WITH INSURANCE, NO IN PERSON VISIT NEEDED. GET STARTED](https://with.nurx.com/sexual-health/initial-assessment?service_line=birth_control) [BIRTH CONTROL FOR AS LOW AS $0 WITH INSURANCE, NO IN PERSON VISIT NEEDED. GET STARTED](https://with.nurx.com/sexual-health/initial-assessment?service_line=birth_control)
 
 ![affordable-with-or-without-insurance](https://nurx-www.imgix.net/wp-content/uploads/2024/03/20121141/Affordable-with-or-without-insurance.webp?w=320&auto=format,compress&fit=clip)**Affordable with or without insurance**

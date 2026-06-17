@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/atorvastatin/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/atorvastatin/#primary)
 
 ![Product image #1 for Atorvastatin](https://agelessrx.com/wp-content/uploads/atorvastatin-product-img.png)

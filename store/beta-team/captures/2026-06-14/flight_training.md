@@ -1,3 +1,8 @@
+<!--
+source_url: https://beta.team/flight-training
+captured: 2026-06-14
+-->
+
 ![ALIA-Simulator-02](https://47449398.fs1.hubspotusercontent-na1.net/hub/47449398/hubfs/Photos/ALIA-Simulator-02.jpg?length=1920&name=ALIA-Simulator-02.jpg)
 
 ![United-Therapeutics-ALIA-Training-20240806_0021](https://47449398.fs1.hubspotusercontent-na1.net/hub/47449398/hubfs/Photos/United-Therapeutics-ALIA-Training-20240806_0021.jpg?length=1920&name=United-Therapeutics-ALIA-Training-20240806_0021.jpg)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ideo.com/work
+captured: 2026-06-04
+-->
+
 #### [Home](https://www.ideo.com/) / [Design services](https://www.ideo.com/design-services) / Case studies
 
 # Planes, supply chains, and automobiles

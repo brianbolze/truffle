@@ -1,3 +1,8 @@
+<!--
+source_url: https://hevahealth.com/treatments/weight-loss/semaglutide-copys/
+captured: 2026-06-04
+-->
+
 # Semaglutide Copy
 
 GLP-1RA Weight Loss

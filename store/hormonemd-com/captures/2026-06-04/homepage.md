@@ -1,3 +1,8 @@
+<!--
+source_url: https://hormonemd.com
+captured: 2026-06-04
+-->
+
 [![HormoneMD Logo](https://imagedelivery.net/X2fm99A2m4ExYgx0B_biNQ/2951b56c-5574-45d4-c533-92edf85dae00/public)](https://www.hormonemd.com/)
 
 Treatments

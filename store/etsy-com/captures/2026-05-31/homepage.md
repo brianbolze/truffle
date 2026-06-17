@@ -1,3 +1,8 @@
+<!--
+source_url: https://etsy.com
+captured: 2026-05-31
+-->
+
 [Etsy](https://www.etsy.com/?ref=lgo)
 
 Categories

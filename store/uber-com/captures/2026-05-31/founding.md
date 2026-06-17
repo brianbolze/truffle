@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.uber.com/us/en/newsroom/ubers-founding
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.uber.com/us/en/newsroom/ubers-founding/#main)
 
 December 22, 2010

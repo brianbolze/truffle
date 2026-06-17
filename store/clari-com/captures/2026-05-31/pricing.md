@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.clari.com/pricing/
+captured: 2026-05-31
+-->
+
 # Priced to run revenue, not hurt the bottom line
 
 \*

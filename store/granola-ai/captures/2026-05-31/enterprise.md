@@ -1,3 +1,8 @@
+<!--
+source_url: https://granola.ai/enterprise
+captured: 2026-05-31
+-->
+
 # Granola Enterprise
 
 Advanced controls for companies with higher compliance requirements

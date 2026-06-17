@@ -1,3 +1,8 @@
+<!--
+source_url: https://verdegoaero.com/defense/
+captured: 2026-06-14
+-->
+
 ![](https://verdegoaeropro.wpengine.com/wp-content/uploads/va-logo-color.svg)
 
 # Powering the Future of Military Aviation

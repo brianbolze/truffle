@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.noom.com/menopause/
+captured: 2026-06-04
+-->
+
 ## Find out if you’re eligible for   menopause support with Noom.
 
 Are you experiencing any of these?

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.hims.com/psychiatry/sertraline
+captured: 2026-06-03
+-->
+
 - ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_532/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/mh/lp/gs/shop-mental-health-sertraline/01-21-2025/Hims-MH-PDP-Sertraline-ATF-1-D)
 - ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_532/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/mh/products/bupropion/01-22-24/Hims-MH-PDP-Buproprion-ATF-2-D)
 - ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_532/q_auto:good:sensitive/f_auto,fl_lossy/v1/Hims/pdp/mh/bupropion/Hims-MH-PDP-Buproprion-ATF-4-D)

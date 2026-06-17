@@ -1,3 +1,8 @@
+<!--
+source_url: https://bluechew.com/sildenafil
+captured: 2026-06-04
+-->
+
 ![SIL Product](https://static.bluechew.com/assets/images/funnels_assets/sil-slide-1.jpg)
 
 ![SIL Product](https://static.bluechew.com/assets/images/funnels_assets/sil-slide-2.jpg)

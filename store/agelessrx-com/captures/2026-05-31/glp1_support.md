@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/semaglutide-glp-1s/
+captured: 2026-05-31
+-->
+
 [Skip to content](https://agelessrx.com/semaglutide-glp-1s/#primary)
 
 ![Product image #1 for GLP-1s](https://agelessrx.com/wp-content/uploads/Semaglutide-Suite.png)

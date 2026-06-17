@@ -1,3 +1,8 @@
+<!--
+source_url: https://beta.team/battery
+captured: 2026-06-14
+-->
+
 ![Battery Manufacturing 20230929_0004](https://47449398.fs1.hubspotusercontent-na1.net/hub/47449398/hubfs/Battery%20Manufacturing%2020230929_0004.jpg?length=1920&name=Battery%20Manufacturing%2020230929_0004.jpg)
 
 ![](https://beta.team/hubfs/ALIA_ICON.svg)

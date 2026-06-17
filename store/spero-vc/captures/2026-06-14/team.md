@@ -1,3 +1,8 @@
+<!--
+source_url: https://spero.vc/team/
+captured: 2026-06-14
+-->
+
 ## Our Team
 
 At Spero, we understand that meaningful progress isn’t built in grand gestures and a meaningful mission does not make a successful company.

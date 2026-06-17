@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.onemedical.com/insurance/
+captured: 2026-06-15
+-->
+
 This is our most up-to-date list of covered insurance plans. To see if we accept your plan, simply search the list below. Don’t see your plan and want to know if you’re in network? Email [admin@onemedical.com](mailto:admin@onemedical.com) or call [(888) 663-6331](tel:(888) 663-6331) to talk to a One Medical team member.
 
 [Search Plans](https://www.onemedical.com/insurance/insurance-finder/)

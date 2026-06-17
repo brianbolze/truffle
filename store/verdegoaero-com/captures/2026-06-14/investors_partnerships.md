@@ -1,3 +1,8 @@
+<!--
+source_url: https://verdegoaero.com/investors-partnerships/
+captured: 2026-06-14
+-->
+
 ![](https://verdegoaeropro.wpengine.com/wp-content/uploads/va-logo-color.svg)
 
 # INVEST IN THE DUAL-USE TECHNOLOGY THAT’S REDEFINING WHAT’S POSSIBLE IN AEROSPACE

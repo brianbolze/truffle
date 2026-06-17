@@ -1,3 +1,8 @@
+<!--
+source_url: https://hormonemd.com/llms.txt
+captured: 2026-06-04
+-->
+
 \# HormoneMD
 
 \> The premier digital health platform for personalized hormone therapy, weight loss, and longevity medicine. HormoneMD connects patients with licensed healthcare providers to optimize physical, cognitive, and mental health through evidence-based protocols.

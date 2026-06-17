@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/tadalafil-daily/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/tadalafil-daily/#primary)
 
 ![Product image #1 for Tadalafil (Daily)](https://agelessrx.com/wp-content/uploads/tadalafil-daily-product-img.png)

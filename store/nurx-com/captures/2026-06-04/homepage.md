@@ -1,3 +1,8 @@
+<!--
+source_url: https://nurx.com
+captured: 2026-06-04
+-->
+
 Opens in a new windowOpens an external websiteOpens an external website in a new window
 
 Close this dialog

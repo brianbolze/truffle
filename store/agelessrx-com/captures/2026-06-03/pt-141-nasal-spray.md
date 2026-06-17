@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/pt-141-nasal-spray/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/pt-141-nasal-spray/#primary)
 
 ![Product image #1 for PT-141 Nasal Spray](https://agelessrx.com/wp-content/uploads/PT-141_nasal-Spray.png)

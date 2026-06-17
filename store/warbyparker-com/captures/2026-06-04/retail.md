@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.warbyparker.com/retail
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.warbyparker.com/retail?=&referrerPageUrl=https%3A%2F%2Fwww.google.com%2F&query=&facetFilters=%7B%7D&filters=%7B%7D#main-content)
 
 # Find a store

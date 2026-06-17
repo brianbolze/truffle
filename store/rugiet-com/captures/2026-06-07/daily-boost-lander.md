@@ -1,3 +1,8 @@
+<!--
+source_url: https://rugiet.com/daily-boost-lander
+captured: 2026-06-07
+-->
+
 [Try 2 months of Ready™, get 1 free >](https://start.rugiet.com/products/rugiet-ready/pre_questionnaire)
 
 [Qualify now](https://start.rugiet.com/products/boost/pre_questionnaire)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://stripe.com/annual-updates/2025
+captured: 2026-06-04
+-->
+
 Chat with Stripe sales
 
 

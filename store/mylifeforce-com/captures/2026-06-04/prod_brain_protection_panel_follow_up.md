@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/brain-protection-panel-follow-up
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/brain-protection-panel-follow-up#main-content)
 
 BRAIN PROTECTION PANEL

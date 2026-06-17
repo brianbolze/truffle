@@ -1,3 +1,8 @@
+<!--
+source_url: https://hellowisp.com/how-it-works
+captured: 2026-06-16
+-->
+
 # You know your body. We're here to help.
 
 Whether you're seeking immediate relief or navigating long-term challenges, Wisp shows up with clinical expertise, zero judgment, and the continuity you deserve.

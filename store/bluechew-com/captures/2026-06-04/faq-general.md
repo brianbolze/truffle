@@ -1,3 +1,8 @@
+<!--
+source_url: https://bluechew.com/faq/general
+captured: 2026-06-04
+-->
+
 Common Questions
 
 [Common Questions](https://bluechew.com/faq/general) [Account](https://bluechew.com/faq/account) [Shipping and Delivery](https://bluechew.com/faq/shipping-and-delivery) [General Medical Questions](https://bluechew.com/faq/general-medical-questions) [Telemedicine](https://bluechew.com/faq/telemedicine)

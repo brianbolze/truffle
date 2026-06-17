@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.tryshed.com/products/mens-hair-solutions
+captured: 2026-06-04
+-->
+
 [Start today](https://www.tryshed.com/products/mens-hair-solutions#)
 
 [Login](https://portal.tryshed.com/)

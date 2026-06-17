@@ -1,3 +1,8 @@
+<!--
+source_url: https://rexmd.com/our-medications/testosterone-program/
+captured: 2026-06-04
+-->
+
 [**Memorial Day Sale** Save Up To 95% Off ED Meds & Pay $2 Per Tablet](https://ed.rexmd.com/X1HRT/?force=1)
 
 ![](https://rexmd.com/our-medications/testosterone-program/img/hero.webp)

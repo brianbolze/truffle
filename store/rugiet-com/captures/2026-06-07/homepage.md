@@ -1,3 +1,8 @@
+<!--
+source_url: https://rugiet.com
+captured: 2026-06-07
+-->
+
 [Skip to content](https://www.rugiet.com/#content "Skip to content")
 
 [Try 2 months of Ready™, get 1 free >](https://start.rugiet.com/products/rugiet-ready/pre_questionnaire)

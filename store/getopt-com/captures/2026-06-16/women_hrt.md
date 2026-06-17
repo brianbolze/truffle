@@ -1,3 +1,8 @@
+<!--
+source_url: https://getopt.com/learn/protocols/hrt
+captured: 2026-06-16
+-->
+
 HRT
 
 

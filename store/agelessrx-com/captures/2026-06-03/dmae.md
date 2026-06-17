@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/dmae/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/dmae/#primary)
 
 ![Product image #1 for DMAE Firming Gel](https://agelessrx.com/wp-content/uploads/dmae-product-img.png)

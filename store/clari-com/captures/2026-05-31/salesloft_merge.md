@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.clari.com/press/clari-and-salesloft-announce-agreement-to-merge
+captured: 2026-05-31
+-->
+
 ![Clari plus Salesloft](https://www.clari.com/contentassets/84fccf527c134c41acc752a10cf2dfc5/pr_masthead_080625v2.png)
 
 # Clari and Salesloft Announce Agreement to Merge

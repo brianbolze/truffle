@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.noom.com/med/glp1-companion/
+captured: 2026-06-04
+-->
+
 ![Noom GLP-1 Companion](https://www.noom.com/content/themes/Divi-child/images/Noom-logo-glp-1-companion.svg)
 
 # Noom is the industry’s most advanced GLP-1 Companion.

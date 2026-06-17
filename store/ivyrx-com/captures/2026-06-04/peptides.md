@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ivyrx.com/peptides
+captured: 2026-06-04
+-->
+
 [Important Update Banner](https://www.ivyrx.com/peptides#)
 Close Announcement Banner
 

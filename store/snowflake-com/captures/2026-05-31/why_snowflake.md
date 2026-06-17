@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.snowflake.com/en/why-snowflake/
+captured: 2026-05-31
+-->
+
 [Skip to content](https://www.snowflake.com/en/why-snowflake/#responsive-grid-main-content)
 
 The future of AI, revealed live

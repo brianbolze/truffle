@@ -1,3 +1,8 @@
+<!--
+source_url: https://notion.com/product/mail
+captured: 2026-06-04
+-->
+
 # The inbox that thinks like you
 
 Meet Notion Mail, the inbox that organizes itself, drafts emails, and schedules meetings any way you’d like.

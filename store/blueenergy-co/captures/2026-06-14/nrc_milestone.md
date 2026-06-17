@@ -1,3 +1,8 @@
+<!--
+source_url: https://blueenergy.co/blue-energy-achieves-key-u-s-nrc-licensing-milestone-paving-the-way-for-power-in-48-months-or-less-with-natural-gas-bridge/
+captured: 2026-06-14
+-->
+
 [Skip to content](https://blueenergy.co/blue-energy-achieves-key-u-s-nrc-licensing-milestone-paving-the-way-for-power-in-48-months-or-less-with-natural-gas-bridge/#content)
 
 # Blue Energy Achieves Key U.S. NRC Licensing Milestone, Paving the Way for Power in 48 Months or Less with Natural Gas Bridge

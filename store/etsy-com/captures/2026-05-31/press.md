@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.etsy.com/press
+captured: 2026-05-31
+-->
+
 ### Privacy Settings
 
 

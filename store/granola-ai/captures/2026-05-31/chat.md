@@ -1,3 +1,8 @@
+<!--
+source_url: https://granola.ai/chat
+captured: 2026-05-31
+-->
+
 # AI chat that actually understands your work
 
 ## Granola Chat combines instant work context with the world's best AI models. So you can be ready for anything.

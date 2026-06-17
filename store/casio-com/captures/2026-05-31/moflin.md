@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.casio.com/us/moflin
+captured: 2026-05-31
+-->
+
 [Skip to content](https://www.casio.com/us/moflin/#mainContent)
 
 **[Play More, Pay Less Memorial Day Keyboard Sale](https://www.casio.com/us/electronic-musical-instruments/promo/all-emi-promotions/ "keyboard promotions")**

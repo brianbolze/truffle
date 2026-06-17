@@ -1,3 +1,8 @@
+<!--
+source_url: https://openai.com
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://openai.com/#main)
 
 [OpenAI Home](https://openai.com/)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://blueenergy.co
+captured: 2026-06-14
+-->
+
 [Skip to content](https://blueenergy.co/#content)
 
 [Blue Energy Home](https://blueenergy.co/)

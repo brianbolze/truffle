@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.alpha-sense.com/pricing/
+captured: 2026-05-31
+-->
+
 # Connect with our sales team for scalable pricing
 
 We offer flexible subscription options, from enterprise-wide solutions to per-seat pricing, to fit your organization's needs. Whether you’re a small team or a global operation, we tailor our plans to maximize your value.

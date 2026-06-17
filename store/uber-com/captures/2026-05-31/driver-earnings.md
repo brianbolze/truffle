@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.uber.com/us/en/drive/how-much-drivers-make/
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.uber.com/us/en/drive/how-much-drivers-make/?city=wichita#main)
 
 Earnings

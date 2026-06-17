@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ideo.com/leaders
+captured: 2026-06-04
+-->
+
 # Meet our global crew of maker-first, action-oriented, superstar experts
 
 Architects, teachers, MBAs, farmers, painters, and photo journalists—we have all kinds of creative capabilities all around the world.

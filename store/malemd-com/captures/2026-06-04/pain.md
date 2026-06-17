@@ -1,3 +1,8 @@
+<!--
+source_url: https://malemd.com/pain
+captured: 2026-06-04
+-->
+
 [Skip to Content](https://malemd.com/pain#main-content)
 
 [![logo](https://malemd.com/app-client/images/pain-relief-cream/malemd-logo-black.png)](https://malemd.com/)

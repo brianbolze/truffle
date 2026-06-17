@@ -1,3 +1,8 @@
+<!--
+source_url: https://openloophealth.com/licensing-credentialing
+captured: 2026-06-11
+-->
+
 Licensing & Credentialing
 
 # License, credential and enroll providers faster

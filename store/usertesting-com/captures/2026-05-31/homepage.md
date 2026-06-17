@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.usertesting.com
+captured: 2026-05-31
+-->
+
 The UserTesting MCP Server is here — recruit, test, and validate from supported AI workflows.
 
 [Learn more](https://www.usertesting.com/platform/mcp-server)

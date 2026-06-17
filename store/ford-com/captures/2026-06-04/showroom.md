@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ford.com/showroom
+captured: 2026-06-04
+-->
+
 ## Customer Viewpoint Ratings and Reviews
 
 [closeCustomer Viewpoint Ratings and Reviews](https://shop.ford.com/showroom/#)

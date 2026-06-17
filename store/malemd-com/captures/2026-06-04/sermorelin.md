@@ -1,3 +1,8 @@
+<!--
+source_url: https://malemd.com/sermorelin/v2/hc
+captured: 2026-06-04
+-->
+
 [Skip to Content](https://malemd.com/sermorelin/v2/hc#main-content)
 
 MEMORIAL DAY SALE: ![](https://malemd.com/app-client/images/sermorelin/new-badge.png)

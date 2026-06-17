@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.rolex.com/en-us/oyster-story
+captured: 2026-05-31
+-->
+
 Skip to accessibilitySkip to contentSkip to footer
 
 Choose a country or region to view content specific to your location.

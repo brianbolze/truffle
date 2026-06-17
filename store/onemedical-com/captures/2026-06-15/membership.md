@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.onemedical.com/membership/
+captured: 2026-06-15
+-->
+
 ## A modern approach to primary care
 
 This is no ordinary doctor’s office. Rather than do things the typical way, we’ve created a membership-based primary care practice truly designed around our patients’ needs.

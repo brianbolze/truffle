@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.brellohealth.com/weight-loss-bill-of-rights
+captured: 2026-06-04
+-->
+
 ![wire-tracking-pixel](https://api.wire.spbx.app/wire?token=O86XVuVq787NnF6mZG4kW7dG%2FS%2BZRsAsg8cKHztQiaOQgjGakyBqaDe3Uihoud%2FehZ%2BXPoVtirzsOpFDOOh86o2QxtY%2F78pdczgSpz87ZmM%3D&u=https%3A%2F%2Fwww.brellohealth.com%2Fweight-loss-bill-of-rights)[Skip to content](https://www.brellohealth.com/weight-loss-bill-of-rights#content)
 
 FL Weight Loss

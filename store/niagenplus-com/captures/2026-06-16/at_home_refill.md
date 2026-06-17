@@ -1,3 +1,8 @@
+<!--
+source_url: https://niagenplus.com/products/niagen-at-home-injection-kit-refill
+captured: 2026-06-16
+-->
+
 [Skip to content](https://www.niagenplus.com/products/niagen-at-home-injection-kit-refill#content)
 
 Your Niagen® protocol starts with a telehealth consult. [Get Started.](https://www.niagenplus.com/products/niagen-at-home-injection-kit "Niagen® At-Home Injection Kit")

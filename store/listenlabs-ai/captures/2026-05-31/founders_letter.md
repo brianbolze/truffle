@@ -1,3 +1,8 @@
+<!--
+source_url: https://listenlabs.ai/founders-letter
+captured: 2026-05-31
+-->
+
 # Announcing Listen's Series B
 
 Listen Labs Series B Announcement - YouTube

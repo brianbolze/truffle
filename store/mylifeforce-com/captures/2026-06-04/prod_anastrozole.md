@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/anastrozole
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/anastrozole#main-content)
 
 Anastrozole: Premium Aromatase Inhibitor \| Improve Your Mood

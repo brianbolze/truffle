@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/glucose-control-supplement/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/glucose-control-supplement/#primary)
 
 ![Product image #1 for Glucose Control Supplement](https://agelessrx.com/wp-content/uploads/glucose-control-supplement-product-img.png)

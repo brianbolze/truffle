@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.hims.com/sexual-health/valacyclovir
+captured: 2026-06-03
+-->
+
 [Hims](https://www.hims.com/)
 
 ![](https://www.hims.com/forhims/image/upload/w_440,q_auto:good:sensitive,fl_lossy,c_scale,f_auto,dpr_1.0/Hims/sex/drug/genital-herpes/Hims-Herpes-PDP-D-ATF-Image)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.hims.com/labs
+captured: 2026-06-03
+-->
+
 [Navigate to homepage](https://www.hims.com/)
 
 - [Labs](https://www.hims.com/labs)

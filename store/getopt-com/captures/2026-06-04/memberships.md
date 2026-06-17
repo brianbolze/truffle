@@ -1,3 +1,8 @@
+<!--
+source_url: https://getopt.com/memberships
+captured: 2026-06-04
+-->
+
 # [Go to homepage](https://getopt.com/)
 
 - MenWomen

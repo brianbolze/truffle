@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/telmisartan/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/telmisartan/#primary)
 
 ![Product image #1 for Telmisartan](https://agelessrx.com/wp-content/uploads/telmisartan-product-img.png)

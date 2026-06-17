@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ideo.com
+captured: 2026-06-04
+-->
+
 [![](https://cdn.prod.website-files.com/67cb2dd62d5110e2973d39d7/691f1caf71b26af4dfa70d1f_i_.svg)![](https://cdn.prod.website-files.com/67cb2dd62d5110e2973d39d7/691f1bdc4bf1394fb8a11ede_d_%20(1).svg)![](https://cdn.prod.website-files.com/67cb2dd62d5110e2973d39d7/691f1c5a30bd53023f65feb0_e_.svg)![](https://cdn.prod.website-files.com/67cb2dd62d5110e2973d39d7/691f1c7ab81fb1af41d8ef91_o_.svg)](https://www.ideo.com/)
 
 ![](https://cdn.prod.website-files.com/67cb2dd62d5110e2973d39d7/68f0e06ea8dea1dd96d6f01e_Burger.svg)![](https://cdn.prod.website-files.com/67cb2dd62d5110e2973d39d7/68f0e0d1a885bf29003bc974_Close.svg)

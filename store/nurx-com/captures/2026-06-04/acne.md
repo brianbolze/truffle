@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.nurx.com/acne-treatment/
+captured: 2026-06-04
+-->
+
 [MEDICATION AS LOW AS $0 WITH INSURANCE OR $15 PER MONTH WITHOUT. GET STARTED](https://with.nurx.com/dermatology/initial-assessment?service_line=acne) [MEDICATION AS LOW AS $0 WITH INSURANCE OR $15 PER MONTH WITHOUT. GET STARTED](https://with.nurx.com/dermatology/initial-assessment?service_line=acne) [MEDICATION AS LOW AS $0 WITH INSURANCE OR $15 PER MONTH WITHOUT. GET STARTED](https://with.nurx.com/dermatology/initial-assessment?service_line=acne)
 
 ![affordable-with-or-without-insurance](https://nurx-www.imgix.net/wp-content/uploads/2024/03/20121141/Affordable-with-or-without-insurance.webp?w=320&auto=format,compress&fit=clip)**Affordable with or without insurance**

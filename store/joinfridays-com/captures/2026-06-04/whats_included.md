@@ -1,3 +1,8 @@
+<!--
+source_url: https://joinfridays.com/whats-included
+captured: 2026-06-04
+-->
+
 **Forbes Special $100 off ANY plan** with code: **FORBES**
 
 **Expertise Special $100 off ANY plan** with code: **EXPERTISE**

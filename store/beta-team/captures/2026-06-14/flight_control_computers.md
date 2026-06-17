@@ -1,3 +1,8 @@
+<!--
+source_url: https://beta.team/flight-control-computers
+captured: 2026-06-14
+-->
+
 ![UPS Salt Lake 20250309_0006](https://47449398.fs1.hubspotusercontent-na1.net/hub/47449398/hubfs/Photos/Barnstorm/UPS%20Salt%20Lake%2020250309_0006.jpg?length=1920&name=UPS%20Salt%20Lake%2020250309_0006.jpg)
 
 ![CX300 SN002 Build 20250214_0010](https://47449398.fs1.hubspotusercontent-na1.net/hub/47449398/hubfs/Photos/CX300%20SN002%20Build%2020250214_0010.jpg?length=1920&name=CX300%20SN002%20Build%2020250214_0010.jpg)

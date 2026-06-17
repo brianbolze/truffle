@@ -1,3 +1,8 @@
+<!--
+source_url: https://sequoiacap.com/our-founders/
+captured: 2026-06-14
+-->
+
 [Skip to main content](https://sequoiacap.com/our-founders/#main)
 
 # Our Founders

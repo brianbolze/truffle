@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ford.com/new-hybrids-evs
+captured: 2026-06-04
+-->
+
 # Ford Electrified Vehicles
 
 Joining the EV revolution has never been easier. Ford offers electrified SUVs, trucks and vans, with hybrid, plug-in hybrid and all-electric models available....less

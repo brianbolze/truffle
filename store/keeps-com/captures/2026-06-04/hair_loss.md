@@ -1,3 +1,8 @@
+<!--
+source_url: https://keeps.com/hair-loss
+captured: 2026-06-04
+-->
+
 Internet Explorer is not supported. Please use a modern browser like Chrome, Firefox, or Edge to access this app.
 
 Get up to 1 month FREE with a 3-month plan. [GET STARTED](https://www.keeps.com/quiz)

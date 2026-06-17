@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ivimhealth.com/glp1-pricing/
+captured: 2026-06-04
+-->
+
 #### Members Save More!
 
 ×

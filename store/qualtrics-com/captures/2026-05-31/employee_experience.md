@@ -1,3 +1,8 @@
+<!--
+source_url: https://qualtrics.com/employee-experience
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.qualtrics.com/employee-experience/#main-content)
 
 # EMPLOYEE EXPERIENCE SOFTWARE

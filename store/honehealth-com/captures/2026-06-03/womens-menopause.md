@@ -1,3 +1,8 @@
+<!--
+source_url: https://honehealth.com/womens/menopause-treatment
+captured: 2026-06-03
+-->
+
 [skip to content](https://honehealth.com/womens/menopause-treatment/#main)
 
 Low EnergyHot FlashesInflammationCognitionTRTBrain Fog

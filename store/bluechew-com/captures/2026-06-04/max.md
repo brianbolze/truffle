@@ -1,3 +1,8 @@
+<!--
+source_url: https://bluechew.com/max
+captured: 2026-06-04
+-->
+
 ![MAX Product](https://static.bluechew.com/assets/images/funnels_assets/max-slide-1.jpg)
 
 ![MAX Product](https://static.bluechew.com/assets/images/funnels_assets/max-slide-2.jpg)

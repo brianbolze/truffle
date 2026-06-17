@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/wegovy-pill-access-monitoring/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/wegovy-pill-access-monitoring/#primary)
 
 ![Product image #1 for Wegovy® Pill Access & Monitoring](https://agelessrx.com/wp-content/uploads/Wegovy-Pill_800x800-2.png)

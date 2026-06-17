@@ -1,3 +1,8 @@
+<!--
+source_url: https://openloophealth.com/team
+captured: 2026-06-11
+-->
+
 ![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%271332%27%20height=%271331%27/%3e)![OpenLoop female employees holding signs saying OpenLoop, #competence, #belonging](https://openloophealth.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fteam-hero.7279f62e.png&w=3840&q=75)
 
 meet OPENLOOP

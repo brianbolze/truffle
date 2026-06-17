@@ -1,3 +1,8 @@
+<!--
+source_url: https://joinfound.com
+captured: 2026-06-04
+-->
+
 [Get up to $100 off your membership plan today!‡](https://survey.joinfound.com/pre-purchase-survey/welcome)
 
 [home](https://joinfound.com/)

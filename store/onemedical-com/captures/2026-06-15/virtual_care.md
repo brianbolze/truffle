@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.onemedical.com/virtual-care/
+captured: 2026-06-15
+-->
+
 # Care that goes wherever you go
 
 Get 24/7 on-demand virtual care by message or video, included in Membership. Or, book a one-time virtual visit for a flat fee with Pay-per-visit.

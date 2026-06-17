@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/pages/weight-loss
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/pages/weight-loss#static-page)
 
 ![man and woman sitting](https://www.mylifeforce.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F130005%2F2880x1600%2F8c9169ca1d%2Fweight-loss-hero-image-desktop.jpg&w=3840&q=75)

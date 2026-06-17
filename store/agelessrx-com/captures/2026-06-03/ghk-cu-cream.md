@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/ghk-cu-cream/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/ghk-cu-cream/#primary)
 
 ![Product image #1 for GHK-Cu Cream](https://agelessrx.com/wp-content/uploads/GHK-Cu-Cream.png)

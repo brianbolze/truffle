@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.strivepharmacy.com/providers/weight-management-medications
+captured: 2026-06-02
+-->
+
 # Weight Management
 
 ## Personalized Support for Sustainable Weight Loss.

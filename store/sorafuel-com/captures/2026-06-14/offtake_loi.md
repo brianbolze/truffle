@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.sorafuel.com/news/future-energy-global-and-sora-fuel-sign-letter-of-intent-to-negotiate-e-saf-offtake-agreement
+captured: 2026-06-14
+-->
+
 [Skip to content](https://www.sorafuel.com/news/future-energy-global-and-sora-fuel-sign-letter-of-intent-to-negotiate-e-saf-offtake-agreement#main-content)
 
 [← Back to home](https://www.sorafuel.com/)

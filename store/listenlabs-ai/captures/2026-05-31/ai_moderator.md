@@ -1,3 +1,8 @@
+<!--
+source_url: https://listenlabs.ai/features/ai-moderator
+captured: 2026-05-31
+-->
+
 AI Moderator
 
 Run in-depth interviews with an AI moderator that probes, adapts, and follows the conversation.

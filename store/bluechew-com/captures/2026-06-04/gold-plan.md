@@ -1,3 +1,8 @@
+<!--
+source_url: https://bluechew.com/gold/plan
+captured: 2026-06-04
+-->
+
 ![icon back](https://bluechew.com/assets/svg/menu/icon-back.svg)
 
 ![GOLD product](https://static.bluechew.com/assets/images/funnels_assets/gold-category.webp)

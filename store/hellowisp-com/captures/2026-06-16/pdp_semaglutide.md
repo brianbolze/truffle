@@ -1,3 +1,8 @@
+<!--
+source_url: https://hellowisp.com/products/compounded-sublingual-semaglutide
+captured: 2026-06-16
+-->
+
 [Weight Care \| Prescription](https://hellowisp.com/shop/weight-care)
 
 # Compounded Sublingual Semaglutide Drops 15mL

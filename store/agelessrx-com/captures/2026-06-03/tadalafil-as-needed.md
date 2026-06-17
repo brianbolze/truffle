@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/tadalafil-as-needed/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/tadalafil-as-needed/#primary)
 
 ![Product image #1 for Tadalafil (As Needed)](https://agelessrx.com/wp-content/uploads/tadalafil-as-needed-product-img.png)

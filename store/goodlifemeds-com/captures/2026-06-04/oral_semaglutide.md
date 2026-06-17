@@ -1,3 +1,8 @@
+<!--
+source_url: https://goodlifemeds.com/products/oral-semaglutide
+captured: 2026-06-04
+-->
+
 # Page not found
 
 [GobackHome](https://www.goodlifemeds.com/)

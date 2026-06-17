@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.patek.com
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.patek.com/#content)
 
 Menu

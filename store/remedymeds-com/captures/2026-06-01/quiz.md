@@ -1,3 +1,8 @@
+<!--
+source_url: https://remedymeds.com/quiz
+captured: 2026-06-01
+-->
+
 ![Blue Background Backdrop](https://remedymeds.com/images/rmsplit-v3/backdrop/img_blue-background.png)
 
 2 minute quiz

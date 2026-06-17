@@ -1,3 +1,8 @@
+<!--
+source_url: https://rugiet.com/go-long-lander
+captured: 2026-06-07
+-->
+
 [Skip to content](https://www.rugiet.com/go-long-lander#content "Skip to content")
 
 [15% off Go Long with code GOLONG15](https://start.rugiet.com/products/go-long/pre_questionnaire?_ics=1775658854767&irclickid=~fbg~a74-e94WXPU0YZPXNEFvsqijqidjb6b45VWQPMGBzxrnifc5)

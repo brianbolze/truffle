@@ -1,3 +1,8 @@
+<!--
+source_url: https://parlance.cc/news/cc
+captured: 2026-06-10
+-->
+
 Parlance
 
 # CC

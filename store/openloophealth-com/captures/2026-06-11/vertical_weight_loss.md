@@ -1,3 +1,8 @@
+<!--
+source_url: https://openloophealth.com/companies/medical-weight-loss
+captured: 2026-06-11
+-->
+
 # Scale Your Medical Weight Loss Program Seamlessly
 
 Offload clinical and operational burdens to launch and scale faster with our proven medical weight loss support services.

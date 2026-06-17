@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.strivepharmacy.com/become-a-provider
+captured: 2026-06-02
+-->
+
 BECOME A PROVIDER
 
 # Prescribe with precision. Personalize every _plan._

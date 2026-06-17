@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/sermorelin-nasal-spray/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/sermorelin-nasal-spray/#primary)
 
 ![Product image #1 for Sermorelin Nasal Spray](https://agelessrx.com/wp-content/uploads/Sermorelin-Nasal-Spray_5ml_product_image.png)

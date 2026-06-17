@@ -1,3 +1,8 @@
+<!--
+source_url: https://ro.co/founder-letter/
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://ro.co/founder-letter/#skip-nav-target)
 
 ### Letter from our founders

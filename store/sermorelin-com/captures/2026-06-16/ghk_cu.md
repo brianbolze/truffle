@@ -1,3 +1,8 @@
+<!--
+source_url: https://sermorelin.com/ghk-cu
+captured: 2026-06-16
+-->
+
 [![](https://cdn.prod.website-files.com/694bd7eea6624d2162babab6/6a1362489108cc68c1d2a7a6_69bb4bc6f57f16e8d8276fcf_6aa8b6dbf42b2ff6096f4f8adfae5be2_logo.svg)](https://sermorelin.com/ghk-cu#)
 
 [Get Started](https://sermorelin.com/ghk-cu#)

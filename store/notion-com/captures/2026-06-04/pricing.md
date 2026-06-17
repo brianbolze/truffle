@@ -1,3 +1,8 @@
+<!--
+source_url: https://notion.com/pricing
+captured: 2026-06-04
+-->
+
 [Notion – Home](https://www.notion.com/product)
 
 Product

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.hims.com/labs/cancer-test
+captured: 2026-06-03
+-->
+
 ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_576/q_auto:good:sensitive/f_auto,fl_lossy/v1/cms/hims/labs/Signal/03-12-26/Hims-labs-grail-atf-01-M)
 
 # Screen for 50+ cancer types with one blood test [1](https://www.hims.com/labs/cancer-test\#6CtFZusspCLZrh1l0Wk8UR)

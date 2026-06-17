@@ -1,3 +1,8 @@
+<!--
+source_url: https://cfs.energy/technology/sparc
+captured: 2026-06-14
+-->
+
 Technology
 
 # SPARC: Proving commercial fusion energy is possible

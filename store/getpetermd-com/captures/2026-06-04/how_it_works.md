@@ -1,3 +1,8 @@
+<!--
+source_url: https://getpetermd.com/how-it-works
+captured: 2026-06-04
+-->
+
 - 100% online care
 
 

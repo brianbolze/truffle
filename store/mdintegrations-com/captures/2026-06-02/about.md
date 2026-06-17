@@ -1,3 +1,8 @@
+<!--
+source_url: https://mdintegrations.com/about
+captured: 2026-06-02
+-->
+
 about \| HubSpot Video
 
 ![about](https://242063962.fs1.hubspotusercontent-na2.net/hub/242063962/hubfs/custom-video-thumbnails/about-thumb.jpeg?length=1920)

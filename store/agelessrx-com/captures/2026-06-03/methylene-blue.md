@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/methylene-blue/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/methylene-blue/#primary)
 
 ![Product image #1 for Methylene Blue](https://agelessrx.com/wp-content/uploads/methylene-blue.png)

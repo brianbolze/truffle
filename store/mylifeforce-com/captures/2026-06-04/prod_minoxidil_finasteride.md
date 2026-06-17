@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/minoxidil-finasteride
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/minoxidil-finasteride#main-content)
 
 Minoxidil + Finasteride FDA Approved Hair Regrowth Serum

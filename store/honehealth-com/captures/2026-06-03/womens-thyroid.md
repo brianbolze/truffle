@@ -1,3 +1,8 @@
+<!--
+source_url: https://honehealth.com/hypothyroidism/women
+captured: 2026-06-03
+-->
+
 [skip to content](https://honehealth.com/hypothyroidism/women/#main)
 
 Low EnergyHot FlashesInflammationCognitionTRTBrain Fog

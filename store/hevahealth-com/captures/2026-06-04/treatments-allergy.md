@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.hevahealth.com/treatments/allergy
+captured: 2026-06-04
+-->
+
 [Heva Health](https://www.hevahealth.com/)
 
 - [Hormone Balance](https://www.hevahealth.com/treatments/hormone-treatment)

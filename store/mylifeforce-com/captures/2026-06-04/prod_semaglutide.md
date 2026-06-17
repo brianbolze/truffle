@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/semaglutide
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/semaglutide#main-content)
 
 Buy Semaglutide Online: Effective Weight Loss Aid

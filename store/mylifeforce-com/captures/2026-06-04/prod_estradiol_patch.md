@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/estradiol-patch
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/estradiol-patch#main-content)
 
 ![EstradiolPatch_PDP_1](https://www.mylifeforce.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F130005%2F3600x4512%2F9ce462157f%2Festradiolpatch_pdp_1_mobile.jpg&w=3840&q=70)

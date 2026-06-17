@@ -1,3 +1,8 @@
+<!--
+source_url: https://ro.co/weight-loss/pricing/
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://ro.co/weight-loss/pricing/#skip-nav-target)
 
 # The lowest-price GLP-1s

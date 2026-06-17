@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.gogeviti.com/faq
+captured: 2026-06-02
+-->
+
 ![](https://www.gogeviti.com/_next/image?url=%2Fimages%2Ffaq%2Fhero-bg.jpg&w=3840&q=75)
 
 # How Can We Help?

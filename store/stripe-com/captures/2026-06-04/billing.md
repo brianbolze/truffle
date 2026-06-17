@@ -1,3 +1,8 @@
+<!--
+source_url: https://stripe.com/billing
+captured: 2026-06-04
+-->
+
 # Monetize faster with Stripe Billing.Manage pricing, reduce churn, and grow revenue—on one platform.
 
 [Start now](https://dashboard.stripe.com/register/billing) [Contact sales](https://stripe.com/contact/sales)

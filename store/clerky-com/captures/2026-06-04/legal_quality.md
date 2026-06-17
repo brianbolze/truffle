@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.clerky.com/legal-quality
+captured: 2026-06-04
+-->
+
 # How to Determine Legal Quality
 
 Short answer: it's really difficult. Here's why.

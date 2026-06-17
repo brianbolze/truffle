@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.kingsbergmedical.com/product/semaglutide/
+captured: 2026-06-09
+-->
+
 [Home](https://www.kingsbergmedical.com/)
 
 >>

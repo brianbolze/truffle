@@ -1,3 +1,8 @@
+<!--
+source_url: https://cfs.energy/technology/hts-magnets
+captured: 2026-06-14
+-->
+
 Technology
 
 # HTS magnets

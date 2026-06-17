@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.onemedical.com/kids/
+captured: 2026-06-15
+-->
+
 ## Real life care for real families
 
 For all the parents who’ve missed an entire day of work to make it to the pediatrician. Who’ve turned to message boards to diagnose a 3 a.m. stomach bug. And who want the absolute best care for their children with less waiting, more communication, and easier access. There’s a new way to take your family to the doctor.

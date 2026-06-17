@@ -1,3 +1,8 @@
+<!--
+source_url: https://remedymeds.com
+captured: 2026-06-01
+-->
+
 [+1 (551) 239-9025Care team available](tel:+1 (551) 239-9025) [Sign In](https://remedymeds.com/auth/sign-in)
 
 ![Forbes Best of 2026](https://remedymeds.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fforbes-best-of-2026.0hnov6waa_.yt.png&w=256&q=75)

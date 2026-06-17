@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.noom.com/med/
+captured: 2026-06-04
+-->
+
 ## Find out if you’re eligible for weight loss medication
 
 What is your weight loss goal?

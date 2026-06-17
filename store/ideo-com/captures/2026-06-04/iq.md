@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ideo.com/iq
+captured: 2026-06-04
+-->
+
 ![The human-centered design company](https://cdn.prod.website-files.com/67cb2dd62d5110e2973d39d7/69e8edbf58d5c4e2d69a72cb_2d6fa7964666107b17e31837a7d03f3a_IQ_hero_image.webp)
 
 # The IDEO IQ Report

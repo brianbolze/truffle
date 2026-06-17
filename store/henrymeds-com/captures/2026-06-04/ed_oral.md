@@ -1,3 +1,8 @@
+<!--
+source_url: https://henrymeds.com/treatments/erectile-dysfunction/ed-oral
+captured: 2026-06-04
+-->
+
 ![A smiling couple embraces on a couch. She holds a mug, wears a ring. He's in plaid.](https://framerusercontent.com/images/Smm469jLg1ty10RwWhTiNU6Sg.jpg?width=1030&height=1030)
 
 ![Three bottles of Henry personalized oral ED medicine, tablets, dissolving tablets, and capsules.](https://framerusercontent.com/images/6nh7JU0ycI3RwvSrPd0jo5SP88.png?width=1200&height=800)

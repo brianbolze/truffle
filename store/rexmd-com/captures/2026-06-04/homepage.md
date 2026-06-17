@@ -1,3 +1,8 @@
+<!--
+source_url: https://rexmd.com
+captured: 2026-06-04
+-->
+
 [**Memorial Day Sale** Save Up To 95% Off ED Meds & Pay $2 Per Tablet](https://ed.rexmd.com/X1HRT/?affid=home&force=1)
 
 [![Rex MD Logo](https://rexmd.com/assets/img/svg/rex-logo.svg)](https://rexmd.com/?affid=home&force=1)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.airbnb.com/aircover-for-hosts
+captured: 2026-06-04
+-->
+
 # Aircover for Hosts
 
 Top-to-bottom protection.

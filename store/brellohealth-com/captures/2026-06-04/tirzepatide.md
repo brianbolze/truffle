@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.brellohealth.com/product/tirzepatide-b6
+captured: 2026-06-04
+-->
+
 ![wire-tracking-pixel](https://api.wire.spbx.app/wire?token=O86XVuVq787NnF6mZG4kW7dG%2FS%2BZRsAsg8cKHztQiaOQgjGakyBqaDe3Uihoud%2FetXlYHx4IsXNdOFS8t63ABhD02i0o1yfKXEoST27vLK0%3D&u=https%3A%2F%2Fwww.brellohealth.com%2Fproduct%2Ftirzepatide-b6)[Skip to content](https://www.brellohealth.com/product/tirzepatide-b6#content)
 
 # Compounded Tirzepatide

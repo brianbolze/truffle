@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/pages/how-it-works
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/pages/how-it-works#static-page)
 
 # _Your Path_ to Better Health Starts Here

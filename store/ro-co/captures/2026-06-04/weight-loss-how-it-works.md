@@ -1,3 +1,8 @@
+<!--
+source_url: https://ro.co/weight-loss/how-it-works/
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://ro.co/weight-loss/how-it-works/#skip-nav-target)
 
 # Start losing weight with Ro in 5 simple steps

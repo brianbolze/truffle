@@ -1,3 +1,8 @@
+<!--
+source_url: https://clari.com
+captured: 2026-05-31
+-->
+
 **Revenue Intelligence Meets Real-Time Action**
 
 [Learn More](https://www.clari.com/press/clari-salesloft-forecasting-execution-mcp-server/)

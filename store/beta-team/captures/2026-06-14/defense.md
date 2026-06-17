@@ -1,3 +1,8 @@
+<!--
+source_url: https://beta.team/defense
+captured: 2026-06-14
+-->
+
 ![a250-1-tail-sunset](https://47449398.fs1.hubspotusercontent-na1.net/hub/47449398/hubfs/a250-1-tail-sunset.jpg?length=1920&name=a250-1-tail-sunset.jpg)
 
 ![a250-floor](https://47449398.fs1.hubspotusercontent-na1.net/hub/47449398/hubfs/a250-floor.jpg?length=1920&name=a250-floor.jpg)

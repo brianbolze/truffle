@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.cloudflare.com/plans/
+captured: 2026-05-31
+-->
+
 ### Free
 
 For personal or hobby projects that aren't business-critical.

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.patek.com/manufacture/quality-and-fine-workmanship/the-finest-timepieces-in-the-world
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.patek.com/manufacture/quality-and-fine-workmanship/the-finest-timepieces-in-the-world#content)
 
 Pause

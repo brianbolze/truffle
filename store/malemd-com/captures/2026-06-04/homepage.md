@@ -1,3 +1,8 @@
+<!--
+source_url: https://malemd.com
+captured: 2026-06-04
+-->
+
 [Skip to Content](https://malemd.com/#main-content)
 
 ## Hot New Product Alert: Sermorelin Growth  Hormone Peptide [start here](https://malemd.com/sermorelin/v2/hc)

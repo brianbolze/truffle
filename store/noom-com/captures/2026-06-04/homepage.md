@@ -1,3 +1,8 @@
+<!--
+source_url: https://noom.com
+captured: 2026-06-04
+-->
+
 We’ll be conducting routine maintenance on **Saturday, August 3rd**.
 
 Our phone system will be unavailable during this time, but you’ll be able to chat with our live agents 24/7 or you can [email Support](https://www.noom.com/support/faqs/2021/06/contact-support/).

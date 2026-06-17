@@ -1,3 +1,8 @@
+<!--
+source_url: https://cfs.energy/technology/arc
+captured: 2026-06-14
+-->
+
 Technology
 
 # ARC: Putting fusion energy on the grid

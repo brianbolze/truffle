@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.truniagen.com/pages/niagen-nr-science
+captured: 2026-06-16
+-->
+
 [Spend $50+, get FREE 7-day supply of 300mg Stick Packs. **Shop Now**](https://www.truniagen.com/collections)
 
 NAD+ skincare powered by Niagen®. [**Learn More**](https://www.truniagen.com/pages/niagen-nanocloud "Niagen NanoCloud")**.**

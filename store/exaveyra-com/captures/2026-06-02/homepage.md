@@ -1,3 +1,8 @@
+<!--
+source_url: https://exaveyra.com
+captured: 2026-06-02
+-->
+
 Wholesale supply for licensed clinics
 
 # Three product lines. One verified source.

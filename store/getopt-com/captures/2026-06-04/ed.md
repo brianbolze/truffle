@@ -1,3 +1,8 @@
+<!--
+source_url: https://getopt.com/learn/protocols/erectile-dysfunction
+captured: 2026-06-04
+-->
+
 ED
 
 

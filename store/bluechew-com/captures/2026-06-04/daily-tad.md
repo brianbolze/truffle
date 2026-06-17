@@ -1,3 +1,8 @@
+<!--
+source_url: https://bluechew.com/daily-tad
+captured: 2026-06-04
+-->
+
 # Daily Tadalafil MultiVitamin
 
 Enhanced Sexual Performance

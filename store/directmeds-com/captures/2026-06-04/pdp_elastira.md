@@ -1,3 +1,8 @@
+<!--
+source_url: https://directmeds.com/medications/elastira/
+captured: 2026-06-04
+-->
+
 [![Direct Meds](https://directmeds.com/portal/img/logo-blue.svg)](https://directmeds.com/portal)
 
 Open main menu

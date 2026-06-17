@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.bullish.co/about/capital
+captured: 2026-06-12
+-->
+
 # We seek founders in fierce pursuit of shaking up consumer markets.
 
 #### Approach

@@ -1,3 +1,8 @@
+<!--
+source_url: https://dewittpharma.com/pre-approval/
+captured: 2026-06-02
+-->
+
 [Skip to content](https://dewittpharma.com/pre-approval/#content)
 
 # Apply for a Buyer Account

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.functionhealth.com/
+captured: 2026-06-13
+-->
+
 [Use your HSA/FSA funds to join Function.](https://my.functionhealth.com/signup?code=928AA4E1CD199B9D73A1A3B7DBC7F4F7&_saasquatch=_____)
 
 [How it works](https://www.functionhealth.com/how-it-works) [What we test](https://www.functionhealth.com/what-we-test) [Scans](https://www.functionhealth.com/scans) [FAQ](https://www.functionhealth.com/faq) [About](https://www.functionhealth.com/about)

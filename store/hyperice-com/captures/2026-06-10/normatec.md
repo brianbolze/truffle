@@ -1,3 +1,8 @@
+<!--
+source_url: https://hyperice.com/collections/normatec
+captured: 2026-06-10
+-->
+
 [Skip to content](https://hyperice.com/collections/normatec#main)
 
 Order online and pick up at Best Buy today.Order online and pick up at Best Buy today.

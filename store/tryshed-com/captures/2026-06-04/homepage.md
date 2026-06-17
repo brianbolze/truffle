@@ -1,3 +1,8 @@
+<!--
+source_url: https://tryshed.com
+captured: 2026-06-04
+-->
+
 [Start today](https://www.tryshed.com/#)
 
 [Login](https://portal.tryshed.com/)

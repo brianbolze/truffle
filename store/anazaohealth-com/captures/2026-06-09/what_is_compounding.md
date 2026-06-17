@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.anazaohealth.com/what-is-compounding
+captured: 2026-06-09
+-->
+
 top of page
 
 Skip to Main Content

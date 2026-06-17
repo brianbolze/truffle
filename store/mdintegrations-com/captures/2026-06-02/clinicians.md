@@ -1,3 +1,8 @@
+<!--
+source_url: https://mdintegrations.com/clinicians
+captured: 2026-06-02
+-->
+
 # Join our nationwide clinician network.
 
 At MD Integrations, we’re redefining what it means to practice virtual medicine. Our physician-led model is built to respect your time, prioritize patient care, and eliminate the friction so common in traditional telehealth jobs.

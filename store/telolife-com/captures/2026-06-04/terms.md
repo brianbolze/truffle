@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.telolife.com/legal/terms.html
+captured: 2026-06-04
+-->
+
 Legal
 
 # Terms of Service

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.gogeviti.com/bloodwork
+captured: 2026-06-02
+-->
+
 ![](https://www.gogeviti.com/images/bloodwork/blood-vial-tube.png)
 
 ![](https://www.gogeviti.com/images/bloodwork/blood-vial-tube.png)

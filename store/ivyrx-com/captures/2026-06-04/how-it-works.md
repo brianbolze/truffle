@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ivyrx.com/how-it-works
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://support.ivyrx.com/en/articles/10085216-how-it-works#main-content)
 
 # How It Works

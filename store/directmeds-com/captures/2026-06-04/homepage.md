@@ -1,3 +1,8 @@
+<!--
+source_url: https://directmeds.com
+captured: 2026-06-04
+-->
+
 # DirectMeds - Weight Loss and Wellness Medications Online
 
  [Skip to main content](https://directmeds.com/#main-content)Open Mobile Menu

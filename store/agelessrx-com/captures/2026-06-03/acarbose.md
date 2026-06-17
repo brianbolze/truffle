@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/acarbose/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/acarbose/#primary)
 
 ![Product image #1 for Acarbose](https://agelessrx.com/wp-content/uploads/acarbose-product-img.png)

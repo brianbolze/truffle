@@ -1,3 +1,8 @@
+<!--
+source_url: https://listenlabs.ai/features/quality-guard
+captured: 2026-05-31
+-->
+
 New Feature
 
 Quality Guard

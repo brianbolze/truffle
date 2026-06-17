@@ -1,3 +1,8 @@
+<!--
+source_url: https://meals.medvi.org/
+captured: 2026-06-04
+-->
+
 Now Ordering for Shipment on Monday, June 15
 
 Fresh Meals Delivered Nationwide Every Week!

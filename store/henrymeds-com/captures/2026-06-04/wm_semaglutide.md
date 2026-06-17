@@ -1,3 +1,8 @@
+<!--
+source_url: https://henrymeds.com/treatments/weight-management/semaglutide
+captured: 2026-06-04
+-->
+
 ![Woman smiling holding phone with provider on screen and a compounded semaglutide bottle next to her.](https://framerusercontent.com/images/RgjZccsKefLJpx9ZwbbL2Itrg.jpg?width=1030&height=1030)
 
 ![Woman smiling holding phone with provider on screen and a compounded semaglutide bottle next to her.](https://framerusercontent.com/images/xiOvLdshbRIMwSvPNHdRLk4xd8.png?width=500&height=1144)

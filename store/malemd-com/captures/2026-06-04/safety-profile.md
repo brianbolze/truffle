@@ -1,3 +1,8 @@
+<!--
+source_url: https://malemd.com/safety-profile
+captured: 2026-06-04
+-->
+
 ![](https://malemd.com/app-client/images/dc/60_days_badge.png)
 
 [![](https://malemd.com/app-client/images/dc/malmemd_logo_white.png)](https://malemd.com/safety-profile#)

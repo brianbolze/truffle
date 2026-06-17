@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.firstround.com/how-we-work
+captured: 2026-06-14
+-->
+
 # Nothing  matters more  than getting to _product-market fit._
 
 We’ve distilled two decades of experience into a framework to help founders find PMF faster. We’ll work with you to tackle these building blocks one by one.

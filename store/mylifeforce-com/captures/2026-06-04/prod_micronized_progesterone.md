@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/product/micronized-progesterone
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/product/micronized-progesterone#main-content)
 
 Micronized Progesterone: Menopause Symptom Relief Aid

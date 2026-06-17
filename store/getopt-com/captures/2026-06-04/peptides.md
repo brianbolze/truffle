@@ -1,3 +1,8 @@
+<!--
+source_url: https://getopt.com/learn/protocols/peptide-therapy
+captured: 2026-06-04
+-->
+
 ## Peptide Therapy
 
 Peptides are natural compounds that signal cells to boost immune function, increase muscle mass, and improve cognition. Opt Health offers personalized peptide treatments for weight management, improved sexual function, and anti-aging as part of our health optimization programs.

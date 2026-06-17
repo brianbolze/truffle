@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.hims.com/premature-ejaculation/sertraline-for-pe
+captured: 2026-06-03
+-->
+
 # Treat premature ejaculation & _finish on your own terms_
 
 - ![](https://www.hims.com/forhims/image/upload/w_48,q_auto:good:sensitive,fl_lossy,c_scale,f_auto,dpr_1.0/cms/hims/sex/storefront/premature-ejaculation/Hims-PE-ATF-Bullet-01)

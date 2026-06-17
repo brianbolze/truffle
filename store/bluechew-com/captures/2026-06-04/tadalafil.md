@@ -1,3 +1,8 @@
+<!--
+source_url: https://bluechew.com/tadalafil
+captured: 2026-06-04
+-->
+
 ![TAD Product](https://static.bluechew.com/assets/images/funnels_assets/tad-slide-1.jpg)
 
 ![TAD Product](https://static.bluechew.com/assets/images/funnels_assets/tad-slide-2.jpg)

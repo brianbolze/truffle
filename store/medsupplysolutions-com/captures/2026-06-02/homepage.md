@@ -1,3 +1,8 @@
+<!--
+source_url: https://medsupplysolutions.com
+captured: 2026-06-02
+-->
+
 ![](https://shop.medsupplysolutions.com/wp-content/uploads/2025/05/american-express.svg)
 
 5% off on your first order \| Wholesale Prices \| No Minimum Order \| [Delivery Guarantee](https://www.medsupplysolutions.com/refund-policy/)5% off on your first order \| Wholesale Prices \| No Minimum Order \| [Delivery Guarantee](https://www.medsupplysolutions.com/refund-policy/)

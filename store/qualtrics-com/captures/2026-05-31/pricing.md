@@ -1,3 +1,8 @@
+<!--
+source_url: https://qualtrics.com/pricing
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.qualtrics.com/pricing/#main-content)
 
 ### QUALTRICS XM PLATFORM\_

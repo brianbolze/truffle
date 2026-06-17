@@ -1,3 +1,8 @@
+<!--
+source_url: https://parlance.cc/news/fte
+captured: 2026-06-10
+-->
+
 Parlance
 
 # FTE

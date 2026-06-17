@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.doordash.com/dashpass/
+captured: 2026-05-31
+-->
+
 ![](https://img.cdn4dd.com/s/managed/consumer/dashpass/DP_Landing_Mosaic_Purple_Logo.png)
 
 * * *

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.nurx.com/weight-management-treatment/
+captured: 2026-06-04
+-->
+
 ## It’s science, not a shortcut
 
 Healthy weight loss can help you achieve your goals beyond the scale. For some, this means boosting activity, increasing energy, improving mental health, and managing or preventing chronic conditions.\*

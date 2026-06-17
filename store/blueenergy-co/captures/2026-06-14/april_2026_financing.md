@@ -1,3 +1,8 @@
+<!--
+source_url: https://blueenergy.co/april-2026-financing/
+captured: 2026-06-14
+-->
+
 [Skip to content](https://blueenergy.co/april-2026-financing/#content)
 
 # Blue Energy Raises $380M to Build World’s First Project-Financeable Nuclear Plant

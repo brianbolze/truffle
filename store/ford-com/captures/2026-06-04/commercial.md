@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.ford.com/new-commercial-trucks
+captured: 2026-06-04
+-->
+
 # New Commercial Trucks \| Find the Best Ford® Truck, Pickup, Chassis, or Cutaway For You \| Ford.com
 
 # Ford Commercial Vehicles

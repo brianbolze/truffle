@@ -1,3 +1,8 @@
+<!--
+source_url: https://goinfusive.com/platform/
+captured: 2026-06-09
+-->
+
 ![SoftWare Laptop Image](https://goinfusive.com/wp-content/uploads/2025/12/software-img.png)
 
 # The Only Software Built for Wellness Practices

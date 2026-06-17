@@ -1,3 +1,8 @@
+<!--
+source_url: https://casio.com
+captured: 2026-05-31
+-->
+
 [Skip to content](https://www.casio.com/us/#mainContent)
 
 - [YOUR ORDERS](https://www.casio.com/us/order-tracking)

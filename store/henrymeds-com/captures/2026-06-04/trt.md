@@ -1,3 +1,8 @@
+<!--
+source_url: https://henrymeds.com/treatments/trt
+captured: 2026-06-04
+-->
+
 ![An older couple in athletic wear jog outdoors, laughing.](https://framerusercontent.com/images/IA5WVhN0OcbClyDs3dBD2znE.jpg?width=1030&height=1030)
 
 ![Three bottles of testosterone medication: body cream, injection, and oral pills, all labeled "RX ONLY."](https://framerusercontent.com/images/zbyz3iXOQJBl9aGp8ErmFoe9zk.png?width=1002&height=880)

@@ -1,3 +1,8 @@
+<!--
+source_url: https://verdegoaero.com/about-verdego/
+captured: 2026-06-14
+-->
+
 ## Experience, passion, and vision merge to deliver innovation
 
 Three visionaries with experience in hybrid-electric and battery-electric aircraft came together with the idea to accelerate the electrification of flight by combining the best of conventional propulsion technologies with the best of next-generation electric flight. In 2017, they founded VerdeGo Aero, recognizing the need to develop novel hybrid powerplants that enable high-performance electric flight using the new capabilities of electric motors, in concert with hybrid powerplants that use liquid fuels. Today, VerdeGo’s dual-use technologies are empowering commercial and defense aviation customers to new heights across the globe.

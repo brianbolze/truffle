@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.hims.com/erectile-dysfunction/cialis
+captured: 2026-06-03
+-->
+
 - ![](https://www.hims.com/forhims/image/upload/c_scale,dpr_1.0,w_532/q_auto:good:sensitive/f_auto,fl_lossy/v1/Hims/PDP-Migration/cialis/HIMS_PDP_CIALIS_HERO_D)
 
 Most popular

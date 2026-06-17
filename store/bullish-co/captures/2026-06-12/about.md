@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.bullish.co/about
+captured: 2026-06-12
+-->
+
 # We partner with companies that embrace creativity on the path to financial success.
 
 #### Approach

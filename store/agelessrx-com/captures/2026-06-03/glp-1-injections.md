@@ -1,3 +1,8 @@
+<!--
+source_url: https://agelessrx.com/glp-1-injections/
+captured: 2026-06-03
+-->
+
 [Skip to content](https://agelessrx.com/agelessrx_product/glp-1-injections/#primary)
 
 ![Product image #1 for Injectable GLP-1 Treatments](https://agelessrx.com/wp-content/uploads/Semaglutide-Suite.png)

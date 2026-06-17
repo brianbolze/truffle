@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.patek.com/collection/nautilus
+captured: 2026-05-31
+-->
+
 [Skip to main content](https://www.patek.com/collection/nautilus#content)
 
 ![PP_5990_1R_001_DET_DIAL_29](https://patek-res.cloudinary.com/dfsmedia/0906caea301d42b3b8bd23bd656d1711/4633-51882)

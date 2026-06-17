@@ -1,3 +1,8 @@
+<!--
+source_url: https://verdegoaero.com/product/vh3/
+captured: 2026-06-14
+-->
+
 ![](https://verdegoaeropro.wpengine.com/wp-content/uploads/va-logo-color.svg)
 
 # VH-3 185 kW

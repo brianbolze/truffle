@@ -1,3 +1,8 @@
+<!--
+source_url: https://sequoiacap.com/our-ethos/
+captured: 2026-06-14
+-->
+
 [Skip to main content](https://sequoiacap.com/our-ethos/#main)
 
 # Sequoia, 1972 and beyond

@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.alpha-sense.com/about/
+captured: 2026-05-31
+-->
+
 # Revolutionizing market intelligence across industries for over a decade
 
 ![](https://www.alpha-sense.com/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fewv2vq7j%2Fproduction%2F91427da3a1e28a1f6a62cfe4022c789bda6452f3-708x708.png%3Ffit%3Dmax%26auto%3Dformat&w=3840&q=75)

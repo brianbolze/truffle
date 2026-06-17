@@ -1,3 +1,8 @@
+<!--
+source_url: https://mylifeforce.com/pages/menopause-management
+captured: 2026-06-04
+-->
+
 [Skip to main content](https://www.mylifeforce.com/pages/menopause-management#static-page)
 
 ![Menopause hero image](https://www.mylifeforce.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F130005%2F1160x1200%2F14d996b1ed%2Fmenopause-hero-desktop-image.png&w=3840&q=75)

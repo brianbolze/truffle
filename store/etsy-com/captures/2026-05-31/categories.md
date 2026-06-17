@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.etsy.com/categories
+captured: 2026-05-31
+-->
+
 # Shop All Categories
 
 ## Categories

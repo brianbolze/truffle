@@ -1,3 +1,8 @@
+<!--
+source_url: https://bluechew.com/reviews
+captured: 2026-06-04
+-->
+
 # Testimonials
 
 ### Results have not been independently verified. Individual results may vary.

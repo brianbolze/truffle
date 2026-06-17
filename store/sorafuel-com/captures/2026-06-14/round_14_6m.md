@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.sorafuel.com/news/sora-fuel-closes-14-6m-round-to-scale-air-to-jet-fuel-technology
+captured: 2026-06-14
+-->
+
 [Skip to content](https://www.sorafuel.com/news/sora-fuel-closes-14-6m-round-to-scale-air-to-jet-fuel-technology#main-content)
 
 [← Back to home](https://www.sorafuel.com/)

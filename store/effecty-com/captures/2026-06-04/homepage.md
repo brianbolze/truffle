@@ -1,3 +1,8 @@
+<!--
+source_url: https://effecty.com
+captured: 2026-06-04
+-->
+
 Up to 50% off most treatments with code EFFECTY100  ⭐️
 Up to 50% off most treatments with code EFFECTY100  ✨
 Up to 50% off most treatments with code EFFECTY100  ⭐️

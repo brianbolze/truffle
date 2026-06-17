@@ -1,3 +1,8 @@
+<!--
+source_url: https://hallandalerx.com
+captured: 2026-06-02
+-->
+
 [Skip to content](https://hallandalerx.com/#content)
 
 [![Hallandale Pharmacy logo](https://hallandalerx.com/wp-content/themes/hallandale-pharmacy/static/images/header-logo.svg)](https://hallandalerx.com/)

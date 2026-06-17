@@ -1,3 +1,8 @@
+<!--
+source_url: https://www.firstround.com/news/manifesto
+captured: 2026-06-14
+-->
+
 ![](https://cdn.sanity.io/images/m6i10uln/production/630a16e10c483715efe28d639d76a462302d3ef3-1120x1120.png?fm=webp&w=3840&q=80)
 
 News
