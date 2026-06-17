@@ -53,7 +53,7 @@ attributes this preset's credit cost to its own routine.
      --started-at "$RUN_STARTED_AT" \
      --artifact offerings.md
    ```
-   Tool is env-detected for **both Claude Code and Codex** — no `--tool` needed. Pass `--model <id>` if you know it (a session `export RUNREC_MODEL=…` is authoritative; else it falls back to `unknown`); add `--status partial` if the run fell short. Omit the record only if the preset declined before doing any work.
+   Tool is env-detected for **both Claude Code and Codex** — no `--tool` needed. Pass `--model <id>` if you know it — the model you were told at session start; else it falls back to `unknown`. Add `--status partial` if the run fell short. Omit the record only if the preset declined before doing any work.
 
 **Scope:** offerings only (a full refresh or first capture is `/research-company`); it spends Firecrawl, so
 research-company's credit pre-flight applies.

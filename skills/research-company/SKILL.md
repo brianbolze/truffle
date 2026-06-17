@@ -112,7 +112,7 @@ python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" write \
   --started-at "$RUN_STARTED_AT" \
   --artifact profile.md
 ```
-Tool is env-detected for **both Claude Code and Codex** — no `--tool` needed. Add `--artifact offerings.md` / `--artifact telehealth.md` / `--artifact productivity_saas.md` / `--artifact visual.md` only if this run wrote them. Pass `--model <id>` if you know it (a session `export RUNREC_MODEL=…` is authoritative; otherwise it falls back to `unknown`); add `--status partial` if the run fell short of a clean capture. If a *second* LLM materially helped (a GPT-5.5 claim-audit, a specialist pass), add `--components-json '[{"tool":"codex","model":"gpt-5.5","role":"claim-audit"}]'` — **list only helpers that actually ran**. Keep `--note` to one line of run color, never company State.
+Tool is env-detected for **both Claude Code and Codex** — no `--tool` needed. Add `--artifact offerings.md` / `--artifact telehealth.md` / `--artifact productivity_saas.md` / `--artifact visual.md` only if this run wrote them. Pass `--model <id>` if you know it — the model you were told at session start; otherwise it falls back to `unknown`. Add `--status partial` if the run fell short of a clean capture. If a *second* LLM materially helped (a GPT-5.5 claim-audit, a specialist pass), add `--components-json '[{"tool":"codex","model":"gpt-5.5","role":"claim-audit"}]'` — **list only helpers that actually ran**. Keep `--note` to one line of run color, never company State.
 
 Finally, report a run summary:
 > Captured **<name>** (`<domain>`) → `store/<slug>/profile.md`. N pages, M credits spent (X remaining). Notable: <1-line site quirk or finding>. <Any `unverified_fields` worth flagging.>

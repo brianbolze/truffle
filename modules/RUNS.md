@@ -67,13 +67,15 @@ python3 "$WEB_RESEARCH_HOME/scripts/runrecord.py" write \
 
 Both Claude Code and Codex are env-detected, so `--tool`/`--trust` are rarely needed — pass `--tool <slug>` only for a tool the env can't identify. Add `--artifact offerings.md`, `--artifact visual.md`, `--components-json '[...]'`, or `--note "..."` only when they apply.
 
-**Declaring model/effort (optional).** The env can't see the model or effort. To pin them for a whole session — robust even if the agent forgets to pass flags — `export` them once at session start; the writer treats them as authoritative:
+**Declaring model/effort.** Neither is in the env, so the per-run source is the agent's `--model`/`--effort` (relay what you were told at session start); absent that, `model` is `"unknown"` and `effort` is omitted — the record still lands.
+
+**Batch pin (power option).** `RUNREC_MODEL`/`RUNREC_EFFORT` override authoritatively — but they must live in the **launch environment**, not an in-session `export`. Each agent shell is fresh (shell state doesn't persist between tool calls), so an in-chat `export` is gone before the writer runs. Set it where you start the tool:
 
 ```sh
-export RUNREC_MODEL=gpt-5.5 RUNREC_EFFORT=high
+RUNREC_MODEL=gpt-5.5 RUNREC_EFFORT=high codex      # or put it in your shell profile
 ```
 
-Forgot? The record still lands: `model` falls back to the agent's `--model` (or `"unknown"`), and `effort` is simply omitted.
+A profile-level pin is **sticky** — it labels *every* session until you unset it. Use it for a deliberate same-model batch and clear it when you switch models.
 
 Do not write warm-skip records. Do not write crash/abort records. Absence of a run record means "not recorded" for pre-0.1 history, or "no completed write reached the recorder" for a new run.
 
