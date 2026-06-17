@@ -12,6 +12,8 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
 - **provenance** — `[@brian]` added / explicitly-approved / co-authored by Brian; untagged = agent-added, subject to review
 - `[parked]` = deferred on purpose
 
+If they clearly map to our strategic pillars / themes, tag it with one:
+
 **Bias to remove.** Default is to add — resist it. Before logging, look for a way to *consolidate* or *cut* instead; hunt `[simplification]`s at least as hard as features. If an entry adds surface, note what it replaces.
 
 **Graduate on a trigger, not to clear the list.** Most items sit until a real capture confirms them (≥2 sightings) or their **Act when** fires — then move to a `_design/` doc or just do it.
@@ -27,6 +29,10 @@ System-level weaknesses, ideas, and TBDs for the engine itself — things that w
   The architecture's deferred **Signals-layer storage** question (Open Q#1) is now answered: company-grain signals land at `store/<domain>/signals/<source_type>/<captured_at>.json` (per-source verbatim envelopes — committed to the [architecture](_design/2026-05-30-architecture.md), diffed by `signal_delta.py`), **not** a per-concept `log.md`. A human-readable append-only `log.md` of dated events (funding, launches, rebrands) beside `profile.md` remains a *future* option, no longer the open decision. Independent watch: Google [OKF](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/)'s open-source self-contained HTML graph **visualizer** for the long-horizon Visualization phase (its store shape — markdown + frontmatter, file-path = identity — already validates our core bet).
   **Act when:** a consumer needs human-readable dated events, *or* the OKF visualizer matures — don't adopt OKF conformance (no interop consumer earns it; it'd pressure our State/Signals/Judgments + verbatim-provenance opinions OKF omits).
   
+- **Run-record coverage is unaudited** `[weakness]` `[@brian]`
+  Run records ([`modules/RUNS.md`](modules/RUNS.md)) are written by an agent following a prose skill-step at capture end — no enforcement, no audit. So a missing `store/<slug>/runs/*.json` is ambiguous: pre-`0.1` history, a crashed run, **or the agent simply skipped the step** — that third meaning quietly dents the health/diagnostics signal the layer exists to provide (the Steward's "looks complete but isn't"). The no-Stop-hook call is deliberate (living infra, anti-Doro), so the gap is *coverage*, not the writer.
+  **Act when:** the telemetry is actually consumed (an aggregator over `runs/`) **and** coverage looks holey — add a cheap audit (e.g. a `store.py health` flag for a completed capture whose `captures/<date>/` has no paired run-record), never a watcher.
+
 ### Capture quality
 
 - **Adaptive capture-depth — substance floor (probe first)** `[idea]` `[md]` `[@brian]`

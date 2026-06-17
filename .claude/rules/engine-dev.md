@@ -11,6 +11,10 @@ paths:
 
 The contract is [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md); why/scope is the [frame](_design/2026-05-29-frame.md), how is the [architecture](_design/2026-05-30-architecture.md). **Changing a contract? [`MAINTAINING.md`](MAINTAINING.md) is the blast-radius map — what moves downstream, and the gate to run after.**
 
+Working on a large initiative / feature? Think about *what value* it creates by reading our [strategic-pillars](../../documentation/strategic-pillars.md), and consider *whose shoes* you stand in to feel it by reading our [personas](../../documentation/personas.md).
+
+If you really need to put this into planning context - refer to our [Roadmap database](https://app.notion.com/p/getdoro/2362eca6edf441c18aaa7c0105c4cc23?v=38284b6d1f49805a84fd000cd5cb6768) in Notion.
+
 ## Principles
 
 - **Spend on durable conventions, not living infrastructure.** Schemas, taxonomies, and file layout earn the real investment. Markdown is the source of truth; any index (SQLite, …) is a *derived, regenerable lens* — never authoritative. Code is welcome — committed tools (`tools/`, `scripts/`) or one-offs alike; what we refuse is *living infrastructure* you must keep alive: a standing server, a hosted API, an authoritative database service. The flag is anything that has to keep running to stay true.
