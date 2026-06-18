@@ -148,7 +148,7 @@ def main() -> None:
             if scripts_dir not in sys.path:
                 sys.path.insert(0, scripts_dir)
             try:
-                from store import FIELD_VERSIONS  # type: ignore[import]
+                from store import FIELD_VERSIONS, name_key_collisions  # type: ignore[import]
                 fv_vers = set(FIELD_VERSIONS.values())
                 missing_vers = sorted(gf_vers - fv_vers)
                 if missing_vers:
@@ -156,6 +156,16 @@ def main() -> None:
                         f"FIELD_VERSIONS in store.py missing entries for schema versions {missing_vers}"
                         f" — append to FIELD_VERSIONS after each MINOR no-backfill bump"
                         f" (has: {sorted(fv_vers)}, needs: {sorted(gf_vers)})."
+                    )
+                collisions = name_key_collisions()
+                if collisions:
+                    rendered = "; ".join(
+                        f"{key}: {', '.join(f'{slug} ({surface})' for slug, surface in hits)}"
+                        for key, hits in collisions.items()
+                    )
+                    fails.append(
+                        "human-normalized name keys collide in store.py resolver"
+                        f" — lookup would be order-sensitive: {rendered}"
                     )
             except ImportError as e:
                 fails.append(f"FIELD_VERSIONS check: could not import store.py ({e}).")

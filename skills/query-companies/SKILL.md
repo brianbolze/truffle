@@ -31,6 +31,10 @@ points at the trust rules.
    Quote it — the path has spaces.
 2. Resolve names -> slugs, always: `python "$WEB_RESEARCH_HOME/scripts/store.py" find <each>`.
    Report per-company status before answering: clocks per layer / `STUB` / not in store.
+   If `find` prints `likely candidate`, inspect that slug before calling it a miss.
+   If it prints `ambiguous candidates`, do not pick silently: use nearby context
+   only if it clearly disambiguates; otherwise ask the user which company they
+   meant, listing the candidate slugs/names.
 3. Route via `QUERYING.md`'s one-rule table: for a human-facing ask about one
    profiled company, run `render.py` and **paste the link line it prints into
    your reply** (rendering without linking buries the artifact); `rg` for

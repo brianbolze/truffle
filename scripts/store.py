@@ -6,6 +6,7 @@ module exists only for the reads an agent gets subtly wrong by eye, so they're w
 
   resolve(query)  — fold any surface form (domain / name / alias / store-slug) to the one canonical key.
                     "domain is the key" only holds if a single function maps every form to it — canon().
+  suggest(query)  — advisory typo-tolerant candidates for an exact miss; never authoritative.
   relations()     — which parent/owns targets actually resolve to a held profile, which dangle (a
                     re-capture candidate, ranked by in-degree), which are name-only (un-joinable by design).
 
@@ -13,7 +14,7 @@ A *derived lens*, never authoritative: the markdown store is the source of truth
 (no cache, no index — the whole corpus is ~100KB; see experiments/2026-06-01-coded-queries). Stdlib + PyYAML.
 
 CLI:  python store.py find <query> [<query> ...]   ·   python store.py relations   ·   python store.py health
-Lib:  from store import load, canon, resolve, relations
+Lib:  from store import load, canon, resolve, suggest, relations
 """
 
 from __future__ import annotations
@@ -24,7 +25,9 @@ import re
 import sys
 import unicodedata
 from collections import Counter
+from dataclasses import dataclass
 from datetime import date
+from difflib import SequenceMatcher
 from typing import Any, Callable
 
 try:
@@ -32,8 +35,18 @@ try:
 except ImportError:
     sys.exit("PyYAML not importable — the resolver needs it to parse frontmatter.")
 
+try:
+    from rapidfuzz import fuzz as _rapidfuzz
+except ImportError:
+    _rapidfuzz = None
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STORE = os.path.join(ROOT, "store")
+SUGGEST_MIN_KEY_LEN = 5
+SUGGEST_SCORE_CUTOFF = 84.0
+SUGGEST_LIKELY_SCORE = 94.0
+SUGGEST_AMBIGUOUS_MARGIN = 3.0
+SUGGEST_LIKELY_MARGIN = 6.0
 
 # Hand-maintained mirror of SCHEMA's minor-additive (no backfill, grandfathered) fields.
 # display-name → schema_version at which the field/convention was added.
@@ -44,6 +57,16 @@ FIELD_VERSIONS: dict[str, str] = {
     "logos": "2.5",
     "legal_entity": "2.6",
 }
+
+
+@dataclass(frozen=True)
+class Suggestion:
+    """A non-authoritative candidate for an unresolved company name."""
+
+    slug: str
+    name: str
+    surface: str
+    score: float
 
 
 def read_doc(path: str) -> tuple[dict[str, Any], str]:
@@ -87,6 +110,25 @@ def _name_keys(s: object) -> list[str]:
     if "and" in tokens:
         keys.append("".join(t for t in tokens if t != "and"))
     return [k for k in dict.fromkeys(keys) if k]
+
+
+def _fuzz_score(a: str, b: str) -> float:
+    if _rapidfuzz:
+        return float(_rapidfuzz.WRatio(a, b))
+    return SequenceMatcher(None, a, b).ratio() * 100
+
+
+def _suggestion_surfaces(slug: str, fm: dict[str, Any]) -> list[str]:
+    """Human-facing surfaces worth fuzzy-suggesting against; exact resolver still owns authority."""
+    surfaces = [fm.get("name"), fm.get("legal_entity"), slug, fm.get("domain")]
+    surfaces.extend(a for a in (fm.get("aliases") or []) if not _is_domainish(a))
+    return [str(s).strip() for s in surfaces if str(s or "").strip()]
+
+
+def _exact_name_surfaces(fm: dict[str, Any]) -> list[str]:
+    surfaces = [fm.get("name")]
+    surfaces.extend(a for a in (fm.get("aliases") or []) if not _is_domainish(a))
+    return [str(s).strip() for s in surfaces if str(s or "").strip()]
 
 
 def _is_domainish(s: str) -> bool:
@@ -135,6 +177,55 @@ def resolve(query: str, profiles: dict[str, dict[str, Any]] | None = None) -> st
         if str(query).strip().lower() == str(fm.get("name") or "").lower():
             return slug
     return None
+
+
+def suggest(
+    query: str,
+    profiles: dict[str, dict[str, Any]] | None = None,
+    *,
+    limit: int = 5,
+    score_cutoff: float = SUGGEST_SCORE_CUTOFF,
+) -> list[Suggestion]:
+    """Likely matches for an exact miss. Suggestions are advisory; `resolve()` stays exact-only."""
+    profiles = load() if profiles is None else profiles
+    query_keys = _name_keys(query)
+    if not query_keys or max(len(k) for k in query_keys) < SUGGEST_MIN_KEY_LEN:
+        return []
+
+    best_by_slug: dict[str, Suggestion] = {}
+    for slug, fm in profiles.items():
+        for surface in _suggestion_surfaces(slug, fm):
+            surface_keys = _name_keys(surface)
+            if not surface_keys:
+                continue
+            score = max(_fuzz_score(q, s) for q in query_keys for s in surface_keys)
+            if score < score_cutoff:
+                continue
+            hit = Suggestion(
+                slug=slug,
+                name=str(fm.get("name") or slug),
+                surface=surface,
+                score=score,
+            )
+            if hit.score > best_by_slug.get(slug, Suggestion(slug, "", "", -1)).score:
+                best_by_slug[slug] = hit
+
+    return sorted(best_by_slug.values(), key=lambda s: (-s.score, s.slug))[:limit]
+
+
+def name_key_collisions(profiles: dict[str, dict[str, Any]] | None = None) -> dict[str, list[tuple[str, str]]]:
+    """Human-normalized name keys shared by multiple slugs; these would make exact name lookup order-sensitive."""
+    profiles = load() if profiles is None else profiles
+    by_key: dict[str, list[tuple[str, str]]] = {}
+    for slug, fm in profiles.items():
+        for surface in _exact_name_surfaces(fm):
+            for key in _name_keys(surface):
+                by_key.setdefault(key, []).append((slug, surface))
+    return {
+        key: hits
+        for key, hits in sorted(by_key.items())
+        if len({slug for slug, _ in hits}) > 1
+    }
 
 
 def relations(profiles: dict[str, dict[str, Any]] | None = None) -> dict[str, Any]:
@@ -251,11 +342,14 @@ def _hit_line(query: str, profiles: dict[str, dict[str, Any]]) -> str | None:
 
 
 def _miss_line(query: str, profiles: dict[str, dict[str, Any]]) -> str:
-    """The miss half of 'find': fuzzy candidates across all folders (profiles + stubs), or NOT in store."""
+    """The miss half of 'find': substring candidates, fuzzy suggestions, or NOT in store."""
     cq = canon(query)
     q_name_keys = _name_keys(query)
+    allow_partial_candidates = bool(q_name_keys) and max(len(k) for k in q_name_keys) >= SUGGEST_MIN_KEY_LEN
 
     def nameish_match(value: object) -> bool:
+        if not allow_partial_candidates:
+            return False
         v_name_keys = _name_keys(value)
         return any(q in v or v in q for q in q_name_keys for v in v_name_keys)
 
@@ -264,20 +358,38 @@ def _miss_line(query: str, profiles: dict[str, dict[str, Any]]) -> str:
         {
             slug
             for slug in all_dirs
-            if cq in canon(slug)
+            if allow_partial_candidates and cq in canon(slug)
             or (
                 slug in profiles
                 and (
-                    cq in canon(profiles[slug].get("domain") or "")
-                    or any(cq in canon(a) for a in (profiles[slug].get("aliases") or []) if _is_domainish(a))
-                    or query.strip().lower() in str(profiles[slug].get("name") or "").lower()
+                    allow_partial_candidates
+                    and (
+                        cq in canon(profiles[slug].get("domain") or "")
+                        or any(cq in canon(a) for a in (profiles[slug].get("aliases") or []) if _is_domainish(a))
+                        or query.strip().lower() in str(profiles[slug].get("name") or "").lower()
+                    )
                     or nameish_match(profiles[slug].get("name") or "")
                     or any(nameish_match(a) for a in (profiles[slug].get("aliases") or []) if not _is_domainish(a))
                 )
             )
         }
     )
-    return f"{query} → no exact key; candidates: {', '.join(cands)}" if cands else f"{query} → NOT in store"
+    if cands:
+        return f"{query} → no exact key; candidates: {', '.join(cands)}"
+
+    suggestions = suggest(query, profiles)
+    if suggestions:
+        top = suggestions[0]
+        second = suggestions[1] if len(suggestions) > 1 else None
+        label = "candidates"
+        if second and top.score - second.score < SUGGEST_AMBIGUOUS_MARGIN:
+            label = "ambiguous candidates"
+        elif top.score >= SUGGEST_LIKELY_SCORE and (not second or top.score - second.score >= SUGGEST_LIKELY_MARGIN):
+            label = "likely candidate"
+        formatted = ", ".join(f"{s.slug} ({s.name}, score {s.score:.0f})" for s in suggestions)
+        return f"{query} → no exact key; {label}: {formatted}"
+
+    return f"{query} → NOT in store"
 
 
 def _cli_find(profiles: dict[str, dict[str, Any]], *args: str) -> None:
@@ -366,6 +478,14 @@ def _cli_health(profiles: dict[str, dict[str, Any]], *_: str) -> None:
             diff = abs(pd - md)
             direction = "profile older" if pd > md else "module older"
             print(f"  {slug:<28} profile {pdate} ({pd}d) · {mod} {mdate} ({md}d)  [{diff}d, {direction}]")
+        print()
+
+    collisions = name_key_collisions(profiles)
+    if collisions:
+        print("HUMAN NAME KEY COLLISIONS:")
+        for key, hits in collisions.items():
+            rendered = ", ".join(f"{slug} ({surface})" for slug, surface in hits)
+            print(f"  {key}: {rendered}")
         print()
 
 

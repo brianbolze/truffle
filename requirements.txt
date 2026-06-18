@@ -13,5 +13,6 @@
 # Capture, query, and render work without these; only /visual-evidence + screenshot embeds need them.
 
 PyYAML>=6.0        # frontmatter parsing — core (capture, query, render)
+rapidfuzz>=3.9     # typo-tolerant company lookup suggestions; store.py falls back to stdlib difflib if absent
 playwright>=1.54   # visual-evidence Tier-B browser re-render (scripts/shoot.py)
 pytrends>=4.9      # Google Trends signal tool (tools/trends.py); pulls in pandas transitively

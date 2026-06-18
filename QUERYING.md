@@ -32,7 +32,7 @@ P = {p.split("/")[1]: frontmatter(p) for p in glob.glob("store/*/profile.md")}
 # P -> {slug: {field: value}}; lists come back as lists.
 ```
 
-**Resolve the company to its key first.** Domain is the key — but a question arrives as a *name*, an *old domain*, or an *alias*. `python scripts/store.py find <x>` (or `from store import resolve`) folds any surface form to the one slug; hand-matching silently misses non-obvious hits (`SendGrid → twilio-com`, `chatgpt.com → openai-com`, `salesloft.com → clari-com` post-merger). This and the relations join-check (Recipe 3) are the only two reads worth a script — everything else below is a one-line filter.
+**Resolve the company to its key first.** Domain is the key — but a question arrives as a *name*, an *old domain*, or an *alias*. `python scripts/store.py find <x>` (or `from store import resolve`) folds any exact surface form to the one slug; hand-matching silently misses non-obvious hits (`SendGrid → twilio-com`, `chatgpt.com → openai-com`, `salesloft.com → clari-com` post-merger). If `find` prints `likely candidate`, inspect that slug before calling it a miss. If it prints `ambiguous candidates`, do not pick silently: use nearby context only if it clearly disambiguates; otherwise ask the user which company they meant, listing the candidate slugs/names. This and the relations join-check (Recipe 3) are the only two reads worth a script — everything else below is a one-line filter.
 
 ## Recipes
 
