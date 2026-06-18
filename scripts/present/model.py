@@ -10,6 +10,7 @@ from __future__ import annotations
 import glob
 import os
 import re
+import sys
 from datetime import date
 from typing import Any
 
@@ -134,7 +135,7 @@ def extract_cohorts(slug: str) -> list[dict[str, Any]]:
     return out
 
 
-def _select_visual_tiles(cards_md: str, limit: int = 4) -> list[dict[str, Any]]:
+def _select_visual_tiles(cards_md: str, slug: str = "", limit: int = 4) -> list[dict[str, Any]]:
     """Pick a few specimen tiles from the evidence cards. The cards are the *curation index* — they
     already flag the clean, high-signal tiles and say why — so we dedupe by tile, lead with `strong`
     cards, and keep one non-strong so the strip shows range (what's strong + where it frays). The
@@ -161,6 +162,9 @@ def _select_visual_tiles(cards_md: str, limit: int = 4) -> list[dict[str, Any]]:
         if data:
             out.append({"data": data, "label": str(c.get("page_or_region") or ""),
                         "claim": str(c.get("claim") or ""), "polarity": str(c.get("polarity") or "mixed")})
+    if uniq and not out:
+        label = f" for {slug}" if slug else ""
+        print(f"warning: visual tile strip{label} requested {len(uniq)} tile path(s), resolved 0", file=sys.stderr)
     return out
 
 
@@ -181,7 +185,7 @@ def extract_visual(slug: str) -> dict[str, Any] | None:
         "age": _age_days(fm.get("captured_at")),
         "qa_status": str(fm.get("qa_status") or ""),
         "impression": impression,
-        "tiles": _select_visual_tiles(sections.get("evidence cards", "")),
+        "tiles": _select_visual_tiles(sections.get("evidence cards", ""), slug=slug),
     }
 
 

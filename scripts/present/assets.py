@@ -337,12 +337,23 @@ def load_screenshot(slug: str, width: int = 1200) -> dict[str, str] | None:
     return {"data": data, "date": cap_date} if data else None
 
 
+def _resolve_tile_source(tile_path: str) -> str | None:
+    """Resolve a visual.md tile path, tolerating capture dirs swept into _archive."""
+    src = tile_path if os.path.isabs(tile_path) else os.path.join(os.path.dirname(STORE), tile_path)
+    if os.path.exists(src):
+        return src
+    archived = re.sub(r"(/captures/)(?!_archive/)([^/]+/)", r"\1_archive/\2", src, count=1)
+    if archived != src and os.path.exists(archived):
+        return archived
+    return None
+
+
 def load_tile(tile_path: str, width: int = 540) -> str | None:
     """Compress one visual-evidence tile (a native-res PNG crop) to an embeddable JPEG data-URI,
     cached. Tiles are large and the brief shows a few as a specimen strip, so resample down hard.
     `tile_path` is repo-root-relative (as written in visual.md); resolved against the store's parent."""
-    src = tile_path if os.path.isabs(tile_path) else os.path.join(os.path.dirname(STORE), tile_path)
-    if not os.path.exists(src):
+    src = _resolve_tile_source(tile_path)
+    if not src:
         return None
     os.makedirs(IMGCACHE, exist_ok=True)
     key = re.sub(r"[^a-z0-9]+", "-", tile_path.lower()).strip("-")
