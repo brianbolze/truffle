@@ -1,0 +1,17 @@
+{
+  "record_version": "0.1",
+  "verb": "research-company",
+  "status": "complete",
+  "tool": "claude-code",
+  "model": "claude-opus-4-8",
+  "trust": "env",
+  "started_at": "2026-06-18T16:14:27Z",
+  "artifacts": [
+    "profile.md",
+    "offerings.md",
+    "telehealth.md"
+  ],
+  "effort": "xhigh",
+  "ended_at": "2026-06-18T16:33:29Z",
+  "note": "Express via /research-telehealth-brand; deep run (Direct competitor=Yes, Importance=High). Stability re-capture \u2014 roster+prices unchanged vs 2026-06-04; profile 2.5->2.6."
+}

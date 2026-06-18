@@ -2,7 +2,7 @@
 # Query contract for this store: ../../QUERYING.md — parse frontmatter; grep the body to locate.
 schema_version: "1.2"
 domain: ro.co               # company key; each offering's slug (its relative url) is its key *within* the company
-captured_at: 2026-06-04     # own freshness; captures/2026-06-04/ holds the source pages
+captured_at: 2026-06-18     # own freshness; captures/2026-06-18/ holds the source pages
 enumeration: indexed-complete   # all 8 lines reached at the indexed level (Multi-product); only leaf omissions in Provenance
 site_notes: "Catalog backbone = the public /pricing/ page — it enumerates per-SKU prices + active ingredient + 'Most popular' badges for EVERY non-GLP-1 line (ED, hair, PE, cold sores/herpes, multivitamin, testosterone, LATISSE, Custom Rx, women's hair). GLP-1 prices live ONLY on /weight-loss/pricing/ (not /pricing/, which shows just the Ro Body membership). Fertility (Modern Fertility kits + Sperm Kit) is the one line with NO published price — intake/quiz-gated, enumerated off the /fertility/ hub + nav. Hair-care add-ons (Revive Shampoo, Restore Conditioner) and Upneeq have no PDP/price — funnel/FAQ only. Prices A/B + promo volatile (own ro-experiments engine; 'Prepay & Save', TrumpRx-matched cash pricing, dated $20-off ED) — re-capture before trusting current. Per-dose GLP-1 ladders (Wegovy pill/pen, Foundayo) sit behind an unrendered 'See pricing details' expander; only Zepbound KwikPen's full ladder is in the FAQ."
 ---
@@ -109,7 +109,7 @@ share one slug (`/weight-loss/zepbound/`) — the cash (KwikPen) and insurance f
 ### Verbatim anchors
 
 The footnotes the Price column points at — what decides `[partial]` vs `[published]`, plus the molecule-sourcing
-audit. Quoted exactly from the cited `captures/2026-06-04/` pages.
+audit. Quoted exactly from the cited `captures/2026-06-18/` pages.
 
 - **[^mem] Ro Body membership (the wrapper, `[published]`):** `/pricing/` tile — *"Ro Body · Weight loss
   medication · Monthly membership **$39 first month, $74/mo thereafter prepaid on annual plan**"*; the FAQ
@@ -184,7 +184,7 @@ product — same word, different shape.)
 
 ## Provenance
 
-- **Pages read (8 priced/roster pages, all `captures/2026-06-04/`):** `pricing.md` (/pricing/ — the
+- **Pages read (8 priced/roster pages, all `captures/2026-06-18/`):** `pricing.md` (/pricing/ — the
   all-condition price + molecule + badge backbone), `weight-loss-pricing.md` (/weight-loss/pricing/ — GLP-1
   dose ladders + membership), `weight-loss.md` (/weight-loss/ — GLP-1 cards + prominence), `erectile-dysfunction.md`
   (ED prominence + Sparks/Gummies), `hair-loss.md` (men's hair molecules + Revive/Restore add-ons),
@@ -205,8 +205,12 @@ product — same word, different shape.)
   membership — "thereafter" ranges are floors, not totals); Testosterone Support / enriching cream molecules
   (unnamed blends).
 - **Point-in-time snapshot, not fixed:** Ro runs its own A/B engine (`ro-experiments`) + promo-driven offers
-  ("Prepay & Save", TrumpRx-matched cash pricing, a dated "$20 off your next ED order … through 6/7") — this
-  module's `captured_at` + a short TTL are the guard; re-capture before trusting a price as current.
-- **Run profile:** all-SKU expansion (2026-06-04) — prior `offerings.md` (2026-06-03, schema 1.0) enumerated
-  only weight-loss + testosterone; this run re-captured fresh and enumerated **all eight lines** (~30 SKUs).
-  Stamped schema 1.1 (added `site_notes`). No hero-image / PDP-anatomy modules (price/roster consumer).
+  ("Prepay & Save", TrumpRx/LillyDirect/NovoCare-matched cash pricing, a dated "$20 off your next ED order …
+  through 6/7" — now expired as of this 6/18 capture) — this module's `captured_at` + a short TTL are the guard;
+  re-capture before trusting a price as current.
+- **Run profile:** stability re-capture (2026-06-18, Express via `/research-telehealth-brand ro.co`) —
+  re-scraped the 8 priced/roster pages fresh; **the full eight-line roster (~30 SKUs) and every captured price
+  is unchanged vs the prior 2026-06-04 capture** (incl. all GLP-1 cash ranges and the daily-Cialis $8 row). No
+  SKU added or dropped; Saxenda still nav-only/unpriced. Schema stays **1.2**. No hero-image / PDP-anatomy
+  modules (price/roster consumer). Prior: all-SKU expansion (2026-06-04, schema 1.0→1.2) grew it from
+  weight-loss-only (2026-06-03) to all eight lines.

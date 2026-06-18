@@ -1,10 +1,11 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.5"
+schema_version: "2.6"
 
 # Identity
 domain: ro.co
 name: Ro
+legal_entity: ""                     # 2.6: not site-derivable — JSON-LD carries only name "Ro" (no legalName); captured footer shows "Ro" + LegitScript, no ©/legal-entity line. (Terms/Privacy pages not captured.)
 aliases: [Roman]                     # "Roman" is Ro's heritage/men's-health brand (now a sub-brand at /roman/); rebranded to parent "Ro"
 parent: []
 owns: []
@@ -12,7 +13,7 @@ socials: {}                          # none in captured footer/JSON-LD (icons ma
 external: {}                         # JSON-LD carried no sameAs
 
 # Capture meta
-captured_at: 2026-06-04
+captured_at: 2026-06-18
 capture_method: firecrawl
 site_notes: "React/Remix SPA; mega-nav is client-rendered (signals <header> collapsed) — rebuild nav from homepage markdown links, which capture the full flyout. A/B: yes (own engine, ro-experiments/roexp.min.js) — pricing/IA is point-in-time. Datadog RUM + Cloudflare + GTM. Pricing split: /pricing/ enumerates per-SKU price + molecule + 'Most popular' badge for EVERY line EXCEPT GLP-1s (whose 'Weight management' block shows only the Ro Body membership) and fertility (intake-gated, no public price); GLP-1 prices live only on /weight-loss/pricing/. Map (~500 urls) is swamped by /health-guide, /weight-loss/*, /erectile-dysfunction/* SEO content + /network-physician/* bios — select from homepage links, not the map. Per-SKU roster (all 8 lines) → offerings.md."
 key_pages:
@@ -21,6 +22,7 @@ key_pages:
   weight_loss_pricing: /weight-loss/pricing/
   weight_loss_how_it_works: /weight-loss/how-it-works/
   erectile_dysfunction: /erectile-dysfunction/
+  premature_ejaculation: /premature-ejaculation/
   hair_loss: /hair-loss/
   dermatology: /dermatology/
   fertility: /fertility/
@@ -29,9 +31,9 @@ key_pages:
   advisors: /advisors/
   faq: /faq/
 unverified_fields:
-  - "GLP-1 medication cash price — billed separately from the Ro Body membership; dose-laddered + provider-titrated ('thereafter' ranges are floors, not totals)."
+  - "GLP-1 all-in cash cost — per-SKU 'first month' + 'thereafter' ranges ARE published on /weight-loss/pricing/ (e.g. Wegovy pill $149→$199-299, Zepbound KwikPen $299→$399-449, Ozempic $900-1100), but the all-in = those + a separately-billed Ro Body membership ($74-149/mo) + a provider-titrated dose ladder; full per-dose ladders for Wegovy pill/pen + Foundayo sit behind an unrendered 'See pricing details' expander (only Zepbound KwikPen's full ladder is in the FAQ)."
   - "Fertility line (Modern Fertility kits + Sperm Kit), Upneeq, and Saxenda carry no public price — quiz/intake-gated or nav/FAQ-only; Saxenda's molecule is unnamed on captured pages."
-  - "Prices/IA are a point-in-time snapshot, not fixed — own A/B engine (ro-experiments) + promo-driven offers (TrumpRx-matched pricing, Prepay & Save, dated $20-off ED) rotate."
+  - "Prices/IA are a point-in-time snapshot, not fixed — own A/B engine (ro-experiments) + promo-driven offers (TrumpRx/LillyDirect/NovoCare-matched cash pricing, Prepay & Save, a now-expired '$20-off ED through 6/7') rotate. 2026-06-18 re-capture found the full roster + prices unchanged vs 2026-06-04."
 
 description: "A DTC telehealth company connecting patients to licensed providers, a nationwide pharmacy, and at-home labs on one vertically integrated platform, delivering prescription weight-loss, sexual-health, hair, skin, and fertility treatments online."
 
@@ -63,7 +65,7 @@ Ro is a direct-to-consumer telehealth company that gets patients prescription tr
 
 Six condition lines, mostly subscription with monthly/quarterly/annual plans (prices verbatim from `/pricing/`; med names quoted):
 
-- **Weight loss — Ro Body membership:** GLP-1 access + insurance concierge + coaching/labs — **$39 first month, then $74/mo prepaid annually (or $149/mo monthly)**; medication cost billed separately. Meds: Wegovy pill (semaglutide), Zepbound KwikPen + pen (tirzepatide), Foundayo pill (orforglipron), Wegovy pen, Ozempic. `[partial]` (membership published, med cash price gated)
+- **Weight loss — Ro Body membership:** GLP-1 access + insurance concierge + coaching/labs — **$39 first month, then $74/mo prepaid annually (or $149/mo monthly)**; medication billed separately, with published cash starting prices: Wegovy pill (semaglutide) **$149→$199-299**, Foundayo pill (orforglipron) **$149→$199-299**, Zepbound KwikPen (tirzepatide) **$299→$399-449**, Wegovy pen **$199→$199-399**, Ozempic **$900-1100 cash**; "Prepay & Save" cuts up to $150/mo. `[partial]` (membership + starting med price published; per-dose ladder + all-in still gated)
 - **Sexual health — ED:** Ro Sparks (sildenafil 55mg/tadalafil 22mg, compounded) **$48–$120/mo**; Daily Rise Gummies (tadalafil 7mg, compounded) **$69–$89/mo**; generic Viagra/sildenafil **from $2–$10/dose**; branded Viagra **$90**; generic Cialis/tadalafil **$8–$44**; branded Cialis **$20–$80**. `[published]`
 - **Premature ejaculation:** Roman Swipes (4% benzocaine, OTC) **$22–$27/mo**; sertraline (generic Zoloft) **$24/mo**. `[published]`
 - **Hair loss (men):** finasteride **$16–$20/mo**; oral minoxidil **$24–$30/mo**; topical minoxidil **$13–$16/mo**; Ro Mane Spray (3-in-1 compounded) **$43–$50/mo**. `[published]`
@@ -145,9 +147,9 @@ Most relevant comp signal for a men's-health-adjacent venture: Ro's durable adva
 
 ## Provenance
 
-- **Pages (fresh, `captures/2026-06-04/`):** homepage, /pricing/, /weight-loss/, /weight-loss/pricing/, /weight-loss/how-it-works/, /erectile-dysfunction/, /hair-loss/, /dermatology/, /fertility/, /os/, /founder-letter/ (11 pages); Firecrawl scrape, all formats on homepage; map (~500 urls) for inventory. Prior captures (2026-06-01 base, 2026-06-03 weight-loss offerings) archived under `captures/_archive/`.
-- **Verify:** all 11 sourceURLs matched requested; all body md5s unique (no geo/cache contamination).
-- **Credits:** 12 (1 map + 11 scrapes), all basic proxy; ~557 remaining.
-- **Couldn't get:** GLP-1 medication all-in cash cost (dose-laddered + provider-titrated, billed separately from membership); social handles (JSON-LD carries only a minimal Organization block — name/url/contactPoint, no `sameAs`); fertility / Upneeq / Saxenda pricing (intake-walled / FAQ-only / nav-only); Testosterone Support + enriching cream molecules (unnamed blends).
-- **Run profile:** fresh re-capture + all-SKU offerings expansion (2026-06-04) — re-scraped the full profile page set + added /hair-loss/, /dermatology/, /fertility/; rebuilt `offerings.md` from weight-loss-only (prior 2026-06-03) to **all eight lines** (~30 SKUs). Logos (2.5: wordmark/logomark/og) + telehealth cohort pack added in the prior 2026-06-04 module pass (logos rode the cached homepage payload, 0 credits).
+- **Pages (fresh, `captures/2026-06-18/`):** homepage, /pricing/, /weight-loss/pricing/, /weight-loss/, /weight-loss/how-it-works/, /erectile-dysfunction/, /premature-ejaculation/, /hair-loss/, /dermatology/, /fertility/, /os/, /founder-letter/, /faq/ (13 pages); Firecrawl scrape, all formats on homepage; map (499 urls) for inventory. Prior captures (2026-06-01 base, 2026-06-03 weight-loss offerings, 2026-06-04 full set) archived under `captures/_archive/`.
+- **Verify:** all 13 sourceURLs matched requested; all body md5s unique (no geo/cache contamination); no junk soft-404s.
+- **Credits:** 14 (1 map + 13 scrapes), all basic proxy.
+- **Couldn't get:** GLP-1 all-in cash cost (per-SKU starting prices ARE published now, but the all-in = membership + provider-titrated dose ladder; Wegovy pill/pen + Foundayo full ladders behind an unrendered expander); social handles (JSON-LD carries only a minimal Organization block — name/url/contactPoint, no `sameAs`); legal entity (no ©/legalName on captured pages); fertility / Upneeq / Saxenda pricing (intake-walled / FAQ-only / nav-only); Testosterone Support + enriching cream molecules (unnamed blends).
+- **Run profile:** fresh re-capture (2026-06-18, Express via `/research-telehealth-brand ro.co`) — re-scraped the full profile page set + /premature-ejaculation/ + /faq/; refreshed `offerings.md` (all 8 lines) + `telehealth.md` in place. **The full roster + every captured price is unchanged vs the 2026-06-04 capture** — a stability-confirming re-capture, not a change event. Re-stamped profile 2.5→**2.6** (added `legal_entity`, empty — not site-derivable). Logos (wordmark/logomark/og) re-measured off the fresh homepage payload, all three slots unchanged (0 credits). +telehealth +logos +offerings modules.
 - **Enriched (model knowledge):** "Roman" ↔ "Ro" rebrand/heritage relationship used for identity resolution only — Roman path (`/roman/`) is on-site. Founders (Reitano, Rahmanian, Schutz) are named on the captured `/founder-letter/` page; Modern Fertility / Rory→Custom Rx renames are on captured pages (`/fertility/`, `/dermatology/`) — not enriched.

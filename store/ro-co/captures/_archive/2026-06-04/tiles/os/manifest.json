@@ -1,0 +1,61 @@
+{
+  "url": "https://ro.co/os/",
+  "source": "shoot",
+  "viewport": {
+    "width": 1920,
+    "height": 1400
+  },
+  "overlap": 180,
+  "dismissed": false,
+  "scroll_locked": false,
+  "overview": "overview-480w.png",
+  "page": {
+    "url": "https://ro.co/os/",
+    "title": "Meet ro.OS | Powering quality care at scale",
+    "scrollHeight": 9274,
+    "imageCount": 23,
+    "loadedImages": 19
+  },
+  "tiles": [
+    {
+      "index": 0,
+      "y": 0,
+      "file": "tile-00-y00000.png"
+    },
+    {
+      "index": 1,
+      "y": 1220,
+      "file": "tile-01-y01220.png"
+    },
+    {
+      "index": 2,
+      "y": 2440,
+      "file": "tile-02-y02440.png"
+    },
+    {
+      "index": 3,
+      "y": 3660,
+      "file": "tile-03-y03660.png"
+    },
+    {
+      "index": 4,
+      "y": 4880,
+      "file": "tile-04-y04880.png"
+    },
+    {
+      "index": 5,
+      "y": 6100,
+      "file": "tile-05-y06100.png"
+    },
+    {
+      "index": 6,
+      "y": 7320,
+      "file": "tile-06-y07320.png"
+    },
+    {
+      "index": 7,
+      "y": 7874,
+      "file": "tile-07-y07874.png"
+    }
+  ]
+}

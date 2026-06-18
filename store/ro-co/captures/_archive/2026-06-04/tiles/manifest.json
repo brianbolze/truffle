@@ -1,0 +1,288 @@
+{
+  "slug": "ro-co",
+  "capture": "2026-06-04",
+  "source": "tile",
+  "pages": [
+    {
+      "page": "homepage",
+      "width": 1920,
+      "height": 8861,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/homepage/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/homepage/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/homepage/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/homepage/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/homepage/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 6100,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/homepage/tile-05-y06100.png"
+        },
+        {
+          "index": 6,
+          "y": 7320,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/homepage/tile-06-y07320.png"
+        },
+        {
+          "index": 7,
+          "y": 7461,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/homepage/tile-07-y07461.png"
+        }
+      ]
+    },
+    {
+      "page": "weight-loss",
+      "width": 1920,
+      "height": 10327,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 6100,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-05-y06100.png"
+        },
+        {
+          "index": 6,
+          "y": 7320,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-06-y07320.png"
+        },
+        {
+          "index": 7,
+          "y": 8540,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-07-y08540.png"
+        },
+        {
+          "index": 8,
+          "y": 8927,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/weight-loss/tile-08-y08927.png"
+        }
+      ]
+    },
+    {
+      "page": "pricing",
+      "width": 1920,
+      "height": 11071,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/pricing/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/pricing/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/pricing/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/pricing/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/pricing/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 6100,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/pricing/tile-05-y06100.png"
+        },
+        {
+          "index": 6,
+          "y": 7320,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/pricing/tile-06-y07320.png"
+        },
+        {
+          "index": 7,
+          "y": 8540,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/pricing/tile-07-y08540.png"
+        },
+        {
+          "index": 8,
+          "y": 9671,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/pricing/tile-08-y09671.png"
+        }
+      ]
+    },
+    {
+      "page": "hair-loss",
+      "width": 1920,
+      "height": 8443,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/hair-loss/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/hair-loss/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/hair-loss/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/hair-loss/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/hair-loss/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 6100,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/hair-loss/tile-05-y06100.png"
+        },
+        {
+          "index": 6,
+          "y": 7043,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/hair-loss/tile-06-y07043.png"
+        }
+      ]
+    },
+    {
+      "page": "os",
+      "width": 1920,
+      "height": 8946,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/os/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/os/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/os/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/os/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/os/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 6100,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/os/tile-05-y06100.png"
+        },
+        {
+          "index": 6,
+          "y": 7320,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/os/tile-06-y07320.png"
+        },
+        {
+          "index": 7,
+          "y": 7546,
+          "height": 1400,
+          "path": "store/ro-co/captures/2026-06-04/tiles/os/tile-07-y07546.png"
+        }
+      ]
+    }
+  ]
+}

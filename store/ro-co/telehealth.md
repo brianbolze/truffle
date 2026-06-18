@@ -2,7 +2,7 @@
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
 schema_version: "1.0"                    # the telehealth-pack version (independent of profile.md's)
 domain: ro.co                            # company key (same as profile.md)
-captured_at: 2026-06-04                  # rode the 2026-06-01 profile capture (no re-scrape)
+captured_at: 2026-06-18                  # 2026-06-18 re-capture; all 8 cuts re-confirmed unchanged vs 2026-06-04 (/os/, /weight-loss/how-it-works/ re-scraped this run)
 value_chain_role: DTC brand              # a DTC telehealth brand; ro.OS is captive (not sold to others), so NOT platform/infra
 pharmacy_model: integrated               # ro.OS "vertically integrates… pharmacy services," nationwide fulfillment — body Fulfillment carries the verbatim claim
 audience: all-genders                    # gender-neutral GLP-1 front door; men-origin (Roman) — see Audience note
