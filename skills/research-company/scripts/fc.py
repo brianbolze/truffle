@@ -194,23 +194,24 @@ def do_scrape(
     mobile: bool = False,
     headers_json: str | None = None,
     verb: str | None = None,
+    shot_mode: str = "full",
 ) -> None:
+    # Screenshot mode: "full" (default fullPage) | "viewport" (above-the-fold) | "none".
+    # A tall animated SPA can 500 the chrome-cdp engine on a fullPage render — or, worse, on
+    # ANY screenshot paired with content (waldo.fyi: SCRAPE_ALL_ENGINES_FAILED on fullPage AND
+    # viewport, while content-only 200s). viewport/none keep the content capture alive; grab
+    # the visual separately via real-browser Tier-B render. Default "full" is unchanged. §5.6.
+    shot = None if shot_mode == "none" else {"type": "screenshot", "fullPage": shot_mode == "full"}
     if homepage:
-        formats = [
-            "markdown",
-            "html",
-            "rawHtml",
-            "links",
-            "branding",
-            "images",
-            {"type": "screenshot", "fullPage": True},
-        ]
+        formats = ["markdown", "html", "rawHtml", "links", "branding", "images"]
         only_main = False
     else:
-        formats = ["markdown", "links", {"type": "screenshot", "fullPage": True}]
+        formats = ["markdown", "links"]
         if images:
             formats.append("images")  # hero-capture: images[] rides the 1-credit base (§1.1)
         only_main = True
+    if shot:
+        formats.append(shot)
     body: dict[str, Any] = {
         "url": url,
         "formats": formats,
@@ -923,6 +924,7 @@ def main() -> None:
     s.add_argument("--wait", type=int, default=3500)
     s.add_argument("--actions-json", help="JSON array of Firecrawl scrape actions to run before capture")
     s.add_argument("--mobile", action="store_true", help="enable Firecrawl mobile emulation for this scrape")
+    s.add_argument("--shot", choices=["full", "viewport", "none"], default="full", help="screenshot mode: full=fullPage (default) | viewport=above-the-fold | none — for tall SPAs where fullPage/any shot 500s (§5.6)")
     s.add_argument("--headers-json", help="JSON object of extra request headers for this scrape")
     s.add_argument("--proxy")
     s.add_argument("--date", default=TODAY)
@@ -968,6 +970,7 @@ def main() -> None:
             a.mobile,
             a.headers_json,
             a.verb,
+            a.shot,
         )
     elif a.cmd == "verify":
         do_verify(a.slug, a.date)
