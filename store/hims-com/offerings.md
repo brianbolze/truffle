@@ -2,8 +2,8 @@
 # Query contract for this store: ../../QUERYING.md — parse frontmatter; grep the body to locate.
 schema_version: "1.1"
 domain: hims.com            # company key; each offering's slug (its relative url) is its key *within* hims
-captured_at: 2026-06-03     # own freshness; captures/2026-06-03/ holds the source pages
-site_notes: "Custom React SPA, no CMS backend (no /products.json or /wp-json; the sitemap-fed /map is the only census, and it 403s to plain curl). Roster census = robots.txt → sitemap.xml → Firecrawl /map + site:hims.com/<path> map passes — these surface the PDPs the category grids hide (incl. the skin-care + sexual-wellness device lines absent from profile.md). Prices run promo/A-B (struck-through labs price, 'limited time' WL heroes) — re-check next run."
+captured_at: 2026-06-18     # own freshness; captures/2026-06-18/ holds this run's source pages. Roster RE-VERIFIED stable vs 2026-06-03 (see Provenance) — every line's prices unchanged; this is a refresh, not a rebuild.
+site_notes: "Custom React SPA, no CMS backend (no /products.json or /wp-json; the sitemap-fed /map is the only census, and it 403s to plain curl). Roster census = robots.txt → sitemap.xml → Firecrawl /map + site:hims.com/<path> map passes — these surface the PDPs the category grids hide (incl. the skin-care + sexual-wellness device lines absent from profile.md). 2026-06-18 refresh re-captured all 10 category pages + key PDPs and grep-confirmed every priced line UNCHANGED from 2026-06-03; the deep census (12 site: passes) was NOT re-run — the structure was stable, so the prior complete enumeration carries forward. NEW: an 8th line 'Everyday Health' now appears in the footer Explore rail (no page captured; likely supplements/OTC) — not yet enumerated. Hard Mints' Top-Treatments card now points at /erectile-dysfunction/sildenafil-chew (was /hard-mint-chewable). Prices run promo/A-B (struck-through labs price, 'limited time' WL heroes) — re-check next run."
 ---
 
 ## Portfolio overview
@@ -12,7 +12,8 @@ Hims (Hims & Hers, NYSE: HIMS) is **Multi-product** and **broader than its own "
 capture enumerates **seven** co-equal storefronts at SKU grain: **weight loss, sexual health (ED + PE + OTC
 sexual wellness), hair loss, testosterone, mental health, labs, and skin care.** Skin care (a full Apostrophe-
 powered derm line) and the OTC sexual-wellness shelf (rings, vibrators, condoms, lube) were absent from the
-warm `profile.md` and are first surfaced here. Every Rx line sells the same way: a condition *family* gates a
+warm `profile.md` and are first surfaced here. **(2026-06-18: an 8th line, "Everyday Health," newly appears in
+the footer Explore nav but has no captured page — not enumerated below; likely a supplements/OTC line.)** Every Rx line sells the same way: a condition *family* gates a
 roster of SKUs through an intake quiz (`/g/i/*`, `/c/*`); medication ships on a subscription that **bundles the
 consult, shipping, check-ins and messaging** — *except* weight loss, which charges a **separate** membership.
 
@@ -123,7 +124,7 @@ equal to another brand's.
 | Buspirone HCl | buyable | Mental Health | `/psychiatry/buspirone` | line floor `from $49/mo` | published | buspirone · oral (generic Buspar®). |
 | Propranolol | buyable | Mental Health | `/psychiatry/propranolol` | line floor `from $49/mo` | published | propranolol · oral beta-blocker (off-label performance anxiety). |
 | **Labs** | family | — | `/labs` | — | — | At-home blood testing via Quest + a doctor-built "Action Plan"; Galleri cancer add-on. |
-| Labs by Hims (biomarker panel) | buyable | Labs | `/labs/biomarkers` | `~~$499~~ $349 per year` ("less than $1/day") | published | not stated · 130+ biomarkers / "1,000+ conditions" across 10 areas; Quest blood draw + Action Plan. |
+| Labs by Hims (biomarker panel) | buyable | Labs | `/labs/biomarkers` | `~~$499~~ $349 per year` ("less than $1/day") | published | not stated · 130+ biomarkers / "1,000+ conditions" across 10 areas; Quest blood draw (first draw 75+ markers, twice-yearly, 6-mo retest 55+) + Action Plan. |
 | Hims Multi-Cancer Test by Galleri® | buyable | Labs | `/labs/cancer-test` | (no price — "add it to your Labs plan") | on-request | not stated · annual MCED blood screen, 50+ cancer types; add-on to the Labs plan. |
 | **Skin Care** | family | — | `/skin-care` | — | — | Men's derm in partnership with Apostrophe — Rx custom creams (gated) + OTC basics (published). |
 | Custom Anti-Aging Cream | buyable | Skin Care | `/skin-care/anti-aging` | (no price — "Prescription," intake-gated) | on-request | tretinoin + azelaic acid + niacinamide · custom Rx cream. |
@@ -256,7 +257,8 @@ sits second in the site's "Explore" nav despite its thin SKU count — a deliber
 
 ## Provenance
 
-- **Sources reconciled (this run, all `captures/2026-06-03/`, 19 fresh scrapes + maps):**
+- **2026-06-18 refresh (this run, `captures/2026-06-18/`, 20 scrapes + 1 map, 21 credits):** re-captured the homepage + all 10 category/index pages (`--homepage` rich, for prominence) + the 3 deep-block PDPs (wegovy-pen, ed-sildenafil/cialis, labs-biomarkers/cancer-test) + meal-replacement, pe-sertraline. `fc.py verify` clean (20/20 sourceURLs match, all md5-unique, no soft-404s). **Roster re-verified UNCHANGED:** grep-confirmed every priced line against 2026-06-03 — WL ($149/$199/$299/$1,899 + $39→$149 membership), sexual health ($19–$39/$543/$74/$35/$15 + the $1.63→$958 ED spread), hair ($15–$60), psychiatry ($49/mo floor), skin ($15–$33), meal replacement ($110/mo), labs ($499→$349/yr) — all identical. TRT still "Coming in 2026." **Deltas only:** new 8th line "Everyday Health" in nav (not enumerated — no page); Hard Mints Top-Treatments card now → `/erectile-dysfunction/sildenafil-chew`; labs draw cadence detail (75+ first / 55+ retest / twice-yearly). The deep `site:` census was **not** re-run — structure was stable, so the prior complete enumeration carries forward.
+- **Original complete enumeration (`captures/2026-06-03/`, 19 fresh scrapes + maps) — the basis of the roster below:**
   - **Census/backbone:** `robots.txt` → single `sitemap.xml`; Firecrawl `/v2/map` no-search census (163 URLs,
     blog-dominated) + **12 `site:hims.com/<path>` map passes** (hair-loss, erectile-dysfunction,
     premature-ejaculation, sexual-health, mental-health, psychiatry, labs, weight-loss, testosterone, skin,

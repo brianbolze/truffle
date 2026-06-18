@@ -1,0 +1,17 @@
+{
+  "record_version": "0.1",
+  "verb": "research-company",
+  "status": "complete",
+  "tool": "claude-code",
+  "model": "claude-opus-4-8",
+  "trust": "env",
+  "started_at": "2026-06-18T16:13:43Z",
+  "artifacts": [
+    "profile.md",
+    "offerings.md",
+    "telehealth.md"
+  ],
+  "effort": "xhigh",
+  "ended_at": "2026-06-18T16:39:02Z",
+  "note": "Express telehealth-brand fresh re-capture; deep (Direct competitor/Highest). Roster re-verified stable vs 06-03; +Everyday Health line observed."
+}

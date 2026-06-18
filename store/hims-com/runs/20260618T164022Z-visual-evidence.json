@@ -1,0 +1,37 @@
+{
+  "record_version": "0.1",
+  "verb": "visual-evidence",
+  "status": "complete",
+  "tool": "claude-code",
+  "model": "claude-opus-4-8",
+  "trust": "env",
+  "started_at": "2026-06-18T16:40:22Z",
+  "artifacts": [
+    "visual.md"
+  ],
+  "effort": "xhigh",
+  "ended_at": "2026-06-18T16:58:00Z",
+  "components": [
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:typography_hierarchy"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:layout_composition_components"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:color_brand_imagery"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:iconography_illustration"
+    }
+  ],
+  "note": "Blind mine over 5 pages (48 active tiles); 42 cards. qa_status exclusions-noted (1 lazy-load tile excluded); dropped layout_11 as a sticky-scroll capture artifact in step-4 check. No Tier-B."
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "hims-com",
+  "capture": "2026-05-30",
+  "source": "tile",
+  "pages": [
+    {
+      "page": "testosterone",
+      "width": 1920,
+      "height": 12272,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/hims-com/captures/2026-05-30/tiles/testosterone/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/hims-com/captures/2026-05-30/tiles/testosterone/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/hims-com/captures/2026-05-30/tiles/testosterone/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/hims-com/captures/2026-05-30/tiles/testosterone/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/hims-com/captures/2026-05-30/tiles/testosterone/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 6100,
+          "height": 1400,
+          "path": "store/hims-com/captures/2026-05-30/tiles/testosterone/tile-05-y06100.png"
+        },
+        {
+          "index": 6,
+          "y": 7320,
+          "height": 1400,
+          "path": "store/hims-com/captures/2026-05-30/tiles/testosterone/tile-06-y07320.png"
+        },
+        {
+          "index": 7,
+          "y": 8540,
+          "height": 1400,
+          "path": "store/hims-com/captures/2026-05-30/tiles/testosterone/tile-07-y08540.png"
+        },
+        {
+          "index": 8,
+          "y": 9760,
+          "height": 1400,
+          "path": "store/hims-com/captures/2026-05-30/tiles/testosterone/tile-08-y09760.png"
+        },
+        {
+          "index": 9,
+          "y": 10872,
+          "height": 1400,
+          "path": "store/hims-com/captures/2026-05-30/tiles/testosterone/tile-09-y10872.png"
+        }
+      ]
+    }
+  ]
+}

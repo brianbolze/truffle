@@ -2,7 +2,7 @@
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
 schema_version: "1.0"
 domain: hims.com
-captured_at: 2026-05-30           # rides the same 2026-05-30 profile.md capture (Rx PDPs from the 2026-06-03 offerings run)
+captured_at: 2026-06-18           # re-confirmed against the 2026-06-18 fresh capture — all 8 cuts unchanged vs 2026-05-30
 value_chain_role: DTC brand
 pharmacy_model: integrated        # "partner pharmacies" + a company-opened "Ohio-affiliated pharmacy facility" — captive-affiliate; both claims verbatim below
 audience: men-only                # hims.com is the men's brand by construction (forhers.com is the separate sibling); no women's line on-site
@@ -12,6 +12,9 @@ modality: hybrid                  # "Care is delivered asynchronously… In some
 access_model: à-la-carte/both     # weight-loss gates a separate membership; every other Rx line is a self-contained subscription (no membership)
 pay_model: HSA/FSA eligible       # "FSA & HSA eligible" badges on WL PDPs; "Insurance isn't required" (cash-pay rail, not insurance-billed) — see note
 ---
+
+<!-- 2026-06-18 refresh: all eight cuts re-confirmed unchanged. Reconfirmed verbatim — async-first model + partner pharmacies + 2020 Ohio facility (pharmacy_model), TRT still "Coming in 2026" (controlled-substance posture), 400+ providers/50 states, labs ($349/yr, 75+ first draw / 55+ retest, twice-yearly). New context (not a cut): the about page states MedMatch (proprietary AI/ML provider decision-support) + an in-house EMR; 2025 acquisitions added at-home lab capacity + European expansion. -->
+
 
 ## Fulfillment
 - **Pharmacy:** ownership posture is **mixed and stated in two places**. The how-it-works copy routes to third parties — *"The provider issues a prescription, which can then be fulfilled by one of **Hims & Hers' partner pharmacies** and discreetly shipped to the customer's front door"* (/about/the-company). But the company milestones claim a captive facility — *"Hims expanded its services to all 50 states, and **the Ohio-affiliated pharmacy facility opened**"* (2020, /about/the-company). A company-opened affiliated pharmacy alongside partner pharmacies reads as **captive-affiliate** (recorded `integrated`), not a pure third-party router — but neither claim is resolved to truth here, and no named pharmacy entity or 503A/503B lane appears on the captured pages. Lane: not stated.
