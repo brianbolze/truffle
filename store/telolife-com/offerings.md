@@ -2,8 +2,8 @@
 # Query contract for this store: ../../QUERYING.md — parse frontmatter; grep the body to locate.
 schema_version: "1.1"
 domain: telolife.com        # company key; each offering's slug (its relative url) is its key *within* TeloLife
-captured_at: 2026-06-04     # own freshness; captures/2026-06-04/ holds the source pages
-site_notes: "No per-plan PDPs — every plan lives on the single /packages page behind two toggles (Cash↔Financing, Semaglutide↔Tirzepatide); the only attested plan-param is /apply?plan=sema-6mo (homepage CTA). Monthly per-molecule rates are on /pricing ($199 sema / $275 tirz); bundle TOTALS are on /packages and were captured only for the Semaglutide toggle state (Tirzepatide bundle totals need the toggle flipped). Cherry 'As low as $X/mo' figures are FINANCING estimates, not the plan price — the bundle TOTAL is the price. Pricing is fully PUBLISHED (no quiz wall) — unusual for compounded-GLP-1 telehealth."
+captured_at: 2026-06-18     # own freshness; captures/2026-06-18/ holds the source pages (prior 2026-06-04 in captures/_archive/)
+site_notes: "No per-plan PDPs — every plan lives on the single /packages page behind two toggles (Cash↔Financing, Semaglutide↔Tirzepatide); the only attested plan-param is /apply?plan=sema-6mo (homepage CTA). Monthly per-molecule rates are on /pricing ($199 sema / $275 tirz); bundle TOTALS are on /packages and were captured only for the Semaglutide toggle state (Tirzepatide bundle totals need the toggle flipped). Cherry 'As low as $X/mo' figures are FINANCING estimates, not the plan price — the bundle TOTAL is the price. Pricing is fully PUBLISHED (no quiz wall) — unusual for compounded-GLP-1 telehealth. 2026-06-18: roster verified UNCHANGED vs 2026-06-04. A NAD product (/collections/loose-the-weight/products/nad) appears in the Shopify sitemap but 404s on the live SPA — SCAFFOLDED, not live; NOT rostered (no live PDP, no price). See profile.md `scaffolded_not_live`."
 ---
 
 ## Portfolio overview
@@ -31,6 +31,8 @@ TeloLife is **`Single`** — one offering, **compounded GLP-1 weight-loss therap
 
 *"family" rows omitted — both molecules are buyable leaves of the one `Single` offering; the molecule is the family.*
 
+**Scaffolded, not rostered (2026-06-18):** a **NAD product** (`/collections/loose-the-weight/products/nad`) and a `loose-the-weight` collection appear in the Shopify sitemap but **404 on the live SPA** — no live PDP, no price, not purchasable. Recorded as a decline, not a roster line; it's the first non-GLP-1 signal (NAD+ longevity/peptide) and worth a re-check next run to see if the storefront goes live.
+
 ### Verbatim anchors
 
 - **All-inclusive pricing claim** (/pricing): *"TeloLife Pricing is ALL-INCLUSIVE REGARDLESS OF DOSAGE. No consultation fees, No shipping fees, No membership fees, and absolutely No hidden charges."* — this is why every line is `published` (the shown number is the full, self-contained price; no stacked membership/consult/shipping cost).
@@ -45,8 +47,9 @@ TeloLife is **`Single`** — one offering, **compounded GLP-1 weight-loss therap
 
 ## Provenance
 
-- **Pages read:** /pricing (per-molecule monthly rates), /packages (bundle totals + inclusions + FAQ), homepage (plan framing, hero, `?plan=sema-6mo` CTA) — captured 2026-06-04, Firecrawl. /packages & /pricing are SPA soft-404s (HTTP 404, full content — §5.6); bodies confirmed against screenshots.
+- **Pages read:** /pricing (per-molecule monthly rates), /packages (bundle totals + inclusions + FAQ), homepage (plan framing, hero, `?plan=sema-6mo` CTA) — captured 2026-06-18, Firecrawl. /packages & /pricing are SPA soft-404s (HTTP 404, full content — §5.6); bodies confirmed against screenshots.
 - **Scope enumerated:** all 5 Semaglutide duration tiers (monthly + 3/6/9/12-mo) with totals; Tirzepatide monthly rate. **Noted but not enumerated:** Tirzepatide bundle totals (on-site behind the molecule toggle, not in-capture).
+- **Declined:** NAD product / loose-the-weight collection — sitemap-only, 404 on live SPA (no live PDP/price); not rostered.
 - **Gated/unreachable:** nothing price-gated (pricing is published); the Rx itself is gated by the /apply questionnaire (clinician approval), but the plan prices are not.
-- **Point-in-time snapshot:** prices are a 2026-06-04 snapshot; /packages renders state-dependent on its Cash↔Financing and Semaglutide↔Tirzepatide toggles — re-check the Tirzepatide toggle next run.
-- **Run profile:** vanilla offerings capture (no added columns, no opt-in PDP-anatomy or hero-image block — there are no PDPs/product renders to pull).
+- **Point-in-time snapshot:** prices are a 2026-06-18 snapshot, verified UNCHANGED vs 2026-06-04; /packages renders state-dependent on its Cash↔Financing and Semaglutide↔Tirzepatide toggles — re-check the Tirzepatide toggle next run.
+- **Run profile:** express fresh re-capture; vanilla offerings (no added columns, no opt-in PDP-anatomy or hero-image block — there are no PDPs/product renders to pull).

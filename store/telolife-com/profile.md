@@ -1,26 +1,31 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
-schema_version: "2.5"
+schema_version: "2.6"
 
 # Identity
 domain: telolife.com
 name: TeloLife
-aliases: []                          # legal entity "TeloLife, Inc."; prior brand "TELO" survives only in a stale og:image — noted in prose, not asserted as a live alias
+legal_entity: "TeloLife, Inc."       # Terms of Service §1/§13/§15 (Effective Date April 12, 2026): "TeloLife, Inc." is the contracting/IP-owning entity
+aliases: []                          # prior brand "TELO" survives only in a stale og:image — noted in prose, not asserted as a live alias
 parent: []
 owns: []
 socials: {}                          # looked — none found (no social anchors in footer/nav; no JSON-LD sameAs)
 external: {}                         # looked — none found (LegitScript is a cert seal → Credibility, not a 3rd-party record)
 
 # Capture meta
-captured_at: 2026-06-04
+captured_at: 2026-06-18
 capture_method: firecrawl
-site_notes: "Static React/Vite SPA built with Lovable, hosted on S3/CloudFront. Map returns 0 URLs (custom SPA) — discover via homepage nav + footer links. SPA routes (/packages, /pricing, /financing) return HTTP 404 on direct scrape but render FULL content (soft-404, trust the body — §5.6). Pricing & packages are fully PUBLISHED (no quiz wall): /pricing has the per-molecule monthly rate, /packages the bundle totals. /packages has Cash↔Financing + Semaglutide↔Tirzepatide toggles — captured state was Financing+Semaglutide, so only Semaglutide bundle totals are in-capture (Tirz needs the toggle). Footer S3 logo (telolife-assets.s3…/telolife-logo.png) 403s; the live mark is only the Vite-hashed /assets/telolife-logo-*.png (a square TELO monogram, not a horizontal wordmark). og:image is a STALE Lovable preview showing prior 'TELO' branding (cream palette + family-photo hero), not the current sage/vials design."
+site_notes: "Static React/Vite SPA built with Lovable, hosted on S3/CloudFront. SPA routes (/packages, /pricing, /financing) return HTTP 404 on direct scrape but render FULL content (soft-404, trust the body — §5.6); /apply, /checkout, /commit are funnel forms. Pricing & packages are fully PUBLISHED (no quiz wall): /pricing has the per-molecule monthly rate, /packages the bundle totals. /packages has Cash↔Financing + Semaglutide↔Tirzepatide toggles — captured state was Financing+Semaglutide, so only Semaglutide bundle totals are in-capture (Tirz needs the toggle). DELTA 2026-06-18: map now returns 4 URLs (was 0 on 2026-06-04) — and they are SHOPIFY-pattern paths (/collections/loose-the-weight/products/nad, /collections/loose-the-weight, /blogs/news) plus footer /pages/text-message-sign-up. These appear in the sitemap but ALL 404 on the live SPA (render the SPA's own '404 — Page not found' component, identical 72-char body) — a Shopify backend + a NAD product + a 'loose-the-weight' collection + a blog are SCAFFOLDED but NOT LIVE; do not roster the NAD product. Footer S3 logo (telolife-assets.s3…/telolife-logo.png) 403s; the live mark is the Vite-hashed /assets/telolife-logo-*.png (a square blue/mint 'TELO' monogram, not a horizontal wordmark) — committed to assets/logomark.png (hash churns on redeploy). og:image is a STALE Lovable preview showing prior 'TELO' branding (cream palette + family-photo hero), not the current sage/vials design."
 key_pages:
   packages: /packages
   pricing: /pricing
   financing: /financing
   how_it_works: /#how
   terms: /legal/terms.html
+scaffolded_not_live:                 # 2026-06-18: in the sitemap (map), but 404 on the live SPA — a Shopify storefront being stood up, no live content yet
+  - /collections/loose-the-weight/products/nad   # NAD product — first non-GLP-1 signal, but not purchasable
+  - /collections/loose-the-weight                # collection root ("loose the weight")
+  - /blogs/news                                  # Shopify blog
 unverified_fields:
   - "Tirzepatide bundle totals (3/6/9/12-mo) — /packages defaulted to the Semaglutide toggle; only the Tirzepatide monthly rate ($275/mo) is in-capture."
   - "Named Provider Groups and compounding pharmacies — Terms reference them generically ('independent, licensed Provider Groups'; 'FDA-registered, state-licensed compounding pharmacies'); none is named on the site."
@@ -38,10 +43,10 @@ business_model: Subscription         # recurring monthly; multi-month bundles pr
 primary_industry: Healthcare & Life Sciences
 
 # Visual identity — branding payload is a hint, confirmed against the homepage screenshot
-logo_url: "https://www.google.com/s2/favicons?domain=telolife.com&sz=256"   # the square "TELO" monogram — the brand's sole reachable mark (no horizontal wordmark; footer S3 wordmark 403s)
+logo_url: assets/logomark.png   # the square "TELO" monogram — the brand's sole real mark (no horizontal wordmark; footer S3 wordmark 403s). Committed from the live Vite-hashed /assets/telolife-logo-CkOYrw01.png (hash churns on redeploy)
 logos:
-  # wordmark slot omitted — TRUE absence of a horizontal mark+name asset (the header uses the square monogram + HTML "TeloLife" text; the named S3 wordmark 403s)
-  logomark: { src: "https://www.google.com/s2/favicons?domain=telolife.com&sz=256", px: 256, transparent: true }   # stacked "TELO": blue letters + a mint-green "O" ring; transparent PNG (live header copy is 410×404, hasAlpha)
+  # wordmark slot omitted — TRUE absence of a horizontal mark+name asset (the header uses the square monogram + aria-label "TeloLife home"; the named S3 wordmark 403s; the only "TELO life" horizontal lockup is baked into the stale og raster, off current brand)
+  logomark: { src: assets/logomark.png, px: 404, transparent: true }   # stacked "TELO": blue letters (TE/L) + a mint-green ring "O"; transparent PNG 410×404 (hasAlpha; favicon s2 256px is the same mark)
   og:       { src: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/47fd8db1-2aa9-4a9b-b9c7-90b64ae4f245/id-preview-04492acf--fdf8ddbd-217d-4de5-8f12-ee819a55cb15.lovable.app-1777210831364.png", w: 1920, h: 1080 }   # STRAIN: STALE Lovable preview — prior "TELO" branding (cream palette, family-photo hero), NOT the current sage/vials design; do not use as a current-brand cover
 brand_colors: { primary: "#556650", accent: "#4A7340", secondary: "#D4D9C4" }   # sage / forest green — confirmed vs screenshot; note the BLUE/teal logo is off-palette from the green site
 fonts: [DM Sans]                     # body (branding.fonts[0]); a display serif sets the headlines ("made simple.") — unidentified, see Visual
@@ -51,7 +56,7 @@ design_framework: Lovable            # rawHtml: 3× "lovable" refs + a lovable.a
 
 ## Overview
 
-TeloLife is a **direct-to-consumer telehealth brand selling compounded GLP-1 weight-loss medication** (semaglutide and tirzepatide). The journey is built for speed and discretion: a customer picks a plan, optionally clears Cherry financing, fills out an online health questionnaire (~5 minutes), and a licensed clinician reviews it and — if appropriate — prescribes a compounded GLP-1 that ships from an FDA-registered pharmacy in 3–5 business days, with 24/7 messaging support thereafter. Legally, **TeloLife, Inc. is a technology platform, not a medical practice** — clinical care is delivered by "independent, licensed Provider Groups" and medication is dispensed by third-party compounding pharmacies (per its Terms). The site is brand-new (© 2026), single-category, and unusually transparent on price for the GLP-1 telehealth cohort: full cash pricing is published, not quiz-walled.
+TeloLife is a **direct-to-consumer telehealth brand selling compounded GLP-1 weight-loss medication** (semaglutide and tirzepatide). The journey is built for speed and discretion: a customer picks a plan, optionally clears Cherry financing, fills out an online health questionnaire (~5 minutes), and a licensed clinician reviews it and — if appropriate — prescribes a compounded GLP-1 that ships from an FDA-registered pharmacy in 3–5 business days, with 24/7 messaging support thereafter. Legally, **TeloLife, Inc. is a technology platform, not a medical practice** — clinical care is delivered by "independent, licensed Provider Groups" and medication is dispensed by third-party compounding pharmacies (per its Terms). The site is brand-new (© 2026; Terms of Service Effective Date April 12, 2026), single-category, and unusually transparent on price for the GLP-1 telehealth cohort: full cash pricing is published, not quiz-walled.
 
 ## What they offer
 
@@ -103,12 +108,13 @@ Clean, soft, modern DTC-wellness aesthetic — a muted **sage-green** canvas (`#
 
 ## Strategic read
 
-A **freshly-minted, lightweight GLP-1 telehealth entrant** assembled on a no-code/AI stack (Lovable), competing on **price transparency + financing** rather than clinical or brand depth. Three things stand out: (1) it **publishes full cash pricing** ($199 sema / $275 tirz, all-inclusive) where many peers quiz-wall it — a genuine positioning choice; (2) it leans hard on **Cherry financing** ("as low as $26/mo") to lower the entry barrier, the dominant CTA pattern; (3) the **thin operational surface** — anonymous Provider Groups, unnamed pharmacies, placeholder testimonials, no team page, a stale "TELO" og from a prior brand iteration — suggests a very early-stage or affiliate/drop-style operation routing intake to independent provider+pharmacy networks. Standard compounded-GLP-1 structure (tech platform → Provider Groups → 503A-style patient-specific compounding pharmacies); the wedge is purely commercial (simplicity, published price, pay-over-time), not differentiated care.
+A **freshly-minted, lightweight GLP-1 telehealth entrant** assembled on a no-code/AI stack (Lovable), competing on **price transparency + financing** rather than clinical or brand depth. Four things stand out: (1) it **publishes full cash pricing** ($199 sema / $275 tirz, all-inclusive) where many peers quiz-wall it — a genuine positioning choice; (2) it leans hard on **Cherry financing** ("as low as $26/mo") to lower the entry barrier, the dominant CTA pattern; (3) the **thin operational surface** — anonymous Provider Groups, unnamed pharmacies, placeholder testimonials, no team page, a stale "TELO" og from a prior brand iteration — suggests a very early-stage or affiliate/drop-style operation routing intake to independent provider+pharmacy networks; (4) **a Shopify backend is being stood up alongside the Lovable funnel** — the 2026-06-18 sitemap exposes `/collections/loose-the-weight/products/nad`, a `loose-the-weight` collection, and a `/blogs/news` blog, all of which **404 on the live SPA** (scaffolded, not live). The **NAD product is the first non-GLP-1 signal** — a hint at category expansion (NAD+ longevity/peptide) and a move toward a real storefront/CMS — but nothing is purchasable yet, so the live brand is still single-category GLP-1. Standard compounded-GLP-1 structure (tech platform → Provider Groups → 503A-style patient-specific compounding pharmacies); the wedge is purely commercial (simplicity, published price, pay-over-time), not differentiated care.
 
 ## Provenance
 
-- **Pages:** homepage, /packages, /pricing, /financing, /legal/terms.html — 5 pages, Firecrawl (all-formats), captured 2026-06-04.
-- **Verify:** all 5 sourceURLs match; all bodies md5-unique (no DUP-BODY contamination). SPA routes returned HTTP 404 with full soft-404 content (§5.6) — body trusted, confirmed against screenshots.
-- **Credits:** 6 (1 map + 5 scrapes); map returned 0 URLs.
-- **Couldn't get:** Tirzepatide bundle totals (/packages defaulted to the Semaglutide toggle); named Provider Groups / compounding pharmacies (generic in Terms, none named); founders/team/funding/launch date (no about page).
-- **Run profile:** guided — all modules (+logos, +offerings.md, +telehealth.md cohort pack); no emphasis.
+- **Pages:** homepage, /packages, /pricing, /financing, /legal/terms.html — 5 live pages, Firecrawl (all-formats), captured 2026-06-18. Two sitemap URLs (/collections/loose-the-weight/products/nad, /collections/loose-the-weight) were scraped and dropped as junk soft-404 stubs (identical 72-char "404 — Page not found" body) — recorded under `scaffolded_not_live`, not as content.
+- **Verify:** the 5 live sourceURLs match; live bodies md5-unique. DUP-BODY md5=7d347bd8 across nad/collection is the expected 404-stub collision (both dropped). SPA routes returned HTTP 404 with full soft-404 content (§5.6) — body trusted, confirmed against screenshots.
+- **Credits:** ~13 (1 map + 5 map-search probes + homepage + 6 scrapes incl. 2 dropped 404 stubs). Prior capture (2026-06-04) was 6.
+- **Couldn't get:** Tirzepatide bundle totals (/packages defaulted to the Semaglutide toggle); named Provider Groups / compounding pharmacies (generic in Terms, none named); founders/team/funding/launch date (no about page); NAD product details (sitemap-only, 404 on live).
+- **Delta vs 2026-06-04:** GLP-1 offering, pricing ($199 sema / $275 tirz), Cherry financing, pharmacy/Provider-Group posture, LegitScript seal, placeholder testimonials, Lovable build, stale TELO og — all UNCHANGED. New: Shopify backend scaffolding in the sitemap (NAD product + loose-the-weight collection + blog, all 404 on live); `legal_entity` "TeloLife, Inc." and Terms Effective Date April 12, 2026 now confirmed from /legal/terms.html.
+- **Run profile:** express, fresh re-capture — all modules (+logos, +offerings.md, +telehealth.md cohort pack); no emphasis. schema_version 2.5 → 2.6 (added legal_entity).

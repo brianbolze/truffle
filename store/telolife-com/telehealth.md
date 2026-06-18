@@ -2,7 +2,7 @@
 # Query contract for this store: ../../QUERYING.md — parse this frontmatter to filter/group, grep the body to locate; domain is the key.
 schema_version: "1.0"          # the telehealth-pack version (independent of profile.md's)
 domain: telolife.com
-captured_at: 2026-06-04         # rides the 2026-06-04 profile.md pages (homepage, /packages, /pricing, /financing, /legal/terms.html)
+captured_at: 2026-06-18         # rides the 2026-06-18 profile.md pages (homepage, /packages, /pricing, /financing, /legal/terms.html); all cohort cuts verified UNCHANGED vs 2026-06-04
 value_chain_role: DTC brand              # "TeloLife is a technology platform that facilitates access to telehealth services" fronting a consumer GLP-1 weight-loss brand
 pharmacy_model: third-party              # "Coordination with licensed compounding pharmacies"; meds "prepared by FDA-registered, state-licensed compounding pharmacies" — no owned/named pharmacy (see Fulfillment)
 audience: all-genders                    # no gendered front door — gender-neutral "Weight loss, made simple."; no /mens or /womens hub (lone testimonial is a woman, not a structural cut)
@@ -34,3 +34,4 @@ pay_model: HSA/FSA eligible              # "TeloLife services may be eligible fo
 - **access_model:** `all-in` (not `membership-required`) — TeloLife explicitly charges **"No membership fees"**; the monthly plan price bundles platform + clinician oversight + medication + shipping into one all-inclusive figure, so there's no separate membership rail to gate on.
 - **pay_model:** asymmetric fill — the strongest **positive** payer signal is page-stated **HSA/FSA eligibility**; it does **not** bill insurance (cash-pay only otherwise). HSA/FSA is the load-bearing distinction over a bare `cash-pay only`.
 - **value_chain_role:** `DTC brand` despite the self-description as a "technology platform" — it transacts directly with consumers under its own brand for GLP-1 weight loss; the platform/Provider-Group/pharmacy split is the standard DTC-telehealth legal structure, not a `platform/infra` (B2B) play.
+- **anchor_category watch (2026-06-18):** still `GLP-1` single-category on the live site, but a **NAD product** is scaffolded in the Shopify sitemap (404 on live — see profile.md `scaffolded_not_live`). If it goes live, anchor_category may broaden toward longevity/peptides — re-check next run.

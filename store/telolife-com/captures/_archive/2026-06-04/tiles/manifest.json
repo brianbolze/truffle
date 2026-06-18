@@ -1,0 +1,107 @@
+{
+  "slug": "telolife-com",
+  "capture": "2026-06-04",
+  "source": "tile",
+  "pages": [
+    {
+      "page": "homepage",
+      "width": 1920,
+      "height": 4927,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/telolife-com/captures/2026-06-04/tiles/homepage/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/telolife-com/captures/2026-06-04/tiles/homepage/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/telolife-com/captures/2026-06-04/tiles/homepage/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3527,
+          "height": 1400,
+          "path": "store/telolife-com/captures/2026-06-04/tiles/homepage/tile-03-y03527.png"
+        }
+      ]
+    },
+    {
+      "page": "pricing",
+      "width": 1920,
+      "height": 1676,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/telolife-com/captures/2026-06-04/tiles/pricing/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 276,
+          "height": 1400,
+          "path": "store/telolife-com/captures/2026-06-04/tiles/pricing/tile-01-y00276.png"
+        }
+      ]
+    },
+    {
+      "page": "packages",
+      "width": 1920,
+      "height": 4103,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/telolife-com/captures/2026-06-04/tiles/packages/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/telolife-com/captures/2026-06-04/tiles/packages/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/telolife-com/captures/2026-06-04/tiles/packages/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 2703,
+          "height": 1400,
+          "path": "store/telolife-com/captures/2026-06-04/tiles/packages/tile-03-y02703.png"
+        }
+      ]
+    },
+    {
+      "page": "financing",
+      "width": 1920,
+      "height": 1669,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/telolife-com/captures/2026-06-04/tiles/financing/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 269,
+          "height": 1400,
+          "path": "store/telolife-com/captures/2026-06-04/tiles/financing/tile-01-y00269.png"
+        }
+      ]
+    }
+  ]
+}
