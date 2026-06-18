@@ -1,0 +1,197 @@
+{
+  "slug": "joinamble-com",
+  "capture": "2026-06-13",
+  "source": "tile",
+  "pages": [
+    {
+      "page": "homepage",
+      "width": 1920,
+      "height": 8358,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/homepage/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/homepage/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/homepage/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/homepage/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/homepage/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 6100,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/homepage/tile-05-y06100.png"
+        },
+        {
+          "index": 6,
+          "y": 6958,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/homepage/tile-06-y06958.png"
+        }
+      ]
+    },
+    {
+      "page": "glp1",
+      "width": 1920,
+      "height": 9467,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/glp1/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/glp1/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/glp1/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/glp1/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/glp1/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 6100,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/glp1/tile-05-y06100.png"
+        },
+        {
+          "index": 6,
+          "y": 7320,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/glp1/tile-06-y07320.png"
+        },
+        {
+          "index": 7,
+          "y": 8067,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/glp1/tile-07-y08067.png"
+        }
+      ]
+    },
+    {
+      "page": "nad",
+      "width": 1920,
+      "height": 7255,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/nad/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/nad/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/nad/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/nad/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/nad/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 5855,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/nad/tile-05-y05855.png"
+        }
+      ]
+    },
+    {
+      "page": "sermorelin",
+      "width": 1920,
+      "height": 7062,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/sermorelin/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/sermorelin/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/sermorelin/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/sermorelin/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/sermorelin/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 5662,
+          "height": 1400,
+          "path": "store/joinamble-com/captures/2026-06-13/tiles/sermorelin/tile-05-y05662.png"
+        }
+      ]
+    }
+  ]
+}
