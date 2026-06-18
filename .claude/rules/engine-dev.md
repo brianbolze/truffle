@@ -9,7 +9,7 @@ paths:
 ---
 # Working on the engine
 
-The contract is [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md); why/scope is the [frame](_design/2026-05-29-frame.md), how is the [architecture](_design/2026-05-30-architecture.md). **Changing a contract? [`MAINTAINING.md`](MAINTAINING.md) is the blast-radius map — what moves downstream, and the gate to run after.**
+The contract is [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md); why/scope is the [frame](_design/2026-05-29-frame.md), how is the [architecture](_design/2026-05-30-architecture.md). **Changing a contract? [`MAINTAINING.md`](../../documentation/MAINTAINING.md) is the blast-radius map — what moves downstream, and the gate to run after.**
 
 Working on a large initiative / feature? Think about *what value* it creates by reading our [strategic-pillars](../../documentation/strategic-pillars.md), and consider *whose shoes* you stand in to feel it by reading our [personas](../../documentation/personas.md).
 

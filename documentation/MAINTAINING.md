@@ -1,6 +1,6 @@
 # MAINTAINING — the contract change-map
 
-The markdown **contracts** are the source of truth: [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md) (the `profile.md` record), [`modules/OFFERINGS.md`](modules/OFFERINGS.md), [`modules/VISUAL.md`](modules/VISUAL.md), the cohort packs [`TELEHEALTH.md`](modules/cohort-packs/TELEHEALTH.md) + [`PRODUCTIVITY_SAAS.md`](modules/cohort-packs/PRODUCTIVITY_SAAS.md) (and any future pack), [`SIGNALS.md`](SIGNALS.md), [`modules/RUNS.md`](modules/RUNS.md). Code (`scripts/`, `scripts/present/`, `tools/`) and the `store/` records are **downstream** — a contract edit can silently break a consumer that still assumes the old shape.
+The markdown **contracts** are the source of truth: [`SCHEMA.md`](../SCHEMA.md) + [`TAXONOMIES.md`](../TAXONOMIES.md) (the `profile.md` record), [`modules/OFFERINGS.md`](../modules/OFFERINGS.md), [`modules/VISUAL.md`](../modules/VISUAL.md), the cohort packs [`TELEHEALTH.md`](../modules/cohort-packs/TELEHEALTH.md) + [`PRODUCTIVITY_SAAS.md`](../modules/cohort-packs/PRODUCTIVITY_SAAS.md) (and any future pack), [`SIGNALS.md`](../SIGNALS.md), [`modules/RUNS.md`](../modules/RUNS.md). Code (`scripts/`, `scripts/present/`, `tools/`) and the `store/` records are **downstream** — a contract edit can silently break a consumer that still assumes the old shape.
 
 This table is the blast radius: change a thing on the left, move the things in the middle, and the right-hand **check** is your mechanical backstop. **Where the check column is `—`, nothing guards it yet** — that's exactly where a human sweep (`/drift-sweep`) earns its keep.
 
@@ -36,7 +36,7 @@ python3 scripts/store.py health            # staleness, stubs, module clock skew
 
 ## Version + migration (don't restate — decide it in SCHEMA.md)
 
-Whether a change bumps the version, and whether existing records **migrate** or **grandfather**, is decided once in [`SCHEMA.md`](SCHEMA.md)'s `schema_version` section. The short of it:
+Whether a change bumps the version, and whether existing records **migrate** or **grandfather**, is decided once in [`SCHEMA.md`](../SCHEMA.md)'s `schema_version` section. The short of it:
 
 - **MAJOR** (`1`→`2`) — a field removed/renamed, or a value whose *meaning* changed. Old records are now non-conformant: migrate `store/`, re-capture where needed, **re-stamp every record**, then `querycheck --strict`.
 - **MINOR** (`1.0`→`1.1`) — a new *optional* field / value / section. **No backfill, no re-stamp** — grandfather the old number so an empty new field reads "predates the field." If the field can't backfill, append `name → version` to `FIELD_VERSIONS` in `store.py`.

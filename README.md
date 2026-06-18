@@ -82,7 +82,7 @@ Captured once, a company stays warm for every future question, in any project. T
 | **Capture external signals** — SERP, funding, reviews over time | [`SIGNALS.md`](SIGNALS.md) |
 | **Inspect capture telemetry** — tool/model/effort per run | [`modules/RUNS.md`](modules/RUNS.md) |
 | **Understand why it exists** — the design | [`_design/2026-05-29-frame.md`](_design/2026-05-29-frame.md) |
-| **Build on the engine** — contracts, rules, agent routing | [`SCHEMA.md`](SCHEMA.md) · [`MAINTAINING.md`](MAINTAINING.md) · [`CLAUDE.md`](CLAUDE.md) |
+| **Build on the engine** — contracts, rules, agent routing | [`SCHEMA.md`](SCHEMA.md) · [`MAINTAINING.md`](documentation/MAINTAINING.md) · [`CLAUDE.md`](CLAUDE.md) |
 
 *New to the vocabulary (cohort, signals, warm, module)? A short glossary is coming next.*
 

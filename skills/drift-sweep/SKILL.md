@@ -17,7 +17,7 @@ fixes — never auto-applies them. Keep the whole thing bounded and cheap; a tin
 
 ## 1. Run the gate — deterministic, the cheap pass
 
-From the repo root, run the gate block in [`MAINTAINING.md`](../../MAINTAINING.md) (the "run the gate"
+From the repo root, run the gate block in [`MAINTAINING.md`](../../documentation/MAINTAINING.md) (the "run the gate"
 section). Each non-zero exit is drift — note which check failed and why. The command list lives in
 MAINTAINING.md, not here, so the two can't fork. A visualcheck/clock-skew failure on a company you didn't
 touch is pre-existing, not your change — say so, don't fix it.
@@ -38,7 +38,7 @@ Look for drift only — a short, generic list (don't enumerate every doc; the *m
   wrong;
 - a **broken cross-doc link**, or a doc that restates another's rule and now **contradicts** it;
 - a **baked count / inventory** ("N tools", example lists) that no longer matches reality;
-- for each contract the diff touched, walk its row in [`MAINTAINING.md`](../../MAINTAINING.md) and confirm the
+- for each contract the diff touched, walk its row in [`MAINTAINING.md`](../../documentation/MAINTAINING.md) and confirm the
   listed **downstreams actually moved**.
 
 ## 3. Report — propose, don't write

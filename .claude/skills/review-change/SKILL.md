@@ -7,7 +7,7 @@ argument-hint: <Any specifics you want reviewed>
 
 $ARGUMENTS
 
-- Review MAINTAINING.md
+- Review [`MAINTAINING.md`](../../../documentation/MAINTAINING.md)
 - Review [engine-dev rules](../../rules/engine-dev.md). Are we adhering to them?
 - Consider running the `drift-sweep` skill
 - Consider looking at this from the perspectives of the different [personas](../../../documentation/personas.md)
