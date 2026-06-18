@@ -1,0 +1,37 @@
+{
+  "record_version": "0.1",
+  "verb": "visual-evidence",
+  "status": "complete",
+  "tool": "claude-code",
+  "model": "claude-opus-4-8",
+  "trust": "env",
+  "started_at": "2026-06-18T16:22:28Z",
+  "artifacts": [
+    "visual.md"
+  ],
+  "effort": "xhigh",
+  "ended_at": "2026-06-18T16:30:14Z",
+  "components": [
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:typography_hierarchy"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:layout_composition_components"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:color_brand_imagery"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:iconography_illustration"
+    }
+  ],
+  "note": "23 active tiles (homepage+about); capital/creative dropped as redundant feeds; lazy-load image gaps noted, no Tier-B"
+}
