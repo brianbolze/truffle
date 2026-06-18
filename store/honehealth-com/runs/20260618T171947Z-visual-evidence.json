@@ -1,0 +1,37 @@
+{
+  "record_version": "0.1",
+  "verb": "visual-evidence",
+  "status": "complete",
+  "tool": "claude-code",
+  "model": "claude-opus-4-8",
+  "trust": "env",
+  "started_at": "2026-06-18T17:19:47Z",
+  "artifacts": [
+    "visual.md"
+  ],
+  "effort": "xhigh",
+  "ended_at": "2026-06-18T17:35:10Z",
+  "components": [
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:typography_hierarchy"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:layout_composition_components"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:color_brand_imagery"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:iconography_illustration"
+    }
+  ],
+  "note": "Re-mined against live 2026-06-18 capture (prior visual.md cited archived 2026-05-31 tiles, so brief's Brand System strip loaded nothing). Tier-A only; 2 homepage tiles excluded for lazy-load gaps."
+}
