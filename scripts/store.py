@@ -22,6 +22,7 @@ import glob
 import os
 import re
 import sys
+import unicodedata
 from collections import Counter
 from datetime import date
 from typing import Any, Callable
@@ -77,6 +78,17 @@ def canon(s: str) -> str:
     return s.replace(".", "-")
 
 
+def _name_keys(s: object) -> list[str]:
+    """Human-facing brand keys: `Telo Life`, `TeloLife`, and `TELO-LIFE` all collapse together."""
+    text = unicodedata.normalize("NFKD", str(s).strip().lower()).encode("ascii", "ignore").decode("ascii")
+    text = text.replace("&", " and ")
+    tokens = re.findall(r"[a-z0-9]+", text)
+    keys = ["".join(tokens)]
+    if "and" in tokens:
+        keys.append("".join(t for t in tokens if t != "and"))
+    return [k for k in dict.fromkeys(keys) if k]
+
+
 def _is_domainish(s: str) -> bool:
     """A relation/alias target is either a resolvable domain or a quoted name — which is this?
 
@@ -88,7 +100,7 @@ def _is_domainish(s: str) -> bool:
 
 
 def index(profiles: dict[str, dict[str, Any]]) -> dict[str, str]:
-    """canon-key → slug, over slug + `domain` + every alias (domain- and name-form). The resolver's table.
+    """surface key → slug, over slug/domain plus human-normalized names and aliases.
 
     Aliases are the M&A / rebrand escape hatch (SCHEMA), so a merged entity's old domain resolves to the
     survivor: `salesloft.com → clari-com`. That's intended — query the acquired co, get who it's now part of.
@@ -96,22 +108,29 @@ def index(profiles: dict[str, dict[str, Any]]) -> dict[str, str]:
     idx: dict[str, str] = {}
     for slug, fm in profiles.items():
         keys = {canon(slug), canon(fm.get("domain") or slug)}
+        keys.update(_name_keys(fm.get("name") or ""))
         for a in fm.get("aliases") or []:
-            keys.add(canon(a) if _is_domainish(a) else str(a).strip().lower())
+            if _is_domainish(a):
+                keys.add(canon(a))
+            else:
+                keys.add(str(a).strip().lower())
+                keys.update(_name_keys(a))
         for k in keys:
             idx.setdefault(k, slug)
     return idx
 
 
 def resolve(query: str, profiles: dict[str, dict[str, Any]] | None = None) -> str | None:
-    """Any surface form → canonical slug, or None. Exact match on canon(slug/domain/domainish-alias) or a
-    lowercased name-alias, then on `name`. (The CLI adds a fuzzy candidate fallback; the library stays exact.)
+    """Any surface form → canonical slug, or None.
+
+    Exact match on slug/domain/domainish-alias, lowercased name alias, or human-normalized name form.
+    The CLI adds a fuzzy candidate fallback; the library stays exact.
     """
     profiles = load() if profiles is None else profiles
     idx = index(profiles)
-    hit = idx.get(canon(query)) or idx.get(str(query).strip().lower())
-    if hit:
-        return hit
+    for key in [canon(query), str(query).strip().lower(), *_name_keys(query)]:
+        if key in idx:
+            return idx[key]
     for slug, fm in profiles.items():
         if str(query).strip().lower() == str(fm.get("name") or "").lower():
             return slug
@@ -234,6 +253,12 @@ def _hit_line(query: str, profiles: dict[str, dict[str, Any]]) -> str | None:
 def _miss_line(query: str, profiles: dict[str, dict[str, Any]]) -> str:
     """The miss half of 'find': fuzzy candidates across all folders (profiles + stubs), or NOT in store."""
     cq = canon(query)
+    q_name_keys = _name_keys(query)
+
+    def nameish_match(value: object) -> bool:
+        v_name_keys = _name_keys(value)
+        return any(q in v or v in q for q in q_name_keys for v in v_name_keys)
+
     all_dirs = {os.path.basename(d) for d in glob.glob(os.path.join(STORE, "*")) if os.path.isdir(d)}
     cands = sorted(
         {
@@ -246,6 +271,8 @@ def _miss_line(query: str, profiles: dict[str, dict[str, Any]]) -> str:
                     cq in canon(profiles[slug].get("domain") or "")
                     or any(cq in canon(a) for a in (profiles[slug].get("aliases") or []) if _is_domainish(a))
                     or query.strip().lower() in str(profiles[slug].get("name") or "").lower()
+                    or nameish_match(profiles[slug].get("name") or "")
+                    or any(nameish_match(a) for a in (profiles[slug].get("aliases") or []) if not _is_domainish(a))
                 )
             )
         }
