@@ -1,0 +1,24 @@
+{
+  "record_version": "0.1",
+  "verb": "research-company",
+  "status": "complete",
+  "tool": "claude-code",
+  "model": "claude-opus-4-8",
+  "trust": "env",
+  "started_at": "2026-06-18T16:13:40Z",
+  "artifacts": [
+    "profile.md",
+    "offerings.md",
+    "telehealth.md"
+  ],
+  "effort": "xhigh",
+  "ended_at": "2026-06-18T16:38:40Z",
+  "components": [
+    {
+      "tool": "claude-code",
+      "model": "claude-sonnet-4-6",
+      "role": "offerings-roster"
+    }
+  ],
+  "note": "Express fresh capture over warm 18-day base; deep roster gated on (Highest/direct competitor); new heart-health line captured."
+}

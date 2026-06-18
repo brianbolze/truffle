@@ -1,0 +1,193 @@
+{
+  "slug": "honehealth-com",
+  "capture": "2026-05-31",
+  "source": "tile",
+  "pages": [
+    {
+      "page": "homepage",
+      "width": 1920,
+      "height": 11909,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/homepage/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/homepage/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/homepage/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/homepage/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/homepage/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 6100,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/homepage/tile-05-y06100.png"
+        },
+        {
+          "index": 6,
+          "y": 7320,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/homepage/tile-06-y07320.png"
+        },
+        {
+          "index": 7,
+          "y": 8540,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/homepage/tile-07-y08540.png"
+        },
+        {
+          "index": 8,
+          "y": 9760,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/homepage/tile-08-y09760.png"
+        },
+        {
+          "index": 9,
+          "y": 10509,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/homepage/tile-09-y10509.png"
+        }
+      ]
+    },
+    {
+      "page": "membership-pricing",
+      "width": 1920,
+      "height": 1378,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1378,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/membership-pricing/tile-00-y00000.png"
+        }
+      ]
+    },
+    {
+      "page": "how-it-works",
+      "width": 1920,
+      "height": 7380,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/how-it-works/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/how-it-works/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/how-it-works/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/how-it-works/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 4880,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/how-it-works/tile-04-y04880.png"
+        },
+        {
+          "index": 5,
+          "y": 5980,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/how-it-works/tile-05-y05980.png"
+        }
+      ]
+    },
+    {
+      "page": "hone-at-home",
+      "width": 1920,
+      "height": 5116,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/hone-at-home/tile-00-y00000.png"
+        },
+        {
+          "index": 1,
+          "y": 1220,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/hone-at-home/tile-01-y01220.png"
+        },
+        {
+          "index": 2,
+          "y": 2440,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/hone-at-home/tile-02-y02440.png"
+        },
+        {
+          "index": 3,
+          "y": 3660,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/hone-at-home/tile-03-y03660.png"
+        },
+        {
+          "index": 4,
+          "y": 3716,
+          "height": 1400,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/hone-at-home/tile-04-y03716.png"
+        }
+      ]
+    },
+    {
+      "page": "mens-trt",
+      "width": 1920,
+      "height": 1080,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1080,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/mens-trt/tile-00-y00000.png"
+        }
+      ]
+    },
+    {
+      "page": "womens-menopause",
+      "width": 1920,
+      "height": 1080,
+      "tiles": [
+        {
+          "index": 0,
+          "y": 0,
+          "height": 1080,
+          "path": "store/honehealth-com/captures/2026-05-31/tiles/womens-menopause/tile-00-y00000.png"
+        }
+      ]
+    }
+  ]
+}

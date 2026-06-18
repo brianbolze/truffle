@@ -2,46 +2,47 @@
 # Query contract for this store: ../../QUERYING.md — parse frontmatter; grep the body to locate.
 schema_version: "1.2"
 domain: honehealth.com       # company key; each offering's slug (its relative url) is its key *within* Hone
-captured_at: 2026-06-04      # own freshness; Rx roster ← captures/2026-06-03/, supplements line ← captures/2026-06-04/
-enumeration: indexed-complete   # 12 Rx lines + the 9-SKU shop. supplements line reached (post-deepen); leaf/dedup omissions in Provenance
-site_notes: "Two separate catalogs. (1) Rx telehealth — honehealth.com /mens/* /womens/* /hypothyroidism/* (WordPress; prices on the category cards, suffixed '+ membership'; Optimizely A/B-live → price/order flicker). (2) OTC supplements — shop.honehealth.com, a nopCommerce store with a real sitemap.xml (authoritative census) + server-rendered product grids, so a free curl enumerates the whole catalog (/supplements all=9, /mens-care=9, /womens-care=7). Supplement prices are PDP-only (a one-time price + a 10% subscribe-&-save 'subscription-price'); the grid shows only the one-time. The shop subdomain is ALSO the commerce backend for lab-tests / assessments / treatment-plans / Rx-subscriptions — nopCommerce categories that mirror the marketing-site Rx lines; don't re-roster them. /prenuvo is a dead sitemap entry (error page)."
+captured_at: 2026-06-18
+enumeration: indexed-complete   # 14 Rx lines + the 9-SKU shop. supplements line; new heart-health line for both genders; leaf/dedup omissions in Provenance
+site_notes: "Two separate catalogs. (1) Rx telehealth — honehealth.com /mens/* /womens/* /hypothyroidism/* /heart-health/* (WordPress; prices on the category cards, suffixed '+ membership'; Optimizely A/B-live → price/order flicker). Nav now 7 treatment categories per sex: hormone therapy, weight-loss, longevity, sexual-function, thyroid, appearance, heart-health. (2) OTC supplements — shop.honehealth.com, a nopCommerce store with a real sitemap.xml (authoritative census) + server-rendered product grids, so a free curl enumerates the whole catalog (/supplements all=9, /mens-care=9, /womens-care=7). Supplement prices are PDP-only (a one-time price + a 10% subscribe-&-save 'subscription-price'); the grid shows only the one-time. The shop subdomain is ALSO the commerce backend for lab-tests / assessments / treatment-plans / Rx-subscriptions — nopCommerce categories that mirror the marketing-site Rx lines; don't re-roster them. /prenuvo is a dead sitemap entry (error page)."
 ---
 
 ## Portfolio overview
 
 Hone Health (honehealth.com; legal entity Time Therapeutics, Inc.) is a diagnostics-gated DTC telehealth
 clinic that brands itself a **longevity platform** ("Longevity engineered around your biology") but sells a
-broad **Multi-product** catalog: **12 condition lines split across men and women** — hormone therapy, weight
-loss, longevity/peptides, sexual health, thyroid, and hair loss — all wrapped in a recurring membership and
-fronted by a $65 biomarker test + physician consult. This doc enumerates **two distinct catalogs**: (a) the
-**full prescription roster — 39 unique buyable Rx SKUs** (deduped by slug) across all 12 Rx lines, plus the
-entry/membership SKUs and the in-person **Hone at Home** arm; and (b) the **9-SKU OTC supplement line** sold
-through the separate `shop.honehealth.com` storefront — the 13th arm, **non-Rx and ungated** (added 2026-06-04).
-Every Rx line sells the same way: a **category** page (non-buyable) lists
+broad **Multi-product** catalog: **14 condition lines split across men and women** — hormone therapy, weight
+loss, longevity/peptides, sexual health, thyroid, hair loss, and a new **heart health** line — all wrapped in
+a recurring membership and fronted by a $65 biomarker test + physician consult. This doc enumerates **two
+distinct catalogs**: (a) the **full prescription roster — 42 unique buyable Rx SKUs** (deduped by slug) across
+all 14 Rx lines, plus the entry/membership SKUs and the in-person **Hone at Home** arm; and (b) the **9-SKU
+OTC supplement line** sold through the separate `shop.honehealth.com` storefront — the 15th arm, **non-Rx and
+ungated** (added 2026-06-04). Every Rx line sells the same way: a **category** page (non-buyable) lists
 **product cards** → each card is a **SKU PDP** (its own slug + a `$X/mo + membership` price) → checkout routes
 through the $65 biomarker test → physician review → prescription. The Rx pass was comprehensive (all category
-pages + a URL census + two flagship PDP deep-dives); the supplement line is enumerated **to the leaf** (sitemap
-∩ rendered grid agree on all 9, every PDP captured) — so both rosters are complete at the indexed level.
+pages + two flagship PDP deep-dives); the supplement line is enumerated **to the leaf** (sitemap ∩ rendered
+grid agree on all 9, every PDP captured in 2026-06-04) — so both rosters are complete at the indexed level.
 
 **Shape finding #1 — a symmetric men/women catalog, often the *same* SKU.** Hone mirrors most lines across
 sexes, and the unisex lines literally reuse one SKU slug for both: **longevity** (`/longevity/nad`, `/metformin`,
 `/glutathione`, `/b12`, `/omega-3-prescription`, `/low-dose-naltrexone`), **thyroid** (`/hypothyroidism/t3`,
-`/synthroid`, `/desiccated-thyroid`), **hair loss** (`/hair-loss/finasteride-minoxidil`), and **four weight-loss
-adjuncts** at bare root (`/naltrexone`, `/buproprion` [sic], `/topiramate`, `/liraglutide`). Only the *hormone*
-lines are sex-specific — men's **TRT** vs women's **menopause HRT** — and a few weight-loss SKUs are gendered
-(`/mens/sermorelin` vs `/womens/sermorelin`, `/mens/phentermine` vs `/womens/phentermine`). Net: many slugs,
-but a lean ~39-SKU true catalog.
+`/synthroid`, `/desiccated-thyroid`), **hair loss** (`/hair-loss/finasteride-minoxidil`), four weight-loss
+adjuncts at bare root (`/naltrexone`, `/buproprion` [sic], `/topiramate`, `/liraglutide`), and the **new heart
+health line** (`/heart-health/colchicine`, `/heart-health/ezetimibe`, `/heart-health/rosuvastatin`). Only the
+*hormone* lines are sex-specific — men's **TRT** vs women's **menopause HRT** — and a few weight-loss SKUs are
+gendered (`/mens/sermorelin` vs `/womens/sermorelin`, `/mens/phentermine` vs `/womens/phentermine`). Net: many
+slugs, but a lean ~42-SKU true catalog.
 
 **Shape finding #2 — two price-visibility patterns, under one mandatory membership stack.** Every SKU shows a
 medication price, but the displayed number is *med-only* and **"+ membership"** is always appended — a
-separate, mandatory, **published** cost (**Hone Basic $25/mo** = members-only pricing on *select* meds; **Hone
-Premium $155/mo**, "Chosen by 95% of patients" = full access to *all* meds). So the all-in is the card price
-**plus** a membership tier. The per-SKU split:
+separate, mandatory, **published** cost (**Hone Basic $25/month** = members-only pricing on *select* meds;
+**Hone Premium $155/month**, "Chosen by 95% of patients" = full access to *all* meds). So the all-in is the
+card price **plus** a membership tier. The per-SKU split:
 - **`partial`** — the card shows **"From $X/mo"** (an explicit floor; the real per-dose/per-tier number is set
-  at consult). The PDP confirms this with a **dose-tier badge** (e.g. testosterone = "Tiers 2-3"). 8 SKUs,
-  all hormone: men's + women's testosterone (injection/cream), troches, clomiphene, enclomiphene, tadalafil.
+  at consult). The PDP confirms this with a **dose-tier badge** (e.g. testosterone = "Tiers 2-3"). Applies to
+  8 hormone SKUs + Rosuvastatin (the only heart-health SKU with a "From" floor).
 - **`published`** — the card shows a **flat "$X/mo"** (the med's price is fixed and fully shown; the only
-  add-on is the published membership). The other 31 Rx SKUs, plus both memberships and the biomarker test.
+  add-on is the published membership). All other Rx SKUs, plus both memberships and the biomarker test.
 
 **Shape finding #3 — everything is compounded + diagnostics-gated, and the flagship TRT is *compounded*.**
 Every Rx PDP carries the verbatim line *"This is a compounded product and has not been approved by the FDA…"*
@@ -57,21 +58,28 @@ model: a **one-time price** plus a **10%-off `subscription-price`** (subscribe-&
 shown → all `published`. The line spans wellness goals (gut, stress, focus, sleep), longevity, and **OTC analogs
 of two Rx lines** (a `Longevity` supplement alongside the Rx longevity peptides; a `Thrive – Thyroid Complex`
 alongside the Rx thyroid meds). Two SKUs are **men's-only** (Men's Performance Multivitamin, Mojo for Men) —
-`/womens-care` lists 7, `/mens-care` and `/supplements` list all 9. This storefront was **out of scope in the
-2026-06-03 pass**; it's now enumerated to the leaf (sitemap.xml ∩ rendered grid → the same 9).
+`/womens-care` lists 7, `/mens-care` and `/supplements` list all 9. This storefront was enumerated to the leaf
+in the 2026-06-04 pass (sitemap.xml ∩ rendered grid → the same 9).
+
+**Shape finding #5 — new Heart Health line (2026-06-18).** Both `/mens/heart-health` and `/womens/heart-health`
+now appear as a 7th treatment category in the site nav. Three unisex Rx SKUs listed on both pages:
+Colchicine, Ezetimibe (both flat `$37/mo`), and Rosuvastatin (`From $37/mo`). Colchicine and Ezetimibe are
+**`published`**; Rosuvastatin is **`partial`** (the "From" floor signals dose/tier pricing). The page also
+cross-links to existing hormone SKUs (Testosterone for men; Bi-est Cream for women) as cardiovascular support —
+those aren't new roster rows, they're cross-sells within the existing TRT and menopause lines.
 
 **Prominence (calibrated).** **Testosterone / hormone therapy is the commercial flagship [HIGH]** — it owns
 the **"Trending Products"** slot in *both* nav columns (men → Testosterone `/mens/buy-testosterone`; women →
 Testosterone Cream `/womens/testosterone-cream`) and is the origin line (Hone launched men's-only). **Nav/section
 order [MED]:** both menus run hormone-therapy → weight-loss → longevity → sexual-function → thyroid →
-appearance, so weight-loss reads second and longevity third. **Women's menopause is the single deepest line
-[HIGH within the women's franchise]** — 10 SKUs, the widest in the catalog. **Card order within a category is
-[LOW]** — Optimizely A/B testing is live (the profile flags run-to-run flicker), so intra-page ranking and
-exact prices are a point-in-time snapshot, not a fixed truth.
+appearance → heart-health, so weight-loss reads second and longevity third; heart-health lands last. **Women's
+menopause is the single deepest line [HIGH within the women's franchise]** — 10 SKUs, the widest in the catalog.
+**Card order within a category is [LOW]** — Optimizely A/B testing is live (the profile flags run-to-run
+flicker), so intra-page ranking and exact prices are a point-in-time snapshot, not a fixed truth.
 
 ## Roster
 
-Complete at the indexed (card) level across all 12 lines. Within-company key = **Slug** (the relative URL,
+Complete at the indexed (card) level across all 14 lines. Within-company key = **Slug** (the relative URL,
 quoted exactly — including Hone's own typos `/buproprion/` and `/mens/tesosterone-troches/`). Price quoted
 verbatim with its on-card marker; the universal **"+ membership"** is the mandatory separate cost (see anchors).
 Molecule/form is **page-attested only** (card description or PDP), never inferred from the brand. Unisex SKUs
@@ -81,7 +89,7 @@ offering at another brand.
 | Offering | Kind | Parent | Slug | Price (verbatim) | Visibility | What (molecule · form · access) |
 |---|---|---|---|---|---|---|
 | **Entry & membership** | family | — | (the funnel + subscription that gate every Rx SKU) | — | — | The risk-free first step + the two recurring tiers; medication is priced separately "+ membership." |
-| Biomarker Test + Consult | buyable | Entry & membership | (no PDP — funnel entry: `start.honehealth.com/hermes/landing`) | `$165` `$65` (PDP cart) / `$65 per Biomarker Test` | published | not a drug — 40+ biomarker blood panel + physician consult + personalized plan · at-lab (2,000+ labs) or free at-home draw where available · the universal entry. |
+| Biomarker Test + Consult | buyable | Entry & membership | (no PDP — funnel entry: `start.honehealth.com/hermes/landing`) | `$65 per Biomarker Test` | published | not a drug — 40+ biomarker blood panel + physician consult + personalized plan · at-lab (2,000+ labs) or free at-home draw where available · the universal entry. |
 | Hone Basic | buyable | Entry & membership | `/membership-pricing` | `$25/month` | published | subscription · biomarker testing every 6 months, ability to *purchase* consults, members-only pricing on *select* meds & supplements. |
 | Hone Premium | buyable | Entry & membership | `/membership-pricing` | `$155/month` | published | subscription · "Chosen by 95% of patients"; biomarker testing + included consults + personalized protocols + full access to *all* meds, retest/follow-ups every 90 days. |
 | **Testosterone (TRT, men)** | family | — | `/mens/testosterone-replacement-therapy` | — | — | Men's hormone flagship; "the foundation for Hone's testosterone replacement therapy plans." |
@@ -132,11 +140,15 @@ offering at another brand.
 | Natural Desiccated Thyroid | buyable | Thyroid (hypothyroidism) | `/hypothyroidism/desiccated-thyroid` | `$52/mo + membership` | published | desiccated thyroid (naturally-derived T3 + T4) · oral · gated · unisex. |
 | **Hair loss** | family | — | `/mens/hair-loss` · `/womens/hair-loss` | — | — | Unisex hair line; one shared SKU. |
 | Finasteride + Minoxidil | buyable | Hair loss | `/hair-loss/finasteride-minoxidil` | `$38/mo + membership` | published | finasteride + minoxidil ("FDA-approved, two-in-one") · topical solution · gated · unisex. |
-| **Hone at Home** | family | — | `/hone-at-home` | — | — | The **in-person concierge arm** (Orlando, Denver, Phoenix, NY metro) — distinct from the telehealth Rx catalog. Prices from the 2026-05-31 capture. |
+| **Heart Health** | family | — | `/mens/heart-health` · `/womens/heart-health` | — | — | Unisex cardiovascular line (new 2026-06-18); same 3 SKUs listed on both men's and women's category pages under `/heart-health/*` slugs. |
+| Colchicine | buyable | Heart Health | `/heart-health/colchicine` | `$37/mo + membership` | published | colchicine (molecule named; flat price) · oral · gated · unisex. "Helps calm inflammation inside blood vessels, where heart disease often starts years before symptoms appear." |
+| Ezetimibe | buyable | Heart Health | `/heart-health/ezetimibe` | `$37/mo + membership` | published | ezetimibe (molecule named; flat price) · oral · gated · unisex. "Lowers cholesterol by reducing how much is absorbed in the gut." |
+| Rosuvastatin | buyable | Heart Health | `/heart-health/rosuvastatin` | `From $37/mo + membership` | partial | rosuvastatin (molecule named; "From" floor → partial) · oral · gated · unisex. "Lowers cholesterol by reducing how much the liver produces." [anchor: tiers] |
+| **Hone at Home** | family | — | `/hone-at-home` | — | — | The **in-person concierge arm** (Orlando, Denver, Phoenix, NY metro) — distinct from the telehealth Rx catalog. |
 | Botox | buyable | Hone at Home | (no PDP — `/hone-at-home`) | `$350+` | partial | aesthetic injectable · in-person · concierge-nurse visit; "+" = starting price, final set in person. |
 | IV Therapy | buyable | Hone at Home | (no PDP — `/hone-at-home`) | `$249+` | partial | IV infusion · in-person · concierge-nurse visit; starting price. |
 | At-Home 40+ Biomarker Draw | buyable | Hone at Home | (no PDP — `/hone-at-home`) | `$65` | published | not a drug — at-home blood draw (40+ biomarkers) · in-person nurse · feeds the same telehealth intake. |
-| **Supplements (OTC)** | family | — | `/supplements` (`shop.honehealth.com`) | — | — | The **non-Rx storefront line** — 9 OTC capsule supplements, no biomarker/consult/membership gate; direct add-to-cart. Each shows a **one-time price** + a 10% subscribe-&-save `subscription-price` (in parens below). `/mens-care` + `/supplements` = all 9; `/womens-care` = 7 (drops the 2 men's-only). All prices ← `captures/2026-06-04/`. |
+| **Supplements (OTC)** | family | — | `/supplements` (`shop.honehealth.com`) | — | — | The **non-Rx storefront line** — 9 OTC capsule supplements, no biomarker/consult/membership gate; direct add-to-cart. Each shows a **one-time price** + a 10% subscribe-&-save `subscription-price` (in parens below). `/mens-care` + `/supplements` = all 9; `/womens-care` = 7 (drops the 2 men's-only). All prices ← `captures/_archive/2026-06-04/`. |
 | Biome – Gut Health Support | buyable | Supplements (OTC) | `/biome-gut-health-support` | `$40` (sub `$36`) | published | gut/probiotic — L-glutamine · Butyragen® (tributyrin) · GutGard® DGL licorice · Optibiome® *Bacillus subtilis* · 60 capsules (30-day) · OTC, ungated. |
 | Calm – Stress Relief Complex | buyable | Supplements (OTC) | `/stress-relief-complex` | `$40` (sub `$36`) | published | stress — Ashwagandha (Shoden®) · L-theanine · GABA · Huperzine-A · 60 capsules (60-day) · OTC. |
 | Focus | buyable | Supplements (OTC) | `/focus` | `$35` (sub `$31.50`) | published | cognition — citicoline (Cognizin®) · L-theanine · lion's mane · Bacopa · ginkgo · B12 · caffeine · 60 capsules (30-day) · OTC. |
@@ -147,10 +159,10 @@ offering at another brand.
 | Thrive – Thyroid Complex | buyable | Supplements (OTC) | `/thrive-thyroid-complex` | `$30` (sub `$27`) | published | thyroid support — selenium · zinc · vitamin D · inositol · L-glutathione (Setria®) · turmeric · 60 capsules (30-day) · OTC. The OTC analog to the Rx thyroid line. |
 | Vitamin D&K | buyable | Supplements (OTC) | `/vitamin-dk` | `$30` (sub `$27`) | published | bone/calcium — vitamin D3 (cholecalciferol, 5,000 IU) + K2 (menaquinone-7) · 60 capsules (60-day) · OTC. |
 
-**Buyable count (in scope): 54** — 39 unique Rx SKUs (6 men's TRT + 6 men's WL incl. 4 unisex adjuncts +
+**Buyable count (in scope): 57** — 42 unique Rx SKUs (6 men's TRT + 6 men's WL incl. 4 unisex adjuncts +
 10 women's menopause + 2 women's-gendered WL + 6 longevity + 3 men's ED + 2 women's libido + 3 thyroid +
-1 hair) + 3 entry/membership + 3 Hone at Home services + **9 OTC supplements**. The `family` rows are
-non-buyable groupings, not counted. Unisex slugs counted once.
+1 hair + **3 heart health [new]**) + 3 entry/membership + 3 Hone at Home services + **9 OTC supplements**.
+The `family` rows are non-buyable groupings, not counted. Unisex slugs counted once.
 
 ### Verbatim anchors
 
@@ -166,8 +178,8 @@ the molecule-sourcing audit. Quoted exactly from the cited captures.
 - **[anchor: tiers] The dose-tier badge = the `partial` signal.** Each PDP's third icon badge names a price/
   access tier. **Testosterone Cypionate** shows *"Tiers 2-3"* with a *"From $28/mo"* floor (a range → real
   number set at consult → `partial`); **Sermorelin** shows *"Premium Tier"* with a flat *"$130/mo"* (single
-  tier, fixed → `published`). Rule applied across the roster: card reads **"From $X"** → `partial`; flat
-  **"$X"** → `published`.
+  tier, fixed → `published`). **Rosuvastatin** shows *"From $37/mo + membership"* (floor → `partial`).
+  Rule applied across the roster: card reads **"From $X"** → `partial`; flat **"$X"** → `published`.
 - **Gating (verbatim, every PDP):** *"Prescription products require an online consultation with a healthcare
   provider who will determine if a prescription is appropriate."* The cart module repeats on each PDP:
   *"Optimal Health Biomarker Test — 40+ biomarkers — Test at 2,000+ lab locations — FSA/HSA eligible —
@@ -192,6 +204,9 @@ the molecule-sourcing audit. Quoted exactly from the cited captures.
     "progesterone."
   - **PT-141 → named only "PT-141"** (bremelanotide not stated) — recorded as PT-141. **Arousal Cream →
     molecule "not stated"** (*"Hone's proprietary arousal cream"*).
+  - **Heart health SKUs → molecule attested by product name** on both category pages: Colchicine (card title
+    "Colchicine"), Ezetimibe (card title "Ezetimibe"), Rosuvastatin (card title "Rosuvastatin"). Molecule names
+    self-identify here and appear verbatim in the card text, not inferred from brand names.
   - Self-naming molecules (card = molecule), all attested: clomiphene citrate (Clomid®), enclomiphene,
     anastrozole (Arimidex), naltrexone, bupropion, phentermine, topiramate, metformin, vitamin B12,
     glutathione, NAD+, omega-3-acid ethyl esters, low-dose naltrexone, tadalafil (Cialis®), sildenafil
@@ -215,10 +230,12 @@ where a verbatim H1 / molecule attestation / price-tier resolves what the roster
 ### Hone's PDP template — the anatomy
 
 Every Hone SKU PDP is the **same rigid WordPress template**, in this order (verified identical across the two
-captured PDPs and consistent with the category-card shells). Reading one teaches all 39:
+captured PDPs and consistent with the category-card shells). Reading one teaches all 42:
 
-1. **Global mega-nav** — Men / Women columns (6 treatments each) + a **"Trending Products"** highlight per
-   column (men → Testosterone; women → Testosterone Cream), + How It Works + The Edge Blog + Get Started / Sign In.
+1. **Global mega-nav** — Men / Women columns (**7 treatments each** as of 2026-06-18: Increase Testosterone /
+   Relieve Menopause, Lose Weight, Live Longer & Better, Improve Sexual Function, Manage Thyroid, Improve
+   Appearance, Heart Health) + a **"Trending Products"** highlight per column (men → Testosterone; women →
+   Testosterone Cream), + How It Works + The Edge Blog + Get Started / Sign In.
 2. **Breadcrumb** — `Home › [Category] › [Product]` (e.g. *"Home › Low Testosterone › Testosterone Cypionate
    Injections"*; *"Home › Weight Loss › Sermorelin Injections"*).
 3. **H1 = the specific product name** — usually molecule + form (*"Testosterone Cypionate Injections,"*
@@ -239,7 +256,7 @@ captured PDPs and consistent with the category-card shells). Reading one teaches
 13. **Cross-sell** — sibling SKU cards from the same family ("Explore [Other] Treatment Options").
 14. **Edge-blog article cards** (SEO interlink) → **"Real People. Real Stories."** compensated testimonials
     (named, age) → repeat `$65` CTA → FAQ accordion (Getting Started / Consult & Plan / During Treatment /
-    Membership & Pricing) → footer (LegitScript seal + Trustpilot **4.8/5, ~11,547 reviews**).
+    Membership & Pricing) → footer (LegitScript seal + Trustpilot **4.8/5, ~11,677 reviews**).
 
 **Takeaway:** the PDP is a content-marketing + trust shell wrapped around a thin commerce core. The only
 SKU-distinguishing cells are **H1, price line, and the three badges** (esp. the tier badge); steps 9–14 are
@@ -307,45 +324,47 @@ Bupropion), not at GLP-1s.
 
 ## Provenance
 
-- **Pages read (16 fresh, all `captures/2026-06-03/`):** 14 category/hub pages — `mens-hub`, `mens-trt`,
-  `mens-weight-loss`, `mens-longevity`, `mens-ed`, `mens-thyroid`, `mens-hair-loss`, `womens-hub`,
-  `womens-menopause`, `womens-weight-loss`, `womens-longevity`, `womens-low-libido`, `womens-thyroid`,
-  `womens-hair-loss` — plus 2 flagship PDPs `pdp-buy-testosterone` (`/mens/buy-testosterone`) and
-  `pdp-sermorelin` (`/mens/sermorelin`). Hone at Home prices reuse `captures/2026-05-31/hone-at-home.md`.
-  Context: `store/honehealth-com/profile.md`. All 16 fresh scrapes verified — sourceURLs match, bodies md5-unique.
-- **Pages read — supplements line (11 fresh, all `captures/2026-06-04/`):** 2 storefront category pages
+- **Pages read (24 fresh, all `captures/2026-06-18/`):** 16 category/hub pages — `mens_hub`, `mens_trt`,
+  `mens_weight_loss`, `mens_longevity`, `mens_ed`, `mens_thyroid`, `mens_hair_loss`, `mens_heart_health`,
+  `womens_hub`, `womens_menopause`, `womens_weight_loss`, `womens_longevity`, `womens_low_libido`,
+  `womens_thyroid`, `womens_hair_loss`, `womens_heart_health` — plus `homepage`, `hone_at_home`,
+  `about`, `clinical_policy`, `consults`, `how_it_works`, `physicians`, `womens_testosterone_cream`.
+  Prices for **Hone at Home** (`$350+`, `$249+`, `$65`) confirmed live in `captures/2026-06-18/hone_at_home.md`.
+- **Pages read — supplements line (11, all `captures/_archive/2026-06-04/`):** 2 storefront category pages
   (`supplements` = `shop.honehealth.com/supplements`, all 9; `supplements-womens` = `/womens-care`, 7) + all
   **9 supplement PDPs** (`supp-biome`, `supp-calm`, `supp-focus`, `supp-longevity`, `supp-mens-multi`,
   `supp-mojo`, `supp-slumber`, `supp-thrive`, `supp-vitamin-dk`). All 11 verified — sourceURLs match, bodies
-  md5-unique. Catalog cross-checked **sitemap.xml ∩ rendered grid** (both → the same 9). **~11 credits.**
-- **Method / cost:** 1 URL census map (53 product URLs enumerated → confirmed the card roster is complete) +
-  16 rich `--homepage` scrapes (`maxAge:0`, `location:US`, `waitFor:3500`). **~19 credits** (17 recorded +
-  2 `site:`-path map searches that billed but failed to persist — the `/` in the search term broke fc.py's
-  filename, a known tag-sanitization gap; the census map already carried the catalog).
-- **Scope — enumerated:** all 12 Rx condition lines (men + women) at the card/SKU level = 39 unique buyable
-  Rx SKUs, plus entry/membership and Hone at Home; **and the full 9-SKU OTC supplement line** at
-  `shop.honehealth.com` (each PDP captured → price + form + actives page-attested to the leaf). **Not enumerated
-  (PDP not captured):** every *Rx* SKU PDP except the two flagships — the roster's molecule/form/price for the
-  other 37 Rx SKUs comes from category-card descriptions (page-attested), so non-flagship esters (cream/troches/
-  women's-injection testosterone) stay "ester not stated." **Noted but deliberately not re-rostered:** the
-  `shop.honehealth.com` commerce backend for lab-tests / assessments / treatment-plans / Rx-subscription
-  categories — nopCommerce groupings that mirror the marketing-site Rx lines already rostered above (re-rostering
-  them would duplicate, not add). `/prenuvo` is a dead sitemap entry (error page).
+  md5-unique. Catalog cross-checked **sitemap.xml ∩ rendered grid** (both → the same 9).
+- **Scope — enumerated:** all **14 Rx condition lines** (men + women, including the new Heart Health line for
+  both sexes) at the card/SKU level = 42 unique buyable Rx SKUs, plus entry/membership and Hone at Home; **and
+  the full 9-SKU OTC supplement line** at `shop.honehealth.com` (each PDP captured → price + form + actives
+  page-attested to the leaf). **Not enumerated (PDP not captured):** every *Rx* SKU PDP except the two
+  flagships — the roster's molecule/form/price for the other Rx SKUs comes from category-card descriptions
+  (page-attested), so non-flagship esters (cream/troches/women's-injection testosterone) stay "ester not
+  stated." Heart health SKU PDPs not captured — molecules attested via card text on the line pages. **Noted
+  but deliberately not re-rostered:** the `shop.honehealth.com` commerce backend for lab-tests / assessments /
+  treatment-plans / Rx-subscription categories — nopCommerce groupings that mirror the marketing-site Rx lines
+  already rostered above (re-rostering them would duplicate, not add). `/prenuvo` is a dead sitemap entry.
 - **Gated / unreachable:** the real all-in for any SKU (med price + a membership tier + dose/tier set at
   consult on `start.`/`app.honehealth.com`); which membership (Basic vs Premium) unlocks a given med ("select"
   vs "full access"); `/membership-pricing` renders client-side (empty markdown body) — membership prices come
-  from the universal FAQ block + PDP cart; Hone at Home final pricing ("+" starting prices, set in person).
+  from the universal FAQ block + PDP cart; Hone at Home final pricing ("+" starting prices, set in person);
+  heart health PDP pages not captured (individual SKU PDPs at `/heart-health/colchicine`, etc. — card prices
+  are page-attested from the category pages but tier-badge details are not available without PDP capture).
 - **Point-in-time snapshot, not fixed:** **Optimizely A/B testing is live** on the *Rx* marketing site
   (profile-flagged) — captured Rx prices, card order, and which modules render flicker run-to-run. The
   `shop.honehealth.com` supplement storefront shows no such instrumentation (stable server-rendered nopCommerce
-  prices), but supplement pricing still runs promos — both rosters' `captured_at` + a short freshness TTL are the
-  guard; re-capture before trusting a price as current.
+  prices), but supplement pricing still runs promos — both rosters' `captured_at` + a short freshness TTL are
+  the guard; re-capture before trusting a price as current.
 
 ### Run profile
 
-Guided **deepen-offerings** run (2026-06-04): emphasis *"go deeper — enumerate more catalog items, ensure
-comprehensive."* Added the **9-SKU OTC supplement line** (`shop.honehealth.com`) that the 2026-06-03 pass left
-out of scope — a new `family` + 9 rows, enumerated **to the leaf** (sitemap.xml ∩ rendered-grid blind-source
-agreement; every PDP captured for verbatim price + page-attested actives). Also fixed two leaked tool-call tags
-at the file tail from a prior write. The Rx roster (39 SKUs) was **not** re-captured — it's <2 days old and
-unchanged in scope.
+Deep roster refresh (2026-06-18): added the **Heart Health line** (new, both `/mens/heart-health` and
+`/womens/heart-health`) — 1 new `family` row + 3 new unisex buyable SKUs (Colchicine, Ezetimibe, Rosuvastatin).
+Nav confirmed at 7 treatment categories per sex (up from 6). All other Rx prices confirmed unchanged vs
+2026-06-04 from the fresh 2026-06-18 category page captures. Hone at Home prices confirmed live in this run's
+captures. Supplement roster carried forward unchanged from `captures/_archive/2026-06-04/` (prices are still
+grep-verifiable in that subdirectory; no supplement-specific re-capture in this run). PDP-anatomy block updated
+to reflect 7-treatment nav. Prior flagship deep-dive blocks (Testosterone Cypionate, Sermorelin) carried
+forward without re-capture — PDPs not re-scraped. The opt-in PDP-anatomy block was present in prior runs and
+is retained as the seed exemplar per the OFFERINGS.md contract.
