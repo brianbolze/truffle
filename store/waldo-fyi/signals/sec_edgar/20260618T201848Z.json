@@ -1,0 +1,294 @@
+{
+  "tool": "sec_edgar",
+  "source": "efts.sec.gov + data.sec.gov",
+  "captured_at": "2026-06-18T20:18:48Z",
+  "ok": true,
+  "input": {
+    "name": "Waldo",
+    "ticker": null,
+    "domain": "waldo.fyi"
+  },
+  "schema_drift": [],
+  "subject": "waldo.fyi",
+  "state": {
+    "is_public": false,
+    "ticker": null,
+    "cik": null,
+    "exchange": null,
+    "registered_name": null
+  },
+  "filings": [],
+  "form_d": {
+    "query_name": "Waldo",
+    "total_hits": 56,
+    "distinct_ciks": 30,
+    "match": "name_match_unconfirmed",
+    "candidates": [
+      {
+        "cik": "0002130720",
+        "filer": "BTR Group Co-Invest Fund I LLC  (CIK 0002130720)",
+        "dates": [
+          "2026-04-21"
+        ],
+        "is_vehicle": true
+      },
+      {
+        "cik": "0002112706",
+        "filer": "Fredonia Mining Inc.  (CIK 0002112706)",
+        "dates": [
+          "2026-02-20"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0002091049",
+        "filer": "Waldo I, LP  (CIK 0002091049)",
+        "dates": [
+          "2025-11-19",
+          "2026-01-22"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0002097632",
+        "filer": "Tavira Partners LLC- Waldo I Series  (CIK 0002097632)",
+        "dates": [
+          "2025-11-21"
+        ],
+        "is_vehicle": true
+      },
+      {
+        "cik": "0001562326",
+        "filer": "John W. Bristol Equity Fund I LLC  (CIK 0001562326)",
+        "dates": [
+          "2019-04-03",
+          "2019-06-27",
+          "2020-09-10",
+          "2021-03-16",
+          "2021-06-14",
+          "2024-02-08",
+          "2024-03-13",
+          "2025-04-08",
+          "2025-11-20"
+        ],
+        "is_vehicle": true
+      },
+      {
+        "cik": "0002074401",
+        "filer": "Hetal Retail Inc.  (CIK 0002074401)",
+        "dates": [
+          "2025-06-26"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001406944",
+        "filer": "TORQ RESOURCES INC.  (TRBMF)  (CIK 0001406944)",
+        "dates": [
+          "2022-03-15",
+          "2023-03-07",
+          "2024-03-07",
+          "2024-07-12",
+          "2025-06-23"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001804492",
+        "filer": "MITOSENSE, INC.  (CIK 0001804492)",
+        "dates": [
+          "2023-02-27",
+          "2024-01-26",
+          "2025-05-02"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001986878",
+        "filer": "Waldo ai Jun 2023 a Series of CGF2021 LLC  (CIK 0001986878)",
+        "dates": [
+          "2023-07-26"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001889586",
+        "filer": "WALDO SOLUTIONS, INC.  (CIK 0001889586)",
+        "dates": [
+          "2021-10-21",
+          "2023-04-05"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001900350",
+        "filer": "Nonstop Delivery Online LLC  (CIK 0001900350)",
+        "dates": [
+          "2021-12-29"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001898622",
+        "filer": "Yami Investment Ltd  (CIK 0001898622)",
+        "dates": [
+          "2021-12-15"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001889657",
+        "filer": "Crestone Services Group, LLC  (CIK 0001889657)",
+        "dates": [
+          "2021-10-22"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001797079",
+        "filer": "Special Anesthesia Management Services, LLC  (CIK 0001797079)",
+        "dates": [
+          "2019-12-23",
+          "2020-04-22"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001782786",
+        "filer": "Innovian Corp  (CIK 0001782786)",
+        "dates": [
+          "2019-07-19",
+          "2019-12-16"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001502287",
+        "filer": "StepStone Group Holdings LLC  (CIK 0001586449)",
+        "dates": [
+          "2019-08-28"
+        ],
+        "is_vehicle": true
+      },
+      {
+        "cik": "0001664823",
+        "filer": "Waldo Photos, Inc.  (CIK 0001664823)",
+        "dates": [
+          "2016-01-28",
+          "2018-12-14"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001750926",
+        "filer": "Dialectic Therapeutics, Inc.  (CIK 0001750926)",
+        "dates": [
+          "2018-11-13"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001711115",
+        "filer": "Brookfield Strategic Real Estate Partners II MH REIT LLC  (CIK 0001711115)",
+        "dates": [
+          "2017-07-06"
+        ],
+        "is_vehicle": true
+      },
+      {
+        "cik": "0001690421",
+        "filer": "Waldo General Holdings Inc.  (CIK 0001690421)",
+        "dates": [
+          "2017-02-02"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001645508",
+        "filer": "Continuus Energy, Inc.  (CIK 0001645508)",
+        "dates": [
+          "2015-06-23"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001645717",
+        "filer": "Emerging Infrastructure Capital Partners, LLC  (CIK 0001645717)",
+        "dates": [
+          "2015-06-19"
+        ],
+        "is_vehicle": true
+      },
+      {
+        "cik": "0001643176",
+        "filer": "DwellConnect, Inc.  (CIK 0001643176)",
+        "dates": [
+          "2015-05-28"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001634907",
+        "filer": "Alloy Merchant Finance LP  (CIK 0001634907)",
+        "dates": [
+          "2015-03-10"
+        ],
+        "is_vehicle": true
+      },
+      {
+        "cik": "0001584799",
+        "filer": "Ironton Custom House LLC  (CIK 0001584799)",
+        "dates": [
+          "2013-08-21",
+          "2014-11-21"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001616684",
+        "filer": "Waldo Holdings LLC  (CIK 0001616684)",
+        "dates": [
+          "2014-09-18"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001587679",
+        "filer": "VIVASTREAM INC.  (CIK 0001587679)",
+        "dates": [
+          "2013-09-30"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001494586",
+        "filer": "Waldo Networks, Inc.  (CIK 0001494586)",
+        "dates": [
+          "2010-06-21",
+          "2010-08-11",
+          "2011-01-18",
+          "2012-11-26"
+        ],
+        "is_vehicle": false
+      },
+      {
+        "cik": "0001506731",
+        "filer": "Arctaris Income Fund, L.P.  (CIK 0001506731)",
+        "dates": [
+          "2010-12-14",
+          "2011-03-17"
+        ],
+        "is_vehicle": true
+      },
+      {
+        "cik": "0001480058",
+        "filer": "Lithium Americas Corp.  (CIK 0001480058)",
+        "dates": [
+          "2010-01-06"
+        ],
+        "is_vehicle": false
+      }
+    ]
+  },
+  "funding_signals": []
+}

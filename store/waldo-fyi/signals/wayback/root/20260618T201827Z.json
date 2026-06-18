@@ -1,0 +1,1238 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-18T20:18:27Z",
+  "ok": true,
+  "input": {
+    "url": "https://waldo.fyi/"
+  },
+  "schema_drift": [],
+  "first_seen": "2021-07-30T20:20:40Z",
+  "last_seen": "2026-03-18T06:09:32Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 1783,
+  "snapshot_count": 156,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "301",
+      "from": "2021-07-30T20:20:40Z",
+      "to": "2021-07-30T20:20:40Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-07-30T20:20:41Z",
+      "to": "2021-07-30T20:20:41Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-08-26T02:15:24Z",
+      "to": "2021-08-26T05:14:41Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-08-26T05:19:32Z",
+      "to": "2021-09-27T06:10:55Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-30T01:45:44Z",
+      "to": "2021-12-30T01:45:44Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-06-30T20:25:26Z",
+      "to": "2022-08-25T16:27:16Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-12-05T12:07:12Z",
+      "to": "2022-12-05T12:07:12Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-12-09T15:50:35Z",
+      "to": "2023-02-05T07:31:22Z"
+    },
+    {
+      "status": "308",
+      "from": "2023-02-20T18:46:37Z",
+      "to": "2023-02-20T18:46:37Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-03-14T20:19:54Z",
+      "to": "2023-03-14T20:19:54Z"
+    },
+    {
+      "status": "308",
+      "from": "2023-03-15T13:11:09Z",
+      "to": "2023-03-15T13:11:09Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-03-17T14:44:47Z",
+      "to": "2023-04-07T17:41:39Z"
+    },
+    {
+      "status": "308",
+      "from": "2023-04-08T15:28:30Z",
+      "to": "2023-04-08T15:28:30Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-04-13T16:58:56Z",
+      "to": "2023-05-06T06:43:53Z"
+    },
+    {
+      "status": "-",
+      "from": "2023-05-10T22:56:44Z",
+      "to": "2023-05-10T22:56:44Z"
+    },
+    {
+      "status": "308",
+      "from": "2023-05-11T14:24:38Z",
+      "to": "2023-05-11T14:24:38Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-05-11T23:30:06Z",
+      "to": "2023-05-13T09:31:27Z"
+    },
+    {
+      "status": "308",
+      "from": "2023-05-18T09:46:53Z",
+      "to": "2023-05-18T09:46:53Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-05-21T14:34:18Z",
+      "to": "2023-08-05T15:14:49Z"
+    },
+    {
+      "status": "308",
+      "from": "2023-08-11T21:32:54Z",
+      "to": "2023-08-11T21:32:54Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-08-12T16:09:27Z",
+      "to": "2023-10-21T23:25:30Z"
+    },
+    {
+      "status": "308",
+      "from": "2023-11-02T04:51:22Z",
+      "to": "2023-11-02T04:51:22Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-12-03T02:35:17Z",
+      "to": "2024-01-14T07:23:46Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-01-28T11:21:30Z",
+      "to": "2024-01-28T11:21:30Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-02-26T16:42:51Z",
+      "to": "2024-03-10T06:16:52Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-03-28T19:48:05Z",
+      "to": "2024-03-28T19:48:05Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-03-28T19:48:06Z",
+      "to": "2024-03-28T19:48:06Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-03-28T19:49:01Z",
+      "to": "2024-03-28T19:49:01Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-03-28T21:09:16Z",
+      "to": "2024-03-28T21:09:16Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-03-28T21:10:19Z",
+      "to": "2024-03-28T21:10:19Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-03-28T21:10:19Z",
+      "to": "2024-03-28T21:10:19Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-04-19T23:37:16Z",
+      "to": "2024-05-28T11:13:47Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-05-28T11:17:24Z",
+      "to": "2024-05-28T11:17:24Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-05-28T11:17:24Z",
+      "to": "2024-05-28T11:17:24Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-05-28T11:22:22Z",
+      "to": "2024-05-28T11:22:22Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-05-28T11:22:22Z",
+      "to": "2024-05-28T11:22:22Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-05-28T11:24:34Z",
+      "to": "2024-05-28T11:24:34Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-31T00:04:03Z",
+      "to": "2024-07-28T03:19:08Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-07-28T03:19:10Z",
+      "to": "2024-07-28T03:19:10Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-07-28T03:24:10Z",
+      "to": "2024-07-28T03:24:10Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-07-30T08:57:52Z",
+      "to": "2024-09-26T21:04:28Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-09-27T01:38:03Z",
+      "to": "2024-09-27T01:38:03Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-27T01:42:54Z",
+      "to": "2025-03-23T03:34:03Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-03-29T22:31:52Z",
+      "to": "2025-03-29T22:31:52Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-29T22:31:53Z",
+      "to": "2025-03-29T22:31:53Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-03-30T02:41:23Z",
+      "to": "2025-03-30T02:41:23Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-15T03:29:30Z",
+      "to": "2025-06-15T20:28:51Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-07-10T00:30:13Z",
+      "to": "2025-07-10T00:30:13Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-07-14T22:19:13Z",
+      "to": "2025-08-24T15:14:57Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-08-27T23:35:32Z",
+      "to": "2025-08-27T23:35:32Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-09-11T19:19:18Z",
+      "to": "2025-09-11T19:19:18Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-09-20T04:55:20Z",
+      "to": "2025-09-20T12:26:18Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-09-20T12:26:18Z",
+      "to": "2025-12-12T05:41:47Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-12-17T20:39:32Z",
+      "to": "2025-12-17T20:39:32Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-12-17T20:42:10Z",
+      "to": "2026-03-16T14:08:09Z"
+    },
+    {
+      "status": "308",
+      "from": "2026-03-18T06:09:32Z",
+      "to": "2026-03-18T06:09:32Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20210730202040/http://waldo.fyi/",
+  "last_snapshot_url": "https://web.archive.org/web/20260318060932/https://waldo.fyi/",
+  "snapshots": [
+    {
+      "timestamp": "2021-07-30T20:20:40Z",
+      "url": "http://waldo.fyi/",
+      "status": "301",
+      "digest": "Z6IJ46JXZU7TCLCDINT3OMVFHV5GZPYU"
+    },
+    {
+      "timestamp": "2021-07-30T20:20:41Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "VV6YZ4IVBGH2OSVTEEJUJQGRYNSNXD2O"
+    },
+    {
+      "timestamp": "2021-08-26T02:15:24Z",
+      "url": "http://waldo.fyi/",
+      "status": "301",
+      "digest": "Z6IJ46JXZU7TCLCDINT3OMVFHV5GZPYU"
+    },
+    {
+      "timestamp": "2021-08-26T05:14:41Z",
+      "url": "https://waldo.fyi/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2021-08-26T05:19:32Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "FHIIYJABEVTYRC4EXQLS5B7KOWBMEA5L"
+    },
+    {
+      "timestamp": "2021-08-27T04:32:43Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "P35VR5LY5E2VKFZL3XHKYN2E7R4JANMV"
+    },
+    {
+      "timestamp": "2021-09-27T06:10:55Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "IHERTKATHPAMYNTN5SAS664JTQO5RHZV"
+    },
+    {
+      "timestamp": "2021-12-30T01:45:44Z",
+      "url": "http://waldo.fyi/",
+      "status": "301",
+      "digest": "Z6IJ46JXZU7TCLCDINT3OMVFHV5GZPYU"
+    },
+    {
+      "timestamp": "2022-06-30T20:25:26Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "PQGSHYZQXAGZ2QKHWGE5M3T4H3TRRBY4"
+    },
+    {
+      "timestamp": "2022-07-25T16:51:05Z",
+      "url": "https://waldo.fyi/",
+      "status": "200",
+      "digest": "WYXMZYLYYTMPVM4QMYO6ZM3XRMBCC3RS"
+    },
+    {
+      "timestamp": "2022-08-16T13:05:36Z",
+      "url": "https://waldo.fyi/",
+      "status": "200",
+      "digest": "XVKV7LQJMFBNGYNLZZKHRTNDEHFCHW4Z"
+    },
+    {
+      "timestamp": "2022-08-25T16:27:16Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "S3DUFMOKP35CHNFQFAD4TOLUSN2VZXU6"
+    },
+    {
+      "timestamp": "2022-12-05T12:07:12Z",
+      "url": "http://waldo.fyi/",
+      "status": "301",
+      "digest": "WMCR2F5G5SGJ4FTL6CNGFNECMGVYNFL3"
+    },
+    {
+      "timestamp": "2022-12-09T15:50:35Z",
+      "url": "https://waldo.fyi/",
+      "status": "200",
+      "digest": "S3DUFMOKP35CHNFQFAD4TOLUSN2VZXU6"
+    },
+    {
+      "timestamp": "2023-02-05T07:31:22Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "6ZWZWTRJNX6OPYBRX33PAMJYC2RMEQXP"
+    },
+    {
+      "timestamp": "2023-02-20T18:46:37Z",
+      "url": "http://waldo.fyi/",
+      "status": "308",
+      "digest": "5TJNXPRY6PC6WFUFLCOZQV7O6ZYAHJMK"
+    },
+    {
+      "timestamp": "2023-03-14T20:19:54Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "XAP2J4FX6NOFC42CZYFGCU2736DATKNH"
+    },
+    {
+      "timestamp": "2023-03-15T13:11:09Z",
+      "url": "http://waldo.fyi/",
+      "status": "308",
+      "digest": "5TJNXPRY6PC6WFUFLCOZQV7O6ZYAHJMK"
+    },
+    {
+      "timestamp": "2023-03-17T14:44:47Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "62UWZCZZ3AIPGRCCNVZEG4LQQIX2ZDUS"
+    },
+    {
+      "timestamp": "2023-03-21T20:50:36Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "TIPAF4OWAAQCPSG65L4THSHZI6VWU3SB"
+    },
+    {
+      "timestamp": "2023-03-22T06:44:26Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "27PEOR4ZBFVE5YLAUO5MQ6BCTFWYIY5W"
+    },
+    {
+      "timestamp": "2023-03-28T07:48:43Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "GZW65RXEDS3UDV3WM2JIAIXXPNAMEDVS"
+    },
+    {
+      "timestamp": "2023-03-29T22:10:01Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "YWFQMM5GCUFUDGDAMN5IYIYWJYGHDCEI"
+    },
+    {
+      "timestamp": "2023-03-31T17:21:03Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "QIZZKAVB64QQHRCS6NDGBBGY25STUFW3"
+    },
+    {
+      "timestamp": "2023-04-07T17:41:39Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "KCQHHKFGLG3UZD3H35CVYU6Q575N33PN"
+    },
+    {
+      "timestamp": "2023-04-08T15:28:30Z",
+      "url": "http://waldo.fyi/",
+      "status": "308",
+      "digest": "5TJNXPRY6PC6WFUFLCOZQV7O6ZYAHJMK"
+    },
+    {
+      "timestamp": "2023-04-13T16:58:56Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "LXIXTN7ZXWXBGLT2DGXJ4AQWAZ2GFX5V"
+    },
+    {
+      "timestamp": "2023-04-22T06:02:07Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "XXK7CECIPC3DX3O23C5A7WQ4LHQJFFJJ"
+    },
+    {
+      "timestamp": "2023-04-29T05:53:34Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "SZLDV47YB2PSX2PRMKBRWUYIX5VE6XLN"
+    },
+    {
+      "timestamp": "2023-05-06T06:43:53Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "NV6QVQJXNKEXH6ENXJ4RLYHWXJ44X6D3"
+    },
+    {
+      "timestamp": "2023-05-10T22:56:44Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "-",
+      "digest": "SGZ6HIXSY52MIVZWFGEA3AAAQIJZHXMB"
+    },
+    {
+      "timestamp": "2023-05-11T14:24:38Z",
+      "url": "https://waldo.fyi/",
+      "status": "308",
+      "digest": "623H4S3E3MFS26MBHNLAY2SEAOKPHEKH"
+    },
+    {
+      "timestamp": "2023-05-11T23:30:06Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "PYVBFSIDMUTFKMXSMRILWPIOXJ7PER6D"
+    },
+    {
+      "timestamp": "2023-05-13T09:31:27Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "AP6MM35HP26QZ2O6MY2THFTBAINILQXN"
+    },
+    {
+      "timestamp": "2023-05-18T09:46:53Z",
+      "url": "https://waldo.fyi/",
+      "status": "308",
+      "digest": "623H4S3E3MFS26MBHNLAY2SEAOKPHEKH"
+    },
+    {
+      "timestamp": "2023-05-21T14:34:18Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "7IGFYWPXMKJOHJRQSCKV6BM3TYEKNPD5"
+    },
+    {
+      "timestamp": "2023-05-28T16:55:45Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "6AX3QJYQIO3LK5QCL3JSMGHQT3JJRSCF"
+    },
+    {
+      "timestamp": "2023-06-04T17:54:10Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "JFU3J5FFHP6BNIMD6EDQLXRR7WKKRYUI"
+    },
+    {
+      "timestamp": "2023-06-06T01:54:10Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "VYK4D472R5OLAWGLH7HZBWDT4LFACWYI"
+    },
+    {
+      "timestamp": "2023-06-11T18:11:03Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "RYKFZCG7KSI53ARXSXIMORU6LWQVYMWF"
+    },
+    {
+      "timestamp": "2023-06-17T12:27:02Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "U4SITDYOSHWSWUMYUIRLHOHTYJJTLKQG"
+    },
+    {
+      "timestamp": "2023-06-30T00:11:41Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "MGENFWP6DRQDLATS6H25KPRNFW3XK7NT"
+    },
+    {
+      "timestamp": "2023-07-14T18:37:18Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "DLRQ6RYURDOOJ3RNO6JHQYZFEFKCEBGT"
+    },
+    {
+      "timestamp": "2023-07-21T14:38:41Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "ZE4CHEIA42F57YUTVSR64JMCGOGIDOAD"
+    },
+    {
+      "timestamp": "2023-07-21T18:25:17Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "XRCUVRALRQOYV43TEPWIN4NLOP6PLKNE"
+    },
+    {
+      "timestamp": "2023-07-28T14:18:50Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "4YKO4JGW2QB6WD76DRMDBPZOKK5AH6PQ"
+    },
+    {
+      "timestamp": "2023-07-28T18:38:04Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "5WTFYKBFKCTTRY6DMTZMABYWQMAWLUFF"
+    },
+    {
+      "timestamp": "2023-08-05T15:14:49Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "DOLLRDSKZJDGJXAIWBQQKNINGNV7OMLF"
+    },
+    {
+      "timestamp": "2023-08-11T21:32:54Z",
+      "url": "http://www.waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2023-08-12T16:09:27Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "GQASAEYLHM7VGOCMAT44LP4IPWQWYKOW"
+    },
+    {
+      "timestamp": "2023-08-19T17:12:38Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "5I7NFW7JKHZ3CZCKS6EAAOYXPWCCYAOV"
+    },
+    {
+      "timestamp": "2023-08-26T16:43:46Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "GAQPMBVGHDGJKQNXR6I3CN4VYHBSEWGL"
+    },
+    {
+      "timestamp": "2023-08-30T20:31:44Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "SDO7SWH3DMD62FQZKR3BFSFAUDZOJLR6"
+    },
+    {
+      "timestamp": "2023-09-02T16:59:07Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "YECFX5E5C56PKP7LPYZ4EIWZJKWEZ2FR"
+    },
+    {
+      "timestamp": "2023-09-09T17:41:58Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "345WMQ2DEDT3QTCVZUFM3BG7RRDDXLJY"
+    },
+    {
+      "timestamp": "2023-09-16T18:18:23Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "5DAGYFFZPW4VUN7ESPSTAZTEPDQX6JTZ"
+    },
+    {
+      "timestamp": "2023-09-23T20:46:09Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "27TJ6TNJWIN3NSZECHHVNQ7DFMMWPZS4"
+    },
+    {
+      "timestamp": "2023-09-30T20:43:32Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "ADMEFBUU2RARD7VTBV34LXQQ7UHIV3CH"
+    },
+    {
+      "timestamp": "2023-10-07T20:41:47Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "N3GNW64MNPAK5WGAH7LMJL3SWM6KMFHC"
+    },
+    {
+      "timestamp": "2023-10-14T21:39:12Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "CNQ57FVOYGUTYGS2XN63T27DIMBX5XVI"
+    },
+    {
+      "timestamp": "2023-10-21T23:25:30Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "5A55WDDPVCAAEX4UWOIRIS4ZOXBQYG33"
+    },
+    {
+      "timestamp": "2023-11-02T04:51:22Z",
+      "url": "http://waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2023-12-03T02:35:17Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "RBDQRCSD5XE3JKIQKXC4OTIAUQZNV6RL"
+    },
+    {
+      "timestamp": "2023-12-06T19:58:34Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "RL2Z23KIMLHCLCLHQEQF7N46KWVBLZUM"
+    },
+    {
+      "timestamp": "2024-01-14T07:23:46Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "UOBCIPHI7W3JYNVOXJQHRBYE3SGNYGH3"
+    },
+    {
+      "timestamp": "2024-01-28T11:21:30Z",
+      "url": "http://www.waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-02-26T16:42:51Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "MIA4MC3HKFWDR75NOY7TXXTHLPG4SVWS"
+    },
+    {
+      "timestamp": "2024-03-02T18:15:22Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "V2KBTYZJK5TSD353VS6RKFDKRX76RN5P"
+    },
+    {
+      "timestamp": "2024-03-10T06:16:52Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "KICKOVKDAY34YMDZVRADPXYC23V24KN6"
+    },
+    {
+      "timestamp": "2024-03-28T19:48:05Z",
+      "url": "https://waldo.fyi/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2024-03-28T19:48:06Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "IYVO7SCZZE5EBWON4EB4PCDI5L5VIOGZ"
+    },
+    {
+      "timestamp": "2024-03-28T19:49:01Z",
+      "url": "http://waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-03-28T21:09:16Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "-",
+      "digest": "IYVO7SCZZE5EBWON4EB4PCDI5L5VIOGZ"
+    },
+    {
+      "timestamp": "2024-03-28T21:10:19Z",
+      "url": "http://www.waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-03-28T21:10:19Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "-",
+      "digest": "IYVO7SCZZE5EBWON4EB4PCDI5L5VIOGZ"
+    },
+    {
+      "timestamp": "2024-04-19T23:37:16Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "M4SBE2VFYBJIKCQVTGDOFJX7ZQT7HSED"
+    },
+    {
+      "timestamp": "2024-04-22T02:18:08Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "EHXDST5OQ2S7ZYHDA4DOL35FT7PBRVCL"
+    },
+    {
+      "timestamp": "2024-05-03T14:27:59Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "JOAASZD6R6QT5T52KNOGCLXROINI362G"
+    },
+    {
+      "timestamp": "2024-05-25T07:16:40Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "DNMPSUVPPFCNNDSYD5VWZ7P6BT4SYWLS"
+    },
+    {
+      "timestamp": "2024-05-28T11:13:47Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "XMXWGBYMKAGJTJLYNR4MITSARC2KEH5O"
+    },
+    {
+      "timestamp": "2024-05-28T11:17:24Z",
+      "url": "https://waldo.fyi/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2024-05-28T11:17:24Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "-",
+      "digest": "XMXWGBYMKAGJTJLYNR4MITSARC2KEH5O"
+    },
+    {
+      "timestamp": "2024-05-28T11:22:22Z",
+      "url": "http://www.waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-05-28T11:22:22Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "-",
+      "digest": "XMXWGBYMKAGJTJLYNR4MITSARC2KEH5O"
+    },
+    {
+      "timestamp": "2024-05-28T11:24:34Z",
+      "url": "http://waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-05-31T00:04:03Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "DNMPSUVPPFCNNDSYD5VWZ7P6BT4SYWLS"
+    },
+    {
+      "timestamp": "2024-06-21T07:20:52Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "2Y64R4K54CIAEO2WCRUABZY365SVCHNM"
+    },
+    {
+      "timestamp": "2024-06-28T07:26:13Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "HTBHO27MJ4WQBMOPVSNZHCVFODCN2RRS"
+    },
+    {
+      "timestamp": "2024-07-05T08:06:15Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "CQ6JCLWRRQUZWFOYQIZJO7QHSAVGTXQT"
+    },
+    {
+      "timestamp": "2024-07-15T13:01:22Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "7PZ73K5UR7CWUPSCJEUPVYTWXAS74MVG"
+    },
+    {
+      "timestamp": "2024-07-28T03:19:08Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "FOWPTYHQSUAHS3XEVUZR6AXYPY3ZPLON"
+    },
+    {
+      "timestamp": "2024-07-28T03:19:10Z",
+      "url": "http://www.waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-07-28T03:24:10Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "-",
+      "digest": "FOWPTYHQSUAHS3XEVUZR6AXYPY3ZPLON"
+    },
+    {
+      "timestamp": "2024-07-30T08:57:52Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "JJVIUZVSH2MWTOMLNBXBOH7F4ZP5TFSS"
+    },
+    {
+      "timestamp": "2024-08-06T04:55:01Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "YHPF3MNYNNULEFWTFIXIKOXFLLT37FZF"
+    },
+    {
+      "timestamp": "2024-08-09T13:16:01Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "6MEHPOWZ44IM5MIYBBF2ZLFRBOOS44FM"
+    },
+    {
+      "timestamp": "2024-08-10T08:46:43Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "Q66FUTMTBVYA5AN2UNYV5WUZCJELIWSO"
+    },
+    {
+      "timestamp": "2024-08-13T06:00:05Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "LUYE2LL3A2AKZJYB33WTGC6RH5YF455Y"
+    },
+    {
+      "timestamp": "2024-08-15T19:38:53Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "YJHHQDHETIUNA7KDSMHW6CUIWFP3VGN3"
+    },
+    {
+      "timestamp": "2024-08-20T06:25:12Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "KTPM5QEZHE3P37HUBL7BOYPBAMN2MWLQ"
+    },
+    {
+      "timestamp": "2024-08-21T06:21:15Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "CNOVGCNDFHRUKL55RBN6MULESRZG5OPF"
+    },
+    {
+      "timestamp": "2024-09-04T12:47:48Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "LLK44VNNKDL24SRPPTUF6MKGQSCCHJS4"
+    },
+    {
+      "timestamp": "2024-09-22T14:52:44Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "OBYAYM34KJO5ZQD7LMTNZBMZDKTQJKQ6"
+    },
+    {
+      "timestamp": "2024-09-26T21:04:28Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "XY3DWLKJSKJMAH5ZTFH3YOQXVRABRV56"
+    },
+    {
+      "timestamp": "2024-09-27T01:38:03Z",
+      "url": "http://waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-09-27T01:42:54Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "2KF55QJVN3AJLAIDKKJX4K33NNFGPFTH"
+    },
+    {
+      "timestamp": "2024-10-04T20:23:18Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "SBOFRXQ4UXNLM3TRHKZFMZ37Y2PWMU6L"
+    },
+    {
+      "timestamp": "2024-11-07T13:31:39Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "LK2N7BUIGEB45JLNZPLV3LVPDM34MT2S"
+    },
+    {
+      "timestamp": "2024-11-13T03:38:39Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "XWEUQVRR3R54RDXE4CY5USMLDD2OZUGV"
+    },
+    {
+      "timestamp": "2024-11-19T12:10:45Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "6SVYXH4QHP4LXZWFQLBR2NCTVI4P2ILN"
+    },
+    {
+      "timestamp": "2024-11-26T22:54:32Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "37GGKFU2HWF5SUDXSPPVRSSTEGUHDKAL"
+    },
+    {
+      "timestamp": "2024-12-02T07:29:40Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "DTXOJPCHP3HOBBUIRMDC3UTGHXEWVLEI"
+    },
+    {
+      "timestamp": "2024-12-03T22:57:47Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "X3CRNMC7V7PTBHVMJOR7X33PVOIKVJWB"
+    },
+    {
+      "timestamp": "2024-12-06T08:22:57Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "R3VUA3PFWCNGYKJFFM7SDRIUCMA73JMZ"
+    },
+    {
+      "timestamp": "2024-12-08T06:42:04Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "DWIWMVTKV4VOEPJDKDZAYIRXG3PMJV64"
+    },
+    {
+      "timestamp": "2025-01-14T16:36:49Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "OVK6ZHBQIXJUL6I6NFFX7YX4M6FRYCYN"
+    },
+    {
+      "timestamp": "2025-01-24T18:55:28Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "66HCIU6RN6YGGG4O2BIVMJ4JTU5HZKHN"
+    },
+    {
+      "timestamp": "2025-02-07T16:56:24Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "7HRARI2Z4Y2KVSQ22TUKBTIWIZM7TNSE"
+    },
+    {
+      "timestamp": "2025-02-08T03:53:45Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "6W2WRFQVHGZK2QVY6MK7A3PNUFY57FOY"
+    },
+    {
+      "timestamp": "2025-02-14T09:33:13Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "7FMWIBZJB2ZRJYH37FB3PR647VBKVVGX"
+    },
+    {
+      "timestamp": "2025-03-23T03:34:03Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "IZJBA2CZBDG46USMBHNAFW2F5JC3VWNT"
+    },
+    {
+      "timestamp": "2025-03-29T22:31:52Z",
+      "url": "https://waldo.fyi/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-03-29T22:31:53Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "ZYT6YGEW3QU5FF7ZDQ2PB22KFFIDWKHS"
+    },
+    {
+      "timestamp": "2025-03-30T02:41:23Z",
+      "url": "http://waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-03-30T02:41:23Z",
+      "url": "https://waldo.fyi/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-04-15T03:29:30Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "H7DFZFXEHX5DIAQYXNJJCXTK3H7FZRMS"
+    },
+    {
+      "timestamp": "2025-04-24T09:10:34Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "UD6WFKLBJDMNH5YXPGWUI3P2I22746KG"
+    },
+    {
+      "timestamp": "2025-05-10T21:00:03Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "5EIIKFV6FWYRPCT4WZDM3VKV2GEC7ABB"
+    },
+    {
+      "timestamp": "2025-05-22T15:19:50Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "CTWLRGBACMRWUOVRYIGINHP7AWREUYMM"
+    },
+    {
+      "timestamp": "2025-06-15T20:28:51Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "IL6NYX2A53O3B6FLZM2HOTFVZ6272D3T"
+    },
+    {
+      "timestamp": "2025-07-10T00:30:13Z",
+      "url": "http://waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-07-14T22:19:13Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "C5YPYXUWC656EEOXIJD2OY7LIQTU3GWK"
+    },
+    {
+      "timestamp": "2025-07-17T21:06:22Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "LMZ3MGVDKM6EVWJWXCVSTBH37QEDP6PC"
+    },
+    {
+      "timestamp": "2025-08-07T18:33:08Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "FKF42TRURB4KUC22AB5FM5CQ6XG36BLX"
+    },
+    {
+      "timestamp": "2025-08-17T02:56:45Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "LJUVPHNHAMZMXEDWW4O3F7F7YQPDE23Z"
+    },
+    {
+      "timestamp": "2025-08-24T15:14:57Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "GSCI6Q7IZMDVYBFUQTTBY5XDEGM4QGG6"
+    },
+    {
+      "timestamp": "2025-08-27T23:35:32Z",
+      "url": "https://waldo.fyi/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-09-11T19:19:18Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "QUZ6ZEGSX3EKD6U442CCFAGKKI7KPBGX"
+    },
+    {
+      "timestamp": "2025-09-20T04:55:20Z",
+      "url": "http://waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-09-20T12:26:18Z",
+      "url": "https://waldo.fyi/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-09-20T12:26:18Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "KS7HIXTVIO2FQQAY26K2PRTAKUMRYVAZ"
+    },
+    {
+      "timestamp": "2025-09-25T20:37:20Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "GHHBLDZH3EBUPONKHLVE5Z4HIMIPRTX7"
+    },
+    {
+      "timestamp": "2025-09-27T11:12:32Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "4TOZBXZIC3CSP45UEICE7WGGYPJTNCAM"
+    },
+    {
+      "timestamp": "2025-10-06T13:03:54Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "WVUTBSO5GZEEYMRB22PWABV57GEIE4FJ"
+    },
+    {
+      "timestamp": "2025-10-09T08:30:18Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "3Q26CJMXDNNLAWHT7GVOBAJF3KH2G6OP"
+    },
+    {
+      "timestamp": "2025-10-14T00:46:40Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "CIKZLNTGYH4B77FPJBL7VBPENOKW5PYE"
+    },
+    {
+      "timestamp": "2025-11-14T20:00:23Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "ID4LNGLN2BUUFSIKOQGSNNM2QWFZITUC"
+    },
+    {
+      "timestamp": "2025-11-29T22:20:30Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "Q2SZTM4KATK7J4YOKEUNTGG553EARJQ2"
+    },
+    {
+      "timestamp": "2025-12-12T05:41:47Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "MMJRWWXQHXZMLKBVQ6ALKRTRQKONWMYQ"
+    },
+    {
+      "timestamp": "2025-12-17T20:39:32Z",
+      "url": "http://www.waldo.fyi/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-12-17T20:42:10Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "57J62GK3VMK62J4XLAYSYBA5LLLJD5TZ"
+    },
+    {
+      "timestamp": "2026-01-22T06:26:03Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "Q7BQKZFBJRLLZ5FDVMDEKYOE63S3M2GL"
+    },
+    {
+      "timestamp": "2026-02-11T05:31:28Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "PXPFTC2J6WMZB5F5QQMW5BDHFJ2QTQXQ"
+    },
+    {
+      "timestamp": "2026-02-18T05:50:53Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "BHIMB6KRQ2X3JGQLREQCAARZDCZAK2K5"
+    },
+    {
+      "timestamp": "2026-03-16T14:08:09Z",
+      "url": "https://www.waldo.fyi/",
+      "status": "200",
+      "digest": "GNR2STV4BSWCWQZUV7R7DHKPGPMUKEEE"
+    },
+    {
+      "timestamp": "2026-03-18T06:09:32Z",
+      "url": "https://waldo.fyi/",
+      "status": "308",
+      "digest": "TTTS2EUCLFRHNTWR3RIF7RQBPZ4MYPRL"
+    }
+  ]
+}

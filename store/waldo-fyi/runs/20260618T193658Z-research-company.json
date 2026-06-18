@@ -1,0 +1,16 @@
+{
+  "record_version": "0.1",
+  "verb": "research-company",
+  "status": "complete",
+  "tool": "claude-code",
+  "model": "claude-opus-4-8",
+  "trust": "env",
+  "started_at": "2026-06-18T19:36:58Z",
+  "artifacts": [
+    "profile.md",
+    "offerings.md"
+  ],
+  "effort": "max",
+  "ended_at": "2026-06-18T20:20:27Z",
+  "note": "Firecrawl screenshots fail on this SPA (fullPage/any-shot 500); captured --shot none, added fc.py --shot flag. Express full pack: +offerings (indexed-complete), +logos."
+}

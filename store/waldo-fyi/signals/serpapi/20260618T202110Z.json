@@ -1,0 +1,180 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-18T20:21:10Z",
+  "ok": true,
+  "input": {
+    "query": "Waldo brand intelligence",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [
+    {
+      "position": 1,
+      "label": "Best for",
+      "after_colon": "Medium-to-large agencies and brand teams looking to multiply overstretched resources and outpunch their weight class.",
+      "raw_snippet": "Best for: Medium-to-large agencies and brand teams looking to multiply overstretched resources and outpunch their weight class.",
+      "format": "labeled",
+      "reference_indexes": []
+    },
+    {
+      "position": 2,
+      "label": null,
+      "after_colon": "Your team size (freelancer, small agency, or enterprise)",
+      "raw_snippet": "Your team size (freelancer, small agency, or enterprise)",
+      "format": "bare",
+      "reference_indexes": []
+    }
+  ],
+  "narrative_paragraphs": [
+    "Waldo\nis an AI-powered strategy engine and agentic brand intelligence platform purpose-built for marketing and advertising agencies. It orchestrates thousands of AI agents in real time to monitor culture, competitors, and consumers, turning raw social listening, ad data, and trends into actionable strategic output. Waldo.fyi +3",
+    "You can explore the platform directly or request a demonstration on the Waldo Homepage.",
+    "If you'd like, let me know:",
+    "I can help you evaluate if Waldo fits your workflow or suggest alternative platforms!"
+  ],
+  "headings": [
+    "Key Features",
+    "Target Audience & Suitability"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "Waldo.fyi",
+      "title": "Waldo \u2014 Agentic Brand Intelligence",
+      "link": "https://www.waldo.fyi/"
+    },
+    {
+      "index": 1,
+      "source": "Waldo.fyi",
+      "title": "Pricing - Waldo \u2014 Agentic Brand Intelligence",
+      "link": "https://www.waldo.fyi/pricing"
+    },
+    {
+      "index": 2,
+      "source": "Waldo.fyi",
+      "title": "Talk to our team - Waldo \u2014 Agentic Brand Intelligence",
+      "link": "https://www.waldo.fyi/contact"
+    },
+    {
+      "index": 3,
+      "source": "agentrush.ai",
+      "title": "Waldo - Reviews (2025) - AgentRush",
+      "link": "https://agentrush.ai/agent/waldo"
+    },
+    {
+      "index": 4,
+      "source": "LinkedIn",
+      "title": "Waldo AI raises $10M, launches proactive insights platform ...",
+      "link": "https://www.linkedin.com/posts/justinw_introducing-the-first-ai-that-thinks-about-activity-7376669271181078528-KF-A"
+    },
+    {
+      "index": 5,
+      "source": "boldstart ventures",
+      "title": "Waldo \u2014 the leading agentic platform for marketing agencies and ...",
+      "link": "https://boldstart.vc/news/waldo-the-leading-agentic-platform-for-marketing-agencies-and-brand-teams-welcome-to-boldstart/"
+    },
+    {
+      "index": 6,
+      "source": "Waldo.fyi",
+      "title": "Become an expert in seconds - Waldo.fyi",
+      "link": "https://cannes.waldo.fyi/"
+    },
+    {
+      "index": 7,
+      "source": "ColdIQ",
+      "title": "Waldo Review: Features, Pricing \\u0026 Alternatives (2026) - ColdIQ",
+      "link": "https://coldiq.com/tools/waldo"
+    },
+    {
+      "index": 8,
+      "source": "www.reddit.com",
+      "title": "Does anyone here use Waldo AI? : r/advertising - Reddit",
+      "link": "https://www.reddit.com/r/advertising/comments/1hh9jkz/does_anyone_here_use_waldo_ai/"
+    },
+    {
+      "index": 9,
+      "source": "Reveal AI",
+      "title": "Reveal AI: Conversational Surveys \\u0026 Qualitative Research at Scale",
+      "link": "https://www.getreveal.ai/"
+    },
+    {
+      "index": 10,
+      "source": "PetaPixel",
+      "title": "'FaceBlocker' Tech Prevents Clients from Using Screenshots of Proofs",
+      "link": "https://petapixel.com/2021/04/22/faceblocker-tech-prevents-clients-from-using-screenshots-of-proofs/"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Waldo \u2014 Agentic Brand Intelligence",
+      "link": "https://www.waldo.fyi/",
+      "snippet": "The world's first AI that thinks about your brand while you sleep. Agentic brand intelligence for modern agencies and brands.",
+      "displayed_link": "https://www.waldo.fyi"
+    },
+    {
+      "position": 2,
+      "title": "Waldo AI raises $10M, launches proactive insights platform",
+      "link": "https://www.linkedin.com/posts/justinw_introducing-the-first-ai-that-thinks-about-activity-7376669271181078528-KF-A",
+      "snippet": "Introducing the first AI that thinks about your brand while you sleep. \u2728 Waldo has been quietly powering the world's leading brands and ...",
+      "displayed_link": "470+ reactions \u00b7 8 months ago"
+    },
+    {
+      "position": 3,
+      "title": "WALDO",
+      "link": "https://www.linkedin.com/company/waldofyi",
+      "snippet": "Waldo is your AI-powered strategy engine for agencies & brands. It combines audience intelligence, industry trends, and competitor moves ...",
+      "displayed_link": "2.2K+ followers"
+    },
+    {
+      "position": 4,
+      "title": "Does anyone here use Waldo AI? : r/advertising",
+      "link": "https://www.reddit.com/r/advertising/comments/1hh9jkz/does_anyone_here_use_waldo_ai/",
+      "snippet": "This is a tool that allegedly is specifically designed for research and strategy professionals in marketing and advertising environments.",
+      "displayed_link": "10+ comments \u00b7 1 year ago"
+    },
+    {
+      "position": 5,
+      "title": "Waldo | SITech Profile | The SI Lab",
+      "link": "https://www.thesilab.com/tool/waldo",
+      "snippet": "Waldo.fyi is an AI-powered strategy engine designed for brand research, deep social listening, competitive analysis, and trend hunting.",
+      "displayed_link": "https://www.thesilab.com \u203a tool \u203a waldo"
+    },
+    {
+      "position": 6,
+      "title": "Glean Waldo: An agentic search model that pairs with ...",
+      "link": "https://www.glean.com/blog/waldo-launch",
+      "snippet": "Glean Waldo: An agentic search model that pairs with LLMs to deliver frontier intelligence with ~50% lower latency and ~25% fewer tokens",
+      "displayed_link": "https://www.glean.com \u203a blog \u203a waldo-launch"
+    },
+    {
+      "position": 7,
+      "title": "Adobe Brand Intelligence | Enterprise Brand Governance AI",
+      "link": "https://business.adobe.com/products/brand-intelligence.html",
+      "snippet": "Adobe Brand Intelligence empowers enterprises with AI-driven brand governance, automated compliance validation, and performance-driven creative intelligence ...",
+      "displayed_link": "https://business.adobe.com \u203a Products"
+    },
+    {
+      "position": 8,
+      "title": "Waldo - New Product Sneak Peak! | Justin Wohlstadter",
+      "link": "https://www.linkedin.com/posts/justinw_waldo-new-product-sneak-peak-activity-7432778989565554691-iXNe",
+      "snippet": "It's real-time brand intelligence that pulls signals from social platforms, trend databases, paid ads, earnings calls, and cultural moments to ...",
+      "displayed_link": "70+ reactions \u00b7 3 months ago"
+    },
+    {
+      "position": 9,
+      "title": "Waldo - Agentic Brand Intelligence - YesPress",
+      "link": "https://yespress.io/waldo",
+      "snippet": "Waldo turns weeks of brand research into minutes. The agentic strategy engine for agencies and Fortune 500 brands, backed by a $10M Series A ...",
+      "displayed_link": "https://yespress.io \u203a Stories"
+    }
+  ]
+}

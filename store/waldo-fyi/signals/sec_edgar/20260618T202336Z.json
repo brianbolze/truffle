@@ -1,0 +1,62 @@
+{
+  "tool": "sec_edgar",
+  "source": "efts.sec.gov + data.sec.gov",
+  "captured_at": "2026-06-18T20:23:36Z",
+  "ok": true,
+  "input": {
+    "name": "Curiosities Inc.",
+    "ticker": null,
+    "domain": "waldo.fyi"
+  },
+  "schema_drift": [],
+  "subject": "waldo.fyi",
+  "state": {
+    "is_public": false,
+    "ticker": null,
+    "cik": "0002137951",
+    "exchange": null,
+    "registered_name": "Curiosities Inc.",
+    "sic": ""
+  },
+  "filings": [
+    {
+      "form": "D",
+      "date": "2026-06-09",
+      "url": "https://www.sec.gov/Archives/edgar/data/2137951/000213795126000001/xslFormDX08/primary_doc.xml"
+    }
+  ],
+  "form_d": {
+    "query_name": "Curiosities Inc.",
+    "total_hits": 1,
+    "distinct_ciks": 1,
+    "match": "confirmed",
+    "candidates": [
+      {
+        "cik": "0002137951",
+        "filer": "Curiosities Inc.  (CIK 0002137951)",
+        "dates": [
+          "2026-06-09"
+        ],
+        "is_vehicle": false
+      }
+    ],
+    "scoped_to_cik": "0002137951"
+  },
+  "funding_signals": [
+    {
+      "subject": "waldo.fyi",
+      "source_type": "sec",
+      "event_type": "form_d",
+      "date": "2026-06-09",
+      "amount": null,
+      "observation": "factual",
+      "cik": "0002137951",
+      "filer": "Curiosities Inc.  (CIK 0002137951)",
+      "match": "confirmed",
+      "flags": [
+        "existence_only"
+      ],
+      "citation": "efts.sec.gov forms=D"
+    }
+  ]
+}

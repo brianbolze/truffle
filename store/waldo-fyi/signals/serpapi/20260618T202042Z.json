@@ -1,0 +1,201 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-18T20:20:42Z",
+  "ok": true,
+  "input": {
+    "query": "agentic brand intelligence",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "Agentic brand intelligence is the use of autonomous AI agents to continuously monitor, analyze, and manage a brand\u2019s digital presence, reputation, and market positioning. Unlike static dashboards or reactive generative AI, these agents set goals, adapt to changing market narratives, and execute corrective actions without constant human oversight\n\n. PRWeek +4",
+    "Historically, building brand loyalty and tracking perception required manual campaign reviews and tedious data parsing. Agentic intelligence shifts this paradigm by operating across several key areas: Adobe for Business +1",
+    "Tools like\nAdobe Brand Intelligence\nillustrate how this plays out in practice. Key features include: Adobe for Business",
+    "For a look at how agentic AI acts as an autonomous, decision-ready teammate for your brand:15:11How to use agentic AI as your decision-ready intelligenceHootsuiteYouTube \u00b7 Apr 6, 2026",
+    "For tips on understanding consumer signals and maximizing brand intelligence:1mAgentic AI and data: Your competitive advantage explainedIBMYouTube \u00b7 Nov 18, 2025",
+    "If you want to prepare your brand for this shift, we can:",
+    "Let me know which of these you'd like to explore first."
+  ],
+  "headings": [
+    "Why It\u2019s a Game Changer",
+    "Core Enterprise Capabilities"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "PRWeek",
+      "title": "The new mandate: Agentic brand intelligence - PR Week",
+      "link": "https://www.prweek.com/article/1955777/new-mandate-agentic-brand-intelligence"
+    },
+    {
+      "index": 1,
+      "source": "Typeface",
+      "title": "What Is Brand Intelligence? A Guide for Enterprise Marketers",
+      "link": "https://www.typeface.ai/blog/what-is-brand-intelligence-guide-for-enterprise-marketers"
+    },
+    {
+      "index": 2,
+      "source": "The Pedowitz Group",
+      "title": "Competitive Brand Positioning Analysis with AI Narrative ...",
+      "link": "https://www.pedowitzgroup.com/competitive-brand-positioning-analysis-with-ai-narrative-intelligence"
+    },
+    {
+      "index": 3,
+      "source": "Google Cloud",
+      "title": "What is agentic AI? Definition and differentiators - Google Cloud",
+      "link": "https://cloud.google.com/discover/what-is-agentic-ai"
+    },
+    {
+      "index": 4,
+      "source": "BNO Inc",
+      "title": "Part 1: How Agentic AI Is Reshaping Brand Strategy - BNO Inc",
+      "link": "https://bnoinc.com/2026/03/part-1-how-agentic-ai-is-reshaping-brand-strategy/"
+    },
+    {
+      "index": 5,
+      "source": "Adobe for Business",
+      "title": "Keeping brands consistent as marketing becomes AI\u2011driven",
+      "link": "https://business.adobe.com/blog/adobe-brand-intelligence-shaping-agentic-marketing"
+    },
+    {
+      "index": 6,
+      "source": "Facebook",
+      "title": "How agentic AI impacts brand management and customer experience",
+      "link": "https://www.facebook.com/wsinextgenmarketing/posts/agentic-ai-is-creating-a-new-layer-between-brands-and-customersharvard-business-/1583538470440160/"
+    },
+    {
+      "index": 7,
+      "source": "Kantar",
+      "title": "The role of agentic AI in the future of Canadian brand growth - Kantar",
+      "link": "https://www.kantar.com/north-america/inspiration/brands/the-role-of-agentic-ai-in-the-future-of-canadian-brand-growth"
+    },
+    {
+      "index": 8,
+      "source": "Snowflake",
+      "title": "Agentic AI in Business: From Pilots to Operations - Snowflake",
+      "link": "https://www.snowflake.com/en/blog/agentic-ai-business-operations0/"
+    },
+    {
+      "index": 9,
+      "source": "Teleperformance",
+      "title": "Agentic AI: Ushering in a new age of business intelligence - TP",
+      "link": "https://www.tp.com/en-us/insights-list/insightful-articles/global/agentic-ai-ushering-in-a-new-age-of-business-intelligence/"
+    },
+    {
+      "index": 10,
+      "source": "Moveworks",
+      "title": "Agentic AI Use Cases Every Enterprise Marketer Needs",
+      "link": "https://www.moveworks.com/us/en/resources/blog/agentic-ai-in-marketing-examples-and-use-cases"
+    },
+    {
+      "index": 11,
+      "source": "MarTech",
+      "title": "Agentic AI discovery requires machine-readable brands - MarTech",
+      "link": "https://martech.org/agentic-ai-discovery-requires-machine-readable-brands/"
+    },
+    {
+      "index": 12,
+      "source": "Braze",
+      "title": "Agentic Commerce: A Complete Guide for Brands - Braze",
+      "link": "https://www.braze.com/resources/articles/agentic-commerce"
+    },
+    {
+      "index": 13,
+      "source": "Capgemini",
+      "title": "Agentic AI suite for business intelligence transformation - Capgemini",
+      "link": "https://www.capgemini.com/insights/research-library/agentic-ai-suite-for-business-intelligence-transformation/"
+    },
+    {
+      "index": 14,
+      "source": "NTT DATA Insurance",
+      "title": "Agentic AI: The Next Frontier in Insurance Transformation",
+      "link": "https://insurance.nttdata.com/post/agentic-ai-the-next-frontier-in-insurance-transformation/"
+    },
+    {
+      "index": 15,
+      "source": "fabric Inc.",
+      "title": "Agentic Commerce is Here: Why Brands Need to Monitor Their Answer Engine Visibility Now",
+      "link": "https://fabric.inc/blog/commerce/agentic-commerce-is-here-why-brands-need-to-monitor-their-answer-engine-visibility-now"
+    },
+    {
+      "index": 16,
+      "source": "Theo Prodromitis",
+      "title": "The Future of Visibility: Why Your Brand Needs GeoBranding\u2122",
+      "link": "https://www.theoprodromitis.com/post/the-future-of-visibility-why-your-brand-needs-geobranding"
+    },
+    {
+      "index": 17,
+      "source": "Quantum Metric",
+      "title": "Quantum Metric Launches Felix Agentic AI, Autonomous Digital Experience Analyst",
+      "link": "https://www.quantummetric.com/press-releases/quantum-metric-launches-felix-agentic-the-autonomous-digital-experience-analyst-"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Keeping brands consistent as marketing becomes AI\u2011driven",
+      "link": "https://business.adobe.com/blog/adobe-brand-intelligence-shaping-agentic-marketing",
+      "snippet": "Adobe Brand Intelligence is the intelligence layer that makes scaled content automation possible in the agentic era. It learns how your brand behaves",
+      "displayed_link": "https://business.adobe.com \u203a blog \u203a adobe-brand-intelli..."
+    },
+    {
+      "position": 2,
+      "title": "The new mandate: Agentic brand intelligence",
+      "link": "https://www.prweek.com/article/1955777/new-mandate-agentic-brand-intelligence",
+      "snippet": "In the agentic model, AI identifies the brand logo in unscripted video in real time, projects potential reach and traces the narrative to its ...",
+      "displayed_link": "https://www.prweek.com \u203a article \u203a new-mandate-agent..."
+    },
+    {
+      "position": 3,
+      "title": "AI Agents: What They Are and Their Business Impact",
+      "link": "https://www.bcg.com/capabilities/artificial-intelligence/ai-agents",
+      "snippet": "Agentic AI is redefining how businesses operate, installing intelligent virtual assistants that can analyze data and make decisions without human intervention.",
+      "displayed_link": "https://www.bcg.com \u203a ... \u203a Artificial Intelligence"
+    },
+    {
+      "position": 4,
+      "title": "Part 1: How Agentic AI Is Reshaping Brand Strategy",
+      "link": "https://bnoinc.com/2026/03/part-1-how-agentic-ai-is-reshaping-brand-strategy/",
+      "snippet": "agentic AI systems are like having a team of intelligent assistants who can work independently toward goals you set for them.",
+      "displayed_link": "https://bnoinc.com \u203a THR3i Blog"
+    },
+    {
+      "position": 5,
+      "title": "How the Best Brands Run on Agentic AI Without Losing Trust",
+      "link": "https://www.linkedin.com/pulse/how-best-brands-run-agentic-ai-without-losing-trust-athena-todd-hqirc",
+      "snippet": "What Agentic AI Actually Does for Brand-Driven Businesses \u00b7 Maintain voice and visual consistency across touchpoints \u00b7 Personalize communication ...",
+      "displayed_link": "5 reactions \u00b7 7 months ago"
+    },
+    {
+      "position": 6,
+      "title": "What Is Agentic AI and How Does It Work in Enterprises?",
+      "link": "https://www.bain.com/insights/what-is-agentic-ai-and-how-does-it-work-in-enterprises/",
+      "snippet": "Agentic AI is the next wave of AI. It plans, acts, and adapts across enterprise workflows, transforming the business.",
+      "displayed_link": "https://www.bain.com \u203a insights \u203a what-is-agentic-ai-an..."
+    },
+    {
+      "position": 7,
+      "title": "Beyond SEO: Building an Agentic Brand Visibility ...",
+      "link": "https://medium.com/@jellyfish-technology-solutions/beyond-seo-building-an-agentic-brand-visibility-intelligence-tool-11ce71dddfa2",
+      "snippet": "Brand Visibility Intelligence Agent \u2014 a system that uses a team of specialized AI agents to research, analyze, and optimize a brand's presence ...",
+      "displayed_link": "6 months ago"
+    },
+    {
+      "position": 8,
+      "title": "What Is Brand Intelligence? A Guide for Enterprise Marketers",
+      "link": "https://www.typeface.ai/blog/what-is-brand-intelligence-guide-for-enterprise-marketers",
+      "snippet": "Brand intelligence connects signals like sentiment, share of voice, and message consistency into one view your team can act on.",
+      "displayed_link": "https://www.typeface.ai \u203a blog \u203a what-is-brand-intellige..."
+    }
+  ]
+}

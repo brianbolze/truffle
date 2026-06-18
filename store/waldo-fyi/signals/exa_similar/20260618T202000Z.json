@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-18T20:20:00Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://waldo.fyi",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Waldo Photos",
+      "url": "https://waldo.pro",
+      "domain": "waldo.pro"
+    },
+    {
+      "rank": 2,
+      "title": "Wald.ai",
+      "url": "https://wald.ai",
+      "domain": "wald.ai"
+    },
+    {
+      "rank": 3,
+      "title": "Walo",
+      "url": "https://waloinc.com",
+      "domain": "waloinc.com"
+    },
+    {
+      "rank": 4,
+      "title": "Wikolo Inc.",
+      "url": "https://wikolo.com",
+      "domain": "wikolo.com"
+    },
+    {
+      "rank": 5,
+      "title": "Waldo",
+      "url": "https://waldo.ai",
+      "domain": "waldo.ai"
+    },
+    {
+      "rank": 6,
+      "title": "Quarrio",
+      "url": "https://quarrio.com",
+      "domain": "quarrio.com"
+    },
+    {
+      "rank": 7,
+      "title": "Waldo",
+      "url": "https://waldo.finance",
+      "domain": "waldo.finance"
+    },
+    {
+      "rank": 8,
+      "title": "Uplodio",
+      "url": "https://uplodio.com",
+      "domain": "uplodio.com"
+    },
+    {
+      "rank": 9,
+      "title": "Waldo",
+      "url": "https://hiwaldo.com",
+      "domain": "hiwaldo.com"
+    },
+    {
+      "rank": 10,
+      "title": "Waldo",
+      "url": "https://waldo.com",
+      "domain": "waldo.com"
+    },
+    {
+      "rank": 11,
+      "title": "Vizard.ai",
+      "url": "https://vizard.ai",
+      "domain": "vizard.ai"
+    },
+    {
+      "rank": 12,
+      "title": "Salto",
+      "url": "https://salto.io",
+      "domain": "salto.io"
+    },
+    {
+      "rank": 13,
+      "title": "Waldo By Moffi",
+      "url": "https://hellowaldo.app",
+      "domain": "hellowaldo.app"
+    },
+    {
+      "rank": 14,
+      "title": "Peso.io",
+      "url": "https://peso.io",
+      "domain": "peso.io"
+    },
+    {
+      "rank": 15,
+      "title": "Claryo, Inc.",
+      "url": "https://claryo.co",
+      "domain": "claryo.co"
+    },
+    {
+      "rank": 16,
+      "title": "Solo",
+      "url": "https://worksolo.com",
+      "domain": "worksolo.com"
+    },
+    {
+      "rank": 17,
+      "title": "Yobi Ai",
+      "url": "https://yobi.ai",
+      "domain": "yobi.ai"
+    },
+    {
+      "rank": 18,
+      "title": "Wodio.ai",
+      "url": "https://wodio.ai",
+      "domain": "wodio.ai"
+    },
+    {
+      "rank": 19,
+      "title": "Ability.ai",
+      "url": "https://ability.ai",
+      "domain": "ability.ai"
+    },
+    {
+      "rank": 20,
+      "title": "Workvivo By Zoom",
+      "url": "https://workvivo.com",
+      "domain": "workvivo.com"
+    },
+    {
+      "rank": 21,
+      "title": "Charli",
+      "url": "https://charliai.com",
+      "domain": "charliai.com"
+    },
+    {
+      "rank": 22,
+      "title": "Graphiq.ai",
+      "url": "https://graphiq.ai",
+      "domain": "graphiq.ai"
+    },
+    {
+      "rank": 23,
+      "title": "Contlo",
+      "url": "https://superagi.com/ecom",
+      "domain": "superagi.com"
+    },
+    {
+      "rank": 24,
+      "title": "Fohlio, Inc.",
+      "url": "https://fohlio.com",
+      "domain": "fohlio.com"
+    },
+    {
+      "rank": 25,
+      "title": "Clueso",
+      "url": "https://clueso.io",
+      "domain": "clueso.io"
+    }
+  ],
+  "neighbor_count": 25
+}

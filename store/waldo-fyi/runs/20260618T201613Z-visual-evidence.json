@@ -1,0 +1,37 @@
+{
+  "record_version": "0.1",
+  "verb": "visual-evidence",
+  "status": "complete",
+  "tool": "claude-code",
+  "model": "claude-opus-4-8",
+  "trust": "env",
+  "started_at": "2026-06-18T20:16:13Z",
+  "artifacts": [
+    "visual.md"
+  ],
+  "effort": "max",
+  "ended_at": "2026-06-18T20:31:42Z",
+  "components": [
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:typography_hierarchy"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:layout_composition_components"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:color_brand_imagery"
+    },
+    {
+      "tool": "claude-code",
+      "model": "sonnet",
+      "role": "visual-miner:iconography_illustration"
+    }
+  ],
+  "note": "All tiles Tier-B (shoot.py) \u2014 Firecrawl screenshots fail on this SPA. 43 cards (23 strong/13 mixed/7 poor), 4 rejected."
+}

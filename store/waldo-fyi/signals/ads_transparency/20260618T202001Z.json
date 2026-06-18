@@ -1,0 +1,46 @@
+{
+  "tool": "ads_transparency",
+  "source": "serpapi.com (google_ads_transparency_center)",
+  "captured_at": "2026-06-18T20:20:01Z",
+  "ok": true,
+  "parser_version": "v1",
+  "input": {
+    "text": "waldo.fyi",
+    "region": null
+  },
+  "schema_drift": [],
+  "cost": "1 SerpAPI search",
+  "ad_creatives": [
+    {
+      "advertiser": "Curiosities Inc.",
+      "advertiser_id": "AR02491512916411416577",
+      "format": "text",
+      "target_domain": "waldo.fyi",
+      "first_shown": 1752275112,
+      "first_shown_iso": "2025-07-11",
+      "last_shown": 1753734531,
+      "last_shown_iso": "2025-07-28"
+    },
+    {
+      "advertiser": "Curiosities Inc.",
+      "advertiser_id": "AR02491512916411416577",
+      "format": "text",
+      "target_domain": "waldo.fyi",
+      "first_shown": 1752266065,
+      "first_shown_iso": "2025-07-11",
+      "last_shown": 1753734432,
+      "last_shown_iso": "2025-07-28"
+    },
+    {
+      "advertiser": "Curiosities Inc.",
+      "advertiser_id": "AR02491512916411416577",
+      "format": "text",
+      "target_domain": "waldo.fyi",
+      "first_shown": 1752354022,
+      "first_shown_iso": "2025-07-12",
+      "last_shown": 1753734291,
+      "last_shown_iso": "2025-07-28"
+    }
+  ],
+  "n_creatives_first_page": 3
+}
