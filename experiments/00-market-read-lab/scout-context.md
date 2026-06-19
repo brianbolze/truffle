@@ -8,6 +8,18 @@ Generate plain market-read questions a strategist or operator would recognize, t
 
 System learning is the second layer, not the headline.
 
+## Temporary Bias: Strategist-First Blind Runs
+
+For the next few Scouts, bias toward questions **The Strategist** would ask before knowing Truffle's current system shape. Do not start from "what can the store answer?" Start from "what would a senior creative / strategist want to know before making a positioning, offer, or market-entry call?"
+
+It is acceptable, and useful, if the best candidates expose obvious source gaps. Mark them honestly:
+
+- `store-only` when captured State can answer enough.
+- `local-existing` when prior run artifacts or existing local signals are enough.
+- `live-external-needs-approval` when the real answer needs ads, social, reviews/forums, SERPs/listicles, fresh news, or other live/current surfaces.
+
+If the best Strategist question is not autonomous-safe, Scout may select it and stop for approval rather than downgrading to a safer but less revealing store-only question.
+
 ## Current Pressure Areas
 
 - **Neighborhood / relations:** nearby players, substitutes, competitors, parents, partners, suppliers, and similar companies.
@@ -33,10 +45,37 @@ System learning is the second layer, not the headline.
 - **System-test questions that pressure Truffle design:** query-time grouping, source ingredients, membership coverage, relation shape, source rigor, freshness, entity resolution, capture grain, or persistence boundaries.
 - Questions that may reveal an opportunity for a better source ingredient, even if the current store cannot fully answer them unattended. Prefer cheap / free sources, but don't exclude ideas for where some proprietary / paid sources would be helpful.
 - Questions likely to produce evidence, recurrence, surprise, or **quick-win opportunities**, not broad opinions.
+- **Strategist-native question shapes**, even when Truffle cannot answer them yet:
+  - **Whitespace / sameness:** what is everyone saying or showing, and where is there real room to sound different?
+  - **Audience / identity:** who is each brand really speaking to, and which customer identity is underserved?
+  - **Promise / proof:** what outcomes are promised, what proof is offered, and which claims feel unsupported?
+  - **Trust / risk reversal:** who earns trust fastest, what trust devices do they use, and what objections remain unhandled?
+  - **Offer packaging:** what would a buyer think they are buying, what bundles/ladders are table stakes, and what feels confusing?
+  - **Creative inputs:** what exact phrases, visuals, proof points, and price anchors would go into a five-second brief?
+  - **Channel / acquisition surface:** what do paid ads, affiliates, listicles, creators, SEO pages, and social posts reveal that owned sites do not?
+  - **Customer pain / objection mining:** what do reviews, forums, Reddit, Trustpilot, or comments say people praise, distrust, or regret?
+  - **Launch / market-entry read:** if a new entrant launched tomorrow, what should it copy, avoid, or attack?
+  - **Competitor narrative:** who is framed as the default, challenger, premium clinic, cheap access point, or trust leader?
+
+## Strategist Seed Questions
+
+Use these as inspiration, not a fixed queue. Prefer plain-language market reads over system probes.
+
+- **Where is the sameness?** In GLP-1, TRT, longevity/NAD, or sexual health, what claims, visuals, offer structures, and trust devices have become table stakes, and where is there actual white space?
+- **Who is winning trust fastest?** Which brands make a skeptical buyer feel safest in the first 30 seconds, and what proof, clinician presence, guarantees, pricing, reviews, or regulatory language do they use?
+- **What would a creative director steal?** Across a category, which exact phrases, hero claims, price anchors, visuals, and offer bundles are worth putting into a five-second brief?
+- **What would a new entrant avoid?** Which positioning lanes are overcrowded, confusing, risky, or undifferentiated?
+- **Who owns which buyer identity?** Which brands speak to optimization, shame-free access, clinical seriousness, masculinity, convenience, affordability, luxury, or longevity status?
+- **What is the trust gap?** What objections show up in customer reviews/forums/comments, and which brands answer them on owned pages vs leave them exposed?
+- **Where is the channel story different from the website story?** What do ads, affiliates, listicles, SEO pages, creator content, or social comments emphasize that owned pages do not?
+- **Who is considered the default?** In third-party surfaces, which brands are repeatedly named as best, cheapest, premium, safest, or most controversial, and how does that differ from the store's captured universe?
+- **What is the offer ladder?** What does each brand use as the entry offer, upsell, bundle, subscription, lab/intake anchor, or continuity mechanism?
+- **What changed recently enough to matter?** What launches, pricing shifts, regulatory moves, partnerships, or new claims would invalidate a cached strategic read?
 
 ## Autonomy Rules
 
 - To start, prefer **store-only** questions for unattended Loop 1 runs, but Scout should still propose beyond-store questions when they expose a source-ingredient gap.
+- During the Strategist-first blind run window, do **not** treat `store-only` as inherently better. Prefer the most Strategist-real question, then gate execution by evidence mode.
 - Mark every candidate with `autonomous_eligible: yes/no`.
 - Mark every candidate with `evidence_mode: store-only | local-existing | live-external-needs-approval`.
 - For now, live external fetching, Firecrawl spend, and broad news research need explicit approval before Loop 1 acts.
