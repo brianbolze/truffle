@@ -4,6 +4,7 @@ Captured verbatim from Doro (via Brian, 2026-05-30). **Not in use yet** — this
 
 ---
 
+<product-discovery-prompt>
 A product is generally defined as a "shippable offering" users can buy / subscribe to / download. Always rolls up to one company, but has its own identity within the company.
 
 A pricing plan, or a feature, is not a product.
@@ -50,3 +51,45 @@ Before finalizing your response, ask yourself:
 2. Do these products have different documentation/feature pages? If no, they might be the same product
 3. Are these just different ways to buy/access the same thing? If yes, combine them
 4. Is this a configuration (color, size, storage, model year, etc.) or a distinct product? Only include distinct products.
+<product-discovery-prompt>
+
+---
+<product-feature-discovery-prompt>
+Research and identify features of the following product: <Company Name> (<company-domain>)
+
+The product's page is likely to be: <product-page-url>. Be sure to use this as a reference when researching the product.
+
+A feature is generally defined as an atomic, user-perceivable product capability.
+
+Rule of thumb: If it's a checkbox in a feature comparison table, it's a feature.
+
+CRITICAL RULES:
+- Restrict your web searches to ONLY pages that the company owns / maintains.
+- Prefer accuracy over completeness / coverage.
+- If you cannot verify information, leave the field empty.
+- For products with a large number of features, or when each feature has multiple variants / sub-features, prefer a "breadth-first" approach where you list the top level feature first, before all of its variants & sub-features.
+- Include at MOST 20 features in the additional_product_feature_names list, and at MOST 40 features total (including 'features' and 'additional_product_feature_names')
+- Don't visit more than 3 pages in total. Prioritize the main company-maintained product page and/or pricing pages before anything else.
+
+Additional Guidelines:
+
+    - For the canonical taxonomy path, choose the top-level segment (the first segment) from the following list:
+    - 'core': The product's primary job-to-be-done or functional feature set that delivers direct value to the user.
+- 'data': Capabilities related to collecting, storing, analysing and visualising data to generate insights and drive decisions.
+- 'connectivity': Ways the product connects or integrates with other systems, devices or platforms (APIs, SDKs, plug-ins, Bluetooth, webhooks).
+- 'safety_security': Safeguards for users, physical assets and data including authentication, encryption and privacy controls.
+- 'automation_ai': Features that automate tasks or provide intelligent assistance through rules, robotics or artificial intelligence.
+- 'ux_accessibility': User interface, interaction design, accessibility and localisation aspects that shape the overall experience.
+- 'customization': Features that allow users to tailor the product to their preferences, preferences or needs.
+- 'collaboration': Features that enable users to collaborate, communicate and share information with others.
+- 'performance': Speed, reliability, scalability and resource efficiency of software or hardware systems.
+- 'commerce': Capabilities related to purchasing, billing, pricing models, subscriptions, payments and financial transactions.
+- 'compliance': Adherence to legal, regulatory and organisational policies such as GDPR, HIPAA or SOX, including audit trails and policy enforcement.
+- 'sustainability': Environmental considerations including energy efficiency, carbon footprint, recycled materials and ESG reporting.
+- 'physical_design': Material choices, industrial design and hardware-specific attributes such as durability and ergonomics.
+- 'support': Post-sales support, professional services, documentation, community engagement and marketplaces.
+- 'platform': Underlying platform capabilities, infrastructure and developer tooling such as compute, storage and CI/CD.
+- 'content_media': Creation, management and distribution of content or media assets such as video, audio and marketing materials.
+- 'health': Features promoting health, wellness or fitness monitoring and management.
+
+</product-feature-discovery-prompt>
