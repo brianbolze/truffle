@@ -71,6 +71,20 @@ linked_items:
   shape, same pattern: strengthens the case for a QUERYING recipe layer over
   per-query committed helpers; does not yet justify a helper because the same
   query has not recurred.
+- **2026-06-19 · Run 004 (third sighting):** Category-crowdedness read hand-built
+  a third, distinct store-query surface in-run: a per-category breadth count
+  derived from molecule strings in `offerings.md` roster cells, because the store
+  has no per-SKU category dimension. Three distinct shapes now (Run 000 entity-set
+  union / Run 001 relation-edge grep / Run 004 category grouping) — recurrence is
+  consistent enough that a *documented QUERYING category-grouping recipe* looks
+  earned: inputs, the roster-cell molecule match, and the whole-file-grep
+  anti-pattern (Run 004's first pass grepped full bodies and returned TRT 53/53 /
+  labs 53/53 — confidently wrong from prose/FAQ/negation), with captured-floor
+  language. Pattern-level recipe, NOT a stored per-SKU category taxonomy (that
+  would be the ontology gravity the anti-Doro line refuses) and NOT a built helper.
+  Still a human graduation call; a fourth sighting is the trigger. MRL-001 was
+  touched but not strengthened this run (the `value_chain_role` DTC gate was a
+  clean 1:1 join, not the hard part).
 
 ### MRL-003 - Depth-backfill in-cohort module gaps
 

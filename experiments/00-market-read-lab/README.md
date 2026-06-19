@@ -1,6 +1,6 @@
 # Market Read Lab
 
-**Status**: Active development - ran 3 runs manually, now working on making the system autonomous
+**Status**: Active development - ran 3 runs manually, tested the local Claude Routine chain, now moving to a single-routine runner.
 
 ## Purpose
 
@@ -13,6 +13,11 @@ Run repeated market reads to learn which category / cohort / non-company primiti
 Market Read Lab is a scheduled research loop. It picks a market question, answers it from approved evidence, reviews whether the result was useful, and queues any system pressure it exposed.
 
 The scheduled task is only the runner. The repo holds the contract: templates, prompts, stage rules, and run artifacts.
+
+Observed constraint: Claude Desktop local routines require explicit approval when one routine
+updates/arms another scheduled task, regardless of permission mode. Do not rely on a self-arming
+Scout -> Loop 1 -> Loop 2 task chain for unattended operation. Prefer one local routine whose short
+prompt points at the repo skill and runs the full cycle under these file contracts.
 
 Each run moves through three stages:
 
@@ -126,3 +131,5 @@ Before enabling unattended runs:
   outside the unattended permission scope.
 - Use "Run now" once per live task to approve only the narrow file/Bash tools needed
   and verify it fails closed when `run_status` is not the expected prior state.
+- For unattended operation, prefer one routine running the full cycle from the repo skill.
+  Chained routines are acceptable for manual testing, but self-arming handoffs are approval-gated.

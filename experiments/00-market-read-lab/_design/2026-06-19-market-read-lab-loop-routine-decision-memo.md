@@ -10,6 +10,22 @@ Avoid cloud-first Routines as the primary Market Read Lab runner, single long-ru
 
 The biggest unknowns are operational rather than conceptual: whether Codex missed-run catchup is officially guaranteed, whether Codex cloud triggers are generally available, exact account-specific Claude Routine caps, and how reliably local scheduled runs execute on Brian’s actual machine without sleep/app-state misses ([Codex Automations](https://developers.openai.com/codex/app/automations), [Introducing the Codex app](https://openai.com/index/introducing-the-codex-app/), [Claude Code Routines Docs](https://code.claude.com/docs/en/routines)).
 
+## 2026-06-19 operational update
+
+The first local Claude Routine dry run showed a hard product constraint: `update_scheduled_task`
+requires explicit approval even in Auto mode. That means a Scout task cannot reliably arm Loop 1,
+and Loop 1 cannot reliably arm Loop 2, without Brian approving each handoff.
+
+This does **not** invalidate the stage contract. It only invalidates self-arming scheduled tasks
+as the unattended runner. The next recommended shape is a **single local Claude Routine** with a
+tiny scheduler prompt that delegates to the repo skill and runs the full cycle inside one session:
+Scout, gated Read, gated Review, then stop. The routine can still use subagents for fresh-lens
+review, but stage rules, permissions, and artifact contracts should live in the repo.
+
+Fallback if the single routine proves too slow: fixed staggered schedules where each stage scans
+for the next eligible run by `run_status`. Avoid a self-mutating task chain unless the product
+approval behavior changes.
+
 ## Recommendation
 
 Market Read Lab should move next to **v1 local scheduled stages with verification gates**, not to a supervisor platform. The design should preserve the current Scout to Read to Review to Triage loop, add `run_status` as the stage lock, add `needs-human-review` as the fail-closed state, and introduce a lightweight receipt template plus verification checklist. This is the smallest design that preserves learning while making repeated autonomous runs safer.
