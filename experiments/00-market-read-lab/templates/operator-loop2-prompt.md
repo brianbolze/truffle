@@ -36,9 +36,10 @@ Then:
    attention to where the read crossed from State or Signals into Judgment, then
    apply the Steward, Dev Agent, and Founder lenses.
 4. Submit candidate triage items or adjustments only when the review adds new evidence.
-5. Do not implement, spike, or offer to implement system changes.
-6. Do not graduate triage items. Graduation is an explicit human decision after review.
-7. When both reviews are complete, update only the `run-notes.md` YAML header to
+5. Never edit sections titled `Human Notes` in `triage.md`; those are Brian/human-only.
+6. Do not implement, spike, or offer to implement system changes.
+7. Do not graduate triage items. Graduation is an explicit human decision after review.
+8. When both reviews are complete, update only the `run-notes.md` YAML header to
    `run_status: reviewed` and `termination_reason: completed`.
 
 Important:

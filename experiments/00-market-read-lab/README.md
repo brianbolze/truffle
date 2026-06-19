@@ -19,6 +19,14 @@ updates/arms another scheduled task, regardless of permission mode. Do not rely 
 Scout -> Loop 1 -> Loop 2 task chain for unattended operation. Prefer one local routine whose short
 prompt points at the repo skill and runs the full cycle under these file contracts.
 
+Local routine prompt:
+
+```md
+Run one autonomous Market Read Lab cycle.
+
+Use `.claude/skills/market-read-lab/SKILL.md` and run the "Autonomous Full Cycle" workflow.
+```
+
 Each run moves through three stages:
 
 1. **Scout** chooses a question and decides whether it is safe to run unattended.
@@ -83,12 +91,16 @@ Question:
 - Do not infer new conventions from historical runs. Runs `000`-`002` are useful
   evidence, but not reliable examples for autonomous execution.
 - Use `templates/operator-scout-prompt.md`, `templates/operator-loop1-prompt.md`,
-  and `templates/operator-loop2-prompt.md` to start fresh agent sessions.
+  and `templates/operator-loop2-prompt.md` to start manual fresh agent sessions.
+- Use `templates/operator-full-cycle-prompt.md` for the scheduled local routine.
 - Scout reads `scout-context.md`; the original wallow doc is deep background, not
   default run context.
 - Name run folders `NNN-YYYY-MM-DD-short-slug/`, where `NNN` is the zero-padded
   run number for this lab. Run 0 is `000`; the next market read is `001`.
   Dates are metadata, not unique IDs.
+- In the autonomous full cycle, the initial scaffold may use a temporary slug such as
+  `scout-candidates`; after Scout selects the question, rename the folder from the
+  actual selected question before Loop 1.
 - Triage pressure; do not auto-graduate engine artifacts.
 - Loop agents may submit triage candidates, but must not implement, spike, or offer
   to implement system changes. Graduation is an explicit human decision after review.
@@ -104,6 +116,7 @@ Question:
   `run_status: read-done`; it should not offer to run Loop 2 itself.
 - Loop 2 must no-op unless `run_status: read-done`; after both reviews are complete,
   it sets `run_status: reviewed`.
+- Loop 2 must never edit `Human Notes` sections in `triage.md`.
 - Pressure lenses are short `kebab-case` recurrence tags for system pressure a run
   exposed, e.g. `denominator-reconciliation`, `source-rigor`, `depth-backfill`.
   They are not a fixed taxonomy or permission to build.

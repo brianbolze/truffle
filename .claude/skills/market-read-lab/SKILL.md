@@ -1,6 +1,6 @@
 ---
 name: market-read-lab
-description: Use when starting, scaffolding, running, reviewing, or triaging Market Read Lab runs in this Web Research / Truffle project. Handles numbered run folders, Loop 1 / Loop 2 prompts, and the no-auto-graduation convention.
+description: Use when starting, scaffolding, running, reviewing, triaging, or running an autonomous full-cycle Market Read Lab routine in this Web Research / Truffle project. Handles numbered run folders, Scout / Loop 1 / Loop 2 prompts, single-routine full-cycle execution, and the no-auto-graduation convention.
 argument-hint: <new run question/slug, or loop action>
 ---
 
@@ -49,6 +49,7 @@ learning as the annotation and selection lens. Persist the **runs**, not the ont
   source type, and primary/secondary status.
 - New receipts should use `experiments/00-market-read-lab/templates/receipt.md`.
   Snippet-only receipts are leads, not evidence for confident claims.
+- Never edit sections titled `Human Notes` in `triage.md`; those are Brian/human-only.
 
 ## Scaffold a New Run
 
@@ -99,6 +100,65 @@ python3 .claude/skills/market-read-lab/scripts/new_run.py \
   --why-autonomous-safe "Answerable from local store files and existing lab artifacts." \
   --loop1-failure-mode "Overstating completeness from a partial denominator."
 ```
+
+## Autonomous Full Cycle
+
+Use this workflow when a local Claude Routine says:
+
+```md
+Run one autonomous Market Read Lab cycle.
+
+Use `.claude/skills/market-read-lab/SKILL.md` and run the "Autonomous Full Cycle" workflow.
+```
+
+Why this shape exists: local Claude Routines require explicit approval when one routine
+updates or arms another scheduled task, so the unattended runner should be one routine,
+not a Scout -> Loop 1 -> Loop 2 self-arming chain.
+
+Run exactly one cycle:
+
+1. Read `experiments/00-market-read-lab/README.md`,
+   `experiments/00-market-read-lab/scout-context.md`,
+   `experiments/00-market-read-lab/triage.md`, and the Scout/Loop 1/Loop 2 prompts in
+   `experiments/00-market-read-lab/templates/`.
+2. Scaffold a temporary Scout run:
+
+   ```bash
+   python3 .claude/skills/market-read-lab/scripts/new_run.py --slug "scout-candidates"
+   ```
+
+3. Run Scout-only against the created path.
+4. Re-read the run's `run-notes.md` header and `scout.md` Selected Run Contract.
+   If the run did not end as `run_status: scout-only`,
+   `autonomous_eligible: yes`, `approval_needed: no`, and
+   `evidence_mode: store-only` or `local-existing`, stop and summarize the block.
+5. Rename the run folder from the selected question before Loop 1:
+
+   ```bash
+   python3 .claude/skills/market-read-lab/scripts/rename_run.py TARGET_RUN_PATH
+   ```
+
+   Use the printed path as the target run for the rest of the cycle. If rename fails,
+   continue with the original path only if the Loop 1 gates still pass, and note the
+   slug friction in `run-notes.md`.
+6. Run Loop 1 against the current target path. If a subagent/task tool is available,
+   you may delegate Loop 1 as a fresh worker using the Loop 1 operator prompt; the
+   parent routine must re-read `run-notes.md` before continuing.
+7. Continue only if Loop 1 ends with `run_status: read-done`. Otherwise stop and
+   summarize the final status.
+8. Run Loop 2 against the current target path. If a subagent/task tool is available,
+   you may delegate Loop 2 as a fresh reviewer using the Loop 2 operator prompt; run
+   one stage at a time and re-read artifacts after it returns.
+9. Stop after Loop 2. Summarize the run path, final `run_status`, and triage changes.
+
+Full-cycle overrides:
+
+- Do not call `update_scheduled_task`, arm another routine, or ask for routine handoff.
+- Do not browse, spend Firecrawl credits, mutate `store/`, graduate triage, or implement
+  system changes.
+- Loop 1's usual "tell the operator to start Loop 2" instruction becomes an internal
+  stage boundary. Continue only after re-reading the `read-done` header.
+- The parent routine owns the gate between stages, even when subagents do the stage work.
 
 ## Run Scout-only
 
@@ -223,6 +283,8 @@ When a later run adds evidence to an existing item without changing its current 
 append a short dated **Evidence Log** entry under that item. Do not invent new YAML
 keys such as `evidence_addendum`.
 
+Never edit sections titled `Human Notes` in `triage.md`.
+
 When both reviews are complete, update only the `run-notes.md` YAML header to
 `run_status: reviewed` and `termination_reason: completed`. `reviewed` does not
 graduate triage items or approve system changes.
@@ -236,3 +298,5 @@ Statuses: `Submitted`, `Researching`, `Acknowledged`, `Duplicated`, `Resolved`.
 Priorities: `P0`, `P1`, `P2`, `P3`, `Low`, `Out-of-scope`.
 
 Do not graduate or implement a triage item unless Brian explicitly approves it.
+
+Never touch `Human Notes` sections.
