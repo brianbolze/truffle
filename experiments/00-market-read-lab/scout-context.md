@@ -8,18 +8,22 @@ Generate plain market-read questions a strategist or operator would recognize, t
 
 System learning is the second layer, not the headline.
 
-## Temporary Bias: Strategist-First Blind Runs
+## Current Question Selection Policy
 
-For the next few Scouts, bias toward questions **The Strategist** would ask before knowing Truffle's current system shape. Do not start from "what can the store answer?" Start from "what would a senior creative / strategist want to know before making a positioning, offer, or market-entry call?"
+For the next few Scouts, bias toward questions **The Strategist** would ask before knowing Truffle's current system shape, and prefer a `bounded-live` selection when a light source panel would materially improve the answer. Do not start from "what can the store answer?" Start from "what would a senior creative / strategist want to know before making a positioning, offer, or market-entry call?"
 
-It is acceptable, and useful, if the best candidates expose obvious source gaps. Mark them honestly:
+Prefer questions that:
 
-- `store-only` when captured State can answer enough.
-- `local-existing` when prior run artifacts or existing local signals are enough.
-- `bounded-live` when the real answer needs a small outside source panel and Scout can write a concrete plan.
-- `live-external-needs-approval` when the answer needs broader, unclear, login-gated, expensive, or unplanned live work.
+1. a strategist/operator would actually ask;
+2. need evidence the store alone does not already hold;
+3. can be answered with a light, bounded source panel;
+4. would teach Truffle something about source ingredients or market-read shape.
 
-If the best Strategist question is not autonomous-safe, Scout may select it and stop for approval rather than downgrading to a safer but less revealing store-only question.
+Do not choose `store-only` just because it is easiest to run unattended. Choose
+`store-only` when cached State is genuinely enough. Choose `bounded-live` when a
+small public source panel would materially improve the read. Choose
+`live-external-needs-approval` when the needed panel is broad, unclear, login-gated,
+or likely to sprawl.
 
 ## Current Pressure Areas
 
@@ -75,8 +79,6 @@ Use these as inspiration, not a fixed queue. Prefer plain-language market reads 
 
 ## Autonomy Rules
 
-- To start, prefer **store-only** questions for unattended Loop 1 runs, but Scout should still propose beyond-store questions when they expose a source-ingredient gap.
-- During the Strategist-first blind run window, do **not** treat `store-only` as inherently better. Prefer the most Strategist-real question, then gate execution by evidence mode.
 - Mark every candidate with `autonomous_eligible: yes/no`.
 - Mark every candidate with `evidence_mode: store-only | local-existing | bounded-live | live-external-needs-approval`.
 - Bounded-live is allowed only with `budget_class: light`, a named evidence goal,

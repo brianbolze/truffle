@@ -1,5 +1,10 @@
 # Run Notes
 
+> **Historical / incomplete run notice:** This Scout-only slate predates the current
+> Selected Run Contract and `run_status` header. Use it for question-shape history
+> only; do not copy its artifact shape, headers, or stage behavior. Current
+> conventions live in `experiments/00-market-read-lab/templates/`.
+
 ```yaml
 pressure_lenses_fired: []
 ```

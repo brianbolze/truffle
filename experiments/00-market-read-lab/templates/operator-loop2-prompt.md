@@ -28,13 +28,14 @@ Then:
    - If `scout.md`, `read.md`, or `run-notes.md` is missing or too incomplete to review,
      update only the `run-notes.md` header to `run_status: needs-human-review` and
      `termination_reason: needs-human-review`, then stop.
-2. Fill `consumer-review.md` verdict-first: decide whether the produced read was
-   valuable enough for a human or agent to trust, reuse, or act on. Use jobs,
-   value diagnostics, and the Strategist / Pantry / First Contact lenses only
-   after that judgment.
-3. Fill `developer-review.md` around Truffle capability pressure first. Pay special
-   attention to where the read crossed from State or Signals into Judgment, then
-   apply the Steward, Dev Agent, and Founder lenses.
+2. Create `consumer-review.md` from `templates/consumer-review.md` if it does not
+   exist, then fill it verdict-first: decide whether the produced read was valuable
+   enough for a human or agent to trust, reuse, or act on. Use jobs, value diagnostics,
+   and the Strategist / Pantry / First Contact lenses only after that judgment.
+3. Create `developer-review.md` from `templates/developer-review.md` if it does not
+   exist, then fill it around Truffle capability pressure first. Pay special attention
+   to where the read crossed from State or Signals into Judgment, then apply the
+   Steward, Dev Agent, and Founder lenses.
    - If the run used `bounded-live`, audit whether the source panel stayed inside
      `live_evidence_plan`, every outside source was logged, spend was purposeful,
      and weak evidence stopped as `insufficient-evidence` instead of expanding scope.
@@ -52,8 +53,8 @@ Important:
 - Developer Review tests whether the system learned something reusable, including
   whether State / Signals / Judgments stayed clear enough.
 - Use prior completed runs as evidence and triage context, not templates. Runs
-  `000`-`002` are pre-autonomy historical runs and should not be copied for current
-  artifact conventions.
+  `000`-`003` are historical or incomplete pre-contract runs and should not be copied
+  for current artifact conventions.
 - For current/news/policy/pricing claims, actively test source rigor; do not accept
   snippet-grade evidence as decision-grade just because the run caveated it.
 - No-op is acceptable if the review adds no new pressure.

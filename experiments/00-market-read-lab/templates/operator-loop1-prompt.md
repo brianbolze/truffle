@@ -52,10 +52,10 @@ Then:
      bounded plan, broad external research, write-back, or reframing, update the header
      to `run_status: needs-human-review` and `termination_reason: blocked-by-approval`,
      then stop.
-3. Answer the selected question in the target run's `read.md`. Keep State
-   (captured facts), Signals (dated changes or indicators), and Judgments
-   (market interpretation) distinguishable; label judgments and tie them back
-   to the state/signals they rely on.
+3. Create the target run's `read.md` from `templates/read.md` if it does not exist,
+   then answer the selected question there. Keep State (captured facts), Signals
+   (dated changes or indicators), and Judgments (market interpretation)
+   distinguishable; label judgments and tie them back to the state/signals they rely on.
 4. Treat any denominator or membership list as partial unless proven otherwise.
 5. Capture receipts for non-obvious inputs, derived lists, or operator observations.
    Use `templates/receipt.md` for new receipts. At minimum, each new receipt should
@@ -98,9 +98,9 @@ Important:
 - Keep artifacts outside `store/`.
 - Treat this as a market read plus system-learning run.
 - Treat prior run recipes as evidence, not templates; only repeated pressure earns
-  a convention or helper candidate. Runs `000`-`002` are pre-autonomy historical
-  runs and should not be copied for artifact shape, headers, stage behavior, or
-  source rigor.
+  a convention or helper candidate. Runs `000`-`003` are historical or incomplete
+  pre-contract runs and should not be copied for artifact shape, headers, stage
+  behavior, or source rigor.
 - If `scout.md` does not contain a selected question, fail closed to
   `needs-human-review`; do not choose a question inside Loop 1.
 - If `bounded-live` is used without a plan, source grades, source-use log, receipts,

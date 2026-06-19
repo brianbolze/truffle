@@ -11,12 +11,6 @@ import sys
 from pathlib import Path
 
 RUN_RE = re.compile(r"^(\d{3})-")
-TEMPLATE_FILES = [
-    "read.md",
-    "run-notes.md",
-    "consumer-review.md",
-    "developer-review.md",
-]
 EVIDENCE_MODES = ("store-only", "local-existing", "bounded-live", "live-external-needs-approval")
 EVIDENCE_MODE_HINT = "/".join(EVIDENCE_MODES)
 DEFAULT_LOCAL_DISALLOWED_ACTIONS = [
@@ -345,19 +339,18 @@ def main() -> int:
         encoding="utf-8",
     )
 
-    for name in TEMPLATE_FILES:
-        if name == "run-notes.md":
-            run_notes_template = (templates_dir / name).read_text(encoding="utf-8")
-            run_notes_text = rendered_run_notes(
-                run_notes_template,
-                run_status="scout-only" if contract else "",
-                evidence_mode=str(contract["evidence_mode"]) if contract else "",
-                autonomous_eligible="yes" if contract else "",
-                termination_reason="completed" if contract else "",
-            )
-            (run_dir / name).write_text(run_notes_text, encoding="utf-8")
-        else:
-            shutil.copyfile(templates_dir / name, run_dir / name)
+    run_notes_template = (templates_dir / "run-notes.md").read_text(encoding="utf-8")
+    run_notes_text = rendered_run_notes(
+        run_notes_template,
+        run_status="scout-only" if contract else "",
+        evidence_mode=str(contract["evidence_mode"]) if contract else "",
+        autonomous_eligible="yes" if contract else "",
+        termination_reason="completed" if contract else "",
+    )
+    (run_dir / "run-notes.md").write_text(run_notes_text, encoding="utf-8")
+
+    if args.mode == "loop1":
+        shutil.copyfile(templates_dir / "read.md", run_dir / "read.md")
 
     prompt_name = "operator-scout-prompt.md" if args.mode == "scout" else "operator-loop1-prompt.md"
     loop_prompt = render_loop_prompt((templates_dir / prompt_name).read_text(encoding="utf-8"), run_rel)

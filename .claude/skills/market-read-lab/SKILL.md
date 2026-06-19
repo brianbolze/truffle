@@ -27,9 +27,9 @@ needs. Persist the **runs**, not the ontology.
 - Keep run artifacts outside `store/`.
 - Treat `experiments/00-market-read-lab/templates/` and operator prompts as the
   current template authority.
-- Treat prior runs as evidence, not templates. Runs `000`-`002` are historical
-  pre-autonomy runs; do not copy their headers, source rigor, stage behavior, or
-  artifact shape.
+- Treat prior runs as evidence, not templates. Runs `000`-`003` are historical or
+  incomplete pre-contract runs; do not copy their headers, source rigor, stage behavior,
+  or artifact shape.
 - Name runs `NNN-YYYY-MM-DD-short-slug/`.
 - Advance stages only by `run_status` in `run-notes.md`.
 - Use only the selected run contract's allowed sources.
@@ -54,6 +54,8 @@ Default Scout-only scaffold:
 ```bash
 python3 .claude/skills/market-read-lab/scripts/new_run.py --slug "short-slug"
 ```
+
+This creates only `scout.md`, `run-notes.md`, and `receipts/.gitkeep`.
 
 If a question is known but the run contract still needs Scout:
 
@@ -96,6 +98,9 @@ python3 .claude/skills/market-read-lab/scripts/new_run.py \
   --loop1-failure-mode "Broadening from source check into open-ended browsing."
 ```
 
+Contract-ready Loop 1 scaffolds also create `read.md`. Review files are stage artifacts;
+create them from templates only when Loop 2 runs.
+
 After scaffolding, report the created run path and the printed prompt.
 
 ## Autonomous Full Cycle
@@ -111,7 +116,8 @@ Use file gates between stages; do not hand off by updating scheduled tasks.
    python3 .claude/skills/market-read-lab/scripts/new_run.py --slug "scout-candidates"
    ```
 
-3. Run Scout against the created path.
+3. Run Scout against the created path, following the current question-selection
+   policy in `scout-context.md`.
 4. Gate on `run-notes.md` and the Selected Run Contract. Continue only when:
    `run_status: scout-only`, `autonomous_eligible: yes`, `approval_needed: no`, and
    `evidence_mode` is `store-only`, `local-existing`, or `bounded-live` with a
@@ -124,12 +130,15 @@ Use file gates between stages; do not hand off by updating scheduled tasks.
 
    `rename_run.py` prefers `selected_slug` from `scout.md` and falls back to the
    selected question.
-6. Run Loop 1 against the current target path. Continue only if it ends with
-   `run_status: read-done`.
+6. Run Loop 1 against the current target path. If `read.md` is missing, create it
+   from `templates/read.md` after the stage gate passes. Continue only if Loop 1 ends
+   with `run_status: read-done`.
 7. For Loop 2, prefer a quick workflow if the environment supports one. Use an
    adversarial verification shape with three focused passes: evidence verifier,
    consumer reviewer, and developer reviewer. If workflows are unavailable, run
-   Loop 2 normally from the operator prompt.
+   Loop 2 normally from the operator prompt. If review files are missing, create them
+   from `templates/consumer-review.md` and `templates/developer-review.md` after the
+   stage gate passes.
 8. Stop after review.
 
 If fresh worker sessions are available, they may run individual stages. The parent
@@ -151,11 +160,14 @@ Scout writes only `scout.md` and the YAML header in `run-notes.md`. It should fi
 Selected Run Contract, including `selected_slug`, and leave the run at `scout-only` only
 when the selected question is safe to run unattended.
 
-Loop 1 writes only `read.md`, `run-notes.md`, and receipts. It must fail closed unless
-the Scout contract is complete, autonomous-safe, and source-bounded. For `bounded-live`,
-it must also log every outside source in `live_evidence_used`, record spend notes, and
-stop with `insufficient-evidence` instead of expanding beyond the plan.
+Loop 1 writes only `read.md`, `run-notes.md`, and receipts. It creates `read.md` from
+the template if needed, but only after the `run_status: scout-only` gate passes. It
+must fail closed unless the Scout contract is complete, autonomous-safe, and
+source-bounded. For `bounded-live`, it must also log every outside source in
+`live_evidence_used`, record spend notes, and stop with `insufficient-evidence`
+instead of expanding beyond the plan.
 
 Loop 2 writes `consumer-review.md`, `developer-review.md`, and Evidence Log entries in
-`triage.md` only when review adds evidence. It does not edit `Human Notes`, graduate
-triage, or implement system changes.
+`triage.md` only when review adds evidence. It creates review files from templates if
+needed, but only after the `run_status: read-done` gate passes. It does not edit
+`Human Notes`, graduate triage, or implement system changes.

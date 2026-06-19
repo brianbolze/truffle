@@ -54,22 +54,12 @@ Then:
 Important:
 - Use prior runs and triage as evidence inputs, not templates. Current conventions live
   in `templates/` and the operator prompts.
-- Runs `000`-`002` are pre-autonomy historical runs; do not copy their headers,
-  stage behavior, source rigor, or artifact shape.
+- Runs `000`-`003` are historical or incomplete pre-contract runs; do not copy their
+  headers, stage behavior, source rigor, or artifact shape.
 - There is no shared question queue yet. Candidate questions live in run `scout.md`
   files; `triage.md` is for system pressure, not a question backlog.
-- Go wide on basic question archetypes before narrow lab-pressure probes: competitors,
-  current releases/news, crowded categories, pricing benchmarks, offer maps, claims,
-  channels, backend dependencies, and reputation/pain.
-- Prefer unattended-safe candidates: store-only or local-existing first; use
-  bounded-live only for Strategist-real questions where a small source panel is
-  load-bearing.
-- Still include some beyond-store candidates when they expose an important source
-  ingredient, membership, relation, or grain gap. Mark them `bounded-live` only
-  with a plan; otherwise mark them `live-external-needs-approval`.
-- Prefer questions a strategist, operator, investor, or researcher would recognize.
-- Include system-test candidates, but keep system-learning as the second layer unless
-  the question is explicitly about the lab machinery.
+- Follow `scout-context.md` for current question-selection policy, including question
+  archetypes, selection bias, and when to choose each evidence mode.
 - `selected_slug` should be short kebab-case, usually 3-5 meaningful words, based on
   the selected question rather than the temporary scaffold name.
 - `approval_needed: yes` means the run must stop at Scout until Brian/operator approval.

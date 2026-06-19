@@ -42,10 +42,6 @@ loop1_failure_mode:
 
 ## Selection Notes
 
-Consider decision leverage, evidence readiness, freshness pressure, reuse pressure, surprise potential, system-test value, and artifact pressure.
-
-Treat prior run patterns as hypotheses, not defaults. Prefer testing whether the same pressure recurs over copying a previous run's exact method.
-
-Autonomous runs should prefer `autonomous_eligible: yes` and `evidence_mode: store-only`.
-Use `bounded-live` only when the question genuinely needs a small outside source panel and the contract includes a filled `live_evidence_plan`.
-Use `live-external-needs-approval` when the source need is broader, unclear, or missing a bounded plan.
+Question-selection policy lives in `scout-context.md`. This template records the
+candidate slate and the Selected Run Contract; it should not carry its own preference
+for question type or evidence mode.
