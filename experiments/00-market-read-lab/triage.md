@@ -6,6 +6,17 @@
 
 **Statuses**: `Submitted`, `Researching`, `Acknowledged`, `Duplicated`, `Resolved`.
 
+## Operating Convention
+
+Run agents are additive. They may submit new candidates or append dated **Evidence Log**
+entries to existing items, but should not rewrite canonical item state.
+
+The triage steward curates. On periodic passes, the steward may update priority/status,
+reorder the Queue, merge duplicates, and rewrite `title`, `evidence_summary`, or
+`proposed_next_step` so each item reflects the current best framing.
+
+Actual graduation into Truffle system changes remains human-gated.
+
 ## Item Template
 
 ```yaml
@@ -13,39 +24,47 @@ id:
 title:
 priority:
 status:
-source_run:
-source_review:
+created_from_run:
+created_from_review:
 area:
-evidence:
+evidence_summary:
 proposed_next_step:
 linked_items:
 ```
 
-Use the YAML block as the canonical item state. When later runs add evidence without
-changing the item's current state, append a short dated **Evidence Log** under the item
-instead of adding new YAML keys.
+Use the YAML block as the canonical item state. If a run adds evidence or color,
+append a short dated **Evidence Log** under the item instead of adding new YAML keys.
+The steward can later fold recurring evidence into the canonical YAML summary.
 
 Never touch or add **Human Notes**. That's only for Brian / humans.
+
+## Steward Pass Log
+
+- **2026-06-19:** Folded recurring evidence into current `evidence_summary` fields, reclassified accepted pressure to `Acknowledged`, fixed missing `MRL-009` heading, and kept graduation as human-gated. No `Human Notes` touched.
 
 ---
 
 ## Queue
 
-### MRL-002 - Reusable store-query helper for market reads
+### MRL-002 - Market-read query recipes for State and Signals reads
 
 ```yaml
 id: MRL-002
-title: Reusable store-query helper for market reads
+title: Market-read query recipes for State and Signals reads
 priority: P1
-status: Submitted
-source_run: runs/000-2026-06-19-glp1-pricing-visibility
-source_review: operator-observation
+status: Acknowledged
+created_from_run: runs/000-2026-06-19-glp1-pricing-visibility
+created_from_review: operator-observation
 area: query
-evidence: Manual Loop 1 was 7+ minutes in while the agent hand-built a GLP-1 union, resolved Notion names to store slugs, classified roles/false positives, extracted SKU price visibility, and computed aggregates. The work is useful, but it is repeated market-read machinery being invented inside the run.
-proposed_next_step: Candidate next step, if acknowledged: capture a reusable denominator-check convention that names the inputs considered, inclusion/exclusion judgment, dedupe/resolution method, false-positive risks, confidence language, and symmetric diff/write-back output. Keep it pattern-level for now; do not hard-code the GLP-1 query recipe or build a helper until another run shows recurrence.
+evidence_summary: Six reviewed runs now show recurring in-run query machinery. Runs 000/001/004 hand-built State-read patterns for entity-set union, relation grep, and category grouping. Runs 005/006/007 hand-built the same Signals-read pattern across Trustpilot, Wayback, and SEC-EDGAR captures - latest-per-dir, field extraction, integrity/confound sibling fields, and frontmatter joins. The pressure has crossed from watch to acknowledged recipe need; still docs/recipe level, not a helper script or stored taxonomy.
+proposed_next_step: Candidate for human-approved graduation - add lightweight QUERYING recipes for category grouping and Signals reads. Keep them pattern-level with anti-footguns, captured-floor language, latest-per-dir idiom, and confound-sibling rule. Do not build a helper or entity-resolution table.
 linked_items:
   - runs/000-2026-06-19-glp1-pricing-visibility/receipts/operator-observation-latency.md
   - runs/001-2026-06-19-mens-health-backend-relations/run-notes.md
+  - runs/004-2026-06-19-scout-candidates/run-notes.md
+  - runs/005-2026-06-19-trustpilot-signals-reputation-landscape/run-notes.md
+  - runs/006-2026-06-19-wayback-offer-tenure-landscape/run-notes.md
+  - runs/007-2026-06-19-sec-edgar-funding-footprint/run-notes.md
 ```
 
 **Human Notes**
@@ -53,26 +72,36 @@ linked_items:
 
 **Evidence Log**
 
-- **2026-06-19 · Run 001:** Relations read hand-built a second, different
-  store-query surface in-run: pull `parent`/`owns` frontmatter, grep
-  `telehealth.md` Fulfillment/Provider, and dedupe by hand. Different query
-  shape, same pattern: strengthens the case for a QUERYING recipe layer over
-  per-query committed helpers; does not yet justify a helper because the same
-  query has not recurred.
-- **2026-06-19 · Run 004 (third sighting):** Category-crowdedness read hand-built
-  a third, distinct store-query surface in-run: a per-category breadth count
-  derived from molecule strings in `offerings.md` roster cells, because the store
-  has no per-SKU category dimension. Three distinct shapes now (Run 000 entity-set
-  union / Run 001 relation-edge grep / Run 004 category grouping) — recurrence is
-  consistent enough that a *documented QUERYING category-grouping recipe* looks
-  earned: inputs, the roster-cell molecule match, and the whole-file-grep
-  anti-pattern (Run 004's first pass grepped full bodies and returned TRT 53/53 /
-  labs 53/53 — confidently wrong from prose/FAQ/negation), with captured-floor
-  language. Pattern-level recipe, NOT a stored per-SKU category taxonomy (that
-  would be the ontology gravity the anti-Doro line refuses) and NOT a built helper.
-  Still a human graduation call; a fourth sighting is the trigger. MRL-001 was
-  touched but not strengthened this run (the `value_chain_role` DTC gate was a
-  clean 1:1 join, not the hard part).
+- **2026-06-19 · State-read recurrence:** Runs 000/001/004 each reinvented a different store-query surface in-run. The shared pressure is a documented query recipe layer, not a hard-coded GLP-1 helper or stored per-SKU category taxonomy.
+- **2026-06-19 · Signals-read trigger met:** Runs 005/006/007 repeated the same raw Signals consumption loop across three signal grains. This earns a human look at a QUERYING signals-read recipe; the SEC CIK collision stays only a watch item unless a second cross-domain issuer collision appears.
+- **2026-06-19 · State price-posture recipe recurred (run 008):** The TRT/hormone price-visibility read reused the exact State-read loop from run 000 (frontmatter grep → latest-capture + `offerings.md` `Visibility`-column extract → group/label), now on a second cohort. The recipe is "filter `telehealth.md` by `anchor_category`/`audience`, read the `Visibility` row per brand, label by business model." Confirms the *State* half of MRL-002 at recipe-level; still no helper script wanted.
+- **2026-06-19 · State *positioning*-read recurrence + a field-fidelity guard (run 009):** The longevity/NAD positioning read extended the recipe family beyond pricing to a *positioning/credibility* surface — `anchor_category` grep → `Credibility & access` + `Notes` section read → supply↔diagnostic axis labeling. Same latest-capture + field-extract + group/label idiom, different captured surface. Loop 2's adversarial verifier caught **two field-read errors** (a "three of four" vs "four of four" Schedule-III count contradicted by the read's own table; gethealthspan's `access_model`/`Labs` re-derived from prose as "membership/required" when frontmatter says `à-la-carte/both` + `optional`). Both trace to *re-deriving fields from prose*. Adds a concrete guard to the recipe: **panel cells must quote frontmatter (`access_model`, `Labs:`) verbatim, never paraphrase from `Notes`.** Still recipe-level; no helper or stored taxonomy wanted.
+
+### MRL-008 - Captured-signal source-rigor and confound convention
+
+```yaml
+id: MRL-008
+title: Captured-signal source-rigor and confound convention
+priority: P1
+status: Acknowledged
+created_from_run: runs/002-2026-06-19-glp1-news-monitoring
+created_from_review: run-notes; Loop 2 developer review (Dev Agent)
+area: source-rigor
+evidence_summary: Source-rigor pressure has matured from external snippet discipline into a broader Signals-consumption convention. Run 002 showed snippets/news are leads, not evidence for policy/pricing claims. Runs 005/006/007 then showed three captured Signal headline fields that mislead unless their integrity context travels with them - Trustpilot trust score needs paid-profile/review-volume flags, Wayback tenure days needs continuity/snapshot-density context, and SEC total hits needs match/vehicle/CIK/existence-only flags. The family is real, but the root causes differ, so the convention must name the confound flavor instead of flattening them.
+proposed_next_step: Candidate for human-approved graduation - document a flavor-aware rule that headline Signal fields must travel with their integrity/confound siblings before a read uses confident language. Keep verdicts such as trusted, established, or funded as labeled Judgments. No monitor, score, or new schema yet.
+linked_items:
+  - runs/002-2026-06-19-glp1-news-monitoring/receipts/external-event-panel-2026-06-19.md
+  - runs/005-2026-06-19-trustpilot-signals-reputation-landscape/run-notes.md
+  - runs/006-2026-06-19-wayback-offer-tenure-landscape/run-notes.md
+  - runs/007-2026-06-19-sec-edgar-funding-footprint/run-notes.md
+  - MRL-002
+  - MRL-007
+```
+
+**Evidence Log**
+
+- **2026-06-19 · External-current rigor:** Run 002 showed lazy news/snippet sourcing can make a store read overconfident. Primary URLs, capture dates, and source grade are required for current/news/policy/pricing claims.
+- **2026-06-19 · Captured-signal confounds:** Runs 005/006/007 repeated the same consumer risk across different signal types. The headline field is captured correctly, but a naive read is wrong unless the confound/integrity fields are surfaced with it.
 
 ### MRL-001 - Market denominator reconciliation convention
 
@@ -80,16 +109,23 @@ linked_items:
 id: MRL-001
 title: Market denominator reconciliation convention for market reads
 priority: P2
-status: Submitted
-source_run: runs/000-2026-06-19-glp1-pricing-visibility
-source_review: run-notes; Loop 2 consumer + developer review
+status: Acknowledged
+created_from_run: runs/000-2026-06-19-glp1-pricing-visibility
+created_from_review: run-notes; Loop 2 consumer + developer review
 area: denominator-reconciliation
-evidence: Run 0 showed the Notion Organizations denominator was slow, partial, and method-sensitive, while the internal store out-completed it. The store<->Notion symmetric diff was useful both as missing-company radar and as a Pantry write-back / capture worklist (~24 store GLP-1 sellers absent from Notion Organizations + 8 Notion names absent from the store). External SERP/listicle panels should be a fallback only when internal curated lists are thin.
-proposed_next_step: If acknowledged, define a lightweight denominator artifact or section for market reads: sources checked, inclusion/exclusion rules, resolver/dedupe method, symmetric-diff write-back set, known gaps, confidence language, and when to reach for an external panel.
+evidence_summary: Run 000 showed the market denominator can be slow, partial, and method-sensitive. The internal store out-completed Notion Organizations for the GLP-1 read, and the store-to-Notion symmetric diff was useful both as missing-company radar and as a Pantry write-back/capture worklist. Later runs touched denominator issues but mostly strengthened MRL-002's query-recipe case; MRL-001 remains the artifact/convention for naming sources checked, inclusion/exclusion rules, resolver/dedupe method, known gaps, and confidence language.
+proposed_next_step: Acknowledge as a lightweight market-read section or receipt convention. External SERP/listicle panels should be fallback sources when internal curated lists are thin, not the default denominator source.
 linked_items:
   - runs/000-2026-06-19-glp1-pricing-visibility/receipts/notion-organizations-glp1-denominator-seed.md
   - runs/000-2026-06-19-glp1-pricing-visibility/receipts/store-derived-glp1-list.md
+  - MRL-002
+  - runs/008-2026-06-19-trt-mens-health-price-visibility/run-notes.md
 ```
+
+**Evidence Log**
+
+- **2026-06-19 · Cohort-boundary labor recurred (run 008):** The TRT/hormone price-visibility read's only real toil was drawing the denominator — TRT-vs-longevity and exogenous-T-vs-SERM edges, plus excluding generalist all-gender brands that also run TRT lines. The headline 42/42/17 split *depends* on those calls, and multi-cohort straddlers (Hone, getOpt, Lifeforce) are named concretely for the first time. Reinforces the convention need: name sources checked, inclusion/exclusion rules, and known gaps, and surface straddlers for human judgment rather than forcing a silent call.
+- **2026-06-19 · Positive contrast — clean frontmatter cut nearly erases the labor (run 009):** The longevity/NAD positioning read drew its cohort with a *single grep* on `anchor_category: longevity/NAD` (8 brands), needing only two straddlers (getopt, joinfridays) hand-called. The opposite of run 008's hand-drawn TRT boundary. Useful contrast: when a clean closed-set frontmatter cut exists, denominator reconciliation is cheap; the labor MRL-001 names is real only where the boundary is fuzzy (molecule/audience edges), not where a frontmatter field already partitions the set.
 
 ### MRL-003 - Depth-backfill in-cohort module gaps
 
@@ -97,28 +133,46 @@ linked_items:
 id: MRL-003
 title: Depth-backfill in-cohort module gaps (altRx, Marque)
 priority: P2
-status: Submitted
-source_run: runs/000-2026-06-19-glp1-pricing-visibility
-source_review: run-notes; Loop 2 developer review (Steward)
+status: Acknowledged
+created_from_run: runs/000-2026-06-19-glp1-pricing-visibility
+created_from_review: run-notes; Loop 2 developer review (Steward)
 area: corpus-health
-evidence: altrx-com (GLP-1-led "cheapest GLP-1 program" by its profile, no telehealth.md/offerings.md) and marquelongevitylab-com (no telehealth.md) are in-cohort but unqueryable on the cohort cuts. Run 0 submitted this as a backfill candidate but it never landed in the queue; Loop 2 Steward confirms it as live corpus-health pressure that silently shrinks any cohort query.
-proposed_next_step: Run /deepen-offerings + telehealth.md capture for altrx-com, and telehealth.md for marquelongevitylab-com, so both are queryable on anchor_category / value_chain_role. Concrete and bounded; graduation is a human decision.
+evidence_summary: altrx-com and marquelongevitylab-com are in-cohort but not queryable on the module cuts needed for market reads. altRx is GLP-1-led by profile but lacks telehealth.md/offerings.md; Marque lacks telehealth.md. This silently shrinks cohort queries and is concrete corpus-health work rather than a new primitive.
+proposed_next_step: Human-approved quick win candidate - run /deepen-offerings plus telehealth.md capture for altrx-com, and telehealth.md for marquelongevitylab-com. Keep it bounded to backfill, not schema work.
 linked_items:
   - runs/000-2026-06-19-glp1-pricing-visibility/receipts/store-derived-glp1-list.md
 ```
 
-### MRL-005 - Named-counterparty relation edge (supplier + clinical)
+### MRL-009 - Standard write-back candidates receipt section
+
+```yaml
+id: MRL-009
+title: Standard write-back candidates receipt section
+priority: P2
+status: Acknowledged
+created_from_run: runs/002-2026-06-19-glp1-news-monitoring
+created_from_review: Loop 2 consumer review (Pantry)
+area: operator-ergonomics
+evidence_summary: Three consecutive runs produced Pantry-useful write-back candidates that were buried inside system notes rather than surfaced consistently - Run 000 had a store-to-Notion node diff, Run 001 had brand-to-backend relation candidates, and Run 002 had a dated staleness/market note. The repeated value is a visible proposed-writeback section, not auto-execution.
+proposed_next_step: Acknowledge as a documented market-read receipt section for write-back candidates. Keep propose-dont-write across the project boundary; do not build a writer or mutate Notion.
+linked_items:
+  - runs/000-2026-06-19-glp1-pricing-visibility/receipts/store-derived-glp1-list.md
+  - runs/001-2026-06-19-mens-health-backend-relations/receipts/backend-relations-worksheet.md
+  - runs/002-2026-06-19-glp1-news-monitoring/receipts/external-event-panel-2026-06-19.md
+```
+
+### MRL-005 - Named-counterparty relation edge
 
 ```yaml
 id: MRL-005
-title: Named-counterparty relation edge (pharmacy + clinical) - candidate, hold for recurrence
-priority: P2
+title: Named-counterparty relation edge - hold for recurrence
+priority: P3
 status: Submitted
-source_run: runs/001-2026-06-19-mens-health-backend-relations
-source_review: run-notes; Loop 2 developer review (Founder + Steward)
+created_from_run: runs/001-2026-06-19-mens-health-backend-relations
+created_from_review: run-notes; Loop 2 developer review (Founder + Steward)
 area: relations
-evidence: Across 18 men-led/hormone telehealth brands, named pharmacy/clinical counterparties (Curexa, Strive, Hallandale, OpenLoop, MDIntegrations, Wasef PC, CareGLP) already resolve to store profiles, so a brand->backend edge would join, not dangle; supplier concentration ("which backend sits behind the most brands") is a genuinely useful market read. But the edge is named in only 5/18 (pharmacy) and ~3/18 (clinical), is claim-contaminated (BlueChew says "our own pharmacy" then names three third parties), and the load-bearing parent edge is already parent/owns while integration posture is already pharmacy_model. store.py relations already ranks join targets by in-degree for the joinable edges, so the joinable case needs nothing new.
-proposed_next_step: Hold, do not graduate. If acknowledged and it later graduates, implement as joinable dotted-domain frontmatter mirroring parent/owns (already indexed by store.py relations / QUERYING Recipe 3) - NOT a new edge table or relation-type registry (anti-Doro). Gate graduation on recurrence: re-test on a backend-naming-dense cohort (compounding-heavy GLP-1) and see whether named-is-the-minority flips. Prerequisite is MRL-006 (the named entity must be captured into frontmatter before it can join).
+evidence_summary: Across 18 men-led/hormone telehealth brands, named pharmacy/clinical counterparties already resolve to store profiles, so a brand-to-backend edge could join cleanly and supplier concentration is a useful market read. But named counterparties were the minority, the claims are contaminated by ambiguous possessive language, and existing parent/owns plus pharmacy_model already cover the cleaner relation cases.
+proposed_next_step: Hold. Re-test on a backend-naming-dense cohort such as compounding-heavy GLP-1 before graduating. If it later graduates, implement only as joinable dotted-domain frontmatter mirroring parent/owns, not a new edge table or relation-type registry. MRL-006 remains the capture-grain prerequisite.
 linked_items:
   - runs/001-2026-06-19-mens-health-backend-relations/receipts/backend-relations-worksheet.md
   - MRL-006
@@ -129,14 +183,14 @@ linked_items:
 
 ```yaml
 id: MRL-006
-title: Named-counterparty capture-grain gap (pharmacy + clinical entity into frontmatter)
+title: Named-counterparty capture-grain gap
 priority: P3
 status: Submitted
-source_run: runs/001-2026-06-19-mens-health-backend-relations
-source_review: run-notes (clinical-only P3); Loop 2 developer review (Steward, generalized to pharmacy)
+created_from_run: runs/001-2026-06-19-mens-health-backend-relations
+created_from_review: run-notes (clinical-only P3); Loop 2 developer review (Steward, generalized to pharmacy)
 area: capture-grain
-evidence: Relation data is split by shape - parent/owns are clean joinable frontmatter, but pharmacy/clinical partners are prose claims in telehealth.md bodies, so "what does brand X depend on" requires reading structured + unstructured and deduping by hand. Most brands stop at "licensed US compounding pharmacy" / "licensed providers"; the few that name the entity (Curexa, Strive, OpenLoop, Wasef Health PC, CareGLP Affiliated P.C.) prove the grain is capturable. This is the prerequisite that makes MRL-005's edge joinable. Run 001 submitted a clinical-only version; developer review found it is the same gap for pharmacy.
-proposed_next_step: If acknowledged, capture the named counterparty (pharmacy AND medical group) into joinable frontmatter when the page names it, recording the named entity or the explicit absence - never the possessive ("our pharmacy"). Capture-depth ask, not a new primitive. One sighting; watch for recurrence before acting.
+evidence_summary: Relation data is split by shape. Parent/owns are clean joinable frontmatter, while pharmacy/clinical partners are prose claims in telehealth.md bodies, so "what does brand X depend on" requires structured plus unstructured reading. The few named counterparties prove the grain is capturable, but this is still a one-cohort/prerequisite sighting.
+proposed_next_step: Watch for recurrence. If acknowledged later, capture named pharmacy and medical-group counterparties into joinable frontmatter when the page names them, recording explicit absence when useful and never treating possessive language like "our pharmacy" as a named entity.
 linked_items:
   - runs/001-2026-06-19-mens-health-backend-relations/receipts/backend-relations-worksheet.md
   - MRL-005
@@ -146,75 +200,46 @@ linked_items:
 
 ```yaml
 id: MRL-007
-title: Category-scoped / non-company exogenous-signal anchor - candidate, hold for recurrence
+title: Category-scoped / non-company exogenous-signal anchor - hold for recurrence
 priority: P3
 status: Submitted
-source_run: runs/002-2026-06-19-glp1-news-monitoring
-source_review: run-notes; Loop 2 developer review (Steward + Founder)
+created_from_run: runs/002-2026-06-19-glp1-news-monitoring
+created_from_review: run-notes; Loop 2 developer review (Steward + Founder)
 area: signals-grain
-evidence: The signals that moved the GLP-1 read are category-level exogenous events - FDA compounding legality, NovoCare/LillyDirect reference pricing - that govern a whole cohort but have no per-domain home; the highest-consequence one (FDA status) has no company home at all. SIGNALS.md is strictly store/<domain>/signals/..., and already half-acknowledges this (Trends/SERP are keyword/category-grain, attached to a domain via --domain; a regulator has no domain). One sighting.
-proposed_next_step: Hold, do not build. If it recurs, decide WHERE category-grain exogenous signals live - a market/topic-scoped path (e.g. store/_market/<topic>/...) vs a project-side monitor - explicitly NOT a graph, entity-resolution, non-company entity type, or served monitor (anti-Doro). The fork may resolve to "monitoring is a consumer/project cadence, not engine Signals." Gate on recurrence: a second run surfacing a homeless category-level signal.
+evidence_summary: Run 002 surfaced category-level exogenous events - FDA compounding legality and NovoCare/LillyDirect reference pricing - that govern a cohort but have no per-domain signal home. Later Signals runs did not strengthen the case; Trustpilot, Wayback, and SEC-EDGAR all attached cleanly to per-domain paths.
+proposed_next_step: Hold. If another read surfaces a homeless category-level signal, decide whether it belongs in a market/topic-scoped path or as a project-side monitor. Explicitly do not create a graph, entity-resolution layer, non-company entity type, or served monitor from one sighting.
 linked_items:
   - runs/002-2026-06-19-glp1-news-monitoring/receipts/external-event-panel-2026-06-19.md
+  - runs/006-2026-06-19-wayback-offer-tenure-landscape/run-notes.md
+  - runs/007-2026-06-19-sec-edgar-funding-footprint/run-notes.md
   - MRL-008
-```
-
-### MRL-008 - Minimal-monitor source-panel + source-rigor convention
-
-```yaml
-id: MRL-008
-title: Minimal-monitor source-panel + source-rigor convention
-priority: Low
-status: Submitted
-source_run: runs/002-2026-06-19-glp1-news-monitoring
-source_review: run-notes; Loop 2 developer review (Dev Agent)
-area: lab-artifact-convention
-evidence: Run 002 improvised a reusable shape to stress a stored read against fresh external events - a small external panel plus a staleness-delta table (prior assumption -> current external reality -> verdict). Operator review found the panel was also over-confident and under-cited: snippet/news evidence is direction-finding, not citation-grade for policy/pricing claims. This is the second time a lab read invented an artifact (Run 000's denominator recipe was the first) - different artifact, same meta-pattern of in-run improvisation.
-proposed_next_step: Candidate documented Loop-1 recipe/template, not a built monitor or script. Keep pattern-level: for current/news/policy/pricing reads, require exact URL, captured date, source type, primary/secondary status, and snippet-vs-fetched-body status before using confident language. Sighting #1 of a monitoring panel; watch for recurrence before promoting to a template.
-linked_items:
-  - runs/002-2026-06-19-glp1-news-monitoring/receipts/external-event-panel-2026-06-19.md
-  - MRL-007
-  - MRL-002
 ```
 
 **Evidence Log**
 
-- **2026-06-19 · Operator review:** The big Run 002 learning was not just
-  "external news can invalidate a store read"; it was that lazy news fetching
-  produced over-confident source tracking. Future monitoring/source-panel
-  conventions should treat snippets as leads and primary pages as evidence.
-- **2026-06-19 · Run 005 (first Signals-consumption sighting):** Generalizes this
-  item from external-monitoring rigor to *captured-signal interpretation* rigor.
-  Run 005 was the first market read to consume the Signals layer (Trustpilot, 20
-  brands / 13 scorable). The captured `trust_score` conflates regard with
-  solicitation posture: scores clustered 4.3–4.9 and tracked `paid_profile` +
-  `asks_for_reviews`, while the only credible low score (hims 3.0) had the largest
-  organic volume (8,554) and the two sub-2.5 brands had ~16–18 reviews. The confound
-  flags (`paid_profile`, `asks_for_reviews`, `review_count`) are *captured correctly* —
-  the risk is downstream: a consumer reading the score without its siblings will be
-  misled. Candidate rule (pattern-level, NOT a build): when a read consumes a
-  reputation/sentiment Signal, report the confound flags + volume alongside the score
-  and keep "trusted/distrusted" a labeled, volume-weighted Judgment. Distinct grain
-  from the Run 002 sighting (external snippet rigor) — same source-rigor family. First
-  sighting at this grain; watch for recurrence before any convention.
+- **2026-06-19 · Negative recurrence check:** Runs 005/006/007 all consumed per-domain Signals cleanly. No new evidence for a category-grain signal home beyond the original Run 002 sighting.
 
-### MRL-009 - Standard "write-back candidates" receipt section
+### MRL-010 - Reviews/forums body content as a source ingredient
 
 ```yaml
-id: MRL-009
-title: Standard "write-back candidates" receipt section for market reads
-priority: Low
+id: MRL-010
+title: Reviews/forums body content as a source ingredient - hold for recurrence
+priority: P3
 status: Submitted
-source_run: runs/002-2026-06-19-glp1-news-monitoring
-source_review: Loop 2 consumer review (Pantry)
-area: operator-ergonomics
-evidence: Three consecutive runs produced a Pantry-useful write-back output filed inside a system note rather than surfaced as a candidate - Run 000 a ~24-row store<->Notion node diff, Run 001 a ~6-edge brand->backend list, Run 002 a dated staleness/market note (Run 000's branded-price + compounding-legality claims now stale, with external cites). Three different shapes (Organizations, competitor links, market notes), same burial. Scout Q6 flagged the pattern; prior two consumer reviews declined to queue it at one/two sightings. Third sighting crosses the lab's "repeated pressure earns conventions" line.
-proposed_next_step: Candidate a documented "write-back candidates" section/receipt convention so Pantry outputs surface consistently - a section, not a tool, and not auto-execution (propose-don't-write across the project boundary holds). Pattern-level; do not build a writer.
+created_from_run: runs/009-2026-06-19-longevity-positioning-whitespace
+created_from_review: Loop 2 developer review (adversarial workflow)
+area: source-panel
+evidence_summary: Two reads in the same sprint hit the same wall - strategist trust/whitespace and customer-pain questions need review/forum BODY content (objection mining, distrust of compounded NAD, churn complaints), not just ratings. Run 008 fired source-panel for customer-pain/trust; run 009 fired it again for longevity trust/whitespace. The store already captures Trustpilot/review *scores* in profile.md Credibility blocks, but not the review *bodies*, so the trust dimension of a positioning read is unanswerable store-only. Two sightings across two different read questions on adjacent runs is enough to name the gap; not enough to prescribe a schema change.
+proposed_next_step: Hold for a third sighting. If it recurs, decide whether review/forum body content earns a place in profile.md (qualitative pull-quotes) or a signals/<source_type> capture grain. Do not build a scraper, monitor, or non-company entity from two sightings; keep ratings-vs-bodies as the concrete delta.
 linked_items:
-  - runs/000-2026-06-19-glp1-pricing-visibility/receipts/store-derived-glp1-list.md
-  - runs/001-2026-06-19-mens-health-backend-relations/receipts/backend-relations-worksheet.md
-  - runs/002-2026-06-19-glp1-news-monitoring/receipts/external-event-panel-2026-06-19.md
+  - runs/008-2026-06-19-trt-mens-health-price-visibility/run-notes.md
+  - runs/009-2026-06-19-longevity-positioning-whitespace/developer-review.md
+  - MRL-008
 ```
+
+**Evidence Log**
+
+- **2026-06-19 · Second sighting (run 009):** The longevity/NAD positioning read's load-bearing whitespace ("do buyers trust this / what do they regret") and trust-gap claims need review/forum bodies the store doesn't hold as State. Ratings appear in some profile.md Credibility blocks; review content does not. Same underlying need as run 008's customer-pain read, fired by a different question.
 
 ---
 
@@ -227,10 +252,10 @@ id: MRL-004
 title: Market Read Lab scaffold skill
 priority: P2
 status: Resolved
-source_run: runs/001-2026-06-19-mens-health-backend-relations
-source_review: operator-observation
+created_from_run: runs/001-2026-06-19-mens-health-backend-relations
+created_from_review: operator-observation
 area: operator-ergonomics
-evidence: Creating Run 001 required manual folder creation, template copying, path references, and prompt assembly. This setup work will recur across many lab runs and is independent of the market analysis itself.
+evidence_summary: Creating Run 001 required manual folder creation, template copying, path references, and prompt assembly. This setup work will recur across many lab runs and is independent of the market analysis itself.
 proposed_next_step: Graduated by explicit approval. Added local Claude skill `.claude/skills/market-read-lab/` with a small scaffold script that creates numbered run folders from repo templates and prints the Loop 1 prompt. No analysis, review, triage graduation, or scheduling is automated.
 linked_items:
   - .claude/skills/market-read-lab/SKILL.md
