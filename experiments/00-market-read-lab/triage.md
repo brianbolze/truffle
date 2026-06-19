@@ -25,33 +25,18 @@ Use the YAML block as the canonical item state. When later runs add evidence wit
 changing the item's current state, append a short dated **Evidence Log** under the item
 instead of adding new YAML keys.
 
+Never touch or add **Human Notes**. That's only for Brian / humans.
+
 ---
 
 ## Queue
-
-### MRL-001 - Market denominator reconciliation convention
-
-```yaml
-id: MRL-001
-title: Market denominator reconciliation convention for market reads
-priority: P2
-status: Submitted
-source_run: runs/000-2026-06-19-glp1-pricing-visibility
-source_review: run-notes; Loop 2 consumer + developer review
-area: denominator-reconciliation
-evidence: Run 0 showed the Notion Organizations denominator was slow, partial, and method-sensitive, while the internal store out-completed it. The store<->Notion symmetric diff was useful both as missing-company radar and as a Pantry write-back / capture worklist (~24 store GLP-1 sellers absent from Notion Organizations + 8 Notion names absent from the store). External SERP/listicle panels should be a fallback only when internal curated lists are thin.
-proposed_next_step: If acknowledged, define a lightweight denominator artifact or section for market reads: sources checked, inclusion/exclusion rules, resolver/dedupe method, symmetric-diff write-back set, known gaps, confidence language, and when to reach for an external panel.
-linked_items:
-  - runs/000-2026-06-19-glp1-pricing-visibility/receipts/notion-organizations-glp1-denominator-seed.md
-  - runs/000-2026-06-19-glp1-pricing-visibility/receipts/store-derived-glp1-list.md
-```
 
 ### MRL-002 - Reusable store-query helper for market reads
 
 ```yaml
 id: MRL-002
 title: Reusable store-query helper for market reads
-priority: P2
+priority: P1
 status: Submitted
 source_run: runs/000-2026-06-19-glp1-pricing-visibility
 source_review: operator-observation
@@ -62,6 +47,9 @@ linked_items:
   - runs/000-2026-06-19-glp1-pricing-visibility/receipts/operator-observation-latency.md
   - runs/001-2026-06-19-mens-health-backend-relations/run-notes.md
 ```
+
+**Human Notes**
+- **2026-06-19**: [Brian] After run 004, I decided to upgrade the priority to P1. 
 
 **Evidence Log**
 
@@ -85,6 +73,23 @@ linked_items:
   Still a human graduation call; a fourth sighting is the trigger. MRL-001 was
   touched but not strengthened this run (the `value_chain_role` DTC gate was a
   clean 1:1 join, not the hard part).
+
+### MRL-001 - Market denominator reconciliation convention
+
+```yaml
+id: MRL-001
+title: Market denominator reconciliation convention for market reads
+priority: P2
+status: Submitted
+source_run: runs/000-2026-06-19-glp1-pricing-visibility
+source_review: run-notes; Loop 2 consumer + developer review
+area: denominator-reconciliation
+evidence: Run 0 showed the Notion Organizations denominator was slow, partial, and method-sensitive, while the internal store out-completed it. The store<->Notion symmetric diff was useful both as missing-company radar and as a Pantry write-back / capture worklist (~24 store GLP-1 sellers absent from Notion Organizations + 8 Notion names absent from the store). External SERP/listicle panels should be a fallback only when internal curated lists are thin.
+proposed_next_step: If acknowledged, define a lightweight denominator artifact or section for market reads: sources checked, inclusion/exclusion rules, resolver/dedupe method, symmetric-diff write-back set, known gaps, confidence language, and when to reach for an external panel.
+linked_items:
+  - runs/000-2026-06-19-glp1-pricing-visibility/receipts/notion-organizations-glp1-denominator-seed.md
+  - runs/000-2026-06-19-glp1-pricing-visibility/receipts/store-derived-glp1-list.md
+```
 
 ### MRL-003 - Depth-backfill in-cohort module gaps
 
@@ -178,6 +183,20 @@ linked_items:
   "external news can invalidate a store read"; it was that lazy news fetching
   produced over-confident source tracking. Future monitoring/source-panel
   conventions should treat snippets as leads and primary pages as evidence.
+- **2026-06-19 · Run 005 (first Signals-consumption sighting):** Generalizes this
+  item from external-monitoring rigor to *captured-signal interpretation* rigor.
+  Run 005 was the first market read to consume the Signals layer (Trustpilot, 20
+  brands / 13 scorable). The captured `trust_score` conflates regard with
+  solicitation posture: scores clustered 4.3–4.9 and tracked `paid_profile` +
+  `asks_for_reviews`, while the only credible low score (hims 3.0) had the largest
+  organic volume (8,554) and the two sub-2.5 brands had ~16–18 reviews. The confound
+  flags (`paid_profile`, `asks_for_reviews`, `review_count`) are *captured correctly* —
+  the risk is downstream: a consumer reading the score without its siblings will be
+  misled. Candidate rule (pattern-level, NOT a build): when a read consumes a
+  reputation/sentiment Signal, report the confound flags + volume alongside the score
+  and keep "trusted/distrusted" a labeled, volume-weighted Judgment. Distinct grain
+  from the Run 002 sighting (external snippet rigor) — same source-rigor family. First
+  sighting at this grain; watch for recurrence before any convention.
 
 ### MRL-009 - Standard "write-back candidates" receipt section
 
