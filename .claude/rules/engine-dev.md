@@ -24,7 +24,7 @@ If you really need to put this into planning context - refer to our [Roadmap dat
 - **Engine owns State and Signals; Judgments are the open edge.** *State* — what a company is now: universal fields plus reusable vertical/cohort cuts (a project designs the cut; the engine holds and serves it, no judgments in it). *Signals* — the same facts on a time axis: the reusable capture tools + comparator + the `scripts/signals.py` writer, landing append-only at `store/<domain>/signals/<source_type>/<captured_at>.json`. *Judgments* (relevance/threat/fit, relative to the asker) stay out of the shared store today — but whether and how the engine emits them is actively being reworked, not a closed "no." See the [frame](_design/2026-05-29-frame.md)'s three-kinds split.
 - **The anti-Doro line.** No graph DB, embeddings, datapoint reconciliation, complex entity-resolution, or served API. When a decision smells heavy, that's the flag.
 - **Propose, don't write** across a project's boundary. The engine never silently mutates a project's KB.
-- **Commit per logical change**, terse imperative subject. `git log` is the changelog — no CHANGELOG file.
+- **Commit per logical change**, with a terse `scope:` subject and detail in the body — see [commit-style](../../documentation/commit-style.md). `git log` is the changelog — no CHANGELOG file.
 
 ## Gotchas
 - **Overfitting.** When making fixes, especially coming from backlog / feedback items from individual runs or retros - always ask whether the proposed solution is actually generalizable to all types of data / scenarios we may encounter.
