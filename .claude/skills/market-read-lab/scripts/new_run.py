@@ -10,7 +10,6 @@ import shutil
 import sys
 from pathlib import Path
 
-
 RUN_RE = re.compile(r"^(\d{3})-")
 TEMPLATE_FILES = [
     "read.md",
@@ -18,12 +17,32 @@ TEMPLATE_FILES = [
     "consumer-review.md",
     "developer-review.md",
 ]
-DEFAULT_DISALLOWED_ACTIONS = [
+EVIDENCE_MODES = ("store-only", "local-existing", "bounded-live", "live-external-needs-approval")
+EVIDENCE_MODE_HINT = "/".join(EVIDENCE_MODES)
+DEFAULT_LOCAL_DISALLOWED_ACTIONS = [
     "live browsing",
     "paid capture",
+    "broad external research",
     "write-back to store/",
     "new durable primitives",
     "triage graduation",
+]
+DEFAULT_BOUNDED_LIVE_DISALLOWED_ACTIONS = [
+    "write-back to store/",
+    "code, schema, or template changes",
+    "durable primitive creation",
+    "triage graduation",
+]
+DEFAULT_LIVE_SOURCE_FAMILIES_DISALLOWED = [
+    "login-only or paywalled sources",
+    "broad crawling",
+    "private / non-public data",
+]
+DEFAULT_BOUNDED_LIVE_STOP_WHEN = [
+    "the source panel is good enough to answer with visible caveats",
+    "the next source would expand the question rather than verify it",
+    "the remaining uncertainty is a framing judgment, not a sourcing gap",
+    "sources conflict in a way that needs human interpretation",
 ]
 
 
@@ -65,6 +84,44 @@ def format_yaml_list(values: list[str]) -> str:
     return "[" + ", ".join(escape_yaml_string(value) for value in values) + "]"
 
 
+def format_yaml_sequence(key: str, values: list[str], *, indent: int = 2) -> list[str]:
+    spaces = " " * indent
+    if not values:
+        return [f"{spaces}{key}: []"]
+    lines = [f"{spaces}{key}:"]
+    lines.extend(f"{spaces}  - {escape_yaml_string(value)}" for value in values)
+    return lines
+
+
+def format_live_evidence_plan(plan: dict[str, object] | None) -> str:
+    if not plan:
+        return "live_evidence_plan: null"
+
+    lines = [
+        "live_evidence_plan:",
+        f"  approved_by: {escape_yaml_string(str(plan['approved_by']))}",
+        f"  approval_scope: {escape_yaml_string(str(plan['approval_scope']))}",
+        f"  budget_class: {escape_yaml_string(str(plan['budget_class']))}",
+        f"  review_after: {escape_yaml_string(str(plan['review_after']))}",
+        f"  evidence_goal: {escape_yaml_string(str(plan['evidence_goal']))}",
+    ]
+    for key in (
+        "source_families_allowed",
+        "source_families_preferred",
+        "source_families_disallowed",
+        "stop_when",
+    ):
+        values = [str(value) for value in plan[key]]
+        lines.extend(format_yaml_sequence(key, values, indent=2))
+    return "\n".join(lines)
+
+
+def default_disallowed_actions(evidence_mode: str) -> list[str]:
+    if evidence_mode == "bounded-live":
+        return DEFAULT_BOUNDED_LIVE_DISALLOWED_ACTIONS.copy()
+    return DEFAULT_LOCAL_DISALLOWED_ACTIONS.copy()
+
+
 def seeded_scout(
     template: str,
     question: str | None,
@@ -84,24 +141,26 @@ def seeded_scout(
         )
     else:
         table_row = (
-            f"| {escape_table_cell(question)} | mixed | yes/no | store-only/local-existing/live-external-needs-approval | TODO | TODO | TODO |"
+            f"| {escape_table_cell(question)} | mixed | yes/no | {EVIDENCE_MODE_HINT} | TODO | TODO | TODO |"
         )
     scout = template.replace(
-        "|  | market/system-test/mixed | yes/no | store-only/local-existing/live-external-needs-approval |  |  |  |",
+        f"|  | market/system-test/mixed | yes/no | {EVIDENCE_MODE_HINT} |  |  |  |",
         table_row,
     )
     scout = scout.replace("1. \n\nThese may", f"1. {question}\n\nThese may", 1)
     scout = scout.replace("selected_question:\n", f"selected_question: {escape_yaml_string(question)}\n", 1)
     scout = scout.replace("selected_slug:          # short kebab-case folder slug, e.g. telehealth-category-crowdedness\n", f"selected_slug: {escape_yaml_string(selected_slug or slugify(question))}\n", 1)
+    scout = scout.replace("selected_slug:          # 3-5 word kebab-case folder slug, e.g. telehealth-category-crowdedness\n", f"selected_slug: {escape_yaml_string(selected_slug or slugify(question))}\n", 1)
     if contract:
         replacements = {
             "run_type:              # market | system-test | mixed": f"run_type: {contract['run_type']}",
             "autonomous_eligible:   # yes | no": "autonomous_eligible: yes",
-            "evidence_mode:         # store-only | local-existing | live-external-needs-approval": f"evidence_mode: {contract['evidence_mode']}",
+            "evidence_mode:         # store-only | local-existing | bounded-live | live-external-needs-approval": f"evidence_mode: {contract['evidence_mode']}",
             "expected_denominator:": f"expected_denominator: {escape_yaml_string(str(contract['expected_denominator']))}",
             "likely_source_panel:": f"likely_source_panel: {escape_yaml_string(str(contract['likely_source_panel']))}",
             "allowed_sources: []": f"allowed_sources: {format_yaml_list(contract['allowed_sources'])}",
             "disallowed_actions: []": f"disallowed_actions: {format_yaml_list(contract['disallowed_actions'])}",
+            "live_evidence_plan: null  # required only for bounded-live": format_live_evidence_plan(contract.get("live_evidence_plan")),
             "approval_needed:       # yes | no": "approval_needed: no",
             "why_autonomous_safe:": f"why_autonomous_safe: {escape_yaml_string(str(contract['why_autonomous_safe']))}",
             "loop1_failure_mode:": f"loop1_failure_mode: {escape_yaml_string(str(contract['loop1_failure_mode']))}",
@@ -153,7 +212,7 @@ def main() -> int:
     parser.add_argument("--run-type", choices=("market", "system-test", "mixed"), default="mixed")
     parser.add_argument(
         "--evidence-mode",
-        choices=("store-only", "local-existing", "live-external-needs-approval"),
+        choices=EVIDENCE_MODES,
         help="Required for --mode loop1.",
     )
     parser.add_argument("--expected-denominator", help="Required for --mode loop1.")
@@ -163,10 +222,35 @@ def main() -> int:
         "--disallowed-action",
         action="append",
         dest="disallowed_actions",
-        help="Disallowed action. Repeatable. Defaults to live/spend/write-back/system-change gates.",
+        help="Disallowed action. Repeatable. Defaults depend on the evidence mode.",
     )
     parser.add_argument("--why-autonomous-safe", help="Required for --mode loop1.")
     parser.add_argument("--loop1-failure-mode", help="Required for --mode loop1.")
+    parser.add_argument("--live-evidence-goal", help="Required when --evidence-mode bounded-live.")
+    parser.add_argument(
+        "--source-family-allowed",
+        action="append",
+        dest="source_families_allowed",
+        help="Allowed live source family for bounded-live. Repeatable.",
+    )
+    parser.add_argument(
+        "--source-family-preferred",
+        action="append",
+        dest="source_families_preferred",
+        help="Preferred live source family for bounded-live. Repeatable.",
+    )
+    parser.add_argument(
+        "--source-family-disallowed",
+        action="append",
+        dest="source_families_disallowed",
+        help="Disallowed live source family for bounded-live. Repeatable.",
+    )
+    parser.add_argument(
+        "--stop-when",
+        action="append",
+        dest="stop_when",
+        help="Stop rule for bounded-live. Repeatable; defaults to the lab stop rules.",
+    )
     parser.add_argument(
         "--mode",
         choices=("scout", "loop1"),
@@ -202,13 +286,37 @@ def main() -> int:
             )
         if args.evidence_mode == "live-external-needs-approval":
             raise SystemExit("--mode loop1 cannot use live-external-needs-approval; run Scout or get approval first.")
+        live_evidence_plan: dict[str, object] | None = None
+        if args.evidence_mode == "bounded-live":
+            if not args.live_evidence_goal:
+                missing.append("--live-evidence-goal")
+            if not args.source_families_allowed:
+                missing.append("--source-family-allowed")
+            if missing:
+                raise SystemExit(
+                    "--mode loop1 with --evidence-mode bounded-live requires a live evidence plan. Missing: "
+                    + ", ".join(missing)
+                )
+            live_evidence_plan = {
+                "approved_by": "Brian",
+                "approval_scope": "autonomous Market Read Lab runs",
+                "budget_class": "light",
+                "review_after": "3 bounded-live runs",
+                "evidence_goal": args.live_evidence_goal,
+                "source_families_allowed": args.source_families_allowed,
+                "source_families_preferred": args.source_families_preferred or [],
+                "source_families_disallowed": args.source_families_disallowed
+                or DEFAULT_LIVE_SOURCE_FAMILIES_DISALLOWED,
+                "stop_when": args.stop_when or DEFAULT_BOUNDED_LIVE_STOP_WHEN,
+            }
         contract = {
             "run_type": args.run_type,
             "evidence_mode": args.evidence_mode,
             "expected_denominator": args.expected_denominator,
             "likely_source_panel": args.likely_source_panel or "Allowed sources only.",
             "allowed_sources": args.allowed_sources,
-            "disallowed_actions": args.disallowed_actions or DEFAULT_DISALLOWED_ACTIONS,
+            "disallowed_actions": args.disallowed_actions or default_disallowed_actions(args.evidence_mode),
+            "live_evidence_plan": live_evidence_plan,
             "why_autonomous_safe": args.why_autonomous_safe,
             "loop1_failure_mode": args.loop1_failure_mode,
         }

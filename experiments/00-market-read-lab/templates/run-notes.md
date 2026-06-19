@@ -2,9 +2,9 @@
 
 ```yaml
 run_status:            # scout-only | read-done | needs-human-review | reviewed
-evidence_mode:         # store-only | local-existing | live-external-needs-approval
+evidence_mode:         # store-only | local-existing | bounded-live | live-external-needs-approval
 autonomous_eligible:   # yes | no
-termination_reason:    # completed | needs-human-review | blocked-by-approval | failed-loop1-exit-check
+termination_reason:    # completed | needs-human-review | blocked-by-approval | insufficient-evidence | failed-loop1-exit-check
 pressure_lenses_fired: []  # short recurrence tags, not approvals
 ```
 
@@ -22,6 +22,32 @@ Brief path taken.
 
 Store slices, queries, files, source panels, exclusions.
 
+## Live evidence plan
+
+Required only for `bounded-live`; leave `null` for `store-only` and `local-existing`.
+
+```yaml
+live_evidence_plan: null
+# For bounded-live, paste the selected Scout plan here.
+```
+
+## Live evidence used
+
+Required for every outside source used in `bounded-live`. Leave `[]` for local-only runs.
+
+```yaml
+live_evidence_used: []
+# For bounded-live entries:
+# - source_or_query:
+#   source_family:
+#   action_taken: searched | opened | captured | scraped | read-local-signal
+#   reason:
+#   source_grade: primary | secondary | direction-finding
+#   captured_at:
+#   spend_note: none | free | paid-credit
+#   claim_ids_supported: []
+```
+
 ## Friction log
 
 Repeated manual steps, took a long time, confusing paths, missing helpers, schema mismatches.
@@ -37,8 +63,11 @@ Record `pass` / `fail` for the mandatory exit check before setting final `run_st
 - Status was `scout-only` before Loop 1:
 - `Selected Run Contract` was present and consistent with header:
 - `autonomous_eligible: yes`:
-- `evidence_mode` was `store-only` or `local-existing`:
+- `evidence_mode` was `store-only`, `local-existing`, or planned `bounded-live`:
 - `approval_needed: no`:
+- If `bounded-live`, `live_evidence_plan` was present and followed:
+- If `bounded-live`, every outside source was logged in `live_evidence_used`:
+- If `bounded-live`, stop rules and spend notes were recorded:
 - No disallowed action happened:
 - Required citations / receipts present and source-graded:
 - No snippet treated as evidence:

@@ -5,17 +5,19 @@ One sentence on what this receipt supports.
 ```yaml
 receipt_type:          # store-query | local-file | source-panel | external-source | operator-observation
 created:               # YYYY-MM-DD
-evidence_mode:         # store-only | local-existing | live-external-needs-approval
+evidence_mode:         # store-only | local-existing | bounded-live | live-external-needs-approval
 source_grade:          # primary | secondary | derived | direction-finding
+source_family:         # owned/official | SERP/listicle | review/forum | ads/social | Wayback/dated-signal | news/regulatory/manufacturer | local-store
+spend_note:            # none | free | paid-credit
 snippet_only:          # yes | no
 claim_ids_supported: []
 ```
 
 ## Sources
 
-| Source ID | URL / local path | Captured / store clock | Source type | Grade | Snippet-only? | Claims supported |
-|---|---|---|---|---|---|---|
-| S1 |  |  | company page / store file / regulator / manufacturer / news / search result / operator observation | primary / secondary / derived / direction-finding | yes/no | C1 |
+| Source ID | URL / local path | Captured / store clock | Source family / type | Grade | Spend | Snippet-only? | Claims supported |
+|---|---|---|---|---|---|---|---|
+| S1 |  |  | owned/official / store file / regulator / manufacturer / news / search result / review/forum / operator observation | primary / secondary / derived / direction-finding | none/free/paid-credit | yes/no | C1 |
 
 ## Method
 

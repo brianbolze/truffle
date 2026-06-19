@@ -16,7 +16,8 @@ It is acceptable, and useful, if the best candidates expose obvious source gaps.
 
 - `store-only` when captured State can answer enough.
 - `local-existing` when prior run artifacts or existing local signals are enough.
-- `live-external-needs-approval` when the real answer needs ads, social, reviews/forums, SERPs/listicles, fresh news, or other live/current surfaces.
+- `bounded-live` when the real answer needs a small outside source panel and Scout can write a concrete plan.
+- `live-external-needs-approval` when the answer needs broader, unclear, login-gated, expensive, or unplanned live work.
 
 If the best Strategist question is not autonomous-safe, Scout may select it and stop for approval rather than downgrading to a safer but less revealing store-only question.
 
@@ -77,8 +78,11 @@ Use these as inspiration, not a fixed queue. Prefer plain-language market reads 
 - To start, prefer **store-only** questions for unattended Loop 1 runs, but Scout should still propose beyond-store questions when they expose a source-ingredient gap.
 - During the Strategist-first blind run window, do **not** treat `store-only` as inherently better. Prefer the most Strategist-real question, then gate execution by evidence mode.
 - Mark every candidate with `autonomous_eligible: yes/no`.
-- Mark every candidate with `evidence_mode: store-only | local-existing | live-external-needs-approval`.
-- For now, live external fetching, Firecrawl spend, and broad news research need explicit approval before Loop 1 acts.
+- Mark every candidate with `evidence_mode: store-only | local-existing | bounded-live | live-external-needs-approval`.
+- Bounded-live is allowed only with `budget_class: light`, a named evidence goal,
+  allowed/preferred source families, disallowed families, and stop rules.
+- Broad news research, broad crawling, login-only/paywalled sources, private data, and
+  live work without a bounded plan need explicit approval before Loop 1 acts.
 - Search/news snippets are "signals", not conclusive, reliable evidence in isolation. Current law, policy, pricing, or partnership claims require primary URLs, capture dates, and source type.
 - Downstream consumers may layer in project-specific context, fields, detail, and judgments. The lab should surface useful candidates and caveats, not write those judgments for them.
 
@@ -105,4 +109,5 @@ Use these as inspiration, not a fixed queue. Prefer plain-language market reads 
 
 - Live memory: `triage.md` and the last 3 completed `run-notes.md` files.
 - Design intent: `_design/cohorts-categories/2026-06-19-market-read-lab-proposal.md`.
+- Bounded-live convention: `experiments/00-market-read-lab/_design/2026-06-19-bounded-live-evidence-proposal.md`.
 - Deep background only when needed: `_design/cohorts-categories/2026-06-18-wallow.md`.

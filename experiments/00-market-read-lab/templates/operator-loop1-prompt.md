@@ -33,16 +33,25 @@ Then:
    - A filled contract has non-empty `selected_question`, `autonomous_eligible`,
      `evidence_mode`, `approval_needed`, `allowed_sources`, `disallowed_actions`, and
      `loop1_failure_mode`. Empty `allowed_sources: []` is not enough for Loop 1.
+   - If `evidence_mode: bounded-live`, it must also have a filled `live_evidence_plan`
+     with `budget_class: light`, an evidence goal, allowed source families, disallowed
+     source families, and stop rules.
    - Treat the `Selected Run Contract` as canonical. If it conflicts with the candidate
      table, trust the contract.
 2. Check the contract before research:
    - Continue only when `autonomous_eligible: yes`, `approval_needed: no`, and
-     `evidence_mode` is `store-only` or `local-existing`.
+     `evidence_mode` is `store-only`, `local-existing`, or `bounded-live`.
    - Use only `allowed_sources`.
    - Do not perform any `disallowed_actions`.
-   - If the run needs live browsing, paid capture, broad external research, write-back,
-     or reframing, update the header to `run_status: needs-human-review` and
-     `termination_reason: blocked-by-approval`, then stop.
+   - For `bounded-live`, use free/local/cached sources first; use outside sources only
+     from the approved source families; spend capture credit only when it is likely to
+     verify, date, or falsify a load-bearing claim.
+   - For `bounded-live`, stop with `termination_reason: insufficient-evidence` rather
+     than broadening into a crawl when the plan is not enough.
+   - If the run needs live browsing outside a bounded plan, paid capture outside a
+     bounded plan, broad external research, write-back, or reframing, update the header
+     to `run_status: needs-human-review` and `termination_reason: blocked-by-approval`,
+     then stop.
 3. Answer the selected question in the target run's `read.md`. Keep State
    (captured facts), Signals (dated changes or indicators), and Judgments
    (market interpretation) distinguishable; label judgments and tie them back
@@ -51,7 +60,9 @@ Then:
 5. Capture receipts for non-obvious inputs, derived lists, or operator observations.
    Use `templates/receipt.md` for new receipts. At minimum, each new receipt should
    record URL or local path, capture date or store clock, source type, source grade,
-   snippet-only status, and claim IDs supported.
+   source family, spend note, snippet-only status, and claim IDs supported.
+   For `bounded-live`, also fill `run-notes.md` `live_evidence_used` for every
+   outside source used.
 6. For current/news/policy/pricing claims, search snippets are direction-finding only.
    Receipts must record exact URLs, capture dates, source type, and whether each claim is
    primary or secondary before the read uses confident language.
@@ -61,8 +72,11 @@ Then:
    - `run_status` was `scout-only` before Loop 1.
    - `Selected Run Contract` was present and consistent with the run header.
    - `autonomous_eligible: yes`.
-   - `evidence_mode` was `store-only` or `local-existing`.
+   - `evidence_mode` was `store-only`, `local-existing`, or planned `bounded-live`.
    - `approval_needed: no`.
+   - If `bounded-live`, `live_evidence_plan` was present and followed.
+   - If `bounded-live`, every outside source was logged in `live_evidence_used`.
+   - If `bounded-live`, stop rules and spend notes were recorded.
    - No disallowed action happened.
    - Required citations / receipts are present and source-graded.
    - No snippet was treated as evidence.
@@ -89,6 +103,8 @@ Important:
   source rigor.
 - If `scout.md` does not contain a selected question, fail closed to
   `needs-human-review`; do not choose a question inside Loop 1.
+- If `bounded-live` is used without a plan, source grades, source-use log, receipts,
+  or stop-rule notes, fail closed to `needs-human-review`.
 - If "no new primitive needed" is the honest result, say so.
 - Use `pressure_lenses_fired` for short `kebab-case` recurrence tags: denominator,
   source, capture, freshness, tooling, schema, or coverage pressure. These tags are

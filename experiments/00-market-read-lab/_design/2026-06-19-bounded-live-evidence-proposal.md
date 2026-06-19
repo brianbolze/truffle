@@ -1,7 +1,7 @@
 ---
 created: 2026-06-19
 authors: codex
-status: proposed
+status: implemented
 ---
 
 # Bounded Live Evidence Proposal
@@ -114,10 +114,10 @@ Small convention updates only:
 - Receipt template: keep `external-source`, `source-panel`, and `direction-finding` grades; do not add a new ledger system.
 - Loop prompts: fail closed if live evidence is used without a plan, receipts, source grades, or stop-rule notes.
 
-Current adoption boundary: the live runner contract still only accepts `store-only`,
-`local-existing`, and `live-external-needs-approval`. This proposal is not active until
-`README.md`, Scout/Loop prompts, `run-notes.md`, `receipt.md`, the local skill, and
-`new_run.py` deliberately add `bounded-live`.
+Adoption status: implemented in `README.md`, Scout/Loop prompts, `run-notes.md`,
+`receipt.md`, the local skill, and `new_run.py`. The contract now accepts
+`bounded-live` only with a filled `live_evidence_plan`; `live-external-needs-approval`
+remains the stop state for broader or unplanned live work.
 
 ## Stress Tests
 
@@ -133,6 +133,6 @@ Current adoption boundary: the live runner contract still only accepts `store-on
 
 ## Pushback
 
-This should be more ambitious than the current no-live rule, but simpler than the first draft.
+This should be more ambitious than the former no-live rule, but simpler than the first draft.
 
 Do not build a general browsing agent, source registry, or hard call-budget ledger. Start with one mode, one budget class, one source-family plan, and one receipt trail. Let agents use judgment inside that frame; judge the runs afterward.

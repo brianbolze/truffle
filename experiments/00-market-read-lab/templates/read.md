@@ -12,6 +12,8 @@ For external/current claims: exact URL, captured date, source type, and primary 
 Use short claim IDs such as `C1` when a receipt supports a non-obvious, current, pricing,
 policy, or denominator claim.
 
+For `bounded-live`, this section must line up with `run-notes.md` `live_evidence_used`.
+
 ## Companies Seen
 
 

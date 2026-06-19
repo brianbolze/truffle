@@ -11,7 +11,7 @@
 
 | Question | Type | Autonomous eligible? | Evidence mode | Why this is worth a run | Trustworthy evidence would require | Failure mode to watch |
 |---|---|---|---|---|---|---|
-|  | market/system-test/mixed | yes/no | store-only/local-existing/live-external-needs-approval |  |  |  |
+|  | market/system-test/mixed | yes/no | store-only/local-existing/bounded-live/live-external-needs-approval |  |  |  |
 
 ## Selected Question(s)
 
@@ -29,11 +29,12 @@ selected_question:
 selected_slug:          # 3-5 word kebab-case folder slug, e.g. telehealth-category-crowdedness
 run_type:              # market | system-test | mixed
 autonomous_eligible:   # yes | no
-evidence_mode:         # store-only | local-existing | live-external-needs-approval
+evidence_mode:         # store-only | local-existing | bounded-live | live-external-needs-approval
 expected_denominator:
 likely_source_panel:
 allowed_sources: []
 disallowed_actions: []
+live_evidence_plan: null  # required only for bounded-live
 approval_needed:       # yes | no
 why_autonomous_safe:
 loop1_failure_mode:
@@ -46,4 +47,5 @@ Consider decision leverage, evidence readiness, freshness pressure, reuse pressu
 Treat prior run patterns as hypotheses, not defaults. Prefer testing whether the same pressure recurs over copying a previous run's exact method.
 
 Autonomous runs should prefer `autonomous_eligible: yes` and `evidence_mode: store-only`.
-Questions that need live external evidence are allowed as candidates, but should not be selected for unattended Loop 1 without explicit approval.
+Use `bounded-live` only when the question genuinely needs a small outside source panel and the contract includes a filled `live_evidence_plan`.
+Use `live-external-needs-approval` when the source need is broader, unclear, or missing a bounded plan.

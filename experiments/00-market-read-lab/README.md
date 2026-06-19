@@ -1,6 +1,6 @@
 # Market Read Lab
 
-**Status**: Active development - ran 3 runs manually, tested the local Claude Routine chain, now moving to a single-routine runner.
+**Status**: Active development - ran manual/autonomous trials, tested the local Claude Routine chain, now moving to a single-routine runner with bounded-live evidence allowed only by plan.
 
 ## Purpose
 
@@ -35,7 +35,8 @@ Each run moves through three stages:
 
 Stages advance through the `run_status` header in `run-notes.md`. If the status is not the expected prior state, the stage stops. This makes double-fires, missed fires, and manual re-runs boring instead of dangerous.
 
-The lab does **not** create durable categories, mutate `store/`, spend Firecrawl credits, browse live sources, or write back to project systems unless a human explicitly approves that outside the unattended loop.
+The lab does **not** create durable categories, mutate `store/`, or write back to project systems.
+Live evidence and light capture spend are allowed only in `evidence_mode: bounded-live` runs with a filled `live_evidence_plan`; broader live work remains `live-external-needs-approval` and stops for human review.
 
 ## Template Authority
 
@@ -107,7 +108,8 @@ Question:
 - Scout-only mode writes `scout.md` plus the `run-notes.md` YAML header, then stops.
   It should recommend questions, not answer them.
 - Scout candidates should include `autonomous_eligible` and `evidence_mode`. Prefer
-  store-only candidates for unattended runs; for now, live external evidence needs approval.
+  store-only candidates for unattended runs; use `bounded-live` only for small, planned
+  source panels; use `live-external-needs-approval` for broader or unclear live needs.
 - New runs default Scout-first. Print a Loop 1 prompt from the scaffold only when the
   Selected Run Contract and `run-notes.md` header are already contract-ready.
 - Loop 1 must no-op unless `run_status: scout-only`; it sets `read-done` only after
@@ -127,6 +129,11 @@ Question:
   the read (synthesis, judgements) uses confident language.
 - New receipts should use `templates/receipt.md`; snippet-only receipts are leads, not
   evidence for confident claims (judgements).
+- `bounded-live` runs require a `live_evidence_plan` and `live_evidence_used` log in
+  `run-notes.md`. Every outside source needs source family, action, reason, source
+  grade, capture date, spend note, and claim IDs supported.
+- `budget_class: light` means smallest useful source panel, not a census. Stop with
+  `insufficient-evidence` when the next step would broaden the question.
 - "No new primitive needed" is a valid outcome.
 
 ## Autonomous Launch Checklist
@@ -139,9 +146,9 @@ Before enabling unattended runs:
   run opportunistically.
 - Run the first autonomous pass as Scout-only, or as a full chain only when Scout
   selects `autonomous_eligible: yes`, `approval_needed: no`, and
-  `evidence_mode: store-only` or `local-existing`.
-- Keep live browsing, Firecrawl spend, write-back, and durable primitive creation
-  outside the unattended permission scope.
+  `evidence_mode: store-only`, `local-existing`, or planned `bounded-live`.
+- Keep broad live browsing, unplanned Firecrawl spend, write-back, and durable primitive
+  creation outside the unattended permission scope.
 - Use "Run now" once per live task to approve only the narrow file/Bash tools needed
   and verify it fails closed when `run_status` is not the expected prior state.
 - For unattended operation, prefer one routine running the full cycle from the repo skill.

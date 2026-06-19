@@ -35,6 +35,9 @@ Then:
 3. Fill `developer-review.md` around Truffle capability pressure first. Pay special
    attention to where the read crossed from State or Signals into Judgment, then
    apply the Steward, Dev Agent, and Founder lenses.
+   - If the run used `bounded-live`, audit whether the source panel stayed inside
+     `live_evidence_plan`, every outside source was logged, spend was purposeful,
+     and weak evidence stopped as `insufficient-evidence` instead of expanding scope.
 4. Submit candidate triage items or adjustments only when the review adds new evidence.
 5. Never edit sections titled `Human Notes` in `triage.md`; those are Brian/human-only.
 6. Do not implement, spike, or offer to implement system changes.

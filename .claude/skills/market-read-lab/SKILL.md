@@ -32,9 +32,13 @@ needs. Persist the **runs**, not the ontology.
   artifact shape.
 - Name runs `NNN-YYYY-MM-DD-short-slug/`.
 - Advance stages only by `run_status` in `run-notes.md`.
-- Use only the selected run contract's allowed sources. Stop at `needs-human-review`
-  for live browsing, Firecrawl spend, broad external research, `store/` mutation,
-  write-back, durable primitive creation, or triage graduation.
+- Use only the selected run contract's allowed sources.
+- `bounded-live` is allowed only when the Selected Run Contract includes a filled
+  `live_evidence_plan`; every outside source must be logged in `run-notes.md`
+  `live_evidence_used`.
+- Stop at `needs-human-review` for live browsing outside a bounded plan, unplanned
+  Firecrawl spend, broad external research, `store/` mutation, write-back, durable
+  primitive creation, or triage graduation.
 - For current/news/policy/pricing claims, treat snippets as leads. Use confident
   language only after receipts capture exact URLs, capture dates, source type, and
   primary/secondary status.
@@ -74,6 +78,24 @@ python3 .claude/skills/market-read-lab/scripts/new_run.py \
   --loop1-failure-mode "Overstating completeness from a partial denominator."
 ```
 
+Contract-ready bounded-live scaffold:
+
+```bash
+python3 .claude/skills/market-read-lab/scripts/new_run.py \
+  --slug "short-slug" \
+  --question "Question to answer?" \
+  --mode loop1 \
+  --evidence-mode bounded-live \
+  --expected-denominator "Store cohort plus a small external source panel." \
+  --allowed-source "store/" \
+  --allowed-source "approved bounded-live source families from live_evidence_plan" \
+  --live-evidence-goal "Verify the load-bearing current/source-panel claims." \
+  --source-family-allowed "SERP/listicle" \
+  --source-family-allowed "review/forum" \
+  --why-autonomous-safe "Standing bounded-live policy; light source panel only; no write-back." \
+  --loop1-failure-mode "Broadening from source check into open-ended browsing."
+```
+
 After scaffolding, report the created run path and the printed prompt.
 
 ## Autonomous Full Cycle
@@ -92,7 +114,8 @@ Use file gates between stages; do not hand off by updating scheduled tasks.
 3. Run Scout against the created path.
 4. Gate on `run-notes.md` and the Selected Run Contract. Continue only when:
    `run_status: scout-only`, `autonomous_eligible: yes`, `approval_needed: no`, and
-   `evidence_mode` is `store-only` or `local-existing`.
+   `evidence_mode` is `store-only`, `local-existing`, or `bounded-live` with a
+   filled `live_evidence_plan`.
 5. Rename the run before Loop 1:
 
    ```bash
@@ -129,7 +152,9 @@ Selected Run Contract, including `selected_slug`, and leave the run at `scout-on
 when the selected question is safe to run unattended.
 
 Loop 1 writes only `read.md`, `run-notes.md`, and receipts. It must fail closed unless
-the Scout contract is complete, autonomous-safe, and source-bounded.
+the Scout contract is complete, autonomous-safe, and source-bounded. For `bounded-live`,
+it must also log every outside source in `live_evidence_used`, record spend notes, and
+stop with `insufficient-evidence` instead of expanding beyond the plan.
 
 Loop 2 writes `consumer-review.md`, `developer-review.md`, and Evidence Log entries in
 `triage.md` only when review adds evidence. It does not edit `Human Notes`, graduate
