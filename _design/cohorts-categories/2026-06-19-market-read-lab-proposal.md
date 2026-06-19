@@ -16,6 +16,17 @@ Working home:
 experiments/00-market-read-lab/
 ```
 
+Implementation update, 2026-06-19: the active contract now lives in
+`experiments/00-market-read-lab/README.md`, templates, and the local
+`.claude/skills/market-read-lab/` skill. Two details supersede this proposal's
+initial automation sketch:
+
+- the runner is a single local routine that delegates to the repo skill, not a
+  self-arming `mrl-scout -> mrl-loop1 -> mrl-loop2` task chain;
+- autonomous runs may use `evidence_mode: bounded-live` when a filled
+  `live_evidence_plan` constrains source families, budget class, stop rules, and
+  receipts. Broader live work remains `live-external-needs-approval`.
+
 ## Why this
 
 The current fork is too fuzzy for a direct build:
@@ -243,7 +254,13 @@ language), not heavy infrastructure. Decided with Brian after two external resea
 
 ### Runner
 
-**Local Desktop scheduled tasks** (Claude Desktop app -> New **Routine** -> **Local**).
+**Current implementation:** one local routine delegates to
+`.claude/skills/market-read-lab/SKILL.md` and runs the gated full cycle inside one
+session. The older self-arming chain below is retained as design history, not the
+active runner.
+
+**Original sketch:** local Desktop scheduled tasks (Claude Desktop app -> New
+**Routine** -> **Local**).
 
 _Rejected:_
 - Cloud Routines: fresh git clone, can't see the untracked `experiments/` or the local
@@ -270,7 +287,7 @@ stale arm is provably harmless and re-runnable.
 
 | Task | Schedule | Runs when | Does | Then |
 |---|---|---|---|---|
-| `mrl-scout` | Weekly | always | Scout-only -> new run folder, recommend/select question, set the run header (below) | arms `mrl-loop1` **only if** `evidence_mode` is `store-only`/`local-existing` **and** `autonomous_eligible: yes`; else stop + notify |
+| `mrl-scout` | Weekly | always | Scout-only -> new run folder, recommend/select question, set the run header (below) | arms `mrl-loop1` **only if** `evidence_mode` is `store-only`, `local-existing`, or planned `bounded-live` **and** `autonomous_eligible: yes`; else stop + notify. Superseded by the current single-routine runner. |
 | `mrl-loop1` | Manual (armed) | `run_status: scout-only` | Loop 1 read + receipts, set `read-done` | arms `mrl-loop2` **only if the Loop 1 exit check passes** (below) |
 | `mrl-loop2` | Manual (armed) | `run_status: read-done` | Loop 2 reviews + `Submitted` triage only, set `reviewed` | notify; arms nothing |
 
@@ -280,7 +297,7 @@ Small, for auto-arm gating + debugging double/skipped fires. Not a ledger.
 
 ```yaml
 run_status:            # scout-only | read-done | needs-human-review | reviewed
-evidence_mode:         # store-only | local-existing | live-external-needs-approval
+evidence_mode:         # store-only | local-existing | bounded-live | live-external-needs-approval
 autonomous_eligible:   # yes | no
 termination_reason:    # completed | needs-human-review | blocked-by-approval | failed-loop1-exit-check
 pressure_lenses_fired: []
@@ -290,13 +307,13 @@ pressure_lenses_fired: []
 
 Before `mrl-loop1` arms `mrl-loop2`, a small **deterministic checklist** must pass:
 
-- `evidence_mode` is `store-only` or `local-existing`
+- `evidence_mode` is `store-only`, `local-existing`, or planned `bounded-live`
 - `autonomous_eligible: yes`
 - no snippets treated as evidence (search/news snippet = lead, not evidence, unless the
   URL was captured/fetched) — targets the Run 002 over-confidence failure
 - required receipts / citations present
 - current/news/pricing/policy claims carry capture dates
-- no live browsing, spend, or unauthorized write-back happened
+- no live browsing or spend outside a bounded-live plan, and no unauthorized write-back happened
 
 On any failure, Loop 1 writes and arms nothing:
 

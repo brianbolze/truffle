@@ -2,7 +2,7 @@
 
 ## 30-second answer
 
-Market Read Lab should use a v0/v1 autonomy posture of **local, staged, fail-closed runs**: keep Scout, Read, Review, and Triage as separate stages; persist each run as files; advance stages only when `run_status` exactly matches the expected prior state; and require human approval before live browsing, paid capture, current-event claims, or write-back into shared State. For local automation, the best next design is a local scheduled chain that invokes fresh-stage sessions and uses file handoffs, because Claude `-p` plus system cron has fresh context, local file access, and scriptable exit behavior, while Claude Desktop Scheduled Tasks and Codex Automations are useful alternatives but depend on the app and machine being awake ([Claude Code Headless Docs](https://code.claude.com/docs/en/headless), [Claude Code Desktop Scheduled Tasks](https://code.claude.com/docs/en/desktop-scheduled-tasks), [Codex Automations](https://developers.openai.com/codex/app/automations)).
+Market Read Lab should use a v0/v1 autonomy posture of **local, staged, fail-closed runs**: keep Scout, Read, Review, and Triage as separate stages; persist each run as files; advance stages only when `run_status` exactly matches the expected prior state; allow only planned `bounded-live` source panels, and require human approval before broad live browsing, unplanned paid capture, risky current-event claims, or write-back into shared State. For local automation, the best next design is a local scheduled chain that invokes fresh-stage sessions and uses file handoffs, because Claude `-p` plus system cron has fresh context, local file access, and scriptable exit behavior, while Claude Desktop Scheduled Tasks and Codex Automations are useful alternatives but depend on the app and machine being awake ([Claude Code Headless Docs](https://code.claude.com/docs/en/headless), [Claude Code Desktop Scheduled Tasks](https://code.claude.com/docs/en/desktop-scheduled-tasks), [Codex Automations](https://developers.openai.com/codex/app/automations)).
 
 Adopt deterministic verification before adding more autonomy: a source-rigor checklist, no-snippets-as-evidence check, receipt completeness check, current-claim volatility flag, `run_status` idempotency check, triage duplicate check, no-auto-graduation check, and spend/live-browse approval gate. Use an LLM reviewer only as an advisor for structural critique and rubric adherence, not as the final authority on factual accuracy, because LLM judges degrade when evaluating questions they cannot answer correctly and need human or external grounding for hard factual checks ([No Free Labels](https://arxiv.org/html/2503.05061v1), [LLMs-as-Judges Survey](https://arxiv.org/html/2412.05579v2)).
 
@@ -25,6 +25,14 @@ review, but stage rules, permissions, and artifact contracts should live in the 
 Fallback if the single routine proves too slow: fixed staggered schedules where each stage scans
 for the next eligible run by `run_status`. Avoid a self-mutating task chain unless the product
 approval behavior changes.
+
+## 2026-06-19 bounded-live update
+
+The active contract now permits `evidence_mode: bounded-live` for autonomous Market
+Read Lab runs when Scout provides a filled `live_evidence_plan`. This narrows the memo's
+original "human approval before live browsing / paid capture" rule: broad or unplanned
+live work still fails closed, but a light planned source panel may run unattended with
+source-family bounds, stop rules, receipts, `live_evidence_used`, and spend notes.
 
 ## Recommendation
 
@@ -182,7 +190,7 @@ Until then, a supervisor would likely recreate the workflow-platform path Truffl
 ### Adopt now
 
 - **Add `run_status` as a stage lock**: Use `scout-only`, `read-done`, `needs-human-review`, and `reviewed`; each stage should no-op unless the status exactly matches the expected previous state.
-- **Add a verification checklist**: Include source rigor, no snippets as evidence, receipt completeness, current-claim volatility, status/idempotency, triage duplication, no auto-graduation, and spend/live-browse gates.
+- **Add a verification checklist**: Include source rigor, no snippets as evidence, receipt completeness, current-claim volatility, status/idempotency, triage duplication, no auto-graduation, and bounded-live/spend gates.
 - **Add `needs-human-review`**: Use it as the fail-closed state when receipts are incomplete, current claims are volatile, or a requested action exceeds approval scope.
 - **Add a lightweight receipt template**: Require URL, capture date, source type, primary/secondary status, claim IDs supported, and excerpt or saved capture path.
 - **Modify Scout prompt**: Scout should label each candidate with `autonomous_eligible`, `evidence_mode`, expected denominator, likely source panel, and whether live browsing would be needed.
@@ -190,7 +198,7 @@ Until then, a supervisor would likely recreate the workflow-platform path Truffl
 - **Modify Review prompts**: Consumer Review should ask usefulness and decision impact; Developer Review should ask what system pressure recurred and whether a convention, not a primitive, would reduce future cost.
 - **Add a post-Read advisor pass**: Let it block only evidence hygiene and approval-scope violations; let it comment on system pressure without approving engine changes.
 - **Chain scheduled tasks only after Scout**: Weekly Scout can be autonomous; Read and Review can be armed after Scout only when candidate metadata says the question is autonomous-eligible.
-- **Notify instead of continuing for risky paths**: When evidence mode is `live-external-needs-approval`, the task should stop and ask for approval rather than browsing.
+- **Notify instead of continuing for risky paths**: When evidence mode is `live-external-needs-approval`, the task should stop and ask for approval rather than browsing. Planned `bounded-live` runs are allowed only inside their `live_evidence_plan`.
 
 ### Defer
 
@@ -210,7 +218,7 @@ Each run should declare:
 | `question` | The exact market/system-test question. |
 | `run_status` | Stage lock and idempotency guard. |
 | `autonomous_eligible` | Whether downstream stages may run without approval. |
-| `evidence_mode` | `store-only`, `local-existing`, or `live-external-needs-approval`. |
+| `evidence_mode` | `store-only`, `local-existing`, `bounded-live`, or `live-external-needs-approval`. |
 | `allowed_sources` | Store, curated list, or approved external panel. |
 | `disallowed_actions` | Live browsing, paid capture, write-back, or category primitive creation unless approved. |
 | `pressure_lenses_fired` | Recurrence tracking only, not an approval mechanism. |
@@ -233,6 +241,6 @@ Do not build these yet:
 
 ## Final answer to the design question
 
-Market Read Lab should use a local scheduled stage chain next, gated by `run_status`, `evidence_mode`, and a deterministic verification checklist. The first autonomous unit should be weekly Scout, because Scout can propose questions and stop without making external claims or changing State. Read and Review can be armed only for `store-only` or `local-existing` questions, and any live external sourcing, current-event claim, paid capture, or write-back should fail closed into `needs-human-review`.
+Market Read Lab should use a local scheduled stage chain next, gated by `run_status`, `evidence_mode`, and a deterministic verification checklist. The first autonomous unit should be weekly Scout, because Scout can propose questions and stop without changing State. Read and Review can be armed for `store-only`, `local-existing`, or planned `bounded-live` questions; broader live external sourcing, unplanned paid capture, or write-back should fail closed into `needs-human-review`.
 
 The added verification mechanism should be a post-Read advisor pass, not a full overwatch system. It should combine deterministic checks with an LLM reviewer that comments against a static rubric, and it should be allowed to block only stage advancement when evidence hygiene or approval scope fails. That is enough to address the early evidence from Runs 000 to 002: denominator reconciliation remains a query/reporting convention, backend relations stay a capture-grain issue, and category-level external events become carefully receipted Signals candidates rather than a new primitive.

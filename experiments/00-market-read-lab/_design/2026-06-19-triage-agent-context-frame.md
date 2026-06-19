@@ -147,6 +147,6 @@ Human approval is still required before:
 - changing Truffle code, schema, prompts, or templates;
 - mutating `store/` or project systems;
 - creating durable category/cohort/relation primitives;
-- live browsing, Firecrawl spend, or external capture;
+- live browsing, Firecrawl spend, or external capture outside a bounded-live plan;
 - writing to Notion Roadmap;
 - treating a candidate as graduated.
