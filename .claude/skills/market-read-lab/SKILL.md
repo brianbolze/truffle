@@ -1,6 +1,6 @@
 ---
 name: market-read-lab
-description: Use when starting, scaffolding, running, reviewing, triaging, or running an autonomous full-cycle Market Read Lab routine in this Web Research / Truffle project. Handles numbered run folders, Scout / Loop 1 / Loop 2 prompts, single-routine full-cycle execution, and the no-auto-graduation convention.
+description: Use when starting, scaffolding, running, reviewing, triaging, or running autonomous Market Read Lab cycles in this Web Research / Truffle project. Handles numbered run folders, Scout/Read/Review gates, repo templates, and the no-auto-graduation convention.
 argument-hint: <new run question/slug, or loop action>
 ---
 
@@ -10,75 +10,48 @@ $ARGUMENTS
 
 Use this skill for `experiments/00-market-read-lab/`.
 
-The lab runs repeated market reads to learn which source ingredients, category/cohort
-questions, relation shapes, and non-company evidence Truffle actually needs. Scout should
-start from plain operator questions a strategist would recognize, then use architecture
-learning as the annotation and selection lens. Persist the **runs**, not the ontology.
+Market Read Lab runs repeated market reads to learn which source ingredients,
+category/cohort questions, relation shapes, and non-company evidence Truffle actually
+needs. Persist the **runs**, not the ontology.
 
-## Ground Rules
+## Route
 
-- Keep artifacts outside `store/`.
-- Use repo templates in `experiments/00-market-read-lab/templates/`; do not fork a
-  second template set inside this skill.
-- Treat `experiments/00-market-read-lab/templates/` and the operator prompts as the
-  only template authority. Never infer current conventions from prior run artifacts.
-- Runs `000`-`002` are pre-autonomy historical runs. Use them only for evidence,
-  triage context, and pressure patterns; do not copy their headers, stage behavior,
-  source rigor, or artifact shape.
+- **Scaffold a run:** use `.claude/skills/market-read-lab/scripts/new_run.py`.
+- **Run Scout:** use `experiments/00-market-read-lab/templates/operator-scout-prompt.md`.
+- **Run Loop 1:** use `experiments/00-market-read-lab/templates/operator-loop1-prompt.md`.
+- **Run Loop 2:** use `experiments/00-market-read-lab/templates/operator-loop2-prompt.md`.
+- **Run one autonomous cycle:** follow **Autonomous Full Cycle** below.
+
+## Invariants
+
+- Keep run artifacts outside `store/`.
+- Treat `experiments/00-market-read-lab/templates/` and operator prompts as the
+  current template authority.
+- Treat prior runs as evidence, not templates. Runs `000`-`002` are historical
+  pre-autonomy runs; do not copy their headers, source rigor, stage behavior, or
+  artifact shape.
 - Name runs `NNN-YYYY-MM-DD-short-slug/`.
-- Loop agents may submit triage candidates, but must not implement, spike, or offer
-  to implement system changes.
+- Advance stages only by `run_status` in `run-notes.md`.
+- Use only the selected run contract's allowed sources. Stop at `needs-human-review`
+  for live browsing, Firecrawl spend, broad external research, `store/` mutation,
+  write-back, durable primitive creation, or triage graduation.
+- For current/news/policy/pricing claims, treat snippets as leads. Use confident
+  language only after receipts capture exact URLs, capture dates, source type, and
+  primary/secondary status.
+- `triage.md` is the system-pressure queue, not a question backlog. Candidate questions
+  live in run `scout.md` files unless Brian explicitly creates a shared question queue.
+- Triage items may receive Evidence Log entries; only Brian/humans edit `Human Notes`.
 - Graduation from triage is an explicit human decision.
-- `triage.md` is the system-pressure queue, not a persistent question backlog.
-  Candidate questions live in run `scout.md` files unless Brian explicitly creates a
-  separate shared question queue.
-- Prior runs are evidence, not templates. Repeated pressure earns conventions; one
-  sighting earns only a queue submission.
-- `pressure_lenses_fired` is for short `kebab-case` recurrence tags, not approvals.
-  Use the tag guide in `run-notes.md`; explain each fired tag in the Fired tag table.
-- Scout reads `experiments/00-market-read-lab/scout-context.md`; the original wallow
-  doc is deep background, not default context.
-- Scout candidates must include `autonomous_eligible: yes/no` and
-  `evidence_mode: store-only | local-existing | live-external-needs-approval`.
-- Scout must fill the selected run contract in `scout.md`; it is the canonical handoff
-  to Loop 1.
-- Scout-only may write only `scout.md` and the YAML header at the top of
-  `run-notes.md`. The header is the stage lock for later routines.
-- For current/news/policy/pricing claims, search snippets are direction-finding only.
-  Use confident language only after receipts capture exact URLs, capture dates,
-  source type, and primary/secondary status.
-- New receipts should use `experiments/00-market-read-lab/templates/receipt.md`.
-  Snippet-only receipts are leads, not evidence for confident claims.
-- Never edit sections titled `Human Notes` in `triage.md`; those are Brian/human-only.
 
 ## Scaffold a New Run
 
-When the user asks to kick off, create, or start a Market Read Lab run, run the
-scaffold script for them. Do not tell the user to run it manually unless they
-explicitly ask for the command.
-
-Default mode is Scout-only:
+Default Scout-only scaffold:
 
 ```bash
-python3 .claude/skills/market-read-lab/scripts/new_run.py \
-  --slug "short-slug"
+python3 .claude/skills/market-read-lab/scripts/new_run.py --slug "short-slug"
 ```
 
-The script:
-
-- picks the next run number,
-- creates the run folder and `receipts/`,
-- copies the current run artifact templates,
-- leaves `templates/receipt.md` as the shared pattern for new receipt files,
-- seeds `scout.md` when a question is provided,
-- writes a clean `run-notes.md` header,
-- prints a ready-to-use Scout or Loop 1 prompt with the target path filled in.
-
-After running it, report the created run path and paste the prompt the next agent
-should use.
-
-If a question is already selected but the evidence contract is not complete, still
-start Scout so it can fill the Selected Run Contract:
+If a question is known but the run contract still needs Scout:
 
 ```bash
 python3 .claude/skills/market-read-lab/scripts/new_run.py \
@@ -86,7 +59,7 @@ python3 .claude/skills/market-read-lab/scripts/new_run.py \
   --question "Question to sharpen into a run contract?"
 ```
 
-Print a Loop 1 prompt only when the run is contract-ready:
+Print a Loop 1 prompt only for a contract-ready run:
 
 ```bash
 python3 .claude/skills/market-read-lab/scripts/new_run.py \
@@ -101,202 +74,63 @@ python3 .claude/skills/market-read-lab/scripts/new_run.py \
   --loop1-failure-mode "Overstating completeness from a partial denominator."
 ```
 
+After scaffolding, report the created run path and the printed prompt.
+
 ## Autonomous Full Cycle
 
-Use this workflow when a local Claude Routine says:
+Run exactly one Scout -> Loop 1 -> Loop 2 cycle in the current routine/session.
+Use file gates between stages; do not hand off by updating scheduled tasks.
 
-```md
-Run one autonomous Market Read Lab cycle.
-
-Use `.claude/skills/market-read-lab/SKILL.md` and run the "Autonomous Full Cycle" workflow.
-```
-
-Why this shape exists: local Claude Routines require explicit approval when one routine
-updates or arms another scheduled task, so the unattended runner should be one routine,
-not a Scout -> Loop 1 -> Loop 2 self-arming chain.
-
-Run exactly one cycle:
-
-1. Read `experiments/00-market-read-lab/README.md`,
-   `experiments/00-market-read-lab/scout-context.md`,
-   `experiments/00-market-read-lab/triage.md`, and the Scout/Loop 1/Loop 2 prompts in
-   `experiments/00-market-read-lab/templates/`.
+1. Read the README, `scout-context.md`, `triage.md`, and the Scout/Loop 1/Loop 2
+   operator prompts.
 2. Scaffold a temporary Scout run:
 
    ```bash
    python3 .claude/skills/market-read-lab/scripts/new_run.py --slug "scout-candidates"
    ```
 
-3. Run Scout-only against the created path.
-4. Re-read the run's `run-notes.md` header and `scout.md` Selected Run Contract.
-   If the run did not end as `run_status: scout-only`,
-   `autonomous_eligible: yes`, `approval_needed: no`, and
-   `evidence_mode: store-only` or `local-existing`, stop and summarize the block.
-5. Rename the run folder from the selected question before Loop 1:
+3. Run Scout against the created path.
+4. Gate on `run-notes.md` and the Selected Run Contract. Continue only when:
+   `run_status: scout-only`, `autonomous_eligible: yes`, `approval_needed: no`, and
+   `evidence_mode` is `store-only` or `local-existing`.
+5. Rename the run before Loop 1:
 
    ```bash
    python3 .claude/skills/market-read-lab/scripts/rename_run.py TARGET_RUN_PATH
    ```
 
-   Use the printed path as the target run for the rest of the cycle. If rename fails,
-   continue with the original path only if the Loop 1 gates still pass, and note the
-   slug friction in `run-notes.md`.
-6. Run Loop 1 against the current target path. If a subagent/task tool is available,
-   you may delegate Loop 1 as a fresh worker using the Loop 1 operator prompt; the
-   parent routine must re-read `run-notes.md` before continuing.
-7. Continue only if Loop 1 ends with `run_status: read-done`. Otherwise stop and
-   summarize the final status.
-8. Run Loop 2 against the current target path. If a subagent/task tool is available,
-   you may delegate Loop 2 as a fresh reviewer using the Loop 2 operator prompt; run
-   one stage at a time and re-read artifacts after it returns.
-9. Stop after Loop 2. Summarize the run path, final `run_status`, and triage changes.
+   `rename_run.py` prefers `selected_slug` from `scout.md` and falls back to the
+   selected question.
+6. Run Loop 1 against the current target path. Continue only if it ends with
+   `run_status: read-done`.
+7. For Loop 2, prefer a quick workflow if the environment supports one. Use an
+   adversarial verification shape with three focused passes: evidence verifier,
+   consumer reviewer, and developer reviewer. If workflows are unavailable, run
+   Loop 2 normally from the operator prompt.
+8. Stop after review.
 
-Full-cycle overrides:
+If fresh worker sessions are available, they may run individual stages. The parent
+routine still owns each gate: re-read artifacts after every stage before continuing.
 
-- Do not call `update_scheduled_task`, arm another routine, or ask for routine handoff.
-- Do not browse, spend Firecrawl credits, mutate `store/`, graduate triage, or implement
-  system changes.
-- Loop 1's usual "tell the operator to start Loop 2" instruction becomes an internal
-  stage boundary. Continue only after re-reading the `read-done` header.
-- The parent routine owns the gate between stages, even when subagents do the stage work.
+Final report:
 
-## Run Scout-only
+- run path
+- final `run_status`
+- `termination_reason`
+- stage reached
+- files touched
+- triage changes
+- any approval or evidence block
 
-Use `experiments/00-market-read-lab/templates/operator-scout-prompt.md` with the
-target run path filled in.
+## Stage Notes
 
-Fill only:
+Scout writes only `scout.md` and the YAML header in `run-notes.md`. It should fill the
+Selected Run Contract, including `selected_slug`, and leave the run at `scout-only` only
+when the selected question is safe to run unattended.
 
-- `scout.md`
-- the YAML header at the top of `run-notes.md`
+Loop 1 writes only `read.md`, `run-notes.md`, and receipts. It must fail closed unless
+the Scout contract is complete, autonomous-safe, and source-bounded.
 
-Scout should generate 5-10 candidate questions and recommend 1-2. Go wide across basic
-question types first (competitors, market maps, crowded categories, pricing, releases,
-claims, channels, reputation, backend dependencies), then name what each question teaches
-Truffle. Prefer unattended-safe questions (`autonomous_eligible: yes`,
-`evidence_mode: store-only`) for the selected autonomous run, but still include beyond-store
-candidates when they expose an important source-ingredient, membership, relation, or grain
-gap.
-
-Fill the `Selected Run Contract` for the best selected question. Include the exact
-question, run type, autonomy flag, evidence mode, expected denominator, likely source
-panel, allowed sources, disallowed actions, approval need, why the run is autonomous-safe,
-and the Loop 1 failure mode to watch.
-
-If the selected question is unattended-safe, set `run_status: scout-only`,
-`autonomous_eligible: yes`, the selected `evidence_mode`, and
-`termination_reason: completed`. If it needs live external evidence, approval, or human
-reframing, set `run_status: needs-human-review`, `autonomous_eligible: no`, the selected
-`evidence_mode`, and `termination_reason: blocked-by-approval` or
-`needs-human-review`.
-
-It should not write `read.md`, fill `run-notes.md` below the YAML header, write review
-files, or update `triage.md`.
-
-## Run Loop 1
-
-Read:
-
-- `experiments/00-market-read-lab/README.md`
-- `experiments/00-market-read-lab/scout-context.md`
-- `experiments/00-market-read-lab/triage.md`
-- the target run's `scout.md`
-- the last 3 completed `run-notes.md` files, if useful
-- target receipts
-
-Before research, gate on the run header and Scout contract:
-
-- Continue only if `run_status: scout-only`.
-- Treat the `Selected Run Contract` in `scout.md` as canonical.
-- A filled contract has non-empty `selected_question`, `autonomous_eligible`,
-  `evidence_mode`, `approval_needed`, `allowed_sources`, `disallowed_actions`, and
-  `loop1_failure_mode`. Empty `allowed_sources: []` is not enough for Loop 1.
-- Continue only if `autonomous_eligible: yes`, `approval_needed: no`, and
-  `evidence_mode` is `store-only` or `local-existing`.
-- Use only `allowed_sources`; do not perform `disallowed_actions`.
-- If the header or contract is missing, conflicting, or not autonomous-safe, update only
-  the `run-notes.md` header to `run_status: needs-human-review` and the right
-  `termination_reason`, then stop.
-
-Then fill only:
-
-- `read.md`
-- `run-notes.md`
-- receipts needed to make the run auditable
-
-For external/current-event reads, receipt rigor matters more than breadth. A tiny panel
-is fine, but snippets alone are not citation-grade for law, policy, price, or partnership
-claims.
-
-Use `templates/receipt.md` for new receipts. At minimum, record URL or local path,
-capture date or store clock, source type, source grade, snippet-only status, and claim
-IDs supported.
-
-If the selected question is not autonomous-eligible or needs live external evidence,
-set `run_status: needs-human-review`, set the right `termination_reason`, and stop
-before spending or browsing.
-
-Before finishing, complete the `Loop 1 exit check` in `run-notes.md`. Set
-`run_status: read-done` and `termination_reason: completed` only if every check passes.
-Otherwise set `run_status: needs-human-review` and
-`termination_reason: failed-loop1-exit-check`, and do not tell the operator to start
-Loop 2.
-
-Do not run Consumer Review or Developer Review in Loop 1.
-
-Keep State (captured facts), Signals (dated changes or indicators), and
-Judgments (market interpretation) distinguishable in the read. Label judgments
-and tie them back to the state/signals they rely on.
-
-At the end, tell the operator to start Loop 2 in a fresh session only if
-`run_status: read-done`. Do not offer to run Loop 2 in the same session.
-
-## Run Loop 2
-
-Use `experiments/00-market-read-lab/templates/operator-loop2-prompt.md` with the
-target run path filled in.
-
-Before review, gate on the run header:
-
-- Continue only if `run_status: read-done`.
-- If `scout.md`, `read.md`, or `run-notes.md` is missing or too incomplete to review,
-  update only the `run-notes.md` header to `run_status: needs-human-review` and
-  `termination_reason: needs-human-review`, then stop.
-
-Fill:
-
-- `consumer-review.md`
-- `developer-review.md`
-
-Consumer Review is verdict-first: was the produced read valuable enough for a
-human or agent to trust, reuse, or act on? Use JTBD, value diagnostics, and
-persona lenses after that judgment.
-
-Developer Review starts with system capability pressure, especially where the
-read crosses from State or Signals into Judgment. Persona lenses are checks, not
-sections to fill mechanically.
-
-Update `triage.md` only when review adds new evidence. Keep queue YAML canonical;
-avoid prose-only shadow state below an item.
-
-When a later run adds evidence to an existing item without changing its current state,
-append a short dated **Evidence Log** entry under that item. Do not invent new YAML
-keys such as `evidence_addendum`.
-
-Never edit sections titled `Human Notes` in `triage.md`.
-
-When both reviews are complete, update only the `run-notes.md` YAML header to
-`run_status: reviewed` and `termination_reason: completed`. `reviewed` does not
-graduate triage items or approve system changes.
-
-## Triage
-
-Use `experiments/00-market-read-lab/triage.md`.
-
-Statuses: `Submitted`, `Researching`, `Acknowledged`, `Duplicated`, `Resolved`.
-
-Priorities: `P0`, `P1`, `P2`, `P3`, `Low`, `Out-of-scope`.
-
-Do not graduate or implement a triage item unless Brian explicitly approves it.
-
-Never touch `Human Notes` sections.
+Loop 2 writes `consumer-review.md`, `developer-review.md`, and Evidence Log entries in
+`triage.md` only when review adds evidence. It does not edit `Human Notes`, graduate
+triage, or implement system changes.

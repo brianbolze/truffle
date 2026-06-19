@@ -26,6 +26,7 @@ Loop 1 should trust this block.
 
 ```yaml
 selected_question:
+selected_slug:          # 3-5 word kebab-case folder slug, e.g. telehealth-category-crowdedness
 run_type:              # market | system-test | mixed
 autonomous_eligible:   # yes | no
 evidence_mode:         # store-only | local-existing | live-external-needs-approval

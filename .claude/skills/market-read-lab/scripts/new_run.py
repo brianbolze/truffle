@@ -65,7 +65,13 @@ def format_yaml_list(values: list[str]) -> str:
     return "[" + ", ".join(escape_yaml_string(value) for value in values) + "]"
 
 
-def seeded_scout(template: str, question: str | None, contract: dict[str, object] | None) -> str:
+def seeded_scout(
+    template: str,
+    question: str | None,
+    contract: dict[str, object] | None,
+    *,
+    selected_slug: str | None = None,
+) -> str:
     if not question:
         return template
 
@@ -86,6 +92,7 @@ def seeded_scout(template: str, question: str | None, contract: dict[str, object
     )
     scout = scout.replace("1. \n\nThese may", f"1. {question}\n\nThese may", 1)
     scout = scout.replace("selected_question:\n", f"selected_question: {escape_yaml_string(question)}\n", 1)
+    scout = scout.replace("selected_slug:          # short kebab-case folder slug, e.g. telehealth-category-crowdedness\n", f"selected_slug: {escape_yaml_string(selected_slug or slugify(question))}\n", 1)
     if contract:
         replacements = {
             "run_type:              # market | system-test | mixed": f"run_type: {contract['run_type']}",
@@ -225,7 +232,10 @@ def main() -> int:
     (receipts_dir / ".gitkeep").write_text("", encoding="utf-8")
 
     scout_template = (templates_dir / "scout.md").read_text(encoding="utf-8")
-    (run_dir / "scout.md").write_text(seeded_scout(scout_template, args.question, contract), encoding="utf-8")
+    (run_dir / "scout.md").write_text(
+        seeded_scout(scout_template, args.question, contract, selected_slug=slugify(args.slug)),
+        encoding="utf-8",
+    )
 
     for name in TEMPLATE_FILES:
         if name == "run-notes.md":

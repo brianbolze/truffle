@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rename a Market Read Lab run folder from its selected Scout question."""
+"""Rename a Market Read Lab run folder from its selected Scout slug."""
 
 from __future__ import annotations
 
@@ -61,7 +61,7 @@ def find_repo_root() -> Path:
     raise SystemExit("Could not find experiments/00-market-read-lab/templates from script path.")
 
 
-def slugify_question(value: str, *, max_words: int = 8, max_chars: int = 80) -> str:
+def slugify_question(value: str, *, max_words: int = 4, max_chars: int = 60) -> str:
     words = re.findall(r"[a-z0-9]+", value.lower())
     useful = [word for word in words if word not in STOPWORDS]
     if not useful:
@@ -70,8 +70,15 @@ def slugify_question(value: str, *, max_words: int = 8, max_chars: int = 80) -> 
     return slug[:max_chars].strip("-") or "market-read"
 
 
-def parse_selected_question(scout_text: str) -> str:
-    match = re.search(r"^selected_question:\s*(.+?)\s*$", scout_text, flags=re.M)
+def slugify_slug(value: str, *, max_chars: int = 80) -> str:
+    value = value.strip().lower()
+    value = re.sub(r"[^a-z0-9]+", "-", value)
+    value = re.sub(r"-+", "-", value).strip("-")
+    return value[:max_chars].strip("-") or "market-read"
+
+
+def parse_contract_value(scout_text: str, key: str) -> str | None:
+    match = re.search(rf"^{re.escape(key)}:\s*(.+?)\s*$", scout_text, flags=re.M)
     if match:
         raw = match.group(1).strip()
         if raw and raw != "null":
@@ -79,7 +86,14 @@ def parse_selected_question(scout_text: str) -> str:
                 return raw[1:-1].replace("''", "'").strip()
             if raw.startswith('"') and raw.endswith('"'):
                 return raw[1:-1].strip()
-            return raw.split(" #", 1)[0].strip()
+            return raw.split(" #", 1)[0].strip() or None
+    return None
+
+
+def parse_selected_question(scout_text: str) -> str:
+    selected_question = parse_contract_value(scout_text, "selected_question")
+    if selected_question:
+        return selected_question
 
     fallback = re.search(r"^1\.\s+(.+?)\s*$", scout_text, flags=re.M)
     if fallback:
@@ -105,7 +119,7 @@ def relpath(root: Path, path: Path) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("run_path", help="Existing Market Read Lab run folder.")
-    parser.add_argument("--slug", help="Override the selected-question-derived slug.")
+    parser.add_argument("--slug", help="Override the selected_slug / question-derived slug.")
     parser.add_argument("--dry-run", action="store_true", help="Print the target path without renaming.")
     args = parser.parse_args()
 
@@ -126,7 +140,14 @@ def main() -> int:
     if not scout_path.exists():
         raise SystemExit(f"Missing scout.md: {relpath(root, scout_path)}")
 
-    slug = slugify_question(args.slug or parse_selected_question(scout_path.read_text(encoding="utf-8")))
+    scout_text = scout_path.read_text(encoding="utf-8")
+    selected_slug = parse_contract_value(scout_text, "selected_slug")
+    if args.slug:
+        slug = slugify_slug(args.slug)
+    elif selected_slug:
+        slug = slugify_slug(selected_slug)
+    else:
+        slug = slugify_question(parse_selected_question(scout_text))
     new_path = run_path.with_name(f"{match.group(1)}-{slug}")
 
     if new_path == run_path:

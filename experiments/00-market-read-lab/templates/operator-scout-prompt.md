@@ -29,8 +29,9 @@ Then:
    require, the failure mode to watch, `autonomous_eligible: yes/no`, and
    `evidence_mode: store-only | local-existing | live-external-needs-approval`.
 3. Recommend 1-2 selected questions, but do not answer them. Fill the
-   `Selected Run Contract` for the best selected question. Treat that block as the
-   canonical handoff to Loop 1.
+   `Selected Run Contract` for the best selected question, including a concise
+   `selected_slug` for the final run folder. Treat that block as the canonical
+   handoff to Loop 1.
 4. Update only the YAML header at the top of the target run's `run-notes.md`:
    - Mirror `autonomous_eligible` and `evidence_mode` from the `Selected Run Contract`.
    - If the selected question is unattended-safe, set `run_status: scout-only` and
@@ -60,6 +61,8 @@ Important:
 - Prefer questions a strategist, operator, investor, or researcher would recognize.
 - Include system-test candidates, but keep system-learning as the second layer unless
   the question is explicitly about the lab machinery.
+- `selected_slug` should be short kebab-case, usually 3-5 meaningful words, based on
+  the selected question rather than the temporary scaffold name.
 - `approval_needed: yes` means the run must stop at Scout until Brian/operator approval.
 - If `run_status: scout-only`, end by telling the operator to start Loop 1 in a
   fresh session. If `run_status: needs-human-review`, end by asking for approval or

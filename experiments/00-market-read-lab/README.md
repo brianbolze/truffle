@@ -99,8 +99,8 @@ Question:
   run number for this lab. Run 0 is `000`; the next market read is `001`.
   Dates are metadata, not unique IDs.
 - In the autonomous full cycle, the initial scaffold may use a temporary slug such as
-  `scout-candidates`; after Scout selects the question, rename the folder from the
-  actual selected question before Loop 1.
+  `scout-candidates`; after Scout selects the question, rename the folder from
+  `selected_slug` before Loop 1.
 - Triage pressure; do not auto-graduate engine artifacts.
 - Loop agents may submit triage candidates, but must not implement, spike, or offer
   to implement system changes. Graduation is an explicit human decision after review.
