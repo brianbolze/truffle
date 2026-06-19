@@ -48,6 +48,11 @@ class StoreSuggestTests(unittest.TestCase):
         self.assertEqual(store.suggest("Nom", PROFILES), [])
         self.assertEqual(store._miss_line("Rho", PROFILES), "Rho → NOT in store")
 
+    def test_short_substring_prefix_still_surfaces_candidate(self) -> None:
+        # The min-key-len gate governs fuzzy suggestions only — a sub-5-char prefix of a real
+        # name must still surface through the exact substring path (e.g. `find user`).
+        self.assertIn("usertesting-com", store._miss_line("user", PROFILES))
+
     def test_find_labels_likely_and_ambiguous_suggestions(self) -> None:
         self.assertIn("likely candidate: telolife-com", store._miss_line("Tello Life", PROFILES))
 

@@ -35,11 +35,6 @@ try:
 except ImportError:
     sys.exit("PyYAML not importable — the resolver needs it to parse frontmatter.")
 
-try:
-    from rapidfuzz import fuzz as _rapidfuzz
-except ImportError:
-    _rapidfuzz = None
-
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STORE = os.path.join(ROOT, "store")
 SUGGEST_MIN_KEY_LEN = 5
@@ -113,8 +108,7 @@ def _name_keys(s: object) -> list[str]:
 
 
 def _fuzz_score(a: str, b: str) -> float:
-    if _rapidfuzz:
-        return float(_rapidfuzz.WRatio(a, b))
+    """0–100 similarity between two normalized name keys (stdlib difflib; the SUGGEST_* cutoffs live on this scale)."""
     return SequenceMatcher(None, a, b).ratio() * 100
 
 
@@ -126,6 +120,7 @@ def _suggestion_surfaces(slug: str, fm: dict[str, Any]) -> list[str]:
 
 
 def _exact_name_surfaces(fm: dict[str, Any]) -> list[str]:
+    """The surfaces exact resolution keys on — name + quoted-name aliases — used to detect name-key collisions."""
     surfaces = [fm.get("name")]
     surfaces.extend(a for a in (fm.get("aliases") or []) if not _is_domainish(a))
     return [str(s).strip() for s in surfaces if str(s or "").strip()]
@@ -216,15 +211,15 @@ def suggest(
 def name_key_collisions(profiles: dict[str, dict[str, Any]] | None = None) -> dict[str, list[tuple[str, str]]]:
     """Human-normalized name keys shared by multiple slugs; these would make exact name lookup order-sensitive."""
     profiles = load() if profiles is None else profiles
-    by_key: dict[str, list[tuple[str, str]]] = {}
+    by_key: dict[str, dict[str, str]] = {}  # key -> {slug: first surface that produced it} (one entry per slug)
     for slug, fm in profiles.items():
         for surface in _exact_name_surfaces(fm):
             for key in _name_keys(surface):
-                by_key.setdefault(key, []).append((slug, surface))
+                by_key.setdefault(key, {}).setdefault(slug, surface)
     return {
-        key: hits
-        for key, hits in sorted(by_key.items())
-        if len({slug for slug, _ in hits}) > 1
+        key: list(slug_surface.items())
+        for key, slug_surface in sorted(by_key.items())
+        if len(slug_surface) > 1
     }
 
 
@@ -345,11 +340,8 @@ def _miss_line(query: str, profiles: dict[str, dict[str, Any]]) -> str:
     """The miss half of 'find': substring candidates, fuzzy suggestions, or NOT in store."""
     cq = canon(query)
     q_name_keys = _name_keys(query)
-    allow_partial_candidates = bool(q_name_keys) and max(len(k) for k in q_name_keys) >= SUGGEST_MIN_KEY_LEN
 
     def nameish_match(value: object) -> bool:
-        if not allow_partial_candidates:
-            return False
         v_name_keys = _name_keys(value)
         return any(q in v or v in q for q in q_name_keys for v in v_name_keys)
 
@@ -358,16 +350,13 @@ def _miss_line(query: str, profiles: dict[str, dict[str, Any]]) -> str:
         {
             slug
             for slug in all_dirs
-            if allow_partial_candidates and cq in canon(slug)
+            if cq in canon(slug)
             or (
                 slug in profiles
                 and (
-                    allow_partial_candidates
-                    and (
-                        cq in canon(profiles[slug].get("domain") or "")
-                        or any(cq in canon(a) for a in (profiles[slug].get("aliases") or []) if _is_domainish(a))
-                        or query.strip().lower() in str(profiles[slug].get("name") or "").lower()
-                    )
+                    cq in canon(profiles[slug].get("domain") or "")
+                    or any(cq in canon(a) for a in (profiles[slug].get("aliases") or []) if _is_domainish(a))
+                    or query.strip().lower() in str(profiles[slug].get("name") or "").lower()
                     or nameish_match(profiles[slug].get("name") or "")
                     or any(nameish_match(a) for a in (profiles[slug].get("aliases") or []) if not _is_domainish(a))
                 )

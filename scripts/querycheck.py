@@ -140,35 +140,36 @@ def main() -> None:
             fails.append(f"--strict: could not derive {missing} from TAXONOMIES.md — its table format changed?")
             tax_sets = None  # can't enum-check without the sets; structural pass still runs and reports
 
-        # FIELD_VERSIONS coverage: the dict in store.py must cover every grandfathered MINOR version SCHEMA names.
-        schema_path = os.path.join(ROOT, "SCHEMA.md")
-        gf_vers = _grandfathered_versions_from_schema(schema_path)
-        if gf_vers:
-            scripts_dir = os.path.dirname(os.path.abspath(__file__))
-            if scripts_dir not in sys.path:
-                sys.path.insert(0, scripts_dir)
-            try:
-                from store import FIELD_VERSIONS, name_key_collisions  # type: ignore[import]
-                fv_vers = set(FIELD_VERSIONS.values())
-                missing_vers = sorted(gf_vers - fv_vers)
-                if missing_vers:
-                    fails.append(
-                        f"FIELD_VERSIONS in store.py missing entries for schema versions {missing_vers}"
-                        f" — append to FIELD_VERSIONS after each MINOR no-backfill bump"
-                        f" (has: {sorted(fv_vers)}, needs: {sorted(gf_vers)})."
-                    )
-                collisions = name_key_collisions()
-                if collisions:
-                    rendered = "; ".join(
-                        f"{key}: {', '.join(f'{slug} ({surface})' for slug, surface in hits)}"
-                        for key, hits in collisions.items()
-                    )
-                    fails.append(
-                        "human-normalized name keys collide in store.py resolver"
-                        f" — lookup would be order-sensitive: {rendered}"
-                    )
-            except ImportError as e:
-                fails.append(f"FIELD_VERSIONS check: could not import store.py ({e}).")
+        # store.py resolver gates: import once, then check two independent invariants.
+        scripts_dir = os.path.dirname(os.path.abspath(__file__))
+        if scripts_dir not in sys.path:
+            sys.path.insert(0, scripts_dir)
+        try:
+            from store import FIELD_VERSIONS, name_key_collisions  # type: ignore[import]
+        except ImportError as e:
+            fails.append(f"store.py resolver checks: could not import store.py ({e}).")
+        else:
+            # FIELD_VERSIONS coverage: the dict must cover every grandfathered MINOR version SCHEMA names.
+            gf_vers = _grandfathered_versions_from_schema(os.path.join(ROOT, "SCHEMA.md"))
+            fv_vers = set(FIELD_VERSIONS.values())
+            missing_vers = sorted(gf_vers - fv_vers)
+            if missing_vers:
+                fails.append(
+                    f"FIELD_VERSIONS in store.py missing entries for schema versions {missing_vers}"
+                    f" — append to FIELD_VERSIONS after each MINOR no-backfill bump"
+                    f" (has: {sorted(fv_vers)}, needs: {sorted(gf_vers)})."
+                )
+            # Name-key collisions are independent of FIELD_VERSIONS — always check.
+            collisions = name_key_collisions()
+            if collisions:
+                rendered = "; ".join(
+                    f"{key}: {', '.join(f'{slug} ({surface})' for slug, surface in hits)}"
+                    for key, hits in collisions.items()
+                )
+                fails.append(
+                    "human-normalized name keys collide in store.py resolver"
+                    f" — lookup would be order-sensitive: {rendered}"
+                )
 
     cur_ver = current_schema_version(os.path.join(ROOT, "SCHEMA.md"))
     if cur_ver is None:
