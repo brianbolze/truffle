@@ -46,6 +46,11 @@ Standard envelope (`tool` / `source` / `captured_at` / `ok` / `input` / `schema_
   legit zero-responses still carry `search_metadata`. Only missing-both ⇒ exit 3.
 - **2026-06-10** — `advertisers[]` came back empty on domain searches in testing; the signal
   lives in `ad_creatives[]`. Advertiser identity rides each creative.
+- **2026-06-20** — `--region` is a **numeric Google geo-target ID**, not an ISO code: SerpAPI
+  400s on `region=US` ("Unsupported `US` region parameter."). The tool now maps the country
+  codes we use (US→2840, GB/UK→2826, CA→2124, AU→2036) and passes a numeric value through
+  as-is, so `--region US` works and any other region is reachable by its ID (full list:
+  serpapi.com/google-ads-transparency-center-regions). Unknown codes fail with a clear error.
 - **Recency rule of thumb for consumers:** treat "active" as any creative `last_shown` within
   ~35 days of `captured_at`; older-only creatives = "ran ads, not currently visible."
 

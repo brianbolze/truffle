@@ -40,6 +40,39 @@ PARSER_VERSION = "v1"
 API_KEY_VAR = "SERP_API_KEY"
 SERPAPI_BASE = "https://serpapi.com/search.json"
 
+# SerpAPI's google_ads_transparency_center `region` is a numeric Google geo-target ID,
+# NOT an ISO country code — passing "US" 400s ("Unsupported `US` region parameter."). Map
+# the codes we actually use to their IDs; a numeric value passes straight through, so any
+# region stays reachable without growing this table (full list:
+# serpapi.com/google-ads-transparency-center-regions).
+REGION_IDS: dict[str, str] = {
+    "US": "2840",
+    "GB": "2826",
+    "UK": "2826",
+    "CA": "2124",
+    "AU": "2036",
+}
+
+
+def resolve_region(region: str) -> str:
+    """Normalize a --region value to the numeric geo-target ID SerpAPI expects.
+
+    Country code (case-insensitive) → ID via REGION_IDS; an already-numeric value is trusted
+    as-is so the table need not enumerate every region. Unknown codes fail loudly here rather
+    than as an opaque 400 from SerpAPI.
+    """
+    normalized = region.strip().upper()
+    if normalized.isdigit():
+        return normalized
+    try:
+        return REGION_IDS[normalized]
+    except KeyError:
+        raise ValueError(
+            f"unsupported region {region!r}: pass a country code "
+            f"({', '.join(sorted(REGION_IDS))}) or a numeric Google geo-target ID "
+            f"(serpapi.com/google-ads-transparency-center-regions)"
+        ) from None
+
 
 def _utc_now() -> str:
     """This invocation's capture time — the envelope's `captured_at`, never a source date."""
@@ -60,7 +93,7 @@ def fetch(text: str, region: str | None) -> dict[str, Any]:
         "api_key": load_key(API_KEY_VAR),
     }
     if region:
-        params["region"] = region
+        params["region"] = resolve_region(region)
     url = f"{SERPAPI_BASE}?{urllib.parse.urlencode(params)}"
     with urllib.request.urlopen(url, timeout=90) as resp:
         return json.load(resp)
