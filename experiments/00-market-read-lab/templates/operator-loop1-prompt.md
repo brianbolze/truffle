@@ -17,6 +17,7 @@ Read:
 - `experiments/00-market-read-lab/templates/read.md`
 - `experiments/00-market-read-lab/templates/run-notes.md`
 - `experiments/00-market-read-lab/templates/receipt.md`
+- `experiments/00-market-read-lab/discovery-ledger.md`
 - `experiments/00-market-read-lab/triage.md`
 - the last 3 completed `run-notes.md` files, if any
 - the target run's `scout.md`
@@ -30,12 +31,14 @@ Then:
    - If `scout.md` lacks a filled `Selected Run Contract`, update only the
      `run-notes.md` header to `run_status: needs-human-review` and
      `termination_reason: failed-loop1-exit-check`, then stop.
-   - A filled contract has non-empty `selected_question`, `autonomous_eligible`,
-     `evidence_mode`, `approval_needed`, `allowed_sources`, `disallowed_actions`, and
-     `loop1_failure_mode`. Empty `allowed_sources: []` is not enough for Loop 1.
+   - A filled contract has non-empty `selected_question`, `question_mode`,
+     `builder_lens`, `autonomous_eligible`, `evidence_mode`, `reach_reason`,
+     `approval_needed`, `allowed_sources`, `disallowed_actions`, and
+     `loop1_failure_mode`. Empty
+     `allowed_sources: []` is not enough for Loop 1.
    - If `evidence_mode: bounded-live`, it must also have a filled `live_evidence_plan`
-     with `budget_class: light`, an evidence goal, allowed source families, disallowed
-     source families, and stop rules.
+     with `budget_class: light`, ceilings, an evidence goal, allowed source families,
+     disallowed source families, fail-closed conditions, and stop rules.
    - Treat the `Selected Run Contract` as canonical. If it conflicts with the candidate
      table, trust the contract.
 2. Check the contract before research:
@@ -48,6 +51,9 @@ Then:
      verify, date, or falsify a load-bearing claim.
    - For `bounded-live`, stop with `termination_reason: insufficient-evidence` rather
      than broadening into a crawl when the plan is not enough.
+   - For `bounded-live`, stop before exceeding any selected ceiling. The default light
+     ceiling is 2 source families, 6 outside sources read/captured, and 20 paid capture
+     credits unless Scout set a lower ceiling.
    - If the run needs live browsing outside a bounded plan, paid capture outside a
      bounded plan, broad external research, write-back, or reframing, update the header
      to `run_status: needs-human-review` and `termination_reason: blocked-by-approval`,
@@ -56,19 +62,24 @@ Then:
    then answer the selected question there. Keep State (captured facts), Signals
    (dated changes or indicators), and Judgments (market interpretation)
    distinguishable; label judgments and tie them back to the state/signals they rely on.
+   - Fill `Gap Map` even when the direct answer is strong. For `gap-probe` runs, a
+     clean gap map can be the main result.
 4. Treat any denominator or membership list as partial unless proven otherwise.
-5. Capture receipts for non-obvious inputs, derived lists, or operator observations.
+5. Preserve raw learning in `run-notes.md` `Discovery ledger` before compressing
+   anything into pressure tags or triage. Include observations, wishes, frictions,
+   surprises, source ideas, singletons, and mapped gaps with evidence pointers.
+6. Capture receipts for non-obvious inputs, derived lists, or operator observations.
    Use `templates/receipt.md` for new receipts. At minimum, each new receipt should
    record URL or local path, capture date or store clock, source type, source grade,
    source family, spend note, snippet-only status, and claim IDs supported.
    For `bounded-live`, also fill `run-notes.md` `live_evidence_used` for every
    outside source used.
-6. For current/news/policy/pricing claims, search snippets are direction-finding only.
+7. For current/news/policy/pricing claims, search snippets are direction-finding only.
    Receipts must record exact URLs, capture dates, source type, and whether each claim is
    primary or secondary before the read uses confident language.
-7. Fill the target run's `run-notes.md`, including `pressure_lenses_fired` and the
+8. Fill the target run's `run-notes.md`, including `pressure_lenses_fired` and the
    `Loop 1 exit check` section.
-8. Before finishing, run the mandatory exit check:
+9. Before finishing, run the mandatory exit check:
    - `run_status` was `scout-only` before Loop 1.
    - `Selected Run Contract` was present and consistent with the run header.
    - `autonomous_eligible: yes`.
@@ -82,16 +93,17 @@ Then:
    - No snippet was treated as evidence.
    - Current/news/pricing/policy claims carry capture dates and source grade.
    - Absence language says "not found", not "not true."
-9. Set final header:
+10. Set final header:
    - If every exit-check item passes, set `run_status: read-done` and
      `termination_reason: completed`.
    - If any item fails, set `run_status: needs-human-review` and
      `termination_reason: failed-loop1-exit-check`. Do not tell the operator to start
      Loop 2.
-10. Do not run Consumer Review or Developer Review yet.
-11. Do not implement, spike, or offer to implement system changes. Submit candidates
-    to `triage.md` / `run-notes.md` only.
-12. If `run_status: read-done`, end by telling the operator to start Loop 2 in a fresh
+11. Do not run Consumer Review or Developer Review yet.
+12. Do not implement, spike, or offer to implement system changes. Do not write
+    `triage.md` in Loop 1 unless the operator explicitly asked for it; keep raw
+    learning in the run Discovery ledger for Loop 2 to append to `discovery-ledger.md`.
+13. If `run_status: read-done`, end by telling the operator to start Loop 2 in a fresh
     session. Do not offer to run Loop 2 yourself.
 
 Important:
@@ -104,7 +116,7 @@ Important:
 - If `scout.md` does not contain a selected question, fail closed to
   `needs-human-review`; do not choose a question inside Loop 1.
 - If `bounded-live` is used without a plan, source grades, source-use log, receipts,
-  or stop-rule notes, fail closed to `needs-human-review`.
+  ceilings, or stop-rule notes, fail closed to `needs-human-review`.
 - If "no new primitive needed" is the honest result, say so.
 - Use `pressure_lenses_fired` for short `kebab-case` recurrence tags: denominator,
   source, capture, freshness, tooling, schema, or coverage pressure. These tags are

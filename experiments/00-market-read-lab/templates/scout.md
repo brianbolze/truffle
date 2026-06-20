@@ -9,9 +9,12 @@
 
 ## Candidate Questions
 
-| Question | Type | Autonomous eligible? | Evidence mode | Why this is worth a run | Trustworthy evidence would require | Failure mode to watch |
-|---|---|---|---|---|---|---|
-|  | market/system-test/mixed | yes/no | store-only/local-existing/bounded-live/live-external-needs-approval |  |  |  |
+Scout should select for reader value, reach, source-family diversity, and roadmap
+learning. Do not prefer a candidate merely because the store can already answer it.
+
+| Question | Mode | Autonomous eligible? | Evidence mode | Why this is worth a run | Builder lens / design test | What it reaches / probes | Trustworthy evidence would require | Failure mode to watch |
+|---|---|---|---|---|---|---|---|---|
+|  | value-read/gap-probe/calibration | yes/no | store-only/local-existing/bounded-live/live-external-needs-approval |  |  |  |  |  |
 
 ## Selected Question(s)
 
@@ -28,13 +31,16 @@ Loop 1 should trust this block.
 selected_question:
 selected_slug:          # 3-5 word kebab-case folder slug, e.g. telehealth-category-crowdedness
 run_type:              # market | system-test | mixed
+question_mode:         # value-read | gap-probe | calibration
 autonomous_eligible:   # yes | no
 evidence_mode:         # store-only | local-existing | bounded-live | live-external-needs-approval
 expected_denominator:
 likely_source_panel:
+builder_lens:
+reach_reason:
 allowed_sources: []
 disallowed_actions: []
-live_evidence_plan: null  # required only for bounded-live
+live_evidence_plan: null  # required only for bounded-live; include ceilings + fail-closed rules
 approval_needed:       # yes | no
 why_autonomous_safe:
 loop1_failure_mode:

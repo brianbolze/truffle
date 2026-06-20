@@ -18,6 +18,18 @@ pressure_lenses_fired: []  # short recurrence tags, not approvals
 
 Brief path taken.
 
+## Discovery ledger
+
+Greedy raw learning for this run. Preserve singletons here before triage compresses
+anything, then Loop 2 appends the useful rows to `discovery-ledger.md`. Do not merge
+rows, dedup into backlog items, or translate wishes into build proposals inside the run.
+
+Use short IDs such as `O1`, `W1`, `F1`, `S1`, or `G1` so reviews can cite them.
+
+| ID | Kind | Raw observation / wish / friction / surprise / gap | Evidence or pointer | Why it matters | Discovery clock |
+|---|---|---|---|---|---|
+|  | observation/wish/friction/surprise/source-idea/gap/value-miss |  |  |  | notice-only / recur-watch / ready-for-triage |
+
 ## Inputs and scope
 
 Store slices, queries, files, source panels, exclusions.
@@ -29,6 +41,10 @@ Required only for `bounded-live`; leave `null` for `store-only` and `local-exist
 ```yaml
 live_evidence_plan: null
 # For bounded-live, paste the selected Scout plan here.
+# Default light ceilings: 2 source families, 6 outside sources read/captured,
+# 20 paid capture credits. Lower if Scout set a tighter plan.
+# Fail closed before exceeding the ceiling, adding an unplanned source family,
+# broadening into search/crawl, or using login/paywalled/private sources.
 ```
 
 ## Live evidence used
@@ -51,6 +67,8 @@ live_evidence_used: []
 ## Friction log
 
 Repeated manual steps, took a long time, confusing paths, missing helpers, schema mismatches.
+Summarize the operational friction here after preserving concrete sightings in the
+Discovery ledger.
 
 ## Evidence limits
 
@@ -77,6 +95,8 @@ Record `pass` / `fail` for the mandatory exit check before setting final `run_st
 ## Surprises
 
 Anything unexpected after touching the data.
+Summarize the surprises here after preserving concrete sightings in the Discovery
+ledger.
 
 ## Pressure tags
 
@@ -104,11 +124,17 @@ Which tags fired, if any? Did this run need a new or clearer tag?
 |---|---|---|
 |  |  | no-op / watch for recurrence / submit triage candidate |
 
-## Triage submissions
+## Optional triage evidence
 
-Concrete proposed queue items, with priority/status suggestions.
+Normally none. Add only concrete backlog evidence, with priority/status suggestions,
+when the run has more than a raw singleton or when review adds evidence to an existing
+item. Keep this to 1-3 backlog-ready bullets plus pointers to the Discovery ledger,
+`discovery-ledger.md`, or run artifacts.
 
 **Do not implement, spike, or recommend immediate graduation from inside the run.**
+Raw learning belongs in the run Discovery ledger and `discovery-ledger.md`. Submit
+triage only when the run adds enough evidence for a stewarded backlog item or Evidence
+Log entry.
 
 ## Next-run advice
 

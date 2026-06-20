@@ -10,7 +10,10 @@ Run repeated market reads to learn which category / cohort / non-company primiti
 
 ## How It Works
 
-Market Read Lab is a file-backed research loop. It picks a market question, answers it from approved evidence, reviews whether the result was useful, and queues any system pressure it exposed.
+Market Read Lab is a file-backed research loop. It picks a market question, answers it
+or maps the gap from approved evidence, preserves raw learning in a cross-run discovery
+stream, reviews where Truffle helped or fell short, and queues only the system pressure
+that is mature enough for a backlog.
 
 The runner should stay boring. The repo holds the contract: templates, prompts, stage rules, and run artifacts.
 
@@ -30,8 +33,11 @@ Use `.claude/skills/market-read-lab/SKILL.md` and run the "Autonomous Full Cycle
 Each run moves through three gated work stages:
 
 1. **Scout** chooses a question and decides whether it is safe to run unattended.
-2. **Loop 1 / Read** answers the question, writes receipts, and passes only if the evidence checklist is clean.
-3. **Loop 2 / Review** reviews the read from consumer and developer lenses, then submits triage pressure when useful.
+2. **Loop 1 / Read** answers the question or maps the gap, writes receipts, preserves
+   raw observations in the run, and passes only if the evidence checklist is clean.
+3. **Loop 2 / Review** reviews the read from consumer and developer lenses, records
+   value shortfalls and capability gaps in the cross-run discovery ledger, then submits
+   triage pressure only when useful.
 
 Stages advance through the `run_status` header in `run-notes.md`. If the status is not the expected prior state, the stage stops. This makes double-fires, missed fires, and manual re-runs boring instead of dangerous.
 
@@ -48,12 +54,14 @@ Runs `000`-`002` were produced while the lab contract was still changing. Run `0
 
 | Stage | Job | Artifacts |
 |---|---|---|
-| **Scout** | Pick a useful market or system-test question and fill the Selected Run Contract. | `scout.md`, `run-notes.md` header |
-| **Loop 1 / Read** | Answer the selected question and capture the evidence trail. | `read.md`, `run-notes.md`, `receipts/` |
-| **Loop 2 / Review** | Split the result through Consumer and Developer lenses. | `consumer-review.md`, `developer-review.md`, optional `triage.md` Evidence Log entries |
+| **Scout** | Pick a useful market or system-test question for value + reach, including bounded gap-probes, and fill the Selected Run Contract. | `scout.md`, `run-notes.md` header |
+| **Loop 1 / Read** | Answer the selected question or map the gap, capture the evidence trail, and preserve raw observations before triage. | `read.md`, `run-notes.md`, `receipts/` |
+| **Loop 2 / Review** | Split the result through Consumer and Developer lenses: value frontier, shortfalls, and observed capability gaps before proposals. | `consumer-review.md`, `developer-review.md`, `run-notes.md`, `discovery-ledger.md`, optional `triage.md` Evidence Log entries |
+| **Discovery** | Keep the append-only notice-and-keep stream for raw learning and singletons. | `discovery-ledger.md` |
 | **Triage** | Keep a markdown backlog of system pressure. | `triage.md` |
 
-`triage.md`, `scout-context.md`, and prior `run-notes.md` feed the next Scout.
+`scout-context.md`, `discovery-ledger.md`, `triage.md`, and prior `run-notes.md` feed
+the next Scout.
 
 ## Folder Shape
 
@@ -61,6 +69,7 @@ Runs `000`-`002` were produced while the lab contract was still changing. Run `0
 experiments/00-market-read-lab/
   README.md
   scout-context.md
+  discovery-ledger.md
   triage.md
   templates/
   runs/
@@ -108,23 +117,33 @@ header, then stops. Loop 1 no-ops unless `run_status: scout-only`; it sets
 `run_status: reviewed`. Fail closed to `needs-human-review`.
 
 **Evidence modes**: Scout candidates must include `autonomous_eligible` and
-`evidence_mode`. The current question-selection bias lives in `scout-context.md`;
+`evidence_mode`. The current question-selection policy lives in `scout-context.md`;
 the README only defines the stable modes. `store-only` and `local-existing` use
 already-captured evidence. `bounded-live` requires a small planned source panel with
-`live_evidence_plan` and `live_evidence_used`. `live-external-needs-approval` is for
-broader or unclear live needs. `budget_class: light` means smallest useful source
-panel, not a census.
+`live_evidence_plan` and `live_evidence_used`; it is valid for reach and gap-probes
+when the stop rules are clear. `budget_class: light` means smallest useful source
+panel, not a census: default ceiling is 2 source families, 6 outside sources read or
+captured, and 20 paid capture credits. Stop as `insufficient-evidence` or
+`needs-human-review` before exceeding the plan. `live-external-needs-approval` is for
+broader, unclear, or ceiling-breaking live needs.
 
 **Source rigor**: for current/news/policy/pricing claims, snippets are
 direction-finding only. Receipts need exact URLs or local paths, capture dates or store
 clocks, source type, source grade, and claim IDs before synthesis uses confident
 language. Absence language says "not found", not "not true."
 
-**Triage boundary**: triage pressure, but do not auto-graduate engine artifacts.
-Loop agents may submit candidates or Evidence Log entries, but must not implement,
-spike, or offer to implement system changes. Loop 2 must never edit `Human Notes`
-sections in `triage.md`. `pressure_lenses_fired: []` is a greppable recurrence handle,
-not a fixed taxonomy or approval to build.
+**Discovery boundary**: each run keeps raw observations, wishes, frictions, surprises,
+source ideas, and gap findings in `run-notes.md`, then Loop 2 appends them to
+`discovery-ledger.md` before any triage compression. Singletons are valid learning.
+They do not need recurrence to be noticed.
+
+**Triage boundary**: triage is the downstream build-and-graduate clock, not the
+discovery stream. Loop agents may submit candidates or Evidence Log entries only when
+review adds evidence mature enough for the backlog; raw narrative detail stays in
+`discovery-ledger.md`. Loop agents must not implement, spike, or offer to implement
+system changes. Loop 2 must never edit `Human Notes` sections in `triage.md`.
+`pressure_lenses_fired: []` is a greppable recurrence handle, not a fixed taxonomy or
+approval to build.
 
 "No new primitive needed" is a valid outcome.
 

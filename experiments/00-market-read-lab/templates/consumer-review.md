@@ -1,8 +1,10 @@
 # Consumer Review
 
-Question: **Was the read itself valuable enough for a human or agent to trust, reuse, or act on?**
+Question: **Where did Truffle create reader value, and where did it fall short?**
 
-Start with the produced read: would a real Truffle consumer be glad it exists? Delighted by the result?
+Start with the produced read as a roadmap instrument: would a real Truffle consumer be
+glad it exists, and what did it teach about Truffle's value frontier? If Truffle added
+no value, say so plainly. A no-value-found run can be complete when it cleanly maps why.
 
 Truffle is the farm, not the chef: it should provide trustworthy company ingredients for human or downstream-system judgment. Use the diagnostics below after the verdict, not as boxes to fill.
 
@@ -10,8 +12,10 @@ Truffle is the farm, not the chef: it should provide trustworthy company ingredi
 
 - Valuable? Yes / partly / no:
 - Why:
+- Where Truffle added value:
+- Where Truffle added little or fell short:
 - What the consumer can do now:
-- What made it safer / better than generic Claude + web search:
+- What made it safer / better than generic Claude + web search, if anything:
 - Biggest limit:
 - Human follow-up needed:
 
@@ -25,6 +29,7 @@ Truffle is the farm, not the chef: it should provide trustworthy company ingredi
 | **Deep enough** | Covers the intended company/source set, not just plausible examples. |  |
 | **Fresh enough** | Capture dates, stale assumptions, or changed signals are visible where they matter. |  |
 | **Kept / reusable** | Leaves behind warm files, state, or receipts that make the next ask cheaper. |  |
+| **Shortfall mapped** | Names where Truffle could not support the answer: missing corpus, source family, grain, freshness, or denominator. |  |
 
 ## Job fit
 
@@ -45,8 +50,10 @@ Keep only the jobs this read actually served. Delete rows that do not apply.
 - **The Pantry / downstream system:** could another agent or product use the read as high-quality ingredients for its own judgments without re-browsing? It needs stable state, dated signals, visible freshness, rare evidence, and any Truffle-side judgments clearly labeled.
 - **First Contact:** would a new human or agent trust what happened?
 
-## Triage submissions
+## Optional triage evidence
 
 Submit queue candidates only when the review adds new evidence. No-op is acceptable.
+Raw value observations, misses, wishes, and singletons should first be preserved in
+`run-notes.md` Discovery ledger and `discovery-ledger.md`.
 
 **Do not graduate or implement system changes.**

@@ -19,10 +19,8 @@ Persist the **runs**, not the ontology.
 
 Pick one plain market-read question that clears two tests:
 
-1. **Value test:** is the answer, using Truffle's captured/cited ingredients,
-   materially better than what someone could get from generic Claude + web search?
-2. **Design test:** does the run reveal a real pressure point or gap in Truffle, or
-   teach us how to approach a bigger design / roadmap item?
+1. **Value / reach test:** would a real downstream reader care, and does the run test Truffle near the edge of its current substrate rather than only proving the store can answer? A good run may be a clean answer, a bounded gap-probe, or a calibration read that shows where Truffle added little.
+2. **Design test:** does the run reveal a real pressure point or gap in Truffle, or teach us how to approach a bigger design / roadmap item?
 
 The run can pass the design test by showing that no new primitive is needed.
 `query-time grouping is enough` is valid learning.
@@ -37,25 +35,27 @@ Before selecting, build a quick history map from prior **selected** questions:
 python3 .claude/skills/market-read-lab/scripts/question_history.py
 ```
 
-Use that map, the value jobs, and the design uncertainties below to generate 5-10
-candidates a real downstream reader would recognize. For each leading candidate, name:
+Use that map, the value jobs, and the design uncertainties below to generate 5-10 candidates a real downstream reader would recognize. Optimize the slate for reader value, reach, source-family diversity, and calibration against known blind spots. Do not optimize for store-answerability.
+
+For each leading candidate, name:
 
 - `value_job`: the Truffle job this serves.
-- `value_test`: why Truffle should beat generic Claude + web search here.
+- `question_mode`: `value-read | gap-probe | calibration`.
+- `value_test`: what value a good result would create, including cases where the value is mapping Truffle's shortfall.
 - `design_test`: what pressure, gap, or roadmap question this run tests.
+- `builder_lens`: the capability, ingredient, source family, grain, guardrail, or persistence boundary this run is expected to test.
 - `evidence_needed`: source ingredients required for a trustworthy answer.
 - `evidence_mode`: `store-only | local-existing | bounded-live | live-external-needs-approval`.
+- `reach_reason`: what this probes beyond the comfortable cached answer, if anything.
 - `false_confidence_trap`: how the read could overclaim.
 - `repeat_reason`: `new | recurrence | calibration`, and why that matters.
 
-After candidates exist, check `triage.md` and the last 3 completed `run-notes.md`
-only to annotate design pressure, sharpen evidence requirements, catch recent
-repeats, or reject candidates that merely execute a parked next step. A triage item
-can explain why a candidate teaches something; it should not supply the candidate.
+After candidates exist, check `triage.md` and the last 3 completed `run-notes.md` only to annotate design pressure, sharpen evidence requirements, catch recent repeats, or reject candidates that merely execute a parked next step. A triage item can explain why a candidate teaches something; it should not supply the candidate.
 
-Prefer questions with real reader value and experimental value. Repeat a recent
-question shape only when recurrence closes a design decision or tests a materially
-different source family, cohort boundary, or roadmap pressure.
+Prefer questions with real reader value and experimental value. Gap-probes are first-class when they have a bounded evidence plan and would expose a meaningful frontier: missing companies, missing source families, stale captures, weak denominators, unreachable proof, or a category surface the store cannot see.
+Do not select a pure reader-value question unless it also names the builder lens: which capability, ingredient, source family, grain, guardrail, or persistence boundary the run is expected to test.
+
+Repeat a recent question shape only when recurrence closes a design decision, tests a materially different source family, cohort boundary, or roadmap pressure, or calibrates whether an earlier store-only answer was a coverage artifact.
 
 ## Value Jobs
 
@@ -94,10 +94,19 @@ questions and not a queue.
 
 ## Evidence & Boundaries
 
-- Use `store-only` only when cached State is genuinely enough.
+- Use `store-only` when cached State is genuinely enough, or when the point is an
+  explicit calibration of what store-only can and cannot answer. Do not choose it just
+  because it is easy.
 - Use `bounded-live` when a small public source panel would materially improve the
-  read; include a filled `live_evidence_plan` with `budget_class: light`, allowed /
-  preferred / disallowed source families, and stop rules.
+  read or make a gap-probe honest; include a filled `live_evidence_plan` with
+  `budget_class: light`, ceilings, allowed / preferred / disallowed source families,
+  and stop rules.
+- `budget_class: light` default ceiling: at most 2 source families, 6 outside sources
+  read or captured, and 20 paid capture credits. A Scout may set a lower ceiling. A
+  higher ceiling means `live-external-needs-approval`.
+- Fail closed when the next useful step would exceed the ceiling, add an unplanned
+  source family, turn into broad search/crawl, require login/paywall/private data, or
+  make the question wider instead of verifying/falsifying the selected claim.
 - Use `live-external-needs-approval` when the needed panel is broad, unclear,
   login-gated, paywalled, private, or likely to sprawl.
 - Treat search/news snippets as leads. Current law, policy, pricing, partnership, or
@@ -110,6 +119,7 @@ questions and not a queue.
 
 - Selecting from a fixed question queue or prompt-menu examples.
 - Picking a question only because the store can answer it easily.
+- Rejecting a valuable gap-probe because the store is expected to fail.
 - Letting triage pressure originate questions instead of annotating reader-valued
   candidates.
 - Making completeness claims from partial source panels; say "not found," not "not
@@ -117,6 +127,8 @@ questions and not a queue.
 - Turning a query-time grouping into a durable category.
 - Treating `triage.md` as a question backlog. Candidate questions live in individual
   run `scout.md` files unless Brian explicitly creates a shared queue.
+- Sending raw singleton learning straight to `triage.md`; preserve it in
+  `discovery-ledger.md` first.
 
 ## Background Pointers
 

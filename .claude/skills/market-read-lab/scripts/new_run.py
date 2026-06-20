@@ -38,6 +38,17 @@ DEFAULT_BOUNDED_LIVE_STOP_WHEN = [
     "the remaining uncertainty is a framing judgment, not a sourcing gap",
     "sources conflict in a way that needs human interpretation",
 ]
+DEFAULT_BOUNDED_LIVE_CEILINGS = {
+    "source_families_max": 2,
+    "outside_sources_read_or_captured_max": 6,
+    "paid_capture_credits_max": 20,
+}
+DEFAULT_BOUNDED_LIVE_FAIL_CLOSED_WHEN = [
+    "the next useful step would exceed any selected ceiling",
+    "the next useful step needs an unplanned source family",
+    "the work is turning into broad search or crawling",
+    "the needed source is login-gated, paywalled, private, or unclear",
+]
 
 
 def find_repo_root() -> Path:
@@ -96,6 +107,11 @@ def format_live_evidence_plan(plan: dict[str, object] | None) -> str:
         f"  approved_by: {escape_yaml_string(str(plan['approved_by']))}",
         f"  approval_scope: {escape_yaml_string(str(plan['approval_scope']))}",
         f"  budget_class: {escape_yaml_string(str(plan['budget_class']))}",
+        "  ceilings:",
+        f"    source_families_max: {plan['ceilings']['source_families_max']}",
+        "    outside_sources_read_or_captured_max: "
+        f"{plan['ceilings']['outside_sources_read_or_captured_max']}",
+        f"    paid_capture_credits_max: {plan['ceilings']['paid_capture_credits_max']}",
         f"  review_after: {escape_yaml_string(str(plan['review_after']))}",
         f"  evidence_goal: {escape_yaml_string(str(plan['evidence_goal']))}",
     ]
@@ -103,6 +119,7 @@ def format_live_evidence_plan(plan: dict[str, object] | None) -> str:
         "source_families_allowed",
         "source_families_preferred",
         "source_families_disallowed",
+        "fail_closed_when",
         "stop_when",
     ):
         values = [str(value) for value in plan[key]]
@@ -128,17 +145,20 @@ def seeded_scout(
 
     if contract:
         table_row = (
-            f"| {escape_table_cell(question)} | {contract['run_type']} | yes | "
+            f"| {escape_table_cell(question)} | {contract['question_mode']} | yes | "
             f"{contract['evidence_mode']} | Selected by operator; see Selected Run Contract. | "
+            f"{escape_table_cell(str(contract['builder_lens']))} | "
+            f"{escape_table_cell(str(contract['reach_reason']))} | "
             f"Allowed sources: {escape_table_cell(', '.join(contract['allowed_sources']))} | "
             f"{escape_table_cell(str(contract['loop1_failure_mode']))} |"
         )
     else:
         table_row = (
-            f"| {escape_table_cell(question)} | mixed | yes/no | {EVIDENCE_MODE_HINT} | TODO | TODO | TODO |"
+            f"| {escape_table_cell(question)} | value-read/gap-probe/calibration | yes/no | "
+            f"{EVIDENCE_MODE_HINT} | TODO | TODO | TODO | TODO | TODO |"
         )
     scout = template.replace(
-        f"|  | market/system-test/mixed | yes/no | {EVIDENCE_MODE_HINT} |  |  |  |",
+        f"|  | value-read/gap-probe/calibration | yes/no | {EVIDENCE_MODE_HINT} |  |  |  |  |  |",
         table_row,
     )
     scout = scout.replace("1. \n\nThese may", f"1. {question}\n\nThese may", 1)
@@ -148,10 +168,13 @@ def seeded_scout(
     if contract:
         replacements = {
             "run_type:              # market | system-test | mixed": f"run_type: {contract['run_type']}",
+            "question_mode:         # value-read | gap-probe | calibration": f"question_mode: {contract['question_mode']}",
             "autonomous_eligible:   # yes | no": "autonomous_eligible: yes",
             "evidence_mode:         # store-only | local-existing | bounded-live | live-external-needs-approval": f"evidence_mode: {contract['evidence_mode']}",
             "expected_denominator:": f"expected_denominator: {escape_yaml_string(str(contract['expected_denominator']))}",
             "likely_source_panel:": f"likely_source_panel: {escape_yaml_string(str(contract['likely_source_panel']))}",
+            "builder_lens:": f"builder_lens: {escape_yaml_string(str(contract['builder_lens']))}",
+            "reach_reason:": f"reach_reason: {escape_yaml_string(str(contract['reach_reason']))}",
             "allowed_sources: []": f"allowed_sources: {format_yaml_list(contract['allowed_sources'])}",
             "disallowed_actions: []": f"disallowed_actions: {format_yaml_list(contract['disallowed_actions'])}",
             "live_evidence_plan: null  # required only for bounded-live": format_live_evidence_plan(contract.get("live_evidence_plan")),
@@ -205,6 +228,12 @@ def main() -> int:
     parser.add_argument("--date", help="Run date, YYYY-MM-DD. Defaults to today.")
     parser.add_argument("--run-type", choices=("market", "system-test", "mixed"), default="mixed")
     parser.add_argument(
+        "--question-mode",
+        choices=("value-read", "gap-probe", "calibration"),
+        default="value-read",
+        help="Selected question mode for contract-ready scaffolds.",
+    )
+    parser.add_argument(
         "--evidence-mode",
         choices=EVIDENCE_MODES,
         help="Required for --mode loop1.",
@@ -220,6 +249,14 @@ def main() -> int:
     )
     parser.add_argument("--why-autonomous-safe", help="Required for --mode loop1.")
     parser.add_argument("--loop1-failure-mode", help="Required for --mode loop1.")
+    parser.add_argument(
+        "--reach-reason",
+        help="What this question probes beyond the comfortable cached answer.",
+    )
+    parser.add_argument(
+        "--builder-lens",
+        help="Capability, ingredient, source family, grain, guardrail, or persistence boundary tested.",
+    )
     parser.add_argument("--live-evidence-goal", help="Required when --evidence-mode bounded-live.")
     parser.add_argument(
         "--source-family-allowed",
@@ -295,19 +332,24 @@ def main() -> int:
                 "approved_by": "Brian",
                 "approval_scope": "autonomous Market Read Lab runs",
                 "budget_class": "light",
+                "ceilings": DEFAULT_BOUNDED_LIVE_CEILINGS,
                 "review_after": "3 bounded-live runs",
                 "evidence_goal": args.live_evidence_goal,
                 "source_families_allowed": args.source_families_allowed,
                 "source_families_preferred": args.source_families_preferred or [],
                 "source_families_disallowed": args.source_families_disallowed
                 or DEFAULT_LIVE_SOURCE_FAMILIES_DISALLOWED,
+                "fail_closed_when": DEFAULT_BOUNDED_LIVE_FAIL_CLOSED_WHEN,
                 "stop_when": args.stop_when or DEFAULT_BOUNDED_LIVE_STOP_WHEN,
             }
         contract = {
             "run_type": args.run_type,
+            "question_mode": args.question_mode,
             "evidence_mode": args.evidence_mode,
             "expected_denominator": args.expected_denominator,
             "likely_source_panel": args.likely_source_panel or "Allowed sources only.",
+            "builder_lens": args.builder_lens or "Operator-selected contract-ready read.",
+            "reach_reason": args.reach_reason or "Operator-selected contract-ready read.",
             "allowed_sources": args.allowed_sources,
             "disallowed_actions": args.disallowed_actions or default_disallowed_actions(args.evidence_mode),
             "live_evidence_plan": live_evidence_plan,
