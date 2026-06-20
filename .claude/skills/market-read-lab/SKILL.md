@@ -17,6 +17,7 @@ needs. Persist the **runs**, not the ontology.
 ## Route
 
 - **Scaffold a run:** use `.claude/skills/market-read-lab/scripts/new_run.py`.
+- **Review selected-question history:** use `.claude/skills/market-read-lab/scripts/question_history.py`.
 - **Run Scout:** use `experiments/00-market-read-lab/templates/operator-scout-prompt.md`.
 - **Run Loop 1:** use `experiments/00-market-read-lab/templates/operator-loop1-prompt.md`.
 - **Run Loop 2:** use `experiments/00-market-read-lab/templates/operator-loop2-prompt.md`.
@@ -108,8 +109,11 @@ After scaffolding, report the created run path and the printed prompt.
 Run exactly one Scout -> Loop 1 -> Loop 2 cycle in the current routine/session.
 Use file gates between stages; do not hand off by updating scheduled tasks.
 
-1. Read the README, `scout-context.md`, `triage.md`, and the Scout/Loop 1/Loop 2
-   operator prompts.
+1. Read the README, `scout-context.md`, and the Scout/Loop 1/Loop 2 operator
+   prompts. Run `question_history.py` before Scout selection so prior
+   selected-question shapes inform the gap check. Treat `triage.md` and the last 3
+   completed `run-notes.md` as post-candidate pressure checks per
+   `scout-context.md`, not as question sources.
 2. Scaffold a temporary Scout run:
 
    ```bash

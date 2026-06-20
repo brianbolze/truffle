@@ -2,114 +2,129 @@
 
 **Status**: lightweight brief for autonomous Market Read Lab scouts.
 
-## Mission
+## What This Is
 
-Generate plain market-read questions a strategist or operator would recognize, then annotate what each question teaches Truffle about capture, structure, or source coverage. For now, go wide on **basic question types** before narrowing into lab-specific pressure tests. A useful downstream read is the reality check.
+Market Read Lab runs repeated market-read experiments before Truffle builds durable
+category/cohort machinery.
 
-System learning is the second layer, not the headline.
+Truffle is mostly company-keyed today: it can describe one company deeply, but real
+market work often needs cross-company context, source panels, category boundaries,
+relations, change signals, and non-company evidence. The lab answers useful market
+questions now, then uses the run history to learn what Truffle should capture, persist,
+defer, or explicitly not build.
 
-## Current Question Selection Policy
+Persist the **runs**, not the ontology.
 
-For the next few Scouts, bias toward questions **The Strategist** would ask before knowing Truffle's current system shape, and prefer a `bounded-live` selection when a light source panel would materially improve the answer. Do not start from "what can the store answer?" Start from "what would a senior creative / strategist want to know before making a positioning, offer, or market-entry call?"
+## Scout's Job
 
-Prefer questions that:
+Pick one plain market-read question that clears two tests:
 
-1. a strategist/operator would actually ask;
-2. need evidence the store alone does not already hold;
-3. can be answered with a light, bounded source panel;
-4. would teach Truffle something about source ingredients or market-read shape.
+1. **Value test:** is the answer, using Truffle's captured/cited ingredients,
+   materially better than what someone could get from generic Claude + web search?
+2. **Design test:** does the run reveal a real pressure point or gap in Truffle, or
+   teach us how to approach a bigger design / roadmap item?
 
-Do not choose `store-only` just because it is easiest to run unattended. Choose
-`store-only` when cached State is genuinely enough. Choose `bounded-live` when a
-small public source panel would materially improve the read. Choose
-`live-external-needs-approval` when the needed panel is broad, unclear, login-gated,
-or likely to sprawl.
+The run can pass the design test by showing that no new primitive is needed.
+`query-time grouping is enough` is valid learning.
 
-## Current Pressure Areas
+## Selection Process
 
-- **Neighborhood / relations:** nearby players, substitutes, competitors, parents, partners, suppliers, and similar companies.
-- **Membership / coverage:** who belongs, who is missing, who is candidate/out, and what source surfaces make that knowable.
-- **Pattern / differentiation:** offers, claims, pricing, UX, acquisition surfaces, and what is becoming normal or actually differentiated.
-- **Source ingredients:** which repeatable source surfaces make synthesis better: SERPs, listicles, ads, reviews/forums, regulatory surfaces, Wayback, relationship pages, marketplaces, and other source-of-truth pages.
-- **Grain / persistence:** what can stay query-time, what should be a durable evidence object, and what might eventually earn relation, membership, source-panel, or category/cohort State.
-- **Confidence / source-grain mismatch:** avoid false completeness when source surfaces have different grains, freshness, and coverage.
+Start with the market question, not triage closure.
 
-## Scout For
+Before selecting, build a quick history map from prior **selected** questions:
 
-- Market questions a real strategist, investor, operator, or researcher would actually ask.
-- A wide slate of basic question archetypes before narrow recurrence probes:
-  - **Company neighborhood:** who are X's closest competitors, substitutes, or peers?
-  - **Current change watch:** what launched, changed, shipped, or got announced recently?
-  - **Crowded categories:** which product, features, or offer areas are most saturated?
-  - **Pricing benchmark:** who is cheapest, most expensive, transparent, or gated?
-  - **Offer map:** who offers which products, formats, tiers, bundles, or care models?
-  - **Positioning / claims:** who leads with price, outcomes, trust, convenience, or identity?
-  - **Reputation / pain:** what customers complain about, praise, or distrust.
-  - **Backend dependency:** Parents, suppliers, or platforms. For telehealth - shared pharmacies, provider groups
-  - **Channel / access map:** (telehealth examples) cash-pay, insurance, membership, pharmacy, marketplace, or direct.
-- **System-test questions that pressure Truffle design:** query-time grouping, source ingredients, membership coverage, relation shape, source rigor, freshness, entity resolution, capture grain, or persistence boundaries.
-- Questions that may reveal an opportunity for a better source ingredient, even if the current store cannot fully answer them unattended. Prefer cheap / free sources, but don't exclude ideas for where some proprietary / paid sources would be helpful.
-- Questions likely to produce evidence, recurrence, surprise, or **quick-win opportunities**, not broad opinions.
-- **Strategist-native question shapes**, even when Truffle cannot answer them yet:
-  - **Whitespace / sameness:** what is everyone saying or showing, and where is there real room to sound different?
-  - **Audience / identity:** who is each brand really speaking to, and which customer identity is underserved?
-  - **Promise / proof:** what outcomes are promised, what proof is offered, and which claims feel unsupported?
-  - **Trust / risk reversal:** who earns trust fastest, what trust devices do they use, and what objections remain unhandled?
-  - **Offer packaging:** what would a buyer think they are buying, what bundles/ladders are table stakes, and what feels confusing?
-  - **Creative inputs:** what exact phrases, visuals, proof points, and price anchors would go into a five-second brief?
-  - **Channel / acquisition surface:** what do paid ads, affiliates, listicles, creators, SEO pages, and social posts reveal that owned sites do not?
-  - **Customer pain / objection mining:** what do reviews, forums, Reddit, Trustpilot, or comments say people praise, distrust, or regret?
-  - **Launch / market-entry read:** if a new entrant launched tomorrow, what should it copy, avoid, or attack?
-  - **Competitor narrative:** who is framed as the default, challenger, premium clinic, cheap access point, or trust leader?
+```bash
+python3 .claude/skills/market-read-lab/scripts/question_history.py
+```
 
-## Strategist Seed Questions
+Use that map, the value jobs, and the design uncertainties below to generate 5-10
+candidates a real downstream reader would recognize. For each leading candidate, name:
 
-Use these as inspiration, not a fixed queue. Prefer plain-language market reads over system probes.
+- `value_job`: the Truffle job this serves.
+- `value_test`: why Truffle should beat generic Claude + web search here.
+- `design_test`: what pressure, gap, or roadmap question this run tests.
+- `evidence_needed`: source ingredients required for a trustworthy answer.
+- `evidence_mode`: `store-only | local-existing | bounded-live | live-external-needs-approval`.
+- `false_confidence_trap`: how the read could overclaim.
+- `repeat_reason`: `new | recurrence | calibration`, and why that matters.
 
-- **Where is the sameness?** In GLP-1, TRT, longevity/NAD, or sexual health, what claims, visuals, offer structures, and trust devices have become table stakes, and where is there actual white space?
-- **Who is winning trust fastest?** Which brands make a skeptical buyer feel safest in the first 30 seconds, and what proof, clinician presence, guarantees, pricing, reviews, or regulatory language do they use?
-- **What would a creative director steal?** Across a category, which exact phrases, hero claims, price anchors, visuals, and offer bundles are worth putting into a five-second brief?
-- **What would a new entrant avoid?** Which positioning lanes are overcrowded, confusing, risky, or undifferentiated?
-- **Who owns which buyer identity?** Which brands speak to optimization, shame-free access, clinical seriousness, masculinity, convenience, affordability, luxury, or longevity status?
-- **What is the trust gap?** What objections show up in customer reviews/forums/comments, and which brands answer them on owned pages vs leave them exposed?
-- **Where is the channel story different from the website story?** What do ads, affiliates, listicles, SEO pages, creator content, or social comments emphasize that owned pages do not?
-- **Who is considered the default?** In third-party surfaces, which brands are repeatedly named as best, cheapest, premium, safest, or most controversial, and how does that differ from the store's captured universe?
-- **What is the offer ladder?** What does each brand use as the entry offer, upsell, bundle, subscription, lab/intake anchor, or continuity mechanism?
-- **What changed recently enough to matter?** What launches, pricing shifts, regulatory moves, partnerships, or new claims would invalidate a cached strategic read?
+After candidates exist, check `triage.md` and the last 3 completed `run-notes.md`
+only to annotate design pressure, sharpen evidence requirements, catch recent
+repeats, or reject candidates that merely execute a parked next step. A triage item
+can explain why a candidate teaches something; it should not supply the candidate.
 
-## Autonomy Rules
+Prefer questions with real reader value and experimental value. Repeat a recent
+question shape only when recurrence closes a design decision or tests a materially
+different source family, cohort boundary, or roadmap pressure.
 
-- Mark every candidate with `autonomous_eligible: yes/no`.
-- Mark every candidate with `evidence_mode: store-only | local-existing | bounded-live | live-external-needs-approval`.
-- Bounded-live is allowed only with `budget_class: light`, a named evidence goal,
-  allowed/preferred source families, disallowed families, and stop rules.
-- Broad news research, broad crawling, login-only/paywalled sources, private data, and
-  live work without a bounded plan need explicit approval before Loop 1 acts.
-- Search/news snippets are "signals", not conclusive, reliable evidence in isolation. Current law, policy, pricing, or partnership claims require primary URLs, capture dates, and source type.
-- Downstream consumers may layer in project-specific context, fields, detail, and judgments. The lab should surface useful candidates and caveats, not write those judgments for them.
+## Value Jobs
+
+Use these labels from the Value & Jobs-to-be-Done doc:
+
+- **Make AI safe to delegate to:** grounded, cited ingredients instead of invented
+  inputs.
+- **Cold-start a company:** instant cited profile for an unfamiliar company.
+- **Compare a whole field:** cited cross-brand synthesis without hand-collating tabs.
+- **Build on top without re-capturing:** stable State for downstream systems.
+- **Trust the cache over time:** detect what changed since last look.
+- **Hand off something useful in five seconds:** brief-ready language, pricing, proof,
+  or whitespace.
+
+## Design Uncertainties
+
+Use these labels to explain what the run teaches Truffle. They are not a taxonomy of
+questions and not a queue.
+
+- **Boundary / membership:** who belongs, who is missing, who is candidate/out, and
+  what source surfaces make that knowable.
+- **Relations / neighborhood:** competitors, substitutes, parents, partners,
+  suppliers, similar companies, and their evidence bars.
+- **Source panel:** which repeatable sources define or improve the read: SERPs,
+  listicles, ads, reviews/forums, regulatory surfaces, Wayback, relationship pages,
+  marketplaces, or other source-of-truth pages.
+- **Pattern extraction:** offers, claims, pricing, UX, acquisition surfaces, and what
+  is normal vs differentiated.
+- **Change pulse / freshness:** launches, pricing shifts, policy changes, partnerships,
+  or stale cached fields that could invalidate a read.
+- **Persistence boundary:** what can stay query-time, what deserves durable evidence,
+  and what might eventually earn relation, membership, source-panel, or category/cohort
+  State.
+- **Confidence / source grain:** avoid false completeness when sources have different
+  grains, freshness, and coverage.
+
+## Evidence & Boundaries
+
+- Use `store-only` only when cached State is genuinely enough.
+- Use `bounded-live` when a small public source panel would materially improve the
+  read; include a filled `live_evidence_plan` with `budget_class: light`, allowed /
+  preferred / disallowed source families, and stop rules.
+- Use `live-external-needs-approval` when the needed panel is broad, unclear,
+  login-gated, paywalled, private, or likely to sprawl.
+- Treat search/news snippets as leads. Current law, policy, pricing, partnership, or
+  news claims need primary URLs, capture dates, and source type before confident
+  language.
+- Do not mutate `store/`, write back to project systems, create durable primitives,
+  or graduate triage items.
 
 ## Avoid
 
-- Auto-graduating triage items.
-- Making completeness claims from one / limited sources.
-- Treating one sighting as sufficient for system changes / infrastructure.
-- Letting triage pressure crowd out straightforward market questions.
-- Treating `triage.md` as a question backlog. It is primarily for system gaps / system pressure.
+- Selecting from a fixed question queue or prompt-menu examples.
+- Picking a question only because the store can answer it easily.
+- Letting triage pressure originate questions instead of annotating reader-valued
+  candidates.
+- Making completeness claims from partial source panels; say "not found," not "not
+  there."
 - Turning a query-time grouping into a durable category.
-- Reusing prior run methods as defaults instead of hypotheses / experiments.
-- Starting with internal architecture jargon when a normal operator question would suffice.
-
-## Question Memory
-
-- There is no shared persistent question queue yet.
-- Candidate questions live in individual run `scout.md` files.
-- `triage.md` is for system pressure and conventions, not "questions to run someday."
-- Future Scouts may mine prior Scout files for inspiration, but should not treat old candidate lists as canonical.
-- If question volume becomes hard to track, add a separate `questions.md` only by explicit decision; do not overload triage.
+- Treating `triage.md` as a question backlog. Candidate questions live in individual
+  run `scout.md` files unless Brian explicitly creates a shared queue.
 
 ## Background Pointers
 
-- Live memory: `triage.md` and the last 3 completed `run-notes.md` files.
+- Lab contract: `experiments/00-market-read-lab/README.md`.
 - Design intent: `_design/cohorts-categories/2026-06-19-market-read-lab-proposal.md`.
-- Bounded-live convention: `experiments/00-market-read-lab/_design/2026-06-19-bounded-live-evidence-proposal.md`.
-- Deep background only when needed: `_design/cohorts-categories/2026-06-18-wallow.md`.
+- Deep background: `_design/cohorts-categories/2026-06-18-wallow.md`.
+- Bounded-live convention:
+  `experiments/00-market-read-lab/_design/2026-06-19-bounded-live-evidence-proposal.md`.
+- Value frame: Notion page `Value & Jobs-to-be-Done`.
+- Post-candidate pressure check: `triage.md` and the last 3 completed
+  `run-notes.md` files.

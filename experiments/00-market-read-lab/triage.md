@@ -166,14 +166,14 @@ linked_items:
 
 ```yaml
 id: MRL-005
-title: Named-counterparty relation edge - hold for recurrence
+title: Named-counterparty relation edge - hold for passive recurrence
 priority: P3
 status: Submitted
 created_from_run: runs/001-2026-06-19-mens-health-backend-relations
 created_from_review: run-notes; Loop 2 developer review (Founder + Steward)
 area: relations
 evidence_summary: Across 18 men-led/hormone telehealth brands, named pharmacy/clinical counterparties already resolve to store profiles, so a brand-to-backend edge could join cleanly and supplier concentration is a useful market read. But named counterparties were the minority, the claims are contaminated by ambiguous possessive language, and existing parent/owns plus pharmacy_model already cover the cleaner relation cases.
-proposed_next_step: Hold. Re-test on a backend-naming-dense cohort such as compounding-heavy GLP-1 before graduating. If it later graduates, implement only as joinable dotted-domain frontmatter mirroring parent/owns, not a new edge table or relation-type registry. MRL-006 remains the capture-grain prerequisite.
+proposed_next_step: Hold as a passive evidence condition, not a queued run. If a future reader-valued relation-shaped market read independently lands on a backend-naming-dense cohort, use it to reassess whether named counterparties deserve joinable capture. If it later graduates, implement only as joinable dotted-domain frontmatter mirroring parent/owns, not a new edge table or relation-type registry. MRL-006 remains the capture-grain prerequisite.
 linked_items:
   - runs/001-2026-06-19-mens-health-backend-relations/receipts/backend-relations-worksheet.md
   - MRL-006
