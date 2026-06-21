@@ -1,103 +1,92 @@
 ---
 # Query contract for this store: ../../QUERYING.md — parse frontmatter; grep the body to locate.
 schema_version: "1.2"
-domain: rugiet.com          # company key; each offering's slug (its relative url) is its key *within* Rugiet
-captured_at: 2026-06-07     # own freshness; captures/2026-06-07/ holds the source pages
-enumeration: indexed-complete   # all 4 category lines rostered at SKU grain from /all-treatments + per-category hubs, cross-checked vs /map
-site_notes: "Catalog enumerated from /all-treatments + the /sex and /testosterone hubs (Next.js/Sanity SPA; no CMS REST backend). ALL commerce is on the start.rugiet.com quiz funnel — product PDPs carry NO price. The only public numbers: Ready's per-dose pricing lives ONLY on the /trimix SEM lander ($14–24/dose by strength, packs of 6); the TRT line shows '$69 lab + from $139/month' flat on the hub/PDP FAQs. The `-lander` SEM pages (go-long-lander, daily-boost-lander, recharge-lander) do NOT expose pricing. `/trimix` is a Rugiet Ready landing page, not a Trimix product — Rugiet sells no trimix. Promos rotate (15% off Ready, 'buy 2 months get 1 free') — prices are point-in-time."
+domain: rugiet.com          # company key; each offering's slug is its key within Rugiet
+captured_at: 2026-06-21     # own freshness; captures/2026-06-21/ holds the source pages
+enumeration: indexed-complete
+site_notes: "Catalog enumerated from /all-treatments, /sex, /testosterone, /longevity, homepage links, and current PDP recommendation links. Longevity is new vs 2026-06-07 and adds NAD+, Sermorelin, L-Carnitine, Lipo-C, Glutathione. Oral TRT is not on /all-treatments but is still linked from current PDP recommendation cards, so it remains rostered. Prices remain quiz-gated except Ready and TRT: Ready public prices live on /bm/n1/shopping and /trimix; TRT public price is $69 initial labs/evaluation + plans starting at $139/month. Cost articles are comparative/general, not Rugiet price sheets."
 ---
 
 ## Portfolio overview
 
-Rugiet is **Multi-product** but **heavily ED-anchored** — four co-equal category lines (**Sexual Performance, Testosterone, Sleep, Weight**), with the 3-in-1 ED troche **Ready™** as the clear flagship. **Ten buyable SKUs**, and the defining shape finding: **almost the entire catalog is compounded multi-drug formulation** — only **injectable testosterone cypionate** is FDA-approved. Each compounded SKU carries the *"compounded drugs are not approved by FDA"* disclaimer; the three TRT replacement forms add the controlled-substance disclaimer.
+Rugiet is **Multi-product** and now broader than the prior capture: **15 buyable SKUs** across Sexual Performance, Testosterone, Sleep, Longevity, and Weight, with Hair folded into the Grower ED+hair combo. Ready is still the flagship [HIGH] — homepage hero, best-seller labeling, top catalog position, SEM landers, and public price anchors all point there. Longevity is the meaningful new line [HIGH] because it appears in the top nav and has its own hub plus five PDPs.
 
-**Visibility rule (stated once, applied to every row).** Rugiet runs a **price-gated funnel**: numbers live behind the start.rugiet.com intake quiz, not on the PDPs.
-- **`published`** — a real entry number is shown somewhere public. Hits only **Ready** (per-dose pricing, but *only* on the `/trimix` lander — see the deep block) and the **four TRT forms** (a single flat *"from $139/month"* + a *"$69"* lab fee, shown in the /testosterone and TRT-PDP FAQs).
-- **`on-request`** — **no price anywhere public**; you must finish the quiz to see it. Hits **Go Long, Daily Boost, Grower, Recharge, Weigh In** — and even Ready's main PDP (its number is recoverable only from the lander).
+**Visibility rule.** Rugiet still gates most all-in pricing behind the intake funnel. Only two price surfaces are public:
+- **Ready:** `/bm/n1/shopping` publishes **"Buy Now - $139"** and **"Subscribe $79/mo (40% off)"**; `/trimix` publishes a **"$10/dose"** floor plus strength ladder.
+- **TRT:** captured pages publish **"$69"** initial labs/evaluation and plans starting at **"$139/month"**, with labs/monitoring included.
 
-So the pricing shape is **two patterns**: the **TRT line is one flat all-inclusive price** ($139/mo, every medication, labs + follow-ups included), and **everything else is quiz-gated**, with the flagship's per-dose price surfacing only on a paid-search lander.
-
-**Prominence (calibrated).**
-- **Ready is the lead, by a wide margin [HIGH]** — the homepage hero, the **"Best Seller"** badge, the only product with a (semi-)public price, the first card on every category surface, and the target of the brand's SEM spend (the `/trimix` lander + the "2 months free" / "15% off" promo rail all push Ready).
-- **Company-stamped badges [HIGH] (within-line):** Ready = **"Best Seller"**; Go Long = **"Popular."**
-- **Catalog order [MED]:** /all-treatments runs **Sexual Performance → Testosterone → Sleep, Weight & Hair** — sexual performance first and deepest (4 SKUs), TRT second (4 forms), sleep/weight/hair last (1 each).
-- **Hair has no line of its own [MED]** — the footer "Hair" link points to **Grower**, an ED+hair combo filed under sexual performance.
+Everything else is `on-request`: no public Rugiet-specific price on the PDPs, landers, or current cost articles.
 
 ## Roster
 
-Complete at the indexed level (Rugiet's own product cards) across all four lines. Price quoted verbatim with its on-page markers; **molecule/form page-attested only** (never inferred from a name — see the molecule audit under Verbatim anchors). A slug here is an attested URL from a captured page.
+Complete at the indexed level across current product cards, current PDP links, and the Longevity hub. Price quoted verbatim with the page where it appears; molecule/form is page-attested only.
 
 | Offering | Kind | Parent | Slug | Price (verbatim) | Visibility | What (molecule · form · access) |
 |---|---|---|---|---|---|---|
-| **Sexual Performance** | family | — | `/sex` | — | — | ED + premature-ejaculation Rx + an ED/hair combo; compounded, async intake, self-contained subscriptions. |
-| Ready™ | buyable | Sexual Performance | `/erectile-dysfunction/ready` | `Low Strength:$14/dose` · `Medium Strength:$17/dose` · `High Strength:$20/dose` · `Max Strength:$24/dose` ("as low as about $10 per dose"; packs of 6) | published | sildenafil + tadalafil + apomorphine · sublingual troche, as-needed · compounded; **price shown only on the `/trimix` lander, not this PDP**. "Best Seller," product rating 4.3 (1,208). |
-| Go Long | buyable | Sexual Performance | `/premature-ejaculation/go-long` | (no price on page — quiz-gated) | on-request | paroxetine + tadalafil · oral · compounded; 2-in-1 premature-ejaculation + ED. "Popular." |
-| Daily Boost | buyable | Sexual Performance | `/erectile-dysfunction/boost` | (no price on page — quiz-gated) | on-request | tadalafil + DHEA · oral, daily · compounded; daily ED + testosterone support. |
-| Grower | buyable | Sexual Performance | `/erectile-dysfunction/grower` | (no price on page — quiz-gated) | on-request | tadalafil + minoxidil · oral, daily · compounded; 2-in-1 ED + hair growth (the footer "Hair" line). |
-| **Testosterone (TRT)** | family | — | `/testosterone` | — | — | Four forms at **one flat all-inclusive price**; labs required; live audio-video consult (controlled substances, except enclomiphene). |
-| Enclomiphene | buyable | Testosterone | `/testosterone/enclomiphene` | `Plans start at just $139/month` (+ `$69` lab) | published | enclomiphene · oral, daily · compounded; needle-free, fertility-preserving; **not scheduled**; labs required. |
-| Injectable TRT | buyable | Testosterone | `/testosterone/injectable-trt` | `Plans start as low as $139/month` (+ `$69` lab) | published | testosterone cypionate · injection, 1–2×/week · **FDA-approved controlled substance**; live video consult; labs required. |
-| Topical TRT | buyable | Testosterone | `/testosterone/topical-trt` | `from $139/month` (+ `$69` lab) | published | testosterone · daily cream · **compounded controlled substance**; live video consult; labs required. |
-| Oral TRT | buyable | Testosterone | `/testosterone/oral-trt` | `from $139/month` (+ `$69` lab) | published | testosterone · oral · **compounded controlled substance**; live video consult; labs required. |
-| **Recharge** | buyable | Sleep | `/sleep/recharge` | (no price on page — quiz-gated) | on-request | ramelteon (+ 2 ingredients not named) · oral, nightly · compounded; "3-in-1" sleep Rx, "up to 17× stronger than melatonin." |
-| **Weigh In** | buyable | Weight | `/weight-loss/weigh-in` | (no price on page — quiz-gated) | on-request | bupropion + naltrexone + metformin · oral, daily · compounded; **not a GLP-1** — a personalized oral metabolic stack. |
+| **Sexual Performance** | family | — | `/sex` | — | — | ED, premature-ejaculation, daily ED/testosterone support, and ED/hair combo; mostly compounded prescriptions through online intake. |
+| Ready | buyable | Sexual Performance | `/erectile-dysfunction/ready` | `Buy Now - $139` · `Subscribe $79/mo (40% off)` · `Starts as low as $10/dose*` · `Low Strength:$14/dose` · `Medium Strength:$17/dose` · `High Strength:$20/dose` · `Max Strength:$24/dose` | published | sildenafil + tadalafil + apomorphine · sublingual troche, as-needed · compounded; public price appears on `/bm/n1/shopping` and `/trimix`, not the main PDP. |
+| Go Long | buyable | Sexual Performance | `/premature-ejaculation/go-long` | (no price on page or captured landers — quiz-gated) | on-request | paroxetine + tadalafil · oral dissolving tablet · compounded; 2-in-1 premature-ejaculation + ED. |
+| Daily Boost | buyable | Sexual Performance | `/erectile-dysfunction/boost` | (no price on page or captured lander — quiz-gated) | on-request | tadalafil + DHEA · daily chewable · compounded; daily ED + testosterone support. |
+| Grower | buyable | Sexual Performance / Hair | `/erectile-dysfunction/grower` | (no price on page — quiz-gated) | on-request | tadalafil + minoxidil · daily pill · compounded; ED + hair growth. |
+| **Testosterone (TRT)** | family | — | `/testosterone` | — | — | Four forms at one flat plan price; labs and monitoring included once on treatment; current pages carry controlled-substance/live-video language for TRT forms and enclomiphene. |
+| Enclomiphene | buyable | Testosterone (TRT) | `/testosterone/enclomiphene` | `$69 gets you accurate testosterone testing` · `Plans start at just $139/month` | published | enclomiphene · daily oral tablet · compounded; fertility-preserving testosterone support. |
+| Injectable TRT | buyable | Testosterone (TRT) | `/testosterone/injectable-trt` | `$69 gets you accurate testosterone testing` · `Plans start as low as $139/month` | published | testosterone cypionate · injection 1-2x/week · controlled-substance prescription; page does not carry the compounded disclaimer. |
+| Topical TRT | buyable | Testosterone (TRT) | `/testosterone/topical-trt` | `$69` lab/evaluation · `Plans start as low as $139/month` | published | testosterone · daily cream · compounded controlled-substance prescription. |
+| Oral TRT | buyable | Testosterone (TRT) | `/testosterone/oral-trt` | `$69` lab/evaluation · `Plans start as low as $139/month` | published | testosterone · daily capsule / oral TRT · compounded controlled-substance prescription. |
+| **Recharge** | buyable | Sleep | `/sleep/recharge` | (no price on page or captured lander — quiz-gated) | on-request | ramelteon + doxylamine + valerian root · oral sleep Rx · compounded, non-controlled sleep treatment. |
+| **Longevity** | family | — | `/longevity` | — | — | Five personalized longevity treatments; public pages show forms/benefits but no Rugiet-specific price. |
+| NAD+ | buyable | Longevity | `/longevity/nad` | (no Rugiet-specific price on page or cost article — quiz-gated) | on-request | NAD+ · nasal spray or subcutaneous injection · compounded prescription. |
+| Sermorelin | buyable | Longevity | `/longevity/sermorelin` | (no Rugiet-specific price on page or cost article — quiz-gated) | on-request | sermorelin · subcutaneous injection 5x/week at bedtime · compounded peptide prescription. |
+| L-Carnitine | buyable | Longevity | `/longevity/l-carnitine` | (no Rugiet-specific price on page or cost article — quiz-gated) | on-request | L-carnitine · subcutaneous injection 2-3x/week · prescription; page carries controlled-substance/live-video language. |
+| Lipo-C | buyable | Longevity | `/longevity/lipo-c` | (no Rugiet-specific price on page or cost article — quiz-gated) | on-request | methionine + inositol + choline + vitamin B5 + vitamin C · injection typically 1-2x/week · compounded prescription. |
+| Glutathione | buyable | Longevity | `/longevity/glutathione` | (no Rugiet-specific price on page or cost article — quiz-gated) | on-request | glutathione · subcutaneous injection multiple times per week · compounded prescription. |
+| **Weigh In** | buyable | Weight | `/weight-loss/weigh-in` | (no price on page — quiz-gated) | on-request | bupropion + naltrexone + metformin · daily oral medication stack · compounded; non-GLP-1 weight treatment. |
 
 ### Verbatim anchors
 
-The footnotes the Price column points at, plus the molecule/form audit. Quoted exactly from the captured pages.
-
-- **Ready price lives on the `/trimix` lander, not the PDP (the misattribution trap):** the `/erectile-dysfunction/ready` PDP shows **no price**; the only public numbers are on `/trimix` (a Rugiet Ready SEM lander) — *"Standard pricing for doses is: Low Strength:$14/dose … Medium Strength:$17/dose … High Strength:$20/dose … Max Strength:$24/dose,"* with *"doses starting as low as about $10 per dose. Each strength comes in a pack that contains 6 doses"* and *"Price shown with 3 month shipping option."* So Ready is **`published`** — but the price is cited to `/trimix`, not the PDP it describes.
-- **TRT flat pricing (all four forms → `published`):** *"Plans start at just $139/month"* (`/testosterone` + `/testosterone/injectable-trt` FAQ; injectable phrases it *"Plans start as low as $139/month"*) and *"$69 gets you accurate testosterone testing and a video call with a licensed physician"* (`/testosterone/injectable-trt`). The line is sold as *"One flat price, every medication … No games, no tiered pricing schemes,"* with *"ongoing lab fees included in plan."*
-- **Molecule sourcing (page-attested-only, audited):**
-  - **Ready → sildenafil + tadalafil + apomorphine** (`/erectile-dysfunction/ready`: *"combines three proven medications (Sildenafil, Tadalafil and Apomorphine)"*; the `/trimix` lander repeats *"a combination of three ED medications - sildenafil, tadalafil, and apomorphine"*). *(Note: the Ready PDP's "Tadalafil" caption contains a stray phrase "as paroxetine moderates the arousal signal" — a copy-paste leak from Go Long; Ready's attested molecules are the three above, no paroxetine.)*
-  - **Go Long → paroxetine + tadalafil** (`/premature-ejaculation/go-long`, which carries a *"What is paroxetine?"* section).
-  - **Daily Boost → tadalafil + DHEA** (`/erectile-dysfunction/boost`; the /sex FAQ: *"Daily Boost provides consistent erection support plus DHEA to support testosterone production"*).
-  - **Grower → tadalafil + minoxidil** (the /sex FAQ: *"Grower combines tadalafil with minoxidil for a 2-in-1 solution"*; `/erectile-dysfunction/grower` foregrounds minoxidil + tadalafil).
-  - **Injectable TRT → testosterone cypionate** (`/testosterone/injectable-trt`: *"Testosterone cypionate that helps replace what your body's no longer producing"*). **Topical / Oral TRT → "testosterone"** only — the pages name the form (cream / oral) and the controlled-substance + compounded status but **don't specify the ester**, so recorded "testosterone," not inferred.
-  - **Recharge → ramelteon** (`/sleep/recharge`: *"Recharge contains ramelteon… up to 17x the potency of melatonin"*); described as a 3-in-1 of "three ingredients" but **only ramelteon is named** → the other two are "not stated."
-  - **Weigh In → bupropion + naltrexone + metformin** (`/weight-loss/weigh-in`: *"bupropion and naltrexone are used together to help reduce appetite and curb cravings, while metformin helps regulate blood sugar"*; Quick Facts: *"Bupropion, naltrexone, and metformin"*).
-- **Compounded vs FDA-approved (the lane split):** every SKU except injectable TRT carries *"[Product] is a compounded drug product… Compounded drugs are not approved by FDA."* **Injectable TRT carries the controlled-substance disclaimer but NOT the compounded one** → it is the lone FDA-approved item (testosterone cypionate). Topical and Oral TRT carry **both** disclaimers (*"a compounded drug product, and controlled substance"*).
+- **Ready price, current paid/shopping path:** `/bm/n1/shopping` says **"Buy Now - $139"** and **"Subscribe $79/mo (40% off)"**, with the same note: **"Price shown with 3 month shipping option."** `/bm/n1` also says Ready starts **"at about $7 per dose"** but points to the online checkout; the more concrete shopping-card price is the stronger anchor.
+- **Ready dose ladder, `/trimix`:** **"The price of Rugiet Ready depends on your selected dosage strength, number of packs, and delivery option, with doses starting as low as about $10 per dose. Each strength comes in a pack that contains 6 doses."** Standard pricing: **"Low Strength:$14/dose"**, **"Medium Strength:$17/dose"**, **"High Strength:$20/dose"**, **"Max Strength:$24/dose"**. `/trimix` is a Ready lander, not a Trimix SKU.
+- **TRT public price:** `/blog/how-much-does-trt-cost-online` says **"Get started for $69 to cover your initial labs and evaluation"** and **"Rugiet's all-inclusive TRT care starts at $139/month, with labs, clinician oversight, medication, and monitoring all included."** PDP FAQs echo **"Plans start at just $139/month"** or **"Plans start as low as $139/month"**.
+- **Longevity price audit:** `/blog/longevity-therapy-cost` names NAD+, Sermorelin, Glutathione, Lipo-C, and L-Carnitine, but it stays qualitative: "pricing varies dramatically" by format/provider, "at-home" is more accessible, and no Rugiet SKU price is published. The five Longevity rows stay `on-request`.
+- **Molecule/form audit:** Ready = sildenafil + tadalafil + apomorphine; Go Long = paroxetine + tadalafil; Daily Boost = tadalafil + DHEA; Grower = tadalafil + minoxidil; Recharge = ramelteon + doxylamine + valerian root; Weigh In = bupropion + naltrexone + metformin; Lipo-C = methionine + inositol + choline + vitamin B5 + vitamin C. NAD+, Sermorelin, L-Carnitine, and Glutathione are self-named active products/forms on their PDPs.
+- **Compounded / controlled lane:** all non-injectable-TRT compounded rows carry the compounded-disclaimer text except L-Carnitine, whose current PDP instead says it is a controlled substance and requires a live audio-video consultation. Injectable TRT carries controlled-substance language but not the compounded disclaimer.
 
 ## Deep blocks
 
-Two earned blocks: the flagship (whose price hides on a different URL than its PDP) and the TRT line (whose FDA-vs-compounded lane split and flat pricing a single roster row flattens).
+Two blocks earned: Ready, because pricing lives off the main PDP and now has two public price surfaces; and Longevity, because it is the new line that changed roster breadth.
 
-### Ready™ — the flagship, and the price-on-a-different-URL trap (`/erectile-dysfunction/ready`)
+### Ready — public price split across shopping + dose landers (`/erectile-dysfunction/ready`)
 
-- **Parent:** Sexual Performance · **price:** `$14–$24/dose` by strength (packs of 6) · **visibility:** `published` (via the `/trimix` lander) · **form:** sublingual troche
+- **Parent:** Sexual Performance · **visibility:** `published` · **form:** sublingual troche
 
-The PDP teaches the whole sexual-performance line's anatomy — **hero scroller → "Quick Facts" → "What is / How to take / How is it different / side effects" accordion → compounded disclaimer → results stats → "RD-37™" delivery explainer → "Three medications, one formula" (the molecule cards) → "Great sex starts in the brain" → reviews → cross-sell.**
+The main PDP is still a product/clinical page with no price. Public pricing is split:
 
-> **H1:** "Ready™" · **tag:** "3-IN-1 BRAIN AND BODY PRESCRIPTION ED TREATMENT™" · **rating:** "Reviews (1,208) · 4.3"
-> **Quick Facts (verbatim):** "3-in-1 ED treatment · Works in 15 minutes* · Effects last 36 hours* · Proprietary RD-37™ delivery system."
-> **What is it (verbatim):** "A fast-acting ED treatment that combines three proven medications (Sildenafil, Tadalafil and Apomorphine) to help you get hard faster and stay hard longer."
-> **The differentiator (verbatim):** "In addition to PDE5 inhibitors, Rugiet Ready includes apomorphine, an ED treatment that works directly on the brain to boost arousal signals."
-> **Compounded disclaimer (verbatim):** "Ready™ is a compounded drug product and requires a prescription. Compounded drugs are not approved by FDA…"
+> **Shopping card (`/bm/n1/shopping`):** "Buy Now - $139" · "Subscribe $79/mo (40% off)" · "Price shown with 3 month shipping option."
+> **Dose ladder (`/trimix`):** "Starts as low as $10/dose*" plus "Low Strength:$14/dose" / "Medium Strength:$17/dose" / "High Strength:$20/dose" / "Max Strength:$24/dose."
 
-**Why it earns a block:** the load-bearing pricing fact is **not on this page** — the PDP is `on-request`, and the per-dose numbers ($14/$17/$20/$24, packs of 6) live only on the `/trimix` paid-search lander. A cross-brand ED-price comparison that reads the PDP alone would record "no price"; the real, published number is one URL over. The molecules are page-attested (sildenafil + tadalafil + apomorphine); the stray "paroxetine" in a caption is a copy leak, not an ingredient.
+Why it earns a block: a consumer reading only `/erectile-dysfunction/ready` would mark Ready `on-request`, but the site publishes Ready prices on paid/shopping paths. Capture must keep the URL distinction because `/trimix` is not a Trimix product and `/bm/n1/shopping` is a Ready shopping lander.
 
-### Testosterone (TRT) — one flat price, four forms, one FDA exception (`/testosterone`)
+### Longevity — new line, five new buyable SKUs (`/longevity`)
 
-- **Parent:** — (family) · **price:** `from $139/month` + `$69` lab · **visibility:** `published` · **forms:** oral (enclomiphene), injection, cream, oral
+- **Parent:** Longevity · **visibility:** all five rows `on-request` · **forms:** nasal spray / subcutaneous injections
 
-The TRT line breaks Rugiet's price-gating pattern: it's the **one line with a public, flat, all-inclusive price**, and the **one place FDA-approved and compounded products sit side by side.**
+The Longevity hub is now first-class in top nav and lists five products:
 
-> **Flat-pricing pitch (verbatim):** "One flat price, every medication … Every medication option at one flat price means you can focus on finding what works for your body, not what works for your budget. No games, no tiered pricing schemes."
-> **The $69 gate (verbatim):** "$69 gets you accurate testosterone testing and a video call with a licensed physician to review your results together. No obligation to start treatment."
-> **Lane split (verbatim):** Injectable TRT — *"a controlled substance … requires a live audio-video online consultation"* (testosterone cypionate, **FDA-approved**, no compounded disclaimer). Topical/Oral TRT — *"a compounded drug product, and controlled substance."* Enclomiphene — compounded, **not** scheduled, *"preserves fertility."*
-> **Availability (verbatim):** "Enclomiphene: All states, excluding Louisiana. TRT: Not currently available in [15 states incl. Alabama, Georgia, Pennsylvania, North Carolina…]."
+> **Hub cards:** NAD+; Sermorelin; L-Carnitine; Lipo-C; Glutathione.
+> **Outcome routing:** Recovery and muscle mass -> Sermorelin; Energy and mental sharpness -> NAD+; Weight and metabolism -> Lipo-C; Fat burning and endurance -> L-Carnitine; Detox, immunity, and recovery -> Glutathione.
+> **Cost article caveat:** Rugiet publishes a "How Much Does Longevity Therapy Cost?" article, but it gives provider/format cost drivers rather than Rugiet prices.
 
-**Why it earns a block:** four roster rows share **one** price ($139/mo flat) and **one** lab gate ($69), but split three ways on regulatory lane — FDA-approved cypionate (injectable), compounded controlled substances (topical/oral), and a compounded non-scheduled alternative (enclomiphene). That structure is the cohort's whole "compounding posture / controlled-substance" question in one line, and a flat per-row price would hide that they're the same plan.
+Why it earns a block: this line changes breadth from the old 10-buyable roster to 15. Its price visibility is also easy to over-read: "cost" content exists, but no Rugiet-specific price is published.
 
 ## Provenance
 
-- **Sources reconciled (this run, all `captures/2026-06-07/`):**
-  - **Backbone:** `/all-treatments` (`--homepage`, for card order + prominence) + the `/sex` and `/testosterone` category hubs — the three surfaces that enumerate every product card. Cross-checked against the Firecrawl `/map` (147 URLs, blog/author-dominated) and homepage links; the catalog set agrees across all three.
-  - **PDPs (10):** ed-ready, pe-go-long, ed-daily-boost, ed-grower, trt-enclomiphene, trt-injectable, trt-topical, trt-oral, sleep-recharge, weight-weigh-in.
-  - **Pricing sources:** `/trimix` (the Rugiet Ready SEM lander — sole source of Ready per-dose pricing); `/testosterone` + TRT PDP FAQs (the $69 + $139/mo TRT pricing). The `/go-long-lander`, `/daily-boost-lander`, `/recharge-lander` SEM pages were captured **specifically to chase per-product pricing and confirmed to carry none** — those SKUs are genuinely quiz-gated.
-  - **Verify:** `fc.py verify` — all 20 sourceURLs match, all bodies md5-unique (no §5.1 geo/cache contamination).
-- **Completeness verdict — HIGH confidence the roster is complete at the indexed level.** `/all-treatments` shows every product card; the per-category hubs and the map agree; 10 buyable SKUs across 4 lines. `enumeration: indexed-complete`. Sub-indexed detail intentionally not rostered: per-strength/dose tiers beyond Ready's four (TRT doses are clinician-set; not card-enumerated), and the quiz-gated configuration/quantity options on start.rugiet.com.
-- **Couldn't reach / not enumerated:** all-in pricing for Go Long, Daily Boost, Grower, Recharge, Weigh In (quiz-gated — `on-request`); the pharmacy partner identity + 503A/503B lane; the two unnamed ingredients in Recharge's "3-in-1."
-- **Credits:** part of the 21-credit `profile.md` run (shared capture; this module added no separate scrapes beyond the three pricing landers).
-- **Point-in-time snapshot, not fixed:** Rugiet runs rotating promos (*"Try 2 months of Ready™, get 1 free,"* *"Claim 15% off Ready"*) and all pricing is behind the quiz — re-capture before trusting a price as current. This module's own `captured_at` + a short TTL are the guard.
-- **Run profile:** Express invocation with the offerings module on. Captured the three `-lander` SEM pages specifically to hunt per-product pricing (it wasn't there); no hero-image / PDP-anatomy archetype requested.
+- **Sources reconciled (this run, all `captures/2026-06-21/`):**
+  - **Backbone:** homepage links, `/all-treatments` (`--homepage`), `/sex`, `/testosterone`, and `/longevity`. Firecrawl map returned 161 URLs; blog/author noise filtered out.
+  - **PDPs:** ed_ready, pe_go_long, ed_daily_boost, ed_grower, trt_enclomiphene, trt_injectable, trt_topical, trt_oral, sleep_recharge, weight_weigh_in, longevity_nad, longevity_sermorelin, longevity_l_carnitine, longevity_lipo_c, longevity_glutathione.
+  - **Pricing chases:** `/trimix`, `/bm/n1`, `/bm/n1/shopping`, `/go-long-lander`, `/go-long-lander-g`, `/daily-boost-lander`, `/recharge-lander`, `/blog/longevity-therapy-cost`, `/blog/how-much-does-trt-cost-online`.
+  - **Verify:** `fc.py verify` — all 31 sourceURLs match, all bodies md5-unique, no junk soft-404s.
+- **Completeness verdict — HIGH confidence the roster is complete at the indexed level.** Current category/index surfaces plus PDP links expose 15 buyable SKUs across 5 lines. `enumeration: indexed-complete`. Sub-indexed detail intentionally not rostered: dose/quantity variants behind the quiz, Ready strength/pack combinations beyond the published ladder, and clinician-set TRT/longevity protocols.
+- **Couldn't reach / not enumerated:** all-in prices behind the quiz for Go Long, Daily Boost, Grower, Recharge, Weigh In, and all Longevity SKUs; pharmacy partner identity / 503A-503B lane.
+- **Credits:** part of the 32-credit `profile.md` recapture (1 map + 31 scrapes); the offerings module drove the extra product/price chase pages.
+- **Point-in-time snapshot, not fixed:** captured during a Father's Day promo banner (**"20% off with DAD20"**). Public Ready pricing and quiz-gated offers can change; re-capture before treating price as current.
+- **Run profile:** Express recapture with `offerings.md` included; no hero product images requested. Major delta vs prior run: Longevity line added; Ready price source improved via `/bm/n1/shopping`; Oral TRT retained because current PDP recommendation cards still link it.

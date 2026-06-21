@@ -11,7 +11,7 @@
 # Derived screenshot tiles — sliced from .payloads (tile.py) or browser-rendered (shoot.py) for the
 # visual-evidence module. Large, regenerable; visual.md (committed) is the durable artifact. (Whether to
 # promote the cited tiles to a committed path for clone-durable falsifiability is an open call — see VISUAL.md.)
-**/captures/*/tiles/
+**/captures/**/tiles/
 
 # Python
 __pycache__/

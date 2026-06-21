@@ -1,0 +1,15 @@
+{
+  "record_version": "0.1",
+  "verb": "research-company",
+  "status": "complete",
+  "tool": "codex",
+  "model": "gpt-5",
+  "trust": "env",
+  "started_at": "2026-06-21T12:30:27Z",
+  "artifacts": [
+    "profile.md",
+    "offerings.md"
+  ],
+  "ended_at": "2026-06-21T13:32:05Z",
+  "note": "Recapture added Longevity line; Ready public price found on BM/N1 shopping lander."
+}

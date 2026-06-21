@@ -1,0 +1,15 @@
+{
+  "record_version": "0.1",
+  "verb": "research-company",
+  "status": "complete",
+  "tool": "codex",
+  "model": "gpt-5",
+  "trust": "env",
+  "started_at": "2026-06-20T20:24:39Z",
+  "artifacts": [
+    "profile.md",
+    "telehealth.md"
+  ],
+  "ended_at": "2026-06-20T20:32:09Z",
+  "note": "Express capture with telehealth cohort pack and logos; no offerings roster."
+}

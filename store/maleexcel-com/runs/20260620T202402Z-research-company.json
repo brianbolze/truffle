@@ -1,0 +1,15 @@
+{
+  "record_version": "0.1",
+  "verb": "research-company",
+  "status": "complete",
+  "tool": "codex",
+  "model": "gpt-5",
+  "trust": "agent",
+  "started_at": "2026-06-20T20:24:02Z",
+  "ended_at": "2026-06-20T20:33:33Z",
+  "artifacts": [
+    "profile.md",
+    "telehealth.md"
+  ],
+  "note": "express capture with telehealth pack and logos; offerings.md not requested"
+}

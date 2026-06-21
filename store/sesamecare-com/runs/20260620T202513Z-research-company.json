@@ -1,0 +1,15 @@
+{
+  "record_version": "0.1",
+  "verb": "research-company",
+  "status": "complete",
+  "tool": "codex",
+  "model": "gpt-5",
+  "trust": "env",
+  "started_at": "2026-06-20T20:25:13Z",
+  "artifacts": [
+    "profile.md",
+    "telehealth.md"
+  ],
+  "ended_at": "2026-06-20T20:34:10Z",
+  "note": "Express capture with +logos and +telehealth; 11 pages plus map, 12 Firecrawl credits."
+}
