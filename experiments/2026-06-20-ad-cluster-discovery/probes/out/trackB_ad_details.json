@@ -1,0 +1,42 @@
+{
+  "search_metadata": {
+    "id": "6a36f479f357f6ad8223b84c",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/pPI_9HjhdYBx9yN8CpbZZQ/6a36f479f357f6ad8223b84c.json",
+    "created_at": "2026-06-20 20:13:45 UTC",
+    "processed_at": "2026-06-20 20:13:45 UTC",
+    "google_ads_transparency_center_ad_details_url": "https://adstransparency.google.com/advertiser/AR09131126584697159681/creative/CR13749061058985721857?region=anywhere",
+    "raw_html_file": "https://serpapi.com/searches/pPI_9HjhdYBx9yN8CpbZZQ/6a36f479f357f6ad8223b84c.html",
+    "prettify_html_file": "https://serpapi.com/searches/pPI_9HjhdYBx9yN8CpbZZQ/6a36f479f357f6ad8223b84c.prettify",
+    "total_time_taken": 2.64
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center_ad_details",
+    "advertiser_id": "AR09131126584697159681",
+    "creative_id": "CR13749061058985721857"
+  },
+  "search_information": {
+    "format": "text",
+    "last_shown": 1774835021,
+    "region_name": "anywhere",
+    "more_ads_by_advertiser": "https://adstransparency.google.com/advertiser/AR09131126584697159681",
+    "ad_funded_by": "Hims, Inc.",
+    "regions": [
+      {
+        "region": 2840,
+        "region_name": "United States",
+        "last_shown": 20260329
+      }
+    ]
+  },
+  "ad_creatives": [
+    {
+      "title": "Hims",
+      "headline": "Men's Hair Loss Products",
+      "snippet": "Take the hair quiz and see which products may work for you, if prescribed.",
+      "visible_link": "www.hims.com/",
+      "advertiser_logo": "https://tpc.googlesyndication.com/simgad/14780974137821972717?sqp=-oaymwEKCCAQICABUAFYAQ&rs=AOga4qm8H2rf8A024kdh_snXbjs1QV1YNg",
+      "advertiser_logo_alt": "Hims logo"
+    }
+  ]
+}

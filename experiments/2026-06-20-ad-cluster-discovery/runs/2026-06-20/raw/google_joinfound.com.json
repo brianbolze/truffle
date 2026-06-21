@@ -1,0 +1,35 @@
+{
+  "search_metadata": {
+    "id": "6a36f81c4de49acc17e7a485",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/zkugBhibIKbQK2t-S7fjJQ/6a36f81c4de49acc17e7a485.json",
+    "created_at": "2026-06-20 20:29:16 UTC",
+    "processed_at": "2026-06-20 20:29:16 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=joinfound.com",
+    "raw_html_file": "https://serpapi.com/searches/zkugBhibIKbQK2t-S7fjJQ/6a36f81c4de49acc17e7a485.html",
+    "prettify_html_file": "https://serpapi.com/searches/zkugBhibIKbQK2t-S7fjJQ/6a36f81c4de49acc17e7a485.prettify",
+    "total_time_taken": 1.81
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "joinfound.com"
+  },
+  "search_information": {
+    "total_results": 1
+  },
+  "ad_creatives": [
+    {
+      "advertiser_id": "AR08592730718788911105",
+      "advertiser": "Found Health, Inc.",
+      "ad_creative_id": "CR08393911331127820289",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=6022514932&creativeId=807333095184&uiFeatures=12,54&adGroupId=197635865202&itemIds=2011356696932551033&overlay=%3DH4sIAAAAAAAAALMSMxLhEuKs7HSJdTr2UlqwL1Zx0ZUtd5y9ZLgEkouLXTKLC3ISK4NLijLz0oU4uNjc8_PTc1K9VLgkijPyCwoy89IdU_zT0lKLnItSE0syy1INhDis2Di-MwkxMgIArGct3lwAAAA&sig=ACiVB_yvCoDwy6_joCMgWXZf27-kHuVM6w&htmlParentId=fletch-render-10539675947550023571&responseCallback=fletchCallback10539675947550023571",
+      "target_domain": "joinfound.com",
+      "total_days_shown": 2,
+      "first_shown": 1777594774,
+      "last_shown": 1777651031,
+      "details_link": "https://adstransparency.google.com/advertiser/AR08592730718788911105/creative/CR08393911331127820289?region=anywhere&domain=joinfound.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR08592730718788911105&creative_id=CR08393911331127820289&engine=google_ads_transparency_center_ad_details"
+    }
+  ]
+}

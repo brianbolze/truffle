@@ -1,0 +1,178 @@
+{
+  "search_metadata": {
+    "id": "6a36f7e5d0a88fae9e6d7ad4",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/0je4TuUvl-fgWPDyyMAMtA/6a36f7e5d0a88fae9e6d7ad4.json",
+    "created_at": "2026-06-20 20:28:21 UTC",
+    "processed_at": "2026-06-20 20:28:21 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=goodlifemeds.com",
+    "raw_html_file": "https://serpapi.com/searches/0je4TuUvl-fgWPDyyMAMtA/6a36f7e5d0a88fae9e6d7ad4.html",
+    "prettify_html_file": "https://serpapi.com/searches/0je4TuUvl-fgWPDyyMAMtA/6a36f7e5d0a88fae9e6d7ad4.prettify",
+    "total_time_taken": 0.85
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "goodlifemeds.com"
+  },
+  "search_information": {
+    "total_results": 12
+  },
+  "ad_creatives": [
+    {
+      "advertiser_id": "AR18052826389333147649",
+      "advertiser": "GOOD LIFE MEDS LLC",
+      "ad_creative_id": "CR08647070584888360961",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5987573785&creativeId=806474233856&uiFeatures=12,54&adGroupId=198316828440&itemIds=2802214600427687710&sig=ACiVB_yhDbaojZRb1N8TR0XeocX89eZcsw&htmlParentId=fletch-render-11521662592837537283&responseCallback=fletchCallback11521662592837537283",
+      "target_domain": "goodlifemeds.com",
+      "total_days_shown": 48,
+      "first_shown": 1776889324,
+      "last_shown": 1781313204,
+      "details_link": "https://adstransparency.google.com/advertiser/AR18052826389333147649/creative/CR08647070584888360961?region=anywhere&domain=goodlifemeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR18052826389333147649&creative_id=CR08647070584888360961&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR18052826389333147649",
+      "advertiser": "GOOD LIFE MEDS LLC",
+      "ad_creative_id": "CR02133201412861984769",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5987573785&creativeId=806076645771&uiFeatures=12,54&adGroupId=190953070970&itemIds=13408369590783390293&sig=ACiVB_wCegSs7scBxynlb7K5G1kWQXumOA&htmlParentId=fletch-render-12582139322342207581&responseCallback=fletchCallback12582139322342207581",
+      "target_domain": "goodlifemeds.com",
+      "total_days_shown": 17,
+      "first_shown": 1776723356,
+      "last_shown": 1778520130,
+      "details_link": "https://adstransparency.google.com/advertiser/AR18052826389333147649/creative/CR02133201412861984769?region=anywhere&domain=goodlifemeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR18052826389333147649&creative_id=CR02133201412861984769&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR18052826389333147649",
+      "advertiser": "GOOD LIFE MEDS LLC",
+      "ad_creative_id": "CR01899955963947909121",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5987573785&creativeId=807665947341&uiFeatures=12,54&adGroupId=195724868546&itemIds=4669632185209683701&sig=ACiVB_yq7qEMVZ69rLzKmybibRvngwCKSw&htmlParentId=fletch-render-4194989423667259844&responseCallback=fletchCallback4194989423667259844",
+      "target_domain": "goodlifemeds.com",
+      "total_days_shown": 8,
+      "first_shown": 1777908134,
+      "last_shown": 1778520110,
+      "details_link": "https://adstransparency.google.com/advertiser/AR18052826389333147649/creative/CR01899955963947909121?region=anywhere&domain=goodlifemeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR18052826389333147649&creative_id=CR01899955963947909121&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR18052826389333147649",
+      "advertiser": "GOOD LIFE MEDS LLC",
+      "ad_creative_id": "CR10787687782772899841",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5987573785&creativeId=806399500018&uiFeatures=12,54&adGroupId=194528328463&itemIds=9307499819723676911&sig=ACiVB_zbooDaqcIjUlzNT-TTCVnlnWcEmw&htmlParentId=fletch-render-10240653698536662721&responseCallback=fletchCallback10240653698536662721",
+      "target_domain": "goodlifemeds.com",
+      "total_days_shown": 6,
+      "first_shown": 1776895859,
+      "last_shown": 1777324156,
+      "details_link": "https://adstransparency.google.com/advertiser/AR18052826389333147649/creative/CR10787687782772899841?region=anywhere&domain=goodlifemeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR18052826389333147649&creative_id=CR10787687782772899841&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR18052826389333147649",
+      "advertiser": "GOOD LIFE MEDS LLC",
+      "ad_creative_id": "CR10243063939407544321",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5987573785&creativeId=804643941072&uiFeatures=12,54&adGroupId=194940501803&sig=ACiVB_xcRUKh227ML5k-cikP9sLsP0FhPQ&htmlParentId=fletch-render-11666245865431858527&responseCallback=fletchCallback11666245865431858527",
+      "target_domain": "goodlifemeds.com",
+      "total_days_shown": 11,
+      "first_shown": 1775821107,
+      "last_shown": 1776723721,
+      "details_link": "https://adstransparency.google.com/advertiser/AR18052826389333147649/creative/CR10243063939407544321?region=anywhere&domain=goodlifemeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR18052826389333147649&creative_id=CR10243063939407544321&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR18052826389333147649",
+      "advertiser": "GOOD LIFE MEDS LLC",
+      "ad_creative_id": "CR16329678835798769665",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5987573785&creativeId=804683741203&uiFeatures=12,54&adGroupId=196292366858&itemIds=13408369590783390293&sig=ACiVB_wErctC9nxd4JUuRf0Q_E09JUxbqA&htmlParentId=fletch-render-10028321495934068204&responseCallback=fletchCallback10028321495934068204",
+      "target_domain": "goodlifemeds.com",
+      "total_days_shown": 11,
+      "first_shown": 1775822128,
+      "last_shown": 1776723689,
+      "details_link": "https://adstransparency.google.com/advertiser/AR18052826389333147649/creative/CR16329678835798769665?region=anywhere&domain=goodlifemeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR18052826389333147649&creative_id=CR16329678835798769665&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR18052826389333147649",
+      "advertiser": "GOOD LIFE MEDS LLC",
+      "ad_creative_id": "CR11946831973437145089",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5987573785&creativeId=804645978684&uiFeatures=12,54&adGroupId=195617981255&itemIds=15625463872997038267&sig=ACiVB_zRId0m4NQHuuFLA9PKv5l8ure4JQ&htmlParentId=fletch-render-6751944651187485926&responseCallback=fletchCallback6751944651187485926",
+      "target_domain": "goodlifemeds.com",
+      "total_days_shown": 11,
+      "first_shown": 1775821896,
+      "last_shown": 1776691699,
+      "details_link": "https://adstransparency.google.com/advertiser/AR18052826389333147649/creative/CR11946831973437145089?region=anywhere&domain=goodlifemeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR18052826389333147649&creative_id=CR11946831973437145089&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR18052826389333147649",
+      "advertiser": "GOOD LIFE MEDS LLC",
+      "ad_creative_id": "CR13856933534901469185",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5987573785&creativeId=799756435866&uiFeatures=12,54&adGroupId=192816150423&itemIds=15187997912797377315&sig=ACiVB_wOg-KEBf1Hu7Nhm69-q3mH15tr0w&htmlParentId=fletch-render-7299412201385346573&responseCallback=fletchCallback7299412201385346573",
+      "target_domain": "goodlifemeds.com",
+      "total_days_shown": 8,
+      "first_shown": 1775486118,
+      "last_shown": 1776092301,
+      "details_link": "https://adstransparency.google.com/advertiser/AR18052826389333147649/creative/CR13856933534901469185?region=anywhere&domain=goodlifemeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR18052826389333147649&creative_id=CR13856933534901469185&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR18052826389333147649",
+      "advertiser": "GOOD LIFE MEDS LLC",
+      "ad_creative_id": "CR17001571974712918017",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5987573785&creativeId=799743364761&uiFeatures=12,54&adGroupId=195120939738&itemIds=15187997912797377315&sig=ACiVB_wqR_iU9nBXe5NYXQpuykJkCagtIw&htmlParentId=fletch-render-7800446348135315517&responseCallback=fletchCallback7800446348135315517",
+      "target_domain": "goodlifemeds.com",
+      "total_days_shown": 8,
+      "first_shown": 1775486073,
+      "last_shown": 1776092281,
+      "details_link": "https://adstransparency.google.com/advertiser/AR18052826389333147649/creative/CR17001571974712918017?region=anywhere&domain=goodlifemeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR18052826389333147649&creative_id=CR17001571974712918017&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR18052826389333147649",
+      "advertiser": "GOOD LIFE MEDS LLC",
+      "ad_creative_id": "CR09961698922449600513",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5987573785&creativeId=731788591437&uiFeatures=12,54&adGroupId=177554433994&itemIds=13142880505412785323&sig=ACiVB_wgHPW52rImc1W19rju74-5UGa-pQ&htmlParentId=fletch-render-11164760160088720561&responseCallback=fletchCallback11164760160088720561",
+      "target_domain": "goodlifemeds.com",
+      "total_days_shown": 242,
+      "first_shown": 1738812836,
+      "last_shown": 1776092088,
+      "details_link": "https://adstransparency.google.com/advertiser/AR18052826389333147649/creative/CR09961698922449600513?region=anywhere&domain=goodlifemeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR18052826389333147649&creative_id=CR09961698922449600513&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR18052826389333147649",
+      "advertiser": "GOOD LIFE MEDS LLC",
+      "ad_creative_id": "CR07759875477069627393",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5987573785&creativeId=802265698226&uiFeatures=12,54&adGroupId=199890801252&itemIds=9307499819723676911&sig=ACiVB_z3aBqyN5fs-TLXSt1Z2GmMDvWKsQ&htmlParentId=fletch-render-4339641202760905031&responseCallback=fletchCallback4339641202760905031",
+      "target_domain": "goodlifemeds.com",
+      "total_days_shown": 9,
+      "first_shown": 1775187317,
+      "last_shown": 1775820370,
+      "details_link": "https://adstransparency.google.com/advertiser/AR18052826389333147649/creative/CR07759875477069627393?region=anywhere&domain=goodlifemeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR18052826389333147649&creative_id=CR07759875477069627393&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR18052826389333147649",
+      "advertiser": "GOOD LIFE MEDS LLC",
+      "ad_creative_id": "CR17120807972021207041",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5987573785&creativeId=726097620607&uiFeatures=12,54&adGroupId=180910678468&itemIds=15625463872997038267&overlay=%3DH4sIAAAAAAAAALMSMxLhEuLcLbHhw6wzN24I2l6Vj6l1k031kuESSC4udsksLshJrAwuKcrMSxfi4GJzz89Pz0n1UuGSKM7ILyjIzEt3TPFPS0stci5KTSzJLEs1EOKwYuN4winEyAgAx1IR4FwAAAA&sig=ACiVB_yDF7uMy0O5llHjrLzYWxRYdPOYxA&htmlParentId=fletch-render-8252019688749727349&responseCallback=fletchCallback8252019688749727349",
+      "target_domain": "goodlifemeds.com",
+      "total_days_shown": 278,
+      "first_shown": 1734649721,
+      "last_shown": 1758872017,
+      "details_link": "https://adstransparency.google.com/advertiser/AR18052826389333147649/creative/CR17120807972021207041?region=anywhere&domain=goodlifemeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR18052826389333147649&creative_id=CR17120807972021207041&engine=google_ads_transparency_center_ad_details"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "search_metadata": {
+    "id": "6a36f778ef15ced1cf58f547",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/Dp-nExtx23TioCb84lfzVQ/6a36f778ef15ced1cf58f547.json",
+    "created_at": "2026-06-20 20:26:32 UTC",
+    "processed_at": "2026-06-20 20:26:32 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=joinamble-com",
+    "raw_html_file": "https://serpapi.com/searches/Dp-nExtx23TioCb84lfzVQ/6a36f778ef15ced1cf58f547.html",
+    "prettify_html_file": "https://serpapi.com/searches/Dp-nExtx23TioCb84lfzVQ/6a36f778ef15ced1cf58f547.prettify",
+    "total_time_taken": 1.87
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "joinamble-com"
+  },
+  "search_information": {
+    "results_state": "Fully empty"
+  },
+  "error": "Google Ads Transparency Center hasn't returned any results for this search."
+}

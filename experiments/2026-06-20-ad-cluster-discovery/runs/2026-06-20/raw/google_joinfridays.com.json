@@ -1,0 +1,74 @@
+{
+  "search_metadata": {
+    "id": "6a36f82d7a3b05ff2059126f",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/DC_RYgSgaNk7giiRpLSt4Q/6a36f82d7a3b05ff2059126f.json",
+    "created_at": "2026-06-20 20:29:33 UTC",
+    "processed_at": "2026-06-20 20:29:33 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=joinfridays.com",
+    "raw_html_file": "https://serpapi.com/searches/DC_RYgSgaNk7giiRpLSt4Q/6a36f82d7a3b05ff2059126f.html",
+    "prettify_html_file": "https://serpapi.com/searches/DC_RYgSgaNk7giiRpLSt4Q/6a36f82d7a3b05ff2059126f.prettify",
+    "total_time_taken": 0.67
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "joinfridays.com"
+  },
+  "search_information": {
+    "total_results": 4
+  },
+  "ad_creatives": [
+    {
+      "advertiser_id": "AR00167512915774013441",
+      "advertiser": "THRIVE HEALTH GROUP INC.",
+      "ad_creative_id": "CR06730083744171950081",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=4663264779&creativeId=794520917485&uiFeatures=12,54&adGroupId=200707144228&itemIds=4935730401396616595&sig=ACiVB_wqAWTp_LQQ3VZlrxHA2Tn4t8RWjg&htmlParentId=fletch-render-4620937916423357858&responseCallback=fletchCallback4620937916423357858",
+      "target_domain": "joinfridays.com",
+      "total_days_shown": 18,
+      "first_shown": 1769533419,
+      "last_shown": 1771510572,
+      "details_link": "https://adstransparency.google.com/advertiser/AR00167512915774013441/creative/CR06730083744171950081?region=anywhere&domain=joinfridays.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR00167512915774013441&creative_id=CR06730083744171950081&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR00167512915774013441",
+      "advertiser": "THRIVE HEALTH GROUP INC.",
+      "ad_creative_id": "CR08782933500111093761",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=4663264779&creativeId=786219890138&uiFeatures=12,54&adGroupId=194549454172&itemIds=846431157398897695,17706728208466388526,2318805444563304121&sig=ACiVB_wCCJ0z7XOStVU18K5ikboTaEt6ow&htmlParentId=fletch-render-15485043535772317081&responseCallback=fletchCallback15485043535772317081",
+      "target_domain": "joinfridays.com",
+      "total_days_shown": 79,
+      "first_shown": 1764421993,
+      "last_shown": 1771402158,
+      "details_link": "https://adstransparency.google.com/advertiser/AR00167512915774013441/creative/CR08782933500111093761?region=anywhere&domain=joinfridays.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR00167512915774013441&creative_id=CR08782933500111093761&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR00167512915774013441",
+      "advertiser": "THRIVE HEALTH GROUP INC.",
+      "ad_creative_id": "CR10695994397121576961",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=4663264779&creativeId=780652738002&uiFeatures=12,54&adGroupId=195997246708&itemIds=846431157398897695&overlay=%3DH4sIAAAAAAAAALMSMxLhEuKUb5mqv1xhP7fghg-HvgRIB97wkuESSC4udsksLshJrAwuKcrMSxfi4GJzz89Pz0n1UuGSKM7ILyjIzEt3TPFPS0stci5KTSzJLEs1EOKwYuN4winEyIhHlSFY1VeQKgBPCio0ggAAAA&sig=ACiVB_zbLvEI13GnZuVnGmBVjWd_yPvq-g&htmlParentId=fletch-render-11790573963448461503&responseCallback=fletchCallback11790573963448461503",
+      "target_domain": "joinfridays.com",
+      "total_days_shown": 6,
+      "first_shown": 1761426274,
+      "last_shown": 1761842870,
+      "details_link": "https://adstransparency.google.com/advertiser/AR00167512915774013441/creative/CR10695994397121576961?region=anywhere&domain=joinfridays.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR00167512915774013441&creative_id=CR10695994397121576961&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR00167512915774013441",
+      "advertiser": "THRIVE HEALTH GROUP INC.",
+      "ad_creative_id": "CR00579001569056391169",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=4663264779&creativeId=777680368531&uiFeatures=12,54&adGroupId=190107723081&itemIds=846431157398897695&overlay=%3DH4sIAAAAAAAAALMSMxLhEuKUb5mqv1xhP7fghg-HvgRIB97wkuESSC4udsksLshJrAwuKcrMSxfi4GJzz89Pz0n1UuGSKM7ILyjIzEt3TPFPS0stci5KTSzJLEs1EOKwYuN4winEyAgAA94qnlwAAAA&sig=ACiVB_y5US_r2iA1xuRl4pX1enFDLYZdOA&htmlParentId=fletch-render-1460386983141955320&responseCallback=fletchCallback1460386983141955320",
+      "target_domain": "joinfridays.com",
+      "total_days_shown": 16,
+      "first_shown": 1759861149,
+      "last_shown": 1761674210,
+      "details_link": "https://adstransparency.google.com/advertiser/AR00167512915774013441/creative/CR00579001569056391169?region=anywhere&domain=joinfridays.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR00167512915774013441&creative_id=CR00579001569056391169&engine=google_ads_transparency_center_ad_details"
+    }
+  ]
+}

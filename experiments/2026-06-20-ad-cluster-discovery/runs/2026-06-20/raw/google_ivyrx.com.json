@@ -1,0 +1,126 @@
+{
+  "search_metadata": {
+    "id": "6a36f811a68855f5479e1609",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/iVmtIHPk8Cl9Idz3Yy-ceQ/6a36f811a68855f5479e1609.json",
+    "created_at": "2026-06-20 20:29:05 UTC",
+    "processed_at": "2026-06-20 20:29:05 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=ivyrx.com",
+    "raw_html_file": "https://serpapi.com/searches/iVmtIHPk8Cl9Idz3Yy-ceQ/6a36f811a68855f5479e1609.html",
+    "prettify_html_file": "https://serpapi.com/searches/iVmtIHPk8Cl9Idz3Yy-ceQ/6a36f811a68855f5479e1609.prettify",
+    "total_time_taken": 1.75
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "ivyrx.com"
+  },
+  "search_information": {
+    "total_results": 8
+  },
+  "ad_creatives": [
+    {
+      "advertiser_id": "AR13569133626141966337",
+      "advertiser": "IVY RX PLLC",
+      "ad_creative_id": "CR18318403587547332609",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5372384220&creativeId=785184480412&uiFeatures=12,54&adGroupId=188939193773&sig=ACiVB_yzTtZ_gr31ByLeJdl5jEMXJZi0aA&htmlParentId=fletch-render-2503585900339943023&responseCallback=fletchCallback2503585900339943023",
+      "target_domain": "ivyrx.com",
+      "total_days_shown": 48,
+      "first_shown": 1767797133,
+      "last_shown": 1772001731,
+      "details_link": "https://adstransparency.google.com/advertiser/AR13569133626141966337/creative/CR18318403587547332609?region=anywhere&domain=ivyrx.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR13569133626141966337&creative_id=CR18318403587547332609&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR13569133626141966337",
+      "advertiser": "IVY RX PLLC",
+      "ad_creative_id": "CR17572162752263225345",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5372384220&creativeId=767969711469&uiFeatures=12,54&adGroupId=186392603031&sig=ACiVB_y0RyPEiXe8b19Ae0_vJbJmMj2bow&htmlParentId=fletch-render-122172276894111290&responseCallback=fletchCallback122172276894111290",
+      "target_domain": "ivyrx.com",
+      "total_days_shown": 51,
+      "first_shown": 1754398917,
+      "last_shown": 1770946167,
+      "details_link": "https://adstransparency.google.com/advertiser/AR13569133626141966337/creative/CR17572162752263225345?region=anywhere&domain=ivyrx.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR13569133626141966337&creative_id=CR17572162752263225345&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR13569133626141966337",
+      "advertiser": "IVY RX PLLC",
+      "ad_creative_id": "CR07125545915967864833",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5372384220&creativeId=796071705799&uiFeatures=12,54&adGroupId=193387157912&itemIds=14678114398495447442&sig=ACiVB_w7LNXWNCc4ejLoTGHg7BubLJi1Pw&htmlParentId=fletch-render-4716026734607558007&responseCallback=fletchCallback4716026734607558007",
+      "target_domain": "ivyrx.com",
+      "total_days_shown": 9,
+      "first_shown": 1770268804,
+      "last_shown": 1770945916,
+      "details_link": "https://adstransparency.google.com/advertiser/AR13569133626141966337/creative/CR07125545915967864833?region=anywhere&domain=ivyrx.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR13569133626141966337&creative_id=CR07125545915967864833&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR13569133626141966337",
+      "advertiser": "IVY RX PLLC",
+      "ad_creative_id": "CR09492576566878666753",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5372384220&creativeId=691071674145&uiFeatures=12,54&adGroupId=156868307177&itemIds=5826349124257757050&overlay=%3DH4sIAAAAAAAAALMSMxLhEuKs2n7qwIrI2wGCbLHXYwuyve54yXAJJBcXu2QWF-QkVgaXFGXmpQtxcLG55-en56R6qXBJFGfkFxRk5qU7pvinpaUWORelJpZklqUaCHFYsXE84RRi5MajyhCsqplNiJENjyojsKqvnEKMAgC5WibhqAAAAA&sig=ACiVB_wOdHs2OiFSPsdWydTDGwep_HkxPw&htmlParentId=fletch-render-13232789165565317034&responseCallback=fletchCallback13232789165565317034",
+      "target_domain": "ivyrx.com",
+      "total_days_shown": 330,
+      "first_shown": 1708095374,
+      "last_shown": 1755669408,
+      "details_link": "https://adstransparency.google.com/advertiser/AR13569133626141966337/creative/CR09492576566878666753?region=anywhere&domain=ivyrx.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR13569133626141966337&creative_id=CR09492576566878666753&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR13569133626141966337",
+      "advertiser": "IVY RX PLLC",
+      "ad_creative_id": "CR06551492432704307201",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5372384220&creativeId=683386056363&uiFeatures=12,54&adGroupId=156163478053&itemIds=5826349124257757050&overlay=%3DH4sIAAAAAAAAALMSMxLhEuKs2n7qwIrI2wGCbLHXYwuyve54yXAJJBcXu2QWF-QkVgaXFGXmpQtxcLG55-en56R6qXBJFGfkFxRk5qU7pvinpaUWORelJpZklqUaCHFYsXE84RRi5MajyhCs6iunEKMAAIdfJEGCAAAA&sig=ACiVB_z6BzWkqpL_jFfYdtTfqBdtFtYkkQ&htmlParentId=fletch-render-6908616789968983867&responseCallback=fletchCallback6908616789968983867",
+      "target_domain": "ivyrx.com",
+      "total_days_shown": 605,
+      "first_shown": 1701723760,
+      "last_shown": 1755669364,
+      "details_link": "https://adstransparency.google.com/advertiser/AR13569133626141966337/creative/CR06551492432704307201?region=anywhere&domain=ivyrx.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR13569133626141966337&creative_id=CR06551492432704307201&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR13569133626141966337",
+      "advertiser": "IVY RX PLLC",
+      "ad_creative_id": "CR13825184492404342785",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5372384220&creativeId=747974338467&uiFeatures=12,54&adGroupId=176882785325&itemIds=8886190124574375177&overlay=%3DH4sIAAAAAAAAALMSMxLhEuLk_Hst9JpYULUgY8OtyAKN-RZeMlwCycXFLpnFBTmJlcElRZl56UIcXGzu-fnpOaleKlwSxRn5BQWZeemOKf5paalFzkWpiSWZZakGQhxWbBxPOIUYufGoMgSr-sopxCgAAB2Ml4CCAAAA&sig=ACiVB_yOE_3MNqjQcoBDgLOlk3ZNsBzfjA&htmlParentId=fletch-render-10878151351155779298&responseCallback=fletchCallback10878151351155779298",
+      "target_domain": "ivyrx.com",
+      "total_days_shown": 99,
+      "first_shown": 1745420685,
+      "last_shown": 1755669221,
+      "details_link": "https://adstransparency.google.com/advertiser/AR13569133626141966337/creative/CR13825184492404342785?region=anywhere&domain=ivyrx.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR13569133626141966337&creative_id=CR13825184492404342785&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR13569133626141966337",
+      "advertiser": "IVY RX PLLC",
+      "ad_creative_id": "CR02380873631153520641",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5372384220&creativeId=730741927620&uiFeatures=12,54&adGroupId=175562927713&itemIds=4924426394305320595&overlay=%3DH4sIAAAAAAAAALMSMxLhEuKcHKbAvF043EVQS5bXOa3sjaGXDJdAcnGxS2ZxQU5iZXBJUWZeuhAHF5t7fn56TioAjLRR3jYAAAA&sig=ACiVB_zCxuttwOnew-jqVWrIfDEwPdlRpQ&htmlParentId=fletch-render-16733025368155291542&responseCallback=fletchCallback16733025368155291542",
+      "target_domain": "ivyrx.com",
+      "total_days_shown": 90,
+      "first_shown": 1742936246,
+      "last_shown": 1755668906,
+      "details_link": "https://adstransparency.google.com/advertiser/AR13569133626141966337/creative/CR02380873631153520641?region=anywhere&domain=ivyrx.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR13569133626141966337&creative_id=CR02380873631153520641&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR13569133626141966337",
+      "advertiser": "IVY RX PLLC",
+      "ad_creative_id": "CR13239227086373126145",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=5372384220&creativeId=730861156073&uiFeatures=12,54&adGroupId=174024729533&itemIds=4924426394305320595&overlay=%3DH4sIAAAAAAAAALMSMxLhEuKcHKbAvF043EVQS5bXOa3sjaGXDJdAcnGxS2ZxQU5iZXBJUWZeuhAHF5t7fn56TioAjLRR3jYAAAA&sig=ACiVB_xiAwV8LXksKnDRm4CUPlXagXknOQ&htmlParentId=fletch-render-12879876702999527596&responseCallback=fletchCallback12879876702999527596",
+      "target_domain": "ivyrx.com",
+      "total_days_shown": 114,
+      "first_shown": 1740111477,
+      "last_shown": 1754649977,
+      "details_link": "https://adstransparency.google.com/advertiser/AR13569133626141966337/creative/CR13239227086373126145?region=anywhere&domain=ivyrx.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR13569133626141966337&creative_id=CR13239227086373126145&engine=google_ads_transparency_center_ad_details"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "search_metadata": {
+    "id": "6a36f7d8b6a867446e0048b5",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/P8H7wA2n_c0vI_Q-KII2eg/6a36f7d8b6a867446e0048b5.json",
+    "created_at": "2026-06-20 20:28:08 UTC",
+    "processed_at": "2026-06-20 20:28:08 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=effecty.com",
+    "raw_html_file": "https://serpapi.com/searches/P8H7wA2n_c0vI_Q-KII2eg/6a36f7d8b6a867446e0048b5.html",
+    "prettify_html_file": "https://serpapi.com/searches/P8H7wA2n_c0vI_Q-KII2eg/6a36f7d8b6a867446e0048b5.prettify",
+    "total_time_taken": 1.63
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "effecty.com"
+  },
+  "search_information": {
+    "total_results": 7
+  },
+  "ad_creatives": [
+    {
+      "advertiser_id": "AR14709091287361912833",
+      "advertiser": "Effecty LLC",
+      "ad_creative_id": "CR05197723594318151681",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=6431182970&creativeId=808776327095&uiFeatures=12,54&adGroupId=196530609837&itemIds=13989333829971420151&sig=ACiVB_wxUIhl1hMAxsfyVJBw6ydg36SzBA&htmlParentId=fletch-render-15293197584407500240&responseCallback=fletchCallback15293197584407500240",
+      "target_domain": "effecty.com",
+      "total_days_shown": 8,
+      "first_shown": 1778680624,
+      "last_shown": 1779296487,
+      "details_link": "https://adstransparency.google.com/advertiser/AR14709091287361912833/creative/CR05197723594318151681?region=anywhere&domain=effecty.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR14709091287361912833&creative_id=CR05197723594318151681&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR14709091287361912833",
+      "advertiser": "Effecty LLC",
+      "ad_creative_id": "CR07186856608478003201",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=6431182970&creativeId=789584787787&uiFeatures=12,54&adGroupId=197412797744&itemIds=13009833352107744665&sig=ACiVB_wMp3lzTzyvoUCtn5fur8wS8DghuA&htmlParentId=fletch-render-13533276589210546593&responseCallback=fletchCallback13533276589210546593",
+      "target_domain": "effecty.com",
+      "total_days_shown": 9,
+      "first_shown": 1766516573,
+      "last_shown": 1767208852,
+      "details_link": "https://adstransparency.google.com/advertiser/AR14709091287361912833/creative/CR07186856608478003201?region=anywhere&domain=effecty.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR14709091287361912833&creative_id=CR07186856608478003201&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR14709091287361912833",
+      "advertiser": "Effecty LLC",
+      "ad_creative_id": "CR12773658438282510337",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=6431182970&creativeId=763086048860&uiFeatures=12,54&adGroupId=181881718709&itemIds=6821231978353925737&overlay=%3DH4sIAAAAAAAAALMSMxLhEuLMlAviiHi0Mk7wtbLKdaHVc4y9ZLgEkouLXTKLC3ISK4NLijLz0oU4uNjc8_PTc1IBNNg1FzYAAAA&sig=ACiVB_yAsmih6s-7uKIW3vTluWdRforcpA&htmlParentId=fletch-render-2816149736157457197&responseCallback=fletchCallback2816149736157457197",
+      "target_domain": "effecty.com",
+      "total_days_shown": 37,
+      "first_shown": 1752146738,
+      "last_shown": 1757686342,
+      "details_link": "https://adstransparency.google.com/advertiser/AR14709091287361912833/creative/CR12773658438282510337?region=anywhere&domain=effecty.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR14709091287361912833&creative_id=CR12773658438282510337&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR14709091287361912833",
+      "advertiser": "Effecty LLC",
+      "ad_creative_id": "CR08324907329988329473",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=6431182970&creativeId=771729139629&uiFeatures=12,54&adGroupId=189875235972&itemIds=6821231978353925737&overlay=%3DH4sIAAAAAAAAALMSMxLhEuLMlAviiHi0Mk7wtbLKdaHVc4y9ZLgEkouLXTKLC3ISK4NLijLz0oU4uNjc8_PTc1K9VLgkijPyCwoy89IdU_zT0lKLnItSE0syy1INhDis2DiecAoxMuJRZQhW9RWkCgCqh0yRggAAAA&sig=ACiVB_xQ6ahKzOIABFa_J6hTbxq2GT6RsQ&htmlParentId=fletch-render-15518898899567325091&responseCallback=fletchCallback15518898899567325091",
+      "target_domain": "effecty.com",
+      "total_days_shown": 4,
+      "first_shown": 1756560989,
+      "last_shown": 1756847573,
+      "details_link": "https://adstransparency.google.com/advertiser/AR14709091287361912833/creative/CR08324907329988329473?region=anywhere&domain=effecty.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR14709091287361912833&creative_id=CR08324907329988329473&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR14709091287361912833",
+      "advertiser": "Effecty LLC",
+      "ad_creative_id": "CR10821691013085528065",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=6431182970&creativeId=730355236690&uiFeatures=12,54&adGroupId=173575949029&itemIds=5422565224713865139&overlay=%3DH4sIAAAAAAAAALMSMxLhEuLcfLykLfySg7dgEf-tsk83Z6t4yXAJJBcXu2QWF-QkVgaXFGXmpQtxcLG55-en56R6qXBJFGfkFxQARR1T_NPSUouci1ITSzLLUg2EOKzYOL4zCTEy4lFlCFbVzCbEyAYA_dMWcYIAAAA&sig=ACiVB_yDMXJrAEVlWvScRVoX3plez7OLag&htmlParentId=fletch-render-7890181045195913723&responseCallback=fletchCallback7890181045195913723",
+      "target_domain": "effecty.com",
+      "total_days_shown": 169,
+      "first_shown": 1737675344,
+      "last_shown": 1752454975,
+      "details_link": "https://adstransparency.google.com/advertiser/AR14709091287361912833/creative/CR10821691013085528065?region=anywhere&domain=effecty.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR14709091287361912833&creative_id=CR10821691013085528065&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR14709091287361912833",
+      "advertiser": "Effecty LLC",
+      "ad_creative_id": "CR02337800606732779521",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=6431182970&creativeId=720630669827&uiFeatures=12,54&adGroupId=171793428204&itemIds=2179359462106701765&overlay=%3DH4sIAAAAAAAAALMSMxLhEuI8Ov9gwKPFdnKCO_YHPXj78ccGLxkugeTiYpfM4oKcxMrgkqLMvHQhDi429_z89JxULxUuieKM_IICoKhjin9aWmqRc1FqYklmWaqBEIcVG8cTTiFGbjyqDMGqmtmEGNnwqDICq_oKNEsAACpWDGSoAAAA&sig=ACiVB_zul-U8fjxq6-bzCk9DBQM8q9YOgQ&htmlParentId=fletch-render-13442160803124810795&responseCallback=fletchCallback13442160803124810795",
+      "target_domain": "effecty.com",
+      "total_days_shown": 248,
+      "first_shown": 1731112316,
+      "last_shown": 1752454959,
+      "details_link": "https://adstransparency.google.com/advertiser/AR14709091287361912833/creative/CR02337800606732779521?region=anywhere&domain=effecty.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR14709091287361912833&creative_id=CR02337800606732779521&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR14709091287361912833",
+      "advertiser": "Effecty LLC",
+      "ad_creative_id": "CR14861378784589774849",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=6431182970&creativeId=720630717095&uiFeatures=12,54&adGroupId=171793445004&itemIds=2574345710283685516&overlay=%3DH4sIAAAAAAAAALMSMxLhEuLsqWvaduLlTmXBAxs--yc6353oJcMlkFxc7JJZXJCTWBlcUpSZly7EwcXmnp-fnpPqpcIlUZyRX1AAFHVM8U9LSy1yLkpNLMksSzUQ4rBi43jCKcTIjUeVIVjVV6AqAQD5N7OdggAAAA&sig=ACiVB_x9uy77890dPzipu-zMFZ_FKvoyZw&htmlParentId=fletch-render-1618717259858628981&responseCallback=fletchCallback1618717259858628981",
+      "target_domain": "effecty.com",
+      "total_days_shown": 246,
+      "first_shown": 1731128585,
+      "last_shown": 1752454872,
+      "details_link": "https://adstransparency.google.com/advertiser/AR14709091287361912833/creative/CR14861378784589774849?region=anywhere&domain=effecty.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR14709091287361912833&creative_id=CR14861378784589774849&engine=google_ads_transparency_center_ad_details"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "search_metadata": {
+    "id": "6a36f78071b492f0cbb865e0",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/JLyf_aKRpxmJ40JZp8OLUg/6a36f78071b492f0cbb865e0.json",
+    "created_at": "2026-06-20 20:26:40 UTC",
+    "processed_at": "2026-06-20 20:26:40 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=ro-co",
+    "raw_html_file": "https://serpapi.com/searches/JLyf_aKRpxmJ40JZp8OLUg/6a36f78071b492f0cbb865e0.html",
+    "prettify_html_file": "https://serpapi.com/searches/JLyf_aKRpxmJ40JZp8OLUg/6a36f78071b492f0cbb865e0.prettify",
+    "total_time_taken": 0.91
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "ro-co"
+  },
+  "search_information": {
+    "results_state": "Fully empty"
+  },
+  "error": "Google Ads Transparency Center hasn't returned any results for this search."
+}

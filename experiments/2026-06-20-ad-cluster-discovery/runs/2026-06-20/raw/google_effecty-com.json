@@ -1,0 +1,21 @@
+{
+  "search_metadata": {
+    "id": "6a36f76b550cc46e7d67ffff",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/i8st-vZ3BtwrU00VgIB8tg/6a36f76b550cc46e7d67ffff.json",
+    "created_at": "2026-06-20 20:26:19 UTC",
+    "processed_at": "2026-06-20 20:26:19 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=effecty-com",
+    "raw_html_file": "https://serpapi.com/searches/i8st-vZ3BtwrU00VgIB8tg/6a36f76b550cc46e7d67ffff.html",
+    "prettify_html_file": "https://serpapi.com/searches/i8st-vZ3BtwrU00VgIB8tg/6a36f76b550cc46e7d67ffff.prettify",
+    "total_time_taken": 6.3
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "effecty-com"
+  },
+  "search_information": {
+    "results_state": "Fully empty"
+  },
+  "error": "Google Ads Transparency Center hasn't returned any results for this search."
+}

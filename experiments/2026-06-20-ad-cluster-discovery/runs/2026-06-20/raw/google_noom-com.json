@@ -1,0 +1,21 @@
+{
+  "search_metadata": {
+    "id": "6a36f77df6e926c13c1820fa",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/u-j-cfabjXpQia1mVJhpIA/6a36f77df6e926c13c1820fa.json",
+    "created_at": "2026-06-20 20:26:37 UTC",
+    "processed_at": "2026-06-20 20:26:37 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=noom-com",
+    "raw_html_file": "https://serpapi.com/searches/u-j-cfabjXpQia1mVJhpIA/6a36f77df6e926c13c1820fa.html",
+    "prettify_html_file": "https://serpapi.com/searches/u-j-cfabjXpQia1mVJhpIA/6a36f77df6e926c13c1820fa.prettify",
+    "total_time_taken": 1.22
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "noom-com"
+  },
+  "search_information": {
+    "results_state": "Fully empty"
+  },
+  "error": "Google Ads Transparency Center hasn't returned any results for this search."
+}

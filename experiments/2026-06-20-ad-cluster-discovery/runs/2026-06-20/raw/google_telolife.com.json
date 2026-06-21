@@ -1,0 +1,21 @@
+{
+  "search_metadata": {
+    "id": "6a36f85373d1759dc996af9e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/CSYjP4T8_IZTErQTB7WSqg/6a36f85373d1759dc996af9e.json",
+    "created_at": "2026-06-20 20:30:11 UTC",
+    "processed_at": "2026-06-20 20:30:11 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=telolife.com",
+    "raw_html_file": "https://serpapi.com/searches/CSYjP4T8_IZTErQTB7WSqg/6a36f85373d1759dc996af9e.html",
+    "prettify_html_file": "https://serpapi.com/searches/CSYjP4T8_IZTErQTB7WSqg/6a36f85373d1759dc996af9e.prettify",
+    "total_time_taken": 0.84
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "telolife.com"
+  },
+  "search_information": {
+    "results_state": "Fully empty"
+  },
+  "error": "Google Ads Transparency Center hasn't returned any results for this search."
+}

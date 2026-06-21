@@ -1,0 +1,50 @@
+{
+  "search_metadata": {
+    "id": "6a36f7f14fa3bad822a40565",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/PycdQq8g6Yh3TfA1PXB-_w/6a36f7f14fa3bad822a40565.json",
+    "created_at": "2026-06-20 20:28:33 UTC",
+    "processed_at": "2026-06-20 20:28:33 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=henrymeds.com",
+    "raw_html_file": "https://serpapi.com/searches/PycdQq8g6Yh3TfA1PXB-_w/6a36f7f14fa3bad822a40565.html",
+    "prettify_html_file": "https://serpapi.com/searches/PycdQq8g6Yh3TfA1PXB-_w/6a36f7f14fa3bad822a40565.prettify",
+    "total_time_taken": 0.87
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "henrymeds.com"
+  },
+  "search_information": {
+    "total_results": 2
+  },
+  "ad_creatives": [
+    {
+      "advertiser_id": "AR15002268830183456769",
+      "advertiser": "ADONIS HEALTH INC.",
+      "ad_creative_id": "CR06043028571839004673",
+      "format": "text",
+      "target_domain": "henrymeds.com",
+      "image": "https://tpc.googlesyndication.com/archive/simgad/11795541807736403893",
+      "width": 380,
+      "height": 173,
+      "total_days_shown": 404,
+      "first_shown": 1704217693,
+      "last_shown": 1763991895,
+      "details_link": "https://adstransparency.google.com/advertiser/AR15002268830183456769/creative/CR06043028571839004673?region=anywhere&domain=henrymeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR15002268830183456769&creative_id=CR06043028571839004673&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR15002268830183456769",
+      "advertiser": "ADONIS HEALTH INC.",
+      "ad_creative_id": "CR04015165380849827841",
+      "format": "image",
+      "link": "https://displayads-formats.googleusercontent.com/ads/preview/content.js?client=ads-integrity-transparency&obfuscatedCustomerId=1161288057&creativeId=731488711136&uiFeatures=12,54&adGroupId=177200681991&itemIds=9682066199610548008&overlay=%3DH4sIAAAAAAAAALMSMxLhEuLUiJ-l_nJ2bJvg9xc7l1wO2vjdS4ZLILm42CWzuCAnsTK4pCgzL12Ig4vNPT8_PSfVS4VLojgjv6AAKOqY4p-WllrkXJSaWJJZlmogxGHFxvGdSYiREY8qQ7Cqr5xAVQCHhmv2ggAAAA&sig=ACiVB_zTliC6phOvgONnELkvGxNOMGQN4w&htmlParentId=fletch-render-10747598559327432147&responseCallback=fletchCallback10747598559327432147",
+      "target_domain": "henrymeds.com",
+      "total_days_shown": 143,
+      "first_shown": 1738473746,
+      "last_shown": 1758710141,
+      "details_link": "https://adstransparency.google.com/advertiser/AR15002268830183456769/creative/CR04015165380849827841?region=anywhere&domain=henrymeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR15002268830183456769&creative_id=CR04015165380849827841&engine=google_ads_transparency_center_ad_details"
+    }
+  ]
+}

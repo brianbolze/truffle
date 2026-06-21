@@ -1,0 +1,42 @@
+{
+  "captured_at": "2026-06-20T20:30:12Z",
+  "keywords": [
+    "compounded semaglutide",
+    "GLP-1 weight loss",
+    "compounded tirzepatide",
+    "testosterone replacement therapy",
+    "online ED treatment"
+  ],
+  "track_b_sample": [
+    "brellohealth.com",
+    "directmeds.com",
+    "eden.health",
+    "effecty.com",
+    "goodlifemeds.com",
+    "henrymeds.com",
+    "hims.com",
+    "home.medvi.org",
+    "ivimhealth.com",
+    "ivyrx.com",
+    "joinamble.com",
+    "joinfound.com",
+    "joinfridays.com",
+    "mydrhank.com",
+    "noom.com",
+    "remedymeds.com",
+    "ro.co",
+    "telolife.com"
+  ],
+  "per_query": 60,
+  "per_domain": 3,
+  "counts": {
+    "total": 275,
+    "meta": 249,
+    "google": 26,
+    "distinct_advertisers": 96
+  },
+  "est_cost": {
+    "apify_usd": 0,
+    "serpapi_searches": 72
+  }
+}

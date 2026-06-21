@@ -1,0 +1,48 @@
+{
+  "search_metadata": {
+    "id": "6a36f7ce1290d9f67cd68711",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/cBmJ0SdycdkPMDC6qjmN7w/6a36f7ce1290d9f67cd68711.json",
+    "created_at": "2026-06-20 20:27:58 UTC",
+    "processed_at": "2026-06-20 20:27:58 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=directmeds.com",
+    "raw_html_file": "https://serpapi.com/searches/cBmJ0SdycdkPMDC6qjmN7w/6a36f7ce1290d9f67cd68711.html",
+    "prettify_html_file": "https://serpapi.com/searches/cBmJ0SdycdkPMDC6qjmN7w/6a36f7ce1290d9f67cd68711.prettify",
+    "total_time_taken": 5.59
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "directmeds.com"
+  },
+  "search_information": {
+    "total_results": 2
+  },
+  "ad_creatives": [
+    {
+      "advertiser_id": "AR00543458507068801025",
+      "advertiser": "Sapphire Media Group LLC",
+      "ad_creative_id": "CR18206386304982188033",
+      "format": "image",
+      "target_domain": "directmeds.com",
+      "image": "https://tpc.googlesyndication.com/archive/simgad/10751072257534459725",
+      "total_days_shown": 12,
+      "first_shown": 1777624169,
+      "last_shown": 1778620803,
+      "details_link": "https://adstransparency.google.com/advertiser/AR00543458507068801025/creative/CR18206386304982188033?region=anywhere&domain=directmeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR00543458507068801025&creative_id=CR18206386304982188033&engine=google_ads_transparency_center_ad_details"
+    },
+    {
+      "advertiser_id": "AR00543458507068801025",
+      "advertiser": "Sapphire Media Group LLC",
+      "ad_creative_id": "CR02452048789800747009",
+      "format": "image",
+      "target_domain": "directmeds.com",
+      "image": "https://tpc.googlesyndication.com/archive/simgad/18002107973576581549",
+      "total_days_shown": 8,
+      "first_shown": 1774601388,
+      "last_shown": 1776717133,
+      "details_link": "https://adstransparency.google.com/advertiser/AR00543458507068801025/creative/CR02452048789800747009?region=anywhere&domain=directmeds.com",
+      "serpapi_details_link": "https://serpapi.com/search.json?advertiser_id=AR00543458507068801025&creative_id=CR02452048789800747009&engine=google_ads_transparency_center_ad_details"
+    }
+  ]
+}

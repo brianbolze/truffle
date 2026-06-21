@@ -1,0 +1,326 @@
+[
+  {
+    "store_slug": "agelessrx-com",
+    "domain": "agelessrx.com",
+    "name": "AgelessRx",
+    "anchor_category": "longevity/NAD"
+  },
+  {
+    "store_slug": "bluechew-com",
+    "domain": "bluechew.com",
+    "name": "BlueChew",
+    "anchor_category": "sexual-health"
+  },
+  {
+    "store_slug": "brellohealth-com",
+    "domain": "brellohealth.com",
+    "name": "Brello Health",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "defymedical-com",
+    "domain": "defymedical.com",
+    "name": "Defy Medical",
+    "anchor_category": "TRT"
+  },
+  {
+    "store_slug": "directmeds-com",
+    "domain": "directmeds.com",
+    "name": "Direct Meds",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "eden-health",
+    "domain": "eden.health",
+    "name": "Eden",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "effecty-com",
+    "domain": "effecty.com",
+    "name": "Effecty",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "functionhealth-com",
+    "domain": "functionhealth.com",
+    "name": "Function Health",
+    "anchor_category": "labs"
+  },
+  {
+    "store_slug": "gethealthspan-com",
+    "domain": "gethealthspan.com",
+    "name": "Healthspan",
+    "anchor_category": "longevity/NAD"
+  },
+  {
+    "store_slug": "getopt-com",
+    "domain": "getopt.com",
+    "name": "Opt Health",
+    "anchor_category": "TRT"
+  },
+  {
+    "store_slug": "getpetermd-com",
+    "domain": "getpetermd.com",
+    "name": "PeterMD",
+    "anchor_category": "TRT"
+  },
+  {
+    "store_slug": "gogeviti-com",
+    "domain": "gogeviti.com",
+    "name": "Geviti",
+    "anchor_category": "longevity/NAD"
+  },
+  {
+    "store_slug": "goodlifemeds-com",
+    "domain": "goodlifemeds.com",
+    "name": "Good Life Meds",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "hellopepti-com",
+    "domain": "hellopepti.com",
+    "name": "Pepti",
+    "anchor_category": "peptides"
+  },
+  {
+    "store_slug": "hellowisp-com",
+    "domain": "hellowisp.com",
+    "name": "Wisp",
+    "anchor_category": "multi/none"
+  },
+  {
+    "store_slug": "henrymeds-com",
+    "domain": "henrymeds.com",
+    "name": "Henry Meds",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "hevahealth-com",
+    "domain": "hevahealth.com",
+    "name": "Heva Health",
+    "anchor_category": "multi/none"
+  },
+  {
+    "store_slug": "hims-com",
+    "domain": "hims.com",
+    "name": "Hims",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "home-medvi-org",
+    "domain": "home.medvi.org",
+    "name": "MEDVi",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "honehealth-com",
+    "domain": "honehealth.com",
+    "name": "Hone Health",
+    "anchor_category": "longevity/NAD"
+  },
+  {
+    "store_slug": "hormonemd-com",
+    "domain": "hormonemd.com",
+    "name": "HormoneMD",
+    "anchor_category": "TRT"
+  },
+  {
+    "store_slug": "hydramed-com",
+    "domain": "hydramed.com",
+    "name": "HydraMed",
+    "anchor_category": "multi/none"
+  },
+  {
+    "store_slug": "innerbalance-com",
+    "domain": "innerbalance.com",
+    "name": "Inner Balance",
+    "anchor_category": "womens-HRT"
+  },
+  {
+    "store_slug": "invigormedical-com",
+    "domain": "invigormedical.com",
+    "name": "Invigor Medical",
+    "anchor_category": "multi/none"
+  },
+  {
+    "store_slug": "ivimhealth-com",
+    "domain": "ivimhealth.com",
+    "name": "Iv\u00edm Health",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "ivyrx-com",
+    "domain": "ivyrx.com",
+    "name": "Ivy RX",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "joiandblokes-com",
+    "domain": "joiandblokes.com",
+    "name": "Joi + Blokes",
+    "anchor_category": "multi/none"
+  },
+  {
+    "store_slug": "joinamble-com",
+    "domain": "joinamble.com",
+    "name": "Amble",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "joinfound-com",
+    "domain": "joinfound.com",
+    "name": "Found",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "joinfridays-com",
+    "domain": "joinfridays.com",
+    "name": "Fridays",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "keeps-com",
+    "domain": "keeps.com",
+    "name": "Keeps",
+    "anchor_category": "hair"
+  },
+  {
+    "store_slug": "kingsbergmedical-com",
+    "domain": "kingsbergmedical.com",
+    "name": "Kingsberg Medical",
+    "anchor_category": "multi/none"
+  },
+  {
+    "store_slug": "lifemd-com",
+    "domain": "lifemd.com",
+    "name": "LifeMD",
+    "anchor_category": "multi/none"
+  },
+  {
+    "store_slug": "malemd-com",
+    "domain": "malemd.com",
+    "name": "MaleMD",
+    "anchor_category": "multi/none"
+  },
+  {
+    "store_slug": "marekhealth-com",
+    "domain": "marekhealth.com",
+    "name": "Marek Health",
+    "anchor_category": "TRT"
+  },
+  {
+    "store_slug": "maximustribe-com",
+    "domain": "maximustribe.com",
+    "name": "Maximus",
+    "anchor_category": "TRT"
+  },
+  {
+    "store_slug": "mydrhank-com",
+    "domain": "mydrhank.com",
+    "name": "MyDrHank",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "mylifeforce-com",
+    "domain": "mylifeforce.com",
+    "name": "Lifeforce",
+    "anchor_category": "longevity/NAD"
+  },
+  {
+    "store_slug": "niagenplus-com",
+    "domain": "niagenplus.com",
+    "name": "Niagen Plus",
+    "anchor_category": "longevity/NAD"
+  },
+  {
+    "store_slug": "noom-com",
+    "domain": "noom.com",
+    "name": "Noom",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "nurx-com",
+    "domain": "nurx.com",
+    "name": "Nurx",
+    "anchor_category": "multi/none"
+  },
+  {
+    "store_slug": "onemedical-com",
+    "domain": "onemedical.com",
+    "name": "One Medical",
+    "anchor_category": "primary-care"
+  },
+  {
+    "store_slug": "prohealth-com",
+    "domain": "prohealth.com",
+    "name": "ProHealth Longevity",
+    "anchor_category": "longevity/NAD"
+  },
+  {
+    "store_slug": "remedymeds-com",
+    "domain": "remedymeds.com",
+    "name": "Remedy Meds",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "rexmd-com",
+    "domain": "rexmd.com",
+    "name": "Rex MD",
+    "anchor_category": "sexual-health"
+  },
+  {
+    "store_slug": "ro-co",
+    "domain": "ro.co",
+    "name": "Ro",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "rugiet-com",
+    "domain": "rugiet.com",
+    "name": "Rugiet",
+    "anchor_category": "sexual-health"
+  },
+  {
+    "store_slug": "sermorelin-com",
+    "domain": "sermorelin.com",
+    "name": "Sermorelin.com",
+    "anchor_category": "peptides"
+  },
+  {
+    "store_slug": "struthealth-com",
+    "domain": "struthealth.com",
+    "name": "Strut Health",
+    "anchor_category": "multi/none"
+  },
+  {
+    "store_slug": "telolife-com",
+    "domain": "telolife.com",
+    "name": "TeloLife",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "trtnation-com",
+    "domain": "trtnation.com",
+    "name": "TRT Nation",
+    "anchor_category": "TRT"
+  },
+  {
+    "store_slug": "truniagen-com",
+    "domain": "truniagen.com",
+    "name": "Tru Niagen",
+    "anchor_category": "longevity/NAD"
+  },
+  {
+    "store_slug": "tryshed-com",
+    "domain": "tryshed.com",
+    "name": "Shed",
+    "anchor_category": "GLP-1"
+  },
+  {
+    "store_slug": "vitalityrx-com",
+    "domain": "vitalityrx.com",
+    "name": "Vitality Rx",
+    "anchor_category": "TRT"
+  }
+]

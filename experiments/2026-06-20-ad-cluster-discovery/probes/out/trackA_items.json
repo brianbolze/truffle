@@ -1,0 +1,1236 @@
+[
+  {
+    "inputUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=compounded%20semaglutide&search_type=keyword_unordered&media_type=all",
+    "pageInfo": {
+      "adLibrarySystemStatus": {
+        "systemStatus": {
+          "status": "NO_KNOWN_ISSUES",
+          "activeIssues": [
+            {
+              "product": "Ad Library",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library Report",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library API",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Branded Content",
+              "status": "NO_KNOWN_ISSUES"
+            }
+          ]
+        }
+      },
+      "xfbAdLibraryIsCaptchaRequired": false,
+      "page": null,
+      "adLibraryUser": null
+    },
+    "pageID": "631789043357253",
+    "adArchiveID": "834003889136485",
+    "startDateFormatted": "2026-04-22T07:00:00.000Z",
+    "endDateFormatted": "2026-06-20T07:00:00.000Z",
+    "adArchiveId": "834003889136485",
+    "collationCount": null,
+    "collationId": null,
+    "pageId": "631789043357253",
+    "snapshot": {
+      "brandedContent": null,
+      "pageId": "631789043357253",
+      "pageIsDeleted": false,
+      "pageProfileUri": "https://www.facebook.com/61576447056114/",
+      "rootResharedPost": null,
+      "byline": null,
+      "disclaimerLabel": null,
+      "pageName": "Dad Club Co.",
+      "pageProfilePictureUrl": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.35426-6/678762719_1626468021965016_971448104489199471_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YXggnzz7UA0Q7kNvwE8ejJY&_nc_oc=AdrzBcdI-VNtTdNujWC9WnDQrNNSrybzd6R9kJTzl1SRqy8uhfsQq0SARQBV8y7zd54&_nc_zt=14&_nc_ht=scontent-ord5-1.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af_XigKrYwLn3ag31O3qD7x9dp9pDWOZxSi4g_sWM0HVLA&oe=6A3CC132",
+      "event": null,
+      "caption": null,
+      "ctaText": null,
+      "cards": [],
+      "body": {
+        "text": "Why pay $1,000+ for brand-name GLP-1 when you can get the same active ingredient for 89% less? \n\nDollar Dad Club keeps pricing simple: \n\u2705 Medication included \n\u2705 Any dose you need \n\u2705 Supplies + clinician support included \n\u274c No hidden fees \n\u274c No subscriptions \n\u274c No membership fee \n\nPlans only $89/month -  Up to $1800 OFF through our limited time offer."
+      },
+      "ctaType": null,
+      "displayFormat": null,
+      "linkDescription": null,
+      "linkUrl": null,
+      "images": [],
+      "pageCategories": [],
+      "pageLikeCount": null,
+      "title": null,
+      "videos": [],
+      "isReshared": null,
+      "extraLinks": [],
+      "extraTexts": [],
+      "extraImages": [],
+      "extraVideos": [],
+      "countryIsoCode": null,
+      "brazilTaxId": null,
+      "additionalInfo": null,
+      "ecCertificates": []
+    },
+    "isActive": true,
+    "hasUserReported": false,
+    "reportCount": null,
+    "menuItems": [],
+    "stateMediaRunLabel": null,
+    "pageIsDeleted": false,
+    "pageName": "Dad Club Co.",
+    "impressionsWithIndex": {
+      "impressionsText": null,
+      "impressionsIndex": -1
+    },
+    "gatedType": "LOGGED_OUT",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "isAaaEligible": false,
+    "containsDigitalCreatedMedia": false,
+    "reachEstimate": null,
+    "currency": "",
+    "spend": null,
+    "endDate": 1781938800,
+    "publisherPlatform": [
+      "FACEBOOK"
+    ],
+    "startDate": 1776841200,
+    "containsSensitiveContent": false,
+    "totalActiveTime": null,
+    "regionalRegulationData": {
+      "finserv": {
+        "isDeemedFinserv": false,
+        "isLimitedDelivery": false
+      },
+      "twAntiScam": {
+        "isLimitedDelivery": false
+      }
+    },
+    "hideDataStatus": "NONE",
+    "fevInfo": null,
+    "adId": null,
+    "targetedOrReachedCountries": []
+  },
+  {
+    "inputUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=compounded%20semaglutide&search_type=keyword_unordered&media_type=all",
+    "pageInfo": {
+      "adLibrarySystemStatus": {
+        "systemStatus": {
+          "status": "NO_KNOWN_ISSUES",
+          "activeIssues": [
+            {
+              "product": "Ad Library",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library Report",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library API",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Branded Content",
+              "status": "NO_KNOWN_ISSUES"
+            }
+          ]
+        }
+      },
+      "xfbAdLibraryIsCaptchaRequired": false,
+      "page": null,
+      "adLibraryUser": null
+    },
+    "pageID": "123368351181305",
+    "adArchiveID": "1386748853132209",
+    "startDateFormatted": "2025-11-26T08:00:00.000Z",
+    "endDateFormatted": "2026-06-20T07:00:00.000Z",
+    "adArchiveId": "1386748853132209",
+    "collationCount": 1,
+    "collationId": "25100837569577142",
+    "pageId": "123368351181305",
+    "snapshot": {
+      "brandedContent": null,
+      "pageId": "123368351181305",
+      "pageIsDeleted": false,
+      "pageProfileUri": "https://www.facebook.com/zrlawfirm/",
+      "rootResharedPost": null,
+      "byline": null,
+      "disclaimerLabel": null,
+      "pageName": "Zimmerman Reed",
+      "pageProfilePictureUrl": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.35426-6/589818536_1555626052129399_285729723253705531_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Q73GHgnm6RoQ7kNvwFto_2x&_nc_oc=Adqmr1zHdS8UZA9JN3eNszqCBr0r8y3tEV9UcL9fldvlyLOlwjQgBOUTnp7dc9oguio&_nc_zt=14&_nc_ht=scontent-ord5-2.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af-4g_gX3D4IAy4tuXIIZClIU-57UFAhLDZKKWLZygsI0Q&oe=6A3CC4E8",
+      "event": null,
+      "caption": "zrclaims.com",
+      "ctaText": "Learn more",
+      "cards": [
+        {
+          "body": "If you purchased compounded GLP-1 weight loss products from hims.com or forhers.com that were advertised to be the same as Ozempic or Wegovy, you could have a claim under California law.\n\nFill out our short form for a free case review.",
+          "ctaType": "LEARN_MORE",
+          "caption": "",
+          "linkDescription": null,
+          "linkUrl": "https://zrclaims.com/case/hims-hers-glp1/?utm_source=zr&utm_medium=meta&utm_campaign=hh&utm_term=hh-v1a",
+          "title": "Investigating hims.com and forhers.com GLP-1 Weight Loss Treatments.",
+          "ctaText": "Learn More",
+          "videoHdUrl": null,
+          "videoPreviewImageUrl": null,
+          "videoSdUrl": null,
+          "watermarkedVideoHdUrl": null,
+          "watermarkedVideoSdUrl": null,
+          "imageCrops": [],
+          "originalImageUrl": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.35426-6/590325449_1134525422070000_479278720169288789_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nE4GmABQwT4Q7kNvwEJUdWk&_nc_oc=Ado3fwQ5vHpz1m89Fp72P5j3Hlc1w_4gCLgkRZD2Vibb1LA16OauZl-dUtq5tX2Xrts&_nc_zt=14&_nc_ht=scontent-ord5-1.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af9DWIjbfJLgRpUBzynH46U7Tfmp_dlh89_yamjlsCzaEw&oe=6A3CC6B9",
+          "resizedImageUrl": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.35426-6/586741824_810872165102281_597886503214189264_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5FGEyzDv2vIQ7kNvwH62Thk&_nc_oc=AdryEjXzVqvWxq7072U0n3QnSQKEgZfvtGs9vXXe0L0BOx_4nke3Drig7IKEisQy0Lg&_nc_zt=14&_nc_ht=scontent-ord5-1.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af-ULOPVXwj6YloxoD6-BuOVPwvDspAJjKZzRD6wpNgJMQ&oe=6A3CD967",
+          "watermarkedResizedImageUrl": ""
+        },
+        {
+          "body": "If you purchased compounded GLP-1 weight loss products from hims.com or forhers.com that were advertised to be the same as Ozempic or Wegovy, you could have a claim under California law.\n\nFill out our short form for a free case review.",
+          "ctaType": "LEARN_MORE",
+          "caption": "",
+          "linkDescription": null,
+          "linkUrl": "https://zrclaims.com/case/hims-hers-glp1/?utm_source=zr&utm_medium=meta&utm_campaign=hh&utm_term=hh-v1a",
+          "title": "Investigating hims.com and forhers.com GLP-1 Weight Loss Treatments.",
+          "ctaText": "Learn More",
+          "videoHdUrl": null,
+          "videoPreviewImageUrl": null,
+          "videoSdUrl": null,
+          "watermarkedVideoHdUrl": null,
+          "watermarkedVideoSdUrl": null,
+          "imageCrops": [],
+          "originalImageUrl": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.35426-6/587748150_1556423865561226_5147994524311971078_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wQKav3GqMNYQ7kNvwFLpAHt&_nc_oc=AdrDI6p2dE0Dx7KL6uz4rZ1oMlXXmvT3pxPq-ESz8axWRkDpVDBKCVQxM4gfems6sDU&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af8iJOFjTY9j7yXU3q1_M1rHAK3767tLKO4c1qofyy9_ug&oe=6A3CDD47",
+          "resizedImageUrl": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.35426-6/586596121_1192565562242999_4184380727726470916_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7yWipYBC-6oQ7kNvwFJnX05&_nc_oc=AdpEmoGzqNxBXnCSVP65WwmvM847AhxcEenCiAwcMYig1vYn2Ni8EYokJwumTAgGvQI&_nc_zt=14&_nc_ht=scontent-ord5-2.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af9YRxZBLxhl6L39HtR8zthPqD8RLoFEQDfVOgGiGio51Q&oe=6A3CB44F",
+          "watermarkedResizedImageUrl": ""
+        },
+        {
+          "body": "If you purchased compounded GLP-1 weight loss products from hims.com or forhers.com that were advertised to be the same as Ozempic or Wegovy, you could have a claim under California law.\n\nFill out our short form for a free case review.",
+          "ctaType": "LEARN_MORE",
+          "caption": "",
+          "linkDescription": null,
+          "linkUrl": "https://zrclaims.com/case/hims-hers-glp1/?utm_source=zr&utm_medium=meta&utm_campaign=hh&utm_term=hh-v1a",
+          "title": "Investigating hims.com and forhers.com GLP-1 Weight Loss Treatments.",
+          "ctaText": "Learn More",
+          "videoHdUrl": null,
+          "videoPreviewImageUrl": null,
+          "videoSdUrl": null,
+          "watermarkedVideoHdUrl": null,
+          "watermarkedVideoSdUrl": null,
+          "imageCrops": [],
+          "originalImageUrl": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.35426-6/589326287_2529994277372993_7409651743588558713_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=W1ShP6hTivoQ7kNvwEQuy_1&_nc_oc=AdoI7PnRMz-IwKSTIrRgkb7fxtmuI2qtwTzFmG1QMuSKpjA4twOcVuR6aMKMCUCZHgo&_nc_zt=14&_nc_ht=scontent-ord5-2.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af9Tg1epXKQqJwlwRR-uQrtRR2aPgGcvPzrs8gkleJvXrw&oe=6A3CC1C1",
+          "resizedImageUrl": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.35426-6/587748150_846685114522070_5376488621029712783_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6Z9LbrqCPuAQ7kNvwHFkoMt&_nc_oc=Adrc_ldNQTw5O9Rr9CVGmuN2QRU8qz29wwMWPBZjWIplWHByqIs9ICiPZlnqNS3KSgk&_nc_zt=14&_nc_ht=scontent-ord5-1.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af_fnZhkF7EwgdGO3kxhJQWqBnZDmWpstARD-Z_Qfbrzxg&oe=6A3CC684",
+          "watermarkedResizedImageUrl": ""
+        }
+      ],
+      "body": {
+        "text": "{{product.brand}}"
+      },
+      "ctaType": "LEARN_MORE",
+      "displayFormat": "DCO",
+      "linkDescription": "{{product.description}}",
+      "linkUrl": "https://zrclaims.com/case/hims-hers-glp1/?utm_source=zr&utm_medium=meta&utm_campaign=hh&utm_term=hh-v1a",
+      "images": [],
+      "pageCategories": [
+        "Lawyer"
+      ],
+      "pageLikeCount": 9645,
+      "title": "{{product.name}}",
+      "videos": [],
+      "isReshared": false,
+      "extraLinks": [],
+      "extraTexts": [],
+      "extraImages": [],
+      "extraVideos": [],
+      "countryIsoCode": null,
+      "brazilTaxId": null,
+      "additionalInfo": null,
+      "ecCertificates": []
+    },
+    "isActive": true,
+    "hasUserReported": false,
+    "reportCount": null,
+    "menuItems": [],
+    "stateMediaRunLabel": null,
+    "pageIsDeleted": false,
+    "pageName": "Zimmerman Reed",
+    "impressionsWithIndex": {
+      "impressionsText": null,
+      "impressionsIndex": -1
+    },
+    "gatedType": "ELIGIBLE",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "isAaaEligible": false,
+    "containsDigitalCreatedMedia": false,
+    "reachEstimate": null,
+    "currency": "",
+    "spend": null,
+    "endDate": 1781938800,
+    "publisherPlatform": [
+      "FACEBOOK",
+      "INSTAGRAM",
+      "AUDIENCE_NETWORK",
+      "MESSENGER",
+      "THREADS"
+    ],
+    "startDate": 1764144000,
+    "containsSensitiveContent": false,
+    "totalActiveTime": null,
+    "regionalRegulationData": {
+      "finserv": {
+        "isDeemedFinserv": false,
+        "isLimitedDelivery": false
+      },
+      "twAntiScam": {
+        "isLimitedDelivery": false
+      }
+    },
+    "hideDataStatus": "NONE",
+    "fevInfo": null,
+    "adId": null,
+    "targetedOrReachedCountries": []
+  },
+  {
+    "inputUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=compounded%20semaglutide&search_type=keyword_unordered&media_type=all",
+    "pageInfo": {
+      "adLibrarySystemStatus": {
+        "systemStatus": {
+          "status": "NO_KNOWN_ISSUES",
+          "activeIssues": [
+            {
+              "product": "Ad Library",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library Report",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library API",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Branded Content",
+              "status": "NO_KNOWN_ISSUES"
+            }
+          ]
+        }
+      },
+      "xfbAdLibraryIsCaptchaRequired": false,
+      "page": null,
+      "adLibraryUser": null
+    },
+    "pageID": "508899805634745",
+    "adArchiveID": "976440054847039",
+    "startDateFormatted": "2026-04-24T07:00:00.000Z",
+    "endDateFormatted": "2026-06-20T07:00:00.000Z",
+    "adArchiveId": "976440054847039",
+    "collationCount": 1,
+    "collationId": "1926766148203009",
+    "pageId": "508899805634745",
+    "snapshot": {
+      "brandedContent": null,
+      "pageId": "508899805634745",
+      "pageIsDeleted": false,
+      "pageProfileUri": "https://www.facebook.com/61569440433545/",
+      "rootResharedPost": null,
+      "byline": null,
+      "disclaimerLabel": null,
+      "pageName": "Em Miller",
+      "pageProfilePictureUrl": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.35426-6/678287357_1282570700714294_7008836220506377437_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IjttfN-iPY8Q7kNvwHRK01k&_nc_oc=AdqJPrzfA-weL6rhL4Gdr9C1R0Uhh0GWZ5tn2Qan-KXX8RkXm_0IPemGaSuYK8FleQQ&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af9UmKZBhEO2zGJayuk5kcHXWD97xpQ6qDPLEzHKpfDpgA&oe=6A3CD1AF",
+      "event": null,
+      "caption": null,
+      "ctaText": null,
+      "cards": [],
+      "body": {
+        "text": "{{product.brand}}"
+      },
+      "ctaType": null,
+      "displayFormat": null,
+      "linkDescription": null,
+      "linkUrl": null,
+      "images": [],
+      "pageCategories": [],
+      "pageLikeCount": null,
+      "title": null,
+      "videos": [],
+      "isReshared": null,
+      "extraLinks": [],
+      "extraTexts": [],
+      "extraImages": [],
+      "extraVideos": [],
+      "countryIsoCode": null,
+      "brazilTaxId": null,
+      "additionalInfo": null,
+      "ecCertificates": []
+    },
+    "isActive": true,
+    "hasUserReported": false,
+    "reportCount": null,
+    "menuItems": [],
+    "stateMediaRunLabel": null,
+    "pageIsDeleted": false,
+    "pageName": "Em Miller",
+    "impressionsWithIndex": {
+      "impressionsText": null,
+      "impressionsIndex": -1
+    },
+    "gatedType": "LOGGED_OUT",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "isAaaEligible": false,
+    "containsDigitalCreatedMedia": false,
+    "reachEstimate": null,
+    "currency": "",
+    "spend": null,
+    "endDate": 1781938800,
+    "publisherPlatform": [
+      "FACEBOOK",
+      "INSTAGRAM",
+      "MESSENGER",
+      "THREADS"
+    ],
+    "startDate": 1777014000,
+    "containsSensitiveContent": false,
+    "totalActiveTime": null,
+    "regionalRegulationData": {
+      "finserv": {
+        "isDeemedFinserv": false,
+        "isLimitedDelivery": false
+      },
+      "twAntiScam": {
+        "isLimitedDelivery": false
+      }
+    },
+    "hideDataStatus": "NONE",
+    "fevInfo": null,
+    "adId": null,
+    "targetedOrReachedCountries": []
+  },
+  {
+    "inputUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=compounded%20semaglutide&search_type=keyword_unordered&media_type=all",
+    "pageInfo": {
+      "adLibrarySystemStatus": {
+        "systemStatus": {
+          "status": "NO_KNOWN_ISSUES",
+          "activeIssues": [
+            {
+              "product": "Ad Library",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library Report",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library API",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Branded Content",
+              "status": "NO_KNOWN_ISSUES"
+            }
+          ]
+        }
+      },
+      "xfbAdLibraryIsCaptchaRequired": false,
+      "page": null,
+      "adLibraryUser": null
+    },
+    "pageID": "569360030191101",
+    "adArchiveID": "26568640116132710",
+    "startDateFormatted": "2026-04-29T07:00:00.000Z",
+    "endDateFormatted": "2026-06-20T07:00:00.000Z",
+    "adArchiveId": "26568640116132710",
+    "collationCount": 8,
+    "collationId": "2235911990563974",
+    "pageId": "569360030191101",
+    "snapshot": {
+      "brandedContent": null,
+      "pageId": "569360030191101",
+      "pageIsDeleted": false,
+      "pageProfileUri": "https://www.facebook.com/100082293060827/",
+      "rootResharedPost": null,
+      "byline": null,
+      "disclaimerLabel": null,
+      "pageName": "Rx Pros Wellness Online",
+      "pageProfilePictureUrl": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.35426-6/684261439_950301724642495_724691113028790316_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xdhV7hdk6l4Q7kNvwGKbiYc&_nc_oc=AdqeuNviyXSa6JoBSLozfXirLJX6_6kH-FPHa6nDdZl6Fc1rqBPekS6fgl_6shMqNME&_nc_zt=14&_nc_ht=scontent-ord5-2.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af_ycDsmZAKqZgQ5tSvQ2gEZ7tRg3IUeqVoFzAkOOpq1jg&oe=6A3CE187",
+      "event": null,
+      "caption": null,
+      "ctaText": null,
+      "cards": [],
+      "body": {
+        "text": "Most GLP-1 programs start low and quietly raise your rate as your dose increases. Not us. At RxPros, Semaglutide stays at $99/mo and Tirzepatide at $144.97/mo - no matter what. Prescribed in as fast as 4 hours. Shipped from US pharmacies. Your weight loss journey shouldn't come with a surprise bill every month."
+      },
+      "ctaType": null,
+      "displayFormat": null,
+      "linkDescription": null,
+      "linkUrl": null,
+      "images": [],
+      "pageCategories": [],
+      "pageLikeCount": null,
+      "title": null,
+      "videos": [],
+      "isReshared": null,
+      "extraLinks": [],
+      "extraTexts": [],
+      "extraImages": [],
+      "extraVideos": [],
+      "countryIsoCode": null,
+      "brazilTaxId": null,
+      "additionalInfo": null,
+      "ecCertificates": []
+    },
+    "isActive": true,
+    "hasUserReported": false,
+    "reportCount": null,
+    "menuItems": [],
+    "stateMediaRunLabel": null,
+    "pageIsDeleted": false,
+    "pageName": "Rx Pros Wellness Online",
+    "impressionsWithIndex": {
+      "impressionsText": null,
+      "impressionsIndex": -1
+    },
+    "gatedType": "LOGGED_OUT",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "isAaaEligible": false,
+    "containsDigitalCreatedMedia": false,
+    "reachEstimate": null,
+    "currency": "",
+    "spend": null,
+    "endDate": 1781938800,
+    "publisherPlatform": [
+      "FACEBOOK",
+      "INSTAGRAM",
+      "AUDIENCE_NETWORK",
+      "MESSENGER",
+      "THREADS"
+    ],
+    "startDate": 1777446000,
+    "containsSensitiveContent": false,
+    "totalActiveTime": null,
+    "regionalRegulationData": {
+      "finserv": {
+        "isDeemedFinserv": false,
+        "isLimitedDelivery": false
+      },
+      "twAntiScam": {
+        "isLimitedDelivery": false
+      }
+    },
+    "hideDataStatus": "NONE",
+    "fevInfo": null,
+    "adId": null,
+    "targetedOrReachedCountries": []
+  },
+  {
+    "inputUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=compounded%20semaglutide&search_type=keyword_unordered&media_type=all",
+    "pageInfo": {
+      "adLibrarySystemStatus": {
+        "systemStatus": {
+          "status": "NO_KNOWN_ISSUES",
+          "activeIssues": [
+            {
+              "product": "Ad Library",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library Report",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library API",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Branded Content",
+              "status": "NO_KNOWN_ISSUES"
+            }
+          ]
+        }
+      },
+      "xfbAdLibraryIsCaptchaRequired": false,
+      "page": null,
+      "adLibraryUser": null
+    },
+    "pageID": "569360030191101",
+    "adArchiveID": "1454533759210968",
+    "startDateFormatted": "2026-05-04T07:00:00.000Z",
+    "endDateFormatted": "2026-06-20T07:00:00.000Z",
+    "adArchiveId": "1454533759210968",
+    "collationCount": 8,
+    "collationId": "1586869719044057",
+    "pageId": "569360030191101",
+    "snapshot": {
+      "brandedContent": null,
+      "pageId": "569360030191101",
+      "pageIsDeleted": false,
+      "pageProfileUri": "https://www.facebook.com/100082293060827/",
+      "rootResharedPost": null,
+      "byline": null,
+      "disclaimerLabel": null,
+      "pageName": "Rx Pros Wellness Online",
+      "pageProfilePictureUrl": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.35426-6/682881279_2428538567586393_7315467276173619767_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bHGW4BsucF0Q7kNvwE4iS7p&_nc_oc=AdpPXyevzqsQgECQfMSG8CGQAoi5nmLEOy5iy9bXhGZYB9xOkiLdLKrhVhB7mBXoQ78&_nc_zt=14&_nc_ht=scontent-ord5-2.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af8yA8KZbc77CYS6JEDxjOd9KkI-fPyqlC__4Z0fkgnu4w&oe=6A3CD937",
+      "event": null,
+      "caption": null,
+      "ctaText": null,
+      "cards": [],
+      "body": {
+        "text": "Most GLP-1 programs start low and quietly raise your rate as your dose increases. Not us. At RxPros, Semaglutide stays at $99/mo and Tirzepatide at $144.97/mo - no matter what. Prescribed in as fast as 4 hours. Shipped from US pharmacies. Your weight loss journey shouldn't come with a surprise bill every month."
+      },
+      "ctaType": null,
+      "displayFormat": null,
+      "linkDescription": null,
+      "linkUrl": null,
+      "images": [],
+      "pageCategories": [],
+      "pageLikeCount": null,
+      "title": null,
+      "videos": [],
+      "isReshared": null,
+      "extraLinks": [],
+      "extraTexts": [],
+      "extraImages": [],
+      "extraVideos": [],
+      "countryIsoCode": null,
+      "brazilTaxId": null,
+      "additionalInfo": null,
+      "ecCertificates": []
+    },
+    "isActive": true,
+    "hasUserReported": false,
+    "reportCount": null,
+    "menuItems": [],
+    "stateMediaRunLabel": null,
+    "pageIsDeleted": false,
+    "pageName": "Rx Pros Wellness Online",
+    "impressionsWithIndex": {
+      "impressionsText": null,
+      "impressionsIndex": -1
+    },
+    "gatedType": "LOGGED_OUT",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "isAaaEligible": false,
+    "containsDigitalCreatedMedia": false,
+    "reachEstimate": null,
+    "currency": "",
+    "spend": null,
+    "endDate": 1781938800,
+    "publisherPlatform": [
+      "FACEBOOK",
+      "INSTAGRAM",
+      "AUDIENCE_NETWORK",
+      "MESSENGER",
+      "THREADS"
+    ],
+    "startDate": 1777878000,
+    "containsSensitiveContent": false,
+    "totalActiveTime": null,
+    "regionalRegulationData": {
+      "finserv": {
+        "isDeemedFinserv": false,
+        "isLimitedDelivery": false
+      },
+      "twAntiScam": {
+        "isLimitedDelivery": false
+      }
+    },
+    "hideDataStatus": "NONE",
+    "fevInfo": null,
+    "adId": null,
+    "targetedOrReachedCountries": []
+  },
+  {
+    "inputUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=compounded%20semaglutide&search_type=keyword_unordered&media_type=all",
+    "pageInfo": {
+      "adLibrarySystemStatus": {
+        "systemStatus": {
+          "status": "NO_KNOWN_ISSUES",
+          "activeIssues": [
+            {
+              "product": "Ad Library",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library Report",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library API",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Branded Content",
+              "status": "NO_KNOWN_ISSUES"
+            }
+          ]
+        }
+      },
+      "xfbAdLibraryIsCaptchaRequired": false,
+      "page": null,
+      "adLibraryUser": null
+    },
+    "pageID": "631789043357253",
+    "adArchiveID": "1458581225972914",
+    "startDateFormatted": "2026-02-03T08:00:00.000Z",
+    "endDateFormatted": "2026-06-20T07:00:00.000Z",
+    "adArchiveId": "1458581225972914",
+    "collationCount": 1,
+    "collationId": "890223120532147",
+    "pageId": "631789043357253",
+    "snapshot": {
+      "brandedContent": null,
+      "pageId": "631789043357253",
+      "pageIsDeleted": false,
+      "pageProfileUri": "https://www.facebook.com/61576447056114/",
+      "rootResharedPost": null,
+      "byline": null,
+      "disclaimerLabel": null,
+      "pageName": "Dad Club Co.",
+      "pageProfilePictureUrl": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.35426-6/627677104_796519723479299_8025838465975022641_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pp9q2BKzo5UQ7kNvwEoqvyS&_nc_oc=AdpAZn_9403ZKiELQFjokS4BdPm46YqrgsJbC18wtHv2Nb6f3qDDhlYmkf3WCDDTwNw&_nc_zt=14&_nc_ht=scontent-ord5-2.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af8yy_gTvX5fpqfN18XfSIwNSzHnyHuU2oWt8m5mXRagBg&oe=6A3CC08F",
+      "event": null,
+      "caption": null,
+      "ctaText": null,
+      "cards": [],
+      "body": {
+        "text": "Why pay $1,000+ for brand-name GLP-1 when you can get the same active ingredient for 88% less? \n\nDollar Dad Club keeps pricing simple: \n\u2714\ufe0f Medication included \n\u2714\ufe0f Dose increases included \n\u2714\ufe0f Supplies + clinician support included \n\u274c No hidden fees \n\u274c No subscriptions \n\u274c No membership fee \n\nPlans only $99/month \u2014 plus up to $300 off through our year end offer. Get started today."
+      },
+      "ctaType": null,
+      "displayFormat": null,
+      "linkDescription": null,
+      "linkUrl": null,
+      "images": [],
+      "pageCategories": [],
+      "pageLikeCount": null,
+      "title": null,
+      "videos": [],
+      "isReshared": null,
+      "extraLinks": [],
+      "extraTexts": [],
+      "extraImages": [],
+      "extraVideos": [],
+      "countryIsoCode": null,
+      "brazilTaxId": null,
+      "additionalInfo": null,
+      "ecCertificates": []
+    },
+    "isActive": true,
+    "hasUserReported": false,
+    "reportCount": null,
+    "menuItems": [],
+    "stateMediaRunLabel": null,
+    "pageIsDeleted": false,
+    "pageName": "Dad Club Co.",
+    "impressionsWithIndex": {
+      "impressionsText": null,
+      "impressionsIndex": -1
+    },
+    "gatedType": "LOGGED_OUT",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "isAaaEligible": false,
+    "containsDigitalCreatedMedia": false,
+    "reachEstimate": null,
+    "currency": "",
+    "spend": null,
+    "endDate": 1781938800,
+    "publisherPlatform": [
+      "FACEBOOK",
+      "AUDIENCE_NETWORK"
+    ],
+    "startDate": 1770105600,
+    "containsSensitiveContent": false,
+    "totalActiveTime": null,
+    "regionalRegulationData": {
+      "finserv": {
+        "isDeemedFinserv": false,
+        "isLimitedDelivery": false
+      },
+      "twAntiScam": {
+        "isLimitedDelivery": false
+      }
+    },
+    "hideDataStatus": "NONE",
+    "fevInfo": null,
+    "adId": null,
+    "targetedOrReachedCountries": []
+  },
+  {
+    "inputUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=compounded%20semaglutide&search_type=keyword_unordered&media_type=all",
+    "pageInfo": {
+      "adLibrarySystemStatus": {
+        "systemStatus": {
+          "status": "NO_KNOWN_ISSUES",
+          "activeIssues": [
+            {
+              "product": "Ad Library",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library Report",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library API",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Branded Content",
+              "status": "NO_KNOWN_ISSUES"
+            }
+          ]
+        }
+      },
+      "xfbAdLibraryIsCaptchaRequired": false,
+      "page": null,
+      "adLibraryUser": null
+    },
+    "pageID": "569360030191101",
+    "adArchiveID": "1526301138839007",
+    "startDateFormatted": "2026-04-29T07:00:00.000Z",
+    "endDateFormatted": "2026-06-20T07:00:00.000Z",
+    "adArchiveId": "1526301138839007",
+    "collationCount": 4,
+    "collationId": "1515810540168674",
+    "pageId": "569360030191101",
+    "snapshot": {
+      "brandedContent": null,
+      "pageId": "569360030191101",
+      "pageIsDeleted": false,
+      "pageProfileUri": "https://www.facebook.com/100082293060827/",
+      "rootResharedPost": null,
+      "byline": null,
+      "disclaimerLabel": null,
+      "pageName": "Rx Pros Wellness Online",
+      "pageProfilePictureUrl": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.35426-6/684320879_26870736309226479_708434922259700223_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wOeYOHtYa5wQ7kNvwFf-eNq&_nc_oc=Adqr_KJyObp6pUUF_qRfu6so84er5Pel-Hs86rUsJJzDJ2LGvuTv3dBFCwiDOBJT7eY&_nc_zt=14&_nc_ht=scontent-ord5-2.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af8MDR6af3o2d5M6dHbQLuGvZpxZ7-ydkOfVJwq_VKOl4Q&oe=6A3CC76C",
+      "event": null,
+      "caption": null,
+      "ctaText": null,
+      "cards": [],
+      "body": {
+        "text": "Most GLP-1 programs start low and quietly raise your rate as your dose increases. Not us. At RxPros, Semaglutide stays at $99/mo and Tirzepatide at $144.97/mo - no matter what. Prescribed in as fast as 4 hours. Shipped from US pharmacies. Your weight loss journey shouldn't come with a surprise bill every month."
+      },
+      "ctaType": null,
+      "displayFormat": null,
+      "linkDescription": null,
+      "linkUrl": null,
+      "images": [],
+      "pageCategories": [],
+      "pageLikeCount": null,
+      "title": null,
+      "videos": [],
+      "isReshared": null,
+      "extraLinks": [],
+      "extraTexts": [],
+      "extraImages": [],
+      "extraVideos": [],
+      "countryIsoCode": null,
+      "brazilTaxId": null,
+      "additionalInfo": null,
+      "ecCertificates": []
+    },
+    "isActive": true,
+    "hasUserReported": false,
+    "reportCount": null,
+    "menuItems": [],
+    "stateMediaRunLabel": null,
+    "pageIsDeleted": false,
+    "pageName": "Rx Pros Wellness Online",
+    "impressionsWithIndex": {
+      "impressionsText": null,
+      "impressionsIndex": -1
+    },
+    "gatedType": "LOGGED_OUT",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "isAaaEligible": false,
+    "containsDigitalCreatedMedia": false,
+    "reachEstimate": null,
+    "currency": "",
+    "spend": null,
+    "endDate": 1781938800,
+    "publisherPlatform": [
+      "FACEBOOK",
+      "INSTAGRAM",
+      "AUDIENCE_NETWORK",
+      "MESSENGER",
+      "THREADS"
+    ],
+    "startDate": 1777446000,
+    "containsSensitiveContent": false,
+    "totalActiveTime": null,
+    "regionalRegulationData": {
+      "finserv": {
+        "isDeemedFinserv": false,
+        "isLimitedDelivery": false
+      },
+      "twAntiScam": {
+        "isLimitedDelivery": false
+      }
+    },
+    "hideDataStatus": "NONE",
+    "fevInfo": null,
+    "adId": null,
+    "targetedOrReachedCountries": []
+  },
+  {
+    "inputUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=compounded%20semaglutide&search_type=keyword_unordered&media_type=all",
+    "pageInfo": {
+      "adLibrarySystemStatus": {
+        "systemStatus": {
+          "status": "NO_KNOWN_ISSUES",
+          "activeIssues": [
+            {
+              "product": "Ad Library",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library Report",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library API",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Branded Content",
+              "status": "NO_KNOWN_ISSUES"
+            }
+          ]
+        }
+      },
+      "xfbAdLibraryIsCaptchaRequired": false,
+      "page": null,
+      "adLibraryUser": null
+    },
+    "pageID": "520637334471741",
+    "adArchiveID": "796309856199193",
+    "startDateFormatted": "2025-08-27T07:00:00.000Z",
+    "endDateFormatted": "2026-06-20T07:00:00.000Z",
+    "adArchiveId": "796309856199193",
+    "collationCount": 1,
+    "collationId": "2650774778593632",
+    "pageId": "520637334471741",
+    "snapshot": {
+      "brandedContent": null,
+      "pageId": "520637334471741",
+      "pageIsDeleted": false,
+      "pageProfileUri": "https://www.facebook.com/61571781303620/",
+      "rootResharedPost": null,
+      "byline": null,
+      "disclaimerLabel": null,
+      "pageName": "Get Zappy Health",
+      "pageProfilePictureUrl": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.35426-6/539560729_1122087143137835_2083106550507504587_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f6pDzy10MfAQ7kNvwFGPMs2&_nc_oc=AdoQMsdL7K2jaQgQY6bQ-CkCSq81Vg1fR_f-4b1D1Z5FuP8dHr9hE8er8BxTFFvMzME&_nc_zt=14&_nc_ht=scontent-ord5-1.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af8-bkEVuqf90NFmJZqmNxJJsc-tWOHJvNPkU7BKTc61lA&oe=6A3CD708",
+      "event": null,
+      "caption": null,
+      "ctaText": null,
+      "cards": [],
+      "body": {
+        "text": "{{product.brand}}"
+      },
+      "ctaType": null,
+      "displayFormat": null,
+      "linkDescription": null,
+      "linkUrl": null,
+      "images": [],
+      "pageCategories": [],
+      "pageLikeCount": null,
+      "title": null,
+      "videos": [],
+      "isReshared": null,
+      "extraLinks": [],
+      "extraTexts": [],
+      "extraImages": [],
+      "extraVideos": [],
+      "countryIsoCode": null,
+      "brazilTaxId": null,
+      "additionalInfo": null,
+      "ecCertificates": []
+    },
+    "isActive": true,
+    "hasUserReported": false,
+    "reportCount": null,
+    "menuItems": [],
+    "stateMediaRunLabel": null,
+    "pageIsDeleted": false,
+    "pageName": "Get Zappy Health",
+    "impressionsWithIndex": {
+      "impressionsText": null,
+      "impressionsIndex": -1
+    },
+    "gatedType": "LOGGED_OUT",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "isAaaEligible": false,
+    "containsDigitalCreatedMedia": false,
+    "reachEstimate": null,
+    "currency": "",
+    "spend": null,
+    "endDate": 1781938800,
+    "publisherPlatform": [
+      "FACEBOOK",
+      "INSTAGRAM",
+      "AUDIENCE_NETWORK",
+      "MESSENGER"
+    ],
+    "startDate": 1756278000,
+    "containsSensitiveContent": false,
+    "totalActiveTime": null,
+    "regionalRegulationData": {
+      "finserv": {
+        "isDeemedFinserv": false,
+        "isLimitedDelivery": false
+      },
+      "twAntiScam": {
+        "isLimitedDelivery": false
+      }
+    },
+    "hideDataStatus": "NONE",
+    "fevInfo": null,
+    "adId": null,
+    "targetedOrReachedCountries": []
+  },
+  {
+    "inputUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=compounded%20semaglutide&search_type=keyword_unordered&media_type=all",
+    "pageInfo": {
+      "adLibrarySystemStatus": {
+        "systemStatus": {
+          "status": "NO_KNOWN_ISSUES",
+          "activeIssues": [
+            {
+              "product": "Ad Library",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library Report",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library API",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Branded Content",
+              "status": "NO_KNOWN_ISSUES"
+            }
+          ]
+        }
+      },
+      "xfbAdLibraryIsCaptchaRequired": false,
+      "page": null,
+      "adLibraryUser": null
+    },
+    "pageID": "569360030191101",
+    "adArchiveID": "2118188888970990",
+    "startDateFormatted": "2026-04-29T07:00:00.000Z",
+    "endDateFormatted": "2026-06-20T07:00:00.000Z",
+    "adArchiveId": "2118188888970990",
+    "collationCount": 3,
+    "collationId": "2191263138277114",
+    "pageId": "569360030191101",
+    "snapshot": {
+      "brandedContent": null,
+      "pageId": "569360030191101",
+      "pageIsDeleted": false,
+      "pageProfileUri": "https://www.facebook.com/100082293060827/",
+      "rootResharedPost": null,
+      "byline": null,
+      "disclaimerLabel": null,
+      "pageName": "Rx Pros Wellness Online",
+      "pageProfilePictureUrl": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.35426-6/683509970_1508028287615879_8838075004882522143_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1uyicvo-NjwQ7kNvwHrYa3s&_nc_oc=AdoAGs0dw8RaDKAHS-JZzCLxf1xqW6aeqbBACkFG6iD3BBajCPoROBOfkoZPU-EtQ5E&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af_exI2QCJH9i0ahUk2MCzBV_BPrN2UffgBvpUFcNkn91Q&oe=6A3CBBE1",
+      "event": null,
+      "caption": null,
+      "ctaText": null,
+      "cards": [],
+      "body": {
+        "text": "Most GLP-1 programs start low and quietly raise your rate as your dose increases. Not us. At RxPros, Semaglutide stays at $99/mo and Tirzepatide at $144.97/mo - no matter what. Prescribed in as fast as 4 hours. Shipped from US pharmacies. Your weight loss journey shouldn't come with a surprise bill every month."
+      },
+      "ctaType": null,
+      "displayFormat": null,
+      "linkDescription": null,
+      "linkUrl": null,
+      "images": [],
+      "pageCategories": [],
+      "pageLikeCount": null,
+      "title": null,
+      "videos": [],
+      "isReshared": null,
+      "extraLinks": [],
+      "extraTexts": [],
+      "extraImages": [],
+      "extraVideos": [],
+      "countryIsoCode": null,
+      "brazilTaxId": null,
+      "additionalInfo": null,
+      "ecCertificates": []
+    },
+    "isActive": true,
+    "hasUserReported": false,
+    "reportCount": null,
+    "menuItems": [],
+    "stateMediaRunLabel": null,
+    "pageIsDeleted": false,
+    "pageName": "Rx Pros Wellness Online",
+    "impressionsWithIndex": {
+      "impressionsText": null,
+      "impressionsIndex": -1
+    },
+    "gatedType": "LOGGED_OUT",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "isAaaEligible": false,
+    "containsDigitalCreatedMedia": false,
+    "reachEstimate": null,
+    "currency": "",
+    "spend": null,
+    "endDate": 1781938800,
+    "publisherPlatform": [
+      "FACEBOOK",
+      "INSTAGRAM",
+      "AUDIENCE_NETWORK",
+      "MESSENGER",
+      "THREADS"
+    ],
+    "startDate": 1777446000,
+    "containsSensitiveContent": false,
+    "totalActiveTime": null,
+    "regionalRegulationData": {
+      "finserv": {
+        "isDeemedFinserv": false,
+        "isLimitedDelivery": false
+      },
+      "twAntiScam": {
+        "isLimitedDelivery": false
+      }
+    },
+    "hideDataStatus": "NONE",
+    "fevInfo": null,
+    "adId": null,
+    "targetedOrReachedCountries": []
+  },
+  {
+    "inputUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=compounded%20semaglutide&search_type=keyword_unordered&media_type=all",
+    "pageInfo": {
+      "adLibrarySystemStatus": {
+        "systemStatus": {
+          "status": "NO_KNOWN_ISSUES",
+          "activeIssues": [
+            {
+              "product": "Ad Library",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library Report",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Ad Library API",
+              "status": "NO_KNOWN_ISSUES"
+            },
+            {
+              "product": "Branded Content",
+              "status": "NO_KNOWN_ISSUES"
+            }
+          ]
+        }
+      },
+      "xfbAdLibraryIsCaptchaRequired": false,
+      "page": null,
+      "adLibraryUser": null
+    },
+    "pageID": "631789043357253",
+    "adArchiveID": "1469037127912430",
+    "startDateFormatted": "2026-03-23T07:00:00.000Z",
+    "endDateFormatted": "2026-06-20T07:00:00.000Z",
+    "adArchiveId": "1469037127912430",
+    "collationCount": 1,
+    "collationId": "978244277962375",
+    "pageId": "631789043357253",
+    "snapshot": {
+      "brandedContent": null,
+      "pageId": "631789043357253",
+      "pageIsDeleted": false,
+      "pageProfileUri": "https://www.facebook.com/61576447056114/",
+      "rootResharedPost": null,
+      "byline": null,
+      "disclaimerLabel": null,
+      "pageName": "Dad Club Co.",
+      "pageProfilePictureUrl": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.35426-6/656791761_2851614745180403_6823137127900617771_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DYAxCX1elVMQ7kNvwGuZ1jz&_nc_oc=Adr-WVc6CpMbj1sIfW9oP4HVv9cXM_-f7_jjsPqtbu3P0BwvYJ6pTTqmpmgImqNGqvo&_nc_zt=14&_nc_ht=scontent-ord5-3.xx&_nc_gid=On3my1S_DqF3Akgct1TKmw&_nc_ss=72289&oh=00_Af9QgQ6G-JbmM9mji2paTTIBMlxYK3BoWqDDB5i5Jnw01A&oe=6A3CBD63",
+      "event": null,
+      "caption": null,
+      "ctaText": null,
+      "cards": [],
+      "body": {
+        "text": "{{product.brand}}"
+      },
+      "ctaType": null,
+      "displayFormat": null,
+      "linkDescription": null,
+      "linkUrl": null,
+      "images": [],
+      "pageCategories": [],
+      "pageLikeCount": null,
+      "title": null,
+      "videos": [],
+      "isReshared": null,
+      "extraLinks": [],
+      "extraTexts": [],
+      "extraImages": [],
+      "extraVideos": [],
+      "countryIsoCode": null,
+      "brazilTaxId": null,
+      "additionalInfo": null,
+      "ecCertificates": []
+    },
+    "isActive": true,
+    "hasUserReported": false,
+    "reportCount": null,
+    "menuItems": [],
+    "stateMediaRunLabel": null,
+    "pageIsDeleted": false,
+    "pageName": "Dad Club Co.",
+    "impressionsWithIndex": {
+      "impressionsText": null,
+      "impressionsIndex": -1
+    },
+    "gatedType": "LOGGED_OUT",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "isAaaEligible": false,
+    "containsDigitalCreatedMedia": false,
+    "reachEstimate": null,
+    "currency": "",
+    "spend": null,
+    "endDate": 1781938800,
+    "publisherPlatform": [
+      "FACEBOOK"
+    ],
+    "startDate": 1774249200,
+    "containsSensitiveContent": false,
+    "totalActiveTime": null,
+    "regionalRegulationData": {
+      "finserv": {
+        "isDeemedFinserv": false,
+        "isLimitedDelivery": false
+      },
+      "twAntiScam": {
+        "isLimitedDelivery": false
+      }
+    },
+    "hideDataStatus": "NONE",
+    "fevInfo": null,
+    "adId": null,
+    "targetedOrReachedCountries": []
+  }
+]

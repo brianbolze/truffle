@@ -1,0 +1,21 @@
+{
+  "search_metadata": {
+    "id": "6a36f77bc83b3fe9aa13d3ef",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/J7jHXs8_hfdou6WymM5tMQ/6a36f77bc83b3fe9aa13d3ef.json",
+    "created_at": "2026-06-20 20:26:35 UTC",
+    "processed_at": "2026-06-20 20:26:35 UTC",
+    "google_ads_transparency_center_url": "https://adstransparency.google.com?region=anywhere&domain=mydrhank-com",
+    "raw_html_file": "https://serpapi.com/searches/J7jHXs8_hfdou6WymM5tMQ/6a36f77bc83b3fe9aa13d3ef.html",
+    "prettify_html_file": "https://serpapi.com/searches/J7jHXs8_hfdou6WymM5tMQ/6a36f77bc83b3fe9aa13d3ef.prettify",
+    "total_time_taken": 1.23
+  },
+  "search_parameters": {
+    "engine": "google_ads_transparency_center",
+    "text": "mydrhank-com"
+  },
+  "search_information": {
+    "results_state": "Fully empty"
+  },
+  "error": "Google Ads Transparency Center hasn't returned any results for this search."
+}
