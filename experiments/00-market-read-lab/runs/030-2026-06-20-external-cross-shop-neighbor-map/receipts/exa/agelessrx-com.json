@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:15Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://agelessrx.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Ageless",
+      "url": "https://ageless.ai",
+      "domain": "ageless.ai"
+    },
+    {
+      "rank": 2,
+      "title": "Readyrx",
+      "url": "https://readyrx.com",
+      "domain": "readyrx.com"
+    },
+    {
+      "rank": 3,
+      "title": "Ageless Grace Tm",
+      "url": "https://agelessgrace.com",
+      "domain": "agelessgrace.com"
+    },
+    {
+      "rank": 4,
+      "title": "Ageless Men's Health",
+      "url": "https://agelessmenshealth.com",
+      "domain": "agelessmenshealth.com"
+    },
+    {
+      "rank": 5,
+      "title": "Vitality Rx",
+      "url": "https://vitalityrx.com",
+      "domain": "vitalityrx.com"
+    },
+    {
+      "rank": 6,
+      "title": "Ageless Women's Health",
+      "url": "https://agelesswomenshealth.com",
+      "domain": "agelesswomenshealth.com"
+    },
+    {
+      "rank": 7,
+      "title": "Age X Therapeutics",
+      "url": "https://agexinc.com",
+      "domain": "agexinc.com"
+    },
+    {
+      "rank": 8,
+      "title": "Personalrx",
+      "url": "https://personalrx.com",
+      "domain": "personalrx.com"
+    },
+    {
+      "rank": 9,
+      "title": "Ageless Ai",
+      "url": "https://agelessai.app",
+      "domain": "agelessai.app"
+    },
+    {
+      "rank": 10,
+      "title": "Ageless Medical",
+      "url": "https://agelessmed.com",
+      "domain": "agelessmed.com"
+    },
+    {
+      "rank": 11,
+      "title": "Ageless Beauty Rx",
+      "url": "https://agelessbeautyrx.com",
+      "domain": "agelessbeautyrx.com"
+    },
+    {
+      "rank": 12,
+      "title": "Rxlongevity",
+      "url": "https://rx-longevity.com",
+      "domain": "rx-longevity.com"
+    },
+    {
+      "rank": 13,
+      "title": "Matchrx",
+      "url": "https://matchrx.com",
+      "domain": "matchrx.com"
+    },
+    {
+      "rank": 14,
+      "title": "Ageless Zen, Inc.",
+      "url": "https://agelesszen.com",
+      "domain": "agelesszen.com"
+    },
+    {
+      "rank": 15,
+      "title": "Zoomrx",
+      "url": "https://zoomrx.com",
+      "domain": "zoomrx.com"
+    },
+    {
+      "rank": 16,
+      "title": "Growthrx",
+      "url": "https://growthrx.ai",
+      "domain": "growthrx.ai"
+    },
+    {
+      "rank": 17,
+      "title": "Ageless Living Lifestyle",
+      "url": "https://agelesslivinglifestyle.com",
+      "domain": "agelesslivinglifestyle.com"
+    },
+    {
+      "rank": 18,
+      "title": "Aesthetic Rx",
+      "url": "https://aestheticrx.net",
+      "domain": "aestheticrx.net"
+    },
+    {
+      "rank": 19,
+      "title": "Ageless Health Institute, P.c.",
+      "url": "https://agelesshealthinstitute.com",
+      "domain": "agelesshealthinstitute.com"
+    },
+    {
+      "rank": 20,
+      "title": "Liferx.md, Inc.",
+      "url": "https://liferx.md",
+      "domain": "liferx.md"
+    },
+    {
+      "rank": 21,
+      "title": "Ageless Medical Spa",
+      "url": "https://agelesspa.com",
+      "domain": "agelesspa.com"
+    },
+    {
+      "rank": 22,
+      "title": "The Ageless Humans\u2122\ufe0f / The Ageless Animals\u2122\ufe0f",
+      "url": "https://agelesshumans.com",
+      "domain": "agelesshumans.com"
+    },
+    {
+      "rank": 23,
+      "title": "Rejuvenrx",
+      "url": "https://rejuvenrx.com",
+      "domain": "rejuvenrx.com"
+    },
+    {
+      "rank": 24,
+      "title": "Ageless Forever",
+      "url": "https://agelessforever.net",
+      "domain": "agelessforever.net"
+    },
+    {
+      "rank": 25,
+      "title": "Ageless Medica Health Management - India",
+      "url": "https://agelessmedica.com",
+      "domain": "agelessmedica.com"
+    }
+  ],
+  "neighbor_count": 25
+}

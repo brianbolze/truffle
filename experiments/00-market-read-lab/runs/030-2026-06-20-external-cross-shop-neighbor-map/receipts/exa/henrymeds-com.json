@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:19Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://henrymeds.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Direct Meds Llc",
+      "url": "https://direct-meds.com",
+      "domain": "direct-meds.com"
+    },
+    {
+      "rank": 2,
+      "title": "Alan Health",
+      "url": "https://alanmeds.com",
+      "domain": "alanmeds.com"
+    },
+    {
+      "rank": 3,
+      "title": "Remedy Meds",
+      "url": "https://remedymeds.com",
+      "domain": "remedymeds.com"
+    },
+    {
+      "rank": 4,
+      "title": "Everymeds",
+      "url": "https://everymeds.com",
+      "domain": "everymeds.com"
+    },
+    {
+      "rank": 5,
+      "title": "Clover Meds",
+      "url": "https://clovermeds.com",
+      "domain": "clovermeds.com"
+    },
+    {
+      "rank": 6,
+      "title": "Ilmeds.co",
+      "url": "https://ilmeds.co",
+      "domain": "ilmeds.co"
+    },
+    {
+      "rank": 7,
+      "title": "Harleymeds",
+      "url": "https://harleymeds.com",
+      "domain": "harleymeds.com"
+    },
+    {
+      "rank": 8,
+      "title": "Healthme\u00ae",
+      "url": "https://healthmedocs.com",
+      "domain": "healthmedocs.com"
+    },
+    {
+      "rank": 9,
+      "title": "Medens Health",
+      "url": "https://medenshealth.com",
+      "domain": "medenshealth.com"
+    },
+    {
+      "rank": 10,
+      "title": "Direct Meds",
+      "url": "https://directmedsusa.com",
+      "domain": "directmedsusa.com"
+    },
+    {
+      "rank": 11,
+      "title": "Mymeds",
+      "url": "https://my-meds.com",
+      "domain": "my-meds.com"
+    },
+    {
+      "rank": 12,
+      "title": "Meds Pharmacy",
+      "url": "https://medsrx.com",
+      "domain": "medsrx.com"
+    },
+    {
+      "rank": 13,
+      "title": "Hone Health",
+      "url": "https://honehealth.com",
+      "domain": "honehealth.com"
+    },
+    {
+      "rank": 14,
+      "title": "Mymedscom",
+      "url": "https://mymedscom.com",
+      "domain": "mymedscom.com"
+    },
+    {
+      "rank": 15,
+      "title": "Comparemedsrx",
+      "url": "https://comparemedsrx.com",
+      "domain": "comparemedsrx.com"
+    },
+    {
+      "rank": 16,
+      "title": "Telemedics Health",
+      "url": "https://telemedics.health",
+      "domain": "telemedics.health"
+    },
+    {
+      "rank": 17,
+      "title": "Homemd Housecall Services",
+      "url": "https://homemdhealth.com",
+      "domain": "homemdhealth.com"
+    },
+    {
+      "rank": 18,
+      "title": "Your Medicals",
+      "url": "https://yourmedicals.co.uk",
+      "domain": "yourmedicals.co.uk"
+    },
+    {
+      "rank": 19,
+      "title": "Peter Md",
+      "url": "https://getpetermd.com",
+      "domain": "getpetermd.com"
+    },
+    {
+      "rank": 20,
+      "title": "Mederva",
+      "url": "https://medervahealth.com",
+      "domain": "medervahealth.com"
+    },
+    {
+      "rank": 21,
+      "title": "Brightmeds",
+      "url": "https://brightmeds.com",
+      "domain": "brightmeds.com"
+    },
+    {
+      "rank": 22,
+      "title": "Amazing Meds",
+      "url": "https://amazing-meds.com",
+      "domain": "amazing-meds.com"
+    },
+    {
+      "rank": 23,
+      "title": "Simply Meds Online",
+      "url": "https://simplymedsonline.co.uk",
+      "domain": "simplymedsonline.co.uk"
+    },
+    {
+      "rank": 24,
+      "title": "Dudemeds",
+      "url": "https://dudemeds.com",
+      "domain": "dudemeds.com"
+    },
+    {
+      "rank": 25,
+      "title": "Homemeds Pharmacy",
+      "url": "https://homemedsrx.com",
+      "domain": "homemedsrx.com"
+    }
+  ],
+  "neighbor_count": 25
+}

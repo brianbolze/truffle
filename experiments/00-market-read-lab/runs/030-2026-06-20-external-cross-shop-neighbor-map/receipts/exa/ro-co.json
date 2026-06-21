@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:18Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://ro.co",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Roon",
+      "url": "https://roon.com",
+      "domain": "roon.com"
+    },
+    {
+      "rank": 2,
+      "title": "Roam",
+      "url": "https://ro.am",
+      "domain": "ro.am"
+    },
+    {
+      "rank": 3,
+      "title": "Ro Health",
+      "url": "https://rohealth.com",
+      "domain": "rohealth.com"
+    },
+    {
+      "rank": 4,
+      "title": "Rvo Health",
+      "url": "https://rvohealth.com",
+      "domain": "rvohealth.com"
+    },
+    {
+      "rank": 5,
+      "title": "Recuro Health",
+      "url": "https://recurohealth.com",
+      "domain": "recurohealth.com"
+    },
+    {
+      "rank": 6,
+      "title": "Dadi Inc (acquired By Ro)",
+      "url": "https://ro.co/testing/semen-analysis-sperm-storage",
+      "domain": "ro.co"
+    },
+    {
+      "rank": 7,
+      "title": "Carbon Health",
+      "url": "https://carbonhealth.com",
+      "domain": "carbonhealth.com"
+    },
+    {
+      "rank": 8,
+      "title": "Eden Health",
+      "url": "https://edenhealth.com",
+      "domain": "edenhealth.com"
+    },
+    {
+      "rank": 9,
+      "title": "Maven Clinic",
+      "url": "https://mavenclinic.com",
+      "domain": "mavenclinic.com"
+    },
+    {
+      "rank": 10,
+      "title": "Hone Health",
+      "url": "https://honehealth.com",
+      "domain": "honehealth.com"
+    },
+    {
+      "rank": 11,
+      "title": "Care/of",
+      "url": "https://takecareof.com",
+      "domain": "takecareof.com"
+    },
+    {
+      "rank": 12,
+      "title": "Iron Health",
+      "url": "https://ironhealth.io",
+      "domain": "ironhealth.io"
+    },
+    {
+      "rank": 13,
+      "title": "Zocdoc",
+      "url": "https://zocdoc.com",
+      "domain": "zocdoc.com"
+    },
+    {
+      "rank": 14,
+      "title": "Hyro",
+      "url": "https://hyro.ai",
+      "domain": "hyro.ai"
+    },
+    {
+      "rank": 15,
+      "title": "Collective Health",
+      "url": "https://collectivehealth.com",
+      "domain": "collectivehealth.com"
+    },
+    {
+      "rank": 16,
+      "title": "Flo Health Inc.",
+      "url": "https://flo.health",
+      "domain": "flo.health"
+    },
+    {
+      "rank": 17,
+      "title": "Sesame",
+      "url": "https://sesamecare.com",
+      "domain": "sesamecare.com"
+    },
+    {
+      "rank": 18,
+      "title": "Form Health",
+      "url": "https://formhealth.co",
+      "domain": "formhealth.co"
+    },
+    {
+      "rank": 19,
+      "title": "Royal Health Care",
+      "url": "https://royalhc.com.com",
+      "domain": "royalhc.com.com"
+    },
+    {
+      "rank": 20,
+      "title": "Rock Health",
+      "url": "https://rockhealth.com",
+      "domain": "rockhealth.com"
+    },
+    {
+      "rank": 21,
+      "title": "Diana Health",
+      "url": "https://heydianahealth.com",
+      "domain": "heydianahealth.com"
+    },
+    {
+      "rank": 22,
+      "title": "Rxdiet",
+      "url": "https://rx-diet.com",
+      "domain": "rx-diet.com"
+    },
+    {
+      "rank": 23,
+      "title": "Vi",
+      "url": "https://vi.co",
+      "domain": "vi.co"
+    },
+    {
+      "rank": 24,
+      "title": "Function Health",
+      "url": "https://tap.bio/@functionhealth",
+      "domain": "tap.bio"
+    },
+    {
+      "rank": 25,
+      "title": "Hero",
+      "url": "https://herohealth.com",
+      "domain": "herohealth.com"
+    }
+  ],
+  "neighbor_count": 25
+}

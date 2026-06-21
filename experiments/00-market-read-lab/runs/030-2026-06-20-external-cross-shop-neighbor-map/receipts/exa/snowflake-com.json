@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:23Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://snowflake.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Databricks",
+      "url": "https://databricks.com",
+      "domain": "databricks.com"
+    },
+    {
+      "rank": 2,
+      "title": "Snaplogic",
+      "url": "https://snaplogic.com",
+      "domain": "snaplogic.com"
+    },
+    {
+      "rank": 3,
+      "title": "Servicenow",
+      "url": "https://servicenow.com",
+      "domain": "servicenow.com"
+    },
+    {
+      "rank": 4,
+      "title": "Informatica",
+      "url": "https://informatica.com",
+      "domain": "informatica.com"
+    },
+    {
+      "rank": 5,
+      "title": "Datometry",
+      "url": "https://datometry.com",
+      "domain": "datometry.com"
+    },
+    {
+      "rank": 6,
+      "title": "Trifacta",
+      "url": "https://alteryx.com/about-us/trifacta-is-now-alteryx-designer-cloud",
+      "domain": "alteryx.com"
+    },
+    {
+      "rank": 7,
+      "title": "Snowflake Network",
+      "url": "https://snowflake.so",
+      "domain": "snowflake.so"
+    },
+    {
+      "rank": 8,
+      "title": "Snow Data Science",
+      "url": "https://snowdatascience.org",
+      "domain": "snowdatascience.org"
+    },
+    {
+      "rank": 9,
+      "title": "Amplitude",
+      "url": "https://amplitude.com",
+      "domain": "amplitude.com"
+    },
+    {
+      "rank": 10,
+      "title": "Splunk",
+      "url": "https://splunk.com",
+      "domain": "splunk.com"
+    },
+    {
+      "rank": 11,
+      "title": "Cloudera",
+      "url": "https://cloudera.com",
+      "domain": "cloudera.com"
+    },
+    {
+      "rank": 12,
+      "title": "Snowflake",
+      "url": "https://linkedin.com/company/snowflakeeu",
+      "domain": "linkedin.com"
+    },
+    {
+      "rank": 13,
+      "title": "Sundeck",
+      "url": "https://sundeck.io",
+      "domain": "sundeck.io"
+    },
+    {
+      "rank": 14,
+      "title": "Its, Snowflake Solutions",
+      "url": "https://snowflakesolutions.net",
+      "domain": "snowflakesolutions.net"
+    },
+    {
+      "rank": 15,
+      "title": "Snap Inc.",
+      "url": "https://snap.com",
+      "domain": "snap.com"
+    },
+    {
+      "rank": 16,
+      "title": "Snorkel Ai",
+      "url": "https://snorkel.ai",
+      "domain": "snorkel.ai"
+    },
+    {
+      "rank": 17,
+      "title": "Sigma",
+      "url": "https://sigmacomputing.com",
+      "domain": "sigmacomputing.com"
+    },
+    {
+      "rank": 18,
+      "title": "Zendesk",
+      "url": "https://zdsk.co",
+      "domain": "zdsk.co"
+    },
+    {
+      "rank": 19,
+      "title": "Spotfire",
+      "url": "https://spotfire.com",
+      "domain": "spotfire.com"
+    },
+    {
+      "rank": 20,
+      "title": "Datastax",
+      "url": "https://datastax.com",
+      "domain": "datastax.com"
+    },
+    {
+      "rank": 21,
+      "title": "Okta",
+      "url": "https://okta.com",
+      "domain": "okta.com"
+    },
+    {
+      "rank": 22,
+      "title": "Snowfork",
+      "url": "https://snowfork.com",
+      "domain": "snowfork.com"
+    },
+    {
+      "rank": 23,
+      "title": "Singlestore",
+      "url": "https://singlestore.com",
+      "domain": "singlestore.com"
+    },
+    {
+      "rank": 24,
+      "title": "Bluecloud",
+      "url": "https://blue.cloud",
+      "domain": "blue.cloud"
+    },
+    {
+      "rank": 25,
+      "title": "Snow Data Apps",
+      "url": "https://snowdataapps.com",
+      "domain": "snowdataapps.com"
+    }
+  ],
+  "neighbor_count": 25
+}

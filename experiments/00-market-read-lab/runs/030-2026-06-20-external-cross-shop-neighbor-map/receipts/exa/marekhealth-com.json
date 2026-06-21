@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:16Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://marekhealth.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Mass Health",
+      "url": "https://masshealth.me",
+      "domain": "masshealth.me"
+    },
+    {
+      "rank": 2,
+      "title": "Zmark Health",
+      "url": "https://zmarkhealth.com",
+      "domain": "zmarkhealth.com"
+    },
+    {
+      "rank": 3,
+      "title": "Maverick Health",
+      "url": "https://mav.health",
+      "domain": "mav.health"
+    },
+    {
+      "rank": 4,
+      "title": "Mek Health",
+      "url": "https://mekhealth.com",
+      "domain": "mekhealth.com"
+    },
+    {
+      "rank": 5,
+      "title": "Method Health",
+      "url": "https://methodhealth.com",
+      "domain": "methodhealth.com"
+    },
+    {
+      "rank": 6,
+      "title": "Healthmark Group",
+      "url": "https://healthmark-group.com",
+      "domain": "healthmark-group.com"
+    },
+    {
+      "rank": 7,
+      "title": "Mark Diagnostics Markhealth..",
+      "url": "https://markhealth.com",
+      "domain": "markhealth.com"
+    },
+    {
+      "rank": 8,
+      "title": "Mark Wealth",
+      "url": "https://markwealth.me",
+      "domain": "markwealth.me"
+    },
+    {
+      "rank": 9,
+      "title": "Marqi Health Inc. | Revolutionizing Precision Healthcare For A Healthier Tomorrow",
+      "url": "https://marqihealth.com",
+      "domain": "marqihealth.com"
+    },
+    {
+      "rank": 10,
+      "title": "Menhealth",
+      "url": "https://menhealth.me",
+      "domain": "menhealth.me"
+    },
+    {
+      "rank": 11,
+      "title": "Forum Health",
+      "url": "https://forumhealth.com",
+      "domain": "forumhealth.com"
+    },
+    {
+      "rank": 12,
+      "title": "Natural Healthcare",
+      "url": "https://natural.healthcare",
+      "domain": "natural.healthcare"
+    },
+    {
+      "rank": 13,
+      "title": "Free Market Health",
+      "url": "https://freemarkethealth.com",
+      "domain": "freemarkethealth.com"
+    },
+    {
+      "rank": 14,
+      "title": "Mena Health",
+      "url": "https://menahealth.com",
+      "domain": "menahealth.com"
+    },
+    {
+      "rank": 15,
+      "title": "Marrek, Inc.",
+      "url": "https://marrekinc.com",
+      "domain": "marrekinc.com"
+    },
+    {
+      "rank": 16,
+      "title": "Medek Health Systems, Llc.",
+      "url": "https://medekhealth.com",
+      "domain": "medekhealth.com"
+    },
+    {
+      "rank": 17,
+      "title": "Us Healthmark, Llc",
+      "url": "https://ushealthmark.com",
+      "domain": "ushealthmark.com"
+    },
+    {
+      "rank": 18,
+      "title": "Mitmark Health",
+      "url": "https://mitmark-health.com",
+      "domain": "mitmark-health.com"
+    },
+    {
+      "rank": 19,
+      "title": "Amari Health",
+      "url": "https://amarihealth.com",
+      "domain": "amarihealth.com"
+    },
+    {
+      "rank": 20,
+      "title": "Marka Health",
+      "url": "https://markahealth.com",
+      "domain": "markahealth.com"
+    },
+    {
+      "rank": 21,
+      "title": "Healthmark",
+      "url": "https://linktr.ee/healthmarkindustries",
+      "domain": "linktr.ee"
+    },
+    {
+      "rank": 22,
+      "title": "Healthdom",
+      "url": "https://healthdom.com",
+      "domain": "healthdom.com"
+    },
+    {
+      "rank": 23,
+      "title": "Healthperx",
+      "url": "https://healthperx.com",
+      "domain": "healthperx.com"
+    },
+    {
+      "rank": 24,
+      "title": "Max Health",
+      "url": "https://maxhealthonline.com",
+      "domain": "maxhealthonline.com"
+    },
+    {
+      "rank": 25,
+      "title": "Brainmark Health Inc.",
+      "url": "https://brainmark.ai",
+      "domain": "brainmark.ai"
+    }
+  ],
+  "neighbor_count": 25
+}

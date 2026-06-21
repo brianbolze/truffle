@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:21Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://nurx.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Nowrx",
+      "url": "https://nowrx.com",
+      "domain": "nowrx.com"
+    },
+    {
+      "rank": 2,
+      "title": "Arorx Pharmacy Benefits, An Acrisure Solution",
+      "url": "https://44n.com/rx",
+      "domain": "44n.com"
+    },
+    {
+      "rank": 3,
+      "title": "The Pill Club Medical Group, Inc.",
+      "url": "https://thepillclub.com",
+      "domain": "thepillclub.com"
+    },
+    {
+      "rank": 4,
+      "title": "Collective Health",
+      "url": "https://collectivehealth.com",
+      "domain": "collectivehealth.com"
+    },
+    {
+      "rank": 5,
+      "title": "Goodrx",
+      "url": "https://goodrx.com",
+      "domain": "goodrx.com"
+    },
+    {
+      "rank": 6,
+      "title": "Newcrop Rx",
+      "url": "https://ensorahealth.com/product/erx",
+      "domain": "ensorahealth.com"
+    },
+    {
+      "rank": 7,
+      "title": "Tabula Rasa Healthcare",
+      "url": "https://tabularasahealthcare.com",
+      "domain": "tabularasahealthcare.com"
+    },
+    {
+      "rank": 8,
+      "title": "Skinnyrx",
+      "url": "https://skinnyrx.com",
+      "domain": "skinnyrx.com"
+    },
+    {
+      "rank": 9,
+      "title": "Patchrx",
+      "url": "https://patchrx.io",
+      "domain": "patchrx.io"
+    },
+    {
+      "rank": 10,
+      "title": "Disclosedrx",
+      "url": "https://disclosedrx.com",
+      "domain": "disclosedrx.com"
+    },
+    {
+      "rank": 11,
+      "title": "Well Revolution",
+      "url": "https://wellrevolution.com",
+      "domain": "wellrevolution.com"
+    },
+    {
+      "rank": 12,
+      "title": "Hatchrx Compounding Pharmacy",
+      "url": "https://hatchrx.com",
+      "domain": "hatchrx.com"
+    },
+    {
+      "rank": 13,
+      "title": "Capturerx",
+      "url": "https://capturerx.com",
+      "domain": "capturerx.com"
+    },
+    {
+      "rank": 14,
+      "title": "Nurx Pharmaceuticals Inc",
+      "url": "https://linkedin.com/company/nurx-pharmaceuticals-inc",
+      "domain": "linkedin.com"
+    },
+    {
+      "rank": 15,
+      "title": "Modern Fertility",
+      "url": "https://modernfertility.com",
+      "domain": "modernfertility.com"
+    },
+    {
+      "rank": 16,
+      "title": "Switchrx",
+      "url": "https://switchrx.com",
+      "domain": "switchrx.com"
+    },
+    {
+      "rank": 17,
+      "title": "Nyx Health\u00ae",
+      "url": "https://nyxhealth.com",
+      "domain": "nyxhealth.com"
+    },
+    {
+      "rank": 18,
+      "title": "Rx.com",
+      "url": "https://rx.com",
+      "domain": "rx.com"
+    },
+    {
+      "rank": 19,
+      "title": "Boomrx",
+      "url": "https://boomrx.com",
+      "domain": "boomrx.com"
+    },
+    {
+      "rank": 20,
+      "title": "Fairhaven Health",
+      "url": "https://fairhavenhealth.com",
+      "domain": "fairhavenhealth.com"
+    },
+    {
+      "rank": 21,
+      "title": "Binx Health",
+      "url": "https://mybinxhealth.com",
+      "domain": "mybinxhealth.com"
+    },
+    {
+      "rank": 22,
+      "title": "Carebox",
+      "url": "https://careboxhealth.com",
+      "domain": "careboxhealth.com"
+    },
+    {
+      "rank": 23,
+      "title": "Rx Outreach",
+      "url": "https://rxoutreach.org",
+      "domain": "rxoutreach.org"
+    },
+    {
+      "rank": 24,
+      "title": "Unruly",
+      "url": "https://un-ruly.com",
+      "domain": "un-ruly.com"
+    },
+    {
+      "rank": 25,
+      "title": "Philrx",
+      "url": "https://philrx.net",
+      "domain": "philrx.net"
+    }
+  ],
+  "neighbor_count": 25
+}

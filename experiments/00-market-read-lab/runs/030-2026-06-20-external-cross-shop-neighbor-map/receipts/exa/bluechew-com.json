@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:20Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://bluechew.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Bluecheck Inc.",
+      "url": "https://bluecheck.me",
+      "domain": "bluecheck.me"
+    },
+    {
+      "rank": 2,
+      "title": "Boomrx",
+      "url": "https://boomrx.com",
+      "domain": "boomrx.com"
+    },
+    {
+      "rank": 3,
+      "title": "Stratablue",
+      "url": "https://stratablue.com",
+      "domain": "stratablue.com"
+    },
+    {
+      "rank": 4,
+      "title": "Medmo",
+      "url": "https://medmo.com",
+      "domain": "medmo.com"
+    },
+    {
+      "rank": 5,
+      "title": "Buyist",
+      "url": "https://buyist.com",
+      "domain": "buyist.com"
+    },
+    {
+      "rank": 6,
+      "title": "Blue Frog",
+      "url": "https://bluefrogdm.com",
+      "domain": "bluefrogdm.com"
+    },
+    {
+      "rank": 7,
+      "title": "Bluepear",
+      "url": "https://bluepear.net",
+      "domain": "bluepear.net"
+    },
+    {
+      "rank": 8,
+      "title": "Blueiq",
+      "url": "https://getblueiq.com",
+      "domain": "getblueiq.com"
+    },
+    {
+      "rank": 9,
+      "title": "Benebone",
+      "url": "https://benebone.com",
+      "domain": "benebone.com"
+    },
+    {
+      "rank": 10,
+      "title": "Chubbies Shorts",
+      "url": "https://chubbiesshorts.com",
+      "domain": "chubbiesshorts.com"
+    },
+    {
+      "rank": 11,
+      "title": "Baxrx",
+      "url": "https://baxrx.com",
+      "domain": "baxrx.com"
+    },
+    {
+      "rank": 12,
+      "title": "Bluetrace",
+      "url": "https://blue-trace.com",
+      "domain": "blue-trace.com"
+    },
+    {
+      "rank": 13,
+      "title": "Deep Centered Mental Health",
+      "url": "https://deepcentered.com",
+      "domain": "deepcentered.com"
+    },
+    {
+      "rank": 14,
+      "title": "Bluj.ai",
+      "url": "https://bluj.ai",
+      "domain": "bluj.ai"
+    },
+    {
+      "rank": 15,
+      "title": "Blueprint.inc",
+      "url": "https://blueprint.inc",
+      "domain": "blueprint.inc"
+    },
+    {
+      "rank": 16,
+      "title": "Skinnyrx",
+      "url": "https://skinnyrx.com",
+      "domain": "skinnyrx.com"
+    },
+    {
+      "rank": 17,
+      "title": "Blueground",
+      "url": "https://theblueground.com",
+      "domain": "theblueground.com"
+    },
+    {
+      "rank": 18,
+      "title": "Bluemarlin",
+      "url": "https://bluemarlinbd.com",
+      "domain": "bluemarlinbd.com"
+    },
+    {
+      "rank": 19,
+      "title": "B-online",
+      "url": "https://b-online.ai",
+      "domain": "b-online.ai"
+    },
+    {
+      "rank": 20,
+      "title": "Disclosedrx",
+      "url": "https://disclosedrx.com",
+      "domain": "disclosedrx.com"
+    },
+    {
+      "rank": 21,
+      "title": "Element Blue - A Tqa Company",
+      "url": "https://tqasolutions.com/industries/element-blue",
+      "domain": "tqasolutions.com"
+    },
+    {
+      "rank": 22,
+      "title": "Fintech.blue",
+      "url": "https://fintech.blue",
+      "domain": "fintech.blue"
+    },
+    {
+      "rank": 23,
+      "title": "Custom Telehealth",
+      "url": "https://customtelehealth.com",
+      "domain": "customtelehealth.com"
+    },
+    {
+      "rank": 24,
+      "title": "Chiropractor",
+      "url": "https://chiropractor.com",
+      "domain": "chiropractor.com"
+    },
+    {
+      "rank": 25,
+      "title": "Bovada",
+      "url": "https://bovada.com",
+      "domain": "bovada.com"
+    }
+  ],
+  "neighbor_count": 25
+}

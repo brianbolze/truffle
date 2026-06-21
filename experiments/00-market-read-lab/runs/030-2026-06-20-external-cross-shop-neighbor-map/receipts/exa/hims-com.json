@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:18Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://hims.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Hims & Hers Health",
+      "url": "https://forhims.com",
+      "domain": "forhims.com"
+    },
+    {
+      "rank": 2,
+      "title": "Hims & Hers",
+      "url": "https://bit.ly/4blasl2",
+      "domain": "bit.ly"
+    },
+    {
+      "rank": 3,
+      "title": "Hims",
+      "url": "https://mailchi.mp/16d6edfcf683/healthscore",
+      "domain": "mailchi.mp"
+    },
+    {
+      "rank": 4,
+      "title": "Hims Inc.",
+      "url": "https://hims-inc.com",
+      "domain": "hims-inc.com"
+    },
+    {
+      "rank": 5,
+      "title": "Hms",
+      "url": "https://hms.com",
+      "domain": "hms.com"
+    },
+    {
+      "rank": 6,
+      "title": "Hone Health",
+      "url": "https://honehealth.com",
+      "domain": "honehealth.com"
+    },
+    {
+      "rank": 7,
+      "title": "Herself Health",
+      "url": "https://herself-health.com",
+      "domain": "herself-health.com"
+    },
+    {
+      "rank": 8,
+      "title": "Hinge Health",
+      "url": "https://hingehealth.com",
+      "domain": "hingehealth.com"
+    },
+    {
+      "rank": 9,
+      "title": "Himistry",
+      "url": "https://himistry.com",
+      "domain": "himistry.com"
+    },
+    {
+      "rank": 10,
+      "title": "Hermd",
+      "url": "https://hermd.com",
+      "domain": "hermd.com"
+    },
+    {
+      "rank": 11,
+      "title": "Hisvitals",
+      "url": "https://hisvitals.com",
+      "domain": "hisvitals.com"
+    },
+    {
+      "rank": 12,
+      "title": "Hms Holdings Corp (hmsy)",
+      "url": "https://hmsholdings.com",
+      "domain": "hmsholdings.com"
+    },
+    {
+      "rank": 13,
+      "title": "Hms Holdings Corp",
+      "url": "https://hmsy.com",
+      "domain": "hmsy.com"
+    },
+    {
+      "rank": 14,
+      "title": "Mens Llc",
+      "url": "https://mens.com",
+      "domain": "mens.com"
+    },
+    {
+      "rank": 15,
+      "title": "Hipp Health",
+      "url": "https://hipp.health",
+      "domain": "hipp.health"
+    },
+    {
+      "rank": 16,
+      "title": "Hima Health",
+      "url": "https://himahealth.com",
+      "domain": "himahealth.com"
+    },
+    {
+      "rank": 17,
+      "title": "Higi, A Modivcare Service",
+      "url": "https://higi.com",
+      "domain": "higi.com"
+    },
+    {
+      "rank": 18,
+      "title": "Ims Institute Inc",
+      "url": "https://imshealth.com",
+      "domain": "imshealth.com"
+    },
+    {
+      "rank": 19,
+      "title": "Helms & Company, Inc.",
+      "url": "https://helmsco.com",
+      "domain": "helmsco.com"
+    },
+    {
+      "rank": 20,
+      "title": "Healthsapiens",
+      "url": "https://healthsapiens.com",
+      "domain": "healthsapiens.com"
+    },
+    {
+      "rank": 21,
+      "title": "Hims Consulting Group, Inc.",
+      "url": "https://himsconsultinggroup.com",
+      "domain": "himsconsultinggroup.com"
+    },
+    {
+      "rank": 22,
+      "title": "Healthcare Information And Management Systems Society",
+      "url": "https://himss.org",
+      "domain": "himss.org"
+    },
+    {
+      "rank": 23,
+      "title": "Hims",
+      "url": "https://hihtindia.org",
+      "domain": "hihtindia.org"
+    },
+    {
+      "rank": 24,
+      "title": "Hume Health",
+      "url": "https://humehealth.com",
+      "domain": "humehealth.com"
+    },
+    {
+      "rank": 25,
+      "title": "Harleymeds",
+      "url": "https://harleymeds.com",
+      "domain": "harleymeds.com"
+    }
+  ],
+  "neighbor_count": 25
+}

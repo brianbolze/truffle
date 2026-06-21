@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:21Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://notion.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Notion Ai",
+      "url": "https://notion.com/product/ai",
+      "domain": "notion.com"
+    },
+    {
+      "rank": 2,
+      "title": "Notion Korea",
+      "url": "https://notion.so/product",
+      "domain": "notion.so"
+    },
+    {
+      "rank": 3,
+      "title": "Notability",
+      "url": "https://notability.com",
+      "domain": "notability.com"
+    },
+    {
+      "rank": 4,
+      "title": "Notion One",
+      "url": "https://notionone.com",
+      "domain": "notionone.com"
+    },
+    {
+      "rank": 5,
+      "title": "Notion Wave Inc.",
+      "url": "https://notionwave.ai",
+      "domain": "notionwave.ai"
+    },
+    {
+      "rank": 6,
+      "title": "Notion",
+      "url": "https://notion.co.uk",
+      "domain": "notion.co.uk"
+    },
+    {
+      "rank": 7,
+      "title": "Notion Providers",
+      "url": "https://notionproviders.com",
+      "domain": "notionproviders.com"
+    },
+    {
+      "rank": 8,
+      "title": "Notion",
+      "url": "https://notion.agency",
+      "domain": "notion.agency"
+    },
+    {
+      "rank": 9,
+      "title": "Notion",
+      "url": "https://notion.online",
+      "domain": "notion.online"
+    },
+    {
+      "rank": 10,
+      "title": "Notion Demand",
+      "url": "https://notiondemand.com",
+      "domain": "notiondemand.com"
+    },
+    {
+      "rank": 11,
+      "title": "Notejoy",
+      "url": "https://notejoy.com",
+      "domain": "notejoy.com"
+    },
+    {
+      "rank": 12,
+      "title": "Notion Group Llc",
+      "url": "https://notiongroup.com",
+      "domain": "notiongroup.com"
+    },
+    {
+      "rank": 13,
+      "title": "Prototion",
+      "url": "https://prototion.com",
+      "domain": "prototion.com"
+    },
+    {
+      "rank": 14,
+      "title": "Onenote",
+      "url": "https://onenote.com",
+      "domain": "onenote.com"
+    },
+    {
+      "rank": 15,
+      "title": "Knotion",
+      "url": "https://knotion.com",
+      "domain": "knotion.com"
+    },
+    {
+      "rank": 16,
+      "title": "Evernote",
+      "url": "https://evernote.com",
+      "domain": "evernote.com"
+    },
+    {
+      "rank": 17,
+      "title": "Notiongot",
+      "url": "https://notiongot.com",
+      "domain": "notiongot.com"
+    },
+    {
+      "rank": 18,
+      "title": "Whatnot",
+      "url": "https://whatnot.com",
+      "domain": "whatnot.com"
+    },
+    {
+      "rank": 19,
+      "title": "Notion In Motion",
+      "url": "https://notioninmotion.org",
+      "domain": "notioninmotion.org"
+    },
+    {
+      "rank": 20,
+      "title": "Notion Infosoft",
+      "url": "https://notioninfosoft.com",
+      "domain": "notioninfosoft.com"
+    },
+    {
+      "rank": 21,
+      "title": "Itechnotion Private Limited",
+      "url": "https://itechnotion.com",
+      "domain": "itechnotion.com"
+    },
+    {
+      "rank": 22,
+      "title": "Notch",
+      "url": "https://notch.so",
+      "domain": "notch.so"
+    },
+    {
+      "rank": 23,
+      "title": "Notionpath",
+      "url": "https://notionpath.com",
+      "domain": "notionpath.com"
+    },
+    {
+      "rank": 24,
+      "title": "Onenote2notion",
+      "url": "https://onenote2notion.com",
+      "domain": "onenote2notion.com"
+    },
+    {
+      "rank": 25,
+      "title": "Roam Research",
+      "url": "https://roamresearch.com",
+      "domain": "roamresearch.com"
+    }
+  ],
+  "neighbor_count": 25
+}

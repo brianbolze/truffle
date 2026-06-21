@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:22Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://linear.app",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Linearb",
+      "url": "https://linearb.io",
+      "domain": "linearb.io"
+    },
+    {
+      "rank": 2,
+      "title": "Linear",
+      "url": "https://linear.fi",
+      "domain": "linear.fi"
+    },
+    {
+      "rank": 3,
+      "title": "Linearity",
+      "url": "https://linearity.io",
+      "domain": "linearity.io"
+    },
+    {
+      "rank": 4,
+      "title": "Liner",
+      "url": "https://liner.com",
+      "domain": "liner.com"
+    },
+    {
+      "rank": 5,
+      "title": "Superlinear",
+      "url": "https://superlinear.eu",
+      "domain": "superlinear.eu"
+    },
+    {
+      "rank": 6,
+      "title": "Linear Air",
+      "url": "https://linearair.com",
+      "domain": "linearair.com"
+    },
+    {
+      "rank": 7,
+      "title": "Span",
+      "url": "https://span.app",
+      "domain": "span.app"
+    },
+    {
+      "rank": 8,
+      "title": "Front",
+      "url": "https://front.com",
+      "domain": "front.com"
+    },
+    {
+      "rank": 9,
+      "title": "Layer",
+      "url": "https://layer.com",
+      "domain": "layer.com"
+    },
+    {
+      "rank": 10,
+      "title": "Linen Cloud",
+      "url": "https://linen.cloud",
+      "domain": "linen.cloud"
+    },
+    {
+      "rank": 11,
+      "title": "Uniform",
+      "url": "https://uniform.dev",
+      "domain": "uniform.dev"
+    },
+    {
+      "rank": 12,
+      "title": "Height",
+      "url": "https://height.app",
+      "domain": "height.app"
+    },
+    {
+      "rank": 13,
+      "title": "Fast",
+      "url": "https://fast.co",
+      "domain": "fast.co"
+    },
+    {
+      "rank": 14,
+      "title": "Linear Finance",
+      "url": "https://linear.finance",
+      "domain": "linear.finance"
+    },
+    {
+      "rank": 15,
+      "title": "Abstract",
+      "url": "https://abstract.com",
+      "domain": "abstract.com"
+    },
+    {
+      "rank": 16,
+      "title": "Numeric",
+      "url": "https://numeric.io",
+      "domain": "numeric.io"
+    },
+    {
+      "rank": 17,
+      "title": "Linq",
+      "url": "https://linqapp.com",
+      "domain": "linqapp.com"
+    },
+    {
+      "rank": 18,
+      "title": "Rive",
+      "url": "https://rive.app",
+      "domain": "rive.app"
+    },
+    {
+      "rank": 19,
+      "title": "Index",
+      "url": "https://index.inc",
+      "domain": "index.inc"
+    },
+    {
+      "rank": 20,
+      "title": "Nominal",
+      "url": "https://nominal.io",
+      "domain": "nominal.io"
+    },
+    {
+      "rank": 21,
+      "title": "Canny",
+      "url": "https://canny.io",
+      "domain": "canny.io"
+    },
+    {
+      "rank": 22,
+      "title": "Later",
+      "url": "https://later.com",
+      "domain": "later.com"
+    },
+    {
+      "rank": 23,
+      "title": "Flatfile",
+      "url": "https://obvious.ai",
+      "domain": "obvious.ai"
+    },
+    {
+      "rank": 24,
+      "title": "Complete",
+      "url": "https://complete.so",
+      "domain": "complete.so"
+    },
+    {
+      "rank": 25,
+      "title": "Causal",
+      "url": "https://causal.app",
+      "domain": "causal.app"
+    }
+  ],
+  "neighbor_count": 25
+}

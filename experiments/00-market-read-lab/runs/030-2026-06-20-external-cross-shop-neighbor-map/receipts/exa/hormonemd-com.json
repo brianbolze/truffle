@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:17Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://hormonemd.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Alpha Md, Llc",
+      "url": "https://alphamd.org",
+      "domain": "alphamd.org"
+    },
+    {
+      "rank": 2,
+      "title": "Hermd",
+      "url": "https://hermd.com",
+      "domain": "hermd.com"
+    },
+    {
+      "rank": 3,
+      "title": "Hormone Fitness",
+      "url": "https://hormonefitness.com",
+      "domain": "hormonefitness.com"
+    },
+    {
+      "rank": 4,
+      "title": "Hormone Therapeutics",
+      "url": "https://hormonetherapeutics.com",
+      "domain": "hormonetherapeutics.com"
+    },
+    {
+      "rank": 5,
+      "title": "Hormonify",
+      "url": "https://hormonify.com",
+      "domain": "hormonify.com"
+    },
+    {
+      "rank": 6,
+      "title": "Covidmd",
+      "url": "https://covidmd.com",
+      "domain": "covidmd.com"
+    },
+    {
+      "rank": 7,
+      "title": "Optimal Health Md",
+      "url": "https://optimalhealthmd.com",
+      "domain": "optimalhealthmd.com"
+    },
+    {
+      "rank": 8,
+      "title": "Hone Health",
+      "url": "https://honehealth.com",
+      "domain": "honehealth.com"
+    },
+    {
+      "rank": 9,
+      "title": "Mymd",
+      "url": "https://mymd.nyc",
+      "domain": "mymd.nyc"
+    },
+    {
+      "rank": 10,
+      "title": "Hormone Wellness Md",
+      "url": "https://hormonewellnessmd.com",
+      "domain": "hormonewellnessmd.com"
+    },
+    {
+      "rank": 11,
+      "title": "Trt Md",
+      "url": "https://trtmd.com",
+      "domain": "trtmd.com"
+    },
+    {
+      "rank": 12,
+      "title": "Joy Md\u2122",
+      "url": "https://joymd.com",
+      "domain": "joymd.com"
+    },
+    {
+      "rank": 13,
+      "title": "Cellular Health Md",
+      "url": "https://cellularhealthmd.com",
+      "domain": "cellularhealthmd.com"
+    },
+    {
+      "rank": 14,
+      "title": "Wellingtonmd, Llc",
+      "url": "https://wellingtonmd.com",
+      "domain": "wellingtonmd.com"
+    },
+    {
+      "rank": 15,
+      "title": "Homemd Housecall Services",
+      "url": "https://homemdhealth.com",
+      "domain": "homemdhealth.com"
+    },
+    {
+      "rank": 16,
+      "title": "Harleymeds",
+      "url": "https://harleymeds.com",
+      "domain": "harleymeds.com"
+    },
+    {
+      "rank": 17,
+      "title": "Bmimd",
+      "url": "https://bmimd.com",
+      "domain": "bmimd.com"
+    },
+    {
+      "rank": 18,
+      "title": "Fitmd",
+      "url": "https://fitmdusa.com",
+      "domain": "fitmdusa.com"
+    },
+    {
+      "rank": 19,
+      "title": "Elevate Md",
+      "url": "https://elevatemd.com",
+      "domain": "elevatemd.com"
+    },
+    {
+      "rank": 20,
+      "title": "Metabolic Md",
+      "url": "https://metabolicmd.com",
+      "domain": "metabolicmd.com"
+    },
+    {
+      "rank": 21,
+      "title": "Helpmd",
+      "url": "https://helpmd.com",
+      "domain": "helpmd.com"
+    },
+    {
+      "rank": 22,
+      "title": "House Md Healthcare",
+      "url": "https://housemdhealthcare.com",
+      "domain": "housemdhealthcare.com"
+    },
+    {
+      "rank": 23,
+      "title": "Md For Men",
+      "url": "https://mdformen.com",
+      "domain": "mdformen.com"
+    },
+    {
+      "rank": 24,
+      "title": "Firm Md",
+      "url": "https://firmmdnewport.com",
+      "domain": "firmmdnewport.com"
+    },
+    {
+      "rank": 25,
+      "title": "Healthclinic Md",
+      "url": "https://healthclinicmd.com",
+      "domain": "healthclinicmd.com"
+    }
+  ],
+  "neighbor_count": 25
+}

@@ -1,0 +1,16 @@
+{
+  "tool": "ads_transparency",
+  "source": "serpapi.com (google_ads_transparency_center)",
+  "captured_at": "2026-06-21T00:07:07Z",
+  "ok": true,
+  "parser_version": "v1",
+  "input": {
+    "text": "remedymeds.com",
+    "region": "US"
+  },
+  "schema_drift": [],
+  "cost": "1 SerpAPI search",
+  "ad_creatives": [],
+  "n_creatives_first_page": 0,
+  "note": "clean zero \u2014 source returned no results for this advertiser/domain"
+}

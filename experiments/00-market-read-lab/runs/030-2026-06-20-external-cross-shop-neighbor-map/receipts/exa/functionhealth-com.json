@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:17Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://functionhealth.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Function Health",
+      "url": "https://tap.bio/@functionhealth",
+      "domain": "tap.bio"
+    },
+    {
+      "rank": 2,
+      "title": "Form Health",
+      "url": "https://formhealth.co",
+      "domain": "formhealth.co"
+    },
+    {
+      "rank": 3,
+      "title": "Forum Health",
+      "url": "https://forumhealth.com",
+      "domain": "forumhealth.com"
+    },
+    {
+      "rank": 4,
+      "title": "Collective Health",
+      "url": "https://collectivehealth.com",
+      "domain": "collectivehealth.com"
+    },
+    {
+      "rank": 5,
+      "title": "All.health",
+      "url": "https://all.health",
+      "domain": "all.health"
+    },
+    {
+      "rank": 6,
+      "title": "Virtualhealth",
+      "url": "https://virtualhealth.com",
+      "domain": "virtualhealth.com"
+    },
+    {
+      "rank": 7,
+      "title": "Float Health",
+      "url": "https://floathealth.com",
+      "domain": "floathealth.com"
+    },
+    {
+      "rank": 8,
+      "title": "Weekend Health",
+      "url": "https://weekendhealth.com",
+      "domain": "weekendhealth.com"
+    },
+    {
+      "rank": 9,
+      "title": "Function Health Club",
+      "url": "https://functionhealthclub.com",
+      "domain": "functionhealthclub.com"
+    },
+    {
+      "rank": 10,
+      "title": "Fix Health",
+      "url": "https://fixhealth.com",
+      "domain": "fixhealth.com"
+    },
+    {
+      "rank": 11,
+      "title": "Ohm Health",
+      "url": "https://ohm.health",
+      "domain": "ohm.health"
+    },
+    {
+      "rank": 12,
+      "title": "Biography Health",
+      "url": "https://biographyhealth.com",
+      "domain": "biographyhealth.com"
+    },
+    {
+      "rank": 13,
+      "title": "Extension Health",
+      "url": "https://extension.health",
+      "domain": "extension.health"
+    },
+    {
+      "rank": 14,
+      "title": "Includehealth",
+      "url": "https://includehealth.com",
+      "domain": "includehealth.com"
+    },
+    {
+      "rank": 15,
+      "title": "People.health",
+      "url": "https://people.health",
+      "domain": "people.health"
+    },
+    {
+      "rank": 16,
+      "title": "Functionalmind",
+      "url": "https://functionalmind.ai",
+      "domain": "functionalmind.ai"
+    },
+    {
+      "rank": 17,
+      "title": "Empirical Health",
+      "url": "https://empirical.health",
+      "domain": "empirical.health"
+    },
+    {
+      "rank": 18,
+      "title": "Functional Health Team",
+      "url": "https://functionalhealthteam.com",
+      "domain": "functionalhealthteam.com"
+    },
+    {
+      "rank": 19,
+      "title": "Healthfleet",
+      "url": "https://healthfleet.com",
+      "domain": "healthfleet.com"
+    },
+    {
+      "rank": 20,
+      "title": "Rythm Health",
+      "url": "https://rythmhealth.com",
+      "domain": "rythmhealth.com"
+    },
+    {
+      "rank": 21,
+      "title": "Big Health",
+      "url": "https://bighealth.com",
+      "domain": "bighealth.com"
+    },
+    {
+      "rank": 22,
+      "title": "Simplehealth",
+      "url": "https://simplehealth.com",
+      "domain": "simplehealth.com"
+    },
+    {
+      "rank": 23,
+      "title": "Method Health",
+      "url": "https://methodhealth.com",
+      "domain": "methodhealth.com"
+    },
+    {
+      "rank": 24,
+      "title": "Formativ Health",
+      "url": "https://formativhealth.com",
+      "domain": "formativhealth.com"
+    },
+    {
+      "rank": 25,
+      "title": "Optimize Health",
+      "url": "https://optimize.health",
+      "domain": "optimize.health"
+    }
+  ],
+  "neighbor_count": 25
+}

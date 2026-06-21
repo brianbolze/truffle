@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:22Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://airtable.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Airmeet",
+      "url": "https://airmeet.com",
+      "domain": "airmeet.com"
+    },
+    {
+      "rank": 2,
+      "title": "Airbase",
+      "url": "https://airbase.com",
+      "domain": "airbase.com"
+    },
+    {
+      "rank": 3,
+      "title": "Agiloft",
+      "url": "https://agiloft.com",
+      "domain": "agiloft.com"
+    },
+    {
+      "rank": 4,
+      "title": "Dbt Labs",
+      "url": "https://getdbt.com",
+      "domain": "getdbt.com"
+    },
+    {
+      "rank": 5,
+      "title": "Okay (acquired By Stripe)",
+      "url": "https://okayhq.com",
+      "domain": "okayhq.com"
+    },
+    {
+      "rank": 6,
+      "title": "Abacus.ai",
+      "url": "https://abacus.ai",
+      "domain": "abacus.ai"
+    },
+    {
+      "rank": 7,
+      "title": "Flatfile",
+      "url": "https://obvious.ai",
+      "domain": "obvious.ai"
+    },
+    {
+      "rank": 8,
+      "title": "Airtable",
+      "url": "https://linkedin.com/company/airtablesdf33",
+      "domain": "linkedin.com"
+    },
+    {
+      "rank": 9,
+      "title": "Intercom",
+      "url": "https://intercom.com",
+      "domain": "intercom.com"
+    },
+    {
+      "rank": 10,
+      "title": "Turnstile",
+      "url": "https://turnstile.ai",
+      "domain": "turnstile.ai"
+    },
+    {
+      "rank": 11,
+      "title": "Airwallex",
+      "url": "https://airwallex.com",
+      "domain": "airwallex.com"
+    },
+    {
+      "rank": 12,
+      "title": "Airalo",
+      "url": "https://airalo.com",
+      "domain": "airalo.com"
+    },
+    {
+      "rank": 13,
+      "title": "Snowflake Inc.",
+      "url": "https://snowflake.com",
+      "domain": "snowflake.com"
+    },
+    {
+      "rank": 14,
+      "title": "Teable",
+      "url": "https://teable.ai",
+      "domain": "teable.ai"
+    },
+    {
+      "rank": 15,
+      "title": "Pipefy",
+      "url": "https://pipefy.com",
+      "domain": "pipefy.com"
+    },
+    {
+      "rank": 16,
+      "title": "Rive",
+      "url": "https://rive.app",
+      "domain": "rive.app"
+    },
+    {
+      "rank": 17,
+      "title": "Airslate",
+      "url": "https://airslate.com",
+      "domain": "airslate.com"
+    },
+    {
+      "rank": 18,
+      "title": "Airsuite",
+      "url": "https://airsuite.com",
+      "domain": "airsuite.com"
+    },
+    {
+      "rank": 19,
+      "title": "Appfire",
+      "url": "https://appfire.com",
+      "domain": "appfire.com"
+    },
+    {
+      "rank": 20,
+      "title": "Tiller",
+      "url": "https://tiller.com",
+      "domain": "tiller.com"
+    },
+    {
+      "rank": 21,
+      "title": "Airlearn",
+      "url": "https://airlearn.co",
+      "domain": "airlearn.co"
+    },
+    {
+      "rank": 22,
+      "title": "Seatable",
+      "url": "https://seatable.com",
+      "domain": "seatable.com"
+    },
+    {
+      "rank": 23,
+      "title": "Thoughtspot",
+      "url": "https://thoughtspot.com",
+      "domain": "thoughtspot.com"
+    },
+    {
+      "rank": 24,
+      "title": "Ai Accountant",
+      "url": "https://aiaccountant.com",
+      "domain": "aiaccountant.com"
+    },
+    {
+      "rank": 25,
+      "title": "Salto",
+      "url": "https://salto.io",
+      "domain": "salto.io"
+    }
+  ],
+  "neighbor_count": 25
+}

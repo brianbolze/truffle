@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:14Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://gethealthspan.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Myhealthspan",
+      "url": "https://myhealthspan.com",
+      "domain": "myhealthspan.com"
+    },
+    {
+      "rank": 2,
+      "title": "Healthspan Digital",
+      "url": "https://healthspan.digital",
+      "domain": "healthspan.digital"
+    },
+    {
+      "rank": 3,
+      "title": "Healthspan Ai",
+      "url": "https://healthspanai.com",
+      "domain": "healthspanai.com"
+    },
+    {
+      "rank": 4,
+      "title": "Sage Healthspan",
+      "url": "https://lsagehealthspan.com",
+      "domain": "lsagehealthspan.com"
+    },
+    {
+      "rank": 5,
+      "title": "Oxford Healthspan",
+      "url": "https://linktr.ee/oxfordhealthspan",
+      "domain": "linktr.ee"
+    },
+    {
+      "rank": 6,
+      "title": "Healthspan Technologies, Inc.",
+      "url": "https://healthspan.dev",
+      "domain": "healthspan.dev"
+    },
+    {
+      "rank": 7,
+      "title": "Health Span International",
+      "url": "https://health-span.io",
+      "domain": "health-span.io"
+    },
+    {
+      "rank": 8,
+      "title": "Healthspan+ Montecito",
+      "url": "https://healthspanusa.com",
+      "domain": "healthspanusa.com"
+    },
+    {
+      "rank": 9,
+      "title": "Fullspan Health",
+      "url": "https://fullspanhealth.com",
+      "domain": "fullspanhealth.com"
+    },
+    {
+      "rank": 10,
+      "title": "Lifespan Digital Health, Inc.",
+      "url": "https://lifespandh1.com",
+      "domain": "lifespandh1.com"
+    },
+    {
+      "rank": 11,
+      "title": "Optispan",
+      "url": "https://optispan.life",
+      "domain": "optispan.life"
+    },
+    {
+      "rank": 12,
+      "title": "Everspan Life",
+      "url": "https://everspanlife.com",
+      "domain": "everspanlife.com"
+    },
+    {
+      "rank": 13,
+      "title": "Lifespan Health",
+      "url": "https://lifespanhealth.me",
+      "domain": "lifespanhealth.me"
+    },
+    {
+      "rank": 14,
+      "title": "Lifespanmd",
+      "url": "https://lifespan.md",
+      "domain": "lifespan.md"
+    },
+    {
+      "rank": 15,
+      "title": "Healthspan Wellness",
+      "url": "https://healthspan.ca",
+      "domain": "healthspan.ca"
+    },
+    {
+      "rank": 16,
+      "title": "Keyspan",
+      "url": "https://getkeyspan.com",
+      "domain": "getkeyspan.com"
+    },
+    {
+      "rank": 17,
+      "title": "Lifespan Medicine",
+      "url": "https://lifespanmedicine.com",
+      "domain": "lifespanmedicine.com"
+    },
+    {
+      "rank": 18,
+      "title": "Healthspan Inc.",
+      "url": "https://healthspanbenefits.com",
+      "domain": "healthspanbenefits.com"
+    },
+    {
+      "rank": 19,
+      "title": "Healthvana",
+      "url": "https://healthvana.com",
+      "domain": "healthvana.com"
+    },
+    {
+      "rank": 20,
+      "title": "Healthspan Biotics",
+      "url": "https://healthspanbiotics.com",
+      "domain": "healthspanbiotics.com"
+    },
+    {
+      "rank": 21,
+      "title": "Aion Healthspan, Inc.",
+      "url": "https://aionhealthspan.com",
+      "domain": "aionhealthspan.com"
+    },
+    {
+      "rank": 22,
+      "title": "Endurant Healthspan",
+      "url": "https://enduranthealthspan.com",
+      "domain": "enduranthealthspan.com"
+    },
+    {
+      "rank": 23,
+      "title": "Valley Healthspan",
+      "url": "https://valleyhealthspan.com",
+      "domain": "valleyhealthspan.com"
+    },
+    {
+      "rank": 24,
+      "title": "Healthspan Capital",
+      "url": "https://healthspancapital.vc",
+      "domain": "healthspancapital.vc"
+    },
+    {
+      "rank": 25,
+      "title": "Healthyspan Wellness",
+      "url": "https://healthyspan.in",
+      "domain": "healthyspan.in"
+    }
+  ],
+  "neighbor_count": 25
+}

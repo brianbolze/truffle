@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:19Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://rexmd.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Rxemd",
+      "url": "https://rxemd.com",
+      "domain": "rxemd.com"
+    },
+    {
+      "rank": 2,
+      "title": "Hormonemd",
+      "url": "https://hormonemd.com",
+      "domain": "hormonemd.com"
+    },
+    {
+      "rank": 3,
+      "title": "Rex Medical Group Inc",
+      "url": "https://rexmedicalgroup.com",
+      "domain": "rexmedicalgroup.com"
+    },
+    {
+      "rank": 4,
+      "title": "Alpha Md, Llc",
+      "url": "https://alphamd.org",
+      "domain": "alphamd.org"
+    },
+    {
+      "rank": 5,
+      "title": "Rex Vets",
+      "url": "https://rexvets.com",
+      "domain": "rexvets.com"
+    },
+    {
+      "rank": 6,
+      "title": "Rx Med",
+      "url": "https://rxmed.com",
+      "domain": "rxmed.com"
+    },
+    {
+      "rank": 7,
+      "title": "Rexmed Health",
+      "url": "https://rexmedhealth.com",
+      "domain": "rexmedhealth.com"
+    },
+    {
+      "rank": 8,
+      "title": "Lifexmd, Llc",
+      "url": "https://lifexmd.com",
+      "domain": "lifexmd.com"
+    },
+    {
+      "rank": 9,
+      "title": "Rxdn",
+      "url": "https://rxdn.com",
+      "domain": "rxdn.com"
+    },
+    {
+      "rank": 10,
+      "title": "Trt Md",
+      "url": "https://trtmd.com",
+      "domain": "trtmd.com"
+    },
+    {
+      "rank": 11,
+      "title": "Md Exam Inc.",
+      "url": "https://mdexam.com",
+      "domain": "mdexam.com"
+    },
+    {
+      "rank": 12,
+      "title": "Cbd Rxmed",
+      "url": "https://cbdrxmed.com",
+      "domain": "cbdrxmed.com"
+    },
+    {
+      "rank": 13,
+      "title": "Maxlife Md",
+      "url": "https://maxlifemdrx.com",
+      "domain": "maxlifemdrx.com"
+    },
+    {
+      "rank": 14,
+      "title": "Rxmedco",
+      "url": "https://rxmedco.net",
+      "domain": "rxmedco.net"
+    },
+    {
+      "rank": 15,
+      "title": "Dr Telx",
+      "url": "https://drtelx.com",
+      "domain": "drtelx.com"
+    },
+    {
+      "rank": 16,
+      "title": "Optimal Health Md",
+      "url": "https://optimalhealthmd.com",
+      "domain": "optimalhealthmd.com"
+    },
+    {
+      "rank": 17,
+      "title": "Rex Smith",
+      "url": "https://rexsmith.com",
+      "domain": "rexsmith.com"
+    },
+    {
+      "rank": 18,
+      "title": "Sleepmedrx",
+      "url": "https://sleepmedrx.com",
+      "domain": "sleepmedrx.com"
+    },
+    {
+      "rank": 19,
+      "title": "Rex Medical Lp",
+      "url": "https://rexmedical.com",
+      "domain": "rexmedical.com"
+    },
+    {
+      "rank": 20,
+      "title": "Medx Pharmacy Llc",
+      "url": "https://medxpharm.com",
+      "domain": "medxpharm.com"
+    },
+    {
+      "rank": 21,
+      "title": "Pharmanexmd",
+      "url": "https://pharmanexmd.com",
+      "domain": "pharmanexmd.com"
+    },
+    {
+      "rank": 22,
+      "title": "Revived Medical",
+      "url": "https://revivedmedical.com",
+      "domain": "revivedmedical.com"
+    },
+    {
+      "rank": 23,
+      "title": "Helpmd",
+      "url": "https://helpmd.com",
+      "domain": "helpmd.com"
+    },
+    {
+      "rank": 24,
+      "title": "Directmeds",
+      "url": "https://directmeds.com.au",
+      "domain": "directmeds.com.au"
+    },
+    {
+      "rank": 25,
+      "title": "Md For Men",
+      "url": "https://mdformen.com",
+      "domain": "mdformen.com"
+    }
+  ],
+  "neighbor_count": 25
+}

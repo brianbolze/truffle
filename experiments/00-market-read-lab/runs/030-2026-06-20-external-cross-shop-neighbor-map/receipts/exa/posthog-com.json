@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:21Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://posthog.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Plausible Analytics",
+      "url": "https://plausible.io",
+      "domain": "plausible.io"
+    },
+    {
+      "rank": 2,
+      "title": "Matomo",
+      "url": "https://matomo.org",
+      "domain": "matomo.org"
+    },
+    {
+      "rank": 3,
+      "title": "Statsig",
+      "url": "https://statsig.com",
+      "domain": "statsig.com"
+    },
+    {
+      "rank": 4,
+      "title": "Neon Postgres",
+      "url": "https://neon.com",
+      "domain": "neon.com"
+    },
+    {
+      "rank": 5,
+      "title": "Hedgehog",
+      "url": "https://hedgehog.cloud",
+      "domain": "hedgehog.cloud"
+    },
+    {
+      "rank": 6,
+      "title": "Datahub",
+      "url": "https://datahub.com",
+      "domain": "datahub.com"
+    },
+    {
+      "rank": 7,
+      "title": "Fathom Analytics",
+      "url": "https://usefathom.com",
+      "domain": "usefathom.com"
+    },
+    {
+      "rank": 8,
+      "title": "Supabase",
+      "url": "https://supabase.com",
+      "domain": "supabase.com"
+    },
+    {
+      "rank": 9,
+      "title": "Observable",
+      "url": "https://observablehq.com",
+      "domain": "observablehq.com"
+    },
+    {
+      "rank": 10,
+      "title": "Pganalyze",
+      "url": "https://pganalyze.com",
+      "domain": "pganalyze.com"
+    },
+    {
+      "rank": 11,
+      "title": "Zenhub",
+      "url": "https://zenhub.com",
+      "domain": "zenhub.com"
+    },
+    {
+      "rank": 12,
+      "title": "Clickhouse",
+      "url": "https://clickhouse.com",
+      "domain": "clickhouse.com"
+    },
+    {
+      "rank": 13,
+      "title": "Hypothesis",
+      "url": "https://hypothes.is",
+      "domain": "hypothes.is"
+    },
+    {
+      "rank": 14,
+      "title": "Pogo",
+      "url": "https://joinpogo.com",
+      "domain": "joinpogo.com"
+    },
+    {
+      "rank": 15,
+      "title": "Rollbar",
+      "url": "https://rollbar.com",
+      "domain": "rollbar.com"
+    },
+    {
+      "rank": 16,
+      "title": "Pentaho",
+      "url": "https://pentaho.com",
+      "domain": "pentaho.com"
+    },
+    {
+      "rank": 17,
+      "title": "Openreplay",
+      "url": "https://openreplay.com",
+      "domain": "openreplay.com"
+    },
+    {
+      "rank": 18,
+      "title": "Profitwell By Paddle",
+      "url": "https://profitwell.com",
+      "domain": "profitwell.com"
+    },
+    {
+      "rank": 19,
+      "title": "Popsql",
+      "url": "https://popsql.com",
+      "domain": "popsql.com"
+    },
+    {
+      "rank": 20,
+      "title": "Mezmo",
+      "url": "https://mezmo.com",
+      "domain": "mezmo.com"
+    },
+    {
+      "rank": 21,
+      "title": "Signoz",
+      "url": "https://signoz.io",
+      "domain": "signoz.io"
+    },
+    {
+      "rank": 22,
+      "title": "Hojoki",
+      "url": "https://hojoki.com",
+      "domain": "hojoki.com"
+    },
+    {
+      "rank": 23,
+      "title": "Honeycomb.io",
+      "url": "https://honeycomb.io",
+      "domain": "honeycomb.io"
+    },
+    {
+      "rank": 24,
+      "title": "Axiom",
+      "url": "https://axiom.co",
+      "domain": "axiom.co"
+    },
+    {
+      "rank": 25,
+      "title": "Seomoz",
+      "url": "https://moz.com",
+      "domain": "moz.com"
+    }
+  ],
+  "neighbor_count": 25
+}

@@ -1,0 +1,416 @@
+{
+  "tool": "ads_transparency",
+  "source": "serpapi.com (google_ads_transparency_center)",
+  "captured_at": "2026-06-21T00:07:04Z",
+  "ok": true,
+  "parser_version": "v1",
+  "input": {
+    "text": "ro.co",
+    "region": "US"
+  },
+  "schema_drift": [],
+  "cost": "1 SerpAPI search",
+  "ad_creatives": [
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "text",
+      "target_domain": "ro.co",
+      "first_shown": 1711475467,
+      "first_shown_iso": "2024-03-26",
+      "last_shown": 1781989207,
+      "last_shown_iso": "2026-06-20"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1779414425,
+      "first_shown_iso": "2026-05-22",
+      "last_shown": 1781927113,
+      "last_shown_iso": "2026-06-20"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1779410487,
+      "first_shown_iso": "2026-05-22",
+      "last_shown": 1781927081,
+      "last_shown_iso": "2026-06-20"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1778786867,
+      "first_shown_iso": "2026-05-14",
+      "last_shown": 1781926639,
+      "last_shown_iso": "2026-06-20"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1779407359,
+      "first_shown_iso": "2026-05-21",
+      "last_shown": 1781925291,
+      "last_shown_iso": "2026-06-20"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1778787193,
+      "first_shown_iso": "2026-05-14",
+      "last_shown": 1781737746,
+      "last_shown_iso": "2026-06-17"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1716560453,
+      "first_shown_iso": "2024-05-24",
+      "last_shown": 1777340736,
+      "last_shown_iso": "2026-04-28"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1676567338,
+      "first_shown_iso": "2023-02-16",
+      "last_shown": 1776096187,
+      "last_shown_iso": "2026-04-13"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "text",
+      "target_domain": "ro.co",
+      "first_shown": 1774448531,
+      "first_shown_iso": "2026-03-25",
+      "last_shown": 1775833163,
+      "last_shown_iso": "2026-04-10"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1730824612,
+      "first_shown_iso": "2024-11-05",
+      "last_shown": 1775741692,
+      "last_shown_iso": "2026-04-09"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1736612579,
+      "first_shown_iso": "2025-01-11",
+      "last_shown": 1775487708,
+      "last_shown_iso": "2026-04-06"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1736612278,
+      "first_shown_iso": "2025-01-11",
+      "last_shown": 1775487706,
+      "last_shown_iso": "2026-04-06"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1736612278,
+      "first_shown_iso": "2025-01-11",
+      "last_shown": 1775487705,
+      "last_shown_iso": "2026-04-06"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1736612359,
+      "first_shown_iso": "2025-01-11",
+      "last_shown": 1775487704,
+      "last_shown_iso": "2026-04-06"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1736612347,
+      "first_shown_iso": "2025-01-11",
+      "last_shown": 1775487699,
+      "last_shown_iso": "2026-04-06"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1736357489,
+      "first_shown_iso": "2025-01-08",
+      "last_shown": 1775240969,
+      "last_shown_iso": "2026-04-03"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1760029780,
+      "first_shown_iso": "2025-10-09",
+      "last_shown": 1772134905,
+      "last_shown_iso": "2026-02-26"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1766758988,
+      "first_shown_iso": "2025-12-26",
+      "last_shown": 1770925903,
+      "last_shown_iso": "2026-02-12"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1763068565,
+      "first_shown_iso": "2025-11-13",
+      "last_shown": 1769116511,
+      "last_shown_iso": "2026-01-22"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1761848906,
+      "first_shown_iso": "2025-10-30",
+      "last_shown": 1767902114,
+      "last_shown_iso": "2026-01-08"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1762451468,
+      "first_shown_iso": "2025-11-06",
+      "last_shown": 1767901180,
+      "last_shown_iso": "2026-01-08"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1759845681,
+      "first_shown_iso": "2025-10-07",
+      "last_shown": 1767900948,
+      "last_shown_iso": "2026-01-08"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1759845756,
+      "first_shown_iso": "2025-10-07",
+      "last_shown": 1767900782,
+      "last_shown_iso": "2026-01-08"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1759845887,
+      "first_shown_iso": "2025-10-07",
+      "last_shown": 1767900764,
+      "last_shown_iso": "2026-01-08"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1762453330,
+      "first_shown_iso": "2025-11-06",
+      "last_shown": 1767900671,
+      "last_shown_iso": "2026-01-08"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1759846104,
+      "first_shown_iso": "2025-10-07",
+      "last_shown": 1767892640,
+      "last_shown_iso": "2026-01-08"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1766088764,
+      "first_shown_iso": "2025-12-18",
+      "last_shown": 1767737687,
+      "last_shown_iso": "2026-01-06"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1766760146,
+      "first_shown_iso": "2025-12-26",
+      "last_shown": 1767490164,
+      "last_shown_iso": "2026-01-04"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1767187857,
+      "first_shown_iso": "2025-12-31",
+      "last_shown": 1767484128,
+      "last_shown_iso": "2026-01-03"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1759845759,
+      "first_shown_iso": "2025-10-07",
+      "last_shown": 1767187846,
+      "last_shown_iso": "2025-12-31"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1747184720,
+      "first_shown_iso": "2025-05-14",
+      "last_shown": 1766086605,
+      "last_shown_iso": "2025-12-18"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1747183563,
+      "first_shown_iso": "2025-05-14",
+      "last_shown": 1766086582,
+      "last_shown_iso": "2025-12-18"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1760031394,
+      "first_shown_iso": "2025-10-09",
+      "last_shown": 1766086582,
+      "last_shown_iso": "2025-12-18"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1676567820,
+      "first_shown_iso": "2023-02-16",
+      "last_shown": 1764822347,
+      "last_shown_iso": "2025-12-04"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1761848778,
+      "first_shown_iso": "2025-10-30",
+      "last_shown": 1764708415,
+      "last_shown_iso": "2025-12-02"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1759845965,
+      "first_shown_iso": "2025-10-07",
+      "last_shown": 1764707293,
+      "last_shown_iso": "2025-12-02"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "image",
+      "target_domain": "ro.co",
+      "first_shown": 1676563172,
+      "first_shown_iso": "2023-02-16",
+      "last_shown": 1763665085,
+      "last_shown_iso": "2025-11-20"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1757010088,
+      "first_shown_iso": "2025-09-04",
+      "last_shown": 1762976266,
+      "last_shown_iso": "2025-11-12"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1757010079,
+      "first_shown_iso": "2025-09-04",
+      "last_shown": 1762458179,
+      "last_shown_iso": "2025-11-06"
+    },
+    {
+      "advertiser": "Roman Health Ventures Inc.",
+      "advertiser_id": "AR07642203947368710145",
+      "format": "video",
+      "target_domain": "ro.co",
+      "first_shown": 1761841765,
+      "first_shown_iso": "2025-10-30",
+      "last_shown": 1762457953,
+      "last_shown_iso": "2025-11-06"
+    }
+  ],
+  "n_creatives_first_page": 40
+}

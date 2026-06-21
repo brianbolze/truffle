@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:13Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://mylifeforce.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Life Force Fitness",
+      "url": "https://lifeforce-fitness.co.uk",
+      "domain": "lifeforce-fitness.co.uk"
+    },
+    {
+      "rank": 2,
+      "title": "Recovery Force",
+      "url": "https://recoveryforceusa.com",
+      "domain": "recoveryforceusa.com"
+    },
+    {
+      "rank": 3,
+      "title": "Lifetime Fitness",
+      "url": "https://lifetimefitness101.com",
+      "domain": "lifetimefitness101.com"
+    },
+    {
+      "rank": 4,
+      "title": "Motivforce | Incentives With Impact",
+      "url": "https://motivforce.com",
+      "domain": "motivforce.com"
+    },
+    {
+      "rank": 5,
+      "title": "Life Force",
+      "url": "https://youngevity.com/us_en/health-nutrition/life-force.html",
+      "domain": "youngevity.com"
+    },
+    {
+      "rank": 6,
+      "title": "Lifefx",
+      "url": "https://lifefxmn.com",
+      "domain": "lifefxmn.com"
+    },
+    {
+      "rank": 7,
+      "title": "Lifeco",
+      "url": "https://life.co",
+      "domain": "life.co"
+    },
+    {
+      "rank": 8,
+      "title": "Life Force International",
+      "url": "https://thebestoflife.com",
+      "domain": "thebestoflife.com"
+    },
+    {
+      "rank": 9,
+      "title": "Lifeforce Homeopathy",
+      "url": "https://lifeforce.in",
+      "domain": "lifeforce.in"
+    },
+    {
+      "rank": 10,
+      "title": "Longevity Fitness",
+      "url": "https://longevity-fitness.com",
+      "domain": "longevity-fitness.com"
+    },
+    {
+      "rank": 11,
+      "title": "Fitlyfe",
+      "url": "https://fitlyfe.com",
+      "domain": "fitlyfe.com"
+    },
+    {
+      "rank": 12,
+      "title": "Lyfe",
+      "url": "https://lyfe.co",
+      "domain": "lyfe.co"
+    },
+    {
+      "rank": 13,
+      "title": "Totalfit Inc.",
+      "url": "https://totalfit.app",
+      "domain": "totalfit.app"
+    },
+    {
+      "rank": 14,
+      "title": "Magnilife",
+      "url": "https://magnilife.com",
+      "domain": "magnilife.com"
+    },
+    {
+      "rank": 15,
+      "title": "Blife",
+      "url": "https://myblife.com",
+      "domain": "myblife.com"
+    },
+    {
+      "rank": 16,
+      "title": "Lifecore Group",
+      "url": "https://lifecoregroup.com",
+      "domain": "lifecoregroup.com"
+    },
+    {
+      "rank": 17,
+      "title": "Fit For Life",
+      "url": "https://fitforlife.com",
+      "domain": "fitforlife.com"
+    },
+    {
+      "rank": 18,
+      "title": "Wellness For Life",
+      "url": "https://wellnessfor-life.com",
+      "domain": "wellnessfor-life.com"
+    },
+    {
+      "rank": 19,
+      "title": "Lifestyle Fitness",
+      "url": "https://lifestylefitness.co.uk",
+      "domain": "lifestylefitness.co.uk"
+    },
+    {
+      "rank": 20,
+      "title": "Lifeforce Healthcare, Llc",
+      "url": "https://lifeforcehealthcare.com",
+      "domain": "lifeforcehealthcare.com"
+    },
+    {
+      "rank": 21,
+      "title": "Life Force Wellness Llc",
+      "url": "https://lifeforcewellness.com",
+      "domain": "lifeforcewellness.com"
+    },
+    {
+      "rank": 22,
+      "title": "Vitalife",
+      "url": "https://vitalife.com",
+      "domain": "vitalife.com"
+    },
+    {
+      "rank": 23,
+      "title": "Projectsforce",
+      "url": "https://projectsforce.com",
+      "domain": "projectsforce.com"
+    },
+    {
+      "rank": 24,
+      "title": "Liftforce",
+      "url": "https://liftforce.fitness",
+      "domain": "liftforce.fitness"
+    },
+    {
+      "rank": 25,
+      "title": "Lifeforce Performance",
+      "url": "https://lfperformance.com",
+      "domain": "lfperformance.com"
+    }
+  ],
+  "neighbor_count": 25
+}

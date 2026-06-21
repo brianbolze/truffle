@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:16Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://maximustribe.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Muscle Mx",
+      "url": "https://musclemx.com",
+      "domain": "musclemx.com"
+    },
+    {
+      "rank": 2,
+      "title": "Jumpstartmd",
+      "url": "https://jumpstartmd.com",
+      "domain": "jumpstartmd.com"
+    },
+    {
+      "rank": 3,
+      "title": "Maximus Rose Living Benefits Inc.",
+      "url": "https://maximusrose.com",
+      "domain": "maximusrose.com"
+    },
+    {
+      "rank": 4,
+      "title": "Maximuslife",
+      "url": "https://maximuslife.com",
+      "domain": "maximuslife.com"
+    },
+    {
+      "rank": 5,
+      "title": "Flex Ai",
+      "url": "https://flexfitnessapp.com",
+      "domain": "flexfitnessapp.com"
+    },
+    {
+      "rank": 6,
+      "title": "Well Revolution",
+      "url": "https://wellrevolution.com",
+      "domain": "wellrevolution.com"
+    },
+    {
+      "rank": 7,
+      "title": "Maximus Fitness",
+      "url": "https://maximusfitness.com",
+      "domain": "maximusfitness.com"
+    },
+    {
+      "rank": 8,
+      "title": "Maxterial, Inc.",
+      "url": "https://maxterial.com",
+      "domain": "maxterial.com"
+    },
+    {
+      "rank": 9,
+      "title": "Maximum Potential, Inc.",
+      "url": "https://maximumpotential.com",
+      "domain": "maximumpotential.com"
+    },
+    {
+      "rank": 10,
+      "title": "Regymen Fitness",
+      "url": "https://regymenfitness.com",
+      "domain": "regymenfitness.com"
+    },
+    {
+      "rank": 11,
+      "title": "Madisons",
+      "url": "https://madisonsfitess.com",
+      "domain": "madisonsfitess.com"
+    },
+    {
+      "rank": 12,
+      "title": "Magnimus",
+      "url": "https://magnimus.com",
+      "domain": "magnimus.com"
+    },
+    {
+      "rank": 13,
+      "title": "Fertimo",
+      "url": "https://fertimo.com",
+      "domain": "fertimo.com"
+    },
+    {
+      "rank": 14,
+      "title": "Shape (shapescale)",
+      "url": "https://shapescale.com",
+      "domain": "shapescale.com"
+    },
+    {
+      "rank": 15,
+      "title": "Maxamus Pharma Private Limited",
+      "url": "https://maxamuspharma.com",
+      "domain": "maxamuspharma.com"
+    },
+    {
+      "rank": 16,
+      "title": "Motus Nova",
+      "url": "https://motusnova.com",
+      "domain": "motusnova.com"
+    },
+    {
+      "rank": 17,
+      "title": "Coach Tribe Llc",
+      "url": "https://coachtribe.co",
+      "domain": "coachtribe.co"
+    },
+    {
+      "rank": 18,
+      "title": "Npe Fitness",
+      "url": "https://npefitness.com",
+      "domain": "npefitness.com"
+    },
+    {
+      "rank": 19,
+      "title": "Barber Surgeons Guild",
+      "url": "https://barbersurgeonsguild.com",
+      "domain": "barbersurgeonsguild.com"
+    },
+    {
+      "rank": 20,
+      "title": "Allumiqs",
+      "url": "https://allumiqs.com",
+      "domain": "allumiqs.com"
+    },
+    {
+      "rank": 21,
+      "title": "Tribeca Medaesthetics",
+      "url": "https://tribecamed.com",
+      "domain": "tribecamed.com"
+    },
+    {
+      "rank": 22,
+      "title": "Fierce45",
+      "url": "https://fierce45.com",
+      "domain": "fierce45.com"
+    },
+    {
+      "rank": 23,
+      "title": "Medmo",
+      "url": "https://medmo.com",
+      "domain": "medmo.com"
+    },
+    {
+      "rank": 24,
+      "title": "Animus",
+      "url": "https://animuswell.com",
+      "domain": "animuswell.com"
+    },
+    {
+      "rank": 25,
+      "title": "Maximus",
+      "url": "https://maximus.pro",
+      "domain": "maximus.pro"
+    }
+  ],
+  "neighbor_count": 25
+}

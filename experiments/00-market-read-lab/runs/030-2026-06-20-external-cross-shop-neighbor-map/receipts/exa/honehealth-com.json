@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:13Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://honehealth.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Honey Health",
+      "url": "https://honeyhealth.ai",
+      "domain": "honeyhealth.ai"
+    },
+    {
+      "rank": 2,
+      "title": "Honeybee Health",
+      "url": "https://honeybeehealth.com",
+      "domain": "honeybeehealth.com"
+    },
+    {
+      "rank": 3,
+      "title": "One To One Health",
+      "url": "https://onetoonehealth.com",
+      "domain": "onetoonehealth.com"
+    },
+    {
+      "rank": 4,
+      "title": "Hormonemd",
+      "url": "https://hormonemd.com",
+      "domain": "hormonemd.com"
+    },
+    {
+      "rank": 5,
+      "title": "Hormone Fitness",
+      "url": "https://hormonefitness.com",
+      "domain": "hormonefitness.com"
+    },
+    {
+      "rank": 6,
+      "title": "Haven Health",
+      "url": "https://havenhealth.care",
+      "domain": "havenhealth.care"
+    },
+    {
+      "rank": 7,
+      "title": "Anise Health",
+      "url": "https://anisehealth.co",
+      "domain": "anisehealth.co"
+    },
+    {
+      "rank": 8,
+      "title": "Dna",
+      "url": "https://dnahormonalhealth.com",
+      "domain": "dnahormonalhealth.com"
+    },
+    {
+      "rank": 9,
+      "title": "Hume Health",
+      "url": "https://humehealth.com",
+      "domain": "humehealth.com"
+    },
+    {
+      "rank": 10,
+      "title": "Peopleone Health",
+      "url": "https://peopleonehealth.com",
+      "domain": "peopleonehealth.com"
+    },
+    {
+      "rank": 11,
+      "title": "Ryse Health",
+      "url": "https://rysehealth.com",
+      "domain": "rysehealth.com"
+    },
+    {
+      "rank": 12,
+      "title": "Hormone Therapeutics",
+      "url": "https://hormonetherapeutics.com",
+      "domain": "hormonetherapeutics.com"
+    },
+    {
+      "rank": 13,
+      "title": "Iron Health",
+      "url": "https://ironhealth.io",
+      "domain": "ironhealth.io"
+    },
+    {
+      "rank": 14,
+      "title": "Honor",
+      "url": "https://livehonor.co",
+      "domain": "livehonor.co"
+    },
+    {
+      "rank": 15,
+      "title": "Hone",
+      "url": "https://honeblends.com",
+      "domain": "honeblends.com"
+    },
+    {
+      "rank": 16,
+      "title": "Balanced Hormone Health",
+      "url": "https://balancedhormonehealth.com",
+      "domain": "balancedhormonehealth.com"
+    },
+    {
+      "rank": 17,
+      "title": "Ehe Health",
+      "url": "https://ehe.health",
+      "domain": "ehe.health"
+    },
+    {
+      "rank": 18,
+      "title": "Hormone Health And Weight Loss",
+      "url": "https://hormonehealthandweightloss.com",
+      "domain": "hormonehealthandweightloss.com"
+    },
+    {
+      "rank": 19,
+      "title": "Tono Health",
+      "url": "https://tonohealth.com",
+      "domain": "tonohealth.com"
+    },
+    {
+      "rank": 20,
+      "title": "Ohm Health",
+      "url": "https://ohm.health",
+      "domain": "ohm.health"
+    },
+    {
+      "rank": 21,
+      "title": "Elite Health Hrt",
+      "url": "https://elitehealthhrt.com",
+      "domain": "elitehealthhrt.com"
+    },
+    {
+      "rank": 22,
+      "title": "Beehyve Health",
+      "url": "https://beehyve.health",
+      "domain": "beehyve.health"
+    },
+    {
+      "rank": 23,
+      "title": "Health In Her Hue",
+      "url": "https://healthinherhue.com",
+      "domain": "healthinherhue.com"
+    },
+    {
+      "rank": 24,
+      "title": "Femstrong Health",
+      "url": "https://femstronghealth.com",
+      "domain": "femstronghealth.com"
+    },
+    {
+      "rank": 25,
+      "title": "Curate Health",
+      "url": "https://curatehealth.co.uk",
+      "domain": "curatehealth.co.uk"
+    }
+  ],
+  "neighbor_count": 25
+}

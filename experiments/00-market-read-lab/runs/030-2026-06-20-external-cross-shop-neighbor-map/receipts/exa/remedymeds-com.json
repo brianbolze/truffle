@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:19Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://remedymeds.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Direct Meds Llc",
+      "url": "https://direct-meds.com",
+      "domain": "direct-meds.com"
+    },
+    {
+      "rank": 2,
+      "title": "Remedy",
+      "url": "https://remedy.ph",
+      "domain": "remedy.ph"
+    },
+    {
+      "rank": 3,
+      "title": "Henry Meds",
+      "url": "https://henrymeds.com",
+      "domain": "henrymeds.com"
+    },
+    {
+      "rank": 4,
+      "title": "Long Term Pharmacy",
+      "url": "https://readymedspharmacy.com",
+      "domain": "readymedspharmacy.com"
+    },
+    {
+      "rank": 5,
+      "title": "Nr Meds",
+      "url": "https://nrmeds.com",
+      "domain": "nrmeds.com"
+    },
+    {
+      "rank": 6,
+      "title": "Remedy Therapy Services",
+      "url": "https://remedytherapy.net",
+      "domain": "remedytherapy.net"
+    },
+    {
+      "rank": 7,
+      "title": "Remedy",
+      "url": "https://theremedy.com",
+      "domain": "theremedy.com"
+    },
+    {
+      "rank": 8,
+      "title": "Remedi Seniorcare Pharmacy",
+      "url": "https://remedirx.com",
+      "domain": "remedirx.com"
+    },
+    {
+      "rank": 9,
+      "title": "Remedy Maryland",
+      "url": "https://remedymaryland.com",
+      "domain": "remedymaryland.com"
+    },
+    {
+      "rank": 10,
+      "title": "The Remedy Mental Health",
+      "url": "https://theremedymn.com",
+      "domain": "theremedymn.com"
+    },
+    {
+      "rank": 11,
+      "title": "Remedy Pharmaceuticals, Inc.",
+      "url": "https://remedypharmaceuticals.com",
+      "domain": "remedypharmaceuticals.com"
+    },
+    {
+      "rank": 12,
+      "title": "Ilmeds.co",
+      "url": "https://ilmeds.co",
+      "domain": "ilmeds.co"
+    },
+    {
+      "rank": 13,
+      "title": "Comparemedsrx",
+      "url": "https://comparemedsrx.com",
+      "domain": "comparemedsrx.com"
+    },
+    {
+      "rank": 14,
+      "title": "Medmo",
+      "url": "https://medmo.com",
+      "domain": "medmo.com"
+    },
+    {
+      "rank": 15,
+      "title": "Remedy Health",
+      "url": "https://remedymedical.com",
+      "domain": "remedymedical.com"
+    },
+    {
+      "rank": 16,
+      "title": "Skinnyrx",
+      "url": "https://skinnyrx.com",
+      "domain": "skinnyrx.com"
+    },
+    {
+      "rank": 17,
+      "title": "Medsonwheels",
+      "url": "https://meds-on-wheels.com",
+      "domain": "meds-on-wheels.com"
+    },
+    {
+      "rank": 18,
+      "title": "Mytelemedicine",
+      "url": "https://mytelemedicine.com",
+      "domain": "mytelemedicine.com"
+    },
+    {
+      "rank": 19,
+      "title": "Your Medicals",
+      "url": "https://yourmedicals.co.uk",
+      "domain": "yourmedicals.co.uk"
+    },
+    {
+      "rank": 20,
+      "title": "Yogamedics",
+      "url": "https://yogamedics.com",
+      "domain": "yogamedics.com"
+    },
+    {
+      "rank": 21,
+      "title": "Trxade Health (nasdaq: Meds)",
+      "url": "https://trxadegroup.com",
+      "domain": "trxadegroup.com"
+    },
+    {
+      "rank": 22,
+      "title": "Revivemd",
+      "url": "https://therevivemd.com",
+      "domain": "therevivemd.com"
+    },
+    {
+      "rank": 23,
+      "title": "Direct Meds",
+      "url": "https://directmedsusa.com",
+      "domain": "directmedsusa.com"
+    },
+    {
+      "rank": 24,
+      "title": "[re]meds",
+      "url": "https://re-meds.com",
+      "domain": "re-meds.com"
+    },
+    {
+      "rank": 25,
+      "title": "Readymeds",
+      "url": "https://readymeds.ca",
+      "domain": "readymeds.ca"
+    }
+  ],
+  "neighbor_count": 25
+}

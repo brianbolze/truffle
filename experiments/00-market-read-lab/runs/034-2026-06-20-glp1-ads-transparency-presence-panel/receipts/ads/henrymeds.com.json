@@ -1,0 +1,36 @@
+{
+  "tool": "ads_transparency",
+  "source": "serpapi.com (google_ads_transparency_center)",
+  "captured_at": "2026-06-21T00:07:06Z",
+  "ok": true,
+  "parser_version": "v1",
+  "input": {
+    "text": "henrymeds.com",
+    "region": "US"
+  },
+  "schema_drift": [],
+  "cost": "1 SerpAPI search",
+  "ad_creatives": [
+    {
+      "advertiser": "ADONIS HEALTH INC.",
+      "advertiser_id": "AR15002268830183456769",
+      "format": "text",
+      "target_domain": "henrymeds.com",
+      "first_shown": 1704217693,
+      "first_shown_iso": "2024-01-02",
+      "last_shown": 1763991895,
+      "last_shown_iso": "2025-11-24"
+    },
+    {
+      "advertiser": "ADONIS HEALTH INC.",
+      "advertiser_id": "AR15002268830183456769",
+      "format": "image",
+      "target_domain": "henrymeds.com",
+      "first_shown": 1738473746,
+      "first_shown_iso": "2025-02-02",
+      "last_shown": 1758710141,
+      "last_shown_iso": "2025-09-24"
+    }
+  ],
+  "n_creatives_first_page": 2
+}

@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:14Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://gogeviti.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Longeviti Health",
+      "url": "https://longeviti.health",
+      "domain": "longeviti.health"
+    },
+    {
+      "rank": 2,
+      "title": "Medgevity",
+      "url": "https://medgevityhealth.com",
+      "domain": "medgevityhealth.com"
+    },
+    {
+      "rank": 3,
+      "title": "Vitaliti",
+      "url": "https://vitaliti.ai",
+      "domain": "vitaliti.ai"
+    },
+    {
+      "rank": 4,
+      "title": "Genomii.ai",
+      "url": "https://genomii.ai",
+      "domain": "genomii.ai"
+    },
+    {
+      "rank": 5,
+      "title": "Gevity Rx",
+      "url": "https://gevityrx.com",
+      "domain": "gevityrx.com"
+    },
+    {
+      "rank": 6,
+      "title": "Evity Technologies",
+      "url": "https://evity.ai",
+      "domain": "evity.ai"
+    },
+    {
+      "rank": 7,
+      "title": "Longevum",
+      "url": "https://gevityhealth.com",
+      "domain": "gevityhealth.com"
+    },
+    {
+      "rank": 8,
+      "title": "Novi Health",
+      "url": "https://novihealth.com",
+      "domain": "novihealth.com"
+    },
+    {
+      "rank": 9,
+      "title": "Healthgevity Nation",
+      "url": "https://bio.link/healthgevity",
+      "domain": "bio.link"
+    },
+    {
+      "rank": 10,
+      "title": "Giv",
+      "url": "https://givhealthcare.com",
+      "domain": "givhealthcare.com"
+    },
+    {
+      "rank": 11,
+      "title": "Lovegevity",
+      "url": "https://lovegevity.com",
+      "domain": "lovegevity.com"
+    },
+    {
+      "rank": 12,
+      "title": "Elivate",
+      "url": "https://getelivated.com",
+      "domain": "getelivated.com"
+    },
+    {
+      "rank": 13,
+      "title": "Getfitmed",
+      "url": "https://getfitmed.com",
+      "domain": "getfitmed.com"
+    },
+    {
+      "rank": 14,
+      "title": "Uptiv Health",
+      "url": "https://uptivhealth.com",
+      "domain": "uptivhealth.com"
+    },
+    {
+      "rank": 15,
+      "title": "Vityl Medical",
+      "url": "https://vityl.com",
+      "domain": "vityl.com"
+    },
+    {
+      "rank": 16,
+      "title": "Genefit",
+      "url": "https://genefit.pro",
+      "domain": "genefit.pro"
+    },
+    {
+      "rank": 17,
+      "title": "Govvi",
+      "url": "https://govvi.com",
+      "domain": "govvi.com"
+    },
+    {
+      "rank": 18,
+      "title": "Equiti",
+      "url": "https://equitihealth.com",
+      "domain": "equitihealth.com"
+    },
+    {
+      "rank": 19,
+      "title": "Genovive",
+      "url": "https://genovive.com",
+      "domain": "genovive.com"
+    },
+    {
+      "rank": 20,
+      "title": "Gaviti",
+      "url": "https://gaviti.com",
+      "domain": "gaviti.com"
+    },
+    {
+      "rank": 21,
+      "title": "Goget.fit",
+      "url": "https://goget.fit",
+      "domain": "goget.fit"
+    },
+    {
+      "rank": 22,
+      "title": "Forevity Health",
+      "url": "https://forevityhealth.com",
+      "domain": "forevityhealth.com"
+    },
+    {
+      "rank": 23,
+      "title": "Gabit",
+      "url": "https://gabit.com",
+      "domain": "gabit.com"
+    },
+    {
+      "rank": 24,
+      "title": "Fitivity",
+      "url": "https://getfitivity.com",
+      "domain": "getfitivity.com"
+    },
+    {
+      "rank": 25,
+      "title": "Inevifit Llc",
+      "url": "https://inevifit.com",
+      "domain": "inevifit.com"
+    }
+  ],
+  "neighbor_count": 25
+}

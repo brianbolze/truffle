@@ -1,0 +1,93 @@
+store profiled domains: 126
+
+
+===== TELEHEALTH: cross-anchor hubs (neighbors shared by >=2 anchors) =====
+#anc  in_store  neighbor                         anchors
+   4     STORE  honehealth.com                   henrymeds,hims,hormonemd,roco
+   3    absent  collectivehealth.com             functionhealth,nurx,roco
+   3    absent  harleymeds.com                   henrymeds,hims,hormonemd
+   3    absent  helpmd.com                       hormonemd,lifemd,rexmd
+   3    absent  homemdhealth.com                 henrymeds,hormonemd,lifemd
+   3    absent  medmo.com                        bluechew,maximustribe,remedymeds
+   3    absent  skinnyrx.com                     bluechew,nurx,remedymeds
+   2    absent  agelessmed.com                   agelessrx,defymedical
+   2    absent  alphamd.org                      hormonemd,rexmd
+   2    absent  boomrx.com                       bluechew,nurx
+   2    absent  comparemedsrx.com                henrymeds,remedymeds
+   2    absent  covidmd.com                      hormonemd,lifemd
+   2    absent  direct-meds.com                  henrymeds,remedymeds
+   2    absent  directmedsusa.com                henrymeds,remedymeds
+   2    absent  disclosedrx.com                  bluechew,nurx
+   2    absent  formhealth.co                    functionhealth,roco
+   2    absent  forumhealth.com                  functionhealth,marekhealth
+   2    absent  hermd.com                        hims,hormonemd
+   2    absent  hormonefitness.com               honehealth,hormonemd
+   2     STORE  hormonemd.com                    honehealth,rexmd
+   2    absent  hormonetherapeutics.com          honehealth,hormonemd
+   2    absent  hormonify.com                    defymedical,hormonemd
+   2    absent  humehealth.com                   hims,honehealth
+   2    absent  ilmeds.co                        henrymeds,remedymeds
+   2    absent  ironhealth.io                    honehealth,roco
+   2    absent  life.co                          lifemd,mylifeforce
+   2    absent  liferx.md                        agelessrx,lifemd
+   2    absent  lifespan.md                      gethealthspan,lifemd
+   2    absent  linkedin.com                     lifemd,nurx
+   2    absent  linktr.ee                        gethealthspan,marekhealth
+   2    absent  mdformen.com                     hormonemd,rexmd
+   2    absent  methodhealth.com                 functionhealth,marekhealth
+   2    absent  ohm.health                       functionhealth,honehealth
+   2    absent  optimalhealthmd.com              hormonemd,rexmd
+   2    absent  tap.bio                          functionhealth,roco
+   2    absent  trtmd.com                        hormonemd,rexmd
+   2    absent  wellrevolution.com               maximustribe,nurx
+   2    absent  yourmedicals.co.uk               henrymeds,remedymeds
+
+  TELEHEALTH store-ABSENT hubs (>=2 anchors, not captured): 36
+
+===== SAAS: cross-anchor hubs (neighbors shared by >=2 anchors) =====
+#anc  in_store  neighbor                         anchors
+   2    absent  linkedin.com                     airtable,snowflake
+   2    absent  obvious.ai                       airtable,linearapp
+   2    absent  rive.app                         airtable,linearapp
+
+  SAAS store-ABSENT hubs (>=2 anchors, not captured): 3
+
+
+===== per-anchor neighbor store-coverage (of 25 Exa neighbors, how many captured) =====
+anchor               cat            in_store  absent
+honehealth-com       longevity/NAD         1      24
+mylifeforce-com      longevity/NAD         0      25
+gethealthspan-com    longevity/NAD         0      25
+gogeviti-com         longevity/NAD         0      25
+agelessrx-com        longevity/NAD         1      24
+defymedical-com      TRT                   0      25
+marekhealth-com      TRT                   0      25
+maximustribe-com     TRT                   0      25
+hormonemd-com        TRT                   1      24
+functionhealth-com   labs                  0      25
+ro-co                GLP-1                 2      23
+hims-com             GLP-1                 1      24
+henrymeds-com        GLP-1                 3      22
+remedymeds-com       GLP-1                 1      24
+rexmd-com            sexual-health         1      24
+bluechew-com         sexual-health         0      25
+lifemd-com           multi/none            0      25
+nurx-com             multi/none            0      25
+airtable-com         SAAS                  1      24
+linear-app           SAAS                  0      25
+notion-com           SAAS                  0      25
+posthog-com          SAAS                  0      25
+snowflake-com        SAAS                  0      25
+
+
+===== HONE calibration: Exa neighbors vs run-017 store-only tiering =====
+Hone Exa neighbors (25): ['honeyhealth.ai', 'honeybeehealth.com', 'onetoonehealth.com', 'hormonemd.com', 'hormonefitness.com', 'havenhealth.care', 'anisehealth.co', 'dnahormonalhealth.com', 'humehealth.com', 'peopleonehealth.com', 'rysehealth.com', 'hormonetherapeutics.com', 'ironhealth.io', 'livehonor.co', 'honeblends.com', 'balancedhormonehealth.com', 'ehe.health', 'hormonehealthandweightloss.com', 'tonohealth.com', 'ohm.health', 'elitehealthhrt.com', 'beehyve.health', 'healthinherhue.com', 'femstronghealth.com', 'curatehealth.co.uk']
+
+017 brands that ALSO appear in Hone's Exa list (1/16):
+   T2  hormonemd.com
+
+017 brands NOT in Hone's Exa top-25 (15): ['mylifeforce.com', 'gogeviti.com', 'gethealthspan.com', 'defymedical.com', 'getopt.com', 'marekhealth.com', 'maximustribe.com', 'getpetermd.com', 'trtnation.com', 'functionhealth.com', 'vitalityrx.com', 'agelessrx.com', 'prohealth.com', 'niagenplus.com', 'truniagen.com']
+
+NEW Hone neighbors Exa surfaced that 017 did NOT have:
+   in store (0): []
+   store-absent (24): ['honeyhealth.ai', 'honeybeehealth.com', 'onetoonehealth.com', 'hormonefitness.com', 'havenhealth.care', 'anisehealth.co', 'dnahormonalhealth.com', 'humehealth.com', 'peopleonehealth.com', 'rysehealth.com', 'hormonetherapeutics.com', 'ironhealth.io', 'livehonor.co', 'honeblends.com', 'balancedhormonehealth.com', 'ehe.health', 'hormonehealthandweightloss.com', 'tonohealth.com', 'ohm.health', 'elitehealthhrt.com', 'beehyve.health', 'healthinherhue.com', 'femstronghealth.com', 'curatehealth.co.uk']

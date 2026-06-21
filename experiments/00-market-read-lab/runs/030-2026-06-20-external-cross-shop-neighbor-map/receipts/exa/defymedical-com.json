@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:15Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://defymedical.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Defy Of Indiana",
+      "url": "https://defyofindiana.com",
+      "domain": "defyofindiana.com"
+    },
+    {
+      "rank": 2,
+      "title": "Florida Medical Clinic Orlando Health",
+      "url": "https://floridamedicalclinic.com",
+      "domain": "floridamedicalclinic.com"
+    },
+    {
+      "rank": 3,
+      "title": "Defyne Plastic Surgery",
+      "url": "https://defynemd.com",
+      "domain": "defynemd.com"
+    },
+    {
+      "rank": 4,
+      "title": "Delray Medical Center",
+      "url": "https://delraymedicalctr.com",
+      "domain": "delraymedicalctr.com"
+    },
+    {
+      "rank": 5,
+      "title": "Hormonify",
+      "url": "https://hormonify.com",
+      "domain": "hormonify.com"
+    },
+    {
+      "rank": 6,
+      "title": "Defy Therapy And Wellness (certified Wosb, Lbd, Sbe-g&s)",
+      "url": "https://defytherapyandwellness.com",
+      "domain": "defytherapyandwellness.com"
+    },
+    {
+      "rank": 7,
+      "title": "Defy Studio",
+      "url": "https://defy-studio.com",
+      "domain": "defy-studio.com"
+    },
+    {
+      "rank": 8,
+      "title": "Griffin Concierge Medical",
+      "url": "https://griffinconciergemedical.com",
+      "domain": "griffinconciergemedical.com"
+    },
+    {
+      "rank": 9,
+      "title": "Unleashed Medical",
+      "url": "https://unleashedmedical.com",
+      "domain": "unleashedmedical.com"
+    },
+    {
+      "rank": 10,
+      "title": "Defiant Health",
+      "url": "https://defianthealth.io",
+      "domain": "defianthealth.io"
+    },
+    {
+      "rank": 11,
+      "title": "Private Medical",
+      "url": "https://privatemedical.org",
+      "domain": "privatemedical.org"
+    },
+    {
+      "rank": 12,
+      "title": "B3 Medical",
+      "url": "https://b3medical.com",
+      "domain": "b3medical.com"
+    },
+    {
+      "rank": 13,
+      "title": "Nu Image Medical",
+      "url": "https://nuimagemedical.com",
+      "domain": "nuimagemedical.com"
+    },
+    {
+      "rank": 14,
+      "title": "Bay Area Medical",
+      "url": "https://bayareamedical.com",
+      "domain": "bayareamedical.com"
+    },
+    {
+      "rank": 15,
+      "title": "Medi Clinics Primary Care Llc",
+      "url": "https://mediclinicstampa.com",
+      "domain": "mediclinicstampa.com"
+    },
+    {
+      "rank": 16,
+      "title": "Vanguard Medical Center",
+      "url": "https://vanguardmedicalcenter.com",
+      "domain": "vanguardmedicalcenter.com"
+    },
+    {
+      "rank": 17,
+      "title": "Dura Medical Llc",
+      "url": "https://duramedical.us",
+      "domain": "duramedical.us"
+    },
+    {
+      "rank": 18,
+      "title": "Titan Medical Center Llc",
+      "url": "https://titanmedicalcenter.com",
+      "domain": "titanmedicalcenter.com"
+    },
+    {
+      "rank": 19,
+      "title": "Royal Medical Center Group",
+      "url": "https://royalmedicalcenters.com",
+      "domain": "royalmedicalcenters.com"
+    },
+    {
+      "rank": 20,
+      "title": "Age Defying Dermatology",
+      "url": "https://agedefy.com",
+      "domain": "agedefy.com"
+    },
+    {
+      "rank": 21,
+      "title": "Ageless Medical",
+      "url": "https://agelessmed.com",
+      "domain": "agelessmed.com"
+    },
+    {
+      "rank": 22,
+      "title": "Dfs Medical",
+      "url": "https://dfsmedical.com",
+      "domain": "dfsmedical.com"
+    },
+    {
+      "rank": 23,
+      "title": "Starus Medical Group",
+      "url": "https://starusmedical.com",
+      "domain": "starusmedical.com"
+    },
+    {
+      "rank": 24,
+      "title": "Physicians Medical Center",
+      "url": "https://phymedcenter.com",
+      "domain": "phymedcenter.com"
+    },
+    {
+      "rank": 25,
+      "title": "Dynamic Medical Services Inc",
+      "url": "https://dynamicmedicalservices.com",
+      "domain": "dynamicmedicalservices.com"
+    }
+  ],
+  "neighbor_count": 25
+}

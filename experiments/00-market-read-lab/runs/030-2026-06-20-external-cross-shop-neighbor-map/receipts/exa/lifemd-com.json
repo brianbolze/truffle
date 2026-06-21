@@ -1,0 +1,169 @@
+{
+  "tool": "exa_similar",
+  "source": "exa.ai",
+  "captured_at": "2026-06-20T19:50:20Z",
+  "ok": true,
+  "input": {
+    "anchor": "https://lifemd.com",
+    "num_results": 25,
+    "category": "company",
+    "exclude_domains": []
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "title": "Lifemd",
+      "url": "https://linkedin.com/company/lifemd",
+      "domain": "linkedin.com"
+    },
+    {
+      "rank": 2,
+      "title": "Lifespanmd",
+      "url": "https://lifespan.md",
+      "domain": "lifespan.md"
+    },
+    {
+      "rank": 3,
+      "title": "Memd",
+      "url": "https://memd.com",
+      "domain": "memd.com"
+    },
+    {
+      "rank": 4,
+      "title": "Wellmd\u00ae",
+      "url": "https://wellmd.com",
+      "domain": "wellmd.com"
+    },
+    {
+      "rank": 5,
+      "title": "Usmd",
+      "url": "https://wellmedhealthcare.com",
+      "domain": "wellmedhealthcare.com"
+    },
+    {
+      "rank": 6,
+      "title": "Quickmd",
+      "url": "https://quick.md",
+      "domain": "quick.md"
+    },
+    {
+      "rank": 7,
+      "title": "Liferx.md, Inc.",
+      "url": "https://liferx.md",
+      "domain": "liferx.md"
+    },
+    {
+      "rank": 8,
+      "title": "Ehumanlife, Inc.",
+      "url": "https://ehumanlife.com",
+      "domain": "ehumanlife.com"
+    },
+    {
+      "rank": 9,
+      "title": "Wfmed",
+      "url": "https://wfmed.com",
+      "domain": "wfmed.com"
+    },
+    {
+      "rank": 10,
+      "title": "Insurancemd",
+      "url": "https://insurancemd.com",
+      "domain": "insurancemd.com"
+    },
+    {
+      "rank": 11,
+      "title": "Lifeco",
+      "url": "https://life.co",
+      "domain": "life.co"
+    },
+    {
+      "rank": 12,
+      "title": "Helpmd",
+      "url": "https://helpmd.com",
+      "domain": "helpmd.com"
+    },
+    {
+      "rank": 13,
+      "title": "Homemd Housecall Services",
+      "url": "https://homemdhealth.com",
+      "domain": "homemdhealth.com"
+    },
+    {
+      "rank": 14,
+      "title": "Swiftmd",
+      "url": "https://swiftmd.com",
+      "domain": "swiftmd.com"
+    },
+    {
+      "rank": 15,
+      "title": "Livewellmd",
+      "url": "https://livewellmd.net",
+      "domain": "livewellmd.net"
+    },
+    {
+      "rank": 16,
+      "title": "Life Care Medical Devices Lt",
+      "url": "https://lifecmed.com",
+      "domain": "lifecmed.com"
+    },
+    {
+      "rank": 17,
+      "title": "Lifeclinic International",
+      "url": "https://clinics.life-me.com",
+      "domain": "clinics.life-me.com"
+    },
+    {
+      "rank": 18,
+      "title": "Livemed Health",
+      "url": "https://livemedhealth.com",
+      "domain": "livemedhealth.com"
+    },
+    {
+      "rank": 19,
+      "title": "Life Medical",
+      "url": "https://medical.life",
+      "domain": "medical.life"
+    },
+    {
+      "rank": 20,
+      "title": "Chat Live Md",
+      "url": "https://chatlivemd.com",
+      "domain": "chatlivemd.com"
+    },
+    {
+      "rank": 21,
+      "title": "Corelife Healthcare",
+      "url": "https://corelifemd.com",
+      "domain": "corelifemd.com"
+    },
+    {
+      "rank": 22,
+      "title": "Covidmd",
+      "url": "https://covidmd.com",
+      "domain": "covidmd.com"
+    },
+    {
+      "rank": 23,
+      "title": "Redimd",
+      "url": "https://redimd.com",
+      "domain": "redimd.com"
+    },
+    {
+      "rank": 24,
+      "title": "1800md",
+      "url": "https://1800md.com",
+      "domain": "1800md.com"
+    },
+    {
+      "rank": 25,
+      "title": "Springlife Medical",
+      "url": "https://springlifemd.com",
+      "domain": "springlifemd.com"
+    }
+  ],
+  "neighbor_count": 25
+}
