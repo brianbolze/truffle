@@ -89,3 +89,14 @@ The redesign agenda. Each item is a *problem + what good looks like*, not a pres
 ## References
 
 [Diagnosis](retro/2026-06-20-first-20-runs-retro.md) · [Evidence harvest](retro/2026-06-20-idea-harvest.md) · [v1 frame (history)](2026-06-20-redesign-frame.md) · [origin proposal](../../../_design/cohorts-categories/2026-06-19-market-read-lab-proposal.md) · [wallow](../../../_design/cohorts-categories/2026-06-18-wallow.md) · [architecture](../../../_design/2026-05-30-architecture.md) · [engine-dev rules](../../../.claude/rules/engine-dev.md)
+
+## Addendum: first pass landed
+
+After this frame was written, the first small apparatus pass landed.
+
+- **Scout selection** now uses `question_mode`, `builder_lens`, and `reach_reason`, and explicitly treats value-read, gap-probe, and calibration questions as valid. Store-answerability is no longer the gate.
+- **Bounded-live** now has a light default envelope: 2 source families, 6 outside sources read/captured, and 20 paid capture credits, with fail-closed rules before broadening.
+- **Divergent retention** now has two levels: per-run `run-notes.md` Discovery ledger rows, then the append-only cross-run `discovery-ledger.md`. Loop 2 must add cross-run ledger rows before marking a run reviewed.
+- **Review and triage** prompts now ask the value lens to name where Truffle fell short, ask the builder lens to record gaps as observations first, and keep triage to short backlog-ready bullets with pointers back to the ledger or run artifacts.
+
+Still intentionally not done: no `store/` changes, no new capture tools, no schema/taxonomy/querying promotion, no automation redesign, and no rewrite of already-written triage narrative.

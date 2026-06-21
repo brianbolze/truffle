@@ -52,20 +52,25 @@ class MarketReadLabScaffoldTests(unittest.TestCase):
         template = SCOUT_TEMPLATE_PATH.read_text(encoding="utf-8")
         contract = {
             "run_type": "market",
+            "question_mode": "gap-probe",
             "evidence_mode": "bounded-live",
             "expected_denominator": "Store cohort plus a small review/forum panel.",
             "likely_source_panel": "Store files, then review/forum sources as a light panel.",
+            "builder_lens": "Source-family reach: can a small review/forum panel surface objections store files can't?",
+            "reach_reason": "Probes trust objections beyond the cached store answer.",
             "allowed_sources": ["store/", "bounded-live review/forum panel"],
             "disallowed_actions": self.new_run.default_disallowed_actions("bounded-live"),
             "live_evidence_plan": {
                 "approved_by": "Brian",
                 "approval_scope": "autonomous Market Read Lab runs",
                 "budget_class": "light",
+                "ceilings": self.new_run.DEFAULT_BOUNDED_LIVE_CEILINGS,
                 "review_after": "3 bounded-live runs",
                 "evidence_goal": "Verify trust objections with a small public review/forum panel.",
                 "source_families_allowed": ["review/forum"],
                 "source_families_preferred": ["review/forum"],
                 "source_families_disallowed": ["login-only or paywalled sources", "broad crawling"],
+                "fail_closed_when": self.new_run.DEFAULT_BOUNDED_LIVE_FAIL_CLOSED_WHEN,
                 "stop_when": ["the next source would expand the question rather than verify it"],
             },
             "why_autonomous_safe": "Bounded source panel with no store write-back.",
@@ -80,9 +85,14 @@ class MarketReadLabScaffoldTests(unittest.TestCase):
         )
 
         self.assertIn("evidence_mode: bounded-live", scout)
+        self.assertIn("question_mode: gap-probe", scout)
+        self.assertIn("| gap-probe |", scout)
+        self.assertIn("builder_lens: 'Source-family reach", scout)
+        self.assertIn("reach_reason: 'Probes trust objections", scout)
         self.assertIn("selected_slug: 'review-objections'", scout)
         self.assertIn("live_evidence_plan:", scout)
         self.assertIn("budget_class: 'light'", scout)
+        self.assertIn("ceilings:", scout)
         self.assertIn("source_families_allowed:", scout)
         self.assertIn("- 'review/forum'", scout)
         self.assertIn("approval_needed: no", scout)
