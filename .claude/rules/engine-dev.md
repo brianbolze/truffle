@@ -13,21 +13,22 @@ The contract is [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md); why
 
 Working on a large initiative / feature? Think about *what value* it creates by reading our [strategic-pillars](../../documentation/strategic-pillars.md), and consider *whose shoes* you stand in to feel it by reading our [personas](../../documentation/personas.md).
 
-If you really need to put this into planning context - refer to our [Roadmap database](https://app.notion.com/p/getdoro/2362eca6edf441c18aaa7c0105c4cc23?v=38284b6d1f49805a84fd000cd5cb6768) in Notion.
+If you really need to put this into planning context, refer to the [Roadmap database](https://app.notion.com/p/getdoro/2362eca6edf441c18aaa7c0105c4cc23?v=38284b6d1f49805a84fd000cd5cb6768) in Notion. Long-form rationale lives in [Operating Principles](https://app.notion.com/p/38684b6d1f49806a8922e20061e644fa); this file is the short agent-facing rulebook.
 
-## Principles
+## Operating principles
 
-- **Spend on durable conventions, not living infrastructure.** Schemas, taxonomies, and file layout earn the real investment. Markdown is the source of truth; any index (SQLite, …) is a *derived, regenerable lens* — never authoritative. Code is welcome — committed tools (`tools/`, `scripts/`) or one-offs alike; what we refuse is *living infrastructure* you must keep alive: a standing server, a hosted API, an authoritative database service. The flag is anything that has to keep running to stay true.
-- **Iterative, not one-shot.** De-risk designs by running probes in `experiments/<date>-<slug>/` before baking in; Hand-capture a few real companies before codifying a verb/change.
-- **Least-complexity, and push back.** Hunt the simplest 80/20 and cut what isn't essential; changes should try NOT to be *purely additive* — every edit earns a simplification pass (what can go?). Brian over-engineers by his own admission and *wants* the pushback, so challenge scope and say when simpler wins.
-- **Frame before solution.** On anything big or fuzzy, don't lead with an implementation proposal — read enough to understand the territory, then ask a few (~4–6) high-leverage clarifying questions where a wrong assumption would waste real work, and wait. Flag any inferred assumption so it's cheap to correct.
-- **Engine owns State and Signals; Judgments are the open edge.** *State* — what a company is now: universal fields plus reusable vertical/cohort cuts (a project designs the cut; the engine holds and serves it, no judgments in it). *Signals* — the same facts on a time axis: the reusable capture tools + comparator + the `scripts/signals.py` writer, landing append-only at `store/<domain>/signals/<source_type>/<captured_at>.json`. *Judgments* (relevance/threat/fit, relative to the asker) stay out of the shared store today — but whether and how the engine emits them is actively being reworked, not a closed "no." See the [frame](_design/2026-05-29-frame.md)'s three-kinds split.
-- **The anti-Doro line.** No graph DB, embeddings, datapoint reconciliation, complex entity-resolution, or served API. When a decision smells heavy, that's the flag.
-- **Propose, don't write** across a project's boundary. The engine never silently mutates a project's KB.
+- **Amortize reasoning; meter capture.** Use Claude Code / Codex subscription reasoning for AI work; avoid paid API modes that wrap their own LLM reasoning when a skill can do it. Firecrawl, SerpApi, and repeat capture are scarce: cache aggressively, capture once, and refetch only stale or earned work.
+- **Markdown / JSON are truth; derived lenses are disposable.** Markdown is authoritative for agent-readable synthesis; JSON is right for envelopes and telemetry with no prose body. SQLite, rendered HTML, dashboards, and indexes regenerate from files; never make them authoritative.
+- **Conventions are infrastructure; queryability is the product.** Frontmatter, bold-led lines, clocks, `captured_at`, `unverified_fields`, paths, closed sets, and lint gates are the system. Every field is a cut: add it only when it divides a real question and can be filled reliably; derive anything free.
+- **Capture once; structure at ingestion; query before re-fetching.** The expensive AI step turns raw evidence into reusable structure. Later reads filter the store first, then use focused source tools when fresh external evidence is needed.
+- **Engine owns State and Signals; Judgments stay segregated.** State snapshots overwrite; Signals append; viewer-relative verdicts stay project-side or in a physically separate overlay when earned. Preserve grain so page/SKU/query/company facts cannot masquerade as each other.
+- **Evidence, not scores.** Store verbatim anchors, axis-specific deltas, caveats, and disagreement. No blended numbers, no generic market scores, no price magnitude fields that launder messy strings into false precision.
+- **Fail loud before silently wrong.** A veto row, `unverified_fields`, lint failure, warning, or explicit absence beats a clean-looking artifact with hidden bad data. Before claiming a negative, check what was captured and what was missed.
+- **Verbs and skills over services.** Package repeatable work as slash commands, agent skills, scripts, or routines that start, write evidence, and stop. Code is welcome; living infrastructure is not. The flag is anything that must keep running to stay true.
+- **Frame first; experiment before build.** On big or fuzzy work, separate problem-space from solution-space before proposing an implementation. Probe in `experiments/<date>-<slug>/`, hand-capture real cases, and persist runs before minting durable ontology or schema.
+- **Least complexity; push back on additive fixes.** Hunt the simplest 80/20, ask what a new rule/helper/field replaces, and cut dead weight when improving docs, prompts, or code. Watch for overfitting a one-run retro into a general rule.
+- **Propose, don't write** across a project's boundary. The engine may produce structured proposals for a project KB; it never silently mutates another source of truth.
 - **Commit per logical change**, with a terse `scope:` subject and detail in the body — see [commit-style](../../documentation/commit-style.md). `git log` is the changelog — no CHANGELOG file.
-
-## Gotchas
-- **Overfitting.** When making fixes, especially coming from backlog / feedback items from individual runs or retros - always ask whether the proposed solution is actually generalizable to all types of data / scenarios we may encounter.
 
 ## Prior art — mine it, don't reinvent it
 
