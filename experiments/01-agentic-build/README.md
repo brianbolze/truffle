@@ -24,13 +24,14 @@ revise, park, or cut.
 ## Top-Level Docs
 
 - [`2026-06-21-frame.md`](2026-06-21-frame.md) - why this workflow exists, what it must protect, and what it is not.
-- [`2026-06-21-proposal.md`](2026-06-21-proposal.md) - proposed v0 operating model.
+- [`2026-06-21-proposal.md`](2026-06-21-proposal.md) - proposed v0 workflow.
+- [`2026-06-21-lead-context.md`](2026-06-21-lead-context.md) - current lead-agent posture and judgment heuristics.
 
 ## Working Shape
 
 Start with normal agent work. Use a **"change packet"** when the change needs preserved
 framing, proposal review, staging, or a cut/park record. Use a **"build batch"** only
-when several change packets need coordination, or Brian wants to bite off a bigger chunk of work to move quickly.
+when several change packets need coordination.
 
 ```text
 experiments/01-agentic-build/
@@ -55,9 +56,8 @@ Create `changes/` or `batches/` only when the first run starts.
 
 ## Constraints
 
-- Prefer the smallest trustworthy review surface for the change.
+- Read the lead context before acting as the lead agent.
 - Keep batch work to three change packets by default.
 - Stage implementation outside live Truffle usage: use a worktree or packet-local patch artifact, then let the lead apply approved work to the live checkout.
-- In v0, `high` risk packets are planning-only until Brian explicitly approves implementation; unclear risk defaults to `high`.
 - Do not create new Truffle schema, entities, categories, monitors, or write-backs unless a packet explicitly frames and earns that scope.
-- One revision phase per packet. Parked and cut packets need a decision reason and `revive_if`.
+- Parked and cut packets need a decision reason and `revive_if`.
