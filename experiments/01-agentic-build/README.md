@@ -15,8 +15,8 @@ and keeps rejected work from disappearing.
 
 **"Change packet"** - one bounded proposed change to Truffle. It may ship, park, or get cut.
 
-**"Build batch"** - an optional wrapper around two or three change packets when grouping,
-parallelism, or one combined review is useful.
+**"Build batch"** - an optional wrapper around two or three change packets when coordination
+or one combined review is useful.
 
 **"Decision surface"** - the short human-facing summary that says what to merge, hold,
 revise, park, or cut.

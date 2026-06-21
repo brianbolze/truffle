@@ -24,6 +24,26 @@ explicitly approves implementation.
 
 This should loosen only after real packets show the system is catching the right risks without creating drag or overwhelming Brian.
 
+## Risk Calibration
+
+Risk is lead judgment, not a checklist. Use the highest-risk part of the packet.
+If the bucket is unclear, classify up or split the packet.
+
+Ask three questions:
+
+- Could this change live Truffle behavior or write authority?
+- Could this change a contract future agents or users rely on?
+- Are the acceptance check, rollback path, or spend boundary unclear?
+
+Current defaults:
+
+- `low`: easy to review, easy to reverse, no live behavior or contract change.
+- `medium`: changes how agents or committed tools run Truffle, but stays inside known patterns.
+- `high`: changes contracts, persistence, automation, write authority, paid capture posture, or live Market Read Lab behavior.
+
+A small edit in a risky file can still be low. A docs-only change that grants new
+agent authority can be high.
+
 ## Hard Lines
 
 - No live Truffle mutation before approval.
