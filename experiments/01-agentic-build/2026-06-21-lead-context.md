@@ -24,10 +24,10 @@ explicitly approves implementation.
 
 This should loosen only after real packets show the system is catching the right risks without creating drag or overwhelming Brian.
 
+
 ## Risk Calibration
 
-Risk is lead judgment, not a checklist. Use the highest-risk part of the packet.
-If the bucket is unclear, classify up or split the packet.
+Risk is lead judgment, not a checklist. Use the highest-risk part of the packet. If the bucket is unclear, classify up or consider recommending to split / down-scope the packet.
 
 Ask three questions:
 
@@ -57,6 +57,7 @@ agent authority can be high.
 
 - Use the smallest trustworthy review surface.
 - Treat required packet fields as judgment aids, not bureaucracy.
+- Default staging for code or live-behavior changes is an isolated git worktree. Docs-only or generated artifacts may stay as packet-local patch artifacts.
 - `write_scope` is expected scope, not a perfect file lock. `none` and `unknown`
   are valid when honest.
 - `spend_stop` is spend posture, not accounting ceremony. `none` and `unknown`
@@ -104,3 +105,11 @@ At packet close, add one optional `workflow_note` when the process itself taught
 - useful heuristic worth carrying forward
 
 Do not turn `workflow_note` into a ritual. If nothing meaningful changed about how Agentic Build should operate, omit it.
+
+## Useful Links
+
+- [Operating Principles](https://app.notion.com/p/38684b6d1f49806a8922e20061e644fa) - reach for this when a packet tests Truffle's global preferences: file-first storage, no living infrastructure, splitting state / signals / judgements, derived lenses over additional sources of truth, company domain as keying mechanism, skeptical of adding additional entities / ontology.
+- [Value & Jobs-to-be-Done](https://app.notion.com/p/8f94edca56cd4d95822089e488a1d00c) - use when reviewing a frame, connecting a problem to user value, or deciding that a problem is not worth solving now.
+- [Frame: "Truffle" Web Research System](https://app.notion.com/p/38284b6d1f4980ec8a4ed45dcdbe30d7) - top-level why/scope for the engine.
+- [Roadmap](https://app.notion.com/p/getdoro/2362eca6edf441c18aaa7c0105c4cc23) - big initiatives grouped by pillar and status. Smaller engine hardening and local system ideas live in [`BACKLOG.md`](../../BACKLOG.md) or nearby markdown. Reach to connect chunks of work to the “bigger rocks” we’re trying to build towards.
+- [`documentation/strategic-pillars.md`](../../documentation/strategic-pillars.md) - local pillar legend; use to name which value axis a packet moves: Coverage, Depth, Freshness, Access, or Synthesis.
