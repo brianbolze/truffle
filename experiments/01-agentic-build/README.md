@@ -8,7 +8,7 @@ Agentic Build is a file-backed way to let agents handle bounded Truffle changes 
 just enough framing, proposal review, patch review, and a short human decision surface
 to stay trustworthy.
 
-It is not a task system. It preserves useful reasoning, lets agents cut bad ideas early,
+It is not a “task” system. It preserves useful reasoning, lets agents cut bad ideas early,
 and keeps rejected work from disappearing.
 
 ## Core Terms
@@ -30,7 +30,7 @@ revise, park, or cut.
 
 Start with normal agent work. Use a **"change packet"** when the change needs preserved
 framing, proposal review, staging, or a cut/park record. Use a **"build batch"** only
-when several change packets need coordination.
+when several change packets need coordination, or Brian wants to bite off a bigger chunk of work to move quickly.
 
 ```text
 experiments/01-agentic-build/
