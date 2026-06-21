@@ -24,7 +24,8 @@ These capture tools are live; two more stay deferred on purpose — see [`BACKLO
 | [`wayback.py`](wayback.py) · [docs](wayback.md) | Internet Archive CDX + replay (tenure / content diff) | none | **live** |
 | [`trends.py`](trends.py) · [docs](trends.md) | Google Trends (pytrends) | none | **live** |
 | [`trustpilot.py`](trustpilot.py) · [docs](trustpilot.md) | Trustpilot reviews (Firecrawl-stealth) | `FIRECRAWL_API_KEY` | **live** |
-| [`exa_similar.py`](exa_similar.py) · [docs](exa_similar.md) | Exa /findSimilar | `EXA_API_KEY` | **live** |
+| [`exa_similar.py`](exa_similar.py) · [docs](exa_similar.md) | Exa /findSimilar (URL → neighbors) | `EXA_API_KEY` | **live** |
+| [`exa_search.py`](exa_search.py) · [docs](exa_search.md) | Exa /search (query → companies) | `EXA_API_KEY` | **live** |
 | [`ads_transparency.py`](ads_transparency.py) · [docs](ads_transparency.md) | Google Ads Transparency Center (paid-ads presence/recency) | `SERP_API_KEY` | **live** |
 | [`sec_edgar.py`](sec_edgar.py) · [docs](sec_edgar.md) | SEC EDGAR (ticker/exchange State + Form-D / filing funding Signals) | none | **live** |
 | `ad_library.py` | Meta Ad Library (Apify) | `APIFY_API_KEY` | deferred |

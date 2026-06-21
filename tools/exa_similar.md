@@ -27,18 +27,20 @@ core. Two artifacts of that line show up live and are *correct*: run `hims.com` 
 
 ## What it does now vs. what it could grow into
 
-**Now — `/findSimilar` only.** One anchor → ranked neighbors. That's the whole scope.
+**Now — `/findSimilar` only.** One anchor → ranked neighbors. That's the whole scope of *this* file.
 
-**Could grow into** — Exa exposes more endpoints behind the same key, UA, and HTTP shape. Each is a
-*scoped* addition (a new path + its own result-shape handling), not a rediscovery:
+**Sibling endpoints are their own tools** — Exa exposes more endpoints behind the same key, UA, and
+HTTP shape, but each maps 1:1 to its own `source_type`, so it lives in its own `tools/<source_type>.py`
+(the way `scripts/signals.py` resolves `tools/{tool}.py`), not folded in here:
 
-| Endpoint | Signal it would add | Note |
+| Endpoint | Tool | Status |
 |---|---|---|
-| `/search` | neural **or** keyword web search from a query string (not a URL) | **Pin `type:"neural"` here, never `auto`** — on `/search` the mode genuinely flips between runs and breaks diff logic. (findSimilar has no such knob — see gotchas.) |
-| `/contents` | page text / an LLM `summary` per URL | The experiment used this to one-paragraph-summarize each candidate; a latent enrichment, separate from the core neighbor list. |
+| `/search` | [`exa_search.py`](exa_search.py) (`tool: exa_search`) — query→companies, `type` pinned to `neural` | **shipped 2026-06-20** |
+| `/contents` | (future) page text / LLM `summary` per URL — a latent enrichment | not built |
 
-Keep the boundary deliberate: add an endpoint + its handler, **not** a general Exa client wedged
-into this file.
+Keep the boundary deliberate: a new endpoint is a new sibling tool, **not** a second path wedged into
+this file. `exa_search.py` duplicates the small Exa plumbing (UA, POST, `_domain_of`) on purpose, the
+way every tool is self-contained; extract a shared `_exa.py` only if a *third* endpoint lands.
 
 ## The gotchas (most of the value)
 
@@ -59,8 +61,19 @@ These cost a probe or a real bug to learn. Carry them forward; don't relitigate 
   something. Pin `type:"neural"` only when/if this grows into `/search`.
 - **`excludeSourceDomain` is always on; mirrors still leak.** Exa drops the anchor's *exact* domain,
   but the anchor's i18n/vanity mirrors (`forhims.co.uk`, `hims.to`) are different domains and come
-  back as neighbors. Pass them via `--exclude-domains` for first-pass hygiene; apex-folding the rest
-  is the caller's job.
+  back as neighbors. Pass them via `--exclude-domains`; apex-folding the rest is the caller's job.
+- **findSimilar SILENTLY IGNORES its filter params when `category` is set — `excludeDomains`,
+  `includeText`, `excludeText` all do nothing** (probe-confirmed 2026-06-20: two calls differing only
+  in `includeText` returned byte-identical results; Exa's docs also list `excludeDomains` as
+  unsupported for `category:company`/`people`). Only `excludeSourceDomain` / `numResults` / `category`
+  are honored. Consequences: (1) `--exclude-domains` is now enforced **caller-side** in the tool
+  (results filtered before ranking), so it works regardless of `category` — but `neighbor_count` can
+  fall below `--num-results` when mirrors are removed; (2) **there is no API-side topic filter** on
+  findSimilar, so its quality is anchor-name-bound (short/common brand names → name-collisions,
+  link-shorteners, letter-matches, not competitors). For topic/function discovery, use Exa **`/search`**
+  with a description query + `category:company` (probe-confirmed to return real companies) — that's
+  the "could grow into `/search`" path below, not a findSimilar tweak. Full write-up:
+  `experiments/2026-06-20-cohort-discovery/references/exa-api-capabilities-and-probes-2026-06-20.md`.
 - **An empty neighbor list is data.** Exa returning zero similar pages is a real signal (obscure or
   brand-new anchor), not a failure — `neighbors: []`, `ok: true`, exit 0.
 - **`category="company"` matters.** It's an Exa-native filter that keeps the list to operating

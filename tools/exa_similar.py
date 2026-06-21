@@ -31,6 +31,11 @@ Load-bearing gotchas (see exa_similar.md for the full catalog):
     absolute relevance score. Ordinal `rank` is the signal.
   - findSimilar is ALWAYS neural (costDollars reports under `search.neural`); the `type` param is
     silently ignored here, so there's no auto/neural mode to pin (that risk lives on `/search`).
+  - findSimilar SILENTLY IGNORES excludeDomains / includeText / excludeText when `category` is set
+    (probe-confirmed 2026-06-20: same body bar includeText returned byte-identical results). Only
+    excludeSourceDomain / numResults / category are honored — so --exclude-domains is enforced
+    CALLER-SIDE here, not trusted to the API. There is NO API-side topic filter on findSimilar; its
+    quality is anchor-name-bound. For function/topic discovery use Exa /search, not /findSimilar.
 """
 
 from __future__ import annotations
@@ -113,7 +118,10 @@ def find_similar(
     """Full pipeline: POST /findSimilar for one anchor -> the shared envelope + a ranked `neighbors` list.
 
     `excludeSourceDomain` is always on — you never want the anchor's own pages back. `exclude_domains`
-    is the caller's extra hygiene list (the anchor's known mirror/i18n/vanity TLDs). `category=""`
+    is the caller's extra hygiene list (the anchor's known mirror/i18n/vanity TLDs); it is enforced
+    CALLER-SIDE because Exa silently drops `excludeDomains` when `category` is set (see the gotcha in
+    the module docstring), so excluded hosts are filtered out of the results before ranking — which
+    means `neighbor_count` can come back below `num_results` when mirrors are removed. `category=""`
     drops Exa's company filter for an unfiltered neighbor sweep.
     """
     api_key = api_key or load_key(API_KEY_VAR)
@@ -123,17 +131,24 @@ def find_similar(
     body: dict[str, Any] = {
         "url": anchor_url,
         "numResults": num_results,
-        "excludeSourceDomain": True,  # don't return the anchor's own domain
+        "excludeSourceDomain": True,  # honored even with category (probe-confirmed); drops the anchor itself
     }
-    if exclude_domains:
-        body["excludeDomains"] = exclude_domains
     if category:  # falsy (e.g. --category "") => unfiltered sweep
         body["category"] = category
+    # Only send excludeDomains where Exa honors it (no category). With a category set it's silently
+    # ignored, so we don't pretend — the caller-side filter below is the real enforcement.
+    if exclude_domains and not category:
+        body["excludeDomains"] = exclude_domains
 
     resp = _http_post_json(EXA_FINDSIMILAR, body, api_key=api_key)
     if "results" not in resp:
         # Not drift (Exa is stable); an unexpected body — surface it loud as a transport-class failure.
         raise RuntimeError(f"Exa response missing 'results' (got keys {list(resp.keys())}): {str(resp)[:300]}")
+
+    # Enforce exclude_domains ourselves (Exa drops the param under `category`): filter the anchor's
+    # mirror/i18n/vanity hosts BEFORE ranking, so ranks stay contiguous 1..n over what's kept.
+    excluded = {_domain_of(_normalize_anchor(d)) for d in exclude_domains}
+    kept = [r for r in resp.get("results", []) if _domain_of(r.get("url") or "") not in excluded]
 
     neighbors = [
         {
@@ -142,7 +157,7 @@ def find_similar(
             "url": r.get("url"),
             "domain": _domain_of(r.get("url") or ""),
         }
-        for i, r in enumerate(resp.get("results", []), start=1)
+        for i, r in enumerate(kept, start=1)
     ]
 
     cost_total = (resp.get("costDollars") or {}).get("total")

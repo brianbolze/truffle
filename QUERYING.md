@@ -92,7 +92,8 @@ It's deliberately **scoped + fenced** so it can't hand back a fast, clean, *conf
 - `wayback.py` — exact-URL archived tenure; reads as a lower bound, not a launch date.
 - `trustpilot.py` — one Trustpilot profile state at one `captured_at`; velocity needs repeat captures.
 - `trends.py` — branded search trajectory within each keyword, not absolute cross-brand volume.
-- `exa_similar.py` — neighbor discovery / blind-spot finding.
+- `exa_similar.py` — neighbor discovery from a URL anchor; anchor-name-bound (corroborate, don't trust as a competitor list).
+- `exa_search.py` — query→company discovery from a description; net-new long-tail, low recall of a known set.
 - `sec_edgar.py` — first-party funding from keyless SEC EDGAR: ticker/exchange → State, Form-D / 8-K filings → dated Signal (existence + date, amount-free; identity match flagged `confirmed`/`name_match_unconfirmed`).
 - `signal_delta.py` — the comparator: diffs **two** captures of the same source (Trustpilot velocity, SERP rank/AIO movement, Trends trajectory, Wayback presence) into axis-specific deltas + comparability vetoes — never a blended score.
 
