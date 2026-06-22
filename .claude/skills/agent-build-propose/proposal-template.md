@@ -14,23 +14,23 @@ spend_stop: <none, or the live evidence / paid capture boundary and stop rule>
 acceptance_checks: <what must be true, how to verify it, and where the receipt will live>
 escalate_if: <conditions that stop implementation and return to lead/Brian>
 
+## Problem
+
+<What this change is trying to improve. PLAIN ENGLISH. Assume the reader has limited context. Remove deep technical details where possible.>
+
 ## Short Answer
 
 <2-4 sentences. Lead with the recommendation.>
-
-## Problem
-
-<What this change is trying to improve.>
 
 ## Constraints / Non-Goals
 
 <What this must not do.>
 
-## Options
+## Options considered
 
-1. <Smallest viable option.>
-2. <Alternative.>
-3. <Optional alternative.>
+1. <Smallest viable option.> [should have]
+2. <Alternative.> [should have]
+3. <Additional alternative.> [could have]
 
 ## Recommendation
 
