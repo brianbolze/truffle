@@ -13,7 +13,7 @@ The "no new primitive needed" verdict holds under stress-testing. The run's real
 | **Query / access** | Enumerating "what's diffable" is **grain-dependent and easy to get wrong** — a company-grain glob silently dropped all page-grain Wayback subjects (the Loop-1 miss). | Any `signal_delta` enumeration helper must walk to the envelope (`find … -name '*.json'`), never assume `<domain>/signals/<type>/*.json`. |
 | **Freshness / automation** | Change-pulse readiness is **bounded by cadence matched to each signal's refresh rate**, not schema. Trustpilot counts move daily (weekly gap fine); Wayback re-crawls ~monthly (weekly re-capture → 13/15 delta=0); SEC pairs intra-day. | A light, per-source-tuned re-capture cadence for a small fixed subject set — ops, not a monitor service. |
 | **Synthesis** | The read stayed cleanly in Signals and refused Judgment: no brand ranked by velocity, `paid_profile` labeled as solicitation cadence, the onemedical −1 labeled as API artifact. The "Market Pattern" section names the 10× spread then parks it. | None — this is the model for a change-pulse read template. |
-| **Guardrails** | `signal_delta.py`'s veto-not-skip discipline made "what can't we diff" cheap and honest (SEC veto, eden subject-realignment, hydramed empty-between). The one buildable tool gap: no `sec_edgar` delta branch. | Add the `sec_edgar` branch (~one function); keep everything else fail-closed. |
+| **Guardrails** | `signal_delta.py`'s veto-not-skip discipline made "what can't we diff" cheap and honest (SEC veto, eden subject-realignment, hydramed empty-between). The one buildable tool gap at run time: no `sec_edgar` delta branch. | Branch shipped 2026-06-22; keep everything else fail-closed. |
 
 ## Lenses
 
@@ -21,7 +21,7 @@ The "no new primitive needed" verdict holds under stress-testing. The run's real
 
 **Dev Agent** — No over-building: no monitor, no stored diff object, no persistent artifact. The two repeated toils worth a convention (grain-aware enumeration; per-source cadence) are flagged, not escalated. Prefer the grep-verifiable contract (subject-identity field) over a new edge/object.
 
-**Founder** — Conservatively correct, but **don't over-soften the cheap fixes**. Bundling "no re-capture cadence" (an ops/scheduling decision) with "no `sec_edgar` branch" (a ~30-min code change) as one human-gated item adds friction. If SEC funding-pulse matters to a consumer like Scott Witt, the branch is near-zero cost — sequence it independently.
+**Founder** — Conservatively correct, but **don't over-soften the cheap fixes**. Bundling "no re-capture cadence" (an ops/scheduling decision) with "no `sec_edgar` branch" (a ~30-min code change) as one human-gated item adds friction. That sequencing was right: the branch shipped 2026-06-22; cadence remains separate.
 
 ## Recommendation
 
@@ -32,7 +32,7 @@ The "no new primitive needed" verdict holds under stress-testing. The run's real
 
 Submitted to `triage.md` as a new item + two Evidence Logs (framing per the corrections below). Human-gated; nothing implemented.
 
-1. **New P2 item — change-pulse readiness = cadence + tooling, not a primitive** — but labeled as **two separable gaps**: (a) per-source re-capture cadence (ops) and (b) `sec_edgar` delta branch (~30-min code), so the steward can sequence them independently.
+1. **New P2 item — change-pulse readiness = cadence + tooling, not a primitive** — but labeled as **two separable gaps**: (a) per-source re-capture cadence (ops) and (b) `sec_edgar` delta branch (~30-min code), so the steward can sequence them independently. The branch shipped 2026-06-22; cadence remains.
 2. **Evidence Log → MRL-008** — lead with the *new fact* (only `review_count` diffs; decision-grade Trustpilot surfaces aren't temporal-tracked; Wayback's onemedical −1 is a second confound flavor), not "the convention must travel to the change axis" (which reads as restatement).
 3. **Evidence Log → MRL-001** — name the **subject-identity** problem explicitly: "same domain + same source_type" is insufficient for a temporal pair; SERP/SEC need a pinned canonical subject. Not just "the temporal denominator is thinner."
 

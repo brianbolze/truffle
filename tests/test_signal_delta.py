@@ -59,6 +59,27 @@ def kw(query: str, *, peak_value: float, peak_date: str, first: str, last: str,
             "points": [{"date": first, "value": 10}, {"date": last, "value": 20}]}
 
 
+def sec_card(event_type: str, date: str, **extra: object) -> dict:
+    """A factual EDGAR card: event + date, deliberately amount-free."""
+    return {"subject": "x.com", "source_type": "sec", "event_type": event_type, "date": date,
+            "amount": None, "observation": "factual", **extra}
+
+
+def sec(captured_at: str, *, subject: str = "x.com", state: dict | None = None,
+        form_d: dict | None = None, filings: list[dict] | None = None,
+        cards: list[dict] | None = None, domain: str | None = "x.com") -> dict:
+    """A minimal sec_edgar envelope carrying only the fields the branch reads."""
+    return {
+        "tool": "sec_edgar", "source": "efts.sec.gov + data.sec.gov", "captured_at": captured_at,
+        "ok": True, "input": {"name": "X Inc", "ticker": None, "domain": domain}, "schema_drift": [],
+        "subject": subject,
+        "state": state or {"is_public": False, "ticker": None, "cik": None, "exchange": None, "registered_name": None},
+        "filings": filings or [],
+        "form_d": form_d or {"match": "no_match", "candidates": []},
+        "funding_signals": cards or [],
+    }
+
+
 def only(rows: list[dict], subject: str) -> dict:
     return next(r for r in rows if r["subject"] == subject)
 
@@ -235,6 +256,117 @@ class WaybackTests(unittest.TestCase):
         row = only(sd.compare([a], [b])["comparisons"], "https://x.com/p")
         ap = next(m for m in row["metrics"] if m["metric"] == "archive_presence")
         self.assertEqual(ap["movement"], "lost")
+
+
+class SecEdgarTests(unittest.TestCase):
+    def test_sec_subject_alignment_is_scoped_to_sec_branch(self) -> None:
+        env = sec("2026-06-08T00:00:00Z", subject="stamped.com", domain="ignored.example")
+        unknown = {
+            "tool": "mystery_tool",
+            "source": "mystery.source",
+            "captured_at": "2026-06-08T00:00:00Z",
+            "ok": True,
+            "input": {"domain": "should-not-align.example"},
+            "schema_drift": [],
+        }
+
+        self.assertEqual(sd.subject_of(env), "stamped-com")
+        self.assertEqual(sd.subject_of(unknown), "mystery-source")
+
+    def test_new_funding_card_and_state_change_are_reported(self) -> None:
+        a = sec("2026-06-08T00:00:00Z")
+        b = sec(
+            "2026-06-15T00:00:00Z",
+            state={"is_public": True, "ticker": "X", "cik": "0000000001", "exchange": "NYSE",
+                   "registered_name": "X Inc"},
+            form_d={"match": "confirmed", "candidates": [{"cik": "0000000001"}]},
+            cards=[sec_card("form_d", "2026-06-12", cik="0000000001", filer="X Inc",
+                            match="confirmed", flags=["existence_only"], citation="efts.sec.gov forms=D")],
+        )
+
+        row = only(sd.compare([a], [b])["comparisons"], "x-com")
+        self.assertEqual(row["source_type"], "sec_edgar")
+        self.assertEqual(row["grain"], "company")
+        state = next(m for m in row["metrics"] if m["metric"] == "issuer_state")
+        events = next(m for m in row["metrics"] if m["metric"] == "funding_events")
+        match = next(m for m in row["metrics"] if m["metric"] == "form_d_match")
+
+        self.assertEqual(state["changed"]["is_public"], {"d0": False, "d7": True})
+        self.assertEqual(events["d0_count"], 0)
+        self.assertEqual(events["d7_count"], 1)
+        self.assertEqual(events["new"][0]["event_type"], "form_d")
+        self.assertNotIn("amount", events["new"][0])  # EDGAR branch preserves the no-amount boundary
+        self.assertEqual(match["movement"], "changed")
+
+    def test_identity_and_capped_stream_flags_travel_with_sec_delta(self) -> None:
+        filings = [{"form": "8-K", "date": f"2026-06-{day:02d}", "url": f"https://sec.test/{day}"}
+                   for day in range(1, 11)]
+        a = sec("2026-06-08T00:00:00Z")
+        b = sec(
+            "2026-06-15T00:00:00Z",
+            domain=None,
+            form_d={
+                "match": "name_match_unconfirmed",
+                "candidates": [{"cik": "0000000001"}, {"cik": "0000000002"}],
+            },
+            filings=filings,
+        )
+
+        row = only(sd.compare([a], [b])["comparisons"], "x-com")
+        events = next(m for m in row["metrics"] if m["metric"] == "funding_events")
+        flags = {f["flag"] for f in row["comparability_flags"]}
+        self.assertEqual(events["new"], [])  # Form-D caveats travel even when no attributed card is emitted
+        self.assertEqual(events["d7_count"], 0)
+        self.assertIn("form_d_identity_unconfirmed", flags)
+        self.assertIn("multiple_form_d_candidates", flags)
+        self.assertIn("filings_cap", flags)
+        self.assertIn("name_subject", flags)
+
+    def test_capped_churn_is_labeled_as_not_visible_not_negative_movement(self) -> None:
+        a = sec(
+            "2026-06-08T00:00:00Z",
+            cards=[sec_card("form_d", "2026-05-01", cik="0000000001", filer="X Inc", match="confirmed")],
+        )
+        b = sec(
+            "2026-06-15T00:00:00Z",
+            filings=[{"form": "8-K", "date": f"2026-06-{day:02d}", "url": f"https://sec.test/{day}"}
+                     for day in range(1, 11)],
+        )
+
+        row = only(sd.compare([a], [b])["comparisons"], "x-com")
+        events = next(m for m in row["metrics"] if m["metric"] == "funding_events")
+        self.assertIn("not_visible_in_this_capture_window", events)
+        self.assertNotIn("no_longer_in_capture", events)
+        self.assertEqual(events["not_visible_in_this_capture_window"][0]["event_type"], "form_d")
+        self.assertTrue(any(f["flag"] == "filings_cap" for f in row["comparability_flags"]))
+
+    def test_sec_event_summaries_do_not_surface_amounts_or_verdicts(self) -> None:
+        b = sec(
+            "2026-06-15T00:00:00Z",
+            cards=[sec_card(
+                "form_d",
+                "2026-06-12",
+                cik="0000000001",
+                filer="X Inc",
+                match="confirmed",
+                amount=5_000_000,
+                valuation="post-money",
+                score=99,
+                verdict="strong traction",
+            )],
+        )
+
+        row = only(sd.compare([sec("2026-06-08T00:00:00Z")], [b])["comparisons"], "x-com")
+        events = next(m for m in row["metrics"] if m["metric"] == "funding_events")
+        blob = repr(events).lower()
+        for forbidden in ("amount", "valuation", "score", "verdict"):
+            self.assertNotIn(forbidden, blob)
+
+    def test_unpaired_sec_edgar_capture_is_level_read(self) -> None:
+        row = sd.compare([], [sec("2026-06-15T00:00:00Z")])["comparisons"][0]
+        self.assertEqual(row["read_mode"], "level")
+        self.assertEqual(row["source_type"], "sec_edgar")
+        self.assertTrue(any(f["flag"] == "unpaired_capture" for f in row["comparability_flags"]))
 
 
 class NoScoreTests(unittest.TestCase):

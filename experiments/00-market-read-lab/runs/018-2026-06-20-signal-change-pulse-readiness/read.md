@@ -10,15 +10,19 @@ Across the captured telehealth store, which brands' signals show a **detectable 
 
 > **Loop 2 correction (folded in):** the first pass of this read swept only company-grain signal dirs (`store/<domain>/signals/<type>/*.json`) and **silently missed Wayback entirely**, because Wayback is captured one level deeper at *page* grain (`signals/wayback/<page-slug>/*.json`). The adversarial evidence verifier caught it. Wayback has a working delta branch and 15 page-subjects with ≥2 captures across 10 domains; including it both adds a second answerable source and confirms the distinct-domain count is 13 (the original "~13" was loosely right, but for the wrong reason). The corrected read is below.
 
+> **2026-06-22 implementation update:** the `sec_edgar` delta branch named by this run has shipped.
+> The run's broader conclusion still stands: change-pulse readiness now depends mainly on source-matched
+> capture cadence, pinned subjects, and confound discipline rather than a new schema primitive.
+
 Concretely, running `signal_delta.py` first-vs-last over every store directory with ≥2 captures, across all four signal types:
 
 - **Trustpilot review velocity — answerable, with a heavy caveat.** 6 brands yield a clean per-day review-count velocity over a real ~6.5-day gap: honehealth (+66, 10.0/day), hims (+54, 8.7/day), joinamble (+51, 7.8/day), agelessrx (+17, 2.6/day), joinfridays (+13, 2.0/day), maximustribe (+7, 1.1/day). (State/Signal, C2.) **But every one carries `paid_profile`** — velocity measures review-*solicitation* cadence, not organic sentiment — and the only metric that diffs cleanly is cumulative `review_count`; `reviews_last_12m` returns `delta: null` by design (rolling window) and `trust_score` is level-only. So the delta-able number is the one a buyer cares about least. (Judgment, C3/C7.)
 - **Trustpilot — 3 of 9 pairs void.** eden-health (subject realigned to tryeden-com → unpaired), hydramed (profile empty between captures), sermorelin (D0 capture not ok). The tool **vetoes rather than silently skipping** — the disagreement is itself the signal. (State, C4.)
 - **Wayback page-archive — answerable but almost entirely flat, and the flatness is the lesson.** 15 page-subjects across 10 domains diff cleanly (working delta branch: `archive_presence`, `snapshot_count`, `content_digest`, `last_seen`). **13 of 15 show delta=0** — identical snapshot count, identical content digest — because the captures are days apart while the *archive itself* only re-crawls on Wayback's own (≈monthly) cadence, so a day/week-spaced re-capture reads the same archive state. The metric measures "has Wayback re-crawled this page," not "did the brand change the page." Two exceptions: honehealth `mens/sermorelin` went `archive_presence False→True` / `snapshot_count 0→1` (a page entering the archive — a real, coarse detectable change), and **onemedical root showed `snapshot_count 2517→2516` (delta −1) with `last_seen` moving *backwards* (2026-06-15→2026-06-09)** — impossible for a monotone archive, i.e. a **CDX API nondeterminism confound**, not a real loss. (State/Signal C8; confound = Judgment C9.)
-- **SEC/Form-D funding footprint — not answerable.** All 4 pairs return `no source-aware delta for 'sec_edgar' — add a branch or compare by hand`: the comparator has no sec_edgar delta branch, and the captures are intra-day anyway (no funding-window change to read). (State, C5.)
+- **SEC/Form-D funding footprint — not answerable at run time.** All 4 pairs returned `no source-aware delta for 'sec_edgar' — add a branch or compare by hand`: the comparator had no sec_edgar delta branch then (shipped 2026-06-22), and the captures were intra-day anyway (no funding-window change to read). (State, C5.)
 - **SERP visibility — not answerable.** Each `serpapi/` directory holds captures of *different query subjects*, so every subject has only one capture → unpaired, level-read only. There is no repeat capture of the same query to diff. (State, C6.)
 
-**Net for the freshness pillar:** "trust the cache over time" is operable *today* on two surfaces — Trustpilot review-velocity (~6 brands) and Wayback archive-presence (~10 domains) — but **both readable deltas are proxies confounded by capture/source mechanics** (solicitation cadence; archive re-crawl cadence; CDX flakiness), not the sentiment-trend or page-content change a consumer would act on. The fixes are all *outside* the schema: **capture each subject on a cadence matched to its own refresh rate** (re-capturing Wayback weekly is near-useless when the archive refreshes monthly; Trustpilot counts move daily), a small `sec_edgar` diff branch, and carrying MRL-008's confound-sibling discipline onto the temporal axis (the onemedical −1 must read as "API artifact," not "lost snapshot"). **No new change/diff primitive is needed.** (Judgment.)
+**Net for the freshness pillar:** "trust the cache over time" is operable *today* on two surfaces — Trustpilot review-velocity (~6 brands) and Wayback archive-presence (~10 domains) — but **both readable deltas are proxies confounded by capture/source mechanics** (solicitation cadence; archive re-crawl cadence; CDX flakiness), not the sentiment-trend or page-content change a consumer would act on. The fixes are all *outside* the schema: **capture each subject on a cadence matched to its own refresh rate** (re-capturing Wayback weekly is near-useless when the archive refreshes monthly; Trustpilot counts move daily), the now-shipped `sec_edgar` diff branch, and carrying MRL-008's confound-sibling discipline onto the temporal axis (the onemedical −1 must read as "API artifact," not "lost snapshot"). **No new change/diff primitive is needed.** (Judgment.)
 
 ## Evidence Used
 
@@ -28,7 +32,7 @@ All evidence is local and derived from already-captured signal envelopes; see `r
 - **C2** — 6 clean Trustpilot velocity deltas (table above), gap 6.2–6.6 days.
 - **C3** — only `review_count` diffs; `reviews_last_12m` delta=null (rolling), `trust_score` level-only.
 - **C4** — 3 Trustpilot vetoes (subject realignment / empty-between / D0-not-ok).
-- **C5** — SEC: no delta branch + intra-day captures.
+- **C5** — SEC: no delta branch at run time (shipped 2026-06-22) + intra-day captures.
 - **C6** — SERP: one-capture-per-query (unpaired).
 - **C7** — every clean velocity carries `paid_profile`.
 - **C8** — Wayback: 15 page-subjects diff cleanly (working branch); 13/15 delta=0 (archive static between captures); honehealth mens/sermorelin `archive_presence False→True`; the only non-trivial moves are archive-state, not page-content.
@@ -45,7 +49,7 @@ Trustpilot ≥2-capture: agelessrx, eden-health, hims, honehealth, hydramed, joi
 
 ## Source Gaps
 
-- No `sec_edgar` delta branch in `signal_delta.py` — SEC change must be hand-compared today (the tool correctly vetoes rather than guessing).
+- At run time, no `sec_edgar` delta branch in `signal_delta.py` — SEC change had to be hand-compared (the tool correctly vetoed rather than guessing). The branch shipped 2026-06-22; SEC still needs meaningful capture gaps to produce funding-window movement.
 - Trustpilot `trust_score` and review *bodies* (the decision-grade sentiment surface, cf. MRL-010) are not delta-tracked; only cumulative counts are. The temporal read inherits MRL-008's "headline metric misleads without its confound sibling" exactly — and Wayback's onemedical −1 (C9) is a second, source-mechanics flavor of the same confound family.
 - Wayback's delta surface is archive-state (`snapshot_count`/`archive_presence`), a proxy for "did the archiver re-crawl," not "did the brand change the page" — the page-content change a freshness consumer wants is not what this signal moves on.
 
@@ -60,7 +64,7 @@ Among the 6 brands with readable velocity, raw review-acquisition rate spreads ~
 ## What Would Change This Answer
 
 - **A capture cadence matched to each signal's own refresh rate** — the same subject (trustpilot profile, SERP query, SEC issuer, Wayback page) re-captured on a schedule tuned to how fast that source actually moves — would widen the denominator from ~6 brands/one metric to a genuine cross-cohort change-pulse read. Tuning matters: Trustpilot counts move daily (a weekly gap is fine), but Wayback re-crawls ~monthly (a weekly re-capture mostly yields delta=0, as 13/15 here did). This is the single highest-leverage change and it is an *ops* change, not a build.
-- **A `sec_edgar` delta branch** would turn 4 vetoes into Form-D footprint deltas (new filings between captures), the funding-pulse the store can't read today. This is ~one function, not an ops decision.
+- **A `sec_edgar` delta branch** shipped 2026-06-22. It turns repeated SEC envelopes into source-local Form-D/filing footprint deltas; meaningful funding-pulse still requires captures separated enough for a filing window to move.
 - **Pinning subject-identity at capture time** (a canonical query string for SERP, a canonical issuer for SEC) would fix the SERP unpaired problem — which is *not* a cadence gap but a capture-contract one: a second SERP capture was taken, just of a *different query*, so there's nothing to pair. "Same domain + same source_type" does not guarantee a diffable pair.
 - **The 6 clean-velocity Trustpilot brands** (honehealth, hims, joinamble, agelessrx, joinfridays, maximustribe) are the concrete starting list for any cadence re-capture trial — they already have a working second capture and a real gap.
 - **Delta-tracking a decision-grade Trustpilot surface** (score trend, or bodies/objection-mix per MRL-010) would fix the "only the least-relevant metric diffs" problem — but that is a graduation decision for the human steward, not this run's to make.

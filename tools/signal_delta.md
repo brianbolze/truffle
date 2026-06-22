@@ -49,6 +49,7 @@ with empty metrics, never a dropped row**.
 | `serpapi` | category_query | organic rank movement **and** AIO presence, **diffed independently** | run-level **batch-outage veto**: ≥60% of previously-present AIO rows blanking at once → probable surface outage, not N real drops |
 | `trends` | company | within-keyword trajectory (always) + a **basis-gated** `peak_value` point delta | `renorm_basis_mismatch` when a capture's `peak_date` falls outside the date-overlap (different normalization anchor) |
 | `wayback` | page | archive presence, snapshot-count growth, last-seen movement, content-digest change — over two tenure captures | reads the digests `wayback.py` already captured (never re-fetches); the per-snapshot content diff stays `wayback.py diff`'s job |
+| `sec_edgar` | company | issuer State fields + dated filing/Form-D event cards | Form-D identity uncertainty and capped newest-filings windows travel as comparability flags; no amount, valuation, or verdict is inferred |
 | *(fallback)* | — | — | unknown `tool` → a named veto, never a guessed delta (e.g. a self-contained `wayback_pair_diff` envelope — read it directly, don't re-diff) |
 
 ## Gotchas (the value)
@@ -78,7 +79,7 @@ Category-grain runs (SERP panels) stay in experiments/cohorts until `cohorts/` g
 
 ## Growth
 
-- Branches cover the live capture tools (trustpilot, serpapi, trends, wayback). A new capture tool earns a
+- Branches cover the live capture tools (trustpilot, serpapi, trends, wayback, sec_edgar). A new capture tool earns a
   branch when it has two comparable captures; until then the fallback names the gap.
 - The card-layer machinery (schema-as-contract, lint, sole-writer, SQLite lens) stays **deferred** until an
   automated writer **and** a second consumer earn it.

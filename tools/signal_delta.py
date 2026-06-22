@@ -40,8 +40,8 @@ Exit codes:
 
 Source-aware branches (keyed on the envelope's `tool`): trustpilot (pairwise), serpapi (run-grained
 AIO/organic), trends (multi-subject, basis-aware), wayback (per-URL presence/snapshot/content-digest over
-two tenure captures — never re-fetches). Unknown source_types hit the fallback (a named veto, never a
-guessed delta).
+two tenure captures — never re-fetches), sec_edgar (issuer State + dated filing/Form-D events). Unknown
+source_types hit the fallback (a named veto, never a guessed delta).
 """
 
 from __future__ import annotations
@@ -62,6 +62,7 @@ GRAIN: dict[str, str] = {
     "serpapi": "category_query",
     "trends": "company",  # per-brand-keyword search interest; subject = the keyword, caller maps it to a domain
     "wayback": "page",  # per-URL archive record; subject = the URL (a page on the company's domain)
+    "sec_edgar": "company",  # issuer/company funding signals; subject = stamped domain when available
 }
 OUTAGE_FRACTION = 0.6  # >= this share of previously-present AIO rows blanking at once => surface-outage veto
 TEMPLATE_DUPES = 2  # >= this many identical review bodies in a recent sample => templated/farmed signature
@@ -93,6 +94,8 @@ def subject_of(env: dict[str, Any]) -> str:
         return src  # a trends envelope is multi-subject; its real subjects are per-keyword (handled in-branch)
     if src == "wayback":
         return inp.get("url", "").strip().lower().rstrip("/")  # the exact URL keys the archive record
+    if src == "sec_edgar":
+        return canon(env.get("subject") or inp.get("domain") or inp.get("name") or env.get("source", ""))
     return canon(inp.get("url", "") or inp.get("slug", "") or env.get("source", src))
 
 
@@ -416,6 +419,176 @@ def branch_wayback(a_envs: list[dict[str, Any]], b_envs: list[dict[str, Any]]) -
     return {"comparisons": rows, "run_vetoes": []}
 
 
+# --------------------------------------------------------------------------- SEC EDGAR branch (pairwise, issuer events)
+SEC_STATE_FIELDS = ("is_public", "ticker", "exchange", "cik", "registered_name", "sic")
+SEC_EVENT_FIELDS = ("event_type", "date", "form", "cik", "filer", "match", "flags", "citation")
+SEC_FILINGS_CAP = 10
+
+
+def _sec_state(env: dict[str, Any]) -> dict[str, Any]:
+    """The issuer State prior fields worth comparing; omitted keys stay absent, not inferred."""
+    state = env.get("state") or {}
+    return {field: state.get(field) for field in SEC_STATE_FIELDS if field in state}
+
+
+def _sec_event_summary(card: dict[str, Any]) -> dict[str, Any]:
+    """Stable, factual event summary for comparison output — no amount, no verdict, no blended label."""
+    out = {}
+    for field in SEC_EVENT_FIELDS:
+        value = card.get(field)
+        if value not in (None, "", []):
+            out[field] = value
+    return out
+
+
+def _sec_events(env: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    """Key dated EDGAR cards by their factual content so repeats collapse and changes surface explicitly."""
+    events = {}
+    for card in env.get("funding_signals") or []:
+        summary = _sec_event_summary(card)
+        if summary:
+            events[json.dumps(summary, sort_keys=True)] = summary
+    return events
+
+
+def _latest_sec_event_date(events: dict[str, dict[str, Any]]) -> str | None:
+    dates = [e.get("date") for e in events.values() if e.get("date")]
+    return max(dates) if dates else None
+
+
+def _sec_comparability_flags(env: dict[str, Any], label: str) -> list[dict[str, Any]]:
+    """SEC-specific caveats that must travel with any delta over issuer identity or a capped filing stream."""
+    flags = []
+    form_d = env.get("form_d") or {}
+    match = form_d.get("match")
+    if match and match not in {"confirmed", "no_match", "no_issuer_form_d"}:
+        flags.append({
+            "flag": "form_d_identity_unconfirmed",
+            "capture": label,
+            "match": match,
+            "effect": "Form-D hits are existence/context only unless the issuer identity is confirmed",
+        })
+    if len(form_d.get("candidates") or []) > 1:
+        flags.append({
+            "flag": "multiple_form_d_candidates",
+            "capture": label,
+            "candidate_count": len(form_d.get("candidates") or []),
+            "effect": "name search spans multiple CIKs; do not attribute every hit to the subject",
+        })
+    if len(env.get("filings") or []) >= SEC_FILINGS_CAP:
+        flags.append({
+            "flag": "filings_cap",
+            "capture": label,
+            "cap": SEC_FILINGS_CAP,
+            "effect": "filings are capped to the newest items; absent older events are not visible in this capture window",
+        })
+    if not (env.get("input") or {}).get("domain"):
+        flags.append({
+            "flag": "name_subject",
+            "capture": label,
+            "effect": "subject was not pinned to a domain; align only with the same name search",
+        })
+    return flags
+
+
+def _level_sec_edgar(env: dict[str, Any]) -> dict[str, Any]:
+    """One EDGAR capture: current issuer State + visible factual cards, before any movement claim exists."""
+    events = _sec_events(env)
+    row = _row("sec_edgar", subject_of(env), read_mode="level")
+    row["metrics"].append({
+        "metric": "issuer_state",
+        "basis": "current EDGAR-derived State prior",
+        "value": _sec_state(env),
+        "unit": "fields",
+    })
+    row["metrics"].append({
+        "metric": "funding_events",
+        "basis": "dated EDGAR filing/Form-D cards visible in this capture",
+        "value": len(events),
+        "latest_date": _latest_sec_event_date(events),
+        "events": [events[k] for k in sorted(events)],
+        "unit": "events",
+    })
+    row["comparability_flags"].extend(_sec_comparability_flags(env, "level"))
+    return row
+
+
+def _delta_sec_edgar(earlier: dict[str, Any], later: dict[str, Any]) -> dict[str, Any]:
+    """Two EDGAR captures of one issuer: compare State and dated factual cards, never infer funding amount.
+
+    A disappeared card is "not visible in this capture window", not proof an event was retracted; EDGAR
+    capture is a newest-items stream pointer. Form-D identity uncertainty travels as a comparability flag.
+    """
+    subject = subject_of(later)
+    if (blocked := _fence(earlier, later)):
+        return _row("sec_edgar", subject, vetoes=[blocked])
+
+    state0, state1 = _sec_state(earlier), _sec_state(later)
+    changed_state = {
+        field: {"d0": state0.get(field), "d7": state1.get(field)}
+        for field in sorted(set(state0) | set(state1))
+        if state0.get(field) != state1.get(field)
+    }
+    events0, events1 = _sec_events(earlier), _sec_events(later)
+    new_keys = sorted(set(events1) - set(events0))
+    gone_keys = sorted(set(events0) - set(events1))
+
+    row = _row("sec_edgar", subject, gap_days=_gap_days(earlier, later))
+    row["metrics"].append({
+        "metric": "issuer_state",
+        "basis": "EDGAR-derived State prior fields",
+        "d0": state0,
+        "d7": state1,
+        "changed": changed_state,
+        "unit": "fields",
+    })
+    row["metrics"].append({
+        "metric": "funding_events",
+        "basis": "dated EDGAR filing/Form-D cards keyed by factual content",
+        "d0_count": len(events0),
+        "d7_count": len(events1),
+        "new": [events1[k] for k in new_keys],
+        "not_visible_in_this_capture_window": [events0[k] for k in gone_keys],
+        "note": "D0 cards absent from D7 are capture-window churn, not a retraction signal",
+        "latest_date": _latest_sec_event_date(events1),
+        "unit": "events",
+    })
+    row["metrics"].append({
+        "metric": "form_d_match",
+        "basis": "issuer identity match state from the Form-D name search",
+        "d0": (earlier.get("form_d") or {}).get("match"),
+        "d7": (later.get("form_d") or {}).get("match"),
+        "movement": (
+            "changed"
+            if (earlier.get("form_d") or {}).get("match") != (later.get("form_d") or {}).get("match")
+            else "stable"
+        ),
+        "unit": "match_state",
+    })
+    row["comparability_flags"].extend(_sec_comparability_flags(earlier, "D0"))
+    row["comparability_flags"].extend(_sec_comparability_flags(later, "D7"))
+    return row
+
+
+def branch_sec_edgar(a_envs: list[dict[str, Any]], b_envs: list[dict[str, Any]]) -> dict[str, Any]:
+    """Group by issuer subject; delta where paired, level-read where only one capture exists."""
+    by_a = {subject_of(e): e for e in a_envs}
+    by_b = {subject_of(e): e for e in b_envs}
+    rows = []
+    for subj in sorted(by_a.keys() | by_b.keys()):
+        if subj in by_a and subj in by_b:
+            rows.append(_delta_sec_edgar(by_a[subj], by_b[subj]))
+        else:
+            only = by_b.get(subj) or by_a[subj]
+            row = _level_sec_edgar(only)
+            row["comparability_flags"].append({
+                "flag": "unpaired_capture",
+                "effect": "only one EDGAR capture for this subject — level-read, no delta",
+            })
+            rows.append(row)
+    return {"comparisons": rows, "run_vetoes": []}
+
+
 # --------------------------------------------------------------------------- fallback
 def branch_fallback(a_envs: list[dict[str, Any]], b_envs: list[dict[str, Any]]) -> dict[str, Any]:
     """Unknown source_type: a named veto, never a guessed delta over a payload the comparator can't read."""
@@ -430,6 +603,7 @@ DISPATCH: dict[str, Callable[[list[dict[str, Any]], list[dict[str, Any]]], dict[
     "serpapi": branch_serp,
     "trends": branch_trends,
     "wayback": branch_wayback,
+    "sec_edgar": branch_sec_edgar,
 }
 
 

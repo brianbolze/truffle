@@ -11,14 +11,16 @@ Question: **Where did Truffle create reader value, and where did it fall short?*
   / *rollup-ready* into one claim.
 - **Where Truffle added value:** the 49→20→11 denominator chain (the grain discipline that is the
   whole point); the cited ladder table in the frame's own vocabulary; the named cheapest fix
-  (sec_edgar delta branch, ~30 min); the concrete "what would change this" worklist.
+  (sec_edgar delta branch, ~30 min; shipped 2026-06-22); the concrete "what would change this"
+  worklist.
 - **Where it added little / fell short:** (1) the 20-company **axis distribution** lived only in the
   receipt, so a maps consumer had to chase R1 to see the substrate shape — *fixed in Loop 2* (added
   inline). (2) Rung-3 "Accumulate = Yes" skim-read implied durable accumulation while the captures
   are a one-week single campaign with no refresh cadence — *fixed in Loop 2* (cadence caveat added).
 - **What the consumer can do now:** know precisely why a cohort traction-map isn't buildable yet
-  (coverage 16% → comparability 9% → no same-axis cohort), and what unblocks it (a cohort capture
-  campaign + the sec_edgar delta branch) — without re-deriving anything.
+  (coverage 16% → comparability 9% → no same-axis cohort), and what unblocks it next (a cohort
+  capture campaign and cadence; the sec_edgar delta branch has shipped) — without re-deriving
+  anything.
 - **Safer than generic Claude + web search:** yes — every count is store-derived, cited, and
   qualified as a capture-campaign artifact, so the reader is protected from the two opposite wrong
   takeaways ("no traction layer" / "traction-ready"). A web search would have invented a market

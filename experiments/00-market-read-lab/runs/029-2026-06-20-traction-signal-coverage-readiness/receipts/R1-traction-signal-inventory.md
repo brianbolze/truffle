@@ -98,10 +98,10 @@ has a sec_edgar delta, but no other GLP-1 brand does, so it can't be ranked agai
   not which companies have real-world traction. Absence = **not captured**, never "no traction."
 - "Delta-able" here means **≥2 dated captures of a traction type**, i.e. *cadence* exists; it
   does **not** mean a clean usable velocity. Per run-018/MRL-012, of the delta-able set only
-  ~6 Trustpilot velocities are clean; sec_edgar has no `signal_delta.py` delta branch; SERP
-  "pairs" can be unpaired (different query under same dir, subject-identity gap); Trends is
-  single-snapshot for all 5 and batch-normalization-fragile. So rung-2 quality is weaker than
-  the raw delta-able count suggests.
+  ~6 Trustpilot velocities are clean; sec_edgar had no `signal_delta.py` delta branch at run time
+  (branch shipped 2026-06-22); SERP "pairs" can be unpaired (different query under same dir,
+  subject-identity gap); Trends is single-snapshot for all 5 and batch-normalization-fragile. So
+  rung-2 quality is weaker than the raw delta-able count suggests.
 - This receipt is a **store-substrate inventory**, not a traction read of any company. It
   deliberately emits **no** traction/formidability score or verdict (the frame's hard line).
 

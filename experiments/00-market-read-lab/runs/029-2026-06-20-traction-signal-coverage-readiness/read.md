@@ -21,12 +21,16 @@ and *cohort-rollup* are thin-to-absent. **No new primitive is the gap** — the 
 and six tools already exist (v1 shipped 2026-06-15). The gap is **coverage + comparator-completeness
 + the deferred cohort layer.**
 
+**2026-06-22 implementation update:** the `sec_edgar` comparator branch named below has shipped.
+This narrows the comparator-completeness gap, but does not change this run's larger conclusion:
+the traction substrate is still coverage-thin, cadence-light, and not cohort-rollup-ready.
+
 Scored against the frame's own 5-step ladder:
 
 | Rung | Frame capability | Store today | Verdict |
 |---|---|---|---|
 | **1. Capture** | Capture repeatable external signals cheaply | `signals/` path + 6 tools exist; **49/126 profiled cos** have a `signals/` dir, but only **20/126 (16%)** carry a *genuine* traction signal (C2). The single most-captured signal — Wayback, 47 cos — is **not traction** (tenure/continuity); exa (2) is neighbors (C3). | **Partial** — machinery yes, traction-coverage thin and dominated by a non-traction signal |
-| **2. Comparability** | Make repeat captures comparable (deltas/velocity) | Only **11/126 (9%)** are delta-able on a traction type (C4). Even those mostly don't yield clean deltas: `sec_edgar` has **no delta branch** in `signal_delta.py` (4 cos blocked); the 2 "delta-able" SERP cos (waldo, niagenplus) are **same-session multi-query runs, not temporal re-captures — 0 of 2 have a real time-series delta** (subject-identity gap); Trends is single-snapshot for all 5 + 14×-normalization-fragile; only Trustpilot diffs cleanly (~6 per run-018) — and that delta = **solicitation cadence on paid profiles, not demand** (MRL-008/012). | **Weak** — barely standing; the one diffable axis is the most confounded |
+| **2. Comparability** | Make repeat captures comparable (deltas/velocity) | Only **11/126 (9%)** were delta-able on a traction type at run time (C4). Even those mostly didn't yield clean deltas: `sec_edgar` had **no delta branch** in `signal_delta.py` then (4 cos blocked; branch shipped 2026-06-22); the 2 "delta-able" SERP cos (waldo, niagenplus) were **same-session multi-query runs, not temporal re-captures — 0 of 2 have a real time-series delta** (subject-identity gap); Trends was single-snapshot for all 5 + 14×-normalization-fragile; only Trustpilot diffed cleanly (~6 per run-018) — and that delta = **solicitation cadence on paid profiles, not demand** (MRL-008/012). | **Weak** — improved by the SEC branch, but still barely standing; the one broadly diffable axis is the most confounded |
 | **3. Accumulate** | Accumulate into a durable timeline without polluting State | Append-only `store/<domain>/signals/<source_type>/<captured_at>.json` (C8). State layer carries **0** structured traction fields — correct: the frame says traction never lands in `profile.md` (C6). | **Yes** on shape — but **single-campaign; no refresh cadence yet** (captures cluster 06-08→06-15, MRL-012), so the timeline is a snapshot pile, not an accumulating series |
 | **4. Cohort-rollup** | Roll up across a cohort for relative reads | **Not buildable today.** GLP-1 (most-captured cohort, **19** strict-anchored members — method-sensitive: up to 24 if you count any GLP-1 *offerer* mention, the MRL-001 anchored-vs-all-offerers caveat): **5/19** any traction signal, **4/19** delta-able, **all four sharing only Trustpilot** as their cross-company axis (C7). Telehealth-wide (54): 19 any-signal, 10 delta-able, scattered across 3 axes — no axis ranks even half a cohort (C5). | **No** — frame correctly defers this to a sibling frame |
 | **5. Feed judgment, never emit** | Feed a consumer-owned judgment; never emit one as truth | The store emits no traction/formidability score; this run emits none. | **Held** — correct by design |
@@ -50,11 +54,11 @@ For a gap-probe this is the main result. Where Truffle answered cleanly vs fell 
   trustpilot **batch campaign on hormone/men's-health brands** → the traction substrate inherits
   the corpus's selection bias (MRL-001). What would change it: a **traction-capture campaign**
   across a real cohort, not a market-representative claim from today's set.
-- **Fell short #2 — comparability quality (rung 2):** delta-able ≠ usable velocity. The
-  comparator (`signal_delta.py`) exists but is **incomplete** — no sec_edgar branch (MRL-012's
-  named ~30-min fix) — and the one clean axis (Trustpilot review-count) is a confounded proxy.
-  What would change it: the comparator branch + per-source cadence + a pinned canonical subject
-  (MRL-012's three sub-fixes), and capturing a *demand* signal that isn't solicitation-cadence.
+- **Fell short #2 — comparability quality (rung 2):** delta-able ≠ usable velocity. At run time,
+  the comparator (`signal_delta.py`) was missing the sec_edgar branch (MRL-012's named ~30-min fix);
+  that branch shipped 2026-06-22. The broader gap remains: the one clean broadly-covered axis
+  (Trustpilot review-count) is a confounded proxy. What would change it now: per-source cadence,
+  pinned canonical subjects (MRL-012), and a *demand* signal that isn't solicitation-cadence.
 - **Fell short #3 — cohort-rollup (rung 4):** no cohort has enough same-axis comparable members.
   This is the frame's explicitly-deferred sibling frame; the run **confirms with numbers** why it
   can't be shortcut from the per-company layer: even the most-captured cohort is ~21% covered
@@ -97,8 +101,9 @@ niagenplus (the only SERP telehealth co). **No company has a clean cross-axis tr
   SaaS, or non-telehealth company carries a traction signal except waldo/niagenplus. Any
   "traction map" off today's store would map *the capture campaign*, not a market.
 - **No company has a clean cross-axis traction read.** Even honehealth (richest) has trends as a
-  single snapshot and sec_edgar with no diff branch — so its "how is it doing?" card is one clean
-  Trustpilot velocity + level reads, not a triangulated picture.
+  single snapshot and, at run time, sec_edgar had no diff branch — so its "how is it doing?" card
+  was one clean Trustpilot velocity + level reads, not a triangulated picture. The SEC branch has
+  since shipped, but a cross-axis triangulated picture still needs repeat cadence and coverage.
 - **Stale-risk:** captures cluster 2026-06-08→2026-06-15; nothing is being refreshed on a cadence
   (MRL-012). A traction read is only as live as the last manual capture.
 
@@ -107,8 +112,9 @@ niagenplus (the only SERP telehealth co). **No company has a clean cross-axis tr
 - **A demand signal that isn't solicitation-cadence.** Trustpilot review-count velocity is the
   only well-covered delta, and it measures invitation posture on paid profiles, not demand. The
   frame's "demand" axis has no clean store proxy today.
-- **Comparator completeness:** the sec_edgar delta branch (MRL-012) is the single highest-leverage
-  missing piece for the capital axis — 20 cos have sec_edgar, 0 are tool-diffable.
+- **Comparator completeness:** the sec_edgar delta branch (MRL-012) was the single highest-leverage
+  missing piece for the capital axis at run time. It shipped 2026-06-22; remaining capital-axis
+  readiness now depends on repeat cadence, pinned subjects, and enough same-axis cohort coverage.
 - **A cohort capture campaign** is the prerequisite for rung 4 — not a new tool, just coverage.
 
 ## Raw Learning to Preserve
@@ -147,8 +153,9 @@ bounded-live follow-up, deliberately deferred this cycle. Flagged in Source Gaps
   serp for all 19 GLP-1-anchored brands, twice, with pinned subjects) would move rung-4 from "not buildable"
   to "testable" — and is the single change that would most change this read. It needs Firecrawl
   spend + human approval (not autonomous-safe), so it's a proposed worklist, not this run's action.
-- **The sec_edgar delta branch** (MRL-012, ~30 min) would turn 20 captured capital footprints into
-  diffable funding-pulse — the cheapest rung-2 improvement.
+- **The sec_edgar delta branch** (MRL-012, ~30 min) shipped 2026-06-22, turning existing repeated
+  capital footprints into source-local issuer/event deltas. The next rung-2 constraints are cadence,
+  subject pinning, and non-solicitation demand evidence.
 - **A bounded-live freshness check** (the deferred candidate) re-capturing a few traction signals
   live would tell us how fast the layer rots — the missing cadence input for rung 2/3.
 - If a second traction read on a *different, non-hormone* cohort found the same 1+3-built / 2+4-thin

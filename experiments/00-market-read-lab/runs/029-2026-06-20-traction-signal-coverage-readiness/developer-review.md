@@ -53,7 +53,7 @@ deferred sibling frame (cohort-rollup). The architecture is not the constraint; 
   sits on the 5-rung ladder across all traction work, with **coverage (rung 1)** and **cohort-rollup
   (rung 4)** as the binding gaps, neither of which has an MRL home. MRL-001 already absorbs the
   selection-bias denominator angle. Add Evidence Log entries to **MRL-012** (comparator/cadence
-  generalizes to the whole traction axis; sec_edgar branch still the cheapest fix) and **MRL-001**
+  generalizes to the whole traction axis; sec_edgar branch was the cheapest fix and shipped 2026-06-22) and **MRL-001**
   (selection-bias bounds the traction substrate + the run-016 comment-parse footgun recurred and was
   caught).
 

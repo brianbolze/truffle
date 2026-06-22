@@ -89,8 +89,8 @@ run-029). The other ~19 cohort brands were **not sampled** — this is a panel, 
 - **Ads source family: 1/130 captured store-wide** (waldo-fyi), 0 GLP-1. The dominant gap.
 - The panel's "zeros" (remedymeds, eden) may be coverage artifacts of domain-keying /
   channel choice, not true ad-absence — flagged, not resolved.
-- No time-delta: ads captures are single-point; `signal_delta.py` has no ads branch (mirrors
-  the run-029/MRL-012 sec_edgar-no-delta gap).
+- No time-delta: ads captures are single-point; `signal_delta.py` has no ads branch (the same
+  class of comparator-completeness gap as the now-shipped run-029/MRL-012 sec_edgar branch).
 
 ## Source Gaps
 

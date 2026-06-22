@@ -95,7 +95,7 @@ It's deliberately **scoped + fenced** so it can't hand back a fast, clean, *conf
 - `exa_similar.py` — neighbor discovery from a URL anchor; anchor-name-bound (corroborate, don't trust as a competitor list).
 - `exa_search.py` — query→company discovery from a description; net-new long-tail, low recall of a known set.
 - `sec_edgar.py` — first-party funding from keyless SEC EDGAR: ticker/exchange → State, Form-D / 8-K filings → dated Signal (existence + date, amount-free; identity match flagged `confirmed`/`name_match_unconfirmed`).
-- `signal_delta.py` — the comparator: diffs **two** captures of the same source (Trustpilot velocity, SERP rank/AIO movement, Trends trajectory, Wayback presence) into axis-specific deltas + comparability vetoes — never a blended score.
+- `signal_delta.py` — the comparator: diffs **two** captures of the same source (Trustpilot velocity, SERP rank/AIO movement, Trends trajectory, Wayback presence, SEC EDGAR event appearance) into axis-specific deltas + comparability vetoes — never a blended score.
 
 These tools print JSON envelopes to stdout (they don't write the store themselves). Persist **company-grain** captures verbatim under `store/<domain>/signals/<source_type>/…` (exact filename owned by `signals.py persist()`) so repeat captures accumulate where `signal_delta.py` can diff them; **category/query-grain** panels (SERP intent) stay project-side or in an experiment until the architecture's `cohorts/` home graduates. The full capture → persist → diff loop + run commands live in [`SIGNALS.md`](SIGNALS.md).
 

@@ -78,11 +78,13 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
   `signal_delta.py` diffs two captures of the same source into per-metric deltas + comparability vetoes —
   raw envelopes in, **no blended score** (structural: every number bound to one metric+source+unit). Source
   branches: trustpilot (cumulative velocity, rolling-window level-read), serpapi (organic + AIO diffed
-  independently, run-level batch-outage veto), trends (basis-aware via `peak_date`); fallback names the gap.
+  independently, run-level batch-outage veto), trends (basis-aware via `peak_date`), wayback (per-URL
+  presence/snapshot/content-digest), and sec_edgar (issuer State + dated EDGAR events, amount-free);
+  fallback names the gap.
   Subsumes the separate **Trustpilot velocity + integrity comparator** item (it's the trustpilot branch).
   De-risked by [probe](../experiments/2026-06-15-signal-delta-trustpilot/FINDINGS.md); committed the
   `store/<domain>/signals/` path convention + added `trends.py peak_date` alongside. The `wayback` branch
-  (per-URL presence/snapshot/content-digest over two tenure captures) is now in too.
+  landed first; the `sec_edgar` branch landed 2026-06-22 from the Market Read Lab quick-win packet.
 
 - **Wayback content fetch + diff** `[done]`
   `wayback.py diff <url>` now selects two exact-URL CDX snapshots, fetches raw `id_` replay content,

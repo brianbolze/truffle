@@ -79,9 +79,9 @@ python3 scripts/signals.py run panel.jsonl             # capture + store the lot
 | **SERP** | organic rank **and** AI-Overview presence (diffed apart) | paid |
 | **Wayback** | page tenure / presence / content change | free |
 | **Trends** | branded-search trajectory (within a brand, not cross-brand) | free |
-| **SEC EDGAR** | funding: ticker→State, Form-D & filings→dated event | free |
+| **SEC EDGAR** | funding: ticker→State, Form-D & filings→dated event; repeat captures can diff new visible events | free |
 
-The first four are **diffed over time** by the comparator; SEC EDGAR emits **dated events** (existence + date, never the dollar amount). *Also live but less central: Exa (similar-company discovery), Ads Transparency (paid-ad presence).*
+The comparator diffs repeat captures into source-specific movement; SEC EDGAR stays amount-free and only compares visible dated events plus issuer State. *Also live but less central: Exa (similar-company discovery), Ads Transparency (paid-ad presence).*
 
 ## What's deferred
 

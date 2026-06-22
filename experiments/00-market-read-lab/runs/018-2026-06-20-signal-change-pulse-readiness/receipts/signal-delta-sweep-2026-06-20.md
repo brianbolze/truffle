@@ -62,7 +62,7 @@ Distinct-domain union across all four types = 13 (wayback contributes onemedical
 - hydramed-com: `profile_empty_between_captures (active at D0) — comparison void, deltas empty`.
 - sermorelin-com: `D0_capture_not_ok — comparison void`.
 
-**SEC EDGAR — 0 deltas, 4/4 veto:** every pair returns `no source-aware delta for 'sec_edgar' — add a branch or compare by hand`. The comparator has no sec_edgar delta branch. Independently, the pairs are intra-day (e.g. hims 2026-06-15 04:27→19:03; waldo 2026-06-18 20:18→20:23), so no funding-window change exists to read anyway.
+**SEC EDGAR — 0 deltas, 4/4 veto at run time:** every pair returned `no source-aware delta for 'sec_edgar' — add a branch or compare by hand`. The comparator had no sec_edgar delta branch then; the branch shipped 2026-06-22. Independently, the pairs were intra-day (e.g. hims 2026-06-15 04:27→19:03; waldo 2026-06-18 20:18→20:23), so no funding-window change existed to read anyway.
 
 **SERP (serpapi) — 0 deltas, all unpaired:** each `serpapi/` dir holds captures of *different query subjects* (niagenplus: "at home nad+ injection" + "prescription nad+ injection"; waldo: "agentic brand intelligence" + "waldo brand intelligence"), so each subject has only one capture → `unpaired_capture`, level-read only. No repeat capture of the same query to diff.
 
@@ -95,7 +95,7 @@ Distinct-domain union across all four types = 13 (wayback contributes onemedical
 | C2 | 6 trustpilot profiles yield a clean per-day review-velocity delta over a real ~6.5-day gap | S2 | All carry paid_profile |
 | C3 | The only delta-able trustpilot metric is cumulative review_count; reviews_last_12m and trust_score are level-only | S2,S3 | Rolling-window + path design |
 | C4 | 3 of 9 trustpilot pairs veto (subject realignment, empty-between, D0-not-ok) | S2 | Fail-closed, not silent skip |
-| C5 | SEC change-pulse is unsupported: no sec_edgar delta branch, and captures are intra-day | S2 | Tooling gap + cadence gap |
+| C5 | SEC change-pulse was unsupported at run time: no sec_edgar delta branch then (shipped 2026-06-22), and captures were intra-day | S2 | Cadence gap remains |
 | C6 | SERP change-pulse is unsupported: captures are one-per-query (unpaired) | S2,S3 | Need repeat same-subject capture |
 | C7 | Every clean trustpilot velocity carries paid_profile — the delta-able metric is the least decision-relevant one | S2 | Temporal flavor of MRL-008 |
 | C8 | Wayback diffs cleanly (working branch) but 13/15 page-subjects are delta=0 — captures spaced faster than the archive re-crawls | S4 | Measures archiver re-crawl, not page change |
