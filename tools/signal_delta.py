@@ -24,8 +24,9 @@ envelopes, so the same code path serves pairwise (file vs file), run-vs-run (dir
 whose AIO outage veto needs every row), and multi-subject sources (one Trends envelope holds many keywords).
 
 It is a CONSUMER: it never fetches and never writes. Captures it reads live at the company-grain path
-`store/<domain>/signals/<source_type>/<captured_at>.json` (the convention in the [architecture](../_design/2026-05-30-architecture.md));
-category-grain runs (SERP panels) stay in experiments/cohorts until `cohorts/` graduates.
+`store/<domain>/signals/<source_type>[/<page-slug>]/<captured_at>.json` (the convention in the
+[architecture](../_design/2026-05-30-architecture.md)); category-grain runs (SERP panels) stay in
+experiments/cohorts until `cohorts/` graduates.
 
 CLI:
   python3 tools/signal_delta.py D0.json D7.json                 # pairwise (trustpilot, one serp query, …)

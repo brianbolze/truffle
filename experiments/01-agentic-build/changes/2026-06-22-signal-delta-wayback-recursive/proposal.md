@@ -1,7 +1,7 @@
 # Proposal: signal_delta Wayback Recursive Dir Loading
 
 Date: 2026-06-22
-Status: proposed
+Status: implemented
 Source request: Brian asked to work on the Market Read Lab quick win: "`signal_delta` dir-glob should recurse for Wayback page-slug subdirs", using `agent-build-propose`.
 
 ## Required Fields

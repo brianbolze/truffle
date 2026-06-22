@@ -72,9 +72,9 @@ a source envelope's `schema_drift` surfaces as a **veto row**, never the compara
 
 ## Where captures live
 
-Company-grain captures persist to `store/<domain>/signals/<source_type>/<captured_at>.json` (the
-[architecture](../_design/2026-05-30-architecture.md)'s convention); this tool reads them back. Category-grain
-runs (SERP panels) stay in experiments/cohorts until `cohorts/` graduates.
+Company-grain captures persist to `store/<domain>/signals/<source_type>[/<page-slug>]/<captured_at>.json`
+(the [architecture](../_design/2026-05-30-architecture.md)'s convention); this tool reads them back.
+Category-grain runs (SERP panels) stay in experiments/cohorts until `cohorts/` graduates.
 
 ## Growth
 
