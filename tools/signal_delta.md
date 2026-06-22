@@ -9,8 +9,10 @@ python3 tools/signal_delta.py D0.json D7.json                  # pairwise (trust
 python3 tools/signal_delta.py runA/ runB/ --min-gap-days 5     # run-vs-run (a SERP panel; trends envelopes)
 ```
 
-A path can be a **file** (one capture) or a **dir** (a run = many captures); both normalize to a list of
-envelopes, so one code path serves pairwise, run-vs-run, and multi-subject sources.
+A path can be a **file** (one capture) or a **dir** (a run = many captures). Directory inputs load
+`*.json` recursively, so page-grain captures nested under paths such as `wayback/<url-slug>/` are included.
+Both input shapes normalize to a list of envelopes, so one code path serves pairwise, run-vs-run, and
+multi-subject sources.
 
 ## Output shape (trimmed)
 

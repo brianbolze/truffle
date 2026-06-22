@@ -53,14 +53,13 @@ name the ad hoc loop, fragile comparison, or repeatable caller pain it replaces.
   current rather than planned. Also keep generated `__pycache__/` files out of staged changes.
   **Act when:** preparing the tools directory for commit or handoff.
 
-- **`signal_delta` dir-glob should recurse for page-slug subdirs** `[weakness]`
-  `scripts/signals.py persist` now writes wayback under `…/wayback/<url-slug>/<captured_at>.json` (the
-  multi-URL-per-domain path slot) and folds slash-variant twins onto one slug — but `signal_delta.py`'s
-  dir-mode glob is non-recursive, so a whole-domain run-vs-run can't discover captures nested under a slug.
-  Pairwise per-URL diff works today. Add a recursive loader.
-  **Act when:** whole-domain wayback run-vs-run is needed.
-
 ## Graduated
+
+- **`signal_delta` recursive dir loader for page-slug subdirs** `[done]`
+  Landed 2026-06-22: `signal_delta.py` directory inputs now load `*.json` recursively, so whole-domain
+  run-vs-run comparisons can discover Wayback captures under `…/wayback/<url-slug>/<captured_at>.json`.
+  The comparator still aligns at the source branch by exact subject (`input.url` for Wayback), so this
+  fixes discovery without adding domain-level aggregation.
 
 - **Signals-store writer — `capture` front door + `persist()` + batch runner + importer** `[done]`
   `scripts/signals.py` writes capture envelopes to the path convention — `persist`: envelope →

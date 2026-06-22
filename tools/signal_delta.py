@@ -434,9 +434,9 @@ DISPATCH: dict[str, Callable[[list[dict[str, Any]], list[dict[str, Any]]], dict[
 
 # --------------------------------------------------------------------------- driver
 def _load_envelopes(path: Path) -> list[dict[str, Any]]:
-    """A path -> list of envelopes. A file is one capture; a dir is a run (its *.json, sorted)."""
+    """A path -> list of envelopes. A file is one capture; a dir is a run (recursive *.json, sorted)."""
     if path.is_dir():
-        files = sorted(path.glob("*.json"))
+        files = sorted(path.rglob("*.json"))
     elif path.is_file():
         files = [path]
     else:

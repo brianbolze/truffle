@@ -4,7 +4,9 @@ source-aware branch deltas/vetoes, and the structural no-score property. Inline 
 
 from __future__ import annotations
 
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -61,13 +63,65 @@ def only(rows: list[dict], subject: str) -> dict:
     return next(r for r in rows if r["subject"] == subject)
 
 
+def write_env(root: Path, rel: str, env: dict) -> Path:
+    path = root / rel
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(env), encoding="utf-8")
+    return path
+
+
+class LoaderTests(unittest.TestCase):
+    def test_file_and_flat_dir_loader_still_work(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            first = write_env(root, "a.json", tp("a.com", "2026-06-08T00:00:00Z", review_count=10))
+            write_env(root, "b.json", tp("b.com", "2026-06-08T00:00:00Z", review_count=20))
+
+            self.assertEqual([e["input"]["slug"] for e in sd._load_envelopes(first)], ["a.com"])
+            self.assertEqual([e["input"]["slug"] for e in sd._load_envelopes(root)], ["a.com", "b.com"])
+
+    def test_directory_loader_recurses_wayback_page_subdirs(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            run_a, run_b = base / "run-a", base / "run-b"
+            write_env(
+                run_a,
+                "a-root/20260608T000000Z.json",
+                wb("https://x.com", "2026-06-08T00:00:00Z", count=1, last_seen="2026-05-01T00:00:00Z", digest="AAA"),
+            )
+            write_env(
+                run_a,
+                "b-sermorelin/20260608T000000Z.json",
+                wb("https://x.com/sermorelin", "2026-06-08T00:00:00Z", count=2, last_seen="2026-05-02T00:00:00Z", digest="BBB"),
+            )
+            write_env(
+                run_b,
+                "a-root/20260615T000000Z.json",
+                wb("https://x.com", "2026-06-15T00:00:00Z", count=2, last_seen="2026-06-01T00:00:00Z", digest="CCC"),
+            )
+            write_env(
+                run_b,
+                "b-sermorelin/20260615T000000Z.json",
+                wb("https://x.com/sermorelin", "2026-06-15T00:00:00Z", count=3, last_seen="2026-06-02T00:00:00Z", digest="DDD"),
+            )
+
+            loaded_a = sd._load_envelopes(run_a)
+            self.assertEqual([e["input"]["url"] for e in loaded_a], ["https://x.com", "https://x.com/sermorelin"])
+
+            out = sd.compare(loaded_a, sd._load_envelopes(run_b))
+            self.assertEqual(
+                sorted(r["subject"] for r in out["comparisons"]),
+                ["https://x.com", "https://x.com/sermorelin"],
+            )
+            self.assertTrue(all(r["source_type"] == "wayback" and r["grain"] == "page" for r in out["comparisons"]))
+
+
 class FenceTests(unittest.TestCase):
     def test_cross_source_pairing_is_a_veto(self) -> None:
         a = tp("honehealth.com", "2026-06-08T12:00:00Z", review_count=100)
         b = serp("honehealth", "2026-06-15T12:00:00Z")
         out = sd.compare([a], [b])
         # Different source_types never reach the same branch; each is level-read alone, never falsely paired.
-        subs = {r["subject"]: r for r in out["comparisons"]}
         self.assertTrue(all(r["read_mode"] in ("level",) or r["vetoes"] for r in out["comparisons"]))
         self.assertEqual(sorted(out["source_types"]), ["serpapi", "trustpilot"])
 
