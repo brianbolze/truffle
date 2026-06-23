@@ -40,9 +40,13 @@ points at the trust rules.
    your reply** (rendering without linking buries the artifact); `rg` for
    locate; PyYAML parse for structure; `store.db` only for many-pivot asks,
    and rebuild it first.
-4. Answer captured state from store files only. No WebSearch/browser/curl. Cite path
+4. Group answers wear the §0 stamp: if the answer covers more than one company,
+   open with `QUERYING.md` §0's one-line stamp (`Group · Set · Leaves out · Claim`).
+   The set-type caps the claim; a question that needs more than the type allows
+   becomes "open question," not a clean number.
+5. Answer captured state from store files only. No WebSearch/browser/curl. Cite path
    + governing clock; prices use the offerings clock when they come from `offerings.md`.
-5. Gaps are hand-offs, never silent live fallback: cold -> suggest `/research-company`;
+6. Gaps are hand-offs, never silent live fallback: cold -> suggest `/research-company`;
    thin roster -> `/deepen-offerings`; external signal -> the specific `tools/*.py`.
 
 ## Trust Rules
@@ -51,6 +55,9 @@ points at the trust rules.
 - Counts: enumeration-gated (`QUERYING.md` Recipe 4); floors are floors.
 - Prices: verbatim + intra-cohort + hand-normalized; never a sorted `$ / mo` table.
 - Cohort cuts: unclear/empty = "couldn't tell," not "no."
+- Groups: every multi-company answer opens with the §0 stamp; the set-type caps the
+  claim (store coverage ≠ market; empty field = "at least N," not "the rest don't";
+  outside-list miss = "not in our store," not "not in the market").
 
 ## Scope
 

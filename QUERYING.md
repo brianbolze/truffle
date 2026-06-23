@@ -34,6 +34,28 @@ P = {p.split("/")[1]: frontmatter(p) for p in glob.glob("store/*/profile.md")}
 
 **Resolve the company to its key first.** Domain is the key — but a question arrives as a *name*, an *old domain*, or an *alias*. `python scripts/store.py find <x>` (or `from store import resolve`) folds any exact surface form to the one slug; hand-matching silently misses non-obvious hits (`SendGrid → twilio-com`, `chatgpt.com → openai-com`, `salesloft.com → clari-com` post-merger). If `find` prints `likely candidate`, inspect that slug before calling it a miss. If it prints `ambiguous candidates`, do not pick silently: use nearby context only if it clearly disambiguates; otherwise ask the user which company they meant, listing the candidate slugs/names. This and the relations join-check (Recipe 3) are the only two reads worth a script — everything else below is a one-line filter.
 
+## §0 — The grouping stamp
+
+Any answer about **more than one company** opens with one line naming the set used and what it may claim:
+
+`Group: <name> · Set: <how built + count> · Leaves out: <blind spot> · Claim: <type>`
+
+`<type>` is one of the four below, and it **caps what the answer may say**. The cap is set by *how the set was built, never by the topic* (the weakest link): a store search can describe what it matched, but it can't become a market claim just because the topic happens to be a market. If the question needs more than the type allows, the honest answer is **"open question"** — name what's missing instead of inventing a clean number.
+
+| Set type | Built from | May say | Must not say | Caveat it always wears |
+|---|---|---|---|---|
+| **store filter** | every profile matching a frontmatter filter (Recipes 2, 7) | facts about the matched set | market coverage / share / ranking | "our store coverage ≠ the market" |
+| **tag or keyword** | a tag / keyword / molecule cut (Recipes 4, 7) | who is tagged or matched that way | the tag = the real market; empty = absent | "tagged ≠ everyone who does it" |
+| **outside list** | names taken from outside listicles (Recipe 9) | who is present / absent **in our store** | it is the whole market | "not in our store ≠ not in the market" |
+| **one-off set** | a hand-picked grouping | a dated, throwaway read | a durable or stored fact | "ad-hoc set, not a stored fact" |
+
+Two reflexes the table encodes, both already in the recipes — §0 just makes them mandatory for *group* answers:
+
+- **An empty field means "at least N", never "only N."** A blank pricing / tag / cohort cell means the page was silent or the field predates the company — not that the company doesn't do the thing. So "which captured X publish pricing?" reports the ones that do as a **floor**, never "the rest hide it" (Recipes 4, 6).
+- **Completeness is "can't tell from the store."** "How complete is our X coverage?" gets a coverage statement, not a percentage: a store-only answer can't speak for the market, so refuse the clean number and say coverage ≠ market (Recipe 9's radar, not a census).
+
+The **mechanics** of building each set correctly already live in the recipes below — §0 is only the honest label every group answer wears on top of them, so it never restates or overrides them.
+
 ## Recipes
 
 **1. Single-company brief** — when a human-facing query resolves to exactly one profiled company, run `python scripts/render.py <company>`.
