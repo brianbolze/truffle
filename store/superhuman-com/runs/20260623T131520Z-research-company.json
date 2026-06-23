@@ -1,0 +1,15 @@
+{
+  "record_version": "0.1",
+  "verb": "research-company",
+  "status": "complete",
+  "tool": "claude-code",
+  "model": "claude-opus-4-8",
+  "trust": "env",
+  "started_at": "2026-06-23T13:15:20Z",
+  "artifacts": [
+    "profile.md",
+    "productivity_saas.md"
+  ],
+  "effort": "xhigh",
+  "ended_at": "2026-06-23T13:29:28Z"
+}
