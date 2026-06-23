@@ -1,0 +1,51 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:18:51Z",
+  "ok": true,
+  "input": {
+    "url": "https://joinamble.com/sermorelin-injections"
+  },
+  "schema_drift": [],
+  "first_seen": "2025-08-05T22:32:41Z",
+  "last_seen": "2025-12-15T02:02:36Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 320,
+  "snapshot_count": 4,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2025-08-05T22:32:41Z",
+      "to": "2025-12-15T02:02:36Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20250805223241/https://www.joinamble.com/sermorelin-injections",
+  "last_snapshot_url": "https://web.archive.org/web/20251215020236/https://joinamble.com/sermorelin-injections",
+  "snapshots": [
+    {
+      "timestamp": "2025-08-05T22:32:41Z",
+      "url": "https://www.joinamble.com/sermorelin-injections",
+      "status": "200",
+      "digest": "F5DVZENWSZBFEN6K2IHWI4XOHH3J75E4"
+    },
+    {
+      "timestamp": "2025-08-23T02:19:29Z",
+      "url": "https://www.joinamble.com/sermorelin-injections",
+      "status": "200",
+      "digest": "6SA23TFSMXY7SEQ4MNGEC5NNLPIIMAEW"
+    },
+    {
+      "timestamp": "2025-12-08T12:36:49Z",
+      "url": "https://www.joinamble.com/sermorelin-injections",
+      "status": "200",
+      "digest": "QIQI5KBHSY5QWXTUZSSXFTVQXENNLQ2E"
+    },
+    {
+      "timestamp": "2025-12-15T02:02:36Z",
+      "url": "https://joinamble.com/sermorelin-injections",
+      "status": "200",
+      "digest": "R2PTWH642QZVDJJ2KSRBEVQF6JGLUKAS"
+    }
+  ]
+}

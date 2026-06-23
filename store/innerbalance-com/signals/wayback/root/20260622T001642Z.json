@@ -1,0 +1,815 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:16:42Z",
+  "ok": true,
+  "input": {
+    "url": "https://innerbalance.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2007-07-11T05:42:24Z",
+  "last_seen": "2026-05-09T19:36:35Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 6920,
+  "snapshot_count": 108,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2007-07-11T05:42:24Z",
+      "to": "2018-08-23T12:30:05Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-04-01T19:13:11Z",
+      "to": "2019-12-30T21:31:03Z"
+    },
+    {
+      "status": "302",
+      "from": "2019-12-30T21:31:03Z",
+      "to": "2019-12-30T21:31:03Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-08T00:10:38Z",
+      "to": "2021-12-08T00:10:38Z"
+    },
+    {
+      "status": "302",
+      "from": "2023-02-19T22:20:48Z",
+      "to": "2023-02-19T22:20:48Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-02-19T22:20:55Z",
+      "to": "2023-02-19T22:20:55Z"
+    },
+    {
+      "status": "404",
+      "from": "2023-10-30T05:55:25Z",
+      "to": "2023-10-30T05:55:25Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-01-30T17:44:54Z",
+      "to": "2024-01-30T17:44:54Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-02-28T15:47:16Z",
+      "to": "2024-05-29T11:42:27Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-05-29T11:49:03Z",
+      "to": "2024-05-29T11:49:03Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-06-15T13:43:12Z",
+      "to": "2024-07-29T04:25:09Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-07-29T04:25:26Z",
+      "to": "2024-07-29T04:25:26Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-04T23:25:36Z",
+      "to": "2024-08-04T23:25:36Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-09-01T16:46:15Z",
+      "to": "2024-09-01T16:46:15Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-01T16:46:15Z",
+      "to": "2024-09-01T16:46:15Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-09-28T03:48:29Z",
+      "to": "2024-09-28T03:48:29Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-28T03:48:29Z",
+      "to": "2024-09-28T03:48:29Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-09-28T04:31:55Z",
+      "to": "2024-10-03T17:46:16Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-10-15T02:33:44Z",
+      "to": "2025-02-14T07:39:11Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-03-06T13:58:36Z",
+      "to": "2025-03-06T13:58:36Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-06T13:58:36Z",
+      "to": "2025-03-24T09:18:36Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-04-04T00:57:27Z",
+      "to": "2025-04-04T00:57:27Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-04T00:57:27Z",
+      "to": "2025-04-10T17:48:56Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-04-16T15:21:05Z",
+      "to": "2025-04-16T15:21:05Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-22T18:51:15Z",
+      "to": "2025-06-18T01:50:21Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-07-12T00:18:12Z",
+      "to": "2025-07-12T00:50:11Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-05T07:43:48Z",
+      "to": "2025-08-15T04:07:02Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-09-26T13:53:57Z",
+      "to": "2025-09-26T13:53:57Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-09-26T14:47:20Z",
+      "to": "2026-05-09T19:36:35Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20070711054224/http://www.innerbalance.com:80/",
+  "last_snapshot_url": "https://web.archive.org/web/20260509193635/https://www.innerbalance.com/",
+  "snapshots": [
+    {
+      "timestamp": "2007-07-11T05:42:24Z",
+      "url": "http://www.innerbalance.com:80/",
+      "status": "200",
+      "digest": "KFKL3IAHIYW4K3MEPPSRZZQ2UHJ5B54A"
+    },
+    {
+      "timestamp": "2007-09-11T02:09:10Z",
+      "url": "http://www.innerbalance.com:80/",
+      "status": "200",
+      "digest": "O6VERHLYS2QWSH2UUCIYRX2AYWTZI5OW"
+    },
+    {
+      "timestamp": "2012-09-10T01:51:40Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "CJ5OV66VFWLRWIMNJSIPILMSFU73WVI3"
+    },
+    {
+      "timestamp": "2012-10-14T11:09:12Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "VV73MKWFUBTJHNIX2DGQRY7TCEVSO2Y2"
+    },
+    {
+      "timestamp": "2012-11-21T05:07:20Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "SI5WZ5KFGXWT36M5KWRFZ6WIW2V7OLWK"
+    },
+    {
+      "timestamp": "2012-12-22T11:28:09Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "ILLRAYKVI4PD4JPZ5ZJLEJ2W2POH7HK7"
+    },
+    {
+      "timestamp": "2013-06-08T19:08:26Z",
+      "url": "http://innerbalance.com/",
+      "status": "200",
+      "digest": "JWLBHAWYY6P7D76CKN6FUVJSXUSBYSGF"
+    },
+    {
+      "timestamp": "2014-01-12T12:07:57Z",
+      "url": "http://innerbalance.com/",
+      "status": "200",
+      "digest": "ILLRAYKVI4PD4JPZ5ZJLEJ2W2POH7HK7"
+    },
+    {
+      "timestamp": "2014-05-17T11:56:50Z",
+      "url": "http://innerbalance.com/",
+      "status": "200",
+      "digest": "SI5WZ5KFGXWT36M5KWRFZ6WIW2V7OLWK"
+    },
+    {
+      "timestamp": "2014-12-17T15:20:24Z",
+      "url": "http://innerbalance.com/",
+      "status": "200",
+      "digest": "Q2HW7SEX3SBSWUQWJRSGZRXMP53ZIJ26"
+    },
+    {
+      "timestamp": "2015-03-07T17:56:27Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "ILLRAYKVI4PD4JPZ5ZJLEJ2W2POH7HK7"
+    },
+    {
+      "timestamp": "2015-04-07T05:17:09Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "NXLNPN7R7HS25QZ32YU3E6ECTLJGUN22"
+    },
+    {
+      "timestamp": "2015-05-07T19:24:37Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "SI5WZ5KFGXWT36M5KWRFZ6WIW2V7OLWK"
+    },
+    {
+      "timestamp": "2015-06-12T21:43:08Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "N5RXTITOXC5RRBRESVDNXZ6CRZGUBYJV"
+    },
+    {
+      "timestamp": "2015-07-16T00:47:28Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "ILLRAYKVI4PD4JPZ5ZJLEJ2W2POH7HK7"
+    },
+    {
+      "timestamp": "2015-08-01T15:28:42Z",
+      "url": "http://innerbalance.com/",
+      "status": "200",
+      "digest": "QYRLQUJQJR54DATDSH2A64HPRNEVIHTN"
+    },
+    {
+      "timestamp": "2015-10-09T21:08:30Z",
+      "url": "http://www.innerbalance.com:80/",
+      "status": "200",
+      "digest": "6DOA3VTF4QBH4ZBEOZ2X5W5CDV7WS6OD"
+    },
+    {
+      "timestamp": "2015-11-09T16:57:15Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "CJ5OV66VFWLRWIMNJSIPILMSFU73WVI3"
+    },
+    {
+      "timestamp": "2015-11-22T07:23:46Z",
+      "url": "http://innerbalance.com/",
+      "status": "200",
+      "digest": "Q2HW7SEX3SBSWUQWJRSGZRXMP53ZIJ26"
+    },
+    {
+      "timestamp": "2015-12-10T16:17:11Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "PYF2KT2Q72CKTTONBWO3NRFNUNGYL77X"
+    },
+    {
+      "timestamp": "2016-01-10T00:55:36Z",
+      "url": "http://innerbalance.com/",
+      "status": "200",
+      "digest": "AMUBLSYZILYIW2L4HAODQA34LTBFHMFS"
+    },
+    {
+      "timestamp": "2016-01-11T05:33:48Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "Q2HW7SEX3SBSWUQWJRSGZRXMP53ZIJ26"
+    },
+    {
+      "timestamp": "2016-01-13T02:23:28Z",
+      "url": "http://innerbalance.com:80/?",
+      "status": "200",
+      "digest": "4HPQHWJERGM7QVGU7VVJGYNA6Y4SBILN"
+    },
+    {
+      "timestamp": "2016-02-14T21:21:12Z",
+      "url": "http://innerbalance.com:80/?",
+      "status": "200",
+      "digest": "35IINPQ3H2YEPXO6WTR5GXN5M2EXFANA"
+    },
+    {
+      "timestamp": "2016-03-19T01:13:06Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "JUI7ZGHIQU5LKTDGY5MPEVSDHF3WJLH2"
+    },
+    {
+      "timestamp": "2016-04-22T05:10:13Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "QYRLQUJQJR54DATDSH2A64HPRNEVIHTN"
+    },
+    {
+      "timestamp": "2016-05-26T02:45:38Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "ZS6Z6LFJ7YFWX54X5U5IJXW67UOT65QZ"
+    },
+    {
+      "timestamp": "2016-08-01T13:11:58Z",
+      "url": "http://www.innerbalance.com:80/",
+      "status": "200",
+      "digest": "KKKWJIHHV2QRGBENHBAOFVZHO2Z6ADJS"
+    },
+    {
+      "timestamp": "2016-08-01T13:38:12Z",
+      "url": "http://www.innerbalance.com:80/?",
+      "status": "200",
+      "digest": "6DOA3VTF4QBH4ZBEOZ2X5W5CDV7WS6OD"
+    },
+    {
+      "timestamp": "2016-09-01T22:15:14Z",
+      "url": "http://www.innerbalance.com:80/?",
+      "status": "200",
+      "digest": "AMUBLSYZILYIW2L4HAODQA34LTBFHMFS"
+    },
+    {
+      "timestamp": "2016-09-01T22:50:59Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "6DOA3VTF4QBH4ZBEOZ2X5W5CDV7WS6OD"
+    },
+    {
+      "timestamp": "2016-10-03T01:41:03Z",
+      "url": "http://www.innerbalance.com:80/?",
+      "status": "200",
+      "digest": "NXLNPN7R7HS25QZ32YU3E6ECTLJGUN22"
+    },
+    {
+      "timestamp": "2016-10-04T01:59:11Z",
+      "url": "http://www.innerbalance.com:80/?",
+      "status": "200",
+      "digest": "SI5WZ5KFGXWT36M5KWRFZ6WIW2V7OLWK"
+    },
+    {
+      "timestamp": "2016-10-21T14:01:59Z",
+      "url": "http://innerbalance.com/",
+      "status": "200",
+      "digest": "Q2HW7SEX3SBSWUQWJRSGZRXMP53ZIJ26"
+    },
+    {
+      "timestamp": "2016-11-04T19:13:57Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "HOS3ANTRPF7OGT45J34IDOOHO4BNQIPE"
+    },
+    {
+      "timestamp": "2017-03-26T15:52:06Z",
+      "url": "http://www.innerbalance.com:80/",
+      "status": "200",
+      "digest": "KKKWJIHHV2QRGBENHBAOFVZHO2Z6ADJS"
+    },
+    {
+      "timestamp": "2017-03-26T15:53:40Z",
+      "url": "http://www.innerbalance.com:80/?",
+      "status": "200",
+      "digest": "CJ5OV66VFWLRWIMNJSIPILMSFU73WVI3"
+    },
+    {
+      "timestamp": "2017-05-06T14:15:32Z",
+      "url": "http://www.innerbalance.com:80/?",
+      "status": "200",
+      "digest": "MHTIU32J7SXTMHHIENCDZGNGC57J7NAG"
+    },
+    {
+      "timestamp": "2017-05-07T17:03:14Z",
+      "url": "http://www.innerbalance.com:80/?",
+      "status": "200",
+      "digest": "OLEZ7SJTUFS5H6O5AUHP5SHMG4HLSZ7A"
+    },
+    {
+      "timestamp": "2017-05-07T19:24:26Z",
+      "url": "http://www.innerbalance.com:80/",
+      "status": "200",
+      "digest": "Q2HW7SEX3SBSWUQWJRSGZRXMP53ZIJ26"
+    },
+    {
+      "timestamp": "2017-06-08T02:38:05Z",
+      "url": "http://www.innerbalance.com:80/",
+      "status": "200",
+      "digest": "35IINPQ3H2YEPXO6WTR5GXN5M2EXFANA"
+    },
+    {
+      "timestamp": "2017-09-25T06:59:41Z",
+      "url": "http://innerbalance.com/",
+      "status": "200",
+      "digest": "Z3VSG4KINWWBN64WT27NPXHPWVDK4EKO"
+    },
+    {
+      "timestamp": "2018-02-16T11:04:02Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "BJEKULUC4LWHOPHU2KMXCTLMXQR4HNJB"
+    },
+    {
+      "timestamp": "2018-03-22T09:17:31Z",
+      "url": "http://innerbalance.com/",
+      "status": "200",
+      "digest": "6FLC4AIJSVISBYRVKBVNS5VGQNPGOG4N"
+    },
+    {
+      "timestamp": "2018-04-19T11:44:58Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "BJEKULUC4LWHOPHU2KMXCTLMXQR4HNJB"
+    },
+    {
+      "timestamp": "2018-08-06T17:21:45Z",
+      "url": "http://innerbalance.com/",
+      "status": "200",
+      "digest": "LIQ7LQTQTVW3SNJZ5HWQORRDGVM6RTRH"
+    },
+    {
+      "timestamp": "2018-08-23T12:30:05Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "200",
+      "digest": "BJEKULUC4LWHOPHU2KMXCTLMXQR4HNJB"
+    },
+    {
+      "timestamp": "2019-04-01T19:13:11Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2019-12-30T21:31:03Z",
+      "url": "http://innerbalance.com:80/",
+      "status": "301",
+      "digest": "37YHYRKXKXWHJETTDYQCDBN6ERDXFNBW"
+    },
+    {
+      "timestamp": "2019-12-30T21:31:03Z",
+      "url": "http://www.innerbalance.com:80/",
+      "status": "302",
+      "digest": "K5C5BMGHX255CHMKT6V2LIBDOLO4MCPF"
+    },
+    {
+      "timestamp": "2021-12-08T00:10:38Z",
+      "url": "http://innerbalance.com/",
+      "status": "301",
+      "digest": "Q5ZO74ERNHXAVEUWODWX4N5EZTDVZX3P"
+    },
+    {
+      "timestamp": "2023-02-19T22:20:48Z",
+      "url": "http://www.innerbalance.com/",
+      "status": "302",
+      "digest": "K5C5BMGHX255CHMKT6V2LIBDOLO4MCPF"
+    },
+    {
+      "timestamp": "2023-02-19T22:20:55Z",
+      "url": "http://innerbalance.com/",
+      "status": "301",
+      "digest": "56ZQVXY5ZXAGAUY2MZXVFXHEY3VCRS34"
+    },
+    {
+      "timestamp": "2023-10-30T05:55:25Z",
+      "url": "http://www.innerbalance.com/",
+      "status": "404",
+      "digest": "FCXCXJS4ZW2YHV47QW4MZFIJ7LTJOSJ3"
+    },
+    {
+      "timestamp": "2024-01-30T17:44:54Z",
+      "url": "http://www.innerbalance.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-02-28T15:47:16Z",
+      "url": "https://innerbalance.com/",
+      "status": "200",
+      "digest": "PAQZ6EYL45FS2A2F5NCYV7RNSEVT7DMC"
+    },
+    {
+      "timestamp": "2024-04-16T20:15:14Z",
+      "url": "https://innerbalance.com/",
+      "status": "200",
+      "digest": "YLCCCGULEOMU5PSIBLZOLZRMHPS3K47S"
+    },
+    {
+      "timestamp": "2024-05-19T20:24:34Z",
+      "url": "https://innerbalance.com/",
+      "status": "200",
+      "digest": "NUWKE3MMNSOJQB6MJK3IZKRQN6SETNKY"
+    },
+    {
+      "timestamp": "2024-05-29T11:42:27Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "3JI7CZCPDSLIOQ5TUM7AUPLTK5ZJ5FFU"
+    },
+    {
+      "timestamp": "2024-05-29T11:49:03Z",
+      "url": "http://www.innerbalance.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-06-15T13:43:12Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "PUE3W36NKMDSW7LYOTJMQMK4WW5KBDZQ"
+    },
+    {
+      "timestamp": "2024-07-19T05:06:37Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "YJIUBZX3SBGVXEWODGOM6GHR2FORLA3F"
+    },
+    {
+      "timestamp": "2024-07-29T04:25:09Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "VXSGJOY2ZAEPBBWIWGQ43H6LM5KWF3ER"
+    },
+    {
+      "timestamp": "2024-07-29T04:25:26Z",
+      "url": "http://www.innerbalance.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-08-04T23:25:36Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "ZOJ3F7VD4NK2THD4O4EWDGY4J5RF2DE2"
+    },
+    {
+      "timestamp": "2024-09-01T16:46:15Z",
+      "url": "http://www.innerbalance.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-09-01T16:46:15Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "XRFCBNLOAL7PK73JPTRPDNRTHZNRX2XU"
+    },
+    {
+      "timestamp": "2024-09-28T03:48:29Z",
+      "url": "http://www.innerbalance.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-09-28T03:48:29Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "MPNIYIO4WDAJSXRZZZ2K7TDIQTQZIPY6"
+    },
+    {
+      "timestamp": "2024-09-28T04:31:55Z",
+      "url": "http://innerbalance.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-09-28T04:31:58Z",
+      "url": "https://innerbalance.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2024-10-03T17:46:16Z",
+      "url": "https://innerbalance.com/",
+      "status": "308",
+      "digest": "WLSHB56WMXV7BNES3YHA2UBZHSHJCRZU"
+    },
+    {
+      "timestamp": "2024-10-15T02:33:44Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "G5CUH6GCID777TOBASB5F3AKHA2BDI2E"
+    },
+    {
+      "timestamp": "2024-12-09T03:13:43Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "ISXCWESC5OASIROXSXTUKMANTNEFLH6X"
+    },
+    {
+      "timestamp": "2025-01-19T02:25:05Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "VO5DIXCYM65WIS25JNNKQCV4UICGXCPS"
+    },
+    {
+      "timestamp": "2025-02-14T07:39:11Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "NH7XQX55WIM2HLRP5DUDRD3NX4BG4MXK"
+    },
+    {
+      "timestamp": "2025-03-06T13:58:36Z",
+      "url": "http://www.innerbalance.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-03-06T13:58:36Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "TWFJS7AWPVQJ3BDCSTK4RKKEAYG43O6Q"
+    },
+    {
+      "timestamp": "2025-03-24T09:18:36Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "XXT6DVYIXBGBDJPJWLNBVZDXOHU6NRYD"
+    },
+    {
+      "timestamp": "2025-04-04T00:57:27Z",
+      "url": "http://www.innerbalance.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-04-04T00:57:27Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "2HNOIAEKA3NC375MFVYRVJTXM4H7PFWX"
+    },
+    {
+      "timestamp": "2025-04-10T08:33:17Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "XQDWHCF6Q5K6T7JW4N7QP2RNAZWNKE2X"
+    },
+    {
+      "timestamp": "2025-04-10T17:48:56Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "SREJQAR4E5K4JHFW47YHHFMYILAXB525"
+    },
+    {
+      "timestamp": "2025-04-16T15:21:05Z",
+      "url": "http://innerbalance.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-04-16T15:21:05Z",
+      "url": "https://innerbalance.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-04-22T18:51:15Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "KIAEEE3YCGS4S5ULNQVTCDCUWOVTR3HK"
+    },
+    {
+      "timestamp": "2025-05-13T03:02:43Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "TGDNSX3MTS7P3SFH4VXEI22UEPQELPIR"
+    },
+    {
+      "timestamp": "2025-06-18T01:50:21Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "RDJODOXR4AWBU4IHR2TQFADLXZHCXYQ2"
+    },
+    {
+      "timestamp": "2025-07-12T00:18:12Z",
+      "url": "http://innerbalance.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-07-12T00:50:11Z",
+      "url": "https://innerbalance.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-08-05T07:43:48Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "LLCP44RXAZ2Q3CGHSDHKIDY523I53ZDF"
+    },
+    {
+      "timestamp": "2025-08-10T03:20:33Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "DHE7C56ZDBZMB5WWF2QGZD754OLAR7E3"
+    },
+    {
+      "timestamp": "2025-08-15T04:07:02Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "WH3ZB7RLV4CR6BCRD2JBAIFCLQUXK5VP"
+    },
+    {
+      "timestamp": "2025-09-26T13:53:57Z",
+      "url": "https://innerbalance.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-09-26T14:47:20Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "X2G2IJ7N2GPORAQWGK53P7LPN7R3UM42"
+    },
+    {
+      "timestamp": "2025-10-10T08:37:14Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "G2Q6BYKDPYKYSZEIVL6JGNDMWEBPWLVY"
+    },
+    {
+      "timestamp": "2025-11-11T22:29:05Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "MRL2L6EQVPTZNRJYPGGJFFECUMMCYOMH"
+    },
+    {
+      "timestamp": "2025-12-05T05:01:48Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "QKE5KCUFT46J5TUFTVBSBC5SUWUC43D5"
+    },
+    {
+      "timestamp": "2025-12-22T09:48:01Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "3UZVUVJXCTZQKOQDQ7K3SPABWIEK3TLN"
+    },
+    {
+      "timestamp": "2026-01-13T17:49:44Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "7SKNJOEED5KWJ66ZZELJBDZ6WABWLTBJ"
+    },
+    {
+      "timestamp": "2026-01-25T11:37:40Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "3VFSNEXAQYNK3P7EWSFCE3O7LVC22Y2R"
+    },
+    {
+      "timestamp": "2026-02-08T16:15:29Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "L75RVSOZBJ552SLR23EUD6T23TKK4UKG"
+    },
+    {
+      "timestamp": "2026-03-15T07:24:30Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "YGHAWB3A6PCIYVW2AJ3JQORLFRIUUQ7Z"
+    },
+    {
+      "timestamp": "2026-04-11T23:23:15Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "MW2CDNTEDRP6OIXGQHNSL3L3BOENUFKT"
+    },
+    {
+      "timestamp": "2026-04-14T17:41:53Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "LAGVV7BR3R7PEABFAYM7ANRDVA3CXF6R"
+    },
+    {
+      "timestamp": "2026-04-27T18:57:47Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "XUPEXC4Q4TX6N6OYXZKA6WSVAP6GGVS5"
+    },
+    {
+      "timestamp": "2026-05-03T13:48:57Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "MN25HSM77DWDPJ7Y73YERQE5QDO4GNHU"
+    },
+    {
+      "timestamp": "2026-05-09T19:36:35Z",
+      "url": "https://www.innerbalance.com/",
+      "status": "200",
+      "digest": "HAVRGSO7AAAHSN75CLSXUHGI3Z5763LP"
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:12:22Z",
+  "ok": true,
+  "input": {
+    "url": "https://gogeviti.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2023-07-24T02:56:42Z",
+  "last_seen": "2026-06-18T06:49:21Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 1063,
+  "snapshot_count": 59,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "308",
+      "from": "2023-07-24T02:56:42Z",
+      "to": "2023-10-30T12:05:27Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-04-21T17:21:57Z",
+      "to": "2024-04-21T17:21:57Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-04-21T17:22:02Z",
+      "to": "2024-05-26T04:43:15Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-03T19:43:22Z",
+      "to": "2024-08-03T19:43:22Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-08-08T15:19:26Z",
+      "to": "2024-08-08T15:19:26Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-08T15:19:29Z",
+      "to": "2024-08-08T15:19:43Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-08-25T21:11:50Z",
+      "to": "2024-08-25T22:00:29Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-07T18:26:51Z",
+      "to": "2024-09-07T18:26:51Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-12-13T10:00:34Z",
+      "to": "2024-12-13T10:00:34Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-13T10:00:35Z",
+      "to": "2025-03-06T16:10:19Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-06T16:10:20Z",
+      "to": "2025-03-06T16:10:20Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-06T16:10:20Z",
+      "to": "2025-03-06T16:10:20Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-06T16:30:28Z",
+      "to": "2025-03-06T16:30:28Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-06T16:30:28Z",
+      "to": "2025-08-07T15:36:33Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-08-12T14:15:46Z",
+      "to": "2025-08-12T14:15:46Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-12T14:15:48Z",
+      "to": "2025-08-31T01:11:03Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-09-06T17:50:58Z",
+      "to": "2025-09-06T17:50:58Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-09-13T04:03:44Z",
+      "to": "2025-11-11T05:30:42Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-11-23T22:46:22Z",
+      "to": "2025-11-23T22:46:22Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-12-08T07:58:38Z",
+      "to": "2025-12-08T07:58:38Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-12-23T02:43:09Z",
+      "to": "2025-12-23T02:43:20Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-12-30T10:27:37Z",
+      "to": "2026-01-03T02:11:52Z"
+    },
+    {
+      "status": "308",
+      "from": "2026-01-03T02:15:39Z",
+      "to": "2026-01-03T02:15:39Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-01-07T19:24:13Z",
+      "to": "2026-06-18T06:49:21Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20230724025642/https://gogeviti.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260618064921/https://www.gogeviti.com/",
+  "snapshots": [
+    {
+      "timestamp": "2023-07-24T02:56:42Z",
+      "url": "https://gogeviti.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2023-10-30T12:05:27Z",
+      "url": "http://www.gogeviti.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-04-21T17:21:57Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "EEXR3AYR3MPOZWNCLVBVCFLHJBZMZFFM"
+    },
+    {
+      "timestamp": "2024-04-21T17:22:02Z",
+      "url": "http://www.gogeviti.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-05-26T04:43:15Z",
+      "url": "https://gogeviti.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2024-08-03T19:43:22Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "FCNQ2HN2TZPN374G7VABOEPJRAWC7MYF"
+    },
+    {
+      "timestamp": "2024-08-08T15:19:26Z",
+      "url": "http://gogeviti.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-08-08T15:19:26Z",
+      "url": "https://gogeviti.com/",
+      "status": "308",
+      "digest": "4TSSEOUEBHOB2X3GS5RNEWPHVT75XRSZ"
+    },
+    {
+      "timestamp": "2024-08-08T15:19:29Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "ZCCZSMEXNWRS55SJ7JENSIFVZWIDBVKX"
+    },
+    {
+      "timestamp": "2024-08-08T15:19:43Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "IA2OIGFZZIEMIFYBJ73UOZKJLAZSHKR5"
+    },
+    {
+      "timestamp": "2024-08-25T21:11:50Z",
+      "url": "http://gogeviti.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2024-08-25T22:00:29Z",
+      "url": "https://gogeviti.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2024-09-07T18:26:51Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "MGE5BW45BM6Y6SY2OIBWGT2ZRXGWYU34"
+    },
+    {
+      "timestamp": "2024-12-13T10:00:34Z",
+      "url": "http://gogeviti.com/",
+      "status": "301",
+      "digest": "UWIISECJ647T5FY7RZI5SDLFY46ZUDQ7"
+    },
+    {
+      "timestamp": "2024-12-13T10:00:35Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "TPAO6BGUEZAN24UCRX2TKVIGNDF5T7VQ"
+    },
+    {
+      "timestamp": "2024-12-15T18:42:51Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "EOKCGFQ4IQT4UU45VCUG5SPG5UBWWYM3"
+    },
+    {
+      "timestamp": "2025-01-09T04:36:34Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "FDW6VUJTJGCC7WZI56RPS7RODYGX6EIV"
+    },
+    {
+      "timestamp": "2025-01-16T07:44:12Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "NMIB2ZCWYV3JXTCZP52YP6EZLZESNQMO"
+    },
+    {
+      "timestamp": "2025-03-06T16:10:19Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "34KQADHLRNBRFGM2XFQP7QSOOJ4Y423D"
+    },
+    {
+      "timestamp": "2025-03-06T16:10:20Z",
+      "url": "http://www.gogeviti.com/",
+      "status": "301",
+      "digest": "7OEH5NJXIMUQWU66J25RO2WSYPLFHFEA"
+    },
+    {
+      "timestamp": "2025-03-06T16:10:20Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "342EENAPHDGH3OMBBAZC7IHMKODCEPCJ"
+    },
+    {
+      "timestamp": "2025-03-06T16:30:28Z",
+      "url": "http://gogeviti.com/",
+      "status": "301",
+      "digest": "UWIISECJ647T5FY7RZI5SDLFY46ZUDQ7"
+    },
+    {
+      "timestamp": "2025-03-06T16:30:28Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "OZXFVOBROXZ3CA65F3RFVL3VL2IFQ2OG"
+    },
+    {
+      "timestamp": "2025-03-06T16:30:28Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "XDTKYVCLZ742DO3TVIK5SPV4PZBC75WV"
+    },
+    {
+      "timestamp": "2025-03-24T17:00:09Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "BS7V3VQLDDKLRFKPL47JDP3L3H4GDF67"
+    },
+    {
+      "timestamp": "2025-04-04T22:46:46Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "23A47J2Q4ISM5PUNJSMLDDBPBQCD732X"
+    },
+    {
+      "timestamp": "2025-04-04T23:13:10Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "NL5TUWDKYNBFHXVS3NBK6HQA7RTZAT7T"
+    },
+    {
+      "timestamp": "2025-04-07T02:01:48Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "RTHSCCOT7QIFIUC2ZCLJH5OQQUQHJ2IV"
+    },
+    {
+      "timestamp": "2025-04-07T06:05:11Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "F4DBVKWTSN2XMGRH2RZV6RWMG4PY7SQV"
+    },
+    {
+      "timestamp": "2025-05-14T04:19:33Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "VN6EAKHRKL5XRNDOLK3QNUBRQCWY43RN"
+    },
+    {
+      "timestamp": "2025-06-22T17:44:55Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "OBFKT35WMOYVV2HTJXFWGGFU3KVFJR6T"
+    },
+    {
+      "timestamp": "2025-07-12T03:01:09Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "ZTWLBHBP76RZUX3N6EFT3VIAEOX2SIHT"
+    },
+    {
+      "timestamp": "2025-07-22T19:44:04Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "YK3WRRYHJHUZJXYF3GMFRZEPMFFCZXUO"
+    },
+    {
+      "timestamp": "2025-08-03T00:08:05Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "NXLP56JWKVRICORTDMS36TE7IHGMX6ZT"
+    },
+    {
+      "timestamp": "2025-08-07T15:36:33Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "ZWJXRHUI3VEAWQF7LYMX2MJ4LQ7EUIKK"
+    },
+    {
+      "timestamp": "2025-08-12T14:15:46Z",
+      "url": "http://gogeviti.com/",
+      "status": "301",
+      "digest": "UWIISECJ647T5FY7RZI5SDLFY46ZUDQ7"
+    },
+    {
+      "timestamp": "2025-08-12T14:15:48Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "HEYIW3IBA7Q7WNY26H6OA2VPUBIS6UZ3"
+    },
+    {
+      "timestamp": "2025-08-18T01:40:59Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "WDPVLE5HE2IE4W2KGM7MXOFZW4SKA4DC"
+    },
+    {
+      "timestamp": "2025-08-31T01:11:03Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "WFADGCGXBMNY63NTOPDXM26VX66CIQEX"
+    },
+    {
+      "timestamp": "2025-09-06T17:50:58Z",
+      "url": "http://gogeviti.com/",
+      "status": "301",
+      "digest": "UWIISECJ647T5FY7RZI5SDLFY46ZUDQ7"
+    },
+    {
+      "timestamp": "2025-09-13T04:03:44Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "MXARDEX5XHVB3GJOMKQKK2624RHZQHQ2"
+    },
+    {
+      "timestamp": "2025-09-15T17:36:21Z",
+      "url": "https://gogeviti.com/",
+      "status": "200",
+      "digest": "TK4KULY2IQM3JZBREU6MEBJFEJSCUBTC"
+    },
+    {
+      "timestamp": "2025-10-07T23:54:24Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "C5UU3Y56IDNSNRWYQDTZ3TR776MMZWPE"
+    },
+    {
+      "timestamp": "2025-10-14T22:52:58Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "SA2YWE6RPFWHPA343WERUAZ3CQQ2CSRQ"
+    },
+    {
+      "timestamp": "2025-10-14T23:02:38Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "2UINHMVIOPTN2SJU36MU5QVCSIQ2I2F4"
+    },
+    {
+      "timestamp": "2025-11-11T05:30:42Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "J43XSTE3FVDSAGRSKGMBN3NTAPQUHBCH"
+    },
+    {
+      "timestamp": "2025-11-23T22:46:22Z",
+      "url": "https://gogeviti.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-12-08T07:58:38Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "ESOJZMT2KUCQS3RRPLQHPXFH2PGYU7P6"
+    },
+    {
+      "timestamp": "2025-12-23T02:43:09Z",
+      "url": "http://gogeviti.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-12-23T02:43:20Z",
+      "url": "https://gogeviti.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-12-30T10:27:37Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "5BL72GUY56DK7M3D4GVCKRYZQRTFRDPQ"
+    },
+    {
+      "timestamp": "2026-01-03T02:11:52Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "TM56YTLPKG57JTIJ5PBN5GVE43XVEEJJ"
+    },
+    {
+      "timestamp": "2026-01-03T02:15:39Z",
+      "url": "https://gogeviti.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2026-01-07T19:24:13Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "ZK3YPIP2J7YVLJ6KPD7I7XATFSM6GBHV"
+    },
+    {
+      "timestamp": "2026-01-23T08:44:59Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "IMHWSKLDTNQGDTUAFLR3RMDLANVYVMKD"
+    },
+    {
+      "timestamp": "2026-02-12T16:13:54Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "J7AMJMXTN7J2UQ6YVLE3X4NVWQKPFKM3"
+    },
+    {
+      "timestamp": "2026-03-05T14:54:04Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "OJW3I3JRFA4ZWFJEGH5FGVBKI3KZ6UAY"
+    },
+    {
+      "timestamp": "2026-05-08T12:48:40Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "6JZ5KDFLPUKYVE3RR27NHMYOM65IKQGO"
+    },
+    {
+      "timestamp": "2026-06-18T06:49:21Z",
+      "url": "https://www.gogeviti.com/",
+      "status": "200",
+      "digest": "WCX6GKIDMYNUSEFDZPMAVEAQF67GBATH"
+    }
+  ]
+}

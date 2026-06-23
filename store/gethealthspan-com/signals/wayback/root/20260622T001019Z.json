@@ -1,0 +1,721 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:10:19Z",
+  "ok": true,
+  "input": {
+    "url": "https://gethealthspan.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2021-04-12T03:57:13Z",
+  "last_seen": "2026-04-06T04:14:45Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 1896,
+  "snapshot_count": 94,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2021-04-12T03:57:13Z",
+      "to": "2021-04-12T03:57:13Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-04-28T16:01:59Z",
+      "to": "2021-04-28T16:01:59Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-04-28T16:02:00Z",
+      "to": "2021-12-01T06:07:44Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-04T07:54:58Z",
+      "to": "2021-12-04T07:54:58Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-01-25T13:54:10Z",
+      "to": "2022-02-06T07:22:13Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-02-10T23:31:37Z",
+      "to": "2022-02-10T23:31:37Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-02-10T23:31:38Z",
+      "to": "2022-02-10T23:31:38Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-02-10T23:44:09Z",
+      "to": "2022-02-10T23:44:09Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-02-10T23:44:10Z",
+      "to": "2023-04-02T03:37:36Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-05-07T14:16:26Z",
+      "to": "2023-05-07T14:16:26Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-05-19T00:29:36Z",
+      "to": "2023-10-17T22:01:10Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-10-18T10:57:52Z",
+      "to": "2023-10-30T13:59:15Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-11-03T13:48:57Z",
+      "to": "2024-08-04T20:29:17Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-08-14T18:18:00Z",
+      "to": "2024-08-21T01:07:02Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-25T14:46:33Z",
+      "to": "2024-08-25T14:46:33Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-08-25T21:26:00Z",
+      "to": "2024-08-25T21:26:00Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-07T13:56:09Z",
+      "to": "2024-09-17T23:42:50Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-09-25T01:46:26Z",
+      "to": "2024-09-25T01:46:26Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-25T01:46:26Z",
+      "to": "2024-09-25T01:46:26Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-09-25T01:46:27Z",
+      "to": "2024-09-25T01:46:27Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-25T01:46:27Z",
+      "to": "2025-10-15T14:44:31Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-10-15T14:46:28Z",
+      "to": "2025-10-15T14:46:28Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-11-01T05:13:28Z",
+      "to": "2025-12-12T18:14:36Z"
+    },
+    {
+      "status": "307",
+      "from": "2025-12-31T19:28:59Z",
+      "to": "2025-12-31T19:28:59Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-12-31T19:29:00Z",
+      "to": "2026-02-17T11:13:24Z"
+    },
+    {
+      "status": "307",
+      "from": "2026-02-17T23:47:03Z",
+      "to": "2026-02-17T23:47:03Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-02-17T23:47:03Z",
+      "to": "2026-04-06T04:14:45Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20210412035713/https://gethealthspan.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260406041445/https://www.gethealthspan.com/",
+  "snapshots": [
+    {
+      "timestamp": "2021-04-12T03:57:13Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "CS24ZBBZPPBRYI5M6D3VTDQPK5MDSYGQ"
+    },
+    {
+      "timestamp": "2021-04-28T16:01:59Z",
+      "url": "http://gethealthspan.com/",
+      "status": "301",
+      "digest": "YXXK7IVO22JVIC6NZQBCDFRU53NDIOR3"
+    },
+    {
+      "timestamp": "2021-04-28T16:02:00Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "SN3SGGPLBNAUFCSF7ERAZIS3CV63JX4H"
+    },
+    {
+      "timestamp": "2021-12-01T06:07:44Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "BNVQC6EFAP7PFW77MLKPIJZTR7EK2A6I"
+    },
+    {
+      "timestamp": "2021-12-04T07:54:58Z",
+      "url": "http://gethealthspan.com/",
+      "status": "301",
+      "digest": "YXXK7IVO22JVIC6NZQBCDFRU53NDIOR3"
+    },
+    {
+      "timestamp": "2022-01-25T13:54:10Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "BNVQC6EFAP7PFW77MLKPIJZTR7EK2A6I"
+    },
+    {
+      "timestamp": "2022-02-06T07:22:13Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "4P2M7HT7OEYQG5CCQFG6CILFXGYOBW74"
+    },
+    {
+      "timestamp": "2022-02-10T23:31:37Z",
+      "url": "http://gethealthspan.com/",
+      "status": "301",
+      "digest": "YXXK7IVO22JVIC6NZQBCDFRU53NDIOR3"
+    },
+    {
+      "timestamp": "2022-02-10T23:31:38Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "4P2M7HT7OEYQG5CCQFG6CILFXGYOBW74"
+    },
+    {
+      "timestamp": "2022-02-10T23:44:09Z",
+      "url": "http://gethealthspan.com/",
+      "status": "301",
+      "digest": "YXXK7IVO22JVIC6NZQBCDFRU53NDIOR3"
+    },
+    {
+      "timestamp": "2022-02-10T23:44:10Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "4P2M7HT7OEYQG5CCQFG6CILFXGYOBW74"
+    },
+    {
+      "timestamp": "2022-03-01T18:38:24Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "LI7MQN4UUBQ2T4WPDQ742ZXDH5BKEKZD"
+    },
+    {
+      "timestamp": "2022-08-17T05:06:51Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "ZSXW7P5CL2SEH4OKW5STVHLXA4SIPWPI"
+    },
+    {
+      "timestamp": "2022-11-27T15:07:30Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "PCRL2Q5AQZ3AXNC3OGFZFA6XYBHPGAVE"
+    },
+    {
+      "timestamp": "2023-01-02T20:01:04Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "DOX5KCO3D2A6CUFVCENHCQBOKFHARF3B"
+    },
+    {
+      "timestamp": "2023-02-05T20:15:18Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "XJX4BFCT2TUFGYQ76US5BXFQTFHQRRPH"
+    },
+    {
+      "timestamp": "2023-03-24T15:33:29Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "5FTK2A3KQA25HC3OQQZQSHHU6NULP2WJ"
+    },
+    {
+      "timestamp": "2023-04-02T03:37:36Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "IVPCRUZRNNQGZK6LI6Y5HTVUDO4B2HOH"
+    },
+    {
+      "timestamp": "2023-05-07T14:16:26Z",
+      "url": "http://gethealthspan.com/",
+      "status": "301",
+      "digest": "YXXK7IVO22JVIC6NZQBCDFRU53NDIOR3"
+    },
+    {
+      "timestamp": "2023-05-19T00:29:36Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "37BESKWA7AXBTYR2M2BBTLDLFQFLEE4N"
+    },
+    {
+      "timestamp": "2023-06-04T17:30:36Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "Y6OZ46KDCCBLBFAENDERUNB3E6NJEYYO"
+    },
+    {
+      "timestamp": "2023-07-02T14:36:30Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "2NDJMLXPMJDBR3UD3I63XLJYDNE7HUDM"
+    },
+    {
+      "timestamp": "2023-08-06T15:14:41Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "XCTESOMOSRUFMGHHPUXRLEWT2HUQEXQV"
+    },
+    {
+      "timestamp": "2023-09-22T01:13:20Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "Q4WE454EUG7W4JJI6FRWPLM7IV7EQ2F3"
+    },
+    {
+      "timestamp": "2023-10-17T22:01:10Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "Q3GZP7NNXIAGR3J55JWU4HZZCPGYRV2C"
+    },
+    {
+      "timestamp": "2023-10-18T10:57:52Z",
+      "url": "http://gethealthspan.com/",
+      "status": "301",
+      "digest": "YXXK7IVO22JVIC6NZQBCDFRU53NDIOR3"
+    },
+    {
+      "timestamp": "2023-10-30T13:59:15Z",
+      "url": "http://www.gethealthspan.com/",
+      "status": "301",
+      "digest": "LSCZLAO6XNJO75RAKTINBBJLZ2L2XSNW"
+    },
+    {
+      "timestamp": "2023-11-03T13:48:57Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "CMTHPAS4SJ77IH4GTZ23MXTIDPHCQ6EJ"
+    },
+    {
+      "timestamp": "2023-12-02T02:04:31Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "TIAZOY2PATYY4YSAG6USR7G5ZRT7HARA"
+    },
+    {
+      "timestamp": "2023-12-07T19:42:46Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "L64SOFM6D2XESTCLVVQMWIYHXXUNEEWJ"
+    },
+    {
+      "timestamp": "2024-01-07T08:07:03Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "BIUK3KT2Q5RWAKCTHNMWQK5NMOAWCJ6W"
+    },
+    {
+      "timestamp": "2024-01-25T16:08:56Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "BMJPCR525MQ2HYVP67HQMCQG7H4BX3H5"
+    },
+    {
+      "timestamp": "2024-02-05T01:06:34Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "GEWQ5LABB62G4S7DF5IAKBXGSFZJSEAV"
+    },
+    {
+      "timestamp": "2024-03-05T13:47:09Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "S37YNYG6ZDTYNSKYWZMVLR2CRTD3DEXU"
+    },
+    {
+      "timestamp": "2024-03-27T17:52:27Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "EDS2XVEQRXCJPEHGQRJF55G64GW3V2WU"
+    },
+    {
+      "timestamp": "2024-04-03T17:50:56Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "42YPOEUFB5ZE6KT6HBOMGYYAD7SDCTDY"
+    },
+    {
+      "timestamp": "2024-04-16T23:16:02Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "UDSOD4XFV2B626IQL7L4VV7D63OAFRZD"
+    },
+    {
+      "timestamp": "2024-04-28T15:09:56Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "I6OIP2A5KGB6UZTUOTFFGWPOKUNHNRIK"
+    },
+    {
+      "timestamp": "2024-05-04T23:28:41Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "7E5AGV4JOQXLHU6ML6BYC3LN2635WYJC"
+    },
+    {
+      "timestamp": "2024-05-22T17:21:05Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "A6BAIE2EBAD6DFPPYHNPQQIAI3ZB6ZKX"
+    },
+    {
+      "timestamp": "2024-06-02T04:12:30Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "2NTGEKIXIGDXDAPY54ID2AKHRFQ4R76D"
+    },
+    {
+      "timestamp": "2024-06-25T08:18:58Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "WXAQEA4RNSM26CO656QOHGAVMYTCLPEN"
+    },
+    {
+      "timestamp": "2024-07-18T07:46:18Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "RQ7H2TLN5QHNPRGYQSVI6WKXHVK6776R"
+    },
+    {
+      "timestamp": "2024-08-04T20:29:17Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "Y3IKVRM545USVNTZSJJYHRRMBX63PGJW"
+    },
+    {
+      "timestamp": "2024-08-14T18:18:00Z",
+      "url": "https://gethealthspan.com/",
+      "status": "-",
+      "digest": "IKHH52GUZ3AGCS27HCSPPRYJ3XH2MJ5V"
+    },
+    {
+      "timestamp": "2024-08-20T01:47:35Z",
+      "url": "https://gethealthspan.com/",
+      "status": "-",
+      "digest": "T75IH37NCVPGXN76GXLXJVLY6D6OFB4K"
+    },
+    {
+      "timestamp": "2024-08-21T01:07:02Z",
+      "url": "https://gethealthspan.com/",
+      "status": "-",
+      "digest": "5DNC23NJDK4CXSW6T3Y2TW7QMXUOIFQU"
+    },
+    {
+      "timestamp": "2024-08-25T14:46:33Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "OGS33YCM4PC5JHYVVYTT32P5SUL2O56F"
+    },
+    {
+      "timestamp": "2024-08-25T21:26:00Z",
+      "url": "http://gethealthspan.com/",
+      "status": "-",
+      "digest": "WMCR2F5G5SGJ4FTL6CNGFNECMGVYNFL3"
+    },
+    {
+      "timestamp": "2024-09-07T13:56:09Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "ZOWG4MYTUYQG6RAVNPV746RTETNSBUPW"
+    },
+    {
+      "timestamp": "2024-09-17T23:42:50Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "5CQ2JBLNHAFMFSPGCWTERRCV744OZMRQ"
+    },
+    {
+      "timestamp": "2024-09-25T01:46:26Z",
+      "url": "http://gethealthspan.com/",
+      "status": "-",
+      "digest": "WMCR2F5G5SGJ4FTL6CNGFNECMGVYNFL3"
+    },
+    {
+      "timestamp": "2024-09-25T01:46:26Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "QAEOHSXSKRPKJBWUNTD422J56HIQUMN4"
+    },
+    {
+      "timestamp": "2024-09-25T01:46:27Z",
+      "url": "http://gethealthspan.com/",
+      "status": "-",
+      "digest": "WMCR2F5G5SGJ4FTL6CNGFNECMGVYNFL3"
+    },
+    {
+      "timestamp": "2024-09-25T01:46:27Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "QAEOHSXSKRPKJBWUNTD422J56HIQUMN4"
+    },
+    {
+      "timestamp": "2024-10-15T00:59:13Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "NGQVGSPPMMBYHIU5VG2QM6GHSSYDETL3"
+    },
+    {
+      "timestamp": "2024-11-03T20:16:29Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "M5X7GVNZDHX6VBFMCJYQGGIJLQLTN7EO"
+    },
+    {
+      "timestamp": "2024-11-19T09:23:41Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "OPMEZKM2AZXX3KZLI5A75WMKYHVBGKZQ"
+    },
+    {
+      "timestamp": "2024-12-09T22:45:06Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "DFCIZKSSUK5KOWHVV6NIEHOWUARC7QY5"
+    },
+    {
+      "timestamp": "2024-12-27T06:42:18Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "SGQEC2Q2XKQ734WLAPJNA57U3NE7SK6E"
+    },
+    {
+      "timestamp": "2025-01-08T19:42:35Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "5RN6NSNEHSXZJN6HYUFNEQPXRIZWKNSM"
+    },
+    {
+      "timestamp": "2025-02-10T22:28:19Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "R4667XV4OMKK5FDBQUDS7WZ2FFNC6JSZ"
+    },
+    {
+      "timestamp": "2025-02-16T05:11:36Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "BGV3EPEEO5SZ2Z65DLWMODZZXIWZ267O"
+    },
+    {
+      "timestamp": "2025-03-09T20:35:10Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "ZZU7IJRM6YS76QCFPQH4LKFJP4H3ITVG"
+    },
+    {
+      "timestamp": "2025-03-17T14:29:57Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "YXGAVYKMP2GLXZ5MTCBUE32NM6K5MPZR"
+    },
+    {
+      "timestamp": "2025-04-01T19:55:18Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "NDHK4DMUFGSXNJOAFKQKWZYZHQLKDPMJ"
+    },
+    {
+      "timestamp": "2025-04-17T15:03:55Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "URAKGBBL5XJAYXISSQ4HK7T4E2IVI6CE"
+    },
+    {
+      "timestamp": "2025-05-11T09:34:09Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "AOD2XIO4SJV7SMVYQMILK7SSSXXWYZUD"
+    },
+    {
+      "timestamp": "2025-06-13T00:41:11Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "D2YVUQ5SR3EE7YT5WFDISYYHFILFCZPC"
+    },
+    {
+      "timestamp": "2025-06-25T08:24:11Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "MAZQZJAV6RZ6X2HN7SMF6DPOMFTG4JTC"
+    },
+    {
+      "timestamp": "2025-07-08T17:29:03Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "O6RDNLRTB42ACOW5OXDHOTVQIE4ED375"
+    },
+    {
+      "timestamp": "2025-08-05T23:02:35Z",
+      "url": "https://gethealthspan.com/",
+      "status": "200",
+      "digest": "KGTW7JWQPCGGPVNNKT4DEHGCKKWSASM2"
+    },
+    {
+      "timestamp": "2025-09-10T03:07:09Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "7TGB4DFS5FCXSJXKMDGML3C3R4J6SR5J"
+    },
+    {
+      "timestamp": "2025-09-14T08:26:30Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "EZRMMDOHLHEPTWDYUVCEFG7JDBLRUG6H"
+    },
+    {
+      "timestamp": "2025-10-07T21:45:09Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "GPRQ3EVAGUQUVJQT6MS3JABQKQQI2NIM"
+    },
+    {
+      "timestamp": "2025-10-14T00:16:05Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "G4HSTEDU7YNPRT56WG255AO6R7RNBPEX"
+    },
+    {
+      "timestamp": "2025-10-15T01:46:56Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "VCJD5VX6T75GAOXTGI5SUWO32COSPLUO"
+    },
+    {
+      "timestamp": "2025-10-15T14:44:31Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "2T4ANT5T7UFZ73WR2FMPOURI7G6IDCVW"
+    },
+    {
+      "timestamp": "2025-10-15T14:46:28Z",
+      "url": "http://www.gethealthspan.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-11-01T05:13:28Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "BTNC34JX5C5IXKPKHG4HSTU3UDBTGZWJ"
+    },
+    {
+      "timestamp": "2025-11-10T17:25:21Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "TYHIP7VI4RDZNGREW6LZ6OT3VXNDYTSK"
+    },
+    {
+      "timestamp": "2025-11-15T14:34:21Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "VOIJILLA2H6E5AVTOWX6WNTBBYKZRLKU"
+    },
+    {
+      "timestamp": "2025-12-06T11:12:15Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "SSRVEMEMW5N2JPCFBHAFUF6J43RBMZOZ"
+    },
+    {
+      "timestamp": "2025-12-12T18:14:36Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "VG3A4WRVSWLE76HLVS4E4VOI7QMHQ24B"
+    },
+    {
+      "timestamp": "2025-12-31T19:28:59Z",
+      "url": "https://gethealthspan.com/",
+      "status": "307",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-12-31T19:29:00Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "7T3GYR43XNGOYZDCKC6PZ775I65F63H5"
+    },
+    {
+      "timestamp": "2026-01-02T13:03:53Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "XU43UMSXQE3P47LLGGY2BYLJPG7VG6MS"
+    },
+    {
+      "timestamp": "2026-01-12T16:53:45Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "2YUVQA45UXVJKEH6IWQ7RUBO3L5PNAGW"
+    },
+    {
+      "timestamp": "2026-02-01T17:14:27Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "NNTJLSWFDFDKIGIOFQROSCRSAYY6XTOQ"
+    },
+    {
+      "timestamp": "2026-02-17T11:13:24Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "C5BMYZSFGOEYUMVW44AODVTNP6JM3KQQ"
+    },
+    {
+      "timestamp": "2026-02-17T23:47:03Z",
+      "url": "https://gethealthspan.com/",
+      "status": "307",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2026-02-17T23:47:03Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "WLRYZTA5FOOGGEAKSYEGTKMO6JJ5GXQO"
+    },
+    {
+      "timestamp": "2026-03-10T06:03:41Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "5XJQ7FTCULPRTWDK62AXYPULIUXGBQ32"
+    },
+    {
+      "timestamp": "2026-04-06T04:14:45Z",
+      "url": "https://www.gethealthspan.com/",
+      "status": "200",
+      "digest": "IAFHGDAPDCNSR3KB2SOUOTNVPZ6GX2QH"
+    }
+  ]
+}

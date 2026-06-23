@@ -1,0 +1,551 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:18:29Z",
+  "ok": true,
+  "input": {
+    "url": "https://joiandblokes.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2024-03-21T09:29:07Z",
+  "last_seen": "2026-05-15T03:57:01Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 822,
+  "snapshot_count": 79,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2024-03-21T09:29:07Z",
+      "to": "2024-03-21T09:29:07Z"
+    },
+    {
+      "status": "401",
+      "from": "2025-03-25T00:37:12Z",
+      "to": "2025-03-25T00:37:12Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-24T04:18:36Z",
+      "to": "2025-05-27T18:21:48Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-05-28T00:12:57Z",
+      "to": "2025-05-28T00:12:57Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-05-28T07:35:55Z",
+      "to": "2025-07-08T23:02:54Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-07-10T01:08:06Z",
+      "to": "2025-07-10T01:08:06Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-01T11:32:52Z",
+      "to": "2026-01-04T15:59:08Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-01-06T16:57:16Z",
+      "to": "2026-01-06T16:57:16Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-01-06T17:30:24Z",
+      "to": "2026-01-06T17:30:24Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-01-07T10:11:07Z",
+      "to": "2026-01-07T10:11:07Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-01-13T00:09:21Z",
+      "to": "2026-05-15T03:57:01Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20240321092907/https://joiandblokes.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260515035701/https://joiandblokes.com/",
+  "snapshots": [
+    {
+      "timestamp": "2024-03-21T09:29:07Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "7HMQKXUYPBZDUEQGHND5JINF6WGD5MPJ"
+    },
+    {
+      "timestamp": "2025-03-25T00:37:12Z",
+      "url": "https://joiandblokes.com/",
+      "status": "401",
+      "digest": "K6Z4IYMZZGOGUPTEIKRRKGNQS4JGYYP4"
+    },
+    {
+      "timestamp": "2025-04-24T04:18:36Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "7GGH3P3XB7Y6RBOGBTM46DJ6GOUGCBEH"
+    },
+    {
+      "timestamp": "2025-04-24T05:40:33Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "AP4Q2YMC2T6YKGYZW4LYXDYHGQMJGCWS"
+    },
+    {
+      "timestamp": "2025-04-25T17:44:26Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "IQXJO26A7BFZUQFDCL522MNNSRZVG4W3"
+    },
+    {
+      "timestamp": "2025-04-29T23:20:45Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "ZZ5MH572OLSQJA2GPODR2W4YFUIG6OEP"
+    },
+    {
+      "timestamp": "2025-05-12T20:22:09Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "P7RXWNQZJT3VUP2AEE5UKNH6QB3YUHZU"
+    },
+    {
+      "timestamp": "2025-05-13T01:12:17Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "L4NE4DQLHTDPEGEVTXHIVD5SVT7COV4I"
+    },
+    {
+      "timestamp": "2025-05-13T23:30:34Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "VJYVI2PZCCIMS6IFIGPX3RCVR6KC3EGW"
+    },
+    {
+      "timestamp": "2025-05-13T23:50:02Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "TG7UKSQKETHKTDMMMDWJAWG7UW6AQ4BS"
+    },
+    {
+      "timestamp": "2025-05-15T18:16:22Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "GIIFIXXA4RFGCP63ZGHEOQSWE4GW64YP"
+    },
+    {
+      "timestamp": "2025-05-18T12:28:05Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "66BSX27R6G6QJWDRC2S52HD66WK2E533"
+    },
+    {
+      "timestamp": "2025-05-23T07:20:54Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "GGFIUDQEHBUFDWICOINSSMPY76G5LGMI"
+    },
+    {
+      "timestamp": "2025-05-27T18:21:48Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "V6EVTTNYX3TIUVKR6D6PTBC3536TCTBQ"
+    },
+    {
+      "timestamp": "2025-05-28T00:12:57Z",
+      "url": "http://joiandblokes.com/",
+      "status": "301",
+      "digest": "XBMMWKBGC75QSVWZMAQVZDUE2HGPSCOG"
+    },
+    {
+      "timestamp": "2025-05-28T07:35:55Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "XPZCC3LNQYGZNIBHSCKYJT3XUTG3FIEY"
+    },
+    {
+      "timestamp": "2025-06-13T02:17:45Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "IFMSQ3C7SFBO3GPLM5HUJKLEMQU36HGF"
+    },
+    {
+      "timestamp": "2025-06-17T09:48:53Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "WCHW6K74G4SWVWOKYGLVW7XTDRT7PLKK"
+    },
+    {
+      "timestamp": "2025-06-20T13:41:05Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "AGLZPDC6A2KX5VKAW25JJUPH6XRH5OZI"
+    },
+    {
+      "timestamp": "2025-06-23T14:44:36Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "KXTMU377JXF5XDUOBVGD2HOB4CCGVDJL"
+    },
+    {
+      "timestamp": "2025-07-03T09:30:10Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "MVBZ77T3TJMXP6CWSKEPOA7PRXJTTDZP"
+    },
+    {
+      "timestamp": "2025-07-08T04:20:38Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "WB7BKP5RLYWYGITOAX75BYMTAHHJ4G3K"
+    },
+    {
+      "timestamp": "2025-07-08T23:02:54Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "OQNSUAK3GH3GO3LXR6YCHWWT3KZW6YPW"
+    },
+    {
+      "timestamp": "2025-07-10T01:08:06Z",
+      "url": "http://joiandblokes.com/",
+      "status": "301",
+      "digest": "XBMMWKBGC75QSVWZMAQVZDUE2HGPSCOG"
+    },
+    {
+      "timestamp": "2025-08-01T11:32:52Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "ZSSSINLSWSYKR6KRJ4DJPUMOTC5PZIEB"
+    },
+    {
+      "timestamp": "2025-08-04T05:55:17Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "ZTIIWNSQLS6TSSMOQIICCM2Y674U7LN4"
+    },
+    {
+      "timestamp": "2025-08-07T05:55:37Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "ZX23HYWYFVLYNCLYTHD6AUXLCDBO36XM"
+    },
+    {
+      "timestamp": "2025-08-08T01:13:15Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "6ERTISGUHUP3UQ45PNU33QDWSA3DYPGA"
+    },
+    {
+      "timestamp": "2025-08-08T11:32:42Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "BZVB4VW5QOPZCAF3GBBK7NETVLRBVR6V"
+    },
+    {
+      "timestamp": "2025-08-11T01:31:08Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "CINMLMYIU5C73LT5D5FP4ZBUEVPWXDI3"
+    },
+    {
+      "timestamp": "2025-08-12T20:40:44Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "EA4KGJ2N5ZPKAOXTIUABHS5EKNLTKAIH"
+    },
+    {
+      "timestamp": "2025-08-13T06:51:05Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "JYPQTJCANTZ3WJCV2NKA5VXQKDWSYRZP"
+    },
+    {
+      "timestamp": "2025-08-13T13:00:18Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "M4GDRKASCMSKCQP2J4XYACNU5GN7FSCX"
+    },
+    {
+      "timestamp": "2025-08-14T02:01:45Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "O2HKBIWBL55V56CKIL2UAWHPW3JIK66K"
+    },
+    {
+      "timestamp": "2025-08-17T10:27:37Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "6E5VHCFFUB63LTBQRPQ2DQMM32OXHK4U"
+    },
+    {
+      "timestamp": "2025-08-17T22:23:02Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "PZ7A5BMAPKF5BN5YYFBTEKTBWJLEOVB3"
+    },
+    {
+      "timestamp": "2025-08-18T02:33:26Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "EU4BUV52QEBVEVJ3ODF2HMCRQCG725TP"
+    },
+    {
+      "timestamp": "2025-08-18T09:13:26Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "L63MVJAP6FIVHMGXVH7TUYMAJ7SGUR3U"
+    },
+    {
+      "timestamp": "2025-08-18T21:56:39Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "A4MYOLFJNDTHSQCJKFT36NMOSIKN7DAO"
+    },
+    {
+      "timestamp": "2025-08-24T03:22:03Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "RG4JXEHCEQRVWHBVFHQCJLE3AEAVQSMQ"
+    },
+    {
+      "timestamp": "2025-09-05T22:07:29Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "O3NEFWYF5W3BUEYOBQKLHJJNHFDDE6V4"
+    },
+    {
+      "timestamp": "2025-09-06T15:10:57Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "KRUSG3ECAYFWFLHW6P5UJQBH6OD76LQ4"
+    },
+    {
+      "timestamp": "2025-09-08T08:54:00Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "VKYWHMJI3EA44WOKSNKVKLJCQ6Q4SQ63"
+    },
+    {
+      "timestamp": "2025-09-08T19:36:29Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "JL7T43J2UGYLYA5GQVM72P7GGFQTE6IX"
+    },
+    {
+      "timestamp": "2025-09-09T15:52:11Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "WOQ7GAM34PUUY2CIUK6A6BHGBPCBYXMD"
+    },
+    {
+      "timestamp": "2025-10-01T10:48:26Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "UJUMGN5HTGGXSVVTIHLXAKRHTQ7OEQ7N"
+    },
+    {
+      "timestamp": "2025-10-07T12:31:36Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "POXU66YCUHTE7UCQFEANDQASUADOTKXT"
+    },
+    {
+      "timestamp": "2025-10-12T01:18:22Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "IWO2ZTI4BV5TBY2I2AAGTOHSEGJBPQP6"
+    },
+    {
+      "timestamp": "2025-10-14T04:26:41Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "GBU47QHVSSVYSYNF5RCR5R44IIDWJOSL"
+    },
+    {
+      "timestamp": "2025-11-10T23:02:19Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "VVIVYCJM7K3LGFJ5E7PPDEKILK7X43IO"
+    },
+    {
+      "timestamp": "2025-11-13T08:01:54Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "YQMS2ILFQQCBAEXV3GSO4OLFUPYJI7T7"
+    },
+    {
+      "timestamp": "2025-11-25T08:08:51Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "AYGBYAAIG5ANJNYOWM3CN3BSKW4ICWW5"
+    },
+    {
+      "timestamp": "2025-11-29T22:38:27Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "6I25VPJWLPZHJ7ZUYXTDSRJMXKEK34P5"
+    },
+    {
+      "timestamp": "2025-12-07T00:03:31Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "NPG4KORSCTBHHJ5XDWUPVRPKJRHH6J4A"
+    },
+    {
+      "timestamp": "2025-12-10T23:37:54Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "2PIFGLXAVBKOIBDMRSO5YKH5JYDGFWIU"
+    },
+    {
+      "timestamp": "2025-12-14T08:04:37Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "PBIB3YDIUVR6JHQWZZUHO5BQWN7GHEYC"
+    },
+    {
+      "timestamp": "2025-12-17T04:47:46Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "GQUSYHKX5XLZQPSTQCI2F7JUQHZBOCYR"
+    },
+    {
+      "timestamp": "2025-12-18T02:44:52Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "FGRQXNIAIGZOCZ4VS7GRW75RJ4IUX4JI"
+    },
+    {
+      "timestamp": "2026-01-04T09:54:25Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "42KHCN743N2JSVAT4TGX57AULR6AFUE4"
+    },
+    {
+      "timestamp": "2026-01-04T15:59:08Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "K6KT2QJYIOK6ZFTRV5N4TQS23IPWI5DU"
+    },
+    {
+      "timestamp": "2026-01-06T16:57:16Z",
+      "url": "https://www.joiandblokes.com/",
+      "status": "301",
+      "digest": "XBMMWKBGC75QSVWZMAQVZDUE2HGPSCOG"
+    },
+    {
+      "timestamp": "2026-01-06T17:30:24Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "VXZCGHHHFR3X73ADRNXSPBTMIFZDBVKG"
+    },
+    {
+      "timestamp": "2026-01-07T10:11:07Z",
+      "url": "https://www.joiandblokes.com/",
+      "status": "301",
+      "digest": "XBMMWKBGC75QSVWZMAQVZDUE2HGPSCOG"
+    },
+    {
+      "timestamp": "2026-01-13T00:09:21Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "X5ORNLOVE4UX2KWWIFFIJDMKLC22JZH5"
+    },
+    {
+      "timestamp": "2026-01-19T10:56:35Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "G3V2PKUOWI2MSPEVGVM2CGHNFWEKTNIC"
+    },
+    {
+      "timestamp": "2026-01-25T11:43:56Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "4XMN3G4O5CCZFTUBTYA3L3P2ZCJYY5JO"
+    },
+    {
+      "timestamp": "2026-02-07T00:58:19Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "ZWF3HPPCNBENPKA36LXEWIKFY4WJTRRJ"
+    },
+    {
+      "timestamp": "2026-02-07T11:31:33Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "UIKW2YDXAPVJJ23D3MFMR5JHH4JKD2FA"
+    },
+    {
+      "timestamp": "2026-02-15T10:28:11Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "HCE6OYCXNCGFPUYYDRRRVAWZ2PPZRCBA"
+    },
+    {
+      "timestamp": "2026-02-16T05:43:38Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "5UQWUQEL6GNUJBIM5MVJ5B5NX4NJ3XB5"
+    },
+    {
+      "timestamp": "2026-03-08T03:42:19Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "DOQIIOH3W4XCKFQ6MNWVW6X5NS2AFM2M"
+    },
+    {
+      "timestamp": "2026-03-11T12:53:02Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "DACCMNK7AYQI6RW2YQEUROX7XFFXAHUT"
+    },
+    {
+      "timestamp": "2026-03-17T00:14:26Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "CQMLTTVRJDR5UAURWFKZGE4AETQODXDT"
+    },
+    {
+      "timestamp": "2026-03-17T05:46:28Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "JJ2ZRBYK7ZXAX76XCJQ7ZF2BC6ZNPIE7"
+    },
+    {
+      "timestamp": "2026-04-12T13:13:18Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "QFL7SFFRNR5EGLZC5G76BR6FGHTUX2R4"
+    },
+    {
+      "timestamp": "2026-04-13T10:28:20Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "RIHEES4QAIH24RAWYKIHFGJO2TVGVJNS"
+    },
+    {
+      "timestamp": "2026-04-27T18:16:50Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "EJXCL5UXFEGCYMI2ZIXVWK2S75E4DUVY"
+    },
+    {
+      "timestamp": "2026-04-27T18:32:53Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "NCZCCGD3EEMKXN6LG6YH7AEUGC36C6FG"
+    },
+    {
+      "timestamp": "2026-05-15T03:57:01Z",
+      "url": "https://joiandblokes.com/",
+      "status": "200",
+      "digest": "XMIE5IRXSMMJG2R5VHZ542FF2JKWYO5C"
+    }
+  ]
+}

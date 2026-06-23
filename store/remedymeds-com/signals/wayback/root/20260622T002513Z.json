@@ -1,0 +1,777 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:25:13Z",
+  "ok": true,
+  "input": {
+    "url": "https://remedymeds.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2004-06-02T15:13:23Z",
+  "last_seen": "2026-05-30T17:07:26Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 8054,
+  "snapshot_count": 90,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2004-06-02T15:13:23Z",
+      "to": "2011-02-02T18:32:01Z"
+    },
+    {
+      "status": "301",
+      "from": "2013-06-15T17:22:23Z",
+      "to": "2013-06-15T17:22:23Z"
+    },
+    {
+      "status": "200",
+      "from": "2017-09-16T18:24:25Z",
+      "to": "2019-05-13T00:41:01Z"
+    },
+    {
+      "status": "302",
+      "from": "2021-04-15T20:49:05Z",
+      "to": "2021-12-15T13:54:48Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-05-03T05:09:44Z",
+      "to": "2024-05-03T05:09:44Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-05-03T05:09:51Z",
+      "to": "2024-05-03T05:09:51Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-19T23:45:51Z",
+      "to": "2024-07-07T22:06:01Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-07-07T23:38:31Z",
+      "to": "2024-07-07T23:38:31Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-07-14T02:27:10Z",
+      "to": "2024-07-14T02:27:10Z"
+    },
+    {
+      "status": "403",
+      "from": "2024-07-22T15:03:26Z",
+      "to": "2024-07-22T15:03:26Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-07-22T15:04:03Z",
+      "to": "2024-07-22T15:04:03Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-07-26T19:36:14Z",
+      "to": "2024-07-26T19:36:14Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-07-26T19:36:46Z",
+      "to": "2024-07-26T19:36:46Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-10T13:29:06Z",
+      "to": "2024-08-29T12:13:15Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-08-29T16:12:02Z",
+      "to": "2024-08-29T16:12:02Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-19T15:05:25Z",
+      "to": "2024-11-04T02:48:51Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-12-25T06:44:34Z",
+      "to": "2024-12-25T06:44:34Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-19T19:32:31Z",
+      "to": "2025-01-26T17:17:01Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-03T17:34:53Z",
+      "to": "2025-02-03T17:34:53Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-03T17:34:55Z",
+      "to": "2025-02-20T06:11:15Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-22T09:40:26Z",
+      "to": "2025-02-22T09:40:26Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-22T09:40:26Z",
+      "to": "2025-02-22T10:03:46Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-04T14:02:20Z",
+      "to": "2025-03-04T14:02:20Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-12T22:30:56Z",
+      "to": "2025-03-21T18:14:16Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-03-28T09:53:57Z",
+      "to": "2025-03-28T09:53:57Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-28T09:53:57Z",
+      "to": "2025-05-12T21:12:37Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-07-11T22:31:15Z",
+      "to": "2025-07-11T22:31:15Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-07-14T00:39:20Z",
+      "to": "2025-07-15T03:38:33Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-08-22T16:13:39Z",
+      "to": "2025-08-22T16:13:39Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-09-03T18:11:58Z",
+      "to": "2025-09-03T18:11:58Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-09-03T18:12:31Z",
+      "to": "2025-09-03T18:12:31Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-09-05T21:10:44Z",
+      "to": "2025-12-21T22:06:51Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-12-21T22:06:51Z",
+      "to": "2025-12-21T22:06:51Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-01-07T01:11:57Z",
+      "to": "2026-01-07T01:11:57Z"
+    },
+    {
+      "status": "308",
+      "from": "2026-01-07T01:11:57Z",
+      "to": "2026-01-07T01:11:57Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-01-08T23:34:41Z",
+      "to": "2026-03-06T05:49:04Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-03-11T11:26:47Z",
+      "to": "2026-03-11T11:26:47Z"
+    },
+    {
+      "status": "308",
+      "from": "2026-03-11T11:26:47Z",
+      "to": "2026-03-11T11:26:47Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-03-12T10:35:20Z",
+      "to": "2026-03-13T14:01:45Z"
+    },
+    {
+      "status": "308",
+      "from": "2026-03-20T01:56:19Z",
+      "to": "2026-03-20T01:56:19Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-03-24T20:03:56Z",
+      "to": "2026-05-06T19:57:02Z"
+    },
+    {
+      "status": "308",
+      "from": "2026-05-08T21:20:44Z",
+      "to": "2026-05-08T21:20:44Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-05-08T21:21:11Z",
+      "to": "2026-05-30T17:07:26Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20040602151323/http://remedymeds.com:80/",
+  "last_snapshot_url": "https://web.archive.org/web/20260530170726/https://remedymeds.com/",
+  "snapshots": [
+    {
+      "timestamp": "2004-06-02T15:13:23Z",
+      "url": "http://remedymeds.com:80/",
+      "status": "200",
+      "digest": "6OU2WD5W4H4OCXHCXMXHGIVF2I7EN6VK"
+    },
+    {
+      "timestamp": "2011-02-02T18:32:01Z",
+      "url": "http://remedymeds.com/",
+      "status": "200",
+      "digest": "HMCS4YG3BCIYU3VDFZOSILRQSGSH5FW2"
+    },
+    {
+      "timestamp": "2013-06-15T17:22:23Z",
+      "url": "http://remedymeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2017-09-16T18:24:25Z",
+      "url": "http://remedymeds.com/",
+      "status": "200",
+      "digest": "5T32OHSFGKWIGFO5EIJ5ATL7O2QNJBMN"
+    },
+    {
+      "timestamp": "2018-08-06T03:31:14Z",
+      "url": "http://remedymeds.com/",
+      "status": "200",
+      "digest": "SCLQIOEB5CIHAFL6JII6PJ46KKOSLECB"
+    },
+    {
+      "timestamp": "2018-11-11T19:03:37Z",
+      "url": "http://remedymeds.com/",
+      "status": "200",
+      "digest": "QIVJCB332AYRXB25TSQ2EKUMIDKOD5PB"
+    },
+    {
+      "timestamp": "2019-05-13T00:41:01Z",
+      "url": "http://remedymeds.com/",
+      "status": "200",
+      "digest": "Q5HADLM6SZEED6J5S7G6MFPHBG646PG7"
+    },
+    {
+      "timestamp": "2021-04-15T20:49:05Z",
+      "url": "http://remedymeds.com/",
+      "status": "302",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2021-12-15T13:54:48Z",
+      "url": "http://remedymeds.com/",
+      "status": "302",
+      "digest": "TOZQPIIF5TRJ4FMTVHCSX7OOYL4J7R6Q"
+    },
+    {
+      "timestamp": "2024-05-03T05:09:44Z",
+      "url": "https://www.remedymeds.com/",
+      "status": "-",
+      "digest": "ASDLXV6GPBIT5C74REXHGJOZST4EKNR6"
+    },
+    {
+      "timestamp": "2024-05-03T05:09:51Z",
+      "url": "http://www.remedymeds.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-05-19T23:45:51Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "7OQQPIXVAGAU5VILKCLJQ7XCTDOVPW2B"
+    },
+    {
+      "timestamp": "2024-06-17T19:53:21Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "NAW4T35MWJWHKWD355F26A7PNSFDUM76"
+    },
+    {
+      "timestamp": "2024-07-07T22:06:01Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "7KNIROXRZRJAEF2CIDY3AKO4RJJGL2TE"
+    },
+    {
+      "timestamp": "2024-07-07T23:38:31Z",
+      "url": "http://remedymeds.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-07-14T02:27:10Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "JCO4EL7LELA47KU5YRUPEMLS4B5THAHF"
+    },
+    {
+      "timestamp": "2024-07-22T15:03:26Z",
+      "url": "https://www.remedymeds.com/",
+      "status": "403",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-07-22T15:04:03Z",
+      "url": "http://www.remedymeds.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-07-26T19:36:14Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "ENILZAOR4ROTG7HUM5LOZMJEHN3KWHKY"
+    },
+    {
+      "timestamp": "2024-07-26T19:36:46Z",
+      "url": "http://remedymeds.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-08-10T13:29:06Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "EHYV5MFPXDOBY5WPSP7TCCKZUY4ZUUGU"
+    },
+    {
+      "timestamp": "2024-08-29T12:13:15Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "76RWM63NAKIOK53BWRMMBH3G6PPR7VL6"
+    },
+    {
+      "timestamp": "2024-08-29T16:12:02Z",
+      "url": "http://remedymeds.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-09-19T15:05:25Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "CP42X3S4Z647GE5P6ZMVIYZM6EXTGI3L"
+    },
+    {
+      "timestamp": "2024-11-04T02:48:47Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "B74ZFPKAPU3O5OUN66OBTETYJWY3XNQ4"
+    },
+    {
+      "timestamp": "2024-11-04T02:48:51Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "MSOJPC2FDJ7CJFTSSKE34VE4WENSW5JC"
+    },
+    {
+      "timestamp": "2024-12-25T06:44:34Z",
+      "url": "http://remedymeds.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-01-19T19:32:31Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "2MIUVM5ENRAEJPWDUVNUQFFHLUK6AL3C"
+    },
+    {
+      "timestamp": "2025-01-22T07:38:12Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "QODZ74BCRWHSCGSLGXEGZL7Y444HW2D3"
+    },
+    {
+      "timestamp": "2025-01-26T17:17:01Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "442RG64RTLIRZHLN3X24TXPCPPI4CKYA"
+    },
+    {
+      "timestamp": "2025-02-03T17:34:53Z",
+      "url": "http://remedymeds.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-02-03T17:34:55Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "Z4NRLVWIY7BRG2FEDQU72LALZSK4SSRA"
+    },
+    {
+      "timestamp": "2025-02-13T03:33:28Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "SM4JIVBJMOKD46TWR74VVRHXDM33ZK35"
+    },
+    {
+      "timestamp": "2025-02-14T01:24:58Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "WXJ4BDEGE5UMT3SWFAFNH53U5DN343CL"
+    },
+    {
+      "timestamp": "2025-02-20T06:11:15Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "V5FEYYQEAOVHBRGCX73SAMHJUTIIXDEK"
+    },
+    {
+      "timestamp": "2025-02-22T09:40:26Z",
+      "url": "http://remedymeds.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-02-22T09:40:26Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "R7QVNL32PTFT3ZIDNI2F4N3FSCEOZ6UP"
+    },
+    {
+      "timestamp": "2025-02-22T10:03:46Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "3VXERABNVQQLK7X4GX3PWQ6MPGKVFUOO"
+    },
+    {
+      "timestamp": "2025-03-04T14:02:20Z",
+      "url": "http://remedymeds.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-03-12T22:30:56Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "AQJ4FD5UURH5TZDOQT2IJCMI44CDTGZL"
+    },
+    {
+      "timestamp": "2025-03-19T23:38:47Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "YAE4BZIMAMEBMUDG26HUKT3KJNTFCC63"
+    },
+    {
+      "timestamp": "2025-03-21T17:03:41Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "A3OFASJZC4MHY65AQCTG5NQHOFJB3X36"
+    },
+    {
+      "timestamp": "2025-03-21T18:14:16Z",
+      "url": "https://remedymeds.com/?",
+      "status": "200",
+      "digest": "I7HTWRUZRGJP2VCONC3ASOCOVIBEUNCK"
+    },
+    {
+      "timestamp": "2025-03-28T09:53:57Z",
+      "url": "http://remedymeds.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-03-28T09:53:57Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "Z5KA42FAGACCSHITBKWNNTRDJK4YQH4U"
+    },
+    {
+      "timestamp": "2025-03-29T01:55:09Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "BZ6TNLFZCZ5EICPP4NRQFVF7MUS4QYXI"
+    },
+    {
+      "timestamp": "2025-05-12T21:12:37Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "FILOKBML64EH7PBMDQM4PNTWUIBWL3IT"
+    },
+    {
+      "timestamp": "2025-07-11T22:31:15Z",
+      "url": "http://remedymeds.com/",
+      "status": "308",
+      "digest": "U7Q5IIFOZCJMNYWZ5J4GVGZFGNAXZQOR"
+    },
+    {
+      "timestamp": "2025-07-14T00:39:20Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "G7QU3EWAPMIBXIBXUUYIM5O2A7GPRCCD"
+    },
+    {
+      "timestamp": "2025-07-15T03:38:33Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "4OIPYTUU4IFFZQOIZPN3SAAK5R3IQHJW"
+    },
+    {
+      "timestamp": "2025-08-22T16:13:39Z",
+      "url": "https://www.remedymeds.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-09-03T18:11:58Z",
+      "url": "http://www.remedymeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-09-03T18:12:31Z",
+      "url": "https://www.remedymeds.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2025-09-05T21:10:44Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "VONZCKHHSMIALC4MOIQSB5C5QXUBFH2W"
+    },
+    {
+      "timestamp": "2025-09-09T20:06:32Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "7KSNGAIXFKCEQCDQSWB5FFXY6INE3UHF"
+    },
+    {
+      "timestamp": "2025-09-16T01:04:46Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "VRPGUIXXIXC6BZC62YCEKPKGSNEUDKEE"
+    },
+    {
+      "timestamp": "2025-10-07T17:34:35Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "FSFIC4XVLBR22AGDWN2OUFO6GDMGACZ6"
+    },
+    {
+      "timestamp": "2025-10-13T02:42:36Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "SVYV3BBKCC5N4KPNCSORKAOKHB3POIN3"
+    },
+    {
+      "timestamp": "2025-10-13T03:42:46Z",
+      "url": "https://remedymeds.com/?",
+      "status": "200",
+      "digest": "PJZPOEWX2EE2WHS72A3B7BQRKVDWKM7X"
+    },
+    {
+      "timestamp": "2025-11-02T15:52:15Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "2TEPIEGBXRYAOGSFE4FFKG4AEQIYGOKR"
+    },
+    {
+      "timestamp": "2025-11-09T19:05:57Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "USMZHHDCIK547OQ5RZLL7DXYDBS7DPQN"
+    },
+    {
+      "timestamp": "2025-11-15T12:03:49Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "YWXKKK3GHXVEKHTCFBX4JMPTFKHVJFXD"
+    },
+    {
+      "timestamp": "2025-12-01T01:23:01Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "A7SY6V2AO4YRB7NC5EXKYBCM2DCSDVXF"
+    },
+    {
+      "timestamp": "2025-12-09T23:11:43Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "7WE4VLXFXN545C7FFN2QCIEK4RE6B742"
+    },
+    {
+      "timestamp": "2025-12-21T22:06:51Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "OYPWLAKPJQJW344QHWWBNYUHD7CZFEWI"
+    },
+    {
+      "timestamp": "2025-12-21T22:06:51Z",
+      "url": "https://www.remedymeds.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2026-01-07T01:11:57Z",
+      "url": "http://www.remedymeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2026-01-07T01:11:57Z",
+      "url": "https://www.remedymeds.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2026-01-08T23:34:41Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "REQ3DVKO2YHTMIRMOV7GWB6EZLC4XUAG"
+    },
+    {
+      "timestamp": "2026-01-11T07:44:34Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "AMG27P7TSQGK5DKFIXA5IPOLULD3Z5VL"
+    },
+    {
+      "timestamp": "2026-01-15T11:21:47Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "W57CD2V4543EHHXIKHIYRIBTDWHH3JSQ"
+    },
+    {
+      "timestamp": "2026-02-02T07:59:22Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "RFVOUX5GLVJLVR7MOOSZVPH4YI6JWB7K"
+    },
+    {
+      "timestamp": "2026-02-03T07:52:06Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "J6X5RS2Y5GDBZ267OWPS4N3Q5RTQNJL4"
+    },
+    {
+      "timestamp": "2026-02-10T02:52:33Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "4DVBSNH2SNT7DOJVP42NO66TP2YZUFAT"
+    },
+    {
+      "timestamp": "2026-02-14T00:40:16Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "33V4RHQ4FSG2YDPPWD6K6QHQEBZRQQCT"
+    },
+    {
+      "timestamp": "2026-03-06T05:49:04Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "6GDJUMFR5I62MOXJBL77ZFWXRJU3WGH4"
+    },
+    {
+      "timestamp": "2026-03-11T11:26:47Z",
+      "url": "http://www.remedymeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2026-03-11T11:26:47Z",
+      "url": "https://www.remedymeds.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2026-03-12T10:35:20Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "IUI7ISAGDRU6MHRBMHD5ZQVKEYVFO6YO"
+    },
+    {
+      "timestamp": "2026-03-13T14:01:45Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "Q5WCCGWVOOXEDWTXRDYSRKBSP22IRSYP"
+    },
+    {
+      "timestamp": "2026-03-20T01:56:19Z",
+      "url": "https://www.remedymeds.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2026-03-24T20:03:56Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "3MXNHKQOXQZLSAK3S3FYHW4AUQ2H2JOG"
+    },
+    {
+      "timestamp": "2026-03-26T22:46:31Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "52A5Z2LZDT63SONK4RAVCSKUIM7IYUCO"
+    },
+    {
+      "timestamp": "2026-03-30T23:12:33Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "GAKQHBYIOKF42KHIU75PM6EWBXNFKPJA"
+    },
+    {
+      "timestamp": "2026-04-23T13:39:17Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "IAMMKJ73TXIZ7ZS7TYMCRV74F5HF7EXX"
+    },
+    {
+      "timestamp": "2026-05-06T19:57:02Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "RPGMLNQQS4UITZIZSKASYTVYB5EV26CK"
+    },
+    {
+      "timestamp": "2026-05-08T21:20:44Z",
+      "url": "https://www.remedymeds.com/",
+      "status": "308",
+      "digest": "LMHUHKYETAFHQCFGSW7AN4VZJPVSII7P"
+    },
+    {
+      "timestamp": "2026-05-08T21:21:11Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "QCK6WWUAD3M5RGQBYH72IFQYQ3CSVLFS"
+    },
+    {
+      "timestamp": "2026-05-08T23:10:27Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "E2G2YBZTVZEBMJ6AACKGXAVMLCSP5RVA"
+    },
+    {
+      "timestamp": "2026-05-30T17:07:26Z",
+      "url": "https://remedymeds.com/",
+      "status": "200",
+      "digest": "RADNJ6QCNQFCB2GS5LR7HWVXLESVUH6D"
+    }
+  ]
+}

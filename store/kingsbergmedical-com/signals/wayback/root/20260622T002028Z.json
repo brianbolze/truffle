@@ -1,0 +1,1214 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:20:28Z",
+  "ok": true,
+  "input": {
+    "url": "https://kingsbergmedical.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2011-01-28T18:54:40Z",
+  "last_seen": "2026-03-10T00:45:34Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 5623,
+  "snapshot_count": 147,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "302",
+      "from": "2011-01-28T18:54:40Z",
+      "to": "2011-01-28T18:54:40Z"
+    },
+    {
+      "status": "200",
+      "from": "2011-10-28T20:19:34Z",
+      "to": "2013-04-20T07:25:48Z"
+    },
+    {
+      "status": "301",
+      "from": "2013-06-10T06:48:19Z",
+      "to": "2013-06-10T06:48:19Z"
+    },
+    {
+      "status": "200",
+      "from": "2013-06-20T15:35:47Z",
+      "to": "2013-10-05T02:05:40Z"
+    },
+    {
+      "status": "301",
+      "from": "2014-01-06T17:34:09Z",
+      "to": "2014-01-06T17:34:09Z"
+    },
+    {
+      "status": "200",
+      "from": "2014-02-08T22:44:58Z",
+      "to": "2014-02-08T22:44:58Z"
+    },
+    {
+      "status": "301",
+      "from": "2014-05-17T21:29:42Z",
+      "to": "2014-05-17T21:29:42Z"
+    },
+    {
+      "status": "200",
+      "from": "2014-05-18T01:05:51Z",
+      "to": "2014-11-05T02:20:52Z"
+    },
+    {
+      "status": "301",
+      "from": "2014-12-17T17:41:30Z",
+      "to": "2014-12-17T17:41:30Z"
+    },
+    {
+      "status": "200",
+      "from": "2014-12-20T18:40:09Z",
+      "to": "2015-02-14T06:52:48Z"
+    },
+    {
+      "status": "301",
+      "from": "2015-04-23T04:02:58Z",
+      "to": "2015-04-23T04:02:58Z"
+    },
+    {
+      "status": "200",
+      "from": "2015-06-05T04:49:01Z",
+      "to": "2015-06-05T04:49:01Z"
+    },
+    {
+      "status": "301",
+      "from": "2015-06-24T13:29:03Z",
+      "to": "2015-09-05T14:53:44Z"
+    },
+    {
+      "status": "200",
+      "from": "2015-09-29T03:36:24Z",
+      "to": "2015-09-29T03:36:24Z"
+    },
+    {
+      "status": "301",
+      "from": "2015-12-31T17:35:49Z",
+      "to": "2016-04-04T23:10:07Z"
+    },
+    {
+      "status": "200",
+      "from": "2016-05-11T05:10:41Z",
+      "to": "2016-05-11T05:10:41Z"
+    },
+    {
+      "status": "301",
+      "from": "2016-10-11T08:13:14Z",
+      "to": "2017-06-26T12:23:58Z"
+    },
+    {
+      "status": "200",
+      "from": "2017-07-10T21:56:39Z",
+      "to": "2017-07-10T21:56:39Z"
+    },
+    {
+      "status": "301",
+      "from": "2017-08-25T06:48:21Z",
+      "to": "2017-10-26T06:12:47Z"
+    },
+    {
+      "status": "200",
+      "from": "2017-11-01T01:26:51Z",
+      "to": "2017-11-01T01:26:51Z"
+    },
+    {
+      "status": "301",
+      "from": "2017-12-26T08:08:53Z",
+      "to": "2018-08-04T17:18:33Z"
+    },
+    {
+      "status": "200",
+      "from": "2018-08-06T01:51:37Z",
+      "to": "2018-08-06T01:51:37Z"
+    },
+    {
+      "status": "301",
+      "from": "2018-08-07T20:00:19Z",
+      "to": "2018-08-21T18:55:39Z"
+    },
+    {
+      "status": "200",
+      "from": "2018-10-03T12:44:47Z",
+      "to": "2018-10-03T12:44:47Z"
+    },
+    {
+      "status": "301",
+      "from": "2018-11-06T09:24:11Z",
+      "to": "2018-11-06T09:24:11Z"
+    },
+    {
+      "status": "200",
+      "from": "2018-11-08T11:13:30Z",
+      "to": "2018-11-08T11:13:30Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-01-06T06:05:08Z",
+      "to": "2019-01-06T06:05:08Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-05-24T01:04:14Z",
+      "to": "2019-05-24T01:04:14Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-06-22T02:59:18Z",
+      "to": "2019-06-22T02:59:18Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-06-26T11:46:47Z",
+      "to": "2019-06-26T11:46:47Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-07-08T00:19:52Z",
+      "to": "2019-07-08T00:19:52Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-07-20T18:16:49Z",
+      "to": "2019-08-19T13:11:12Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-09-07T14:05:24Z",
+      "to": "2019-09-07T14:05:24Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-09-19T15:03:24Z",
+      "to": "2019-09-19T15:03:24Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-10-03T04:34:57Z",
+      "to": "2019-10-03T04:34:57Z"
+    },
+    {
+      "status": "200",
+      "from": "2019-10-16T04:35:03Z",
+      "to": "2019-11-15T03:01:43Z"
+    },
+    {
+      "status": "301",
+      "from": "2019-12-02T09:02:23Z",
+      "to": "2019-12-02T09:02:23Z"
+    },
+    {
+      "status": "200",
+      "from": "2020-07-27T18:21:54Z",
+      "to": "2021-03-01T16:27:06Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-03-09T19:13:46Z",
+      "to": "2021-03-09T19:13:46Z"
+    },
+    {
+      "status": "200",
+      "from": "2021-03-09T19:13:46Z",
+      "to": "2021-11-29T02:56:48Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-04T23:51:36Z",
+      "to": "2021-12-04T23:51:36Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-01-30T03:42:39Z",
+      "to": "2023-02-02T20:34:05Z"
+    },
+    {
+      "status": "-",
+      "from": "2023-02-18T11:40:39Z",
+      "to": "2023-02-18T11:40:39Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-03-25T04:11:38Z",
+      "to": "2023-12-03T01:18:43Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-12-30T22:16:10Z",
+      "to": "2023-12-30T22:16:10Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-12-30T22:16:11Z",
+      "to": "2023-12-30T22:16:11Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-01-06T11:28:39Z",
+      "to": "2024-01-06T11:28:39Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-01-11T06:58:24Z",
+      "to": "2024-05-19T02:20:01Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-06-18T17:48:55Z",
+      "to": "2024-06-18T17:48:55Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-06-18T21:25:39Z",
+      "to": "2024-08-19T22:55:45Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-08-23T04:31:00Z",
+      "to": "2024-08-23T04:31:01Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-23T04:31:02Z",
+      "to": "2024-12-05T01:01:38Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-12-19T07:39:11Z",
+      "to": "2024-12-19T07:39:11Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-12-25T08:19:55Z",
+      "to": "2024-12-25T08:19:55Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-24T10:33:02Z",
+      "to": "2025-02-19T08:44:46Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-02-23T01:43:20Z",
+      "to": "2025-02-23T01:43:20Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-23T01:43:29Z",
+      "to": "2025-02-23T01:43:29Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-23T01:43:37Z",
+      "to": "2025-02-23T01:43:37Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-23T15:08:16Z",
+      "to": "2025-02-23T15:08:16Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-07T15:27:27Z",
+      "to": "2025-06-17T20:09:24Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-07-10T01:14:31Z",
+      "to": "2025-07-10T01:14:31Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-14T02:06:39Z",
+      "to": "2026-03-10T00:45:34Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20110128185440/http://kingsbergmedical.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260310004534/https://www.kingsbergmedical.com/",
+  "snapshots": [
+    {
+      "timestamp": "2011-01-28T18:54:40Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "302",
+      "digest": "QXXXD6ELGHGXQDELL6BNWNWI3FLSXG43"
+    },
+    {
+      "timestamp": "2011-01-28T18:54:40Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "302",
+      "digest": "YQKMC23SIATUBKSF7573DRUA6VPBSCOJ"
+    },
+    {
+      "timestamp": "2011-10-28T20:19:34Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "200",
+      "digest": "FINN72IHWSP4JGFB5X62C47APINWHBCS"
+    },
+    {
+      "timestamp": "2011-11-07T00:40:37Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "200",
+      "digest": "LEPR67XH7WDRSUGY2473VXTHTV2JLRFP"
+    },
+    {
+      "timestamp": "2011-12-07T14:45:15Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "200",
+      "digest": "GPOQVG3GKZKNON6XA6CWRGHJ4PSVQU2P"
+    },
+    {
+      "timestamp": "2012-04-14T12:26:32Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "200",
+      "digest": "O72KI43SOZRQGHKJ7QXSGWQLZJUDJKUT"
+    },
+    {
+      "timestamp": "2012-05-05T01:59:51Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "2UQVTCYFBI2YVAW3RBVFUILJZULN6NI7"
+    },
+    {
+      "timestamp": "2012-10-13T21:31:25Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "MEPII6BFUFFDMMCGH5N7TMZUQFDMAY2K"
+    },
+    {
+      "timestamp": "2013-01-16T06:27:18Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "VCSG6TSNUIIG3OX2RB5SKEA4TPHFGJEL"
+    },
+    {
+      "timestamp": "2013-04-20T07:25:48Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "MXXGV6URPFNZTJXE325755BGBOPUWZDQ"
+    },
+    {
+      "timestamp": "2013-06-10T06:48:19Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2013-06-20T15:35:47Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "200",
+      "digest": "Q7HCKOVYQ4XA2VPDFUPTWUVK2Q4EF5RW"
+    },
+    {
+      "timestamp": "2013-09-27T07:12:15Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "200",
+      "digest": "HP7BC5FQQY3XIGYMLRCMBN44NUGNCAPL"
+    },
+    {
+      "timestamp": "2013-10-05T02:05:40Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "GY37FPTJGLCCWAG6QBPPYWG5DNSV5ZT3"
+    },
+    {
+      "timestamp": "2014-01-06T17:34:09Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2014-02-08T22:44:58Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "GY37FPTJGLCCWAG6QBPPYWG5DNSV5ZT3"
+    },
+    {
+      "timestamp": "2014-05-17T21:29:42Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2014-05-18T01:05:51Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "GY37FPTJGLCCWAG6QBPPYWG5DNSV5ZT3"
+    },
+    {
+      "timestamp": "2014-08-20T16:01:46Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "AV3TVCC3QFEJV2GRI6OC3MDFCZK522NT"
+    },
+    {
+      "timestamp": "2014-09-21T00:56:37Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "200",
+      "digest": "GY37FPTJGLCCWAG6QBPPYWG5DNSV5ZT3"
+    },
+    {
+      "timestamp": "2014-11-05T02:20:52Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "200",
+      "digest": "7NK45ATBCZW36KNCKXM7XKKWZVJE5PZM"
+    },
+    {
+      "timestamp": "2014-12-17T17:41:30Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2014-12-20T18:40:09Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "7NK45ATBCZW36KNCKXM7XKKWZVJE5PZM"
+    },
+    {
+      "timestamp": "2015-02-14T06:52:48Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "200",
+      "digest": "JBSZH7OXUYSAR3OESCGJTM7AZVRF6JDH"
+    },
+    {
+      "timestamp": "2015-04-23T04:02:58Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "301",
+      "digest": "NNR2L3VVO7RR5BYGHEQRAMLTO3IFPQI5"
+    },
+    {
+      "timestamp": "2015-06-05T04:49:01Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "KRZZBNVMTQYAZ2Q3G7GX5WWHZCQZW22I"
+    },
+    {
+      "timestamp": "2015-06-24T13:29:03Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "301",
+      "digest": "NNR2L3VVO7RR5BYGHEQRAMLTO3IFPQI5"
+    },
+    {
+      "timestamp": "2015-08-01T23:09:46Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "72SBYCOTFGQSB3KNDHZ2KYKNIP5PNRGS"
+    },
+    {
+      "timestamp": "2015-09-05T14:53:44Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "301",
+      "digest": "NNR2L3VVO7RR5BYGHEQRAMLTO3IFPQI5"
+    },
+    {
+      "timestamp": "2015-09-29T03:36:24Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "PBY4G4C22WW4HSTPQYA266V6QB5XQHWQ"
+    },
+    {
+      "timestamp": "2015-12-31T17:35:49Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "301",
+      "digest": "NNR2L3VVO7RR5BYGHEQRAMLTO3IFPQI5"
+    },
+    {
+      "timestamp": "2016-01-11T13:46:50Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "72SBYCOTFGQSB3KNDHZ2KYKNIP5PNRGS"
+    },
+    {
+      "timestamp": "2016-02-07T17:13:56Z",
+      "url": "https://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2016-02-12T16:01:29Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "301",
+      "digest": "NNR2L3VVO7RR5BYGHEQRAMLTO3IFPQI5"
+    },
+    {
+      "timestamp": "2016-03-13T15:27:27Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "72SBYCOTFGQSB3KNDHZ2KYKNIP5PNRGS"
+    },
+    {
+      "timestamp": "2016-03-28T07:08:35Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "301",
+      "digest": "NNR2L3VVO7RR5BYGHEQRAMLTO3IFPQI5"
+    },
+    {
+      "timestamp": "2016-04-04T23:10:07Z",
+      "url": "https://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2016-05-11T05:10:41Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "UM46JQACL7XLWHNPUGY4MANXNN7WX7V4"
+    },
+    {
+      "timestamp": "2016-10-11T08:13:14Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "ZZVNK5YL5BLE366RPOM4I6IBOFG3UCLS"
+    },
+    {
+      "timestamp": "2016-11-02T07:37:47Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "301",
+      "digest": "EDKJ3FOWGKRVP2CX4DSU5BOERF2T423W"
+    },
+    {
+      "timestamp": "2017-06-26T12:23:58Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "ZZVNK5YL5BLE366RPOM4I6IBOFG3UCLS"
+    },
+    {
+      "timestamp": "2017-07-10T21:56:39Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "6IY5MZJUH7HXTMUF3WDSJTW62CAIZCWV"
+    },
+    {
+      "timestamp": "2017-08-25T06:48:21Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "301",
+      "digest": "EDKJ3FOWGKRVP2CX4DSU5BOERF2T423W"
+    },
+    {
+      "timestamp": "2017-09-26T21:17:04Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "ZZVNK5YL5BLE366RPOM4I6IBOFG3UCLS"
+    },
+    {
+      "timestamp": "2017-10-16T19:49:01Z",
+      "url": "https://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2017-10-26T06:12:47Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "301",
+      "digest": "EDKJ3FOWGKRVP2CX4DSU5BOERF2T423W"
+    },
+    {
+      "timestamp": "2017-11-01T01:26:51Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "SCKTM2EZDGBRE5U6EIY7C3BOCAH6OP5E"
+    },
+    {
+      "timestamp": "2017-12-26T08:08:53Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "301",
+      "digest": "EDKJ3FOWGKRVP2CX4DSU5BOERF2T423W"
+    },
+    {
+      "timestamp": "2018-07-19T08:07:52Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "ZZVNK5YL5BLE366RPOM4I6IBOFG3UCLS"
+    },
+    {
+      "timestamp": "2018-08-04T17:18:33Z",
+      "url": "https://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2018-08-06T01:51:37Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "JQ476UDG53SJ3V5M7SV3L2YAUEDXTUAG"
+    },
+    {
+      "timestamp": "2018-08-07T20:00:19Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "ZZVNK5YL5BLE366RPOM4I6IBOFG3UCLS"
+    },
+    {
+      "timestamp": "2018-08-21T18:55:39Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2018-10-03T12:44:47Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "VWLNGQ4AEQWDUBF5FE7GVHJ4UYZC4XSV"
+    },
+    {
+      "timestamp": "2018-11-06T09:24:11Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2018-11-08T11:13:30Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "LN7LWXSOEGO4KDBMPSTR4YX7NM2RAFC3"
+    },
+    {
+      "timestamp": "2019-01-06T06:05:08Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2019-05-24T01:04:14Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "PBKVHZM7ZVVWNDYFOOPAFTT7VUCBQQXF"
+    },
+    {
+      "timestamp": "2019-06-22T02:59:18Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2019-06-26T11:46:47Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "GPMKM7ISME74WZGMJKYJUPNPQ2E4IFEG"
+    },
+    {
+      "timestamp": "2019-07-08T00:19:52Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2019-07-20T18:16:49Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "LVLGDNLAVDAX6HZR7DNWQEEADLOWSNYZ"
+    },
+    {
+      "timestamp": "2019-08-19T13:11:12Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "FQN5FPXOUQAH4UFRI5RMKNWW6EBIC4UL"
+    },
+    {
+      "timestamp": "2019-09-07T14:05:24Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2019-09-19T15:03:24Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "PIY5VRS25BSFTHS2WOVSD5WFGIXYYEBU"
+    },
+    {
+      "timestamp": "2019-10-03T04:34:57Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2019-10-16T04:35:03Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "4UOMSRFSLHYSJAPEC7MDDZSH3VMF7VCA"
+    },
+    {
+      "timestamp": "2019-11-15T03:01:43Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "QAW34BFUZ5B7GTC3423QTL3KL5JCTATI"
+    },
+    {
+      "timestamp": "2019-12-02T09:02:23Z",
+      "url": "http://www.kingsbergmedical.com:80/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2020-07-27T18:21:54Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "2QEYU3RCQYJVLIGDGNZKHJ6OQW4O3Y2D"
+    },
+    {
+      "timestamp": "2021-01-23T20:40:22Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "ZKHZBH6G76N6K5HRD72UYV2IS4JRXLCI"
+    },
+    {
+      "timestamp": "2021-03-01T16:27:06Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "DWLYCPOUNU5CMGOJRMDFURJZYE5YW3PA"
+    },
+    {
+      "timestamp": "2021-03-09T19:13:46Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2021-03-09T19:13:46Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "DWLYCPOUNU5CMGOJRMDFURJZYE5YW3PA"
+    },
+    {
+      "timestamp": "2021-04-23T05:27:44Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "L3TONNY7WCEVTQB42ETEH4FAU2XHP657"
+    },
+    {
+      "timestamp": "2021-07-28T06:46:47Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "AFFYTSZGQF6CV4O6B2UCI4ZAIOBA3G76"
+    },
+    {
+      "timestamp": "2021-09-22T04:19:46Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "2RX6VYD3S7IKBZJZQZSDBGJUFFBDIIMJ"
+    },
+    {
+      "timestamp": "2021-10-15T20:49:14Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "KHLNRZX2SCOAUVO7E7HP7YRLUCKOEMWR"
+    },
+    {
+      "timestamp": "2021-11-29T02:56:48Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "554UFOBPQKYTDFYHCF433PXW7IRQTHCH"
+    },
+    {
+      "timestamp": "2021-12-04T23:51:36Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-01-30T03:42:39Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "554UFOBPQKYTDFYHCF433PXW7IRQTHCH"
+    },
+    {
+      "timestamp": "2022-03-14T06:20:44Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "EXYZSQYPZ2JTCDSYTXP333RQ62FRHQLQ"
+    },
+    {
+      "timestamp": "2022-03-14T06:20:45Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "AB35QTSI6UPGVMIHNIIWILZ2YT3SEFH3"
+    },
+    {
+      "timestamp": "2022-03-31T18:46:23Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "U4LFFVB5HK7A2WKFULF46BCCZS3FJMV3"
+    },
+    {
+      "timestamp": "2022-06-30T07:17:12Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "JTKUSEKVJ22QZONGKSR3PU7CQESPVF5E"
+    },
+    {
+      "timestamp": "2023-02-02T20:34:05Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "4RW42DSUZFRCHZDHTR24WCYKU7NWEL6N"
+    },
+    {
+      "timestamp": "2023-02-02T20:34:05Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "DTSQNXTUK465NDMCSXZBV4JCDVM2SLDW"
+    },
+    {
+      "timestamp": "2023-02-18T11:40:39Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-03-25T04:11:38Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "SZIFEFJ23AT4ZJUXQEBPP6A33BDTRTPH"
+    },
+    {
+      "timestamp": "2023-05-31T18:21:23Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "PPZC5KEIHYIJ37XNR6OFDVLCGWNFHE2K"
+    },
+    {
+      "timestamp": "2023-06-04T14:20:15Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "ONJ3LGDAS7XJ7OZLVC7KH2AGSZOOBUMP"
+    },
+    {
+      "timestamp": "2023-07-24T16:42:15Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "CSFH4KFEUUURQQQB4MOWFFVAH4NCAG7S"
+    },
+    {
+      "timestamp": "2023-09-27T15:35:19Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "NHO7XDR3RDJIERI5OUFNVEADGYHGAGVX"
+    },
+    {
+      "timestamp": "2023-12-03T01:18:43Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "3PXLCCDOKIPNXOCR2WKDSPIOL5DE6BV7"
+    },
+    {
+      "timestamp": "2023-12-30T22:16:10Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-12-30T22:16:11Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "5M2TODEIZ4HMAGG2O7FN3RMU6DJ5WX4S"
+    },
+    {
+      "timestamp": "2024-01-06T11:28:39Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-01-11T06:58:24Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "2VDRIYEZNGOPUCMMC2B5MYAIIRHGC2BU"
+    },
+    {
+      "timestamp": "2024-02-26T18:16:34Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "JJOXOMI2G5P5TY3ELNREJH7W2SDEINSO"
+    },
+    {
+      "timestamp": "2024-02-29T22:07:15Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "D7PRLBEOTUBB3LDGVEZ47H5FRSEMSB43"
+    },
+    {
+      "timestamp": "2024-04-21T05:14:59Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "YCPUP4PK5SS4KDOU4B4ENXY5Y7YEDX4Q"
+    },
+    {
+      "timestamp": "2024-05-19T02:20:01Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "5RJ3YX7JEEN3PK6BNCDZN6L6P55V5CNT"
+    },
+    {
+      "timestamp": "2024-06-18T17:48:55Z",
+      "url": "http://www.kingsbergmedical.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-06-18T21:25:39Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "CLGDO5CBXYMPU52D7TTVERBXCUF5RL5T"
+    },
+    {
+      "timestamp": "2024-06-23T14:58:54Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "WEKOJPKUCEV3326U7LDFJPKWNCCLX4S7"
+    },
+    {
+      "timestamp": "2024-07-09T09:25:30Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "3NDEVVFNNVDVYNT4QBSV4QTA7PVXMKWG"
+    },
+    {
+      "timestamp": "2024-08-06T11:13:18Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "6DIACLEIDFECONHYDNIPCAF34VPGH57U"
+    },
+    {
+      "timestamp": "2024-08-19T22:55:45Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "FWWYX77C5AYAJUKN3MO3EDBL7LFYS3AN"
+    },
+    {
+      "timestamp": "2024-08-23T04:31:00Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-08-23T04:31:01Z",
+      "url": "https://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-08-23T04:31:02Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "ID5JGRQDATYYVHWNFVORXZYSRZ5E3DRP"
+    },
+    {
+      "timestamp": "2024-08-29T08:04:33Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "X277W6LQYZ7HIEQQEAAAYKXISTGYDATC"
+    },
+    {
+      "timestamp": "2024-09-15T00:39:37Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "JKZ4W4HNIUJEXRKMKGLWYCYNPVZG3ICI"
+    },
+    {
+      "timestamp": "2024-09-26T23:07:36Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "5ZGYBCMOTJAI4VZPVRV3NNA3USPFQSMZ"
+    },
+    {
+      "timestamp": "2024-12-05T01:01:38Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "WDJP42J4U2D3SSB3CQCJ3JLVPI2A4QL5"
+    },
+    {
+      "timestamp": "2024-12-19T07:39:11Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2024-12-25T08:19:55Z",
+      "url": "https://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-01-24T10:33:02Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "YJ5Y6OJJTLQWEHCVPTC2EOXDLBU57MI2"
+    },
+    {
+      "timestamp": "2025-02-06T04:18:25Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "SUEEZYL7OKANITEL5FV234ZBCB4G3ZBF"
+    },
+    {
+      "timestamp": "2025-02-19T08:44:46Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "RNH7P2CES6RN65RDZB5FJZMCIKGS6IG3"
+    },
+    {
+      "timestamp": "2025-02-23T01:43:20Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "-",
+      "digest": "OQ3OBNFR7DBCFQ4ANGEQW5P2FOXZZJRA"
+    },
+    {
+      "timestamp": "2025-02-23T01:43:29Z",
+      "url": "https://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-02-23T01:43:37Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "HIZDWJWBTTSVM7FAFGNM4UC6N6NKGSHW"
+    },
+    {
+      "timestamp": "2025-02-23T15:08:16Z",
+      "url": "https://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-03-07T15:27:27Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "7E4DSPUB6YW7MOXKJKOR35NGAPTR5YDZ"
+    },
+    {
+      "timestamp": "2025-03-07T16:29:52Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "QOUK6RXPY6R5NXE2XCNYSDQJKFNHY6UK"
+    },
+    {
+      "timestamp": "2025-03-26T18:08:12Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "3JSIEKN6QKZTUHSAWTSOCOK2J6MYLBP2"
+    },
+    {
+      "timestamp": "2025-04-14T20:07:47Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "NTHUUMLXCMWHR5VA3SWXYOJ3ZBNEF73A"
+    },
+    {
+      "timestamp": "2025-04-25T15:32:09Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "MQQPQ6N46A3PAHJBQI27E553XDYIGE4R"
+    },
+    {
+      "timestamp": "2025-05-04T06:54:18Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "I5YZLFRU7UYZ4BNFCUFA6ZUFCRVDT46Z"
+    },
+    {
+      "timestamp": "2025-05-14T17:54:19Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "YA3SXKWUVMUQXDBQ5QN4CIB3KC43VHBY"
+    },
+    {
+      "timestamp": "2025-06-17T17:13:24Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "2FJ53MVGUTAU45IIQROFXKJUJH3RJ7DG"
+    },
+    {
+      "timestamp": "2025-06-17T20:09:24Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "Q6BYRTWDXERBJNXFDCLWNQNLCPG2GCT5"
+    },
+    {
+      "timestamp": "2025-07-10T01:14:31Z",
+      "url": "http://kingsbergmedical.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-08-14T02:06:39Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "3XRF5PSM6HXCG5IBJRLUD43SVWMYKZ2U"
+    },
+    {
+      "timestamp": "2025-08-25T08:44:37Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "WTVFRYNOPKAFKEVRXW56EEKVRVODMOAT"
+    },
+    {
+      "timestamp": "2025-09-13T07:15:45Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "MLLWBHPBIAKVTV2FXDAOSWQX4ZBO45TP"
+    },
+    {
+      "timestamp": "2025-09-25T15:00:49Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "OWCIGISMQOEVFHF3S24VODLAIK4ODBIL"
+    },
+    {
+      "timestamp": "2025-10-05T07:21:49Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "K2CXUHRBF523GCBHIJUFJSUDCSBDZBEY"
+    },
+    {
+      "timestamp": "2025-10-16T22:38:41Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "ZZJV74IDUD7QM3FVRFR3A7NOZU6HMM37"
+    },
+    {
+      "timestamp": "2025-11-07T18:48:59Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "OTTYDKOJUVQLJ2CEYELPETZ23DXZ2DBC"
+    },
+    {
+      "timestamp": "2025-12-14T17:14:17Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "NYYFIJAQCZBZ3TEDT6BS47QGQAHIWCMG"
+    },
+    {
+      "timestamp": "2026-01-13T19:09:57Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "IUOQICZSGU2IIIORIPGR3AG7ZDAIDXBM"
+    },
+    {
+      "timestamp": "2026-01-21T06:57:39Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "S5SSSU6CT7XJZPLICTA7UJ7P5LIWX6RR"
+    },
+    {
+      "timestamp": "2026-02-12T00:29:10Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "NKYCGNGCEG3IPZEE6ZHHNPC3UOFLEZ4C"
+    },
+    {
+      "timestamp": "2026-02-16T20:45:31Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "S5SSSU6CT7XJZPLICTA7UJ7P5LIWX6RR"
+    },
+    {
+      "timestamp": "2026-03-10T00:45:34Z",
+      "url": "https://www.kingsbergmedical.com/",
+      "status": "200",
+      "digest": "457LQENME4V72LW3HENQGWD2ZYLPO4HN"
+    }
+  ]
+}

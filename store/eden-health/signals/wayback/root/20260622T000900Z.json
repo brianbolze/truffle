@@ -1,0 +1,77 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:09:00Z",
+  "ok": true,
+  "input": {
+    "url": "https://eden.health/"
+  },
+  "schema_drift": [],
+  "first_seen": "2018-08-09T10:37:42Z",
+  "last_seen": "2025-12-19T11:53:19Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 2873,
+  "snapshot_count": 5,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2018-08-09T10:37:42Z",
+      "to": "2018-08-09T10:37:42Z"
+    },
+    {
+      "status": "301",
+      "from": "2021-12-02T09:31:18Z",
+      "to": "2021-12-02T09:31:18Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-29T18:12:47Z",
+      "to": "2024-12-29T18:12:47Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-07-17T03:42:09Z",
+      "to": "2025-07-17T03:42:09Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-12-19T11:53:19Z",
+      "to": "2025-12-19T11:53:19Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20180809103742/http://eden.health/",
+  "last_snapshot_url": "https://web.archive.org/web/20251219115319/https://www.eden.health/",
+  "snapshots": [
+    {
+      "timestamp": "2018-08-09T10:37:42Z",
+      "url": "http://eden.health/",
+      "status": "200",
+      "digest": "2VILFNGPTKHT6JXLWH3W3E23L27UXGNQ"
+    },
+    {
+      "timestamp": "2021-12-02T09:31:18Z",
+      "url": "http://eden.health/",
+      "status": "301",
+      "digest": "F5EWUF26NUKDZ6Z32ZIFANZ5IDQ5BRGH"
+    },
+    {
+      "timestamp": "2024-12-29T18:12:47Z",
+      "url": "http://eden.health/",
+      "status": "200",
+      "digest": "LPIFAIYFHFL3WYXUF7ROILJW7SXBK3PD"
+    },
+    {
+      "timestamp": "2025-07-17T03:42:09Z",
+      "url": "http://eden.health/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-12-19T11:53:19Z",
+      "url": "https://www.eden.health/",
+      "status": "200",
+      "digest": "M2PJT52U4MGUZK43A77AX5IEDA7NGXF4"
+    }
+  ]
+}

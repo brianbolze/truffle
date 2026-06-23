@@ -1,0 +1,432 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:13:43Z",
+  "ok": true,
+  "input": {
+    "url": "https://hevahealth.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2024-01-18T04:29:08Z",
+  "last_seen": "2026-03-15T01:53:36Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 885,
+  "snapshot_count": 50,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "-",
+      "from": "2024-01-18T04:29:08Z",
+      "to": "2024-01-18T04:29:08Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-03-21T22:37:34Z",
+      "to": "2024-03-21T22:37:34Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-03-21T22:37:40Z",
+      "to": "2024-03-21T22:37:40Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-04-17T03:54:34Z",
+      "to": "2024-04-17T03:54:34Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-04-17T03:54:53Z",
+      "to": "2024-04-17T03:54:53Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-07-14T22:49:35Z",
+      "to": "2024-09-12T15:26:41Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-16T00:23:23Z",
+      "to": "2024-09-16T00:23:23Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-16T00:23:23Z",
+      "to": "2024-09-16T00:23:23Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-09-16T00:23:28Z",
+      "to": "2024-09-16T00:23:28Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-16T00:31:34Z",
+      "to": "2024-12-06T16:42:44Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-01-28T23:33:01Z",
+      "to": "2025-01-28T23:33:01Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-28T23:33:01Z",
+      "to": "2025-01-28T23:33:01Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-03T13:42:04Z",
+      "to": "2025-02-03T13:42:04Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-03T13:42:05Z",
+      "to": "2025-02-07T23:38:56Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-02-12T09:22:04Z",
+      "to": "2025-03-12T15:46:15Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-12T15:46:15Z",
+      "to": "2025-03-12T15:46:15Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-03-12T15:46:16Z",
+      "to": "2025-03-18T19:25:14Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-18T19:25:14Z",
+      "to": "2025-03-22T21:53:23Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-04-08T19:16:57Z",
+      "to": "2025-04-08T19:16:57Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-08T19:16:57Z",
+      "to": "2025-04-24T06:35:23Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-04-28T18:54:23Z",
+      "to": "2025-04-28T18:54:23Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-28T18:54:23Z",
+      "to": "2026-03-15T01:53:36Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20240118042908/http://hevahealth.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260315015336/https://www.hevahealth.com/",
+  "snapshots": [
+    {
+      "timestamp": "2024-01-18T04:29:08Z",
+      "url": "http://hevahealth.com/",
+      "status": "-",
+      "digest": "Z7DO73H3L5V5XQGL2OODXWTWJKAIGNCS"
+    },
+    {
+      "timestamp": "2024-03-21T22:37:34Z",
+      "url": "https://hevahealth.com/",
+      "status": "200",
+      "digest": "3Y4HMMAI773XMOCP4VPYQE427Q73ZX4Z"
+    },
+    {
+      "timestamp": "2024-03-21T22:37:40Z",
+      "url": "http://hevahealth.com/",
+      "status": "-",
+      "digest": "Z7DO73H3L5V5XQGL2OODXWTWJKAIGNCS"
+    },
+    {
+      "timestamp": "2024-04-17T03:54:34Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "QKSTLSQ7JNHYF7K3YNZAD4OPZVE2WN2W"
+    },
+    {
+      "timestamp": "2024-04-17T03:54:53Z",
+      "url": "http://www.hevahealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-07-14T22:49:35Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "MW3RSZICRMFOJ5VBXFF22SU3TQO4BIT5"
+    },
+    {
+      "timestamp": "2024-07-16T20:42:18Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "PL7VEO63YNL3EVNTLWQ4GSV64RKJYNRN"
+    },
+    {
+      "timestamp": "2024-08-11T05:22:23Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "BV224NVOCBZCF3VSCCDKVCAFNZZXWTMZ"
+    },
+    {
+      "timestamp": "2024-08-14T06:19:06Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "XIQW6LNRNF6GVI76WRLGFSCVQ2X654LN"
+    },
+    {
+      "timestamp": "2024-08-21T19:09:27Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "GRLU555W3LIMDAGKIFAYDAY6C6UEXVZ3"
+    },
+    {
+      "timestamp": "2024-08-28T09:42:08Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "SI75NYICISK2N5VO36JBZMP4B3DLMBSP"
+    },
+    {
+      "timestamp": "2024-09-12T15:26:41Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "LOBQJI2TNKLQTVB4XLYMUQV4ZR7XLFMY"
+    },
+    {
+      "timestamp": "2024-09-16T00:23:23Z",
+      "url": "http://hevahealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-09-16T00:23:23Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "NPAC7XNIBQYXXTKUEYJLDHUT3FISMBLC"
+    },
+    {
+      "timestamp": "2024-09-16T00:23:28Z",
+      "url": "https://hevahealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2024-09-16T00:31:34Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "NPAC7XNIBQYXXTKUEYJLDHUT3FISMBLC"
+    },
+    {
+      "timestamp": "2024-09-20T21:09:21Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "FDFMASCLJJHFBCKMH4XEAHRWILXXJ52Q"
+    },
+    {
+      "timestamp": "2024-11-02T20:55:12Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "XN62YBV7KXWPXTUJY7VFDCEABOD7WLHS"
+    },
+    {
+      "timestamp": "2024-12-06T16:42:44Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "TJ7K6DDJXOXUPJQIJIQZJLRCZEYRYGJ4"
+    },
+    {
+      "timestamp": "2025-01-28T23:33:01Z",
+      "url": "https://HevaHealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-01-28T23:33:01Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "453PWW4EEIHAN6GQZYFP44CBXHG5VJZV"
+    },
+    {
+      "timestamp": "2025-02-03T13:42:04Z",
+      "url": "http://www.hevahealth.com/",
+      "status": "301",
+      "digest": "TICV2GKYHLHUWOKQTDKBYHSOPO4L3MB7"
+    },
+    {
+      "timestamp": "2025-02-03T13:42:05Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "E3M6YKQRX6JDB4PYPZK4WN7L3MON6LD7"
+    },
+    {
+      "timestamp": "2025-02-07T23:38:56Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "D242KONZSI7LT32WNYWSLZVE44SXOKF7"
+    },
+    {
+      "timestamp": "2025-02-12T09:22:04Z",
+      "url": "https://hevahealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-02-19T09:34:09Z",
+      "url": "http://hevahealth.com/",
+      "status": "301",
+      "digest": "TICV2GKYHLHUWOKQTDKBYHSOPO4L3MB7"
+    },
+    {
+      "timestamp": "2025-02-19T09:34:09Z",
+      "url": "https://hevahealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-12T15:46:15Z",
+      "url": "http://hevahealth.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-12T15:46:15Z",
+      "url": "https://hevahealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-12T15:46:15Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "27GCJXHTXZOCDKHTDIN44IBGSH53AVIN"
+    },
+    {
+      "timestamp": "2025-03-12T15:46:16Z",
+      "url": "https://hevahealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-03-18T19:25:14Z",
+      "url": "http://www.hevahealth.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-03-18T19:25:14Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "YGACCTKFVMDJ5OFF2QAKGPMNHG7CRU7W"
+    },
+    {
+      "timestamp": "2025-03-22T21:53:23Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "W3DLBKFPQFIC4KSWZC7CSWYCVRMUHF7V"
+    },
+    {
+      "timestamp": "2025-04-08T19:16:57Z",
+      "url": "https://HevaHealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-04-08T19:16:57Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "7NA4N7NMLKHFHJXRJVLKIHOYX6AEPU6K"
+    },
+    {
+      "timestamp": "2025-04-24T06:35:23Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "3M7BBSKJF5XUZVBPPGU7YRMIP7IVHJZP"
+    },
+    {
+      "timestamp": "2025-04-28T18:54:23Z",
+      "url": "https://hevahealth.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-04-28T18:54:23Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "MYYLM3C7ME75BONVGQC3GYK67TXAXCGK"
+    },
+    {
+      "timestamp": "2025-05-12T05:31:48Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "QREBOJ5Q4WW2KO3PIUF4HHFQSUQ2P6BZ"
+    },
+    {
+      "timestamp": "2025-05-17T08:44:45Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "XKZRHLLMILH2HENQIW6TVO6Q6UUPAE2T"
+    },
+    {
+      "timestamp": "2025-06-01T21:52:04Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "UQD5LSH7T4IEMF3SFP3HZ3RKEQJJMJZ6"
+    },
+    {
+      "timestamp": "2025-06-15T17:48:06Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "WHIAO7UMMPOF2KEVZ5MZQ6BYDMVH7U2C"
+    },
+    {
+      "timestamp": "2025-08-09T18:19:43Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "HL6KIWG2KNSHCF4Y7UDOQPLQKDY6VJV7"
+    },
+    {
+      "timestamp": "2025-09-16T10:25:22Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "2QYZGR7LDLO62KEQCEMHBOKAAC4QG7SX"
+    },
+    {
+      "timestamp": "2025-10-13T08:59:02Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "HHG3GEGE2VMZUHUEMWENCGXK5BV4GOF7"
+    },
+    {
+      "timestamp": "2025-10-17T06:42:35Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "ATGWKQCVM7YOVV3PHVIKRURXE2GZ3GX7"
+    },
+    {
+      "timestamp": "2025-11-08T12:31:17Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "T3R5IUB2JDDWNP2OZA7WCOODI7RJMUUL"
+    },
+    {
+      "timestamp": "2025-12-09T13:49:04Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "W7OGJEFKRKKBXVGBC2FFYU7DXQ4KMZZB"
+    },
+    {
+      "timestamp": "2026-03-15T01:53:36Z",
+      "url": "https://www.hevahealth.com/",
+      "status": "200",
+      "digest": "3ADTBTRI7YXCV7HIFA7NSM6UEHMLWVZJ"
+    }
+  ]
+}

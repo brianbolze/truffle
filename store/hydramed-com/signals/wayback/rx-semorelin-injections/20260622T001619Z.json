@@ -1,0 +1,87 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:16:19Z",
+  "ok": true,
+  "input": {
+    "url": "https://hydramed.com/rx/semorelin/injections"
+  },
+  "schema_drift": [],
+  "first_seen": "2023-12-11T09:42:45Z",
+  "last_seen": "2025-12-11T21:46:25Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 923,
+  "snapshot_count": 10,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2023-12-11T09:42:45Z",
+      "to": "2025-12-11T21:46:25Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20231211094245/https://hydramed.com/rx/semorelin/injections",
+  "last_snapshot_url": "https://web.archive.org/web/20251211214625/https://hydramed.com/rx/semorelin/injections",
+  "snapshots": [
+    {
+      "timestamp": "2023-12-11T09:42:45Z",
+      "url": "https://hydramed.com/rx/semorelin/injections",
+      "status": "200",
+      "digest": "LSYFF7JKLGH666O6XOI2ZYGT5NIUSL7K"
+    },
+    {
+      "timestamp": "2024-05-18T13:56:09Z",
+      "url": "https://hydramed.com/rx/semorelin/injections",
+      "status": "200",
+      "digest": "6OV3JSSZEW577STOBXLTOLCGSWZOIIWW"
+    },
+    {
+      "timestamp": "2024-07-16T00:14:26Z",
+      "url": "https://hydramed.com/rx/semorelin/injections",
+      "status": "200",
+      "digest": "YPWGJYJ6ZFGNV64P5VBL4J42ATIR7O6M"
+    },
+    {
+      "timestamp": "2024-08-28T18:22:19Z",
+      "url": "https://hydramed.com/rx/semorelin/injections",
+      "status": "200",
+      "digest": "FWF5UFGK37R4RQNXPVJMR4Q6CGPKMLIE"
+    },
+    {
+      "timestamp": "2025-01-22T15:01:09Z",
+      "url": "https://hydramed.com/rx/semorelin/injections",
+      "status": "200",
+      "digest": "UQ6DUDKU2WDT4GVKVICXFD2MX7JNO36Y"
+    },
+    {
+      "timestamp": "2025-06-19T16:05:12Z",
+      "url": "https://hydramed.com/rx/semorelin/injections",
+      "status": "200",
+      "digest": "AYRKE2RAJ3OHYZAW5J2SS3DBDHWL2I2O"
+    },
+    {
+      "timestamp": "2025-07-31T17:54:03Z",
+      "url": "https://hydramed.com/rx/semorelin/injections",
+      "status": "200",
+      "digest": "3W7AUNUZOFQ6QLY7J7LPZQLDTS5NCOD5"
+    },
+    {
+      "timestamp": "2025-09-12T03:42:35Z",
+      "url": "https://hydramed.com/rx/semorelin/injections",
+      "status": "200",
+      "digest": "HUGB6WS4FWQIRG7SV5BU4TLKW56LVHYY"
+    },
+    {
+      "timestamp": "2025-12-02T03:43:49Z",
+      "url": "https://hydramed.com/rx/semorelin/injections",
+      "status": "200",
+      "digest": "4PHLJ2CQVVR7PU5BZHP7O4DQHKIFWUOW"
+    },
+    {
+      "timestamp": "2025-12-11T21:46:25Z",
+      "url": "https://hydramed.com/rx/semorelin/injections",
+      "status": "200",
+      "digest": "ZIH2IEMV4LHAQSFZT6ETYVED5R7NSWN4"
+    }
+  ]
+}

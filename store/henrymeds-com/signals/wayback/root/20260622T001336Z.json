@@ -1,0 +1,1211 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:13:36Z",
+  "ok": true,
+  "input": {
+    "url": "https://henrymeds.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2022-06-21T04:38:31Z",
+  "last_seen": "2026-06-09T14:37:59Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 1461,
+  "snapshot_count": 144,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2022-06-21T04:38:31Z",
+      "to": "2022-10-06T07:08:11Z"
+    },
+    {
+      "status": "301",
+      "from": "2022-12-01T02:18:03Z",
+      "to": "2022-12-01T02:18:03Z"
+    },
+    {
+      "status": "200",
+      "from": "2022-12-05T05:30:06Z",
+      "to": "2022-12-11T08:39:02Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-01-06T17:48:34Z",
+      "to": "2023-01-06T17:48:34Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-01-26T15:56:36Z",
+      "to": "2023-03-19T13:25:56Z"
+    },
+    {
+      "status": "-",
+      "from": "2023-03-19T13:35:38Z",
+      "to": "2023-03-19T13:35:38Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-03-19T13:35:38Z",
+      "to": "2023-04-09T18:07:41Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-04-22T07:22:47Z",
+      "to": "2023-04-22T07:22:47Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-05-08T11:34:10Z",
+      "to": "2023-07-10T17:19:52Z"
+    },
+    {
+      "status": "301",
+      "from": "2023-07-16T10:13:08Z",
+      "to": "2023-07-16T10:13:08Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-08-10T14:36:28Z",
+      "to": "2023-10-12T00:57:57Z"
+    },
+    {
+      "status": "308",
+      "from": "2023-10-30T13:59:11Z",
+      "to": "2023-10-30T13:59:11Z"
+    },
+    {
+      "status": "200",
+      "from": "2023-12-17T11:41:13Z",
+      "to": "2023-12-17T11:41:13Z"
+    },
+    {
+      "status": "308",
+      "from": "2023-12-26T03:08:13Z",
+      "to": "2024-01-07T22:39:11Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-01-07T22:39:17Z",
+      "to": "2024-03-15T18:12:32Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-04-18T22:28:03Z",
+      "to": "2024-04-18T22:28:03Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-04-18T22:28:13Z",
+      "to": "2024-04-18T22:28:13Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-07T02:26:11Z",
+      "to": "2024-05-11T06:11:07Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-05-11T06:15:00Z",
+      "to": "2024-05-11T06:15:00Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-05-19T00:59:42Z",
+      "to": "2024-06-10T20:13:25Z"
+    },
+    {
+      "status": "301",
+      "from": "2024-06-11T21:06:58Z",
+      "to": "2024-06-11T21:06:58Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-06-11T21:06:59Z",
+      "to": "2024-07-17T21:40:30Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-07-19T03:32:03Z",
+      "to": "2024-07-19T03:32:03Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-14T04:28:07Z",
+      "to": "2024-08-14T04:28:07Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-08-14T20:50:38Z",
+      "to": "2024-08-14T20:50:38Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-15T08:11:31Z",
+      "to": "2024-08-15T08:11:31Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-08-20T08:26:35Z",
+      "to": "2024-08-20T08:26:35Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-08-22T00:44:06Z",
+      "to": "2024-08-22T00:44:06Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-08-28T11:17:45Z",
+      "to": "2024-08-28T11:17:45Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-09-04T12:17:28Z",
+      "to": "2024-09-13T17:08:44Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-10-02T16:17:30Z",
+      "to": "2024-10-02T16:17:31Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-10-06T14:48:36Z",
+      "to": "2024-11-02T14:12:29Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-11-11T08:05:41Z",
+      "to": "2024-11-11T08:05:41Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-11-30T19:19:29Z",
+      "to": "2024-11-30T19:19:29Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-12-04T03:48:06Z",
+      "to": "2024-12-04T03:48:06Z"
+    },
+    {
+      "status": "-",
+      "from": "2024-12-04T03:48:06Z",
+      "to": "2024-12-04T03:48:06Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-12-07T01:43:10Z",
+      "to": "2024-12-07T01:43:10Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-07T01:43:10Z",
+      "to": "2024-12-09T21:57:08Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-12-13T22:32:05Z",
+      "to": "2024-12-13T22:32:05Z"
+    },
+    {
+      "status": "200",
+      "from": "2024-12-13T22:32:07Z",
+      "to": "2024-12-15T16:37:25Z"
+    },
+    {
+      "status": "308",
+      "from": "2024-12-16T04:49:21Z",
+      "to": "2025-01-13T03:21:47Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-13T03:22:02Z",
+      "to": "2025-01-13T03:22:02Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-01-13T06:15:29Z",
+      "to": "2025-01-13T06:15:29Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-01-14T01:07:19Z",
+      "to": "2025-01-14T01:07:19Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-01-18T00:00:49Z",
+      "to": "2025-01-18T00:00:49Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-01-18T00:00:49Z",
+      "to": "2025-01-18T00:00:49Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-01-18T04:57:07Z",
+      "to": "2025-01-18T04:57:07Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-01-18T04:57:07Z",
+      "to": "2025-01-18T04:57:07Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-02-06T20:12:27Z",
+      "to": "2025-02-13T03:33:28Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-03-09T23:14:22Z",
+      "to": "2025-03-09T23:14:22Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-09T23:14:22Z",
+      "to": "2025-03-09T23:14:22Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-03-27T18:50:51Z",
+      "to": "2025-03-27T18:50:51Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-03-27T18:50:51Z",
+      "to": "2025-04-03T08:21:31Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-04-07T18:36:04Z",
+      "to": "2025-04-07T18:36:04Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-12T18:11:38Z",
+      "to": "2025-04-12T18:11:38Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-04-15T14:28:25Z",
+      "to": "2025-04-16T15:26:25Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-23T23:27:33Z",
+      "to": "2025-06-19T05:24:28Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-07-11T21:43:45Z",
+      "to": "2025-07-11T21:43:45Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-07-12T08:09:04Z",
+      "to": "2025-07-27T03:15:14Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-08-07T16:46:18Z",
+      "to": "2025-08-07T16:46:18Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-07T16:46:23Z",
+      "to": "2025-08-28T03:04:36Z"
+    },
+    {
+      "status": "308",
+      "from": "2025-08-28T13:24:12Z",
+      "to": "2025-08-28T13:24:12Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-09-05T17:39:24Z",
+      "to": "2025-12-18T22:36:09Z"
+    },
+    {
+      "status": "400",
+      "from": "2025-12-22T02:53:16Z",
+      "to": "2025-12-22T02:53:16Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-12-24T15:43:24Z",
+      "to": "2026-06-09T14:37:59Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20220621043831/https://henrymeds.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260609143759/https://henrymeds.com/",
+  "snapshots": [
+    {
+      "timestamp": "2022-06-21T04:38:31Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "PNKODGSI2SUTXSCEAZ5JVLX34DWDBSSY"
+    },
+    {
+      "timestamp": "2022-06-21T04:38:52Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "ITBT6EZAKVZS5NITK27XC2KN3T3ZWFAU"
+    },
+    {
+      "timestamp": "2022-07-13T19:52:17Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "NSKY4G7SUJ4MYMZE6XXZXFCOYVJP2I3B"
+    },
+    {
+      "timestamp": "2022-10-06T07:08:11Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "7ZFKTJ5JQBQITFNKQPM765OWXFXGSFQK"
+    },
+    {
+      "timestamp": "2022-12-01T02:18:03Z",
+      "url": "http://henrymeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2022-12-05T05:30:06Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "65EM2UJGSOPOVUI2RPGTDPJBZYBPZYLO"
+    },
+    {
+      "timestamp": "2022-12-11T08:39:02Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "AZPRTQJJXGZPB5RUD7ALYGNSH4JIEWVN"
+    },
+    {
+      "timestamp": "2023-01-06T17:48:34Z",
+      "url": "http://henrymeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-01-26T15:56:36Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "DHRN3AVHNS6CZCRW46XMYVAOLDBHPJ5H"
+    },
+    {
+      "timestamp": "2023-01-26T16:00:44Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "GDOPBIHTPW7ZRNYAQI5ZQBX53PJE4YA2"
+    },
+    {
+      "timestamp": "2023-03-06T06:47:59Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "TUU65AGZ2JPDQD5MMVQGSNGYNZAEVGFU"
+    },
+    {
+      "timestamp": "2023-03-19T13:25:56Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "ZF7LQGP6QTBXDQ4GDDOLUCTMV4H7F2DE"
+    },
+    {
+      "timestamp": "2023-03-19T13:35:38Z",
+      "url": "http://henrymeds.com/",
+      "status": "-",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-03-19T13:35:38Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "KPDUM754MFUVVACULPHJMGNWLC5SM6EM"
+    },
+    {
+      "timestamp": "2023-03-21T19:45:31Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "KAIEQI3QB5JO3YAP3DFYZVI5UAJFWT7C"
+    },
+    {
+      "timestamp": "2023-03-31T02:38:20Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "2AV676IWGGRAG43FXA4BC3MKYEHOXY5M"
+    },
+    {
+      "timestamp": "2023-04-08T12:06:29Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "YGCPOB3PUNUDAOCHQSUQIZCBQ6AJK7BE"
+    },
+    {
+      "timestamp": "2023-04-09T18:07:41Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "7WCBMCZBHE54E2DHKIG44TUS6XDC62WF"
+    },
+    {
+      "timestamp": "2023-04-22T07:22:47Z",
+      "url": "http://www.henrymeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-05-08T11:34:10Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "YCM4ZUPVRMBUSXNZERYJX54LBUZYFHXY"
+    },
+    {
+      "timestamp": "2023-05-23T09:09:46Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "LIOS6JHQMMCUMPOJVX4XFZU7PV2Q2LOD"
+    },
+    {
+      "timestamp": "2023-05-31T01:28:52Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "7AVRKNWZOM7TMAIJ7HCC6423OLGYGQ7P"
+    },
+    {
+      "timestamp": "2023-05-31T01:32:14Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "2PZBH4GGYYOOPMS3JFEHT2DZXOZPTTDY"
+    },
+    {
+      "timestamp": "2023-05-31T01:32:14Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "X444WLR3RHXLLMGTRVBY5TXOW7FIS2Q3"
+    },
+    {
+      "timestamp": "2023-06-17T16:06:52Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "52G7LAISCFOTLLWHKKPP6FVSMRBPOLPR"
+    },
+    {
+      "timestamp": "2023-06-17T18:47:19Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "X7GI2RW7P2QKBINCY32IACUFQYVRSYNE"
+    },
+    {
+      "timestamp": "2023-07-05T19:48:50Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "5QHCSF3GNAH72KB3Y77O7DJVBX7KPA3M"
+    },
+    {
+      "timestamp": "2023-07-05T19:50:33Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "4ZR2BB43GIWXDMUDJHT36Z6PA6EBFNDK"
+    },
+    {
+      "timestamp": "2023-07-10T17:19:52Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "NR7QXT274ZZYDD7ASMPFA3UKTRJ5ZLTM"
+    },
+    {
+      "timestamp": "2023-07-16T10:13:08Z",
+      "url": "http://henrymeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2023-08-10T14:36:28Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "GII43HRTMSUZ2IEVHOMVH3UF4BCVNIHS"
+    },
+    {
+      "timestamp": "2023-09-25T12:05:29Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "M5BLXKSZWKNGKNSTX3QLMGRQJ5WUVNPF"
+    },
+    {
+      "timestamp": "2023-10-08T22:41:40Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "6MDRCYXHRQVXECVO55SUR35C7CHJSEQX"
+    },
+    {
+      "timestamp": "2023-10-12T00:57:57Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "7JGWHNFUO3QBWODI44PT3PWZQIP47CXE"
+    },
+    {
+      "timestamp": "2023-10-30T13:59:11Z",
+      "url": "http://henrymeds.com/",
+      "status": "308",
+      "digest": "GHFAO4R57TREHVD2ADRSZJ4CUWS6AD42"
+    },
+    {
+      "timestamp": "2023-12-17T11:41:13Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "P7WWSD6IQLBQEOSBK4GWJUYTEYFS6T6M"
+    },
+    {
+      "timestamp": "2023-12-26T03:08:13Z",
+      "url": "http://www.henrymeds.com/",
+      "status": "308",
+      "digest": "PBN3HIG2XTLQ3PBPFC3EECOH2WR6SGJW"
+    },
+    {
+      "timestamp": "2024-01-07T22:39:11Z",
+      "url": "http://henrymeds.com/",
+      "status": "308",
+      "digest": "GHFAO4R57TREHVD2ADRSZJ4CUWS6AD42"
+    },
+    {
+      "timestamp": "2024-01-07T22:39:17Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "LVDAFTSH2RCIXBTWUXNKFQGCABUIRQPR"
+    },
+    {
+      "timestamp": "2024-01-08T02:49:46Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "IULANBAUYX3RCIVTNPEMTFBMNZ2ENSZ7"
+    },
+    {
+      "timestamp": "2024-01-20T01:20:03Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "PP57GPYAL5DZ5JKSPHF54XTHF6HKXXKM"
+    },
+    {
+      "timestamp": "2024-01-20T01:33:49Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "U3Q7WTXXKP652ZA6VZHALEJWIR5LTXWS"
+    },
+    {
+      "timestamp": "2024-02-11T02:08:56Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "DZSV4GVHV33PJKKVAVJQET2PYHFYBIOU"
+    },
+    {
+      "timestamp": "2024-03-02T02:19:24Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "4F4UGH3RQGL6FXNO4SA5YC6UX2WSSO4E"
+    },
+    {
+      "timestamp": "2024-03-09T09:06:16Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "VQSCYYNZMSWBDZSGZIETGVSK3QHK4IPQ"
+    },
+    {
+      "timestamp": "2024-03-15T18:12:32Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "C6KGAHTWPRMJ2OVRVRRUAB2BPC4BEGLC"
+    },
+    {
+      "timestamp": "2024-04-18T22:28:03Z",
+      "url": "https://www.henrymeds.com/",
+      "status": "308",
+      "digest": "GHFAO4R57TREHVD2ADRSZJ4CUWS6AD42"
+    },
+    {
+      "timestamp": "2024-04-18T22:28:13Z",
+      "url": "http://www.henrymeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-05-07T02:26:11Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "C6YM2RUEEKW22Y3JYIHDY2CJRT2V5BNU"
+    },
+    {
+      "timestamp": "2024-05-11T06:11:07Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "PXDANNNN4QU3R55R2B566HEYFRS2UGMA"
+    },
+    {
+      "timestamp": "2024-05-11T06:15:00Z",
+      "url": "http://henrymeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-05-19T00:59:42Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "DPJACC47THR4ZCXAZUFUH74ITBR4N2HF"
+    },
+    {
+      "timestamp": "2024-05-25T02:43:08Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "53XK2QQGXSO43NEUQ2GWCUGDVTL5T4HT"
+    },
+    {
+      "timestamp": "2024-06-10T20:13:25Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "6J7ZEZYILFKMTSXFL2HLYC77WY4DWDWF"
+    },
+    {
+      "timestamp": "2024-06-11T21:06:58Z",
+      "url": "http://henrymeds.com/",
+      "status": "301",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-06-11T21:06:59Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "HBXXEIWTEMILTIHYPYN7INSRFT4CFXHH"
+    },
+    {
+      "timestamp": "2024-06-13T17:07:48Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "5KMCQX7G73WHROZ6IISPL5YLRB6ZL7CH"
+    },
+    {
+      "timestamp": "2024-06-23T06:57:22Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "73VOGZA5IZS2CQMBQLM6BHB3AW3SAHOI"
+    },
+    {
+      "timestamp": "2024-07-07T13:22:14Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "BUFJPTE6RYH4MKHRHI6V6SJKVS2G7MLM"
+    },
+    {
+      "timestamp": "2024-07-17T21:40:30Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "OUGYKE3X65DXNUK7GO72BA7FSR5QP6OJ"
+    },
+    {
+      "timestamp": "2024-07-19T03:32:03Z",
+      "url": "http://henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-08-14T04:28:07Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "GKK54IXU67UVK2TTAXFRNO3NH2OUY5IU"
+    },
+    {
+      "timestamp": "2024-08-14T20:50:38Z",
+      "url": "http://www.henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-08-15T08:11:31Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "YARB3WUL5DGSYTUYMLYNOOYTKTH2MU2P"
+    },
+    {
+      "timestamp": "2024-08-20T08:26:35Z",
+      "url": "http://www.henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-08-22T00:44:06Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "IW42XUADF3ZXSW53Q7KXJBH7UIMCQ6DK"
+    },
+    {
+      "timestamp": "2024-08-28T11:17:45Z",
+      "url": "https://www.henrymeds.com/",
+      "status": "308",
+      "digest": "GHFAO4R57TREHVD2ADRSZJ4CUWS6AD42"
+    },
+    {
+      "timestamp": "2024-09-04T12:17:28Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "IHROUPPN6DFLNWFNKY6TTDQ3EDU3MKVE"
+    },
+    {
+      "timestamp": "2024-09-09T07:23:14Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "GCARZEKCEQYPN6TRK6NY2J44TM6HYHOE"
+    },
+    {
+      "timestamp": "2024-09-13T17:08:44Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "XG5PRF2W6HWF7NSODZTEN7XTMI4DPXRF"
+    },
+    {
+      "timestamp": "2024-10-02T16:17:30Z",
+      "url": "http://www.henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-10-02T16:17:31Z",
+      "url": "https://www.henrymeds.com/",
+      "status": "308",
+      "digest": "GHFAO4R57TREHVD2ADRSZJ4CUWS6AD42"
+    },
+    {
+      "timestamp": "2024-10-06T14:48:36Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "V5I5LKARTMFCW2KHZDJKCR3YIUQHK5R4"
+    },
+    {
+      "timestamp": "2024-11-02T14:12:29Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "C3M5W52ZCP6VLOIMYTQOCKKKRIBUMN7I"
+    },
+    {
+      "timestamp": "2024-11-11T08:05:41Z",
+      "url": "http://henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-11-30T19:19:29Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "ZBQZW4FPRTA6KZB3A4P4HTYWMH5LKJXY"
+    },
+    {
+      "timestamp": "2024-12-04T03:48:06Z",
+      "url": "http://Henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-12-04T03:48:06Z",
+      "url": "https://Henrymeds.com/",
+      "status": "-",
+      "digest": "KH3YCYBUKOUIKG7S34DCZOS5PLCHXYPI"
+    },
+    {
+      "timestamp": "2024-12-07T01:43:10Z",
+      "url": "http://henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-12-07T01:43:10Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "Z4DM5IS5EIKV4UM2KD5QRBYEEV2QJ2FH"
+    },
+    {
+      "timestamp": "2024-12-09T21:57:08Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "KNMTKNSFZBMM6P5JRBIBIMJB63L5GO7Y"
+    },
+    {
+      "timestamp": "2024-12-13T22:32:05Z",
+      "url": "http://www.henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2024-12-13T22:32:07Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "GP4UGFC3RCUW3HRAJ6CBDCMIMNT5PY3L"
+    },
+    {
+      "timestamp": "2024-12-15T16:37:25Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "Q3KZBB42CIQLS4N6EBZIJ5YWAOKQIWM3"
+    },
+    {
+      "timestamp": "2024-12-16T04:49:21Z",
+      "url": "https://www.henrymeds.com/",
+      "status": "308",
+      "digest": "GHFAO4R57TREHVD2ADRSZJ4CUWS6AD42"
+    },
+    {
+      "timestamp": "2025-01-13T03:21:47Z",
+      "url": "http://www.henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-01-13T03:22:02Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "NKY7DH5MQCL24JNCPAX2DREETETY3ZPT"
+    },
+    {
+      "timestamp": "2025-01-13T06:15:29Z",
+      "url": "http://www.henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-01-14T01:07:19Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "5VWYKEJW36I37CHKQ3JUTAPECZOIWTAJ"
+    },
+    {
+      "timestamp": "2025-01-18T00:00:49Z",
+      "url": "http://Henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-01-18T00:00:49Z",
+      "url": "https://Henrymeds.com/",
+      "status": "-",
+      "digest": "KH3YCYBUKOUIKG7S34DCZOS5PLCHXYPI"
+    },
+    {
+      "timestamp": "2025-01-18T04:57:07Z",
+      "url": "http://HenryMeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-01-18T04:57:07Z",
+      "url": "https://HenryMeds.com/",
+      "status": "-",
+      "digest": "KH3YCYBUKOUIKG7S34DCZOS5PLCHXYPI"
+    },
+    {
+      "timestamp": "2025-02-06T20:12:27Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "TY62G25CTZWSXH7FNLISRR7VYMI4K3RY"
+    },
+    {
+      "timestamp": "2025-02-13T03:33:28Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "VWZ5XWZYOSJWSX3PKXZTKV73VFKV5FTH"
+    },
+    {
+      "timestamp": "2025-03-09T23:14:22Z",
+      "url": "http://henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-03-09T23:14:22Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "CQ3T4M2JIQREOP65YC3S3JOJ374UNMT6"
+    },
+    {
+      "timestamp": "2025-03-27T18:50:51Z",
+      "url": "http://henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-03-27T18:50:51Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "C4UWTXZBVSMDI2AF5FAF5LFCMA2KMQML"
+    },
+    {
+      "timestamp": "2025-03-30T03:27:23Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "OBLNSLETMEXOLTUXCORU6Q2LOICC2O55"
+    },
+    {
+      "timestamp": "2025-04-01T11:52:38Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "WGMZ4GWGJZUOJHC3XOPY3YYW7R2LG4ZH"
+    },
+    {
+      "timestamp": "2025-04-03T08:21:31Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "DBPFCEG75JMW5QY3S3GF4NTATYGCLE4Y"
+    },
+    {
+      "timestamp": "2025-04-07T18:36:04Z",
+      "url": "https://henrymeds.com/",
+      "status": "-",
+      "digest": "WGMZ4GWGJZUOJHC3XOPY3YYW7R2LG4ZH"
+    },
+    {
+      "timestamp": "2025-04-12T18:11:38Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "PWV2MWEL4THE3QACCJLANBEDZQ7J3V2I"
+    },
+    {
+      "timestamp": "2025-04-15T14:28:25Z",
+      "url": "https://www.henrymeds.com/",
+      "status": "308",
+      "digest": "GHFAO4R57TREHVD2ADRSZJ4CUWS6AD42"
+    },
+    {
+      "timestamp": "2025-04-16T15:26:25Z",
+      "url": "http://www.henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-04-16T15:26:25Z",
+      "url": "https://www.henrymeds.com/",
+      "status": "308",
+      "digest": "GHFAO4R57TREHVD2ADRSZJ4CUWS6AD42"
+    },
+    {
+      "timestamp": "2025-04-23T23:27:33Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "DRTS7H6S4TR2HVBGZ2VPGBYMPX7AJ6DC"
+    },
+    {
+      "timestamp": "2025-05-15T00:40:24Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "OSVEVM5EFJL5WMN2RE2ZRPVJGRP4JFLB"
+    },
+    {
+      "timestamp": "2025-05-16T00:31:46Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "Q2PJJXZRZDIMW4JHDZJWFB77P2EBYMMJ"
+    },
+    {
+      "timestamp": "2025-06-02T21:50:32Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "SGCY2LZNUITKCIRU73JIEG57M4Z3J35Y"
+    },
+    {
+      "timestamp": "2025-06-19T05:24:28Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "FLVDGUYBHIHNL3ZXIGTDTJPHPXCVFTDU"
+    },
+    {
+      "timestamp": "2025-07-11T21:43:45Z",
+      "url": "http://henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-07-12T08:09:04Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "MY3QO67DALGKPEE6CPBHZMTA6Y4FHFOI"
+    },
+    {
+      "timestamp": "2025-07-17T01:44:12Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "4KDV6GUWGMD3GQHFE2FZU3DYUG2DGKQI"
+    },
+    {
+      "timestamp": "2025-07-18T19:40:20Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "3Z42VKXANSSOLVPI2WOOE2N4HLNEZBHJ"
+    },
+    {
+      "timestamp": "2025-07-20T02:06:25Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "YNELQ6NZYOJPPJUGZM2WG7U67OF4LB6H"
+    },
+    {
+      "timestamp": "2025-07-21T20:57:18Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "Q75OH57YG3ROTV27QUYVBFKR5LI3KOQS"
+    },
+    {
+      "timestamp": "2025-07-23T08:21:34Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "JCFVS2ZYT6UHIHXE7CYPHXY54YFHRECG"
+    },
+    {
+      "timestamp": "2025-07-27T03:15:14Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "WVSAISMGX4MTNIWGGH3I7LUZIBHH5MMO"
+    },
+    {
+      "timestamp": "2025-08-07T16:46:18Z",
+      "url": "http://henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-08-07T16:46:23Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "NVEDYRZ4B5H5FWJYXS2RAEVQM2SNQLGU"
+    },
+    {
+      "timestamp": "2025-08-15T16:00:50Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "2KK2RJIMXUYECBOJB4JGL5LUGXZD7IWG"
+    },
+    {
+      "timestamp": "2025-08-28T03:04:36Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "KJO3IGWQR4ECAKUK7JT3RJ4SXFM53XCV"
+    },
+    {
+      "timestamp": "2025-08-28T13:24:12Z",
+      "url": "http://www.henrymeds.com/",
+      "status": "308",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-09-05T17:39:24Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "JYIDAMIHAQ2M5MTPQIM4WB57NMSJNJ5K"
+    },
+    {
+      "timestamp": "2025-09-05T21:12:45Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "C42DHJIFXXVICUKM42WGF2GQSTSNKGZC"
+    },
+    {
+      "timestamp": "2025-09-17T19:06:02Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "DBKPXSXCA5K3332VF2R4TZ2LE6XHUWXL"
+    },
+    {
+      "timestamp": "2025-10-14T18:52:47Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "INGSR5NC5QQM3M5DQYJBQI57LOIQKJU4"
+    },
+    {
+      "timestamp": "2025-10-22T00:52:41Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "TODYZEMRR6VBSKLRCN4PYRCEEU5FYZLY"
+    },
+    {
+      "timestamp": "2025-11-03T09:46:38Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "3HZMHPZS475NV5FTUTUBNSSEYOIKRMI3"
+    },
+    {
+      "timestamp": "2025-12-07T02:44:05Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "4FUYLAWSIU4UDFH2VK5IYA6NCIQOXY3G"
+    },
+    {
+      "timestamp": "2025-12-12T17:35:27Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "IJQE56HOY6RVQHSPYROQYNMTFKL2UIAO"
+    },
+    {
+      "timestamp": "2025-12-18T22:36:09Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "ENMLNEHCC4W3AZVVQB4PMBUF3QFLJU3E"
+    },
+    {
+      "timestamp": "2025-12-22T02:53:16Z",
+      "url": "https://henrymeds.com./",
+      "status": "400",
+      "digest": "CBMIGB2VHZ3GVM6H2MUNSSG4M5KISPHP"
+    },
+    {
+      "timestamp": "2025-12-24T15:43:24Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "VNRRCIINPOMI6WHSJBIJPEJJQ4MT3AVC"
+    },
+    {
+      "timestamp": "2026-01-07T15:15:12Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "4WSVBZ2D6FXUZROBXTTXW5FUSZAR7NHZ"
+    },
+    {
+      "timestamp": "2026-01-19T01:16:32Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "PTGOSQS6T6DCSMXUYA3W5KBTWZOWBHKO"
+    },
+    {
+      "timestamp": "2026-02-16T16:34:49Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "FWOAAGWXEWCPAB5YHR47LL5BW5K2R6OZ"
+    },
+    {
+      "timestamp": "2026-03-04T17:56:14Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "4KZ7PK4C6ONHGPO5K736UNBWLER4YVLA"
+    },
+    {
+      "timestamp": "2026-03-08T20:12:25Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "YGVH5ESQ4ZH3ZVU66EDC425HJZEA5FOO"
+    },
+    {
+      "timestamp": "2026-04-13T22:25:01Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "OS2ORJ4QM7DLP76TBGZ2PGZXYP66HIVY"
+    },
+    {
+      "timestamp": "2026-05-07T16:59:30Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "A53FTD6VN7GOAHX2HWZBSNFHQNL2X533"
+    },
+    {
+      "timestamp": "2026-06-09T14:37:59Z",
+      "url": "https://henrymeds.com/",
+      "status": "200",
+      "digest": "H6USBP5UN6DPM7KMDGFP2INZYPYDFISX"
+    }
+  ]
+}

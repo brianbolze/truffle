@@ -1,0 +1,508 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:28:45Z",
+  "ok": true,
+  "input": {
+    "url": "https://tryshed.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2014-12-18T07:14:39Z",
+  "last_seen": "2026-03-06T11:19:36Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 4203,
+  "snapshot_count": 61,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "302",
+      "from": "2014-12-18T07:14:39Z",
+      "to": "2014-12-18T07:14:39Z"
+    },
+    {
+      "status": "200",
+      "from": "2016-01-11T09:17:00Z",
+      "to": "2021-12-27T01:25:15Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-04-02T01:00:06Z",
+      "to": "2025-04-02T01:00:06Z"
+    },
+    {
+      "status": "-",
+      "from": "2025-04-02T01:00:06Z",
+      "to": "2025-04-02T01:00:06Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-04-02T17:46:13Z",
+      "to": "2025-04-02T17:46:17Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-04T22:46:07Z",
+      "to": "2025-04-04T22:46:07Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-04-06T15:41:05Z",
+      "to": "2025-04-06T15:41:05Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-04-21T19:49:10Z",
+      "to": "2025-06-10T20:35:42Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-06-12T02:01:50Z",
+      "to": "2025-06-12T02:01:50Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-06-12T11:16:25Z",
+      "to": "2025-07-12T05:52:41Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-07-14T12:02:54Z",
+      "to": "2025-07-14T12:02:54Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-07-16T14:11:01Z",
+      "to": "2025-08-06T14:23:42Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-08-11T07:03:34Z",
+      "to": "2025-08-11T07:03:34Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-13T19:58:32Z",
+      "to": "2025-08-26T13:51:50Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-08-30T01:35:28Z",
+      "to": "2025-08-30T01:35:28Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-08-30T20:38:48Z",
+      "to": "2025-11-10T22:07:11Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-11-18T15:34:47Z",
+      "to": "2025-11-18T15:34:47Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-11-18T17:07:02Z",
+      "to": "2025-11-19T02:25:49Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-11-19T15:33:12Z",
+      "to": "2025-11-19T15:33:12Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-12-06T20:42:29Z",
+      "to": "2025-12-10T17:11:35Z"
+    },
+    {
+      "status": "301",
+      "from": "2025-12-17T14:44:34Z",
+      "to": "2025-12-17T14:44:34Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-12-17T15:00:11Z",
+      "to": "2026-01-22T06:23:35Z"
+    },
+    {
+      "status": "301",
+      "from": "2026-01-24T20:02:54Z",
+      "to": "2026-01-24T20:02:54Z"
+    },
+    {
+      "status": "200",
+      "from": "2026-01-28T02:46:40Z",
+      "to": "2026-03-06T11:19:36Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20141218071439/http://tryshed.com/",
+  "last_snapshot_url": "https://web.archive.org/web/20260306111936/https://www.tryshed.com/",
+  "snapshots": [
+    {
+      "timestamp": "2014-12-18T07:14:39Z",
+      "url": "http://tryshed.com/",
+      "status": "302",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2016-01-11T09:17:00Z",
+      "url": "http://tryshed.com/",
+      "status": "200",
+      "digest": "AGV3WDIXZW2AQDGVXSLGXFS7U36VUH44"
+    },
+    {
+      "timestamp": "2016-10-21T12:26:51Z",
+      "url": "http://tryshed.com/",
+      "status": "200",
+      "digest": "ZCIX5YLYMSEIVE7SFN74XRCBOT4DKJ36"
+    },
+    {
+      "timestamp": "2017-05-16T01:57:11Z",
+      "url": "http://tryshed.com/",
+      "status": "200",
+      "digest": "I2N4CD2ERN64EGFOSB23PK6KEVNAU7E2"
+    },
+    {
+      "timestamp": "2021-12-27T01:25:15Z",
+      "url": "http://tryshed.com/",
+      "status": "200",
+      "digest": "C2N2OZ6CORQ5LMSJLMQF4VDE4QDWNR3C"
+    },
+    {
+      "timestamp": "2025-04-02T01:00:06Z",
+      "url": "https://tryshed.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-04-02T01:00:06Z",
+      "url": "https://www.tryshed.com/",
+      "status": "-",
+      "digest": "VICQEBCVJRBCB3QJE3SDFA74BI7OHEIV"
+    },
+    {
+      "timestamp": "2025-04-02T17:46:13Z",
+      "url": "http://tryshed.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-04-02T17:46:17Z",
+      "url": "https://tryshed.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-04-04T22:46:07Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "WVVJPNTEVQINCJHQAJKRKOM5FS5WJ7VR"
+    },
+    {
+      "timestamp": "2025-04-06T15:41:05Z",
+      "url": "http://www.tryshed.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-04-21T19:49:10Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "3YYAE77AGGW2XUPGYEMIOYC2MYVDH5VP"
+    },
+    {
+      "timestamp": "2025-04-27T11:00:14Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "MRTU46MG7WQ2P4SO53XXXMXV4KX4LDMG"
+    },
+    {
+      "timestamp": "2025-05-10T16:30:48Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "UDQNCFIAZR2EXJHTW5TFLR5DD5RPRRDY"
+    },
+    {
+      "timestamp": "2025-05-15T12:38:21Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "E44IPZ73QKXUHHZTUSUVIWEMLQVUYPF3"
+    },
+    {
+      "timestamp": "2025-05-23T00:47:12Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "PL7VKLWPH6JHF5APIUBGKFBZ3ZMFPIHB"
+    },
+    {
+      "timestamp": "2025-06-10T20:35:42Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "7EMRFG4GJZP3XTARCXPMW6YO7YCBUKXS"
+    },
+    {
+      "timestamp": "2025-06-12T02:01:50Z",
+      "url": "https://tryshed.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-06-12T11:16:25Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "EJBUVZLCSOJTU2YS6FU44CKT2ZQMCN63"
+    },
+    {
+      "timestamp": "2025-06-13T12:18:21Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "5URDT5MEH7DDKM6WO7L3XXCVB6OW7HRQ"
+    },
+    {
+      "timestamp": "2025-06-17T11:21:16Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "M62X5BZAZWDFRQLMSR7HT5TNCBYLXX5U"
+    },
+    {
+      "timestamp": "2025-07-12T05:52:41Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "3QOXXJXCWLX7IRSJDSC2HV7ZOEB5LNCW"
+    },
+    {
+      "timestamp": "2025-07-14T12:02:54Z",
+      "url": "http://tryshed.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-07-16T14:11:01Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "BVHMPISJ5GSML5GQM6UMOBVOQ77T2ZKJ"
+    },
+    {
+      "timestamp": "2025-08-04T15:21:15Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "FXFMBZPCXKSNZC3PRBU4E5RPWMCGF4WB"
+    },
+    {
+      "timestamp": "2025-08-06T14:23:42Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "NJNDIUIEB3GWN6J77TRQHPP3XPYYNF7K"
+    },
+    {
+      "timestamp": "2025-08-11T07:03:34Z",
+      "url": "https://tryshed.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-08-13T19:58:32Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "5IVNOS2F6HA64HXISWLMJR3MLFRNLBZM"
+    },
+    {
+      "timestamp": "2025-08-22T20:11:14Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "AMXXPL4Y65WH2QBYR7UZUR2AQFRYOFOD"
+    },
+    {
+      "timestamp": "2025-08-23T09:26:27Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "64WSVM6MQOMICRQ6747WEOOH3YO4S7SA"
+    },
+    {
+      "timestamp": "2025-08-26T13:51:50Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "JGL6WVSA2IKZCBSGBFMML4GXONQZW4QM"
+    },
+    {
+      "timestamp": "2025-08-30T01:35:28Z",
+      "url": "https://tryshed.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2025-08-30T20:38:48Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "KO7RJ5KPBM2SOF3WPBNDUWOQPHIM5BZY"
+    },
+    {
+      "timestamp": "2025-09-08T23:19:46Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "256GQPUNB7IORTXHKSH6YNNWKURRYE3A"
+    },
+    {
+      "timestamp": "2025-09-11T02:14:44Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "YUA2VL6M25QYW5ANXYI5GTIXVZOPHBM5"
+    },
+    {
+      "timestamp": "2025-10-01T01:48:05Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "C7NXKP6PEWKYBUAVT7XSNQDLDOWST3NU"
+    },
+    {
+      "timestamp": "2025-10-06T22:49:09Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "JQD273YZI5REJ533EIRZDY3UCYHXCRTT"
+    },
+    {
+      "timestamp": "2025-10-07T05:13:58Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "AF3BGNJA4WLROHC4QPJM33GPPBIKQQIM"
+    },
+    {
+      "timestamp": "2025-10-08T17:39:32Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "XM37EOQGKKVGJN6KO27CYIUWK4LIZ52C"
+    },
+    {
+      "timestamp": "2025-10-17T17:09:25Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "IQYSKJQG2HTULG4K22JTGKGZUVHXXKTD"
+    },
+    {
+      "timestamp": "2025-11-02T14:11:04Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "MK5CZEEXDSZ7A4W3RX2U5W2443LRAVA4"
+    },
+    {
+      "timestamp": "2025-11-09T17:34:46Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "G4EHVOD54SCX3GUKEMP3HHXPU37Z2VES"
+    },
+    {
+      "timestamp": "2025-11-10T07:09:32Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "HVAWB6IP7VWHOIPAGWZ7GASD7FT3WEFZ"
+    },
+    {
+      "timestamp": "2025-11-10T22:07:11Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "LMXA6XXJV4TRXNDB7WXIBQIIWDKL42JO"
+    },
+    {
+      "timestamp": "2025-11-18T15:34:47Z",
+      "url": "http://tryshed.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-11-18T17:07:02Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "BZYK3RXYYJTM52BPUCVV4PCIGF47W27N"
+    },
+    {
+      "timestamp": "2025-11-19T02:25:49Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "TUYNPH3YETC52L2M7SIITEL2E7MFUNZY"
+    },
+    {
+      "timestamp": "2025-11-19T15:33:12Z",
+      "url": "http://www.tryshed.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-12-06T20:42:29Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "PCLS45LJGL7F4BCD3JKB4PTGTLUG6CUU"
+    },
+    {
+      "timestamp": "2025-12-10T17:11:35Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "EJB537GRP2MNUJFHEHW6A7X6WLONVMB4"
+    },
+    {
+      "timestamp": "2025-12-17T14:44:34Z",
+      "url": "http://www.tryshed.com/",
+      "status": "301",
+      "digest": "HLNR6AWVWYCU3YAENY3HYHLIPNWN66X7"
+    },
+    {
+      "timestamp": "2025-12-17T15:00:11Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "QEHMI6BAKXXN7Y6C77YCVDGSVJ6U5ILP"
+    },
+    {
+      "timestamp": "2026-01-14T13:51:05Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "46VBI6BO4UDISN2AIBXZ3MYVKM3YY4CC"
+    },
+    {
+      "timestamp": "2026-01-20T18:18:49Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "6RHTYISOK3D23CIAYO37RP2ATHFF4K6G"
+    },
+    {
+      "timestamp": "2026-01-22T06:23:35Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "N2SVM4QZKCIMU57GDUY4RDCU66RBHWRT"
+    },
+    {
+      "timestamp": "2026-01-24T20:02:54Z",
+      "url": "https://tryshed.com/",
+      "status": "301",
+      "digest": "LGGT76I5HYSS6HQT36GPANELE4H7FWR7"
+    },
+    {
+      "timestamp": "2026-01-28T02:46:40Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "OH4XADHVUUHOBO4JV3ZXUDRATF2POZBW"
+    },
+    {
+      "timestamp": "2026-02-18T02:59:46Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "SS64O6SI6B42G525FJBXC43FC3YQROHY"
+    },
+    {
+      "timestamp": "2026-02-18T18:47:55Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "VYF7YHJEGAJQTQZTGIO4KPEJBQTX7R2J"
+    },
+    {
+      "timestamp": "2026-02-28T07:55:29Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "GNY7HO52KZTJ6IARHV26Q6SARJDBAHEB"
+    },
+    {
+      "timestamp": "2026-03-06T11:19:36Z",
+      "url": "https://www.tryshed.com/",
+      "status": "200",
+      "digest": "YUFQ7VDGPVWMCVJ2ISKPO7ICURSB7QRF"
+    }
+  ]
+}

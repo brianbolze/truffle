@@ -1,0 +1,317 @@
+{
+  "tool": "wayback",
+  "source": "web.archive.org/cdx",
+  "captured_at": "2026-06-22T00:26:56Z",
+  "ok": true,
+  "input": {
+    "url": "https://sermorelin.com/"
+  },
+  "schema_drift": [],
+  "first_seen": "2007-02-02T02:29:09Z",
+  "last_seen": "2026-01-19T17:20:10Z",
+  "first_seen_confidence": "measured",
+  "tenure_days": 7079,
+  "snapshot_count": 40,
+  "snapshots_truncated": false,
+  "status_trail": [
+    {
+      "status": "200",
+      "from": "2007-02-02T02:29:09Z",
+      "to": "2008-10-12T22:21:39Z"
+    },
+    {
+      "status": "302",
+      "from": "2008-12-07T05:25:09Z",
+      "to": "2008-12-07T05:25:09Z"
+    },
+    {
+      "status": "200",
+      "from": "2009-04-14T21:22:54Z",
+      "to": "2009-04-14T21:22:54Z"
+    },
+    {
+      "status": "302",
+      "from": "2009-06-16T06:53:38Z",
+      "to": "2009-06-16T06:53:38Z"
+    },
+    {
+      "status": "200",
+      "from": "2010-10-08T04:58:23Z",
+      "to": "2011-01-30T17:47:19Z"
+    },
+    {
+      "status": "302",
+      "from": "2011-02-02T21:07:39Z",
+      "to": "2011-02-02T21:07:39Z"
+    },
+    {
+      "status": "200",
+      "from": "2011-03-03T01:54:53Z",
+      "to": "2011-10-03T19:48:28Z"
+    },
+    {
+      "status": "302",
+      "from": "2012-05-10T09:13:04Z",
+      "to": "2012-05-10T09:13:04Z"
+    },
+    {
+      "status": "200",
+      "from": "2012-08-06T03:50:55Z",
+      "to": "2017-09-16T00:07:09Z"
+    },
+    {
+      "status": "302",
+      "from": "2019-06-28T13:24:13Z",
+      "to": "2021-12-24T06:06:47Z"
+    },
+    {
+      "status": "200",
+      "from": "2025-07-13T10:04:28Z",
+      "to": "2026-01-19T17:20:10Z"
+    }
+  ],
+  "first_snapshot_url": "https://web.archive.org/web/20070202022909/http://sermorelin.com:80/",
+  "last_snapshot_url": "https://web.archive.org/web/20260119172010/https://sermorelin.com/",
+  "snapshots": [
+    {
+      "timestamp": "2007-02-02T02:29:09Z",
+      "url": "http://sermorelin.com:80/",
+      "status": "200",
+      "digest": "X5WSO4MYWBC3EO2JHBY774NNHUTDNGWY"
+    },
+    {
+      "timestamp": "2007-02-10T01:46:59Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "HDVAQTG4LURR2ILVM2EOCOI4KSZYK3JI"
+    },
+    {
+      "timestamp": "2007-02-17T16:37:44Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "IFGZBLZSMLBMAIUMXH7BSAFQJ2HSRSAH"
+    },
+    {
+      "timestamp": "2007-02-25T14:58:12Z",
+      "url": "http://sermorelin.com:80/",
+      "status": "200",
+      "digest": "CRUHEQLBZVD7QF7RCN4WZSODH37GUKH6"
+    },
+    {
+      "timestamp": "2007-04-29T16:34:43Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "XFDUTC3WPIP5HM5R5MDQHXIFBTJNPBP6"
+    },
+    {
+      "timestamp": "2007-06-20T19:10:49Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "6EFD7YXKD7GD6777DOCKXFDBHL6ZZQDP"
+    },
+    {
+      "timestamp": "2007-08-21T10:45:09Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "Z37KJZEBWBGCG45ZZYCRFBBZJKZ7ANMM"
+    },
+    {
+      "timestamp": "2007-11-07T12:24:20Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "JPWME4JPNTETRPYWFLSLY6DLIEUAO3C6"
+    },
+    {
+      "timestamp": "2007-12-13T00:59:44Z",
+      "url": "http://sermorelin.com:80/",
+      "status": "200",
+      "digest": "23YJEX3LOWYVD2EUVNCL74GETRW33AEP"
+    },
+    {
+      "timestamp": "2008-01-13T23:50:33Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "6FYMJI2T27IRQ5KXG7NIH6ABW7HBJHX5"
+    },
+    {
+      "timestamp": "2008-04-20T11:36:29Z",
+      "url": "http://sermorelin.com:80/",
+      "status": "200",
+      "digest": "EJD6D4R3XSJE7Q5P3WPEQPQPA6WRI6LA"
+    },
+    {
+      "timestamp": "2008-07-05T13:06:48Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "I3WZGQGY7TIIS72OOEG2NZBVMYM4T5QK"
+    },
+    {
+      "timestamp": "2008-08-17T10:52:43Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "764FKJFH3ZD2Q4ECA66P5OIMWDYBSLN2"
+    },
+    {
+      "timestamp": "2008-10-12T22:21:39Z",
+      "url": "http://sermorelin.com/",
+      "status": "200",
+      "digest": "M6QRE2APUJXARDE6JLZEVSG7CC7TKF6A"
+    },
+    {
+      "timestamp": "2008-12-07T05:25:09Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "302",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2009-04-14T21:22:54Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "IOKXUGC7A3HLN2D36XAEBZIER4ES7GZ7"
+    },
+    {
+      "timestamp": "2009-06-16T06:53:38Z",
+      "url": "http://sermorelin.com:80/",
+      "status": "302",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2010-10-08T04:58:23Z",
+      "url": "http://sermorelin.com:80/?",
+      "status": "200",
+      "digest": "AP2Y6EP5P25GSUKWHQQ6ITNEYT4RUV23"
+    },
+    {
+      "timestamp": "2010-11-28T06:03:52Z",
+      "url": "http://sermorelin.com:80/?",
+      "status": "200",
+      "digest": "Q7PTTTEO6KCIECI7ZLP4P3O6BPWECS22"
+    },
+    {
+      "timestamp": "2010-11-28T06:10:30Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "53UE2ATKW7Z2AVMLHBF64N5VWECF6PKV"
+    },
+    {
+      "timestamp": "2010-12-29T15:00:56Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "HGEONCL4RL4YFFYNYJ773BDH6EUAAW6F"
+    },
+    {
+      "timestamp": "2011-01-01T09:34:27Z",
+      "url": "http://sermorelin.com:80/?",
+      "status": "200",
+      "digest": "G7BLRPZBIDRMHBRCX2YPJDGLUH2TFLJM"
+    },
+    {
+      "timestamp": "2011-01-30T17:47:19Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "KBKJAWMC3MTBKLZPRXS6SJ6I4MBORQVO"
+    },
+    {
+      "timestamp": "2011-02-02T21:07:39Z",
+      "url": "http://sermorelin.com:80/?",
+      "status": "302",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2011-03-03T01:54:53Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "QS2O7MK2D76GHR5O6JN2XTFEPKF5X6EL"
+    },
+    {
+      "timestamp": "2011-03-06T00:29:34Z",
+      "url": "http://sermorelin.com:80/?",
+      "status": "200",
+      "digest": "QSICXAKL7JVZLKVACFWMRMGOFG2546NX"
+    },
+    {
+      "timestamp": "2011-03-07T03:52:40Z",
+      "url": "http://sermorelin.com:80/?",
+      "status": "200",
+      "digest": "TYV267V4Y5HP5X4OBSDGBBIHSITD4IMJ"
+    },
+    {
+      "timestamp": "2011-10-03T19:48:28Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "DMSOG5EVP6EDKCXRVIQ4F433SMPIP6KQ"
+    },
+    {
+      "timestamp": "2012-05-10T09:13:04Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "302",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2012-08-06T03:50:55Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "MOUMDO7PCYNOJPETVC63TEDDESAHT2ZF"
+    },
+    {
+      "timestamp": "2013-01-11T20:05:40Z",
+      "url": "http://www.sermorelin.com:80/",
+      "status": "200",
+      "digest": "OOFA4LTN7JP5QN33ZKQ7HGWPTFC4LH2G"
+    },
+    {
+      "timestamp": "2013-06-14T09:06:38Z",
+      "url": "http://sermorelin.com/",
+      "status": "200",
+      "digest": "F7LGNBGGVZUPS3H3ZF7JE3WAR4KTVOPQ"
+    },
+    {
+      "timestamp": "2014-01-08T16:33:40Z",
+      "url": "http://sermorelin.com/",
+      "status": "200",
+      "digest": "TPHRKEVYYVBK6TN7L7SDOMRMIA32NXQR"
+    },
+    {
+      "timestamp": "2014-12-18T07:43:26Z",
+      "url": "http://sermorelin.com/",
+      "status": "200",
+      "digest": "UALWOSGSSRFXJ4Z3MHHJ7OPALNRZVFDN"
+    },
+    {
+      "timestamp": "2017-09-16T00:07:09Z",
+      "url": "http://sermorelin.com/",
+      "status": "200",
+      "digest": "YVZJJWR56SP4SHBWBJA6DY7EMT36XVXP"
+    },
+    {
+      "timestamp": "2019-06-28T13:24:13Z",
+      "url": "http://sermorelin.com/",
+      "status": "302",
+      "digest": "BBWTNN4SI2FWUTQNZFATEJ5MENEGY7MI"
+    },
+    {
+      "timestamp": "2021-12-24T06:06:47Z",
+      "url": "http://sermorelin.com/",
+      "status": "302",
+      "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ"
+    },
+    {
+      "timestamp": "2025-07-13T10:04:28Z",
+      "url": "http://sermorelin.com/",
+      "status": "200",
+      "digest": "XT7VE4MDFEPLITJTBJ2WBFIZQIOP5B4N"
+    },
+    {
+      "timestamp": "2025-09-17T01:37:50Z",
+      "url": "http://sermorelin.com/",
+      "status": "200",
+      "digest": "VXE2GAOGPM3REH7MDFBQ3FRU5P4SFGZF"
+    },
+    {
+      "timestamp": "2026-01-19T17:20:10Z",
+      "url": "https://sermorelin.com/",
+      "status": "200",
+      "digest": "7P76TUCB4NETE6ZF7H57F65M35XKP353"
+    }
+  ]
+}
