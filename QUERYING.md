@@ -99,6 +99,20 @@ It's deliberately **scoped + fenced** so it can't hand back a fast, clean, *conf
 
 These tools print JSON envelopes to stdout (they don't write the store themselves). Persist **company-grain** captures verbatim under `store/<domain>/signals/<source_type>/…` (exact filename owned by `signals.py persist()`) so repeat captures accumulate where `signal_delta.py` can diff them; **category/query-grain** panels (SERP intent) stay project-side or in an experiment until the architecture's `cohorts/` home graduates. The full capture → persist → diff loop + run commands live in [`SIGNALS.md`](SIGNALS.md).
 
+**9. Bounded-live coverage radar — "who is the store missing?"** When membership or completeness is load-bearing and the store-derived cohort may be selection-biased, use a small bounded-live listicle panel as a **coverage radar, not a census**. This is for market-read runs with an approved `bounded-live` plan; it does not grant new spend authority, create a stored Signal, or start a capture campaign.
+
+Use the pattern only for membership / whitespace / boundary questions:
+
+1. **Define the store side first.** Name the inclusion rule for the local cohort and count only profiled companies (`store/<slug>/profile.md`), not raw directories or stubs. Use `python scripts/store.py find <name>` for aliases before calling a named company absent.
+2. **Use SERP as direction-finding.** Search results can find candidate listicles and direct brand confirmations, but snippets are never decision-grade evidence.
+3. **Read at least two authoritative listicles.** Record exact URL, captured/read date, source grade, spend note, and affiliate/SEO caveat. A third source is optional only when the recurrence head is unstable and still within the bounded-live plan.
+4. **Extract verbatim named sets, then clean before set math.** Keep category-relevant operators/platforms. Exclude payers/carriers, marketplaces, aggregators, manufacturers, or adjacent entities unless the selected question explicitly includes them, and log material exclusions.
+5. **Trust recurrence, not rank.** Names appearing across two independent authoritative listicles form the strongest head. Single-listicle names are weaker Tier-2 leads; SERP-only names are direction-finding Tier-3 leads. Listicle order and award labels are affiliate-confounded, not objective ranking.
+6. **Diff against the profiled store.** Report `third-party head ∩ store`, `third-party head not in store`, and any store cohort tail absent from the panel. Say "not found in the store" rather than "not present in the market."
+7. **Output a boundary statement and proposed candidates only.** A good result is a caveated coverage statement plus a tiered propose-don't-write worklist. Do not auto-capture, mutate `store/`, persist the panel under `signals/`, create a category object, or monitor listicles over time.
+
+The key caveat travels with every answer: two affiliate/SEO listicles can expose a missing segment, but they cannot prove a complete market denominator, quality ranking, market share, or absence.
+
 ## Gotchas & limits
 
 **Before trusting a negative.** *"Company X doesn't do Y"* can mean **not offered** or **not captured**. Three signals tell them apart — check before reporting: `key_pages` (what the capturer treated as signal), `unverified_fields` (what it explicitly couldn't get), and the **Provenance** body section (pages analyzed + what was missed).
