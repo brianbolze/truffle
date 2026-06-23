@@ -1,7 +1,7 @@
 # Proposal: Agentic Build Learning System
 
 Date: 2026-06-23  
-Status: proposed operating model
+Status: **Superseded**. See `experiments/01-agentic-build/_design/2026-06-23-learning-system-proposal.md` for canonical proposal.
 
 ## Problem
 

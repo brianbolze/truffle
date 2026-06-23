@@ -52,6 +52,7 @@ Read these before writing:
 - Prefer the simplest option that can meet the acceptance checks this proposal defines.
 - Follow the size defaults in `2026-06-21-lead-context.md`.
 - Treat `high` risk as planning-only unless Brian explicitly approves implementation later.
+- Notice something worth remembering that's *out of scope* for this packet (a Truffle gap, a build-process friction, a recurring correction)? Log it as an observation per [`learning/AGENTS.md`](../../../experiments/01-agentic-build/learning/AGENTS.md) — capture only; the review pass decides what to do with it.
 
 ## Final Response
 
