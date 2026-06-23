@@ -16,3 +16,4 @@ $ARGUMENTS
 - Does this new change increase complexity / risk in a way that we haven't anticipated?
 - If this new feature / change has an associated "FRAME" doc - read it - and ensure we're meeting it's intended goals.
 - If this new feature / change has an associated "PROPOSAL" / "APPROACH" doc - read it - and see if it has drifted.
+- If the review surfaced a process friction, a recurring miss, or a Truffle gap worth remembering, log it as an observation per [`learning/AGENTS.md`](../../../experiments/01-agentic-build/learning/AGENTS.md) — capture only (never a fix); the review pass decides what to do with it.

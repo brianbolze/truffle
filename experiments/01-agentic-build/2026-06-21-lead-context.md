@@ -97,15 +97,11 @@ Include only what earns its place:
 
 ## Learning Loop
 
-At packet close, add one optional `workflow_note` when the process itself taught us something:
+Process lessons no longer go in a packet `workflow_note`. When a packet — or your work on it — surfaces something worth remembering (a build-process friction, a recurring correction, a Truffle gap), log it as an observation in the [`learning/`](learning/AGENTS.md) system: capture only; the review pass decides what to do.
 
-- too heavy
-- too loose
-- missed risk
-- unnecessary rule
-- useful heuristic worth carrying forward
+At packet or batch close, also check whether a learning review is due (the cadence nudge in [`learning/AGENTS.md`](learning/AGENTS.md)) and run `/agent-learning-review` if so.
 
-Do not turn `workflow_note` into a ritual. If nothing meaningful changed about how Agentic Build should operate, omit it.
+Do not wait for cadence on a severe `risk-miss` — anything that could affect store correctness, a contract, live behavior, write authority, or Brian's decision surface gets surfaced immediately.
 
 ## Useful Links
 

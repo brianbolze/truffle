@@ -116,5 +116,5 @@ A good outcome: sharper proposals, better risk calls, less repeated drift — an
 ## Related references
 
 - [`2026-06-21-frame.md`](2026-06-21-frame.md) — parent Agentic Build frame; this is its "Learning loop" should-have, framed in depth.
-- [`2026-06-23-learning-system-proposal.md`](2026-06-23-learning-system-proposal.md) — the solution-space counterpart (to refine once this frame settles).
+- [`_design/2026-06-23-learning-system-proposal.md`](./_design/2026-06-23-learning-system-proposal.md) — the solution-space counterpart.
 - [Operating Principles](https://app.notion.com/p/38684b6d1f49806a8922e20061e644fa) — "Learning loops" and "Invest in conventions"; file-first, no living infrastructure.
