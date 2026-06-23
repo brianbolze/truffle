@@ -102,13 +102,14 @@ the [`OFFERINGS.md`](../../modules/OFFERINGS.md) contract. **Lint it:** `python3
 — roster columns present, `price_visibility` closed-set, every row slug-keyed, **every `$` price greppable in a
 cited capture**, no cross-company canonical key. It exits nonzero on any miss (the misattributed-price guard).
 
-## 1.2 Logos module — the multi-ratio brand-mark set (opt-in)
+## 1.2 Logos module — the multi-ratio brand-mark set (default)
 
-The opt-in `logos:{}` block on `profile.md` (**not** a separate file — three frontmatter entries + a few asset
+The `logos:{}` block on `profile.md` (**not** a separate file — three frontmatter entries + a few asset
 files). Captures a company's marks at the **ratios a consumer renders** — a square **logomark**, a rectangular
 **wordmark**, a wide **og** cover — each with **its measurements attached as facts the consumer gates on** (the
-engine never pre-drops a mark). Asked in the step-2.5 pre-flight batch, like offerings; default runs **skip** it.
-Contract: [`SCHEMA.md` §Logos](../../SCHEMA.md#logos); rationale + the 3-probe evidence:
+engine never pre-drops a mark). **Gathered on every capture** — part of the standard profile (step 7), not a
+step-2.5 add; the data field stays optional only in the sense that pre-2.5 profiles predate it and true-absence
+omits a slot. Contract: [`SCHEMA.md` §Logos](../../SCHEMA.md#logos); rationale + the 3-probe evidence:
 [`_design/2026-06-03-logos.md`](../../_design/2026-06-03-logos.md).
 
 **Near-free over the baseline** — it reuses the homepage payload (`rawHtml` + `metadata` + `branding`) and the
@@ -149,8 +150,9 @@ human glances first. We **flag** it, never auto-remove it (corner flood-fill man
 **Write the block** into `profile.md`'s visual-identity frontmatter per [`SCHEMA.md` §Logos](../../SCHEMA.md#logos):
 each slot records what you found + its measurements; **omit a slot only on true absence** (record a small/weak mark
 with its measurement, never silently drop it). **Canonicalize `logo_url` to the wordmark** (old values grandfather).
-It's an **additive 2.5 MINOR** — stamp `schema_version: "2.5"`, note it in the `Run profile` Provenance line
-(`+logos`), and do **no corpus backfill** (an empty `logos` on an older profile = "predates the module").
+It's an **additive 2.5 MINOR** — keep `schema_version` at SCHEMA's current contract version, and do **no corpus
+backfill** (an empty `logos` on an older profile = "predates the module"). It rides every capture now, so it's **not**
+a `Run profile:` deviation — don't note `+logos` (a vanilla run stays clean).
 
 ## 2. Endpoints
 

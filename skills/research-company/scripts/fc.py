@@ -11,7 +11,7 @@ Usage:
   fc.py map    <url> --slug <slug> [--search TERM] [--limit 500] [--subdomains] [--date YYYY-MM-DD]
   fc.py scrape <url> --slug <slug> --name <name> [--homepage] [--images] [--wait 3500] [--actions-json FILE] [--mobile] [--headers-json FILE] [--proxy auto] [--date ...]
   fc.py hero    --slug <slug> --name <name> [--top 15] [--date ...]  # recall-first hero-image candidates to pick (opt-in asset, §1.1)
-  fc.py logos   --slug <slug> [--name homepage] [--wordmark URL|PATH] [--date ...]  # measure the multi-ratio mark set (opt-in, §1.2)
+  fc.py logos   --slug <slug> [--name homepage] [--wordmark URL|PATH] [--date ...]  # measure the multi-ratio mark set (default, §1.2)
   fc.py verify  --slug <slug> [--date ...]  # scrapes: md5-dedup + sourceURL match + junk soft-404 gate; + lint profile.md once written (incl. logos:{} measurements)
   fc.py spend   --slug <slug> [--date ...]  # this run's attributed cost, summed from per-call creditsUsed
   fc.py signals --slug <slug> [--name homepage] [--date ...]  # slice rawHtml's JSON-LD + nav region (step-7 hint read, free)
@@ -728,7 +728,7 @@ def do_hero(slug: str, name: str, date: str, top_n: int) -> None:
     print("  Reference that path from the flagship's ## Deep block. It is an ASSET, never a roster column.")
 
 
-# --- logos module (opt-in: the multi-ratio brand-mark set, §1.2) ------------
+# --- logos module (default: the multi-ratio brand-mark set, §1.2) -----------
 # Measures the deterministic source chains so the agent never hand-counts pixels:
 #   logomark = the larger MEASURED short side of {google s2/favicons sz=256, apple-touch-icon}
 #   og       = the DECLARED og:image, gated at >=600px actual width (the meta size lies — Probe 3)
