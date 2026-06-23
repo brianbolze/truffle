@@ -5,6 +5,7 @@ Throwaway probes to de-risk a decision **before** committing it to the engine. E
 - One folder per experiment: `<YYYY-MM-DD>-<slug>/`
 - Standard files: `README.md` (hypothesis + method), the probe (script / recipe), `FINDINGS.md` (what we learned).
 - Bulk dumps go in `_out/` (gitignored). Keep READMEs, scripts, and FINDINGS in git.
+- Older experiments can move to `experiments/_archive` to keep the top-level `experiments/` tree clean. But experiments should be preserved, not fully deleted - for design history.
 
 ## Log
 
