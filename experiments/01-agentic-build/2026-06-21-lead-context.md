@@ -87,6 +87,7 @@ Keep Brian's review surface short, plain English, and linked out to packet detai
 
 Include only what earns its place:
 
+- clear, plain English, concise description of the problem being solved
 - decision needed
 - recommendation
 - what changed or would change

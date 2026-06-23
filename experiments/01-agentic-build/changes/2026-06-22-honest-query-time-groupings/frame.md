@@ -36,7 +36,7 @@ Both produce the same bad outcome: a clean-looking answer with a hidden scope pr
 
 ## Why This Matters
 
-Truffle is increasingly used to generate market reads, backlog candidates, and tool ideas. If the grouping behind a claim is fuzzy, downstream work can optimize around a weak premise.
+Truffle is increasingly used to generate market reads. If the grouping behind a claim is fuzzy, downstream judgements can easily go wrong, and users start to lose trust in Truffle.
 
 The goal is not perfect coverage. The goal is that a reader can tell:
 
