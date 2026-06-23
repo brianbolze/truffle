@@ -7,6 +7,8 @@ You're in Truffle's cross-run learning loop. Two halves: **capture** (every run,
 ## If you hit friction during a run → capture
 Copy `observations/_TEMPLATE.md` to `observations/YYYY-MM-DD-short-slug-xxxx.md` (xxxx = 4 random hex). Record **what you saw and what you're *not* claiming — never a fix.**
 
+If a fix is screaming at you, record the **pressure / urge**, not the patch.
+
 **One file per sighting — not one per run.** Log every distinct thing you noticed as its own file (several per run is normal); never lump two unrelated sightings into one (that rebuilds the fused "feedback ticket" that failed before).
 
 **Three hard rules that define the shape:**
@@ -19,9 +21,11 @@ Copy `observations/_TEMPLATE.md` to `observations/YYYY-MM-DD-short-slug-xxxx.md`
 ## If you're running a review pass → consolidate
 Run the [`/agent-learning-review`](../../../.claude/skills/agent-learning-review/SKILL.md) skill — it carries the full procedure and judgment for this pass.
 
-Copy `reviews/_TEMPLATE.md`. Read all observations, cluster repeats, *propose* lessons in `lessons.md` (never promote — that's Brian's gate). Route each cluster's subject and name what you deliberately left unconsolidated.
+Copy `reviews/_TEMPLATE.md`. Read the raw observations first — prior reviews and lessons are dedupe context, not the source. Cluster repeats, *propose* lessons in `lessons.md` (never promote — that's Brian's gate). Route each cluster's subject and name what you deliberately left unconsolidated.
 
 Heuristic for when to trigger: **≥5 observations since the last review.**
+
+Exception: a severe `risk-miss` that could affect store correctness, a contract, live behavior, write authority, or Brian's decision surface gets surfaced immediately; do not wait for the cadence threshold.
 
 **The Anti-Merge Law:** compression happens only by *adding* a lesson that points at observations — never by shrinking, merging, or summarizing them.
 

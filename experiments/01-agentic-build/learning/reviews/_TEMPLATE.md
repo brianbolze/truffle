@@ -4,7 +4,7 @@ proposed: <M>      # lessons proposed or advanced this pass
 left: <K>          # observations deliberately left unconsolidated
 ---
 
-**Pass summary.** One line: what this pass did, including how many you read (that count is derivable from the folder — keep it in prose, not frontmatter). (e.g. "Read 41 observations, proposed 1 lesson from a 3-sighting cluster, left 38 unconsolidated — singletons or no shared shape.")
+**Pass summary.** One line: what this pass did, including how many raw observations you read (that count is derivable from the folder — keep it in prose, not frontmatter). (e.g. "Read 41 observations, proposed 1 lesson from a 3-sighting cluster, left 38 unconsolidated — singletons or no shared shape.")
 
 **Proposed / advanced.**
 - `<lesson-id>` — <one line: the pattern> · from <obs-file>, <obs-file>, … → see lessons.md
@@ -22,9 +22,10 @@ Every proposed lesson MUST carry the two self-tests above — a proposal that ca
 <!--
 HOW TO USE THIS FILE — read before running a review pass.
 
-WHAT A REVIEW PASS IS: the out-of-band consolidation step. It reads ALL observations, clusters repeats,
-and PROPOSES lessons. It never edits a live skill and never decides a fix at capture time. You run it as
-a skill (later, trivially, a scheduled routine). v0 trigger: ≥5 observations since the last review.
+WHAT A REVIEW PASS IS: the out-of-band consolidation step. It reads ALL raw observations first, clusters repeats,
+and PROPOSES lessons. Prior reviews/lessons are dedupe context, not the source. It never edits a live skill and
+never decides a fix at capture time. You run it as a skill (later, trivially, a scheduled routine). v0 trigger:
+≥5 observations since the last review, or any severe `risk-miss` that should not wait for cadence.
 
 FILENAME: reviews/YYYY-MM-DD-pass.md (one note per pass). Copy this file; never write into _TEMPLATE.md.
 

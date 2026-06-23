@@ -29,12 +29,12 @@ Read these first — they are the contract, and this skill defers to them for **
 - [`learning/brian.md`](../../../experiments/01-agentic-build/learning/brian.md) — the protected Brian lane and its entry format.
 - [`learning/reviews/_TEMPLATE.md`](../../../experiments/01-agentic-build/learning/reviews/_TEMPLATE.md) — the exact note shape you will write, including the Anti-Merge attestation.
 - [`learning/observations/_TEMPLATE.md`](../../../experiments/01-agentic-build/learning/observations/_TEMPLATE.md) — so you read each observation in its intended grain.
-- Prior `learning/reviews/*-pass.md` notes — what earlier passes already proposed and what they left, so you don't re-propose or re-cluster the same ground.
+- Prior `learning/reviews/*-pass.md` notes — dedupe context only. The raw observations are the source; don't let the tidy view become your evidence corpus.
 
 ## Task
 
 1. **Ground in the contract.** Read the files above. The rules live there; this skill is only the procedure and the judgment.
-2. **Read every observation** in `learning/observations/` — all of them, including the ones a prior pass already stamped `graduated-into:` (they're context for the shape, even when spent). A single agent reads the whole corpus; it's thin — do not fan out or build machinery.
+2. **Read every raw observation first** in `learning/observations/` — all of them, including the ones a prior pass already stamped `graduated-into:` (they're context for the shape, even when spent). Only after that, read prior reviews/lessons as dedupe context. A single agent reads the whole corpus; it's thin — do not fan out or build machinery.
 3. **Cluster by SHAPE, not topic** — group by shared underlying pressure / failure mode, not surface subject. (The over- and under-cluster traps: see *How to judge well*.)
 4. **Gate each cluster.** Propose a lesson only for a cluster that earns graduation per the gate in `lessons.md`, and only if it passes both self-tests there. Most clusters — and nearly all singletons — will *not* qualify. That's correct.
 5. **Propose, don't promote.** For each cluster that earns it, append a lesson to `lessons.md` at `state: proposed`, in the `L00x` shape `L001` models. Route Brian-correction clusters to `brian.md` instead (that kind and its lane are defined in `AGENTS.md`/`brian.md`).
@@ -52,6 +52,7 @@ The contract says *what* the rules are. This is *how* to apply them without repe
 - **Keep the `left` count honest — and large.** Most observations should sit unconsolidated most passes. A pass that consumes everything is the 345→2 failure running in the other direction. If your "left" list is short, distrust yourself: re-read the observations you consolidated and ask whether each really earned it.
 - **Test 1 (`lessons.md`) is the real filter — apply it ruthlessly before proposing.** Strip every company name, packet id, and run slug out of the rule. If a sharp, general rule survives → it's a lesson. If it dissolves into one case → it's still an observation; leave it. This is what keeps an observation from collapsing into a one-case fix.
 - **"What does it replace?" gates additive lessons.** A lesson that corrects an existing recipe/skill/convention is strong. A lesson that only adds a new rule with nothing retired is suspect — default to not proposing it (this mirrors Brian's own simplify-don't-add reflex in `brian.md`).
+- **Severe `risk-miss` bypasses the cadence, not the gate.** If a miss could affect store correctness, a contract, live behavior, write authority, or Brian's decision surface, surface it in this pass even below the normal review threshold. Still do the self-tests and route it honestly.
 - **Compress only by adding.** If you feel the urge to tighten, merge, or summarize an observation's text — stop. That's the Anti-Merge Law (`AGENTS.md`); compression is only a new lesson pointing back at the raw notes.
 
 ## Output

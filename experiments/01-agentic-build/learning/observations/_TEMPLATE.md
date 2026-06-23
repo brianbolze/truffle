@@ -9,6 +9,8 @@ graduated-into: <leave absent; gets a lesson id (e.g. L001) or a brian.md anchor
 
 **Not claiming.** What this observation is *not* asserting — the fix you're resisting, or the generalization you haven't earned. One line. (e.g. "Not claiming this is a general grep problem; one sighting on one recipe.")
 
+If a fix is screaming at you, name the pressure or urge you felt — not the patch.
+
 <!--
 HOW TO USE THIS FILE — read before writing your first observation.
 
@@ -37,7 +39,8 @@ THREE RULES THAT DEFINE THE SHAPE — break any and you've rebuilt the system th
   friction         — something was harder, slower, or more confusing than it should be.
   surprise         — the system did something you didn't expect (often a latent bug or wrong assumption).
   wish             — "I wanted X and it wasn't there." A gap, stated as a want, not a spec.
-  risk-miss        — a real risk you nearly shipped past, or did. The severe ones can graduate on one sighting.
+  risk-miss        — a real risk you nearly shipped past, or did. If severe (store correctness,
+                     contracts, live behavior, write authority, or Brian's decision surface), surface it immediately.
   brian-correction — Brian corrected the work, the judgment, or the taste. Feeds brian.md, not lessons.md.
   Deliberate v0 cut: positive heuristics worth keeping have no home here — this loop targets the failure cases (friction/surprise/wish/risk-miss/brian-correction) only.
 

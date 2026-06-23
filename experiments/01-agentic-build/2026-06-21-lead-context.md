@@ -101,6 +101,8 @@ Process lessons no longer go in a packet `workflow_note`. When a packet — or y
 
 At packet or batch close, also check whether a learning review is due (the cadence nudge in [`learning/AGENTS.md`](learning/AGENTS.md)) and run `/agent-learning-review` if so.
 
+Do not wait for cadence on a severe `risk-miss` — anything that could affect store correctness, a contract, live behavior, write authority, or Brian's decision surface gets surfaced immediately.
+
 ## Useful Links
 
 - [Operating Principles](https://app.notion.com/p/38684b6d1f49806a8922e20061e644fa) - reach for this when a packet tests Truffle's global preferences: file-first storage, no living infrastructure, splitting state / signals / judgements, derived lenses over additional sources of truth, company domain as keying mechanism, skeptical of adding additional entities / ontology.
