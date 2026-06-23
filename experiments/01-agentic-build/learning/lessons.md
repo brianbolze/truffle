@@ -14,6 +14,8 @@ Reviewed, decided patterns — the curated short list. A lesson is the *distille
 - **parked** — real, but waiting (e.g. for a 2nd sighting, or on a dependency).
 - **dropped** — decided not worth it. Keep the row; it stops the same idea recurring.
 
+Source observations are stamped `graduated-into` **only when the lesson graduates** — a `proposed` lesson just lists them on its row, so a parked or dropped lesson leaves its observations unstamped and available for a later pass.
+
 **Graduation heuristics — a lesson earns graduation on one of these:**
 - the same thing in ≥2 independent runs, or
 - a Brian correction, or

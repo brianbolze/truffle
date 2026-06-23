@@ -2,7 +2,7 @@
 date: YYYY-MM-DD
 run: <changes/YYYY-MM-DD-slug — the packet/run where this was seen; if there's no packet, a session id. Prefer the changes/ form so it greps.>
 kind: <one of: friction | surprise | wish | risk-miss | brian-correction>
-consumed-by: <leave absent; at review this gets a lesson id (e.g. L001) or a brian.md anchor (e.g. brian.md#slug) when it graduates>
+graduated-into: <leave absent; gets a lesson id (e.g. L001) or a brian.md anchor (e.g. brian.md#slug) only when its lesson graduates — never at propose>
 ---
 
 **Saw.** What happened, first-person, concrete. 2–4 plain sentences. Quote the file/line/command if the wording or number is the signal.
@@ -26,7 +26,7 @@ THREE RULES THAT DEFINE THE SHAPE — break any and you've rebuilt the system th
      felt like toil"), never the patch. Deciding what to do is the review pass's job, with cross-run
      sight you don't have.
   2. IMMUTABLE. Once written, never edit, reorder, or delete this file. The ONLY permitted later touch
-     is a `consumed-by: <lesson-id>` stamp added by a review pass when the observation graduates.
+     is a `graduated-into: <lesson-id>` stamp, added when the observation's lesson graduates (after Brian's gate) — not when it's merely proposed.
      Saw something that contradicts an old observation? Write a NEW one that says so. Never rewrite history.
   3. NO SUBJECT FIELD — on purpose. Whether this is about-Truffle (a recipe misleads, the store can't
      answer X) or about-Agentic-Build (a step got skipped, a correction keeps recurring) is decided at

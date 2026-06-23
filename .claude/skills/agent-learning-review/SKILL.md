@@ -34,12 +34,12 @@ Read these first — they are the contract, and this skill defers to them for **
 ## Task
 
 1. **Ground in the contract.** Read the files above. The rules live there; this skill is only the procedure and the judgment.
-2. **Read every observation** in `learning/observations/` — all of them, including the ones a prior pass already stamped `consumed-by:` (they're context for the shape, even when spent). A single agent reads the whole corpus; it's thin — do not fan out or build machinery.
+2. **Read every observation** in `learning/observations/` — all of them, including the ones a prior pass already stamped `graduated-into:` (they're context for the shape, even when spent). A single agent reads the whole corpus; it's thin — do not fan out or build machinery.
 3. **Cluster by SHAPE, not topic** — group by shared underlying pressure / failure mode, not surface subject. (The over- and under-cluster traps: see *How to judge well*.)
 4. **Gate each cluster.** Propose a lesson only for a cluster that earns graduation per the gate in `lessons.md`, and only if it passes both self-tests there. Most clusters — and nearly all singletons — will *not* qualify. That's correct.
 5. **Propose, don't promote.** For each cluster that earns it, append a lesson to `lessons.md` at `state: proposed`, in the `L00x` shape `L001` models. Route Brian-correction clusters to `brian.md` instead (that kind and its lane are defined in `AGENTS.md`/`brian.md`).
 6. **Assign subject + routing now.** Each surfaced cluster gets its subject (`about-Truffle` | `about-Agentic-Build`) and destination *at this step* — capture stayed dumb on purpose. Record it on the lesson row, not the observation. (Routing rules: `lessons.md` / `reviews/_TEMPLATE.md`.)
-7. **Stamp `consumed-by:`** on the observations a proposed lesson graduates from — the **one** permitted touch. Nothing else about an observation may change.
+7. **Stamp `graduated-into:`** only on observations whose lesson *actually graduates this pass* — i.e. a `brian-correction` you distill into `brian.md`. A lesson you leave at `state: proposed` just lists its observations on its `lessons.md` row; do **not** stamp those — the stamp lands later, when Brian's gate graduates the lesson. This is the **one** permitted touch; nothing else about an observation may change.
 8. **Write the pass note.** Copy `reviews/_TEMPLATE.md` to `reviews/YYYY-MM-DD-pass.md`. Fill the "deliberately left unconsolidated" list honestly and the Anti-Merge attestation truthfully.
 9. **Hand Brian the decision surface** (see Final Response). Stop. Do not sharpen any skill.
 
@@ -57,7 +57,7 @@ The contract says *what* the rules are. This is *how* to apply them without repe
 ## Output
 
 - Append/advance any earned lessons in `learning/lessons.md` (`state: proposed`); route `brian-correction` clusters to `learning/brian.md`.
-- Stamp `consumed-by:` on graduated-from observations — nothing else touched.
+- Stamp `graduated-into:` only on observations whose lesson graduated this pass (proposed lessons link their observations on the row, unstamped) — nothing else touched.
 - Write `learning/reviews/YYYY-MM-DD-pass.md` from the template.
 - No live skill, recipe, or convention is edited.
 

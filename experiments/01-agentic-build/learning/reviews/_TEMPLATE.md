@@ -30,7 +30,7 @@ FILENAME: reviews/YYYY-MM-DD-pass.md (one note per pass). Copy this file; never 
 
 WHAT THE PASS MAY AND MAY NOT DO:
   MAY  — read across all observations; cluster by shape; draft/advance a lesson in lessons.md (state: proposed);
-         stamp `consumed-by: <lesson-id>` on the observations a lesson graduates from (the ONE permitted touch);
+         stamp `graduated-into: <lesson-id>` only on observations whose lesson actually graduates this pass (e.g. a brian-correction); a lesson left `proposed` lists its observations on its row, unstamped (the ONE permitted touch);
          assign each surfaced cluster its subject (about-Truffle | about-Agentic-Build) and route it.
   MUST NOT — edit, merge, summarize, reorder, or delete any observation (the Anti-Merge Law);
              promote a lesson itself (that's Brian's gate); collapse two distinct shapes into one mushy cluster.

@@ -1,5 +1,7 @@
 # Agentic Build — Learning System: Decision Surface
 
+> **Historical — design-exploration artifact, not the spec.** The shipped system evolved past this: it ships one-file-per-observation + `lessons.md` (not a flat `observations.log.md` / `work.md`), and the append-only lint is deferred. Canonical spec: the [proposal](../2026-06-23-learning-system-proposal.md) and the live `learning/` folder. Kept for the rationale, not the shape.
+
 *Synthesis of the 7-design tournament, reconciling 3 independent judges (failure-mode skeptic, elegance/generalization, Brian-fit/pragmatism). 2026-06-23.*
 
 ---

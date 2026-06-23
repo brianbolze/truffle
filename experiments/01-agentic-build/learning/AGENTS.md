@@ -11,7 +11,7 @@ Copy `observations/_TEMPLATE.md` to `observations/YYYY-MM-DD-short-slug-xxxx.md`
 
 **Three hard rules that define the shape:**
 1. **No fix.** No slot for a solution, and don't smuggle one into "Saw" (not even the root cause — record the *symptom*, the pressure). Deciding what to do is review's job; it has the cross-run sight you don't.
-2. **Immutable.** Never edit, reorder, or delete an observation. The one permitted later touch is a `consumed-by: <lesson-id>` stamp at review. Contradiction? Write a *new* observation.
+2. **Immutable.** Never edit, reorder, or delete an observation. The one permitted later touch is a `graduated-into: <lesson-id>` stamp, added when a lesson graduates (after Brian's gate) — never at propose. Contradiction? Write a *new* observation.
 3. **No subject field.** about-Truffle vs about-Agentic-Build is decided at review, not capture. Capture stays dumb.
 
 **`kind` is a closed set — one of exactly these five:** `friction | surprise | wish | risk-miss | brian-correction`. Don't invent a sixth. (Positive heuristics worth keeping aren't captured in v0 — friction/surprise/wish/risk-miss/brian-correction only.)
@@ -21,9 +21,9 @@ Run the [`/agent-learning-review`](../../../.claude/skills/agent-learning-review
 
 Copy `reviews/_TEMPLATE.md`. Read all observations, cluster repeats, *propose* lessons in `lessons.md` (never promote — that's Brian's gate). Route each cluster's subject and name what you deliberately left unconsolidated.
 
-Heuristic for when to trigger: **≥5 observations since the last review.** 
+Heuristic for when to trigger: **≥5 observations since the last review.**
 
-**The Anti-Merge Law:** compression happens only by *adding* a lesson that points at observations — never by shrinking, merging, or summarizing them. 
+**The Anti-Merge Law:** compression happens only by *adding* a lesson that points at observations — never by shrinking, merging, or summarizing them.
 
 ## Graduation heuristics
 A lesson earns graduation on one of: ≥2 independent runs · a Brian correction · an independent review catch · one miss severe enough to justify a guardrail. It must first pass two self-tests: **state it without naming a run/company**, and **what does it replace?** (see `lessons.md`).

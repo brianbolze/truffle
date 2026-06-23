@@ -99,6 +99,8 @@ Include only what earns its place:
 
 Process lessons no longer go in a packet `workflow_note`. When a packet — or your work on it — surfaces something worth remembering (a build-process friction, a recurring correction, a Truffle gap), log it as an observation in the [`learning/`](learning/AGENTS.md) system: capture only; the review pass decides what to do.
 
+At packet or batch close, also check whether a learning review is due (the cadence nudge in [`learning/AGENTS.md`](learning/AGENTS.md)) and run `/agent-learning-review` if so.
+
 ## Useful Links
 
 - [Operating Principles](https://app.notion.com/p/38684b6d1f49806a8922e20061e644fa) - reach for this when a packet tests Truffle's global preferences: file-first storage, no living infrastructure, splitting state / signals / judgements, derived lenses over additional sources of truth, company domain as keying mechanism, skeptical of adding additional entities / ontology.
