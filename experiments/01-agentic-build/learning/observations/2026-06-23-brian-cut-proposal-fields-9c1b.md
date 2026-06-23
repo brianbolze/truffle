@@ -1,6 +1,6 @@
 ---
 date: 2026-06-23
-run: changes/0004-query-companies-cohort-cut (proposal review)
+run: changes/2026-06-23-query-companies-cohort-cut (illustrative — proposal review)
 kind: brian-correction
 consumed-by: brian.md#simplify-dont-just-add
 ---

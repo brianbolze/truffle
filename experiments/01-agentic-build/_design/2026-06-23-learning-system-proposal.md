@@ -24,7 +24,7 @@ This shape came out of a 7-design tournament; all seven independently converged 
 - **Capture (in-band, every run).** An agent writes *one short observation file* — what it saw, never a fix. Each agent writes its own file, so writes never collide and an agent can't anchor on someone else's entry.
 - **Review (out-of-band, runs a skill).** A review pass reads *all* observations, clusters repeats, and **proposes** lessons. You approve. An approved lesson then sharpens the relevant skill / verb / convention.
 
-The one rule the whole design rests on: **an observation can never hold a fix, and is never rewritten** (save a one-time `consumed-by` stamp when it graduates — see Key design decisions). That makes the failure that killed the last system impossible by construction — feedback and fixes physically can't fuse, and nothing compresses the raw record away.
+The one rule the whole design rests on: **an observation can never hold a fix, and is never rewritten** (save a one-time `consumed-by` stamp when it graduates — see Key design decisions). That structurally prevents the failure that killed the last system — feedback and fixes physically can't fuse (no fix slot), and nothing compresses the raw record away (immutability is convention until the pre-commit check lands).
 
 We considered many approaches, and are recommending the lightest version: it defeats all four frame failure modes at the lowest cost, it's enforced by file shape (not by hope), and it fits Truffle's existing instincts — file-first, git-tracked, "invest in conventions", "propose don't write," no living infrastructure. The richer designs are where this *grows*, not where it *starts*.
 
@@ -38,6 +38,8 @@ For v0 it captures observations from **Agentic Build runs**, in **both subjects*
 - **About Agentic Build itself** (a step got skipped, the same correction keeps recurring, the process feels clunky) → a **light internal edit** to its own skills/docs, a second look, no change-packet. The ceremony is for changing the engine, not for the build system improving itself.
 
 So "graduate a lesson" isn't one thing: *route to the build workflow* (about-Truffle) or *light edit* (about-the-process). Same capture, two destinations.
+
+*Deferred should-have: an about-Truffle lesson currently enters the build queue directly; routing the bigger, prioritization-worthy gaps onward to `BACKLOG.md` / the Notion roadmap (the frame's "product gaps escape the build loop") isn't wired yet.*
 
 **This `/learnings` approach is meant to be the canonical pattern — not one of several.** We expect it to prove out, and then likely (a) move `learning/` out of `experiments/01-agentic-build/` into a first-class home, and/or (b) fold its conventions into Truffle's rules so other verbs inherit it. The goal is **one** learning system — so Market Read Lab's failing `triage.md` should be reworked onto this pattern, not maintained alongside it.
 

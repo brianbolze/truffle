@@ -34,7 +34,8 @@ Reviewed, decided patterns — the curated short list. A lesson is the *distille
 - **state:** proposed (2026-06-23, review pass)
 - **subject:** about-Truffle → Agentic Build workflow
 - **observations:** [2026-06-23-cohort-count-grep-inflation-7f3a](observations/2026-06-23-cohort-count-grep-inflation-7f3a.md)
-- **gate:** one miss severe enough to justify a guardrail (a clear, silent count-inflation bug — needn't recur).
+- **gate:** one miss severe enough to justify a guardrail — a silent count-inflation defect (`risk-miss`); the reserved single-sighting path, used here because it qualifies, not a license to graduate singletons generally.
+- **note:** seed / bootstrap example — illustrative, not the routine pattern.
 - **rule (test 1 — stated generally):** A category-membership count must read the structured frontmatter tag, never grep the whole profile body. A body mention is not membership; counting it silently inflates the cohort and the over-count looks clean.
 - **replaces (test 2):** the current whole-file grep in the cohort census recipe — not additive; it corrects an existing recipe.
 - **graduation:** pending Brian → then a `/query-companies` recipe fix via agentic-build process (frame → proposal → implement → verify). Link the `changes/` path here when it lands.

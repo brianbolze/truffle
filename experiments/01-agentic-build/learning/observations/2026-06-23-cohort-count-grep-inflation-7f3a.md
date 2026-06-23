@@ -1,7 +1,7 @@
 ---
 date: 2026-06-23
-run: changes/0004-query-companies-cohort-cut (packet on /query-companies)
-kind: surprise
+run: changes/2026-06-23-query-companies-cohort-cut (illustrative)
+kind: risk-miss
 consumed-by: L001
 ---
 

@@ -26,6 +26,7 @@ revise, park, or cut.
 - [`2026-06-21-frame.md`](2026-06-21-frame.md) - why this workflow exists, what it must protect, and what it is not.
 - [`2026-06-21-proposal.md`](2026-06-21-proposal.md) - proposed v0 workflow.
 - [`2026-06-21-lead-context.md`](2026-06-21-lead-context.md) - current lead-agent posture and judgment heuristics.
+- [`learning/`](learning/README.md) - the cross-run learning loop: agents log observations during runs; the `/agent-learning-review` pass consolidates them into proposed lessons. Design: [`_design/2026-06-23-learning-system-proposal.md`](_design/2026-06-23-learning-system-proposal.md).
 
 ## Working Shape
 

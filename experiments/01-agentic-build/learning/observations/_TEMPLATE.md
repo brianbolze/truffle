@@ -1,6 +1,6 @@
 ---
 date: YYYY-MM-DD
-run: <changes/NNNN-slug — the packet/run where this was seen; if there's no packet, a session id. Prefer the changes/ form so it greps.>
+run: <changes/YYYY-MM-DD-slug — the packet/run where this was seen; if there's no packet, a session id. Prefer the changes/ form so it greps.>
 kind: <one of: friction | surprise | wish | risk-miss | brian-correction>
 consumed-by: <leave absent; at review this gets a lesson id (e.g. L001) or a brian.md anchor (e.g. brian.md#slug) when it graduates>
 ---

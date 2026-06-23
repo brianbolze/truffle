@@ -2,7 +2,7 @@
 
 # learning/ — a cross-run learning loop for Agentic Build
 
-Truffle learns *within* a run (e.g. `site_notes`) but had no way to learn *across* runs. This folder is that loop: a cheap **capture** half (every run can record atomic, honest observation notes) and a gated **review** half (an out-of-band pass clusters the notes into lessons you approve). The one rule it all rests on: **a note can never hold a fix, and is never rewritten** — which makes the failure that killed the last attempt (Market Read Lab's `triage.md`, ~345 observations compressed to ~2 fused-to-fixes) impossible by construction.
+Truffle learns *within* a run (e.g. `site_notes`) but had no way to learn *across* runs. This folder is that loop: a cheap **capture** half (every run can record atomic, honest observation notes) and a gated **review** half (an out-of-band pass clusters the notes into lessons you approve). The one rule it all rests on: **a note can never hold a fix** (there's no slot for one) **and is never rewritten** — which structurally prevents the fusion that killed the last attempt (Market Read Lab's `triage.md`, ~345 observations compressed to ~2 fused-to-fixes). *(Immutability is convention for now; a pre-commit check will enforce it.)*
 
 ## The lifecycle (five stages)
 1. **Capture** — a run writes an `observations/` file per distinct thing it noticed (as many as it saw — one sighting each, never two lumped together): what it saw, no fix.
