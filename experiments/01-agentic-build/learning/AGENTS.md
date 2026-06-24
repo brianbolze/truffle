@@ -19,7 +19,7 @@ If a fix is screaming at you, record the **pressure / urge**, not the patch.
 **`kind` is a closed set — one of exactly these five:** `friction | surprise | wish | risk-miss | brian-correction`. Don't invent a sixth. (Positive heuristics worth keeping aren't captured in v0 — friction/surprise/wish/risk-miss/brian-correction only.)
 
 ## If you're running a review pass → consolidate
-Run the [`/agent-learning-review`](../../../.claude/skills/agent-learning-review/SKILL.md) skill — it carries the full procedure and judgment for this pass.
+Run the [`/learning-review`](../../../.claude/skills/learning-review/SKILL.md) skill with target `agentic-build` — it carries the full procedure and judgment for this pass.
 
 Copy `reviews/_TEMPLATE.md`. Read the raw observations first — prior reviews and lessons are dedupe context, not the source. Cluster repeats and *propose* — lessons into `lessons.md`, Brian-taste corrections as `brian.md` candidates named in the pass note. **A pass blesses no entry and stamps no observation: promotion and the `graduated-into:` stamp both wait for Brian's nod, `brian-correction` included.** Route each cluster's subject and name what you deliberately left unconsolidated.
 

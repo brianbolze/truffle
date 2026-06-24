@@ -1,6 +1,6 @@
 ---
 name: agent-build-review
-description: Independently critique one Agentic Build artifact — a frame, a proposal, or an implemented change — surfacing findings plus a recommended lean, never a decision. Use when explicitly asked to run agent-build-review, or to get an independent review of a frame/proposal/change before the lead decides. NOT the learning-consolidation pass (that's agent-learning-review).
+description: Independently critique one Agentic Build artifact — a frame, a proposal, or an implemented change — surfacing findings plus a recommended lean, never a decision. Use when explicitly asked to run agent-build-review, or to get an independent review of a frame/proposal/change before the lead decides. NOT the learning-consolidation pass (that's learning-review).
 disable-model-invocation: true
 argument-hint: [frame|proposal|change] <packet path, or the thing to review>
 ---

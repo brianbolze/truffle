@@ -1,6 +1,6 @@
 ---
 name: agent-learning-mine
-description: Retroactively mine past Claude Code session transcripts into raw learning-loop observations — the optional, fenced capture feeder the learning-system proposal anticipated. Use to seed or backfill `learning/observations/` from friction already on disk (Brian corrections, `/overwhelmed` firings, reviewer catches) that in-band capture missed. One sighting per file, never a fix — defers to `learning/AGENTS.md` for every rule. NOT the review/consolidate pass (that's agent-learning-review); it never proposes a fix or a lesson.
+description: Retroactively mine past Claude Code session transcripts into raw learning-loop observations — the optional, fenced capture feeder the learning-system proposal anticipated. Use to seed or backfill `learning/observations/` from friction already on disk (Brian corrections, `/overwhelmed` firings, reviewer catches) that in-band capture missed. One sighting per file, never a fix — defers to `learning/AGENTS.md` for every rule. NOT the review/consolidate pass (that's learning-review); it never proposes a fix or a lesson.
 disable-model-invocation: true
 argument-hint: <optional: --since YYYY-MM-DD, or a scope note; blank = mine recent sessions>
 ---
@@ -15,7 +15,7 @@ It is the proposal's **"optional, fenced `mine.py` feeder"** — best-effort, an
 
 ## What this is not
 
-- **Not** the review/consolidate pass — it never clusters, proposes, or writes a lesson. That is `agent-learning-review`, run separately afterward.
+- **Not** the review/consolidate pass — it never clusters, proposes, or writes a lesson. That is `learning-review`, run separately afterward.
 - **Not** a fix-proposer — it writes raw observations only; the no-fix rule is the whole point.
 - **Not** live infrastructure — you run it by hand, it writes evidence, it stops.
 
@@ -33,7 +33,7 @@ The observation contract lives in the learning folder; this skill carries only t
 3. **Read existing observations** in `learning/observations/` so you don't re-nominate what's already captured.
 4. **Nominate candidates from the digests.** For a large corpus, fan out reader subagents (Sonnet is plenty — this is extraction against a clear rubric) over digest batches. Each candidate is one sighting + a verbatim quote as its evidence + a proposed `kind` — and **no fix** (defer to the template). You hold synthesis: dedup identical sightings (keep genuine cross-session repeats — those are the signal), drop weak or fix-smuggling ones, and **verify each quote against the digest** before trusting it.
 5. **Write raw observation files** per the template — one file per sighting, immutable shape. Stamp the `run:` field with the session id it came from, marked as mined (the template allows a session id when there is no packet).
-6. **Report and stop.** Do not consolidate or propose. Run `/agent-learning-review` separately when you want the clustering pass.
+6. **Report and stop.** Do not consolidate or propose. Run `/learning-review agentic-build` separately when you want the clustering pass.
 
 ## Hard lines
 
@@ -49,4 +49,4 @@ End with:
 - the scratch digest dir + how many sessions it distilled
 - how many observations you wrote, by `kind`, and from which sessions
 - the honest blind-spot line (mining sees only what was noticed)
-- `No lesson was proposed and nothing was consolidated — run /agent-learning-review for that.`
+- `No lesson was proposed and nothing was consolidated — run /learning-review agentic-build for that.`

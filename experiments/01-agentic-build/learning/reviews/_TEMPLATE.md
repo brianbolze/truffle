@@ -22,5 +22,5 @@ Every proposed lesson MUST carry the two self-tests above — a proposal that ca
 <!--
 This is the note shape — copy it to reviews/NNN-YYYY-MM-DD-pass.md (NNN = next pass number: highest existing prefix + 1, zero-padded). Never write into _TEMPLATE.md.
 
-What lives elsewhere, so this file doesn't restate it: the procedure, the cluster-by-shape judgment, and the "keep the left count large" discipline (a pass that consolidates everything is the 345→2 failure in reverse) are in the /agent-learning-review skill; the rules (Anti-Merge, propose-don't-promote, immutability) are in AGENTS.md; routing (about-Truffle vs about-Agentic-Build) and the lesson lifecycle are in lessons.md.
+What lives elsewhere, so this file doesn't restate it: the procedure, the cluster-by-shape judgment, and the "keep the left count large" discipline (a pass that consolidates everything is the 345→2 failure in reverse) are in the /learning-review skill; the rules (Anti-Merge, propose-don't-promote, immutability) are in AGENTS.md; routing (about-Truffle vs about-Agentic-Build) and the lesson lifecycle are in lessons.md.
 -->
