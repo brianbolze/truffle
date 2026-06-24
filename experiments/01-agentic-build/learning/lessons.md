@@ -41,3 +41,14 @@ Source observations are stamped `graduated-into` **only when the lesson graduate
 - **rule (test 1 — stated generally):** A category-membership count must read the structured frontmatter tag, never grep the whole profile body. A body mention is not membership; counting it silently inflates the cohort and the over-count looks clean.
 - **replaces (test 2):** the current whole-file grep in the cohort census recipe — not additive; it corrects an existing recipe.
 - **graduation:** pending Brian → then a `/query-companies` recipe fix via agentic-build process (frame → proposal → implement → verify). Link the `changes/` path here when it lands.
+
+---
+
+## L002 — Problem-space artifacts must exclude solutions by structure, not by instruction
+- **state:** proposed (2026-06-23, first full review pass)
+- **subject:** about-Agentic-Build → light internal edit (frame skill + run/retro-report convention), no change-packet
+- **observations:** [2026-06-23-frame-doc-drifted-into-solutions-3777](observations/2026-06-23-frame-doc-drifted-into-solutions-3777.md), [2026-06-20-runs-propose-solution-not-friction-8aa6](observations/2026-06-20-runs-propose-solution-not-friction-8aa6.md)
+- **gate:** the same shape in ≥2 independent runs — a frame doc leaked solution opinions, and the Market Read Lab run outputs drifted from reporting friction to proposing solution shapes. Each was caught by an independent review/Brian, not by the author.
+- **rule (test 1 — stated generally):** An artifact whose job is to capture problem-space — a frame, a run/retro report — must be kept solution-free by *structure*, not by instruction. A reminder ("leave solutions out") demonstrably doesn't hold: the drift to prescribing fixes recurs even after an explicit instruction. The working countermeasure already exists in this repo — the observation template has *no slot for a fix* — so the move is to generalize that structural guard to the other problem-space artifacts.
+- **replaces (test 2):** corrects the frame skill + run-report convention (which today lean on instruction/taste to stay solution-free) by giving them the same no-fix structure observations already use — it sharpens an existing convention rather than adding a free-standing rule.
+- **graduation:** pending Brian → then a light edit to the frame skill + the MRL run-report convention. Link the edit here when it lands.
