@@ -1,6 +1,6 @@
 ---
 name: market-read-lab
-description: Use when starting, scaffolding, running, reviewing, triaging, or running autonomous Market Read Lab cycles in this Web Research / Truffle project. Handles numbered run folders, Scout/Read/Review gates, repo templates, and the no-auto-graduation convention.
+description: Use when starting, scaffolding, running, reviewing, or running autonomous Market Read Lab cycles in this Web Research / Truffle project. Handles numbered run folders, Scout/Read/Review gates, repo templates, the append-only learning stream, and the no-auto-graduation convention.
 argument-hint: <new run question/slug, or loop action>
 ---
 
@@ -22,6 +22,7 @@ needs. Persist the **runs**, not the ontology.
 - **Run Loop 1:** use `experiments/00-market-read-lab/templates/operator-loop1-prompt.md`.
 - **Run Loop 2:** use `experiments/00-market-read-lab/templates/operator-loop2-prompt.md`.
 - **Run one autonomous cycle:** follow **Autonomous Full Cycle** below.
+- **Run a learning pass:** use the `/learning-review` skill with target `market-read-lab` (out-of-band consolidation; not per run).
 
 ## Invariants
 
@@ -39,19 +40,21 @@ needs. Persist the **runs**, not the ontology.
   every outside source must be logged in `run-notes.md` `live_evidence_used`.
 - Stop at `needs-human-review` for live browsing outside a bounded plan, unplanned
   Firecrawl spend, broad external research, `store/` mutation, write-back, durable
-  primitive creation, or triage graduation.
+  primitive creation, or lesson graduation.
 - For current/news/policy/pricing claims, treat snippets as leads. Use confident
   language only after receipts capture exact URLs, capture dates, source type, and
   primary/secondary status.
-- `triage.md` is the system-pressure queue, not a question backlog. Candidate questions
-  live in run `scout.md` files unless Brian explicitly creates a shared question queue.
-- Raw observations, wishes, frictions, surprises, source ideas, and gap findings live
-  first in `run-notes.md` Discovery ledger, then in
-  `experiments/00-market-read-lab/discovery-ledger.md`. Singletons are valid discovery
-  evidence; triage is downstream. Every reviewed run must leave cross-run ledger rows,
-  even if the row is a `value-miss` or "no new raw learning" note.
-- Triage items may receive Evidence Log entries; only Brian/humans edit `Human Notes`.
-- Graduation from triage is an explicit human decision.
+- Candidate questions live in run `scout.md` files unless Brian explicitly creates a
+  shared question queue. `learning/lessons.md` and `learning/observations.md` are
+  context, not a question backlog.
+- Raw observations, wishes, frictions, surprises, and gap findings live first in
+  `run-notes.md` Observations, then in
+  `experiments/00-market-read-lab/learning/observations.md`. Singletons are valid
+  learning. Every reviewed run must leave observation rows, even if the row is a "no new
+  raw learning" note.
+- Runs append observations only. Proposing lessons, writing `learning/lessons.md` /
+  `learning/brian.md` / `learning/passes/`, and graduating a lesson are out-of-band and
+  human-gated, never a run stage.
 
 ## Scaffold a New Run
 
@@ -81,7 +84,7 @@ python3 .claude/skills/market-read-lab/scripts/new_run.py \
   --evidence-mode store-only \
   --expected-denominator "Store companies matching the selected offer/category criteria." \
   --allowed-source "store/" \
-  --allowed-source "experiments/00-market-read-lab/triage.md" \
+  --allowed-source "experiments/00-market-read-lab/learning/" \
   --builder-lens "Tests whether existing local State can carry the market read without a durable primitive." \
   --reach-reason "Tests a useful reader question against a bounded local substrate." \
   --why-autonomous-safe "Answerable from local store files and existing lab artifacts." \
@@ -118,11 +121,12 @@ After scaffolding, report the created run path and the printed prompt.
 Run exactly one Scout -> Loop 1 -> Loop 2 cycle in the current routine/session.
 Use file gates between stages; do not hand off by updating scheduled tasks.
 
-1. Read the README, `scout-context.md`, `discovery-ledger.md`, and the Scout/Loop 1/Loop
-   2 operator prompts. Run `question_history.py` before Scout selection so prior
-   selected-question shapes inform the gap check. Treat `triage.md` and the last 3
-   completed `run-notes.md` as post-candidate pressure checks per
-   `scout-context.md`, not as question sources.
+1. Read the README, `scout-context.md`, `learning/observations.md`, `learning/lessons.md`,
+   and the Scout/Loop 1/Loop 2 operator prompts. Run `question_history.py` before Scout
+   selection so prior selected-question shapes inform the gap check. Treat
+   `learning/lessons.md`, `learning/observations.md`, and the last 3 completed
+   `run-notes.md` as post-candidate pressure checks per `scout-context.md`, not as
+   question sources.
 2. Scaffold a temporary Scout run:
 
    ```bash
@@ -146,7 +150,7 @@ Use file gates between stages; do not hand off by updating scheduled tasks.
    selected question.
 6. Run Loop 1 against the current target path. If `read.md` is missing, create it
    from `templates/read.md` after the stage gate passes. Preserve raw learning in the
-   Discovery ledger before pressure tags or triage. Continue only if Loop 1 ends with
+   run-notes Observations section before learning tags. Continue only if Loop 1 ends with
    `run_status: read-done`.
 7. For Loop 2, prefer a quick workflow if the environment supports one. Use an
    adversarial verification shape with three focused passes: evidence verifier,
@@ -154,9 +158,8 @@ Use file gates between stages; do not hand off by updating scheduled tasks.
    Loop 2 normally from the operator prompt. If review files are missing, create them
    from `templates/consumer-review.md` and `templates/developer-review.md` after the
    stage gate passes. Append preserved and review-discovered raw learning to
-   `experiments/00-market-read-lab/discovery-ledger.md` before submitting any triage
-   evidence. Do not set `run_status: reviewed` until the cross-run ledger has rows for
-   this run.
+   `experiments/00-market-read-lab/learning/observations.md`. Do not set
+   `run_status: reviewed` until the observation stream has rows for this run.
 8. Stop after review.
 
 If fresh worker sessions are available, they may run individual stages. The parent
@@ -169,7 +172,7 @@ Final report:
 - `termination_reason`
 - stage reached
 - files touched
-- triage changes
+- observation rows added
 - any approval or evidence block
 
 ## Stage Notes
@@ -183,14 +186,13 @@ rules are clear.
 Loop 1 writes only `read.md`, `run-notes.md`, and receipts. It creates `read.md` from
 the template if needed, but only after the `run_status: scout-only` gate passes. It
 must fail closed unless the Scout contract is complete, autonomous-safe, and
-source-bounded. It fills the `read.md` Gap Map and `run-notes.md` Discovery ledger even
+source-bounded. It fills the `read.md` Gap Map and `run-notes.md` Observations even
 when the direct answer is partial. For `bounded-live`, it must also log every outside
 source in `live_evidence_used`, record spend notes, enforce the selected ceilings, and
 stop with `insufficient-evidence` instead of expanding beyond the plan.
 
-Loop 2 writes `consumer-review.md`, `developer-review.md`, review additions to the
-cross-run discovery ledger, and Evidence Log entries in `triage.md` only when review
-adds mature backlog evidence. Triage entries should be short backlog-ready bullets with
-links to the run or discovery ledger for detail, not narrative storage. It creates
-review files from templates if needed, but only after the `run_status: read-done` gate
-passes. It does not edit `Human Notes`, graduate triage, or implement system changes.
+Loop 2 writes `consumer-review.md`, `developer-review.md`, and the run's observation
+rows in `learning/observations.md`. It creates review files from templates if needed,
+but only after the `run_status: read-done` gate passes. It appends observations only —
+it does not propose lessons, write `learning/lessons.md` / `learning/brian.md` /
+`learning/passes/`, graduate anything, or implement system changes.

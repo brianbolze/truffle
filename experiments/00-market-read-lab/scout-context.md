@@ -27,7 +27,7 @@ The run can pass the design test by showing that no new primitive is needed.
 
 ## Selection Process
 
-Start with the market question, not triage closure.
+Start with the market question, not lesson closure.
 
 Before selecting, build a quick history map from prior **selected** questions:
 
@@ -50,7 +50,7 @@ For each leading candidate, name:
 - `false_confidence_trap`: how the read could overclaim.
 - `repeat_reason`: `new | recurrence | calibration`, and why that matters.
 
-After candidates exist, check `triage.md` and the last 3 completed `run-notes.md` only to annotate design pressure, sharpen evidence requirements, catch recent repeats, or reject candidates that merely execute a parked next step. A triage item can explain why a candidate teaches something; it should not supply the candidate.
+After candidates exist, check `learning/lessons.md`, `learning/observations.md`, and the last 3 completed `run-notes.md` only to annotate design pressure, sharpen evidence requirements, catch recent repeats, or reject candidates that merely execute a parked next step. A lesson or observation can explain why a candidate teaches something; it should not supply the candidate.
 
 Prefer questions with real reader value and experimental value. Gap-probes are first-class when they have a bounded evidence plan and would expose a meaningful frontier: missing companies, missing source families, stale captures, weak denominators, unreachable proof, or a category surface the store cannot see.
 Do not select a pure reader-value question unless it also names the builder lens: which capability, ingredient, source family, grain, guardrail, or persistence boundary the run is expected to test.
@@ -113,30 +113,32 @@ questions and not a queue.
   news claims need primary URLs, capture dates, and source type before confident
   language.
 - Do not mutate `store/`, write back to project systems, create durable primitives,
-  or graduate triage items.
+  or graduate learning lessons.
 
 ## Avoid
 
 - Selecting from a fixed question queue or prompt-menu examples.
 - Picking a question only because the store can answer it easily.
 - Rejecting a valuable gap-probe because the store is expected to fail.
-- Letting triage pressure originate questions instead of annotating reader-valued
-  candidates.
+- Letting learning lessons or observations originate questions instead of annotating
+  reader-valued candidates.
 - Making completeness claims from partial source panels; say "not found," not "not
   there."
 - Turning a query-time grouping into a durable category.
-- Treating `triage.md` as a question backlog. Candidate questions live in individual
-  run `scout.md` files unless Brian explicitly creates a shared queue.
-- Sending raw singleton learning straight to `triage.md`; preserve it in
-  `discovery-ledger.md` first.
+- Treating `learning/lessons.md` or `learning/observations.md` as a question backlog.
+  Candidate questions live in individual run `scout.md` files unless Brian explicitly
+  creates a shared queue.
+- Proposing or graduating lessons from inside a run. Runs append raw singletons to
+  `learning/observations.md`; consolidation is an out-of-band learning pass.
 
 ## Background Pointers
 
 - Lab contract: `experiments/00-market-read-lab/README.md`.
+- Learning loop: `experiments/00-market-read-lab/learning/` (observations, lessons, passes).
 - Design intent: `_design/cohorts-categories/2026-06-19-market-read-lab-proposal.md`.
 - Deep background: `_design/cohorts-categories/2026-06-18-wallow.md`.
 - Bounded-live convention:
   `experiments/00-market-read-lab/_design/2026-06-19-bounded-live-evidence-proposal.md`.
 - Value frame: Notion page `Value & Jobs-to-be-Done`.
-- Post-candidate pressure check: `triage.md` and the last 3 completed
-  `run-notes.md` files.
+- Post-candidate pressure check: `learning/lessons.md`, `learning/observations.md`, and
+  the last 3 completed `run-notes.md` files.

@@ -19,13 +19,13 @@ DEFAULT_LOCAL_DISALLOWED_ACTIONS = [
     "broad external research",
     "write-back to store/",
     "new durable primitives",
-    "triage graduation",
+    "lesson graduation",
 ]
 DEFAULT_BOUNDED_LIVE_DISALLOWED_ACTIONS = [
     "write-back to store/",
     "code, schema, or template changes",
     "durable primitive creation",
-    "triage graduation",
+    "lesson graduation",
 ]
 DEFAULT_LIVE_SOURCE_FAMILIES_DISALLOWED = [
     "login-only or paywalled sources",
@@ -109,8 +109,7 @@ def format_live_evidence_plan(plan: dict[str, object] | None) -> str:
         f"  budget_class: {escape_yaml_string(str(plan['budget_class']))}",
         "  ceilings:",
         f"    source_families_max: {plan['ceilings']['source_families_max']}",
-        "    outside_sources_read_or_captured_max: "
-        f"{plan['ceilings']['outside_sources_read_or_captured_max']}",
+        f"    outside_sources_read_or_captured_max: {plan['ceilings']['outside_sources_read_or_captured_max']}",
         f"    paid_capture_credits_max: {plan['ceilings']['paid_capture_credits_max']}",
         f"  review_after: {escape_yaml_string(str(plan['review_after']))}",
         f"  evidence_goal: {escape_yaml_string(str(plan['evidence_goal']))}",
@@ -163,8 +162,16 @@ def seeded_scout(
     )
     scout = scout.replace("1. \n\nThese may", f"1. {question}\n\nThese may", 1)
     scout = scout.replace("selected_question:\n", f"selected_question: {escape_yaml_string(question)}\n", 1)
-    scout = scout.replace("selected_slug:          # short kebab-case folder slug, e.g. telehealth-category-crowdedness\n", f"selected_slug: {escape_yaml_string(selected_slug or slugify(question))}\n", 1)
-    scout = scout.replace("selected_slug:          # 3-5 word kebab-case folder slug, e.g. telehealth-category-crowdedness\n", f"selected_slug: {escape_yaml_string(selected_slug or slugify(question))}\n", 1)
+    scout = scout.replace(
+        "selected_slug:          # short kebab-case folder slug, e.g. telehealth-category-crowdedness\n",
+        f"selected_slug: {escape_yaml_string(selected_slug or slugify(question))}\n",
+        1,
+    )
+    scout = scout.replace(
+        "selected_slug:          # 3-5 word kebab-case folder slug, e.g. telehealth-category-crowdedness\n",
+        f"selected_slug: {escape_yaml_string(selected_slug or slugify(question))}\n",
+        1,
+    )
     if contract:
         replacements = {
             "run_type:              # market | system-test | mixed": f"run_type: {contract['run_type']}",
@@ -207,7 +214,7 @@ def rendered_run_notes(
             f"evidence_mode: {evidence_mode}".rstrip(),
             f"autonomous_eligible: {autonomous_eligible}".rstrip(),
             f"termination_reason: {termination_reason}".rstrip(),
-            "pressure_lenses_fired: []",
+            "learning_tags: []",
             "```",
         ]
     )
@@ -325,8 +332,7 @@ def main() -> int:
                 missing.append("--source-family-allowed")
             if missing:
                 raise SystemExit(
-                    "--mode loop1 with --evidence-mode bounded-live requires a live evidence plan. Missing: "
-                    + ", ".join(missing)
+                    "--mode loop1 with --evidence-mode bounded-live requires a live evidence plan. Missing: " + ", ".join(missing)
                 )
             live_evidence_plan = {
                 "approved_by": "Brian",
@@ -337,8 +343,7 @@ def main() -> int:
                 "evidence_goal": args.live_evidence_goal,
                 "source_families_allowed": args.source_families_allowed,
                 "source_families_preferred": args.source_families_preferred or [],
-                "source_families_disallowed": args.source_families_disallowed
-                or DEFAULT_LIVE_SOURCE_FAMILIES_DISALLOWED,
+                "source_families_disallowed": args.source_families_disallowed or DEFAULT_LIVE_SOURCE_FAMILIES_DISALLOWED,
                 "fail_closed_when": DEFAULT_BOUNDED_LIVE_FAIL_CLOSED_WHEN,
                 "stop_when": args.stop_when or DEFAULT_BOUNDED_LIVE_STOP_WHEN,
             }

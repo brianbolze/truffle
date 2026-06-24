@@ -1,6 +1,8 @@
 # Market Read Lab Triage
 
-**Status**: Active.
+> **Legacy surface — archived 2026-06-24. Do not append.** The forward learning process lives in [`../learning/`](../learning/): raw sightings in `observations.md`, gated decisions in `lessons.md`. This file is frozen for provenance; the high-signal items were seeded into `learning/lessons.md`.
+
+**Status**: Archived legacy triage surface.
 
 **Priorities**: `P0`, `P1`, `P2`, `P3`, `Low`, `Out-of-scope`.
 

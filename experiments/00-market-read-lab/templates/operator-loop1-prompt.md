@@ -17,8 +17,8 @@ Read:
 - `experiments/00-market-read-lab/templates/read.md`
 - `experiments/00-market-read-lab/templates/run-notes.md`
 - `experiments/00-market-read-lab/templates/receipt.md`
-- `experiments/00-market-read-lab/discovery-ledger.md`
-- `experiments/00-market-read-lab/triage.md`
+- `experiments/00-market-read-lab/learning/observations.md`
+- `experiments/00-market-read-lab/learning/lessons.md`
 - the last 3 completed `run-notes.md` files, if any
 - the target run's `scout.md`
 - the target run's `run-notes.md`
@@ -27,7 +27,7 @@ Read:
 Then:
 1. Gate before research:
    - If the `run-notes.md` header does not say `run_status: scout-only`, stop. Do not
-     edit `read.md`, receipts, reviews, or `triage.md`.
+     edit `read.md`, receipts, reviews, or any `learning/` file.
    - If `scout.md` lacks a filled `Selected Run Contract`, update only the
      `run-notes.md` header to `run_status: needs-human-review` and
      `termination_reason: failed-loop1-exit-check`, then stop.
@@ -65,9 +65,9 @@ Then:
    - Fill `Gap Map` even when the direct answer is strong. For `gap-probe` runs, a
      clean gap map can be the main result.
 4. Treat any denominator or membership list as partial unless proven otherwise.
-5. Preserve raw learning in `run-notes.md` `Discovery ledger` before compressing
-   anything into pressure tags or triage. Include observations, wishes, frictions,
-   surprises, source ideas, singletons, and mapped gaps with evidence pointers.
+5. Preserve raw learning in the `run-notes.md` `Observations` section before compressing
+   anything into learning tags. Include frictions, surprises, wishes, singletons, and
+   mapped gaps with evidence pointers.
 6. Capture receipts for non-obvious inputs, derived lists, or operator observations.
    Use `templates/receipt.md` for new receipts. At minimum, each new receipt should
    record URL or local path, capture date or store clock, source type, source grade,
@@ -77,7 +77,7 @@ Then:
 7. For current/news/policy/pricing claims, search snippets are direction-finding only.
    Receipts must record exact URLs, capture dates, source type, and whether each claim is
    primary or secondary before the read uses confident language.
-8. Fill the target run's `run-notes.md`, including `pressure_lenses_fired` and the
+8. Fill the target run's `run-notes.md`, including `learning_tags` and the
    `Loop 1 exit check` section.
 9. Before finishing, run the mandatory exit check:
    - `run_status` was `scout-only` before Loop 1.
@@ -100,9 +100,9 @@ Then:
      `termination_reason: failed-loop1-exit-check`. Do not tell the operator to start
      Loop 2.
 11. Do not run Consumer Review or Developer Review yet.
-12. Do not implement, spike, or offer to implement system changes. Do not write
-    `triage.md` in Loop 1 unless the operator explicitly asked for it; keep raw
-    learning in the run Discovery ledger for Loop 2 to append to `discovery-ledger.md`.
+12. Do not implement, spike, or offer to implement system changes, and do not write any
+    `learning/` file in Loop 1; keep raw learning in the run Observations section for
+    Loop 2 to append to `learning/observations.md`.
 13. If `run_status: read-done`, end by telling the operator to start Loop 2 in a fresh
     session. Do not offer to run Loop 2 yourself.
 
@@ -118,8 +118,8 @@ Important:
 - If `bounded-live` is used without a plan, source grades, source-use log, receipts,
   ceilings, or stop-rule notes, fail closed to `needs-human-review`.
 - If "no new primitive needed" is the honest result, say so.
-- Use `pressure_lenses_fired` for short `kebab-case` recurrence tags: denominator,
-  source, capture, freshness, tooling, schema, or coverage pressure. These tags are
-  not approvals. Use the tag guide in `run-notes.md`, then fill the Fired tag table;
-  if no existing tag fits, coin one there and explain it.
+- Use `learning_tags` for short `kebab-case` recurrence tags: denominator, source,
+  capture, freshness, tooling, schema, or coverage pressure. These tags are not
+  approvals. Use the tag guide in `run-notes.md`; if no existing tag fits, coin one
+  there and explain it.
 ```

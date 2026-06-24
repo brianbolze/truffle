@@ -11,9 +11,9 @@ Run repeated market reads to learn which category / cohort / non-company primiti
 ## How It Works
 
 Market Read Lab is a file-backed research loop. It picks a market question, answers it
-or maps the gap from approved evidence, preserves raw learning in a cross-run discovery
-stream, reviews where Truffle helped or fell short, and queues only the system pressure
-that is mature enough for a backlog.
+or maps the gap from approved evidence, appends raw learning signals to a cross-run
+observation stream, and reviews where Truffle helped or fell short. Consolidating those
+signals into build decisions is a separate, gated step — see [`learning/`](learning/).
 
 The runner should stay boring. The repo holds the contract: templates, prompts, stage rules, and run artifacts.
 
@@ -35,9 +35,10 @@ Each run moves through three gated work stages:
 1. **Scout** chooses a question and decides whether it is safe to run unattended.
 2. **Loop 1 / Read** answers the question or maps the gap, writes receipts, preserves
    raw observations in the run, and passes only if the evidence checklist is clean.
-3. **Loop 2 / Review** reviews the read from consumer and developer lenses, records
-   value shortfalls and capability gaps in the cross-run discovery ledger, then submits
-   triage pressure only when useful.
+3. **Loop 2 / Review** reviews the read from consumer and developer lenses and appends
+   value shortfalls and capability gaps to the cross-run observation stream
+   (`learning/observations.md`). It does not propose or graduate lessons — that is the
+   out-of-band learning pass's job.
 
 Stages advance through the `run_status` header in `run-notes.md`. If the status is not the expected prior state, the stage stops. This makes double-fires, missed fires, and manual re-runs boring instead of dangerous.
 
@@ -55,13 +56,13 @@ Runs `000`-`002` were produced while the lab contract was still changing. Run `0
 | Stage | Job | Artifacts |
 |---|---|---|
 | **Scout** | Pick a useful market or system-test question for value + reach, including bounded gap-probes, and fill the Selected Run Contract. | `scout.md`, `run-notes.md` header |
-| **Loop 1 / Read** | Answer the selected question or map the gap, capture the evidence trail, and preserve raw observations before triage. | `read.md`, `run-notes.md`, `receipts/` |
-| **Loop 2 / Review** | Split the result through Consumer and Developer lenses: value frontier, shortfalls, and observed capability gaps before proposals. | `consumer-review.md`, `developer-review.md`, `run-notes.md`, `discovery-ledger.md`, optional `triage.md` Evidence Log entries |
-| **Discovery** | Keep the append-only notice-and-keep stream for raw learning and singletons. | `discovery-ledger.md` |
-| **Triage** | Keep a markdown backlog of system pressure. | `triage.md` |
+| **Loop 1 / Read** | Answer the selected question or map the gap, capture the evidence trail, and preserve raw observations. | `read.md`, `run-notes.md`, `receipts/` |
+| **Loop 2 / Review** | Split the result through Consumer and Developer lenses: value frontier, shortfalls, and observed capability gaps, appended as observations. | `consumer-review.md`, `developer-review.md`, `run-notes.md`, `learning/observations.md` |
+| **Observation** | Append-only cross-run stream of run learning signals; one row per sighting, no merge. | `learning/observations.md` |
+| **Learning pass** | Out-of-band, gated: cluster observations, propose lessons, leave most alone. Not run per-run. | `learning/lessons.md`, `learning/passes/`, `learning/brian.md` |
 
-`scout-context.md`, `discovery-ledger.md`, `triage.md`, and prior `run-notes.md` feed
-the next Scout.
+`scout-context.md`, `learning/observations.md`, `learning/lessons.md`, and prior
+`run-notes.md` feed the next Scout as context — not as a question queue.
 
 ## Folder Shape
 
@@ -69,8 +70,13 @@ the next Scout.
 experiments/00-market-read-lab/
   README.md
   scout-context.md
-  discovery-ledger.md
-  triage.md
+  learning/
+    README.md
+    AGENTS.md
+    observations.md
+    lessons.md
+    brian.md
+    passes/
   templates/
   runs/
     NNN-YYYY-MM-DD-short-slug/
@@ -132,18 +138,18 @@ direction-finding only. Receipts need exact URLs or local paths, capture dates o
 clocks, source type, source grade, and claim IDs before synthesis uses confident
 language. Absence language says "not found", not "not true."
 
-**Discovery boundary**: each run keeps raw observations, wishes, frictions, surprises,
-source ideas, and gap findings in `run-notes.md`, then Loop 2 appends them to
-`discovery-ledger.md` before any triage compression. Singletons are valid learning.
-They do not need recurrence to be noticed.
+**Learning boundary**: each run keeps raw observations, wishes, frictions, surprises,
+and gap findings in `run-notes.md`, then Loop 2 appends them to
+`learning/observations.md`. Singletons are valid learning; they do not need recurrence
+to be noticed. Runs append observations only — they do not propose lessons, mark
+readiness, or graduate anything. `learning_tags: []` is a greppable recurrence handle,
+not a fixed taxonomy or approval to build.
 
-**Triage boundary**: triage is the downstream build-and-graduate clock, not the
-discovery stream. Loop agents may submit candidates or Evidence Log entries only when
-review adds evidence mature enough for the backlog; raw narrative detail stays in
-`discovery-ledger.md`. Loop agents must not implement, spike, or offer to implement
-system changes. Loop 2 must never edit `Human Notes` sections in `triage.md`.
-`pressure_lenses_fired: []` is a greppable recurrence handle, not a fixed taxonomy or
-approval to build.
+**Decision boundary**: consolidating observations into lessons is an out-of-band, gated
+learning pass (`learning/AGENTS.md`), not a run stage. Loop agents must not implement,
+spike, or offer to implement system changes, and must not write `learning/lessons.md`,
+`learning/brian.md`, or `learning/passes/`. Graduation into a live Truffle change is
+Brian's call.
 
 "No new primitive needed" is a valid outcome.
 

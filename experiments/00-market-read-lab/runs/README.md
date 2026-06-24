@@ -7,5 +7,5 @@ Use `../templates/` and the operator prompts for current conventions. Runs `000`
 are historical only: `000`-`002` predate the autonomous contract, and `003` is an
 incomplete Scout-only slate from before the Selected Run Contract settled.
 
-Read them for evidence, triage context, pressure patterns, or question-shape history.
+Read them for evidence, learning context, pressure patterns, or question-shape history.
 Do not copy their headers, stage behavior, receipt rigor, or file shape into new runs.

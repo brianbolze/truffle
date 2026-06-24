@@ -5,7 +5,7 @@ run_status:            # scout-only | read-done | needs-human-review | reviewed
 evidence_mode:         # store-only | local-existing | bounded-live | live-external-needs-approval
 autonomous_eligible:   # yes | no
 termination_reason:    # completed | needs-human-review | blocked-by-approval | insufficient-evidence | failed-loop1-exit-check
-pressure_lenses_fired: []  # short recurrence tags, not approvals
+learning_tags: []  # short recurrence tags, not approvals
 ```
 
 ## 30-second operator read
@@ -18,17 +18,20 @@ pressure_lenses_fired: []  # short recurrence tags, not approvals
 
 Brief path taken.
 
-## Discovery ledger
+## Observations
 
-Greedy raw learning for this run. Preserve singletons here before triage compresses
-anything, then Loop 2 appends the useful rows to `discovery-ledger.md`. Do not merge
-rows, dedup into backlog items, or translate wishes into build proposals inside the run.
+Greedy raw learning for this run. Preserve singletons here, then Loop 2 appends the
+useful rows to `learning/observations.md`. Do not merge rows, dedup into backlog items,
+or translate wishes into build proposals inside the run.
 
-Use short IDs such as `O1`, `W1`, `F1`, `S1`, or `G1` so reviews can cite them.
+Use short IDs such as `F1`, `S1`, `W1`, `G1` so reviews can cite them. Kinds are the
+closed set: `friction` · `surprise` · `wish` · `gap` · `risk-miss` · `brian-correction`.
+Record the symptom in `Saw`; put the boundary you are deliberately not asserting in
+`Not claiming` (no fix, no build proposal).
 
-| ID | Kind | Raw observation / wish / friction / surprise / gap | Evidence or pointer | Why it matters | Discovery clock |
+| ID | Kind | Saw | Not claiming | Evidence pointer | Tags |
 |---|---|---|---|---|---|
-|  | observation/wish/friction/surprise/source-idea/gap/value-miss |  |  |  | notice-only / recur-watch / ready-for-triage |
+|  | friction/surprise/wish/gap/risk-miss/brian-correction |  |  |  |  |
 
 ## Inputs and scope
 
@@ -68,7 +71,7 @@ live_evidence_used: []
 
 Repeated manual steps, took a long time, confusing paths, missing helpers, schema mismatches.
 Summarize the operational friction here after preserving concrete sightings in the
-Discovery ledger.
+Observations section.
 
 ## Evidence limits
 
@@ -95,12 +98,14 @@ Record `pass` / `fail` for the mandatory exit check before setting final `run_st
 ## Surprises
 
 Anything unexpected after touching the data.
-Summarize the surprises here after preserving concrete sightings in the Discovery
-ledger.
+Summarize the surprises here after preserving concrete sightings in the Observations
+section.
 
-## Pressure tags
+## Learning tags
 
-Short `kebab-case` tags for system pressure this run exposed. These are recurrence handles, not a fixed taxonomy and not permission to build.
+Short `kebab-case` recurrence handles for system pressure this run exposed. They mirror
+the run header's `learning_tags`. These are not a fixed taxonomy and not permission to
+build — a learning pass decides what, if anything, recurs into a lesson.
 
 Use an existing tag when it fits; coin a narrow tag only when the guide misses the thing.
 
@@ -116,25 +121,10 @@ Use an existing tag when it fits; coin a narrow tag only when the guide misses t
 | `relation-pressure` | Competitors, named parents, suppliers, partners, or other counterparties seem repeatedly useful. |
 | `tooling-ergonomics` | Repeated manual steps suggest a helper, query recipe, or template tweak. |
 
-Which tags fired, if any? Did this run need a new or clearer tag?
+Which tags fired, if any? Did this run need a new or clearer tag? Mirror them into the
+header `learning_tags`.
 
 "No new primitive needed" is a valid outcome.
-
-| Fired tag | What fired in this run | Triage implication |
-|---|---|---|
-|  |  | no-op / watch for recurrence / submit triage candidate |
-
-## Optional triage evidence
-
-Normally none. Add only concrete backlog evidence, with priority/status suggestions,
-when the run has more than a raw singleton or when review adds evidence to an existing
-item. Keep this to 1-3 backlog-ready bullets plus pointers to the Discovery ledger,
-`discovery-ledger.md`, or run artifacts.
-
-**Do not implement, spike, or recommend immediate graduation from inside the run.**
-Raw learning belongs in the run Discovery ledger and `discovery-ledger.md`. Submit
-triage only when the run adds enough evidence for a stewarded backlog item or Evidence
-Log entry.
 
 ## Next-run advice
 

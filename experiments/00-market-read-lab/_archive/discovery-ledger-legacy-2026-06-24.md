@@ -1,6 +1,8 @@
 # Market Read Lab Discovery Ledger
 
-**Status**: Append-only cross-run discovery stream.
+> **Legacy surface — archived 2026-06-24. Do not append.** Rows through run 035 are frozen here for provenance. The forward observation stream lives in [`../learning/observations.md`](../learning/observations.md) (simplified table, new vocabulary).
+
+**Status**: Archived legacy discovery stream; rows through run 035.
 
 ## Purpose
 

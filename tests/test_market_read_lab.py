@@ -46,7 +46,7 @@ class MarketReadLabScaffoldTests(unittest.TestCase):
         self.assertNotIn("live browsing", actions)
         self.assertNotIn("paid capture", actions)
         self.assertIn("write-back to store/", actions)
-        self.assertIn("triage graduation", actions)
+        self.assertIn("lesson graduation", actions)
 
     def test_seeded_scout_renders_bounded_live_plan(self) -> None:
         template = SCOUT_TEMPLATE_PATH.read_text(encoding="utf-8")
@@ -154,13 +154,13 @@ These are Scout recommendations until Brian confirms one.
             autonomous_eligible="yes",
             selected_slug="glp1-default-brand-leaderboard",
             selected_questions=["Which GLP-1 brands are third-party defaults?"],
-            pressure_lenses_fired="[denominator-reconciliation]",
+            learning_tags="[denominator-reconciliation]",
             notice="",
         )
 
         rendered = self.history.render_markdown([row], max_question_chars=0)
 
-        self.assertIn("| Run | Status | Evidence | Question | Pressure | Notice |", rendered)
+        self.assertIn("| Run | Status | Evidence | Question | Tags | Notice |", rendered)
         self.assertIn("bounded-live", rendered)
         self.assertIn("Which GLP-1 brands are third-party defaults?", rendered)
 

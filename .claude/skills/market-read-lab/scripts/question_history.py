@@ -10,7 +10,6 @@ import sys
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
-
 RUN_NAME_RE = re.compile(r"^(\d{3})-\d{4}-\d{2}-\d{2}-.+$")
 
 
@@ -25,7 +24,7 @@ class RunQuestion:
     autonomous_eligible: str
     selected_slug: str
     selected_questions: list[str]
-    pressure_lenses_fired: str
+    learning_tags: str
     notice: str
 
 
@@ -154,11 +153,10 @@ def collect_run(root: Path, run_dir: Path) -> RunQuestion:
         historical_or_pre_contract=historical,
         run_status=parse_notes_value(notes_text, "run_status"),
         evidence_mode=parse_notes_value(notes_text, "evidence_mode") or parse_contract_value(scout_text, "evidence_mode"),
-        autonomous_eligible=parse_notes_value(notes_text, "autonomous_eligible")
-        or parse_contract_value(scout_text, "autonomous_eligible"),
+        autonomous_eligible=parse_notes_value(notes_text, "autonomous_eligible") or parse_contract_value(scout_text, "autonomous_eligible"),
         selected_slug=parse_contract_value(scout_text, "selected_slug"),
         selected_questions=parse_selected_questions(scout_text),
-        pressure_lenses_fired=parse_notes_value(notes_text, "pressure_lenses_fired"),
+        learning_tags=(parse_notes_value(notes_text, "learning_tags") or parse_notes_value(notes_text, "pressure_lenses_fired")),
         notice=notice,
     )
 
@@ -185,7 +183,7 @@ def truncate(value: str, limit: int) -> str:
 
 def render_markdown(rows: list[RunQuestion], *, max_question_chars: int) -> str:
     lines = [
-        "| Run | Status | Evidence | Question | Pressure | Notice |",
+        "| Run | Status | Evidence | Question | Tags | Notice |",
         "|---|---|---|---|---|---|",
     ]
     for row in rows:
@@ -198,7 +196,7 @@ def render_markdown(rows: list[RunQuestion], *, max_question_chars: int) -> str:
                     escape_markdown_cell(row.run_status),
                     escape_markdown_cell(row.evidence_mode),
                     escape_markdown_cell(truncate(questions, max_question_chars)),
-                    escape_markdown_cell(row.pressure_lenses_fired),
+                    escape_markdown_cell(row.learning_tags),
                     escape_markdown_cell(row.notice),
                 ]
             )

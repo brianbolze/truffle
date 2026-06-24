@@ -2,7 +2,7 @@
 
 ## Prior Context Read
 
-- `triage.md`:
+- `learning/lessons.md` / `learning/observations.md` (context, not a question queue):
 - `scout-context.md`:
 - Last 3 `run-notes.md` files:
 - Current run artifacts, if resuming:

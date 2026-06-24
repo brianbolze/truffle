@@ -50,10 +50,10 @@ Keep only the jobs this read actually served. Delete rows that do not apply.
 - **The Pantry / downstream system:** could another agent or product use the read as high-quality ingredients for its own judgments without re-browsing? It needs stable state, dated signals, visible freshness, rare evidence, and any Truffle-side judgments clearly labeled.
 - **First Contact:** would a new human or agent trust what happened?
 
-## Optional triage evidence
+## Raw learning to preserve
 
-Submit queue candidates only when the review adds new evidence. No-op is acceptable.
-Raw value observations, misses, wishes, and singletons should first be preserved in
-`run-notes.md` Discovery ledger and `discovery-ledger.md`.
+Append raw value observations, misses, wishes, and gaps to the `run-notes.md`
+Observations section; Loop 2 lifts them to `learning/observations.md`. Record sightings,
+not lessons — consolidation is an out-of-band learning pass.
 
-**Do not graduate or implement system changes.**
+**Do not propose lessons, graduate anything, or implement system changes.**

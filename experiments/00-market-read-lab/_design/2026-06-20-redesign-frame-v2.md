@@ -9,6 +9,8 @@ sources: [retro/2026-06-20-first-20-runs-retro.md, retro/2026-06-20-idea-harvest
 
 # Frame: Market Read Lab redesign (v2)
 
+> **Superseded in part (2026-06-24).** The learning migration retired `triage.md` and moved the discovery stream to `learning/observations.md`, with gated lessons in `learning/lessons.md`. This frame's diagnosis still stands; its discovery/triage *mechanics* are updated by [`2026-06-24-learning-migration-proposal.md`](2026-06-24-learning-migration-proposal.md). See [`../learning/`](../learning/).
+
 ## 30-second skim
 
 The Lab is a **discovery engine for Truffle's roadmap** — "what are we missing?" — that got built like a *safe, autonomous, convergent answer pipeline*. Opposite shapes. It picked questions the store could already answer, then a clean backlog compressed the divergence the runs did produce (~345 raw observations → ~2 ideas). That thinness is self-defeating: a Lab meant to stop Truffle from guessing the category/ingredient fork, by going thin, *forces the very guess it exists to prevent.*

@@ -35,9 +35,9 @@ that would be needed for a trustworthy answer.
 
 ## Raw Learning to Preserve
 
-Point to the `run-notes.md` Discovery ledger IDs for observations, wishes, frictions,
-surprises, source ideas, and singletons that should be appended to
-`discovery-ledger.md` in Loop 2 even if they do not become triage.
+Point to the `run-notes.md` Observations IDs for frictions, surprises, wishes, gaps, and
+singletons that Loop 2 should append to `learning/observations.md`, even when they do not
+recur.
 
 
 ## External Completeness Check

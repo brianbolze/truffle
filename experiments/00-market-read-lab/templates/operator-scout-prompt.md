@@ -14,7 +14,8 @@ Target run:
 Read:
 - `experiments/00-market-read-lab/README.md`
 - `experiments/00-market-read-lab/scout-context.md`
-- `experiments/00-market-read-lab/discovery-ledger.md`
+- `experiments/00-market-read-lab/learning/observations.md`
+- `experiments/00-market-read-lab/learning/lessons.md`
 - `experiments/00-market-read-lab/templates/run-notes.md`
 - the target run's existing `scout.md`, if present
 - the target run's existing `run-notes.md`, if present
@@ -30,11 +31,11 @@ Then:
    annotate both the value / reach test and the design test. Include at least one
    candidate that reaches past the comfortable cached answer when a bounded plan can
    make it safe.
-3. After the candidates exist, read `experiments/00-market-read-lab/triage.md` and
-   the last 3 completed `run-notes.md` files, if any. Use them only to annotate
-   design pressure, sharpen evidence requirements, catch recent repeats, or reject
-   candidates that merely execute a parked next step. Use `discovery-ledger.md` to
-   notice raw singleton gaps and source ideas, not as a fixed queue.
+3. After the candidates exist, read `experiments/00-market-read-lab/learning/lessons.md`,
+   `experiments/00-market-read-lab/learning/observations.md`, and the last 3 completed
+   `run-notes.md` files, if any. Use them only to annotate design pressure, sharpen
+   evidence requirements, catch recent repeats, or reject candidates that merely execute
+   a parked next step — as context, never as a fixed queue.
 4. For each candidate, name `value_job`, `question_mode`, `value_test`,
    `design_test`, `builder_lens`, `evidence_needed`, `reach_reason`,
    `false_confidence_trap`, `repeat_reason`,
@@ -58,19 +59,20 @@ Then:
    - If the selected question needs live external evidence outside a bounded plan,
      approval, or human reframing, set `run_status: needs-human-review`, use
      `termination_reason: blocked-by-approval` or `needs-human-review`.
-   - Leave `pressure_lenses_fired: []` unchanged unless Scout clearly sees a
-     pressure lens from prior runs.
-7. Do not write `read.md`, review files, or `triage.md`. Do not fill the body of
-   `run-notes.md` below the YAML header.
+   - Leave `learning_tags: []` unchanged unless Scout clearly sees a recurrence tag
+     from prior runs.
+7. Do not write `read.md`, review files, or any `learning/` file. Do not fill the body
+   of `run-notes.md` below the YAML header.
 8. Do not implement, spike, or offer to implement system changes.
 
 Important:
-- Use prior runs and triage as evidence inputs, not templates. Current conventions live
-  in `templates/` and the operator prompts.
+- Use prior runs and the learning stream as evidence inputs, not templates. Current
+  conventions live in `templates/` and the operator prompts.
 - Runs `000`-`003` are historical or incomplete pre-contract runs; do not copy their
   headers, stage behavior, source rigor, or artifact shape.
 - There is no shared question queue yet. Candidate questions live in run `scout.md`
-  files; `triage.md` is for system pressure annotation, not a candidate source.
+  files; `learning/lessons.md` and `learning/observations.md` are context, not a
+  candidate source.
 - Follow `scout-context.md` for the current two-test selection process, value jobs,
   design uncertainties, and evidence-mode rules.
 - Do not reject a candidate merely because it is expected to fail store-only. Reject it
