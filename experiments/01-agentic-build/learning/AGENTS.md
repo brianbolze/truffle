@@ -36,4 +36,5 @@ A lesson earns graduation via one of four triggers, and must pass two self-tests
 - Why this exists / the five-stage lifecycle → `README.md`
 - Observation shape → `observations/_TEMPLATE.md` · Review shape → `reviews/_TEMPLATE.md`
 - Lesson lifecycle + gate → `lessons.md` · Brian's preferences → `brian.md`
+- Retroactive capture (mine past session transcripts) → [`/agent-learning-mine`](../../../.claude/skills/agent-learning-mine/SKILL.md) — optional, fenced feeder; writes these same observation files under these same rules
 - Full rationale → [proposal](../_design/2026-06-23-learning-system-proposal.md)
