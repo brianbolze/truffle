@@ -1,0 +1,15 @@
+{
+  "record_version": "0.1",
+  "verb": "research-company",
+  "status": "complete",
+  "tool": "codex",
+  "model": "gpt-5",
+  "trust": "env",
+  "started_at": "2026-06-24T11:46:47Z",
+  "artifacts": [
+    "profile.md",
+    "offerings.md"
+  ],
+  "ended_at": "2026-06-24T12:08:33Z",
+  "note": "Express capture for Therabody with per-offering roster; Shopify catalog captured via collection pages and representative PDPs."
+}

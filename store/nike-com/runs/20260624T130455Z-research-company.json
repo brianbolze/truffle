@@ -1,0 +1,16 @@
+{
+  "record_version": "0.1",
+  "verb": "research-company",
+  "status": "complete",
+  "tool": "claude-code",
+  "model": "claude-opus-4-8",
+  "trust": "env",
+  "started_at": "2026-06-24T13:04:55Z",
+  "artifacts": [
+    "profile.md",
+    "offerings.md"
+  ],
+  "effort": "xhigh",
+  "ended_at": "2026-06-24T13:22:58Z",
+  "note": "Guided: wellness/recovery + consumer-hardware emphasis; refreshed profile 2.2\u21922.6, scoped recovery offerings (13 SKUs, Nike\u00d7Hyperice)."
+}

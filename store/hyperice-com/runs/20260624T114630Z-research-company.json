@@ -1,0 +1,15 @@
+{
+  "record_version": "0.1",
+  "verb": "research-company",
+  "status": "complete",
+  "tool": "codex",
+  "model": "gpt-5",
+  "trust": "env",
+  "started_at": "2026-06-24T11:46:30Z",
+  "artifacts": [
+    "profile.md",
+    "offerings.md"
+  ],
+  "ended_at": "2026-06-24T13:14:04Z",
+  "note": "Full offerings refresh: 65 Shopify handles; products_json used for six registry-only hidden/legacy rows."
+}
