@@ -27,7 +27,7 @@ and PROPOSES lessons. Prior reviews/lessons are dedupe context, not the source. 
 never decides a fix at capture time. You run it as a skill (later, trivially, a scheduled routine). v0 trigger:
 ≥5 observations since the last review, or any severe `risk-miss` that should not wait for cadence.
 
-FILENAME: reviews/YYYY-MM-DD-pass.md (one note per pass). Copy this file; never write into _TEMPLATE.md.
+FILENAME: reviews/NNN-YYYY-MM-DD-pass.md — NNN is a zero-padded, monotonically increasing pass number (001, 002, …): take the highest existing prefix and add one. The prefix is the sort key and guarantees no collision, even for two passes on the same day; the date stays for readability. One note per pass. Copy this file; never write into _TEMPLATE.md.
 
 WHAT THE PASS MAY AND MAY NOT DO:
   MAY  — read across all observations; cluster by shape; draft/advance a lesson in lessons.md (state: proposed);

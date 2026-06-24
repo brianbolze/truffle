@@ -40,7 +40,7 @@ Read these first — they are the contract, and this skill defers to them for **
 5. **Propose, don't promote.** For each cluster that earns it, append a lesson to `lessons.md` at `state: proposed`, in the `L00x` shape `L001` models. Route Brian-correction clusters to `brian.md` instead (that kind and its lane are defined in `AGENTS.md`/`brian.md`).
 6. **Assign subject + routing now.** Each surfaced cluster gets its subject (`about-Truffle` | `about-Agentic-Build`) and destination *at this step* — capture stayed dumb on purpose. Record it on the lesson row, not the observation. (Routing rules: `lessons.md` / `reviews/_TEMPLATE.md`.)
 7. **Stamp `graduated-into:`** only on observations whose lesson *actually graduates this pass* — i.e. a `brian-correction` you distill into `brian.md`. A lesson you leave at `state: proposed` just lists its observations on its `lessons.md` row; do **not** stamp those — the stamp lands later, when Brian's gate graduates the lesson. This is the **one** permitted touch; nothing else about an observation may change.
-8. **Write the pass note.** Copy `reviews/_TEMPLATE.md` to `reviews/YYYY-MM-DD-pass.md`. Fill the "deliberately left unconsolidated" list honestly and the Anti-Merge attestation truthfully.
+8. **Write the pass note.** Copy `reviews/_TEMPLATE.md` to `reviews/NNN-YYYY-MM-DD-pass.md` — NNN is the next zero-padded, monotonically increasing pass number (take the highest existing prefix and add one). Fill the "deliberately left unconsolidated" list honestly and the Anti-Merge attestation truthfully.
 9. **Hand Brian the decision surface** (see Final Response). Stop. Do not sharpen any skill.
 
 ## How to judge well
@@ -59,7 +59,7 @@ The contract says *what* the rules are. This is *how* to apply them without repe
 
 - Append/advance any earned lessons in `learning/lessons.md` (`state: proposed`); route `brian-correction` clusters to `learning/brian.md`.
 - Stamp `graduated-into:` only on observations whose lesson graduated this pass (proposed lessons link their observations on the row, unstamped) — nothing else touched.
-- Write `learning/reviews/YYYY-MM-DD-pass.md` from the template.
+- Write `learning/reviews/NNN-YYYY-MM-DD-pass.md` from the template (NNN = next monotonic pass number).
 - No live skill, recipe, or convention is edited.
 
 ## Final Response
