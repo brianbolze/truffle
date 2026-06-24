@@ -1,6 +1,6 @@
 ---
 date: YYYY-MM-DD
-proposed: <M>      # lessons proposed or advanced this pass
+proposed: <M>      # lessons + brian.md candidates proposed or advanced this pass
 left: <K>          # observations deliberately left unconsolidated
 ---
 
@@ -11,38 +11,16 @@ left: <K>          # observations deliberately left unconsolidated
   - test 1 (stated generally): <the rule, no run/company named> · test 2 (replaces): <what existing thing it corrects, or "nothing → don't add">
   - gate: <which of the four triggers earned it>
 
-Every proposed lesson MUST carry the two self-tests above — a proposal that can't state itself run-free, or can't name what it replaces, isn't ready. (L001 in lessons.md models the shape.)
+Every proposed lesson MUST carry the two self-tests above — a proposal that can't state itself run-free, or can't name what it replaces, isn't ready. (L001 in lessons.md models the shape.) A Brian-taste correction is proposed here too, as a `brian.md#<slug>` candidate awaiting Brian's nod — don't write it into brian.md yet.
 
 **Deliberately left unconsolidated.** The divergent record I chose *not* to act on, and why. This is the honest half — the part the failed system never wrote.
 - <obs-file> — <why left: singleton, no shared shape, too thin, watching for a 2nd sighting, …>
 - <obs-file> — <why>
 
-**Anti-Merge attestation.** Confirm: no observation was edited, merged, summarized, or deleted this pass. Compression happened only by *adding* lessons that point at observations.
+**Anti-Merge attestation.** Confirm: no observation was edited, merged, summarized, deleted, or stamped this pass (a pass graduates nothing — `graduated-into:` stamps wait for Brian's nod). Compression happened only by *adding* lessons/candidates that point at observations.
 
 <!--
-HOW TO USE THIS FILE — read before running a review pass.
+This is the note shape — copy it to reviews/NNN-YYYY-MM-DD-pass.md (NNN = next pass number: highest existing prefix + 1, zero-padded). Never write into _TEMPLATE.md.
 
-WHAT A REVIEW PASS IS: the out-of-band consolidation step. It reads ALL raw observations first, clusters repeats,
-and PROPOSES lessons. Prior reviews/lessons are dedupe context, not the source. It never edits a live skill and
-never decides a fix at capture time. You run it as a skill (later, trivially, a scheduled routine). v0 trigger:
-≥5 observations since the last review, or any severe `risk-miss` that should not wait for cadence.
-
-FILENAME: reviews/NNN-YYYY-MM-DD-pass.md — NNN is a zero-padded, monotonically increasing pass number (001, 002, …): take the highest existing prefix and add one. The prefix is the sort key and guarantees no collision, even for two passes on the same day; the date stays for readability. One note per pass. Copy this file; never write into _TEMPLATE.md.
-
-WHAT THE PASS MAY AND MAY NOT DO:
-  MAY  — read across all observations; cluster by shape; draft/advance a lesson in lessons.md (state: proposed);
-         stamp `graduated-into: <lesson-id>` only on observations whose lesson actually graduates this pass (e.g. a brian-correction); a lesson left `proposed` lists its observations on its row, unstamped (the ONE permitted touch);
-         assign each surfaced cluster its subject (about-Truffle | about-Agentic-Build) and route it.
-  MUST NOT — edit, merge, summarize, reorder, or delete any observation (the Anti-Merge Law);
-             promote a lesson itself (that's Brian's gate); collapse two distinct shapes into one mushy cluster.
-
-THE "left" COUNT IS NOT OPTIONAL. Most observations should sit unconsolidated most passes — singletons and
-divergent one-offs are the asset, not backlog to clear. A pass that consolidates everything is the failure
-mode (345→2) in the other direction. Naming what you left, and why, is what makes over-compression auditable.
-
-ROUTING (decided here, not at capture):
-  about-Truffle        → the lesson enters Agentic Build's workflow (frame → proposal → review → implement → verify).
-                         The learning system feeds the queue; Agentic Build changes Truffle.
-  about-Agentic-Build  → a light internal edit to its own skills/docs, second look from a separate sub-agent. No change-packet.
-Record the subject + destination in the lesson row, not the observation.
+What lives elsewhere, so this file doesn't restate it: the procedure, the cluster-by-shape judgment, and the "keep the left count large" discipline (a pass that consolidates everything is the 345→2 failure in reverse) are in the /agent-learning-review skill; the rules (Anti-Merge, propose-don't-promote, immutability) are in AGENTS.md; routing (about-Truffle vs about-Agentic-Build) and the lesson lifecycle are in lessons.md.
 -->

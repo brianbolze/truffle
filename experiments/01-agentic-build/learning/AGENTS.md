@@ -13,7 +13,7 @@ If a fix is screaming at you, record the **pressure / urge**, not the patch.
 
 **Three hard rules that define the shape:**
 1. **No fix.** No slot for a solution, and don't smuggle one into "Saw" (not even the root cause — record the *symptom*, the pressure). Deciding what to do is review's job; it has the cross-run sight you don't.
-2. **Immutable.** Never edit, reorder, or delete an observation. The one permitted later touch is a `graduated-into: <lesson-id>` stamp, added when a lesson graduates (after Brian's gate) — never at propose. Contradiction? Write a *new* observation.
+2. **Immutable.** Never edit, reorder, or delete an observation. The one permitted later touch is a `graduated-into:` stamp — a lesson id (`L001`) or a `brian.md#slug` anchor — added when its lesson/entry graduates: **after Brian's nod, never at propose, with no exception for `brian-correction`.** Contradiction? Write a *new* observation.
 3. **No subject field.** about-Truffle vs about-Agentic-Build is decided at review, not capture. Capture stays dumb.
 
 **`kind` is a closed set — one of exactly these five:** `friction | surprise | wish | risk-miss | brian-correction`. Don't invent a sixth. (Positive heuristics worth keeping aren't captured in v0 — friction/surprise/wish/risk-miss/brian-correction only.)
@@ -21,7 +21,7 @@ If a fix is screaming at you, record the **pressure / urge**, not the patch.
 ## If you're running a review pass → consolidate
 Run the [`/agent-learning-review`](../../../.claude/skills/agent-learning-review/SKILL.md) skill — it carries the full procedure and judgment for this pass.
 
-Copy `reviews/_TEMPLATE.md`. Read the raw observations first — prior reviews and lessons are dedupe context, not the source. Cluster repeats, *propose* lessons in `lessons.md` (never promote — that's Brian's gate). Route each cluster's subject and name what you deliberately left unconsolidated.
+Copy `reviews/_TEMPLATE.md`. Read the raw observations first — prior reviews and lessons are dedupe context, not the source. Cluster repeats and *propose* — lessons into `lessons.md`, Brian-taste corrections as `brian.md` candidates named in the pass note. **A pass blesses no entry and stamps no observation: promotion and the `graduated-into:` stamp both wait for Brian's nod, `brian-correction` included.** Route each cluster's subject and name what you deliberately left unconsolidated.
 
 Heuristic for when to trigger: **≥5 observations since the last review.**
 
@@ -30,7 +30,7 @@ Exception: a severe `risk-miss` that could affect store correctness, a contract,
 **The Anti-Merge Law:** compression happens only by *adding* a lesson that points at observations — never by shrinking, merging, or summarizing them.
 
 ## Graduation heuristics
-A lesson earns graduation on one of: ≥2 independent runs · a Brian correction · an independent review catch · one miss severe enough to justify a guardrail. It must first pass two self-tests: **state it without naming a run/company**, and **what does it replace?** (see `lessons.md`).
+A lesson earns graduation via one of four triggers, and must pass two self-tests first — all defined in `lessons.md` (how a single correction suffices for the Brian lane: `brian.md`). Not restated here.
 
 ## Pointers
 - Why this exists / the five-stage lifecycle → `README.md`

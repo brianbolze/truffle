@@ -2,7 +2,7 @@
 
 Brian's recurring preferences and corrections, learned over time. A **protected lane**, kept out of `lessons.md` so "learn Brian" doesn't dilute into general process lessons. Consult this before proposing process changes or doing judgment-heavy work; an agent that brushes a preference here should heed it, not relearn it.
 
-**Fed by `brian-correction` observations.** When Brian corrects the work, the judgment, or the taste, that's logged as a `kind: brian-correction` observation like any other. A review pass distills the recurring ones into an entry here (a single Brian correction is enough to graduate — it needn't recur).
+**Fed by `brian-correction` observations.** When Brian corrects the work, the judgment, or the taste, that's logged as a `kind: brian-correction` observation like any other. A review pass *proposes* the recurring ones as candidate entries (named in the pass note); a single correction is enough *evidence* — it needn't recur — but the entry lands here, and its source observations get stamped `graduated-into:`, **only after Brian's nod** — the same gate every lesson passes. This lane holds accepted entries only; a proposal lives in the review note until then.
 
 **Entry format — one `## <slug>` block, terse:**
 - **prefers:** the preference, stated as a general rule (no naming a single run/packet).

@@ -37,9 +37,9 @@ Read these first — they are the contract, and this skill defers to them for **
 2. **Read every raw observation first** in `learning/observations/` — all of them, including the ones a prior pass already stamped `graduated-into:` (they're context for the shape, even when spent). Only after that, read prior reviews/lessons as dedupe context. A single agent reads the whole corpus; it's thin — do not fan out or build machinery.
 3. **Cluster by SHAPE, not topic** — group by shared underlying pressure / failure mode, not surface subject. (The over- and under-cluster traps: see *How to judge well*.)
 4. **Gate each cluster.** Propose a lesson only for a cluster that earns graduation per the gate in `lessons.md`, and only if it passes both self-tests there. Most clusters — and nearly all singletons — will *not* qualify. That's correct.
-5. **Propose, don't promote.** For each cluster that earns it, append a lesson to `lessons.md` at `state: proposed`, in the `L00x` shape `L001` models. Route Brian-correction clusters to `brian.md` instead (that kind and its lane are defined in `AGENTS.md`/`brian.md`).
-6. **Assign subject + routing now.** Each surfaced cluster gets its subject (`about-Truffle` | `about-Agentic-Build`) and destination *at this step* — capture stayed dumb on purpose. Record it on the lesson row, not the observation. (Routing rules: `lessons.md` / `reviews/_TEMPLATE.md`.)
-7. **Stamp `graduated-into:`** only on observations whose lesson *actually graduates this pass* — i.e. a `brian-correction` you distill into `brian.md`. A lesson you leave at `state: proposed` just lists its observations on its `lessons.md` row; do **not** stamp those — the stamp lands later, when Brian's gate graduates the lesson. This is the **one** permitted touch; nothing else about an observation may change.
+5. **Propose, don't promote.** For each cluster that earns it, append a lesson to `lessons.md` at `state: proposed`, in the `L00x` shape `L001` models. For a Brian-taste correction, *propose* a `brian.md` candidate in the pass note instead — don't write it into `brian.md` yet; that lane holds accepted entries only, and the entry lands there on Brian's nod (the kind and its lane: `AGENTS.md`/`brian.md`).
+6. **Assign subject + routing now.** Each surfaced cluster gets its subject (`about-Truffle` | `about-Agentic-Build`) and destination *at this step* — capture stayed dumb on purpose. Record it on the lesson row, not the observation. (Routing rules: `lessons.md`.)
+7. **Stamp nothing this pass.** A pass proposes; it graduates nothing, so it stamps no observation — `brian-correction` included. Every proposed lesson and every `brian.md` candidate just *lists* its source observations on the row, unstamped; the `graduated-into:` stamp (the one permitted touch) lands later, only when Brian's nod graduates the entry. Stamping in-pass would land an irreversible touch before the gate — and a rejected entry then leaves a stamp pointing at nothing, the dangling ref this loop exists to prevent.
 8. **Write the pass note.** Copy `reviews/_TEMPLATE.md` to `reviews/NNN-YYYY-MM-DD-pass.md` — NNN is the next zero-padded, monotonically increasing pass number (take the highest existing prefix and add one). Fill the "deliberately left unconsolidated" list honestly and the Anti-Merge attestation truthfully.
 9. **Hand Brian the decision surface** (see Final Response). Stop. Do not sharpen any skill.
 
@@ -57,8 +57,8 @@ The contract says *what* the rules are. This is *how* to apply them without repe
 
 ## Output
 
-- Append/advance any earned lessons in `learning/lessons.md` (`state: proposed`); route `brian-correction` clusters to `learning/brian.md`.
-- Stamp `graduated-into:` only on observations whose lesson graduated this pass (proposed lessons link their observations on the row, unstamped) — nothing else touched.
+- Append/advance any earned lessons in `learning/lessons.md` (`state: proposed`); propose `brian-correction` clusters as `brian.md` candidates in the pass note — don't write `learning/brian.md`.
+- Stamp no observation — a pass graduates nothing. Proposed lessons and `brian.md` candidates link their source observations on the row, unstamped; the `graduated-into:` stamp lands only after Brian's nod.
 - Write `learning/reviews/NNN-YYYY-MM-DD-pass.md` from the template (NNN = next monotonic pass number).
 - No live skill, recipe, or convention is edited.
 
@@ -67,7 +67,7 @@ The contract says *what* the rules are. This is *how* to apply them without repe
 End with a short decision surface for Brian:
 
 - review-note path
-- **proposed** — each lesson id + its one-line rule + subject/route, awaiting his approval
+- **proposed** — each lesson id + one-line rule + subject/route, and any `brian.md` candidate, all awaiting his approval
 - **left** — how many observations stayed unconsolidated, and the one or two you most want a second opinion on
 - the Anti-Merge attestation, in one line
-- `No live skill or recipe was edited; nothing was promoted.`
+- `No live skill or recipe was edited; nothing was promoted or stamped — every entry and stamp awaits your nod.`
