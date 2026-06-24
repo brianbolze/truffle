@@ -39,11 +39,13 @@ Most review misses so far were hygiene failures, not missed checks. Hold these:
 
 Point to the rubric; these are emphases, not a checklist.
 
-- **frame** — rubric: the `/frame` skill + the value / pillar / persona links in
-  [lead-context](2026-06-21-lead-context.md). Headline: **has it jumped to
-  solution-space?** Push on whether the problem is root-caused, the bigger problem(s) it
-  touches, and what's missing (non-goals, open questions). Frames leak solutions even
-  when told not to — catching that is this mode's main job.
+- **frame** — grade the framing itself; the `/frame` skill is context on what a frame is
+  *for*, not a grading rubric, and [lead-context](2026-06-21-lead-context.md) holds the
+  value / pillar / persona links. Headline: **has it jumped to solution-space?** Then: is
+  the problem **root-caused**, or are only symptoms named? what **bigger problem(s)** does
+  it touch? is the **success condition testable**? is it anchored to a **value pillar /
+  persona**? what's missing — non-goals, open questions? Frames leak solutions even when
+  told not to — catching that is this mode's main job.
 - **proposal** — rubric: the packet's stated fields (`risk`, `write_scope`,
   `spend_stop`, `acceptance_checks`, `escalate_if`). Stress scope creep; schema /
   persistence / new-entity risk; hidden standing infrastructure; additive-only changes
@@ -56,8 +58,8 @@ Point to the rubric; these are emphases, not a checklist.
 
 ## Recommended Lean
 
-End with a lean in the lead's decision vocabulary (see
-[lead-context](2026-06-21-lead-context.md)) — or plain words if none fits. Mark it
+End with a lean in the lead's decision vocabulary — the **Decision Rules** in
+[`2026-06-21-proposal.md`](2026-06-21-proposal.md) — or plain words if none fits. Mark it
 clearly as a recommendation; the lead decides.
 
 ## Learning Loop
