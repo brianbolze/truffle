@@ -10,3 +10,12 @@ Truffle is a project-agnostic **company-research engine**: Firecrawl captures co
 - **Work on the engine** (design/build) → [frame](_design/2026-05-29-frame.md) (why / scope / non-goals) → [architecture](_design/2026-05-30-architecture.md) (how it works) → [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md) (the contract). **Changing a contract → [`MAINTAINING.md`](documentation/MAINTAINING.md): the downstream blast-radius map + the gate to run.** Working principles + prior art live in [`.claude/rules/engine-dev.md`](.claude/rules/engine-dev.md) (Python house style in [`.claude/rules/python.md`](.claude/rules/python.md)) — these auto-load when you touch the build surface, but read them directly if your agent doesn't load `.claude/rules/` (e.g. Codex). Touching the human-facing surface (brief / comparison sheet / index) → read the [presentation layer](_design/2026-06-12-presentation-layer.md) frame first.
 
 **Planning lives in Notion, not the repo.** Strategy, the roadmap (initiatives grouped by [Pillar / Theme](https://app.notion.com/p/getdoro/Product-Pillars-Themes-afdbc4660a084f009ac2df226c3dfd23) + status), and proposals live in the *Truffle — Teamspace Home* teamspace. The repo holds the engine itself + the smaller/hardening [`BACKLOG.md`](BACKLOG.md).
+
+
+## Output / Chat Formatting
+
+**Do the messy work offstage; answer with a skimmable result.** Use whatever framing, scratch checks, exploration, or verification the task needs while working. Before replying, decide the 1-3 things Brian actually needs to know. For normal execution work, final chat should lead with the outcome: what changed / what I found, why it matters, and any verification or risk Brian needs to trust it.
+
+**When the work is thinking together, show the reasoning shape.** For brainstorming, framing, strategy, prioritization, or ambiguous tradeoffs, make the problem easier to see: name the frame, the real options, the tradeoffs, and your recommendation. Still keep it skim-first; don’t dump scratch work, checklist passes, or every path considered.
+
+**Depth is opt-in.** Link to files or name where detail lives instead of pasting it. Use `.claude/docs/writing-guidelines.md` for durable docs and human-facing artifacts; for chat, use the smallest structure that makes the answer skimmable.

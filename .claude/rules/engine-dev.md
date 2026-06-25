@@ -9,25 +9,31 @@ paths:
 ---
 # Working on the engine
 
-The contract is [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md); why/scope is the [frame](_design/2026-05-29-frame.md), how is the [architecture](_design/2026-05-30-architecture.md). **Changing a contract? [`MAINTAINING.md`](../../documentation/MAINTAINING.md) is the blast-radius map — what moves downstream, and the gate to run after.**
+Use the smallest authority doc that matches the work: [`SCHEMA.md`](SCHEMA.md) + [`TAXONOMIES.md`](TAXONOMIES.md) for contracts, [frame](_design/2026-05-29-frame.md) for why/scope, [architecture](_design/2026-05-30-architecture.md) for system shape, and [`MAINTAINING.md`](../../documentation/MAINTAINING.md) before changing a contract. These are routing context, not a preamble; do not summarize them unless they change the recommendation.
 
-Working on a large initiative / feature? Think about *what value* it creates by reading our [strategic-pillars](../../documentation/strategic-pillars.md), and consider *whose shoes* you stand in to feel it by reading our [personas](../../documentation/personas.md).
+For large or judgment-heavy changes, sanity-check the value pillar / user lens with [strategic-pillars](../../documentation/strategic-pillars.md) and [personas](../../documentation/personas.md). For narrow bugs, audits, and mechanical edits, inspect directly and keep moving.
 
-If you really need to put this into planning context, refer to the [Roadmap database](https://app.notion.com/p/getdoro/2362eca6edf441c18aaa7c0105c4cc23?v=38284b6d1f49805a84fd000cd5cb6768) in Notion. Long-form rationale lives in [Operating Principles](https://app.notion.com/p/38684b6d1f49806a8922e20061e644fa); this file is the short agent-facing rulebook.
+Planning lives in Notion: [Roadmap](https://app.notion.com/p/getdoro/2362eca6edf441c18aaa7c0105c4cc23?v=38284b6d1f49805a84fd000cd5cb6768) and [Operating Principles](https://app.notion.com/p/38684b6d1f49806a8922e20061e644fa). This file is the short agent-facing rulebook.
 
 ## Operating principles
 
-- **Amortize reasoning; meter capture.** Use Claude Code / Codex subscription reasoning for AI work; avoid paid API modes that wrap their own LLM reasoning when a skill can do it. Firecrawl, SerpApi, and repeat capture are scarce: cache aggressively, capture once, and refetch only stale or earned work.
+### Truffle Design
+
 - **Markdown / JSON are truth; derived lenses are disposable.** Markdown is authoritative for agent-readable synthesis; JSON is right for envelopes and telemetry with no prose body. SQLite, rendered HTML, dashboards, and indexes regenerate from files; never make them authoritative.
-- **Conventions are infrastructure; queryability is the product.** Frontmatter, bold-led lines, clocks, `captured_at`, `unverified_fields`, paths, closed sets, and lint gates are the system. Every field is a cut: add it only when it divides a real question and can be filled reliably; derive anything free.
-- **Capture once; structure at ingestion; query before re-fetching.** The expensive AI step turns raw evidence into reusable structure. Later reads filter the store first, then use focused source tools when fresh external evidence is needed.
 - **Engine owns State and Signals; Judgments stay segregated.** State snapshots overwrite; Signals append; viewer-relative verdicts stay project-side or in a physically separate overlay when earned. Preserve grain so page/SKU/query/company facts cannot masquerade as each other.
+- **Invest in conventions.** No DB means the string is the contract: frontmatter, closed sets, canonical multi-select order, path shapes, clocks, `captured_at`, `unverified_fields`, and lint gates are infrastructure. The system wins when agents can reliably query and cite stored facts.
+- **Every field is a cut.** A field earns its place only if it divides real questions and can be filled reliably. Prefer deriving free facts in recipes or helper scripts; cut fields that only make artifacts look more complete.
+- **Amortize reasoning; meter capture.** Use Claude Code / Codex subscription reasoning for AI work; avoid paid API modes that wrap their own LLM reasoning when a skill can do it. Firecrawl, SerpApi, and repeat capture are scarce: cache aggressively, capture once, and refetch only stale or earned work.
+- **Capture once; structure at ingestion; query before re-fetching.** The expensive AI step turns raw evidence into reusable structure; under-extraction at ingestion becomes query-time absence. Later reads filter the store first, then use focused source tools when fresh external evidence is needed.
 - **Evidence, not scores.** Store verbatim anchors, axis-specific deltas, caveats, and disagreement. No blended numbers, no generic market scores, no price magnitude fields that launder messy strings into false precision.
 - **Fail loud before silently wrong.** A veto row, `unverified_fields`, lint failure, warning, or explicit absence beats a clean-looking artifact with hidden bad data. Before claiming a negative, check what was captured and what was missed.
-- **Verbs and skills over services.** Package repeatable work as slash commands, agent skills, scripts, or routines that start, write evidence, and stop. Code is welcome; living infrastructure is not. The flag is anything that must keep running to stay true.
-- **Frame first; experiment before build.** On big or fuzzy work, separate problem-space from solution-space before proposing an implementation. Probe in `experiments/<date>-<slug>/`, hand-capture real cases, and persist runs before minting durable ontology or schema.
-- **Least complexity; push back on additive fixes.** Hunt the simplest 80/20, ask what a new rule/helper/field replaces, and cut dead weight when improving docs, prompts, or code. Watch for overfitting a one-run retro into a general rule.
 - **Propose, don't write** across a project's boundary. The engine may produce structured proposals for a project KB; it never silently mutates another source of truth.
+
+### Change Discipline
+- **Frame privately before choosing.** For fuzzy, durable, or judgment-heavy work, identify the real problem, success condition, non-goal, prior art, and what would change the decision before recommending a path. Ask only if the answer changes the next step. Create a visible frame only when Brian asks, the stakes are high, or the uncertainty needs a shared artifact.
+- **Experiment before hardening.** Before minting durable ontology, schema, workflow, or repeated-agent behavior, test the claim on real cases. Prefer a small probe in `experiments/<date>-<slug>/`, hand-captured examples, or a cheap disconfirming test. Do not build machinery from one clean anecdote.
+- **Least complexity; push back on additive fixes.** Hunt the simplest 80/20, ask what a new rule/helper/field replaces, and cut dead weight when improving docs, prompts, or code. Watch for overfitting a one-run retro into a general rule.
+- **Verbs and skills over services.** Package repeatable work as slash commands, agent skills, scripts, or routines that start, write evidence, and stop. Code is welcome; living infrastructure is not. The flag is anything that must keep running to stay true.
 - **Commit per logical change**, with a terse `scope:` subject and detail in the body — see [commit-style](../../documentation/commit-style.md). `git log` is the changelog — no CHANGELOG file.
 
 ## Prior art — mine it, don't reinvent it
