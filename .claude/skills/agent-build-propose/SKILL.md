@@ -45,6 +45,7 @@ Read these before writing:
 ## Rules
 
 - Only create or update the packet `proposal.md`; do not make implementation changes.
+- `proposal.md` is a **plan-only** artifact — the thing `proposal`-mode review judges and the lead decides *before* any code. Keep implementation evidence out of it: status never flips to `implemented`, and receipts / gate logs land in `implementation-notes.md` after the decision. Don't let the proposal and the change collapse into one file — that boundary is what lets review gate instead of just narrate.
 - Keep frame context inside `proposal.md`; if the problem is too unclear for that, stop and say a separate frame is needed.
 - Fill the required fields: `risk`, `write_scope`, `spend_stop`, `acceptance_checks`, `escalate_if`.
 - If a required field is unknown, write `unknown` plus why.

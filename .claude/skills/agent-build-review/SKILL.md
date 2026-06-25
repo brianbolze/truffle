@@ -25,6 +25,12 @@ Independent review is required; self-review is not enough.
   pointers, not the how). Reviewing is judgment — let the reviewer inherit the main model.
 - **You didn't author it** → you're already independent; review directly.
 
+## The boundary — when each mode runs
+
+`proposal` mode gates the **plan, before any code**; `change` mode audits the **patch, after**, against the accepted proposal. That ordering is the point — it's what lets review gate instead of narrate retrospectively.
+
+So if you're asked for a `proposal` review but the packet has already shipped (`proposal.md` says `Status: implemented`, carries a receipt, or the change is already in the tree), the plan/patch boundary collapsed. Don't fake a retrospective plan review and don't invent a post-hoc mode — flag the collapse as your top finding, then audit the patch in `change` mode against the proposal as written.
+
 ## Required context
 
 Read before reviewing — these carry the rules; don't restate them:

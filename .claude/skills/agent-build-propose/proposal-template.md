@@ -4,6 +4,10 @@ Date: YYYY-MM-DD
 Status: proposed
 Source request: <one-line origin>
 
+<!-- Status tracks the PROPOSAL lifecycle only: proposed → reviewed → accepted | revise | park | cut.
+     Never flip it to a build status. `implemented`, the implementation receipt, and the gate log
+     belong in implementation-notes.md — keep this file a plan, so proposal-review can gate it before code. -->
+
 ## Required Fields
 
 *Define `acceptance_checks` in this proposal; do not assume they already exist.*
