@@ -57,8 +57,9 @@ store/<domain-slug>/              # e.g. hone-health
   profile.md                      # State — the current snapshot (frontmatter + body)
   offerings.md                    # a module doc, opt-in, its own freshness
   visual.md                       # a module doc (visual evidence), opt-in, own freshness
-  signals/                        # Signals — dated, append-only external captures (company-grain)
-    <source_type>/                # trustpilot | sec | wayback | trends | …
+  signals/                        # Signals — dated, append-only external captures (grain per source)
+    <source_type>/                # trustpilot | sec_edgar | wayback | trends | …
+      [<page-slug>/]              # wayback only — page-grain (many URLs per one domain)
       <captured_at>.json          # one capture envelope, verbatim; signal_delta.py diffs across these
   captures/
     <date>/                       # one self-contained folder per run
@@ -71,7 +72,7 @@ cohorts/<category-slug>/          # (later) cross-company signals that don't key
 - **Top = the latest view, `captures/` = the source** you rarely open. A `captured_at` stamp is the freshness pointer — no fragile symlinks (they break across iCloud + git + cloud).
 - **Every consumer also gets a primary-source cache.** Beyond the synthesized `profile.md`, the cleaned `captures/` and raw `.payloads/` let an agent quote exact wording or inspect a page *without re-fetching* — pre-fetched primary source, ready to cite.
 
-> **Signals now have a home — a path convention, machinery still deferred.** The **Signals** layer (funding, review/visibility movement, traffic-over-time) is a *different record shape* — dated, append-only — so it lands beside `profile.md`, never inside it: `store/<domain>/signals/<source_type>/<captured_at>.json`, **company-grain**, one capture envelope persisted **verbatim** per file so repeat captures accumulate where the comparator ([`tools/signal_delta.py`](../tools/README.md)) can find them. The **writer** has since graduated on exactly that trigger (an automated writer + a second consumer): [`scripts/signals.py`](../scripts/signals.py) `persist`s an envelope to this path — folding the key through `store.resolve()` so an alias capture lands under the canonical company, the Signals-side enforcement of "domain is the key" — with `capture` (one-company ergonomic front door), `run` (batch capture), and `import` (consolidate) sharing it. The remaining timeline machinery — a card schema-as-contract, its lint, a SQLite lens — stays **deferred until a card/query consumer earns it** (every consumer so far reads raw envelopes, not cards). **Category-grain** signals that don't key on a domain (SERP category panels, market-map inputs) still route to the reserved `cohorts/<category-slug>/`, unbuilt. Resolves the [traction approach](2026-06-15-traction-approach.md)'s Open Qs #1, #6.
+> **Signals now have a home — a path convention, machinery still deferred.** The **Signals** layer (funding, review/visibility movement, traffic-over-time) is a *different record shape* — dated, append-only — so it lands beside `profile.md`, never inside it: `store/<domain>/signals/<source_type>[/<page-slug>]/<captured_at>.json` — **grain per source** (company for trustpilot/trends/sec_edgar; **page** for wayback, which nests under a `<page-slug>/` because it captures many URLs per domain) — one capture envelope persisted **verbatim** per file so repeat captures accumulate where the comparator ([`tools/signal_delta.py`](../tools/README.md)) can find them. The **writer** has since graduated on exactly that trigger (an automated writer + a second consumer): [`scripts/signals.py`](../scripts/signals.py) `persist`s an envelope to this path — folding the key through `store.resolve()` so an alias capture lands under the canonical company, the Signals-side enforcement of "domain is the key" — with `capture` (one-company ergonomic front door), `run` (batch capture), and `import` (consolidate) sharing it. The remaining timeline machinery — a card schema-as-contract, its lint, a SQLite lens — stays **deferred until a card/query consumer earns it** (every consumer so far reads raw envelopes, not cards). **Category-grain** signals that don't key on a domain (SERP category panels, market-map inputs) still route to the reserved `cohorts/<category-slug>/`, unbuilt. Resolves the [traction approach](2026-06-15-traction-approach.md)'s Open Qs #1, #6.
 
 ## Modules: recipes, not just schemas
 
@@ -84,7 +85,7 @@ cohorts/<category-slug>/          # (later) cross-company signals that don't key
 | Kind | Example | Destination |
 |---|---|---|
 | **State** | what they sell, founders | the `web-research` store (`profile.md` / a module doc) |
-| **Signals** | funding, traffic trend, review/visibility movement | source captures in `tools/`, persisted verbatim to `store/<domain>/signals/` (company-grain), diffed by `signal_delta.py`; aggregation/timeline machinery still deferred |
+| **Signals** | funding, traffic trend, review/visibility movement | source captures in `tools/`, persisted verbatim to `store/<domain>/signals/<source_type>[/<page-slug>]/` (grain per source — wayback nests a page-slug), diffed by `signal_delta.py`; aggregation/timeline machinery still deferred |
 | **Judgments** | formidable? threat? | the project |
 
 A module is opt-in per project (config resolves global defaults ← project overrides) and carries its own freshness TTL. *Detailed module schemas land when the first project enables one — deferred on purpose; see [`SCHEMA.md`](../SCHEMA.md).*
@@ -153,7 +154,7 @@ The store will hold **several** entity types, but primarily "Companies".
 A lens for sorting *future* capabilities (a principle, not a commitment), mapping onto the Frame's three kinds of fact:
 
 - **State** — what a company/offering *is* now, capturable from its own primary web sources, cacheable → **the engine owns it.**
-- **Signals** — the same facts on a time axis (funding, traffic, headcount; review deltas; SERP movement; news/M&A as dated events) → the **engine's reusable capture tools + comparator**, persisted company-grain to `store/<domain>/signals/`; the aggregation/timeline machinery is still deferred; never the profile.
+- **Signals** — the same facts on a time axis (funding, traffic, headcount; review deltas; SERP movement; news/M&A as dated events) → the **engine's reusable capture tools + comparator**, persisted at per-source grain to `store/<domain>/signals/` (company for most; page-grain for wayback); the aggregation/timeline machinery is still deferred; never the profile.
 - **Judgments** — relevance, threat, fit, relative to the asker → **the consumer/project today** (an open edge under rework).
 
 *Discovery* (finding related companies) and *traction* (time-series metrics) sit in the family as distinct capabilities — traction being Signals. `tools/` is the current home for small source-capture primitives and thin consumers; project-specific interpretations stay above it. When unsure: *is this durable state from the company's own sources, a repeatable source signal, or a stream/opinion that belongs to a consumer?*
