@@ -28,6 +28,7 @@ These capture tools are live; two more stay deferred on purpose — see [`BACKLO
 | [`exa_search.py`](exa_search.py) · [docs](exa_search.md) | Exa /search (query → companies) | `EXA_API_KEY` | **live** |
 | [`ads_transparency.py`](ads_transparency.py) · [docs](ads_transparency.md) | Google Ads Transparency Center (paid-ads presence/recency) | `SERP_API_KEY` | **live** |
 | [`sec_edgar.py`](sec_edgar.py) · [docs](sec_edgar.md) | SEC EDGAR (ticker/exchange State + Form-D / filing funding Signals) | none | **live** |
+| [`source_page.py`](source_page.py) · [docs](source_page.md) | One web page → reduced source-page evidence (title/text/absolute links); direct HTTP, optional Firecrawl fallback | `FIRECRAWL_API_KEY` (fallback only) | **live** |
 | `ad_library.py` | Meta Ad Library (Apify) | `APIFY_API_KEY` | deferred |
 | `reddit.py` | Reddit JSON search | none | deferred |
 
@@ -57,7 +58,7 @@ turning into project judgment:
 - **CLI shape.** Single-verb → flat `main()` (serpapi). Multi-verb → subparsers + `DISPATCH = {cmd: fn}` (the `fc.py` pattern, per [`python.md`](../.claude/rules/python.md)).
 - **Docstring vs companion `.md`.** Docstring = scope + exit codes + auth + terse maintainer invariants (stays with the code). `.md` = the dated gotcha catalog + output-shape example + credits + growth table. Terse-in-code, detailed-in-doc; don't repeat verbatim.
 - **House style** is [`.claude/rules/python.md`](../.claude/rules/python.md): type hints everywhere, `from __future__ import annotations`, why-first docstrings, stdlib-first (earn every dep).
-- **Extract a shared helper only on the second caller.** [`_env.py`](_env.py) earned its place because *every* tool loads a key. Don't pre-extract a `_firecrawl.py` / `_http.py` for a single user — inline it, lift it when the second tool needs it.
+- **Extract a shared helper only on the second caller.** [`_env.py`](_env.py) earned its place because *every* tool loads a key; [`_firecrawl.py`](_firecrawl.py) earned its on the second Firecrawl caller (`trustpilot.py` first, `source_page.py` second — it owns the `/v2/scrape` call + parse + failure-classification, never the caller's request recipe). Still inline a single-user helper until its second caller arrives — `_http.py` stays un-lifted because only `source_page.py` does direct HTTP. The canonical Firecrawl hazards/cost knowledge lives in [`firecrawl-capture.md`](../skills/research-company/firecrawl-capture.md).
 
 ## Keys & discovery
 

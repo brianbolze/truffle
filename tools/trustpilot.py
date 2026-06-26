@@ -43,14 +43,13 @@ import json
 import re
 import sys
 import time
-import urllib.request
 from typing import Any
 
+import _firecrawl
 from _env import load_key
 
 PARSER_VERSION = "v1"
 API_KEY_VAR = "FIRECRAWL_API_KEY"
-FIRECRAWL_SCRAPE = "https://api.firecrawl.dev/v2/scrape"
 DEFAULT_WAIT_MS = 12000  # the Cloudflare-clearing wait action — 12s is the proven floor (INVARIANTS)
 RECENT_REVIEWS_CAP = 30  # the markdown carries one page (~20); cap defensively
 
@@ -79,9 +78,10 @@ def _now_utc() -> str:
 
 
 def _firecrawl_scrape(url: str, api_key: str, wait_ms: int) -> dict[str, Any]:
-    """The stealth scrape, inlined (trustpilot is Firecrawl's only caller here — lift a shared
-    `_firecrawl.py` on the SECOND Firecrawl tool, the way `_env.py` earned its place). Returns the
-    raw Firecrawl response. Network/HTTP errors bubble to main()'s exit-2 handler."""
+    """The stealth scrape recipe (Cloudflare-clearing wait), via the shared `_firecrawl` caller lifted
+    on the second Firecrawl tool (source_page.py). The recipe stays here — trustpilot owns what it asks
+    of Firecrawl; the call + parse live in `_firecrawl`. Raises on a transport/auth/HTTP/parse failure
+    so main() maps it to exit 2 (trustpilot's re-runnable failure contract). Returns the raw response."""
     body = {
         "url": url,
         "formats": ["markdown"],
@@ -91,10 +91,10 @@ def _firecrawl_scrape(url: str, api_key: str, wait_ms: int) -> dict[str, Any]:
         "onlyMainContent": False,  # the integrity flags + neighbors live in chrome, not main content
         "actions": [{"type": "wait", "milliseconds": wait_ms}],
     }
-    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
-    req = urllib.request.Request(FIRECRAWL_SCRAPE, data=json.dumps(body).encode(), headers=headers, method="POST")
-    with urllib.request.urlopen(req, timeout=180) as r:
-        return json.load(r)
+    result = _firecrawl.scrape(body, timeout=180, api_key=api_key)
+    if result.error:
+        raise RuntimeError(result.error)
+    return result.raw
 
 
 def _parse_int(raw: str | None) -> int | None:
