@@ -1,0 +1,1162 @@
+{
+  "tool": "page_extraction_probe",
+  "source": "firecrawl_scrape",
+  "captured_at": "2026-06-26T03:37:06Z",
+  "ok": true,
+  "fallback": "firecrawl_scrape",
+  "input": {
+    "id": "telehealth-usnews-glp1",
+    "cohort": "telehealth",
+    "facet": "glp1",
+    "rank": 3,
+    "url": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers"
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits_estimate": 1
+  },
+  "status": 200,
+  "content_type": "text/markdown",
+  "error": null,
+  "raw_firecrawl_path": "receipts/raw/page-extraction/firecrawl/telehealth-usnews-glp1.json",
+  "title": "23 Top GLP-1 Weight Loss Medication Providers in 2026 | U.S. News",
+  "text": "[![U.S. News and World Report Logo](https://health.usnews.com/static-atlas/assets/img/usn-logo-large.svg)](https://www.usnews.com/) [Health](https://health.usnews.com/) - [Hospitals](https://health.usnews.com/best-hospitals) - [Find a Hospital](https://health.usnews.com/best-hospitals/search) - [Hospital Rankings](https://health.usnews.com/best-hospitals/rankings) - [Honor Roll](https://health.usnews.com/health-care/best-hospitals/articles/best-hospitals-honor-roll-and-overview) - [Best Regional Hospitals](https://health.usnews.com/best-hospitals/best-regional-hospitals) - [Best Hospitals for Maternity](https://www.usnews.com/best-hospitals/hospital-ratings/maternity) - [Best Hospitals by State](https://health.usnews.com/best-hospitals/area) - [Children's Hospital Rankings](https://health.usnews.com/best-hospitals/pediatric-rankings) - [Children's Honor Roll](https://health.usnews.com/health-news/best-childrens-hospitals/articles/best-childrens-hospitals-honor-roll-and-overview) - [How we Rank Hospitals](https://health.usnews.com/health-care/best-hospitals/articles/faq-how-and-why-we-rank-and-rate-hospitals) - [For Hospitals: Update Your Profile](https://hospitaldashboard.usnews.com/) - [My Care Team](https://health.usnews.com/care-team) - [ASCs](https://health.usnews.com/best-ascs) - [Best ASCs](https://health.usnews.com/best-ascs) - [Find an ASC](https://health.usnews.com/best-ascs/search) - [Best ASCs for Colonoscopy & Endoscopy](https://health.usnews.com/best-ascs/ratings/colonoscopy-endoscopy) - [Best ASCs for Ophthalmology](https://health.usnews.com/best-ascs/ratings/ophthalmology) - [Best ASCs for Orthopedics & Spine](https://health.usnews.com/best-ascs/ratings/orthopedics-spine) - [Best ASCs for Urology](https://health.usnews.com/best-ascs/ratings/urology) - [Doctors](https://health.usnews.com/doctors) - [Find a Doctor](https://health.usnews.com/doctors/search) - [Doctors by Specialty](https://health.usnews.com/doctors/specialists-index) - [Doctors by Location](https://health.usnews.com/doctors/location-index) - [Cardiologists](https://health.usnews.com/doctors/cardiologists) - [Dentists](https://health.usnews.com/dentists) - [Family Medicine](https://health.usnews.com/doctors/family-medicine-doctors) - [Mental Health Providers](https://health.usnews.com/behavioral-health) - [Oncologists](https://health.usnews.com/doctors/oncologists) - [Orthopedic Surgeons](https://health.usnews.com/doctors/orthopedic-surgeons) - [Pediatricians](https://health.usnews.com/doctors/pediatricians) - [My Care Team](https://health.usnews.com/care-team) - [Senior Care](https://health.usnews.com/best-senior-living) - [Best Senior Living](https://health.usnews.com/best-senior-living) - [Best Assisted Living](https://health.usnews.com/best-senior-living/assisted-living) - [Best Independent Living](https://health.usnews.com/best-senior-living/independent-living) - [Best Memory Care](https://health.usnews.com/best-senior-living/memory-care) - [Best Continuing Care Retirement Communities](https://health.usnews.com/best-senior-living/ccrc) - [Find Senior Living](https://health.usnews.com/best-senior-living/search) - [Best Nursing Homes](https://health.usnews.com/best-nursing-homes) - [Best Long Term Care](https://health.usnews.com/best-nursing-homes/search?long_term=true&) - [Best Short Stay Rehab](https://health.usnews.com/best-nursing-homes/search?short_term=true&) - [Find Nursing Homes](https://health.usnews.com/best-nursing-homes/search) - [Best Home Health](https://health.usnews.com/home-care) - [Find Home Health Care](https://health.usnews.com/home-care/search) - [Senior Care Advice](https://health.usnews.com/senior-care/advice) - [Advice for Caregivers](https://health.usnews.com/senior-care/advice) - [Diets & Nutrition](https://health.usnews.com/best-diet) - [GLP-1 Medications](https://health.usnews.com/best-diet/medication) - [GLP-1 Advice](https://health.usnews.com/best-diet/medication) - [Top Diets](https://health.usnews.com/best-diet) - [Top Expert-Recommended Diets](https://health.usnews.com/best-diet/best-diets-overall) - [Weight-Loss Diets](https://health.usnews.com/best-diet/best-weight-loss-diets) - [Fast Weight Loss Diets](https://health.usnews.com/best-diet/best-fast-weight-loss-diets) - [All Diets](https://health.usnews.com/best-diet/search) - [Diets Expert Panel](https://health.usnews.com/best-diet/experts) - Popular Diets - [Recipes](https://health.usnews.com/best-diet/recipes) - [Mediterranean Diet](https://health.usnews.com/best-diet/mediterranean-diet) - [WeightWatchers Diet](https://health.usnews.com/best-diet/weight-watchers-diet) - [Keto Diet](https://health.usnews.com/best-diet/keto-diet) - [Dukan Diet](https://health.usnews.com/best-diet/dukan-diet) - [Nutrisystem Diet](https://health.usnews.com/best-diet/nutrisystem-diet) - [DASH Diet](https://health.usnews.com/best-diet/dash-diet) - [Medicare](https://health.usnews.com/medicare) - Find the Right Plan - [Best Medicare Advantage Plan Companies 2026](https://health.usnews.com/medicare/best-medicare-plans/best-insurance-companies-for-medicare-advantage-plans) - [Best Medicare Part D Prescription Drug Plan Companies 2026](https://health.usnews.com/medicare/best-medicare-plans/best-insurance-companies-for-part-d-plans) - [Medicare Supplement Plans (Medigap)](https://health.usnews.com/medicare/best-medicare-plans/medicare-supplement-plans) - [Find a Plan](https://health.usnews.com/medicare/search) - Carrier Reviews - [Aetna](https://health.usnews.com/medicare/aetna-medicare-advantage) - [Blue Cross Blue Shield](https://health.usnews.com/medicare/blue-cross-blue-shield-medicare-advantage) - [HealthSpring (formerly Cigna)](https://health.usnews.com/medicare/healthspring-medicare-advantage) - [Humana](https://health.usnews.com/medicare/humana-medicare-advantage) - [Kaiser Permanente](https://health.usnews.com/medicare/kaiser-permanente-medicare-advantage) - [United Healthcare](https://health.usnews.com/medicare/united-healthcare-medicare-advantage) - Medicare 101 - [What Does Medicare Cover?](https://health.usnews.com/medicare/articles/what-are-the-parts-of-medicare-and-what-do-they-cover) - [Medicare Basics](https://health.usnews.com/medicare/articles/your-guide-to-medicare-coverage) - [How to Shop for Medicare](https://health.usnews.com/medicare/articles/what-to-consider-when-shopping-for-medicare-coverage) - [Medicare vs. Medicare Advantage: How to Choose in 2026](https://health.usnews.com/medicare/articles/medicare-vs-medicare-advantage-how-to-choose) - Health & Wellness - [Best OTC Medicine & Health Products](https://www.usnews.com/otc) - [Wellness](https://health.usnews.com/wellness) - [Food](https://health.usnews.com/wellness/food) - [Fitness](https://health.usnews.com/wellness/fitness) - [Mind](https://health.usnews.com/wellness/mind) - [A Maternity and Pregnancy Guide for New and Expecting Parents](https://health.usnews.com/pregnancy) - [Health Conditions](https://health.usnews.com/conditions) - [Medical Review](https://health.usnews.com/medical-review) - [Medical Review Editorial Process](https://health.usnews.com/medical-review) - [Medical Review Board](https://www.usnews.com/medical-board) - [Health Insights & Trends](https://health.usnews.com/wellness/consumer-health-insights-trends) U.S. News Health Hub - [My Care Team](https://health.usnews.com/care-team#providers) - [Compare Providers](https://health.usnews.com/doctors/provider-compare) - [Compare Hospitals](https://health.usnews.com/best-hospitals/hospital-compare) - [Compare Home Health Agencies](https://health.usnews.com/home-care/compare) - [Compare Nursing Homes](https://health.usnews.com/best-nursing-homes/compare) - [My Senior Living](https://health.usnews.com/best-senior-living/saved-communities) - [Compare Senior Living](https://health.usnews.com/best-senior-living/compare-communities) - [Sign In to My Account](https://health.usnews.com/emailprefs/login?target=https%3A%2F%2Fhealth.usnews.com%2Fbest-diet%2Fmedication%2Ftop-glp-1-weight-loss-medication-providers) 1. [GLP Weight Loss Drugs](https://health.usnews.com/best-diet/medication) 2. [Top Diets](https://health.usnews.com/best-diet) 3. [Home](https://health.usnews.com/) 1. [GLP Weight Loss Drugs](https://health.usnews.com/best-diet/medication) 2. [Top Diets](https://health.usnews.com/best-diet) 3. [Home](https://health.usnews.com/) Disclaimer # 23 Top GLP-1 Weight Loss Medication Providers in 2026 ![](https://www.usnews.com/object/image/0000019c-1f3a-d02e-a1be-9ffed20c0000/jess-headshot-2026.png?update-time=1770050512169&size=responsiveSquare150) By[Jessica Swirble, PharmD](https://www.usnews.com/topics/author/jessica-swirble) \\| Edited by[Christine Comizio, MPH](https://www.usnews.com/topics/author/christine-comizio) and [Gretel Schueller](https://www.usnews.com/topics/author/gretel-schueller) \\| Updated: June 12, 2026 \\| Save ![](https://www.usnews.com/object/image/0000019c-1f3a-d02e-a1be-9ffed20c0000/jess-headshot-2026.png?update-time=1770050512169&size=responsiveSquare150) By[Jessica Swirble, PharmD](https://www.usnews.com/topics/author/jessica-swirble) \\| Edited by[Christine Comizio, MPH](https://www.usnews.com/topics/author/christine-comizio) and [Gretel Schueller](https://www.usnews.com/topics/author/gretel-schueller) \\| Updated: June 12, 2026 \\| Save [Top GLP-1 Providers at a Glance](https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#top-providers) [How to Evaluate](https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#evaluate) [GLP-1 Provider Comparison](https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#comparison) [What You Need to Know](https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#need-to-know) [Red Flags to Avoid](https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#red-flags) Table of Contents - [Top GLP-1 Providers at a Glance](https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#top-providers) - [How to Evaluate](https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#evaluate) - [GLP-1 Provider Comparison](https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#comparison) **More** Popular GLP-1 Providers [Fridays \u00bb](https://health.usnews.com/best-diet/medication/fridays) **Best:** Known for: All-inclusive weight loss platform with comprehensive insurance support and low-cost compounded GLP-1 medications [Get Started](https://track.revoffers.com/aff_c?offer_id=1284&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=11836) [SkinnyRx \u00bb](https://health.usnews.com/best-diet/medication/skinnyrx) **Best:** Known for: Quick access to compounded GLP-1s without an appointment [Get Started](https://track.revoffers.com/aff_c?offer_id=1464&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2=sem-card&sub3=https://health.usnews.com/best-diet/medication/top-sem&sub4={{DEVICE}}&sub5=SEM) [Ro \u00bb](https://health.usnews.com/best-diet/medication/ro) **Best:** Known for: Insurance support team that helps to navigate prior authorizations and insurance-related concerns [Get Started](https://getroman.pxf.io/c/3618142/3226368/15530?subId1={{USN_CLICK_ID}}&subId2={{DATA_TRACKING_PLACEMENT}}&subId3=SEO_{{SREF}}&partnerpropertyid=3561887) [Noom \u00bb](https://health.usnews.com/best-diet/medication/noom) **Best:** Known for: Psychology-based weight loss program [Get Started](https://track.revoffers.com/aff_c?offer_id=1497&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO) [Sprout Health \u00bb](https://health.usnews.com/best-diet/medication/sprout-health) **Best:** Known for: Hassle-free quick access [Get Started](https://track.revoffers.com/aff_c?offer_id=1286&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2=sem-card&sub3=https://health.usnews.com/best-diet/medication/top-sem&sub4={{DEVICE}}&sub5=SEM) [Hers \u00bb](https://health.usnews.com/best-diet/medication/hers) **Best:** Known For: Providing discreet online care for women [Get Started](https://track.revoffers.com/aff_c?offer_id=1091&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=9704) [PlushCare \u00bb](https://health.usnews.com/best-diet/medication/plushcare) **Best:** Known for: Low membership fee and same-day access to urgent care and primary care providers [Get Started](https://track.revoffers.com/aff_c?offer_id=344&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=8347) [WeightWatchers \u00bb](https://health.usnews.com/best-diet/medication/weightwatchers) **Best:** Known for: Its proven points system and lifestyle programs for effective weight loss [Learn More](https://track.revoffers.com/aff_c?offer_id=1115&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=11128) [Eden \u00bb](https://health.usnews.com/best-diet/medication/eden) **Best:** Known For: Flat, upfront pricing [Get Started](https://track.revoffers.com/aff_c?offer_id=1435&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO) [Read our complete guide](https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#comparison) The surging popularity of [weight loss medications](https://health.usnews.com/conditions/prescription-weight-loss-drugs) like Ozempic, [Wegovy](https://health.usnews.com/wellness/articles/do-weight-loss-products-like-wegovy-help-weight-loss), Zepbound and [Mounjaro](https://health.usnews.com/wellness/articles/mounjaro-weight-loss), known as GLP-1 agonists, has fueled a boom in telehealth services specializing in obesity medicine. These online providers offer a convenient, discreet and often more affordable way to access these powerful drugs, sidestepping traditional in-person doctor visits. Today, there are dozens of online providers that prescribe GLP-1s. However, the rapid growth of this market \u2013 which includes established wellness brands like WeightWatchers and Noom to newer, no-frills platforms like SkinnyRx and Sprout \u2013 has created a confusing landscape for consumers. What sets these companies apart is how they structure their services and their approach to care. Some providers offer [insurance support](https://health.usnews.com/best-diet/medication/articles/navigating-insurance-coverage-for-glp-1-medications-a-step-by-step-guide) for brand name medications, such as [Ozempic](https://health.usnews.com/wellness/articles/is-ozempic-safe-and-effective-for-weight-loss) and [Zepbound](https://health.usnews.com/wellness/article/zepbound-for-weight-loss), while others focus on lower-cost compounded medications that are not approved by the Food and Drug Administration. Programs also vary significantly in clinical quality, with some offering specialized dosing and adjustments, regular check-ins and unlimited communication with a healthcare team to manage common [side effects](https://health.usnews.com/best-diet/medication/articles/glp-1-side-effects-expert-tips-to-manage-nausea-constipation-and-weight-loss-fatigue). Some include baseline and regular blood work, whereas others may require patients to obtain labs separately, or not at all. Additionally, the best online GLP-1 providers programs offer the necessary behavioral and [nutritional support](https://health.usnews.com/wellness/food/articles/what-to-eat-and-avoid-on-semaglutide) vital for successful long-term weight management. To help you make an informed choice, we evaluated 23 of the most popular online GLP-1 medication providers, detailing the pros, cons and essential program features of each one. READ: [GLP-1 Weight Loss Drugs: A Doctor Answers 10 Top Questions on Side Effects, Muscle Loss & Long-Term Use](https://health.usnews.com/best-diet/medication/articles/most-common-glp-1-questions) ## Top 23 GLP-1 Providers at a Glance Below are the 23 weight loss medication providers we evaluated and what they\u2019re known for. 01. [**AltRX**](https://health.usnews.com/best-diet/medication/altrx) **:** Bare bones compounded GLP-1 access with competitive introductory pricing 02. [**Amazon On-Demand Care**](https://health.usnews.com/best-diet/medication/amazon-on-demand-care) **:** Quick access to brand-name GLP-1 medications with same-day virtual visits and fast shipping 03. [**BetterMe Rx**](https://health.usnews.com/best-diet/medication/betterme-rx) **:** Low-priced compounded GLP-1 medications with quick turnaround and no membership fee 04. [**Bodybuilding Health +**](https://health.usnews.com/best-diet/medication/bodybuilding-health): Known for its workouts, information, supplements and online community for fitness enthusiasts and weightlifters 05. [**Eden**](https://health.usnews.com/best-diet/medication/eden) **:** Flat-rate, upfront medication pricing 06. [**Found:**](https://health.usnews.com/best-diet/medication/found) GLP-1 medication access alongside personalized lifestyle, nutritional and behavioral coaching 07. [**Fridays**](https://health.usnews.com/best-diet/medication/fridays) **:** All-inclusive weight loss platform with insurance support and low-cost compounded GLP-1 medications 08. [**GoodRX for Weight Loss**](https://health.usnews.com/best-diet/medication/goodrx): Prescription savings and discounts that can help you save money on prescription drug costs 09. [**Hers**](https://health.usnews.com/best-diet/medication/hers) **:** Discreet, hassle-free, online healthcare for women 10. [**Ivim Health**](https://health.usnews.com/best-diet/medication/ivim-health): Good insurance concierge support and affordable compounded GLP-1s with a holistic approach 11. [**LifeMD**](https://health.usnews.com/best-diet/medication/lifemd): Low-cost access to brand-name GLP-1s without insurance or much support 12. [**MEDVi**](https://health.usnews.com/best-diet/medication/medvi): MEDVi offers quick and easy access to compounded GLP-1s 13. [**Mochi Health**](https://health.usnews.com/best-diet/medication/mochi-health): Flat-rate compounding medications and insurance support 14. [**MyStart Health**](https://health.usnews.com/best-diet/medication/mystart-health): No frills, easy access to compounded GLP-1s 15. [**Noom**](https://health.usnews.com/best-diet/medication/noom): Psychology-based weight loss program with valuable support for those on GLP-1s 16. [**PlushCare**](https://health.usnews.com/best-diet/medication/plushcare): Low membership fee and same-day access to urgent care and primary care providers 17. [**Remedy Meds**](https://health.usnews.com/best-diet/medication/remedy-meds): Quick access and flat-rate prices for compounded GLP-1s 18. [**Ro**](https://health.usnews.com/best-diet/medication/ro) **:** Help frominsurance support team to navigate prior authorizations and other insurance-related concerns 19. [**SkinnyRx**](https://health.usnews.com/best-diet/medication/skinnyrx): Quick access to compounded GLP-1s without an appointment and little support 20. [**Sprout Health**](https://health.usnews.com/best-diet/medication/sprout-health): Hassle-free, quick access to compounded medications but no support 21. [**Sunlight**](https://health.usnews.com/best-diet/medication/sunlight): Quick access to compounded GLP-1s with a simple pricing model 22. [**TrimRX**](https://health.usnews.com/best-diet/medication/trimrx): Convenient, quick access to compounded GLP-1 medications with limited coaching and support 23. [**WeightWatchers**](https://health.usnews.com/best-diet/medication/weightwatchers): Incorporates its proven Points system and lifestyle programs for effective GLP-1 supported weight loss READ: [What to Eat \u2013 and Avoid \u2013 on GLP-1 Weight Loss Medications](https://health.usnews.com/wellness/food/articles/what-to-eat-and-avoid-on-semaglutide) ## How to Evaluate an Online GLP-1 Provider: 7 Critical Factors The following criteria should be considered when you're evaluating an online GLP-1 provider: ### **1\\. Insurance concierge services and support** Many brand-name medications will require a [prior authorization from your health insurance](https://health.usnews.com/best-diet/medication/articles/navigating-insurance-coverage-for-glp-1-medications-a-step-by-step-guide). Some providers will do the footwork for you and contact the [insurance company](https://health.usnews.com/medicare/articles/does-medicare-cover-ozempic) to get this medication approved, while other providers only accept direct payment from the consumer. Some providers will also accept flexible spending accounts or health savings accounts as payment. ### **2\\. Medication options** Many medications are available for weight loss, including brand name GLP-1s and compounded versions. Brand name injectable options include Ozempic, Mounjaro, Saxenda, Trulicity, Victoza, Wegovy and Zepbound. Brand name oral options include, Foundayo (orforglipron), Rybelsus and [Wegovy](https://health.usnews.com/best-diet/medication/articles/what-to-know-about-the-new-wegovy-pill). Compounded versions include [semaglutide or tirzepatide](https://health.usnews.com/best-diet/medication/articles/semaglutide-vs-tirzepatide) and may be available as an injectable, pill or sublingual oral formulation. A generic liraglutide injection is also available. For providers that offer compounded GLP-1 options, it's important to confirm the company follows proper quality control and safety measures. Compounding pharmacies should be able to provide a Certificate of Analysis, which verifies the product has been tested for safety and quality and follows proper regulations. It is also important to use a compounding pharmacy that has been accredited by either the Pharmacy Compounding Accreditation Board or the National Association of Boards of Pharmacy. Pharmacies with these accreditations have received proper training and meet rigorous quality and safety standards. ### **3\\. Delivery** How you receive your prescription will depend on the provider. Providers that offer compounded medications typically work with compounding pharmacies that ship your medication directly to you. Some providers also have partnerships with drug manufacturers, such as Eli Lilly and Novo Nordisk, which may also ship your medication directly to you. If you are using insurance for a brand-name medication, your prescription can be picked up at your local pharmacy. ### **4\\. Support beyond the script** Proper care involves being able to easily get in touch with your health care provider. Some GLP-1 providers offer regular check-ins and appointments, while others may provide little to no support via chat. In some cases, you may only be able to contact your care team through messaging and may not hear back for several days. You may also be required to show proof of weight loss before your refill is approved, especially if you are using insurance. Providers may offer side effects management, which can include dose adjustment, counseling and anti-nausea medication. Some plans may also include access to and support from fitness coaches, nutritionists or registered dietitians. ### **5\\. Cost** Pricing structures vary by program. Some providers offer flat monthly fees for medications, while others increase the price as the dosage rises. In addition to medication costs, consider whether providers charge extra for monthly membership fees or consultations. Some require an additional monthly appointment fee to access a provider. If the program accepts insurance, the membership fee often includes insurance concierge service that helps submit prior authorizations or otherwise attempt to obtain medical coverage. Several providers offer a more holistic approach to weight loss, which may include meal plans and recipes, food tracking, workouts, educational content and community support. Other services strictly focus on prescribing the prescription and not much more. ### **6\\. Clinical rigor** It's important to choose a program that is both knowledgeable and prioritizes safety. Lab testing before starting weight loss medication can ensure there are no underlying health conditions or restrictions to treatment. While some programs provide lab testing with the monthly fee, others do not cover the costs or require them. Before beginning treatment with a GLP-1 receptor agonist, providers may order lab work to evaluate overall health and rule out conditions that could contribute to weight gain. Labs are often repeated about every six months or sooner if problematic side effects occur. Common tests include a comprehensive metabolic panel, which shows how well the kidneys and liver are functioning. Monitoring these levels can show if the medication is improving kidney and liver health and not causing complications. Hemoglobin A1C measures blood sugar levels over the previous three months and can help identify [diabetes](https://health.usnews.com/conditions/diabetes) or [prediabetes](https://health.usnews.com/conditions/diabetes/prediabetes) if levels are higher. [Cholesterol testing](https://health.usnews.com/health-care/patient-advice/articles/how-to-track-your-cholesterol) helps determine your risk of heart disease and stroke, and these medications often improve cholesterol levels and overall health. Providers may also check thyroid levels, since thyroid conditions can contribute to weight gain. ### **7\\. Approval process** Most weight loss medication programs work by asking patients to share basic information like their height, weight, body mass index and medical history. Some providers have a quick, simple process that involves completing a questionnaire, uploading identification or a photo and briefly chatting with a healthcare provider. Others may require a one-on-one video appointment with a health care provider and lab testing before prescribing medication. READ: [Supplements for GLP-1 Users: Essential Vitamins, Protein and Side Effect Relief](https://health.usnews.com/best-diet/medication/articles/supplements-for-glp-1-users) ## GLP-1 Provider Comparison Compare online weight loss medication providers in 2026. | Provider | Compounded Medication Cost | Brand Name Medication Cost | Medication Options | Known For | Learn More | | --- | --- | --- | --- | --- | --- | | ![AltRx logo](https://www.usnews.com/object/image/0000019e-8f0d-d13d-a9fe-bf4d80c80000/0x0.jpg?update-time=1780516945755&size=responsiveFlow230)<br>[**AltRx**](https://health.usnews.com/best-diet/medication/altrx) | $125 to $299 on average | | Compounded semaglutide, Compounded tirzepatide | Bare bones compounded GLP-1 access with competitive introductory pricing | | | ![Amazon On-Demand Care logo](https://www.usnews.com/object/image/0000019e-b759-d6a2-a1bf-bf598c460000/onemedical-logo-subnav.png?update-time=1781192594549&size=responsiveFlow230)<br>[**Amazon On-Demand Care**](https://health.usnews.com/best-diet/medication/amazon-on-demand-care) | | $149 to $499 | Foundayo; Wegovy pen; Wegovy pill; Zepbound pen | Quick access to brand-name GLP-1 medications with same-day virtual visits and fast shipping | | | ![BetterMe Rx logo](https://www.usnews.com/object/image/0000019e-8f0d-d13d-a9fe-bf4d7f0b0000/favicon.svg?update-time=1780516677979&size=responsiveFlow230)<br>[**BetterMe Rx**](https://health.usnews.com/best-diet/medication/betterme-rx) | $145 to $275 per month | | Compounded semaglutide injection and tablets, Compounded tirzepatide injection and tablets | Low-priced compounded GLP-1 medications with quick turnaround and no membership fee | | | [![Bodybuilding Health + logo](https://www.usnews.com/object/image/0000019e-8f0d-d13d-a9fe-bf4d7e900000/bb-health-icon-1.svg?update-time=1780517075896&size=responsiveFlow230)](https://track.revoffers.com/aff_c?offer_id=1584&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO)[**Bodybuilding Health +**](https://health.usnews.com/best-diet/medication/bodybuilding-health) | $139 to $319 per month | | | Extensive fitness community, workout programs and supplements. | [View Plans](https://track.revoffers.com/aff_c?offer_id=1584&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO) | | [![Eden logo](https://www.usnews.com/object/image/0000019c-dd52-d4ae-a9de-ddfe5d8d0000/screenshot-2026-03-20-at-3-23-32-pm.png?update-time=1774034640881&size=responsiveFlow230)](https://track.revoffers.com/aff_c?offer_id=1435&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO)[**Eden**](https://health.usnews.com/best-diet/medication/eden) | $129 to $329 | $1,399 to $1,695 | Compounded semaglutide, Compounded tirzepatide, Ozempic, Mounjaro, Wegovy, Zepbound | Flat, upfront pricing for compounded medications | [Get Started](https://track.revoffers.com/aff_c?offer_id=1435&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO) | | ![Found logo](https://www.usnews.com/object/image/0000019e-8f0d-d13d-a9fe-bf4d7dd50001/joinfoundhealth-logo.jpg?update-time=1780517523265&size=responsiveFlow230)<br>[**Found**](https://health.usnews.com/best-diet/medication/found) | $199 to $399 | $149 to $449 without insurance; costs vary with insurance coverage | Compounded semaglutide, liraglutide, and tirzepatide; Foundayo; Ozempic; Mounjaro; Rybelsus; Saxenda; Trulicity; Victoza; Wegovy; Zepbound | GLP-1 medication access alongside personalized lifestyle, nutritional and behavioral coaching. | | | [![Fridays logo](https://www.usnews.com/object/image/0000019d-0272-d72b-afbf-9ff307880000/fridays-logo.png?update-time=1773862575833&size=responsiveFlow230)](https://track.revoffers.com/aff_c?offer_id=1284&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=11836)[**Fridays**](https://health.usnews.com/best-diet/medication/fridays) | | $1,498 to $1,828; insurance pricing vary by plan and coverage | Compounded semaglutide oral, Compounded semaglutide injectable, Compounded tirzepatide oral, Compounded tirzepatide injectable, Ozempic, Zepbound | All-inclusive weight loss platform with comprehensive insurance support and low-cost compounded GLP-1 medications | [Get Started](https://track.revoffers.com/aff_c?offer_id=1284&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=11836) | | ![GoodRx for Weight Loss logo](https://www.usnews.com/object/image/0000019e-8db0-d960-adde-fff9c1870000/goodrx.jpg?update-time=1780493695447&size=responsiveFlow230)<br>[**GoodRx for Weight Loss**](https://health.usnews.com/best-diet/medication/goodrx) | | $149 to $449 per month | Foundayo, Wegovy pen, Wegovy pill, Zepbound KwikPen, Zepbound vial | Prescription savings and discounts that can help you save money on prescription drug costs | | | [![Hers logo](https://www.usnews.com/object/image/0000019c-dd85-d4fe-a79f-ffed56050000/hers-logo.png?update-time=1773243057979&size=responsiveFlow230)](https://track.revoffers.com/aff_c?offer_id=1091&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=9704)[**Hers**](https://health.usnews.com/best-diet/medication/hers) | $149 to $325 | $299 to $1,999 | Compounded semaglutide, Liraglutide, Mounjaro, Ozempic, Wegovy, Zepbound | Providing discreet online care for women | [Get Started](https://track.revoffers.com/aff_c?offer_id=1091&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=9704) | | [![Ivim Health logo](https://www.usnews.com/object/image/0000019d-0291-d72b-afbf-9fb3f5180000/ivim-black.svg?update-time=1773864676577&size=responsiveFlow230)](https://track.revoffers.com/aff_c?offer_id=1390&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO)[**Ivim Health**](https://health.usnews.com/best-diet/medication/ivim-health) | $75 to $249 | Insurance prices vary by plan. | Compounded liraglutide, Compounded semaglutide, Compounded tirzepatide, Ozempic, Mounjaro, Wegovy injection, Wegovy pill, Zepbound | Good insurance concierge support and affordable compounded GLP-1s with a holistic approach | [Get Started](https://track.revoffers.com/aff_c?offer_id=1390&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO) | * * * Expand List ## GLP-1s: What You Need to Know The sudden surge in prescribing GLP-1s led to nationwide drug shortages in 2022. This, along with the high cost of these meds, opened the door for compounding pharmacies as an alternative. Although the GLP-1 drug shortage ended in 2025, compounding pharmacies continue to produce these medications. Many companies offer specialized dosage forms \u2013 or [microdosing options](https://health.usnews.com/wellness/articles/can-microdosing-weight-loss-drugs-like-ozempic-help-you-lose-weight), which involve starting with very small doses and gradually increasing them \u2013 for a more personalized approach. As of April 2026, the FDA has officially proposed removing semaglutide, tirzepatide and liraglutide from the 503B bulks list. This means large-scale compounding is now restricted because the FDA considers the shortages resolved. Several major compounding labs (like ProRx and BPI Labs) ceased production in early 2026. A public comment period is now open through June 29, 2026 until a final decision is made. The FDA permits the use of a compounded drug only when the medical need cannot be met by an FDA-approved drug or when an approved product is unavailable due to drug shortages. Compounded medications are not generic versions and are not FDA-approved. Unlike approved drugs, they have not been tested for safety, effectiveness or quality control. In fact, the FDA has issued warning letters to several online telehealth companies regarding false and misleading information about GLP-1 medications. READ [How to Spot Fake Ozempic & Wegovy: 5 Ways to Identify Counterfeit Pens](https://health.usnews.com/wellness/articles/how-to-spot-fake-ozempic) ## Red Flags to Avoid GLP-1s are highly effective at promoting weight loss, but they do come with risks. When seeking out an online company for telehealth medicine, it's important to research before you buy. The following are red flags to look for when considering getting GLP-1s online. ### **Red Flag No. 1: Asynchronous interactions** Many online companies don't require a video visit before prescribing GLP-1s. You will be required to fill out an online questionnaire and have the ability to chat about the [questions you have](https://health.usnews.com/wellness/articles/questions-to-ask-your-doctor-before-starting-a-glp-1-weight-loss-drug). While this model allows for quick, easily accessible care, it's important that you get high-quality care and management of your condition. Dr. Kevin Gendreau, a dual board-certified family and obesity medicine physician with Signature Healthcare in Massachusetts, says that your telehealth visit should feel like a real visit in a doctor's office, where the provider has a plan for accountability and ongoing follow-up care. ### **Red flag No. 2: Lack of lab testing** Lab testing is essential for discovering underlying medical conditions, such as hypothyroidism or diabetes, and for getting a picture of a person's whole health. It can also indicate how your kidneys, [heart](https://health.usnews.com/best-diet/medication/articles/glp-1-drugs-for-heart-health-benefits-side-effects-who-should-take-them) and liver are functioning. Gendreau recommends checking bloodwork at the beginning of treatment and again in six months. \u201cBy staying on top of this data, we can catch potential issues like muscle loss or dehydration early, rather than reacting to them once symptoms arise.\u201d He also notes that potential problems, such as fatty liver disease, can be detected and monitored to see if weight loss improves these conditions. Another benefit is individualizing the treatment plan to maximize results while minimizing side effects and risk. ### **Red flag No. 3: Lack of quality control or testing by the pharmacy** Compounding medications are not FDA-approved and are regulated differently. Dr. Jennifer Brown, a board-certified obesity medicine doctor, states that compounded semaglutide and tirzepatide don't have the rigorous safety data that the FDA-approved versions do. If you plan on using a compounded medication, it\u2019s important to do some research, particularly to ensure the pharmacy follows proper safety and quality standards. Reputable compounding pharmacies should provide documentation that their product has been tested and meets quality, safety and regulatory standards. This is known as a Certificate of Analysis, or CoA. When choosing a pharmacy, it's important to ensure that the pharmacy is accredited by the Pharmacy Compounding Accreditation Board. The PCAB accreditation ensures that pharmacies and their staff have proper training, follow quality control measures and have contamination prevention procedures in place. ### **A Note Regarding Compounded GLP-1s** Compounded drugs are not approved by the U.S. Food and Drug Administration (FDA). Because the FDA does not review them for safety, effectiveness or quality, they may carry greater risks than FDA-approved treatments. ### All Weight Loss Medication Providers - [AltRx](https://health.usnews.com/best-diet/medication/altrx) - [Amazon On-Demand Care](https://health.usnews.com/best-diet/medication/amazon-on-demand-care) - [BetterMe Rx](https://health.usnews.com/best-diet/medication/betterme-rx) - [Bodybuilding Health +](https://health.usnews.com/best-diet/medication/bodybuilding-health) - [Eden](https://health.usnews.com/best-diet/medication/eden) - [Found](https://health.usnews.com/best-diet/medication/found) - [Fridays](https://health.usnews.com/best-diet/medication/fridays) - [GoodRx for Weight Loss](https://health.usnews.com/best-diet/medication/goodrx) - [Hers](https://health.usnews.com/best-diet/medication/hers) - [Ivim Health](https://health.usnews.com/best-diet/medication/ivim-health) - [LifeMD](https://health.usnews.com/best-diet/medication/lifemd) - [MEDVi](https://health.usnews.com/best-diet/medication/medvi) - [Mochi](https://health.usnews.com/best-diet/medication/mochi-health) - [MyStart Health](https://health.usnews.com/best-diet/medication/mystart-health) - [Noom](https://health.usnews.com/best-diet/medication/noom) - [PlushCare](https://health.usnews.com/best-diet/medication/plushcare) - [Remedy Meds](https://health.usnews.com/best-diet/medication/remedy-meds) - [Ro](https://health.usnews.com/best-diet/medication/ro) - [SkinnyRX](https://health.usnews.com/best-diet/medication/skinnyrx) - [Sprout Health](https://health.usnews.com/best-diet/medication/sprout-health) - [Sunlight](https://health.usnews.com/best-diet/medication/sunlight) - [TrimRx](https://health.usnews.com/best-diet/medication/trimrx) - [WeightWatchers](https://health.usnews.com/best-diet/medication/weightwatchers) [Hospitals](https://health.usnews.com/best-hospitals) [Find a Hospital](https://health.usnews.com/best-hospitals/search) [Best Hospitals](https://health.usnews.com/best-hospitals/rankings) [Best Children's Hospitals](https://health.usnews.com/best-hospitals/pediatric-rankings) [Advice for Hospital Patients](https://health.usnews.com/topics/subjects/patient-advice) [Advice for Health Professionals](https://health.usnews.com/health-news/blogs/second-opinion) [How We Rank](https://health.usnews.com/health-care/best-hospitals/articles/faq-how-and-why-we-rank-and-rate-hospitals) [For Hospitals: Update Profile](https://hospitaldashboard.usnews.com/) [Ambulatory Surgery Centers](https://health.usnews.com/best-ascs) [Find an ASC](https://health.usnews.com/best-ascs/search) [How we evaluate ASCs](https://health.usnews.com/media/best-ascs/2024-2025-Best-Ambulatory-Surgery-Centers-Methodology) [Doctors](https://health.usnews.com/doctors) [Find a Doctor](https://health.usnews.com/doctors/search) [Primary Care Physicians](https://health.usnews.com/doctors/family-medicine-doctors) [Pediatricians](https://health.usnews.com/doctors/pediatricians) [How to Choose a Doctor](https://health.usnews.com/top-doctors/articles/2011/07/26/how-to-find-the-right-doctor) [Preparing for a Doctor Visit](https://health.usnews.com/top-doctors/articles/2011/07/26/how-to-maximize-a-doctor-visit) [Doctors Data and Methodology](https://health.usnews.com/health-care/top-doctors/articles/doctor-finder-data-sources-and-methodology) [Dentists](https://health.usnews.com/dentists) [Find a Dentist](https://health.usnews.com/dentists/search) [Orthodontists](https://health.usnews.com/dentists/orthodontists) [How to Choose the Right Dentist](https://health.usnews.com/health-care/patient-advice/articles/how-to-find-a-good-dentist) [Senior Living](https://health.usnews.com/best-senior-living) [Find Memory Care Communities](https://health.usnews.com/best-senior-living/memory-care) [Find Independent Living Communities](https://health.usnews.com/best-senior-living/independent-living) [Find Continuing Care Retirement Communities](https://health.usnews.com/best-senior-living/ccrc) [Find Assisted Living Communities](https://health.usnews.com/best-senior-living/assisted-living) [Senior Living Search](https://health.usnews.com/best-senior-living/search) [For Companies](https://health.usnews.com/best-senior-living/company-info/u-s-news-senior-living-information-for-providers) [Nursing Homes](https://health.usnews.com/best-nursing-homes) [Find a Nursing Home](https://health.usnews.com/best-nursing-homes/search) [Home Health Agencies](https://health.usnews.com/home-care) [Best Home Health Agencies](https://health.usnews.com/home-care) [Find Home Health Agencies](https://health.usnews.com/home-care/search) [Health Insurance](https://health.usnews.com/health-insurance) [Find Plans by State](https://health.usnews.com/health-insurance) [Medicare Plans](https://health.usnews.com/medicare) [Choosing a Health Plan](https://health.usnews.com/health-news/health-insurance/slideshows/how-to-pick-a-health-insurance-plan) [Wellness](https://health.usnews.com/wellness) [Food](https://health.usnews.com/wellness/food) [Fitness](https://health.usnews.com/wellness/fitness) [Mind](https://health.usnews.com/wellness/mind) [Diets](https://health.usnews.com/best-diet) [Top Diets Overall](https://health.usnews.com/best-diet/best-diets-overall) [Top Weight-Loss Diets](https://health.usnews.com/best-diet/best-weight-loss-diets) [Top Diet Programs](https://health.usnews.com/best-diet/best-commercial-diets) [Conditions](https://health.usnews.com/conditions) [Over the Counter Drugs](https://health.usnews.com/drugs) [Breast Cancer](https://health.usnews.com/conditions/breast-cancer) [Lung Cancer](https://health.usnews.com/conditions/lung-cancer) [Depression](https://health.usnews.com/conditions/depression) [ADHD](https://health.usnews.com/conditions/adhd) [Diabetes](https://health.usnews.com/conditions/diabetes) [Heart Disease](https://health.usnews.com/conditions/heart-disease) [Product Rankings & Reviews](https://health.usnews.com/reviews) [Clear Braces](https://health.usnews.com/reviews/clear-braces) [Hospitals](https://health.usnews.com/best-hospitals) [Ambulatory Surgery Centers](https://health.usnews.com/best-ascs) [Doctors](https://health.usnews.com/doctors) [Dentists](https://health.usnews.com/dentists) [Senior Living](https://health.usnews.com/best-senior-living) [Nursing Homes](https://health.usnews.com/best-nursing-homes) [Home Health Agencies](https://health.usnews.com/home-care) [Health Insurance](https://health.usnews.com/health-insurance) [Wellness](https://health.usnews.com/wellness) [Diets](https://health.usnews.com/best-diet) [Conditions](https://health.usnews.com/conditions) [Product Rankings & Reviews](https://health.usnews.com/reviews) [![U.S. News & World Report](https://www.usnews.com/static/img/usn-logo-large.svg)](https://www.usnews.com/) [About U.S. News](https://www.usnews.com/info/features/about-usnews) [Editorial Guidelines](https://www.usnews.com/about-us/editorial-guidelines) [Contact](https://www.usnews.com/info/features/contact) [Press](https://www.usnews.com/info/blogs/press-room) [Advertise](https://mediakit.usnews.com/) [Newsletters](https://emailprefs.usnews.com/emailprefs/newsletters-index) [Jobs](https://www.usnews.com/info/features/employment) [Site Map](https://www.usnews.com/info/features/sitemap) [Store](https://www.usnews.com/products/features/home?src=usnfooter) [U.S. News & World Report Facebook page](https://www.facebook.com/usnewsandworldreport)[U.S. News & World Report Twitter page](https://twitter.com/usnews) Copyright 2026 \u00a9 U.S. News & World Report L.P.[Terms & Conditions](https://www.usnews.com/info/features/terms)/ [Privacy Policy](https://www.usnews.com/features/info/privacy)/ [U.S. State Privacy Notice](https://www.usnews.com/features/info/privacy/state-notice)/ [Your Privacy ChoicesCalifornia Consumer Privacy Act (CCPA) Opt-Out Icon](https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#your-privacy-choices) [U.S. News & World Report Facebook page](https://www.facebook.com/usnewsandworldreport)[U.S. News & World Report Twitter page](https://twitter.com/usnews)",
+  "text_chars": 45565,
+  "links": [
+    {
+      "href": "https://www.usnews.com/",
+      "text": "https://www.usnews.com/",
+      "domain": "usnews.com",
+      "position": 1
+    },
+    {
+      "href": "https://health.usnews.com/",
+      "text": "https://health.usnews.com/",
+      "domain": "health.usnews.com",
+      "position": 2
+    },
+    {
+      "href": "https://health.usnews.com/best-hospitals",
+      "text": "https://health.usnews.com/best-hospitals",
+      "domain": "health.usnews.com",
+      "position": 3
+    },
+    {
+      "href": "https://health.usnews.com/best-hospitals/search",
+      "text": "https://health.usnews.com/best-hospitals/search",
+      "domain": "health.usnews.com",
+      "position": 4
+    },
+    {
+      "href": "https://health.usnews.com/best-hospitals/rankings",
+      "text": "https://health.usnews.com/best-hospitals/rankings",
+      "domain": "health.usnews.com",
+      "position": 5
+    },
+    {
+      "href": "https://health.usnews.com/health-care/best-hospitals/articles/best-hospitals-honor-roll-and-overview",
+      "text": "https://health.usnews.com/health-care/best-hospitals/articles/best-hospitals-honor-roll-and-overview",
+      "domain": "health.usnews.com",
+      "position": 6
+    },
+    {
+      "href": "https://health.usnews.com/best-hospitals/best-regional-hospitals",
+      "text": "https://health.usnews.com/best-hospitals/best-regional-hospitals",
+      "domain": "health.usnews.com",
+      "position": 7
+    },
+    {
+      "href": "https://www.usnews.com/best-hospitals/hospital-ratings/maternity",
+      "text": "https://www.usnews.com/best-hospitals/hospital-ratings/maternity",
+      "domain": "usnews.com",
+      "position": 8
+    },
+    {
+      "href": "https://health.usnews.com/best-hospitals/area",
+      "text": "https://health.usnews.com/best-hospitals/area",
+      "domain": "health.usnews.com",
+      "position": 9
+    },
+    {
+      "href": "https://health.usnews.com/best-hospitals/pediatric-rankings",
+      "text": "https://health.usnews.com/best-hospitals/pediatric-rankings",
+      "domain": "health.usnews.com",
+      "position": 10
+    },
+    {
+      "href": "https://health.usnews.com/health-news/best-childrens-hospitals/articles/best-childrens-hospitals-honor-roll-and-overview",
+      "text": "https://health.usnews.com/health-news/best-childrens-hospitals/articles/best-childrens-hospitals-honor-roll-and-overview",
+      "domain": "health.usnews.com",
+      "position": 11
+    },
+    {
+      "href": "https://health.usnews.com/health-care/best-hospitals/articles/faq-how-and-why-we-rank-and-rate-hospitals",
+      "text": "https://health.usnews.com/health-care/best-hospitals/articles/faq-how-and-why-we-rank-and-rate-hospitals",
+      "domain": "health.usnews.com",
+      "position": 12
+    },
+    {
+      "href": "https://hospitaldashboard.usnews.com/",
+      "text": "https://hospitaldashboard.usnews.com/",
+      "domain": "hospitaldashboard.usnews.com",
+      "position": 13
+    },
+    {
+      "href": "https://health.usnews.com/care-team",
+      "text": "https://health.usnews.com/care-team",
+      "domain": "health.usnews.com",
+      "position": 14
+    },
+    {
+      "href": "https://health.usnews.com/best-ascs",
+      "text": "https://health.usnews.com/best-ascs",
+      "domain": "health.usnews.com",
+      "position": 15
+    },
+    {
+      "href": "https://health.usnews.com/best-ascs/search",
+      "text": "https://health.usnews.com/best-ascs/search",
+      "domain": "health.usnews.com",
+      "position": 16
+    },
+    {
+      "href": "https://health.usnews.com/best-ascs/ratings/colonoscopy-endoscopy",
+      "text": "https://health.usnews.com/best-ascs/ratings/colonoscopy-endoscopy",
+      "domain": "health.usnews.com",
+      "position": 17
+    },
+    {
+      "href": "https://health.usnews.com/best-ascs/ratings/ophthalmology",
+      "text": "https://health.usnews.com/best-ascs/ratings/ophthalmology",
+      "domain": "health.usnews.com",
+      "position": 18
+    },
+    {
+      "href": "https://health.usnews.com/best-ascs/ratings/orthopedics-spine",
+      "text": "https://health.usnews.com/best-ascs/ratings/orthopedics-spine",
+      "domain": "health.usnews.com",
+      "position": 19
+    },
+    {
+      "href": "https://health.usnews.com/best-ascs/ratings/urology",
+      "text": "https://health.usnews.com/best-ascs/ratings/urology",
+      "domain": "health.usnews.com",
+      "position": 20
+    },
+    {
+      "href": "https://health.usnews.com/doctors",
+      "text": "https://health.usnews.com/doctors",
+      "domain": "health.usnews.com",
+      "position": 21
+    },
+    {
+      "href": "https://health.usnews.com/doctors/search",
+      "text": "https://health.usnews.com/doctors/search",
+      "domain": "health.usnews.com",
+      "position": 22
+    },
+    {
+      "href": "https://health.usnews.com/doctors/specialists-index",
+      "text": "https://health.usnews.com/doctors/specialists-index",
+      "domain": "health.usnews.com",
+      "position": 23
+    },
+    {
+      "href": "https://health.usnews.com/doctors/location-index",
+      "text": "https://health.usnews.com/doctors/location-index",
+      "domain": "health.usnews.com",
+      "position": 24
+    },
+    {
+      "href": "https://health.usnews.com/doctors/cardiologists",
+      "text": "https://health.usnews.com/doctors/cardiologists",
+      "domain": "health.usnews.com",
+      "position": 25
+    },
+    {
+      "href": "https://health.usnews.com/dentists",
+      "text": "https://health.usnews.com/dentists",
+      "domain": "health.usnews.com",
+      "position": 26
+    },
+    {
+      "href": "https://health.usnews.com/doctors/family-medicine-doctors",
+      "text": "https://health.usnews.com/doctors/family-medicine-doctors",
+      "domain": "health.usnews.com",
+      "position": 27
+    },
+    {
+      "href": "https://health.usnews.com/behavioral-health",
+      "text": "https://health.usnews.com/behavioral-health",
+      "domain": "health.usnews.com",
+      "position": 28
+    },
+    {
+      "href": "https://health.usnews.com/doctors/oncologists",
+      "text": "https://health.usnews.com/doctors/oncologists",
+      "domain": "health.usnews.com",
+      "position": 29
+    },
+    {
+      "href": "https://health.usnews.com/doctors/orthopedic-surgeons",
+      "text": "https://health.usnews.com/doctors/orthopedic-surgeons",
+      "domain": "health.usnews.com",
+      "position": 30
+    },
+    {
+      "href": "https://health.usnews.com/doctors/pediatricians",
+      "text": "https://health.usnews.com/doctors/pediatricians",
+      "domain": "health.usnews.com",
+      "position": 31
+    },
+    {
+      "href": "https://health.usnews.com/best-senior-living",
+      "text": "https://health.usnews.com/best-senior-living",
+      "domain": "health.usnews.com",
+      "position": 32
+    },
+    {
+      "href": "https://health.usnews.com/best-senior-living/assisted-living",
+      "text": "https://health.usnews.com/best-senior-living/assisted-living",
+      "domain": "health.usnews.com",
+      "position": 33
+    },
+    {
+      "href": "https://health.usnews.com/best-senior-living/independent-living",
+      "text": "https://health.usnews.com/best-senior-living/independent-living",
+      "domain": "health.usnews.com",
+      "position": 34
+    },
+    {
+      "href": "https://health.usnews.com/best-senior-living/memory-care",
+      "text": "https://health.usnews.com/best-senior-living/memory-care",
+      "domain": "health.usnews.com",
+      "position": 35
+    },
+    {
+      "href": "https://health.usnews.com/best-senior-living/ccrc",
+      "text": "https://health.usnews.com/best-senior-living/ccrc",
+      "domain": "health.usnews.com",
+      "position": 36
+    },
+    {
+      "href": "https://health.usnews.com/best-senior-living/search",
+      "text": "https://health.usnews.com/best-senior-living/search",
+      "domain": "health.usnews.com",
+      "position": 37
+    },
+    {
+      "href": "https://health.usnews.com/best-nursing-homes",
+      "text": "https://health.usnews.com/best-nursing-homes",
+      "domain": "health.usnews.com",
+      "position": 38
+    },
+    {
+      "href": "https://health.usnews.com/best-nursing-homes/search?long_term=true&",
+      "text": "https://health.usnews.com/best-nursing-homes/search?long_term=true&",
+      "domain": "health.usnews.com",
+      "position": 39
+    },
+    {
+      "href": "https://health.usnews.com/best-nursing-homes/search?short_term=true&",
+      "text": "https://health.usnews.com/best-nursing-homes/search?short_term=true&",
+      "domain": "health.usnews.com",
+      "position": 40
+    },
+    {
+      "href": "https://health.usnews.com/best-nursing-homes/search",
+      "text": "https://health.usnews.com/best-nursing-homes/search",
+      "domain": "health.usnews.com",
+      "position": 41
+    },
+    {
+      "href": "https://health.usnews.com/home-care",
+      "text": "https://health.usnews.com/home-care",
+      "domain": "health.usnews.com",
+      "position": 42
+    },
+    {
+      "href": "https://health.usnews.com/home-care/search",
+      "text": "https://health.usnews.com/home-care/search",
+      "domain": "health.usnews.com",
+      "position": 43
+    },
+    {
+      "href": "https://health.usnews.com/senior-care/advice",
+      "text": "https://health.usnews.com/senior-care/advice",
+      "domain": "health.usnews.com",
+      "position": 44
+    },
+    {
+      "href": "https://health.usnews.com/best-diet",
+      "text": "https://health.usnews.com/best-diet",
+      "domain": "health.usnews.com",
+      "position": 45
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication",
+      "text": "https://health.usnews.com/best-diet/medication",
+      "domain": "health.usnews.com",
+      "position": 46
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/best-diets-overall",
+      "text": "https://health.usnews.com/best-diet/best-diets-overall",
+      "domain": "health.usnews.com",
+      "position": 47
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/best-weight-loss-diets",
+      "text": "https://health.usnews.com/best-diet/best-weight-loss-diets",
+      "domain": "health.usnews.com",
+      "position": 48
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/best-fast-weight-loss-diets",
+      "text": "https://health.usnews.com/best-diet/best-fast-weight-loss-diets",
+      "domain": "health.usnews.com",
+      "position": 49
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/search",
+      "text": "https://health.usnews.com/best-diet/search",
+      "domain": "health.usnews.com",
+      "position": 50
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/experts",
+      "text": "https://health.usnews.com/best-diet/experts",
+      "domain": "health.usnews.com",
+      "position": 51
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/recipes",
+      "text": "https://health.usnews.com/best-diet/recipes",
+      "domain": "health.usnews.com",
+      "position": 52
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/mediterranean-diet",
+      "text": "https://health.usnews.com/best-diet/mediterranean-diet",
+      "domain": "health.usnews.com",
+      "position": 53
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/weight-watchers-diet",
+      "text": "https://health.usnews.com/best-diet/weight-watchers-diet",
+      "domain": "health.usnews.com",
+      "position": 54
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/keto-diet",
+      "text": "https://health.usnews.com/best-diet/keto-diet",
+      "domain": "health.usnews.com",
+      "position": 55
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/dukan-diet",
+      "text": "https://health.usnews.com/best-diet/dukan-diet",
+      "domain": "health.usnews.com",
+      "position": 56
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/nutrisystem-diet",
+      "text": "https://health.usnews.com/best-diet/nutrisystem-diet",
+      "domain": "health.usnews.com",
+      "position": 57
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/dash-diet",
+      "text": "https://health.usnews.com/best-diet/dash-diet",
+      "domain": "health.usnews.com",
+      "position": 58
+    },
+    {
+      "href": "https://health.usnews.com/medicare",
+      "text": "https://health.usnews.com/medicare",
+      "domain": "health.usnews.com",
+      "position": 59
+    },
+    {
+      "href": "https://health.usnews.com/medicare/best-medicare-plans/best-insurance-companies-for-medicare-advantage-plans",
+      "text": "https://health.usnews.com/medicare/best-medicare-plans/best-insurance-companies-for-medicare-advantage-plans",
+      "domain": "health.usnews.com",
+      "position": 60
+    },
+    {
+      "href": "https://health.usnews.com/medicare/best-medicare-plans/best-insurance-companies-for-part-d-plans",
+      "text": "https://health.usnews.com/medicare/best-medicare-plans/best-insurance-companies-for-part-d-plans",
+      "domain": "health.usnews.com",
+      "position": 61
+    },
+    {
+      "href": "https://health.usnews.com/medicare/best-medicare-plans/medicare-supplement-plans",
+      "text": "https://health.usnews.com/medicare/best-medicare-plans/medicare-supplement-plans",
+      "domain": "health.usnews.com",
+      "position": 62
+    },
+    {
+      "href": "https://health.usnews.com/medicare/search",
+      "text": "https://health.usnews.com/medicare/search",
+      "domain": "health.usnews.com",
+      "position": 63
+    },
+    {
+      "href": "https://health.usnews.com/medicare/aetna-medicare-advantage",
+      "text": "https://health.usnews.com/medicare/aetna-medicare-advantage",
+      "domain": "health.usnews.com",
+      "position": 64
+    },
+    {
+      "href": "https://health.usnews.com/medicare/blue-cross-blue-shield-medicare-advantage",
+      "text": "https://health.usnews.com/medicare/blue-cross-blue-shield-medicare-advantage",
+      "domain": "health.usnews.com",
+      "position": 65
+    },
+    {
+      "href": "https://health.usnews.com/medicare/healthspring-medicare-advantage",
+      "text": "https://health.usnews.com/medicare/healthspring-medicare-advantage",
+      "domain": "health.usnews.com",
+      "position": 66
+    },
+    {
+      "href": "https://health.usnews.com/medicare/humana-medicare-advantage",
+      "text": "https://health.usnews.com/medicare/humana-medicare-advantage",
+      "domain": "health.usnews.com",
+      "position": 67
+    },
+    {
+      "href": "https://health.usnews.com/medicare/kaiser-permanente-medicare-advantage",
+      "text": "https://health.usnews.com/medicare/kaiser-permanente-medicare-advantage",
+      "domain": "health.usnews.com",
+      "position": 68
+    },
+    {
+      "href": "https://health.usnews.com/medicare/united-healthcare-medicare-advantage",
+      "text": "https://health.usnews.com/medicare/united-healthcare-medicare-advantage",
+      "domain": "health.usnews.com",
+      "position": 69
+    },
+    {
+      "href": "https://health.usnews.com/medicare/articles/what-are-the-parts-of-medicare-and-what-do-they-cover",
+      "text": "https://health.usnews.com/medicare/articles/what-are-the-parts-of-medicare-and-what-do-they-cover",
+      "domain": "health.usnews.com",
+      "position": 70
+    },
+    {
+      "href": "https://health.usnews.com/medicare/articles/your-guide-to-medicare-coverage",
+      "text": "https://health.usnews.com/medicare/articles/your-guide-to-medicare-coverage",
+      "domain": "health.usnews.com",
+      "position": 71
+    },
+    {
+      "href": "https://health.usnews.com/medicare/articles/what-to-consider-when-shopping-for-medicare-coverage",
+      "text": "https://health.usnews.com/medicare/articles/what-to-consider-when-shopping-for-medicare-coverage",
+      "domain": "health.usnews.com",
+      "position": 72
+    },
+    {
+      "href": "https://health.usnews.com/medicare/articles/medicare-vs-medicare-advantage-how-to-choose",
+      "text": "https://health.usnews.com/medicare/articles/medicare-vs-medicare-advantage-how-to-choose",
+      "domain": "health.usnews.com",
+      "position": 73
+    },
+    {
+      "href": "https://www.usnews.com/otc",
+      "text": "https://www.usnews.com/otc",
+      "domain": "usnews.com",
+      "position": 74
+    },
+    {
+      "href": "https://health.usnews.com/wellness",
+      "text": "https://health.usnews.com/wellness",
+      "domain": "health.usnews.com",
+      "position": 75
+    },
+    {
+      "href": "https://health.usnews.com/wellness/food",
+      "text": "https://health.usnews.com/wellness/food",
+      "domain": "health.usnews.com",
+      "position": 76
+    },
+    {
+      "href": "https://health.usnews.com/wellness/fitness",
+      "text": "https://health.usnews.com/wellness/fitness",
+      "domain": "health.usnews.com",
+      "position": 77
+    },
+    {
+      "href": "https://health.usnews.com/wellness/mind",
+      "text": "https://health.usnews.com/wellness/mind",
+      "domain": "health.usnews.com",
+      "position": 78
+    },
+    {
+      "href": "https://health.usnews.com/pregnancy",
+      "text": "https://health.usnews.com/pregnancy",
+      "domain": "health.usnews.com",
+      "position": 79
+    },
+    {
+      "href": "https://health.usnews.com/conditions",
+      "text": "https://health.usnews.com/conditions",
+      "domain": "health.usnews.com",
+      "position": 80
+    },
+    {
+      "href": "https://health.usnews.com/medical-review",
+      "text": "https://health.usnews.com/medical-review",
+      "domain": "health.usnews.com",
+      "position": 81
+    },
+    {
+      "href": "https://www.usnews.com/medical-board",
+      "text": "https://www.usnews.com/medical-board",
+      "domain": "usnews.com",
+      "position": 82
+    },
+    {
+      "href": "https://health.usnews.com/wellness/consumer-health-insights-trends",
+      "text": "https://health.usnews.com/wellness/consumer-health-insights-trends",
+      "domain": "health.usnews.com",
+      "position": 83
+    },
+    {
+      "href": "https://health.usnews.com/care-team#providers",
+      "text": "https://health.usnews.com/care-team#providers",
+      "domain": "health.usnews.com",
+      "position": 84
+    },
+    {
+      "href": "https://health.usnews.com/doctors/provider-compare",
+      "text": "https://health.usnews.com/doctors/provider-compare",
+      "domain": "health.usnews.com",
+      "position": 85
+    },
+    {
+      "href": "https://health.usnews.com/best-hospitals/hospital-compare",
+      "text": "https://health.usnews.com/best-hospitals/hospital-compare",
+      "domain": "health.usnews.com",
+      "position": 86
+    },
+    {
+      "href": "https://health.usnews.com/home-care/compare",
+      "text": "https://health.usnews.com/home-care/compare",
+      "domain": "health.usnews.com",
+      "position": 87
+    },
+    {
+      "href": "https://health.usnews.com/best-nursing-homes/compare",
+      "text": "https://health.usnews.com/best-nursing-homes/compare",
+      "domain": "health.usnews.com",
+      "position": 88
+    },
+    {
+      "href": "https://health.usnews.com/best-senior-living/saved-communities",
+      "text": "https://health.usnews.com/best-senior-living/saved-communities",
+      "domain": "health.usnews.com",
+      "position": 89
+    },
+    {
+      "href": "https://health.usnews.com/best-senior-living/compare-communities",
+      "text": "https://health.usnews.com/best-senior-living/compare-communities",
+      "domain": "health.usnews.com",
+      "position": 90
+    },
+    {
+      "href": "https://health.usnews.com/emailprefs/login?target=https%3A%2F%2Fhealth.usnews.com%2Fbest-diet%2Fmedication%2Ftop-glp-1-weight-loss-medication-providers",
+      "text": "https://health.usnews.com/emailprefs/login?target=https%3A%2F%2Fhealth.usnews.com%2Fbest-diet%2Fmedication%2Ftop-glp-1-weight-loss-medication-providers",
+      "domain": "health.usnews.com",
+      "position": 91
+    },
+    {
+      "href": "https://www.usnews.com/topics/author/jessica-swirble",
+      "text": "https://www.usnews.com/topics/author/jessica-swirble",
+      "domain": "usnews.com",
+      "position": 92
+    },
+    {
+      "href": "https://www.usnews.com/topics/author/christine-comizio",
+      "text": "https://www.usnews.com/topics/author/christine-comizio",
+      "domain": "usnews.com",
+      "position": 93
+    },
+    {
+      "href": "https://www.usnews.com/topics/author/gretel-schueller",
+      "text": "https://www.usnews.com/topics/author/gretel-schueller",
+      "domain": "usnews.com",
+      "position": 94
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#top-providers",
+      "text": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#top-providers",
+      "domain": "health.usnews.com",
+      "position": 95
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#evaluate",
+      "text": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#evaluate",
+      "domain": "health.usnews.com",
+      "position": 96
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#comparison",
+      "text": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#comparison",
+      "domain": "health.usnews.com",
+      "position": 97
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#need-to-know",
+      "text": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#need-to-know",
+      "domain": "health.usnews.com",
+      "position": 98
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#red-flags",
+      "text": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#red-flags",
+      "domain": "health.usnews.com",
+      "position": 99
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/fridays",
+      "text": "https://health.usnews.com/best-diet/medication/fridays",
+      "domain": "health.usnews.com",
+      "position": 100
+    },
+    {
+      "href": "https://track.revoffers.com/aff_c?offer_id=1284&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=11836",
+      "text": "https://track.revoffers.com/aff_c?offer_id=1284&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=11836",
+      "domain": "track.revoffers.com",
+      "position": 101
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/skinnyrx",
+      "text": "https://health.usnews.com/best-diet/medication/skinnyrx",
+      "domain": "health.usnews.com",
+      "position": 102
+    },
+    {
+      "href": "https://track.revoffers.com/aff_c?offer_id=1464&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2=sem-card&sub3=https://health.usnews.com/best-diet/medication/top-sem&sub4={{DEVICE}}&sub5=SEM",
+      "text": "https://track.revoffers.com/aff_c?offer_id=1464&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2=sem-card&sub3=https://health.usnews.com/best-diet/medication/top-sem&sub4={{DEVICE}}&sub5=SEM",
+      "domain": "track.revoffers.com",
+      "position": 103
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/ro",
+      "text": "https://health.usnews.com/best-diet/medication/ro",
+      "domain": "health.usnews.com",
+      "position": 104
+    },
+    {
+      "href": "https://getroman.pxf.io/c/3618142/3226368/15530?subId1={{USN_CLICK_ID}}&subId2={{DATA_TRACKING_PLACEMENT}}&subId3=SEO_{{SREF}}&partnerpropertyid=3561887",
+      "text": "https://getroman.pxf.io/c/3618142/3226368/15530?subId1={{USN_CLICK_ID}}&subId2={{DATA_TRACKING_PLACEMENT}}&subId3=SEO_{{SREF}}&partnerpropertyid=3561887",
+      "domain": "getroman.pxf.io",
+      "position": 105
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/noom",
+      "text": "https://health.usnews.com/best-diet/medication/noom",
+      "domain": "health.usnews.com",
+      "position": 106
+    },
+    {
+      "href": "https://track.revoffers.com/aff_c?offer_id=1497&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO",
+      "text": "https://track.revoffers.com/aff_c?offer_id=1497&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO",
+      "domain": "track.revoffers.com",
+      "position": 107
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/sprout-health",
+      "text": "https://health.usnews.com/best-diet/medication/sprout-health",
+      "domain": "health.usnews.com",
+      "position": 108
+    },
+    {
+      "href": "https://track.revoffers.com/aff_c?offer_id=1286&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2=sem-card&sub3=https://health.usnews.com/best-diet/medication/top-sem&sub4={{DEVICE}}&sub5=SEM",
+      "text": "https://track.revoffers.com/aff_c?offer_id=1286&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2=sem-card&sub3=https://health.usnews.com/best-diet/medication/top-sem&sub4={{DEVICE}}&sub5=SEM",
+      "domain": "track.revoffers.com",
+      "position": 109
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/hers",
+      "text": "https://health.usnews.com/best-diet/medication/hers",
+      "domain": "health.usnews.com",
+      "position": 110
+    },
+    {
+      "href": "https://track.revoffers.com/aff_c?offer_id=1091&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=9704",
+      "text": "https://track.revoffers.com/aff_c?offer_id=1091&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=9704",
+      "domain": "track.revoffers.com",
+      "position": 111
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/plushcare",
+      "text": "https://health.usnews.com/best-diet/medication/plushcare",
+      "domain": "health.usnews.com",
+      "position": 112
+    },
+    {
+      "href": "https://track.revoffers.com/aff_c?offer_id=344&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=8347",
+      "text": "https://track.revoffers.com/aff_c?offer_id=344&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=8347",
+      "domain": "track.revoffers.com",
+      "position": 113
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/weightwatchers",
+      "text": "https://health.usnews.com/best-diet/medication/weightwatchers",
+      "domain": "health.usnews.com",
+      "position": 114
+    },
+    {
+      "href": "https://track.revoffers.com/aff_c?offer_id=1115&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=11128",
+      "text": "https://track.revoffers.com/aff_c?offer_id=1115&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO&url_id=11128",
+      "domain": "track.revoffers.com",
+      "position": 115
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/eden",
+      "text": "https://health.usnews.com/best-diet/medication/eden",
+      "domain": "health.usnews.com",
+      "position": 116
+    },
+    {
+      "href": "https://track.revoffers.com/aff_c?offer_id=1435&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO",
+      "text": "https://track.revoffers.com/aff_c?offer_id=1435&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO",
+      "domain": "track.revoffers.com",
+      "position": 117
+    },
+    {
+      "href": "https://health.usnews.com/conditions/prescription-weight-loss-drugs",
+      "text": "https://health.usnews.com/conditions/prescription-weight-loss-drugs",
+      "domain": "health.usnews.com",
+      "position": 118
+    },
+    {
+      "href": "https://health.usnews.com/wellness/articles/do-weight-loss-products-like-wegovy-help-weight-loss",
+      "text": "https://health.usnews.com/wellness/articles/do-weight-loss-products-like-wegovy-help-weight-loss",
+      "domain": "health.usnews.com",
+      "position": 119
+    },
+    {
+      "href": "https://health.usnews.com/wellness/articles/mounjaro-weight-loss",
+      "text": "https://health.usnews.com/wellness/articles/mounjaro-weight-loss",
+      "domain": "health.usnews.com",
+      "position": 120
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/articles/navigating-insurance-coverage-for-glp-1-medications-a-step-by-step-guide",
+      "text": "https://health.usnews.com/best-diet/medication/articles/navigating-insurance-coverage-for-glp-1-medications-a-step-by-step-guide",
+      "domain": "health.usnews.com",
+      "position": 121
+    },
+    {
+      "href": "https://health.usnews.com/wellness/articles/is-ozempic-safe-and-effective-for-weight-loss",
+      "text": "https://health.usnews.com/wellness/articles/is-ozempic-safe-and-effective-for-weight-loss",
+      "domain": "health.usnews.com",
+      "position": 122
+    },
+    {
+      "href": "https://health.usnews.com/wellness/article/zepbound-for-weight-loss",
+      "text": "https://health.usnews.com/wellness/article/zepbound-for-weight-loss",
+      "domain": "health.usnews.com",
+      "position": 123
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/articles/glp-1-side-effects-expert-tips-to-manage-nausea-constipation-and-weight-loss-fatigue",
+      "text": "https://health.usnews.com/best-diet/medication/articles/glp-1-side-effects-expert-tips-to-manage-nausea-constipation-and-weight-loss-fatigue",
+      "domain": "health.usnews.com",
+      "position": 124
+    },
+    {
+      "href": "https://health.usnews.com/wellness/food/articles/what-to-eat-and-avoid-on-semaglutide",
+      "text": "https://health.usnews.com/wellness/food/articles/what-to-eat-and-avoid-on-semaglutide",
+      "domain": "health.usnews.com",
+      "position": 125
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/articles/most-common-glp-1-questions",
+      "text": "https://health.usnews.com/best-diet/medication/articles/most-common-glp-1-questions",
+      "domain": "health.usnews.com",
+      "position": 126
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/altrx",
+      "text": "https://health.usnews.com/best-diet/medication/altrx",
+      "domain": "health.usnews.com",
+      "position": 127
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/amazon-on-demand-care",
+      "text": "https://health.usnews.com/best-diet/medication/amazon-on-demand-care",
+      "domain": "health.usnews.com",
+      "position": 128
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/betterme-rx",
+      "text": "https://health.usnews.com/best-diet/medication/betterme-rx",
+      "domain": "health.usnews.com",
+      "position": 129
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/bodybuilding-health",
+      "text": "https://health.usnews.com/best-diet/medication/bodybuilding-health",
+      "domain": "health.usnews.com",
+      "position": 130
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/found",
+      "text": "https://health.usnews.com/best-diet/medication/found",
+      "domain": "health.usnews.com",
+      "position": 131
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/goodrx",
+      "text": "https://health.usnews.com/best-diet/medication/goodrx",
+      "domain": "health.usnews.com",
+      "position": 132
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/ivim-health",
+      "text": "https://health.usnews.com/best-diet/medication/ivim-health",
+      "domain": "health.usnews.com",
+      "position": 133
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/lifemd",
+      "text": "https://health.usnews.com/best-diet/medication/lifemd",
+      "domain": "health.usnews.com",
+      "position": 134
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/medvi",
+      "text": "https://health.usnews.com/best-diet/medication/medvi",
+      "domain": "health.usnews.com",
+      "position": 135
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/mochi-health",
+      "text": "https://health.usnews.com/best-diet/medication/mochi-health",
+      "domain": "health.usnews.com",
+      "position": 136
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/mystart-health",
+      "text": "https://health.usnews.com/best-diet/medication/mystart-health",
+      "domain": "health.usnews.com",
+      "position": 137
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/remedy-meds",
+      "text": "https://health.usnews.com/best-diet/medication/remedy-meds",
+      "domain": "health.usnews.com",
+      "position": 138
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/sunlight",
+      "text": "https://health.usnews.com/best-diet/medication/sunlight",
+      "domain": "health.usnews.com",
+      "position": 139
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/trimrx",
+      "text": "https://health.usnews.com/best-diet/medication/trimrx",
+      "domain": "health.usnews.com",
+      "position": 140
+    },
+    {
+      "href": "https://health.usnews.com/medicare/articles/does-medicare-cover-ozempic",
+      "text": "https://health.usnews.com/medicare/articles/does-medicare-cover-ozempic",
+      "domain": "health.usnews.com",
+      "position": 141
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/articles/what-to-know-about-the-new-wegovy-pill",
+      "text": "https://health.usnews.com/best-diet/medication/articles/what-to-know-about-the-new-wegovy-pill",
+      "domain": "health.usnews.com",
+      "position": 142
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/articles/semaglutide-vs-tirzepatide",
+      "text": "https://health.usnews.com/best-diet/medication/articles/semaglutide-vs-tirzepatide",
+      "domain": "health.usnews.com",
+      "position": 143
+    },
+    {
+      "href": "https://health.usnews.com/conditions/diabetes",
+      "text": "https://health.usnews.com/conditions/diabetes",
+      "domain": "health.usnews.com",
+      "position": 144
+    },
+    {
+      "href": "https://health.usnews.com/conditions/diabetes/prediabetes",
+      "text": "https://health.usnews.com/conditions/diabetes/prediabetes",
+      "domain": "health.usnews.com",
+      "position": 145
+    },
+    {
+      "href": "https://health.usnews.com/health-care/patient-advice/articles/how-to-track-your-cholesterol",
+      "text": "https://health.usnews.com/health-care/patient-advice/articles/how-to-track-your-cholesterol",
+      "domain": "health.usnews.com",
+      "position": 146
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/articles/supplements-for-glp-1-users",
+      "text": "https://health.usnews.com/best-diet/medication/articles/supplements-for-glp-1-users",
+      "domain": "health.usnews.com",
+      "position": 147
+    },
+    {
+      "href": "https://track.revoffers.com/aff_c?offer_id=1584&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO",
+      "text": "https://track.revoffers.com/aff_c?offer_id=1584&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO",
+      "domain": "track.revoffers.com",
+      "position": 148
+    },
+    {
+      "href": "https://track.revoffers.com/aff_c?offer_id=1390&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO",
+      "text": "https://track.revoffers.com/aff_c?offer_id=1390&aff_id=12405&sub1={{USN_CLICK_ID}}&sub2={{DATA_TRACKING_PLACEMENT}}&sub3={{SREF}}&sub4={{DEVICE}}&sub5=SEO",
+      "domain": "track.revoffers.com",
+      "position": 149
+    },
+    {
+      "href": "https://health.usnews.com/wellness/articles/can-microdosing-weight-loss-drugs-like-ozempic-help-you-lose-weight",
+      "text": "https://health.usnews.com/wellness/articles/can-microdosing-weight-loss-drugs-like-ozempic-help-you-lose-weight",
+      "domain": "health.usnews.com",
+      "position": 150
+    },
+    {
+      "href": "https://health.usnews.com/wellness/articles/how-to-spot-fake-ozempic",
+      "text": "https://health.usnews.com/wellness/articles/how-to-spot-fake-ozempic",
+      "domain": "health.usnews.com",
+      "position": 151
+    },
+    {
+      "href": "https://health.usnews.com/wellness/articles/questions-to-ask-your-doctor-before-starting-a-glp-1-weight-loss-drug",
+      "text": "https://health.usnews.com/wellness/articles/questions-to-ask-your-doctor-before-starting-a-glp-1-weight-loss-drug",
+      "domain": "health.usnews.com",
+      "position": 152
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/articles/glp-1-drugs-for-heart-health-benefits-side-effects-who-should-take-them",
+      "text": "https://health.usnews.com/best-diet/medication/articles/glp-1-drugs-for-heart-health-benefits-side-effects-who-should-take-them",
+      "domain": "health.usnews.com",
+      "position": 153
+    },
+    {
+      "href": "https://health.usnews.com/topics/subjects/patient-advice",
+      "text": "https://health.usnews.com/topics/subjects/patient-advice",
+      "domain": "health.usnews.com",
+      "position": 154
+    },
+    {
+      "href": "https://health.usnews.com/health-news/blogs/second-opinion",
+      "text": "https://health.usnews.com/health-news/blogs/second-opinion",
+      "domain": "health.usnews.com",
+      "position": 155
+    },
+    {
+      "href": "https://health.usnews.com/media/best-ascs/2024-2025-Best-Ambulatory-Surgery-Centers-Methodology",
+      "text": "https://health.usnews.com/media/best-ascs/2024-2025-Best-Ambulatory-Surgery-Centers-Methodology",
+      "domain": "health.usnews.com",
+      "position": 156
+    },
+    {
+      "href": "https://health.usnews.com/top-doctors/articles/2011/07/26/how-to-find-the-right-doctor",
+      "text": "https://health.usnews.com/top-doctors/articles/2011/07/26/how-to-find-the-right-doctor",
+      "domain": "health.usnews.com",
+      "position": 157
+    },
+    {
+      "href": "https://health.usnews.com/top-doctors/articles/2011/07/26/how-to-maximize-a-doctor-visit",
+      "text": "https://health.usnews.com/top-doctors/articles/2011/07/26/how-to-maximize-a-doctor-visit",
+      "domain": "health.usnews.com",
+      "position": 158
+    },
+    {
+      "href": "https://health.usnews.com/health-care/top-doctors/articles/doctor-finder-data-sources-and-methodology",
+      "text": "https://health.usnews.com/health-care/top-doctors/articles/doctor-finder-data-sources-and-methodology",
+      "domain": "health.usnews.com",
+      "position": 159
+    },
+    {
+      "href": "https://health.usnews.com/dentists/search",
+      "text": "https://health.usnews.com/dentists/search",
+      "domain": "health.usnews.com",
+      "position": 160
+    },
+    {
+      "href": "https://health.usnews.com/dentists/orthodontists",
+      "text": "https://health.usnews.com/dentists/orthodontists",
+      "domain": "health.usnews.com",
+      "position": 161
+    },
+    {
+      "href": "https://health.usnews.com/health-care/patient-advice/articles/how-to-find-a-good-dentist",
+      "text": "https://health.usnews.com/health-care/patient-advice/articles/how-to-find-a-good-dentist",
+      "domain": "health.usnews.com",
+      "position": 162
+    },
+    {
+      "href": "https://health.usnews.com/best-senior-living/company-info/u-s-news-senior-living-information-for-providers",
+      "text": "https://health.usnews.com/best-senior-living/company-info/u-s-news-senior-living-information-for-providers",
+      "domain": "health.usnews.com",
+      "position": 163
+    },
+    {
+      "href": "https://health.usnews.com/health-insurance",
+      "text": "https://health.usnews.com/health-insurance",
+      "domain": "health.usnews.com",
+      "position": 164
+    },
+    {
+      "href": "https://health.usnews.com/health-news/health-insurance/slideshows/how-to-pick-a-health-insurance-plan",
+      "text": "https://health.usnews.com/health-news/health-insurance/slideshows/how-to-pick-a-health-insurance-plan",
+      "domain": "health.usnews.com",
+      "position": 165
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/best-commercial-diets",
+      "text": "https://health.usnews.com/best-diet/best-commercial-diets",
+      "domain": "health.usnews.com",
+      "position": 166
+    },
+    {
+      "href": "https://health.usnews.com/drugs",
+      "text": "https://health.usnews.com/drugs",
+      "domain": "health.usnews.com",
+      "position": 167
+    },
+    {
+      "href": "https://health.usnews.com/conditions/breast-cancer",
+      "text": "https://health.usnews.com/conditions/breast-cancer",
+      "domain": "health.usnews.com",
+      "position": 168
+    },
+    {
+      "href": "https://health.usnews.com/conditions/lung-cancer",
+      "text": "https://health.usnews.com/conditions/lung-cancer",
+      "domain": "health.usnews.com",
+      "position": 169
+    },
+    {
+      "href": "https://health.usnews.com/conditions/depression",
+      "text": "https://health.usnews.com/conditions/depression",
+      "domain": "health.usnews.com",
+      "position": 170
+    },
+    {
+      "href": "https://health.usnews.com/conditions/adhd",
+      "text": "https://health.usnews.com/conditions/adhd",
+      "domain": "health.usnews.com",
+      "position": 171
+    },
+    {
+      "href": "https://health.usnews.com/conditions/heart-disease",
+      "text": "https://health.usnews.com/conditions/heart-disease",
+      "domain": "health.usnews.com",
+      "position": 172
+    },
+    {
+      "href": "https://health.usnews.com/reviews",
+      "text": "https://health.usnews.com/reviews",
+      "domain": "health.usnews.com",
+      "position": 173
+    },
+    {
+      "href": "https://health.usnews.com/reviews/clear-braces",
+      "text": "https://health.usnews.com/reviews/clear-braces",
+      "domain": "health.usnews.com",
+      "position": 174
+    },
+    {
+      "href": "https://www.usnews.com/info/features/about-usnews",
+      "text": "https://www.usnews.com/info/features/about-usnews",
+      "domain": "usnews.com",
+      "position": 175
+    },
+    {
+      "href": "https://www.usnews.com/about-us/editorial-guidelines",
+      "text": "https://www.usnews.com/about-us/editorial-guidelines",
+      "domain": "usnews.com",
+      "position": 176
+    },
+    {
+      "href": "https://www.usnews.com/info/features/contact",
+      "text": "https://www.usnews.com/info/features/contact",
+      "domain": "usnews.com",
+      "position": 177
+    },
+    {
+      "href": "https://www.usnews.com/info/blogs/press-room",
+      "text": "https://www.usnews.com/info/blogs/press-room",
+      "domain": "usnews.com",
+      "position": 178
+    },
+    {
+      "href": "https://mediakit.usnews.com/",
+      "text": "https://mediakit.usnews.com/",
+      "domain": "mediakit.usnews.com",
+      "position": 179
+    },
+    {
+      "href": "https://emailprefs.usnews.com/emailprefs/newsletters-index",
+      "text": "https://emailprefs.usnews.com/emailprefs/newsletters-index",
+      "domain": "emailprefs.usnews.com",
+      "position": 180
+    },
+    {
+      "href": "https://www.usnews.com/info/features/employment",
+      "text": "https://www.usnews.com/info/features/employment",
+      "domain": "usnews.com",
+      "position": 181
+    },
+    {
+      "href": "https://www.usnews.com/info/features/sitemap",
+      "text": "https://www.usnews.com/info/features/sitemap",
+      "domain": "usnews.com",
+      "position": 182
+    },
+    {
+      "href": "https://www.usnews.com/products/features/home?src=usnfooter",
+      "text": "https://www.usnews.com/products/features/home?src=usnfooter",
+      "domain": "usnews.com",
+      "position": 183
+    },
+    {
+      "href": "https://www.facebook.com/usnewsandworldreport",
+      "text": "https://www.facebook.com/usnewsandworldreport",
+      "domain": "facebook.com",
+      "position": 184
+    },
+    {
+      "href": "https://twitter.com/usnews",
+      "text": "https://twitter.com/usnews",
+      "domain": "twitter.com",
+      "position": 185
+    },
+    {
+      "href": "https://www.usnews.com/info/features/terms",
+      "text": "https://www.usnews.com/info/features/terms",
+      "domain": "usnews.com",
+      "position": 186
+    },
+    {
+      "href": "https://www.usnews.com/features/info/privacy",
+      "text": "https://www.usnews.com/features/info/privacy",
+      "domain": "usnews.com",
+      "position": 187
+    },
+    {
+      "href": "https://www.usnews.com/features/info/privacy/state-notice",
+      "text": "https://www.usnews.com/features/info/privacy/state-notice",
+      "domain": "usnews.com",
+      "position": 188
+    },
+    {
+      "href": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#your-privacy-choices",
+      "text": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers#your-privacy-choices",
+      "domain": "health.usnews.com",
+      "position": 189
+    }
+  ],
+  "link_count": 189
+}

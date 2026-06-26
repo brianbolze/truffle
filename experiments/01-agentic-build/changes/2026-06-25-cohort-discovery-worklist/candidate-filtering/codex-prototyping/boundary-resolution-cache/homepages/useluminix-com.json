@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:46Z",
+  "ok": true,
+  "input": {
+    "domain": "useluminix.com",
+    "url": "https://useluminix.com/"
+  },
+  "status": 200,
+  "final_url": "https://www.useluminix.com/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "Luminix \u2014 AI-Powered Deep Research You'll Actually Read",
+  "description": "AI-powered deep research on companies, industries, and big ideas \u2014 with follow-up questions until it clicks. Start free, no credit card required.",
+  "text_excerpt": "Luminix \u2014 AI-Powered Deep Research You'll Actually Read LuminixAI Get Started Use Cases Deep Research Multi-model research in 15-30 minutes Product Strategy Roadmap and positioning research Growth Strategy Expansion and scaling research Market Entry New market expansion analysis Pricing About Sign In Get Started Sign In Get Started Deep Research you'll want to read A deep research tool designed to minimize hallucinations and deliver great insights in an easy-to-read format. Try it free See how it works AI Writing Tools \u2014 Competitive Landscape Reports Market Size Key Players Pricing User Needs Risks Market Size & Growth Complete Key Finding reuters.com Luminix Daily AI news, your way An AI newsletter you can customize any time with a quick reply. Website Get the brief Carefully designed to create great reports \u2014 every time 1 Ask your question Describe what you're trying to figure out. A market you're evaluating, a competitor you're tracking, a decision you're weighing\u2014whatever's on your whiteboard. What do you want to research? Competitive landscape for AI writing tools in 2026 Start Research 2 Six agents dig in Luminix breaks your question into research threads and deploys up to six AI agents to investigate each one in parallel. You can modify the paths, ask follow up questions, and refine the research as you go. Market Size Key Players Pricing Models User Behavior Tech Stack Risks & Gaps 3 Everything synthesized The parallel research streams feed into a synthesis layer that connects the dots, surfaces patterns, and delivers analysis you can actually use\u2014not just a pile of links. Final Synthesis Competitive Analysis Report Report 3 Critical Insights Report 7 See the full process Under the hood We don't bet on one model. We pick the best one for each step. Luminix orchestrates Claude, Grok, and Gemini \u2014 using the one that's actually best at each part of the job. Gemini Google Quick research for initial results Gemini, with Google Search grounding, delivers trustworthy results fast for the opening analysis phase \u2014 so you start seeing answers in seconds, not minutes. Grok xAI Most trustworthy research agents Grok leads on web search and tops the public benchmarks for lowest hallucination rates of any frontier model. That held true in our internal evaluations as well \u2014 which is why Grok runs the deep research agents. Claude Opus Anthropic Final synthesis Opus writes the long-form report. After comparing every frontier model on real synthesis runs, Opus held th"
+}

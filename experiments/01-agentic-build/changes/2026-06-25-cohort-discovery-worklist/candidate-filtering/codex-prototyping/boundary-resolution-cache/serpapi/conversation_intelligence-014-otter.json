@@ -1,0 +1,88 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T16:07:33Z",
+  "ok": true,
+  "input": {
+    "query": "\"Otter\" official site AI meeting notes revenue intelligence",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 1
+  },
+  "ai_overview_present": false,
+  "ai_overview_skipped": true,
+  "ranked_brands": [],
+  "narrative_paragraphs": [],
+  "headings": [],
+  "references": [],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Otter.ai Breaks $100M ARR Barrier and Transforms ...",
+      "link": "https://otter.ai/blog/otter-ai-breaks-100m-arr-barrier-and-transforms-business-meetings-launching-industry-first-ai-meeting-agent-suite",
+      "snippet": "Otter.ai, the leading AI meeting productivity platform, today announced it has surpassed $100 million in annual recurring revenue (ARR).",
+      "displayed_link": "https://otter.ai \u203a blog \u203a otter-ai-breaks-100m-arr-barrier..."
+    },
+    {
+      "position": 2,
+      "title": "Otter revenue, funding & news | Sacra",
+      "link": "https://sacra.com/c/otter/",
+      "snippet": "Sacra estimates that Otter.ai generated $100 million in annual recurring revenue (ARR) in March 2025, up from $81M ARR at the end of 2024.",
+      "displayed_link": "https://sacra.com \u203a otter"
+    },
+    {
+      "position": 3,
+      "title": "Otter.ai Achieves $100M ARR, Revolutionizing Voice ...",
+      "link": "https://www.linkedin.com/posts/samliang_otterai-caps-transformational-2025-with-activity-7408973149104484353-NBD7",
+      "snippet": "2025 was transformational for Otter.ai. We crossed $100M ARR with fewer than 200 people (that's over $500K revenue per employee).",
+      "displayed_link": "290+ reactions \u00b7 6 months ago"
+    },
+    {
+      "position": 4,
+      "title": "Our checklist for vetting AI meeting tools in healthcare after ...",
+      "link": "https://www.reddit.com/r/ITManagers/comments/1p5iteg/our_checklist_for_vetting_ai_meeting_tools_in/",
+      "snippet": "Our checklist for vetting AI meeting tools in healthcare after that otter lawsuit wake up call. Work in healthtech IT and that recent otter ...",
+      "displayed_link": "10+ comments \u00b7 7 months ago"
+    },
+    {
+      "position": 5,
+      "title": "Best Otter AI Alternatives in 2026",
+      "link": "https://voicedash.ai/best-otter-ai-alternatives/",
+      "snippet": "Otter.ai is an AI meeting assistant that records conversations, generates transcripts, identifies speakers, creates summaries, and helps users ...",
+      "displayed_link": "https://voicedash.ai \u203a Blog \u203a Transcription & Notes"
+    },
+    {
+      "position": 6,
+      "title": "Gong vs Otter.ai vs Sybill: The 2026 Sales Tool Comparison",
+      "link": "https://www.sybill.ai/blogs/gong-vs-otter-ai-vs-sybill",
+      "snippet": "Otter.ai is a general-purpose AI meeting transcription tool. It records, transcribes, and summarizes meetings accurately and affordably but ...",
+      "displayed_link": "https://www.sybill.ai \u203a blogs \u203a gong-vs-otter-ai-vs-sybill"
+    },
+    {
+      "position": 7,
+      "title": "Top ai meeting note takers reviewed",
+      "link": "https://www.facebook.com/groups/698593531630485/posts/1386031669553331/",
+      "snippet": "\"Otter.ai: A popular AI-powered transcription service that captures spoken content in real-time. It offers features like automated summaries, ...",
+      "displayed_link": "6 comments \u00b7 9 months ago"
+    },
+    {
+      "position": 8,
+      "title": "Otter vs Fireflies: Features, pricing, scalability",
+      "link": "https://www.avoma.com/blog/otter-vs-fireflies",
+      "snippet": "Otter.ai is a meeting assistant that uses artificial intelligence to generate transcriptions for meetings, interviews, lectures, and other important voice ...",
+      "displayed_link": "https://www.avoma.com \u203a blog \u203a otter-vs-fireflies"
+    },
+    {
+      "position": 9,
+      "title": "Report: Otter Business Breakdown & Founding Story",
+      "link": "https://research.contrary.com/company/otter",
+      "snippet": "Otter offers AI-generated summaries, action items, and outlines to assist users in digesting lengthy conversations. The platform automatically ...",
+      "displayed_link": "https://research.contrary.com \u203a company \u203a otter"
+    }
+  ]
+}

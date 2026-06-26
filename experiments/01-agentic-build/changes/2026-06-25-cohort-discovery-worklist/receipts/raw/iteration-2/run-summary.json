@@ -1,0 +1,232 @@
+{
+  "captured_at": "2026-06-26T01:05:44Z",
+  "panel_count": 18,
+  "ok_count": 18,
+  "capture_ok_count": 15,
+  "usable_for_scoring_count": 18,
+  "schema_drift_count": 3,
+  "results": [
+    {
+      "id": "telehealth-ed-serp",
+      "cohort": "telehealth",
+      "feeder": "category_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/telehealth-ed-serp.json"
+    },
+    {
+      "id": "telehealth-longevity-nad-serp",
+      "cohort": "telehealth",
+      "feeder": "category_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/telehealth-longevity-nad-serp.json"
+    },
+    {
+      "id": "telehealth-healthspan-labs-serp",
+      "cohort": "telehealth",
+      "feeder": "category_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/telehealth-healthspan-labs-serp.json"
+    },
+    {
+      "id": "telehealth-menopause-hrt-serp",
+      "cohort": "telehealth",
+      "feeder": "category_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/telehealth-menopause-hrt-serp.json"
+    },
+    {
+      "id": "telehealth-glp1-serp",
+      "cohort": "telehealth",
+      "feeder": "category_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": false,
+      "usable_for_scoring": true,
+      "schema_drift": [
+        "ai_overview missing 'references'"
+      ],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/telehealth-glp1-serp.json"
+    },
+    {
+      "id": "telehealth-trt-serp",
+      "cohort": "telehealth",
+      "feeder": "category_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/telehealth-trt-serp.json"
+    },
+    {
+      "id": "telehealth-mens-health-demand-serp",
+      "cohort": "telehealth",
+      "feeder": "demand_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": false,
+      "usable_for_scoring": true,
+      "schema_drift": [
+        "text_blocks[7].type='table' not in {'heading', 'paragraph', 'list'}"
+      ],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/telehealth-mens-health-demand-serp.json"
+    },
+    {
+      "id": "telehealth-longevity-demand-serp",
+      "cohort": "telehealth",
+      "feeder": "demand_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/telehealth-longevity-demand-serp.json"
+    },
+    {
+      "id": "telehealth-ed-exa",
+      "cohort": "telehealth",
+      "feeder": "exa_search",
+      "tool": "exa_search",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/exa/telehealth-ed-exa.json"
+    },
+    {
+      "id": "telehealth-longevity-exa",
+      "cohort": "telehealth",
+      "feeder": "exa_search",
+      "tool": "exa_search",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/exa/telehealth-longevity-exa.json"
+    },
+    {
+      "id": "ci-ai-meeting-serp",
+      "cohort": "conversation_intelligence",
+      "feeder": "category_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/ci-ai-meeting-serp.json"
+    },
+    {
+      "id": "ci-conversation-intelligence-serp",
+      "cohort": "conversation_intelligence",
+      "feeder": "category_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/ci-conversation-intelligence-serp.json"
+    },
+    {
+      "id": "ci-enterprise-call-analysis-serp",
+      "cohort": "conversation_intelligence",
+      "feeder": "category_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/ci-enterprise-call-analysis-serp.json"
+    },
+    {
+      "id": "ci-meeting-notetaker-serp",
+      "cohort": "conversation_intelligence",
+      "feeder": "category_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/ci-meeting-notetaker-serp.json"
+    },
+    {
+      "id": "ci-gong-demand-serp",
+      "cohort": "conversation_intelligence",
+      "feeder": "demand_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": false,
+      "usable_for_scoring": true,
+      "schema_drift": [
+        "text_blocks[11].type='table' not in {'heading', 'list', 'paragraph'}"
+      ],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/ci-gong-demand-serp.json"
+    },
+    {
+      "id": "ci-notetaker-demand-serp",
+      "cohort": "conversation_intelligence",
+      "feeder": "demand_serp",
+      "tool": "serpapi",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/serpapi/ci-notetaker-demand-serp.json"
+    },
+    {
+      "id": "ci-meeting-notes-exa",
+      "cohort": "conversation_intelligence",
+      "feeder": "exa_search",
+      "tool": "exa_search",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/exa/ci-meeting-notes-exa.json"
+    },
+    {
+      "id": "ci-enterprise-ci-exa",
+      "cohort": "conversation_intelligence",
+      "feeder": "exa_search",
+      "tool": "exa_search",
+      "skipped": true,
+      "ok": true,
+      "capture_ok": true,
+      "usable_for_scoring": true,
+      "schema_drift": [],
+      "path": "/Users/brianbolze/Library/Mobile Documents/com~apple~CloudDocs/Web Research/experiments/01-agentic-build/changes/2026-06-25-cohort-discovery-worklist/receipts/raw/iteration-2/exa/ci-enterprise-ci-exa.json"
+    }
+  ]
+}

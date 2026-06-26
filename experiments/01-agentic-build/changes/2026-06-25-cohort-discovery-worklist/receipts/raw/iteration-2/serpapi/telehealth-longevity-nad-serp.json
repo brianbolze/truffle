@@ -1,0 +1,152 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T00:58:19Z",
+  "ok": true,
+  "input": {
+    "query": "online longevity clinic NAD injections healthspan telehealth 2026",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "Telehealth longevity clinics now offer clinician-guided NAD+ (Nicotinamide Adenine Dinucleotide) injections directly to your home. Providers evaluate your eligibility via virtual consultations and deliver compounded protocols to support cellular repair, energy, and healthspan. Programs often start around $129/month.",
+    "For in-clinic administration or localized concierge wellness, surrounding areas\u2014particularly the greater Memphis, TN region\u2014provide access to premium longevity clinics:",
+    "If you're interested in exploring these options, tell me:",
+    "I can help narrow down the telehealth providers or clinics that best fit your needs."
+  ],
+  "headings": [
+    "Top Telehealth Longevity Platforms Offering NAD+",
+    "Local Options Near Tunica County, MS",
+    "How the Process Works"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "Yahoo Finance",
+      "title": "RNK Health NAD+ Longevity Therapy Claims Evaluated: The Clinician-Guided NAD Injections \\u0026 Medication Protocol",
+      "link": "https://finance.yahoo.com/sectors/healthcare/articles/rnk-health-nad-longevity-therapy-224400784.html"
+    },
+    {
+      "index": 1,
+      "source": "Hone Health",
+      "title": "Want a Longer Lifespan? You Should Care About Your Healthspan",
+      "link": "https://honehealth.com/edge/healthspan-versus-lifespan-increasing-longevity/?srsltid=AfmBOooqwD8ZuCbX6CGLS6xSw2uVdNbhXnItdGg3gJgu2Lr-YDdbM_rn"
+    },
+    {
+      "index": 2,
+      "source": "gethealthspan.com",
+      "title": "Healthspan | Longevity Care Backed by Science",
+      "link": "https://gethealthspan.com/"
+    },
+    {
+      "index": 3,
+      "source": "Next Health",
+      "title": "Next Health | Longevity, Health Optimization \\u0026 Wellness Center",
+      "link": "https://www.next-health.com/"
+    },
+    {
+      "index": 4,
+      "source": "Biohackr Health",
+      "title": "Telehealth - Biohackr Health",
+      "link": "https://www.biohackr.health/services/telehealth/"
+    },
+    {
+      "index": 5,
+      "source": "virtualcarefinder.com",
+      "title": "Longevity \\u0026 Anti-Aging Telehealth Providers - VirtualCareFinder",
+      "link": "https://virtualcarefinder.com/find/longevity"
+    },
+    {
+      "index": 6,
+      "source": "www.instagram.com",
+      "title": "We're officially LIVE Advanced longevity therapies ... - Instagram",
+      "link": "https://www.instagram.com/reel/DSS35oNkSB-/"
+    },
+    {
+      "index": 7,
+      "source": "Instagram",
+      "title": "A New Longevity Protocol with Obagi x NextHealth Available Now at ...",
+      "link": "https://www.instagram.com/reel/DX98xUysIMP/"
+    },
+    {
+      "index": 8,
+      "source": "Yahoo Finance",
+      "title": "Best NAD+ Injection for 2026: Sprout Health Lists Compounded NAD+ at $149 First Month as Telehealth Longevity Programs Expand",
+      "link": "https://finance.yahoo.com/news/best-nad-injection-2026-sprout-182100977.html"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Healthspan | Longevity Care Backed by Science",
+      "link": "https://gethealthspan.com/?srsltid=AfmBOoqX-XbtDJ7lAUma14D6hred92kHecYXLc__ncXeKTgxeGeSBNCD",
+      "snippet": "Get science-driven longevity care, expert coaching, and advanced lab insights tailored to your biology. Healthspan helps you slow aging and optimize your ...",
+      "displayed_link": "https://gethealthspan.com"
+    },
+    {
+      "position": 2,
+      "title": "our most advanced evolution in preventive health ...",
+      "link": "https://www.instagram.com/reel/DUqoQWYjI1E/",
+      "snippet": "Introducing SHA Health Programs 2026. A new generation of clinically guided programs designed to help you live longer, perform better, and ...",
+      "displayed_link": "360+ likes \u00b7 4 months ago"
+    },
+    {
+      "position": 3,
+      "title": "Longevity Care Backed by Science - Healthspan",
+      "link": "https://www.gethealthspan.com/personalized-protocols?srsltid=AfmBOop_4vancBOLzc8N6Z9aIlyTo64Hx_MwMXQq17qliP9BvxwWMX4J",
+      "snippet": "The world's first digital longevity clinic. It may include targeted medications, supplements, and evidence-based strategies to support healthy aging, energy, ...",
+      "displayed_link": "https://www.gethealthspan.com \u203a personalized-protocols"
+    },
+    {
+      "position": 4,
+      "title": "Fountain Life | Advanced Longevity & Healthspan Membership",
+      "link": "https://www.fountainlife.com/",
+      "snippet": "Detect, prevent, restore with advanced AI-Guided Diagnostics & Restorative Therapeutics. 96% detect life-threatening diseases early. Energy supercharged.",
+      "displayed_link": "https://www.fountainlife.com"
+    },
+    {
+      "position": 5,
+      "title": "We're officially LIVE \ud83d\ude80 Advanced longevity therapies ...",
+      "link": "https://www.instagram.com/reel/DSS35oNkSB-/",
+      "snippet": "Advanced longevity therapies are now accessible through telehealth, guided prescription therapies may include NAD+, April 4, 2026 \u23f0 12:00 PM ...",
+      "displayed_link": "https://www.instagram.com \u203a reel"
+    },
+    {
+      "position": 6,
+      "title": "Longevity Clinics: Programs, Costs & Evidence in 2026",
+      "link": "https://www.years.co/en/blog/longevity-clinics-programs-costs",
+      "snippet": "This article provides a comprehensive overview of longevity clinics, covering the scientific foundations, provider comparisons, program ...",
+      "displayed_link": "https://www.years.co \u203a YEARS \u203a Blog"
+    },
+    {
+      "position": 7,
+      "title": "RNK Health NAD+ Longevity Therapy Claims Evaluated",
+      "link": "https://finance.yahoo.com/sectors/healthcare/articles/rnk-health-nad-longevity-therapy-224400784.html",
+      "snippet": "RNK Health structures its at-home NAD+ injection program for 2026, including telehealth eligibility, compounded medication protocols, pricing ...",
+      "displayed_link": "https://finance.yahoo.com \u203a sectors \u203a healthcare \u203a articles"
+    },
+    {
+      "position": 8,
+      "title": "How Top Clinics Are Making Longevity Medicine Their 2026 ...",
+      "link": "https://holisticare.io/blog/longevity-medicine-2026-strategy/",
+      "snippet": "Prepare your clinic for the 2026 longevity shift. Learn how Clinical Intelligence saves 15 hours a week while managing 800+ biomarkers and ...",
+      "displayed_link": "https://holisticare.io \u203a blog \u203a longevity-medicine-2026-..."
+    },
+    {
+      "position": 9,
+      "title": "Best Longevity Clinics in the U.S. in 2026: What They Cost ...",
+      "link": "https://www.facebook.com/startelegram/posts/best-longevity-clinics-in-the-us-in-2026-what-they-cost-and-what-they-offerread-/1418823006948638/",
+      "snippet": "American longevity clinics have begun offering NAD+ IV therapy at $1,500-$2,500 per session (requiring 10-15 sessions), pricing it beyond most ...",
+      "displayed_link": "1 month ago"
+    }
+  ]
+}

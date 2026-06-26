@@ -1,0 +1,161 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T00:58:28Z",
+  "ok": true,
+  "input": {
+    "query": "healthspan telehealth biomarkers longevity clinic online 2026",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "Modern longevity clinics and telehealth platforms use comprehensive biomarker screening to assess biological aging and extend your healthspan. Using a virtual consultation, these online services arrange direct-to-consumer lab testing, analyze 50 to 100+ biomarkers, and build personalized, data-driven health protocols.",
+    "Online telehealth programs and specialized longevity services offer direct assistance with testing, analysis, and custom health tracking:",
+    "Modern longevity medicine focuses intensely on tracking markers tied to early disease detection and proactive optimization, such as ApoB/Lp(a) (heart disease risk), HbA1c/insulin (metabolic health), hsCRP (inflammation), and VO\u2082 max\n.",
+    "Could you tell me:",
+    "I can help you narrow down which clinic or platform best fits your objectives."
+  ],
+  "headings": [],
+  "references": [
+    {
+      "index": 0,
+      "source": "gethealthspan.com",
+      "title": "Healthspan | Longevity Care Backed by Science",
+      "link": "https://gethealthspan.com/"
+    },
+    {
+      "index": 1,
+      "source": "marketing.gethealthspan.com",
+      "title": "Healthspan | Plan",
+      "link": "https://marketing.gethealthspan.com/plan"
+    },
+    {
+      "index": 2,
+      "source": "MyHealthspan",
+      "title": "MyHealthspan: Unlock More Healthy Years",
+      "link": "https://www.myhealthspan.com/"
+    },
+    {
+      "index": 3,
+      "source": "Plotline Health",
+      "title": "Longevity Medicine 101: The Ultimate 2026 Guide",
+      "link": "https://www.plotline.health/blog/longevity-medicine-guide"
+    },
+    {
+      "index": 4,
+      "source": "MyHealthspan",
+      "title": "Longevity Kits Overview - MyHealthspan",
+      "link": "https://www.myhealthspan.com/longevity-testing/longevity-kits-overview"
+    },
+    {
+      "index": 5,
+      "source": "Hone Health",
+      "title": "Hone Health: A Telehealth Clinic Unlocking Energy and Longevity",
+      "link": "https://honehealth.com/?srsltid=AfmBOor_p17fIfBzSLhLo6sf0vcAlcizsqiaIA6urz7c74PXdLv6397G"
+    },
+    {
+      "index": 6,
+      "source": "XPRIZE Foundation",
+      "title": "XPRIZE Healthspan Competition Page",
+      "link": "https://www.xprize.org/competitions/healthspan"
+    },
+    {
+      "index": 7,
+      "source": "Progevita",
+      "title": "Longevity Biomarkers: What to Track in 2026 - Progevita",
+      "link": "https://progevita.com/en/blog/longevity-biomarkers-what-to-track/"
+    },
+    {
+      "index": 8,
+      "source": "Forbes",
+      "title": "The Best Biomarkers For Longevity, According To Experts",
+      "link": "https://www.forbes.com/health/wellness/biomarkers/"
+    },
+    {
+      "index": 9,
+      "source": "Biohackr Health",
+      "title": "Telehealth - Biohackr Health",
+      "link": "https://www.biohackr.health/services/telehealth/"
+    },
+    {
+      "index": 10,
+      "source": "WorldHealth.net",
+      "title": "Telemedicine and Anti-Aging: Building a Healthspan Optimization ...",
+      "link": "https://worldhealth.net/news/telemedicine-healthspan-optimization-strategy/"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Healthspan | Longevity Care Backed by Science",
+      "link": "https://gethealthspan.com/?srsltid=AfmBOorIAIKfR0_tNaVCC82PphkIoOljBYK6JlEh7820PcuSCIyECjvR",
+      "snippet": "Get science-driven longevity care, expert coaching, and advanced lab insights tailored to your biology. Healthspan helps you slow aging and optimize your ...",
+      "displayed_link": "https://gethealthspan.com"
+    },
+    {
+      "position": 2,
+      "title": "SHA on Instagram: \"Longevity is no longer a trend. It's a ...",
+      "link": "https://www.instagram.com/reel/DUqoQWYjI1E/",
+      "snippet": "Introducing SHA Health Programs 2026 \u2014 our most advanced evolution in preventive health, longevity, and performance medicine. A new generation ...",
+      "displayed_link": "360+ likes \u00b7 4 months ago"
+    },
+    {
+      "position": 3,
+      "title": "How Top Clinics Are Making Longevity Medicine Their 2026 ...",
+      "link": "https://holisticare.io/blog/longevity-medicine-2026-strategy/",
+      "snippet": "Prepare your clinic for the 2026 longevity shift. Learn how Clinical Intelligence saves 15 hours a week while managing 800+ biomarkers and ...",
+      "displayed_link": "https://holisticare.io \u203a blog \u203a longevity-medicine-2026-..."
+    },
+    {
+      "position": 4,
+      "title": "Longevity Care Backed by Science - Healthspan",
+      "link": "https://www.gethealthspan.com/personalized-protocols?srsltid=AfmBOopkYr5Jk9GQID9PrysA7wlrK6yo3XDNy2nJv6SQLQ3OcapebaU0",
+      "snippet": "MySpan keeps all your health-related information in one spot, from your biological age and specific biomarkers, to clinical team appointments and treatment ...",
+      "displayed_link": "https://www.gethealthspan.com \u203a personalized-protocols"
+    },
+    {
+      "position": 5,
+      "title": "Advancing longevity clinics \u2013 an international roundtable",
+      "link": "https://www.tandfonline.com/doi/full/10.1080/30653495.2025.2595857",
+      "snippet": "Since 2023, the field of longevity diagnostics and biological age biomarkers has made significant strides, driven by advancements in AI, multi-omics research, ...",
+      "displayed_link": "https://www.tandfonline.com \u203a ... \u203a Volume 6, Issue 1"
+    },
+    {
+      "position": 6,
+      "title": "Longevity Medicine 101: The Ultimate 2026 Guide",
+      "link": "https://www.plotline.health/blog/longevity-medicine-guide",
+      "snippet": "A data-driven approach, grounded in your specific biomarkers and genetics, is key to determining which interventions, if any, are right for you.",
+      "displayed_link": "https://www.plotline.health \u203a blog \u203a longevity-medicine..."
+    },
+    {
+      "position": 7,
+      "title": "Longevity Clinics: Programs, Costs & Evidence in 2026",
+      "link": "https://www.years.co/en/blog/longevity-clinics-programs-costs",
+      "snippet": "Individual Tests (\u20ac200 \u2013 \u20ac500): Epigenetic age tests or specialized blood panels available online, often without physician interpretation.",
+      "displayed_link": "https://www.years.co \u203a YEARS \u203a Blog"
+    },
+    {
+      "position": 8,
+      "title": "Healthspan Longevity: Longevity Testing Westborough, MA",
+      "link": "https://hslongevity.com/",
+      "snippet": "We offer a comprehensive range of diagnostic tests, including blood biomarkers, cognitive assessments, and advanced screenings for conditions like ...",
+      "displayed_link": "https://hslongevity.com"
+    },
+    {
+      "position": 9,
+      "title": "Want a Longer Lifespan? You Should Care About Your ...",
+      "link": "https://honehealth.com/edge/healthspan-versus-lifespan-increasing-longevity/?srsltid=AfmBOopYGRx1REbx28YOv1Z11H_NStvILVg_4gXGhVpBGYgwZHAJHRok",
+      "snippet": "For longevity, your healthspan is most important. Our Chief Medical Officer, Dr. Jack Jeng, explains why and shares other lifespan factors.",
+      "displayed_link": "https://honehealth.com \u203a Edge Blog Home \u203a Longevity"
+    }
+  ]
+}

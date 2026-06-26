@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:28Z",
+  "ok": true,
+  "input": {
+    "domain": "fireflies.ai",
+    "url": "https://fireflies.ai/"
+  },
+  "status": 200,
+  "final_url": "https://fireflies.ai/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "Fireflies.ai | #1 AI Assistant for Meetings, Email, Chat & CRM",
+  "description": "Fireflies takes notes, manages tasks, and automates workflows across meetings, email, chat, CRM, and your apps. Build a searchable knowledge base of your team\u2019s work in one place.",
+  "text_excerpt": "Fireflies.ai | #1 AI Assistant for Meetings, Email, Chat & CRM NEW Fireflies launches Live Assist & Desktop App. Learn More . Product Solutions Integration Resources Enterprise Pricing Login Request demo Get Started Get Started The #1 AI Assistant For Your Meetings Transcribe, summarize, search, and analyze all your team conversations. Get Started Request Demo Rated 4.8 / 5 GDPR, SOC2, More USED ACROSS 1 MILLION+ COMPANIES High Quality Meeting Transcription & Recording Get Started 95% Accurate Fireflies is the industry leader in transcription accuracy. 100+ Languages Transcribe meetings in English, Spanish, French, & several others. Speaker Recognition Fireflies identifies different speakers in meetings and audio files. Auto-Language Detection Automatically switch languages from meeting to meeting with ease. Comprehensive AI Summaries Get detailed notes, action items, and customized summaries instantly after every meeting. Get Started Overview Bullet Points Action Items Custom Notes Capture Meetings Anywhere & Anytime AI Note Taker Bot Invite [email protected] to a live meeting or have it autojoin your calendar meetings to record, transcribe, and summarize. Chrome Extension Automatically record your Google Meet calls and get real-time transcripts . Mobile App Transcribe and summarize in-person conversation with the Fireflies mobile app. Desktop App Transcribe and summarize your calls with the Fireflies desktop app . Dialers & API Transcribe calls from Aircall, Ringcentral and other dialers or use our API to process audio files. Audio & Video Files Transcribe audio and video files with AI meeting summaries. (MP3, MP4, WAV, M4A) Remember Every Conversation with AI Powered Search Fireflies gives you perfect memory after every conversation. Meeting Search Remember what was discussed on calls several months ago down to the specific sentence and timestamp. AskFred Let Fred review your meetings and come back with answers to any question you have. Get real-time suggestions, coaching, and answers during meetings. Meet the new Live Assist that can provide real-time suggestions, coaching, and answers during your meetings. Explore Live Assist Drive Insights With Conversation Intelligence Detailed analytics to help you uncover insights across every conversation. Speaker Talk-time Automatically track each participant's speaking time and easily monitor participation in meetings. AI Filters Sentiment Analysis Topic Trackers All your Tasks, Contacts , & Knowledge in one pl"
+}

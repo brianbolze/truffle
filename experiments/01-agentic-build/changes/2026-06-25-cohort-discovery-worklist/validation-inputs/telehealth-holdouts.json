@@ -1,0 +1,63 @@
+{
+  "schema": "telehealth-holdouts-v1",
+  "frozen_at": "2026-06-25",
+  "source": {
+    "type": "notion_database_query",
+    "name": "Organizations",
+    "data_source": "collection://d0beabe1-d50f-4a15-9349-c6fab743dac8",
+    "filter": "Offering Type contains DTC therapeutics brand; holdouts are Formidability Tier F2/F3/F4 rows whose Website resolves to a profiled store entry",
+    "note": "Notion is the evaluation oracle only. Discovery runs must not use this data as a source."
+  },
+  "scoring": {
+    "must_hit": "F3/F4 holdouts",
+    "should_hit": "F2 holdouts",
+    "hard_pollution": "curated_negatives landing in Tier A/B, or Brian-rejected generated candidates landing in Tier A/B",
+    "secondary_overrank_check": "F0/F1 Notion rows, if exported later, are weak-known-brand checks only; Notion is too curated to serve as the junk set."
+  },
+  "holdouts": [
+    {"name": "Hims & Hers", "website": "hims.com", "store_slug": "hims-com", "formidability_tier": "F4 Apex", "gate": "must_hit"},
+    {"name": "LifeMD", "website": "lifemd.com", "store_slug": "lifemd-com", "formidability_tier": "F4 Apex", "gate": "must_hit"},
+    {"name": "Niagen Plus", "website": "niagenplus.com", "store_slug": "niagenplus-com", "formidability_tier": "F4 Apex", "gate": "must_hit"},
+    {"name": "One Medical (Amazon)", "website": "onemedical.com", "store_slug": "onemedical-com", "formidability_tier": "F4 Apex", "gate": "must_hit"},
+    {"name": "Rex MD", "website": "rexmd.com", "store_slug": "rexmd-com", "formidability_tier": "F4 Apex", "gate": "must_hit"},
+    {"name": "Wisp", "website": "hellowisp.com", "store_slug": "hellowisp-com", "formidability_tier": "F4 Apex", "gate": "must_hit"},
+    {"name": "Eden", "website": "eden.health", "store_slug": "eden-health", "formidability_tier": "F3 Institutional", "gate": "must_hit"},
+    {"name": "Hone Health", "website": "honehealth.com", "store_slug": "honehealth-com", "formidability_tier": "F3 Institutional", "gate": "must_hit"},
+    {"name": "Lifeforce", "website": "mylifeforce.com", "store_slug": "mylifeforce-com", "formidability_tier": "F3 Institutional", "gate": "must_hit"},
+    {"name": "Noom Med", "website": "noom.com/med", "store_slug": "noom-com", "formidability_tier": "F3 Institutional", "gate": "must_hit"},
+    {"name": "Peter MD", "website": "getpetermd.com", "store_slug": "getpetermd-com", "formidability_tier": "F3 Institutional", "gate": "must_hit"},
+    {"name": "Remedy Meds", "website": "remedymeds.com", "store_slug": "remedymeds-com", "formidability_tier": "F3 Institutional", "gate": "must_hit"},
+    {"name": "Ro", "website": "ro.co", "store_slug": "ro-co", "formidability_tier": "F3 Institutional", "gate": "must_hit"},
+    {"name": "AgelessRx", "website": "agelessrx.com", "store_slug": "agelessrx-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "Amble", "website": "joinamble.com", "store_slug": "joinamble-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "Blokes", "website": "joiandblokes.com", "store_slug": "joiandblokes-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "BlueChew", "website": "bluechew.com", "store_slug": "bluechew-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "Defy Medical", "website": "defymedical.com", "store_slug": "defymedical-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "Fridays", "website": "joinfridays.com", "store_slug": "joinfridays-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "Geviti", "website": "gogeviti.com", "store_slug": "gogeviti-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "Invigor Medical", "website": "invigormedical.com", "store_slug": "invigormedical-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "Ivy Rx", "website": "ivyrx.com", "store_slug": "ivyrx-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "Kingsberg Medical", "website": "kingsbergmedical.com", "store_slug": "kingsbergmedical-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "Marek Health", "website": "marekhealth.com", "store_slug": "marekhealth-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "Maximus Tribe", "website": "maximustribe.com", "store_slug": "maximustribe-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "Nurx", "website": "nurx.com", "store_slug": "nurx-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "ProHealth", "website": "prohealth.com", "store_slug": "prohealth-com", "formidability_tier": "F2 Established", "gate": "should_hit"},
+    {"name": "Rugiet Ready", "website": "rugiet.com", "store_slug": "rugiet-com", "formidability_tier": "F2 Established", "gate": "should_hit"}
+  ],
+  "curated_negatives": [
+    {"name": "HealthEquity", "website": "healthequity.com", "store_resolution": "not_in_store", "reason": "wrong category / benefits infrastructure, not a DTC therapeutics brand", "expected": "exclude_or_tier_c"},
+    {"name": "Promise Pharmacy", "website": "promisepharmacy.com", "store_resolution": "not_in_store; store.py produced only irrelevant fuzzy candidate ro-co", "reason": "pharmacy, not a DTC brand", "expected": "exclude_or_tier_c"},
+    {"name": "Absolute Rx", "website": "absoluterx.com", "store_resolution": "not_in_store", "reason": "pharmacy, not a DTC brand", "expected": "exclude_or_tier_c"},
+    {"name": "Dr. Telex", "website": "drtelex.com", "store_resolution": "not_in_store", "reason": "low-formidability / unclear DTC telehealth operator", "expected": "exclude_or_tier_c"},
+    {"name": "Jinfiniti", "website": "jinfiniti.com", "store_resolution": "jinfiniti-com", "reason": "low-formidability / supplements-adjacent, should not be promoted as core DTC therapeutics", "expected": "exclude_or_tier_c"},
+    {"name": "MenMD", "website": "menmd.com", "store_resolution": "not_in_store", "reason": "low-formidability / narrow men's-health operator", "expected": "exclude_or_tier_c"},
+    {"name": "MintMD", "website": "mintmd.com", "store_resolution": "not_in_store", "reason": "low-formidability / unclear DTC telehealth operator", "expected": "exclude_or_tier_c"},
+    {"name": "Mint Medicine", "website": "mintmedicine.com", "store_resolution": "not_in_store", "reason": "low-formidability / unclear DTC telehealth operator", "expected": "exclude_or_tier_c"}
+  ],
+  "human_review_checkpoint": {
+    "when": "After discovery + initial dedupe/verification, before final tier scoring.",
+    "scope": "Generated candidates not already in the holdout set, not in the profiled store, or marked uncertain/wrong-type by the verifier.",
+    "ask": "Brian marks each reviewed candidate as worth_capture, tier_c_only, exclude, or unsure.",
+    "hard_gate": "No candidate Brian marks tier_c_only or exclude may land in Tier A/B."
+  }
+}

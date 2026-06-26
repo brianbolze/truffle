@@ -1,0 +1,2428 @@
+{
+  "schema": "codex-claude-comparison-results-v0",
+  "generated_at": "2026-06-26T16:49:28Z",
+  "inputs": {
+    "codex": "codex_capture_readiness_results.json",
+    "claude": [
+      "claude-prototyping/routed-conversation-intelligence.jsonl",
+      "claude-prototyping/routed-telehealth.jsonl"
+    ],
+    "join_key": "cohort + resolved_domain"
+  },
+  "results": [
+    {
+      "candidate_id": "name:conversation_intelligence:granola",
+      "cohort": "conversation_intelligence",
+      "rank": 3,
+      "name": "Granola",
+      "domain": "granola.ai",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "granola.ai",
+        "boundary_method": "store_baseline",
+        "source_role": "third_party_named_candidate"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet describes own pricing (free + $14/mo) and meeting transcription/notes product",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "name:conversation_intelligence:gong",
+      "cohort": "conversation_intelligence",
+      "rank": 7,
+      "name": "Gong",
+      "domain": "gong.io",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "gong.io",
+        "boundary_method": "store_baseline",
+        "source_role": "third_party_named_candidate"
+      },
+      "claude": null,
+      "comparison_class": "missing_in_claude",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "name:conversation_intelligence:fireflies",
+      "cohort": "conversation_intelligence",
+      "rank": 8,
+      "name": "Fireflies",
+      "domain": "fireflies.ai",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "fireflies.ai",
+        "boundary_method": "serpapi_organic",
+        "source_role": "third_party_named_candidate"
+      },
+      "claude": null,
+      "comparison_class": "missing_in_claude",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "medium",
+        "reason": "Absent from Claude's broader routed set; keep Codex no-spend readiness call."
+      }
+    },
+    {
+      "candidate_id": "name:conversation_intelligence:clari",
+      "cohort": "conversation_intelligence",
+      "rank": 11,
+      "name": "Clari",
+      "domain": "clari.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "clari.com",
+        "boundary_method": "store_baseline",
+        "source_role": "third_party_named_candidate"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Well-known revenue/conversation intelligence platform; named repeatedly as a top alternative to Gong",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:granola.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 13,
+      "name": "Meeting note tool pricing: Granola vs. Fireflies vs. Fathom ...",
+      "domain": "granola.ai",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence",
+          "owned SEO/listicle evidence is biased source evidence; keep it separate from store truth"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "granola.ai",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet describes own pricing (free + $14/mo) and meeting transcription/notes product",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "name:telehealth:trt-nation",
+      "cohort": "telehealth",
+      "rank": 9,
+      "name": "TRT Nation",
+      "domain": "trtnation.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "trtnation.com",
+        "boundary_method": "store_baseline",
+        "source_role": "third_party_named_candidate"
+      },
+      "claude": {
+        "route": "preserve",
+        "normalized_route": "preserve_source_evidence",
+        "kind": "publisher",
+        "confidence": "high",
+        "reason": "is_source_domain; anchor: 'Top 10 Best Online TRT Clinics for 2026' \u2014 TRT review/ranking site, no own product",
+        "peeked": false,
+        "is_source_domain": true,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "store_source_role_split",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:vikingalternative.com",
+      "cohort": "telehealth",
+      "rank": 10,
+      "name": "Online TRT vs Traditional Testosterone Clinics",
+      "domain": "vikingalternative.com",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "direct_to_patient_or_online_care_surface",
+          "cohort_actor_would_improve_cross_company_comparison"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "vikingalternative.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet: 'Viking Alternative Medicine' delivers TRT via telemedicine \u2014 own online TRT clinic",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "name:conversation_intelligence:otter",
+      "cohort": "conversation_intelligence",
+      "rank": 14,
+      "name": "Otter",
+      "domain": "otter.ai",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "otter.ai",
+        "boundary_method": "serpapi_organic",
+        "source_role": "third_party_named_candidate"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet: 'paid plans from $8.33/user/month'; well-known AI meeting transcription/notetaker with own pricing",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:functionhealth.com",
+      "cohort": "telehealth",
+      "rank": 15,
+      "name": "Function | 100 Healthy Years",
+      "domain": "functionhealth.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "functionhealth.com",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "'Function membership now $365/year'; 100+ biomarkers; own DTC longevity platform.",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:coffee.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 21,
+      "name": "Conversation Intelligence Software Guide for Sales 2026",
+      "domain": "coffee.ai",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "adjacent_gtm_tool_or_platform",
+        "confidence": "medium",
+        "reasons": [
+          "adjacent_sales_or_revenue_platform",
+          "needs_agent_judgment_before_full_capture"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof",
+          "homepage confirmation alone is insufficient"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "coffee.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "preserve",
+        "normalized_route": "preserve_source_evidence",
+        "kind": "publisher",
+        "confidence": "med",
+        "reason": "Anchor is a 'CI software guide' article; snippet reads as editorial; no own product described",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "cohort_fit_review",
+        "confidence": "medium",
+        "reason": "Own product is an AI CRM agent; useful adjacent GTM context, not yet full CI capture."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:bywinona.com",
+      "cohort": "telehealth",
+      "rank": 16,
+      "name": "Online HRT & Menopause Specialists in Washington",
+      "domain": "bywinona.com",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "direct_to_patient_or_online_care_surface",
+          "cohort_actor_would_improve_cross_company_comparison"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "bywinona.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "'Telehealth menopause care... board-certified physician specializes in menopause'; own HRT DTC offering.",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:sybill.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 24,
+      "name": "6 Best Clari Alternatives in 2026 (Top Competitors ...",
+      "domain": "sybill.ai",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "adjacent_gtm_tool_or_platform",
+        "confidence": "medium",
+        "reasons": [
+          "adjacent_sales_or_revenue_platform",
+          "needs_agent_judgment_before_full_capture"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof",
+          "homepage confirmation alone is insufficient"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "sybill.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Named as a Clari alternative in snippet; Sybill is a known AI sales assistant with call summaries/CI features",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "medium",
+        "reason": "Claude's product read plus homepage evidence indicate own sales assistant / call-summary product."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:struthealth.com",
+      "cohort": "telehealth",
+      "rank": 17,
+      "name": "TRT Online: A Smarter Way to Treat Low Testosterone",
+      "domain": "struthealth.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "struthealth.com",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet: 'At Strut Health, getting started with TRT' \u2014 own telehealth platform, TRT prescribed online",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:avoma.com",
+      "cohort": "conversation_intelligence",
+      "rank": 25,
+      "name": "Clari vs Gong: Revenue intelligence for your GTM team",
+      "domain": "avoma.com",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "avoma.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Well-known CI/meeting intelligence platform; named as a recommended Gong alternative in snippet",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:get-alfred.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 27,
+      "name": "Best AI Meeting Notetakers 2026: 7 Tested (Bot-Free Picks)",
+      "domain": "get-alfred.ai",
+      "codex": {
+        "route": "preserve_source_evidence",
+        "actor_role": "adjacent_productivity_or_research_tool",
+        "confidence": "medium",
+        "reasons": [
+          "underlying_company_not_core_cohort_actor",
+          "owned_or_source_page_still_preserves_cohort_boundary_evidence"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof",
+          "homepage proves company existence only"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "get-alfred.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "med",
+        "reason": "Alfred (alfred_) is a known bot-free AI notetaker; domain is their own; anchor is their 'best notetakers' article",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "cohort_fit_review",
+        "confidence": "medium",
+        "reason": "Source says AI notetaker, homepage says email/calendar assistant; resolve before capture."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:meetily.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 28,
+      "name": "AI Meeting Assistant Comparison 2026: 8 Tools \\u0026 Pricing - Meetily",
+      "domain": "meetily.ai",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "meetily.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Homepage: privacy-focused AI meeting assistant with Pro $10/user/month plan; own product confirmed",
+        "peeked": true,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:useluminix.com",
+      "cohort": "conversation_intelligence",
+      "rank": 29,
+      "name": "Granola vs Otter vs Fireflies vs Fathom: Best AI Notetaker 2026",
+      "domain": "useluminix.com",
+      "codex": {
+        "route": "preserve_source_evidence",
+        "actor_role": "adjacent_productivity_or_research_tool",
+        "confidence": "medium",
+        "reasons": [
+          "underlying_company_not_core_cohort_actor",
+          "owned_or_source_page_still_preserves_cohort_boundary_evidence"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof",
+          "homepage proves company existence only"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "useluminix.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "review",
+        "normalized_route": "cohort_fit_review",
+        "kind": "uncertain",
+        "confidence": "low",
+        "reason": "Anchor is a comparison article; unknown brand; could be a CI tool or a publisher; insufficient evidence",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "preserve_source_evidence",
+        "confidence": "medium",
+        "reason": "Homepage is deep-research/newsletter; owned notetaker comparison is useful biased source evidence only."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:revenue.io",
+      "cohort": "conversation_intelligence",
+      "rank": 30,
+      "name": "The 6 Best Fireflies.ai Alternatives \\u0026 Competitors in 2026",
+      "domain": "revenue.io",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "revenue.io",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Revenue.io is a known conversation intelligence/revenue platform; anchor listicle was authored by them",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:rexmd.com",
+      "cohort": "telehealth",
+      "rank": 26,
+      "name": "5 Best Telehealth Platforms for Erectile Dysfunction - REX MD",
+      "domain": "rexmd.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence",
+          "owned SEO/listicle evidence is biased source evidence; keep it separate from store truth"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "rexmd.com",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet: 'Rex MD ED treatments', sildenafil/tadalafil/Viagra/Cialis \u2014 own DTC ED telehealth platform",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:cuebo.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 31,
+      "name": "9 Best Gong Alternatives in 2026 (Ranked by Use Case)",
+      "domain": "cuebo.ai",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "cuebo.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "review",
+        "normalized_route": "cohort_fit_review",
+        "kind": "company",
+        "confidence": "med",
+        "reason": "AI sales roleplay/coaching platform; adjacent to CI but emphasis on training simulation not call capture/transcription",
+        "peeked": true,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "cohort_fit_review",
+        "confidence": "medium",
+        "reason": "Sales roleplay/coaching is adjacent to CI; capture value needs synthesis test."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:salesmotion.io",
+      "cohort": "conversation_intelligence",
+      "rank": 33,
+      "name": "Revenue Intelligence Platforms: A Buyer's Guide",
+      "domain": "salesmotion.io",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "adjacent_gtm_tool_or_platform",
+        "confidence": "medium",
+        "reasons": [
+          "adjacent_sales_or_revenue_platform",
+          "needs_agent_judgment_before_full_capture"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof",
+          "homepage confirmation alone is insufficient"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "salesmotion.io",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "review",
+        "normalized_route": "cohort_fit_review",
+        "kind": "uncertain",
+        "confidence": "low",
+        "reason": "Anchor is a buyer's guide; could be a CI tool or a pure publisher; insufficient evidence to confirm own product",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "cohort_fit_review",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:telyrx.com",
+      "cohort": "telehealth",
+      "rank": 29,
+      "name": "Best Online ED Treatments: Top Options Compared",
+      "domain": "telyrx.com",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "direct_to_patient_or_online_care_surface",
+          "cohort_actor_would_improve_cross_company_comparison"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "telyrx.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "med",
+        "reason": "is_source_domain but TelyRx appears as a row in its own comparison (sildenafil/tadalafil/vardenafil) \u2014 likely sells own ED meds; 403 on peek",
+        "peeked": true,
+        "is_source_domain": true,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "preserve_source_evidence",
+        "confidence": "medium",
+        "reason": "Duplicate row; capture should be driven by the primary TelyRx row."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:knowlee.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 34,
+      "name": "Best Conversation Intelligence Software 2026",
+      "domain": "knowlee.ai",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "adjacent_gtm_tool_or_platform",
+        "confidence": "medium",
+        "reasons": [
+          "adjacent_sales_or_revenue_platform",
+          "needs_agent_judgment_before_full_capture"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof",
+          "homepage confirmation alone is insufficient"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "knowlee.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "preserve",
+        "normalized_route": "preserve_source_evidence",
+        "kind": "publisher",
+        "confidence": "high",
+        "reason": "AI workforce/agent platform; appeared from CI listicle but sells custom AI agents not a CI product; not cohort",
+        "peeked": true,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "preserve_source_evidence",
+        "confidence": "medium",
+        "reason": "AI workforce vendor appears via owned CI listicle, but homepage is not a CI product."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:plotline.health",
+      "cohort": "telehealth",
+      "rank": 30,
+      "name": "Longevity Medicine 101: The Ultimate 2026 Guide",
+      "domain": "plotline.health",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "adjacent_tool_or_platform",
+        "confidence": "medium",
+        "reasons": [
+          "adjacent_platform_may_help_healthspan_or_care_delivery_synthesis"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof",
+          "needs agent judgment before full company capture"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "plotline.health",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "preserve",
+        "normalized_route": "preserve_source_evidence",
+        "kind": "publisher",
+        "confidence": "high",
+        "reason": "Snippet: 'Longevity Medicine 101: The Ultimate 2026 Guide' \u2014 educational/editorial content; no own DTC product",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "cohort_fit_review",
+        "confidence": "medium",
+        "reason": "Concierge/longevity care may matter for healthspan neighborhood, but not clearly DTC telehealth capture."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:myconfidenceclinic.com",
+      "cohort": "telehealth",
+      "rank": 31,
+      "name": "TRT Clinic Comparison: Clearwater 2026 (Updated Guide)",
+      "domain": "myconfidenceclinic.com",
+      "codex": {
+        "route": "preserve_source_evidence",
+        "actor_role": "local_or_offline_clinic",
+        "confidence": "medium",
+        "reasons": [
+          "local_or_offline_clinic_scope",
+          "lightweight_card_preserves_pattern_evidence"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof",
+          "full capture would likely add store bloat before neighborhood value"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "myconfidenceclinic.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "preserve",
+        "normalized_route": "preserve_source_evidence",
+        "kind": "publisher",
+        "confidence": "med",
+        "reason": "Snippet: 'TRT Clinic Comparison: Clearwater 2026 (Updated Guide)' \u2014 ranking other TRT clinics; own clinical offering unclear",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "preserve_source_evidence",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:holisticare.io",
+      "cohort": "telehealth",
+      "rank": 33,
+      "name": "How Top Clinics Are Making Longevity Medicine Their 2026 ...",
+      "domain": "holisticare.io",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "adjacent_tool_or_platform",
+        "confidence": "medium",
+        "reasons": [
+          "adjacent_platform_may_help_healthspan_or_care_delivery_synthesis"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof",
+          "needs agent judgment before full company capture"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "holisticare.io",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "drop",
+        "normalized_route": "reject_or_defer",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "B2B clinic software ('Book a Demo'); white-labeled patient app; not DTC telehealth.",
+        "peeked": true,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "preserve_source_evidence",
+        "confidence": "medium",
+        "reason": "B2B clinic software; preserve as care-delivery/clinic-platform context, not profile capture."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:madisonhealthny.com",
+      "cohort": "telehealth",
+      "rank": 34,
+      "name": "Online TRT Clinic - Telemedicine TRT for Men",
+      "domain": "madisonhealthny.com",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "local_clinic_with_online_service_surface",
+        "confidence": "medium",
+        "reasons": [
+          "cohort_relevant_service_but_local_clinic_scope"
+        ],
+        "caveats": [
+          "do not capture solely because homepage confirms telemedicine language"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "madisonhealthny.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet: 'Online TRT Clinic - Telemedicine TRT for Men'; own telehealth TRT service; 2 SERP feeders",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "cohort_fit_review",
+        "confidence": "medium",
+        "reason": "Own online TRT service, but local clinic scope keeps it out of automatic capture."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:elektrahealth.com",
+      "cohort": "telehealth",
+      "rank": 36,
+      "name": "Elektra Health - Smashing The Menopause Taboo, Together",
+      "domain": "elektrahealth.com",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "cohort_specific_care_surface",
+          "full_profile_would_support_category_comparison"
+        ],
+        "caveats": [
+          "does not rely on homepage existence alone"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "elektrahealth.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "'First-of-its-kind platform; telemedicine care... menopause'; own DTC telehealth + community.",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:clari.com",
+      "cohort": "conversation_intelligence",
+      "rank": 35,
+      "name": "Clari",
+      "domain": "clari.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "clari.com",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Well-known revenue/conversation intelligence platform; named repeatedly as a top alternative to Gong",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:vyta.co",
+      "cohort": "telehealth",
+      "rank": 39,
+      "name": "Online ED Treatment \u2014 Same-Day Prescription",
+      "domain": "vyta.co",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "direct_to_patient_or_online_care_surface",
+          "cohort_actor_would_improve_cross_company_comparison"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "vyta.co",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet: 'U.S.-licensed clinicians prescribe FDA-approved Sildenafil & Tadalafil same-day' \u2014 own DTC ED telehealth",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:superpower.com",
+      "cohort": "telehealth",
+      "rank": 40,
+      "name": "Superpower vs Function Health | What's the difference?",
+      "domain": "superpower.com",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "adjacent_tool_or_platform",
+        "confidence": "medium",
+        "reasons": [
+          "adjacent_platform_may_help_healthspan_or_care_delivery_synthesis"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof",
+          "needs agent judgment before full company capture"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "superpower.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Peeked: own 100+ biomarker testing + longevity protocols at $199/year \u2014 DTC longevity telehealth",
+        "peeked": true,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "cohort_fit_review",
+        "confidence": "medium",
+        "reason": "Potentially important Function/longevity neighbor; promote only after synthesis test."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:jointhecollaborative.com",
+      "cohort": "telehealth",
+      "rank": 41,
+      "name": "The Collaborative: Home",
+      "domain": "jointhecollaborative.com",
+      "codex": {
+        "route": "preserve_source_evidence",
+        "actor_role": "local_or_offline_clinic",
+        "confidence": "medium",
+        "reasons": [
+          "local_or_offline_clinic_scope",
+          "lightweight_card_preserves_pattern_evidence"
+        ],
+        "caveats": [
+          "full capture would likely add store bloat before neighborhood value"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "jointhecollaborative.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet: 'whole-person thyroid care aligned with menopause support, HRT' \u2014 own clinical telehealth service",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "preserve_source_evidence",
+        "confidence": "medium",
+        "reason": "Concierge menopause clinic evidence is useful, but local/high-touch scope weakens full-capture case."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:biohackr.health",
+      "cohort": "telehealth",
+      "rank": 42,
+      "name": "Telehealth - Biohackr Health",
+      "domain": "biohackr.health",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "local_clinic_with_online_service_surface",
+        "confidence": "medium",
+        "reasons": [
+          "cohort_relevant_service_but_local_clinic_scope"
+        ],
+        "caveats": [
+          "do not capture solely because homepage confirms telemedicine language"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "biohackr.health",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "review",
+        "normalized_route": "cohort_fit_review",
+        "kind": "company",
+        "confidence": "med",
+        "reason": "Bay Area in-clinic focus; telehealth listed but no pricing/enrollment; primarily in-person, not DTC remote.",
+        "peeked": true,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "cohort_fit_review",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:getrafiki.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 36,
+      "name": "Rafiki AI",
+      "domain": "getrafiki.ai",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "adjacent_gtm_tool_or_platform",
+        "confidence": "medium",
+        "reasons": [
+          "adjacent_sales_or_revenue_platform",
+          "needs_agent_judgment_before_full_capture"
+        ],
+        "caveats": [
+          "homepage confirmation alone is insufficient"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "getrafiki.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Rafiki AI is a known conversation/revenue intelligence platform; own CI product",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "medium",
+        "reason": "Homepage and Claude both indicate own conversation/revenue intelligence product."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:oliv.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 37,
+      "name": "Gong vs Clari Compared: AI Agents, Product ...",
+      "domain": "oliv.ai",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "adjacent_gtm_tool_or_platform",
+        "confidence": "medium",
+        "reasons": [
+          "adjacent_sales_or_revenue_platform",
+          "needs_agent_judgment_before_full_capture"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof",
+          "homepage confirmation alone is insufficient"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "oliv.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Known sales AI/CI platform; anchor is a comparison article Oliv authored \u2014 own in-cohort product exists",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "medium",
+        "reason": "Own revenue AI platform around deal/call intelligence; owned listicle should be caveated, not disqualifying."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:vibrant-wellness.com",
+      "cohort": "telehealth",
+      "rank": 44,
+      "name": "Foundation Zoomer | Healthspan Optimization & Aging ...",
+      "domain": "vibrant-wellness.com",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "adjacent_tool_or_platform",
+        "confidence": "medium",
+        "reasons": [
+          "adjacent_platform_may_help_healthspan_or_care_delivery_synthesis"
+        ],
+        "caveats": [
+          "needs agent judgment before full company capture"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "vibrant-wellness.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "drop",
+        "normalized_route": "reject_or_defer",
+        "kind": "reference",
+        "confidence": "high",
+        "reason": "Peeked: CLIA-certified specialty lab, B2B testing only \u2014 no DTC telehealth prescriptions or treatment plans",
+        "peeked": true,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "preserve_source_evidence",
+        "confidence": "medium",
+        "reason": "Specialty lab/provider infrastructure; useful source/card, not DTC telehealth capture."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:vaamo.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 38,
+      "name": "Vaamo AI",
+      "domain": "vaamo.ai",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "vaamo.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "review",
+        "normalized_route": "cohort_fit_review",
+        "kind": "uncertain",
+        "confidence": "low",
+        "reason": "Blank snippet; anchor 'Vaamo AI'; Exa-only; no confirming evidence of own CI product",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "cohort_fit_review",
+        "confidence": "medium",
+        "reason": "Sales coaching platform looks adjacent; not enough to make full CI capture obvious."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:heysam.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 39,
+      "name": "HeySam",
+      "domain": "heysam.ai",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "heysam.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "review",
+        "normalized_route": "cohort_fit_review",
+        "kind": "uncertain",
+        "confidence": "low",
+        "reason": "Exa company result only; no snippet; anchor 'HeySam' insufficient to confirm CI cohort fit",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "medium",
+        "reason": "Homepage explicitly says conversation intelligence in Slack plus CRM hygiene/RFP agents."
+      }
+    },
+    {
+      "candidate_id": "name:telehealth:rex-md",
+      "cohort": "telehealth",
+      "rank": 49,
+      "name": "REX MD",
+      "domain": "rexmd.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "rexmd.com",
+        "boundary_method": "store_baseline",
+        "source_role": "third_party_named_candidate"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet: 'Rex MD ED treatments', sildenafil/tadalafil/Viagra/Cialis \u2014 own DTC ED telehealth platform",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:tldv.io",
+      "cohort": "conversation_intelligence",
+      "rank": 40,
+      "name": "Best AI Meeting Assistant Tools for 2026 - tl;dv",
+      "domain": "tldv.io",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "tldv.io",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet: 'paid plans from $18/user/month'; tl;dv is a well-known AI meeting recorder/notetaker with own pricing",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "name:telehealth:telyrx",
+      "cohort": "telehealth",
+      "rank": 51,
+      "name": "TelyRx",
+      "domain": "telyrx.com",
+      "codex": {
+        "route": "preserve_source_evidence",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "duplicate_capture_ready_domain",
+          "preserve_as_supporting_source_evidence",
+          "direct_to_patient_or_online_care_surface",
+          "cohort_actor_would_improve_cross_company_comparison"
+        ],
+        "caveats": [
+          "underlying company may still be capture-ready via the primary row"
+        ],
+        "duplicate_of": "domain:telehealth:telyrx.com",
+        "resolved_domain": "telyrx.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "third_party_named_candidate"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "med",
+        "reason": "is_source_domain but TelyRx appears as a row in its own comparison (sildenafil/tadalafil/vardenafil) \u2014 likely sells own ED meds; 403 on peek",
+        "peeked": true,
+        "is_source_domain": true,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned_duplicate_handling_gap",
+      "proposed_final": {
+        "route": "preserve_source_evidence",
+        "confidence": "medium",
+        "reason": "Duplicate row; capture should be driven by the primary TelyRx row."
+      }
+    },
+    {
+      "candidate_id": "name:telehealth:madison-health-ny",
+      "cohort": "telehealth",
+      "rank": 52,
+      "name": "Madison Health NY",
+      "domain": "madisonhealthny.com",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "local_clinic_with_online_service_surface",
+        "confidence": "medium",
+        "reasons": [
+          "cohort_relevant_service_but_local_clinic_scope"
+        ],
+        "caveats": [
+          "do not capture solely because homepage confirms telemedicine language"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "madisonhealthny.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "third_party_named_candidate"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet: 'Online TRT Clinic - Telemedicine TRT for Men'; own telehealth TRT service; 2 SERP feeders",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "cohort_fit_review",
+        "confidence": "medium",
+        "reason": "Own online TRT service, but local clinic scope keeps it out of automatic capture."
+      }
+    },
+    {
+      "candidate_id": "name:telehealth:function-health",
+      "cohort": "telehealth",
+      "rank": 53,
+      "name": "Function Health",
+      "domain": "functionhealth.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "functionhealth.com",
+        "boundary_method": "store_baseline",
+        "source_role": "third_party_named_candidate"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "'Function membership now $365/year'; 100+ biomarkers; own DTC longevity platform.",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:aviso.com",
+      "cohort": "conversation_intelligence",
+      "rank": 41,
+      "name": "10 Best Gong Alternatives & Competitors in 2026 for ...",
+      "domain": "aviso.com",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "aviso.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Named in snippet as a 'revenue intelligence and forecasting platform' alongside Clari; own product",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:evro.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 42,
+      "name": "Best Otter.ai Alternatives in 2026: Compared for Every Use Case",
+      "domain": "evro.ai",
+      "codex": {
+        "route": "cohort_fit_review",
+        "actor_role": "adjacent_gtm_tool_or_platform",
+        "confidence": "medium",
+        "reasons": [
+          "adjacent_sales_or_revenue_platform",
+          "needs_agent_judgment_before_full_capture"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof",
+          "homepage confirmation alone is insufficient"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "evro.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "preserve",
+        "normalized_route": "preserve_source_evidence",
+        "kind": "publisher",
+        "confidence": "high",
+        "reason": "Anchor is 'Best Otter.ai Alternatives in 2026' \u2014 editorial listicle; no own CI product described",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "preserve_source_evidence",
+        "confidence": "medium",
+        "reason": "Communication-coach product is adjacent, and owned Otter-alternatives page is biased source evidence."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:jiminny.com",
+      "cohort": "conversation_intelligence",
+      "rank": 43,
+      "name": "Jiminny",
+      "domain": "jiminny.com",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "jiminny.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Jiminny is a well-known CI/sales coaching platform; named as a top Gong alternative in multiple snippets",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:agelessrx.com",
+      "cohort": "telehealth",
+      "rank": 57,
+      "name": "AgelessRx",
+      "domain": "agelessrx.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "agelessrx.com",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "DTC longevity/anti-aging telehealth; 200k+ members; GLP-1, NAD+, metformin; 'Save $50 on Sermorelin' CTA.",
+        "peeked": true,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:bluechew.com",
+      "cohort": "telehealth",
+      "rank": 58,
+      "name": "BlueChew",
+      "domain": "bluechew.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "bluechew.com",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Well-known ED telehealth brand; exa 'company' category; chewable sildenafil/tadalafil DTC.",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:walgreens.com",
+      "cohort": "telehealth",
+      "rank": 59,
+      "name": "GLP-1s for Weight Loss - Online Treatment",
+      "domain": "walgreens.com",
+      "codex": {
+        "route": "preserve_source_evidence",
+        "actor_role": "broad_health_retail_or_pharmacy",
+        "confidence": "high",
+        "reasons": [
+          "broad_health_or_pharmacy_surface_not_specific_cohort_actor",
+          "preserve_relevant_service_page_evidence"
+        ],
+        "caveats": [
+          "homepage confirms a real company surface, not capture-worthiness"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "walgreens.com",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet: 'Walgreens Weight Management is a telehealth program' for GLP-1/weight loss \u2014 own DTC offering",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "preserve_source_evidence",
+        "confidence": "medium",
+        "reason": "Real GLP-1 telehealth surface, but broad retailer profile is not clearly useful cohort capture."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:salessavvy.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 44,
+      "name": "SalesSavvy.AI",
+      "domain": "salessavvy.ai",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "salessavvy.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "review",
+        "normalized_route": "cohort_fit_review",
+        "kind": "uncertain",
+        "confidence": "low",
+        "reason": "Blank snippet; anchor 'SalesSavvy.AI' suggests a sales AI tool but no evidence of own CI product; Exa-only",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "cohort_fit_review",
+        "confidence": "medium",
+        "reason": "Sales intelligence assistant evidence is thin; keep for review before profile capture."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:goodmeetings.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 45,
+      "name": "Goodmeetings",
+      "domain": "goodmeetings.ai",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "goodmeetings.ai",
+        "boundary_method": "homepage_firecrawl",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Goodmeetings is a known AI meeting recording and intelligence platform; own CI product",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:salesken.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 46,
+      "name": "Salesken",
+      "domain": "salesken.ai",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "salesken.ai",
+        "boundary_method": "homepage_direct",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Known real-time sales conversation intelligence platform; Exa company result with own product",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:ampup.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 47,
+      "name": "7 Best Gong Alternatives for Sales Teams (2026) | AmpUp",
+      "domain": "ampup.ai",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "ampup.ai",
+        "boundary_method": "homepage_firecrawl",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "med",
+        "reason": "AmpUp sells own sales coaching/CI platform; anchor shows they publish Gong-alternatives listicle but own product exists",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:getmaxiq.com",
+      "cohort": "conversation_intelligence",
+      "rank": 48,
+      "name": "Best AI Meeting Prep Tools (2026 Picks) - MaxIQ",
+      "domain": "getmaxiq.com",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [
+          "owned SEO/listicle page is biased source evidence, not neutral market proof"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "getmaxiq.com",
+        "boundary_method": "homepage_firecrawl",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "preserve",
+        "normalized_route": "preserve_source_evidence",
+        "kind": "publisher",
+        "confidence": "med",
+        "reason": "Anchor is 'Best AI Meeting Prep Tools 2026 - MaxIQ'; appearing here as list-writer; own product is meeting prep/revenue intel not core CI",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "disagreement_adjudicated",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "medium",
+        "reason": "Homepage says AI-native revenue intelligence platform; useful for CI/revenue-intel comparison."
+      }
+    },
+    {
+      "candidate_id": "domain:conversation_intelligence:vinton.ai",
+      "cohort": "conversation_intelligence",
+      "rank": 52,
+      "name": "Vinton | AI Notetaker for Salesforce",
+      "domain": "vinton.ai",
+      "codex": {
+        "route": "capture_ready",
+        "actor_role": "cohort_actor",
+        "confidence": "medium",
+        "reasons": [
+          "conversation_or_revenue_intelligence_actor",
+          "full_profile_would_support_comparison_across_tools"
+        ],
+        "caveats": [],
+        "duplicate_of": null,
+        "resolved_domain": "vinton.ai",
+        "boundary_method": "homepage_firecrawl",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Anchor: 'Vinton | AI Notetaker for Salesforce'; own meeting notetaker product with CRM integration described",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-conversation-intelligence.jsonl"
+      },
+      "comparison_class": "aligned",
+      "proposed_final": {
+        "route": "capture_ready",
+        "confidence": "high",
+        "reason": "Codex and Claude agree after route normalization."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:joinfound.com",
+      "cohort": "telehealth",
+      "rank": 82,
+      "name": "Best Medical Weight Loss Programs Online in 2026",
+      "domain": "joinfound.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence",
+          "owned SEO/listicle evidence is biased source evidence; keep it separate from store truth"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "joinfound.com",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_seo_or_comparison_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Snippet describes 'Ro Body' as comparison but domain joinfound.com = Found, own GLP-1/weight-loss telehealth platform",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:ro.co",
+      "cohort": "telehealth",
+      "rank": 124,
+      "name": "Ro",
+      "domain": "ro.co",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "ro.co",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Ro is a major DTC telehealth platform (ED, weight loss, hair, etc.) \u2014 well-known own product offering",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:henrymeds.com",
+      "cohort": "telehealth",
+      "rank": 158,
+      "name": "henrymeds.com",
+      "domain": "henrymeds.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "henrymeds.com",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "'$120/mo' in TRT comparison table; own telehealth offering; known DTC brand.",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:ivimhealth.com",
+      "cohort": "telehealth",
+      "rank": 161,
+      "name": "ivimhealth.com",
+      "domain": "ivimhealth.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "ivimhealth.com",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": null,
+      "comparison_class": "missing_in_claude",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:fountaintrt.com",
+      "cohort": "telehealth",
+      "rank": 164,
+      "name": "Fountain TRT",
+      "domain": "fountaintrt.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "fountaintrt.com",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": {
+        "route": "capture",
+        "normalized_route": "capture_ready",
+        "kind": "company",
+        "confidence": "high",
+        "reason": "Named explicitly 'Fountain TRT' with '$199 per 4 weeks Starter plan'; own TRT telehealth pricing.",
+        "peeked": false,
+        "is_source_domain": false,
+        "source_file": "routed-telehealth.jsonl"
+      },
+      "comparison_class": "aligned_store_awareness_gap",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    },
+    {
+      "candidate_id": "domain:telehealth:remedymeds.com",
+      "cohort": "telehealth",
+      "rank": 237,
+      "name": "https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7",
+      "domain": "remedymeds.com",
+      "codex": {
+        "route": "existing_profile",
+        "actor_role": "existing_store_profile",
+        "confidence": "high",
+        "reasons": [
+          "already_captured_in_store",
+          "do_not_recapture_existing_profile"
+        ],
+        "caveats": [
+          "owned SEO/listicle evidence is biased; keep it separate from third-party market evidence"
+        ],
+        "duplicate_of": null,
+        "resolved_domain": "remedymeds.com",
+        "boundary_method": "store_baseline",
+        "source_role": "owned_homepage_or_service_page"
+      },
+      "claude": null,
+      "comparison_class": "missing_in_claude",
+      "proposed_final": {
+        "route": "existing_profile",
+        "confidence": "high",
+        "reason": "Store baseline wins; do not create duplicate capture work."
+      }
+    }
+  ],
+  "evaluation": {
+    "schema": "codex-claude-comparison-eval-v0",
+    "input_rows": 61,
+    "comparison_class_counts": {
+      "aligned": 19,
+      "aligned_duplicate_handling_gap": 1,
+      "aligned_store_awareness_gap": 15,
+      "disagreement_adjudicated": 21,
+      "missing_in_claude": 4,
+      "store_source_role_split": 1
+    },
+    "codex_route_counts": {
+      "capture_ready": 22,
+      "cohort_fit_review": 14,
+      "existing_profile": 19,
+      "preserve_source_evidence": 6
+    },
+    "claude_normalized_route_counts": {
+      "capture_ready": 41,
+      "cohort_fit_review": 7,
+      "missing_in_claude": 4,
+      "preserve_source_evidence": 7,
+      "reject_or_defer": 2
+    },
+    "proposed_final_route_counts": {
+      "capture_ready": 21,
+      "cohort_fit_review": 11,
+      "existing_profile": 19,
+      "preserve_source_evidence": 10
+    },
+    "cohorts": {
+      "conversation_intelligence": {
+        "input_rows": 31,
+        "comparison_class_counts": {
+          "aligned": 12,
+          "aligned_store_awareness_gap": 4,
+          "disagreement_adjudicated": 13,
+          "missing_in_claude": 2
+        },
+        "codex_route_counts": {
+          "capture_ready": 17,
+          "cohort_fit_review": 7,
+          "existing_profile": 5,
+          "preserve_source_evidence": 2
+        },
+        "claude_normalized_route_counts": {
+          "capture_ready": 19,
+          "cohort_fit_review": 6,
+          "missing_in_claude": 2,
+          "preserve_source_evidence": 4
+        },
+        "proposed_final_route_counts": {
+          "capture_ready": 17,
+          "cohort_fit_review": 6,
+          "existing_profile": 5,
+          "preserve_source_evidence": 3
+        }
+      },
+      "telehealth": {
+        "input_rows": 30,
+        "comparison_class_counts": {
+          "aligned": 7,
+          "aligned_duplicate_handling_gap": 1,
+          "aligned_store_awareness_gap": 11,
+          "disagreement_adjudicated": 8,
+          "missing_in_claude": 2,
+          "store_source_role_split": 1
+        },
+        "codex_route_counts": {
+          "capture_ready": 5,
+          "cohort_fit_review": 7,
+          "existing_profile": 14,
+          "preserve_source_evidence": 4
+        },
+        "claude_normalized_route_counts": {
+          "capture_ready": 22,
+          "cohort_fit_review": 1,
+          "missing_in_claude": 2,
+          "preserve_source_evidence": 3,
+          "reject_or_defer": 2
+        },
+        "proposed_final_route_counts": {
+          "capture_ready": 4,
+          "cohort_fit_review": 5,
+          "existing_profile": 14,
+          "preserve_source_evidence": 7
+        }
+      }
+    },
+    "live_spend_used": {
+      "direct_http_homepages": 0,
+      "serpapi_queries": 0,
+      "firecrawl_homepage_scrapes": 0
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:08:02Z",
+  "ok": true,
+  "input": {
+    "domain": "telyrx.com",
+    "url": "https://telyrx.com/"
+  },
+  "status": 200,
+  "final_url": "https://telyrx.com/",
+  "content_type": "text/html; charset=UTF-8",
+  "title": "TelyRx \u2013 Affordable Online Prescriptions, Fast Delivery",
+  "description": "Get affordable prescriptions and fast delivery with TelyRx. Skip the doctor\u2019s office, get Rx approvals online, and have meds at your door as soon as the next day.",
+  "text_excerpt": "TelyRx \u2013 Affordable Online Prescriptions, Fast Delivery The store will not work correctly when cookies are disabled. Celebrate 4th of July with 30% OFF Use code TELYFOURTH and get freedom from the waiting room! Toggle Nav Shop by Condition Search Search Search Help Get Refill Sign in to your account Show Password Sign In Forgot Your Password? Or Don't have an account? Create an account Get password link Email Send Reset Link Already have an account? Sign in Don't have an account? Create an account My Account Logout My Cart Compare Products 1 MILLION+ prescriptions filled and counting That's 1,000,000 times we have delivered healthcare that revolves around you, not the other way around. GET REFILL 1 Million+ prescriptions filled 450+ Medications available online Next business day delivery available Find your condition to get started Chronic Conditions Flu & Infections Digestive & Travel Skin & Hair Women's Health Men's Health Lifestyle Weight Loss Doctor's Notes Pets Supplements Allergies Relieve sneezing and congestion. Alzheimers Help support cognitive health with prescription treatment for Alzheimer's symptoms. Asthma Open airways and breathe easier. In Demand Diabetes Control daily blood sugar levels. Eye Health Common eye conditions affecting comfort and vision Gingivitis Restore gums and stop bleeding. Glaucoma Lower pressure, protect vision. New Gout Prevent painful gout flare-ups. New Hemorrhoids Calm irritation and reduce swelling. High Blood Pressure Keep blood pressure in check. High Cholesterol Lower levels, protect your heart. Migraine Halt migraines and light sensitivity. Osteoporosis Strengthen bones, prevent fractures. Pain Relieve pain, reduce inflammation. Prescription Vitamins Correct gaps with high-dose nutrients. Thyroid Balance hormones, stabilize energy. Urinary Incontinence Stop leaks and regain control. In Demand COPD Improve airflow, breathe easier. New Restless Legs Syndrome Calm legs for better sleep. New Rheumatoid Arthritis Soothe joint pain and swelling. New Parkinson's Disease Manage tremors, support daily movement. New View all conditions Anti-Fungal Clear fungus and stop itching. New Cold & Flu Shorten recovery and lessen symptoms. Popular Cold Sores Heal sores fast, soothe tingling. Ear & Eye Infections Relieve pain and clear infection. Gingivitis Restore gums and stop bleeding. Herpes Suppress outbreaks, speed healing. HIV PrEP Manage HIV, suppress viral load. Sexually Transmitted Infections (STI) Treat infections, stop t"
+}

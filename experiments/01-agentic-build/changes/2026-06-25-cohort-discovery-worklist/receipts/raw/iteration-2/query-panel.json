@@ -1,0 +1,140 @@
+[
+  {
+    "id": "telehealth-ed-serp",
+    "cohort": "telehealth",
+    "feeder": "category_serp",
+    "tool": "serpapi",
+    "query": "online erectile dysfunction treatment telehealth brand sildenafil tadalafil subscription 2026",
+    "notes": "Derived from sexual-health/ED anchor language in captured BlueChew/Rugiet/Ro/Hims-style profiles; no holdout brand names."
+  },
+  {
+    "id": "telehealth-longevity-nad-serp",
+    "cohort": "telehealth",
+    "feeder": "category_serp",
+    "tool": "serpapi",
+    "query": "online longevity clinic NAD injections healthspan telehealth 2026",
+    "notes": "Derived from longevity/NAD anchor language in captured AgelessRx/Eden/Shed/Rugiet-style profiles."
+  },
+  {
+    "id": "telehealth-healthspan-labs-serp",
+    "cohort": "telehealth",
+    "feeder": "category_serp",
+    "tool": "serpapi",
+    "query": "healthspan telehealth biomarkers longevity clinic online 2026",
+    "notes": "Covers the healthspan/labs shape missed by the broad telehealth query."
+  },
+  {
+    "id": "telehealth-menopause-hrt-serp",
+    "cohort": "telehealth",
+    "feeder": "category_serp",
+    "tool": "serpapi",
+    "query": "online menopause HRT telehealth providers women's health 2026",
+    "notes": "Retains one women/HRT family so the narrower panel does not regress the prior HRT coverage."
+  },
+  {
+    "id": "telehealth-glp1-serp",
+    "cohort": "telehealth",
+    "feeder": "category_serp",
+    "tool": "serpapi",
+    "query": "online GLP-1 weight loss telehealth providers 2026",
+    "notes": "Retains the GLP-1 family that carried much of the first run."
+  },
+  {
+    "id": "telehealth-trt-serp",
+    "cohort": "telehealth",
+    "feeder": "category_serp",
+    "tool": "serpapi",
+    "query": "online TRT clinic testosterone replacement telehealth labs 2026",
+    "notes": "Retains the TRT/hormone-optimization family that carried much of the first run."
+  },
+  {
+    "id": "telehealth-mens-health-demand-serp",
+    "cohort": "telehealth",
+    "feeder": "demand_serp",
+    "tool": "serpapi",
+    "query": "Strut Health TRT Nation alternatives men's health telehealth",
+    "notes": "Demand-side query using non-holdout captured store anchors."
+  },
+  {
+    "id": "telehealth-longevity-demand-serp",
+    "cohort": "telehealth",
+    "feeder": "demand_serp",
+    "tool": "serpapi",
+    "query": "Healthspan Shed Function Health alternatives longevity telehealth",
+    "notes": "Demand-side query using non-holdout captured store anchors."
+  },
+  {
+    "id": "telehealth-ed-exa",
+    "cohort": "telehealth",
+    "feeder": "exa_search",
+    "tool": "exa_search",
+    "query": "direct to consumer erectile dysfunction telehealth subscription brands sildenafil tadalafil chewable online clinic",
+    "num_results": 25
+  },
+  {
+    "id": "telehealth-longevity-exa",
+    "cohort": "telehealth",
+    "feeder": "exa_search",
+    "tool": "exa_search",
+    "query": "direct to consumer longevity healthspan telehealth clinic NAD injections biomarker labs prescription",
+    "num_results": 25
+  },
+  {
+    "id": "ci-ai-meeting-serp",
+    "cohort": "conversation_intelligence",
+    "feeder": "category_serp",
+    "tool": "serpapi",
+    "query": "AI meeting assistant tools for meeting notes summaries sales calls 2026"
+  },
+  {
+    "id": "ci-conversation-intelligence-serp",
+    "cohort": "conversation_intelligence",
+    "feeder": "category_serp",
+    "tool": "serpapi",
+    "query": "conversation intelligence software sales call analysis Gong Clari alternatives 2026"
+  },
+  {
+    "id": "ci-enterprise-call-analysis-serp",
+    "cohort": "conversation_intelligence",
+    "feeder": "category_serp",
+    "tool": "serpapi",
+    "query": "enterprise conversation intelligence software call recording coaching forecasting 2026"
+  },
+  {
+    "id": "ci-meeting-notetaker-serp",
+    "cohort": "conversation_intelligence",
+    "feeder": "category_serp",
+    "tool": "serpapi",
+    "query": "AI meeting notetaker apps Otter Granola Fathom Fireflies 2026"
+  },
+  {
+    "id": "ci-gong-demand-serp",
+    "cohort": "conversation_intelligence",
+    "feeder": "demand_serp",
+    "tool": "serpapi",
+    "query": "Gong alternatives conversation intelligence software Clari Chorus Avoma 2026"
+  },
+  {
+    "id": "ci-notetaker-demand-serp",
+    "cohort": "conversation_intelligence",
+    "feeder": "demand_serp",
+    "tool": "serpapi",
+    "query": "Otter Granola Fathom alternatives AI meeting notes 2026"
+  },
+  {
+    "id": "ci-meeting-notes-exa",
+    "cohort": "conversation_intelligence",
+    "feeder": "exa_search",
+    "tool": "exa_search",
+    "query": "AI meeting notes apps conversation intelligence software sales call analysis meeting summaries",
+    "num_results": 25
+  },
+  {
+    "id": "ci-enterprise-ci-exa",
+    "cohort": "conversation_intelligence",
+    "feeder": "exa_search",
+    "tool": "exa_search",
+    "query": "enterprise conversation intelligence platforms call coaching revenue intelligence",
+    "num_results": 25
+  }
+]

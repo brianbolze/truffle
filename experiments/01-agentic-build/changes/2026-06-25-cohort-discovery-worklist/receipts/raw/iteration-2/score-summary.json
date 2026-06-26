@@ -1,0 +1,981 @@
+{
+  "inputs": {
+    "telehealth": "validation-inputs/telehealth-holdouts.json",
+    "conversation_intelligence": "validation-inputs/conversation-intelligence-targets.json",
+    "raw_dir": "receipts/raw/iteration-2"
+  },
+  "limits": "Retrieval scoring only; excludes input query text and does not verify candidate precision.",
+  "telehealth": {
+    "must_hit": {
+      "hit": 6,
+      "total": 13,
+      "misses": [
+        "Hims & Hers",
+        "LifeMD",
+        "Niagen Plus",
+        "Wisp",
+        "Eden",
+        "Lifeforce",
+        "Remedy Meds"
+      ]
+    },
+    "should_hit": {
+      "hit": 4,
+      "total": 15,
+      "misses": [
+        "Amble",
+        "Blokes",
+        "Geviti",
+        "Invigor Medical",
+        "Ivy Rx",
+        "Kingsberg Medical",
+        "Marek Health",
+        "Maximus Tribe",
+        "Nurx",
+        "ProHealth",
+        "Rugiet Ready"
+      ]
+    },
+    "feeder_hits": {
+      "category_serp": [
+        "Defy Medical",
+        "Fridays",
+        "Hone Health",
+        "Noom Med",
+        "One Medical (Amazon)",
+        "Rex MD",
+        "Ro"
+      ],
+      "demand_serp": [
+        "Defy Medical",
+        "Hone Health",
+        "Peter MD"
+      ],
+      "exa_search": [
+        "AgelessRx",
+        "BlueChew"
+      ]
+    },
+    "row_hits": {
+      "telehealth-ed-exa": [
+        "BlueChew"
+      ],
+      "telehealth-ed-serp": [
+        "One Medical (Amazon)",
+        "Rex MD"
+      ],
+      "telehealth-glp1-serp": [
+        "Fridays",
+        "Noom Med",
+        "Ro"
+      ],
+      "telehealth-healthspan-labs-serp": [
+        "Hone Health"
+      ],
+      "telehealth-longevity-demand-serp": [
+        "Hone Health"
+      ],
+      "telehealth-longevity-exa": [
+        "AgelessRx"
+      ],
+      "telehealth-longevity-nad-serp": [
+        "Hone Health"
+      ],
+      "telehealth-mens-health-demand-serp": [
+        "Defy Medical",
+        "Hone Health",
+        "Peter MD"
+      ],
+      "telehealth-trt-serp": [
+        "Defy Medical"
+      ]
+    },
+    "targets": [
+      {
+        "name": "Hims & Hers",
+        "website": "hims.com",
+        "store_slug": "hims-com",
+        "formidability_tier": "F4 Apex",
+        "gate": "must_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "LifeMD",
+        "website": "lifemd.com",
+        "store_slug": "lifemd-com",
+        "formidability_tier": "F4 Apex",
+        "gate": "must_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Niagen Plus",
+        "website": "niagenplus.com",
+        "store_slug": "niagenplus-com",
+        "formidability_tier": "F4 Apex",
+        "gate": "must_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "One Medical (Amazon)",
+        "website": "onemedical.com",
+        "store_slug": "onemedical-com",
+        "formidability_tier": "F4 Apex",
+        "gate": "must_hit",
+        "hit": true,
+        "hit_rows": [
+          "telehealth-ed-serp"
+        ],
+        "matched_aliases": {
+          "telehealth-ed-serp": [
+            "one medical",
+            "amazon one medical"
+          ]
+        }
+      },
+      {
+        "name": "Rex MD",
+        "website": "rexmd.com",
+        "store_slug": "rexmd-com",
+        "formidability_tier": "F4 Apex",
+        "gate": "must_hit",
+        "hit": true,
+        "hit_rows": [
+          "telehealth-ed-serp"
+        ],
+        "matched_aliases": {
+          "telehealth-ed-serp": [
+            "rex md",
+            "rexmd",
+            "rexmd.com"
+          ]
+        }
+      },
+      {
+        "name": "Wisp",
+        "website": "hellowisp.com",
+        "store_slug": "hellowisp-com",
+        "formidability_tier": "F4 Apex",
+        "gate": "must_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Eden",
+        "website": "eden.health",
+        "store_slug": "eden-health",
+        "formidability_tier": "F3 Institutional",
+        "gate": "must_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Hone Health",
+        "website": "honehealth.com",
+        "store_slug": "honehealth-com",
+        "formidability_tier": "F3 Institutional",
+        "gate": "must_hit",
+        "hit": true,
+        "hit_rows": [
+          "telehealth-longevity-nad-serp",
+          "telehealth-healthspan-labs-serp",
+          "telehealth-mens-health-demand-serp",
+          "telehealth-longevity-demand-serp"
+        ],
+        "matched_aliases": {
+          "telehealth-longevity-nad-serp": [
+            "hone health",
+            "honehealth",
+            "honehealth.com"
+          ],
+          "telehealth-healthspan-labs-serp": [
+            "hone health",
+            "honehealth",
+            "honehealth.com"
+          ],
+          "telehealth-mens-health-demand-serp": [
+            "hone health"
+          ],
+          "telehealth-longevity-demand-serp": [
+            "hone health",
+            "honehealth",
+            "honehealth.com"
+          ]
+        }
+      },
+      {
+        "name": "Lifeforce",
+        "website": "mylifeforce.com",
+        "store_slug": "mylifeforce-com",
+        "formidability_tier": "F3 Institutional",
+        "gate": "must_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Noom Med",
+        "website": "noom.com/med",
+        "store_slug": "noom-com",
+        "formidability_tier": "F3 Institutional",
+        "gate": "must_hit",
+        "hit": true,
+        "hit_rows": [
+          "telehealth-glp1-serp"
+        ],
+        "matched_aliases": {
+          "telehealth-glp1-serp": [
+            "noom"
+          ]
+        }
+      },
+      {
+        "name": "Peter MD",
+        "website": "getpetermd.com",
+        "store_slug": "getpetermd-com",
+        "formidability_tier": "F3 Institutional",
+        "gate": "must_hit",
+        "hit": true,
+        "hit_rows": [
+          "telehealth-mens-health-demand-serp"
+        ],
+        "matched_aliases": {
+          "telehealth-mens-health-demand-serp": [
+            "peter md"
+          ]
+        }
+      },
+      {
+        "name": "Remedy Meds",
+        "website": "remedymeds.com",
+        "store_slug": "remedymeds-com",
+        "formidability_tier": "F3 Institutional",
+        "gate": "must_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Ro",
+        "website": "ro.co",
+        "store_slug": "ro-co",
+        "formidability_tier": "F3 Institutional",
+        "gate": "must_hit",
+        "hit": true,
+        "hit_rows": [
+          "telehealth-glp1-serp"
+        ],
+        "matched_aliases": {
+          "telehealth-glp1-serp": [
+            "ro body"
+          ]
+        }
+      },
+      {
+        "name": "AgelessRx",
+        "website": "agelessrx.com",
+        "store_slug": "agelessrx-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": true,
+        "hit_rows": [
+          "telehealth-longevity-exa"
+        ],
+        "matched_aliases": {
+          "telehealth-longevity-exa": [
+            "agelessrx",
+            "agelessrx.com"
+          ]
+        }
+      },
+      {
+        "name": "Amble",
+        "website": "joinamble.com",
+        "store_slug": "joinamble-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Blokes",
+        "website": "joiandblokes.com",
+        "store_slug": "joiandblokes-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "BlueChew",
+        "website": "bluechew.com",
+        "store_slug": "bluechew-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": true,
+        "hit_rows": [
+          "telehealth-ed-exa"
+        ],
+        "matched_aliases": {
+          "telehealth-ed-exa": [
+            "bluechew",
+            "bluechew.com"
+          ]
+        }
+      },
+      {
+        "name": "Defy Medical",
+        "website": "defymedical.com",
+        "store_slug": "defymedical-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": true,
+        "hit_rows": [
+          "telehealth-trt-serp",
+          "telehealth-mens-health-demand-serp"
+        ],
+        "matched_aliases": {
+          "telehealth-trt-serp": [
+            "defy medical",
+            "defymedical.com"
+          ],
+          "telehealth-mens-health-demand-serp": [
+            "defy medical"
+          ]
+        }
+      },
+      {
+        "name": "Fridays",
+        "website": "joinfridays.com",
+        "store_slug": "joinfridays-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": true,
+        "hit_rows": [
+          "telehealth-glp1-serp"
+        ],
+        "matched_aliases": {
+          "telehealth-glp1-serp": [
+            "fridays"
+          ]
+        }
+      },
+      {
+        "name": "Geviti",
+        "website": "gogeviti.com",
+        "store_slug": "gogeviti-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Invigor Medical",
+        "website": "invigormedical.com",
+        "store_slug": "invigormedical-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Ivy Rx",
+        "website": "ivyrx.com",
+        "store_slug": "ivyrx-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Kingsberg Medical",
+        "website": "kingsbergmedical.com",
+        "store_slug": "kingsbergmedical-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Marek Health",
+        "website": "marekhealth.com",
+        "store_slug": "marekhealth-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Maximus Tribe",
+        "website": "maximustribe.com",
+        "store_slug": "maximustribe-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Nurx",
+        "website": "nurx.com",
+        "store_slug": "nurx-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "ProHealth",
+        "website": "prohealth.com",
+        "store_slug": "prohealth-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "name": "Rugiet Ready",
+        "website": "rugiet.com",
+        "store_slug": "rugiet-com",
+        "formidability_tier": "F2 Established",
+        "gate": "should_hit",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      }
+    ]
+  },
+  "conversation_intelligence": {
+    "external_only": {
+      "top_10": {
+        "hit": 7,
+        "total": 10,
+        "misses": [
+          "Loom",
+          "Dovetail",
+          "AlphaSense"
+        ]
+      },
+      "core_all": {
+        "hit": 8,
+        "total": 17,
+        "misses": [
+          "Loom",
+          "Dovetail",
+          "AlphaSense",
+          "Notion AI Meeting Notes",
+          "OpenAI Whisper",
+          "ChatGPT transcript workflow",
+          "Claude transcript workflow",
+          "Rewind",
+          "Apple Voice Memos"
+        ]
+      },
+      "adjacent_observed": [
+        "AssemblyAI"
+      ]
+    },
+    "store_first": {
+      "top_10": {
+        "hit": 9,
+        "total": 10,
+        "misses": [
+          "Loom"
+        ]
+      },
+      "core_all": {
+        "hit": 10,
+        "total": 17,
+        "misses": [
+          "Loom",
+          "Notion AI Meeting Notes",
+          "OpenAI Whisper",
+          "ChatGPT transcript workflow",
+          "Claude transcript workflow",
+          "Rewind",
+          "Apple Voice Memos"
+        ]
+      },
+      "adjacent_observed": [
+        "AssemblyAI"
+      ]
+    },
+    "store_baseline_hits": [
+      "AlphaSense",
+      "Clari",
+      "Dovetail",
+      "Gong",
+      "Granola AI"
+    ],
+    "feeder_hits": {
+      "category_serp": [
+        "AssemblyAI",
+        "Clari",
+        "Fathom AI",
+        "Gong",
+        "Granola AI",
+        "Jamie AI",
+        "Otter",
+        "Zoom AI Companion"
+      ],
+      "demand_serp": [
+        "Clari",
+        "Fathom AI",
+        "Gong",
+        "Granola AI",
+        "Jamie AI",
+        "Microsoft Copilot for Teams",
+        "Otter",
+        "Zoom AI Companion"
+      ],
+      "exa_search": [
+        "Clari"
+      ],
+      "store_baseline": [
+        "AlphaSense",
+        "Clari",
+        "Dovetail",
+        "Gong",
+        "Granola AI"
+      ]
+    },
+    "row_hits": {
+      "ci-ai-meeting-serp": [
+        "Fathom AI",
+        "Gong",
+        "Granola AI",
+        "Otter",
+        "Zoom AI Companion"
+      ],
+      "ci-conversation-intelligence-serp": [
+        "Clari",
+        "Gong"
+      ],
+      "ci-enterprise-call-analysis-serp": [
+        "AssemblyAI",
+        "Clari",
+        "Gong"
+      ],
+      "ci-enterprise-ci-exa": [
+        "Clari"
+      ],
+      "ci-gong-demand-serp": [
+        "Clari",
+        "Fathom AI",
+        "Gong",
+        "Otter"
+      ],
+      "ci-meeting-notetaker-serp": [
+        "Fathom AI",
+        "Granola AI",
+        "Jamie AI",
+        "Otter",
+        "Zoom AI Companion"
+      ],
+      "ci-notetaker-demand-serp": [
+        "Fathom AI",
+        "Granola AI",
+        "Jamie AI",
+        "Microsoft Copilot for Teams",
+        "Otter",
+        "Zoom AI Companion"
+      ],
+      "store_baseline": [
+        "AlphaSense",
+        "Clari",
+        "Dovetail",
+        "Gong",
+        "Granola AI"
+      ]
+    },
+    "targets": [
+      {
+        "rank": 1,
+        "name": "Gong",
+        "kind": "core",
+        "hit": true,
+        "hit_rows": [
+          "ci-ai-meeting-serp",
+          "ci-conversation-intelligence-serp",
+          "ci-enterprise-call-analysis-serp",
+          "ci-gong-demand-serp",
+          "store_baseline"
+        ],
+        "matched_aliases": {
+          "ci-ai-meeting-serp": [
+            "gong"
+          ],
+          "ci-conversation-intelligence-serp": [
+            "gong"
+          ],
+          "ci-enterprise-call-analysis-serp": [
+            "gong"
+          ],
+          "ci-gong-demand-serp": [
+            "gong"
+          ],
+          "store_baseline": [
+            "local store profile"
+          ]
+        }
+      },
+      {
+        "rank": 2,
+        "name": "Clari",
+        "kind": "core",
+        "hit": true,
+        "hit_rows": [
+          "ci-conversation-intelligence-serp",
+          "ci-enterprise-call-analysis-serp",
+          "ci-gong-demand-serp",
+          "ci-enterprise-ci-exa",
+          "store_baseline"
+        ],
+        "matched_aliases": {
+          "ci-conversation-intelligence-serp": [
+            "clari"
+          ],
+          "ci-enterprise-call-analysis-serp": [
+            "clari"
+          ],
+          "ci-gong-demand-serp": [
+            "clari"
+          ],
+          "ci-enterprise-ci-exa": [
+            "clari",
+            "clari.com"
+          ],
+          "store_baseline": [
+            "local store profile"
+          ]
+        }
+      },
+      {
+        "rank": 3,
+        "name": "Loom",
+        "kind": "core",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 4,
+        "name": "Otter",
+        "kind": "core",
+        "hit": true,
+        "hit_rows": [
+          "ci-ai-meeting-serp",
+          "ci-meeting-notetaker-serp",
+          "ci-gong-demand-serp",
+          "ci-notetaker-demand-serp"
+        ],
+        "matched_aliases": {
+          "ci-ai-meeting-serp": [
+            "otter",
+            "otter.ai"
+          ],
+          "ci-meeting-notetaker-serp": [
+            "otter"
+          ],
+          "ci-gong-demand-serp": [
+            "otter",
+            "otter.ai"
+          ],
+          "ci-notetaker-demand-serp": [
+            "otter",
+            "otter.ai"
+          ]
+        }
+      },
+      {
+        "rank": 5,
+        "name": "Granola AI",
+        "kind": "core",
+        "hit": true,
+        "hit_rows": [
+          "ci-ai-meeting-serp",
+          "ci-meeting-notetaker-serp",
+          "ci-notetaker-demand-serp",
+          "store_baseline"
+        ],
+        "matched_aliases": {
+          "ci-ai-meeting-serp": [
+            "granola"
+          ],
+          "ci-meeting-notetaker-serp": [
+            "granola",
+            "granola.ai"
+          ],
+          "ci-notetaker-demand-serp": [
+            "granola",
+            "granola.ai"
+          ],
+          "store_baseline": [
+            "local store profile"
+          ]
+        }
+      },
+      {
+        "rank": 6,
+        "name": "Dovetail",
+        "kind": "core",
+        "hit": true,
+        "hit_rows": [
+          "store_baseline"
+        ],
+        "matched_aliases": {
+          "store_baseline": [
+            "local store profile"
+          ]
+        }
+      },
+      {
+        "rank": 7,
+        "name": "Zoom AI Companion",
+        "kind": "core",
+        "hit": true,
+        "hit_rows": [
+          "ci-ai-meeting-serp",
+          "ci-meeting-notetaker-serp",
+          "ci-notetaker-demand-serp"
+        ],
+        "matched_aliases": {
+          "ci-ai-meeting-serp": [
+            "zoom"
+          ],
+          "ci-meeting-notetaker-serp": [
+            "zoom"
+          ],
+          "ci-notetaker-demand-serp": [
+            "zoom ai companion",
+            "zoom"
+          ]
+        }
+      },
+      {
+        "rank": 8,
+        "name": "Microsoft Copilot for Teams",
+        "kind": "core",
+        "hit": true,
+        "hit_rows": [
+          "ci-notetaker-demand-serp"
+        ],
+        "matched_aliases": {
+          "ci-notetaker-demand-serp": [
+            "microsoft copilot"
+          ]
+        }
+      },
+      {
+        "rank": 9,
+        "name": "AlphaSense",
+        "kind": "core",
+        "hit": true,
+        "hit_rows": [
+          "store_baseline"
+        ],
+        "matched_aliases": {
+          "store_baseline": [
+            "local store profile"
+          ]
+        }
+      },
+      {
+        "rank": 10,
+        "name": "Fathom AI",
+        "kind": "core",
+        "hit": true,
+        "hit_rows": [
+          "ci-ai-meeting-serp",
+          "ci-meeting-notetaker-serp",
+          "ci-gong-demand-serp",
+          "ci-notetaker-demand-serp"
+        ],
+        "matched_aliases": {
+          "ci-ai-meeting-serp": [
+            "fathom"
+          ],
+          "ci-meeting-notetaker-serp": [
+            "fathom"
+          ],
+          "ci-gong-demand-serp": [
+            "fathom"
+          ],
+          "ci-notetaker-demand-serp": [
+            "fathom"
+          ]
+        }
+      },
+      {
+        "rank": 11,
+        "name": "Notion AI Meeting Notes",
+        "kind": "core",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 12,
+        "name": "OpenAI Whisper",
+        "kind": "core",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 13,
+        "name": "ChatGPT transcript workflow",
+        "kind": "core",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 14,
+        "name": "Claude transcript workflow",
+        "kind": "core",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 15,
+        "name": "Rewind",
+        "kind": "core",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 16,
+        "name": "Apple Voice Memos",
+        "kind": "core",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 17,
+        "name": "Jamie AI",
+        "kind": "core",
+        "hit": true,
+        "hit_rows": [
+          "ci-meeting-notetaker-serp",
+          "ci-notetaker-demand-serp"
+        ],
+        "matched_aliases": {
+          "ci-meeting-notetaker-serp": [
+            "jamie"
+          ],
+          "ci-notetaker-demand-serp": [
+            "jamie ai",
+            "jamie"
+          ]
+        }
+      },
+      {
+        "rank": 1,
+        "name": "Rev",
+        "kind": "adjacent",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 2,
+        "name": "Deepgram",
+        "kind": "adjacent",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 3,
+        "name": "ElevenLabs",
+        "kind": "adjacent",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 4,
+        "name": "AWS Transcribe",
+        "kind": "adjacent",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 5,
+        "name": "OpenAI Whisper",
+        "note": "dual-listed with core; boundary ambiguity",
+        "kind": "adjacent",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 6,
+        "name": "AssemblyAI",
+        "kind": "adjacent",
+        "hit": true,
+        "hit_rows": [
+          "ci-enterprise-call-analysis-serp"
+        ],
+        "matched_aliases": {
+          "ci-enterprise-call-analysis-serp": [
+            "assemblyai"
+          ]
+        }
+      },
+      {
+        "rank": 7,
+        "name": "Nuance",
+        "kind": "adjacent",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 8,
+        "name": "Verbit",
+        "kind": "adjacent",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 9,
+        "name": "Descript",
+        "kind": "adjacent",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      },
+      {
+        "rank": 10,
+        "name": "Symbl.ai",
+        "kind": "adjacent",
+        "hit": false,
+        "hit_rows": [],
+        "matched_aliases": {}
+      }
+    ]
+  }
+}

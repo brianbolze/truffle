@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:46Z",
+  "ok": true,
+  "input": {
+    "domain": "revenue.io",
+    "url": "https://revenue.io/"
+  },
+  "status": 200,
+  "final_url": "https://www.revenue.io/",
+  "content_type": "text/html; charset=UTF-8",
+  "title": "Revenue.io | AI Sales Engagement and Conversation Intelligence",
+  "description": "Revenue.io increases rep productivity and lowers your cost of sale, with the most complete RevOps platform for real-time engagement, guidance and insights between sales-reps and your customers.",
+  "text_excerpt": "Revenue.io | AI Sales Engagement and Conversation Intelligence (888) 815-0802 Sign In Contact sales Book a demo Why Revenue? Platform Solutions Resources Pricing (888) 815-0802 Contact sales Book a demo Generate More Revenue with Intelligent Guided Selling Generate more pipeline, close deals with confidence, improve rep performance, and consolidate your sales tools with one unified revenue AI platform built for Salesforce teams. Book a demo Why Revenue? Trusted By Leading Revenue Teams Worldwide HPE Revenue.io customer logo Here\u2019s What Makes Revenue.io Different Turn every sales interaction into revenue with a unified platform that guides reps in real time, standardizes execution, and eliminates the need for disconnected tools so your team can move faster and close more deals. Real-Time Execution Engine Guide reps in the moment with real-time coaching and next best actions so every conversation and deal is executed with precision. Built Natively on Salesforce Keep all your data, workflows, and execution inside Salesforce with no sync issues, full visibility, and a single source of truth across your entire team. One Platform Instead of Many Replace point solutions with a single platform that unifies dialing, engagement, intelligence, and coaching so your team can operate faster and more efficiently. The World\u2019s Best Teams Run on Revenue Have more live conversations from inside Salesforce, with local presence, voicemail drop, and automatic call logging on every dial. Salesforce Dialer Real-Time Coaching Guided Selling In Person + Mobile App Deal Management & Forecasting Coaching Feedback & Ask Anything AI Scorecards Conversation Agents Revenue Intelligence & Reports Sales Roleplay Call Tracking & Hot Leads AI Summaries & Follow-Ups \u201cAfter evaluating the market twice, at two fast-growing companies, I chose Revenue.io both times over Salesloft. The platform\u2019s depth, adaptability, and long-term value consistently outpaces the competition.\u201d Joseph Monahan VP of Sales and Business Development at Ylopo \u201cMore than any other vendor we\u2019ve worked with in the past, Revenue.io has really helped us deliver outcomes. You need to focus on the partnership you\u2019re going to be engaging in. Revenue.io is part of how we operate.\u201d Libby Cannup Group Product Lead, CRM Solutions, Block 400% \u25cf more sales opportunities 10X \u25cf more monthly meetings 100% \u25cf calls coached & scored 400% \u25cf quota attainment improvement Built for every role Solutions tailored for every role Discover how Reven"
+}

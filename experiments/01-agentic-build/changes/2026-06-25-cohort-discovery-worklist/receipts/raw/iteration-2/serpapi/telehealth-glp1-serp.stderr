@@ -1,0 +1,2 @@
+WARNING: ai_overview schema drift for query='online GLP-1 weight loss telehealth providers 2026': ["ai_overview missing 'references'"]
+Parser pinned to v2 — parsed fields suppressed; review the shape before bumping (exit 3).

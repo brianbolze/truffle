@@ -1,0 +1,304 @@
+{
+  "tool": "page_extraction_probe",
+  "source": "direct_http_fetch",
+  "captured_at": "2026-06-26T03:34:30Z",
+  "ok": true,
+  "input": {
+    "id": "ci-salesforce-gong-alternatives",
+    "cohort": "conversation_intelligence",
+    "facet": "conversation_intelligence",
+    "rank": 1,
+    "url": "https://www.salesforce.com/compare/gong-alternatives/"
+  },
+  "schema_drift": [],
+  "cost": {
+    "credits": 0,
+    "usd": 0
+  },
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "error": null,
+  "raw_html_path": "receipts/raw/page-extraction/html/ci-salesforce-gong-alternatives.html",
+  "title": "10 Best Gong Alternatives and Competitors in 2026 | Salesforce",
+  "text": "10 Best Gong Alternatives and Competitors in 2026 | Salesforce Skip to content Share the story 10 Best Gong Alternatives for Conversation Intelligence in 2026 Find the right conversation intelligence software for your business to gain better sales insights and close more deals. Erin Hueffner , Writer, Salesforce May 19, 2026 Share the story Watch demo Key takeaways Conversation intelligence software uses AI to record, transcribe, and analyze a sales team\u2019s customer interactions. Sales reps and sales managers use captured conversation insights to guide deals, improve performance, and uncover best practices for sales coaching. While Gong offers robust conversation intelligence features, Salesforce Conversation Insights sits alongside sellers' day-to-day workflows to reduce swivel-chairing and increase productivity. You just wrapped up a successful sales call. But before you can enjoy your win, you\u2019re rushing to complete the next steps \u2014 updating your CRM, summarizing meeting notes, and sending follow-up emails \u2014 all before your next meeting. Sound familiar? For salespeople, time spent on busywork means less time actually selling. That\u2019s why conversation intelligence software has become crucial for sales teams looking to reclaim that lost time. By automating the collection and analysis of your customer interactions, tools like Gong promise to capture calls, surface insights, and help coach reps faster. But Gong isn\u2019t the only option. Let's review conversation intelligence software alternatives and how they help sales teams better understand customers\u2019 needs and improve sales performance. 10 best Gong alternatives and competitors for sales teams Choosing the right conversation intelligence software can improve sales team productivity by automating tedious tasks, such as taking call notes or summarizing meetings. By automating these tasks with conversation intelligence software, you can quickly understand customers\u2019 needs and provide personalized engagement. There are conversation intelligence software options similar to Gong . This list is curated from G2, and all software has a minimum rating of 4 out of 5 stars, ensuring you\u2019re getting the best contenders based on real user ratings and feedback. 1. Agentforce Sales Agentforce Sales (formerly Sales Cloud) is an AI-powered CRM that offers a complete view of your business on one unified platform. It brings AI agents and human reps together at every step of the process. Agentforce Sales gives sellers real-time guidance and conversation insights so they can close deals faster. And, Salesforce offers a full suite of capabilities, including territory planning, incentive compensation management , partner relationship management , and more. Key features: Conversation intelligence : Agentforce Sales automatically records, transcribes, and summarizes voice and video calls with AI. It surfaces key signals like risks, objections, and next steps so your team can take action. Sales signals: AI analyzes conversations and surfaces critical signals in calls before it\u2019s too late to act. You can instantly see risks and impacted opportunities to refine your strategy and close deals faster. Call summaries: Get up to speed fast with AI-generated call summaries. You can see what was discussed at a glance and jump to relevant transcript snippets for key details like objections, pricing, and decision-maker mentions. Sales coaching and insights: Get custom insights from every call, powered by AI, and delivered right on the call record for easy access. Let sellers see key takeaways and top concerns without reading the entire transcript, with the exact context they need to move a deal forward. \u25b8\u25b8\u25b8 Never miss another red flag in a sales call See how Einstein Conversation Insights assists you in sales calls \u2014 with intel into what customers are saying. 2. Chorus by ZoomInfo Chorus by ZoomInfo integrates with the ZoomInfo data and intelligence platform or your CRM to sync sales information. Chorus records and transcribes customer interactions across phone, video, and email so sales teams and others can search, share, and analyze data collected from conversations. The mobile app lets sellers record and listen to sales calls on the go. G2 reviewers say Chorus is easy to integrate and simplifies drafting follow-up emails after a conversation. Key features: Speech-to-text: AI-driven transcription captures same-room speaker separation to identify multiple speakers and provide accuracy in determining who says what. Coaching materials: Chorus provides recommended high-scoring sales calls to curate a library of playlists for reps to learn from their peers. Video record: Record live pitches and track conversation metrics, including talk-to-listen ratios, filler words, competitor mentions, objection handling, and deal progression. Live forecasting: Use predictive analytics for live customer data to measure deal momentum for accounts and opportunities. 3. Salesloft Best known for sales engagement, Salesloft is a revenue management platform with a suite of capabilities, including deal management and sales forecasting. It offers an AI-powered workflow automation and process management tool. Its conversation intelligence features surface insights and deal summaries. G2 reviewers find the conversation insights useful for producing transcriptions that are easy to refer back to, allowing them to focus on the customer conversation. Key features: Customer scoring: AI agents rate rep performance on sales calls by analyzing transcripts and surface insights that help identify sales blockers or deal risks. Speech-to-text: AI agents transcribe and summarize sellers\u2019 conversations, then analyze and link them to relevant deals. Sentiment analysis: Captured call transcriptions include AI sentiment analysis for insights into emotions, tone, and interactions. Coaching card: Sales managers can coach new hires, surface insights, and provide real-time feedback on seller activities. 4. Fireflies.ai Fireflies.ai has an AI voice assistant that helps during meetings by transcribing, summarizing notes, and taking action. It integrates with many leading web-conferencing platforms to record meetings and supports more than 20 languages. Meeting notes, transcripts, and recordings are automatically synced to your CRM or collaboration apps. G2 users cite Fireflies.ai as a time-saver that helps them stay organized. Key features: Proactive assistance: It offers an in-meeting companion for coaching guidance, such as handling objections or refining pitch messaging. Action item extraction: The AI chatbot automatically generates sales follow-up emails or answers questions based on meeting transcripts. Summary generation: AI notetaking software generates detailed meeting overviews, outlines, notes, keywords, and action items. Speech-to-text transcription: The mobile app records, transcribes, and summarizes in-person sales calls directly from a phone. 5. Jiminny Jiminny captures real-time feedback and analyzes insights from conversations across video, voice, and email. It also supports offline conversations by recording in-person meetings via its mobile app and desktop upload feature. The conversation intelligence tool integrates with your CRM, dialer, and productivity platforms. G2 users appreciate Jiminny\u2019s design and functionality. Key features: Speech-to-text: For global teams, Jiminny automatically detects and transcribes conversations across more than 60 languages. Call analysis: Analyze recorded sales calls with custom keywords and searchable themes to capture renewal threats or objections tied to competitor offerings. Sales coaching: The AI chatbot feature lets sellers get real-time answers about calls, deals, and pipelines. Coaching materials: Export and share call recordings to a CRM and create a library of playlists that highlight best practices and winning techniques. 6. Avoma As an AI-first growth acceleration platform designed for customer-facing teams at start-ups and scale-ups, Avoma combines AI meeting assistance with conversational intelligence and revenue intelligence. The all-in-one platform automates note-taking, scheduling, coaching, and forecasting for sales teams. G2 users like Avoma\u2019s intuitive feature set and say it\u2019s easy to integrate with their video call platforms. Key features: Call analysis: An AI-powered feature helps sellers gain insights from advanced phrases beyond exact keyword matching, such as those related to deal risks or churn signals. Coaching: An AI assistant provides real-time, contextual guidance and suggestions to help respond to customer objections or complex questions. Note-taking: The augmented notes feature lets you take your own notes and use AI to bookmark or highlight text live in the transcript. Multi-language and accent support: Supports transcribing meetings in dozens of languages and dialects to make conversations more accessible. 7. Fathom Fathom records, transcribes, and summarizes meetings on popular video conferencing platforms. Fathom\u2019s AI note-taking handles multiple speakers and accents, and you can create custom dictionaries, so it learns your company\u2019s language and industry acronyms. G2 reviews cite Fathom\u2019s transcription accuracy and concise summaries. Key features: Speech-to-text transcription: Transcriptions handle multiple speakers and accents, and create custom dictionaries based on a company's language. Call analysis: The AI search capability surfaces objections from sales calls and sends alerts via email or Slack when new matches appear. Smart summaries: Customizable AI summaries use a built-in template that lets you tell the AI what to capture, such as decisions or next steps. Coaching: For Fathom Business Plan users, AI scorecards provide AI-generated performance insights, and behavioral metrics show average call performance data. 8. Outreach Kaia Outreach is a revenue workflow platform that features Kaia, a conversation intelligence assistant. Like Gong and similar competitors, it can record and transcribe sales calls and meetings, generate summaries, and sync data with a CRM system. Kaia provides AI-powered assistance by surfacing information and guidance for reps in real time during calls and analyzing recorded conversations to help teams identify trends and improve performance. Key features: Conversation analyses: Outreach intelligence features identify discussion topics and other buyer signals to help reps assess deal health and spot trends. Summarization capabilities: Meeting summaries and transcripts are auto-generated instantly, and AI can provide a roundup of action items and follow-up questions. AI assistance: During a live meeting, Kaia can provide in-context prompts for reps, supplying them with battlecards or suggesting next steps. Coaching: AI can analyze conversations to help managers identify coachable moments, track rep behaviors, and enable performance comparisons. 9. Clari Copilot Clari is a revenue orchestration platform that includes a conversation intelligence solution called Clari Copilot. The tool was designed to link sales interactions with revenue outcomes. In addition to recording and transcribing, Clari Copilot identifies buyer signals during sales calls and automatically syncs the data with CRM, pipeline, and forecast workflows. Sales teams can then use aggregated information to better understand why deals progress or stall. Key features: Buyer signal capture: AI capabilities detect key moments in conversations that indicate intent, sentiment, objections, competitor mentions, and next steps. Revenue forecasting: Conversation insights are connected to pipeline and revenue workflows to help teams assess deal health and support forecast accuracy. AI assistance: Clari Copilot provides insights, information, and prompts based on the context of a live sales call so the rep can adjust their responses or next steps. Enablement: Managers can use \u201cplaybooks\u201d and \u201cgametapes\u201d to support consistent execution and highlight successful examples from calls. 10. Otter.ai Otter.ai is an AI meeting agent that automatically records, transcribes, and summarizes sales meetings. Otter works for in-person meetings, or users can import and transcribe pre-recorded audio and video files. OtterPilot for Sales integrates with Salesforce to help automate call reporting. G2 users say Otter enhances productivity during meetings by capturing notes and generating summaries. Key features: Autonomous task execution: An AI assistant answers sellers\u2019 questions about meetings and generates follow-up emails and case studies. Action item extraction: AI automatically extracts action items from recordings and assigns them to sales team members with links back to the exact moment in the conversations. Sentiment and tone analysis: Uses AI to analyze sales meeting transcriptions for tone, emotion, tension, or enthusiasm. Smart summaries: Create a pre-call summary of a customer\u2019s latest exchanges, deal value, and key decision-makers gathered from your CRM and past sales calls. Get the latest sales tips delivered to your inbox. Sign up for the Salesblazer Highlights newsletter to get the latest sales news, insights, and best practices selected just for you. Sign up today Level up your business with conversation intelligence Gong offers a point solution for conversation intelligence, but it doesn\u2019t give you a 360-degree view of your customers. Can you see if a customer is in a tricky support case that could make your upsell pitch a total disaster? With Salesforce, you can. Gong covers the basics of creating and closing deals, but Salesforce gives you everything your business needs from pipeline to paycheck. With Agentforce Sales , you get AI-powered predictions, customizable forecast categories, and real-time pipeline visibility without requiring separate software licenses. Sales teams access forecasting alongside opportunity management, lead tracking, and customer engagement \u2014 all within a single interface and without data sync delays \u2014 so they can spend more time closing deals and meeting numbers quarter after quarter. This article is for informational purposes only. This article features products from Salesforce, which we own. We have a financial interest in their success, but all recommendations are based on our genuine belief in their value. Get more sales tips, tricks, and trends. Playbook 7 Ways AI Can Help You Close More Deals Get the playbook Report Explore the latest trends in \u201cState of Sales.\u201d Get the report Product Discover how Sales Cloud uses data and AI to help you close deals fast. Learn more Free Trial Try Sales Cloud for free. Start your trial See all resources Take the next step with us Start your trial. Try Sales Cloud free for 30 days. No credit card, no installations. Try for free Talk to an expert. Tell us a bit more so the right person can reach out faster. Request a call Stay up to date. Get the latest research, industry insights, and product news delivered straight to your inbox. Sign up for newsletter FAQs about Gong alternatives and competitors What does Gong do? Gong is a revenue intelligence platform that uses AI to capture, analyze, and provide insights from sales conversations across calls, emails, and meetings. Who does Gong compete with? Gong competes with Chorus by ZoomInfo, Salesloft, Outreach, and Clari in the revenue intelligence and conversation intelligence spaces. Is Gong a sales coaching tool? Yes, Gong can be used as a sales coaching platform. Do I have to use a CRM in addition to Gong? You should use a CRM like Salesforce that offers native integrations with Gong.",
+  "text_chars": 15627,
+  "links": [
+    {
+      "href": "#main-content",
+      "text": "Skip to content",
+      "domain": null,
+      "position": 1
+    },
+    {
+      "href": "https://www.linkedin.com/shareArticle?mini=true&url=https://www.salesforce.com/compare/gong-alternatives/&title=10 Best Gong Alternatives and Competitors in 2026",
+      "text": "",
+      "domain": "linkedin.com",
+      "position": 2
+    },
+    {
+      "href": "https://twitter.com/intent/tweet?text=10 Best Gong Alternatives and Competitors in 2026&url=https://www.salesforce.com/compare/gong-alternatives/",
+      "text": "",
+      "domain": "twitter.com",
+      "position": 3
+    },
+    {
+      "href": "https://www.facebook.com/sharer/sharer.php?u=https://www.salesforce.com/compare/gong-alternatives/",
+      "text": "",
+      "domain": "facebook.com",
+      "position": 4
+    },
+    {
+      "href": "https://www.salesforce.com/blog/author/erin-hueffner/",
+      "text": "Erin Hueffner",
+      "domain": "salesforce.com",
+      "position": 5
+    },
+    {
+      "href": "https://www.linkedin.com/shareArticle?mini=true&url=https://www.salesforce.com/compare/gong-alternatives/&title=10 Best Gong Alternatives and Competitors in 2026",
+      "text": "",
+      "domain": "linkedin.com",
+      "position": 6
+    },
+    {
+      "href": "https://twitter.com/intent/tweet?text=10 Best Gong Alternatives and Competitors in 2026&url=https://www.salesforce.com/compare/gong-alternatives/",
+      "text": "",
+      "domain": "twitter.com",
+      "position": 7
+    },
+    {
+      "href": "https://www.facebook.com/sharer/sharer.php?u=https://www.salesforce.com/compare/gong-alternatives/",
+      "text": "",
+      "domain": "facebook.com",
+      "position": 8
+    },
+    {
+      "href": "https://www.salesforce.com/sales/demos/conversation-insights-demo/?d=sh",
+      "text": "Watch demo",
+      "domain": "salesforce.com",
+      "position": 9
+    },
+    {
+      "href": "https://www.salesforce.com/sales/conversation-intelligence/",
+      "text": "Conversation intelligence software",
+      "domain": "salesforce.com",
+      "position": 10
+    },
+    {
+      "href": "https://www.salesforce.com/sales/team-productivity/",
+      "text": "sales team productivity",
+      "domain": "salesforce.com",
+      "position": 11
+    },
+    {
+      "href": "https://www.g2.com/products/gong/reviews",
+      "text": "Gong",
+      "domain": "g2.com",
+      "position": 12
+    },
+    {
+      "href": "https://www.salesforce.com/sales/",
+      "text": "Agentforce Sales",
+      "domain": "salesforce.com",
+      "position": 13
+    },
+    {
+      "href": "https://www.salesforce.com/sales/incentive-compensation-management/",
+      "text": "incentive compensation management",
+      "domain": "salesforce.com",
+      "position": 14
+    },
+    {
+      "href": "https://www.salesforce.com/sales/partner-relationship-management/",
+      "text": "partner relationship management",
+      "domain": "salesforce.com",
+      "position": 15
+    },
+    {
+      "href": "https://www.salesforce.com/sales/conversation-intelligence/",
+      "text": "Conversation intelligence",
+      "domain": "salesforce.com",
+      "position": 16
+    },
+    {
+      "href": "https://www.salesforce.com/sales/demos/einstein-conversation-insights-demo/?d=pb",
+      "text": "\u25b8\u25b8\u25b8 Never miss another red flag in a sales call",
+      "domain": "salesforce.com",
+      "position": 17
+    },
+    {
+      "href": "https://www.g2.com/products/chorus-by-zoominfo/reviews",
+      "text": "Chorus by ZoomInfo",
+      "domain": "g2.com",
+      "position": 18
+    },
+    {
+      "href": "https://www.g2.com/products/salesloft/reviews",
+      "text": "Salesloft",
+      "domain": "g2.com",
+      "position": 19
+    },
+    {
+      "href": "https://www.g2.com/sellers/fireflies-ai",
+      "text": "Fireflies.ai",
+      "domain": "g2.com",
+      "position": 20
+    },
+    {
+      "href": "https://www.g2.com/products/jiminny/reviews",
+      "text": "Jiminny",
+      "domain": "g2.com",
+      "position": 21
+    },
+    {
+      "href": "https://www.g2.com/products/avoma/reviews",
+      "text": "Avoma",
+      "domain": "g2.com",
+      "position": 22
+    },
+    {
+      "href": "https://www.g2.com/products/fathom-video/reviews",
+      "text": "Fathom",
+      "domain": "g2.com",
+      "position": 23
+    },
+    {
+      "href": "https://www.g2.com/products/outreach/reviews",
+      "text": "Outreach",
+      "domain": "g2.com",
+      "position": 24
+    },
+    {
+      "href": "https://www.g2.com/products/clari/reviews",
+      "text": "Clari",
+      "domain": "g2.com",
+      "position": 25
+    },
+    {
+      "href": "https://www.g2.com/products/otter-ai/reviews",
+      "text": "Otter.ai",
+      "domain": "g2.com",
+      "position": 26
+    },
+    {
+      "href": "https://www.salesforce.com/form/other/salesblazer-newsletter/?d=pb",
+      "text": "Sign up today",
+      "domain": "salesforce.com",
+      "position": 27
+    },
+    {
+      "href": "https://www.salesforce.com/sales/cloud/",
+      "text": "Agentforce Sales",
+      "domain": "salesforce.com",
+      "position": 28
+    },
+    {
+      "href": "https://www.salesforce.com/form/sales/sales-ai-playbook/?d=pb",
+      "text": "",
+      "domain": "salesforce.com",
+      "position": 29
+    },
+    {
+      "href": "https://www.salesforce.com/form/sales/sales-ai-playbook/?d=pb",
+      "text": "7 Ways AI Can Help You Close More Deals",
+      "domain": "salesforce.com",
+      "position": 30
+    },
+    {
+      "href": "https://www.salesforce.com/form/sales/sales-ai-playbook/?d=pb",
+      "text": "Get the playbook",
+      "domain": "salesforce.com",
+      "position": 31
+    },
+    {
+      "href": "https://www.salesforce.com/sales/state-of-sales/?d=pb",
+      "text": "",
+      "domain": "salesforce.com",
+      "position": 32
+    },
+    {
+      "href": "https://www.salesforce.com/sales/state-of-sales/?d=pb",
+      "text": "Explore the latest trends in \u201cState of Sales.\u201d",
+      "domain": "salesforce.com",
+      "position": 33
+    },
+    {
+      "href": "https://www.salesforce.com/sales/state-of-sales/?d=pb",
+      "text": "Get the report",
+      "domain": "salesforce.com",
+      "position": 34
+    },
+    {
+      "href": "https://www.salesforce.com/sales/",
+      "text": "",
+      "domain": "salesforce.com",
+      "position": 35
+    },
+    {
+      "href": "https://www.salesforce.com/sales/",
+      "text": "Discover how Sales Cloud uses data and AI to help you close deals fast.",
+      "domain": "salesforce.com",
+      "position": 36
+    },
+    {
+      "href": "https://www.salesforce.com/sales/",
+      "text": "Learn more",
+      "domain": "salesforce.com",
+      "position": 37
+    },
+    {
+      "href": "https://www.salesforce.com/form/signup/sales/?d=pb",
+      "text": "",
+      "domain": "salesforce.com",
+      "position": 38
+    },
+    {
+      "href": "https://www.salesforce.com/form/signup/sales/?d=pb",
+      "text": "Try Sales Cloud for free.",
+      "domain": "salesforce.com",
+      "position": 39
+    },
+    {
+      "href": "https://www.salesforce.com/form/signup/sales/?d=pb",
+      "text": "Start your trial",
+      "domain": "salesforce.com",
+      "position": 40
+    },
+    {
+      "href": "https://www.salesforce.com/blog/sales/",
+      "text": "See all resources",
+      "domain": "salesforce.com",
+      "position": 41
+    },
+    {
+      "href": "https://www.salesforce.com/form/signup/sales-ee/?d=pb",
+      "text": "Try for free",
+      "domain": "salesforce.com",
+      "position": 42
+    },
+    {
+      "href": "https://www.salesforce.com/sales/contact/contact-us/?d=pb",
+      "text": "Request a call",
+      "domain": "salesforce.com",
+      "position": 43
+    },
+    {
+      "href": "https://www.salesforce.com/form/other/salesblazer-newsletter/?d=pb",
+      "text": "Sign up for newsletter",
+      "domain": "salesforce.com",
+      "position": 44
+    },
+    {
+      "href": "https://www.salesforce.com/crm/",
+      "text": "Salesforce",
+      "domain": "salesforce.com",
+      "position": 45
+    },
+    {
+      "href": "tel:18006649073",
+      "text": "",
+      "domain": "tel:18006649073",
+      "position": 46
+    }
+  ],
+  "link_count": 46
+}

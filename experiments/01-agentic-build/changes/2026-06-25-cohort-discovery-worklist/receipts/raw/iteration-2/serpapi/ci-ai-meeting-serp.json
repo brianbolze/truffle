@@ -1,0 +1,224 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T00:59:45Z",
+  "ok": true,
+  "input": {
+    "query": "AI meeting assistant tools for meeting notes summaries sales calls 2026",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [
+    {
+      "position": 1,
+      "label": "Best for",
+      "after_colon": "Revenue intelligence and deep CRM automation.",
+      "raw_snippet": "Best for: Revenue intelligence and deep CRM automation.",
+      "format": "labeled",
+      "reference_indexes": [
+        0,
+        1,
+        6,
+        7
+      ]
+    },
+    {
+      "position": 2,
+      "label": "Best for",
+      "after_colon": "All-around meeting memory and team collaboration.",
+      "raw_snippet": "Best for: All-around meeting memory and team collaboration.",
+      "format": "labeled",
+      "reference_indexes": [
+        0,
+        2,
+        3,
+        5,
+        8
+      ]
+    },
+    {
+      "position": 3,
+      "label": "Best for",
+      "after_colon": "Agenda-driven calls and data security.",
+      "raw_snippet": "Best for: Agenda-driven calls and data security.",
+      "format": "labeled",
+      "reference_indexes": [
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "position": 4,
+      "label": "Best for",
+      "after_colon": "Lightweight, budget-friendly instant recaps.",
+      "raw_snippet": "Best for: Lightweight, budget-friendly instant recaps.",
+      "format": "labeled",
+      "reference_indexes": [
+        0,
+        3,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "position": 5,
+      "label": null,
+      "after_colon": "What CRM do you use (e.g., Salesforce, HubSpot)?",
+      "raw_snippet": "What CRM do you use (e.g., Salesforce, HubSpot)?",
+      "format": "bare",
+      "reference_indexes": []
+    },
+    {
+      "position": 6,
+      "label": null,
+      "after_colon": "Is live conversation coaching\nimportant to your team?",
+      "raw_snippet": "Is live conversation coaching\nimportant to your team?",
+      "format": "bare",
+      "reference_indexes": []
+    }
+  ],
+  "narrative_paragraphs": [
+    "The best AI meeting assistants for sales calls in 2026 combine automated CRM syncing, deal intelligence, and high-quality meeting notes. Top tools\u2014like Gong, Fireflies.ai\n, and Fellow\u2014save time by transcribing calls, tracking prospect objections, and pushing summaries directly into platforms like Salesforce or HubSpot.",
+    "For tips on choosing the right AI meeting tool based on your specific sales workflow:",
+    "These tools are widely used by sales teams to generate accurate notes, analyze deal health, and reduce manual data entry.",
+    "Selecting the ideal tool depends heavily on your specific operational needs:",
+    "If you're evaluating these, tell me:",
+    "I can help you narrow down the best platform."
+  ],
+  "headings": [
+    "Top AI Meeting Tools for Sales Calls",
+    "1. Gong",
+    "2. Fireflies.ai",
+    "3. Fellow",
+    "4. Fathom",
+    "Key Considerations for Sales Teams"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "Read AI",
+      "title": "9 Best AI Meeting Assistants in 2026 - Read AI",
+      "link": "https://www.read.ai/articles/best-ai-meeting-assistants"
+    },
+    {
+      "index": 1,
+      "source": "www.reddit.com",
+      "title": "Best AI notetakers for sales teams in 2026. - Reddit",
+      "link": "https://www.reddit.com/r/automation/comments/1qpd741/best_ai_notetakers_for_sales_teams_in_2026/"
+    },
+    {
+      "index": 2,
+      "source": "Zapier",
+      "title": "The 10 best AI meeting assistants in 2026 - Zapier",
+      "link": "https://zapier.com/blog/best-ai-meeting-assistant/"
+    },
+    {
+      "index": 3,
+      "source": "MaxIQ",
+      "title": "Best AI Meeting Prep Tools (2026 Picks) - MaxIQ",
+      "link": "https://www.getmaxiq.com/blog/best-ai-meeting-prep-tools"
+    },
+    {
+      "index": 4,
+      "source": "YouTube",
+      "title": "The Best AI Note Taker for Meeting Transcription in 2026 ...",
+      "link": "https://www.youtube.com/watch?v=k9q0qJEe_No"
+    },
+    {
+      "index": 5,
+      "source": "YouTube",
+      "title": "Top 5 AI Assistants \\u0026 Meeting Notetakers in 2026",
+      "link": "https://www.youtube.com/watch?v=eJ5h3VW6irU"
+    },
+    {
+      "index": 6,
+      "source": "www.sally.io",
+      "title": "We Tested The Best 15+ AI Meeting Assistants in 2026",
+      "link": "https://www.sally.io/blog/best-ai-meeting-assistants-in-2026"
+    },
+    {
+      "index": 7,
+      "source": "LinkedIn",
+      "title": "10 AI Tools Sales Teams Actually Rely On",
+      "link": "https://www.linkedin.com/pulse/10-ai-tools-sales-teams-actually-rely-1up-ai-kpqpc"
+    },
+    {
+      "index": 8,
+      "source": "McCary Group",
+      "title": "Best AI Meeting Summary Tools for 2026 - McCary Group",
+      "link": "https://mccarygroup.com/best-ai-meeting-summary-tools-2026/"
+    },
+    {
+      "index": 9,
+      "source": "tl;dv",
+      "title": "Best AI Meeting Assistant Tools for 2026 - tl;dv",
+      "link": "https://tldv.io/blog/best-ai-meeting-assistants/"
+    },
+    {
+      "index": 10,
+      "source": "Meeting Notes",
+      "title": "Best AI Meeting Assistant for Fintech in 2026",
+      "link": "https://meetingnotes.com/blog/best-ai-meeting-assistant-for-fintech"
+    },
+    {
+      "index": 11,
+      "source": "GoHighLevel",
+      "title": "5 Ways HighLevel\u2019s AI Employee Keeps You Future-Focused",
+      "link": "https://www.gohighlevel.com/post/how-ai-tools-keeps-businesses-future-focused"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "9 Best AI Meeting Assistants in 2026",
+      "link": "https://www.read.ai/articles/best-ai-meeting-assistants",
+      "snippet": "Compare AI meeting assistants that connect information across channels vs. tools that just capture meetings. Find the right fit for your team in 2026.",
+      "displayed_link": "https://www.read.ai \u203a Resources"
+    },
+    {
+      "position": 2,
+      "title": "The 10 best AI meeting assistants in 2026",
+      "link": "https://zapier.com/blog/best-ai-meeting-assistant/",
+      "snippet": "Fireflies for collaboration and topic tracking. Granola for combining human and AI notes. Avoma for conversation analytics.",
+      "displayed_link": "https://zapier.com \u203a App picks \u203a Best apps"
+    },
+    {
+      "position": 3,
+      "title": "Best AI Meeting Note Takers in 2026: Hands-On Review of ...",
+      "link": "https://www.simular.ai/alternatives/ai-meeting-note-takers",
+      "snippet": "TL;DR: We tested 8 AI meeting note takers across 50+ real meetings over 6 weeks. Otter.ai and Fireflies.ai lead for team collaboration and CRM integrations.",
+      "displayed_link": "https://www.simular.ai \u203a alternatives \u203a ai-meeting-note-t..."
+    },
+    {
+      "position": 4,
+      "title": "Best AI Meeting Note Takers in 2026 (Top Tools Compared)",
+      "link": "https://www.cirrusinsight.com/blog/ai-meeting-note-takers",
+      "snippet": "Discover the best AI meeting note takers for 2026. Compare top tools, free options, accuracy, and integrations with Zoom and Google Meet.",
+      "displayed_link": "https://www.cirrusinsight.com \u203a blog \u203a ai-meeting-note-..."
+    },
+    {
+      "position": 5,
+      "title": "Best AI Meeting Note Takers for Sales Calls and Client ...",
+      "link": "https://meetingnotes.com/blog/best-ai-meeting-assistant-for-sales-teams",
+      "snippet": "Best AI meeting assistants for sales teams in 2026, compared. We reviewed 10 tools \u2014 from Gong and Chorus to Fellow, Fathom, and tl;dv \u2014 on CRM ...",
+      "displayed_link": "https://meetingnotes.com \u203a blog \u203a best-ai-meeting-assist..."
+    },
+    {
+      "position": 6,
+      "title": "Best AI Meeting Notes Tools 2026: Complete Buyer's Guide",
+      "link": "https://zackproser.com/blog/best-ai-meeting-notes-tools-2026",
+      "snippet": "I tested every major AI meeting notes tool in 2026. Here's an honest breakdown of Granola, Otter, Fireflies, Fathom, and more \u2014 including ...",
+      "displayed_link": "https://zackproser.com \u203a blog \u203a best-ai-meeting-notes-to..."
+    }
+  ]
+}

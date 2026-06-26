@@ -1,0 +1,90 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T00:59:21Z",
+  "ok": false,
+  "input": {
+    "query": "Strut Health TRT Nation alternatives men's health telehealth",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [
+    "text_blocks[7].type='table' not in {'heading', 'paragraph', 'list'}"
+  ],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [],
+  "headings": [],
+  "references": [],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Best Testosterone Therapy Services for Home Use",
+      "link": "https://trtnation.com/best-testosterone-therapy-services-for-home-use/",
+      "snippet": "Best testosterone therapy services for home use in 2026. Compare TRT and enclomiphene options with safe, physician-guided online treatment.",
+      "displayed_link": "https://trtnation.com \u203a best-testosterone-therapy-services-..."
+    },
+    {
+      "position": 2,
+      "title": "TRT Online: A Smarter Way to Treat Low Testosterone",
+      "link": "https://www.struthealth.com/blog/getting-trt-online",
+      "snippet": "Yes, TRT can be prescribed online through licensed telehealth platforms that specialize in men's hormone care. ... At Strut Health, getting started with TRT ...",
+      "displayed_link": "https://www.struthealth.com \u203a blog \u203a getting-trt-online"
+    },
+    {
+      "position": 3,
+      "title": "Testosterone replacement therapy in the era of telemedicine",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8604198/",
+      "snippet": "This review aims to explore the potential benefits and pitfalls of TRT management via telemedicine. We also propose a theoretical framework for TRT management ...",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC8604198"
+    },
+    {
+      "position": 4,
+      "title": "Online TRT Clinic | Men's Health Clinic",
+      "link": "https://trtnation.com/category/online-trt-clinic/page/2/",
+      "snippet": "Unlock the power of Testosterone Replacement Therapy with our online trt clinic TRT Nation. Straightforward, affordable TRT advice.",
+      "displayed_link": "https://trtnation.com \u203a category \u203a online-trt-clinic \u203a page"
+    },
+    {
+      "position": 5,
+      "title": "TRT Telemedicine: What Leading Doctors Prescribe Instead",
+      "link": "https://www.struthealth.com/blog/trt-telemedicine-online",
+      "snippet": "Most telemedicine TRT programs prescribe synthetic testosterone injections, gels, or patches to replace your body's natural hormone production. For men with ...",
+      "displayed_link": "https://www.struthealth.com \u203a blog \u203a trt-telemedicine-o..."
+    },
+    {
+      "position": 6,
+      "title": "The Best Online TRT Clinics of 2026: What to Know Before ...",
+      "link": "https://policylab.us/testosterone-replacement-therapy/online-trt/",
+      "snippet": "Here, we'll look at five online TRT providers: Male Excel, Peter MD, Hone Health, Fountain TRT, and Defy Medical. We'll cover verified pricing, ...",
+      "displayed_link": "https://policylab.us \u203a testosterone-replacement-therapy"
+    },
+    {
+      "position": 7,
+      "title": "Top ED Treatment Options for 2026: Boost Sexual Vitality ...",
+      "link": "https://trtnation.com/top-ed-treatment-options-for-2026-boost-sexual-vitality-safely/",
+      "snippet": "With expert clinics like TRT Nation, clinically supervised ED and hormone therapies are now accessible from home, helping men pursue optimized ...",
+      "displayed_link": "https://trtnation.com \u203a top-ed-treatment-options-for-2026..."
+    },
+    {
+      "position": 8,
+      "title": "Strut Health Reviews | Sexual Health, Weight Loss, and More",
+      "link": "https://www.innerbody.com/strut-health-reviews",
+      "snippet": "Our team of experts reviews Strut Health to see how it compares to the top names in telehealth for sexual wellness, weight loss, skin care, and more.",
+      "displayed_link": "https://www.innerbody.com \u203a strut-health-reviews"
+    },
+    {
+      "position": 9,
+      "title": "Online Testosterone Therapy vs. Online TRT Alternatives",
+      "link": "https://www.struthealth.com/blog/online-testosterone-therapy-vs-trt-alternatives",
+      "snippet": "With Strut Health you can access online low-testosterone treatment. Our product Strut Mojo was designed to help guys boost their own natural testosterone ...",
+      "displayed_link": "https://www.struthealth.com \u203a blog \u203a online-testosteron..."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T00:58:51Z",
+  "ok": false,
+  "input": {
+    "query": "online GLP-1 weight loss telehealth providers 2026",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [
+    "ai_overview missing 'references'"
+  ],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [],
+  "headings": [],
+  "references": [],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "GLP-1s for Weight Loss - Online Treatment",
+      "link": "https://www.walgreens.com/topic/virtual-healthcare/weight-loss.jsp",
+      "snippet": "Walgreens Weight Management is a telehealth program for patients who are interested in connecting with a doctor about their weight loss options.",
+      "displayed_link": "https://www.walgreens.com \u203a topic \u203a virtual-healthcare"
+    },
+    {
+      "position": 2,
+      "title": "6 Best Affordable Online GLP-1 Providers (2026)",
+      "link": "https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/",
+      "snippet": "We reviewed GLP-1 programs pricing to help you find the cheapest places for accessing GLP-1s. Discover the best affordable GLP-1 online ...",
+      "displayed_link": "https://www.forbes.com \u203a Health \u203a Weight loss"
+    },
+    {
+      "position": 3,
+      "title": "23 Top GLP-1 Weight Loss Medication Providers in 2026",
+      "link": "https://health.usnews.com/best-diet/medication/top-glp-1-weight-loss-medication-providers",
+      "snippet": "Compare 23 GLP-1 providers like Ro, Noom, Fridays and Mochi Health. Learn about 2026 pricing, insurance concierge services and how to find the right ...",
+      "displayed_link": "https://health.usnews.com \u203a ... \u203a GLP Weight Loss Drugs"
+    },
+    {
+      "position": 4,
+      "title": "Get GLP-1s for Weight Loss Online",
+      "link": "https://www.goodrx.com/care/services/glp-1-weight-loss?srsltid\\u003dAfmBOooHLAdxyPt3xVXMxp0XG8WNAfgybDEeKNQX9LLICh1RJWHuKvsE",
+      "snippet": "Get care from licensed healthcare providers as you work up to your most effective GLP-1 dose. $39 /month. for unlimited online care. As low as. $149 ...",
+      "displayed_link": "https://www.goodrx.com \u203a care \u203a services \u203a glp-1-weight..."
+    },
+    {
+      "position": 5,
+      "title": "Online Prescription Weight-Loss Medication",
+      "link": "https://www.weightwatchers.com/us/weight-loss-medication?srsltid\\u003dAfmBOoo1G3gz6imGhBbUCwZQ0jipqweAZdjjBLZnbmuifK1KZgkYqK4t",
+      "snippet": "Access online weight-loss medication for as low as $25/first month. Our doctors and clinicians are with you every step of the journey.",
+      "displayed_link": "https://www.weightwatchers.com \u203a weight-loss-medicati..."
+    },
+    {
+      "position": 6,
+      "title": "Best Medical Weight Loss Programs Online in 2026",
+      "link": "https://joinfound.com/blog/best-online-weight-loss-programs?srsltid\\u003dAfmBOooqR1HKb1UxE138FDj9PT4CY1C0q1jo7Y2AWrfQnW62OGAgwoaF",
+      "snippet": "Ro Body provides telehealth access to GLP-1 prescriptions through virtual provider visits. The platform focuses primarily on convenient ...",
+      "displayed_link": "https://joinfound.com \u203a blog \u203a best-online-weight-loss-..."
+    },
+    {
+      "position": 7,
+      "title": "Telehealth companies limit who gets weight loss drugs",
+      "link": "https://www.npr.org/2026/06/14/nx-s1-5805984/glp1-telehealth-weight-loss-drugs",
+      "snippet": "Telehealth companies offer lifestyle support so people taking obesity drugs can have the most success losing weight. But employers also want ...",
+      "displayed_link": "https://www.npr.org \u203a 2026/06/14 \u203a nx-s1-5805984"
+    },
+    {
+      "position": 8,
+      "title": "Online Weight Management Program",
+      "link": "https://www.teladochealth.com/expert-care/condition-management/weight-management",
+      "snippet": "GLP-1 medications for weight loss may be available only to members who have access to an eligible program and receive clinical approval from a Teladoc Health ...",
+      "displayed_link": "https://www.teladochealth.com \u203a condition-management"
+    },
+    {
+      "position": 9,
+      "title": "Where to Get GLP-1s for Weight Loss Online",
+      "link": "https://www.everydayhealth.com/diet-nutrition-products/glp-1s-online/",
+      "snippet": "Discover the top 16 websites for buying GLP-1 weight loss medications online. Our expert-reviewed guide helps you find safe and reliable options for your ...",
+      "displayed_link": "https://www.everydayhealth.com \u203a diet-nutrition-products"
+    }
+  ]
+}

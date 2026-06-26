@@ -1,0 +1,173 @@
+{
+  "tool": "exa_search",
+  "source": "exa.ai",
+  "captured_at": "2026-06-26T01:01:11Z",
+  "ok": true,
+  "input": {
+    "query": "enterprise conversation intelligence platforms call coaching revenue intelligence",
+    "num_results": 25,
+    "type": "neural",
+    "category": "company",
+    "include_domains": [],
+    "exclude_domains": [],
+    "include_text": null,
+    "exclude_text": null
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "results": [
+    {
+      "rank": 1,
+      "title": "Jiminny",
+      "url": "https://jiminny.com/",
+      "domain": "jiminny.com"
+    },
+    {
+      "rank": 2,
+      "title": "Rafiki AI",
+      "url": "https://getrafiki.ai/",
+      "domain": "getrafiki.ai"
+    },
+    {
+      "rank": 3,
+      "title": "Salesken",
+      "url": "https://salesken.ai/",
+      "domain": "salesken.ai"
+    },
+    {
+      "rank": 4,
+      "title": "Clari",
+      "url": "https://clari.com/",
+      "domain": "clari.com"
+    },
+    {
+      "rank": 5,
+      "title": "Leadoff.ai",
+      "url": "https://leadoff.ai/",
+      "domain": "leadoff.ai"
+    },
+    {
+      "rank": 6,
+      "title": "Revenue.io",
+      "url": "https://revenue.io/",
+      "domain": "revenue.io"
+    },
+    {
+      "rank": 7,
+      "title": "SalesFlowIQ",
+      "url": "https://salesflowiq.ai/",
+      "domain": "salesflowiq.ai"
+    },
+    {
+      "rank": 8,
+      "title": "Clari Copilot",
+      "url": "https://clari.com/products/copilot",
+      "domain": "clari.com"
+    },
+    {
+      "rank": 9,
+      "title": "Mova AI",
+      "url": "https://mova.ai/",
+      "domain": "mova.ai"
+    },
+    {
+      "rank": 10,
+      "title": "Intersight",
+      "url": "https://intersight.ai/",
+      "domain": "intersight.ai"
+    },
+    {
+      "rank": 11,
+      "title": "Vaamo AI",
+      "url": "https://vaamo.ai/",
+      "domain": "vaamo.ai"
+    },
+    {
+      "rank": 12,
+      "title": "Call Optix | AI-Powered Call Analytics & Sales Intelligence",
+      "url": "https://calloptix.com/",
+      "domain": "calloptix.com"
+    },
+    {
+      "rank": 13,
+      "title": "Enthu.AI",
+      "url": "https://enthu.ai/",
+      "domain": "enthu.ai"
+    },
+    {
+      "rank": 14,
+      "title": "Nira",
+      "url": "https://withnira.com/",
+      "domain": "withnira.com"
+    },
+    {
+      "rank": 15,
+      "title": "HeySam",
+      "url": "https://heysam.ai/",
+      "domain": "heysam.ai"
+    },
+    {
+      "rank": 16,
+      "title": "Convobrains",
+      "url": "https://convobrains.com/",
+      "domain": "convobrains.com"
+    },
+    {
+      "rank": 17,
+      "title": "SpikedAI",
+      "url": "https://spiked.ai/",
+      "domain": "spiked.ai"
+    },
+    {
+      "rank": 18,
+      "title": "ExecVision (a Mediafly company)",
+      "url": "https://linkedin.com/company/execvision",
+      "domain": "linkedin.com"
+    },
+    {
+      "rank": 19,
+      "title": "Cuebo",
+      "url": "https://cuebo.ai/",
+      "domain": "cuebo.ai"
+    },
+    {
+      "rank": 20,
+      "title": "Insight7 | Call Intelligence & AI Coaching",
+      "url": "https://insight7.io/",
+      "domain": "insight7.io"
+    },
+    {
+      "rank": 21,
+      "title": "Call Center Coach",
+      "url": "https://callcentercoach.com/",
+      "domain": "callcentercoach.com"
+    },
+    {
+      "rank": 22,
+      "title": "Trovex.ai",
+      "url": "https://trovex.ai/",
+      "domain": "trovex.ai"
+    },
+    {
+      "rank": 23,
+      "title": "Closius",
+      "url": "https://closius.ai/",
+      "domain": "closius.ai"
+    },
+    {
+      "rank": 24,
+      "title": "Apollo.io",
+      "url": "https://zenleads.io/",
+      "domain": "zenleads.io"
+    },
+    {
+      "rank": 25,
+      "title": "CallAnalyzer.AI",
+      "url": "https://callanalyzer.ai/",
+      "domain": "callanalyzer.ai"
+    }
+  ],
+  "result_count": 25
+}

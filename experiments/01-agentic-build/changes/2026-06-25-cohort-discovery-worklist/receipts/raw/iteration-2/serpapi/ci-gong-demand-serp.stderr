@@ -1,0 +1,2 @@
+WARNING: ai_overview schema drift for query='Gong alternatives conversation intelligence software Clari Chorus Avoma 2026': ["text_blocks[11].type='table' not in {'heading', 'list', 'paragraph'}"]
+Parser pinned to v2 — parsed fields suppressed; review the shape before bumping (exit 3).

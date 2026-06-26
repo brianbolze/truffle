@@ -1,0 +1,88 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T16:07:41Z",
+  "ok": true,
+  "input": {
+    "query": "\"Salesman AI\" official site AI meeting notes revenue intelligence",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 1
+  },
+  "ai_overview_present": false,
+  "ai_overview_skipped": true,
+  "ranked_brands": [],
+  "narrative_paragraphs": [],
+  "headings": [],
+  "references": [],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Conversation Intelligence Software for Sales Teams",
+      "link": "https://getsalesman.ai/pricing",
+      "snippet": "Choose a Salesman AI plan that matches your team size, from solo sellers to enterprise revenue orgs. Every tier includes meeting intelligence, AI summaries ...",
+      "displayed_link": "https://getsalesman.ai \u203a pricing"
+    },
+    {
+      "position": 2,
+      "title": "Most sales professionals think AI is mainly about speed and ...",
+      "link": "https://www.instagram.com/reel/DYsFciiCkQw/",
+      "snippet": "That's where AI-powered revenue intelligence comes in. ... Conversation Intelligence Call Recording Key Takeaways CRM Updates Salesman AI Jordan ...",
+      "displayed_link": "8 likes \u00b7 1 month ago"
+    },
+    {
+      "position": 3,
+      "title": "Salesman AI Software Pricing, Alternatives & More 2026",
+      "link": "https://www.capterra.com/p/10037933/Salesman-AI/",
+      "snippet": "Salesman AI is conversation intelligence software that goes beyond transcripts and summaries. It prepares reps before calls with deal ...",
+      "displayed_link": "https://www.capterra.com \u203a Salesman-AI"
+    },
+    {
+      "position": 4,
+      "title": "Salesman AI",
+      "link": "https://www.linkedin.com/company/salesman-ai",
+      "snippet": "Salesman AI is the conversation intelligence software built to support AEs before, during and after every sales call, not just after it ends.",
+      "displayed_link": "40+ followers"
+    },
+    {
+      "position": 5,
+      "title": "Best Conversation Intelligence Software in 2026: The Only ...",
+      "link": "https://getsalesman.ai/blog/best-conversation-intelligence-software-in-2026/",
+      "snippet": "Most CI tools do one thing really well, they record your calls and show you what happened. Salesman AI does that too, but it doesn't stop there.",
+      "displayed_link": "https://getsalesman.ai \u203a blog \u203a best-conversation-intellige..."
+    },
+    {
+      "position": 6,
+      "title": "Best Conversation Intelligence Software - Page 12",
+      "link": "https://www.g2.com/categories/conversation-intelligence?order=g2_score&page=12",
+      "snippet": "Conversation intelligence software differs from AI note ... Salesman AI \u00b7 By Animaker, Inc \u00b7 0 ratings. OverviewUser Satisfaction. Product Description.",
+      "displayed_link": "https://www.g2.com \u203a categories \u203a conversation-intellig..."
+    },
+    {
+      "position": 7,
+      "title": "10 AI tools you should have instead of just taking notes: 1. AI ...",
+      "link": "https://www.instagram.com/p/DWV37ocAIV5/",
+      "snippet": "... Salesman AI\" will share the link to automate the entire workflow to close more deals. Follow for real AI product ideas #saas #sales #automation #ai\".",
+      "displayed_link": "https://www.instagram.com \u203a Reels"
+    },
+    {
+      "position": 8,
+      "title": "The Perfect Salesman: AI's Social Media Moment",
+      "link": "https://emmabartlett.co.uk/2025/11/05/the-perfect-salesman-ais-social-media-moment/",
+      "snippet": "The Perfect Salesman: AI's Social Media Moment ... I consider myself an AI optimist and a bit of an Anthropic fan-girl if I'm completely honest.",
+      "displayed_link": "https://emmabartlett.co.uk \u203a 2025/11/05 \u203a the-perfect-s..."
+    },
+    {
+      "position": 9,
+      "title": "AI is changing the future of compliance and call monitoring ...",
+      "link": "https://www.instagram.com/reel/DYPzlnzxqZ8/",
+      "snippet": "AI is changing the future of compliance and call monitoring. $2.6M Revenue ... Salesman AI SaaStr 2026 Sessions Worth Your Attention SF Bay Area ...",
+      "displayed_link": "5 likes \u00b7 1 month ago"
+    }
+  ]
+}

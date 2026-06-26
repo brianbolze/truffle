@@ -1,0 +1,88 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T16:07:28Z",
+  "ok": true,
+  "input": {
+    "query": "\"Fireflies\" official site AI meeting notes revenue intelligence",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 1
+  },
+  "ai_overview_present": false,
+  "ai_overview_skipped": true,
+  "ranked_brands": [],
+  "narrative_paragraphs": [],
+  "headings": [],
+  "references": [],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Fireflies.ai | #1 AI Assistant for Meetings, Email, Chat & CRM",
+      "link": "https://fireflies.ai/",
+      "snippet": "Fireflies takes notes, manages tasks, and automates workflows across meetings, email, chat, CRM, and your apps. Build a searchable knowledge base of your ...",
+      "displayed_link": "https://fireflies.ai"
+    },
+    {
+      "position": 2,
+      "title": "Fireflies AI Alternatives Worth Considering",
+      "link": "https://www.read.ai/articles/fireflies-ai-alternatives-worth-considering",
+      "snippet": "A comparison of the best Fireflies AI alternatives for meeting notes, conversation intelligence, and team collaboration. You scheduled the meeting.",
+      "displayed_link": "https://www.read.ai \u203a Resources"
+    },
+    {
+      "position": 3,
+      "title": "Fireflies.ai vs Otter.ai: Best AI Meeting Notes for Teams ...",
+      "link": "https://grain.com/blog/fireflies-vs-otter",
+      "snippet": "This guide compares Fireflies.ai and Otter.ai head to head on the things that decide whether a team adopts and keeps a meeting assistant.",
+      "displayed_link": "https://grain.com \u203a blog \u203a fireflies-vs-otter"
+    },
+    {
+      "position": 4,
+      "title": "In case you're new here, let us introduce you to Fireflies.ai ...",
+      "link": "https://www.instagram.com/reel/CvovRYOtruv/",
+      "snippet": "Let AI handle your meetings for you 24/7. AI Screening Calls, User Interviews, Sales/Support Calls, and so much more. Visit fireflies.ai/voice- ...",
+      "displayed_link": "7 likes \u00b7 2 years ago"
+    },
+    {
+      "position": 5,
+      "title": "The Fireflies founders told customers they had an AI ...",
+      "link": "https://www.linkedin.com/posts/brandonbornancin_the-fireflies-founders-told-customers-they-activity-7395105793945055232-klNp",
+      "snippet": "The Fireflies founders told customers they had an AI notetaker. Then they'd dial into meetings as \"Fred from Fireflies\" and frantically ...",
+      "displayed_link": "60+ reactions \u00b7 7 months ago"
+    },
+    {
+      "position": 6,
+      "title": "Otter vs Fireflies: Features, pricing, scalability",
+      "link": "https://www.avoma.com/blog/otter-vs-fireflies",
+      "snippet": "Fireflies, on the other hand, is an AI assistant for meetings that records, transcribes, and offers search capabilities across your meeting transcripts. While ...",
+      "displayed_link": "https://www.avoma.com \u203a blog \u203a otter-vs-fireflies"
+    },
+    {
+      "position": 7,
+      "title": "Top ai meeting note takers reviewed",
+      "link": "https://www.facebook.com/groups/698593531630485/posts/1386031669553331/",
+      "snippet": "Fireflies.ai Great for searchable transcripts across your org. Easy integrations with CRM + task managers. Scales well for teams. \u274c Summaries ...",
+      "displayed_link": "6 comments \u00b7 9 months ago"
+    },
+    {
+      "position": 8,
+      "title": "Best Fireflies Alternative for Enterprise Teams (2026)",
+      "link": "https://coworker.ai/blog/best-fireflies-alternative-enterprise",
+      "snippet": "Fireflies.ai is good for basic meeting notes. Enterprise teams need deeper CRM integration and automated follow-through.",
+      "displayed_link": "https://coworker.ai \u203a Blog"
+    },
+    {
+      "position": 9,
+      "title": "Fireflies.ai",
+      "link": "https://marketplace.salesloft.com/partners/fireflies-ai",
+      "snippet": "Transcribe calls made in Salesloft and log call notes & transcripts automatically. You can reduce data entry by 33% with Fireflies.",
+      "displayed_link": "https://marketplace.salesloft.com \u203a partners \u203a fireflies-ai"
+    }
+  ]
+}

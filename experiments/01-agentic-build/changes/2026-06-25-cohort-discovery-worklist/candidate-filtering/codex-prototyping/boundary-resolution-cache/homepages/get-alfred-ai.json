@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:45Z",
+  "ok": true,
+  "input": {
+    "domain": "get-alfred.ai",
+    "url": "https://get-alfred.ai/"
+  },
+  "status": 200,
+  "final_url": "https://get-alfred.ai/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "alfred_ | AI Email & Calendar Assistant for Gmail & Outlook",
+  "description": "Your AI email and calendar assistant for Gmail and Outlook. alfred_ triages your inbox, drafts replies you can send in one tap, manages your calendar, and turns emails into tasks.",
+  "text_excerpt": "alfred_ | AI Email & Calendar Assistant for Gmail & Outlook"
+}

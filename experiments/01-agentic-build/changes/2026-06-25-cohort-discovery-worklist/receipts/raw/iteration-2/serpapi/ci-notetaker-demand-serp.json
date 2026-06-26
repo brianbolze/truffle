@@ -1,0 +1,228 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T01:00:59Z",
+  "ok": true,
+  "input": {
+    "query": "Otter Granola Fathom alternatives AI meeting notes 2026",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [
+    {
+      "position": 1,
+      "label": "Best for",
+      "after_colon": "Revenue, sales, and cross-functional teams.",
+      "raw_snippet": "Best for:\nRevenue, sales, and cross-functional teams.",
+      "format": "labeled",
+      "reference_indexes": [
+        2,
+        3,
+        4,
+        11,
+        5
+      ]
+    },
+    {
+      "position": 2,
+      "label": "Best for",
+      "after_colon": "Finance, healthcare, and tech teams requiring strict data compliance.",
+      "raw_snippet": "Best for:\nFinance, healthcare, and tech teams requiring strict data compliance.",
+      "format": "labeled",
+      "reference_indexes": []
+    },
+    {
+      "position": 3,
+      "label": "Best for",
+      "after_colon": "1-on-1s, client interviews, and confidential meetings.",
+      "raw_snippet": "Best for:\n1-on-1s, client interviews, and confidential meetings.",
+      "format": "labeled",
+      "reference_indexes": [
+        7,
+        8
+      ]
+    },
+    {
+      "position": 4,
+      "label": "Best for",
+      "after_colon": "Multilingual teams and users requiring total transparency with clients.",
+      "raw_snippet": "Best for:\nMultilingual teams and users requiring total transparency with clients.",
+      "format": "labeled",
+      "reference_indexes": [
+        8,
+        5,
+        6
+      ]
+    }
+  ],
+  "narrative_paragraphs": [
+    "The best AI meeting notes alternatives for 2026 are categorized below based on your workflow, whether you need deep CRM integrations, bot-free privacy, or secure team collaboration.",
+    "Fireflies is the leading solution if your goal is deep conversation intelligence and automated logging.",
+    "Fellow goes beyond transcription by actively shaping the meeting agenda and follow-ups.",
+    "For users who experience \"bot fatigue\" or need a solution that doesn't alert meeting participants, Bluedot is an ideal alternative.",
+    "Jamie provides an alternative to tools like Granola by processing audio directly on your device rather than sending AI bots into calls.",
+    "For a deep dive into the 5 best AI note-taker apps of 2026 and how their features compare in practice:",
+    "If you already use Zoom, Microsoft Teams, or Google Workspace heavily, native AI solutions save you from third-party bot permissions.",
+    "To learn more about how native built-in AI tools perform compared to standalone apps:",
+    "If you want to narrow down your choices, let me know:"
+  ],
+  "headings": [
+    "Top AI Meeting Assistant Alternatives",
+    "1. Fireflies.ai (Best for Sales & CRM Integration)",
+    "2. Fellow (Best for Enterprise Teams & Agendas)",
+    "3. Bluedot (Best for Bot-Free Privacy)",
+    "4. Jamie (Best for Language Support & MacOS)",
+    "5. Microsoft Copilot & Zoom AI Companion (Best for Platform Ecosystems)"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "Evro AI",
+      "title": "Best Otter.ai Alternatives in 2026: Compared for Every Use Case",
+      "link": "https://www.evro.ai/post/best-otter-ai-alternatives-2026"
+    },
+    {
+      "index": 1,
+      "source": "YouTube",
+      "title": "5 Best AI Meeting Note-Takers in 2026 | Don't Choose ...",
+      "link": "https://www.youtube.com/watch?v=wiZlFempRRI"
+    },
+    {
+      "index": 2,
+      "source": "Simular",
+      "title": "Best AI Meeting Note Takers in 2026: Hands-On Review of 8 ...",
+      "link": "https://www.simular.ai/alternatives/ai-meeting-note-takers"
+    },
+    {
+      "index": 3,
+      "source": "Granola",
+      "title": "Meeting note tool pricing: Granola vs. Fireflies vs. Fathom vs. Otter",
+      "link": "https://www.granola.ai/blog/meeting-note-tool-pricing-granola-vs-fireflies-fathom-otter"
+    },
+    {
+      "index": 4,
+      "source": "get-alfred.ai",
+      "title": "Best AI Meeting Notetakers 2026: 7 Tested (Bot-Free Picks) | alfred_",
+      "link": "https://get-alfred.ai/blog/best-ai-meeting-notetakers"
+    },
+    {
+      "index": 5,
+      "source": "Meetily",
+      "title": "AI Meeting Assistant Comparison 2026: 8 Tools \\u0026 Pricing - Meetily",
+      "link": "https://meetily.ai/blog/best-meeting-notes-software-2026"
+    },
+    {
+      "index": 6,
+      "source": "Zachary Proser",
+      "title": "Best AI Meeting Notes Tools 2026: Complete Buyer's Guide",
+      "link": "https://zackproser.com/blog/best-ai-meeting-notes-tools-2026"
+    },
+    {
+      "index": 7,
+      "source": "www.reddit.com",
+      "title": "What AI do you use for meeting notes? : r/venturecapital - Reddit",
+      "link": "https://www.reddit.com/r/venturecapital/comments/1ntasl1/what_ai_do_you_use_for_meeting_notes/"
+    },
+    {
+      "index": 8,
+      "source": "YouTube",
+      "title": "5 Best AI Note Taker Apps for Meetings in 2026",
+      "link": "https://www.youtube.com/watch?v=Hg5jMlhfxlY&t=56"
+    },
+    {
+      "index": 9,
+      "source": "Notta",
+      "title": "10 Best Fireflies.ai Alternatives for Automated Notes in 2026",
+      "link": "https://www.notta.ai/en/blog/fireflies-ai-alternative"
+    },
+    {
+      "index": 10,
+      "source": "Revenue.io",
+      "title": "The 6 Best Fireflies.ai Alternatives \\u0026 Competitors in 2026",
+      "link": "https://www.revenue.io/blog/best-fireflies-alternatives"
+    },
+    {
+      "index": 11,
+      "source": "Lindy.ai",
+      "title": "I Tested AI Note-Taker Tools in 2026: These Are the Top 7",
+      "link": "https://www.lindy.ai/blog/ai-note-taker"
+    },
+    {
+      "index": 12,
+      "source": "Meeting Notes",
+      "title": "Best AI Meeting Summary Tools in 2026",
+      "link": "https://meetingnotes.com/blog/best-ai-meeting-summary-tool"
+    },
+    {
+      "index": 13,
+      "source": "Zachary Proser",
+      "title": "Granola vs Jamie AI: Best Meeting Assistant in 2026?",
+      "link": "https://zackproser.com/blog/granola-vs-jamie-ai"
+    },
+    {
+      "index": 14,
+      "source": "Taskade",
+      "title": "13 Best AI Meeting Summarizer Tools in 2026 (Ranked+Tested)",
+      "link": "https://www.taskade.com/blog/ai-meeting-summarizers"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Best AI Meeting Notes in 2026: Why I Switched to Granola",
+      "link": "https://zackproser.com/blog/best-ai-meeting-notes-2026",
+      "snippet": "After trying Otter, Fireflies, and Fathom, I switched to Granola. No bot joining calls, no awkward notifications, just perfect notes.",
+      "displayed_link": "https://zackproser.com \u203a blog \u203a best-ai-meeting-notes-20..."
+    },
+    {
+      "position": 2,
+      "title": "Granola vs Otter vs Fathom: Which AI Note Taker Wins in 2026?",
+      "link": "https://www.itsconvo.com/blog/granola-vs-otter-vs-fathom",
+      "snippet": "Granola broke the category open by skipping the meeting bot. Otter is the king of searchable archives. Fathom has the most generous free plan. But all three ...",
+      "displayed_link": "https://www.itsconvo.com \u203a blog \u203a granola-vs-otter-vs-..."
+    },
+    {
+      "position": 3,
+      "title": "Best AI Meeting Note Takers in 2026: Hands-On Review of ...",
+      "link": "https://www.simular.ai/alternatives/ai-meeting-note-takers",
+      "snippet": "TL;DR: We tested 8 AI meeting note takers across 50+ real meetings over 6 weeks. Otter.ai and Fireflies.ai lead for team collaboration and CRM integrations.",
+      "displayed_link": "https://www.simular.ai \u203a alternatives \u203a ai-meeting-note-t..."
+    },
+    {
+      "position": 4,
+      "title": "Best Otter alternatives for AI meeting notes in 2026",
+      "link": "https://tana.inc/blog/best-otter-alternatives-2026",
+      "snippet": "The 5 best Otter alternatives \u00b7 1. Tana, best for turning meetings into finished work \u00b7 2. Fireflies, best for sales teams and CRM \u00b7 3. Fathom, ...",
+      "displayed_link": "https://tana.inc \u203a blog \u203a best-otter-alternatives-2026"
+    },
+    {
+      "position": 5,
+      "title": "What AI do you use for meeting notes? : r/venturecapital",
+      "link": "https://www.reddit.com/r/venturecapital/comments/1ntasl1/what_ai_do_you_use_for_meeting_notes/",
+      "snippet": "Do you use AI to take notes and summarize during meetings?",
+      "displayed_link": "60+ comments \u00b7 8 months ago"
+    },
+    {
+      "position": 6,
+      "title": "The 10 Best AI Note Takers in 2026 (Tested and Ranked)",
+      "link": "https://meetingnotes.com/blog/best-ai-note-takers",
+      "snippet": "The 10 best AI note takers for meetings in 2026, tested and ranked. Reviews of Fellow, Fathom, Fireflies, Granola, Otter, and more \u2014 with ...",
+      "displayed_link": "https://meetingnotes.com \u203a blog \u203a best-ai-note-takers"
+    },
+    {
+      "position": 7,
+      "title": "Granola vs Otter vs Fireflies vs Fathom: Best AI Notetaker 2026",
+      "link": "https://www.useluminix.com/reports/industry-analysis/ai-meeting-notes-comparison-granola-vs-otter-vs-fireflies-vs-fathom-2026",
+      "snippet": "Fathom earns 5.0/5 from 6000+ reviews & beats rivals with unlimited free recording. See which AI meeting tool fits your workflow in 2026.",
+      "displayed_link": "https://www.useluminix.com \u203a ... \u203a Industry Analysis"
+    }
+  ]
+}

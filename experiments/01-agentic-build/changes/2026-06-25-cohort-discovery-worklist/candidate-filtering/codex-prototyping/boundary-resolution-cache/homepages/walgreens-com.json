@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:08:04Z",
+  "ok": true,
+  "input": {
+    "domain": "walgreens.com",
+    "url": "https://walgreens.com/"
+  },
+  "status": 200,
+  "final_url": "https://www.walgreens.com/",
+  "content_type": "text/html;charset=utf-8",
+  "title": "Walgreens: Pharmacy, Health & Wellness, Photo & More for You",
+  "description": "Your go-to for Pharmacy, Health & Wellness and Photo products. Refill prescriptions online, order items for delivery or store pickup, and create Photo Gifts.",
+  "text_excerpt": "Walgreens: Pharmacy, Health & Wellness, Photo & More for You Skip to main content 20% OFF $50+ sitewide* with code JUNE20 Up to 25% OFF select 4th of July essentials Up to 40% OFF select FIFA World Cup 2026\u2122 items Account Menu Account Sign in Create an account Your Account Walgreens Cash Rewards Prescription Refills & Status Vaccination Records Order Status & History Buy It Again Sign in Create an account Account Back Account Your Account Walgreens Cash Rewards Prescription Refills & Status Vaccination Records Order Status & History Buy It Again Close main menu Pharmacy Back Pharmacy Home Prescriptions Back Prescriptions Refills Orders Records Transfer Rx to Walgreens Request new Rx Auto Refills Drug info Close main menu Contact Lenses Back Contact Lenses Reorder Contact Lenses Shop All Contact Lenses Solutions, Drops & Cases Eye Health Supplements Shop Contact Lenses Close main menu More Services Back More Services Pharmacy Chat Refill with Rx Number Mail Service Pharmacy Specialty Pharmacy Easy Rx Delivery Medication Compounding Nebulizer Services Rx Savings Finder Close main menu Settings Back Settings Emails & Notifications ExpressPay Make a Payment Family Prescriptions Insurance Cap Preference Label Preferences Health History Your Account Close main menu Close main menu Health Services Back Health Services Explore all Health Services Vaccinations Test for COVID-19 & Flu Treatment for COVID-19 & Flu Online Doctor Visit Weight Management In-person Care MyWalgreens Health Access\u2122 Find Rx Coverage Clinical Trials Health Articles Close main menu Shop Back Shop Shop All FIFA World Cup 2026 Summer Essentials 4th of July Allergy & Sinus Grocery & Beverages Beauty Personal Care Contact Lenses Household & Pet Essentials Medicines & Treatments Sexual Wellness Vitamins & Supplements Baby & Kids Toys, Games & Books Home Health Care Solutions Walgreens Brand Fitness & Nutrition Gift Cards Incontinence First Aid Online Clearance Sale Shop by Brand Buy Again Close main menu Savings Back Savings Coupons Clearance Weekly Ad myWalgreens\u00ae Close main menu Photo Back Photo Photo Home Your Photos Upload Photos Prints Photo Books Cards & Stationery Calendars Posters Canvas & D\u00e9cor Gifts and More Passport Photos Deals All Photo Products Close main menu Financial Services Back Financial Services Financial Services Home Gift Cards Corporate and Bulk Gift Cards myWalgreens\u00ae Credit Card Scarlet\u00ae Bank Account Reloadable Debit Cards Western Union Close main menu Weekly Ad FIFA Worl"
+}

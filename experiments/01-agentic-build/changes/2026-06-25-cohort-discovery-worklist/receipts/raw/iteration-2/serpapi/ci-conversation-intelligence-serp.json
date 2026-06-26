@@ -1,0 +1,163 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T01:00:08Z",
+  "ok": true,
+  "input": {
+    "query": "conversation intelligence software sales call analysis Gong Clari alternatives 2026",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [
+    {
+      "position": 1,
+      "label": null,
+      "after_colon": "What size is your sales team?",
+      "raw_snippet": "What size is your sales team?",
+      "format": "bare",
+      "reference_indexes": []
+    },
+    {
+      "position": 2,
+      "label": null,
+      "after_colon": "What CRM are you currently using?",
+      "raw_snippet": "What CRM are you currently using?",
+      "format": "bare",
+      "reference_indexes": []
+    }
+  ],
+  "narrative_paragraphs": [
+    "Conversation intelligence platforms identify buying signals, analyze sales calls, and automate admin tasks. If Gong and Clari don't fit your needs, top alternatives in 2026 include Avoma for end-to-end mid-market revenue intel, Chorus by ZoomInfo\nfor native CRM integrations, and Sybill for post-call CRM automation and deal analysis.",
+    "Choosing the right software depends heavily on what your revenue operations and sales teams need most:",
+    "For tips on how to effectively scale your outbound tech stack and maximize call efficiency, this guide highlights features that streamline the daily workflow for remote sales reps:",
+    "Could you tell me:",
+    "I can help you narrow down the best tool for your tech stack."
+  ],
+  "headings": [
+    "Top Alternatives for 2026",
+    "Core Differentiators"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "Salesforce",
+      "title": "10 Best Gong Alternatives and Competitors in 2026 | Salesforce",
+      "link": "https://www.salesforce.com/compare/gong-alternatives/"
+    },
+    {
+      "index": 1,
+      "source": "Salesmotion",
+      "title": "Revenue Intelligence Platforms: A Buyer's Guide - Salesmotion",
+      "link": "https://salesmotion.io/blog/revenue-intelligence-platform-guide"
+    },
+    {
+      "index": 2,
+      "source": "Sybill",
+      "title": "8 Best Conversation Intelligence Tools for Sales Teams in 2026 - Sybill",
+      "link": "https://www.sybill.ai/blogs/best-conversation-intelligence-tools"
+    },
+    {
+      "index": 3,
+      "source": "Sybill",
+      "title": "6 Best Clari Alternatives in 2026 (Top Competitors Compared)",
+      "link": "https://www.sybill.ai/blogs/clari-alternatives"
+    },
+    {
+      "index": 4,
+      "source": "Salesman AI",
+      "title": "Best Conversation Intelligence Software in 2026 - Salesman AI",
+      "link": "https://getsalesman.ai/blog/best-conversation-intelligence-software-in-2026/"
+    },
+    {
+      "index": 5,
+      "source": "AskElephant",
+      "title": "Top 6 Gong Alternatives for Revenue Teams (2026)",
+      "link": "https://www.askelephant.ai/blog/top-gong-alternatives-for-revenue-teams"
+    },
+    {
+      "index": 6,
+      "source": "Cirrus Insight",
+      "title": "Clari vs Gong: Which Revenue Intelligence Platform Is Better ...",
+      "link": "https://www.cirrusinsight.com/blog/clari-vs-gong"
+    },
+    {
+      "index": 7,
+      "source": "Oliv AI",
+      "title": "Gong vs Clari Compared: AI Agents, Product Enhancements ...",
+      "link": "https://www.oliv.ai/blog/gong-vs-clari"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "10 Best Gong Alternatives and Competitors in 2026",
+      "link": "https://www.salesforce.com/compare/gong-alternatives/",
+      "snippet": "Find out the best Gong alternatives for conversation intelligence and how users rate them based on call insights, activity capture, and sales coaching.",
+      "displayed_link": "https://www.salesforce.com \u203a compare \u203a gong-alternati..."
+    },
+    {
+      "position": 2,
+      "title": "Clari vs Gong: Which Revenue Intelligence Platform Is ...",
+      "link": "https://www.cirrusinsight.com/blog/clari-vs-gong",
+      "snippet": "Compare Clari vs Gong to see which revenue intelligence platform fits your sales team. Explore forecasting, conversation analytics, pricing, ...",
+      "displayed_link": "https://www.cirrusinsight.com \u203a blog \u203a clari-vs-gong"
+    },
+    {
+      "position": 3,
+      "title": "Top 6 Gong Alternatives for Revenue Teams (2026)",
+      "link": "https://www.askelephant.ai/blog/top-gong-alternatives-for-revenue-teams",
+      "snippet": "Gong isn't the only call analytics option. Compare the top 6 alternatives including pricing, features, and which teams each is best for.",
+      "displayed_link": "https://www.askelephant.ai \u203a Blog"
+    },
+    {
+      "position": 4,
+      "title": "Best Conversation Intelligence Software in 2026: The Only ...",
+      "link": "https://getsalesman.ai/blog/best-conversation-intelligence-software-in-2026/",
+      "snippet": "If your pipeline visibility is weak, go with deal intelligence (Gong, Clari Copilot). If you want an all-in-one platform, consider Salesman ...",
+      "displayed_link": "https://getsalesman.ai \u203a blog \u203a best-conversation-intellige..."
+    },
+    {
+      "position": 5,
+      "title": "Revenue Intelligence Platforms: A Buyer's Guide",
+      "link": "https://salesmotion.io/blog/revenue-intelligence-platform-guide",
+      "snippet": "The top platforms are Gong (conversation analytics, $1,300-$3,000/user/year), Clari+Salesloft (forecasting + engagement, merged Dec 2025), ...",
+      "displayed_link": "https://salesmotion.io \u203a Blog"
+    },
+    {
+      "position": 6,
+      "title": "Best Revenue Intelligence Platforms in 2026: Clari, Gong ...",
+      "link": "https://www.tellius.com/resources/blog/best-revenue-intelligence-platforms-in-2026-clari-gong-tellius-7-more-compared",
+      "snippet": "Compare 10 revenue intelligence platforms\u2014evaluate forecasting, root cause analysis, data coverage, AI, and conversational analytics.",
+      "displayed_link": "https://www.tellius.com \u203a resources \u203a blog \u203a best-reven..."
+    },
+    {
+      "position": 7,
+      "title": "Gong vs Clari Compared: AI Agents, Product ...",
+      "link": "https://www.oliv.ai/blog/gong-vs-clari",
+      "snippet": "In 2026, Gong wins for conversation coaching and rep-level workflow visibility, Clari wins for top-down forecast roll-ups loved by CROs, and ...",
+      "displayed_link": "https://www.oliv.ai \u203a blog \u203a gong-vs-clari"
+    },
+    {
+      "position": 8,
+      "title": "6 Best Clari Alternatives in 2026 (Top Competitors ...",
+      "link": "https://www.sybill.ai/blogs/clari-alternatives",
+      "snippet": "The best Clari alternatives in 2026 include Sybill, Gong, Aviso AI, Salesforce Sales Cloud, People.ai, and Revenue Grid. These tools offer a mix ...",
+      "displayed_link": "https://www.sybill.ai \u203a blogs \u203a clari-alternatives"
+    },
+    {
+      "position": 9,
+      "title": "Best Conversation Intelligence Software in 2026 | Gong or ...",
+      "link": "https://www.youtube.com/watch?v=23cDOdbpVMc",
+      "snippet": "Looking for the best conversation intelligence software in 2026? In this video, we compare Gong, CloudTalk, Chorus, HubSpot, and Genesys to ...",
+      "displayed_link": "30+ views \u00b7 2 weeks ago"
+    }
+  ]
+}

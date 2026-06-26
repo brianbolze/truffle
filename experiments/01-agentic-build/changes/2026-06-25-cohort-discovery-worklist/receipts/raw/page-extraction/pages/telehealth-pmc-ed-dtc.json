@@ -1,0 +1,610 @@
+{
+  "tool": "page_extraction_probe",
+  "source": "direct_http_fetch",
+  "captured_at": "2026-06-26T03:34:21Z",
+  "ok": true,
+  "input": {
+    "id": "telehealth-pmc-ed-dtc",
+    "cohort": "telehealth",
+    "facet": "ed",
+    "rank": 4,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10397420/"
+  },
+  "schema_drift": [],
+  "cost": {
+    "credits": 0,
+    "usd": 0
+  },
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "error": null,
+  "raw_html_path": "receipts/raw/page-extraction/html/telehealth-pmc-ed-dtc.html",
+  "title": "Characteristics of direct-to-consumer platforms offering erectile dysfunction treatment - PMC",
+  "text": "Characteristics of direct-to-consumer platforms offering erectile dysfunction treatment - PMC Skip to main content An official website of the United States government Here's how you know Here's how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. Search Log in Dashboard Publications Account settings Log out Search\u2026 Search NCBI Primary site navigation Search Logged in as: Dashboard Publications Account settings Log in Search PMC Full-Text Archive Search in PMC Journal List User Guide PERMALINK Copy As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with, the contents by NLM or the National Institutes of Health. Learn more: PMC Disclaimer | PMC Copyright Notice Sex Med . 2023 Aug 2;11(4):qfad038. doi: 10.1093/sexmed/qfad038 Search in PMC Search in PubMed View in NLM Catalog Add to search Characteristics of direct-to-consumer platforms offering erectile dysfunction treatment Sarah M Brink Sarah M Brink , MD 1 Department of Urology, Hackensack University Medical Center, 360 Essex Street, Suite 403, Hackensack, NJ 07601, United States Find articles by Sarah M Brink 1 , Teona Iarajuli Teona Iarajuli , MD 2 Department of Urology, Hackensack Meridian School of Medicine, 123 Metro Boulevard, Suite 4100, Nutley, NJ 07110, United States Find articles by Teona Iarajuli 2 , David Shin David Shin , MD 3 Department of Urology, Hackensack University Medical Center, 360 Essex Street, Suite 403, Hackensack, NJ 07601, United States 4 Department of Urology, Hackensack Meridian School of Medicine, 123 Metro Boulevard, Suite 4100, Nutley, NJ 07110, United States Find articles by David Shin 3, 4, \u2709 Author information Article notes Copyright and License information 1 Department of Urology, Hackensack University Medical Center, 360 Essex Street, Suite 403, Hackensack, NJ 07601, United States 2 Department of Urology, Hackensack Meridian School of Medicine, 123 Metro Boulevard, Suite 4100, Nutley, NJ 07110, United States 3 Department of Urology, Hackensack University Medical Center, 360 Essex Street, Suite 403, Hackensack, NJ 07601, United States 4 Department of Urology, Hackensack Meridian School of Medicine, 123 Metro Boulevard, Suite 4100, Nutley, NJ 07110, United States \u2709 Corresponding author: HUMG Department of Urology, 360 Essex Street, Suite 403, Hackensack, NJ 07601, United States. Email: david.shin@hmhn.org Received 2023 Mar 27; Revised 2023 Jun 19; Accepted 2023 Jun 19; Collection date 2023 Aug. \u00a9 The Author(s) 2023. Published by Oxford University Press on behalf of The International Society of Sexual Medicine. This is an Open Access article distributed under the terms of the Creative Commons Attribution License ( https://creativecommons.org/licenses/by/4.0/ ), which permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited. PMC Copyright notice PMCID: PMC10397420 PMID: 37547870 Abstract Background Due to the sensitivity and potential embarrassment of discussing erectile dysfunction (ED) in person, men are seeking treatment online. Aims We sought to compare offerings of direct-to-consumer (DTC) platforms for ED treatment with respect to consultation, pricing, services, and privacy policy. Methods Google was queried to identify DTC platforms offering ED treatment with the keywords: \u201ctelehealth erectile dysfunction,\u201d \u201ctelemedicine erectile dysfunction,\u201d and \u201conline erectile dysfunction.\u201d Inclusion criteria were as follows: serving a majority of U.S. states, existing online only, providing both the consultation and prescription for phosphodiesterase type 5 inhibitors, and delivering the prescription to the patient. Results Fifteen DTC platforms met criteria. Ten provided free consultations; 4 bundled the consultation fee with the first month of the prescription, with 1 of these functioning as a subscription service. Fourteen (93%) relied on online intake forms and 10 (67%) advertised review by the prescriber within 2 business days. Only 4 (27%) platforms explicitly advertised physician-only consults. Direct contact with the prescriber would only occur if needed or if required by state law at 8 (53%) platforms. Purchasing sildenafil and tadalafil was advertised on all platforms. Minimum prices of sildenafil ranged from $0.50 to $35/pill (mean $5.16/pill, median $2.65/pill); tadalafil ranged from $0.50 to $9.80/pill (mean $4.70/pill, median $3.21/pill). In addition to ED therapy, 13 (86%) platforms offered treatment for other men\u2019s health issues. All platforms included a website privacy policy, but only 10 (67%) mentioned Health Insurance Portability and Accountability Act compliance, with 2 of these claiming to not be covered entities. Conclusion Although DTC platforms are transparent with phosphodiesterase type 5 inhibitor medication and subscription pricing information, few offer direct contact with a physician to further discuss issues related to ED after completion of the online intake form. For comprehensive evaluation of ED in Health Insurance Portability and Accountability Act\u2013compliant settings, in-person or telemedicine visits should be arranged with men\u2019s physicians. Keywords: direct-to-consumer, telehealth, online platform, erectile dysfunction Introduction Within the field of urology, telemedicine has been increasing in usage, catalyzed by the COVID-19 pandemic. 1 The expansion of telemedicine has the potential to benefit men with erectile dysfunction (ED) who may otherwise choose to defer treatment due to inconvenience, shame, or perceived indiscretion. 2 Burnett et al 3 found that ED affects about 18% of the male population of the United States over 20 years of age, with prevalence increasing with age. Multiple online-only telehealth platforms offer services for men\u2019s sexual health. We sought to compare the offerings of U.S.-based direct-to-consumer (DTC) telehealth platforms for ED treatment with respect to consultation, price, services provided, and privacy policy. Methods Google was queried in June 2022 to identify DTC platforms offering ED treatment. Two reviewers identified and analyzed the top 50 results using the keywords \u201ctelehealth erectile dysfunction,\u201d \u201ctelemedicine erectile dysfunction,\u201d and \u201conline erectile dysfunction.\u201d Inclusion criteria were as follows: platforms must serve a majority of U.S. states, exist online only, provide both the consultation and prescription for phosphodiesterase type 5 (PDE5) inhibitors, and deliver the prescription to the patient. Descriptive analysis of pricing information, physician access, and Health Insurance Portability and Accountability Act (HIPAA) compliance was performed. Results Fifteen DTC platforms met inclusion criteria (Blink Health, BlueChew, GoodRx Care, HendRX, Hims, iLiveActive, K Health, KwikMed, Lemonaid Health, Optum, RedBoxRx, RexMD, Roman, Strut, TIN Rx). Ten (67%) provided free consultations; however, patients were expected to pay monthly or quarterly fees for prescriptions. Four (27%) bundled the consultation fee with the first month of the prescription; one of these functioned as a subscription service with a $10 monthly charge plus monthly refill fee ( Table 1 ). Table 1. Fee schedule. Platform Online visit Subscription Bundled appointment and first prescription Blink Health \u2014 $9.95+ price of prescription \u2014 BlueChew Free \u2014 \u2014 GoodRx Care \u2014 \u2014 $39 HendRX \u2014 \u2014 $40 for 1 prescription, $50 for prescription and 1 refill, $60 for prescription and 2 refills Hims Free \u2014 \u2014 iLiveActive NA NA NA K Health Free \u2014 \u2014 KwikMed Free \u2014 \u2014 Lemonaid Health Free \u2014 \u2014 Optum Free \u2014 \u2014 RedBoxRx Free \u2014 \u2014 RexMD Free \u2014 \u2014 Roman Free \u2014 \u2014 Strut Free \u2014 \u2014 TIN Rx \u2014 \u2014 $85 Open in a new tab Abbreviation: NA, not available. Fourteen (93%) platforms began the consult with an online form and 10 (67%) platforms advertised review by the prescriber within 2 business days. Four (27%) platforms explicitly advertised physician-only consults, 5 (33%) used the vague term \u201cprovider,\u201d and the remaining 6 (40%) advertised either physicians or other prescribers on staff. Direct contact with the prescriber (digital/audio/video) would only occur if needed or if required by state law at 8 (53%) platforms ( Table 2 ). Table 2. Consultation. Platform Prescriber Intake Contact with prescriber Review/approval Blink Health Physicians and clinicians Online form Licensed doctor follows up with medical evaluation <24 h BlueChew \u201cProvider\u201d Online form Phone/video if required by state law 1-2 business days GoodRx Care \u201cProvider\u201d Online form \u201cChat within minutes\u201d NA HendRX Physician Online form Contact if needed 1-2 business days Hims \u201cProvider\u201d Online form Phone/video if required by state law NA iLiveActive Physician Online form 15 minute meeting with physician NA K Health Physician or NP Online form \u201cText with a doctor\u201d 12 h KwikMed Physician or NP Online form Video/audio/digital if required 24 h Lemonaid Health Physician or NP Online form Phone/video if required by state law 1 d Optum \u201cProvider\u201d Online form NA 24-48 h RedBoxRx \u201cProvider\u201d Online form NA 24 h RexMD Physician or NP Online form Contact if needed NA Roman Physician or NP Online form Phone/video if required by state law 24 h Strut Physician Online form Contact if needed 1 business day TIN Rx Physician NA NA NA Open in a new tab Abbreviations: NA, not available; NP, nurse practitioner. The ability to purchase sildenafil and tadalafil was advertised on all platforms. Pricing information varied depending on pill strength and quantity ordered on 8 (53%) platforms. Six (40%) platforms only offered pricing per dose without specifying medication strength. Minimum prices of sildenafil ranged from $0.50 to $35/pill (mean $5.16/pill, median $2.65/pill), while tadalafil ranged from $0.50 to $9.80/pill (mean $4.70/pill, median $3.21/pill). In addition to ED therapy, 13 (86%) platforms offered treatment for other men\u2019s health issues, such as premature ejaculation or hair loss. All platforms included a website privacy policy, but only 10 (67%) mentioned HIPAA compliance, with 2 of these claiming to not be covered entities. Discussion Given the rise in DTC telehealth platforms in the United States, this study chose to focus on U.S.-based DTC platforms providing both the consultation and medication to the patient. Platforms that provided only the consultation and prescription, but not the medication itself, were excluded from this study, given that one of the aims was to evaluate the price of medication from these DTC platforms. It is possible to purchase PDE5 inhibitors, or what are advertised as PDE5 inhibitors, from illegitimate online pharmacies without a prescription. There are also sexual enhancement supplements available online, which are unregulated and often contain unlisted sildenafil as well as potentially dangerous ingredients and contaminants. 4 Prescription medication can also be obtained from Canada and Mexico. Americans can purchase sildenafil through physical or online Canadian pharmacies; however, these pharmacies require a valid prescription. A prescription from a U.S. physician must be cosigned by a Canadian physician in order for the prescription to be valid in Canada. 5 Caution should be paid when evaluating online Canadian pharmacies. There are illegitimate pharmacies that do not require a prescription and may be based outside of Canada despite advertising themselves as Canadian. 6 Sildenafil can be purchased without a prescription in Mexico; however, sildenafil purchased in Mexico is not Food and Drug Administration approved and would be illegal to transport across the U.S. border without a valid prescription. 7 The DTC platforms highlighted in this article provide convenience and perhaps a perceived cost savings to the patient, which lends to their increasing popularity. DTC platforms meeting inclusion criteria are upfront with their consultation pricing policies, with patients generally knowing what to expect prior to engaging their services. The vast majority of platforms begin the consult through an online form; however, depending on information provided and state law, there may be no synchronous contact with the prescriber. Patients oftentimes need to ask clarifying and follow-up questions, and open dialogue between the patient and prescriber can lead to more comprehensive care. This lack of synchronous communication, and potentially no communication from prescriber to patient, could create a difficult position for the prescriber insofar as the patient may have filled out the form incorrectly leading to a situation in which PDE5 inhibitors are prescribed when they otherwise would not be. Relying on self-reported vital signs also presents a potential quagmire and may miss a patient who would otherwise be referred to a primary care physician or cardiologist for further evaluation. According to the American Urological Association Guidelines for Erectile Dysfunction, men should be informed of the association between ED and cardiovascular disease, and appropriate referrals should be made. This study was not designed to identify if men are receiving appropriate referrals through these DTC platforms; however, a previous study by Hsiang et al 8 examined adherence to the American Urological Association guidelines by online platforms, which showed that the relationship between ED and cardiovascular disease was unlikely to be addressed with patients. This presents an opportunity for these platforms to consider establishing referral lines to qualified specialists for continuation of care. One of the potential advantages of DTC platforms is transparency with medication pricing. However, a wide and variable range was observed, making it difficult for potential patients to adequately evaluate and compare costs based on strength of medication, prior to engagement with the platform. In contrast, direct interactions at a pharmacy will result in an appropriate determination of insurance coverage and cost for prescribed medications, allowing patients to quickly make informed decisions regarding their treatment options. Because pharmacies can dispense these medications in a timely fashion, patients are not subjected to holdups caused by the necessity of an online review or setbacks associated with shipment of medications, which can further delay access to treatment. Interestingly, many of these platforms are offering additional men\u2019s health services, such as treatment for premature ejaculation and hair loss, and even general healthcare services for all patients. These platforms are expanding access to care in a convenient format, but there are potential drawbacks. As with ED treatment, these additional services are not covered by medical insurance, relying entirely on out-of-pocket payment. DTC platforms should not be seen as a replacement for a primary care physician or a trusted specialist, as they lack both the continuity of care that comes from an established physician relationship and dialogue between patient and prescriber. For an insured patient, ED treatment may be less expensive overall with their established physician in an in-person or telemedicine format, as has been observed in prior studies with PDE5 inhibitors and testosterone therapy. 9 , 10 The lack of guaranteed privacy with the included DTC platforms is also very concerning, as patients should rightfully expect privacy regarding their health information. The patient who is using a DTC platform for ED treatment may be doing so out of utmost concern for his privacy. 2 The platforms understand the concern for privacy and generally advertise discreet packaging; however, this does not translate to guaranteed privacy of personal health information. The inclusion of privacy policies on the websites is a standard practice and does not confer any increased security of information over other nontelehealth websites that also collect personal information. The HIPAA defines standards for the protection of individual\u2019s protected health information, by covered entities. As these DTC platforms do not transmit electronic data as defined in the statute, they do not meet the definition of a covered entity ( https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html ). As such, these platforms are not mandated to secure protected health information, which should be worrisome to anyone who values the privacy of their health information. Physicians, clinics, and hospitals operating in the traditional way are held to HIPAA standards, in contrast to these DTC platforms that are unregulated as a whole. The proliferation of DTC platforms signals a market shift in what contemporary patients expect. Urologists should heed this signal and consider adopting telemedicine into their practices, if not already incorporated. With suitable resources and office support, telemedicine can be easily incorporated into the clinic schedule. Office-based telemedicine would require only the physician and the appropriate technology, freeing the front desk staff, medical assistants, and schedulers for other tasks. It is easier to offer after-hours appointments, which are convenient to many patients, when only the physician needs to be available. The American Urological Association and the Sexual Medicine Society of North America should consider developing guidelines for urologists in the appropriate practice of telemedicine, ensuring that patients will receive comprehensive HIPAA-compliant evaluations and treatments in the telemedicine setting rather than simply pay-to-play prescriptions. While telemedicine does have limitations compared with in-person appointments, it is also an exciting new frontier in expanding access to urologic care, including sexual medicine and general urology. Conclusion Telehealth platforms are changing the face of healthcare to offer evaluation and treatment of health conditions, including ED, privately from the patient\u2019s own home. Although platforms are transparent with PDE5 inhibitor medication and subscription pricing information, very few offer direct contact with a physician to further discuss issues related to ED after completion of the online intake form. For comprehensive evaluations of ED in HIPAA compliant settings, formal in-person or telemedicine visits should be arranged with men\u2019s primary physicians and/or urologists. Urologists should strongly consider adopting telemedicine into their practices to further expand access to care for these men. Author Contributions S.M.B. (Conceptualization, Data Curation, Formal Analysis, Methodology, Project Administration, Validation, Writing - Original Draft, Writing - Review & Editing); T.I. (Data Curation), D.S. (Conceptualization, Formal Analysis, Methodology, Project Administration, Supervision, Validation, Writing - Review & Editing). Funding This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors. Conflict of interest : None. Data Availability The data underlying this article are available in the article and will be shared on reasonable request to the corresponding author. Contributor Information Sarah M Brink, Department of Urology, Hackensack University Medical Center, 360 Essex Street, Suite 403, Hackensack, NJ 07601, United States. Teona Iarajuli, Department of Urology, Hackensack Meridian School of Medicine, 123 Metro Boulevard, Suite 4100, Nutley, NJ 07110, United States. David Shin, Department of Urology, Hackensack University Medical Center, 360 Essex Street, Suite 403, Hackensack, NJ 07601, United States; Department of Urology, Hackensack Meridian School of Medicine, 123 Metro Boulevard, Suite 4100, Nutley, NJ 07110, United States. References 1. Dubin JM, Wyant WA, Balaji NC, et al. Telemedicine usage among urologists during the COVID-19 pandemic: cross-sectional study. J Med Internet Res. 2020;22(11):e21875. 10.2196/21875 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 2. Rodler S, von B\u00fcren J, Buchner A, et al. Epidemiology and treatment barriers of patients with erectile dysfunction using an online prescription platform: a cross-sectional study. Sex Med. 2020;8(3):370\u2013377. 10.1016/j.esxm.2020.04.001 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 3. Selvin E, Burnett AL, Platz EA. Prevalence and risk factors for erectile dysfunction in the US. JAMA. 2007;120(2):151\u2013157. 10.1016/j.amjmed.2006.06.010 [ DOI ] [ PubMed ] [ Google Scholar ] 4. Buying safe sexual enhancement products. Government of Canada. https://www.canada.ca/en/health-canada/topics/buying-using-drug-health-products-safely/buying-safe-sexual-enhancement-products.html [ Google Scholar ] 5. Quiet resurgence: Americans coming north to fill prescriptions on the rise again. Canadian Broadcasting Company: Accessed June 5, 2023. https://www.cbc.ca/news/canada/nova-scotia/u-s-canada-prescriptions-border-1.5137350 [ Google Scholar ] 6. Government of Canada. Buying drugs over the Internet. Accessed June 5, 2023. https://www.canada.ca/en/health-canada/services/buying-drugs-over-internet.html 7. Casner PR, Guerra LG. Purchasing prescription medication in Mexico without a prescription. The experience at the border. West J Med. 1992;156(5):512\u2013516 [ PMC free article ] [ PubMed ] [ Google Scholar ] 8. Hsiang WR, Honig S, Leapman MS. Evaluation of online telehealth platforms for treatment of erectile dysfunction. J Urol. 2021;205(2):330\u2013332. 10.1097/JU.0000000000001378 [ DOI ] [ PubMed ] [ Google Scholar ] 9. Schneider D, Loeb CA, Brevik A, El-Khatib F, Jenkins LC, Yafi FA. Contemporary cost-analysis comparison of direct-to-consumer vs. traditional prescriptions of phosphodiesterase-5 inhibitors. Int J Impot Res. 2023;35:460\u2013464. 10.1038/s41443-022-00567-3 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 10. Jesse E, Sellke N, Rivero MJ, et al. Practice comparison and cost analysis of direct-to-consumer telemedicine platforms offering testosterone therapy. J Sex Med. 2022;19(11):1608\u20131615. 10.1016/j.jsxm.2022.03.609 [ DOI ] [ PubMed ] [ Google Scholar ] Associated Data This section collects any data citations, data availability statements, or supplementary materials included in this article. Data Availability Statement The data underlying this article are available in the article and will be shared on reasonable request to the corresponding author. Articles from Sexual Medicine are provided here courtesy of Oxford University Press ACTIONS View on publisher site PDF (212.2 KB) Cite Collections Permalink PERMALINK Copy RESOURCES Similar articles Cited by other articles Links to NCBI Databases Cite Copy Download .nbib .nbib Format: AMA APA MLA NLM Add to Collections Create a new collection Add to an existing collection Name your collection * Choose a collection Unable to load your collection due to an error Please try again Add Cancel Follow NCBI NCBI on X (formerly known as Twitter) NCBI on Facebook NCBI on LinkedIn NCBI on GitHub NCBI RSS feed Connect with NLM NLM on X (formerly known as Twitter) NLM on Facebook NLM on YouTube National Library of Medicine 8600 Rockville Pike Bethesda, MD 20894 Web Policies FOIA HHS Vulnerability Disclosure Help Accessibility Careers NLM NIH HHS USA.gov Back to Top",
+  "text_chars": 23454,
+  "links": [
+    {
+      "href": "#main-content",
+      "text": "Skip to main content",
+      "domain": null,
+      "position": 1
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/",
+      "text": "",
+      "domain": "ncbi.nlm.nih.gov",
+      "position": 2
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/myncbi/",
+      "text": "Dashboard",
+      "domain": "ncbi.nlm.nih.gov",
+      "position": 3
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/",
+      "text": "Publications",
+      "domain": "ncbi.nlm.nih.gov",
+      "position": 4
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/account/settings/",
+      "text": "Account settings",
+      "domain": "ncbi.nlm.nih.gov",
+      "position": 5
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/myncbi/",
+      "text": "Dashboard",
+      "domain": "ncbi.nlm.nih.gov",
+      "position": 6
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/",
+      "text": "Publications",
+      "domain": "ncbi.nlm.nih.gov",
+      "position": 7
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/account/settings/",
+      "text": "Account settings",
+      "domain": "ncbi.nlm.nih.gov",
+      "position": 8
+    },
+    {
+      "href": "/",
+      "text": "",
+      "domain": null,
+      "position": 9
+    },
+    {
+      "href": "/journals/",
+      "text": "Journal List",
+      "domain": null,
+      "position": 10
+    },
+    {
+      "href": "/about/userguide/",
+      "text": "User Guide",
+      "domain": null,
+      "position": 11
+    },
+    {
+      "href": "https://doi.org/10.1093/sexmed/qfad038",
+      "text": "",
+      "domain": "doi.org",
+      "position": 12
+    },
+    {
+      "href": "pdf/qfad038.pdf",
+      "text": "",
+      "domain": "pdf",
+      "position": 13
+    },
+    {
+      "href": "/about/disclaimer/",
+      "text": "PMC Disclaimer",
+      "domain": null,
+      "position": 14
+    },
+    {
+      "href": "/about/copyright/",
+      "text": "PMC Copyright Notice",
+      "domain": null,
+      "position": 15
+    },
+    {
+      "href": "https://doi.org/10.1093/sexmed/qfad038",
+      "text": "10.1093/sexmed/qfad038",
+      "domain": "doi.org",
+      "position": 16
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/search/?term=\"Sex%20Med\"[jour]",
+      "text": "Search in PMC",
+      "domain": "pmc.ncbi.nlm.nih.gov",
+      "position": 17
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=\"Sex%20Med\"[jour]",
+      "text": "Search in PubMed",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 18
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/nlmcatalog?term=\"Sex%20Med\"[Title%20Abbreviation]",
+      "text": "View in NLM Catalog",
+      "domain": "ncbi.nlm.nih.gov",
+      "position": 19
+    },
+    {
+      "href": "?term=\"Sex%20Med\"[jour]",
+      "text": "Add to search",
+      "domain": null,
+      "position": 20
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=\"Brink%20SM\"[Author]",
+      "text": "Sarah M Brink",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 21
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=\"Brink%20SM\"[Author]",
+      "text": "Sarah M Brink",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 22
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=\"Iarajuli%20T\"[Author]",
+      "text": "Teona Iarajuli",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 23
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=\"Iarajuli%20T\"[Author]",
+      "text": "Teona Iarajuli",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 24
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=\"Shin%20D\"[Author]",
+      "text": "David Shin",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 25
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=\"Shin%20D\"[Author]",
+      "text": "David Shin",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 26
+    },
+    {
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "text": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "creativecommons.org",
+      "position": 27
+    },
+    {
+      "href": "/about/copyright/",
+      "text": "PMC Copyright notice",
+      "domain": null,
+      "position": 28
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/37547870/",
+      "text": "37547870",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 29
+    },
+    {
+      "href": "#ref1",
+      "text": "1",
+      "domain": null,
+      "position": 30
+    },
+    {
+      "href": "#ref2",
+      "text": "2",
+      "domain": null,
+      "position": 31
+    },
+    {
+      "href": "#ref3",
+      "text": "3",
+      "domain": null,
+      "position": 32
+    },
+    {
+      "href": "#TB1",
+      "text": "Table 1",
+      "domain": null,
+      "position": 33
+    },
+    {
+      "href": "table/TB1/",
+      "text": "Open in a new tab",
+      "domain": "table",
+      "position": 34
+    },
+    {
+      "href": "#TB2",
+      "text": "Table 2",
+      "domain": null,
+      "position": 35
+    },
+    {
+      "href": "table/TB2/",
+      "text": "Open in a new tab",
+      "domain": "table",
+      "position": 36
+    },
+    {
+      "href": "#ref4",
+      "text": "4",
+      "domain": null,
+      "position": 37
+    },
+    {
+      "href": "#ref5",
+      "text": "5",
+      "domain": null,
+      "position": 38
+    },
+    {
+      "href": "#ref6",
+      "text": "6",
+      "domain": null,
+      "position": 39
+    },
+    {
+      "href": "#ref7",
+      "text": "7",
+      "domain": null,
+      "position": 40
+    },
+    {
+      "href": "#ref8",
+      "text": "8",
+      "domain": null,
+      "position": 41
+    },
+    {
+      "href": "#ref9",
+      "text": "9",
+      "domain": null,
+      "position": 42
+    },
+    {
+      "href": "#ref10",
+      "text": "10",
+      "domain": null,
+      "position": 43
+    },
+    {
+      "href": "#ref2",
+      "text": "2",
+      "domain": null,
+      "position": 44
+    },
+    {
+      "href": "https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html",
+      "text": "https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html",
+      "domain": "hhs.gov",
+      "position": 45
+    },
+    {
+      "href": "https://doi.org/10.2196/21875",
+      "text": "DOI",
+      "domain": "doi.org",
+      "position": 46
+    },
+    {
+      "href": "/articles/PMC7647472/",
+      "text": "PMC free article",
+      "domain": null,
+      "position": 47
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/33031047/",
+      "text": "PubMed",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 48
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=J%20Med%20Internet%20Res&title=Telemedicine%20usage%20among%20urologists%20during%20the%20COVID-19%20pandemic:%20cross-sectional%20study&volume=22&issue=11&publication_year=2020&pages=e21875&pmid=33031047&doi=10.2196/21875&",
+      "text": "Google Scholar",
+      "domain": "scholar.google.com",
+      "position": 49
+    },
+    {
+      "href": "https://doi.org/10.1016/j.esxm.2020.04.001",
+      "text": "DOI",
+      "domain": "doi.org",
+      "position": 50
+    },
+    {
+      "href": "/articles/PMC7471089/",
+      "text": "PMC free article",
+      "domain": null,
+      "position": 51
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/32434669/",
+      "text": "PubMed",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 52
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=Sex%20Med&title=Epidemiology%20and%20treatment%20barriers%20of%20patients%20with%20erectile%20dysfunction%20using%20an%20online%20prescription%20platform:%20a%20cross-sectional%20study&volume=8&issue=3&publication_year=2020&pages=370-377&pmid=32434669&doi=10.1016/j.esxm.2020.04.001&",
+      "text": "Google Scholar",
+      "domain": "scholar.google.com",
+      "position": 53
+    },
+    {
+      "href": "https://doi.org/10.1016/j.amjmed.2006.06.010",
+      "text": "DOI",
+      "domain": "doi.org",
+      "position": 54
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/17275456/",
+      "text": "PubMed",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 55
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=JAMA&title=Prevalence%20and%20risk%20factors%20for%20erectile%20dysfunction%20in%20the%20US&volume=120&issue=2&publication_year=2007&pages=151-157&pmid=17275456&doi=10.1016/j.amjmed.2006.06.010&",
+      "text": "Google Scholar",
+      "domain": "scholar.google.com",
+      "position": 56
+    },
+    {
+      "href": "https://www.canada.ca/en/health-canada/topics/buying-using-drug-health-products-safely/buying-safe-sexual-enhancement-products.html",
+      "text": "https://www.canada.ca/en/health-canada/topics/buying-using-drug-health-products-safely/buying-safe-sexual-enhancement-products.html",
+      "domain": "canada.ca",
+      "position": 57
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?title=Buying%20safe%20sexual%20enhancement%20products&",
+      "text": "Google Scholar",
+      "domain": "scholar.google.com",
+      "position": 58
+    },
+    {
+      "href": "https://www.cbc.ca/news/canada/nova-scotia/u-s-canada-prescriptions-border-1.5137350",
+      "text": "https://www.cbc.ca/news/canada/nova-scotia/u-s-canada-prescriptions-border-1.5137350",
+      "domain": "cbc.ca",
+      "position": 59
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?title=Quiet%20resurgence:%20Americans%20coming%20north%20to%20fill%20prescriptions%20on%20the%20rise%20again&",
+      "text": "Google Scholar",
+      "domain": "scholar.google.com",
+      "position": 60
+    },
+    {
+      "href": "https://www.canada.ca/en/health-canada/services/buying-drugs-over-internet.html",
+      "text": "https://www.canada.ca/en/health-canada/services/buying-drugs-over-internet.html",
+      "domain": "canada.ca",
+      "position": 61
+    },
+    {
+      "href": "/articles/PMC1003314/",
+      "text": "PMC free article",
+      "domain": null,
+      "position": 62
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/1595276/",
+      "text": "PubMed",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 63
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=West%20J%20Med&title=Purchasing%20prescription%20medication%20in%20Mexico%20without%20a%20prescription.%20The%20experience%20at%20the%20border&volume=156&issue=5&publication_year=1992&pages=512-516&pmid=1595276&",
+      "text": "Google Scholar",
+      "domain": "scholar.google.com",
+      "position": 64
+    },
+    {
+      "href": "https://doi.org/10.1097/JU.0000000000001378",
+      "text": "DOI",
+      "domain": "doi.org",
+      "position": 65
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/32945730/",
+      "text": "PubMed",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 66
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=J%20Urol&title=Evaluation%20of%20online%20telehealth%20platforms%20for%20treatment%20of%20erectile%20dysfunction&volume=205&issue=2&publication_year=2021&pages=330-332&pmid=32945730&doi=10.1097/JU.0000000000001378&",
+      "text": "Google Scholar",
+      "domain": "scholar.google.com",
+      "position": 67
+    },
+    {
+      "href": "https://doi.org/10.1038/s41443-022-00567-3",
+      "text": "DOI",
+      "domain": "doi.org",
+      "position": 68
+    },
+    {
+      "href": "/articles/PMC8994416/",
+      "text": "PMC free article",
+      "domain": null,
+      "position": 69
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/35397646/",
+      "text": "PubMed",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 70
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=Int%20J%20Impot%20Res&title=Contemporary%20cost-analysis%20comparison%20of%20direct-to-consumer%20vs.%20traditional%20prescriptions%20of%20phosphodiesterase-5%20inhibitors&volume=35&publication_year=2023&pages=460-464&pmid=35397646&doi=10.1038/s41443-022-00567-3&",
+      "text": "Google Scholar",
+      "domain": "scholar.google.com",
+      "position": 71
+    },
+    {
+      "href": "https://doi.org/10.1016/j.jsxm.2022.03.609",
+      "text": "DOI",
+      "domain": "doi.org",
+      "position": 72
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/35690575/",
+      "text": "PubMed",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "position": 73
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=J%20Sex%20Med&title=Practice%20comparison%20and%20cost%20analysis%20of%20direct-to-consumer%20telemedicine%20platforms%20offering%20testosterone%20therapy&volume=19&issue=11&publication_year=2022&pages=1608-1615&pmid=35690575&doi=10.1016/j.jsxm.2022.03.609&",
+      "text": "Google Scholar",
+      "domain": "scholar.google.com",
+      "position": 74
+    },
+    {
+      "href": "https://doi.org/10.1093/sexmed/qfad038",
+      "text": "View on publisher site",
+      "domain": "doi.org",
+      "position": 75
+    },
+    {
+      "href": "pdf/qfad038.pdf",
+      "text": "PDF (212.2 KB)",
+      "domain": "pdf",
+      "position": 76
+    },
+    {
+      "href": "#",
+      "text": "Download .nbib .nbib",
+      "domain": null,
+      "position": 77
+    },
+    {
+      "href": "#",
+      "text": "Please try again",
+      "domain": null,
+      "position": 78
+    },
+    {
+      "href": "https://twitter.com/ncbi",
+      "text": "NCBI on X (formerly known as Twitter)",
+      "domain": "twitter.com",
+      "position": 79
+    },
+    {
+      "href": "https://www.facebook.com/ncbi.nlm",
+      "text": "NCBI on Facebook",
+      "domain": "facebook.com",
+      "position": 80
+    },
+    {
+      "href": "https://www.linkedin.com/company/ncbinlm",
+      "text": "NCBI on LinkedIn",
+      "domain": "linkedin.com",
+      "position": 81
+    },
+    {
+      "href": "https://github.com/ncbi",
+      "text": "NCBI on GitHub",
+      "domain": "github.com",
+      "position": 82
+    },
+    {
+      "href": "https://ncbiinsights.ncbi.nlm.nih.gov/",
+      "text": "NCBI RSS feed",
+      "domain": "ncbiinsights.ncbi.nlm.nih.gov",
+      "position": 83
+    },
+    {
+      "href": "https://twitter.com/nlm_nih",
+      "text": "NLM on X (formerly known as Twitter)",
+      "domain": "twitter.com",
+      "position": 84
+    },
+    {
+      "href": "https://www.facebook.com/nationallibraryofmedicine",
+      "text": "NLM on Facebook",
+      "domain": "facebook.com",
+      "position": 85
+    },
+    {
+      "href": "https://www.youtube.com/user/NLMNIH",
+      "text": "NLM on YouTube",
+      "domain": "youtube.com",
+      "position": 86
+    },
+    {
+      "href": "https://www.google.com/maps/place/8600+Rockville+Pike,+Bethesda,+MD+20894/%4038.9959508,\n            -77.101021,17z/data%3D!3m1!4b1!4m5!3m4!1s0x89b7c95e25765ddb%3A0x19156f88b27635b8!8m2!3d38.9959508!\n            4d-77.0988323",
+      "text": "National Library of Medicine 8600 Rockville Pike Bethesda, MD 20894",
+      "domain": "google.com",
+      "position": 87
+    },
+    {
+      "href": "https://www.nlm.nih.gov/web_policies.html",
+      "text": "Web Policies",
+      "domain": "nlm.nih.gov",
+      "position": 88
+    },
+    {
+      "href": "https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office",
+      "text": "FOIA",
+      "domain": "nih.gov",
+      "position": 89
+    },
+    {
+      "href": "https://www.hhs.gov/vulnerability-disclosure-policy/index.html",
+      "text": "HHS Vulnerability Disclosure",
+      "domain": "hhs.gov",
+      "position": 90
+    },
+    {
+      "href": "https://support.nlm.nih.gov/",
+      "text": "Help",
+      "domain": "support.nlm.nih.gov",
+      "position": 91
+    },
+    {
+      "href": "https://www.nlm.nih.gov/accessibility.html",
+      "text": "Accessibility",
+      "domain": "nlm.nih.gov",
+      "position": 92
+    },
+    {
+      "href": "https://www.nlm.nih.gov/careers/careers.html",
+      "text": "Careers",
+      "domain": "nlm.nih.gov",
+      "position": 93
+    },
+    {
+      "href": "https://www.nlm.nih.gov/",
+      "text": "NLM",
+      "domain": "nlm.nih.gov",
+      "position": 94
+    },
+    {
+      "href": "https://www.nih.gov/",
+      "text": "NIH",
+      "domain": "nih.gov",
+      "position": 95
+    },
+    {
+      "href": "https://www.hhs.gov/",
+      "text": "HHS",
+      "domain": "hhs.gov",
+      "position": 96
+    },
+    {
+      "href": "https://www.usa.gov/",
+      "text": "USA.gov",
+      "domain": "usa.gov",
+      "position": 97
+    }
+  ],
+  "link_count": 97
+}

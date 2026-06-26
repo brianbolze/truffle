@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:56Z",
+  "ok": true,
+  "input": {
+    "domain": "superpower.com",
+    "url": "https://superpower.com/"
+  },
+  "status": 200,
+  "final_url": "https://superpower.com/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "Superpower",
+  "description": "Take control of your health. A Superpower membership includes 100+ biomarker lab tests at the start of each year\u2014no hidden fees, HSA/FSA eligible\u2014a 24/7 care team in your pocket, and a health plan that evolves with you.",
+  "text_excerpt": "Superpower $20 off Superpower Membership Get started What we test Reviews FAQs Log in Become a member Menu Log in Be a member Explore What we test How it works FAQ Reviews About Gift health Compare vs Function Health vs Mito Health vs InsideTracker Company Blog For Teams Careers Superpower Labs HSA/ FSA eligible Get better at being healthy, every year 100+ biomarkers. A plan built around you. Everything you need to act on it. Become a member Loading... See what we test Loading... Whole body check Detect 1,000+ conditions Accessible Starts at $199/year Trusted 1M biomarkers tested Built by the world\u2019s top doctors and scientists How it works It starts with an advanced health check, then so much more. 1 Test your baseline One simple blood draw to measure 100+ biomarkers. 2 Results explained Get a complete picture of your health data in one secure location. 3 Build your protocol AI builds evidence-backed protocols, informed by your data. 4 Access everything Take action, access everything you need, then retest. You\u2019re in control. Become a member Loading... Every membership starts with 100+ biomarkers A full body test with a quick 10-min lab draw to get started. Test at 2,000+ Quest locations or at-home. All your health data, in one place Upload past labs and sync your wearables (Oura, Whoop, Apple Health and more). Connect the dots across all your data and spot trends early. Get a personalized health protocol A clinician-grade action plan after every test with insight on exactly what to do next (lifestyle, diet, supplements). Message your private care team 24/7 A private care-team in your pocket at all times for any health questions or concerns How is Superpower better than a standard physical? What biomarkers do you test? What locations do you test at? How does Superpower use my data? How safe and secure is my data? How do we turn labs into a personalized protocol? How is Superpower\u2019s action plan better than others? Who do I speak to when I have questions? Isn\u2019t this just another AI chatbot? A new health check 01 All your health data 02 Your action plan 03 24/7 care team 04 Your membership includes so much more. What could cost $10,000 is now $199 100+ biomarker test Detect early signs of 1,000+ conditions Health data upload Upload external bloodwork reports Biological age Personalized protocol Diet, lifestyle and supplements Wearable connection Link Apple Health, Whoop, OURA, etc. Advanced AI chat With context on your health 24/7 access to care team Ask quest"
+}

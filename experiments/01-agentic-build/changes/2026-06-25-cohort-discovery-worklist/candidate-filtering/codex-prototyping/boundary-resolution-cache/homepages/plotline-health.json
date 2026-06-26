@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:50Z",
+  "ok": true,
+  "input": {
+    "domain": "plotline.health",
+    "url": "https://plotline.health/"
+  },
+  "status": 200,
+  "final_url": "https://www.plotline.health/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "Plotline | Concierge Healthcare That Actually Cares",
+  "description": "Proactive concierge healthcare that combines prevention, longevity medicine, and personalized care. A more human approach to lifelong wellbeing.",
+  "text_excerpt": "Plotline | Concierge Healthcare That Actually Cares Concierge Services For Companies About Us News Client Login Get Started Client Login Get Started Concierge Preventive Medicine with Metabolic and Heart Health, Whole-Body MRI, Genetic Testing, and Personalized Longevity Care Healthcare that actually cares Plotline is a healthcare practice that combines medical expertise and personalized, proactive guidance for lifelong wellness. Our Healthcare System is Unhealthy In a world of reactive medicine and overwhelming health information, we're charting a different path. We combine cutting-edge medicine with deeply personal care to help you live well, your whole life long. From Overwhelming to Optimized In the age of limitless information, healthcare is overwhelming. Why is your blood pressure high? Is fish oil good or bad? Should you take that statin? We\u2019re here to guide you on a simplified, personalized, data-driven path towards the life you want \u2014 the straightforward path to optimal wellness. From Detached to Personal How can your doctor help you if they don't know you? We believe in integrating health and care \u2014 your genetic blueprint and your goals, your lab results and your story, your treatment plan and your lifestyle \u2014 to map your path to a long and healthy life. From Disease Care to Healthcare Our healthcare system is reactive at best \u2013 designed to manage disease and keep you coming back. We think you deserve better. Our comprehensive approach combines advanced diagnostics, personalized treatment plans, and ongoing support to help you achieve true, sustainable wellness. Concierge Services Get the Whole Picture of Your Health Navigate your health with confidence. We'll turn your unique biological data into clear, actionable steps towards optimal wellbeing. Our physician-led consultations transcend traditional healthcare by focusing on health span optimization rather than disease management. Through comprehensive intake evaluations, meticulous review of your health history, and follow-up appointments, we partner with you to identify and address the root causes of potential health decline decades before symptoms manifest. Physician Consultation We deploy cutting-edge diagnostic technologies to create an unprecedented view into your current and future health trajectory. Our comprehensive screening protocol\u2014from advanced genetic testing that reveals your predisposition to major diseases, to coronary CT angiography that detects early arterial changes, to whole"
+}

@@ -1,0 +1,158 @@
+{
+  "captured_at": "2026-06-26T03:37:07Z",
+  "source": "direct_http_fetch_plus_firecrawl_fallback",
+  "page_count": 15,
+  "ok_count": 15,
+  "rows": [
+    {
+      "id": "telehealth-policy-lab-hrt",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/telehealth-policy-lab-hrt.json",
+      "text_chars": 48750,
+      "link_count": 141,
+      "fallback": null
+    },
+    {
+      "id": "telehealth-flowspace-menopause",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/telehealth-flowspace-menopause.json",
+      "text_chars": 18096,
+      "link_count": 249,
+      "fallback": null
+    },
+    {
+      "id": "telehealth-forbes-glp1",
+      "ok": true,
+      "status": 200,
+      "source": "firecrawl_scrape",
+      "path": "receipts/raw/page-extraction/pages/telehealth-forbes-glp1.json",
+      "text_chars": 105611,
+      "link_count": 496,
+      "fallback": "firecrawl_scrape"
+    },
+    {
+      "id": "telehealth-usnews-glp1",
+      "ok": true,
+      "status": 200,
+      "source": "firecrawl_scrape",
+      "path": "receipts/raw/page-extraction/pages/telehealth-usnews-glp1.json",
+      "text_chars": 45565,
+      "link_count": 189,
+      "fallback": "firecrawl_scrape"
+    },
+    {
+      "id": "telehealth-policy-lab-trt",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/telehealth-policy-lab-trt.json",
+      "text_chars": 56664,
+      "link_count": 118,
+      "fallback": null
+    },
+    {
+      "id": "telehealth-innerbody-trt",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/telehealth-innerbody-trt.json",
+      "text_chars": 59742,
+      "link_count": 315,
+      "fallback": null
+    },
+    {
+      "id": "telehealth-trtnation-trt",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/telehealth-trtnation-trt.json",
+      "text_chars": 16242,
+      "link_count": 67,
+      "fallback": null
+    },
+    {
+      "id": "telehealth-telyrx-ed",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/telehealth-telyrx-ed.json",
+      "text_chars": 18402,
+      "link_count": 67,
+      "fallback": null
+    },
+    {
+      "id": "telehealth-pmc-ed-dtc",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/telehealth-pmc-ed-dtc.json",
+      "text_chars": 23454,
+      "link_count": 97,
+      "fallback": null
+    },
+    {
+      "id": "telehealth-years-longevity",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/telehealth-years-longevity.json",
+      "text_chars": 16740,
+      "link_count": 64,
+      "fallback": null
+    },
+    {
+      "id": "telehealth-empirical-function-alternatives",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/telehealth-empirical-function-alternatives.json",
+      "text_chars": 6776,
+      "link_count": 55,
+      "fallback": null
+    },
+    {
+      "id": "ci-zapier-meeting-assistants",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/ci-zapier-meeting-assistants.json",
+      "text_chars": 38606,
+      "link_count": 368,
+      "fallback": null
+    },
+    {
+      "id": "ci-readai-meeting-assistants",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/ci-readai-meeting-assistants.json",
+      "text_chars": 20407,
+      "link_count": 135,
+      "fallback": null
+    },
+    {
+      "id": "ci-salesforce-gong-alternatives",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/ci-salesforce-gong-alternatives.json",
+      "text_chars": 15627,
+      "link_count": 46,
+      "fallback": null
+    },
+    {
+      "id": "ci-tana-otter-alternatives",
+      "ok": true,
+      "status": 200,
+      "source": "direct_http_fetch",
+      "path": "receipts/raw/page-extraction/pages/ci-tana-otter-alternatives.json",
+      "text_chars": 14514,
+      "link_count": 33,
+      "fallback": null
+    }
+  ]
+}

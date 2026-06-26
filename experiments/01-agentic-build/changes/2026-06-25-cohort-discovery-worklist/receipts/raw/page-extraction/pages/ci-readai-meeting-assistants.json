@@ -1,0 +1,838 @@
+{
+  "tool": "page_extraction_probe",
+  "source": "direct_http_fetch",
+  "captured_at": "2026-06-26T03:34:27Z",
+  "ok": true,
+  "input": {
+    "id": "ci-readai-meeting-assistants",
+    "cohort": "conversation_intelligence",
+    "facet": "meeting_notes",
+    "rank": 1,
+    "url": "https://www.read.ai/articles/best-ai-meeting-assistants"
+  },
+  "schema_drift": [],
+  "cost": {
+    "credits": 0,
+    "usd": 0
+  },
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "error": null,
+  "raw_html_path": "receipts/raw/page-extraction/html/ci-readai-meeting-assistants.html",
+  "title": "9 Best AI Meeting Assistants in 2026",
+  "text": "9 Best AI Meeting Assistants in 2026 Product Meetings Meeting Reports Summary & Transcription Assistant Real-Time Meeting Notes Playback Personal AI Digital Twin Enterprise Workspaces Apps & Integrations Integrations All Google Meet Microsoft Teams Zoom HubSpot Salesforce Atlassian Notion Asana Slack Apps Read AI for Android Read AI for iPhone Read AI for MacOS Read AI for Windows Read AI Extension Workflows MCP API Claude ChatGPT Ask Read Overview Multiplayer Use Cases FAQs Pricing Plans & Pricing Contact Us About About Read Resources Account & Privacy Center Privacy Blog Careers Support Book a Demo Login Try for free! en English Espa\u00f1ol Italiano Portugu\u00eas Fran\u00e7ais \u65e5\u672c\u8a9e \u0939\u093f\u0928\u094d\u0926\u0940 \u0420\u0443\u0441\u0441\u043a\u0438\u0439 Deutsch \u4e2d\u6587 English English Espa\u00f1ol Italiano Portugu\u00eas Fran\u00e7ais \u65e5\u672c\u8a9e \u0939\u093f\u0928\u094d\u0926\u0940 \u0420\u0443\u0441\u0441\u043a\u0438\u0439 Deutsch \u4e2d\u6587 9 Best AI Meeting Assistants in 2026 Compare AI meeting assistants that connect information across channels vs. tools that just capture meetings. Find the right fit for your team in 2026. Meetings are the crux of workplace collaboration. But too often, the context, decisions, and insights disappear into faulty memory systems and scattered notes before the details can be centralized and shared. AI meeting assistants solve this by capturing what happens automatically, so you can focus on the conversation instead of documentation. The best ones go further, connecting meeting content to your emails, messages, and documents so you see the full picture wherever you need it and get proactive support based on insights from the shared context across your interactions. This guide compares the leading AI meeting assistants based on what actually matters: accuracy, integrations, and whether they help you find answers weeks later when you need them. TL;DR AI meeting assistants range from basic transcription to cross-channel platforms that connect meetings with emails, messages, and documents The best tools don't just take meeting notes. They surface insights proactively and track action items through completion Read AI leads this category, connecting meetings with emails, Slack, messages, cloud storage, and project tools into one searchable personal knowledge graph The 9 Best AI Meeting Assistants The tools below range from cross-channel AI assistants that connect meetings to your broader workflow, to focused transcription tools, to specialized sales intelligence platforms. We've organized them by capability depth, starting with tools that synthesize information across channels and moving toward more specialized use cases. 1. Read AI Read AI is an industry-leading notetaker and AI assistant that integrates your meeting details into your broader work context so that you can get proactive support and move faster through your work every day. While other assistants stop at transcription and summaries, Read AI links meeting content to related emails, messages, and project management activities, building what becomes your personal knowledge graph. What Read AI does well: Read AI\u2019s enterprise search provides unified search across meetings, emails, messages, and documents. You can search \"Q2 launch timeline\" and get relevant content from all channels in one view. No more searching Microsoft Teams, Slack, then email, then meeting transcripts separately. The system recognizes that project decisions happen across multiple interaction types, not just in the meeting room, and it offers proactive recommendations so nothing falls through the cracks. Read AI tracks action items across channels, through completion, recognizing when follow-up interactions resolve meeting tasks. When you email a client with promised information or update a Jira ticket based on a meeting decision, the system automatically links those actions. This means that everything that follows is always up to date and can proactively support your deal pipeline with all the information and insights. Monday Briefing and proactive Recommendations deliver insights when you need them and proactively. Instead of spending your first hour Monday morning reconstructing what happened last week, you receive briefings connecting previous meeting discussions, related email threads, and open action items automatically. Speaker Coach provides real-time feedback on communication patterns during meetings. Meeting scores help evaluate which meetings add value before accepting invites or scheduling follow-ups, so you can protect time for focused work. The Topics tool surfaces and organizes the most important themes from your work without manual tagging. The results speak for themselves: Read AI users attend 20% fewer meetings, with 33% fewer attendees per meeting. Enterprise search saves 20 hours per month, and it takes less than 5 minutes to set up. The platform works with 20+ integrations , including Slack, Jira, Salesforce, Notion, and Outlook. Read AI also provides insurance on intelligence by ensuring that project context survives turnover, and that new team members can get up to speed by searching past interactions. The context and reasoning behind decisions remain discoverable months or years later. Read AI is also available on every platform (web, app, Android, iOS) and can record, whether you're having an IRL meeting or a virtual/hybrid meeting. It also offers both bot and bot-free experiences and provides notifications to ensure compliance with consent requirements. Where it fits: Teams and individuals who want meeting notes and also need help remembering and connecting the details from scattered sources. Sales professionals who want meeting insights connected to CRMs such as Salesforce and HubSpot, through the CRM Copilot feature that provides deal risk assessment and moves deals through the funnel faster. Project managers handling cross-functional teams with multiple tools. Distributed teams where decisions happen across time zones and channels. Organizations in healthcare, financial services, and other regulated industries that need cross-channel intelligence with SOC 2 Type 2 certification and HIPAA compliance. The limitation: Read AI is built for cross-channel intelligence, so teams who only need basic transcription for occasional meetings may find more capability than they need. Pricing: Free tier available with up to 5 meetings per month. Pro plans start at $19.75/user/month. Enterprise plans from $29.75/user/month with advanced admin controls. 2. Fireflies.ai Fireflies.ai is a transcription-first AI notetaker that focuses on universal compatibility across Zoom, Google Meet, Teams, Webex, and other platforms. With 50+ integrations, it feeds meeting data into CRM and project management systems. What it does well: Consistent transcription across multiple meeting platforms. Strong automation for CRM-driven processes, particularly Salesforce and HubSpot workflows. The limitation: Fireflies captures meetings universally and distributes data to downstream systems, but it focuses on data export rather than synthesis. Meeting content is captured in other systems, but doesn't link to related Slack or Microsoft Teams interactions or email threads. You still need to piece together context manually when decisions span multiple channels. Where it fits: Teams that primarily need CRM automation and can live without cross-channel context. Pricing: Free tier includes 800 minutes of storage. Paid plans from $10-19/user/month. Read our full Fireflies vs Read AI comparison. 3. Otter.ai Otter.ai is a transcription tool that emphasizes conversational search, letting you ask questions about meeting content rather than reading through full transcripts. What it does well: Conversational interface for extracting information from transcripts. Supports Zoom, Google Meet, and Microsoft Teams. The limitation: Otter offers enhanced capture with sophisticated retrieval, but only for meeting content. It doesn't synthesize information across email, Slack, Teams, or project management tools. While Otter is one of the first AI notetakers to hit the market, it has fallen behind in innovation. Where it fits: Individuals or small teams focused on meeting transcription who don't need cross-channel search. Pricing: Free tier offers 300 minutes monthly. Paid plans from $8.33/user/month. See our detailed Read AI vs Otter AI comparison. 4. Fellow Fellow is a meeting management platform that positions security and compliance as core differentiators, combining agenda creation and action item tracking with enterprise-grade controls. What it does well: Collaborative agenda creation where team members input their sections before meetings start. Meeting templates for a consistent structure across recurring meetings. Action items are shared with all attendees immediately when meetings end. It also has a clean Google Calendar and Meet integration with a minimal learning curve. The limitation: Fellow provides secure, compliant capture with broad integrations, but data exports to other systems rather than synthesizing cross-channel context. For project managers who need to connect meeting decisions with work happening in Slack and email, this remains a manual process. Where it fits: Compliance-driven organizations in healthcare, financial services, or other regulated industries where security requirements outweigh cross-channel functionality. Pricing: Free plans offer 5 AI recordings per user. Paid team plans from $7/user/month. 5. Gong Gong provides conversation analytics optimized for revenue teams, with automated transcription, objection tracking, engagement pattern analysis, and CRM automation. What it does well: Real-time coaching during sales calls. Automated CRM population. Deal tracking and competitive analysis. The limitation: Gong excels at sales-specific insights but doesn't connect with the broader work context. It's purpose-built for revenue operations, so other teams might not find it as helpful. Also, feature bloat makes it hard to use for teams who prefer an intuitive experience. Where it fits: Sales organizations focused on revenue intelligence. Pricing: Starts from $18+/user/month. Enterprise pricing can reach $1,600+/user/year. 6. Fathom Fathom is a sales-focused meeting assistant positioned as a budget-friendly alternative to Gong, with one of the most generous free plans in the market. What it does well: Unlimited recordings and storage on the free tier. HubSpot and Salesforce integration for automatic deal updates. Deal view summarizes insights across multiple calls with the same prospect. The limitation: AI features are capped at five meetings/month on the free plan. No mobile app. Visible bot joining meetings may feel intrusive in some contexts. Where it fits: Sales teams who want Gong-like CRM automation without enterprise pricing. Pricing: Free with unlimited recordings. Premium $16/month. Team $14/user/month. Business $20/user/month. See our in-depth Read AI vs Fathom comparison. 7. Granola Granola is a desktop-based meeting notetaker that captures audio from your device without sending a visible bot into the meeting, then enhances your manual notes with AI context. What it does well: Desktop-based recording avoids \"Granola is joining\" notifications. The quiet model lets you take notes while AI fills in details from the transcript. Popular with VCs and consultants who want to capture without visible bots and who don\u2019t need to collaborate with larger teams. The limitation: Requires Google Workspace. No audio/video playback, only enhanced notes. Free plan limits history to 14 days. Also, recording without notifying the others or getting their consent is illegal in several states. Also, if the others on the call don\u2019t know you are recording, you can\u2019t leverage insights from the call or share such insights with them. Where it fits: Users who don\u2019t want or can\u2019t have a bot be visibly present in their meetings Pricing: Free with limited meeting history. Pro $14/user/month with unlimited notes and history. Business/Enterprise at $35 per user per month. 8. tl;dv tl;dv emphasizes multi-meeting intelligence, analyzing patterns across conversations rather than just capturing individual calls. What it does well: Unlimited free recordings for Zoom and Google Meet. Multi-meeting reports extract patterns across conversations. Clip creation for sharing key moments. Supports 30+ languages. The limitation: Business plan ($59/user/month) is a steep jump from Pro ($18), primarily for coaching features. Teams support requires a paid plan. Where it fits: Teams who want to analyze patterns across many customer conversations with generous free transcription. Pricing: Free with unlimited meetings, but 10 meeting notes. Pro at $26/user/month with unlimited meeting notes and more. Business at $52/user/month and custom enterprise plans. 9. Avoma Avoma is an end-to-end meeting lifecycle platform built for sales and customer success, covering scheduling through post-meeting analysis. What it does well: AI scorecards track adherence to sales methodology (MEDDIC, SPICED, BANT). It also provides talk pattern analysis for coaching ane automatic CRM field updates and deal risk assessment on higher tiers. The limitation: Deep but narrow, it\u2019s built for revenue teams, not general-purpose notes. No free tier, only a 14-day trial. Where it fits: B2B sales teams that want conversation intelligence and methodology tracking alongside meeting capture. Pricing: Startup at $19/recorder seat/month. Organization at $29/recorder seat/ month. Enterprise at $39/recorder seat/ month. How to Select The Right Tool for Your Needs A good AI meeting assistant helps teams be more efficient and reduces the time they spend on calls. For example, Read AI users attend 20% fewer meetings on average. Research also shows that productivity increases 71% when companies reduce meetings by 40%. But the larger productivity gain comes from connecting meeting decisions to related work across channels, so you stop manually reconstructing context. If scattered information is your challenge, prioritize tools that connect interactions across channels rather than just capturing individual meetings. Read AI's enterprise search creates a personal knowledge graph that makes it easier to track projects and find key information, no matter where it lives. If CRM data entry is your primary challenge, Read AI's Sales AGI automates deal updates and provides pipeline insights for Salesforce and HubSpot users. For teams that also need outbound sequencing, dedicated sales engagement platforms handle that specific workflow. If security and compliance drive your decision, SOC 2 Type II represents the baseline. Read AI is SOC 2 Type II-certified and HIPAA compliant , matching or exceeding competitors on security while providing the cross-channel synthesis others lack. When evaluating AI meeting assistants, also pay attention to: How tools connect to your existing systems matters, not just feature lists. Standalone tools that don't synthesize information across your workflow create new silos regardless of transcription quality. Many standalone tools don\u2019t have the future compatibility needed to let teams leverage whatever new AI capabilities come next. Security and compliance. Verify compliance requirements before selecting a tool in regulated industries. Pilot programs. Test with genuine workflows rather than staged evaluations. The most successful implementations integrate with existing tools and interaction patterns rather than demanding that teams adopt entirely new working methods. The right meeting assistant makes meeting content part of your connected work environment, not another system requiring a separate search. Ready to stop reconstructing context from scattered sources? Try Read AI for free and see how much time your team saves when meeting information connects with how you actually work. FAQs About AI Meeting Assistants What\u2019s the difference between an AI meeting assistant and a meeting notetaker? A meeting notetaker transcribes and summarizes individual meetings. When the meeting ends, its job is done. An AI meeting assistant goes further: it connects meeting content to emails, messages, and documents, surfaces insights proactively, and builds a personal knowledge graph you can search across all your interactions. The distinction matters because isolated transcripts still require manual effort to link decisions to follow-up actions across channels. Do AI meeting assistants work across different video platforms? Universal compatibility varies. Some platforms support multiple video systems ( Zoom , Google Meet , Teams , and others) with consistent transcription. Read AI works natively with all major platforms and adds the cross-channel context that platform-specific tools lack. What security requirements matter for AI meeting assistants? SOC 2 Type II certification represents the baseline for enterprise tools. Healthcare organizations require HIPAA compliance with signed Business Associate Agreements. Read AI meets all these requirements while providing capabilities that compliance-focused-only tools lack. Can AI meeting assistants actually reduce meeting time? Yes. Read AI users attend 20% fewer meetings with 33% fewer attendees per meeting. Tools that capture meetings well allow team members to catch up asynchronously rather than attending every call. The larger productivity gain comes from connecting meeting decisions to related work, so context stays accessible without scheduling follow-up meetings. When meeting information integrates with existing systems rather than remaining isolated, teams spend less time in coordination meetings and more time on strategic work. Disclaimer : Tools evolve quickly. Features described here reflect capabilities at time of writing. Verify current feature sets on each vendor's website before making decisions. \u200d Related Resources for You Search Copilot Search Copilot Tips for Writing Successful Prompts Read article Copilot Everywhere Read empowers individuals and teams to seamlessly integrate AI assistance across platforms like Gmail, Zoom, Slack, and thousands of other applications you use every day. Get Started Product Meetings Digital Twin Ask Read Agents Messaging Email Messaging Email Pricing Privacy Features Summary & Transcription Assistant Integrations Workspaces Real-Time Meeting Notes Playback For You Speaker Coach File Uploads Recommendations Platforms Zoom Google Teams Outlook Slack iOS Android Windows MacOS ChatGPT Claude MCP API Company About Us Blog Press Careers Support Support Status Page Privacy Policy Terms of Service Contact Us \u00a9 2025 Read AI, Inc. Do not sell my personal information Your Privacy Choices What\u2019s the difference between an AI meeting assistant and a meeting notetaker? A meeting notetaker transcribes and summarizes individual meetings. When the meeting ends, its job is done. An AI meeting assistant goes further: it connects meeting content to emails, messages, and documents, surfaces insights proactively, and builds a personal knowledge graph you can search across all your interactions. The distinction matters because isolated transcripts still require manual effort to link decisions to follow-up actions across channels. Do AI meeting assistants work across different video platforms? Universal compatibility varies. Some platforms support multiple video systems ( Zoom , Google Meet , Teams , and others) with consistent transcription. Read AI works natively with all major platforms and adds the cross-channel context that platform-specific tools lack. What security requirements matter for AI meeting assistants? SOC 2 Type II certification represents the baseline for enterprise tools. Healthcare organizations require HIPAA compliance with signed Business Associate Agreements. Read AI meets all these requirements while providing capabilities that compliance-focused-only tools lack. Can AI meeting assistants actually reduce meeting time? Yes. Read AI users attend 20% fewer meetings with 33% fewer attendees per meeting. Tools that capture meetings well allow team members to catch up asynchronously rather than attending every call. The larger productivity gain comes from connecting meeting decisions to related work, so context stays accessible without scheduling follow-up meetings. When meeting information integrates with existing systems rather than remaining isolated, teams spend less time in coordination meetings and more time on strategic work.",
+  "text_chars": 20407,
+  "links": [
+    {
+      "href": "/?r=0",
+      "text": "",
+      "domain": null,
+      "position": 1
+    },
+    {
+      "href": "/meeting-reports",
+      "text": "Meeting Reports",
+      "domain": null,
+      "position": 2
+    },
+    {
+      "href": "/transcription",
+      "text": "Summary & Transcription",
+      "domain": null,
+      "position": 3
+    },
+    {
+      "href": "/assistant",
+      "text": "Assistant",
+      "domain": null,
+      "position": 4
+    },
+    {
+      "href": "/meeting-tools",
+      "text": "Real-Time Meeting Notes",
+      "domain": null,
+      "position": 5
+    },
+    {
+      "href": "/playback",
+      "text": "Playback",
+      "domain": null,
+      "position": 6
+    },
+    {
+      "href": "/digital-twin",
+      "text": "Digital Twin",
+      "domain": null,
+      "position": 7
+    },
+    {
+      "href": "/workspaces",
+      "text": "Workspaces",
+      "domain": null,
+      "position": 8
+    },
+    {
+      "href": "/integrations",
+      "text": "All",
+      "domain": null,
+      "position": 9
+    },
+    {
+      "href": "/google",
+      "text": "Google Meet",
+      "domain": null,
+      "position": 10
+    },
+    {
+      "href": "/microsoft",
+      "text": "Microsoft Teams",
+      "domain": null,
+      "position": 11
+    },
+    {
+      "href": "/zoom",
+      "text": "Zoom",
+      "domain": null,
+      "position": 12
+    },
+    {
+      "href": "/integrations/hubspot",
+      "text": "HubSpot",
+      "domain": null,
+      "position": 13
+    },
+    {
+      "href": "/integrations/salesforce",
+      "text": "Salesforce",
+      "domain": null,
+      "position": 14
+    },
+    {
+      "href": "/integrations/atlassian",
+      "text": "Atlassian",
+      "domain": null,
+      "position": 15
+    },
+    {
+      "href": "/integrations/notion",
+      "text": "Notion",
+      "domain": null,
+      "position": 16
+    },
+    {
+      "href": "/integrations/asana",
+      "text": "Asana",
+      "domain": null,
+      "position": 17
+    },
+    {
+      "href": "/slack",
+      "text": "Slack",
+      "domain": null,
+      "position": 18
+    },
+    {
+      "href": "/mobile",
+      "text": "Read AI for Android",
+      "domain": null,
+      "position": 19
+    },
+    {
+      "href": "/mobile",
+      "text": "Read AI for iPhone",
+      "domain": null,
+      "position": 20
+    },
+    {
+      "href": "/desktop",
+      "text": "Read AI for MacOS",
+      "domain": null,
+      "position": 21
+    },
+    {
+      "href": "/desktop",
+      "text": "Read AI for Windows",
+      "domain": null,
+      "position": 22
+    },
+    {
+      "href": "/extension",
+      "text": "Read AI Extension",
+      "domain": null,
+      "position": 23
+    },
+    {
+      "href": "https://support.read.ai/hc/en-us/articles/49381158409491-MCP-Server",
+      "text": "MCP",
+      "domain": "support.read.ai",
+      "position": 24
+    },
+    {
+      "href": "https://support.read.ai/hc/en-us/articles/49381161088659-API-Reference",
+      "text": "API",
+      "domain": "support.read.ai",
+      "position": 25
+    },
+    {
+      "href": "https://support.read.ai/hc/en-us/articles/49381158409491-MCP-Server#h_01KJ7M8RFA7H2Z3KA177EN32TX",
+      "text": "Claude",
+      "domain": "support.read.ai",
+      "position": 26
+    },
+    {
+      "href": "https://chatgpt.com/apps/read-ai/asdk_app_69af36d580288191a1bfe1e39c4e2ef0",
+      "text": "ChatGPT",
+      "domain": "chatgpt.com",
+      "position": 27
+    },
+    {
+      "href": "/ask-read",
+      "text": "Overview",
+      "domain": null,
+      "position": 28
+    },
+    {
+      "href": "/ask-read/multiplayer",
+      "text": "Multiplayer",
+      "domain": null,
+      "position": 29
+    },
+    {
+      "href": "/ask-read/use-cases",
+      "text": "Use Cases",
+      "domain": null,
+      "position": 30
+    },
+    {
+      "href": "/ask-read/faqs",
+      "text": "FAQs",
+      "domain": null,
+      "position": 31
+    },
+    {
+      "href": "/plans-pricing",
+      "text": "Plans & Pricing",
+      "domain": null,
+      "position": 32
+    },
+    {
+      "href": "/contact-sales",
+      "text": "Contact Us",
+      "domain": null,
+      "position": 33
+    },
+    {
+      "href": "/about",
+      "text": "About Read",
+      "domain": null,
+      "position": 34
+    },
+    {
+      "href": "/resources",
+      "text": "Resources",
+      "domain": null,
+      "position": 35
+    },
+    {
+      "href": "/account-and-privacy-center",
+      "text": "Account & Privacy Center",
+      "domain": null,
+      "position": 36
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy",
+      "domain": null,
+      "position": 37
+    },
+    {
+      "href": "/blog",
+      "text": "Blog",
+      "domain": null,
+      "position": 38
+    },
+    {
+      "href": "/careers",
+      "text": "Careers",
+      "domain": null,
+      "position": 39
+    },
+    {
+      "href": "https://support.read.ai/hc/en-us",
+      "text": "Support",
+      "domain": "support.read.ai",
+      "position": 40
+    },
+    {
+      "href": "/contact-sales",
+      "text": "Book a Demo",
+      "domain": null,
+      "position": 41
+    },
+    {
+      "href": "https://app.read.ai/analytics/signin",
+      "text": "Login",
+      "domain": "app.read.ai",
+      "position": 42
+    },
+    {
+      "href": "https://app.read.ai/analytics/signup?utm_source=website&utm_content=try_for_free",
+      "text": "Try for free!",
+      "domain": "app.read.ai",
+      "position": 43
+    },
+    {
+      "href": "/articles/best-ai-meeting-assistants",
+      "text": "English",
+      "domain": null,
+      "position": 44
+    },
+    {
+      "href": "/es/articles/best-ai-meeting-assistants",
+      "text": "Espa\u00f1ol",
+      "domain": null,
+      "position": 45
+    },
+    {
+      "href": "/it/articles/best-ai-meeting-assistants",
+      "text": "Italiano",
+      "domain": null,
+      "position": 46
+    },
+    {
+      "href": "/pt/articles/best-ai-meeting-assistants",
+      "text": "Portugu\u00eas",
+      "domain": null,
+      "position": 47
+    },
+    {
+      "href": "/fr/articles/best-ai-meeting-assistants",
+      "text": "Fran\u00e7ais",
+      "domain": null,
+      "position": 48
+    },
+    {
+      "href": "/ja/articles/best-ai-meeting-assistants",
+      "text": "\u65e5\u672c\u8a9e",
+      "domain": null,
+      "position": 49
+    },
+    {
+      "href": "/hi/articles/best-ai-meeting-assistants",
+      "text": "\u0939\u093f\u0928\u094d\u0926\u0940",
+      "domain": null,
+      "position": 50
+    },
+    {
+      "href": "/ru/articles/best-ai-meeting-assistants",
+      "text": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439",
+      "domain": null,
+      "position": 51
+    },
+    {
+      "href": "/de/articles/best-ai-meeting-assistants",
+      "text": "Deutsch",
+      "domain": null,
+      "position": 52
+    },
+    {
+      "href": "/zh/articles/best-ai-meeting-assistants",
+      "text": "\u4e2d\u6587",
+      "domain": null,
+      "position": 53
+    },
+    {
+      "href": "/?r=0",
+      "text": "English",
+      "domain": null,
+      "position": 54
+    },
+    {
+      "href": "/es",
+      "text": "Espa\u00f1ol",
+      "domain": null,
+      "position": 55
+    },
+    {
+      "href": "/it",
+      "text": "Italiano",
+      "domain": null,
+      "position": 56
+    },
+    {
+      "href": "/pt",
+      "text": "Portugu\u00eas",
+      "domain": null,
+      "position": 57
+    },
+    {
+      "href": "/fr",
+      "text": "Fran\u00e7ais",
+      "domain": null,
+      "position": 58
+    },
+    {
+      "href": "/ja",
+      "text": "\u65e5\u672c\u8a9e",
+      "domain": null,
+      "position": 59
+    },
+    {
+      "href": "/hi",
+      "text": "\u0939\u093f\u0928\u094d\u0926\u0940",
+      "domain": null,
+      "position": 60
+    },
+    {
+      "href": "/ru",
+      "text": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439",
+      "domain": null,
+      "position": 61
+    },
+    {
+      "href": "/de",
+      "text": "Deutsch",
+      "domain": null,
+      "position": 62
+    },
+    {
+      "href": "/zh",
+      "text": "\u4e2d\u6587",
+      "domain": null,
+      "position": 63
+    },
+    {
+      "href": "https://www.read.ai/",
+      "text": "Read AI",
+      "domain": "read.ai",
+      "position": 64
+    },
+    {
+      "href": "https://www.read.ai/",
+      "text": "Read AI",
+      "domain": "read.ai",
+      "position": 65
+    },
+    {
+      "href": "https://www.read.ai/search-copilot",
+      "text": "enterprise search",
+      "domain": "read.ai",
+      "position": 66
+    },
+    {
+      "href": "https://www.read.ai/post/read-it-whats-new-at-read-ai-october-2025",
+      "text": "Monday Briefing",
+      "domain": "read.ai",
+      "position": 67
+    },
+    {
+      "href": "https://www.read.ai/recommendations",
+      "text": "Recommendations",
+      "domain": "read.ai",
+      "position": 68
+    },
+    {
+      "href": "https://www.read.ai/coaching",
+      "text": "Speaker Coach",
+      "domain": "read.ai",
+      "position": 69
+    },
+    {
+      "href": "https://www.read.ai/articles/how-to-have-fewer-meetings",
+      "text": "attend 20% fewer meetings,",
+      "domain": "read.ai",
+      "position": 70
+    },
+    {
+      "href": "https://www.read.ai/integrations",
+      "text": "20+ integrations",
+      "domain": "read.ai",
+      "position": 71
+    },
+    {
+      "href": "https://www.read.ai/articles/fireflies-vs-read-ai",
+      "text": "Fireflies vs Read AI",
+      "domain": "read.ai",
+      "position": 72
+    },
+    {
+      "href": "https://www.read.ai/articles/read-ai-vs-otter-ai",
+      "text": "Read AI vs Otter AI",
+      "domain": "read.ai",
+      "position": 73
+    },
+    {
+      "href": "https://www.read.ai/articles/read-ai-vs-fathom",
+      "text": "Read AI vs Fathom",
+      "domain": "read.ai",
+      "position": 74
+    },
+    {
+      "href": "https://centaur.reading.ac.uk/102437/1/Days%20without%20meetings%20%E2%80%93%20a%20way%20to%20be%20productive.pdf",
+      "text": "71%",
+      "domain": "centaur.reading.ac.uk",
+      "position": 75
+    },
+    {
+      "href": "https://www.read.ai/search-copilot",
+      "text": "enterprise search",
+      "domain": "read.ai",
+      "position": 76
+    },
+    {
+      "href": "https://support.read.ai/hc/en-us/articles/25702259763091-Security-Privacy-Overview#h_01HP4N4SHH5TKB8XA1P24CG82Z",
+      "text": "SOC 2 Type II-certified",
+      "domain": "support.read.ai",
+      "position": 77
+    },
+    {
+      "href": "https://support.read.ai/hc/en-us/articles/37076084515219-Enabling-HIPAA-Compliance-in-Read-AI-Workspaces",
+      "text": "HIPAA compliant",
+      "domain": "support.read.ai",
+      "position": 78
+    },
+    {
+      "href": "https://app.read.ai/analytics/signup",
+      "text": "Try Read AI for free",
+      "domain": "app.read.ai",
+      "position": 79
+    },
+    {
+      "href": "https://www.read.ai/zoom",
+      "text": "Zoom",
+      "domain": "read.ai",
+      "position": 80
+    },
+    {
+      "href": "https://www.read.ai/google",
+      "text": "Google Meet",
+      "domain": "read.ai",
+      "position": 81
+    },
+    {
+      "href": "https://www.read.ai/microsoft",
+      "text": "Teams",
+      "domain": "read.ai",
+      "position": 82
+    },
+    {
+      "href": "/email",
+      "text": "Search Copilot Search Copilot Tips for Writing Successful Prompts Read article",
+      "domain": null,
+      "position": 83
+    },
+    {
+      "href": "#",
+      "text": "Get Started",
+      "domain": null,
+      "position": 84
+    },
+    {
+      "href": "/?r=0",
+      "text": "",
+      "domain": null,
+      "position": 85
+    },
+    {
+      "href": "/meeting-reports",
+      "text": "Meetings",
+      "domain": null,
+      "position": 86
+    },
+    {
+      "href": "/digital-twin",
+      "text": "Digital Twin",
+      "domain": null,
+      "position": 87
+    },
+    {
+      "href": "/ask-read",
+      "text": "Ask Read",
+      "domain": null,
+      "position": 88
+    },
+    {
+      "href": "/agents",
+      "text": "Agents",
+      "domain": null,
+      "position": 89
+    },
+    {
+      "href": "/messaging",
+      "text": "Messaging",
+      "domain": null,
+      "position": 90
+    },
+    {
+      "href": "/email",
+      "text": "Email",
+      "domain": null,
+      "position": 91
+    },
+    {
+      "href": "/messaging",
+      "text": "Messaging",
+      "domain": null,
+      "position": 92
+    },
+    {
+      "href": "/email",
+      "text": "Email",
+      "domain": null,
+      "position": 93
+    },
+    {
+      "href": "/plans-pricing",
+      "text": "Pricing",
+      "domain": null,
+      "position": 94
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy",
+      "domain": null,
+      "position": 95
+    },
+    {
+      "href": "/transcription",
+      "text": "Summary & Transcription",
+      "domain": null,
+      "position": 96
+    },
+    {
+      "href": "/assistant",
+      "text": "Assistant",
+      "domain": null,
+      "position": 97
+    },
+    {
+      "href": "/integrations",
+      "text": "Integrations",
+      "domain": null,
+      "position": 98
+    },
+    {
+      "href": "/workspaces",
+      "text": "Workspaces",
+      "domain": null,
+      "position": 99
+    },
+    {
+      "href": "/meeting-tools",
+      "text": "Real-Time Meeting Notes",
+      "domain": null,
+      "position": 100
+    },
+    {
+      "href": "/playback",
+      "text": "Playback",
+      "domain": null,
+      "position": 101
+    },
+    {
+      "href": "/for-you",
+      "text": "For You",
+      "domain": null,
+      "position": 102
+    },
+    {
+      "href": "/coaching",
+      "text": "Speaker Coach",
+      "domain": null,
+      "position": 103
+    },
+    {
+      "href": "/uploads",
+      "text": "File Uploads",
+      "domain": null,
+      "position": 104
+    },
+    {
+      "href": "/recommendations",
+      "text": "Recommendations",
+      "domain": null,
+      "position": 105
+    },
+    {
+      "href": "/zoom",
+      "text": "Zoom",
+      "domain": null,
+      "position": 106
+    },
+    {
+      "href": "/google",
+      "text": "Google",
+      "domain": null,
+      "position": 107
+    },
+    {
+      "href": "/microsoft",
+      "text": "Teams",
+      "domain": null,
+      "position": 108
+    },
+    {
+      "href": "/microsoft",
+      "text": "Outlook",
+      "domain": null,
+      "position": 109
+    },
+    {
+      "href": "/slack",
+      "text": "Slack",
+      "domain": null,
+      "position": 110
+    },
+    {
+      "href": "/mobile",
+      "text": "iOS",
+      "domain": null,
+      "position": 111
+    },
+    {
+      "href": "/mobile",
+      "text": "Android",
+      "domain": null,
+      "position": 112
+    },
+    {
+      "href": "/desktop",
+      "text": "Windows",
+      "domain": null,
+      "position": 113
+    },
+    {
+      "href": "/desktop",
+      "text": "MacOS",
+      "domain": null,
+      "position": 114
+    },
+    {
+      "href": "https://chatgpt.com/apps/read-ai/asdk_app_69af36d580288191a1bfe1e39c4e2ef0",
+      "text": "ChatGPT",
+      "domain": "chatgpt.com",
+      "position": 115
+    },
+    {
+      "href": "https://support.read.ai/hc/en-us/articles/49381158409491-MCP-Server#h_01KJ7M8RFA7H2Z3KA177EN32TX",
+      "text": "Claude",
+      "domain": "support.read.ai",
+      "position": 116
+    },
+    {
+      "href": "https://support.read.ai/hc/en-us/articles/49381158409491-MCP-Server",
+      "text": "MCP",
+      "domain": "support.read.ai",
+      "position": 117
+    },
+    {
+      "href": "https://support.read.ai/hc/en-us/articles/49381161088659-API-Reference",
+      "text": "API",
+      "domain": "support.read.ai",
+      "position": 118
+    },
+    {
+      "href": "/about",
+      "text": "About Us",
+      "domain": null,
+      "position": 119
+    },
+    {
+      "href": "/blog",
+      "text": "Blog",
+      "domain": null,
+      "position": 120
+    },
+    {
+      "href": "/press",
+      "text": "Press",
+      "domain": null,
+      "position": 121
+    },
+    {
+      "href": "/careers",
+      "text": "Careers",
+      "domain": null,
+      "position": 122
+    },
+    {
+      "href": "https://support.read.ai/hc/en-us",
+      "text": "Support",
+      "domain": "support.read.ai",
+      "position": 123
+    },
+    {
+      "href": "https://readai.statuspage.io/",
+      "text": "Status Page",
+      "domain": "readai.statuspage.io",
+      "position": 124
+    },
+    {
+      "href": "/privacy-policy",
+      "text": "Privacy Policy",
+      "domain": null,
+      "position": 125
+    },
+    {
+      "href": "/termsofservice",
+      "text": "Terms of Service",
+      "domain": null,
+      "position": 126
+    },
+    {
+      "href": "/contact-us",
+      "text": "Contact Us",
+      "domain": null,
+      "position": 127
+    },
+    {
+      "href": "https://twitter.com/ReadAI_",
+      "text": "",
+      "domain": "twitter.com",
+      "position": 128
+    },
+    {
+      "href": "https://www.linkedin.com/company/readinc",
+      "text": "",
+      "domain": "linkedin.com",
+      "position": 129
+    },
+    {
+      "href": "https://www.facebook.com/ReadInc/",
+      "text": "",
+      "domain": "facebook.com",
+      "position": 130
+    },
+    {
+      "href": "#",
+      "text": "Do not sell my personal information",
+      "domain": null,
+      "position": 131
+    },
+    {
+      "href": "https://www.read.ai/privacy-policy#your_choices",
+      "text": "Your Privacy Choices",
+      "domain": "read.ai",
+      "position": 132
+    },
+    {
+      "href": "https://www.read.ai/zoom",
+      "text": "Zoom",
+      "domain": "read.ai",
+      "position": 133
+    },
+    {
+      "href": "https://www.read.ai/google",
+      "text": "Google Meet",
+      "domain": "read.ai",
+      "position": 134
+    },
+    {
+      "href": "https://www.read.ai/microsoft",
+      "text": "Teams",
+      "domain": "read.ai",
+      "position": 135
+    }
+  ],
+  "link_count": 135
+}

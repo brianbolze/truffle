@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:34Z",
+  "ok": true,
+  "input": {
+    "domain": "coffee.ai",
+    "url": "https://coffee.ai/"
+  },
+  "status": 200,
+  "final_url": "https://www.coffee.ai/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "Coffee - AI CRM Agent | Automated Data Entry & Sales Intelligence",
+  "description": "Coffee's AI agent automates CRM data entry, contact enrichment, and pipeline tracking for sales teams. Get good data in, good data out. Try free.",
+  "text_excerpt": "Coffee - AI CRM Agent | Automated Data Entry & Sales Intelligence"
+}

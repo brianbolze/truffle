@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:08:05Z",
+  "ok": true,
+  "input": {
+    "domain": "salessavvy.ai",
+    "url": "https://salessavvy.ai/"
+  },
+  "status": 200,
+  "final_url": "https://www.salessavvy.ai/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "SalesSavvy - Empower Every Salesperson with AI",
+  "description": "AI-powered sales intelligence assistant",
+  "text_excerpt": "SalesSavvy - Empower Every Salesperson with AI SalesSavvy Website Mobile Blog Roadmap Help Contact Sign in Revenue Intelligence for Modern Sales Teams Turn Sales Calls Into Winning Insights AI-powered call prep, real-time coaching, and auto-synced reports\u2014so your reps focus on closing, not admin work. Start Free Trial Watch Demo Elena Rodriguez Enterprise AE @ Instadesk B2B SaaS $50K-$200K ARR 3-6 Month Cycles \ud83d\udccb Meet Elena Elena manages 15+ active deals with complex stakeholder networks. Before SalesSavvy, she spent 2+ hours daily on CRM admin instead of selling. See how she reclaimed her time and increased quota attainment by 23%. Read full story Sales Reps Waste 10+ Hours Per Week On... Before Calls 30+ mins Prepping from scattered CRM data During Calls Split focus Taking notes instead of listening After Calls 2+ hours/day Writing summaries & updating CRM SalesSavvy Automates the Entire Workflow Before Walk In Prepared AI brief from CRM + past calls Auto-generated meeting agenda Save 30 mins per call During Stay Fully Present Live transcription & AI notes Real-time coaching & insights 100% focus on the buyer After Zero Manual Work Auto MEDDIC/BANT reports One-click CRM sync or export Save 2+ hours per day AI analyzes your CRM history, past calls, and LinkedIn data to brief you in 1 min Get a 360\u00b0 profile of every stakeholder\u2014their role, pain points, and buying signals Auto-generated to-dos aligned to your deal stage and sales methodology Elena Rodriguez Enterprise AE @ Instadesk Job Title VP of Sales Operations Value Perception Efficiency & Rep Productivity Urgency High (Q1 Budget Approved) Pain Points Manual CRM data entry \ud83d\udccb Client Brief This is a discovery call with Instadesk's VP of Sales Ops. They're evaluating solutions to reduce rep admin time by 50%. Key pain point: Current CRM workflow requires 2+ hours of manual data entry per rep per day. Budget approved ($100K-$150K). Decision timeline: Q1 2026. \ud83c\udfaf Suggested Goals Quantified admin time loss (2+ hrs/rep/day) Identified decision-makers and procurement process Demo auto-sync workflow with live CRM mapping Secure technical validation call with IT lead Live transcription captures every word\u2014no more frantic note-taking Ask AI for product details, objection tips, or past chats\u2014live during calls. Goal tracker shows what you've covered and what's left to discuss \ud83c\udf99\ufe0f Recording & Transcript Elena Rodriguez Connecting to call... \ud83c\udfaf Suggested Goals Quantified admin time loss (2+ hrs/rep/day) Identified decisi"
+}

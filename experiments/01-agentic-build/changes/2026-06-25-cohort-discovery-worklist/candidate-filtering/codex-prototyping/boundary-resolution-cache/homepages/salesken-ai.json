@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:08:20Z",
+  "ok": true,
+  "input": {
+    "domain": "salesken.ai",
+    "url": "https://salesken.ai/"
+  },
+  "status": 200,
+  "final_url": "https://salesken.ai/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "Empower Your Sales with AI | Salesken.ai",
+  "description": "Discover Salesken.ai: Revolutionizing sales with AI-powered insights, real-time assistance, and advanced analytics to boost your team's performance.",
+  "text_excerpt": "Empower Your Sales with AI | Salesken.ai Products Product Revenue Intelligence AI Real-time sales insights to forecast, de-risk, and grow revenue. Quality Assurance AI Automated call reviews to boost sales quality and compliance. Page Five Lorem ipsum dolor sit amet consectetur elit Page Five Lorem ipsum dolor sit amet consectetur elit AI Sales Assistant Live conversation prompts to help reps close more deals. Use Cases Use Case RevOps Streamline sales processes, improve forecasting accuracy, and ensure pipeline health. Compliance Keep track of the information that\u2019s important to you CS Lorem ipsum dolor sit amet consectetur elit Sales Enhance team performance, provide real-time coaching, and drive faster deal closures. Pricing Resources Resources Use Case Docs Keep track of the information that\u2019s important to you Compliance Keep track of the information that\u2019s important to you CS Lorem ipsum dolor sit amet consectetur elit API Docs Keep track of the information that\u2019s important to you CS Lorem ipsum dolor sit amet consectetur elit Change Log Keep track of the information that\u2019s important to you Status Page Keep track of the information that\u2019s important to you Request a Demo Let's Talk Request a Demo Power Every Sales Interaction With Salesken AI Salesken\u2019s AI predicts deal outcomes for leaders, enables coaching at scale for managers and helps reps close deals faster. Analyze every interaction with AI and unlock key insights to win more deals. Salesken\u2019s AI predicts deal outcomes for leaders, enables coaching at scale for managers and helps reps close deals faster. Request a Demo Quality Assurance AI Evaluate 100% of conversations with AI. Set custom parameters to understand agent and team performance. Learn More AI Sales Assistant Get real-time, personalized prompts, guiding reps with the right talking points for smoother conversations and faster deal closure. Learn More Revenue Intelligence AI Achieve full pipeline transparency and make accurate deal outcome predictions. Learn More Salesken Notetaker Automatically transcribe and summarize sales calls, capturing key discussion points and action items for effective follow ups. Learn More Field Sales Analytics Capture field sales conversations and get AI powered performance insights for better conversions. Learn More Visibility For Sales Managers to gain full understanding of their team\u2019s performance Productivity For Sales Reps to become pitch perfect Insights For Sales Leaders to effectively keep track of "
+}

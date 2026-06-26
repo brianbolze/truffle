@@ -1,0 +1,677 @@
+{
+  "schema": "codex-candidate-qualification-eval-v1",
+  "boundary": {
+    "inputs": [
+      "receipts/raw/iteration-2/query-panel.json",
+      "receipts/raw/page-extraction/pages/*.json"
+    ],
+    "live_spend": "none; cached page-extraction outputs only",
+    "routing_uses_qrels": false,
+    "qrels_used_for": "evaluation-only matching after routing",
+    "candidate_generation": "observed domain evidence only; no qrel-seeded alias candidates"
+  },
+  "cohorts": {
+    "telehealth": {
+      "candidate_count": 226,
+      "route_counts": {
+        "capture_candidate": 5,
+        "preserve_source_evidence": 38,
+        "product_or_workflow_target": 1,
+        "reject_or_defer": 182
+      },
+      "top_15_route_counts": {
+        "capture_candidate": 3,
+        "preserve_source_evidence": 5,
+        "reject_or_defer": 7
+      },
+      "source_like_capture_count": 0,
+      "known_relevant_seen": 13,
+      "known_relevant_preserved": 4,
+      "known_relevant_capture": 2,
+      "known_boundary_or_bad_promoted": 0,
+      "top_capture_candidates": [
+        {
+          "rank": 1,
+          "name": "Healthspan",
+          "domain": "gethealthspan.com",
+          "route": "capture_candidate",
+          "confidence": "medium",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "reason_sample": [
+            "has_domain_key",
+            "repeated_evidence",
+            "multi_surface_evidence"
+          ],
+          "blockers": [],
+          "caveats": []
+        },
+        {
+          "rank": 4,
+          "name": "Want a Longer Lifespan? You Should Care About Your ...",
+          "domain": "honehealth.com",
+          "route": "capture_candidate",
+          "confidence": "medium",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": 4,
+          "qrel_label": "must_hit",
+          "qrel_name": "Hone Health",
+          "reason_sample": [
+            "has_domain_key",
+            "repeated_evidence",
+            "multi_surface_evidence",
+            "source_page_attestation"
+          ],
+          "blockers": [],
+          "caveats": []
+        },
+        {
+          "rank": 7,
+          "name": "MyHealthspan",
+          "domain": "myhealthspan.com",
+          "route": "capture_candidate",
+          "confidence": "medium",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "reason_sample": [
+            "has_domain_key",
+            "repeated_evidence",
+            "multi_surface_evidence"
+          ],
+          "blockers": [],
+          "caveats": []
+        },
+        {
+          "rank": 18,
+          "name": "Defymedical",
+          "domain": "defymedical.com",
+          "route": "capture_candidate",
+          "confidence": "medium",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": 3,
+          "qrel_label": "should_hit",
+          "qrel_name": "Defy Medical",
+          "reason_sample": [
+            "has_domain_key",
+            "repeated_evidence",
+            "multi_surface_evidence",
+            "source_page_attestation"
+          ],
+          "blockers": [],
+          "caveats": []
+        },
+        {
+          "rank": 19,
+          "name": "gennev.com",
+          "domain": "gennev.com",
+          "route": "capture_candidate",
+          "confidence": "medium",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "reason_sample": [
+            "has_domain_key",
+            "repeated_evidence",
+            "multi_surface_evidence",
+            "source_page_attestation"
+          ],
+          "blockers": [],
+          "caveats": []
+        }
+      ],
+      "source_like_capture_candidates": [],
+      "known_boundary_or_bad_promoted_candidates": [],
+      "known_relevant_not_capture": [
+        {
+          "rank": 21,
+          "name": "5 Best Telehealth Platforms for Erectile Dysfunction - REX MD",
+          "domain": "rexmd.com",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "must_hit",
+          "qrel_name": "Rex MD",
+          "reason_sample": [
+            "has_domain_key",
+            "multi_surface_evidence",
+            "source_page_attestation"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 46,
+          "name": "AgelessRx",
+          "domain": "agelessrx.com",
+          "route": "reject_or_defer",
+          "confidence": "low",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": 3,
+          "qrel_label": "should_hit",
+          "qrel_name": "AgelessRx",
+          "reason_sample": [
+            "has_domain_key"
+          ],
+          "blockers": [],
+          "caveats": [
+            "insufficient repeated or cross-surface evidence for capture"
+          ]
+        },
+        {
+          "rank": 47,
+          "name": "BlueChew",
+          "domain": "bluechew.com",
+          "route": "reject_or_defer",
+          "confidence": "low",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": 3,
+          "qrel_label": "should_hit",
+          "qrel_name": "BlueChew",
+          "reason_sample": [
+            "has_domain_key"
+          ],
+          "blockers": [],
+          "caveats": [
+            "insufficient repeated or cross-surface evidence for capture"
+          ]
+        },
+        {
+          "rank": 81,
+          "name": "Online ED Treatment | FDA-Approved Meds - Eden Telemed",
+          "domain": "edentelemed.com",
+          "route": "reject_or_defer",
+          "confidence": "low",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": 4,
+          "qrel_label": "must_hit",
+          "qrel_name": "Eden",
+          "reason_sample": [
+            "has_domain_key"
+          ],
+          "blockers": [],
+          "caveats": [
+            "insufficient repeated or cross-surface evidence for capture"
+          ]
+        },
+        {
+          "rank": 109,
+          "name": "Hims",
+          "domain": "docs.google.com",
+          "route": "reject_or_defer",
+          "confidence": "medium",
+          "observed_source_role": "non_profile_navigation_or_app_surface",
+          "qrel_grade": 4,
+          "qrel_label": "must_hit",
+          "qrel_name": "Hims & Hers",
+          "reason_sample": [
+            "has_domain_key",
+            "source_page_attestation"
+          ],
+          "blockers": [
+            "non_profile_navigation_or_app_surface"
+          ],
+          "caveats": [
+            "artifact should not feed capture queue without separate verification"
+          ]
+        },
+        {
+          "rank": 113,
+          "name": "Ro",
+          "domain": "ro.co",
+          "route": "reject_or_defer",
+          "confidence": "low",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": 4,
+          "qrel_label": "must_hit",
+          "qrel_name": "Ro",
+          "reason_sample": [
+            "has_domain_key",
+            "source_page_attestation"
+          ],
+          "blockers": [],
+          "caveats": [
+            "insufficient repeated or cross-surface evidence for capture"
+          ]
+        },
+        {
+          "rank": 146,
+          "name": "https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_XXq9VbjAJemW&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-",
+          "domain": "getroman.pxf.io",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "must_hit",
+          "qrel_name": "Ro",
+          "reason_sample": [
+            "has_domain_key",
+            "source_page_attestation"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 156,
+          "name": "joinmidi.com",
+          "domain": "joinmidi.com",
+          "route": "reject_or_defer",
+          "confidence": "low",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": 3,
+          "qrel_label": "worth_capture",
+          "qrel_name": "Midi Health",
+          "reason_sample": [
+            "has_domain_key",
+            "source_page_attestation"
+          ],
+          "blockers": [],
+          "caveats": [
+            "insufficient repeated or cross-surface evidence for capture"
+          ]
+        },
+        {
+          "rank": 161,
+          "name": "myalloy.com",
+          "domain": "myalloy.com",
+          "route": "reject_or_defer",
+          "confidence": "low",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": 3,
+          "qrel_label": "worth_capture",
+          "qrel_name": "Alloy Women's Health",
+          "reason_sample": [
+            "has_domain_key",
+            "source_page_attestation"
+          ],
+          "blockers": [],
+          "caveats": [
+            "insufficient repeated or cross-surface evidence for capture"
+          ]
+        },
+        {
+          "rank": 183,
+          "name": "Midi Health",
+          "domain": "clicks.trx-hub.com",
+          "route": "reject_or_defer",
+          "confidence": "low",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": 3,
+          "qrel_label": "worth_capture",
+          "qrel_name": "Midi Health",
+          "reason_sample": [
+            "has_domain_key",
+            "source_page_attestation"
+          ],
+          "blockers": [],
+          "caveats": [
+            "insufficient repeated or cross-surface evidence for capture"
+          ]
+        },
+        {
+          "rank": 226,
+          "name": "https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7",
+          "domain": "remedymeds.com",
+          "route": "reject_or_defer",
+          "confidence": "low",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": 4,
+          "qrel_label": "must_hit",
+          "qrel_name": "Remedy Meds",
+          "reason_sample": [
+            "has_domain_key",
+            "source_page_attestation"
+          ],
+          "blockers": [],
+          "caveats": [
+            "insufficient repeated or cross-surface evidence for capture"
+          ]
+        }
+      ]
+    },
+    "conversation_intelligence": {
+      "candidate_count": 120,
+      "route_counts": {
+        "preserve_source_evidence": 52,
+        "product_or_workflow_target": 3,
+        "reject_or_defer": 65
+      },
+      "top_15_route_counts": {
+        "preserve_source_evidence": 12,
+        "reject_or_defer": 3
+      },
+      "source_like_capture_count": 0,
+      "known_relevant_seen": 22,
+      "known_relevant_preserved": 18,
+      "known_relevant_capture": 0,
+      "known_boundary_or_bad_promoted": 0,
+      "top_capture_candidates": [],
+      "source_like_capture_candidates": [],
+      "known_boundary_or_bad_promoted_candidates": [],
+      "known_relevant_not_capture": [
+        {
+          "rank": 7,
+          "name": "Meeting note tool pricing: Granola vs. Fireflies vs. Fathom ...",
+          "domain": "granola.ai",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Granola AI",
+          "reason_sample": [
+            "has_domain_key",
+            "repeated_evidence",
+            "multi_surface_evidence",
+            "source_page_attestation"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 8,
+          "name": "10 Best Gong Alternatives and Competitors in 2026",
+          "domain": "salesforce.com",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Gong",
+          "reason_sample": [
+            "has_domain_key",
+            "repeated_evidence",
+            "multi_surface_evidence"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 11,
+          "name": "Top 6 Gong Alternatives for Revenue Teams (2026)",
+          "domain": "askelephant.ai",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Gong",
+          "reason_sample": [
+            "has_domain_key",
+            "repeated_evidence",
+            "multi_surface_evidence"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 15,
+          "name": "6 Best Clari Alternatives in 2026 (Top Competitors ...",
+          "domain": "sybill.ai",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Clari",
+          "reason_sample": [
+            "has_domain_key",
+            "repeated_evidence"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 16,
+          "name": "Clari vs Gong: Revenue intelligence for your GTM team",
+          "domain": "avoma.com",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Gong",
+          "reason_sample": [
+            "has_domain_key",
+            "multi_surface_evidence"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 19,
+          "name": "Granola vs Otter vs Fireflies vs Fathom: Best AI Notetaker 2026",
+          "domain": "useluminix.com",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Otter",
+          "reason_sample": [
+            "has_domain_key",
+            "multi_surface_evidence"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 21,
+          "name": "9 Best Gong Alternatives in 2026 (Ranked by Use Case)",
+          "domain": "cuebo.ai",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Gong",
+          "reason_sample": [
+            "has_domain_key",
+            "multi_surface_evidence"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 25,
+          "name": "Clari",
+          "domain": "clari.com",
+          "route": "reject_or_defer",
+          "confidence": "low",
+          "observed_source_role": "candidate_entity",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Clari",
+          "reason_sample": [
+            "has_domain_key"
+          ],
+          "blockers": [],
+          "caveats": [
+            "insufficient repeated or cross-surface evidence for capture"
+          ]
+        },
+        {
+          "rank": 27,
+          "name": "Gong vs Clari Compared: AI Agents, Product ...",
+          "domain": "oliv.ai",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Gong",
+          "reason_sample": [
+            "has_domain_key"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 31,
+          "name": "10 Best Gong Alternatives & Competitors in 2026 for ...",
+          "domain": "aviso.com",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Gong",
+          "reason_sample": [
+            "has_domain_key"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 32,
+          "name": "Best Otter.ai Alternatives in 2026: Compared for Every Use Case",
+          "domain": "evro.ai",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Otter",
+          "reason_sample": [
+            "has_domain_key"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 37,
+          "name": "7 Best Gong Alternatives for Sales Teams (2026) | AmpUp",
+          "domain": "ampup.ai",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Gong",
+          "reason_sample": [
+            "has_domain_key"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 39,
+          "name": "Best Otter alternatives for AI meeting notes in 2026",
+          "domain": "tana.inc",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Otter",
+          "reason_sample": [
+            "has_domain_key"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 47,
+          "name": "Best AI Notetakers in 2026: Otter vs Fireflies vs Fathom vs MeetGeek ...",
+          "domain": "usecarly.com",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Otter",
+          "reason_sample": [
+            "has_domain_key"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        },
+        {
+          "rank": 48,
+          "name": "Best Revenue Intelligence Platforms in 2026: Clari, Gong ...",
+          "domain": "tellius.com",
+          "route": "preserve_source_evidence",
+          "confidence": "high",
+          "observed_source_role": "source_page_title",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Gong",
+          "reason_sample": [
+            "has_domain_key"
+          ],
+          "blockers": [
+            "source_page_title"
+          ],
+          "caveats": [
+            "preserve market evidence; do not promote page publisher as the target"
+          ]
+        }
+      ]
+    }
+  }
+}

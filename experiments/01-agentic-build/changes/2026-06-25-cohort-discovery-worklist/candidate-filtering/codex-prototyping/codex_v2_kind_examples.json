@@ -1,0 +1,73 @@
+{
+  "schema": "codex-v2-kind-examples-v0",
+  "notes": [
+    "Packet-local examples for classify-by-example prototyping.",
+    "These examples describe reusable candidate shapes, not qrel labels or Brian-reviewed promotion decisions."
+  ],
+  "examples": [
+    {
+      "id": "company_official_homepage",
+      "kind": "company_or_brand",
+      "route": "capture_candidate",
+      "confidence_band": "medium",
+      "tags": ["domain_key", "entity_name", "multi_surface", "not_source_title"],
+      "description": "A company or brand domain appears across multiple source surfaces with an entity-like name."
+    },
+    {
+      "id": "company_source_page_boundary",
+      "kind": "company_or_brand",
+      "route": "boundary_review",
+      "confidence_band": "medium",
+      "tags": ["domain_key", "source_title", "official_domain_possible"],
+      "description": "A plausible company domain appears, but the observed page title is a listicle, comparison, or source article."
+    },
+    {
+      "id": "source_listicle",
+      "kind": "directory_or_listicle",
+      "route": "preserve_source_evidence",
+      "confidence_band": "high",
+      "tags": ["source_title", "source_domain", "market_evidence"],
+      "description": "A publisher, directory, or comparison page describes the market and should not become a company profile."
+    },
+    {
+      "id": "source_publisher",
+      "kind": "source_or_publisher",
+      "route": "preserve_source_evidence",
+      "confidence_band": "medium",
+      "tags": ["source_domain", "market_evidence"],
+      "description": "A source domain appears as evidence but is not itself the discovered market actor."
+    },
+    {
+      "id": "domainless_brand",
+      "kind": "company_or_brand",
+      "route": "boundary_review",
+      "confidence_band": "medium",
+      "tags": ["name_only", "entity_name", "mentioned_in_source"],
+      "description": "A plausible brand name is extracted from a source page but lacks a verified domain."
+    },
+    {
+      "id": "product_workflow",
+      "kind": "product_or_workflow",
+      "route": "boundary_review",
+      "confidence_band": "medium",
+      "tags": ["product_name", "workflow_name"],
+      "description": "A product or workflow target may be relevant, but it is not automatically a company-profile target."
+    },
+    {
+      "id": "nav_or_artifact",
+      "kind": "nav_or_artifact",
+      "route": "reject_or_defer",
+      "confidence_band": "high",
+      "tags": ["nav_anchor", "app_subdomain", "utility_domain"],
+      "description": "Navigation labels, login pages, utility hosts, and malformed artifacts should not enter capture."
+    },
+    {
+      "id": "uncertain",
+      "kind": "uncertain",
+      "route": "boundary_review",
+      "confidence_band": "low",
+      "tags": ["ambiguous", "low_evidence"],
+      "description": "The evidence suggests a possible entity, but kind or capture-worthiness is ambiguous."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "tool": "direct_http",
+  "_cache_hit": false,
+  "captured_at": "2026-06-26T16:09:56Z",
+  "ok": false,
+  "input": {
+    "domain": "usecarly.com",
+    "url": "https://usecarly.com/"
+  },
+  "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+}

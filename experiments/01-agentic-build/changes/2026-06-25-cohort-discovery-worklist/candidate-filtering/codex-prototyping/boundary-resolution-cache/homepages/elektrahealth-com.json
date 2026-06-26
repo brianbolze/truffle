@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:56Z",
+  "ok": true,
+  "input": {
+    "domain": "elektrahealth.com",
+    "url": "https://elektrahealth.com/"
+  },
+  "status": 200,
+  "final_url": "https://elektrahealth.com/",
+  "content_type": "text/html; charset=UTF-8",
+  "title": "Elektra Health - Smashing The Menopause Taboo, Together",
+  "description": "Evidence-based menopause expertise & care because you deserve better",
+  "text_excerpt": "Elektra Health - Smashing The Menopause Taboo, Together Now in-network with Fidelis, MVP, MetroPlusHealth, Emblem, Aetna, and more! Book a visit Learn More About About Us Meet The Clinicians Reviews Insurance & Billing FAQs Individuals Organizations For Health Plans For Employers Learn Meno 101 Blog Refer a Patient Get started Existing Patients Book my first visit Book a follow-up visit My account Patient portal Get started Menopause care for the 21st-century woman A first-of-its-kind platform with telemedicine care, evidence-based education, 1:1 support, and a private community. Get started Free intro call Hear from Elektra patients Play STEPHANIE P. \"I felt like I got my life back\" Play MARIE D. \"Within 36 hours of starting the patch, I stopped sweating\" Play JENNY S. \"I've never felt better\" A better menopause experience awaits. Care Meet via telemedicine with a board-certified clinician for prescriptions, labs & more. Education Access evidence-based readings & recs on top menopause symptoms (sleep, sex, hot flashes & more). Support Get paired 1:1 with your Elektra Coach to ask questions & build a personalized wellness plan. Community Join virtual events with menopause experts, participate in discussions & get inspired. Elektra for organizations 1/5 women consider leaving their job due to menopause, with menopause-related productivity losses costing companies $810 billion a year. Join Mass General Brigham Health Plan, EmblemHealth, Reddit, LVMH, and other leading organizations supporting women in the workplace at every stage of life. Learn more Sign up for evidence-based menopause care & support Because knowledge is power. And because living well is your right. Meet with a board-certified clinician for labs & prescriptions as needed Enjoy ongoing support & follow-up visits with your care team (clinician & coach) Access educational content, plus virtual events & a private community Get started Real women, real stories Speaking up and out is the first step to changing the menopause narrative. We love highlighting our community members' stories, showing us there's nothing \"one-size-fits-all\" about menopause. TRISH S. | Elektra Patient \"In my career, I have banged my head on many a glass ceiling to be heard, and this just feels like another thing that we have to demand for ourselves and advocate for the generations coming.\" Read Trish's story OMISADE B. | Community Member \"Menopause is a transformative experience. It's transformed the way I relate to my bod"
+}

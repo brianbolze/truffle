@@ -1,0 +1,2428 @@
+{
+  "tool": "page_extraction_probe",
+  "source": "firecrawl_scrape",
+  "captured_at": "2026-06-26T03:36:59Z",
+  "ok": true,
+  "fallback": "firecrawl_scrape",
+  "input": {
+    "id": "telehealth-forbes-glp1",
+    "cohort": "telehealth",
+    "facet": "glp1",
+    "rank": 2,
+    "url": "https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/"
+  },
+  "schema_drift": [],
+  "cost": {
+    "firecrawl_credits_estimate": 1
+  },
+  "status": 200,
+  "content_type": "text/markdown",
+  "error": null,
+  "raw_firecrawl_path": "receipts/raw/page-extraction/firecrawl/telehealth-forbes-glp1.json",
+  "title": "Study Finds The Most Affordable GLP-1 Providers in 2026 \u2013 Forbes Health",
+  "text": "[Subscribe To Newsletters](https://account.forbes.com/newsletters) [Forbes Logo](https://www.forbes.com/) - [Subscribe To Newsletters](https://account.forbes.com/newsletters) - [Trump Tracker](https://www.forbes.com/trump/) - [Billionaires](https://www.forbes.com/worlds-billionaires/) Billionaires - [View All Billionaires](https://www.forbes.com/worlds-billionaires/) - [World's Billionaires](https://www.forbes.com/billionaires/) - [Forbes 400](https://www.forbes.com/forbes-400/) - [America's Richest Self-Made Women](https://www.forbes.com/self-made-women/) - [China's Richest](https://www.forbes.com/china-billionaires/) - [India's Richest](https://www.forbes.com/india-billionaires/) - [Indonesia's Richest](https://www.forbes.com/indonesia-billionaires/) - [Korea's Richest](https://www.forbes.com/korea-billionaires/list/) - [Thailand's Richest](https://www.forbes.com/thailand-billionaires/list/) - [Japan's Richest](https://www.forbes.com/japan-billionaires/list/) - [Australia's Richest](https://www.forbes.com/australia-billionaires/) - [Taiwan's Richest](https://www.forbes.com/taiwan-billionaires/) - [Singapore's Richest](https://www.forbes.com/singapore-billionaires/) - [Philippines' Richest](https://www.forbes.com/philippines-billionaires/) - [Hong Kong's Richest](https://www.forbes.com/hong-kong-billionaires/) - [Malaysia's Richest](https://www.forbes.com/malaysia-billionaires/) - [Money & Politics](https://www.forbes.com/money-politics/) - [2024 Election](https://www.forbes.com/2024-election/) - [Innovation](https://www.forbes.com/innovation/) Innovation - [View All Innovation](https://www.forbes.com/innovation/) - [AI](https://www.forbes.com/ai/) - [Big Data](https://www.forbes.com/big-data/) - [Cloud](https://www.forbes.com/cloud/) - [Cloud 100](https://www.forbes.com/cloud100/) - [Consumer Tech](https://www.forbes.com/consumer-tech/) - [Creator Economy](https://www.forbes.com/creator-economy/) - [Cybersecurity](https://www.forbes.com/cybersecurity/) - [Digital Transformation](https://www.forbes.com/digital-transformation/) - [Enterprise Commerce](https://www.forbes.com/topics/enterprise-commerce/) - [Enterprise Security and Protection](https://www.forbes.com/topics/enterprise-security-and-protection/) - [Enterprise Tech](https://www.forbes.com/enterprise-tech/) - [Enterprise Growth Strategy](https://www.forbes.com/topics/enterprise-growth-strategy/) - [Future Of Work](https://www.forbes.com/future-of-work) - [Gaming](https://www.forbes.com/gaming/) - [greenhouse Insights: How AI Can Help You Make Your Smartest Hire Yet \\| Paid Program](https://www.forbes.com/sites/insights-greenhousecom/2024/08/14/how-ai-can-help-you-make-your-smartest-hire-yet/) - [Healthcare](https://www.forbes.com/healthcare) - [Innovation Rules](https://www.forbes.com/innovation-rules) - [Retail Industry](https://www.forbes.com/topics/retail-industry/) - [SAP BrandVoice \\| Paid Program](https://www.forbes.com/sites/sap/) - [Science](https://www.forbes.com/science/) - [Social Media](https://www.forbes.com/social-media/) - [Sustainability & Climate](https://www.forbes.com/sustainability/) - [Transportation](https://www.forbes.com/transportation/) - [Venture Capital](https://www.forbes.com/venture-capital/) - [Technology](https://www.forbes.com/sites/technology/) - [VMware BrandVoice \\| Paid Program](https://www.forbes.com/sites/vmware/) - [Zendesk BrandVoice \\| Paid Program](https://www.forbes.com/sites/zendesk) - [Leadership](https://www.forbes.com/leadership/) Leadership - [View All Leadership](https://www.forbes.com/leadership/) - [Careers](https://www.forbes.com/careers/) - [CEO Network](https://www.forbes.com/ceo-network) - [CFO Network](https://www.forbes.com/cfo-network/) - [CHRO Network](https://www.forbes.com/chro-network/) - [CIO Network](https://www.forbes.com/cio-network/) - [CMO Network](https://www.forbes.com/cmo-network/) - [CxO](https://www.forbes.com/cxo) - [Diversity, Equity & Inclusion](https://www.forbes.com/diversity-inclusion/) - [Education](https://www.forbes.com/education/) - [Forbes EQ \\| Paid Program](https://www.forbes.com/sites/forbeseq) - [ForbesBLK](https://www.forbes.com/blk-leadership/) - [ForbesWomen](https://www.forbes.com/women-at-forbes/) - [Leadership Strategy](https://www.forbes.com/leadership-strategy/) - [Under 30](https://www.forbes.com/under30/) - [Working Remote](https://www.forbes.com/working-remote/) - [Over 50](https://www.forbes.com/over-50/) - [Deloitte BrandVoice \\| Paid Program](https://www.forbes.com/sites/deloitte/) - [Dell Technologies BrandVoice \\| Paid Program](https://www.forbes.com/sites/delltechnologies/) - [Money](https://www.forbes.com/money/) Money - [View All Money](https://www.forbes.com/money/) - [Banking & Insurance](https://www.forbes.com/banking-insurance/) - [ETFs & Mutual Funds](https://www.forbes.com/etfs-mutual-funds/) - [Fintech](https://www.forbes.com/fintech/) - [Hedge Funds & Private Equity](https://www.forbes.com/hedge-funds-private-equity/) - [Investing](https://www.forbes.com/investing/) - [Investor Hub](https://www.forbes.com/sites/investor-hub/) - [Markets](https://www.forbes.com/markets/) - [Personal Finance](https://www.forbes.com/personal-finance/) - [Premium Investing Newsletters](https://www.forbes.com/newsletters/) - [Retirement](https://www.forbes.com/retirement/) - [Taxes](https://www.forbes.com/taxes/) - [Top Advisor \\| SHOOK](https://www.forbes.com/top-advisor-shook/) - [Wealth Management](https://www.forbes.com/wealth-management/) - [Forbes Digital Assets](https://www.forbes.com/digital-assets/) Forbes Digital Assets - [View All Forbes Digital Assets](https://www.forbes.com/digital-assets/) - [Home](https://www.forbes.com/digital-assets/) - [Web3 Community](https://www.forbes.com/digital-assets/community/) - [News](https://www.forbes.com/digital-assets/news/) - [Crypto Prices](https://www.forbes.com/digital-assets/crypto-prices/) - [NFT Prices](https://www.forbes.com/digital-assets/nft-prices/) - [Research](https://www.forbes.com/digital-assets/research/) - [Learn](https://www.forbes.com/digital-assets/learn/) [Crypto Basics](https://www.forbes.com/digital-assets/learn/crypto-basics/)[BTC](https://www.forbes.com/digital-assets/learn/btc/)[DeFi](https://www.forbes.com/digital-assets/learn/defi/)[Web3 Education](https://www.forbes.com/digital-assets/learn/web3-education/)[NFTs](https://www.forbes.com/digital-assets/learn/nfts/)[Crypto Investments](https://www.forbes.com/digital-assets/learn/crypto-investments/) - [Events](https://www.forbes.com/digital-assets/events/) - [Crypto Portfolios](https://www.forbes.com/digital-assets/crypto-advisor-portfolio/) - [Investment Newsletters](https://www.forbes.com/newsletters/) - [Business](https://www.forbes.com/business/) Business - [View All Business](https://www.forbes.com/business/) - [Aerospace & Defense](https://www.forbes.com/aerospace-defense/) - [Energy](https://www.forbes.com/energy/) - [Food & Drink](https://www.forbes.com/food-drink/) - [Hollywood & Entertainment](https://www.forbes.com/hollywood-entertainment/) - [Law](https://www.forbes.com/law/) - [Manufacturing](https://www.forbes.com/manufacturing/) - [Media](https://www.forbes.com/media/) - [Policy](https://www.forbes.com/policy/) - [Retail](https://www.forbes.com/retail/) - [SportsMoney](https://www.forbes.com/sportsmoney/) - [Entertainment Digest](https://www.forbes.com/sites/entertainment/) - [Small Business](https://www.forbes.com/small-business/) Small Business - [View All Small Business](https://www.forbes.com/small-business/) - [Entrepreneurs](https://www.forbes.com/entrepreneurs/) - [Franchises](https://www.forbes.com/franchises/) - [Small Business Strategy](https://www.forbes.com/small-business-strategy/) - [Lifestyle](https://www.forbes.com/lifestyle/) Lifestyle - [View All Lifestyle](https://www.forbes.com/lifestyle/) - [Arts](https://www.forbes.com/arts/) - [Boats & Planes](https://www.forbes.com/boats-planes/) - [Cars & Bikes](https://www.forbes.com/cars-bikes/) - [Dining](https://www.forbes.com/dining/) - [ForbesLife](https://www.forbes.com/forbeslife/) - [Forbes Travel Guide](https://www.forbes.com/forbes-travel-guide/) - [Spirits](https://www.forbes.com/spirits/) - [Style & Beauty](https://www.forbes.com/style-beauty/) - [Travel](https://www.forbes.com/travel/) - [Vices](https://www.forbes.com/vices/) - [Watches](https://www.forbes.com/watches-jewelry/) - [Real Estate](https://www.forbes.com/real-estate) Real Estate - [View All Real Estate](https://www.forbes.com/real-estate) - [Commercial Real Estate](https://www.forbes.com/commercial-real-estate) - [Forbes Global Properties](https://www.forbes.com/forbes-global-properties) - [Residential Real Estate](https://www.forbes.com/residential-real-estate) - [Vetted](https://www.forbes.com/vetted/) Vetted - [View All Vetted](https://www.forbes.com/vetted/) - [Mattress & Sleep](https://www.forbes.com/vetted/mattress-sleep/) [Bed Frames](https://www.forbes.com/vetted/mattress-sleep/bed-frames/)[Mattresses](https://www.forbes.com/vetted/mattress-sleep/mattresses/)[Mattress Toppers](https://www.forbes.com/vetted/mattress-sleep/mattress-toppers/)[Pillows](https://www.forbes.com/vetted/mattress-sleep/pillows/)[Sheets & Bedding](https://www.forbes.com/vetted/mattress-sleep/sheets-bedding/)[Sleep Products](https://www.forbes.com/vetted/mattress-sleep/sleep-products/) - [Home](https://www.forbes.com/vetted/home/) [Bathroom](https://www.forbes.com/vetted/home/bathroom/)[Cleaning & Laundry](https://www.forbes.com/vetted/home/cleaning-laundry/)[Decor](https://www.forbes.com/vetted/home/decor/)[Furniture](https://www.forbes.com/vetted/home/furniture/)[Heating & Cooling](https://www.forbes.com/vetted/home/heating-cooling/)[Hobbies](https://www.forbes.com/vetted/home/hobbies/)[Home Office](https://www.forbes.com/vetted/home-office/)[Kitchen & Dining](https://www.forbes.com/vetted/home/kitchen-dining/)[Outdoor](https://www.forbes.com/vetted/home/outdoor/)[Pets](https://www.forbes.com/vetted/home/pets/)[Storage & Organization](https://www.forbes.com/vetted/home/storage-organization/)[Tools](https://www.forbes.com/vetted/home/tools/)[Wine & Bar](https://www.forbes.com/vetted/home/wine-bar/) - [Fashion](https://www.forbes.com/vetted/fashion/) [Accessories](https://www.forbes.com/vetted/fashion/accessories/)[Clothing](https://www.forbes.com/vetted/fashion/clothing/)[Eyewear](https://www.forbes.com/vetted/fashion/eyewear/)[Footwear](https://www.forbes.com/vetted/fashion/footwear/)[Jewelry](https://www.forbes.com/vetted/fashion/jewelry/)[Handbags & Purses](https://www.forbes.com/vetted/fashion/handbags-purses/)[Lingerie & Sleepwear](https://www.forbes.com/vetted/fashion/lingerie-sleepwear/)[Outdoor & Fitness Apparel](https://www.forbes.com/vetted/fashion/outdoor-fitness-apparel/)[Outerwear](https://www.forbes.com/vetted/fashion/outerwear/)[Watches](https://www.forbes.com/vetted/fashion/watches/) - [Kids & Baby Gear](https://www.forbes.com/vetted/kids-baby-gear/) [Baby Gear](https://www.forbes.com/vetted/kids-baby-gear/baby-gear/)[Kids Clothes & Accessories](https://www.forbes.com/vetted/kids-baby-gear/kids-clothes-accessories/)[Nursery](https://www.forbes.com/vetted/kids-baby-gear/nursery/)[Pregnancy & Postpartum](https://www.forbes.com/vetted/kids-baby-gear/pregnancy-postpartum/)[Toys & Books](https://www.forbes.com/vetted/kids-baby-gear/toys-books/) - [Gear](https://www.forbes.com/vetted/gear/) [Apparel & Accessories](https://www.forbes.com/vetted/gear/apparel-accessories/)[Bikes](https://www.forbes.com/vetted/gear/bikes/)[Camping & Hiking](https://www.forbes.com/vetted/gear/camping-hiking/)[Climbing](https://www.forbes.com/vetted/gear/climbing/)[Fishing & Hunting](https://www.forbes.com/vetted/gear/fishing-hunting/)[Fitness](https://www.forbes.com/vetted/gear/fitness/)[Golf](https://www.forbes.com/vetted/gear/golf/)[Running](https://www.forbes.com/vetted/gear/running/)[Tennis & Racket Sports](https://www.forbes.com/vetted/gear/tennis-racket-sports/)[Tools & Tech](https://www.forbes.com/vetted/gear/tools-tech/)[Training & Recovery](https://ww.forbes.com/vetted/gear/training-recovery/)[Water Sports](https://www.forbes.com/vetted/gear/water-sports/)[Wellness](https://www.forbes.com/vetted/gear/wellness/)[Winter Sports](https://www.forbes.com/vetted/gear/winter-sports/) - [Beauty & Grooming](https://www.forbes.com/vetted/beauty-grooming/) [Haircare](https://www.forbes.com/vetted/beauty-grooming/haircare/)[Makeup](https://www.forbes.com/vetted/beauty-grooming/makeup/)[Nailcare](https://www.forbes.com/vetted/beauty-grooming/nailcare/)[Shaving](https://www.forbes.com/vetted/beauty-grooming/shaving/)[Skincare](https://www.forbes.com/vetted/beauty-grooming/skincare/)[Personal Products](https://www.forbes.com/vetted/beauty-grooming/personal-products/)[Wellness & Self Care](https://www.forbes.com/vetted/beauty-grooming/wellness-self-care/) - [Tech & Electronics](https://www.forbes.com/vetted/tech-electronics/) [Audio](https://www.forbes.com/vetted/tech-electronics/audio/)[Cameras](https://www.forbes.com/vetted/tech-electronics/cameras/)[Computers, Tablets & Accessories](https://www.forbes.com/vetted/tech-electronics/computers-tablets-accessories/)[Gaming](https://www.forbes.com/vetted/tech-electronics/gaming/)[Home Office](https://www.forbes.com/vetted/tech-electronics/home-office/)[Online Tools](https://www.forbes.com/vetted/tech-electronics/online-tools/)[Smart Home Devices](https://www.forbes.com/vetted/tech-electronics/smart-home-devices/)[Smartphones, Smartwatches & Accessories](https://www.forbes.com/vetted/tech-electronics/smartphones-smartwatches-accessories/)[Streaming](https://www.forbes.com/vetted/tech-electronics/streaming/)[TVs](https://www.forbes.com/vetted/tech-electronics/tvs/) - [Travel](https://www.forbes.com/vetted/travel/) [Cruises](https://www.forbes.com/vetted/travel/cruises/)[Hotels & Lodging](https://www.forbes.com/vetted/travel/hotels-lodging/)[Luggage](https://www.forbes.com/vetted/travel/luggage/)[Travel Products](https://www.forbes.com/vetted/travel/travel-products/) - [Gifts](https://www.forbes.com/vetted/gifts/) [Father's Day](https://www.forbes.com/vetted/gifts/fathers-day/)[Holiday](https://www.forbes.com/vetted/gifts/holiday/)[Mother's Day](https://www.forbes.com/vetted/gifts/mothers-day/)[Valentine's Day](https://www.forbes.com/vetted/gifts/valentines-day/)[Wedding](https://www.forbes.com/vetted/gifts/wedding/) - [Deals](https://www.forbes.com/vetted/deals/) [Black Friday](https://www.forbes.com/vetted/deals/black-friday/)[Cyber Monday](https://www.forbes.com/vetted/deals/cyber-monday/)[Amazon Prime Day](https://www.forbes.com/vetted/deals/amazon-prime-day/)[Beauty & Grooming](https://www.forbes.com/vetted/deals/beauty-grooming/)[Big Sales](https://www.forbes.com/vetted/deals/big-sales/)[Fashion](https://www.forbes.com/vetted/deals/fashion/)[Gear](https://www.forbes.com/vetted/deals/gear/)[Home](https://www.forbes.com/vetted/deals/home/)[Tech & Electronics](https://www.forbes.com/vetted/deals/tech-electronics/)[Travel Deals](https://www.forbes.com/vetted/deals/travel-deals/)[Mattress & Sleep](https://www.forbes.com/vetted/deals/mattress-sleep/) - [Forbes 101](https://www.forbes.com/forbes-101/) - [Advisor](https://www.forbes.com/advisor/) Advisor - [View All Advisor](https://www.forbes.com/advisor/) - [Credit Cards](https://www.forbes.com/advisor/credit-cards/) [Best Credit Cards](https://www.forbes.com/advisor/credit-cards/best-credit-cards/)[Travel Credit Cards](https://www.forbes.com/advisor/credit-cards/best-travel-credit-cards/)[0% APR Credit Cards](https://www.forbes.com/advisor/credit-cards/best-0-apr-credit-cards/)[Balance Transfer Credit Cards](https://www.forbes.com/advisor/credit-cards/best/balance-transfer/)[Business Credit Cards](https://www.forbes.com/advisor/credit-cards/best/business/)[Best First Credit Card](https://www.forbes.com/advisor/credit-cards/best/first-credit-card/) - [Mortgages & Loans](https://www.forbes.com/advisor/mortgages/) [Best Mortgage Lenders](https://www.forbes.com/advisor/mortgages/best-mortgage-lenders/)[Mortgage Refinance Lenders](https://www.forbes.com/advisor/mortgages/refinance/best-mortgage-refinance-lenders/)[Personal Loans](https://www.forbes.com/advisor/personal-loans/best-personal-loans/)[Business Loans](https://www.forbes.com/advisor/business-loans/best-small-business-loans/)[Bad Credit Loans](https://www.forbes.com/advisor/personal-loans/bad-credit-loans/)[Debt Consolidation Loans](https://www.forbes.com/advisor/personal-loans/best-debt-consolidation-loans-bad-credit/)[Debt Relief Companies](https://www.forbes.com/advisor/debt-relief/best-debt-relief-companies/)[Student Loans Refinance](https://www.forbes.com/advisor/student-loans/best-student-loan-refinance-lenders/)[Private Student Loans](https://www.forbes.com/advisor/student-loans/best-private-student-loans/) - [Banking](https://www.forbes.com/advisor/banking/) [Best CD Rates](https://www.forbes.com/advisor/banking/cds/best-cd-rates/)[High Yield Savings Accounts](https://www.forbes.com/advisor/banking/savings/best-high-yield-savings-accounts/)[Money Market Accounts](https://www.forbes.com/advisor/banking/best-money-market-accounts/)[Checking Accounts](https://www.forbes.com/advisor/banking/checking/best-checking-accounts/)[Business Checking Accounts](https://www.forbes.com/advisor/banking/checking/best-business-checking-accounts/)[Budgeting Apps](https://www.forbes.com/advisor/banking/best-budgeting-apps/)[Best Online Banks](https://www.forbes.com/advisor/banking/best-online-banks/) - [Insurance](https://www.forbes.com/advisor/insurance/) [Health Insurance Companies](https://www.forbes.com/advisor/health-insurance/best-health-insurance-companies/)[Medicare](https://www.forbes.com/advisor/health-insurance/medicare/)[Life Insurance Companies](https://www.forbes.com/advisor/life-insurance/best-life-insurance-companies/)[Best Car Insurance Companies](https://www.forbes.com/advisor/car-insurance/best-car-insurance-companies/)[Cheapest Car Insurance Companies](https://www.forbes.com/advisor/car-insurance/cheapest-car-insurance/)[Pet Insurance Companies](https://www.forbes.com/advisor/pet-insurance/best-pet-insurance/)[Travel Insurance Companies](https://www.forbes.com/advisor/travel-insurance/best-travel-insurance/)[Homeowners Insurance Companies](https://www.forbes.com/advisor/homeowners-insurance/best-homeowners-insurance-companies/) - [Business Services](https://www.forbes.com/advisor/business/) [How to Start a Business](https://www.forbes.com/advisor/business/how-to-start-a-business/)[LLC Services](https://www.forbes.com/advisor/business/best-llc-service/)[Payroll Services](https://www.forbes.com/advisor/business/software/best-payroll-services/)[HR Software](https://www.forbes.com/advisor/business/software/best-human-resource-management-systems/)[HRIS Systems](https://www.forbes.com/advisor/business/software/hris-systems/)[PEO Services](https://www.forbes.com/advisor/business/software/best-peo-services/)[Applicant tracking Systems](https://www.forbes.com/advisor/business/best-applicant-tracking-systems/)[Domain Registrars](https://www.forbes.com/advisor/business/software/best-domain-registrar/)[Hosting Services](https://www.forbes.com/advisor/business/software/best-web-hosting-services/)[Website Builders](https://www.forbes.com/advisor/business/software/best-website-builders/)[Ecomm Platforms](https://www.forbes.com/advisor/business/software/best-ecommerce-platform/)[Landing Page Builders](https://www.forbes.com/advisor/business/software/best-landing-page-builder/)[VOIP Services](https://www.forbes.com/advisor/business/software/best-voip-service/)[Answering Services](https://www.forbes.com/advisor/business/software/best-answering-services/)[Project Management Software](https://www.forbes.com/advisor/business/software/best-project-management-software/)[Task Management Software](https://www.forbes.com/advisor/business/software/best-task-management-software/)[Gantt Chart Software](https://www.forbes.com/advisor/business/software/best-gantt-chart-software/)[VPNs](https://www.forbes.com/advisor/business/software/best-vpn/)[Anti Virus Software](https://www.forbes.com/advisor/business/software/best-antivirus-software/)[Password Managers](https://www.forbes.com/advisor/business/software/best-password-managers/) - [Home Services](https://www.forbes.com/home-improvement/) [Moving Companies](https://www.forbes.com/home-improvement/moving-services/best-moving-companies/)[Long Distance Moving Companies](https://www.forbes.com/home-improvement/moving-services/best-long-distance-moving-companies/)[Car Shipping Companies](https://www.forbes.com/home-improvement/moving-services/best-car-shipping-companies/)[Home Warranty Companies](https://www.forbes.com/home-improvement/home-warranty/best-home-warranty-companies/)[Solar Companies](https://www.forbes.com/home-improvement/solar/best-solar-companies/)[Solar Panels](https://www.forbes.com/home-improvement/solar/best-solar-panels/)[Home Security Companies](https://www.forbes.com/home-improvement/home-security/best-home-security-companies/)[Home Security Systems](https://www.forbes.com/home-improvement/home-security/best-home-security-systems/)[Internet Providers](https://www.forbes.com/home-improvement/internet/best-internet-providers/)[Cheapest Internet Providers](https://www.forbes.com/home-improvement/internet/cheapest-internet-plans/)[Fastest High Speed Internet Providers](https://www.forbes.com/home-improvement/internet/fastest-high-speed-internet-provider/)[Pest Control Companies](https://www.forbes.com/home-improvement/pest-control/best-pest-control-companies/) - [Education](https://www.forbes.com/advisor/education/) - [Forbes Advisor UK](https://www.forbes.com/uk/advisor/) - [Forbes Advisor CA](https://www.forbes.com/advisor/ca/) - [Forbes Advisor AU](https://www.forbes.com/advisor/au/) - [Health](https://www.forbes.com/health/) Health - [View All Health](https://www.forbes.com/health/) - [Mental Health](https://www.forbes.com/health/mind/) [Best Online Therapy](https://www.forbes.com/health/mind/best-online-therapy/)[Online Therapy that Takes Insurance](https://www.forbes.com/health/mind/best-online-therapy-that-takes-insurance/)[Online Psychiatrists](https://www.forbes.com/health/mind/best-online-psychiatry/)[Best Online Dating Sites & Apps](https://www.forbes.com/health/dating/best-online-dating-websites/)[Best Senior Dating Sites](https://www.forbes.com/health/dating/best-senior-dating-sites/)[Best LGBTQ Dating Sites](https://www.forbes.com/health/dating/best-lgbtq-dating-sites/) - [CBD](https://www.forbes.com/health/cbd/) [CBD Gummies](https://www.forbes.com/health/cbd/best-cbd-gummies/)[CBD Oil](https://www.forbes.com/health/cbd/best-cbd-oil/)[CBD Creams](https://www.forbes.com/health/cbd/best-cbd-creams/)[CBD for Anxiety](https://www.forbes.com/health/cbd/cbd-for-anxiety/)[CBD for Pain](https://www.forbes.com/health/cbd/best-cbd-oil-for-pain/) - [Supplements](https://www.forbes.com/health/supplements/) [Protein Powder](https://www.forbes.com/health/supplements/best-protein-powders/)[Preworkout](https://www.forbes.com/health/supplements/best-pre-workout/)[Collagen Powders](https://www.forbes.com/health/supplements/best-collagen-powders/)[Creatine Supplements](https://www.forbes.com/health/supplements/best-creatine-supplements/)[CoQ10 Supplements](https://www.forbes.com/health/supplements/coq10-supplements/) - [Hearing Health](https://www.forbes.com/health/hearing-aids/) [Best Hearing Aids](https://www.forbes.com/health/hearing-aids/best-hearing-aids/)[OTC Hearing Aids](https://www.forbes.com/health/hearing-aids/best-otc-hearing-aids/)[Affordable Hearing Aids](https://www.forbes.com/health/hearing-aids/best-affordable-hearing-aids/) - [Medical Devices](https://www.forbes.com/health/medical-alert-systems/) [Best Medical Alert Systems](https://www.forbes.com/health/medical-alert-systems/best-medical-alert-systems/)[Best Medical Alert Systems with Fall Detection](https://www.forbes.com/health/medical-alert-systems/best-medical-alert-systems-with-fall-detection/)[Best Online Dating Sites & Apps](https://www.forbes.com/health/dating/best-online-dating-websites/)[Best Dating Apps for Serious Relationships](https://www.forbes.com/health/dating/best-dating-apps-for-serious-relationships/)[Best Senior Dating Sites](https://www.forbes.com/health/dating/best-senior-dating-sites/)[Best LGBTQ Dating Sites](https://www.forbes.com/health/dating/best-lgbtq-dating-sites/) - [Diet & Weight Loss](https://www.forbes.com/health/weight-loss/) [Best Weight Loss Plans](https://www.forbes.com/health/weight-loss/best-weight-loss-program/) - [Lists](https://www.forbes.com/lists/) - [Video](https://www.forbes.com/video/) - [Newsletters](https://account.forbes.com/newsletters/?utm_source=forbes&utm_medium=featured&utm_campaign=navigation) Newsletters - [View All Newsletters](https://account.forbes.com/newsletters/?utm_source=forbes&utm_medium=featured&utm_campaign=navigation) - [Crypto Confidential](http://bit.ly/2Y2rVX8) - [Editorial Newsletters](https://account.forbes.com/newsletters/?utm_source=forbes&utm_medium=featured&utm_campaign=navigation) - [Investing Digest](https://bit.ly/2Rkd9oN) - [Premium Investing Newsletters](https://www.forbes.com/newsletters/) - [Forbes Games](https://www.forbes.com/games/) Forbes Games - [View All Forbes Games](https://www.forbes.com/games/) - [Frase by Forbes](https://www.forbes.com/frase/) - [Pinpoint by LinkedIn](https://www.forbes.com/games/pinpoint/) - [Queens by LinkedIn](https://www.forbes.com/games/queens/) - [Crossclimb by LinkedIn](https://www.forbes.com/games/crossclimb/) - [Forbes Magazine](https://www.forbes.com/forbes-magazine/#42ad043030a4) Forbes Magazine - [View All Forbes Magazine](https://www.forbes.com/forbes-magazine/#42ad043030a4) - [Forbes Asia](https://www.forbes.com/forbesasia/#7cb46d1d2f95) - [Free Issue of Forbes](https://w1.buysub.com/pubs/B4/FRB/16-forbes_relaunch_landingpage_2freetrial.jsp?cds_mag_code=FRB&cds_page_id=241223) - Latest Latest - [Coronavirus Coverage](https://www.forbes.com/coronavirus/#59d4597c20dd) - [Daily Cover Stories](https://www.forbes.com/daily-cover-stories/#78127e5b6a74) - [Dark Capital](https://www.forbes.com/dark-capital/#4bf21bb954c9) - [Editors' Picks](https://www.forbes.com/editors-picks/#15c416d878bf) - [Breaking News](https://www.forbes.com/news/) - Featured Featured - [American Express Insights: 5 Findings That Could Reveal Your Company's Path To Payment Innovation](https://www.forbes.com/sites/insights-american-express/2024/11/26/5-findings-that-could-reveal-your-companys-path-to-payment-innovation/) - [The CEO's Guide To Marketing](https://www.forbes.com/sites/forbesvideo/2024/11/21/the-ceos-guide-to-marketing/) - [The Forbes CIO Next List: 2024](https://www.forbes.com/sites/richardnieva/2024/11/19/the-forbes-cio-next-list-2024/) - [America's Top Wealth Management Teams High Net Worth](https://www.forbes.com/lists/top-wealth-management-teams-high-net-worth/?sh=3dff2fb023e1) - [The One Who Changed Everything Video Series](https://www.forbes.com/sites/forbesvideo/2024/09/18/the-one-who-changed-everything/) - [30 Under 30 2023](https://www.forbes.com/30-under-30/2023/) - [AI's Nuanced Impact And A Quest To Quantify It](https://www.forbes.com/sites/forbes-research/2023/10/26/c-suite-data-reveals-ais-nuanced-impact--a-quest-to-quantify-it/?sh=2e0ce1152c4a) - [Cognizant BrandVoice: Gen AI Leadership Conversation Video Series \\| Paid Program](https://www.forbes.com/sites/cognizant/2024/05/15/gen-ai-leadership-conversation-series/) - [DNA of Success](https://www.forbes.com/sites/forbesvideo/2023/11/01/dna-of-success-2023) - [Embracing And Bracing For AI](https://www.forbes.com/sites/forbes-research/2023/10/26/new-forbes-survey-reveals-how-executives-are-embracing---and-bracing-for---ai/?sh=4c9ec37647fe) - [Facing A Volatile Market, C-Suites Look To The CFO For Strategic Guidance](https://www.forbes.com/sites/forbes-research/2023/11/01/facing-a-volatile-market-c-suites-look-to-the-cfo-for-strategic-guidance/?sh=5ebd4e0f8752) - [Forbes Research: 2023 Small Business Survey](https://www.forbes.com/sites/forbes-research/2023/06/07/resiliency-and-ingenuity-revealed-in-new-forbes-small-business-research/?sh=7933ed832cee) - ['I Am Who I Am': Owning Your Personal And Professional Brand \\| Paid Program](https://www.forbes.com/sites/statefarm/2024/08/13/i-am-who-i-am-owning-your-personal-and-professional-brand/) - [TIAA BrandVoice \\| Paid Program](https://www.forbes.com/sites/tiaa) - [Forbes CXO Spotlight](https://www.forbes.com/video/17c95107-2e8f-410a-bd28-3b3b3f8321c2/citizens-bank-cxo-beth-johnson-finds-success-by-innovating-on-the-margins/) - [Scaling AI Editorial Video Series \\| Paid Program](https://www.forbes.com/sites/forbesvideo/2024/09/16/scaling-ai/) - [America's Top RIA Firms](https://www.forbes.com/lists/top-ria-firms) - [5 Traits of AI Pacesetters to Help You Pull Ahead \\| Paid Program](https://www.forbes.com/sites/servicenow/2024/10/15/5-traits-of-ai-pacesetters-to-help-you-pull-ahead/) - State Farm BrandVoice \\| Paid Program - [Thomson Reuters Insights Premium Post: 4 Factors To Explore When Considering Professional-Grade AI \\| Paid Program](https://www.forbes.com/sites/insights-thomsonreuters/2024/10/30/4-factors-to-explore-when-considering-ai-for-professional-work/) - [PayPal BrandVoice Premium Post: The Future Of E-Commerce \\| Paid Program](https://www.forbes.com/sites/paypal/2024/10/31/the-future-of-e-commerce/) - [The Birth Of Almanac: A Re-Evaluation Of What's Really Needed In Farming \\| Paid Program](https://www.forbes.com/sites/almanac/2024/11/04/the-birth-of-almanac-a-re-evaluation-of-whats-really-needed-in-farming) - [Leadership Lessons on Financial Literacy Video Series, presented by New York Life \\| Paid Program](https://www.forbes.com/sites/forbesvideo/2024/02/22/forbes-leadership-lessons-on-financial-literacy/) - [PayPal BrandVoice Premium Post: How Merchants Are Leveling Up Checkout To Drive Conversion \\| Paid Program](https://www.forbes.com/sites/paypal/2024/11/13/how-merchants-are-leveling-up-checkout-to-drive-conversion/) - [Hyoeun Kim On LG's Brand Promise, \"Life's Good\" \\| Paid Program](https://www.forbes.com/video/5dd30175-916e-4349-9cab-564a384e45da/hyoeun-kim-on-lgs-brand-promise-lifes-good/) - [Poised To Outperform: Rev Up Your Investment Strategy With Active ETFs \\| Paid Program](https://www.forbes.com/sites/t-rowe-price/2024/11/20/poised-to-outperform-rev-up-your-investment-strategy-with-active-etfs/) - [ServiceNow BrandVoice Premium Post: Why It's Time To See Your Workforce In 4D \\| Paid Program](https://www.forbes.com/sites/servicenow/2024/11/22/why-its-time-to-see-your-workforce-in-4d/) - [Presented by New York Life: Forbes Leadership Lessons On Financial Literacy \\| Paid Program](https://www.forbes.com/sites/forbesvideo/2024/02/22/forbes-leadership-lessons-on-financial-literacy/) - [SAP BrandVoice: 4 Ways A Cloud ERP Can Unleash AI Potential \\| Paid Program](https://www.forbes.com/sites/sap/2024/12/05/4-ways-a-cloud-erp-can-unleash-ai-potential/) - [Advertise with Forbes](https://www.forbes.com/connect/) - [Report a Security Issue](https://www.forbes.com/contact/) - [Editorial Values and Standards](https://www.forbes.com/sites/forbesstaff/article/forbes-editorial-values-and-standards) - [Site Feedback](mailto:feedback@forbes.com) - [Contact Us](https://www.forbes.com/contact/) - [Careers at Forbes](https://www.forbes.com/careers-at-forbes/) - [Tips](https://www.forbes.com/tips/) - [Corrections](mailto:corrections@forbes.com) - [Privacy](https://www.forbes.com/fdc/privacy.html) - [Do Not Sell My Personal Information](https://www.forbes.com/consent/editprivacy/?consent_do_not_sell=true) - [Terms](https://www.forbes.com/terms/) - [AdChoices](https://youradchoices.com/control) - [Reprints & Permissions](https://www.parsintl.com/publication/forbes/) - \u00a9 2026 Forbes Media LLC. All Rights Reserved. [Subscribe](https://account.forbes.com/membership?eventSource=header&redirect=https://www.forbes.com/) [Search](https://www.forbes.com/search/) [Health](https://www.forbes.com/health/) - [Health](https://www.forbes.com/health/) - [Hearing Aids](https://www.forbes.com/health/hearing-aids/best-hearing-aids/) - [Medical Alert Systems](https://www.forbes.com/health/medical-alert-systems/best-medical-alert-systems/) - [CBD](https://www.forbes.com/health/cbd/best-cbd-gummies/) - [Online Therapy](https://www.forbes.com/health/mind/best-online-therapy/) - [Supplements](https://www.forbes.com/health/supplements/) - [Weight Loss](https://www.forbes.com/health/weight-loss/) We independently select all products and services. While we earn a commission from partner links, commissions do not affect our editor\u2019s opinions or evaluations. Advertiser Disclosure - [health](https://www.forbes.com/health/) - [weight loss](https://www.forbes.com/health/weight-loss/) - 6 best affordable online glp-1 providers (2026) # 6 Best Affordable Online GLP-1 Providers (2026) Audited & Verified: Jun 23, 2026, 7:22am [![Carley Prendergast](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2024/09/IMG_0639-Carley-Prendergast-scaled.jpg)](https://www.forbes.com/health/author/cprendergast/) ![Author Image](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2024/09/IMG_0639-Carley-Prendergast-scaled.jpg) [Carley Prendergast](https://www.forbes.com/health/author/cprendergast/) Staff Editor Carley is a writer, editor and social media professional. Before starting at Forbes Health, she wrote for Sleepopolis and interned at PBS and Nickelodeon. She\u2019s a certified sleep science coach and member of the Peloton community. When she\u2019s not creat\u2026 - [![Linkedin icon](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/linkedin-icon.svg)](https://www.linkedin.com/in/carley-prendergast) [Read Full Bio![See Full Bio](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/read-full-bio.svg)](https://www.forbes.com/health/author/cprendergast/) ![close icon](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/forbes-media-close-icon.svg) ![Author image](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2024/09/IMG_0639-Carley-Prendergast-scaled.jpg) [Carley Prendergast](https://www.forbes.com/health/author/cprendergast/) Staff Editor Carley is a writer, editor and social media professional. Before starting at Forbes Health, she wrote for Sleepopolis and interned at PBS and Nickelodeon. She\u2019s a certified sleep science coach and member of the Peloton community. When she\u2019s not creat\u2026 - [![Linkedin icon](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/linkedin-icon.svg)](https://www.linkedin.com/in/carley-prendergast) [Read Full Bio![See Full Bio](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/read-full-bio.svg)](https://www.forbes.com/health/author/cprendergast/) Written By [Carley Prendergast](https://www.forbes.com/health/author/cprendergast/) ![Author Image](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2024/09/IMG_0639-Carley-Prendergast-scaled.jpg) [Carley Prendergast](https://www.forbes.com/health/author/cprendergast/) Staff Editor Carley is a writer, editor and social media professional. Before starting at Forbes Health, she wrote for Sleepopolis and interned at PBS and Nickelodeon. She\u2019s a certified sleep science coach and member of the Peloton community. When she\u2019s not creat\u2026 - [![Linkedin icon](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/linkedin-icon.svg)](https://www.linkedin.com/in/carley-prendergast) [Read Full Bio![See Full Bio](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/read-full-bio.svg)](https://www.forbes.com/health/author/cprendergast/) ![close icon](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/forbes-media-close-icon.svg) ![Author image](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2024/09/IMG_0639-Carley-Prendergast-scaled.jpg) [Carley Prendergast](https://www.forbes.com/health/author/cprendergast/) Staff Editor Carley is a writer, editor and social media professional. Before starting at Forbes Health, she wrote for Sleepopolis and interned at PBS and Nickelodeon. She\u2019s a certified sleep science coach and member of the Peloton community. When she\u2019s not creat\u2026 - [![Linkedin icon](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/linkedin-icon.svg)](https://www.linkedin.com/in/carley-prendergast) [Read Full Bio![See Full Bio](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/read-full-bio.svg)](https://www.forbes.com/health/author/cprendergast/) Staff Editor [![Sarah Davis](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2023/06/Sarah_Davis.png)](https://www.forbes.com/health/author/sarah-berger/) ![Author Image](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2023/06/Sarah_Davis.png) [Sarah Davis](https://www.forbes.com/health/author/sarah-berger/) Staff Editor Sarah is an experienced writer and editor enthusiastic about helping readers live their healthiest and happiest lives. Before joining Forbes Health, Sarah worked as a writer for various digital publications including LendingTree, theSkimm, CNBC and B\u2026 - [![Linkedin icon](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/linkedin-icon.svg)](https://www.linkedin.com/in/sarah-davis-24060180/) [Read Full Bio![See Full Bio](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/read-full-bio.svg)](https://www.forbes.com/health/author/sarah-berger/) ![close icon](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/forbes-media-close-icon.svg) ![Author image](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2023/06/Sarah_Davis.png) [Sarah Davis](https://www.forbes.com/health/author/sarah-berger/) Staff Editor Sarah is an experienced writer and editor enthusiastic about helping readers live their healthiest and happiest lives. Before joining Forbes Health, Sarah worked as a writer for various digital publications including LendingTree, theSkimm, CNBC and B\u2026 - [![Linkedin icon](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/linkedin-icon.svg)](https://www.linkedin.com/in/sarah-davis-24060180/) [Read Full Bio![See Full Bio](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/read-full-bio.svg)](https://www.forbes.com/health/author/sarah-berger/) Fact Checked By [Sarah Davis](https://www.forbes.com/health/author/sarah-berger/) ![Author Image](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2023/06/Sarah_Davis.png) [Sarah Davis](https://www.forbes.com/health/author/sarah-berger/) Staff Editor Sarah is an experienced writer and editor enthusiastic about helping readers live their healthiest and happiest lives. Before joining Forbes Health, Sarah worked as a writer for various digital publications including LendingTree, theSkimm, CNBC and B\u2026 - [![Linkedin icon](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/linkedin-icon.svg)](https://www.linkedin.com/in/sarah-davis-24060180/) [Read Full Bio![See Full Bio](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/read-full-bio.svg)](https://www.forbes.com/health/author/sarah-berger/) ![close icon](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/forbes-media-close-icon.svg) ![Author image](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2023/06/Sarah_Davis.png) [Sarah Davis](https://www.forbes.com/health/author/sarah-berger/) Staff Editor Sarah is an experienced writer and editor enthusiastic about helping readers live their healthiest and happiest lives. Before joining Forbes Health, Sarah worked as a writer for various digital publications including LendingTree, theSkimm, CNBC and B\u2026 - [![Linkedin icon](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/linkedin-icon.svg)](https://www.linkedin.com/in/sarah-davis-24060180/) [Read Full Bio![See Full Bio](https://www.forbes.com/health/wp-content/plugins/mp-gutenberg-blocks/src/assets/images/read-full-bio.svg)](https://www.forbes.com/health/author/sarah-berger/) Staff Editor & other Collapse How We Analyzed Forbes Health deeply analyzed the top GLP-1 providers, enlisting help from real users and evaluating the most affordable options. Read our methodology. The Forbes Health editorial team is independent and objective. To help support our reporting work, and to continue our ability to provide this content for free to our readers, we receive compensation from the companies that advertise on the Forbes Health site. This compensation comes from two main sources. **First**, we provide paid placements to advertisers to present their offers. The compensation we receive for those placements affects how and where advertisers\u2019 offers appear on the site. This site does not include all companies or products available within the market. **Second**, we also include links to advertisers\u2019 offers in some of our articles; these \u201caffiliate links\u201d may generate income for our site when you click on them. The compensation we receive from advertisers does not influence the recommendations or advice our editorial team provides in our articles or otherwise impact any of the editorial content on Forbes Health. While we work hard to provide accurate and up-to-date information that we think you will find relevant, Forbes Health does not and cannot guarantee that any information provided is complete and makes no representations or warranties in connection thereto, nor to the accuracy or applicability thereof. ## Quick Dive We reviewed online weight loss medication programs to help you find the most affordable options for accessing GLP-1s. Discover the best affordable GLP-1 online providers here. [Top Editorial Picks](https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#mkpl-tables-455677) [Dive into the data](https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#mkpl-tables-455652) ## The Best Affordable Online GLP-1 Providers [Ro](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_cqfpCSDm6TwC&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) **Best Chat-Based Weight Loss Platform** With multiple brand-name, FDA-approved GLP-1 medications offered, this platform also offers unlimited access to providers via unlimited messaging, as well as one-on-one health coaching and side effect management. [Get Started](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_snhI0lJnn2XY&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) ![Ro](https://thumbor.forbes.com/thumbor/fit-in/172x/https://www.forbes.com/health/wp-content/uploads/2026/04/Ro-removebg-preview.png) On Ro\u2019s Website MOST POPULAR [Remedy Meds](https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_q1ddmZywzbkp&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F) **Best Customer Support** This platform does not require a monthly membership fee and offers both compounded and brand-name GLP-1 medications. [Get Started](https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_t04yDx3SPNvK&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F) ![Remedy Meds](https://thumbor.forbes.com/thumbor/fit-in/172x/https://www.forbes.com/health/wp-content/uploads/2024/06/Remedy-Meds-Logo.png) On Remedy Med\u2019s Website [Hims & Hers](https://hersinc.pxf.io/c/1955282/3214315/23930?subid1=FAYKKxoAK0wfRMJTfqX7JX_36Zy0FjzSxSJ&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) **Best Versatile Weight Loss Platform** This platform offers a monthly membership program that unlocks access to a range of weight loss medications for qualifying individuals, including brand-name oral and injectable GLP-1s. [Get Started](https://hersinc.pxf.io/c/1955282/3214315/23930?subid1=FAYKKxoAK0wfRMJTfqX7JX_qJAdxzvgcyxG&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) ![Hims & Hers](https://thumbor.forbes.com/thumbor/fit-in/172x/https://www.forbes.com/health/wp-content/uploads/2025/10/Hims-Hers.png) On Hers\u2019 Website [Weight Watchers Med+](https://weightwatchers.pxf.io/c/1955282/2217560/16605?subid1=FAYKKxoAK0wfRMJTfqX7JX_3mPkWzGLWKXK&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) **Best Program Overall** Providers with this platform are obesity specialists who provide personalized treatment plans, which may include weight loss medications like Wegovy, Saxenda or Zepbound. [Get Started](https://weightwatchers.pxf.io/c/1955282/2217560/16605?subid1=FAYKKxoAK0wfRMJTfqX7JX_U80Sjc3DgsDW&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) ![Weight Watchers Med+](https://thumbor.forbes.com/thumbor/fit-in/172x/https://www.forbes.com/health/wp-content/uploads/2026/04/weightwatcher.png) On WW\u2019s Website [Mochi Health](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_dRQFacFTq7WC&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) **Best for Additional Weight Loss Resources** Mochi providers can write prescriptions for brand-name or compounded GLP-1 medications for eligible individuals. [Get Started](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_LnYPJv1ebyLN&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) ![Mochi Health](https://www.forbes.com/health/wp-content/uploads/2025/03/mochi-logo-dark-blue.svg) On Mochi Health\u2019s Website [Henry Meds](https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#henry-meds) **Best User Experience** Solely offering compounded GLP-1 medications, Henry Meds has an array of oral tablets, oral drops and injectable medications available. [View More](https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#henry-meds) ![Henry Meds](https://thumbor.forbes.com/thumbor/fit-in/172x/https://www.forbes.com/health/wp-content/uploads/2026/04/Henry_Meds-removebg-preview.png) ## How We Picked the Best Affordable Online GLP-1 Providers OverviewOur Methodology Our Team ## How We Picked the Best Affordable Online GLP-1 Providers Forbes Health deeply analyzed 41 data points\u2014including costs, features and more\u2014on 10 online GLP-1 providers. From there, we sent our top platforms to real users for testing. The Forbes Health editorial team prioritizes the accuracy and integrity of the data collected. Our ranking is based on quantitative data and is free from conflicts of interest. We carefully fact check the information featured in our ranking and are committed to producing rankings and supplemental content about weight loss that readers can trust. You can read more about our [editorial guidelines](https://www.forbes.com/health/about-us/) for the rankings below. Read More ### How We Evaluate the Best Affordable Online GLP-1 Providers - 10 #### Providers considered We evaluated programs that offered GLP-1 medications for weight loss - 41 #### Data metrics considered Includes costs, medications offered and user feedback - 6 #### Weight loss medication providers tested Real users evaluated the program\u2019s overall experience ## Our Methodology Forbes Health evaluated the most popular affordable online GLP-1 providers, testing the top six platforms. We recruited current and previous users of each platform so that we could learn more about people\u2019s actual experiences. Each tester completed a written survey and audio interview about their experience. Star ratings were determined by the editorial team based on 41 different variables, which are outlined below. Since this ranking focuses on affordability, we disqualified any telehealth providers that did not offer GLP-1 medications under $500. **Medications offered and costs: 25%** We considered the variety and types of medications offered by the platform, including whether it offers name brand GLP-1 medications (such as Wegovy) and/or generic or compounded semaglutide or liraglutide. We also analyzed the recurring costs associated with the medications offered by the platform. **User experience: 20%** Our Forbes Health testers evaluated the platform on a variety of metrics including its personalized coaching offerings, cost effectiveness, technical reliability, onboarding and overall satisfaction. **Platform features: 17%** Whether the platform offers an app, how users can cancel recurring subscriptions, how many weight loss medications are offered through the platform and if the platform offers generic weight loss medications compounded with vitamin B12 were among the factors we considered. **Insurance: 15%** Factors taken into consideration included whether the platform accepts insurance, the number of insurance providers accepted and whether HSA or FSA funds are accepted. **User reviews: 13%** We looked at user reviews and ratings of the platform on the iOS and Google Play app stores, as well as the platform\u2019s Better Business Bureau and Trustpilot ratings. **Availability: 10%** We considered how many states the platform could ship GLP-1 medications to. Read More 25% 20% 17% 15% 13% 10% (25%) Medications offered and costs (20%) User experience (17%) Platform features (15%) Insurance (13%) User reviews (10%) Availability ## Our Team Our team has decades of experience in the health space. We\u2019re passionate about helping you make smart decisions about your wellness and supporting you on your path to a healthy and balanced lifestyle. Read More ![Carley Prendergast](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2024/09/IMG_0639-Carley-Prendergast-scaled.jpg) [Carley Prendergast](https://www.forbes.com/health/author/cprendergast/) Staff Editor ![Sarah Davis](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2023/06/Sarah_Davis.png) [Sarah Davis](https://www.forbes.com/health/author/sarah-berger/) Staff Editor ## Carley Prendergast ![Carley Prendergast](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2024/09/IMG_0639-Carley-Prendergast-scaled.jpg) With more than five years of experience in the industry, Carley is a passionate media professional, whose background spans from writing and editing to social media content creation and analytics. Expertise: Sleep Dating Relationships ## Sarah Davis ![Sarah Davis](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2023/06/Sarah_Davis.png) Sarah Davis is a managing editor at Forbes Health with nearly a decade of experience in the journalism field. Sarah is a seasoned writer and editor with articles published on an array of health and wellness topics, ranging from the impact of the COVID-19 pandemic on mental health to how the reversal of Roe vs. Wade may affect fertility treatments. Expertise: Health Wellness Nutrition Mental Health Supplements #### Carley Prendergast With more than five years of experience in the industry, Carley is a passionate media professional, whose background spans from writing and editing to social media content creation and analytics. Expertise: Sleep Dating Relationships ![Carley Prendergast](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2024/09/IMG_0639-Carley-Prendergast-scaled.jpg) #### Sarah Davis Sarah Davis is a managing editor at Forbes Health with nearly a decade of experience in the journalism field. Sarah is a seasoned writer and editor with articles published on an array of health and wellness topics, ranging from the impact of the COVID-19 pandemic on mental health to how the reversal of Roe vs. Wade may affect fertility treatments. Expertise: Health Wellness Nutrition Mental Health Supplements ![Sarah Davis](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2023/06/Sarah_Davis.png) - Browse Article - 6 Best Affordable Online GLP-1 Providers - Comparison: Best Affordable Online GLP-1 Providers - Affordable Online GLP-1 Provider Pricing - Affordable Online GLP-1 Provider User Experience Scores - Affordable Online GLP-1 Medications Offered by Our Top Platforms - What Is a GLP-1? - Types of GLP-1 Medications - What to Consider When Choosing Between Affordable GLP-1 Options FEATURED PARTNER OFFER ![partner offer](https://www.forbes.com/health/wp-content/themes/fadvuk/assets/images/advisor-health/partner-offer-tooltip-icon-white-sniper.svg) We receive compensation from our partners for Featured Partner Offer placements. While this may influence where their products or services appear on our site, it in no way affects our ratings, which are based on thorough research, solid methodologies and expert advice. Our partners cannot pay us to guarantee favorable review of their products or services. Ro Weight Loss Program [![Ro Weight Loss Program](https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/health/wp-content/uploads/2023/09/RO-logo.png)](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_StdSUYymLE7x&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) - Offers a full suite of GLP-1 options to fit your needs - Get started online for just $39 - Includes on-demand provider messaging and personalized medication adjustments - Prescribed online with dedicated insurance support to navigate the cost of medication [Get Started![](https://www.forbes.com/health/wp-content/themes/fadvuk/assets//images/icons/arrow-sniper.svg)](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_73RL410Ya1ur&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) On Ro's Website ## 6 Best Affordable Online GLP-1 Providers _Editor\u2019s Note: Some of the platforms in the ranking below may offer medications (like Ozempic) that are not approved by the U.S. Food and Drug Administration (FDA) for weight management but are commonly prescribed off label for weight loss. Others offer compounded medications that are not FDA approved. Compounded drugs are not reviewed by the FDA for safety, effectiveness or quality before they are marketed._ _We worked with testers, whose identities we have verified, to test the products and services mentioned in this story. Due to the private nature of individual health concerns, we have chosen to change their names to Forbes Health tester, etc., when we refer to them in this story._ ## Ro [**Ro**](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_MRTCXwgSz7Lq&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) [![Ro](https://www.forbes.com/health/wp-content/uploads/2026/04/Ro-removebg-preview.png)](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_AwTWHyQrwhLo&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) Best Chat-Based Weight Loss Platform - Membership cost: $149 per month for Ro Body membership (when paying monthly) - Total cost (membership + medication): From $348 (oral GLP-1) - GLP-1 medications: Wegovy, Saxenda, Foundayo and Zepbound - Other weight loss medications: N/A [Get Started ![Arrow](https://www.forbes.com/health/wp-content/themes/fadvuk/assets/images/icons/right-arrow.svg)](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_CF07Gx2TyWlr&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) On Ro's Website Our Expert Review Pros & Cons Proprietary Insights for Ro Our Experience ##### Our Expert Review Our platform testing and research found that Ro is the best chat-based weight loss medication provider, earning a 4.3-star rating from our research team. For eligible individuals, Ro connects users with providers who may prescribe FDA-approved weight loss medications, including Wegovy ($348 per month, with membership cost), Zepbound ($548 per month, with membership cost), as well as oral GLP-1s, such as Foundayo (starting at $348 per month, including membership costs). While not FDA-approved for weight loss, compounded semaglutide is also available at $394 per month, with membership cost included. Depending on the medication, users may receive their prescription via shipment or through a local pharmacy. Notably, Ro offers to check your insurance coverage for you to confirm whether medication is covered\u2014 and may assist with submitting prior authorization paperwork, depending on the situation. With the Ro Body membership (required to obtain a GLP-1 medication), users have an impressive level of access to providers, including a recommended personalized treatment plan, unlimited messaging at any time and routine check-ins. While Ro may offer unlimited messaging access to providers, our Forbes Health tester did note some communication delays surrounding changing his insurance provider, sometimes taking two to three days to receive a response. ##### Pros & Cons | | | | --- | --- | | Insurance may be accepted for Wegovy and Zepbound pens, depending on a user\u2019s plan | Does not accept health savings account (HSA) or flexible spending account (FSA) funds | | First month of Ro Body membership is just $39, per the company | Cash pay is the only payment option for the Wegovy pill, Zepbound KwikPen and Foundayo pill | | Ability to cancel your membership at any time | | | Offers one-on-one health coaching and side effect management | | ##### Proprietary Insights for Ro _The following ratings are based on Forbes Health platform tester feedback, on a scale of 0 to 5._ - **Onboarding:** 5 - **Ease of Use:** 5 - **Overall:** 3 ##### Our Experience Our tester, Matt, found Ro easy to navigate and the asynchronous communication model a convenient perk. However, he cited some issues with Ro overall, including the cost of the medication not being included in the monthly membership fee, a lack of personalization with his follow-up interactions, slow response time, opacity surrounding insurance coverage and miscommunication issues with the platform. His overall experience left him feeling frustrated, misled and unsure about the service\u2019s reliability. \u2014 Forbes Health platform tester Read More * * * ## Remedy Meds MOST POPULAR [**Remedy Meds**](https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_VlVIPaG4paj4&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F) [![Remedy Meds](https://www.forbes.com/health/wp-content/uploads/2024/06/Remedy-Meds-Logo.png)](https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_fJbFhq7wRVQA&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F) Best Customer Support - Membership cost: None - Total cost (membership + medication): From $299 (compounded semaglutide) - GLP-1 weight loss medications: Zepbound, compounded semaglutide, compounded tirzepatide - Other weight loss medications: None [Get Started ![Arrow](https://www.forbes.com/health/wp-content/themes/fadvuk/assets/images/icons/right-arrow.svg)](https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_BRCcHWzVERm5&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F) On Remedy Med's Website Our Expert Review Pros & Cons Proprietary Insights for Remedy Meds Our Experience ##### Our Expert Review Our platform testing and research found that [Remedy Meds](https://www.forbes.com/health/weight-loss/remedy-meds-review/) is the best weight loss medication provider for customer support, earning a 4.3-star rating from our research team. Editors found customer service representatives easy to reach, and they provided quick and accurate information. Medications at Remedy Meds range from $299 per month for compounded semaglutide and $399 per month for compounded tirzepatide, to $1,399 for Zepbound. ##### Pros & Cons | | | | --- | --- | | The cost of Zepbound is significantly lower than the other platform in this lineup that also prescribes and ships Zepbound | Remedy Meds only offers one brand-name GLP-1 medication and two compounded versions, which may be limiting for some | | Our user tester reported that the provider was attentive and sent additional resources that helped her feel confident in her treatment plan | The website doesn\u2019t offer as much high-quality information as we\u2019d like | | Users have ongoing access to Remedy Med\u2019s care team and clinicians, and can ask questions about progress, side effects or dosage at no extra cost | | | Accepts HSA and FSA | | ##### Proprietary Insights for Remedy Meds _The following ratings are based on Forbes Health platform tester feedback, on a scale of 0 to 5._ - **Onboarding:** 5 - **Ease of Use:** 5 - **Overall:** 5 ##### Our Experience \u201cI felt that Remedy Meds took the process very seriously. I could not get meds until I had uploaded my labs and my provider reviewed them and met with me again after they reviewed my documents. My first provider was personable, attentive and answered all of my questions thoughtfully and thoroughly. I did not feel rushed or like they needed to jump off the call right at the end. She took my concerns about potential nausea seriously and sent me resources to help. She sent me several PDF files for me to read over, so I felt confident in my treatment as well as my exercise and diet plan.\u201d \u2013 Forbes Health platform tester Read More * * * ## Hims & Hers [**Hims & Hers**](https://hersinc.pxf.io/c/1955282/3214315/23930?subid1=FAYKKxoAK0wfRMJTfqX7JX_YupV28INRGrL&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) [![Hims & Hers](https://www.forbes.com/health/wp-content/uploads/2025/10/Hims-Hers.png)](https://hersinc.pxf.io/c/1955282/3214315/23930?subid1=FAYKKxoAK0wfRMJTfqX7JX_6tpB4qe7ub2K&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) Best Versatile Weight Loss Platform - Membership cost: $149 per month ($39 for the first month) - Total cost (membership + medication): From $149 (oral GLP-1) - GLP-1 weight loss medications: Wegovy (injectable and oral), Zepbound and more - Other weight loss medications: None [Get Started ![Arrow](https://www.forbes.com/health/wp-content/themes/fadvuk/assets/images/icons/right-arrow.svg)](https://hersinc.pxf.io/c/1955282/3214315/23930?subid1=FAYKKxoAK0wfRMJTfqX7JX_F4GqrsA66Kfs&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) On Hers' Website Our Expert Review Pros & Cons Proprietary Insights for Hims & Hers Our Experience ##### Our Expert Review Our platform testing and research found that [Hims & Hers](https://www.forbes.com/health/weight-loss/hims-hers-weight-loss-shots/) is the best versatile weight loss medication provider, earning a 4.3-star rating from our research team. Hims & Hers offers a monthly membership for prescription savings, and it can fill and ship medications directly to your door. Total costs for FDA-approved weight loss drugs at Hims & Hers, including membership fees, range from $298 per month for oral Wegovy and $348 per month for injectable Wegovy, to $2,048 per month for injectable Zepbound. We appreciate that users can get everything they need in one place without needing to go somewhere else to get a prescription filled. There are some drawbacks, however. For starters, we didn\u2019t find customer service as efficient as similar platforms, with longer hold times and a confusing directive to email instead of call. Our Forbes Health tester also noted some issues with signing up, saying the verification process seemed harder than it needed to be. Our tester also said he had difficulty locating his receipt and other payment information. Additionally, he said the cancellation process was not ideal because there was no option to pause his account, only cancel. Hims & Hers\u2019 appeal lies mainly in the convenience and variety of available medications. ##### Pros & Cons | | | | --- | --- | | It functions as a one-stop shop: It offers a variety of medications, and you can get your prescription filled and shipped directly to you. | Customer service was underwhelming, and we typically encountered longer hold times compared to competitors. In one instance\u2014after being on hold for more than 10 minutes\u2014we were told to email for faster responses. Then when we emailed, responses were much slower than expected | | Monthly membership may lead to savings | Medication can\u2019t be prescribed without a membership | | Educational tools and resources available within the Hims & Hers apps, including nutrition guidance, 24/7 access to support and licensed providers, lifestyle and exercise tips, built-in trackers | | | Accepts HSA and FSA | | ##### Proprietary Insights for Hims & Hers _The following ratings are based on Forbes Health platform tester feedback, on a scale of 0 to 5._ - **Onboarding:** 3 - **Ease of Use:** 4 - **Overall:** 4 ##### Our Experience Our tester said that when he received his three-month supply of medication, he noticed a nice surprise included in the box, explaining, \u201cthey included a couple of free items that I wasn\u2019t expecting, like a nice water bottle.\u201d \u2014 Forbes Health tester Read More * * * ## Weight Watchers Med+ [**Weight Watchers Med+**](https://weightwatchers.pxf.io/c/1955282/2217560/16605?subid1=FAYKKxoAK0wfRMJTfqX7JX_0j00YDwf9Yfk&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) [![Weight Watchers Med+](https://www.forbes.com/health/wp-content/uploads/2026/04/weightwatcher.png)](https://weightwatchers.pxf.io/c/1955282/2217560/16605?subid1=FAYKKxoAK0wfRMJTfqX7JX_zqu3BXGXrasK&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) Best Program Overall - Membership cost: $74 per month for a year-long commitment for Med+ - Total cost (membership + medication): From $273 (oral GLP-1) - GLP-1 medications: Wegovy (oral and injectable), Saxenda, Foundayo, Zepbound - Other weight loss medications: Combination naltrexone and bupropion [Get Started ![Arrow](https://www.forbes.com/health/wp-content/themes/fadvuk/assets/images/icons/right-arrow.svg)](https://weightwatchers.pxf.io/c/1955282/2217560/16605?subid1=FAYKKxoAK0wfRMJTfqX7JX_zHAo1DF8SSLG&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) On WW's Website Our Expert Review Pros & Cons Proprietary Insights for Weight Watchers Med+ Our Experience ##### Our Expert Review Our platform testing and research found that Weight Watchers Med+ is the best weight loss medication provider for its overall program, earning a 5-star rating from our research team. Weight Watchers Med+ providers are obesity specialists\u2014including doctors, nurse practitioners and registered dietitians\u2014who review your medical needs and suggest individualized treatment plans. After an initial call, a provider creates a care plan, which may include prescription weight loss medication and additional weight loss support. Providers can write prescriptions for\u2014but not directly ship\u2014GLP-1 agonist medications. Individuals prescribed an FDA-approved weight loss medication from Weight Watchers can expect a total monthly cost (including medication costs and membership fees) of up to $423 for injectable forms of Wegovy, $273 for the Wegovy pill and $523 for Zepbound. The company can ship other weight loss medications, including combination naltrexone and bupropion, and the cost of those medications is included in the price of membership. Forbes Health appreciated that Weight Watchers Clinic\u2014the branch of the company that pertains to weight loss medications\u2014offers a lot of resources for additional support, including workshops and access to a dietitian. However, despite the abundance of information on the company website, we couldn\u2019t easily find pricing and other specific information. To find answers, we either had to take a survey that asked for a lot of personal information, or we were attempting to navigate a webpage with so much information that it was slightly confusing. ##### Pros & Cons | | | | --- | --- | | Certain weight loss drugs are included in the price of membership | Membership options, including pricing information, aren\u2019t easily accessible on the website, and customer service contact information is somewhat difficult to locate on the website | | Membership includes a variety of additional weight loss support resources | If you sign up for a 12-month membership and decide to cancel, you\u2019ll still be charged for the remaining months | | Workshops, weight and activity trackers, recipes, meal trackers, community support, audio coaching and meal planning with a registered dietitian | | | Accepts HSA and FSA | | ##### Proprietary Insights for Weight Watchers Med+ _The following ratings are based on Forbes Health platform tester feedback, on a scale of 0 to 5._ - **Onboarding:** 5 - **Ease of Use:** 5 - **Overall:** 5 ##### Our Experience \u201cThere\u2019s lots of open chats that are really active with lots of other members, so I found that super helpful,\u201d said a Forbes Health platform tester about the Weight Watchers Med+ community support. She also said joining the member support groups was accessible and simple via the accompanying app, adding that there were different support groups focused on different goals, such as fitness or weight loss. \u2014 Forbes Health platform tester Read More * * * ## Mochi Health [**Mochi Health**](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_kOCogjVbufzC&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) [![Mochi Health](https://www.forbes.com/health/wp-content/uploads/2025/03/mochi-logo-dark-blue.svg)](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_YHHzgxNgZh19&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) Best for Additional Weight Loss Resources - Membership cost: $79 for a single month - Total cost (membership + medication): From $178 (compounded semaglutide) - GLP-1 medications: Compounded, Wegovy (oral and injectable), Zepbound, Saxenda and more - Other weight loss medications: Contrave, Xenical and more [Get Started ![Arrow](https://www.forbes.com/health/wp-content/themes/fadvuk/assets/images/icons/right-arrow.svg)](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_EVg9vTsBVqlJ&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) On Mochi Health's Website Our Expert Review Pros & Cons Proprietary Insights for Mochi Health Our Experience ##### Our Expert Review Our platform testing and research found that [Mochi Health](https://www.forbes.com/health/weight-loss/mochi-health-review/) is the best weight loss medication provider for additional weight loss resources, earning a 4.6-star rating from our research team. Information is easily accessible\u2014often just by asking the AI chatbot \u2014and the membership plans are simple to understand. Mochi Health providers can write prescriptions for brand-name GLP-1 weight loss medications that users can fill at their preferred pharmacy, but Mochi Health doesn\u2019t ship them. Compounded GLP-1 agonist medications\u2014which are not FDA approved\u2014range from $178 per month for semaglutide to $278 per month for tirzepatide (that\u2019s including membership fees) and can be shipped. Mochi\u2019s website notes that compounded drugs are not FDA-approved. Compounded drugs are not reviewed by the FDA for safety, effectiveness or quality before they are marketed. The straightforward experience was exceptional compared to competitor sites, which required long hold times just to get basic pricing information. While navigating Mochi Health, we were able to get a complete price breakdown within seconds (via the AI chatbot), without having to email or call the company. Our Forbes Health tester also had an excellent experience, saying she was surprised by how simple the process was and that Mochi Health\u2019s additional weight loss resources were very helpful. ##### Pros & Cons | | | | --- | --- | | Mochi\u2019s website was easy to navigate and has a helpful AI chatbot that can answer questions, even somewhat complex ones, which made for an excellent customer service experience. | Additional services like in-depth health risk assessments, preventative screenings and advanced medical nutrition therapy are only available with the Wellness Plus Membership, which requires qualifying insurance | | Additional resources, including videos and various guides, such as tips for holiday eating, offer another layer of support | Only compounded drugs can be shipped directly from Mochi | | Accepts HSA and FSA | | | The Wellness Plus Membership includes services like in-depth health risk assessments, preventative screenings and advanced medical nutrition therapy, which involves working with a registered dietitian with experience in bariatric care to get a customized dietary plan | | ##### Proprietary Insights for Mochi Health _The following ratings are based on Forbes Health platform tester feedback, on a scale of 0 to 5._ - **Onboarding:** 5 - **Ease of Use:** 4 - **Overall:** 5 ##### Our Experience Our tester said Mochi Health was surprisingly simple to use, and the platform\u2019s approach was very personalized. \u201cMy general thoughts on the Mochi platform and prescriber are very positive. \\[The experience was\\] very organized, and I did feel heard. I have struggled with weight for so many years, and this is the first thing that worked. They always try to help you in conjunction with the medication, which is nice that they don\u2019t just throw you the meds and say good luck.\u201d \u2014 Forbes Health platform tester Read More * * * ## Henry Meds ### Henry Meds ![Henry Meds](https://www.forbes.com/health/wp-content/uploads/2026/04/Henry_Meds-removebg-preview.png) Best User Experience - Membership cost: Program costs vary based on type of medication - Total cost (membership + medication): From $179 (compounded liraglutide) - GLP-1 medications: Compounded GLP1-s only - Other weight loss medications: Compounded phentermine Our Expert Review Pros & Cons Proprietary Insights for Henry Meds Our Experience ##### Our Expert Review Our platform testing and research found that Henry Meds is the best weight loss medication provider for user experience earning a 4-star rating from our research team. Henry Meds does not offer any long-term contracts, but rather monthly plans, and in some cases, longer plans, all with the ability to cancel at any time. While costs vary depending on your personalized treatment plan and dosage, compounded GLP-1 medications from Henry Meds start at $1,799 per month, which includes ongoing support, provider visits, medication and other supplies. Our Forbes Health tester rated Henry Meds 5 out of 5 stars overall, stating that the platform delivered on its promises and didn\u2019t make her feel uncomfortable about her weight concerns, as some in-person providers had in the past. ##### Pros & Cons | | | | --- | --- | | Medications are shipped to your door (if prescribed), per the company | Does not offer any name-brand GLP-1 medications | | Offers compounded oral drops, compounded injectables, compounded oral tablets and compounded oral tablet microdosing options for those who qualify | Compounded medications come with risks, as they are not evaluated by the FDA | | Initial medical forms take less than five minutes to complete, according to the company | Medication fulfillment time may be longer for individuals in California due to compound testing requirements, per the company | | No long-term contracts required | | ##### Proprietary Insights for Henry Meds _The following ratings are based on Forbes Health platform tester feedback, on a scale of 0 to 5._ - **Onboarding:** 5 - **Ease of Use:** 5 - **Overall:** 5 ##### Our Experience Our tester, Megan, was pleased by the accessibility of Henry Meds and the ease of getting medication prescribed. At the time of her intake, there was no live component to the intake process; however, the platform currently requires customers to be evaluated by a provider in a face-to-face video meeting in order to be prescribed medication. Megan also appreciated the pricing transparency and quick access to medication (delivered within two weeks of filling out the intake form). The platform\u2019s intuitive design made navigation a breeze, and there was little follow-up required, she shared, adding that she only accessed it for the initial intake, the checkup questionnaires and to check if an order had shipped. Although she did not request face-to-face interactions, she noted that the feature is available to anyone who has specific questions or concerns. \u2014 Forbes Health platform tester Read More * * * _Most Popular is calculated from the number of times each affiliate product was selected by Forbes Health users over a six month time period._ * * * ## Comparison: Best Affordable Online GLP-1 Providers The table below will allow you to quickly see the final score for each [GLP-1 provider](https://www.forbes.com/health/weight-loss/best-online-weight-loss-medication/) we tested, what we believe it is best used for and its membership fee. | Provider | Details | | --- | --- | | [![Ro](https://www.forbes.com/health/wp-content/uploads/2026/04/Ro-removebg-preview.png)](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_Fc6O19T12qEU&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>[Ro](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_6iSpc8FSRdhX&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>[Get Started](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_BWTp1eFSA87N&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) <br>On Ro's Website | Ratings<br>Best For <br>Best Chat-Based Weight Loss Platform<br>Membership Fee <br>$149 per month for Ro Body membership<br>Total Cost <br>Membership + Wegovy: $348<br>Membership + Zepbound: $548<br>Membership + Oral GLP-1: $348<br>Membership + Compounded semaglutide/liraglutide: $394<br>Learn More <br>[Get Started](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_yoJYDu3lIndP&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>On Ro's Website | | ![Most Popular Tag](https://www.forbes.com/health/wp-content/plugins/marketplace-tables/public/images/most-popular-tag.svg)<br>[![Remedy Meds](https://www.forbes.com/health/wp-content/uploads/2024/06/Remedy-Meds-Logo.png)](https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_Der0UXll7tt1&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F)<br>[Remedy Meds](https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_MxYKQtfT1EbR&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F)<br>[Get Started](https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_DclLGqIpHo82&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F) <br>On Remedy Med's Website | Ratings<br>Best For <br>Best Customer Support<br>Membership Fee <br>None<br>Total Cost <br>Compounded semaglutide/liraglutide: $299<br>Compounded tirzepatide: $399<br>Learn More <br>[Get Started](https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_JR3APfPbEWgr&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F)<br>On Remedy Med's Website | | [![Hims & Hers](https://www.forbes.com/health/wp-content/uploads/2025/10/Hims-Hers.png)](https://hersinc.pxf.io/c/1955282/3214315/23930?subid1=FAYKKxoAK0wfRMJTfqX7JX_ISjPpX2OcwUd&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>[Hims & Hers](https://hersinc.pxf.io/c/1955282/3214315/23930?subid1=FAYKKxoAK0wfRMJTfqX7JX_61c3JRxPk72G&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>[Get Started](https://hersinc.pxf.io/c/1955282/3214315/23930?subid1=FAYKKxoAK0wfRMJTfqX7JX_YjkzkY5gcsKQ&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) <br>On Hers' Website | Ratings<br>Best For <br>Best Versatile Weight Loss Platform<br>Membership Fee <br>$149 per month ($39 for the first month)<br>Total Cost <br>Membership + Wegovy: $349<br>Membership + Oral GLP-1: $298<br>Membership + Wegovy : $348<br>Learn More <br>[Get Started](https://hersinc.pxf.io/c/1955282/3214315/23930?subid1=FAYKKxoAK0wfRMJTfqX7JX_W68pLcOFHl6f&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>On Hers' Website | | [![Weight Watchers Med+](https://www.forbes.com/health/wp-content/uploads/2026/04/weightwatcher.png)](https://weightwatchers.pxf.io/c/1955282/2217560/16605?subid1=FAYKKxoAK0wfRMJTfqX7JX_GSdYGOB3619F&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>[Weight Watchers Med+](https://weightwatchers.pxf.io/c/1955282/2217560/16605?subid1=FAYKKxoAK0wfRMJTfqX7JX_jkxonLEMfTtY&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>[Get Started](https://weightwatchers.pxf.io/c/1955282/2217560/16605?subid1=FAYKKxoAK0wfRMJTfqX7JX_Df9koF81rIqu&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) <br>On WW's Website | Ratings<br>Best For <br>Best Program Overall<br>Membership Fee <br>$74 with 12-month commitment to Med+ (but may vary)<br>Total Cost <br>Membership + Wegovy: $423<br>Membership + Zepbound: $523<br>Membership + Oral GLP-1: $273<br>Learn More <br>[Get Started](https://weightwatchers.pxf.io/c/1955282/2217560/16605?subid1=FAYKKxoAK0wfRMJTfqX7JX_JwQs39pKrw0e&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>On WW's Website | | [![Mochi Health](https://www.forbes.com/health/wp-content/uploads/2025/03/mochi-logo-dark-blue.svg)](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_RZaM8J5HnQhN&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>[Mochi Health](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_rusTOGddDB4p&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>[Get Started](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_lQYxGm3cxhke&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) <br>On Mochi Health's Website | Ratings<br>Best For <br>Best for Additional Weight Loss Resources<br>Membership Fee <br>$79 (for a single month)<br>Total Cost <br>Membership + Compounded semaglutide/liraglutide: $178<br>Membership + Compounded tirzepatide: $278<br>Learn More <br>[Get Started](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_p2Gwlj8kH91y&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>On Mochi Health's Website | | [![Henry Meds](https://www.forbes.com/health/wp-content/uploads/2026/04/Henry_Meds-removebg-preview.png)](https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#henry-meds)<br>[Henry Meds](https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#henry-meds)<br>[View More](https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#henry-meds) | Ratings<br>Best For <br>Best User Experience<br>Membership Fee <br>Varies based on medication type<br>Total Cost <br>Compounded liraglutide/semaglutide: $179/$297<br>Learn More <br>[View More](https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#henry-meds) | Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness or quality. | PLATFORM | BEST FOR | MEMBERSHIP FEE | TOTAL COST | LEARN MORE | | --- | --- | --- | --- | --- | | [![Ro](https://www.forbes.com/health/wp-content/uploads/2026/04/Ro-removebg-preview.png)](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_L7IYOKffsV8y&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>[Ro](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_QLy9bL7LgAg2&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) | Best Chat-Based Weight Loss Platform | $149 per month for Ro Body membership | Membership + Wegovy: $348<br>Membership + Zepbound: $548<br>Membership + Oral GLP-1: $348<br>Membership + Compounded semaglutide/liraglutide: $394 | [Get Started](https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_CwQAJVfL4sAy&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) <br>On Ro's Website | | ![Most Popular Tag](https://www.forbes.com/health/wp-content/plugins/marketplace-tables/public/images/most-popular-tag.svg)<br>[![Remedy Meds](https://www.forbes.com/health/wp-content/uploads/2024/06/Remedy-Meds-Logo.png)](https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_GVDTAdorxJul&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F)<br>[Remedy Meds](https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_ELSqKBecR9Tp&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F) | Best Customer Support | None | Compounded semaglutide/liraglutide: $299<br>Compounded tirzepatide: $399 | [Get Started](https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_hONSRu1SpIDS&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F) <br>On Remedy Med's Website | | [![Hims & Hers](https://www.forbes.com/health/wp-content/uploads/2025/10/Hims-Hers.png)](https://hersinc.pxf.io/c/1955282/3214315/23930?subid1=FAYKKxoAK0wfRMJTfqX7JX_maoPuCj8jUBv&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>[Hims & Hers](https://hersinc.pxf.io/c/1955282/3214315/23930?subid1=FAYKKxoAK0wfRMJTfqX7JX_MNwyrgbAfNpE&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) | Best Versatile Weight Loss Platform | $149 per month ($39 for the first month) | Membership + Wegovy: $349<br>Membership + Oral GLP-1: $298<br>Membership + Wegovy : $348 | [Get Started](https://hersinc.pxf.io/c/1955282/3214315/23930?subid1=FAYKKxoAK0wfRMJTfqX7JX_hyBkur6baWIV&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) <br>On Hers' Website | | [![Weight Watchers Med+](https://www.forbes.com/health/wp-content/uploads/2026/04/weightwatcher.png)](https://weightwatchers.pxf.io/c/1955282/2217560/16605?subid1=FAYKKxoAK0wfRMJTfqX7JX_E0laJABVxIzp&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>[Weight Watchers Med+](https://weightwatchers.pxf.io/c/1955282/2217560/16605?subid1=FAYKKxoAK0wfRMJTfqX7JX_L6MczL6PsIym&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) | Best Program Overall | $74 with 12-month commitment to Med+ (but may vary) | Membership + Wegovy: $423<br>Membership + Zepbound: $523<br>Membership + Oral GLP-1: $273 | [Get Started](https://weightwatchers.pxf.io/c/1955282/2217560/16605?subid1=FAYKKxoAK0wfRMJTfqX7JX_Y2UeGGfIYhLL&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) <br>On WW's Website | | [![Mochi Health](https://www.forbes.com/health/wp-content/uploads/2025/03/mochi-logo-dark-blue.svg)](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_Xfiai47Gu54t&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health)<br>[Mochi Health](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_zNGcadGuaW8A&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) | Best for Additional Weight Loss Resources | $79 (for a single month) | Membership + Compounded semaglutide/liraglutide: $178<br>Membership + Compounded tirzepatide: $278 | [Get Started](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_TCyLoFo0pD9W&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) <br>On Mochi Health's Website | | [![Henry Meds](https://www.forbes.com/health/wp-content/uploads/2026/04/Henry_Meds-removebg-preview.png)](https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#henry-meds)<br>[Henry Meds](https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#henry-meds) | Best User Experience | Varies based on medication type | Compounded liraglutide/semaglutide: $179/$297 | [View More](https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#henry-meds) | Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness or quality. See MoreSee Less * * * ## Affordable Online GLP-1 Provider Pricing The table below shows the fees associated with our top affordable online GLP-1 providers. | \ufeffPLATFORM | MONTHLY MEMBERSHIP FEE | BRAND-NAME MEDICATION COST | GENERIC MEDICATION COST | COMPOUNDED MEDICATION COST | ADDITIONAL FEES OR PRICING INFORMATION | | --- | --- | --- | --- | --- | --- | | Weight Watchers Med+ | $74 with 12-month commitment to Med+ | Wegovy self-pay starts at $199 a month | N/A | N/A | Certain weight loss medications are included in membership cost | | Mochi Health | $79 (for a single month) | Varies | N/A | $99 per month for compounded semaglutide, $199 per month for compounded tirzepatide | Wellness Plus membership is $69 per month (requires qualifying insurance) | | Remedy Meds | None | $1,399 per month for Zepbound | N/A | $299 per month for compounded semaglutide, $399 per month for compounded tirzepatide | N/A | | Hims & Hers | $149 per month ($39 for the first month) | $149 per month for oral Wegovy, $199 per month for injectable Wegovy, $1,899 per month for Zepound | N/A | N/A | Prescriptions require enrollment in monthly membership | | Ro | $149 per month for Ro Body membership | Varies | N/A | N/A | Prescriptions require enrollment in monthly membership | | Henry Meds | Varies based on medication cost | N/A | N/A | Starts at $179 per month | Cost of medication includes support, supplies and more | Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness or quality. See MoreSee Less | \ufeffPLATFORM | MONTHLY MEMBERSHIP FEE | BRAND-NAME MEDICATION COST | GENERIC MEDICATION COST | COMPOUNDED MEDICATION COST | ADDITIONAL FEES OR PRICING INFORMATION | | --- | --- | --- | --- | --- | --- | | Weight Watchers Med+ | $74 with 12-month commitment to Med+ | Wegovy self-pay starts at $199 a month | N/A | N/A | Certain weight loss medications are included in membership cost | | Mochi Health | $79 (for a single month) | Varies | N/A | $99 per month for compounded semaglutide, $199 per month for compounded tirzepatide | Wellness Plus membership is $69 per month (requires qualifying insurance) | | Remedy Meds | None | $1,399 per month for Zepbound | N/A | $299 per month for compounded semaglutide, $399 per month for compounded tirzepatide | N/A | | Hims & Hers | $149 per month ($39 for the first month) | $149 per month for oral Wegovy, $199 per month for injectable Wegovy, $1,899 per month for Zepound | N/A | N/A | Prescriptions require enrollment in monthly membership | | Ro | $149 per month for Ro Body membership | Varies | N/A | N/A | Prescriptions require enrollment in monthly membership | | Henry Meds | Varies based on medication cost | N/A | N/A | Starts at $179 per month | Cost of medication includes support, supplies and more | Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness or quality. See MoreSee Less * * * ## Affordable Online GLP-1 Provider User Experience Scores The table below outlines the scores given by Forbes Health testers to our top affordable online GLP-1 providers across a variety of metrics, based on their personal experience with the program. | \ufeffPLATFORM | ONBOARDING | EASE OF USE | OVERALL SCORE | | --- | --- | --- | --- | | Weight Watchers Med+ | 5/5 | 5/5 | 5/5 | | Mochi Health | 5/5 | 4/5 | 5/5 | | Remedy Meds | 5/5 | 5/5 | 5/5 | | Hims & Hers | 3/5 | 4/5 | 4/5 | | Ro | 5/5 | 5/5 | 3/5 | | Henry Meds | 5/5 | 5/5 | 5/5 | See MoreSee Less | \ufeffPLATFORM | ONBOARDING | EASE OF USE | OVERALL SCORE | | --- | --- | --- | --- | | Weight Watchers Med+ | 5/5 | 5/5 | 5/5 | | Mochi Health | 5/5 | 4/5 | 5/5 | | Remedy Meds | 5/5 | 5/5 | 5/5 | | Hims & Hers | 3/5 | 4/5 | 4/5 | | Ro | 5/5 | 5/5 | 3/5 | | Henry Meds | 5/5 | 5/5 | 5/5 | See MoreSee Less * * * ## Affordable Online GLP-1 Medications Offered by Our Top Platforms The table below outlines the different GLP-1 medications available through the best affordable online GLP-1 providers. | \ufeffPLATFORM | GLP-1 MEDICATIONS OFFERED | OTHER WEIGHT LOSS MEDICATIONS OFFERED | COMPOUNDED MEDICATIONS OFFERED | | --- | --- | --- | --- | | Weight Watchers Med+ | Wegovy (oral and injectable) Saxenda, Zepbound and Foundayo | Combination naltrexone and bupropion | No | | Mochi Health | Wegovy, Zepbound, Saxenda | Contrave, Xenical | Yes | | Remedy Meds | Zepbound | N/A | Yes | | Hims & Hers | Zepbound, Wegovy (injectable and oral) | Foundayo | No | | Ro | Wegovy, Zepbound, Foundayo | N/A | No | | Henry Meds | None | None | Compounded semaglutide, compounded tirzepatide, compounded liraglutide, compounded phentermine | See MoreSee Less | \ufeffPLATFORM | GLP-1 MEDICATIONS OFFERED | OTHER WEIGHT LOSS MEDICATIONS OFFERED | COMPOUNDED MEDICATIONS OFFERED | | --- | --- | --- | --- | | Weight Watchers Med+ | Wegovy (oral and injectable) Saxenda, Zepbound and Foundayo | Combination naltrexone and bupropion | No | | Mochi Health | Wegovy, Zepbound, Saxenda | Contrave, Xenical | Yes | | Remedy Meds | Zepbound | N/A | Yes | | Hims & Hers | Zepbound, Wegovy (injectable and oral) | Foundayo | No | | Ro | Wegovy, Zepbound, Foundayo | N/A | No | | Henry Meds | None | None | Compounded semaglutide, compounded tirzepatide, compounded liraglutide, compounded phentermine | See MoreSee Less * * * ## What Is a GLP-1? Glucagon-like petide-1 (GLP-1) receptor agonists belong to a class of prescription medications that are primarily used to treat type 2 diabetes and obesity. They help lower glucose levels and manage metabolism. \u201cGLP-1 medications mimic a natural hormone released after eating,\u201d explains Sarah Velayati, M.D., assistant professor in the Albert Einstein College of Medicine at Montefiore Einstein Medical Center, adding that these medications can help you feel\u2014and stay\u2014 full more quickly and for longer periods. \u201cMany patients experience meaningful weight loss, often around 10% to 20% of their total body weight over time, along with improvements in blood pressure, cholesterol levels and diabetes control,\u201d she says. Some GLP-1 medications are only approved by the Food and Drug Administration (FDA) to treat type 2 diabetes, while others are also approved for weight management in individuals with obesity or those with overweight and at least one weight-related condition, in conjunction with reduced calorie intake and exercise. Compounded GLP-1 medications have also become increasingly available, but these medications come with risks, as they are not evaluated by the FDA. * * * ## Types of GLP-1 Medications While commonly referred to as just GLP-1s, there are single GLP-1 agonists, and then there are dual GLP-1 and glucose-dependent insulinotropic polypeptide (GIP) receptor agonists, notes Peter Balazs, M.D., a board-certified obstetrician and gynecologist and hormone and weight loss specialist at Hormone and Weight Loss Doctors of NJ, with offices in New York and New Jersey. While the GLP-1 helps to reduce \u201cfood noise\u201d and increase satiety, \u201cthe GIP component increases fat oxidation, helping the body burn fat more efficiently, and clinical trials have shown that it significantly reduces calorie intake at meals,\u201d notes Dr. Balazs. \u201cThis dual action makes it the most effective pharmacotherapy to date, with an average weight loss of 15% to 21% of body weight.\u201d Common [GLP-1s](https://www.forbes.com/health/weight-loss/approved-weight-loss-medication/) approved for chronic weight management by the FDA include injectable and oral [Wegovy](https://www.forbes.com/health/weight-loss/wegovy/) ([semaglutide](https://www.forbes.com/health/weight-loss/semaglutide/)) and injectable [Saxenda](https://www.forbes.com/health/weight-loss/saxenda-for-weight-loss/) (liraglutide), as well as the dual agonist injectable medication [Zepbound](https://www.forbes.com/health/weight-loss/zepbound-fda-approved-what-to-know/) (tirzepatide). - **Injectable medications.** Injectable GLP-1 medications may come in single-use pens, like the Zepbound pen or Wegovy pen, multi-dose pens, such as the Zepbound KwikPen, or single-use vials. These are typically injected once weekly. - **Oral medications:** FDA- approved oral GLP-1 medications include the Foundayo (orforglipron) tablet, taken once daily, and the Wegovy (semaglutide) tablet, also taken once daily. - **Compounded alternatives.** \u201cCompounded GLP-1 medications vary in potency, dosage and have potential for impurities,\u201d says [John Morton, M.D.](https://www.forbes.com/health/medical-advisory-board/john-morton-m-d-m-p-h/), the system lead for surgical quality and bariatric services in the Yale New Haven Health System of six hospitals and Forbes Health Advisory Board member. Compounded drugs are not FDA-approved and can come with risks as they are not reviewed for safety, effectiveness or quality. Mochi Health Weight Loss, Made Simple and Supportive Virtual visits, ongoing support, and data-driven tracking make healthy change convenient and sustainable from the very first step. Get guided access to GLP-1 and GIP weight-loss medications through licensed clinicians. [Get Started](https://mochihealthcorp.pxf.io/c/1955282/3219476/36581?subid1=FAYKKxoAK0wfRMJTfqX7JX_BJhBV5z0WsJ5&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health) On Mochi Health's Website * * * ## What to Consider When Choosing Between Affordable GLP-1 Options \u201cAlways prioritize safety and evidence by ensuring thorough pre-treatment evaluation, slow dose titration and a long-term follow-up plan,\u201d urges Dr. Balazs. When it comes to choosing an affordable GLP-1, [cost](https://www.forbes.com/health/weight-loss/glp-1-costs/) is typically a major factor. In some cases, the cost of GLP-1 medications can be covered by insurance, notes Dr. Morton. \u201cDirect-to-patient programs exist for both Novo Nordisk and Eli Lilly,\u201d he adds, which may offer savings for those utilizing self-pay. As for lower-cost alternatives to brand-name or [FDA-approved weight loss medications](https://www.forbes.com/health/weight-loss/approved-weight-loss-medication/), Dr. Morton considers compounded GLP-1 medications a red flag. \u201cPatients should not compromise \\[on\\] cost, convenience or quality,\u201d he says. \u201cWith the rise of online prescribing, it is important to be cautious,\u201d adds Dr. Velayati. \u201cPatients should look for providers who perform a thorough medical evaluation (not just a quick form) and who order appropriate labs,\u201d she explains, adding that support should involve access to clinicians when necessary and follow-up appointments. \u201cProviders should clearly discuss risks, benefits and expectations,\u201d she continues. \u201cBe cautious of services that offer quick prescriptions, unusually low prices or no follow-up.\u201d * * * ## Sources ### References - [FDA approves weight management drug for patients aged 12 and older](https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-weight-management-drug-patients-aged-12-and-older). U.S. Food and Drug Administration (FDA). Accessed 4/21/2026. - [FDA Approves Fourth Product Under National Priority Voucher Program, Higher Dose Semaglutide](https://www.fda.gov/news-events/press-announcements/fda-approves-fourth-product-under-national-priority-voucher-program-higher-dose-semaglutide). U.S. Food and Drug Administration (FDA). Accessed 4/21/2026. - [FDA Approves New Medication for Chronic Weight Management](https://www.fda.gov/news-events/press-announcements/fda-approves-new-medication-chronic-weight-management). U.S. Food and Drug Administration (FDA). Accessed 4/21/2026. - [Zepbound](https://zepbound.lilly.com/). Lilly. Accessed 4/21/2026. - [Wegovy](https://www.wegovy.com/). Novo Nordisk. Accessed 4/21/2026. - [FDA Approves First New Molecular Entity Under National Priority Voucher Program](https://www.fda.gov/news-events/press-announcements/fda-approves-first-new-molecular-entity-under-national-priority-voucher-program). U.S. Food and Drug Administration (FDA). Accessed 4/22/2026. - [HIGHLIGHTS OF PRESCRIBING INFORMATION](https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/218316Orig1s000lbl.pdf). U.S. Food and Drug Administration (FDA). Accessed 4/22/2026. - [FDA\u2019s Concerns with Unapproved GLP-1 Drugs Used for Weight Loss](https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss). U.S. Food and Drug Administration (FDA). Accessed 4/22/2026. Information provided on Forbes Health is for educational purposes only. Your health and wellness is unique to you, and the products and services we review may not be right for your circumstances. We do not offer individual medical advice, diagnosis or treatment plans. For personal advice, please consult with a medical professional. Forbes Health adheres to strict editorial integrity standards. Our editorial content is based on thorough research and guidance from the [Forbes Health Advisory Board](https://www.forbes.com/health/about-us/#forbes_health_advisory_board). To the best of our knowledge, all content is accurate as of the date posted, though offers contained herein may no longer be available. The opinions expressed are the author\u2019s alone and have not been provided, approved or otherwise endorsed by our advertisers. ## Next Up In Next Up In Weight Loss - [Best Weight Loss Programs](https://www.forbes.com/health/weight-loss/best-weight-loss-program/) - [FDA-Approved Weight Loss Medications](https://www.forbes.com/health/weight-loss/approved-weight-loss-medication/) - [Best Diets](https://www.forbes.com/health/weight-loss/best-diets/) - [Top Weight Loss Supplements](https://www.forbes.com/health/weight-loss/top-weight-loss-supplements/) - [Semaglutide For Weight Loss](https://www.forbes.com/health/weight-loss/semaglutide/) - [Ozempic For Weight Loss](https://www.forbes.com/health/weight-loss/ozempic-for-weight-loss/) - [Wegovy For Weight Loss](https://www.forbes.com/health/weight-loss/wegovy/) - [Mounjaro For Weight Loss](https://www.forbes.com/health/weight-loss/mounjaro-for-weight-loss/) - [Metformin For Weight Loss](https://www.forbes.com/health/weight-loss/metformin-for-weight-loss/) - [Privacy Policy](https://www.forbes.com/advisor/privacy-policy/) - Cookie Preferences - [Do Not Sell or Share My Personal Information](https://submit-irm.trustarc.com/services/validation/8661d9cc-ff06-429b-a212-aedaf9ea4238/?brandId=91628844-9c1e-4cdd-9e17-0614fc02f9aa) - [Limit the Use of My Sensitive Personal Information](https://submit-irm.trustarc.com/services/validation/8661d9cc-ff06-429b-a212-aedaf9ea4238/?brandId=91628844-9c1e-4cdd-9e17-0614fc02f9aa)",
+  "text_chars": 105611,
+  "links": [
+    {
+      "href": "https://account.forbes.com/newsletters",
+      "text": "https://account.forbes.com/newsletters",
+      "domain": "account.forbes.com",
+      "position": 1
+    },
+    {
+      "href": "https://www.forbes.com/",
+      "text": "https://www.forbes.com/",
+      "domain": "forbes.com",
+      "position": 2
+    },
+    {
+      "href": "https://www.forbes.com/trump/",
+      "text": "https://www.forbes.com/trump/",
+      "domain": "forbes.com",
+      "position": 3
+    },
+    {
+      "href": "https://www.forbes.com/worlds-billionaires/",
+      "text": "https://www.forbes.com/worlds-billionaires/",
+      "domain": "forbes.com",
+      "position": 4
+    },
+    {
+      "href": "https://www.forbes.com/billionaires/",
+      "text": "https://www.forbes.com/billionaires/",
+      "domain": "forbes.com",
+      "position": 5
+    },
+    {
+      "href": "https://www.forbes.com/forbes-400/",
+      "text": "https://www.forbes.com/forbes-400/",
+      "domain": "forbes.com",
+      "position": 6
+    },
+    {
+      "href": "https://www.forbes.com/self-made-women/",
+      "text": "https://www.forbes.com/self-made-women/",
+      "domain": "forbes.com",
+      "position": 7
+    },
+    {
+      "href": "https://www.forbes.com/china-billionaires/",
+      "text": "https://www.forbes.com/china-billionaires/",
+      "domain": "forbes.com",
+      "position": 8
+    },
+    {
+      "href": "https://www.forbes.com/india-billionaires/",
+      "text": "https://www.forbes.com/india-billionaires/",
+      "domain": "forbes.com",
+      "position": 9
+    },
+    {
+      "href": "https://www.forbes.com/indonesia-billionaires/",
+      "text": "https://www.forbes.com/indonesia-billionaires/",
+      "domain": "forbes.com",
+      "position": 10
+    },
+    {
+      "href": "https://www.forbes.com/korea-billionaires/list/",
+      "text": "https://www.forbes.com/korea-billionaires/list/",
+      "domain": "forbes.com",
+      "position": 11
+    },
+    {
+      "href": "https://www.forbes.com/thailand-billionaires/list/",
+      "text": "https://www.forbes.com/thailand-billionaires/list/",
+      "domain": "forbes.com",
+      "position": 12
+    },
+    {
+      "href": "https://www.forbes.com/japan-billionaires/list/",
+      "text": "https://www.forbes.com/japan-billionaires/list/",
+      "domain": "forbes.com",
+      "position": 13
+    },
+    {
+      "href": "https://www.forbes.com/australia-billionaires/",
+      "text": "https://www.forbes.com/australia-billionaires/",
+      "domain": "forbes.com",
+      "position": 14
+    },
+    {
+      "href": "https://www.forbes.com/taiwan-billionaires/",
+      "text": "https://www.forbes.com/taiwan-billionaires/",
+      "domain": "forbes.com",
+      "position": 15
+    },
+    {
+      "href": "https://www.forbes.com/singapore-billionaires/",
+      "text": "https://www.forbes.com/singapore-billionaires/",
+      "domain": "forbes.com",
+      "position": 16
+    },
+    {
+      "href": "https://www.forbes.com/philippines-billionaires/",
+      "text": "https://www.forbes.com/philippines-billionaires/",
+      "domain": "forbes.com",
+      "position": 17
+    },
+    {
+      "href": "https://www.forbes.com/hong-kong-billionaires/",
+      "text": "https://www.forbes.com/hong-kong-billionaires/",
+      "domain": "forbes.com",
+      "position": 18
+    },
+    {
+      "href": "https://www.forbes.com/malaysia-billionaires/",
+      "text": "https://www.forbes.com/malaysia-billionaires/",
+      "domain": "forbes.com",
+      "position": 19
+    },
+    {
+      "href": "https://www.forbes.com/money-politics/",
+      "text": "https://www.forbes.com/money-politics/",
+      "domain": "forbes.com",
+      "position": 20
+    },
+    {
+      "href": "https://www.forbes.com/2024-election/",
+      "text": "https://www.forbes.com/2024-election/",
+      "domain": "forbes.com",
+      "position": 21
+    },
+    {
+      "href": "https://www.forbes.com/innovation/",
+      "text": "https://www.forbes.com/innovation/",
+      "domain": "forbes.com",
+      "position": 22
+    },
+    {
+      "href": "https://www.forbes.com/ai/",
+      "text": "https://www.forbes.com/ai/",
+      "domain": "forbes.com",
+      "position": 23
+    },
+    {
+      "href": "https://www.forbes.com/big-data/",
+      "text": "https://www.forbes.com/big-data/",
+      "domain": "forbes.com",
+      "position": 24
+    },
+    {
+      "href": "https://www.forbes.com/cloud/",
+      "text": "https://www.forbes.com/cloud/",
+      "domain": "forbes.com",
+      "position": 25
+    },
+    {
+      "href": "https://www.forbes.com/cloud100/",
+      "text": "https://www.forbes.com/cloud100/",
+      "domain": "forbes.com",
+      "position": 26
+    },
+    {
+      "href": "https://www.forbes.com/consumer-tech/",
+      "text": "https://www.forbes.com/consumer-tech/",
+      "domain": "forbes.com",
+      "position": 27
+    },
+    {
+      "href": "https://www.forbes.com/creator-economy/",
+      "text": "https://www.forbes.com/creator-economy/",
+      "domain": "forbes.com",
+      "position": 28
+    },
+    {
+      "href": "https://www.forbes.com/cybersecurity/",
+      "text": "https://www.forbes.com/cybersecurity/",
+      "domain": "forbes.com",
+      "position": 29
+    },
+    {
+      "href": "https://www.forbes.com/digital-transformation/",
+      "text": "https://www.forbes.com/digital-transformation/",
+      "domain": "forbes.com",
+      "position": 30
+    },
+    {
+      "href": "https://www.forbes.com/topics/enterprise-commerce/",
+      "text": "https://www.forbes.com/topics/enterprise-commerce/",
+      "domain": "forbes.com",
+      "position": 31
+    },
+    {
+      "href": "https://www.forbes.com/topics/enterprise-security-and-protection/",
+      "text": "https://www.forbes.com/topics/enterprise-security-and-protection/",
+      "domain": "forbes.com",
+      "position": 32
+    },
+    {
+      "href": "https://www.forbes.com/enterprise-tech/",
+      "text": "https://www.forbes.com/enterprise-tech/",
+      "domain": "forbes.com",
+      "position": 33
+    },
+    {
+      "href": "https://www.forbes.com/topics/enterprise-growth-strategy/",
+      "text": "https://www.forbes.com/topics/enterprise-growth-strategy/",
+      "domain": "forbes.com",
+      "position": 34
+    },
+    {
+      "href": "https://www.forbes.com/future-of-work",
+      "text": "https://www.forbes.com/future-of-work",
+      "domain": "forbes.com",
+      "position": 35
+    },
+    {
+      "href": "https://www.forbes.com/gaming/",
+      "text": "https://www.forbes.com/gaming/",
+      "domain": "forbes.com",
+      "position": 36
+    },
+    {
+      "href": "https://www.forbes.com/sites/insights-greenhousecom/2024/08/14/how-ai-can-help-you-make-your-smartest-hire-yet/",
+      "text": "https://www.forbes.com/sites/insights-greenhousecom/2024/08/14/how-ai-can-help-you-make-your-smartest-hire-yet/",
+      "domain": "forbes.com",
+      "position": 37
+    },
+    {
+      "href": "https://www.forbes.com/healthcare",
+      "text": "https://www.forbes.com/healthcare",
+      "domain": "forbes.com",
+      "position": 38
+    },
+    {
+      "href": "https://www.forbes.com/innovation-rules",
+      "text": "https://www.forbes.com/innovation-rules",
+      "domain": "forbes.com",
+      "position": 39
+    },
+    {
+      "href": "https://www.forbes.com/topics/retail-industry/",
+      "text": "https://www.forbes.com/topics/retail-industry/",
+      "domain": "forbes.com",
+      "position": 40
+    },
+    {
+      "href": "https://www.forbes.com/sites/sap/",
+      "text": "https://www.forbes.com/sites/sap/",
+      "domain": "forbes.com",
+      "position": 41
+    },
+    {
+      "href": "https://www.forbes.com/science/",
+      "text": "https://www.forbes.com/science/",
+      "domain": "forbes.com",
+      "position": 42
+    },
+    {
+      "href": "https://www.forbes.com/social-media/",
+      "text": "https://www.forbes.com/social-media/",
+      "domain": "forbes.com",
+      "position": 43
+    },
+    {
+      "href": "https://www.forbes.com/sustainability/",
+      "text": "https://www.forbes.com/sustainability/",
+      "domain": "forbes.com",
+      "position": 44
+    },
+    {
+      "href": "https://www.forbes.com/transportation/",
+      "text": "https://www.forbes.com/transportation/",
+      "domain": "forbes.com",
+      "position": 45
+    },
+    {
+      "href": "https://www.forbes.com/venture-capital/",
+      "text": "https://www.forbes.com/venture-capital/",
+      "domain": "forbes.com",
+      "position": 46
+    },
+    {
+      "href": "https://www.forbes.com/sites/technology/",
+      "text": "https://www.forbes.com/sites/technology/",
+      "domain": "forbes.com",
+      "position": 47
+    },
+    {
+      "href": "https://www.forbes.com/sites/vmware/",
+      "text": "https://www.forbes.com/sites/vmware/",
+      "domain": "forbes.com",
+      "position": 48
+    },
+    {
+      "href": "https://www.forbes.com/sites/zendesk",
+      "text": "https://www.forbes.com/sites/zendesk",
+      "domain": "forbes.com",
+      "position": 49
+    },
+    {
+      "href": "https://www.forbes.com/leadership/",
+      "text": "https://www.forbes.com/leadership/",
+      "domain": "forbes.com",
+      "position": 50
+    },
+    {
+      "href": "https://www.forbes.com/careers/",
+      "text": "https://www.forbes.com/careers/",
+      "domain": "forbes.com",
+      "position": 51
+    },
+    {
+      "href": "https://www.forbes.com/ceo-network",
+      "text": "https://www.forbes.com/ceo-network",
+      "domain": "forbes.com",
+      "position": 52
+    },
+    {
+      "href": "https://www.forbes.com/cfo-network/",
+      "text": "https://www.forbes.com/cfo-network/",
+      "domain": "forbes.com",
+      "position": 53
+    },
+    {
+      "href": "https://www.forbes.com/chro-network/",
+      "text": "https://www.forbes.com/chro-network/",
+      "domain": "forbes.com",
+      "position": 54
+    },
+    {
+      "href": "https://www.forbes.com/cio-network/",
+      "text": "https://www.forbes.com/cio-network/",
+      "domain": "forbes.com",
+      "position": 55
+    },
+    {
+      "href": "https://www.forbes.com/cmo-network/",
+      "text": "https://www.forbes.com/cmo-network/",
+      "domain": "forbes.com",
+      "position": 56
+    },
+    {
+      "href": "https://www.forbes.com/cxo",
+      "text": "https://www.forbes.com/cxo",
+      "domain": "forbes.com",
+      "position": 57
+    },
+    {
+      "href": "https://www.forbes.com/diversity-inclusion/",
+      "text": "https://www.forbes.com/diversity-inclusion/",
+      "domain": "forbes.com",
+      "position": 58
+    },
+    {
+      "href": "https://www.forbes.com/education/",
+      "text": "https://www.forbes.com/education/",
+      "domain": "forbes.com",
+      "position": 59
+    },
+    {
+      "href": "https://www.forbes.com/sites/forbeseq",
+      "text": "https://www.forbes.com/sites/forbeseq",
+      "domain": "forbes.com",
+      "position": 60
+    },
+    {
+      "href": "https://www.forbes.com/blk-leadership/",
+      "text": "https://www.forbes.com/blk-leadership/",
+      "domain": "forbes.com",
+      "position": 61
+    },
+    {
+      "href": "https://www.forbes.com/women-at-forbes/",
+      "text": "https://www.forbes.com/women-at-forbes/",
+      "domain": "forbes.com",
+      "position": 62
+    },
+    {
+      "href": "https://www.forbes.com/leadership-strategy/",
+      "text": "https://www.forbes.com/leadership-strategy/",
+      "domain": "forbes.com",
+      "position": 63
+    },
+    {
+      "href": "https://www.forbes.com/under30/",
+      "text": "https://www.forbes.com/under30/",
+      "domain": "forbes.com",
+      "position": 64
+    },
+    {
+      "href": "https://www.forbes.com/working-remote/",
+      "text": "https://www.forbes.com/working-remote/",
+      "domain": "forbes.com",
+      "position": 65
+    },
+    {
+      "href": "https://www.forbes.com/over-50/",
+      "text": "https://www.forbes.com/over-50/",
+      "domain": "forbes.com",
+      "position": 66
+    },
+    {
+      "href": "https://www.forbes.com/sites/deloitte/",
+      "text": "https://www.forbes.com/sites/deloitte/",
+      "domain": "forbes.com",
+      "position": 67
+    },
+    {
+      "href": "https://www.forbes.com/sites/delltechnologies/",
+      "text": "https://www.forbes.com/sites/delltechnologies/",
+      "domain": "forbes.com",
+      "position": 68
+    },
+    {
+      "href": "https://www.forbes.com/money/",
+      "text": "https://www.forbes.com/money/",
+      "domain": "forbes.com",
+      "position": 69
+    },
+    {
+      "href": "https://www.forbes.com/banking-insurance/",
+      "text": "https://www.forbes.com/banking-insurance/",
+      "domain": "forbes.com",
+      "position": 70
+    },
+    {
+      "href": "https://www.forbes.com/etfs-mutual-funds/",
+      "text": "https://www.forbes.com/etfs-mutual-funds/",
+      "domain": "forbes.com",
+      "position": 71
+    },
+    {
+      "href": "https://www.forbes.com/fintech/",
+      "text": "https://www.forbes.com/fintech/",
+      "domain": "forbes.com",
+      "position": 72
+    },
+    {
+      "href": "https://www.forbes.com/hedge-funds-private-equity/",
+      "text": "https://www.forbes.com/hedge-funds-private-equity/",
+      "domain": "forbes.com",
+      "position": 73
+    },
+    {
+      "href": "https://www.forbes.com/investing/",
+      "text": "https://www.forbes.com/investing/",
+      "domain": "forbes.com",
+      "position": 74
+    },
+    {
+      "href": "https://www.forbes.com/sites/investor-hub/",
+      "text": "https://www.forbes.com/sites/investor-hub/",
+      "domain": "forbes.com",
+      "position": 75
+    },
+    {
+      "href": "https://www.forbes.com/markets/",
+      "text": "https://www.forbes.com/markets/",
+      "domain": "forbes.com",
+      "position": 76
+    },
+    {
+      "href": "https://www.forbes.com/personal-finance/",
+      "text": "https://www.forbes.com/personal-finance/",
+      "domain": "forbes.com",
+      "position": 77
+    },
+    {
+      "href": "https://www.forbes.com/newsletters/",
+      "text": "https://www.forbes.com/newsletters/",
+      "domain": "forbes.com",
+      "position": 78
+    },
+    {
+      "href": "https://www.forbes.com/retirement/",
+      "text": "https://www.forbes.com/retirement/",
+      "domain": "forbes.com",
+      "position": 79
+    },
+    {
+      "href": "https://www.forbes.com/taxes/",
+      "text": "https://www.forbes.com/taxes/",
+      "domain": "forbes.com",
+      "position": 80
+    },
+    {
+      "href": "https://www.forbes.com/top-advisor-shook/",
+      "text": "https://www.forbes.com/top-advisor-shook/",
+      "domain": "forbes.com",
+      "position": 81
+    },
+    {
+      "href": "https://www.forbes.com/wealth-management/",
+      "text": "https://www.forbes.com/wealth-management/",
+      "domain": "forbes.com",
+      "position": 82
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/",
+      "text": "https://www.forbes.com/digital-assets/",
+      "domain": "forbes.com",
+      "position": 83
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/community/",
+      "text": "https://www.forbes.com/digital-assets/community/",
+      "domain": "forbes.com",
+      "position": 84
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/news/",
+      "text": "https://www.forbes.com/digital-assets/news/",
+      "domain": "forbes.com",
+      "position": 85
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/crypto-prices/",
+      "text": "https://www.forbes.com/digital-assets/crypto-prices/",
+      "domain": "forbes.com",
+      "position": 86
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/nft-prices/",
+      "text": "https://www.forbes.com/digital-assets/nft-prices/",
+      "domain": "forbes.com",
+      "position": 87
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/research/",
+      "text": "https://www.forbes.com/digital-assets/research/",
+      "domain": "forbes.com",
+      "position": 88
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/learn/",
+      "text": "https://www.forbes.com/digital-assets/learn/",
+      "domain": "forbes.com",
+      "position": 89
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/learn/crypto-basics/",
+      "text": "https://www.forbes.com/digital-assets/learn/crypto-basics/",
+      "domain": "forbes.com",
+      "position": 90
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/learn/btc/",
+      "text": "https://www.forbes.com/digital-assets/learn/btc/",
+      "domain": "forbes.com",
+      "position": 91
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/learn/defi/",
+      "text": "https://www.forbes.com/digital-assets/learn/defi/",
+      "domain": "forbes.com",
+      "position": 92
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/learn/web3-education/",
+      "text": "https://www.forbes.com/digital-assets/learn/web3-education/",
+      "domain": "forbes.com",
+      "position": 93
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/learn/nfts/",
+      "text": "https://www.forbes.com/digital-assets/learn/nfts/",
+      "domain": "forbes.com",
+      "position": 94
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/learn/crypto-investments/",
+      "text": "https://www.forbes.com/digital-assets/learn/crypto-investments/",
+      "domain": "forbes.com",
+      "position": 95
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/events/",
+      "text": "https://www.forbes.com/digital-assets/events/",
+      "domain": "forbes.com",
+      "position": 96
+    },
+    {
+      "href": "https://www.forbes.com/digital-assets/crypto-advisor-portfolio/",
+      "text": "https://www.forbes.com/digital-assets/crypto-advisor-portfolio/",
+      "domain": "forbes.com",
+      "position": 97
+    },
+    {
+      "href": "https://www.forbes.com/business/",
+      "text": "https://www.forbes.com/business/",
+      "domain": "forbes.com",
+      "position": 98
+    },
+    {
+      "href": "https://www.forbes.com/aerospace-defense/",
+      "text": "https://www.forbes.com/aerospace-defense/",
+      "domain": "forbes.com",
+      "position": 99
+    },
+    {
+      "href": "https://www.forbes.com/energy/",
+      "text": "https://www.forbes.com/energy/",
+      "domain": "forbes.com",
+      "position": 100
+    },
+    {
+      "href": "https://www.forbes.com/food-drink/",
+      "text": "https://www.forbes.com/food-drink/",
+      "domain": "forbes.com",
+      "position": 101
+    },
+    {
+      "href": "https://www.forbes.com/hollywood-entertainment/",
+      "text": "https://www.forbes.com/hollywood-entertainment/",
+      "domain": "forbes.com",
+      "position": 102
+    },
+    {
+      "href": "https://www.forbes.com/law/",
+      "text": "https://www.forbes.com/law/",
+      "domain": "forbes.com",
+      "position": 103
+    },
+    {
+      "href": "https://www.forbes.com/manufacturing/",
+      "text": "https://www.forbes.com/manufacturing/",
+      "domain": "forbes.com",
+      "position": 104
+    },
+    {
+      "href": "https://www.forbes.com/media/",
+      "text": "https://www.forbes.com/media/",
+      "domain": "forbes.com",
+      "position": 105
+    },
+    {
+      "href": "https://www.forbes.com/policy/",
+      "text": "https://www.forbes.com/policy/",
+      "domain": "forbes.com",
+      "position": 106
+    },
+    {
+      "href": "https://www.forbes.com/retail/",
+      "text": "https://www.forbes.com/retail/",
+      "domain": "forbes.com",
+      "position": 107
+    },
+    {
+      "href": "https://www.forbes.com/sportsmoney/",
+      "text": "https://www.forbes.com/sportsmoney/",
+      "domain": "forbes.com",
+      "position": 108
+    },
+    {
+      "href": "https://www.forbes.com/sites/entertainment/",
+      "text": "https://www.forbes.com/sites/entertainment/",
+      "domain": "forbes.com",
+      "position": 109
+    },
+    {
+      "href": "https://www.forbes.com/small-business/",
+      "text": "https://www.forbes.com/small-business/",
+      "domain": "forbes.com",
+      "position": 110
+    },
+    {
+      "href": "https://www.forbes.com/entrepreneurs/",
+      "text": "https://www.forbes.com/entrepreneurs/",
+      "domain": "forbes.com",
+      "position": 111
+    },
+    {
+      "href": "https://www.forbes.com/franchises/",
+      "text": "https://www.forbes.com/franchises/",
+      "domain": "forbes.com",
+      "position": 112
+    },
+    {
+      "href": "https://www.forbes.com/small-business-strategy/",
+      "text": "https://www.forbes.com/small-business-strategy/",
+      "domain": "forbes.com",
+      "position": 113
+    },
+    {
+      "href": "https://www.forbes.com/lifestyle/",
+      "text": "https://www.forbes.com/lifestyle/",
+      "domain": "forbes.com",
+      "position": 114
+    },
+    {
+      "href": "https://www.forbes.com/arts/",
+      "text": "https://www.forbes.com/arts/",
+      "domain": "forbes.com",
+      "position": 115
+    },
+    {
+      "href": "https://www.forbes.com/boats-planes/",
+      "text": "https://www.forbes.com/boats-planes/",
+      "domain": "forbes.com",
+      "position": 116
+    },
+    {
+      "href": "https://www.forbes.com/cars-bikes/",
+      "text": "https://www.forbes.com/cars-bikes/",
+      "domain": "forbes.com",
+      "position": 117
+    },
+    {
+      "href": "https://www.forbes.com/dining/",
+      "text": "https://www.forbes.com/dining/",
+      "domain": "forbes.com",
+      "position": 118
+    },
+    {
+      "href": "https://www.forbes.com/forbeslife/",
+      "text": "https://www.forbes.com/forbeslife/",
+      "domain": "forbes.com",
+      "position": 119
+    },
+    {
+      "href": "https://www.forbes.com/forbes-travel-guide/",
+      "text": "https://www.forbes.com/forbes-travel-guide/",
+      "domain": "forbes.com",
+      "position": 120
+    },
+    {
+      "href": "https://www.forbes.com/spirits/",
+      "text": "https://www.forbes.com/spirits/",
+      "domain": "forbes.com",
+      "position": 121
+    },
+    {
+      "href": "https://www.forbes.com/style-beauty/",
+      "text": "https://www.forbes.com/style-beauty/",
+      "domain": "forbes.com",
+      "position": 122
+    },
+    {
+      "href": "https://www.forbes.com/travel/",
+      "text": "https://www.forbes.com/travel/",
+      "domain": "forbes.com",
+      "position": 123
+    },
+    {
+      "href": "https://www.forbes.com/vices/",
+      "text": "https://www.forbes.com/vices/",
+      "domain": "forbes.com",
+      "position": 124
+    },
+    {
+      "href": "https://www.forbes.com/watches-jewelry/",
+      "text": "https://www.forbes.com/watches-jewelry/",
+      "domain": "forbes.com",
+      "position": 125
+    },
+    {
+      "href": "https://www.forbes.com/real-estate",
+      "text": "https://www.forbes.com/real-estate",
+      "domain": "forbes.com",
+      "position": 126
+    },
+    {
+      "href": "https://www.forbes.com/commercial-real-estate",
+      "text": "https://www.forbes.com/commercial-real-estate",
+      "domain": "forbes.com",
+      "position": 127
+    },
+    {
+      "href": "https://www.forbes.com/forbes-global-properties",
+      "text": "https://www.forbes.com/forbes-global-properties",
+      "domain": "forbes.com",
+      "position": 128
+    },
+    {
+      "href": "https://www.forbes.com/residential-real-estate",
+      "text": "https://www.forbes.com/residential-real-estate",
+      "domain": "forbes.com",
+      "position": 129
+    },
+    {
+      "href": "https://www.forbes.com/vetted/",
+      "text": "https://www.forbes.com/vetted/",
+      "domain": "forbes.com",
+      "position": 130
+    },
+    {
+      "href": "https://www.forbes.com/vetted/mattress-sleep/",
+      "text": "https://www.forbes.com/vetted/mattress-sleep/",
+      "domain": "forbes.com",
+      "position": 131
+    },
+    {
+      "href": "https://www.forbes.com/vetted/mattress-sleep/bed-frames/",
+      "text": "https://www.forbes.com/vetted/mattress-sleep/bed-frames/",
+      "domain": "forbes.com",
+      "position": 132
+    },
+    {
+      "href": "https://www.forbes.com/vetted/mattress-sleep/mattresses/",
+      "text": "https://www.forbes.com/vetted/mattress-sleep/mattresses/",
+      "domain": "forbes.com",
+      "position": 133
+    },
+    {
+      "href": "https://www.forbes.com/vetted/mattress-sleep/mattress-toppers/",
+      "text": "https://www.forbes.com/vetted/mattress-sleep/mattress-toppers/",
+      "domain": "forbes.com",
+      "position": 134
+    },
+    {
+      "href": "https://www.forbes.com/vetted/mattress-sleep/pillows/",
+      "text": "https://www.forbes.com/vetted/mattress-sleep/pillows/",
+      "domain": "forbes.com",
+      "position": 135
+    },
+    {
+      "href": "https://www.forbes.com/vetted/mattress-sleep/sheets-bedding/",
+      "text": "https://www.forbes.com/vetted/mattress-sleep/sheets-bedding/",
+      "domain": "forbes.com",
+      "position": 136
+    },
+    {
+      "href": "https://www.forbes.com/vetted/mattress-sleep/sleep-products/",
+      "text": "https://www.forbes.com/vetted/mattress-sleep/sleep-products/",
+      "domain": "forbes.com",
+      "position": 137
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/",
+      "text": "https://www.forbes.com/vetted/home/",
+      "domain": "forbes.com",
+      "position": 138
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/bathroom/",
+      "text": "https://www.forbes.com/vetted/home/bathroom/",
+      "domain": "forbes.com",
+      "position": 139
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/cleaning-laundry/",
+      "text": "https://www.forbes.com/vetted/home/cleaning-laundry/",
+      "domain": "forbes.com",
+      "position": 140
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/decor/",
+      "text": "https://www.forbes.com/vetted/home/decor/",
+      "domain": "forbes.com",
+      "position": 141
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/furniture/",
+      "text": "https://www.forbes.com/vetted/home/furniture/",
+      "domain": "forbes.com",
+      "position": 142
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/heating-cooling/",
+      "text": "https://www.forbes.com/vetted/home/heating-cooling/",
+      "domain": "forbes.com",
+      "position": 143
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/hobbies/",
+      "text": "https://www.forbes.com/vetted/home/hobbies/",
+      "domain": "forbes.com",
+      "position": 144
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home-office/",
+      "text": "https://www.forbes.com/vetted/home-office/",
+      "domain": "forbes.com",
+      "position": 145
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/kitchen-dining/",
+      "text": "https://www.forbes.com/vetted/home/kitchen-dining/",
+      "domain": "forbes.com",
+      "position": 146
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/outdoor/",
+      "text": "https://www.forbes.com/vetted/home/outdoor/",
+      "domain": "forbes.com",
+      "position": 147
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/pets/",
+      "text": "https://www.forbes.com/vetted/home/pets/",
+      "domain": "forbes.com",
+      "position": 148
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/storage-organization/",
+      "text": "https://www.forbes.com/vetted/home/storage-organization/",
+      "domain": "forbes.com",
+      "position": 149
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/tools/",
+      "text": "https://www.forbes.com/vetted/home/tools/",
+      "domain": "forbes.com",
+      "position": 150
+    },
+    {
+      "href": "https://www.forbes.com/vetted/home/wine-bar/",
+      "text": "https://www.forbes.com/vetted/home/wine-bar/",
+      "domain": "forbes.com",
+      "position": 151
+    },
+    {
+      "href": "https://www.forbes.com/vetted/fashion/",
+      "text": "https://www.forbes.com/vetted/fashion/",
+      "domain": "forbes.com",
+      "position": 152
+    },
+    {
+      "href": "https://www.forbes.com/vetted/fashion/accessories/",
+      "text": "https://www.forbes.com/vetted/fashion/accessories/",
+      "domain": "forbes.com",
+      "position": 153
+    },
+    {
+      "href": "https://www.forbes.com/vetted/fashion/clothing/",
+      "text": "https://www.forbes.com/vetted/fashion/clothing/",
+      "domain": "forbes.com",
+      "position": 154
+    },
+    {
+      "href": "https://www.forbes.com/vetted/fashion/eyewear/",
+      "text": "https://www.forbes.com/vetted/fashion/eyewear/",
+      "domain": "forbes.com",
+      "position": 155
+    },
+    {
+      "href": "https://www.forbes.com/vetted/fashion/footwear/",
+      "text": "https://www.forbes.com/vetted/fashion/footwear/",
+      "domain": "forbes.com",
+      "position": 156
+    },
+    {
+      "href": "https://www.forbes.com/vetted/fashion/jewelry/",
+      "text": "https://www.forbes.com/vetted/fashion/jewelry/",
+      "domain": "forbes.com",
+      "position": 157
+    },
+    {
+      "href": "https://www.forbes.com/vetted/fashion/handbags-purses/",
+      "text": "https://www.forbes.com/vetted/fashion/handbags-purses/",
+      "domain": "forbes.com",
+      "position": 158
+    },
+    {
+      "href": "https://www.forbes.com/vetted/fashion/lingerie-sleepwear/",
+      "text": "https://www.forbes.com/vetted/fashion/lingerie-sleepwear/",
+      "domain": "forbes.com",
+      "position": 159
+    },
+    {
+      "href": "https://www.forbes.com/vetted/fashion/outdoor-fitness-apparel/",
+      "text": "https://www.forbes.com/vetted/fashion/outdoor-fitness-apparel/",
+      "domain": "forbes.com",
+      "position": 160
+    },
+    {
+      "href": "https://www.forbes.com/vetted/fashion/outerwear/",
+      "text": "https://www.forbes.com/vetted/fashion/outerwear/",
+      "domain": "forbes.com",
+      "position": 161
+    },
+    {
+      "href": "https://www.forbes.com/vetted/fashion/watches/",
+      "text": "https://www.forbes.com/vetted/fashion/watches/",
+      "domain": "forbes.com",
+      "position": 162
+    },
+    {
+      "href": "https://www.forbes.com/vetted/kids-baby-gear/",
+      "text": "https://www.forbes.com/vetted/kids-baby-gear/",
+      "domain": "forbes.com",
+      "position": 163
+    },
+    {
+      "href": "https://www.forbes.com/vetted/kids-baby-gear/baby-gear/",
+      "text": "https://www.forbes.com/vetted/kids-baby-gear/baby-gear/",
+      "domain": "forbes.com",
+      "position": 164
+    },
+    {
+      "href": "https://www.forbes.com/vetted/kids-baby-gear/kids-clothes-accessories/",
+      "text": "https://www.forbes.com/vetted/kids-baby-gear/kids-clothes-accessories/",
+      "domain": "forbes.com",
+      "position": 165
+    },
+    {
+      "href": "https://www.forbes.com/vetted/kids-baby-gear/nursery/",
+      "text": "https://www.forbes.com/vetted/kids-baby-gear/nursery/",
+      "domain": "forbes.com",
+      "position": 166
+    },
+    {
+      "href": "https://www.forbes.com/vetted/kids-baby-gear/pregnancy-postpartum/",
+      "text": "https://www.forbes.com/vetted/kids-baby-gear/pregnancy-postpartum/",
+      "domain": "forbes.com",
+      "position": 167
+    },
+    {
+      "href": "https://www.forbes.com/vetted/kids-baby-gear/toys-books/",
+      "text": "https://www.forbes.com/vetted/kids-baby-gear/toys-books/",
+      "domain": "forbes.com",
+      "position": 168
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/",
+      "text": "https://www.forbes.com/vetted/gear/",
+      "domain": "forbes.com",
+      "position": 169
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/apparel-accessories/",
+      "text": "https://www.forbes.com/vetted/gear/apparel-accessories/",
+      "domain": "forbes.com",
+      "position": 170
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/bikes/",
+      "text": "https://www.forbes.com/vetted/gear/bikes/",
+      "domain": "forbes.com",
+      "position": 171
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/camping-hiking/",
+      "text": "https://www.forbes.com/vetted/gear/camping-hiking/",
+      "domain": "forbes.com",
+      "position": 172
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/climbing/",
+      "text": "https://www.forbes.com/vetted/gear/climbing/",
+      "domain": "forbes.com",
+      "position": 173
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/fishing-hunting/",
+      "text": "https://www.forbes.com/vetted/gear/fishing-hunting/",
+      "domain": "forbes.com",
+      "position": 174
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/fitness/",
+      "text": "https://www.forbes.com/vetted/gear/fitness/",
+      "domain": "forbes.com",
+      "position": 175
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/golf/",
+      "text": "https://www.forbes.com/vetted/gear/golf/",
+      "domain": "forbes.com",
+      "position": 176
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/running/",
+      "text": "https://www.forbes.com/vetted/gear/running/",
+      "domain": "forbes.com",
+      "position": 177
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/tennis-racket-sports/",
+      "text": "https://www.forbes.com/vetted/gear/tennis-racket-sports/",
+      "domain": "forbes.com",
+      "position": 178
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/tools-tech/",
+      "text": "https://www.forbes.com/vetted/gear/tools-tech/",
+      "domain": "forbes.com",
+      "position": 179
+    },
+    {
+      "href": "https://ww.forbes.com/vetted/gear/training-recovery/",
+      "text": "https://ww.forbes.com/vetted/gear/training-recovery/",
+      "domain": "ww.forbes.com",
+      "position": 180
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/water-sports/",
+      "text": "https://www.forbes.com/vetted/gear/water-sports/",
+      "domain": "forbes.com",
+      "position": 181
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/wellness/",
+      "text": "https://www.forbes.com/vetted/gear/wellness/",
+      "domain": "forbes.com",
+      "position": 182
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gear/winter-sports/",
+      "text": "https://www.forbes.com/vetted/gear/winter-sports/",
+      "domain": "forbes.com",
+      "position": 183
+    },
+    {
+      "href": "https://www.forbes.com/vetted/beauty-grooming/",
+      "text": "https://www.forbes.com/vetted/beauty-grooming/",
+      "domain": "forbes.com",
+      "position": 184
+    },
+    {
+      "href": "https://www.forbes.com/vetted/beauty-grooming/haircare/",
+      "text": "https://www.forbes.com/vetted/beauty-grooming/haircare/",
+      "domain": "forbes.com",
+      "position": 185
+    },
+    {
+      "href": "https://www.forbes.com/vetted/beauty-grooming/makeup/",
+      "text": "https://www.forbes.com/vetted/beauty-grooming/makeup/",
+      "domain": "forbes.com",
+      "position": 186
+    },
+    {
+      "href": "https://www.forbes.com/vetted/beauty-grooming/nailcare/",
+      "text": "https://www.forbes.com/vetted/beauty-grooming/nailcare/",
+      "domain": "forbes.com",
+      "position": 187
+    },
+    {
+      "href": "https://www.forbes.com/vetted/beauty-grooming/shaving/",
+      "text": "https://www.forbes.com/vetted/beauty-grooming/shaving/",
+      "domain": "forbes.com",
+      "position": 188
+    },
+    {
+      "href": "https://www.forbes.com/vetted/beauty-grooming/skincare/",
+      "text": "https://www.forbes.com/vetted/beauty-grooming/skincare/",
+      "domain": "forbes.com",
+      "position": 189
+    },
+    {
+      "href": "https://www.forbes.com/vetted/beauty-grooming/personal-products/",
+      "text": "https://www.forbes.com/vetted/beauty-grooming/personal-products/",
+      "domain": "forbes.com",
+      "position": 190
+    },
+    {
+      "href": "https://www.forbes.com/vetted/beauty-grooming/wellness-self-care/",
+      "text": "https://www.forbes.com/vetted/beauty-grooming/wellness-self-care/",
+      "domain": "forbes.com",
+      "position": 191
+    },
+    {
+      "href": "https://www.forbes.com/vetted/tech-electronics/",
+      "text": "https://www.forbes.com/vetted/tech-electronics/",
+      "domain": "forbes.com",
+      "position": 192
+    },
+    {
+      "href": "https://www.forbes.com/vetted/tech-electronics/audio/",
+      "text": "https://www.forbes.com/vetted/tech-electronics/audio/",
+      "domain": "forbes.com",
+      "position": 193
+    },
+    {
+      "href": "https://www.forbes.com/vetted/tech-electronics/cameras/",
+      "text": "https://www.forbes.com/vetted/tech-electronics/cameras/",
+      "domain": "forbes.com",
+      "position": 194
+    },
+    {
+      "href": "https://www.forbes.com/vetted/tech-electronics/computers-tablets-accessories/",
+      "text": "https://www.forbes.com/vetted/tech-electronics/computers-tablets-accessories/",
+      "domain": "forbes.com",
+      "position": 195
+    },
+    {
+      "href": "https://www.forbes.com/vetted/tech-electronics/gaming/",
+      "text": "https://www.forbes.com/vetted/tech-electronics/gaming/",
+      "domain": "forbes.com",
+      "position": 196
+    },
+    {
+      "href": "https://www.forbes.com/vetted/tech-electronics/home-office/",
+      "text": "https://www.forbes.com/vetted/tech-electronics/home-office/",
+      "domain": "forbes.com",
+      "position": 197
+    },
+    {
+      "href": "https://www.forbes.com/vetted/tech-electronics/online-tools/",
+      "text": "https://www.forbes.com/vetted/tech-electronics/online-tools/",
+      "domain": "forbes.com",
+      "position": 198
+    },
+    {
+      "href": "https://www.forbes.com/vetted/tech-electronics/smart-home-devices/",
+      "text": "https://www.forbes.com/vetted/tech-electronics/smart-home-devices/",
+      "domain": "forbes.com",
+      "position": 199
+    },
+    {
+      "href": "https://www.forbes.com/vetted/tech-electronics/smartphones-smartwatches-accessories/",
+      "text": "https://www.forbes.com/vetted/tech-electronics/smartphones-smartwatches-accessories/",
+      "domain": "forbes.com",
+      "position": 200
+    },
+    {
+      "href": "https://www.forbes.com/vetted/tech-electronics/streaming/",
+      "text": "https://www.forbes.com/vetted/tech-electronics/streaming/",
+      "domain": "forbes.com",
+      "position": 201
+    },
+    {
+      "href": "https://www.forbes.com/vetted/tech-electronics/tvs/",
+      "text": "https://www.forbes.com/vetted/tech-electronics/tvs/",
+      "domain": "forbes.com",
+      "position": 202
+    },
+    {
+      "href": "https://www.forbes.com/vetted/travel/",
+      "text": "https://www.forbes.com/vetted/travel/",
+      "domain": "forbes.com",
+      "position": 203
+    },
+    {
+      "href": "https://www.forbes.com/vetted/travel/cruises/",
+      "text": "https://www.forbes.com/vetted/travel/cruises/",
+      "domain": "forbes.com",
+      "position": 204
+    },
+    {
+      "href": "https://www.forbes.com/vetted/travel/hotels-lodging/",
+      "text": "https://www.forbes.com/vetted/travel/hotels-lodging/",
+      "domain": "forbes.com",
+      "position": 205
+    },
+    {
+      "href": "https://www.forbes.com/vetted/travel/luggage/",
+      "text": "https://www.forbes.com/vetted/travel/luggage/",
+      "domain": "forbes.com",
+      "position": 206
+    },
+    {
+      "href": "https://www.forbes.com/vetted/travel/travel-products/",
+      "text": "https://www.forbes.com/vetted/travel/travel-products/",
+      "domain": "forbes.com",
+      "position": 207
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gifts/",
+      "text": "https://www.forbes.com/vetted/gifts/",
+      "domain": "forbes.com",
+      "position": 208
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gifts/fathers-day/",
+      "text": "https://www.forbes.com/vetted/gifts/fathers-day/",
+      "domain": "forbes.com",
+      "position": 209
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gifts/holiday/",
+      "text": "https://www.forbes.com/vetted/gifts/holiday/",
+      "domain": "forbes.com",
+      "position": 210
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gifts/mothers-day/",
+      "text": "https://www.forbes.com/vetted/gifts/mothers-day/",
+      "domain": "forbes.com",
+      "position": 211
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gifts/valentines-day/",
+      "text": "https://www.forbes.com/vetted/gifts/valentines-day/",
+      "domain": "forbes.com",
+      "position": 212
+    },
+    {
+      "href": "https://www.forbes.com/vetted/gifts/wedding/",
+      "text": "https://www.forbes.com/vetted/gifts/wedding/",
+      "domain": "forbes.com",
+      "position": 213
+    },
+    {
+      "href": "https://www.forbes.com/vetted/deals/",
+      "text": "https://www.forbes.com/vetted/deals/",
+      "domain": "forbes.com",
+      "position": 214
+    },
+    {
+      "href": "https://www.forbes.com/vetted/deals/black-friday/",
+      "text": "https://www.forbes.com/vetted/deals/black-friday/",
+      "domain": "forbes.com",
+      "position": 215
+    },
+    {
+      "href": "https://www.forbes.com/vetted/deals/cyber-monday/",
+      "text": "https://www.forbes.com/vetted/deals/cyber-monday/",
+      "domain": "forbes.com",
+      "position": 216
+    },
+    {
+      "href": "https://www.forbes.com/vetted/deals/amazon-prime-day/",
+      "text": "https://www.forbes.com/vetted/deals/amazon-prime-day/",
+      "domain": "forbes.com",
+      "position": 217
+    },
+    {
+      "href": "https://www.forbes.com/vetted/deals/beauty-grooming/",
+      "text": "https://www.forbes.com/vetted/deals/beauty-grooming/",
+      "domain": "forbes.com",
+      "position": 218
+    },
+    {
+      "href": "https://www.forbes.com/vetted/deals/big-sales/",
+      "text": "https://www.forbes.com/vetted/deals/big-sales/",
+      "domain": "forbes.com",
+      "position": 219
+    },
+    {
+      "href": "https://www.forbes.com/vetted/deals/fashion/",
+      "text": "https://www.forbes.com/vetted/deals/fashion/",
+      "domain": "forbes.com",
+      "position": 220
+    },
+    {
+      "href": "https://www.forbes.com/vetted/deals/gear/",
+      "text": "https://www.forbes.com/vetted/deals/gear/",
+      "domain": "forbes.com",
+      "position": 221
+    },
+    {
+      "href": "https://www.forbes.com/vetted/deals/home/",
+      "text": "https://www.forbes.com/vetted/deals/home/",
+      "domain": "forbes.com",
+      "position": 222
+    },
+    {
+      "href": "https://www.forbes.com/vetted/deals/tech-electronics/",
+      "text": "https://www.forbes.com/vetted/deals/tech-electronics/",
+      "domain": "forbes.com",
+      "position": 223
+    },
+    {
+      "href": "https://www.forbes.com/vetted/deals/travel-deals/",
+      "text": "https://www.forbes.com/vetted/deals/travel-deals/",
+      "domain": "forbes.com",
+      "position": 224
+    },
+    {
+      "href": "https://www.forbes.com/vetted/deals/mattress-sleep/",
+      "text": "https://www.forbes.com/vetted/deals/mattress-sleep/",
+      "domain": "forbes.com",
+      "position": 225
+    },
+    {
+      "href": "https://www.forbes.com/forbes-101/",
+      "text": "https://www.forbes.com/forbes-101/",
+      "domain": "forbes.com",
+      "position": 226
+    },
+    {
+      "href": "https://www.forbes.com/advisor/",
+      "text": "https://www.forbes.com/advisor/",
+      "domain": "forbes.com",
+      "position": 227
+    },
+    {
+      "href": "https://www.forbes.com/advisor/credit-cards/",
+      "text": "https://www.forbes.com/advisor/credit-cards/",
+      "domain": "forbes.com",
+      "position": 228
+    },
+    {
+      "href": "https://www.forbes.com/advisor/credit-cards/best-credit-cards/",
+      "text": "https://www.forbes.com/advisor/credit-cards/best-credit-cards/",
+      "domain": "forbes.com",
+      "position": 229
+    },
+    {
+      "href": "https://www.forbes.com/advisor/credit-cards/best-travel-credit-cards/",
+      "text": "https://www.forbes.com/advisor/credit-cards/best-travel-credit-cards/",
+      "domain": "forbes.com",
+      "position": 230
+    },
+    {
+      "href": "https://www.forbes.com/advisor/credit-cards/best-0-apr-credit-cards/",
+      "text": "https://www.forbes.com/advisor/credit-cards/best-0-apr-credit-cards/",
+      "domain": "forbes.com",
+      "position": 231
+    },
+    {
+      "href": "https://www.forbes.com/advisor/credit-cards/best/balance-transfer/",
+      "text": "https://www.forbes.com/advisor/credit-cards/best/balance-transfer/",
+      "domain": "forbes.com",
+      "position": 232
+    },
+    {
+      "href": "https://www.forbes.com/advisor/credit-cards/best/business/",
+      "text": "https://www.forbes.com/advisor/credit-cards/best/business/",
+      "domain": "forbes.com",
+      "position": 233
+    },
+    {
+      "href": "https://www.forbes.com/advisor/credit-cards/best/first-credit-card/",
+      "text": "https://www.forbes.com/advisor/credit-cards/best/first-credit-card/",
+      "domain": "forbes.com",
+      "position": 234
+    },
+    {
+      "href": "https://www.forbes.com/advisor/mortgages/",
+      "text": "https://www.forbes.com/advisor/mortgages/",
+      "domain": "forbes.com",
+      "position": 235
+    },
+    {
+      "href": "https://www.forbes.com/advisor/mortgages/best-mortgage-lenders/",
+      "text": "https://www.forbes.com/advisor/mortgages/best-mortgage-lenders/",
+      "domain": "forbes.com",
+      "position": 236
+    },
+    {
+      "href": "https://www.forbes.com/advisor/mortgages/refinance/best-mortgage-refinance-lenders/",
+      "text": "https://www.forbes.com/advisor/mortgages/refinance/best-mortgage-refinance-lenders/",
+      "domain": "forbes.com",
+      "position": 237
+    },
+    {
+      "href": "https://www.forbes.com/advisor/personal-loans/best-personal-loans/",
+      "text": "https://www.forbes.com/advisor/personal-loans/best-personal-loans/",
+      "domain": "forbes.com",
+      "position": 238
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business-loans/best-small-business-loans/",
+      "text": "https://www.forbes.com/advisor/business-loans/best-small-business-loans/",
+      "domain": "forbes.com",
+      "position": 239
+    },
+    {
+      "href": "https://www.forbes.com/advisor/personal-loans/bad-credit-loans/",
+      "text": "https://www.forbes.com/advisor/personal-loans/bad-credit-loans/",
+      "domain": "forbes.com",
+      "position": 240
+    },
+    {
+      "href": "https://www.forbes.com/advisor/personal-loans/best-debt-consolidation-loans-bad-credit/",
+      "text": "https://www.forbes.com/advisor/personal-loans/best-debt-consolidation-loans-bad-credit/",
+      "domain": "forbes.com",
+      "position": 241
+    },
+    {
+      "href": "https://www.forbes.com/advisor/debt-relief/best-debt-relief-companies/",
+      "text": "https://www.forbes.com/advisor/debt-relief/best-debt-relief-companies/",
+      "domain": "forbes.com",
+      "position": 242
+    },
+    {
+      "href": "https://www.forbes.com/advisor/student-loans/best-student-loan-refinance-lenders/",
+      "text": "https://www.forbes.com/advisor/student-loans/best-student-loan-refinance-lenders/",
+      "domain": "forbes.com",
+      "position": 243
+    },
+    {
+      "href": "https://www.forbes.com/advisor/student-loans/best-private-student-loans/",
+      "text": "https://www.forbes.com/advisor/student-loans/best-private-student-loans/",
+      "domain": "forbes.com",
+      "position": 244
+    },
+    {
+      "href": "https://www.forbes.com/advisor/banking/",
+      "text": "https://www.forbes.com/advisor/banking/",
+      "domain": "forbes.com",
+      "position": 245
+    },
+    {
+      "href": "https://www.forbes.com/advisor/banking/cds/best-cd-rates/",
+      "text": "https://www.forbes.com/advisor/banking/cds/best-cd-rates/",
+      "domain": "forbes.com",
+      "position": 246
+    },
+    {
+      "href": "https://www.forbes.com/advisor/banking/savings/best-high-yield-savings-accounts/",
+      "text": "https://www.forbes.com/advisor/banking/savings/best-high-yield-savings-accounts/",
+      "domain": "forbes.com",
+      "position": 247
+    },
+    {
+      "href": "https://www.forbes.com/advisor/banking/best-money-market-accounts/",
+      "text": "https://www.forbes.com/advisor/banking/best-money-market-accounts/",
+      "domain": "forbes.com",
+      "position": 248
+    },
+    {
+      "href": "https://www.forbes.com/advisor/banking/checking/best-checking-accounts/",
+      "text": "https://www.forbes.com/advisor/banking/checking/best-checking-accounts/",
+      "domain": "forbes.com",
+      "position": 249
+    },
+    {
+      "href": "https://www.forbes.com/advisor/banking/checking/best-business-checking-accounts/",
+      "text": "https://www.forbes.com/advisor/banking/checking/best-business-checking-accounts/",
+      "domain": "forbes.com",
+      "position": 250
+    },
+    {
+      "href": "https://www.forbes.com/advisor/banking/best-budgeting-apps/",
+      "text": "https://www.forbes.com/advisor/banking/best-budgeting-apps/",
+      "domain": "forbes.com",
+      "position": 251
+    },
+    {
+      "href": "https://www.forbes.com/advisor/banking/best-online-banks/",
+      "text": "https://www.forbes.com/advisor/banking/best-online-banks/",
+      "domain": "forbes.com",
+      "position": 252
+    },
+    {
+      "href": "https://www.forbes.com/advisor/insurance/",
+      "text": "https://www.forbes.com/advisor/insurance/",
+      "domain": "forbes.com",
+      "position": 253
+    },
+    {
+      "href": "https://www.forbes.com/advisor/health-insurance/best-health-insurance-companies/",
+      "text": "https://www.forbes.com/advisor/health-insurance/best-health-insurance-companies/",
+      "domain": "forbes.com",
+      "position": 254
+    },
+    {
+      "href": "https://www.forbes.com/advisor/health-insurance/medicare/",
+      "text": "https://www.forbes.com/advisor/health-insurance/medicare/",
+      "domain": "forbes.com",
+      "position": 255
+    },
+    {
+      "href": "https://www.forbes.com/advisor/life-insurance/best-life-insurance-companies/",
+      "text": "https://www.forbes.com/advisor/life-insurance/best-life-insurance-companies/",
+      "domain": "forbes.com",
+      "position": 256
+    },
+    {
+      "href": "https://www.forbes.com/advisor/car-insurance/best-car-insurance-companies/",
+      "text": "https://www.forbes.com/advisor/car-insurance/best-car-insurance-companies/",
+      "domain": "forbes.com",
+      "position": 257
+    },
+    {
+      "href": "https://www.forbes.com/advisor/car-insurance/cheapest-car-insurance/",
+      "text": "https://www.forbes.com/advisor/car-insurance/cheapest-car-insurance/",
+      "domain": "forbes.com",
+      "position": 258
+    },
+    {
+      "href": "https://www.forbes.com/advisor/pet-insurance/best-pet-insurance/",
+      "text": "https://www.forbes.com/advisor/pet-insurance/best-pet-insurance/",
+      "domain": "forbes.com",
+      "position": 259
+    },
+    {
+      "href": "https://www.forbes.com/advisor/travel-insurance/best-travel-insurance/",
+      "text": "https://www.forbes.com/advisor/travel-insurance/best-travel-insurance/",
+      "domain": "forbes.com",
+      "position": 260
+    },
+    {
+      "href": "https://www.forbes.com/advisor/homeowners-insurance/best-homeowners-insurance-companies/",
+      "text": "https://www.forbes.com/advisor/homeowners-insurance/best-homeowners-insurance-companies/",
+      "domain": "forbes.com",
+      "position": 261
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/",
+      "text": "https://www.forbes.com/advisor/business/",
+      "domain": "forbes.com",
+      "position": 262
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/how-to-start-a-business/",
+      "text": "https://www.forbes.com/advisor/business/how-to-start-a-business/",
+      "domain": "forbes.com",
+      "position": 263
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/best-llc-service/",
+      "text": "https://www.forbes.com/advisor/business/best-llc-service/",
+      "domain": "forbes.com",
+      "position": 264
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-payroll-services/",
+      "text": "https://www.forbes.com/advisor/business/software/best-payroll-services/",
+      "domain": "forbes.com",
+      "position": 265
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-human-resource-management-systems/",
+      "text": "https://www.forbes.com/advisor/business/software/best-human-resource-management-systems/",
+      "domain": "forbes.com",
+      "position": 266
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/hris-systems/",
+      "text": "https://www.forbes.com/advisor/business/software/hris-systems/",
+      "domain": "forbes.com",
+      "position": 267
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-peo-services/",
+      "text": "https://www.forbes.com/advisor/business/software/best-peo-services/",
+      "domain": "forbes.com",
+      "position": 268
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/best-applicant-tracking-systems/",
+      "text": "https://www.forbes.com/advisor/business/best-applicant-tracking-systems/",
+      "domain": "forbes.com",
+      "position": 269
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-domain-registrar/",
+      "text": "https://www.forbes.com/advisor/business/software/best-domain-registrar/",
+      "domain": "forbes.com",
+      "position": 270
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-web-hosting-services/",
+      "text": "https://www.forbes.com/advisor/business/software/best-web-hosting-services/",
+      "domain": "forbes.com",
+      "position": 271
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-website-builders/",
+      "text": "https://www.forbes.com/advisor/business/software/best-website-builders/",
+      "domain": "forbes.com",
+      "position": 272
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-ecommerce-platform/",
+      "text": "https://www.forbes.com/advisor/business/software/best-ecommerce-platform/",
+      "domain": "forbes.com",
+      "position": 273
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-landing-page-builder/",
+      "text": "https://www.forbes.com/advisor/business/software/best-landing-page-builder/",
+      "domain": "forbes.com",
+      "position": 274
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-voip-service/",
+      "text": "https://www.forbes.com/advisor/business/software/best-voip-service/",
+      "domain": "forbes.com",
+      "position": 275
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-answering-services/",
+      "text": "https://www.forbes.com/advisor/business/software/best-answering-services/",
+      "domain": "forbes.com",
+      "position": 276
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-project-management-software/",
+      "text": "https://www.forbes.com/advisor/business/software/best-project-management-software/",
+      "domain": "forbes.com",
+      "position": 277
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-task-management-software/",
+      "text": "https://www.forbes.com/advisor/business/software/best-task-management-software/",
+      "domain": "forbes.com",
+      "position": 278
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-gantt-chart-software/",
+      "text": "https://www.forbes.com/advisor/business/software/best-gantt-chart-software/",
+      "domain": "forbes.com",
+      "position": 279
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-vpn/",
+      "text": "https://www.forbes.com/advisor/business/software/best-vpn/",
+      "domain": "forbes.com",
+      "position": 280
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-antivirus-software/",
+      "text": "https://www.forbes.com/advisor/business/software/best-antivirus-software/",
+      "domain": "forbes.com",
+      "position": 281
+    },
+    {
+      "href": "https://www.forbes.com/advisor/business/software/best-password-managers/",
+      "text": "https://www.forbes.com/advisor/business/software/best-password-managers/",
+      "domain": "forbes.com",
+      "position": 282
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/",
+      "text": "https://www.forbes.com/home-improvement/",
+      "domain": "forbes.com",
+      "position": 283
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/moving-services/best-moving-companies/",
+      "text": "https://www.forbes.com/home-improvement/moving-services/best-moving-companies/",
+      "domain": "forbes.com",
+      "position": 284
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/moving-services/best-long-distance-moving-companies/",
+      "text": "https://www.forbes.com/home-improvement/moving-services/best-long-distance-moving-companies/",
+      "domain": "forbes.com",
+      "position": 285
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/moving-services/best-car-shipping-companies/",
+      "text": "https://www.forbes.com/home-improvement/moving-services/best-car-shipping-companies/",
+      "domain": "forbes.com",
+      "position": 286
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/home-warranty/best-home-warranty-companies/",
+      "text": "https://www.forbes.com/home-improvement/home-warranty/best-home-warranty-companies/",
+      "domain": "forbes.com",
+      "position": 287
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/solar/best-solar-companies/",
+      "text": "https://www.forbes.com/home-improvement/solar/best-solar-companies/",
+      "domain": "forbes.com",
+      "position": 288
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/solar/best-solar-panels/",
+      "text": "https://www.forbes.com/home-improvement/solar/best-solar-panels/",
+      "domain": "forbes.com",
+      "position": 289
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/home-security/best-home-security-companies/",
+      "text": "https://www.forbes.com/home-improvement/home-security/best-home-security-companies/",
+      "domain": "forbes.com",
+      "position": 290
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/home-security/best-home-security-systems/",
+      "text": "https://www.forbes.com/home-improvement/home-security/best-home-security-systems/",
+      "domain": "forbes.com",
+      "position": 291
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/internet/best-internet-providers/",
+      "text": "https://www.forbes.com/home-improvement/internet/best-internet-providers/",
+      "domain": "forbes.com",
+      "position": 292
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/internet/cheapest-internet-plans/",
+      "text": "https://www.forbes.com/home-improvement/internet/cheapest-internet-plans/",
+      "domain": "forbes.com",
+      "position": 293
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/internet/fastest-high-speed-internet-provider/",
+      "text": "https://www.forbes.com/home-improvement/internet/fastest-high-speed-internet-provider/",
+      "domain": "forbes.com",
+      "position": 294
+    },
+    {
+      "href": "https://www.forbes.com/home-improvement/pest-control/best-pest-control-companies/",
+      "text": "https://www.forbes.com/home-improvement/pest-control/best-pest-control-companies/",
+      "domain": "forbes.com",
+      "position": 295
+    },
+    {
+      "href": "https://www.forbes.com/advisor/education/",
+      "text": "https://www.forbes.com/advisor/education/",
+      "domain": "forbes.com",
+      "position": 296
+    },
+    {
+      "href": "https://www.forbes.com/uk/advisor/",
+      "text": "https://www.forbes.com/uk/advisor/",
+      "domain": "forbes.com",
+      "position": 297
+    },
+    {
+      "href": "https://www.forbes.com/advisor/ca/",
+      "text": "https://www.forbes.com/advisor/ca/",
+      "domain": "forbes.com",
+      "position": 298
+    },
+    {
+      "href": "https://www.forbes.com/advisor/au/",
+      "text": "https://www.forbes.com/advisor/au/",
+      "domain": "forbes.com",
+      "position": 299
+    },
+    {
+      "href": "https://www.forbes.com/health/",
+      "text": "https://www.forbes.com/health/",
+      "domain": "forbes.com",
+      "position": 300
+    },
+    {
+      "href": "https://www.forbes.com/health/mind/",
+      "text": "https://www.forbes.com/health/mind/",
+      "domain": "forbes.com",
+      "position": 301
+    },
+    {
+      "href": "https://www.forbes.com/health/mind/best-online-therapy/",
+      "text": "https://www.forbes.com/health/mind/best-online-therapy/",
+      "domain": "forbes.com",
+      "position": 302
+    },
+    {
+      "href": "https://www.forbes.com/health/mind/best-online-therapy-that-takes-insurance/",
+      "text": "https://www.forbes.com/health/mind/best-online-therapy-that-takes-insurance/",
+      "domain": "forbes.com",
+      "position": 303
+    },
+    {
+      "href": "https://www.forbes.com/health/mind/best-online-psychiatry/",
+      "text": "https://www.forbes.com/health/mind/best-online-psychiatry/",
+      "domain": "forbes.com",
+      "position": 304
+    },
+    {
+      "href": "https://www.forbes.com/health/dating/best-online-dating-websites/",
+      "text": "https://www.forbes.com/health/dating/best-online-dating-websites/",
+      "domain": "forbes.com",
+      "position": 305
+    },
+    {
+      "href": "https://www.forbes.com/health/dating/best-senior-dating-sites/",
+      "text": "https://www.forbes.com/health/dating/best-senior-dating-sites/",
+      "domain": "forbes.com",
+      "position": 306
+    },
+    {
+      "href": "https://www.forbes.com/health/dating/best-lgbtq-dating-sites/",
+      "text": "https://www.forbes.com/health/dating/best-lgbtq-dating-sites/",
+      "domain": "forbes.com",
+      "position": 307
+    },
+    {
+      "href": "https://www.forbes.com/health/cbd/",
+      "text": "https://www.forbes.com/health/cbd/",
+      "domain": "forbes.com",
+      "position": 308
+    },
+    {
+      "href": "https://www.forbes.com/health/cbd/best-cbd-gummies/",
+      "text": "https://www.forbes.com/health/cbd/best-cbd-gummies/",
+      "domain": "forbes.com",
+      "position": 309
+    },
+    {
+      "href": "https://www.forbes.com/health/cbd/best-cbd-oil/",
+      "text": "https://www.forbes.com/health/cbd/best-cbd-oil/",
+      "domain": "forbes.com",
+      "position": 310
+    },
+    {
+      "href": "https://www.forbes.com/health/cbd/best-cbd-creams/",
+      "text": "https://www.forbes.com/health/cbd/best-cbd-creams/",
+      "domain": "forbes.com",
+      "position": 311
+    },
+    {
+      "href": "https://www.forbes.com/health/cbd/cbd-for-anxiety/",
+      "text": "https://www.forbes.com/health/cbd/cbd-for-anxiety/",
+      "domain": "forbes.com",
+      "position": 312
+    },
+    {
+      "href": "https://www.forbes.com/health/cbd/best-cbd-oil-for-pain/",
+      "text": "https://www.forbes.com/health/cbd/best-cbd-oil-for-pain/",
+      "domain": "forbes.com",
+      "position": 313
+    },
+    {
+      "href": "https://www.forbes.com/health/supplements/",
+      "text": "https://www.forbes.com/health/supplements/",
+      "domain": "forbes.com",
+      "position": 314
+    },
+    {
+      "href": "https://www.forbes.com/health/supplements/best-protein-powders/",
+      "text": "https://www.forbes.com/health/supplements/best-protein-powders/",
+      "domain": "forbes.com",
+      "position": 315
+    },
+    {
+      "href": "https://www.forbes.com/health/supplements/best-pre-workout/",
+      "text": "https://www.forbes.com/health/supplements/best-pre-workout/",
+      "domain": "forbes.com",
+      "position": 316
+    },
+    {
+      "href": "https://www.forbes.com/health/supplements/best-collagen-powders/",
+      "text": "https://www.forbes.com/health/supplements/best-collagen-powders/",
+      "domain": "forbes.com",
+      "position": 317
+    },
+    {
+      "href": "https://www.forbes.com/health/supplements/best-creatine-supplements/",
+      "text": "https://www.forbes.com/health/supplements/best-creatine-supplements/",
+      "domain": "forbes.com",
+      "position": 318
+    },
+    {
+      "href": "https://www.forbes.com/health/supplements/coq10-supplements/",
+      "text": "https://www.forbes.com/health/supplements/coq10-supplements/",
+      "domain": "forbes.com",
+      "position": 319
+    },
+    {
+      "href": "https://www.forbes.com/health/hearing-aids/",
+      "text": "https://www.forbes.com/health/hearing-aids/",
+      "domain": "forbes.com",
+      "position": 320
+    },
+    {
+      "href": "https://www.forbes.com/health/hearing-aids/best-hearing-aids/",
+      "text": "https://www.forbes.com/health/hearing-aids/best-hearing-aids/",
+      "domain": "forbes.com",
+      "position": 321
+    },
+    {
+      "href": "https://www.forbes.com/health/hearing-aids/best-otc-hearing-aids/",
+      "text": "https://www.forbes.com/health/hearing-aids/best-otc-hearing-aids/",
+      "domain": "forbes.com",
+      "position": 322
+    },
+    {
+      "href": "https://www.forbes.com/health/hearing-aids/best-affordable-hearing-aids/",
+      "text": "https://www.forbes.com/health/hearing-aids/best-affordable-hearing-aids/",
+      "domain": "forbes.com",
+      "position": 323
+    },
+    {
+      "href": "https://www.forbes.com/health/medical-alert-systems/",
+      "text": "https://www.forbes.com/health/medical-alert-systems/",
+      "domain": "forbes.com",
+      "position": 324
+    },
+    {
+      "href": "https://www.forbes.com/health/medical-alert-systems/best-medical-alert-systems/",
+      "text": "https://www.forbes.com/health/medical-alert-systems/best-medical-alert-systems/",
+      "domain": "forbes.com",
+      "position": 325
+    },
+    {
+      "href": "https://www.forbes.com/health/medical-alert-systems/best-medical-alert-systems-with-fall-detection/",
+      "text": "https://www.forbes.com/health/medical-alert-systems/best-medical-alert-systems-with-fall-detection/",
+      "domain": "forbes.com",
+      "position": 326
+    },
+    {
+      "href": "https://www.forbes.com/health/dating/best-dating-apps-for-serious-relationships/",
+      "text": "https://www.forbes.com/health/dating/best-dating-apps-for-serious-relationships/",
+      "domain": "forbes.com",
+      "position": 327
+    },
+    {
+      "href": "https://www.forbes.com/health/weight-loss/",
+      "text": "https://www.forbes.com/health/weight-loss/",
+      "domain": "forbes.com",
+      "position": 328
+    },
+    {
+      "href": "https://www.forbes.com/health/weight-loss/best-weight-loss-program/",
+      "text": "https://www.forbes.com/health/weight-loss/best-weight-loss-program/",
+      "domain": "forbes.com",
+      "position": 329
+    },
+    {
+      "href": "https://www.forbes.com/lists/",
+      "text": "https://www.forbes.com/lists/",
+      "domain": "forbes.com",
+      "position": 330
+    },
+    {
+      "href": "https://www.forbes.com/video/",
+      "text": "https://www.forbes.com/video/",
+      "domain": "forbes.com",
+      "position": 331
+    },
+    {
+      "href": "https://account.forbes.com/newsletters/?utm_source=forbes&utm_medium=featured&utm_campaign=navigation",
+      "text": "https://account.forbes.com/newsletters/?utm_source=forbes&utm_medium=featured&utm_campaign=navigation",
+      "domain": "account.forbes.com",
+      "position": 332
+    },
+    {
+      "href": "http://bit.ly/2Y2rVX8",
+      "text": "http://bit.ly/2Y2rVX8",
+      "domain": "bit.ly",
+      "position": 333
+    },
+    {
+      "href": "https://bit.ly/2Rkd9oN",
+      "text": "https://bit.ly/2Rkd9oN",
+      "domain": "bit.ly",
+      "position": 334
+    },
+    {
+      "href": "https://www.forbes.com/games/",
+      "text": "https://www.forbes.com/games/",
+      "domain": "forbes.com",
+      "position": 335
+    },
+    {
+      "href": "https://www.forbes.com/frase/",
+      "text": "https://www.forbes.com/frase/",
+      "domain": "forbes.com",
+      "position": 336
+    },
+    {
+      "href": "https://www.forbes.com/games/pinpoint/",
+      "text": "https://www.forbes.com/games/pinpoint/",
+      "domain": "forbes.com",
+      "position": 337
+    },
+    {
+      "href": "https://www.forbes.com/games/queens/",
+      "text": "https://www.forbes.com/games/queens/",
+      "domain": "forbes.com",
+      "position": 338
+    },
+    {
+      "href": "https://www.forbes.com/games/crossclimb/",
+      "text": "https://www.forbes.com/games/crossclimb/",
+      "domain": "forbes.com",
+      "position": 339
+    },
+    {
+      "href": "https://www.forbes.com/forbes-magazine/#42ad043030a4",
+      "text": "https://www.forbes.com/forbes-magazine/#42ad043030a4",
+      "domain": "forbes.com",
+      "position": 340
+    },
+    {
+      "href": "https://www.forbes.com/forbesasia/#7cb46d1d2f95",
+      "text": "https://www.forbes.com/forbesasia/#7cb46d1d2f95",
+      "domain": "forbes.com",
+      "position": 341
+    },
+    {
+      "href": "https://w1.buysub.com/pubs/B4/FRB/16-forbes_relaunch_landingpage_2freetrial.jsp?cds_mag_code=FRB&cds_page_id=241223",
+      "text": "https://w1.buysub.com/pubs/B4/FRB/16-forbes_relaunch_landingpage_2freetrial.jsp?cds_mag_code=FRB&cds_page_id=241223",
+      "domain": "w1.buysub.com",
+      "position": 342
+    },
+    {
+      "href": "https://www.forbes.com/coronavirus/#59d4597c20dd",
+      "text": "https://www.forbes.com/coronavirus/#59d4597c20dd",
+      "domain": "forbes.com",
+      "position": 343
+    },
+    {
+      "href": "https://www.forbes.com/daily-cover-stories/#78127e5b6a74",
+      "text": "https://www.forbes.com/daily-cover-stories/#78127e5b6a74",
+      "domain": "forbes.com",
+      "position": 344
+    },
+    {
+      "href": "https://www.forbes.com/dark-capital/#4bf21bb954c9",
+      "text": "https://www.forbes.com/dark-capital/#4bf21bb954c9",
+      "domain": "forbes.com",
+      "position": 345
+    },
+    {
+      "href": "https://www.forbes.com/editors-picks/#15c416d878bf",
+      "text": "https://www.forbes.com/editors-picks/#15c416d878bf",
+      "domain": "forbes.com",
+      "position": 346
+    },
+    {
+      "href": "https://www.forbes.com/news/",
+      "text": "https://www.forbes.com/news/",
+      "domain": "forbes.com",
+      "position": 347
+    },
+    {
+      "href": "https://www.forbes.com/sites/insights-american-express/2024/11/26/5-findings-that-could-reveal-your-companys-path-to-payment-innovation/",
+      "text": "https://www.forbes.com/sites/insights-american-express/2024/11/26/5-findings-that-could-reveal-your-companys-path-to-payment-innovation/",
+      "domain": "forbes.com",
+      "position": 348
+    },
+    {
+      "href": "https://www.forbes.com/sites/forbesvideo/2024/11/21/the-ceos-guide-to-marketing/",
+      "text": "https://www.forbes.com/sites/forbesvideo/2024/11/21/the-ceos-guide-to-marketing/",
+      "domain": "forbes.com",
+      "position": 349
+    },
+    {
+      "href": "https://www.forbes.com/sites/richardnieva/2024/11/19/the-forbes-cio-next-list-2024/",
+      "text": "https://www.forbes.com/sites/richardnieva/2024/11/19/the-forbes-cio-next-list-2024/",
+      "domain": "forbes.com",
+      "position": 350
+    },
+    {
+      "href": "https://www.forbes.com/lists/top-wealth-management-teams-high-net-worth/?sh=3dff2fb023e1",
+      "text": "https://www.forbes.com/lists/top-wealth-management-teams-high-net-worth/?sh=3dff2fb023e1",
+      "domain": "forbes.com",
+      "position": 351
+    },
+    {
+      "href": "https://www.forbes.com/sites/forbesvideo/2024/09/18/the-one-who-changed-everything/",
+      "text": "https://www.forbes.com/sites/forbesvideo/2024/09/18/the-one-who-changed-everything/",
+      "domain": "forbes.com",
+      "position": 352
+    },
+    {
+      "href": "https://www.forbes.com/30-under-30/2023/",
+      "text": "https://www.forbes.com/30-under-30/2023/",
+      "domain": "forbes.com",
+      "position": 353
+    },
+    {
+      "href": "https://www.forbes.com/sites/forbes-research/2023/10/26/c-suite-data-reveals-ais-nuanced-impact--a-quest-to-quantify-it/?sh=2e0ce1152c4a",
+      "text": "https://www.forbes.com/sites/forbes-research/2023/10/26/c-suite-data-reveals-ais-nuanced-impact--a-quest-to-quantify-it/?sh=2e0ce1152c4a",
+      "domain": "forbes.com",
+      "position": 354
+    },
+    {
+      "href": "https://www.forbes.com/sites/cognizant/2024/05/15/gen-ai-leadership-conversation-series/",
+      "text": "https://www.forbes.com/sites/cognizant/2024/05/15/gen-ai-leadership-conversation-series/",
+      "domain": "forbes.com",
+      "position": 355
+    },
+    {
+      "href": "https://www.forbes.com/sites/forbesvideo/2023/11/01/dna-of-success-2023",
+      "text": "https://www.forbes.com/sites/forbesvideo/2023/11/01/dna-of-success-2023",
+      "domain": "forbes.com",
+      "position": 356
+    },
+    {
+      "href": "https://www.forbes.com/sites/forbes-research/2023/10/26/new-forbes-survey-reveals-how-executives-are-embracing---and-bracing-for---ai/?sh=4c9ec37647fe",
+      "text": "https://www.forbes.com/sites/forbes-research/2023/10/26/new-forbes-survey-reveals-how-executives-are-embracing---and-bracing-for---ai/?sh=4c9ec37647fe",
+      "domain": "forbes.com",
+      "position": 357
+    },
+    {
+      "href": "https://www.forbes.com/sites/forbes-research/2023/11/01/facing-a-volatile-market-c-suites-look-to-the-cfo-for-strategic-guidance/?sh=5ebd4e0f8752",
+      "text": "https://www.forbes.com/sites/forbes-research/2023/11/01/facing-a-volatile-market-c-suites-look-to-the-cfo-for-strategic-guidance/?sh=5ebd4e0f8752",
+      "domain": "forbes.com",
+      "position": 358
+    },
+    {
+      "href": "https://www.forbes.com/sites/forbes-research/2023/06/07/resiliency-and-ingenuity-revealed-in-new-forbes-small-business-research/?sh=7933ed832cee",
+      "text": "https://www.forbes.com/sites/forbes-research/2023/06/07/resiliency-and-ingenuity-revealed-in-new-forbes-small-business-research/?sh=7933ed832cee",
+      "domain": "forbes.com",
+      "position": 359
+    },
+    {
+      "href": "https://www.forbes.com/sites/statefarm/2024/08/13/i-am-who-i-am-owning-your-personal-and-professional-brand/",
+      "text": "https://www.forbes.com/sites/statefarm/2024/08/13/i-am-who-i-am-owning-your-personal-and-professional-brand/",
+      "domain": "forbes.com",
+      "position": 360
+    },
+    {
+      "href": "https://www.forbes.com/sites/tiaa",
+      "text": "https://www.forbes.com/sites/tiaa",
+      "domain": "forbes.com",
+      "position": 361
+    },
+    {
+      "href": "https://www.forbes.com/video/17c95107-2e8f-410a-bd28-3b3b3f8321c2/citizens-bank-cxo-beth-johnson-finds-success-by-innovating-on-the-margins/",
+      "text": "https://www.forbes.com/video/17c95107-2e8f-410a-bd28-3b3b3f8321c2/citizens-bank-cxo-beth-johnson-finds-success-by-innovating-on-the-margins/",
+      "domain": "forbes.com",
+      "position": 362
+    },
+    {
+      "href": "https://www.forbes.com/sites/forbesvideo/2024/09/16/scaling-ai/",
+      "text": "https://www.forbes.com/sites/forbesvideo/2024/09/16/scaling-ai/",
+      "domain": "forbes.com",
+      "position": 363
+    },
+    {
+      "href": "https://www.forbes.com/lists/top-ria-firms",
+      "text": "https://www.forbes.com/lists/top-ria-firms",
+      "domain": "forbes.com",
+      "position": 364
+    },
+    {
+      "href": "https://www.forbes.com/sites/servicenow/2024/10/15/5-traits-of-ai-pacesetters-to-help-you-pull-ahead/",
+      "text": "https://www.forbes.com/sites/servicenow/2024/10/15/5-traits-of-ai-pacesetters-to-help-you-pull-ahead/",
+      "domain": "forbes.com",
+      "position": 365
+    },
+    {
+      "href": "https://www.forbes.com/sites/insights-thomsonreuters/2024/10/30/4-factors-to-explore-when-considering-ai-for-professional-work/",
+      "text": "https://www.forbes.com/sites/insights-thomsonreuters/2024/10/30/4-factors-to-explore-when-considering-ai-for-professional-work/",
+      "domain": "forbes.com",
+      "position": 366
+    },
+    {
+      "href": "https://www.forbes.com/sites/paypal/2024/10/31/the-future-of-e-commerce/",
+      "text": "https://www.forbes.com/sites/paypal/2024/10/31/the-future-of-e-commerce/",
+      "domain": "forbes.com",
+      "position": 367
+    },
+    {
+      "href": "https://www.forbes.com/sites/almanac/2024/11/04/the-birth-of-almanac-a-re-evaluation-of-whats-really-needed-in-farming",
+      "text": "https://www.forbes.com/sites/almanac/2024/11/04/the-birth-of-almanac-a-re-evaluation-of-whats-really-needed-in-farming",
+      "domain": "forbes.com",
+      "position": 368
+    },
+    {
+      "href": "https://www.forbes.com/sites/forbesvideo/2024/02/22/forbes-leadership-lessons-on-financial-literacy/",
+      "text": "https://www.forbes.com/sites/forbesvideo/2024/02/22/forbes-leadership-lessons-on-financial-literacy/",
+      "domain": "forbes.com",
+      "position": 369
+    },
+    {
+      "href": "https://www.forbes.com/sites/paypal/2024/11/13/how-merchants-are-leveling-up-checkout-to-drive-conversion/",
+      "text": "https://www.forbes.com/sites/paypal/2024/11/13/how-merchants-are-leveling-up-checkout-to-drive-conversion/",
+      "domain": "forbes.com",
+      "position": 370
+    },
+    {
+      "href": "https://www.forbes.com/video/5dd30175-916e-4349-9cab-564a384e45da/hyoeun-kim-on-lgs-brand-promise-lifes-good/",
+      "text": "https://www.forbes.com/video/5dd30175-916e-4349-9cab-564a384e45da/hyoeun-kim-on-lgs-brand-promise-lifes-good/",
+      "domain": "forbes.com",
+      "position": 371
+    },
+    {
+      "href": "https://www.forbes.com/sites/t-rowe-price/2024/11/20/poised-to-outperform-rev-up-your-investment-strategy-with-active-etfs/",
+      "text": "https://www.forbes.com/sites/t-rowe-price/2024/11/20/poised-to-outperform-rev-up-your-investment-strategy-with-active-etfs/",
+      "domain": "forbes.com",
+      "position": 372
+    },
+    {
+      "href": "https://www.forbes.com/sites/servicenow/2024/11/22/why-its-time-to-see-your-workforce-in-4d/",
+      "text": "https://www.forbes.com/sites/servicenow/2024/11/22/why-its-time-to-see-your-workforce-in-4d/",
+      "domain": "forbes.com",
+      "position": 373
+    },
+    {
+      "href": "https://www.forbes.com/sites/sap/2024/12/05/4-ways-a-cloud-erp-can-unleash-ai-potential/",
+      "text": "https://www.forbes.com/sites/sap/2024/12/05/4-ways-a-cloud-erp-can-unleash-ai-potential/",
+      "domain": "forbes.com",
+      "position": 374
+    },
+    {
+      "href": "https://www.forbes.com/connect/",
+      "text": "https://www.forbes.com/connect/",
+      "domain": "forbes.com",
+      "position": 375
+    },
+    {
+      "href": "https://www.forbes.com/contact/",
+      "text": "https://www.forbes.com/contact/",
+      "domain": "forbes.com",
+      "position": 376
+    },
+    {
+      "href": "https://www.forbes.com/sites/forbesstaff/article/forbes-editorial-values-and-standards",
+      "text": "https://www.forbes.com/sites/forbesstaff/article/forbes-editorial-values-and-standards",
+      "domain": "forbes.com",
+      "position": 377
+    },
+    {
+      "href": "mailto:feedback@forbes.com",
+      "text": "mailto:feedback@forbes.com",
+      "domain": "mailto:feedback@forbes.com",
+      "position": 378
+    },
+    {
+      "href": "https://www.forbes.com/careers-at-forbes/",
+      "text": "https://www.forbes.com/careers-at-forbes/",
+      "domain": "forbes.com",
+      "position": 379
+    },
+    {
+      "href": "https://www.forbes.com/tips/",
+      "text": "https://www.forbes.com/tips/",
+      "domain": "forbes.com",
+      "position": 380
+    },
+    {
+      "href": "mailto:corrections@forbes.com",
+      "text": "mailto:corrections@forbes.com",
+      "domain": "mailto:corrections@forbes.com",
+      "position": 381
+    },
+    {
+      "href": "https://www.forbes.com/fdc/privacy.html",
+      "text": "https://www.forbes.com/fdc/privacy.html",
+      "domain": "forbes.com",
+      "position": 382
+    },
+    {
+      "href": "https://www.forbes.com/consent/editprivacy/?consent_do_not_sell=true",
+      "text": "https://www.forbes.com/consent/editprivacy/?consent_do_not_sell=true",
+      "domain": "forbes.com",
+      "position": 383
+    },
+    {
+      "href": "https://www.forbes.com/terms/",
+      "text": "https://www.forbes.com/terms/",
+      "domain": "forbes.com",
+      "position": 384
+    },
+    {
+      "href": "https://youradchoices.com/control",
+      "text": "https://youradchoices.com/control",
+      "domain": "youradchoices.com",
+      "position": 385
+    },
+    {
+      "href": "https://www.parsintl.com/publication/forbes/",
+      "text": "https://www.parsintl.com/publication/forbes/",
+      "domain": "parsintl.com",
+      "position": 386
+    },
+    {
+      "href": "https://account.forbes.com/membership?eventSource=header&redirect=https://www.forbes.com/",
+      "text": "https://account.forbes.com/membership?eventSource=header&redirect=https://www.forbes.com/",
+      "domain": "account.forbes.com",
+      "position": 387
+    },
+    {
+      "href": "https://www.forbes.com/search/",
+      "text": "https://www.forbes.com/search/",
+      "domain": "forbes.com",
+      "position": 388
+    },
+    {
+      "href": "https://www.forbes.com/health/author/cprendergast/",
+      "text": "https://www.forbes.com/health/author/cprendergast/",
+      "domain": "forbes.com",
+      "position": 389
+    },
+    {
+      "href": "https://www.linkedin.com/in/carley-prendergast",
+      "text": "https://www.linkedin.com/in/carley-prendergast",
+      "domain": "linkedin.com",
+      "position": 390
+    },
+    {
+      "href": "https://www.forbes.com/health/author/sarah-berger/",
+      "text": "https://www.forbes.com/health/author/sarah-berger/",
+      "domain": "forbes.com",
+      "position": 391
+    },
+    {
+      "href": "https://www.linkedin.com/in/sarah-davis-24060180/",
+      "text": "https://www.linkedin.com/in/sarah-davis-24060180/",
+      "domain": "linkedin.com",
+      "position": 392
+    },
+    {
+      "href": "https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#mkpl-tables-455677",
+      "text": "https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#mkpl-tables-455677",
+      "domain": "forbes.com",
+      "position": 393
+    },
+    {
+      "href": "https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#mkpl-tables-455652",
+      "text": "https://www.forbes.com/health/weight-loss/best-affordable-online-glp1-providers/#mkpl-tables-455652",
+      "domain": "forbes.com",
+      "position": 394
+    },
+    {
+      "href": "https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_XXq9VbjAJemW&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health",
+      "text": "https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_XXq9VbjAJemW&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health",
+      "domain": "getroman.pxf.io",
+      "position": 395
+    },
+    {
+      "href": "https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_cqfpCSDm6TwC&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health",
+      "text": "https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_cqfpCSDm6TwC&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health",
+      "domain": "getroman.pxf.io",
+      "position": 396
+    },
+    {
+      "href": "https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_snhI0lJnn2XY&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health",
+      "text": "https://getroman.pxf.io/c/1955282/1558337/15530?subid1=FAYKKxoAK0wfRMJTfqX7JX_snhI0lJnn2XY&subid2=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F&subid3=Health",
+      "domain": "getroman.pxf.io",
+      "position": 397
+    },
+    {
+      "href": "https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_1iAk8vF36RtD&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F",
+      "text": "https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_1iAk8vF36RtD&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F",
+      "domain": "remedymeds.com",
+      "position": 398
+    },
+    {
+      "href": "https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_q1ddmZywzbkp&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F",
+      "text": "https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_q1ddmZywzbkp&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F",
+      "domain": "remedymeds.com",
+      "position": 399
+    },
+    {
+      "href": "https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_t04yDx3SPNvK&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F",
+      "text": "https://remedymeds.com/?rm_campaign=FORBES120&utm_campaign=25&utm_source=theoffer&toclid=TO-6atkiOdJB3iNglM0CVdEIZ&sub1=FAYKKxoAK0wfRMJTfqX7JX_t04yDx3SPNvK&sub3=%2Fhealth%2Fweight-loss%2Fbest-affordable-online-glp1-providers%2F",
+      "domain": "remedymeds.com",
+      "position": 400
+    }
+  ],
+  "link_count": 496
+}

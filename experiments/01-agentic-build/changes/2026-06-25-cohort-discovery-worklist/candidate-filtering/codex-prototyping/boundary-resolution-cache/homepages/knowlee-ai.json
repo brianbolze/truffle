@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:49Z",
+  "ok": true,
+  "input": {
+    "domain": "knowlee.ai",
+    "url": "https://knowlee.ai/"
+  },
+  "status": 200,
+  "final_url": "https://www.knowlee.ai/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "Knowlee | AI Workforce Company",
+  "description": "Knowlee (also spelled Knowee) orchestrates AI agents into autonomous teams that deliver measurable enterprise outcomes. EU AI Act Ready by Design + ISO 42001 Aligned + GDPR Compliant. Deploy your AI Workforce in 4-8 weeks.",
+  "text_excerpt": "Knowlee | AI Workforce Company Knowlee . Services Product Showcase About Blog Glossary Book Free Strategy Call One Person. The Output of a Whole Team. Knowlee is the OS your company runs its AI on \u2014 AI agents do the recurring work across sales, recruiting, marketing, legal, finance and operations, in parallel and with a full audit trail. AI Act-shaped governance built in. Book a 30-minute strategy call See proven systems The AI-First Race Your Competitors Are Already AI-First Big players automate everything. Everyone else debates if AI is 'ready yet.' Fortune 500 Racing Salesforce invests $15B in AI infrastructure Amazon runs 75% of operations on autopilot Every Fortune 500 CEO has AI on their quarterly deck Mid-Size Businesses Waiting Debating if AI is 'mature enough' Adding headcount to solve scale problems Hoping the gap closes itself Almost every founder wants to become AI-first but their sales and ops were never built to run without constant human hand-holding Built for enterprise compliance from day one Knowlee is designed against the EU AI Act and ISO 42001 standards, with audit trail and human oversight implemented in the job registry \u2014 not bolted on. READY EU AI Act Ready by Design Audit trail \u00b7 Human oversight \u00b7 Risk-classified COMPLIANT GDPR Compliant Per-tenant isolation \u00b7 DPIA framework ALIGNED ISO 42001 Aligned AI management standard \u00b7 80%+ technical coverage COMPLIANT ISO 27001 Information security controls \u00b7 formal audit Q1 2027 COMPLIANT SOC 2 Type II Trust services criteria \u00b7 Type II attestation Q4 2026 The Foundation Problem Why AI Tools Fail You can't automate chaos. Fix the foundation first. You can't automate a mess. AI amplifies what you already have\u2014if your processes are broken, AI makes them fail at scale. We don't sell you tools. We fix what's broken first, then build AI on top. Shaky Foundation Sales data lives in 6 different tools Reps spend 3 hours/day on admin work No single source of truth for customer data Processes change depending on who's running them Solid Foundation Unified data across all tools Automated workflows that actually work Single source of truth for everything Systems that scale without breaking What We Actually Do We are your AI transformation partner, not a consultant 1 Diagnose what's actually broken Consultation Most businesses don't need AI\u2014they need to fix their broken processes first. We find every leak, every manual step, every tool that doesn't talk to the others. Then we fix it before adding AI. 2 B"
+}

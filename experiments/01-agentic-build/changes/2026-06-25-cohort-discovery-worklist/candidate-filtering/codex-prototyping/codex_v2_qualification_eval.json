@@ -1,0 +1,864 @@
+{
+  "schema": "codex-candidate-qualification-v2-eval-v0",
+  "boundary": {
+    "inputs": [
+      "receipts/raw/iteration-2/query-panel.json",
+      "receipts/raw/page-extraction/pages/*.json",
+      "codex-prototyping/codex_v2_kind_examples.json"
+    ],
+    "live_spend": "none; cached page-extraction outputs only",
+    "routing_uses_qrels": false,
+    "qrels_used_for": "evaluation-only matching after routing",
+    "candidate_generation": "observed domains plus qrel-free name extraction from source titles"
+  },
+  "cohorts": {
+    "telehealth": {
+      "candidate_count": 239,
+      "route_counts": {
+        "boundary_review": 191,
+        "capture_candidate": 5,
+        "preserve_source_evidence": 19,
+        "reject_or_defer": 24
+      },
+      "kind_counts": {
+        "company_or_brand": 114,
+        "directory_or_listicle": 7,
+        "nav_or_artifact": 24,
+        "product_or_workflow": 2,
+        "source_or_publisher": 12,
+        "uncertain": 80
+      },
+      "source_like_capture_count": 0,
+      "known_relevant_seen": 14,
+      "known_relevant_unique_seen": 11,
+      "known_relevant_preserved": 13,
+      "known_relevant_capture": 2,
+      "known_relevant_boundary_review": 11,
+      "known_boundary_or_bad_promoted": 0,
+      "top_capture_candidates": [
+        {
+          "rank": 1,
+          "name": "Healthspan",
+          "domain": "gethealthspan.com",
+          "candidate_source": "observed_domain",
+          "kind": "company_or_brand",
+          "route": "capture_candidate",
+          "confidence_band": "medium",
+          "method": "classify_by_example",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [],
+          "caveats": []
+        },
+        {
+          "rank": 4,
+          "name": "Want a Longer Lifespan? You Should Care About Your ...",
+          "domain": "honehealth.com",
+          "candidate_source": "observed_domain",
+          "kind": "company_or_brand",
+          "route": "capture_candidate",
+          "confidence_band": "medium",
+          "method": "classify_by_example",
+          "qrel_grade": 4,
+          "qrel_label": "must_hit",
+          "qrel_name": "Hone Health",
+          "alternatives": [],
+          "caveats": []
+        },
+        {
+          "rank": 7,
+          "name": "MyHealthspan",
+          "domain": "myhealthspan.com",
+          "candidate_source": "observed_domain",
+          "kind": "company_or_brand",
+          "route": "capture_candidate",
+          "confidence_band": "medium",
+          "method": "classify_by_example",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [],
+          "caveats": []
+        },
+        {
+          "rank": 22,
+          "name": "Defymedical",
+          "domain": "defymedical.com",
+          "candidate_source": "observed_domain",
+          "kind": "company_or_brand",
+          "route": "capture_candidate",
+          "confidence_band": "medium",
+          "method": "classify_by_example",
+          "qrel_grade": 3,
+          "qrel_label": "should_hit",
+          "qrel_name": "Defy Medical",
+          "alternatives": [],
+          "caveats": []
+        },
+        {
+          "rank": 23,
+          "name": "gennev.com",
+          "domain": "gennev.com",
+          "candidate_source": "observed_domain",
+          "kind": "company_or_brand",
+          "route": "capture_candidate",
+          "confidence_band": "medium",
+          "method": "classify_by_example",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [],
+          "caveats": []
+        }
+      ],
+      "top_boundary_review": [
+        {
+          "rank": 9,
+          "name": "TRT Nation",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [
+            {
+              "name": "Top 10 Best Online TRT Clinics for 2026",
+              "domain": "trtnation.com",
+              "source": "domain:telehealth:trtnation.com",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 10,
+          "name": "Online TRT vs Traditional Testosterone Clinics",
+          "domain": "vikingalternative.com",
+          "candidate_source": "observed_domain",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [
+            {
+              "name": "Local TRT Clinic",
+              "domain": null,
+              "source": "domain:telehealth:vikingalternative.com",
+              "source_title": "Online TRT Clinic vs Local TRT Clinic: Which Is Better in 2026?",
+              "source_domain": "vikingalternative.com",
+              "reason": "extracted_from_source_title"
+            }
+          ],
+          "caveats": [
+            "plausible company domain, but observed page title has source/listicle shape"
+          ]
+        },
+        {
+          "rank": 13,
+          "name": "Online TRT",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [
+            {
+              "name": "Online TRT vs Traditional Testosterone Clinics",
+              "domain": "vikingalternative.com",
+              "source": "domain:telehealth:vikingalternative.com",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "TRT Online: A Smarter Way to Treat Low Testosterone",
+              "domain": "struthealth.com",
+              "source": "domain:telehealth:struthealth.com",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 15,
+          "name": "Function | 100 Healthy Years",
+          "domain": "functionhealth.com",
+          "candidate_source": "observed_domain",
+          "kind": "uncertain",
+          "route": "boundary_review",
+          "confidence_band": "low",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [],
+          "caveats": [
+            "low evidence; classify before rejecting"
+          ]
+        },
+        {
+          "rank": 16,
+          "name": "Online HRT & Menopause Specialists in Washington",
+          "domain": "bywinona.com",
+          "candidate_source": "observed_domain",
+          "kind": "uncertain",
+          "route": "boundary_review",
+          "confidence_band": "low",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [],
+          "caveats": [
+            "low evidence; classify before rejecting"
+          ]
+        },
+        {
+          "rank": 17,
+          "name": "TRT Online: A Smarter Way to Treat Low Testosterone",
+          "domain": "struthealth.com",
+          "candidate_source": "observed_domain",
+          "kind": "uncertain",
+          "route": "boundary_review",
+          "confidence_band": "low",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [
+            {
+              "name": "Online Testosterone Therapy",
+              "domain": null,
+              "source": "domain:telehealth:struthealth.com",
+              "source_title": "Online Testosterone Therapy vs. Online TRT Alternatives",
+              "source_domain": "struthealth.com",
+              "reason": "extracted_from_source_title"
+            },
+            {
+              "name": "Online TRT",
+              "domain": null,
+              "source": "domain:telehealth:struthealth.com",
+              "source_title": "Online Testosterone Therapy vs. Online TRT Alternatives",
+              "source_domain": "struthealth.com",
+              "reason": "extracted_from_source_title"
+            }
+          ],
+          "caveats": [
+            "low evidence; classify before rejecting"
+          ]
+        },
+        {
+          "rank": 18,
+          "name": "Local TRT Clinic",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [
+            {
+              "name": "Online TRT vs Traditional Testosterone Clinics",
+              "domain": "vikingalternative.com",
+              "source": "domain:telehealth:vikingalternative.com",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 19,
+          "name": "Traditional Testosterone Clinics",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [
+            {
+              "name": "Online TRT vs Traditional Testosterone Clinics",
+              "domain": "vikingalternative.com",
+              "source": "domain:telehealth:vikingalternative.com",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 25,
+          "name": "Online Testosterone Therapy",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [
+            {
+              "name": "TRT Online: A Smarter Way to Treat Low Testosterone",
+              "domain": "struthealth.com",
+              "source": "domain:telehealth:struthealth.com",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 26,
+          "name": "5 Best Telehealth Platforms for Erectile Dysfunction - REX MD",
+          "domain": "rexmd.com",
+          "candidate_source": "observed_domain",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "must_hit",
+          "qrel_name": "Rex MD",
+          "alternatives": [],
+          "caveats": [
+            "plausible company domain, but observed page title has source/listicle shape"
+          ]
+        },
+        {
+          "rank": 29,
+          "name": "Best Online ED Treatments: Top Options Compared",
+          "domain": "telyrx.com",
+          "candidate_source": "observed_domain",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [
+            {
+              "name": "TelyRx",
+              "domain": null,
+              "source": "domain:telehealth:telyrx.com",
+              "source_title": "Best Online ED Treatments: Top Options Compared - TelyRx",
+              "source_domain": "telyrx.com",
+              "reason": "extracted_from_source_title"
+            }
+          ],
+          "caveats": [
+            "plausible company domain, but observed page title has source/listicle shape"
+          ]
+        },
+        {
+          "rank": 30,
+          "name": "Longevity Medicine 101: The Ultimate 2026 Guide",
+          "domain": "plotline.health",
+          "candidate_source": "observed_domain",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [],
+          "caveats": [
+            "plausible company domain, but observed page title has source/listicle shape"
+          ]
+        }
+      ],
+      "source_like_capture_candidates": [],
+      "known_boundary_or_bad_promoted_candidates": [],
+      "known_relevant_not_capture_or_boundary": [
+        {
+          "rank": 120,
+          "name": "Hims",
+          "domain": "docs.google.com",
+          "candidate_source": "observed_domain",
+          "kind": "nav_or_artifact",
+          "route": "reject_or_defer",
+          "confidence_band": "high",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "must_hit",
+          "qrel_name": "Hims & Hers",
+          "alternatives": [],
+          "caveats": []
+        }
+      ]
+    },
+    "conversation_intelligence": {
+      "candidate_count": 135,
+      "route_counts": {
+        "boundary_review": 106,
+        "preserve_source_evidence": 16,
+        "reject_or_defer": 13
+      },
+      "kind_counts": {
+        "company_or_brand": 56,
+        "directory_or_listicle": 11,
+        "nav_or_artifact": 13,
+        "product_or_workflow": 3,
+        "source_or_publisher": 5,
+        "uncertain": 47
+      },
+      "source_like_capture_count": 0,
+      "known_relevant_seen": 27,
+      "known_relevant_unique_seen": 6,
+      "known_relevant_preserved": 27,
+      "known_relevant_capture": 0,
+      "known_relevant_boundary_review": 23,
+      "known_boundary_or_bad_promoted": 0,
+      "top_capture_candidates": [],
+      "top_boundary_review": [
+        {
+          "rank": 3,
+          "name": "Granola",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Granola AI",
+          "alternatives": [
+            {
+              "name": "Best AI Meeting Notes Tools 2026: Complete Buyer's Guide",
+              "domain": "zackproser.com",
+              "source": "domain:conversation_intelligence:zackproser.com",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "Conversation Intelligence: What It Actually Buys You (2026)",
+              "domain": "itsconvo.com",
+              "source": "domain:conversation_intelligence:itsconvo.com",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "Granola vs Otter vs Fireflies vs Fathom: Best AI Notetaker 2026",
+              "domain": "useluminix.com",
+              "source": "domain:conversation_intelligence:useluminix.com",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 4,
+          "name": "Jamie AI",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 2,
+          "qrel_label": "core_boundary_product_workflow",
+          "qrel_name": "Jamie AI",
+          "alternatives": [
+            {
+              "name": "Best AI Meeting Notes Tools 2026: Complete Buyer's Guide",
+              "domain": "zackproser.com",
+              "source": "domain:conversation_intelligence:zackproser.com",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 6,
+          "name": "Fathom",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Fathom AI",
+          "alternatives": [
+            {
+              "name": "Meeting note tool pricing: Granola vs. Fireflies vs. Fathom ...",
+              "domain": "granola.ai",
+              "source": "domain:conversation_intelligence:granola.ai",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "Meeting note tool pricing: Granola vs. Fireflies vs. Fathom ...",
+              "domain": "granola.ai",
+              "source": "domain:conversation_intelligence:granola.ai",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "Meeting note tool pricing: Granola vs. Fireflies vs. Fathom ...",
+              "domain": "granola.ai",
+              "source": "domain:conversation_intelligence:granola.ai",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 7,
+          "name": "Gong",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Gong",
+          "alternatives": [
+            {
+              "name": "Best AI Meeting Note Takers in 2026 (Top Tools Compared)",
+              "domain": "cirrusinsight.com",
+              "source": "domain:conversation_intelligence:cirrusinsight.com",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "Best AI Meeting Note Takers in 2026 (Top Tools Compared)",
+              "domain": "cirrusinsight.com",
+              "source": "domain:conversation_intelligence:cirrusinsight.com",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "Clari vs Gong: Revenue intelligence for your GTM team",
+              "domain": "avoma.com",
+              "source": "domain:conversation_intelligence:avoma.com",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 8,
+          "name": "Fireflies",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [
+            {
+              "name": "Meeting note tool pricing: Granola vs. Fireflies vs. Fathom ...",
+              "domain": "granola.ai",
+              "source": "domain:conversation_intelligence:granola.ai",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "Meeting note tool pricing: Granola vs. Fireflies vs. Fathom ...",
+              "domain": "granola.ai",
+              "source": "domain:conversation_intelligence:granola.ai",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "Meeting note tool pricing: Granola vs. Fireflies vs. Fathom ...",
+              "domain": "granola.ai",
+              "source": "domain:conversation_intelligence:granola.ai",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 11,
+          "name": "Clari",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Clari",
+          "alternatives": [
+            {
+              "name": "Best AI Meeting Note Takers in 2026 (Top Tools Compared)",
+              "domain": "cirrusinsight.com",
+              "source": "domain:conversation_intelligence:cirrusinsight.com",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "Best AI Meeting Note Takers in 2026 (Top Tools Compared)",
+              "domain": "cirrusinsight.com",
+              "source": "domain:conversation_intelligence:cirrusinsight.com",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "Clari vs Gong: Revenue intelligence for your GTM team",
+              "domain": "avoma.com",
+              "source": "domain:conversation_intelligence:avoma.com",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 13,
+          "name": "Meeting note tool pricing: Granola vs. Fireflies vs. Fathom ...",
+          "domain": "granola.ai",
+          "candidate_source": "observed_domain",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Granola AI",
+          "alternatives": [
+            {
+              "name": "Otter",
+              "domain": null,
+              "source": "domain:conversation_intelligence:granola.ai",
+              "source_title": "Meeting note tool pricing: Granola vs. Fireflies vs. Fathom vs. Otter",
+              "source_domain": "granola.ai",
+              "reason": "extracted_from_source_title"
+            }
+          ],
+          "caveats": [
+            "plausible company domain, but observed page title has source/listicle shape"
+          ]
+        },
+        {
+          "rank": 14,
+          "name": "Otter",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Otter",
+          "alternatives": [
+            {
+              "name": "Meeting note tool pricing: Granola vs. Fireflies vs. Fathom ...",
+              "domain": "granola.ai",
+              "source": "domain:conversation_intelligence:granola.ai",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "Conversation Intelligence: What It Actually Buys You (2026)",
+              "domain": "itsconvo.com",
+              "source": "domain:conversation_intelligence:itsconvo.com",
+              "reason": "source_page_that_named_candidate"
+            },
+            {
+              "name": "Granola vs Otter vs Fireflies vs Fathom: Best AI Notetaker 2026",
+              "domain": "useluminix.com",
+              "source": "domain:conversation_intelligence:useluminix.com",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 21,
+          "name": "Conversation Intelligence Software Guide for Sales 2026",
+          "domain": "coffee.ai",
+          "candidate_source": "observed_domain",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [],
+          "caveats": [
+            "plausible company domain, but observed page title has source/listicle shape"
+          ]
+        },
+        {
+          "rank": 22,
+          "name": "Salesman AI",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [
+            {
+              "name": "Best Conversation Intelligence Software in 2026: The Only ...",
+              "domain": "getsalesman.ai",
+              "source": "domain:conversation_intelligence:getsalesman.ai",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 23,
+          "name": "Read AI",
+          "domain": null,
+          "candidate_source": "extracted_name",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": null,
+          "qrel_label": null,
+          "qrel_name": null,
+          "alternatives": [
+            {
+              "name": "9 Best AI Meeting Assistants in 2026",
+              "domain": "read.ai",
+              "source": "domain:conversation_intelligence:read.ai",
+              "reason": "source_page_that_named_candidate"
+            }
+          ],
+          "caveats": [
+            "name-only candidate needs domain/entity resolution before capture"
+          ]
+        },
+        {
+          "rank": 24,
+          "name": "6 Best Clari Alternatives in 2026 (Top Competitors ...",
+          "domain": "sybill.ai",
+          "candidate_source": "observed_domain",
+          "kind": "company_or_brand",
+          "route": "boundary_review",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Clari",
+          "alternatives": [],
+          "caveats": [
+            "plausible company domain, but observed page title has source/listicle shape"
+          ]
+        }
+      ],
+      "source_like_capture_candidates": [],
+      "known_boundary_or_bad_promoted_candidates": [],
+      "known_relevant_not_capture_or_boundary": [
+        {
+          "rank": 15,
+          "name": "10 Best Gong Alternatives and Competitors in 2026",
+          "domain": "salesforce.com",
+          "candidate_source": "observed_domain",
+          "kind": "directory_or_listicle",
+          "route": "preserve_source_evidence",
+          "confidence_band": "high",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Gong",
+          "alternatives": [],
+          "caveats": [
+            "source page can preserve market evidence without becoming a profile target"
+          ]
+        },
+        {
+          "rank": 18,
+          "name": "Top 6 Gong Alternatives for Revenue Teams (2026)",
+          "domain": "askelephant.ai",
+          "candidate_source": "observed_domain",
+          "kind": "directory_or_listicle",
+          "route": "preserve_source_evidence",
+          "confidence_band": "high",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Gong",
+          "alternatives": [],
+          "caveats": [
+            "source page can preserve market evidence without becoming a profile target"
+          ]
+        },
+        {
+          "rank": 49,
+          "name": "Best Otter alternatives for AI meeting notes in 2026",
+          "domain": "tana.inc",
+          "candidate_source": "observed_domain",
+          "kind": "directory_or_listicle",
+          "route": "preserve_source_evidence",
+          "confidence_band": "high",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Otter",
+          "alternatives": [],
+          "caveats": [
+            "source page can preserve market evidence without becoming a profile target"
+          ]
+        },
+        {
+          "rank": 85,
+          "name": "Gong",
+          "domain": "g2.com",
+          "candidate_source": "observed_domain",
+          "kind": "source_or_publisher",
+          "route": "preserve_source_evidence",
+          "confidence_band": "medium",
+          "method": "agent_judgment_needed",
+          "qrel_grade": 4,
+          "qrel_label": "top_10_core",
+          "qrel_name": "Gong",
+          "alternatives": [],
+          "caveats": [
+            "source domain evidence has a lower capture ceiling"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "tool": "exa_search",
+  "source": "exa.ai",
+  "captured_at": "2026-06-26T01:01:11Z",
+  "ok": true,
+  "input": {
+    "query": "AI meeting notes apps conversation intelligence software sales call analysis meeting summaries",
+    "num_results": 25,
+    "type": "neural",
+    "category": "company",
+    "include_domains": [],
+    "exclude_domains": [],
+    "include_text": null,
+    "exclude_text": null
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "results": [
+    {
+      "rank": 1,
+      "title": "Avoma",
+      "url": "https://avoma.com/",
+      "domain": "avoma.com"
+    },
+    {
+      "rank": 2,
+      "title": "SalesSavvy.AI",
+      "url": "https://salessavvy.ai/",
+      "domain": "salessavvy.ai"
+    },
+    {
+      "rank": 3,
+      "title": "Goodmeetings",
+      "url": "https://goodmeetings.ai/",
+      "domain": "goodmeetings.ai"
+    },
+    {
+      "rank": 4,
+      "title": "Vinton | AI Notetaker for Salesforce",
+      "url": "https://vinton.ai/",
+      "domain": "vinton.ai"
+    },
+    {
+      "rank": 5,
+      "title": "Leexi",
+      "url": "https://leexi.ai/",
+      "domain": "leexi.ai"
+    },
+    {
+      "rank": 6,
+      "title": "Nimit Ai - Meeting Intelligence Copilot",
+      "url": "https://nimitai.com/",
+      "domain": "nimitai.com"
+    },
+    {
+      "rank": 7,
+      "title": "Den AI",
+      "url": "https://denlistens.com/",
+      "domain": "denlistens.com"
+    },
+    {
+      "rank": 8,
+      "title": "Salesroom",
+      "url": "https://salesroom.com/",
+      "domain": "salesroom.com"
+    },
+    {
+      "rank": 9,
+      "title": "Spinach AI",
+      "url": "https://spinach.ai/",
+      "domain": "spinach.ai"
+    },
+    {
+      "rank": 10,
+      "title": "Vaamo AI",
+      "url": "https://vaamo.ai/",
+      "domain": "vaamo.ai"
+    },
+    {
+      "rank": 11,
+      "title": "Fellow - AI Meeting Assistant",
+      "url": "https://fellow.ai/",
+      "domain": "fellow.ai"
+    },
+    {
+      "rank": 12,
+      "title": "Meeting.ai",
+      "url": "https://meeting.ai/",
+      "domain": "meeting.ai"
+    },
+    {
+      "rank": 13,
+      "title": "HeySam",
+      "url": "https://heysam.ai/",
+      "domain": "heysam.ai"
+    },
+    {
+      "rank": 14,
+      "title": "Rafiki AI",
+      "url": "https://getrafiki.ai/",
+      "domain": "getrafiki.ai"
+    },
+    {
+      "rank": 15,
+      "title": "HyNote AI",
+      "url": "https://hynote.ai/",
+      "domain": "hynote.ai"
+    },
+    {
+      "rank": 16,
+      "title": "Meet Notely",
+      "url": "https://meetnotely.com/",
+      "domain": "meetnotely.com"
+    },
+    {
+      "rank": 17,
+      "title": "Jurnie",
+      "url": "https://jurnie.ai/",
+      "domain": "jurnie.ai"
+    },
+    {
+      "rank": 18,
+      "title": "cmeet.ai",
+      "url": "https://cmeet.ai/",
+      "domain": "cmeet.ai"
+    },
+    {
+      "rank": 19,
+      "title": "Sharpen AI",
+      "url": "https://sharpennotes.com/",
+      "domain": "sharpennotes.com"
+    },
+    {
+      "rank": 20,
+      "title": "Sembly AI",
+      "url": "https://sembly.ai/",
+      "domain": "sembly.ai"
+    },
+    {
+      "rank": 21,
+      "title": "Nayak.ai",
+      "url": "https://nayak.ai/",
+      "domain": "nayak.ai"
+    },
+    {
+      "rank": 22,
+      "title": "mymeet.ai",
+      "url": "https://mymeet.ai/",
+      "domain": "mymeet.ai"
+    },
+    {
+      "rank": 23,
+      "title": "EQALL",
+      "url": "https://eqall.com/",
+      "domain": "eqall.com"
+    },
+    {
+      "rank": 24,
+      "title": "Scribbl",
+      "url": "https://scribbl.co/",
+      "domain": "scribbl.co"
+    },
+    {
+      "rank": 25,
+      "title": "MeetGeek",
+      "url": "https://meetgeek.ai/",
+      "domain": "meetgeek.ai"
+    }
+  ],
+  "result_count": 25
+}

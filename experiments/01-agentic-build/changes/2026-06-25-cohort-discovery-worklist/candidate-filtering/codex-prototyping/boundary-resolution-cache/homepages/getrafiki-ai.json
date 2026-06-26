@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:59Z",
+  "ok": true,
+  "input": {
+    "domain": "getrafiki.ai",
+    "url": "https://getrafiki.ai/"
+  },
+  "status": 200,
+  "final_url": "https://getrafiki.ai/",
+  "content_type": "text/html",
+  "title": "Rafiki AI \u2014 AI Sales Intelligence Platform | Close More Deals",
+  "description": "Know every deal. Coach every rep. Close more revenue. Rafiki AI's agents analyze every sales conversation and tell you exactly where to focus.",
+  "text_excerpt": "Rafiki AI \u2014 AI Sales Intelligence Platform | Close More Deals Skip to main content New Introducing AI Role Play \u2014 train your reps with simulated buyer conversations and instant AI scoring Learn More \u00d7 Product Product Overview See the complete platform AI Agents Your AI revenue team AI Role Play NEW Practice calls with AI buyers AI SDR SOON AI-powered outbound calls Gen AI Reports One-click revenue insights Gen AI Search Ask anything about your deals Smart Call Scoring Auto-score every meeting Smart Call Summary AI-powered meeting summaries Smart Follow Up AI-generated follow up emails Smart CRM Sync Auto-capture call data to CRM Ask Rafiki Chat with your sales data Integrations Connect your sales stack Solutions Sales Leaders Pipeline truth, confident forecasts RevOps Leaders Synchronize revenue functions Account Executives Win more deals, faster SDR Leaders Coach and ramp 3x faster Customer Success Reduce churn, grow accounts Sales Enablement Scale what your best reps do Frontline Managers Coach with data, not gut feel Startup Founders Enterprise insights, startup pricing Pricing Resources Why Rafiki AI What makes us different Blog Sales insights and best practices Case Studies See how teams win with Rafiki AI Video Demo Watch Rafiki AI in action Log In Start Free Product Product Overview AI Agents AI Role Play AI SDR Gen AI Reports Gen AI Search Smart Call Scoring Smart Call Summary Smart Follow Up Smart CRM Sync Ask Rafiki Integrations Solutions Sales Leaders RevOps Leaders Account Executives SDR Leaders Customer Success Sales Enablement Frontline Managers Startup Founders Pricing Resources Why Rafiki AI Blog Case Studies Video Demo Log In Start Free Autonomous AI agents \u2014 your revenue team, on demand Rafiki AI helps you know every deal, coach every rep, and close more revenue. Rafiki AI's agents analyze every sales conversation, surface what's working, and tell you exactly where to focus \u2014 so your team stops guessing and starts winning. Start Free Book a Demo Available on iOS App Android App Windows App macOS App NEW 4.8/5 G2 Rating 500+ Revenue Teams 35% Avg. Win Rate Increase 10x Faster Coaching Trusted by revenue teams at New Release \u00b7 Role Play Practice any conversation before it counts AI-powered role play that simulates real buyer scenarios \u2014 discovery calls, objection handling, negotiations. Reps practice, get scored on five dimensions, and build confidence before the live meeting. Custom scenarios per persona, industry, or deal stage Real-time "
+}

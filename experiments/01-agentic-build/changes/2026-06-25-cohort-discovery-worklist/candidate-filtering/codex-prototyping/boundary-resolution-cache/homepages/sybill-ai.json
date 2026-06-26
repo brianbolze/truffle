@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:44Z",
+  "ok": true,
+  "input": {
+    "domain": "sybill.ai",
+    "url": "https://sybill.ai/"
+  },
+  "status": 200,
+  "final_url": "https://www.sybill.ai/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "Sybill: AI Sales Assistant for Revenue Teams",
+  "description": "Sybill is your all-knowing AI sales assistant who can answer deal questions, create sales assets, and automate grunt work like meeting prep, email follow-ups, and CRM updates.",
+  "text_excerpt": "Sybill: AI Sales Assistant for Revenue Teams Product SYBILL AI SALES ASSISTANT Ask Sybill AI sales assistant anything Overview What is an AI sales assistant? Sybill\u2019s AI AI at every stage of the deal. Integrations Email, Slack, CRM, and more. All features INTELLIGENCE Ask Sybill AI sales assistant anything And stop digging through transcripts and filters for answers. Explore Ask Sybill Deal inspection Qualify leads, track progress, spot risks early Coaching & performance Coach yourself, coach reps, diagnose performance Buyer needs & intent Uncover needs, blockers, and priorities across segments Competitor intelligence Track when, where, and how competitors show up Sales plays Get deal guidance from past wins and losses Execution Automate sales admin busywork Let Sybill handle your follow-ups, CRM updates, and to-dos. Explore AI automation Pre-meeting briefs Show up ready, no last minute scramble Magic summaries Get automated deal and meeting summaries Email follow-ups Automate follow-ups while you take your next call CRM autofill Keep your CRM updated without lifting a finger AI tasks Let Sybill capture, manage, and execute tasks workspace Move deals forward in a dedicated workspace Manage deals in a workspace built for sellers, not managers. Explore Workspace Deal pipeline See all deals in your pipeline without tab surfing Deal workspace Move individual deals forward in a dedicated workspace Sharing & collaboration Share insights, call snippets, and coach your team. Supports 100+ Languages Works with : see all Solutions Account Executives Save 14 hrs per week with an AI assistant Sales Managers Coach reps and move deals forward Customer Success Handoff and expand without friction Sales Leader Inspect performance, forecast smarter RevOps Automate CRM hygiene and workflows Company About us Meet the team behind the magic Careers Be a part of something great Customers See why sales teams love Sybill Integrations Resources Resource Hub All our best content in one place. Webinars On-demand and upcoming webinars Templates Ready-to-steal AI prompts and templates Comparisons No BS product comparisons and explainers Customer Stories How our customers use Sybill Customers Love See why sales teams love Sybill Blogs Breakdowns, best practices and more Help Center Sybill how-tos and FAQs Blogs Read, learn, and get inspired AI in Sales Playbook How-to guide to use AI in sales Pricing Login Free Trial Start team trial 14 days free trial Stop losing deals your best rep wo"
+}

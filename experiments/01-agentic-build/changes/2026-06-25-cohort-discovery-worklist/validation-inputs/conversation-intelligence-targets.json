@@ -1,0 +1,43 @@
+{
+  "schema": "conversation-intelligence-targets-v1",
+  "frozen_at": "2026-06-25",
+  "source": "Brian-provided ranked benchmark list",
+  "cohort_definition": "Conversation intelligence and AI meeting tools: products a user or business would use to capture, summarize, search, or analyze meetings/conversations. The benchmark intentionally includes both end-user meeting tools and broad AI/transcription workflows that may sit at the boundary.",
+  "scoring": {
+    "primary": "top-10 overlap with the core ranked list",
+    "secondary": "rank deltas for major category-definers",
+    "pollution": "adjacent transcription-dev tools promoted as core end-user meeting/CI tools without boundary labeling",
+    "ambiguity": "OpenAI Whisper appears in both core and adjacent lists; classify explicitly rather than counting it as simple pollution."
+  },
+  "core_ranked": [
+    {"rank": 1, "name": "Gong"},
+    {"rank": 2, "name": "Clari"},
+    {"rank": 3, "name": "Loom"},
+    {"rank": 4, "name": "Otter"},
+    {"rank": 5, "name": "Granola AI"},
+    {"rank": 6, "name": "Dovetail"},
+    {"rank": 7, "name": "Zoom AI Companion"},
+    {"rank": 8, "name": "Microsoft Copilot for Teams"},
+    {"rank": 9, "name": "AlphaSense"},
+    {"rank": 10, "name": "Fathom AI"},
+    {"rank": 11, "name": "Notion AI Meeting Notes"},
+    {"rank": 12, "name": "OpenAI Whisper"},
+    {"rank": 13, "name": "ChatGPT transcript workflow"},
+    {"rank": 14, "name": "Claude transcript workflow"},
+    {"rank": 15, "name": "Rewind"},
+    {"rank": 16, "name": "Apple Voice Memos"},
+    {"rank": 17, "name": "Jamie AI"}
+  ],
+  "adjacent_transcription_dev_tools": [
+    {"rank": 1, "name": "Rev"},
+    {"rank": 2, "name": "Deepgram"},
+    {"rank": 3, "name": "ElevenLabs"},
+    {"rank": 4, "name": "AWS Transcribe"},
+    {"rank": 5, "name": "OpenAI Whisper", "note": "dual-listed with core; boundary ambiguity"},
+    {"rank": 6, "name": "AssemblyAI"},
+    {"rank": 7, "name": "Nuance"},
+    {"rank": 8, "name": "Verbit"},
+    {"rank": 9, "name": "Descript"},
+    {"rank": 10, "name": "Symbl.ai"}
+  ]
+}

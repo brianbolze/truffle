@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:08:01Z",
+  "ok": true,
+  "input": {
+    "domain": "heysam.ai",
+    "url": "https://heysam.ai/"
+  },
+  "status": 200,
+  "final_url": "https://www.heysam.ai/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "HeySam",
+  "description": "Sam delivers conversation intelligence in Slack\u2014then turns the \u201ctribal knowledge\u201d from your calls into AI agents for CRM hygiene, live call backup, and RFPs",
+  "text_excerpt": "HeySam \u2728Great News\u2728 HeySam is now GDPR compliant! AI Agents 4 ai agents in 1 Conversation Intelligence That's built for sales teams and isn't pricey like Gong AI Sales Engineer That backs up reps in calls and Slack AI RFP Copilot that lets SEs quickly fill RFPs without maintaining answer libraries Ask AI Bot That supports visitors to your docs or community FEATURES THAT MAKE SAM SPECIAL Sizzle Reel 2-min video summary for busy buyers Slack App You live in Slack, Sam does too! Personas Use cases for Sales Reps Sales Engineers Sales Managers The Whole Company Customers Resources Blog How modern sales teams use AI Top 6 Conversation Intelligence Platforms in 2026 Find the Best Conversation Intelligence for Your Team The 7 Best AI RFP Automation Tools for 2026 Find the Best RFP Tool for Your Team AI Pre-Sales Agents: Research by Winning by Design WbD\u2019s guide to how AI sales engineers augment sales teams Pricing Login Gong for startups that live in Slack Sam delivers conversation intelligence in Slack\u2014then turns the \u201ctribal knowledge\u201d locked in your calls into AI agents for CRM hygiene, live call backup, and RFPs Book a demo Conversation Intelligence You live in Slack. Your call intelligence should too. Sam turns your calls, emails, and Slack into notes, video summaries, CRM hygiene, and AI coaching\u2014delivered in Slack, without the Gong-sized price tag Learn More Your browser does not support the video tag. What makes Sam different Chat With your calls to prep, inspect, or just catch up Your browser does not support the video tag. Watch 5-minute video summaries zapped from your calls Your browser does not support the video tag. Update your CRM minutes after every call, with AI-drafted updates Your browser does not support the video tag. Follow up with a 5-minute sizzle reel buyers will actually watch Your browser does not support the video tag. Coach Your team to your playbook after every call Your browser does not support the video tag. Flag calls that match your interest Your browser does not support the video tag. Committed to Gong? No problem! You don\u2019t have to rip out Gong to use Sam. We ingest your Gong calls and apply Sam\u2019s intelligence layer\u2014all inside Slac What surprised me the most about this is that my team fought for HeySam. It was the one tool that had the strongest sentiment and adoption across the entire team. Brent Krempges Chief Customer Officer, Gainsight Read Case Study \u2192 It\u2019s not just about note-taking. It\u2019s everything else Sam delivers that "
+}

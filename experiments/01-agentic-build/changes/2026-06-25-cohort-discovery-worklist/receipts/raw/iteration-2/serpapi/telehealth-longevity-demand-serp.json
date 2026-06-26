@@ -1,0 +1,192 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T00:59:30Z",
+  "ok": true,
+  "input": {
+    "query": "Healthspan Shed Function Health alternatives longevity telehealth",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "To optimize your healthspan (years lived in good health) instead of focusing purely on lifespan, you can use specialized telehealth and lab-testing alternatives. They offer deep-biomarker tracking, clinical coaching, and longevity protocols directly to your home.",
+    "Consider the following top alternatives in the longevity and telehealth space:",
+    "If you'd like to narrow down these options, let me know:"
+  ],
+  "headings": [
+    "Comprehensive Health & Telehealth Providers",
+    "What These Services Generally Include"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "Function Health",
+      "title": "Function membership is now $365/year",
+      "link": "https://www.functionhealth.com/article/function365"
+    },
+    {
+      "index": 1,
+      "source": "Function Health",
+      "title": "Function | 100 Healthy Years",
+      "link": "https://www.functionhealth.com/"
+    },
+    {
+      "index": 2,
+      "source": "EverSpan Life",
+      "title": "EverSpan Life: 100+ Biomarkers | Dedicated Clinician",
+      "link": "https://www.everspanlife.com/"
+    },
+    {
+      "index": 3,
+      "source": "Empirical Health",
+      "title": "Function Health Alternatives - Empirical Health",
+      "link": "https://www.empirical.health/blog/function-health-alternatives/"
+    },
+    {
+      "index": 4,
+      "source": "gethealthspan.com",
+      "title": "Healthspan | Longevity Care Backed by Science",
+      "link": "https://gethealthspan.com/?srsltid=AfmBOoqTsADkdQIP4abKEynDJYFCb9hPE4M3V_vEQJ0MkZf1gV3NvxKl"
+    },
+    {
+      "index": 5,
+      "source": "Superpower Health",
+      "title": "Superpower vs Function Health | What's the difference?",
+      "link": "https://superpower.com/superpower-vs-function-health?srsltid=AfmBOoqWxJ4yjmX1-MEu5UkrwQsza27oGN-wAF7MEdx3FE6MKw8H7UcP"
+    },
+    {
+      "index": 6,
+      "source": "Medium",
+      "title": "Longevity \\u0026 Functional Health: The Future of Health is Already Here",
+      "link": "https://medium.com/@MaudPas/longevity-functional-health-the-future-of-health-is-already-here-67ef7c65d4d5"
+    },
+    {
+      "index": 7,
+      "source": "Superpower Health",
+      "title": "Healthspan vs Lifespan: Understanding the Difference",
+      "link": "https://superpower.com/guides/healthspan-vs-lifespan-understanding-the-difference"
+    },
+    {
+      "index": 8,
+      "source": "Harvard Health",
+      "title": "Lifespan vs. Healthspan: Why How You Age Matters More Than How ...",
+      "link": "https://www.health.harvard.edu/healthy-aging-and-longevity/lifespan-vs-healthspan-why-how-you-age-matters-more-than-how-long-you-live"
+    },
+    {
+      "index": 9,
+      "source": "Vibrant Wellness",
+      "title": "Foundation Zoomer | Healthspan Optimization \\u0026 Aging ...",
+      "link": "https://vibrant-wellness.com/tests/foundation-zoomer"
+    },
+    {
+      "index": 10,
+      "source": "marketing.gethealthspan.com",
+      "title": "Healthspan | Plan",
+      "link": "https://marketing.gethealthspan.com/plan"
+    },
+    {
+      "index": 11,
+      "source": "MyHealthspan",
+      "title": "Longevity Kits Overview - MyHealthspan",
+      "link": "https://www.myhealthspan.com/longevity-testing/longevity-kits-overview"
+    },
+    {
+      "index": 12,
+      "source": "www.gethealthspan.com",
+      "title": "Healthspan",
+      "link": "https://www.gethealthspan.com/policy/privacy-policy"
+    },
+    {
+      "index": 13,
+      "source": "Hone Health",
+      "title": "Hone Health: A Telehealth Clinic Unlocking Energy and Longevity",
+      "link": "https://honehealth.com/?srsltid=AfmBOoreeq1zmZcohbkV-Y4za21lOCD0eJ0gV2gLmDkMkQMWtVOq9D2P"
+    },
+    {
+      "index": 14,
+      "source": "www.gethealthspan.com",
+      "title": "Methylene Blue | Healthspan",
+      "link": "https://www.gethealthspan.com/treatments/methylene-blue-prescription"
+    },
+    {
+      "index": 15,
+      "source": "www.gethealthspan.com",
+      "title": "Longevity Starter Panel | Healthspan",
+      "link": "https://www.gethealthspan.com/labs/prime-longevity"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Function | 100 Healthy Years",
+      "link": "https://www.functionhealth.com/",
+      "snippet": "It's time you own your health. Function includes 160+ lab tests and personalized protocols for instant action. Tracked over time in one secure place.",
+      "displayed_link": "https://www.functionhealth.com"
+    },
+    {
+      "position": 2,
+      "title": "Labs - Healthspan",
+      "link": "https://www.gethealthspan.com/labs?srsltid=AfmBOorhCS6dkQVAfTEB9nLSKW7r3v93X9r03-3_w_-Qw0s-Lhaho6Rg",
+      "snippet": "Advanced biomarker insights to help you optimize metabolism, hormones, inflammation, and biological aging\u2014guided by experts in longevity science. Get Started.",
+      "displayed_link": "https://www.gethealthspan.com \u203a labs"
+    },
+    {
+      "position": 3,
+      "title": "Healthspan | Longevity Care Backed by Science",
+      "link": "https://gethealthspan.com/?srsltid=AfmBOor3STpIpC2eBpE7IGCyDtFYpSW4VB0wc74c-d5gko_Z77ZNS2vB",
+      "snippet": "Get science-driven longevity care, expert coaching, and advanced lab insights tailored to your biology. Healthspan helps you slow aging and optimize your ...",
+      "displayed_link": "https://gethealthspan.com"
+    },
+    {
+      "position": 4,
+      "title": "Longevity leap: mind the healthspan gap - PMC",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8460831/",
+      "snippet": "Life expectancy has increased by three decades since the mid-twentieth century. Parallel healthspan expansion has however not followed.",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC8460831"
+    },
+    {
+      "position": 5,
+      "title": "Living Better, Longer: The New Science of Healthspan",
+      "link": "https://www.youtube.com/watch?v=180DInDWERg",
+      "snippet": "The emerging science of healthspan is focused on optimizing human health across the lifespan. From cellular therapy and nutrition to digital ...",
+      "displayed_link": "690+ views \u00b7 12 months ago"
+    },
+    {
+      "position": 6,
+      "title": "The Business of Promoting Longevity and Healthspan",
+      "link": "https://erictopol.substack.com/p/the-business-of-promoting-longevity",
+      "snippet": "We're seeing several new companies in the business to consumer space for promoting lifespan, healthspan, and generally the use of extensive testing.",
+      "displayed_link": "200+ likes \u00b7 1 year ago"
+    },
+    {
+      "position": 7,
+      "title": "Healthspan vs. Lifespan: What's the Difference and Why It ...",
+      "link": "https://www.partnermd.com/blog/healthspan-vs-lifespan-what-is-the-difference",
+      "snippet": "Healthspan is the number of years spent in good health, free from significant disease or disability. Living longer does not always mean living better. For ...",
+      "displayed_link": "https://www.partnermd.com \u203a blog \u203a healthspan-vs-lifesp..."
+    },
+    {
+      "position": 8,
+      "title": "Function Health Alternatives",
+      "link": "https://www.empirical.health/blog/function-health-alternatives/",
+      "snippet": "Both services offer a broad panel of blood tests. Function Health advertises \u201c100+ biomarkers\u201d for $365, while Empirical Health offers 100+ ...",
+      "displayed_link": "https://www.empirical.health \u203a blog \u203a function-health-al..."
+    },
+    {
+      "position": 9,
+      "title": "Foundation Zoomer | Healthspan Optimization & Aging ...",
+      "link": "https://vibrant-wellness.com/tests/foundation-zoomer",
+      "snippet": "The Foundational Zoomer delivers a clinically advanced, whole-body evaluation of metabolism, cardiovascular health, hormones, inflammation, immunity, nutrient ...",
+      "displayed_link": "https://vibrant-wellness.com \u203a tests \u203a foundation-zoomer"
+    }
+  ]
+}

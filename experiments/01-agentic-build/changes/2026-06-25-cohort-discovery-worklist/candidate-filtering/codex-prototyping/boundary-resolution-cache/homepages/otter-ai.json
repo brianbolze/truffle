@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:33Z",
+  "ok": true,
+  "input": {
+    "domain": "otter.ai",
+    "url": "https://otter.ai/"
+  },
+  "status": 200,
+  "final_url": "https://otter.ai/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+  "description": "Otter AI Meeting Agent supports real-time transcription, live chat, automated summaries, insights, and action items.",
+  "text_excerpt": "Otter Meeting Agent - AI Notetaker, Transcription, Insights Use Cases Something for everyone Sales Automatic follow-ups, notes capture, and CRM sync. Education Lecture transcripts, note organization, insight extraction, and summaries. Media Interview transcription, thought organization, and content creation. SDR Agent Lead qualification, personalized live demos, and automatically booked meetings. Recruiting Agent Candidate insights, automatic follow-ups, and notes sync with Greenhouse. Resources Learn, explore, level up Integrations Connect and use Otter with the tools your team uses every day. Help Center Find FAQs, troubleshooting tips, and setup guides. Careers Join our team to shape the future of AI productivity. Press Discover the latest product and company news. The Conversation Get the latest on how to use Otter.ai to boost your productivity. View our blog Download Stay connected across devices Desktop app iOS app Android app Chrome extension Enterprise Pricing Schedule demo Log in Start for free Download for Mac Download for Windows Log in Menu Close Your AI notetaker is now also your Conversational Knowledge Engine Otter transcribes every meeting, turning it into searchable knowledge that powers your workflow. Start for free Download for Mac Download for Windows Schedule demo \"I am possibly Otter's most enthusiastic supporter. My team and I are using it everyday. And we\u2019re using it for almost every meeting.\u201d \u2014 Tim Draper \u201cOtter is a must-have. Just being conservative - our team is getting 33% time back.\u201d \u2014 Laura Brown, Vice President of Sales at Aiden Technologies \u201cI use Otter.ai almost everyday\u2026.it is a superpower.\u201d \u2014 Brandon Savage, Head of Solution Enablement, Voziq.ai Like having your own executive assistant Send it to meetings, or record them from your device. Otter captures the full conversation, tracks takeaways, and handles follow-ups without ever taking a day off. Demo it live Ask Otter anything Otter AI Chat searches across your meetings and connected apps to instantly answer questions and help you create follow-ups, reports, and content. A desktop app for bot-free meetings Record conversations directly from your Mac or Windows desktop, without bots joining the call. See the words, as they\u2019re spoken Live transcription in multiple languages, and speaker recognition. Get instant summaries you can trust Otter turns every meeting into a clear summary with decisions, action items, and insights. Automate the action items Clear next steps are a"
+}

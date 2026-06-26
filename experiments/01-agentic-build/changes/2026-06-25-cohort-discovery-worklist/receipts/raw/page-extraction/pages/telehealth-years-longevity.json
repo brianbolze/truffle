@@ -1,0 +1,412 @@
+{
+  "tool": "page_extraction_probe",
+  "source": "direct_http_fetch",
+  "captured_at": "2026-06-26T03:34:23Z",
+  "ok": true,
+  "input": {
+    "id": "telehealth-years-longevity",
+    "cohort": "telehealth",
+    "facet": "longevity_healthspan",
+    "rank": 6,
+    "url": "https://www.years.co/en/blog/longevity-clinics-programs-costs"
+  },
+  "schema_drift": [],
+  "cost": {
+    "credits": 0,
+    "usd": 0
+  },
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "error": null,
+  "raw_html_path": "receipts/raw/page-extraction/html/telehealth-years-longevity.html",
+  "title": "Longevity Clinics: Programs, Costs & Evidence in 2026 | YEARS",
+  "text": "Longevity Clinics: Programs, Costs & Evidence in 2026 | YEARS Programs Corporate About Us Explore Book free appointment Login DE Back to Overview Longevity Clinics: Programs, Costs & Evidence in 2026 The market for preventive health checkups is growing, with a projected annual growth rate of 8.4% through 2030 (Research and Markets, 2024). Within this trend, longevity clinics are gaining\u2026 By Niko Hems, M.Sc. Published on 20 April 2026 9 min read The market for preventive health checkups is growing, with a projected annual growth rate of 8.4% through 2030 (Research and Markets, 2024). Within this trend, longevity clinics are gaining significant traction. They promise not only to detect diseases early but to make the aging process itself measurable. Yet, the term \"longevity clinic\" remains vague, and the services offered are often opaque. What exactly does a longevity clinic provide? How does it differ from a standard health checkup or a wellness retreat? What are the leading providers, and what are the costs involved? This article provides a comprehensive overview of longevity clinics, covering the scientific foundations, provider comparisons, program structures, costs, and insurance considerations. What Are Longevity Clinics? A longevity clinic is a medical facility focused on extending a person's healthy lifespan, or \"healthspan.\" The goal is not simply to maximize lifespan but to increase the number of years lived in good physical and cognitive health. Traditional preventive care looks for already established diseases. Longevity clinics intervene earlier. They aim to measure biological aging processes at the cellular and molecular levels to delay the onset of age-related conditions like cardiovascular disease, neurodegeneration, cancer, and type 2 diabetes. The difference from a standard checkup is substantial. A typical government-sponsored health screening might include a basic blood panel with fasting glucose and total cholesterol, a urine sample, and a blood pressure reading. Advanced imaging, functional diagnostics, and specialized biomarkers are not included. The entire appointment often lasts just 15 minutes. Comparison: Standard Checkup vs. Longevity Diagnostics Feature Standard Health Checkup YEARS Core\u00ae (Longevity Example) Focus Early detection of common diseases Measuring risks & biological aging Biomarkers ~10 (e.g., fasting glucose, LDL) 87+ (incl. ApoB, hs-CRP, NT-proBNP, HOMA-IR) Imaging None Comprehensive Ultrasound (heart, abdomen, thyroid) Lung Function None Body Plethysmography Performance None VO\u2082max (Cardiopulmonary Exercise Testing), muscle strength, balance Prevention Identifies existing problems Identifies risks years before symptoms appear Duration ~15 minutes 6 hours on a single day Outcome Individual lab values Comprehensive medical report & strategic health plan The Science of Longevity: What Do These Clinics Actually Measure? Modern longevity research is guided by the \"Hallmarks of Aging,\" nine key biological processes that drive aging (L\u00f3pez-Ot\u00edn et al., Cell 2013). These include genomic instability, telomere attrition, epigenetic alterations, and chronic inflammation. High-quality longevity diagnostics measure indicators of these processes, viewing the body as an interconnected system. Key metrics include: Cardiovascular Markers: More precise values like ApoB (number of atherogenic particles), Lp(a) (a genetic risk factor), hs-CRP (an inflammatory marker), and NT-proBNP (a marker of cardiac stress) provide a more accurate picture of cardiovascular risk than standard cholesterol alone. Metabolic Markers: The HOMA-IR index can detect insulin resistance years before fasting glucose levels rise. An oral glucose tolerance test (OGTT) shows how the body responds to sugar. Inflammaging: Chronic, low-grade inflammation promotes age-related diseases. Markers like hs-CRP and cytokines such as Interleukin-6 (IL-6, available in Evolve\u00ae and up) make this state measurable. Functional Metrics: Maximal oxygen uptake (VO\u2082max) is considered one of the strongest single predictors of all-cause mortality and is measured via cardiopulmonary exercise testing (CPET) (Mandsager et al., JAMA 2018). Epigenetic Markers: Biological age is determined through DNA methylation patterns. Algorithms known as \"epigenetic clocks\" estimate whether the body is aging faster or slower than its chronological age would suggest. This comprehensive dataset allows for the identification of risk constellations and the development of preventive strategies long before symptoms arise. An Overview of Leading Longevity Clinics The market for longevity medicine is diverse, ranging from luxury wellness retreats to established prevention centers and highly specialized, science-oriented clinics. Provider Location(s) Program Type Cost (Estimate) Special Features Lanserhof Sylt (DE), Tegernsee (DE), Lans (AT) Inpatient Stay (min. 7 days) \u20ac7,000 \u2013 \u20ac50,000+ Luxury segment, detox, regeneration, international clientele Preventicum Essen (DE) Outpatient Checkup (1-2 days) \u20ac2,000 \u2013 \u20ac7,000 Established provider, focus on executive checkups, comprehensive diagnostics Deutsche Klinik f\u00fcr Pr\u00e4vention Oberaudorf (DE) Inpatient & Outpatient On request Specializes in prevention and longevity, physician-led YEARS Berlin (DE) Outpatient Checkup (1 day) \u20ac1,900 \u2013 \u20ac16,900 Science-first, Clinic-as-a-Study, omics, itemized billing YEARS: Data-Driven Diagnostics with a Research Focus YEARS has established itself in Berlin as a science-oriented longevity clinic. Its model prioritizes data depth and efficiency: all diagnostics are completed on a single day, with no hotel stay or multi-day retreat required. The programs are modular: YEARS Core\u00ae (\u20ac1,900): This 6-hour entry-level program establishes a comprehensive medical baseline. It includes a lab panel with 87 biomarkers (including ApoB, hs-CRP, HOMA-IR), a 12-lead ECG, advanced ultrasound of the heart and organs, a lung function test (body plethysmography), AI-powered skin screening, neurocognitive tests, and a VO\u2082max measurement. YEARS Evolve\u00ae (\u20ac7,600): This 9-hour program builds on Core\u00ae by adding a whole-body MRI using a proprietary protocol, a liquid biopsy designed to aid in the early detection of over 70 types of tumors, the measurement of seven epigenetic clocks, and the storage of 70 samples in the YEARS Biological Safe (biobank). The lab panel expands to over 120 biomarkers, including advanced hormones like testosterone and cortisol. YEARS Ultimate\u00ae (\u20ac16,900): The most comprehensive program adds full genetic sequencing (whole-exome and whole-genome) to analyze over 170 disease-risk genes, an analysis of the gut microbiome, and an expanded lab panel with over 230 biomarkers. A key differentiator is the \"Clinic-as-a-Study\" model. Clients are invited to become part of a clinical registry. Their pseudonymized data contributes to a longitudinal study on aging, intended to be one of the largest in Europe. This ensures that the methods used remain closely aligned with the latest research. Learn more on the About YEARS page. Lanserhof vs. YEARS: Wellness Retreat or Data-Driven Clinic? Lanserhof focuses on a holistic experience: regeneration, detoxification, and mental recovery in a luxurious setting. The multi-day stay is central to the concept, with diagnostics being one component. It is ideal for those seeking a restorative break while also receiving medical insights. YEARS operates differently. The visit lasts one day. The goal is not on-site relaxation but the creation of a deep, scientifically-grounded dataset for a long-term health strategy. This model is suited for individuals who want precise findings and a physician-validated plan without investing several days. Both approaches have their merits. The choice depends on whether your primary goal is relaxation or in-depth diagnostics. Longevity Clinic Costs and Insurance Coverage Costs vary significantly depending on the depth of the program: Individual Tests (\u20ac200 \u2013 \u20ac500): Epigenetic age tests or specialized blood panels available online, often without physician interpretation. Outpatient Checkups (\u20ac1,900 \u2013 \u20ac8,000): Comprehensive diagnostic days with broad biomarker panels, imaging, and functional tests, as offered by Preventicum or YEARS (Core\u00ae and Evolve\u00ae). Deep-Dive Analyses (\u20ac8,000 \u2013 \u20ac20,000): Programs incorporating omics technologies and whole-body MRI, such as the YEARS Ultimate\u00ae program. Inpatient Retreats (\u20ac7,000 \u2013 \u20ac50,000+): Multi-day stays including accommodation, meals, and therapeutic offerings, like those at Lanserhof. The Role of Private Health Insurance Public or state health insurance systems typically do not cover the costs of comprehensive longevity checkups. For those with private insurance, reimbursement depends on the specific plan and the clinic's billing method. YEARS bills according to the official German medical fee schedule (GO\u00c4). Every test\u2014whether ultrasound, ECG, or lab value\u2014is itemized as an individual medical service on the invoice. Since comprehensive diagnostics often uncover medically relevant findings (e.g., a vitamin D deficiency, early insulin resistance, or elevated liver enzymes), this provides a medical justification for the tests performed. This can improve the chances of reimbursement, though it is not guaranteed. It is advisable to speak with your insurance provider or contact YEARS for a consultation before booking. Key Technologies in Longevity Medicine Epigenetic Clocks: Measuring Biological Age Chronological age counts years. Biological age describes the actual state of your body at a cellular level. The most precise method for determining biological age is the analysis of DNA methylation patterns. These patterns change predictably throughout life. Algorithms like the Horvath clock, the Hannum clock, or the phenotype-based PhenoAge read these patterns to calculate a biological age. If it is lower than your chronological age, your body is aging more slowly than average. Modern longevity clinics use these analyses to evaluate interventions and better assess personal risk for age-related diseases. VO\u2082max: The Underrated Longevity Marker Maximal oxygen uptake (VO\u2082max) measures the performance of the cardiovascular system under stress. A study of over 120,000 participants showed that individuals with elite cardiorespiratory fitness had an almost 80% lower mortality risk compared to those in the lowest fitness category (Mandsager et al., JAMA 2018). This makes VO\u2082max a fundamental health marker, not just a metric for athletes. It is measured via cardiopulmonary exercise testing (CPET) on a stationary bike or treadmill. Clients who complete this test as part of the YEARS Core\u00ae program receive a baseline value that they can tangibly improve through targeted training. Inflammation in Aging (Inflammaging) Chronic, low-grade inflammation drives the aging process. Known as \"inflammaging,\" this process promotes atherosclerosis, neurodegeneration, and cancer (Franceschi et al., Ann. N. Y. Acad. Sci. 2000). Longevity clinics specifically measure inflammatory markers like hs-CRP and Interleukin-6 (IL-6). An elevated hs-CRP level can indicate cardiovascular risk, even if cholesterol levels are normal. This is clinically relevant: in the JUPITER trial, patients with normal LDL but elevated hs-CRP had a significantly higher risk of heart attack (Ridker et al., NEJM 2008). Omics: Genomics, Epigenomics, and Microbiomics Omics technologies are part of the most comprehensive longevity programs and currently represent the deepest available layer of personalized medicine. Genomics: Whole-genome sequencing identifies inherited genetic predispositions for diseases like colon cancer, familial hypercholesterolemia, or breast cancer. Pharmacogenetics also reveals how the body may react to certain medications. Epigenomics: This field analyzes DNA methylation patterns, providing a dynamic picture of how lifestyle and environment influence gene activity. Microbiomics: The composition of gut bacteria affects metabolism, the immune system, and mental health. This analysis is part of YEARS Ultimate\u00ae and is not included in Evolve\u00ae. How to Choose the Right Longevity Clinic for You Longevity clinics offer a proactive form of healthcare that goes far beyond traditional checkups. The choice of provider depends on your specific priorities. For those who want to receive a maximum amount of data in a single day, the outpatient diagnostic model at YEARS in Berlin offers a suitable structure. For those who also want to step away from daily life and combine diagnostics with a multi-day retreat, Lanserhof may be a better fit. For those seeking a solid, established option without travel, Preventicum in Essen is another consideration. In any case, it is wise to discuss the specific program details, the scientific basis of the methods, and potential insurance reimbursement before making a commitment. Sources Franceschi, C., Bonaf\u00e8, M., Valensin, S., et al. (2000). Inflamm-aging: An evolutionary perspective on immunosenescence. Annals of the New York Academy of Sciences, 908(1), 244-254. DOI: 10.1111/j.1749-6632.2000.tb06651.x L\u00f3pez-Ot\u00edn, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2013). The hallmarks of aging. Cell, 153(6), 1194-1217. DOI: 10.1016/j.cell.2013.05.039 Mandsager, K., Harb, S., Cremer, P., Phelan, D., Nissen, S. E., & Jaber, W. (2018). Association of cardiorespiratory fitness with long-term mortality among adults undergoing exercise treadmill testing. JAMA Network Open, 1(6), e183605. DOI: 10.1001/jamanetworkopen.2018.3605 Research and Markets. (2024). Germany Health And Wellness Market, Size, Forecast 2024-2030. Ridker, P. M., Danielson, E., Fonseca, F. A., et al. (2008). Rosuvastatin to prevent vascular events in men and women with elevated C-reactive protein. New England Journal of Medicine, 359(21), 2195-2207. DOI: 10.1056/NEJMoa0807646 Yusuf, S., Hawken, S., Ounpuu, S., et al. (2004). Effect of potentially modifiable risk factors associated with myocardial infarction in 52 countries (the INTERHEART study): case-control study. The Lancet, 364(9438), 937-952. DOI: 10.1016/S0140-6736 (04)17018-9 Share LinkedIn X WhatsApp Copy Link Author Niko Hems, M.Sc. Head of Growth at YEARS focusing on data-driven prevention and health communication. Background in Data Science and Management, currently pursuing a 2nd Master's in Longevity Sciences. Bridges scientific evidence with clear, actionable health content. Medical Disclaimer This article is provided for general informational purposes only and is not a substitute for professional medical advice, diagnosis or treatment. If you have any health concerns, please consult a physician or qualified healthcare provider. Content reflects the state of scientific evidence available at the time of publication and is reviewed periodically. You might also like NAD+ Supplement: Evidence, Effects & What to Measure | YEARS NAD+ is ubiquitous. In longevity forums, the daily routines of tech CEOs, and the aisles of supplement providers, the molecule is touted as a key to cellular energy, repair, and a healthier life\u2026 Niko Hems, M.Sc. \u00b7 19 June 2026 Read More Longevity Biomarkers for Performance & Recovery You train regularly, watch your diet, and prioritize sleep. You feel good. But do you really know how capable your body is? How well it recovers? And what foundation you are laying today for a long\u2026 Niko Hems, M.Sc. \u00b7 19 June 2026 Read More NAD+ Supplements: Evidence, NMN vs NR & What to Measure NAD+ is everywhere. From longevity forums and tech CEO endorsements to supplement aisles, it is touted as a key molecule for energy, cellular repair, and a longer, healthier life. The promises are\u2026 Niko Hems, M.Sc. \u00b7 15 June 2026 Read More YEARS Journal Subscribe to Newsletter Get health tips delivered straight to your inbox. Your email address Subscribe By subscribing, you agree to our Privacy Policy Act now for more healthy years. YEARS GmbH Joachimsthaler Stra\u00dfe 34 10719 Berlin info@years.co Years Programs Corporate About Us Blog Gift Cards Careers Legal Editorial Policy Privacy Policy Data Processing Terms of Use Legal Notice Cookie Settings Services Longevity Medicine Longevity Check-up Berlin What is a longevity check-up? What does a longevity check-up cost? Longevity Clinic Full-body MRI Liquid Biopsy Manager Check-up Health Check Berlin Check-up from 40 Check-up from 50 Check-up for Women Check-up for Men Private Insurance Check-up Check-up for Privately Insured Corporate Check-up Nutrition Counseling Berlin Microbiome Analysis Berlin Caffeine Calculator VO2max Calculator Biological Age Ask AI if YEARS is right for you: \u00a9 2026 YEARS GmbH . All rights reserved . Free consultation Book free appointment \u2192",
+  "text_chars": 16740,
+  "links": [
+    {
+      "href": "/en",
+      "text": "",
+      "domain": null,
+      "position": 1
+    },
+    {
+      "href": "/en/programme",
+      "text": "Programs",
+      "domain": null,
+      "position": 2
+    },
+    {
+      "href": "/en/corporate",
+      "text": "Corporate",
+      "domain": null,
+      "position": 3
+    },
+    {
+      "href": "/en/team",
+      "text": "About Us",
+      "domain": null,
+      "position": 4
+    },
+    {
+      "href": "https://portal.years.co/book?lang=en",
+      "text": "Book free appointment",
+      "domain": "portal.years.co",
+      "position": 5
+    },
+    {
+      "href": "https://portal.years.co/login",
+      "text": "Login",
+      "domain": "portal.years.co",
+      "position": 6
+    },
+    {
+      "href": "/de",
+      "text": "DE",
+      "domain": null,
+      "position": 7
+    },
+    {
+      "href": "/en/blog",
+      "text": "Back to Overview",
+      "domain": null,
+      "position": 8
+    },
+    {
+      "href": "/en/niko-hems",
+      "text": "Niko Hems, M.Sc.",
+      "domain": null,
+      "position": 9
+    },
+    {
+      "href": "https://doi.org/10.1111/j.1749-6632.2000.tb06651.x",
+      "text": "DOI: 10.1111/j.1749-6632.2000.tb06651.x",
+      "domain": "doi.org",
+      "position": 10
+    },
+    {
+      "href": "https://doi.org/10.1016/j.cell.2013.05.039",
+      "text": "DOI: 10.1016/j.cell.2013.05.039",
+      "domain": "doi.org",
+      "position": 11
+    },
+    {
+      "href": "https://doi.org/10.1001/jamanetworkopen.2018.3605",
+      "text": "DOI: 10.1001/jamanetworkopen.2018.3605",
+      "domain": "doi.org",
+      "position": 12
+    },
+    {
+      "href": "https://doi.org/10.1056/NEJMoa0807646",
+      "text": "DOI: 10.1056/NEJMoa0807646",
+      "domain": "doi.org",
+      "position": 13
+    },
+    {
+      "href": "https://doi.org/10.1016/S0140-6736",
+      "text": "DOI: 10.1016/S0140-6736",
+      "domain": "doi.org",
+      "position": 14
+    },
+    {
+      "href": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.years.co%2Fen%2Fblog%2Flongevity-clinics-programs-costs",
+      "text": "LinkedIn",
+      "domain": "linkedin.com",
+      "position": 15
+    },
+    {
+      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.years.co%2Fen%2Fblog%2Flongevity-clinics-programs-costs&text=Longevity%20Clinics%3A%20Programs%2C%20Costs%20%26%20Evidence%20in%202026",
+      "text": "X",
+      "domain": "twitter.com",
+      "position": 16
+    },
+    {
+      "href": "https://wa.me/?text=Longevity%20Clinics%3A%20Programs%2C%20Costs%20%26%20Evidence%20in%202026%20https%3A%2F%2Fwww.years.co%2Fen%2Fblog%2Flongevity-clinics-programs-costs",
+      "text": "WhatsApp",
+      "domain": "wa.me",
+      "position": 17
+    },
+    {
+      "href": "/en/niko-hems",
+      "text": "Author Niko Hems, M.Sc. Head of Growth at YEARS focusing on data-driven prevention and health communication. Background in Data Science and Management, currently pursuing a 2nd Master's in Longevity Sciences. Bridges scientific evidence with clear, actionable health content.",
+      "domain": null,
+      "position": 18
+    },
+    {
+      "href": "/en/blog/nad-supplement-evidence-effects",
+      "text": "NAD+ Supplement: Evidence, Effects & What to Measure | YEARS NAD+ is ubiquitous. In longevity forums, the daily routines of tech CEOs, and the aisles of supplement providers, the molecule is touted as a key to cellular energy, repair, and a healthier life\u2026 Niko Hems, M.Sc. \u00b7 19 June 2026 Read More",
+      "domain": null,
+      "position": 19
+    },
+    {
+      "href": "/en/blog/longevity-biomarkers-performance-recovery",
+      "text": "Longevity Biomarkers for Performance & Recovery You train regularly, watch your diet, and prioritize sleep. You feel good. But do you really know how capable your body is? How well it recovers? And what foundation you are laying today for a long\u2026 Niko Hems, M.Sc. \u00b7 19 June 2026 Read More",
+      "domain": null,
+      "position": 20
+    },
+    {
+      "href": "/en/blog/nad-supplements-evidence-nmn-vs-nr",
+      "text": "NAD+ Supplements: Evidence, NMN vs NR & What to Measure NAD+ is everywhere. From longevity forums and tech CEO endorsements to supplement aisles, it is touted as a key molecule for energy, cellular repair, and a longer, healthier life. The promises are\u2026 Niko Hems, M.Sc. \u00b7 15 June 2026 Read More",
+      "domain": null,
+      "position": 21
+    },
+    {
+      "href": "/en/datenschutz",
+      "text": "Privacy Policy",
+      "domain": null,
+      "position": 22
+    },
+    {
+      "href": "/en",
+      "text": "",
+      "domain": null,
+      "position": 23
+    },
+    {
+      "href": "https://de.linkedin.com/company/years-group",
+      "text": "",
+      "domain": "de.linkedin.com",
+      "position": 24
+    },
+    {
+      "href": "https://www.instagram.com/years_co/",
+      "text": "",
+      "domain": "instagram.com",
+      "position": 25
+    },
+    {
+      "href": "mailto:info@years.co",
+      "text": "info@years.co",
+      "domain": "mailto:info@years.co",
+      "position": 26
+    },
+    {
+      "href": "/en/programme",
+      "text": "Programs",
+      "domain": null,
+      "position": 27
+    },
+    {
+      "href": "/en/corporate",
+      "text": "Corporate",
+      "domain": null,
+      "position": 28
+    },
+    {
+      "href": "/en/team",
+      "text": "About Us",
+      "domain": null,
+      "position": 29
+    },
+    {
+      "href": "/en/blog",
+      "text": "Blog",
+      "domain": null,
+      "position": 30
+    },
+    {
+      "href": "/en/gift-cards",
+      "text": "Gift Cards",
+      "domain": null,
+      "position": 31
+    },
+    {
+      "href": "https://years.jobs.personio.de/",
+      "text": "Careers",
+      "domain": "years.jobs.personio.de",
+      "position": 32
+    },
+    {
+      "href": "/en/editorial-policy",
+      "text": "Editorial Policy",
+      "domain": null,
+      "position": 33
+    },
+    {
+      "href": "/en/datenschutz",
+      "text": "Privacy Policy",
+      "domain": null,
+      "position": 34
+    },
+    {
+      "href": "/en/datenverarbeitung",
+      "text": "Data Processing",
+      "domain": null,
+      "position": 35
+    },
+    {
+      "href": "/en/anb",
+      "text": "Terms of Use",
+      "domain": null,
+      "position": 36
+    },
+    {
+      "href": "/en/impressum",
+      "text": "Legal Notice",
+      "domain": null,
+      "position": 37
+    },
+    {
+      "href": "/en/longevity",
+      "text": "Longevity Medicine",
+      "domain": null,
+      "position": 38
+    },
+    {
+      "href": "/en/longevity-check-up-berlin",
+      "text": "Longevity Check-up Berlin",
+      "domain": null,
+      "position": 39
+    },
+    {
+      "href": "/en/was-ist-ein-longevity-check-up",
+      "text": "What is a longevity check-up?",
+      "domain": null,
+      "position": 40
+    },
+    {
+      "href": "/en/was-kostet-ein-longevity-check-up",
+      "text": "What does a longevity check-up cost?",
+      "domain": null,
+      "position": 41
+    },
+    {
+      "href": "/en/longevity-kliniken-deutschland",
+      "text": "Longevity Clinic",
+      "domain": null,
+      "position": 42
+    },
+    {
+      "href": "/en/mrt",
+      "text": "Full-body MRI",
+      "domain": null,
+      "position": 43
+    },
+    {
+      "href": "/en/liquid-biopsy",
+      "text": "Liquid Biopsy",
+      "domain": null,
+      "position": 44
+    },
+    {
+      "href": "/en/manager-check",
+      "text": "Manager Check-up",
+      "domain": null,
+      "position": 45
+    },
+    {
+      "href": "/en/gesundheitscheck",
+      "text": "Health Check Berlin",
+      "domain": null,
+      "position": 46
+    },
+    {
+      "href": "/en/check-up-ab-40",
+      "text": "Check-up from 40",
+      "domain": null,
+      "position": 47
+    },
+    {
+      "href": "/en/check-up-ab-50",
+      "text": "Check-up from 50",
+      "domain": null,
+      "position": 48
+    },
+    {
+      "href": "/en/check-up-frauen",
+      "text": "Check-up for Women",
+      "domain": null,
+      "position": 49
+    },
+    {
+      "href": "/en/check-up-maenner",
+      "text": "Check-up for Men",
+      "domain": null,
+      "position": 50
+    },
+    {
+      "href": "/en/pkv-check-up",
+      "text": "Private Insurance Check-up",
+      "domain": null,
+      "position": 51
+    },
+    {
+      "href": "/en/check-up-fuer-privatversicherte",
+      "text": "Check-up for Privately Insured",
+      "domain": null,
+      "position": 52
+    },
+    {
+      "href": "/en/firmen-check-up",
+      "text": "Corporate Check-up",
+      "domain": null,
+      "position": 53
+    },
+    {
+      "href": "/en/ernaehrungsberatung-berlin",
+      "text": "Nutrition Counseling Berlin",
+      "domain": null,
+      "position": 54
+    },
+    {
+      "href": "/en/mikrobiomanalyse-berlin",
+      "text": "Microbiome Analysis Berlin",
+      "domain": null,
+      "position": 55
+    },
+    {
+      "href": "/en/koffein-rechner",
+      "text": "Caffeine Calculator",
+      "domain": null,
+      "position": 56
+    },
+    {
+      "href": "/en/vo2max-rechner",
+      "text": "VO2max Calculator",
+      "domain": null,
+      "position": 57
+    },
+    {
+      "href": "/en/biologisches-alter",
+      "text": "Biological Age",
+      "domain": null,
+      "position": 58
+    },
+    {
+      "href": "https://chatgpt.com/?q=Analyze%20this%20website%3A%20https%3A%2F%2Fyears.co%0A%0AExplain%20the%20service%20as%20if%20I%20were%20a%20potential%20customer%20deciding%20whether%20to%20buy.%0A%0AKeep%20it%20simple%2C%20concrete%2C%20and%20focus%20on%20clear%20benefits.%20Structure%20your%20answer%20like%20this%3A%0A%0A1.%20What%20it%20is%20(1%E2%80%932%20sharp%20sentences)%0A2.%20How%20it%20works%20(step-by-step%20experience)%0A3.%20What%20is%20measured%2Fanalyzed%20(biomarkers%2C%20tests%2C%20key%20areas)%0A4.%20What%20I%20receive%20(reports%2C%20scores%2C%20dashboard%2C%20recommendations%2C%20coaching%2C%20etc.)%0A5.%20What%20I%20see%20as%20a%20user%20(dashboard%2C%20scores%2C%20tracking)%0A6.%20Why%20this%20is%20valuable%20(key%20benefits%20%2F%20outcomes)%0A7.%20Frequency%20(one-time%2C%20recurring%2C%20membership)%0A%0ARules%3A%0A-%20Focus%20on%20real%20customer%20value%20and%20outcomes%0A-%20Make%20it%20easy%20to%20understand%20and%20compare%0A-%20Use%20concrete%20language%20(what%20I%20actually%20get)%0A-%20Highlight%20what%20makes%20it%20worth%20the%20price",
+      "text": "",
+      "domain": "chatgpt.com",
+      "position": 59
+    },
+    {
+      "href": "https://claude.ai/new?q=Analyze%20this%20website%3A%20https%3A%2F%2Fyears.co%0A%0AExplain%20the%20service%20as%20if%20I%20were%20a%20potential%20customer%20deciding%20whether%20to%20buy.%0A%0AKeep%20it%20simple%2C%20concrete%2C%20and%20focus%20on%20clear%20benefits.%20Structure%20your%20answer%20like%20this%3A%0A%0A1.%20What%20it%20is%20(1%E2%80%932%20sharp%20sentences)%0A2.%20How%20it%20works%20(step-by-step%20experience)%0A3.%20What%20is%20measured%2Fanalyzed%20(biomarkers%2C%20tests%2C%20key%20areas)%0A4.%20What%20I%20receive%20(reports%2C%20scores%2C%20dashboard%2C%20recommendations%2C%20coaching%2C%20etc.)%0A5.%20What%20I%20see%20as%20a%20user%20(dashboard%2C%20scores%2C%20tracking)%0A6.%20Why%20this%20is%20valuable%20(key%20benefits%20%2F%20outcomes)%0A7.%20Frequency%20(one-time%2C%20recurring%2C%20membership)%0A%0ARules%3A%0A-%20Focus%20on%20real%20customer%20value%20and%20outcomes%0A-%20Make%20it%20easy%20to%20understand%20and%20compare%0A-%20Use%20concrete%20language%20(what%20I%20actually%20get)%0A-%20Highlight%20what%20makes%20it%20worth%20the%20price",
+      "text": "",
+      "domain": "claude.ai",
+      "position": 60
+    },
+    {
+      "href": "https://www.perplexity.ai/search/Analyze%20this%20website%3A%20https%3A%2F%2Fyears.co%0A%0AExplain%20the%20service%20as%20if%20I%20were%20a%20potential%20customer%20deciding%20whether%20to%20buy.%0A%0AKeep%20it%20simple%2C%20concrete%2C%20and%20focus%20on%20clear%20benefits.%20Structure%20your%20answer%20like%20this%3A%0A%0A1.%20What%20it%20is%20(1%E2%80%932%20sharp%20sentences)%0A2.%20How%20it%20works%20(step-by-step%20experience)%0A3.%20What%20is%20measured%2Fanalyzed%20(biomarkers%2C%20tests%2C%20key%20areas)%0A4.%20What%20I%20receive%20(reports%2C%20scores%2C%20dashboard%2C%20recommendations%2C%20coaching%2C%20etc.)%0A5.%20What%20I%20see%20as%20a%20user%20(dashboard%2C%20scores%2C%20tracking)%0A6.%20Why%20this%20is%20valuable%20(key%20benefits%20%2F%20outcomes)%0A7.%20Frequency%20(one-time%2C%20recurring%2C%20membership)%0A%0ARules%3A%0A-%20Focus%20on%20real%20customer%20value%20and%20outcomes%0A-%20Make%20it%20easy%20to%20understand%20and%20compare%0A-%20Use%20concrete%20language%20(what%20I%20actually%20get)%0A-%20Highlight%20what%20makes%20it%20worth%20the%20price",
+      "text": "",
+      "domain": "perplexity.ai",
+      "position": 61
+    },
+    {
+      "href": "#header",
+      "text": "",
+      "domain": null,
+      "position": 62
+    },
+    {
+      "href": "https://calendly.com/years-praeventivmedizin/years-get-to-know-our-programs",
+      "text": "Free consultation",
+      "domain": "calendly.com",
+      "position": 63
+    },
+    {
+      "href": "https://portal.years.co/book?lang=en",
+      "text": "Book free appointment \u2192",
+      "domain": "portal.years.co",
+      "position": 64
+    }
+  ],
+  "link_count": 64
+}

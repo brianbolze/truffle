@@ -1,0 +1,163 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T00:59:09Z",
+  "ok": true,
+  "input": {
+    "query": "online TRT clinic testosterone replacement telehealth labs 2026",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "Online TRT (Testosterone Replacement Therapy) clinics provide end-to-end telehealth care. You complete an intake form, get blood work done at a local facility, consult a licensed physician via video, and receive prescription testosterone and supplies delivered straight to your door.",
+    "Online clinics operate on either a subscription or pay-per-service model. Cash pay is the standard, as insurance rarely covers TRT unless there is an underlying medical pathology.",
+    "Could you tell me which state you are currently located in and if you have recent blood work from the last 6 months? I can help narrow down the clinics that are legally permitted to serve your area and best fit your budget."
+  ],
+  "headings": [
+    "How the Process Works",
+    "Popular Platforms & Pricing",
+    "Things to Keep in Mind"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "Viking Alternative Medicine",
+      "title": "Online TRT vs Traditional Testosterone Clinics",
+      "link": "https://vikingalternative.com/online-trt-vs-traditional-testosterone-clinics-2026/"
+    },
+    {
+      "index": 1,
+      "source": "Your Health Magazine",
+      "title": "Online Testosterone Therapy Providers in 2026",
+      "link": "https://yourhealthmagazine.net/article/mens-health/online-testosterone-therapy-providers-in-2026-what-to-compare/"
+    },
+    {
+      "index": 2,
+      "source": "Hormone Online",
+      "title": "Best Online TRT Clinics in 2026: Pricing \\u0026 Treatment Options",
+      "link": "https://hormoneonline.com/online-trt-clinics/"
+    },
+    {
+      "index": 3,
+      "source": "policylab.us",
+      "title": "The Best Online TRT Clinics of 2026: What to Know Before ...",
+      "link": "https://policylab.us/testosterone-replacement-therapy/online-trt/"
+    },
+    {
+      "index": 4,
+      "source": "Madison Health NY",
+      "title": "Online TRT Clinic - Telemedicine TRT for Men | Madison Health NY",
+      "link": "https://madisonhealthny.com/telemed/online-trt-clinic/"
+    },
+    {
+      "index": 5,
+      "source": "www.myconfidenceclinic.com",
+      "title": "TRT Clinic Comparison: Clearwater 2026 (Updated Guide)",
+      "link": "https://www.myconfidenceclinic.com/trt-clinic-comparison-clearwater-2026-updated-guide/"
+    },
+    {
+      "index": 6,
+      "source": "TRT Nation",
+      "title": "Top 10 Best Online TRT Clinics for 2026 - TRT Nation",
+      "link": "https://trtnation.com/top-10-best-online-trt-clinics-for-2026/"
+    },
+    {
+      "index": 7,
+      "source": "Defy Medical",
+      "title": "Online TRT Clinic | Physician-Supervised Testosterone Therapy",
+      "link": "https://www.defymedical.com/services/trt/"
+    },
+    {
+      "index": 8,
+      "source": "Viking Alternative Medicine",
+      "title": "Online TRT Clinic vs Local TRT Clinic: Which Is Better in 2026?",
+      "link": "https://vikingalternative.com/online-trt-vs-local-trt-clinic-comparison-2026/"
+    },
+    {
+      "index": 9,
+      "source": "Viking Alternative Medicine",
+      "title": "TRT Clinics by State 2026: Which Online Testosterone ...",
+      "link": "https://vikingalternative.com/trt-clinics-by-state-online-availability-2026/"
+    },
+    {
+      "index": 10,
+      "source": "Forbes",
+      "title": "How To Find The Best Online TRT Clinic \u2013 Forbes Health",
+      "link": "https://www.forbes.com/health/wellness/best-testosterone-replacement-therapy/"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "The Best Online TRT Clinics of 2026: What to Know Before ...",
+      "link": "https://policylab.us/testosterone-replacement-therapy/online-trt/",
+      "snippet": "Baseline lab work required before prescribing testosterone therapy; Ongoing monitoring through follow-up labs and provider consultations ...",
+      "displayed_link": "https://policylab.us \u203a testosterone-replacement-therapy"
+    },
+    {
+      "position": 2,
+      "title": "Online TRT vs Traditional Testosterone Clinics",
+      "link": "https://vikingalternative.com/online-trt-vs-traditional-testosterone-clinics-2026/",
+      "snippet": "Online TRT providers like Viking Alternative Medicine use telemedicine to deliver the same standard of care \u2014 without the waiting room. Your ...",
+      "displayed_link": "https://vikingalternative.com \u203a Home \u203a Our Blog"
+    },
+    {
+      "position": 3,
+      "title": "How To Find The Best Online TRT Clinic",
+      "link": "https://www.forbes.com/health/wellness/best-testosterone-replacement-therapy/",
+      "snippet": "Explore our guide on finding the best online TRT clinic and important factors to consider when seeking online TRT, including eligibility ...",
+      "displayed_link": "https://www.forbes.com \u203a health \u203a wellness \u203a best-testos..."
+    },
+    {
+      "position": 4,
+      "title": "TRT Clinic Comparison: Clearwater 2026 (Updated Guide)",
+      "link": "https://www.myconfidenceclinic.com/trt-clinic-comparison-clearwater-2026-updated-guide/",
+      "snippet": "Clearwater TRT Clinics in 2026: Compare & choose the best with The Confidence Clinic's guide. Prioritize safety and expert care.",
+      "displayed_link": "https://www.myconfidenceclinic.com \u203a trt-clinic-compa..."
+    },
+    {
+      "position": 5,
+      "title": "At-Home TRT\u2014Telemedicine for Texas Residents",
+      "link": "https://tctmed.com/resource/video-conference-trt-telemedicine/",
+      "snippet": "TCT is now offering at-home Testosterone Replacement Therapy for residents of Texas via video. One in-person visit to Dallas-Fort Worth is required.",
+      "displayed_link": "https://tctmed.com \u00b7 May 6, 2019"
+    },
+    {
+      "position": 6,
+      "title": "Online TRT Clinic - Telemedicine TRT for Men",
+      "link": "https://madisonhealthny.com/telemed/online-trt-clinic/",
+      "snippet": "During your consultation, we'll discuss your symptoms, lab results, lifestyle, and goals to determine if testosterone replacement therapy is right for you.",
+      "displayed_link": "https://madisonhealthny.com \u203a telemed \u203a online-trt-clinic"
+    },
+    {
+      "position": 7,
+      "title": "Best Online TRT Clinic | Telemed Testosterone Support ...",
+      "link": "https://www.innerbody.com/best-online-trt-clinic",
+      "snippet": "Our guide to the best online TRT clinics covers testing and medication to improve your testosterone.",
+      "displayed_link": "https://www.innerbody.com \u203a best-online-trt-clinic"
+    },
+    {
+      "position": 8,
+      "title": "Top 10 Best Online TRT Clinics for 2026",
+      "link": "https://trtnation.com/top-10-best-online-trt-clinics-for-2026/",
+      "snippet": "The best TRT clinics in 2026 provide transparent pricing, expert medical oversight, and goal-based treatment options.",
+      "displayed_link": "https://trtnation.com \u203a top-10-best-online-trt-clinics-for-2..."
+    },
+    {
+      "position": 9,
+      "title": "Online Testosterone Therapy Providers in 2026",
+      "link": "https://yourhealthmagazine.net/article/mens-health/online-testosterone-therapy-providers-in-2026-what-to-compare/",
+      "snippet": "Instead of in-person visits, a licensed online TRT clinic bundles the entire process into one platform: a health assessment, lab testing, a video or messaging ...",
+      "displayed_link": "https://yourhealthmagazine.net \u203a Articles"
+    }
+  ]
+}

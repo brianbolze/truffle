@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:48Z",
+  "ok": true,
+  "input": {
+    "domain": "salesmotion.io",
+    "url": "https://salesmotion.io/"
+  },
+  "status": 200,
+  "final_url": "https://salesmotion.io/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "Salesmotion - Put Pipeline Generation on Autopilot",
+  "description": "AI agents run deep account analysis 24/7, detect real buying signals and compelling events, then generate ready-to-send outreach with verified contacts and real business context.",
+  "text_excerpt": "Salesmotion - Put Pipeline Generation on Autopilot Product Agents Demos Customers Blog Pricing Affiliates Sign up now Book a demo Book a demo Account Intelligence for Revenue Teams Find buying signals. Build more pipeline , faster. Salesmotion's AI agents monitor your accounts 24/7, find buying signals, give deep insight and draft evidence-based, relevant outreach that gets replies. 2x more meetings 40% more pipeline 6h saved/ rep/week Book a demo Sign up now 4.8 rating on G2 Live in Hours Verified Contact Data MCP & API Enabled Buying Signals Live Across every account, 24/7 Signal Agent Acme Corp : Q4 revenue beat by 18%, CRO calls out enterprise expansion SEC Filing 2m New CRO appointed at Snowflake LinkedIn 8m Stripe posted 12 new SDR roles Indeed 14m Clari files for IPO at $10bn valuation Crunchbase 22m Revolut announces US expansion plans Business Wire 35m Signals Intel Outreach Built for your role Intelligence that fits how you work Every role needs different intelligence at different moments. Salesmotion adapts to each. SDRs Enterprise AEs Sales Leaders CSMs RevOps Signal-driven prospecting from day one Stop guessing which accounts to target. Your Signal Agent surfaces hiring surges, funding rounds, and leadership changes across your territory. Your Outreach Agent drafts personalized messaging anchored to each signal. New SDRs ramp in weeks, not months, because the platform does the research legwork for them. \u201c Does the legwork and research for you. \u201d SDR, workforce analytics company 2x meetings booked Incredible Health Learn more Industry Focus Built for how your industry sells. Same platform, tailored intelligence. See how teams in your vertical use Salesmotion. Life Sciences For CROs, CDMOs, and clinical services teams selling into pharma. Clinical trial signals, earnings analysis, and AI meeting prep. Cytel cut research time by 50% See Salesmotion for Life Sciences IT Services & Consulting For hunters and account managers at IT services firms. Enterprise account intelligence with real-time signals and AI outreach. Frontify achieved 4x self-sourced revenue See Salesmotion for IT Services & Consulting SaaS Sales Teams For AEs, SDRs, and revenue teams at software companies. Signal-based selling with instant research and outreach. 42% faster sales velocity See Salesmotion for SaaS How Cytel\u2019s commercial team cut research time by 50% and accelerated account planning Cytel\u2019s commercial team was losing hours every week researching accounts before meeti"
+}

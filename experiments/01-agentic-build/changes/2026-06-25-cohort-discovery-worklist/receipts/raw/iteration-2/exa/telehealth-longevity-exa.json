@@ -1,0 +1,173 @@
+{
+  "tool": "exa_search",
+  "source": "exa.ai",
+  "captured_at": "2026-06-26T00:59:40Z",
+  "ok": true,
+  "input": {
+    "query": "direct to consumer longevity healthspan telehealth clinic NAD injections biomarker labs prescription",
+    "num_results": 25,
+    "type": "neural",
+    "category": "company",
+    "include_domains": [],
+    "exclude_domains": [],
+    "include_text": null,
+    "exclude_text": null
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "results": [
+    {
+      "rank": 1,
+      "title": "AgelessRx",
+      "url": "https://agelessrx.com/",
+      "domain": "agelessrx.com"
+    },
+    {
+      "rank": 2,
+      "title": "Kinsyn",
+      "url": "https://kinsyn.com/",
+      "domain": "kinsyn.com"
+    },
+    {
+      "rank": 3,
+      "title": "NADclinic- Producers of the worlds premium NAD+",
+      "url": "https://nadclinic.com/",
+      "domain": "nadclinic.com"
+    },
+    {
+      "rank": 4,
+      "title": "N\u00edvana | Concierge Health Optimization",
+      "url": "https://nivanalife.com/",
+      "domain": "nivanalife.com"
+    },
+    {
+      "rank": 5,
+      "title": "Zest",
+      "url": "https://zest.science/",
+      "domain": "zest.science"
+    },
+    {
+      "rank": 6,
+      "title": "BioAgeDiagnostics",
+      "url": "https://bioagediagnostics.com/",
+      "domain": "bioagediagnostics.com"
+    },
+    {
+      "rank": 7,
+      "title": "MyHealthspan",
+      "url": "https://myhealthspan.com/",
+      "domain": "myhealthspan.com"
+    },
+    {
+      "rank": 8,
+      "title": "The Longevity Lab - Aesthetics & Wellness",
+      "url": "https://longevitylabwellness.com/",
+      "domain": "longevitylabwellness.com"
+    },
+    {
+      "rank": 9,
+      "title": "Frame Longevity",
+      "url": "https://framelongevity.com/",
+      "domain": "framelongevity.com"
+    },
+    {
+      "rank": 10,
+      "title": "Welle",
+      "url": "https://linkedin.com/company/wellespan",
+      "domain": "linkedin.com"
+    },
+    {
+      "rank": 11,
+      "title": "MD Longevity Lab",
+      "url": "https://mdlongevitylab.com/",
+      "domain": "mdlongevitylab.com"
+    },
+    {
+      "rank": 12,
+      "title": "EGA Clinic",
+      "url": "https://egaclinic.com/",
+      "domain": "egaclinic.com"
+    },
+    {
+      "rank": 13,
+      "title": "Peak Healthspan",
+      "url": "https://peakhealthspan.com/",
+      "domain": "peakhealthspan.com"
+    },
+    {
+      "rank": 14,
+      "title": "Longevity Clinic",
+      "url": "https://longevity4000.com/",
+      "domain": "longevity4000.com"
+    },
+    {
+      "rank": 15,
+      "title": "The Longevity Lab",
+      "url": "https://longevitylab.clinic/",
+      "domain": "longevitylab.clinic"
+    },
+    {
+      "rank": 16,
+      "title": "ReGenesis Longevity Clinic",
+      "url": "https://regenesisalberta.com/",
+      "domain": "regenesisalberta.com"
+    },
+    {
+      "rank": 17,
+      "title": "ACCA Longevity Clinic",
+      "url": "https://accalongevityclinic.com/",
+      "domain": "accalongevityclinic.com"
+    },
+    {
+      "rank": 18,
+      "title": "James Clinic",
+      "url": "https://jamesclinic.com/",
+      "domain": "jamesclinic.com"
+    },
+    {
+      "rank": 19,
+      "title": "Jung+ Longevity",
+      "url": "https://junglongevity.com/",
+      "domain": "junglongevity.com"
+    },
+    {
+      "rank": 20,
+      "title": "Longevity Labs Inc.",
+      "url": "https://longevitylabs.io/",
+      "domain": "longevitylabs.io"
+    },
+    {
+      "rank": 21,
+      "title": "Longevity Center | Europe",
+      "url": "https://linktr.ee/longevity_center",
+      "domain": "linktr.ee"
+    },
+    {
+      "rank": 22,
+      "title": "Althera Alternative Care",
+      "url": "https://altheraclinic.com/",
+      "domain": "altheraclinic.com"
+    },
+    {
+      "rank": 23,
+      "title": "nuBioAge",
+      "url": "https://nubioage.com/",
+      "domain": "nubioage.com"
+    },
+    {
+      "rank": 24,
+      "title": "Long Life Med - Direct Primary Care, with Longevity & Functional Medicine",
+      "url": "https://longlifemed.com/",
+      "domain": "longlifemed.com"
+    },
+    {
+      "rank": 25,
+      "title": "PLAIS Medical Group",
+      "url": "https://plais.ai/",
+      "domain": "plais.ai"
+    }
+  ],
+  "result_count": 25
+}

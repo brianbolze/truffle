@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:08:04Z",
+  "ok": true,
+  "input": {
+    "domain": "jiminny.com",
+    "url": "https://jiminny.com/"
+  },
+  "status": 200,
+  "final_url": "https://jiminny.com/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "Jiminny | Powerful Revenue & Sales Intelligence",
+  "description": "Jiminny\u2019s AI-powered revenue and sales intelligence solutions unlock conversation insights and unleash your team\u2019s potential. \u2713 Try it free today!",
+  "text_excerpt": "Jiminny | Powerful Revenue & Sales Intelligence Back to homepage Product Products AI Notetaker Conversation intelligence GTM intelligence Integrations Features Features Call Recording Sales coaching Call transcription CRM logging Competitive intelligence Pipeline management For Teams For Teams Reps Managers Execs Case Studies All Case Studies How Scoro Shortened the Sales Cycle Using Jiminny 11% revenue growth (month on month) 62% reduction in customer churn Resources Resources Blog Knowledge Base Events Podcasts Success Stories Latest blog posts Visit Blog How AI CRM Filling Improves Accuracy for Sales Teams What is GTM Intelligence? Careers Sign In Book a Demo Turn Conversations Into Revenue with AI Jiminny captures and analyzes every email, phone and video call - so Revenue Leaders can see what\u2019s winning deals and coach what\u2019s not. Book a Demo Find Out More Try full features for 14 days. No credit card required See how it works \u2022 1:30 Trusted by 100s of Revenue Teams How It Works From Conversation to Closed Won Get started quickly and effortlessly with Jiminny\u2019s streamlined 3-step process designed to improve your revenue generation. Step 1 Jiminny records every interaction Effortlessly integrate data from various sources into a unified system. Step 2 AI extracts insights Jiminny\u2019s AI uncovers valuable insights and improves performance. Step 3 Insights Synced to CRM House critical GTM insights in your CRM, right where they belong. Step 4 Increase conversion rates and revenue See your team go from strength to strength. 4.6 out of 5 stars \"Without the clear view this tool provides, I wouldn't be as fair a manager nor a good coach to my team\" Andrea Sales Manager Book a Demo Find Out More Try full features for 14 days. No credit card required 11 % ARR growth achieved by Jiminny customer, Connectd See Case Study 20 % Increase in av. order value, achieved by Cision See Case Study 37 % Reduction in churn achieved by Lemon.io See Case Study For Execs Finally trust your CRM as the source of truth for critical insights and the launchpad for growth, with Jiminny. Board-ready insight. True performance visibility. Competitive advantage direct from your market. \"Jiminny has enabled our business to excel when it comes to coaching\" Stephen S, Sales Director Learn more For Managers Get the right insights to develop your team, exceed expectations and create impact across the business. Unrivalled pipeline visibility. Coaching tools that drive revenue. AI that powers a mor"
+}

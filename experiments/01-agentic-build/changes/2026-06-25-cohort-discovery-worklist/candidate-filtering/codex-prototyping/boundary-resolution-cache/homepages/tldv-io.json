@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:08:01Z",
+  "ok": true,
+  "input": {
+    "domain": "tldv.io",
+    "url": "https://tldv.io/"
+  },
+  "status": 200,
+  "final_url": "https://tldv.io/",
+  "content_type": "text/html",
+  "title": null,
+  "description": null,
+  "text_excerpt": "Product & Integrations Usecases tl;dv for Sales Pricing Login Book a Demo Get tl;dv - Free forever Login Book a Demo The AI Notetaker built for Team Collaboration tl;dv is where your team captures knowledge, finds answers, and automates meeting workflows. Any meeting insight, instantly sent to your favourite apps. Get tl;dv - Free forever Book a Demo 4.7 (450) 2M+ users GDPR & SOC2 \u2705 NO BOT REQUIRED Action Items Product demo 01/15/26 Discovery call 02/08/26 Engineering Sync 03/12/26 Sprint Planning 04/20/26 Daily Standup 05/05/26 \"The forefront of AI-driven meeting Intelligence\" As seen in tl;dv is trusted by over 2+ million worldwide Never take meeting notes again - this AI note taker does it for you Our AI note taker delivers crisp, AI-generated summaries instantly after every meeting. Customize your meeting notes, MEDDIC in Japanese, Smart AI Topics in Spanish, or your own AI summary format. We've got you covered. More on AI Notes Your browser does not support the video tag. No more manual updates - this AI notetaker handles CRM and follow-ups too Stop wasting time on data entry \u2013 our AI notetaker handles it after every call. tl;dv automatically logs call notes and CRM outcomes for you. Deals, leads, and action items? All recorded where you need them, ready to close that deal. Our AI even drafts follow-up emails and next-step tasks based on the conversation, so you can just review and hit \"Send.\" With tl;dv, your post-meeting busywork is now on autopilot, letting you focus on more important tasks (like smashing this quarter!). More on integrations Your browser does not support the video tag. Get AI aggregated insights from your company's meetings Nobody needs to spend HOURS watching dull meeting recordings \u2013 our AI note-taker can analyze customer calls, track feature requests, or recap on multiple conversations, bringing aggregated insights and trends from your meetings, you would not have otherwise captured. Get AI-generated reports straight to your inbox and empower your team to save time, spot trends effortlessly, and optimize meeting intelligence for smarter decision-making. More on AI Reports Your browser does not support the video tag. AI Prompt Examples for Teams SALES MANAGER What are the common objections from prospects on this week's calls? PRODUCT OWNER Please compile any feedback on our Wayfwire product line from this month's CS calls. MARKETING MANAGER What were the pain points identified on this month's discovery calls? Connect them to a s"
+}

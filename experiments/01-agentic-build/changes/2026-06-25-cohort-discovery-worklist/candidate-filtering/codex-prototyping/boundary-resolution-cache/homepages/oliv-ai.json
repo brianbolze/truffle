@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:08:00Z",
+  "ok": true,
+  "input": {
+    "domain": "oliv.ai",
+    "url": "https://oliv.ai/"
+  },
+  "status": 200,
+  "final_url": "https://oliv.ai/",
+  "content_type": "text/html; charset=utf-8",
+  "title": "Oliv AI Agents for Revenue Teams",
+  "description": "Oliv analyzes every deal in-depth, and the AI agents take care of the work for you so you can focus on strategy and closing deals",
+  "text_excerpt": "Oliv AI Agents for Revenue Teams Solutions Agents Oliv Tech Mission Pricing Resources Login Book 7m Chat Login Book a 7m Chat Solutions By Stage Enterprise & Mid-Market Scale revenue. Agents manage the process layer. Startup Revenue from day one. Agents grow with you. By Teams Sales Account Management RevOps Enablement Customer Success Onboarding Sales Development Agents Super Agents Olivia Chief AI Staff I see everything across your team and dispatch the right sub-agent for each task. Oliver Chief GTM Engineer I learn how your team operates and turn it into the rules every other agent follows. Agent Suite Request an Agent Prospector I find the right accounts and sort out outreach; for every rep, every morning. CRM Manager I ensure every account, contact, and field in your CRM stays current, continuously. Deal Driver I keep sales managers in sync with their team and on top of pipeline. Researcher I research target accounts to find the best approach to engage them. See All Agents OlivTech Context Capture Every meeting, email, call and document captured automatically and written to the right account, contact, and deal. Nothing depends on just memory. Agents Phone Calls Meetings CRM 100+ SaaS GTM Context Graph Object Graph Every signal lands on the right account, contact, and opportunity, even across multi-threaded deals Pains & Needs Budget Availability Decision Timeline Decision Criteria Success Criteria Champion Identification Economic Buyer Competitive Landscape Next Steps Risk Signals MEDDIC Scoring SPIN Signals Stakeholder Map Objection Tracking Buying Committee Pains & Needs Budget Availability Decision Timeline Decision Criteria Success Criteria Champion Identification Economic Buyer Competitive Landscape Next Steps Risk Signals MEDDIC Scoring SPIN Signals Stakeholder Map Objection Tracking Buying Committee Sentiment Analysis Follow-up Priority Forecast Category Technical Fit Trigger Events Persona Fit Outreach Relevance ICP Match Score Initial Interest Signals First Meeting Readiness Mutual Action Plan Proof of Concept Status Legal & Security Flags Pricing Sensitivity Multi-threading Score Sentiment Analysis Follow-up Priority Forecast Category Technical Fit Trigger Events Persona Fit Outreach Relevance ICP Match Score Initial Interest Signals First Meeting Readiness Mutual Action Plan Proof of Concept Status Legal & Security Flags Pricing Sensitivity Multi-threading Score Renewal Risk Score Expansion Signals Executive Sponsor Health Product Adoption"
+}

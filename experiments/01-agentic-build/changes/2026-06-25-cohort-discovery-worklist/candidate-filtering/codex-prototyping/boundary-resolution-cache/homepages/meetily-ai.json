@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:45Z",
+  "ok": true,
+  "input": {
+    "domain": "meetily.ai",
+    "url": "https://meetily.ai/"
+  },
+  "status": 200,
+  "final_url": "https://meetily.ai/",
+  "content_type": "text/html; charset=UTF-8",
+  "title": "Meetily (Meetly AI) - Privacy-First AI Meeting Assistant | Otter.ai & Granola Alternative",
+  "description": "The most secure AI meeting note taker. 100% local transcription. Pluggable AI summaries (local, BYOK, or Hosted AI). No meeting bots. Community Edition free. GDPR & HIPAA compliant by design.",
+  "text_excerpt": "Meetily (Meetly AI) - Privacy-First AI Meeting Assistant | Otter.ai & Granola Alternative Skip to main content meetily 12.7K Pricing Use Cases Meetily Pro Blog Docs Download Toggle menu meetily Close menu Pricing Use Cases Meetily Pro Blog Docs Download #1 Privacy first Ai Meeting Assistant 251K+ users 12.7K+ Github Stars The Privacy-First AI Meeting Assistant & Note Taker Meetily records, transcribes, and summarizes meetings, 100% on your device. Audio and data never leave. Private, secure, in your control. Buy Now Start free trial Talk to Us Open-Source Core Works with Zoom, Teams, Meet GDPR & HIPAA Ready Offline ready Watch Demo meetily Recording Summary Meetings Import Previous Meetings View All Product Strategy Meeting Today, 2:30 PM 45 min Q4 Planning Session Yesterday, 10:00 AM 1h 15min Team Sync Dec 15, 3:00 PM 30 min Live Transcription Ready Copy Transcript Copy 0.0 - 0.0 LIVE Listening for speech... 0 : 00 AI Enhanced Summary Copy as Markdown Regenerate Section Summary \u2022 Meeting focused on discussing upcoming product announcements \u2022 Reviewed event participation including platform reinvesting event Key Decisions \u2022 Focus on complete feature sets rather than individual MVCs \u2022 Aim for three announcements per stage at the commit event Action Items \u2022 Campaign managers need to confirm QCon participation \u2022 Prepare product announcements for commit event Import Audio File Import an audio file to create a new meeting with transcripts Select Audio File MP4, M4A, WAV, MP3, FLAC, OGG, AAC, MKV, WebM, WMA Cancel Interactive Demo \u2022 Click tabs to explore or let it auto-play Join our discord channel \ud83c\udf8a Privacy-First AI Copilot for meetings Loved by teams worldwide #1 Trending Repository on GitHub - Loved by the open source community 12.7K Stars 251.6K Downloads 1.3K Forks Rated 5/5 on G2 u/selfhosted Feb 12, 2025 AI Meeting note taker and meeting minutes generator : Building a Fully Open-Source Local LLM-Based AI for Recording and transcribing meetings. Read more \u2192 Dev.to Feb 13, 2025 A Journey into Building a Privacy-First AI Meeting Tool for transcription, summarization and Note-Taking. Read more \u2192 @jeffscottward 1 week ago Every SaaS will live just long enough to have an open source competitor kill them Read more \u2192 aisharenet Feb 13, 2025 AI assistant for generating meeting minutes, transcribing and generating meeting summaries in real-time Read more \u2192 @sujithx007 5 days ago AI Meeting note taker and meeting minutes generator : Building a Fully Open-Source Local"
+}

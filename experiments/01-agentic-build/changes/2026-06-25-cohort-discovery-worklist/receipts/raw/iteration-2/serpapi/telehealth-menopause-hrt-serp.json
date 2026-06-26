@@ -1,0 +1,166 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T00:58:37Z",
+  "ok": true,
+  "input": {
+    "query": "online menopause HRT telehealth providers women's health 2026",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "Online menopause telehealth providers offer accessible, symptom-based Menopause Hormone Therapy (MHT) with packages typically costing between $100 and $200 per month. Patients can easily connect with board-certified, menopause-trained clinicians for virtual consultations, lab work reviews, and direct prescription delivery to their homes or preferred local pharmacies.",
+    "Leading telehealth platforms for menopause and women's health include:"
+  ],
+  "headings": [
+    "What to Expect"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "policylab.us",
+      "title": "Best Affordable Online HRT Providers for 2026 ... - Policy Lab",
+      "link": "https://policylab.us/hormone-replacement-therapy/hrt-online/"
+    },
+    {
+      "index": 1,
+      "source": "Winona",
+      "title": "Menopause Specialists \\u0026 Hormone Replacement Therapy in Illinois",
+      "link": "https://bywinona.com/menopause-specialist-in-illinois?srsltid=AfmBOoo43unkGS9TtZAh29BSto6zFS2dpHQWD4AMqjRfhduDil0xWdPG"
+    },
+    {
+      "index": 2,
+      "source": "Gennev",
+      "title": "Home - Gennev: Expert Virtual Menopause Care",
+      "link": "https://gennev.com/"
+    },
+    {
+      "index": 3,
+      "source": "Yahoo Health",
+      "title": "Your complete guide to getting menopause help online",
+      "link": "https://health.yahoo.com/your-body/womens-health/menopause/article/menopause-telehealth-145825668.html"
+    },
+    {
+      "index": 4,
+      "source": "Winona",
+      "title": "Online HRT \\u0026 Menopause Specialists in Washington - Winona",
+      "link": "https://bywinona.com/menopause-specialist-in-washington?srsltid=AfmBOornglReddkKuRb_53DIFLTPd_awFPdwYU6dPsO91oa45T9xXxOQ"
+    },
+    {
+      "index": 5,
+      "source": "Everyday Health",
+      "title": "8 Best Places to Buy HRT Online in 2026 - Everyday Health",
+      "link": "https://www.everydayhealth.com/medical-products/online-hrt/"
+    },
+    {
+      "index": 6,
+      "source": "jointhecollaborative.com",
+      "title": "The Collaborative: Home",
+      "link": "https://jointhecollaborative.com/"
+    },
+    {
+      "index": 7,
+      "source": "YouTube",
+      "title": "Menopause in 2026- Grand Rounds with Dr. Heather Hirsch",
+      "link": "https://www.youtube.com/watch?v=9fTL_4YtyCY"
+    },
+    {
+      "index": 8,
+      "source": "Elektra Health",
+      "title": "Elektra Health - Smashing The Menopause Taboo, Together",
+      "link": "https://elektrahealth.com/"
+    },
+    {
+      "index": 9,
+      "source": "Flow Space",
+      "title": "Online Menopause Treatment: 15 Telehealth Companies ...",
+      "link": "https://www.theflowspace.com/reproductive-health/menopause/online-menopause-treatment-2941951/"
+    },
+    {
+      "index": 10,
+      "source": "Yahoo Health",
+      "title": "6 New Places You Can Access Menopause Care - Yahoo Health",
+      "link": "https://health.yahoo.com/your-body/womens-health/menopause/articles/5-places-access-menopause-care-225342369.html"
+    },
+    {
+      "index": 11,
+      "source": "YouTube",
+      "title": "How Can Telemedicine Prescribe HRT?",
+      "link": "https://www.youtube.com/watch?v=SuJyOzHU2rw"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Best Affordable Online HRT Providers for 2026 ... - Policy Lab",
+      "link": "https://policylab.us/hormone-replacement-therapy/hrt-online/",
+      "snippet": "We've analyzed several telehealth hormone therapy providers to see how they compare on price, safety, and overall quality of care. The goal is ...",
+      "displayed_link": "https://policylab.us \u203a hormone-replacement-therapy \u203a hrt..."
+    },
+    {
+      "position": 2,
+      "title": "Online Menopause Treatment: 15 Telehealth Companies ...",
+      "link": "https://www.theflowspace.com/reproductive-health/menopause/online-menopause-treatment-2941951/",
+      "snippet": "A number of telehealth companies are now offering online menopause treatment you can receive no matter where you live.",
+      "displayed_link": "https://www.theflowspace.com \u203a reproductive-health"
+    },
+    {
+      "position": 3,
+      "title": "Elektra Health - Smashing The Menopause Taboo, Together",
+      "link": "https://elektrahealth.com/",
+      "snippet": "Menopause care for the 21st-century woman. A first-of-its-kind platform with telemedicine care, evidence-based education, 1:1 support, and a private community.",
+      "displayed_link": "https://elektrahealth.com"
+    },
+    {
+      "position": 4,
+      "title": "Virtual Menopause Care | Women's Care",
+      "link": "https://atriumhealth.org/medical-services/prevention-wellness/womens-health/virtual-menopause-care",
+      "snippet": "With virtual menopause care, Atrium Health Women's Care makes it easy to see a menopause-certified specialist when and where it works for you.",
+      "displayed_link": "https://atriumhealth.org \u203a womens-health \u203a virtual-meno..."
+    },
+    {
+      "position": 5,
+      "title": "Online HRT & Menopause Specialists in Washington",
+      "link": "https://bywinona.com/menopause-specialist-in-washington?srsltid=AfmBOoq0zxmZKj3Z1aUVmubY0aVYq9MQSgn_9Jd985wiT1QqAccG089d",
+      "snippet": "Winona's telehealth menopause care gives you quick access to a dedicated, board-certified physician who specializes in menopause, all from the comfort of your ...",
+      "displayed_link": "https://bywinona.com \u203a menopause-specialist-in-washin..."
+    },
+    {
+      "position": 6,
+      "title": "Virtual Women's Health Clinic",
+      "link": "https://womenshealthct.com/virtual-care/",
+      "snippet": "Expert telehealth care for irregular periods, hormonal concerns, birth control, fertility, menopause, and more \u2014 from a compassionate Women's Health Connecticut ...",
+      "displayed_link": "https://womenshealthct.com \u203a virtual-care"
+    },
+    {
+      "position": 7,
+      "title": "The Collaborative: Home",
+      "link": "https://jointhecollaborative.com/",
+      "snippet": "We provide whole-person, evidence-based thyroid care that aligns with menopause support, using comprehensive labs, targeted treatment, and integrated HRT ...",
+      "displayed_link": "https://jointhecollaborative.com"
+    },
+    {
+      "position": 8,
+      "title": "Your complete guide to getting menopause help online",
+      "link": "https://health.yahoo.com/your-body/womens-health/menopause/article/menopause-telehealth-145825668.html",
+      "snippet": "Navigating the world of hot flashes is easier than ever \u2014 but are telehealth options like Gennev and Midi a good idea?",
+      "displayed_link": "https://health.yahoo.com \u203a ... \u203a Menopause"
+    },
+    {
+      "position": 9,
+      "title": "Home - Gennev: Expert Virtual Menopause Care",
+      "link": "https://gennev.com/",
+      "snippet": "Our menopause-trained doctors and registered dietitian nutritionists (RDNs) work together to provide personalized care to every patient. Insurance Accepted.",
+      "displayed_link": "https://gennev.com"
+    }
+  ]
+}

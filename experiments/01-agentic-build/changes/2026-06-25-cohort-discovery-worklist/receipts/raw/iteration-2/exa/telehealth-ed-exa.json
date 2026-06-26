@@ -1,0 +1,173 @@
+{
+  "tool": "exa_search",
+  "source": "exa.ai",
+  "captured_at": "2026-06-26T00:59:39Z",
+  "ok": true,
+  "input": {
+    "query": "direct to consumer erectile dysfunction telehealth subscription brands sildenafil tadalafil chewable online clinic",
+    "num_results": 25,
+    "type": "neural",
+    "category": "company",
+    "include_domains": [],
+    "exclude_domains": [],
+    "include_text": null,
+    "exclude_text": null
+  },
+  "schema_drift": [],
+  "cost": {
+    "usd": 0.022
+  },
+  "results": [
+    {
+      "rank": 1,
+      "title": "BlueChew",
+      "url": "https://bluechew.com/",
+      "domain": "bluechew.com"
+    },
+    {
+      "rank": 2,
+      "title": "Veedma",
+      "url": "https://veedma.com/",
+      "domain": "veedma.com"
+    },
+    {
+      "rank": 3,
+      "title": "Truman Health",
+      "url": "https://trumanhealth.ca/",
+      "domain": "trumanhealth.ca"
+    },
+    {
+      "rank": 4,
+      "title": "DirectMeds",
+      "url": "https://directmeds.com.au/",
+      "domain": "directmeds.com.au"
+    },
+    {
+      "rank": 5,
+      "title": "Jack Health",
+      "url": "https://jack.health/",
+      "domain": "jack.health"
+    },
+    {
+      "rank": 6,
+      "title": "Riize Health",
+      "url": "https://riizehealth.com/",
+      "domain": "riizehealth.com"
+    },
+    {
+      "rank": 7,
+      "title": "Men's Vitality MD",
+      "url": "https://mensvitalitymd.com/",
+      "domain": "mensvitalitymd.com"
+    },
+    {
+      "rank": 8,
+      "title": "Aion Wellness",
+      "url": "https://aionwellness.com/",
+      "domain": "aionwellness.com"
+    },
+    {
+      "rank": 9,
+      "title": "Apollo Health Products",
+      "url": "https://apollofor.me/",
+      "domain": "apollofor.me"
+    },
+    {
+      "rank": 10,
+      "title": "Mens LLC",
+      "url": "https://mens.com/",
+      "domain": "mens.com"
+    },
+    {
+      "rank": 11,
+      "title": "Erectile Dysfunction Treatment",
+      "url": "https://edpillsforever.com/",
+      "domain": "edpillsforever.com"
+    },
+    {
+      "rank": 12,
+      "title": "James Smith",
+      "url": "https://bluepills4men.com/",
+      "domain": "bluepills4men.com"
+    },
+    {
+      "rank": 13,
+      "title": "Pharmacy One",
+      "url": "https://pharmacyrxone.com/",
+      "domain": "pharmacyrxone.com"
+    },
+    {
+      "rank": 14,
+      "title": "Choice Men's Health",
+      "url": "https://choicemenshealth.com/",
+      "domain": "choicemenshealth.com"
+    },
+    {
+      "rank": 15,
+      "title": "Men\u2019s Edge Medical Center",
+      "url": "https://mensedgemedical.com/",
+      "domain": "mensedgemedical.com"
+    },
+    {
+      "rank": 16,
+      "title": "Revived Medical",
+      "url": "https://revivedmedical.com/",
+      "domain": "revivedmedical.com"
+    },
+    {
+      "rank": 17,
+      "title": "Vigorous Solutions Ltd",
+      "url": "https://vigoroussolutions.com/",
+      "domain": "vigoroussolutions.com"
+    },
+    {
+      "rank": 18,
+      "title": "LAKEVIEW PHARMACY IN RACINE S.C.",
+      "url": "https://lakeviewpharmacy.com/",
+      "domain": "lakeviewpharmacy.com"
+    },
+    {
+      "rank": 19,
+      "title": "MediSuite",
+      "url": "https://medisuite.com/",
+      "domain": "medisuite.com"
+    },
+    {
+      "rank": 20,
+      "title": "Direct Meds LLC",
+      "url": "https://direct-meds.com/",
+      "domain": "direct-meds.com"
+    },
+    {
+      "rank": 21,
+      "title": "MYZE",
+      "url": "https://myze.com/",
+      "domain": "myze.com"
+    },
+    {
+      "rank": 22,
+      "title": "Arya Clinic",
+      "url": "https://aryaclinic.ae/",
+      "domain": "aryaclinic.ae"
+    },
+    {
+      "rank": 23,
+      "title": "Menspro Health\u2122",
+      "url": "https://menspro.com/",
+      "domain": "menspro.com"
+    },
+    {
+      "rank": 24,
+      "title": "Mangoceuticals, Inc.",
+      "url": "https://mangorx.com/",
+      "domain": "mangorx.com"
+    },
+    {
+      "rank": 25,
+      "title": "ReflexMD Inc.",
+      "url": "https://reflexmd.com/",
+      "domain": "reflexmd.com"
+    }
+  ],
+  "result_count": 25
+}

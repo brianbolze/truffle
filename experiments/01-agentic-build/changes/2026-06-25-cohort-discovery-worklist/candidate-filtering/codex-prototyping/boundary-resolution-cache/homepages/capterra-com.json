@@ -1,0 +1,10 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:07:41Z",
+  "ok": false,
+  "input": {
+    "domain": "capterra.com",
+    "url": "https://capterra.com/"
+  },
+  "error": "HTTP 403: Forbidden"
+}

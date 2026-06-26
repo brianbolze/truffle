@@ -1,0 +1,736 @@
+{
+  "tool": "page_extraction_probe",
+  "source": "direct_http_fetch",
+  "captured_at": "2026-06-26T03:34:17Z",
+  "ok": true,
+  "input": {
+    "id": "telehealth-policy-lab-trt",
+    "cohort": "telehealth",
+    "facet": "mens_health_trt",
+    "rank": 1,
+    "url": "https://policylab.us/testosterone-replacement-therapy/online-trt/"
+  },
+  "schema_drift": [],
+  "cost": {
+    "credits": 0,
+    "usd": 0
+  },
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "error": null,
+  "raw_html_path": "receipts/raw/page-extraction/html/telehealth-policy-lab-trt.html",
+  "title": "The Best Online TRT Clinics of 2026: What to Know Before You Choose - Policy Lab",
+  "text": "The Best Online TRT Clinics of 2026: What to Know Before You Choose - Policy Lab Skip to content Menu Menu Find Trials Resources Diversity in Clinical Research Clinical Research for Older Populations Clinical Research for Compensation Clinical Trial Information for Parents What Is A Clinical Trial? What is Wegovy What is Ozempic What Is Hormone Replacement Therapy? Hormone Replacement Therapy for Menopause What Is Testosterone Replacement Therapy? Signs of Low Testosterone and When To Consider TRT TRT vs. Steroids: What\u2019s the Difference? TRT Side Effects: What to Expect TRT Results: What to Expect & How Long It Takes How Much Does TRT Cost (With and Without Insurance) The Best Online TRT Clinics of 2026: What to Know Before You Choose Best Places to Buy Topical Testosterone Online Conditions Treatments Online Hormone Replacement Therapy Providers Post A Trial Last Updated on 22 May 2026 The Best Online TRT Clinics of 2026: What to Know Before You Choose Home / What Is Testosterone Replacement Therapy? / The Best Online TRT Clinics of 2026: What to Know Before You Choose Written by Alex Evans | PharmD, MBA Pharmacist \u00b7 Medical Writer \u00b7 Product Development & Licensing Written by Alex Evans | PharmD, MBA Pharmacist \u00b7 Medical Writer \u00b7 Product Development & Licensing See Full Bio Editorial Disclosure: Our clinical reviews are independent and science-led. To support our research and testing, we may earn a commission if you sign up or purchase through certain links on this page at no additional cost to you. This does not influence our rankings or medical evaluations. Fatigue that sleep does not fix. A libido that has quietly disappeared. Brain fog, irritability, and a body that no longer responds to the gym the way it used to. These can be symptoms of low testosterone 1 , a condition that affects up to 13.8 million men in the United States 2 . Yet many men never receive a diagnosis or treatment. Testosterone replacement therapy (TRT) has been a recognized treatment for clinically low testosterone for decades 3 . What has changed is access. Telehealth platforms now allow patients to consult with licensed clinicians, complete lab work, and receive prescribed medications without visiting a traditional urology or endocrinology office. But the market is noisy. Dozens of online TRT clinics compete for attention, each promising transparent pricing, expert care, and fast results. The reality is more complicated. Pricing structures vary dramatically, from flat monthly subscriptions to pay-per-service models where the true cost only becomes clear after multiple appointments. Some clinics prescribe FDA-approved testosterone, while others rely on compounded formulations from partner pharmacies. Cancellation policies range from genuinely flexible to effectively non-refundable. And not every provider requires the lab work and ongoing monitoring that safe TRT demands. Here, we\u2019ll look at five online TRT providers: Male Excel, Peter MD, Hone Health, Fountain TRT, and Defy Medical. We\u2019ll cover verified pricing, medication formats, clinical oversight, cancellation policies, fees that may not be obvious upfront, and real customer feedback. The goal is not to declare a winner, but to give you the specific details you need to make an informed decision based on your priorities. Quick Picks Best overall provider: Male Excel Best for beginners: Hone Health Best for flexible care: Defy Medical Best value: PeterMD Best for concierge support: Fountain TRT Male Excel earns the overall confidence pick because it combines BBB accreditation with an A+ rating, a 4.6-star Trustpilot rating across 4,772+ reviews, publishes membership and starting medication prices, but final cost depends on dose, a daily microdosing protocol that differentiates it from weekly-injection competitors, unlimited provider access, and a 90-day Excel Advantage Guarantee. Hone Health also holds BBB A+ accreditation and a larger Trustpilot review base. The providers reviewed here excel in different areas, so scores reflect strengths within each care model rather than a single universal ranking. For more insight on how our team vets, qualifies, and ranks providers, review our full methodology here . Top 5 Clinics At A Glance Provider TRT Formats Offered Monthly Membership Typical All-In Cost Best For Get Started maleexcel.com Injections, topical cream $99/mo + $99 start kit (one-time) From $219/mo (membership + injections) Men who prefer daily low-dose cream over weekly injections View Offer \u2197 getpetermd.com Injections, cream; broad medication menu All-inclusive (no separate fee) $79\u2013$139/mo (by commitment tier) Men who want predictable subscription pricing and no separate medication charges View Offer \u2197 honehealth.com Injections, cream, troches $129/mo Plus $149/mo Premium From $174 to start meds billed separately First-time TRT patients who want a structured, guided process View Offer \u2197 fountaintrt.com Injections, cream, selected add-ons All-inclusive (no separate fee) $150\u2013$199 per 4 wks (by commitment tier) Men who want bundled pricing and concierge-style text support View Offer \u2197 defymedical.com Injections, topical lotions/gels, pellets, nasal gel No membership (pay-per-service) <$250/mo yr 1 <$200/mo after Men who want delivery options beyond injections and cream, or need to run labs through their own insurance View Offer \u2197 What to Consider When Choosing an Online TRT Clinic Below are some things to consider when choosing a TRT clinic. TRT Formats: Injections, Creams, Gels, and More Online clinics typically offer injectable testosterone cypionate, which is the most common format. Some also offer topical creams, gels, pellets, nasal gels, or oral therapies 3 . Cream and gel are not the same product. Creams are typically compounded, while gels are more often FDA-approved formulations like AndroGel 3,4 . Not every clinic offers every format, and availability often depends on what their partner pharmacy compounds. FDA-Approved vs. Compounded Testosterone FDA-approved testosterone products have undergone formal regulatory review for safety and efficacy 5 . Compounded medications are mixed by specialty pharmacies for individual patients and are not FDA-approved. Compounded products are widely used when clinically appropriate, but they are not equivalent to FDA-approved products in terms of regulatory review. Ask your provider which type you are receiving. Pricing Transparency Advertised monthly prices rarely tell the whole story. Some clinics bundle labs, consultations, and medication into one fee. Others charge separately for each component. Entry costs, lab processing fees, and medication costs can add $50 to $200 per month on top of a base subscription. Always calculate the true all-in monthly cost before committing. Clinical Oversight Any reputable TRT provider requires blood work before prescribing and at regular intervals afterward. Look for clinics that mandate labs at least every six months, offer video consultations with licensed physicians or mid-level providers, and adjust dosing based on lab results rather than symptoms alone. Cancellation and Refund Policies Some clinics allow cancellation at any time. Others require multi-month commitments or auto-renew with short notice windows. Shipped medications are also generally non-refundable. Read the fine print before entering payment information. Red Flags Here are red flags to look out for with any potential TRT provider: Before you sign up: Legitimate providers should be transparent from the start. Use caution if a clinic does not clearly disclose pricing before onboarding, does not identify its prescribing clinicians, or makes specific outcome guarantees. Before your first prescription: A reputable TRT provider should require baseline bloodwork before prescribing testosterone. Baseline testing commonly includes total testosterone, and may include free testosterone, LH, FSH, hematocrit/CBC, PSA when age- or risk-appropriate, and other labs based on the clinician\u2019s judgment. Be equally wary of clinics that skip a real clinical consultation. If the process relies only on an asynchronous questionnaire without clear clinician review, that may be a sign to ask more questions before proceeding. After you\u2019re a patient: Red flags here include no scheduled follow-up labs to monitor hematocrit, estradiol, and PSA (which can be affected by TRT); no discussion of risks or contraindications; and early promotion of add-ons like HCG, peptides, or other compounds before your baseline treatment plan is established. A trustworthy TRT provider treats ongoing monitoring as a core part of treatment. 1. Male Excel: Daily Microdosing With a Membership Model Best For: Patients interested in a daily microdosing TRT protocol Our Score: 4.5/5 | Trustpilot: 4.6\u2605 (4,772 reviews) Overview Male Excel centers its TRT program on a daily microdosing model, either daily injections or daily testosterone cream, marketed as a way to support steadier testosterone levels than traditional weekly injection protocols. Unlike many competitors, Male Excel publishes the components of its pricing upfront, though the final cost still depends on your prescribed dosage. On Trustpilot, Male Excel holds a 4.6-star rating across 4,772 reviews at the time of writing. The BBB lists Male Excel as accredited with an A+ rating, with 38 complaints filed in the last 3 years (16 closed in the last 12 months). Patients praise the daily microdosing approach and unlimited provider access. Complaints tend to focus on shipping/billing issues and inconsistent communication after onboarding. The trade-off: Male Excel offers a differentiated clinical protocol, transparent baseline pricing, and strong BBB credentials, but the membership-plus-medication structure means you\u2019re paying $99/month even in months when you don\u2019t need active care, and patients are locked into Male Excel\u2019s contracted pharmacies. You cannot transfer your prescription to a local pharmacy. Pricing Breakdown Component Cost Initial consultation package (includes at-home hormone test + treatment plan) $99 (one-time) Monthly medical membership (required for treatment) $99/mo Testosterone cypionate injections (starting dose) From $120/mo Testosterone Lipoderm Cream (starting dose) From $132/mo Shipping & handling Charged separately Final medication cost varies based on prescribed dosage. Any change in your dosage will change your monthly medication cost. What\u2019s Included $99/mo membership with unlimited access to your provider and care team At-home blood test measuring testosterone, estradiol, DHEA-S, Free T3 (thyroid), and PSA, processed through Male Excel\u2019s affiliated lab, AEMA Labs Structured 60-day reassessments with your provider Comprehensive labs every 6 months Choice of daily testosterone injection or daily Lipoderm cream Thyroid treatment when clinically indicated 90-day Excel Advantage Guarantee: refund of 3 months of membership fees if symptoms don\u2019t improve after following your provider\u2019s plan How It Works Complete a free online assessment Order the $99 consultation package, which includes an at-home blood test kit Provider reviews labs and designs a daily microdosing protocol (injection or cream) Medications shipped from a Male Excel partner pharmacy (note: prescriptions cannot be transferred to your own local pharmacy) Reassessments every 60 days; comprehensive labs every 6 months Service Availability Male Excel is not available in Alaska, Arkansas, Connecticut, Hawaii, Idaho, Louisiana, Mississippi, New Hampshire, or Rhode Island. Insurance \u274c Does not accept insurance, including Medicare and Medicaid \u2705 HSA/FSA eligible (plan-dependent, verify with your administrator) \u274c No insurance concierge Cancellation & Refund Policy Cancel your membership at any time Per Male Excel\u2019s terms, all sales are final and fees are non-refundable in whole or in part The 90-day Excel Advantage Guarantee is the one structured exception: if you follow your provider\u2019s plan for 90 days and symptoms don\u2019t improve, three months of membership fees are refunded (medication and consultation costs are not covered by the guarantee) Customer Reviews: What Real Users Say What people praise Daily microdosing protocol for more stable hormone levels Unlimited access to providers Strong BBB accreditation (A+ rating) What people complain about Medication pricing clarity: publishes membership and starting medication prices, but final cost depends on dose. Total monthly spend may not be fully clear until after enrollment and prescribing Communication gaps: Some patients report inconsistent follow-up from care teams Limited format options: Only injections and cream confirmed; no pellets or nasal gel What third-party reviewers note BBB Accredited with A+ rating Cream is confirmed; gel is not confirmed as an available option In short: Male Excel stands out for its microdosing approach and A+ BBB rating, and publishes membership and starting medication prices, but final cost depends on dose but final medication costs may be less clear for price-conscious patients. Clinical Oversight & Safety Licensed providers manage all treatment plans Consultations available through the platform with unlimited access Medications sourced from a fixed compounding pharmacy partner Labs required before prescribing and every 6 months Medications offered: injectable testosterone (daily microdose), topical cream Company: BBB Accredited, A+ rating Contact: website support portal and phone The Fine Print Membership and starting medication prices are published. Medication pricing not disclosed: The $99/mo membership does not include medication; true all-in cost is unknown Fixed compounding pharmacy: You cannot choose your own pharmacy Compounded medications only: No FDA-approved testosterone products offered Cream vs. gel: Cream is confirmed; traditional gel is not confirmed All medication sales final: No refunds on shipped medications 90-day guarantee is membership fees only: Does not cover medication costs Daily microdosing is the standard protocol: Patients who prefer weekly injections may not be accommodated Pros and Cons \u2705 Pros A+ BBB accreditation Unique daily microdosing protocol Unlimited provider access included in membership Free initial assessment to evaluate candidacy Cancel or pause membership at any time \u274c Cons Medication costs not publicly disclosed Membership and starting medication prices are published but cost depends on dose. True all-in monthly cost unknown before onboarding Fixed compounding pharmacy with no patient choice Cream confirmed but gel not available Communication complaints appear in multiple reviews Bottom Line Male Excel earns the top overall score in this comparison. It works well for patients who want a structured TRT program with BBB A+ credentials and a 90-day Excel Advantage Guarantee tied to actual symptom improvement. The daily microdosing protocol and unlimited provider access support patients who prefer a clinically active care model over a hands-off subscription. The main trade-off is final pricing clarity. Male Excel publishes its membership fee and starting medication prices, but the total monthly cost depends on prescribed dose and shipping. Patients who want fully bundled pricing with no separate medication charges may prefer Peter MD. Patients who want a broader range of medication formats such as pellets or nasal gel may prefer Defy Medical. Patients who want a more guided onboarding experience may want to compare Male Excel with Hone Health. Male Excel may be a good fit for patients who are specifically interested in a daily microdosing approach and value ongoing access to their provider and care team. Its BBB accreditation and A+ rating may also be reassuring for patients who place weight on third-party business credentials. The main trade-off is pricing clarity. While Male Excel publishes its membership fee and starting medication prices, the final monthly cost depends on the prescribed medication, dose, and shipping fees. Patients who prioritize predictable all-in pricing may want to compare Male Excel with Peter MD or Fountain TRT, while those seeking a broader range of medication formats may want to compare it with Defy Medical. Get Started with Male Excel Today 2. Peter MD : Transparent All-Inclusive Pricing With a Broad Medication Menu Best For: Patients who want predictable monthly costs and a wide range of treatment options Our Score: 4.4/5 | Trustpilot: 4.7\u2605 (13,968+ reviews) Overview Peter MD offers one of the more transparent pricing models among the providers reviewed here. The all-inclusive subscription bundles medication, labs, and consultations into a single monthly fee, with commitment-tier discounts that bring costs as low as $79/mo on an annual plan. The checkout process is notably upfront about what is and is not included. Peter MD previously displayed a 4.7-star Trustpilot rating across more than 13,968 reviews, the largest review volume among the providers on this list. Positive reviews commonly cited a straightforward onboarding process, responsive customer support, and access to a broad range of treatment options, including testosterone cypionate, enclomiphene, anastrozole, HCG, peptides, and growth hormone. However, at the time of review, Peter MD\u2019s Trustpilot profile had been removed and was no longer publicly accessible. Trustpilot states that removed profiles are taken down when a business is found to be in violation of its guidelines, although additional details were not publicly provided. As far as BBB is concerned, Peter MD is not BBB accredited and has a 3.4/5 average across a small number of customer reviews. Some complaints describe delayed or unfulfilled orders, refund issues, and medication received at or near expiration. These concerns do not necessarily mean most customers have a negative experience, but they are worth weighing carefully alongside Peter MD\u2019s prior large volume of positive Trustpilot reviews, especially for patients considering multi-month discounted plans. The trade-off: For patients who value predictable monthly costs, Peter MD is one of the clearer options reviewed here, with a broader medication menu than many competitors. However, the lack of BBB accreditation and the nature of some publicly posted complaints may give cautious consumers reason to review the terms, refund policy, and recent customer feedback carefully before enrolling. Pricing Breakdown Plan Length Monthly Cost Total Upfront Savings vs. Monthly Month-to-Month $139/mo $139 N/A 6-Month Plan $109/mo $654 $360/yr (22% off) 12-Month Plan $79/mo $948 $720/yr (43% off) Pricing is all-inclusive of medication, provider consultations, and comprehensive hormone panels every 3 months. Follow-up labs have a $25 processing fee if using insurance or $295 without insurance. Shipping is free and discreet. No separate medication charges. Veterans and first responders qualify for the BEARIT program, which provides free TRT for the first 3 months, then $77/mo thereafter. What\u2019s Included Testosterone cypionate and/or other prescribed medications Comprehensive hormone panel every 3 months Unlimited physician consultations (video) Free discreet shipping Not included: follow-up lab processing fees ($25 with insurance, $295 without) How It Works Complete an online health assessment Receive and complete a comprehensive hormone panel Schedule a video consultation with a licensed physician Physician creates a treatment plan from a broad medication menu Medications ship to your door; labs repeated every 3 months Timeline: Most patients receive their first shipment within 1 to 2 weeks of completing labs. Service Availability Peter MD is not available in every U.S. state, and the states where TRT is not offered may differ from the states where Peter MD\u2019s lab panels are available. That means coverage for one part of the program does not guarantee coverage for another. Insurance \u274c Does not accept insurance \u2705 HSA/FSA eligible \u274c No insurance concierge Cancellation & Refund Policy Cancel anytime after the initial 6-month commitment period Auto-renewal applies; 48-hour notice required before renewal to cancel No refunds on medications or completed subscription periods Customer Reviews: What Real Users Say What people praise Transparent, predictable all-inclusive pricing Broad medication menu (testosterone, enclomiphene, HCG, anastrozole, peptides) Large and responsive care team with unlimited consult access Veterans/first responders BEARIT program Peter MD could be a strong value-for-money TRT option, especially compared with clinics that charge separately for consultations, labs, and medication. Some feel that Peter MD\u2019s checkout process is more transparent than many competitors. What people complain about Lab fees: Follow-up labs may include a $25 processing fee with insurance or $295 without insurance Commitment required: Discounted plans require a multi-month subscription Auto-renewal: The 48-hour cancellation window before renewal may be easy to miss Refund delays: Some customers report slow refund processing in public reviews and BBB complaints State availability: Peter MD is not available in California, Texas, and several other states What third-party reviewers note Peter MD is not BBB accredited. Some publicly posted BBB complaints allege issues involving delayed or unfulfilled orders, refund delays, and medication expiration-date concerns. These complaints should be considered alongside Peter MD\u2019s much larger Trustpilot review base and strong overall rating. In short: Peter MD offers predictable pricing and a broad treatment menu, making it appealing for patients who want a clearer monthly cost. However, the lack of BBB accreditation and some publicly posted customer complaints are factors prospective patients may want to review carefully before choosing a longer commitment plan. Clinical Oversight & Safety Licensed physicians prescribe all treatments Video consultations with unlimited access Medications sourced from compounding pharmacies Comprehensive hormone panel required every 3 months Lab partner not publicly disclosed; in-person blood draws at certified labs Medications offered: testosterone cypionate, enclomiphene, anastrozole, HCG, peptides, growth hormone Founded 2014 by Bryan Henry, FNP specializing in endocrinology Headquartered in Vero Beach, FL Contact: website portal and support channels The Fine Print Lab processing fees: $25 with insurance, $295 without insurance for follow-up labs 6-month minimum commitment: Discounted plans require at least a 6-month upfront payment Auto-renewal: Subscriptions auto-renew; 48-hour cancellation window before renewal date No refunds: No refunds on any completed subscription period or shipped medication Compounded medications: All medications are from compounding pharmacies BBB status: Peter MD is not BBB accredited. Some publicly posted BBB complaints allege issues involving delayed or unfulfilled orders, refund delays, and medication expiration-date concerns. State restrictions: Not available in California, Texas, and several other states; verify before enrolling Pros and Cons \u2705 Pros Transparent all-inclusive pricing model with predictable monthly costs Broadest medication menu in this comparison (enclomiphene, HCG, anastrozole, peptides, GH) Largest Trustpilot review volume with strong rating Comprehensive labs every 3 months included Unlimited physician consultations BEARIT program offers free first 3 months for veterans and first responders \u274c Cons Follow-up lab fees add cost ($25 or $295 depending on insurance) Minimum 6-month commitment on discounted plans Auto-renewal with only 48-hour cancellation window Refunds are limited; completed subscription periods and shipped medications are generally non-refundable Not BBB accredited Bottom Line Peter MD is a strong option on price transparency and medication breadth, with predictable monthly costs and a wider menu than most TRT providers. The Trustpilot signal is genuinely impressive at nearly 14,000 reviews. The BEARIT program is also a meaningful benefit for veterans and first responders. The main considerations are the BBB profile, state restrictions, and subscription terms. Patients in California or Texas cannot use Peter MD, and availability should be verified before enrolling. For patients in eligible states, the publicly posted BBB complaints, including allegations involving delayed or unfulfilled orders, refund delays, and medication expiration-date concerns, are worth reviewing alongside Peter MD\u2019s strong Trustpilot rating and large review volume. Patients who want zero commitment may prefer Defy Medical\u2019s pay-per-service model. Those who want a smoother, more guided onboarding experience may prefer Hone Health. Get Started with Peter MD Today 3. Hone Health : Guided Onboarding With a Tiered Subscription Best For: Men new to TRT who want a structured, step-by-step process Our Score: 4.2/5| Trustpilot: 4.8\u2605 (11,150+ reviews) Overview The primary concern with Hone Health is that the true all-in monthly cost for TRT is not disclosed until after you complete labs and a consultation. Hone\u2019s advertised $25/month Basic tier is often mistaken for the TRT entry point, but it\u2019s actually a longevity and lab-testing membership that does not include hormone therapy. The actual TRT tier is Plus at $129/month, which starts at $174 to cover initial labs and your first month. Premium runs $149/month and starts at $214. Medication costs are billed separately and vary based on dosage and modality. The Plus TRT tier includes 9 initial biomarkers, while the Premium tier includes 50+ 6 . On Trustpilot, Hone holds a 4.8-star rating across more than 11,150 reviews. Users consistently praise the at-home lab kits, the ease of the onboarding process, and the quality of clinician consultations. Hone is also BBB accredited with an A+ rating, though BBB complaints reveal a different theme: billing disputes, charges after cancellation, and unresponsive customer service. The clinical experience tends to be strong; billing and support issues appear to be the main themes in negative complaints. The trade-off is clear: Hone offers one of the smoothest onboarding experiences in the market, but you pay a premium for that convenience, and the final medication cost is not fully visible upfront. Pricing Breakdown Tier Monthly Cost Cost to Start Basic $25/mo $25 Plus $129/mo From $174 Premium $149/mo From $214 Cost to start includes initial labs and first month of membership. Medications are billed separately. Lab kits and live consultations are included at the Plus and Premium levels. What\u2019s Included Comprehensive lab tests every six months (Plus and Premium) Live video consultations with licensed clinicians (Plus and Premium) Medications shipped directly to your door, free shipping included Ability to switch tiers at any time How It Works Choose a membership tier and complete the initial lab test (at-home or in-lab) If labs suggest TRT eligibility, a confirmatory test may be required Provider reviews your results in a video consultation and creates a treatment plan Medication ships directly to you Comprehensive labs are repeated every six months Insurance \u274c Does not accept insurance \u2705 HSA/FSA eligible (plan-dependent, confirm with your plan administrator) \u274c No insurance concierge Cancellation & Refund Policy Cancel anytime by contacting the support team Cancellation takes effect at the end of the current billing cycle Membership fees are non-refundable Customer Reviews: What Real Users Say What people praise Smooth, beginner-friendly onboarding process Convenient at-home lab kits Knowledgeable and responsive clinicians during consults What people complain about Final medication cost is not clear until after labs and consult Slow response times for refill and shipping questions Billing disputes and unexpected charges after cancellation appear in BBB complaints The $25 Basic tier is often mistaken for the TRT entry point when the actual TRT tier (Plus) starts at $129/mo plus medication What third-party reviewers note BBB Accredited with A+ rating, though billing-related complaints are a recurring theme LegitScript Approved In short: Hone provides a polished onboarding experience and strong institutional credentials, but final medication costs are not visible until after intake. Complaints appear to focus more on billing and support than on the clinical consultation experience. Clinical Oversight & Safety Licensed physicians and nurse practitioners prescribe treatment through Hone-affiliated medical practices (Broad Health and related state-specific entities) Video consultations required before prescribing on Plus and Premium tiers Medications sourced from contracted compounding pharmacies Comprehensive labs every 6 months on Plus and Premium tiers; confirmatory testing required if initial results suggest TRT eligibility Medications offered: testosterone cypionate (injectable), topical cream, troches Company credentials: BBB Accredited (A+ rating), LegitScript Approved Contact: website support portal, email (support@honehealth.com), and by phone (833- 444-4483) The Fine Print Tier confusion: The advertised $25/mo Basic tier is a longevity and lab-testing membership that does not include hormone therapy. The TRT tier is Plus at $129/mo, with medication billed separately Initial costs: Plus starts at $174 to cover initial labs and first month; Premium starts at $214 Lab cadence: Comprehensive labs every 6 months on Plus and Premium tiers Cream confirmed as a topical option; traditional gel is not offered as a standard format Compounded medications only: Hone does not dispense FDA-approved branded testosterone products State availability: Not available in all states; check the website for current restrictions Cancellation: Cancel anytime through support; takes effect at end of current billing cycle Pros and Cons \u2705 Pros Excellent onboarding experience for first-time TRT patients At-home lab kits eliminate clinic visits High Trustpilot rating with large review volume (4.8 stars, 11,150+ reviews) BBB Accredited with A+ rating Cancel anytime with no long-term commitment Free discreet shipping included \u274c Cons Final medication cost not disclosed until after labs and consult Tier structure can be confusing: the cheapest tier does not include TRT Support responsiveness complaints are common Billing disputes appear repeatedly in BBB complaints All medications are compounded, not FDA-approved branded products Bottom Line Hone Health is well suited for men who are new to TRT and want a guided, technology-forward process with convenient at-home labs and straightforward video consults. The onboarding experience is among the best in this space, and the BBB A+ accreditation adds institutional credibility. The trade-offs are clear. If upfront pricing transparency is a priority, Peter MD offers a clearer all-inclusive model. If you want a broader medication menu including HCG and enclomiphene, Defy Medical or Fountain TRT may be a better fit. Experienced TRT patients who want full clinical flexibility may want to look at Defy Medical as well before choosing. Get Started with Hone Health Today 4. Fountain TRT : All-Inclusive Care With Direct Physician Access Best For: Patients who want bundled pricing and concierge-style text support Our Score: 4.0/5 | Trustpilot: 4.4\u2605 (280+ reviews) Overview Fountain TRT bundles testosterone medication, labs, and physician consultations into a flat-rate subscription with concierge-style 24/7 support. The Starter plan at $199 per 4 weeks requires no upfront commitment, while the Pro plan brings the effective cost down to roughly $150 per 4 weeks with a 12-month upfront payment of $1,799. Co-founded by Dr. Doron Stember, a board-certified urologist with 10+ years in men\u2019s health, Fountain positions itself as the concierge option in the online TRT space. The affiliated medical practice is Quaker Ridge Medical, PLLC. On Trustpilot, FountainTRT holds a 4.4-star rating across over 280 reviews, the smallest review volume on this list by a wide margin. Reviewers consistently praise the responsiveness of the care team, the quality of provider consultations, and the simplicity of the all-inclusive pricing. Negative reviews are limited but typically center on patients with complex needs feeling that Fountain\u2019s standardized protocols don\u2019t accommodate them. Note that Fountain operates a separate Trustpilot listing under FountainHRT (fountain.net) for its women\u2019s hormone therapy services; the 4.4-star figure above reflects the TRT-specific listing. We did not identify a BBB listing for Fountain TRT during our review. The trade-off: Fountain offers a clean, app-based, all-inclusive experience optimized for first-time TRT patients with straightforward needs. Patients with complex hormone profiles, or who want a wider ancillary medication menu, will find Fountain\u2019s options more limited than Defy Medical or Peter MD. Pricing Breakdown Plan Billing Total Upfront Starter $199/4 weeks $199 Standard $167/4 weeks (billed every 12 weeks) $499 Pro $150/4 weeks (billed every 48 weeks) $1,799 All plans include testosterone medication (cream or injection), labs, physician video consultations, shipping, taxes, and 24/7 concierge support. Patients in New York and New Jersey may incur additional lab costs not covered by the subscription. Tadalafil and anastrozole are available as optional add-ons at additional cost and are not included in the base subscription price. HCG is not listed as a standard offering. What\u2019s Included Injectable testosterone cypionate or topical testosterone cream Enclomiphene available where clinically appropriate Board-certified physician video consultations 24/7 concierge support via text and app Labs included (patients in NY and NJ may face additional lab costs) Free shipping with 2-day delivery Not included in base subscription: tadalafil, anastrozole (available as add-ons); HCG not currently listed as a standard offering How It Works Complete a 5-minute online assessment Purchase the assessment package, which includes lab work Lab samples processed at a partner lab (at-home draw available in select cities) Board-certified physician reviews results in a video consultation If approved, customized treatment plan created and medication ships within the 2-day delivery window Follow-up labs at 8 to 10 weeks, then every 6 months Service Availability Available in select states. Check availability for your state before signing up. Insurance \u274c Does not accept insurance \u2705 HSA/FSA accepted \u274c No insurance concierge; Fountain will provide a bill upon request for self-submission to your insurer Cancellation & Refund Policy Cancel anytime All sales are final per Fountain\u2019s Terms of Use: no refunds for services, treatments, or medications, even if unused Pro plan requires $1,799 upfront with no partial refund policy disclosed for early cancellation Customer Reviews: What Real Users Say What people praise All-inclusive subscription pricing with no surprise medication fees for core treatment Fast, app-based experience with concierge text support Board-certified urologist leadership Fast onboarding: timeline from sign-up to first medication can be as fast as 7 to 10 days What people complain about Smaller review base than all other providers in this comparison Limited medication menu: complex cases involving thyroid, growth hormone peptides, or advanced ancillaries are better served elsewhere Pro plan requires $1,799 upfront with no partial refund policy for early cancellation Patients in NY and NJ face additional lab costs not covered by the subscription What third-party reviewers note No BBB listing found Praised for simplicity and app design; noted as less suited for complex hormone cases than Defy Medical In short: Fountain TRT is a strong fit for first-time TRT patients with straightforward needs who value simplicity, speed, and concierge-style support. Patients with complex hormone profiles or who want broader ancillary access may find other providers to be a better fit for their needs. Patients who want the added security of BBB accreditation may want to consider Hone Health or Male Excel. Clinical Oversight & Safety Board-certified physicians prescribe and manage all treatment, including co-founder Dr. Doron Stember (board-certified urologist) Affiliated medical practice: Quaker Ridge Medical, PLLC Video consultations with text follow-up via 24/7 concierge support Medications sourced from compounding pharmacies Standard lab panel includes total testosterone, free testosterone, estradiol, CBC, CMP, and PSA Lab cadence: initial, then 8 to 10 weeks, then every 6 months Medications offered: testosterone cypionate (injections), testosterone cream, enclomiphene Optional add-ons: tadalafil, anastrozole Company: Fountain Wellness, LLC (operator); Quaker Ridge Medical, PLLC (affiliated medical practice) Contact: text, in-app messaging, 24/7 concierge support; support@fountainTRT.com The Fine Print NY and NJ lab exception: Patients in these states may face additional lab costs not covered by the subscription Pro plan upfront cost: $1,799 paid upfront with no partial refund policy for early cancellation All sales final: per Fountain\u2019s Terms of Use, no refunds for services, treatments, or medications, even if unused Tadalafil, anastrozole, and HCG are not included in the base subscription; tadalafil and anastrozole are available as add-ons Limited medication menu: no growth hormone peptides, thyroid management, or advanced ancillary protocols Smaller review base relative to all other providers reviewed here No BBB listing Pros and Cons \u2705 Pros Genuinely all-inclusive subscription for testosterone and core labs Board-certified urologist co-founder with 10+ years TRT experience Fast onboarding (7 to 10 days from sign-up to first medication) Concierge-style 24/7 support via text and app Cancel anytime on the Starter plan \u274c Cons Smallest review base on this list (282 reviews) No BBB listing Limited medication menu compared to Defy Medical or Peter MD Pro plan requires $1,799 upfront with no partial refund policy for early cancellation All sales final, including unused medications and services NY and NJ patients face additional lab costs not covered by the subscription Bottom Line Fountain TRT may be a good fit for first-time TRT patients who want a streamlined, app-based experience with bundled pricing, concierge-style support, and direct access to the care team. Its board-certified urologist leadership, simple subscription model, and relatively fast onboarding process help distinguish it from more traditional pay-per-service clinics. The main trade-offs are its smaller public review footprint, lack of an identifiable BBB listing, narrower medication menu, and strict refund terms. Its model appears best suited for patients with straightforward TRT needs rather than those seeking a wider range of ancillary medications or highly customized hormone-management protocols. Patients who want a broader medication menu may prefer Defy Medical or Peter MD, while those who value a larger review base and BBB accreditation may want to compare Fountain with providers such as Hone Health or Male Excel. Get Started with Fountain TRT Today 5. Defy Medical: Flexible Pay-Per-Service Care With Broad TRT Customization Best For: Experienced TRT patients who want treatment flexibility and more delivery formats. Our Score: 4.1/5 | Trustpilot: 4.8\u2605 (3,784+ reviews) Overview Defy Medical operates differently from every other provider in this comparison. Instead of a flat monthly subscription, Defy uses a pay-per-service model where patients pay separately for consultations, lab work, and medications. For some patients, this creates less predictable monthly costs. For others, it offers significantly more clinical flexibility and customization than the subscription platforms reviewed here. Defy is a concierge clinic established in 2010, headquartered in Tampa, FL, and led by Medical Director Dr. Justin Saya. It stands out for the breadth of testosterone delivery formats available. While most online TRT providers focus primarily on injections and compounded cream, Defy also offers pellets, topical lotions and gels, and nasal gel options. It is also the only provider reviewed here confirmed to offer both compounded testosterone and access to FDA-approved testosterone products, depending on the treatment plan and pharmacy fulfillment pathway. On Trustpilot, Defy holds a 4.8-star rating across more than 3,784 reviews. However, Defy Medical LLC is not BBB accredited and currently holds a BBB rating of C, citing failure to respond to one complaint and two complaints filed against the business during the reporting period. The trade-off is simplicity versus flexibility. Defy may appeal to experienced TRT patients or patients with more complex hormone-management needs, but its \u00e0 la carte pricing model and broader clinical menu can feel less streamlined for beginners compared with providers such as Hone Health or Fountain TRT. Pricing Breakdown Component Estimated Cost Initial consultation Varies based on provider and treatment complexity Follow-up consultations Pay-per-visit Lab work Separate cost; patients may use personal insurance for LabCorp testing Testosterone medication Varies by format and dose Average first-year cost Often under $250/month depending on protocol Ongoing maintenance Often under $200/month after stabilization Unlike the subscription-based providers reviewed here, Defy Medical separates provider visits, lab work, and medication costs rather than bundling them into a single monthly fee. What\u2019s Included Telehealth consultations with licensed medical providers Injectable testosterone options Topical testosterone lotions and gels Testosterone pellets Nasal testosterone gel options Ongoing lab monitoring Customized treatment plans Access to broader ancillary hormone-management therapies when clinically appropriate How It Works Complete an online intake and medical history review Complete baseline lab work through LabCorp or another approved partner lab Meet with a licensed provider through a telehealth consultation Receive an individualized treatment plan if clinically appropriate Medications ship from partner pharmacies Follow-up labs and consultations occur throughout treatment to monitor safety and effectiveness Service Availability Defy provides telemedicine care nationwide, with in-office services available at its Tampa, FL clinic. Patients should verify current state eligibility for specific protocols directly with Defy Medical before enrolling. Insurance \u274c Does not directly accept insurance for TRT treatment \u2705 Patients may use personal insurance for eligible lab work through LabCorp \u2705 HSA/FSA eligibility may apply depending on the patient\u2019s plan Cancellation & Refund Policy No monthly subscription, so patients are not locked into a recurring membership Consultations and completed services are typically non-refundable Shipped medications are typically non-refundable Patients can pause or discontinue treatment without canceling a contract Customer Reviews: What Real Users Say What people praise Broad range of TRT delivery options beyond injections and cream More individualized treatment planning than many subscription competitors Long, detailed consultations with clinicians who listen Flexibility for experienced TRT patients Ability to run labs through personal insurance in some cases What people complain about Less predictable pricing than bundled subscription clinics Some patients describe Defy as expensive when consultations, labs, medications, and supplements are combined Multiple separate charges for labs, consultations, and medication More complex onboarding process for first-time TRT patients A small number of public reviews and BBB complaints reference prescription delays or disputes over consultation fees What third-party reviewers note Defy Medical is not BBB accredited and currently holds a BBB rating of C, reflecting two complaints filed and one unresponded complaint during the reporting period. These complaints should be considered alongside Defy\u2019s much larger Trustpilot review base of more than 3,700 reviews at a 4.8-star rating. Reviewers commonly position Defy as a more customizable alternative to simplified subscription TRT platforms. In short: Defy Medical may appeal most to experienced TRT patients or patients who want greater flexibility in treatment formats and hormone-management options. Patients seeking a simple, bundled monthly subscription, or patients who place significant weight on BBB accreditation, may prefer providers such as Hone Health, Male Excel, Fountain TRT, or Peter MD. Clinical Oversight & Safety Licensed medical providers oversee all treatment plans Baseline lab work required before prescribing testosterone therapy Ongoing monitoring through follow-up labs and provider consultations Medications offered: injectable testosterone, topical lotions and gels, pellets, nasal gel Both compounded and FDA-approved testosterone products available depending on treatment plan and pharmacy fulfillment pathway Medical Director and lead practicing physician: Dr. Justin Saya, M.D., with a background in family medicine and integrative preventive medicine Company: Defy Medical LLC, established 2010, headquartered in Tampa, FL BBB status: Not Accredited; BBB Rating: C Contact: (813) 445-7342; Care@DefyMedical.com The Fine Print Pricing is not bundled into a flat monthly subscription Costs vary depending on medication format, dose, labs, and consultation frequency Follow-up appointments and labs may create higher long-term costs for some patients Patients should verify state availability for specific protocols before enrollment Some medication formats may not be available in every state Not BBB Accredited; current BBB rating of C reflects complaint volume and at least one unresponded complaint during the reporting period Defy operates as Defy Medical LLC with its only physical clinic in Tampa, FL Pros and Cons Pros \u2705 Broadest TRT format selection in this comparison \u2705 Only provider reviewed here offering both compounded and FDA-approved testosterone options \u2705 Flexible pay-per-service structure \u2705 Labs may be run through personal insurance \u2705 More customizable care model for experienced TRT patients \u2705 Strong Trustpilot rating (4.8\u2605) across a large review base \u2705 Operating since 2010, one of the longer track records in this comparison Cons \u274c Less predictable pricing than subscription clinics \u274c Multiple separate charges can increase overall cost \u274c More complicated onboarding process \u274c Not BBB Accredited; current BBB rating of C \u274c May feel less beginner-friendly than Hone Health or Fountain TRT Bottom Line Defy Medical stands out as one of the more customizable online TRT providers in this comparison. Its broader range of testosterone delivery formats, more flexible treatment structure, and access to both compounded and FDA-approved options may appeal to experienced TRT patients or patients who want options beyond standard injections and compounded cream. A 4.8-star Trustpilot rating across more than 3,700 reviews and an operating history dating to 2010 add weight to its long-term presence in the space. The trade-offs are price predictability, beginner-friendliness, and business credentialing. Defy\u2019s pay-per-service structure can produce a higher and less predictable monthly cost, and its BBB profile, currently a C rating without accreditation, sits behind providers like Male Excel and Hone Health, both BBB Accredited with A+ ratings. Patients who prefer a fully bundled monthly subscription, a more guided onboarding experience, or stronger third-party business credentials may feel more comfortable with providers such as Hone Health, Fountain TRT, or Peter MD. Patients who prioritize flexibility, broader medication access, individualized treatment planning, and a long operating track record may find Defy Medical to be a stronger fit. Visit Defy Medical Conclusion Choosing the right best online TRT clinic is less about ranking and more about the fit between the provider and your priorities. The right provider depends on what you prioritize: pricing transparency, clinical depth, medication options, or care model flexibility. Male Excel stands out for its daily microdosing protocol, BBB A+ accreditation, transparent baseline pricing, and 90-day Excel Advantage Guarantee, though final medication costs depend on the prescribed dose. Peter MD offers predictable subscription pricing and the broadest medication menu in this comparison. Hone Health offers a structured onboarding experience for beginners with at-home labs and BBB Accreditation, but does not fully disclose final medication costs upfront. Fountain TRT offers a bundled, concierge-style approach with text support, though its public review footprint is smaller. Defy Medical offers a more customizable pay-per-service model with broad format options. Regardless of which provider you choose, look for these core safeguards: blood work before any prescription, regular lab monitoring (at least every 6 months), video consultations with licensed clinicians, and a clear understanding of your total monthly cost before committing. Testosterone is a controlled substance that requires proper medical oversight. If a clinic skips baseline labs or appears to prescribe testosterone without a thorough evaluation, that is a reason to pause and ask more questions before moving forward. FAQs Do online TRT clinics require blood work before prescribing? All five providers reviewed here state that they require blood work before prescribing testosterone. This is an important part of responsible TRT care because lab results help clinicians confirm whether testosterone therapy is appropriate and monitor safety over time. If a clinic appears willing to prescribe testosterone without baseline labs or a meaningful clinical evaluation, that is a reason to pause and ask more questions before moving forward. How much do online TRT clinics cost per month? Costs vary widely depending on the provider, plan, medication, lab fees, and billing model. Among the providers reviewed here, advertised pricing ranges from Peter MD\u2019s $79/month annual plan to Fountain TRT\u2019s $199 per 4 weeks Starter plan. Hone Health\u2019s TRT membership starts at $129/month, but medication is billed separately. Male Excel charges a $99/month membership plus medication costs, while Defy Medical estimates average costs of under $250/month in the first year and under $200/month after that. Always calculate the all-in cost, including labs, memberships, consultations, shipping, and medications. Are online TRT clinics legitimate? The five providers reviewed here use licensed clinicians, require lab work, and prescribe medications through partner pharmacies or pharmacy networks. However, the quality, pricing transparency, cancellation policies, and follow-up processes vary by provider. Before enrolling with any online TRT clinic, confirm that it requires blood work, clearly identifies its prescribing clinicians, explains medication sourcing, and provides transparent pricing and cancellation terms. Do any online TRT clinics accept insurance? None of the five providers reviewed here accept insurance for TRT treatment itself. However, some allow HSA, FSA, or HRA funds depending on the provider and the patient\u2019s plan. Defy Medical also allows patients to use their own insurance for lab work through LabCorp, though reimbursement is not guaranteed. Always confirm coverage directly with your insurer or plan administrator. What is the difference between compounded and FDA-approved testosterone from online clinics? FDA-approved testosterone products have gone through FDA review for safety, effectiveness, quality, and manufacturing standards. Compounded testosterone is prepared by a compounding pharmacy for an individual patient and is not FDA-approved. Most online TRT clinics reviewed here primarily use compounded medications. Defy Medical is the only provider in this comparison confirmed to offer both compounded options and access to FDA-approved testosterone products. Can you cancel an online TRT subscription at any time? Cancellation policies vary. Hone Health and Male Excel allow cancellation of the membership, though cancellation generally applies at the end of the current billing period and fees may be non-refundable. Peter MD requires a minimum 6-month commitment on discounted plans and uses auto-renewal with a 48-hour cancellation window. Fountain TRT offers a no-commitment Starter plan, but longer plans require larger upfront payments. Defy Medical does not use a subscription model, so there is no monthly membership to cancel. Shipped medications and completed services are generally non-refundable across these providers. What red flags should you look for when choosing an online TRT clinic? Be cautious with any clinic that appears to prescribe testosterone without baseline blood work, does not clearly identify its prescribing clinicians, makes guaranteed outcome claims, or does not explain pricing and cancellation terms before payment. It is also worth asking how often follow-up labs are required, which pharmacy dispenses the medication, whether the testosterone is compounded or FDA-approved, and what happens if you need to pause, cancel, or adjust treatment. Do online TRT clinics prescribe injections, gels, or both? All five providers reviewed here offer injectable testosterone. Most also offer topical testosterone cream, which is typically compounded and is different from FDA-approved testosterone gels such as AndroGel. Traditional gel is not confirmed as a standard option for most of the providers reviewed here. Defy Medical appears to offer the broadest range of formats, including injections, topical lotions/gels, pellets, and nasal gel. Why is Policy Lab Reviewing Providers? Policy Lab receives over 1,000 visitors a day looking for innovative treatments and clinical trials actively recruiting participants. Men between 35 and 70 make up roughly 45% of our database, and men\u2019s health, including low testosterone, is a major focus for this group. By reviewing these providers, our goal is to offer an alternative telehealth path for men seeking a streamlined way to connect with a provider about TRT. Important: This article is for informational purposes only and does not constitute medical advice. Testosterone therapy requires a prescription from a licensed medical provider based on clinical evaluation and lab work. No medication should be started without proper medical oversight. References Kumar P, Kumar N, Thakur DS, Patidar A. Male hypogonadism: Symptoms and treatment. J Adv Pharm Technol Res . 2010;1(3):297-301. doi:10.4103/0110-5558.72420 AMA / medical style: Zhu A, Dupree JM, Andino J. What Is a Normal Testosterone Level for Young Men? AUANews . November Extra 2023. Published November 27, 2023. https://auanews.net/issues/articles/2023/november-extra-2023/what-is-a-normal-testosterone-level-for-young-men AMA / medical style: Endocrine Society. The Truth About Testosterone Treatments . Patient guide. Accessed April 27, 2026. https://www.endocrine.org/-/media/endocrine/files/patient-engagement/patient-guides/patient_guide_the_truth_about_testosterone_treatments.pdf ANDROGEL (testosterone gel) [prescribing information]. DailyMed. Updated October 22, 2025. Accessed April 27, 2026. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4e8d29b-8707-4d47-e053-2a95a90aecee U.S. Food and Drug Administration. Is it really \u201cFDA approved\u201d? FDA website. https://www.fda.gov/consumers/consumer-updates/it-really-fda-approved . Accessed April 27, 2026. Hone Health. Hone Health vs Hims: Which Is Best for TRT and Treating Low Testosterone? Updated February 27, 2026. Accessed May 7, 2026. https://honehealth.com/edge/hone-vs-hims-trt/ Home About Us Policy Lab Privacy Policy Terms Of Use Trials By Condition Illinois Indiana Iowa Kansas Michigan Minnesota Missouri Nebraska North Dakota Ohio South Dakota Wisconsin Connecticut Maine Massachusetts New Hampshire New Jersey New York Pennsylvania Rhode Island Vermont Alabama Arkansas Delaware Florida Georgia Kentucky Louisiana Maryland Mississippi North Carolina Oklahoma South Carolina Tennessee Texas Virginia Alaska Arizona California Colorado Hawaii Idaho Montana Nevada New Mexico Oregon Utah Washington Wyoming \u00a9 2025 Policy Lab Healthy Volunteers Clinical Trials Sponsors My Account \u00a9 2026 Policy Lab \u2022 Built with GeneratePress",
+  "text_chars": 56664,
+  "links": [
+    {
+      "href": "#content",
+      "text": "Skip to content",
+      "domain": null,
+      "position": 1
+    },
+    {
+      "href": "https://policylab.us/",
+      "text": "",
+      "domain": "policylab.us",
+      "position": 2
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/",
+      "text": "Find Trials",
+      "domain": "policylab.us",
+      "position": 3
+    },
+    {
+      "href": "https://policylab.us/resources/",
+      "text": "Resources",
+      "domain": "policylab.us",
+      "position": 4
+    },
+    {
+      "href": "https://policylab.us/resources/guide-clinical-trials-minorities/",
+      "text": "Diversity in Clinical Research",
+      "domain": "policylab.us",
+      "position": 5
+    },
+    {
+      "href": "https://policylab.us/resources/clinical-trial-guide-seniors-elderly/",
+      "text": "Clinical Research for Older Populations",
+      "domain": "policylab.us",
+      "position": 6
+    },
+    {
+      "href": "https://policylab.us/resources/research-studies-for-money/",
+      "text": "Clinical Research for Compensation",
+      "domain": "policylab.us",
+      "position": 7
+    },
+    {
+      "href": "https://policylab.us/resources/clinical-trial-guide-parents-children/",
+      "text": "Clinical Trial Information for Parents",
+      "domain": "policylab.us",
+      "position": 8
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/",
+      "text": "What Is A Clinical Trial?",
+      "domain": "policylab.us",
+      "position": 9
+    },
+    {
+      "href": "https://policylab.us/semaglutide/what-is-wegovy/",
+      "text": "What is Wegovy",
+      "domain": "policylab.us",
+      "position": 10
+    },
+    {
+      "href": "https://policylab.us/semaglutide/what-is-ozempic/",
+      "text": "What is Ozempic",
+      "domain": "policylab.us",
+      "position": 11
+    },
+    {
+      "href": "https://policylab.us/hormone-replacement-therapy/",
+      "text": "What Is Hormone Replacement Therapy?",
+      "domain": "policylab.us",
+      "position": 12
+    },
+    {
+      "href": "https://policylab.us/hormone-replacement-therapy/hrt-for-menopause/",
+      "text": "Hormone Replacement Therapy for Menopause",
+      "domain": "policylab.us",
+      "position": 13
+    },
+    {
+      "href": "https://policylab.us/testosterone-replacement-therapy/",
+      "text": "What Is Testosterone Replacement Therapy?",
+      "domain": "policylab.us",
+      "position": 14
+    },
+    {
+      "href": "https://policylab.us/testosterone-replacement-therapy/low-testosterone/",
+      "text": "Signs of Low Testosterone and When To Consider TRT",
+      "domain": "policylab.us",
+      "position": 15
+    },
+    {
+      "href": "https://policylab.us/testosterone-replacement-therapy/trt-vs-steroids/",
+      "text": "TRT vs. Steroids: What\u2019s the Difference?",
+      "domain": "policylab.us",
+      "position": 16
+    },
+    {
+      "href": "https://policylab.us/testosterone-replacement-therapy/trt-side-effects/",
+      "text": "TRT Side Effects: What to Expect",
+      "domain": "policylab.us",
+      "position": 17
+    },
+    {
+      "href": "https://policylab.us/testosterone-replacement-therapy/trt-results/",
+      "text": "TRT Results: What to Expect & How Long It Takes",
+      "domain": "policylab.us",
+      "position": 18
+    },
+    {
+      "href": "https://policylab.us/testosterone-replacement-therapy/cost/",
+      "text": "How Much Does TRT Cost (With and Without Insurance)",
+      "domain": "policylab.us",
+      "position": 19
+    },
+    {
+      "href": "https://policylab.us/testosterone-replacement-therapy/online-trt/",
+      "text": "The Best Online TRT Clinics of 2026: What to Know Before You Choose",
+      "domain": "policylab.us",
+      "position": 20
+    },
+    {
+      "href": "https://policylab.us/testosterone-replacement-therapy/topical-testosterone/",
+      "text": "Best Places to Buy Topical Testosterone Online",
+      "domain": "policylab.us",
+      "position": 21
+    },
+    {
+      "href": "https://policylab.us/condition-directory/",
+      "text": "Conditions",
+      "domain": "policylab.us",
+      "position": 22
+    },
+    {
+      "href": "https://policylab.us/treatment-directory/",
+      "text": "Treatments",
+      "domain": "policylab.us",
+      "position": 23
+    },
+    {
+      "href": "https://policylab.us/hormone-replacement-therapy/hrt-online/",
+      "text": "Online Hormone Replacement Therapy Providers",
+      "domain": "policylab.us",
+      "position": 24
+    },
+    {
+      "href": "https://policylab.us/post-your-clinical-trial-for-free/",
+      "text": "Post A Trial",
+      "domain": "policylab.us",
+      "position": 25
+    },
+    {
+      "href": "https://policylab.us/",
+      "text": "Home",
+      "domain": "policylab.us",
+      "position": 26
+    },
+    {
+      "href": "https://policylab.us/testosterone-replacement-therapy/",
+      "text": "What Is Testosterone Replacement Therapy?",
+      "domain": "policylab.us",
+      "position": 27
+    },
+    {
+      "href": "https://policylab.us/author/alex-evans/",
+      "text": "See Full Bio",
+      "domain": "policylab.us",
+      "position": 28
+    },
+    {
+      "href": "#references",
+      "text": "1",
+      "domain": null,
+      "position": 29
+    },
+    {
+      "href": "#references",
+      "text": "2",
+      "domain": null,
+      "position": 30
+    },
+    {
+      "href": "#references",
+      "text": "3",
+      "domain": null,
+      "position": 31
+    },
+    {
+      "href": "https://policylab.us/go/maleexceltrt",
+      "text": "Male Excel",
+      "domain": "policylab.us",
+      "position": 32
+    },
+    {
+      "href": "https://policylab.us/go/honetrt",
+      "text": "Hone Health",
+      "domain": "policylab.us",
+      "position": 33
+    },
+    {
+      "href": "https://policylab.us/go/petermdtrt",
+      "text": "PeterMD",
+      "domain": "policylab.us",
+      "position": 34
+    },
+    {
+      "href": "https://policylab.us/ranking-methodology/",
+      "text": "review our full methodology here",
+      "domain": "policylab.us",
+      "position": 35
+    },
+    {
+      "href": "https://policylab.us/go/maleexceltrt",
+      "text": "",
+      "domain": "policylab.us",
+      "position": 36
+    },
+    {
+      "href": "https://policylab.us/go/maleexceltrt",
+      "text": "View Offer \u2197",
+      "domain": "policylab.us",
+      "position": 37
+    },
+    {
+      "href": "https://policylab.us/go/petermdtrt",
+      "text": "",
+      "domain": "policylab.us",
+      "position": 38
+    },
+    {
+      "href": "https://policylab.us/go/petermdtrt",
+      "text": "View Offer \u2197",
+      "domain": "policylab.us",
+      "position": 39
+    },
+    {
+      "href": "https://policylab.us/go/honetrt",
+      "text": "",
+      "domain": "policylab.us",
+      "position": 40
+    },
+    {
+      "href": "https://policylab.us/go/honetrt",
+      "text": "View Offer \u2197",
+      "domain": "policylab.us",
+      "position": 41
+    },
+    {
+      "href": "#",
+      "text": "View Offer \u2197",
+      "domain": null,
+      "position": 42
+    },
+    {
+      "href": "https://www.defymedical.com/",
+      "text": "View Offer \u2197",
+      "domain": "defymedical.com",
+      "position": 43
+    },
+    {
+      "href": "#references",
+      "text": "3",
+      "domain": null,
+      "position": 44
+    },
+    {
+      "href": "#references",
+      "text": "5",
+      "domain": null,
+      "position": 45
+    },
+    {
+      "href": "https://policylab.us/go/maleexceltrt",
+      "text": "Male Excel:",
+      "domain": "policylab.us",
+      "position": 46
+    },
+    {
+      "href": "https://policylab.us/go/maleexceltrt",
+      "text": "Get Started with Male Excel Today",
+      "domain": "policylab.us",
+      "position": 47
+    },
+    {
+      "href": "https://policylab.us/go/petermdtrt",
+      "text": "Peter MD",
+      "domain": "policylab.us",
+      "position": 48
+    },
+    {
+      "href": "https://policylab.us/go/petermdtrt",
+      "text": "Get Started with Peter MD Today",
+      "domain": "policylab.us",
+      "position": 49
+    },
+    {
+      "href": "https://policylab.us/go/honetrt",
+      "text": "Hone Health",
+      "domain": "policylab.us",
+      "position": 50
+    },
+    {
+      "href": "https://policylab.us/go/honetrt",
+      "text": "Get Started with Hone Health Today",
+      "domain": "policylab.us",
+      "position": 51
+    },
+    {
+      "href": "https://fountaintrt.com/",
+      "text": "Fountain TRT",
+      "domain": "fountaintrt.com",
+      "position": 52
+    },
+    {
+      "href": "https://fountaintrt.com/",
+      "text": "Get Started with Fountain TRT Today",
+      "domain": "fountaintrt.com",
+      "position": 53
+    },
+    {
+      "href": "https://www.defymedical.com/",
+      "text": "Visit Defy Medical",
+      "domain": "defymedical.com",
+      "position": 54
+    },
+    {
+      "href": "https://auanews.net/issues/articles/2023/november-extra-2023/what-is-a-normal-testosterone-level-for-young-men",
+      "text": "https://auanews.net/issues/articles/2023/november-extra-2023/what-is-a-normal-testosterone-level-for-young-men",
+      "domain": "auanews.net",
+      "position": 55
+    },
+    {
+      "href": "https://www.endocrine.org/-/media/endocrine/files/patient-engagement/patient-guides/patient_guide_the_truth_about_testosterone_treatments.pdf",
+      "text": "https://www.endocrine.org/-/media/endocrine/files/patient-engagement/patient-guides/patient_guide_the_truth_about_testosterone_treatments.pdf",
+      "domain": "endocrine.org",
+      "position": 56
+    },
+    {
+      "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4e8d29b-8707-4d47-e053-2a95a90aecee",
+      "text": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4e8d29b-8707-4d47-e053-2a95a90aecee",
+      "domain": "dailymed.nlm.nih.gov",
+      "position": 57
+    },
+    {
+      "href": "https://www.fda.gov/consumers/consumer-updates/it-really-fda-approved",
+      "text": "https://www.fda.gov/consumers/consumer-updates/it-really-fda-approved",
+      "domain": "fda.gov",
+      "position": 58
+    },
+    {
+      "href": "https://honehealth.com/edge/hone-vs-hims-trt/",
+      "text": "https://honehealth.com/edge/hone-vs-hims-trt/",
+      "domain": "honehealth.com",
+      "position": 59
+    },
+    {
+      "href": "https://policylab.us/",
+      "text": "Home",
+      "domain": "policylab.us",
+      "position": 60
+    },
+    {
+      "href": "https://policylab.us/about-us/",
+      "text": "About Us",
+      "domain": "policylab.us",
+      "position": 61
+    },
+    {
+      "href": "https://policylab.us/privacy-policy/",
+      "text": "Policy Lab Privacy Policy",
+      "domain": "policylab.us",
+      "position": 62
+    },
+    {
+      "href": "https://policylab.us/terms-of-use/",
+      "text": "Terms Of Use",
+      "domain": "policylab.us",
+      "position": 63
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/conditions",
+      "text": "Trials By Condition",
+      "domain": "policylab.us",
+      "position": 64
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/illinois",
+      "text": "Illinois",
+      "domain": "policylab.us",
+      "position": 65
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/indiana",
+      "text": "Indiana",
+      "domain": "policylab.us",
+      "position": 66
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/iowa",
+      "text": "Iowa",
+      "domain": "policylab.us",
+      "position": 67
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/kansas",
+      "text": "Kansas",
+      "domain": "policylab.us",
+      "position": 68
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/michigan",
+      "text": "Michigan",
+      "domain": "policylab.us",
+      "position": 69
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/minnesota",
+      "text": "Minnesota",
+      "domain": "policylab.us",
+      "position": 70
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/missouri",
+      "text": "Missouri",
+      "domain": "policylab.us",
+      "position": 71
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/nebraska",
+      "text": "Nebraska",
+      "domain": "policylab.us",
+      "position": 72
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/north-dakota",
+      "text": "North Dakota",
+      "domain": "policylab.us",
+      "position": 73
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/ohio",
+      "text": "Ohio",
+      "domain": "policylab.us",
+      "position": 74
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/south-dakota",
+      "text": "South Dakota",
+      "domain": "policylab.us",
+      "position": 75
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/wisconsin",
+      "text": "Wisconsin",
+      "domain": "policylab.us",
+      "position": 76
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/connecticut",
+      "text": "Connecticut",
+      "domain": "policylab.us",
+      "position": 77
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/maine",
+      "text": "Maine",
+      "domain": "policylab.us",
+      "position": 78
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/massachusetts",
+      "text": "Massachusetts",
+      "domain": "policylab.us",
+      "position": 79
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/new-hampshire",
+      "text": "New Hampshire",
+      "domain": "policylab.us",
+      "position": 80
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/new-jersey",
+      "text": "New Jersey",
+      "domain": "policylab.us",
+      "position": 81
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/new-york",
+      "text": "New York",
+      "domain": "policylab.us",
+      "position": 82
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/pennsylvania",
+      "text": "Pennsylvania",
+      "domain": "policylab.us",
+      "position": 83
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/rhode-island",
+      "text": "Rhode Island",
+      "domain": "policylab.us",
+      "position": 84
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/vermont",
+      "text": "Vermont",
+      "domain": "policylab.us",
+      "position": 85
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/alabama",
+      "text": "Alabama",
+      "domain": "policylab.us",
+      "position": 86
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/arkansas",
+      "text": "Arkansas",
+      "domain": "policylab.us",
+      "position": 87
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/delaware",
+      "text": "Delaware",
+      "domain": "policylab.us",
+      "position": 88
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/florida",
+      "text": "Florida",
+      "domain": "policylab.us",
+      "position": 89
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/georgia",
+      "text": "Georgia",
+      "domain": "policylab.us",
+      "position": 90
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/kentucky",
+      "text": "Kentucky",
+      "domain": "policylab.us",
+      "position": 91
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/louisiana",
+      "text": "Louisiana",
+      "domain": "policylab.us",
+      "position": 92
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/maryland",
+      "text": "Maryland",
+      "domain": "policylab.us",
+      "position": 93
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/mississippi",
+      "text": "Mississippi",
+      "domain": "policylab.us",
+      "position": 94
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/north-carolina",
+      "text": "North Carolina",
+      "domain": "policylab.us",
+      "position": 95
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/oklahoma",
+      "text": "Oklahoma",
+      "domain": "policylab.us",
+      "position": 96
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/south-carolina",
+      "text": "South Carolina",
+      "domain": "policylab.us",
+      "position": 97
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/tennessee",
+      "text": "Tennessee",
+      "domain": "policylab.us",
+      "position": 98
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/texas",
+      "text": "Texas",
+      "domain": "policylab.us",
+      "position": 99
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/virginia",
+      "text": "Virginia",
+      "domain": "policylab.us",
+      "position": 100
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/alaska",
+      "text": "Alaska",
+      "domain": "policylab.us",
+      "position": 101
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/arizona",
+      "text": "Arizona",
+      "domain": "policylab.us",
+      "position": 102
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/california",
+      "text": "California",
+      "domain": "policylab.us",
+      "position": 103
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/colorado",
+      "text": "Colorado",
+      "domain": "policylab.us",
+      "position": 104
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/hawaii",
+      "text": "Hawaii",
+      "domain": "policylab.us",
+      "position": 105
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/idaho",
+      "text": "Idaho",
+      "domain": "policylab.us",
+      "position": 106
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/montana",
+      "text": "Montana",
+      "domain": "policylab.us",
+      "position": 107
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/nevada",
+      "text": "Nevada",
+      "domain": "policylab.us",
+      "position": 108
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/new-mexico",
+      "text": "New Mexico",
+      "domain": "policylab.us",
+      "position": 109
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/oregon",
+      "text": "Oregon",
+      "domain": "policylab.us",
+      "position": 110
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/utah",
+      "text": "Utah",
+      "domain": "policylab.us",
+      "position": 111
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/washington",
+      "text": "Washington",
+      "domain": "policylab.us",
+      "position": 112
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/l/wyoming",
+      "text": "Wyoming",
+      "domain": "policylab.us",
+      "position": 113
+    },
+    {
+      "href": "https://policylab.us/clinical-trials-for-healthy-volunteers/",
+      "text": "Healthy Volunteers",
+      "domain": "policylab.us",
+      "position": 114
+    },
+    {
+      "href": "https://policylab.us/clinical-trials/",
+      "text": "Clinical Trials",
+      "domain": "policylab.us",
+      "position": 115
+    },
+    {
+      "href": "https://policylab.us/sponsors/",
+      "text": "Sponsors",
+      "domain": "policylab.us",
+      "position": 116
+    },
+    {
+      "href": "/my-account/",
+      "text": "My Account",
+      "domain": null,
+      "position": 117
+    },
+    {
+      "href": "https://generatepress.com",
+      "text": "GeneratePress",
+      "domain": "generatepress.com",
+      "position": 118
+    }
+  ],
+  "link_count": 118
+}

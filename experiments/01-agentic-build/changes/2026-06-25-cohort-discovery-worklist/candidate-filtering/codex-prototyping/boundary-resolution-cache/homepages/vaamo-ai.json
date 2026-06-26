@@ -1,0 +1,15 @@
+{
+  "tool": "direct_http",
+  "captured_at": "2026-06-26T16:08:01Z",
+  "ok": true,
+  "input": {
+    "domain": "vaamo.ai",
+    "url": "https://vaamo.ai/"
+  },
+  "status": 200,
+  "final_url": "https://vaamo.ai/",
+  "content_type": "text/html; charset=UTF-8",
+  "title": "Vaamo.ai | Drive Sales Coaching Performance | Exclusively for sales teams",
+  "description": "Vaamo helps Sales Leaders turn coaching into a measurable performance lever \u2014 improving execution quality and closing the ~20% execution gap by standardising what top performers do differently.",
+  "text_excerpt": "Vaamo.ai | Drive Sales Coaching Performance | Exclusively for sales teams Solution Why Us Use Cases Pricing About Us Book a Demo Sales Team Coaching Performance Management Coach & Close More Helping Sales Leaders uncover what the top 10% of reps do differently in live sales calls - and turn those behaviors into measurable coaching actions in minutes . 40% avg. lift in close rates and clear visibility into coaching ROI. Book a demo What We Do 1:1 AI Prep for Structured Coaching Unlock what the top 10% of sales reps do differently in sales calls. Receive structured, personalized input before every 1:1 \u2014 grounded in real behavioral data, not opinion. 8 in 10 More Reps Perform Like Your Veteran Reps Know where each rep deviates from winning patterns. Vaamo delivers behavior-level recommendations tailored to lead types (A, B, C) \u2014 so coaching adapts to context, not generic scripts. ROI Know How Coaching Works Vaamo connects coaching actions to outcomes. What behaviors were coached, and how behavior changed. How close rates and CRM outcomes shifted. We're on your team Our multi-talented team members guide you to have a clear understanding of how to use the platform efficiently and integrate your custom industry-specific scenarios that are tailored to your unique business processes. How [ vaamo ] works in 3 steps step 1 Setting up integration. CRMs & Dialers We support seamless integration with 40+ popular tools like CRMs and dialers. [ vaamo ] is enriching customer cards in CRM with an intellectual summary and call transcription in the desired language. But it goes a step further: it also divides transcription by speaker roles and shows how emotionally engaged the customer was. step 2 Where each rep deviates from winning patterns Reveals what the top 10% of performers do differently in: Product presentation; Trust-building and Client engagement; Call structure & closing discipline; Flags execution gaps automatically before 1:1s. step 3 Turn every coaching cycle into measurable improvement Move from activity-based coaching to performance-based coaching. Vaamo delivers the data behind winning talk patterns for each rep and measures coaching impact after every cycle. Access full 1:1 coaching history \u2014 what was discussed, agreed, and achieved. Want more? Download presentation Get a presentation Please complete the form below to get a presentation By submitting data in this form, you agree to the processing of personal data and the privacy policy Download presentatio"
+}

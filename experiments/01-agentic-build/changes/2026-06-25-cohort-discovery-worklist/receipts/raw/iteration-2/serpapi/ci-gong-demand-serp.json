@@ -1,0 +1,90 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T01:00:44Z",
+  "ok": false,
+  "input": {
+    "query": "Gong alternatives conversation intelligence software Clari Chorus Avoma 2026",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [
+    "text_blocks[11].type='table' not in {'heading', 'list', 'paragraph'}"
+  ],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [],
+  "headings": [],
+  "references": [],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "10 Best Gong Alternatives & Competitors in 2026 for ...",
+      "link": "https://www.aviso.com/blog/gong-alternatives",
+      "snippet": "Gong's competitors fall into three buckets: dedicated CI tools (Chorus, Avoma), revenue intelligence and forecasting platforms (Aviso, Clari), ...",
+      "displayed_link": "https://www.aviso.com \u203a blog \u203a gong-alternatives"
+    },
+    {
+      "position": 2,
+      "title": "10 Best Gong Alternatives and Competitors in 2026",
+      "link": "https://www.salesforce.com/compare/gong-alternatives/",
+      "snippet": "10 best Gong alternatives and competitors for sales teams \u00b7 1. Agentforce Sales \u00b7 2. Chorus by ZoomInfo \u00b7 3. Salesloft \u00b7 4. Fireflies.ai \u00b7 5. Jiminny \u00b7 6. Avoma \u00b7 7.",
+      "displayed_link": "https://www.salesforce.com \u203a compare \u203a gong-alternati..."
+    },
+    {
+      "position": 3,
+      "title": "9 Best Gong Alternatives in 2026 (Ranked by Use Case)",
+      "link": "https://www.cuebo.ai/blog/gong-alternatives",
+      "snippet": "1. Chorus.ai (ZoomInfo Sales OS) \u00b7 2. Clari Copilot (formerly Wingman) \u00b7 3. Jiminny \u00b7 4. Avoma \u00b7 5. Fireflies.ai \u00b7 6. Otter.ai.",
+      "displayed_link": "https://www.cuebo.ai \u203a blog \u203a gong-alternatives"
+    },
+    {
+      "position": 4,
+      "title": "7 Best Gong Alternatives for Sales Teams (2026) | AmpUp",
+      "link": "https://www.ampup.ai/resources/gong-alternatives",
+      "snippet": "If you want cheaper conversation intelligence, look at Avoma or Chorus. If you want revenue/forecast intelligence, look at Clari or Salesloft.",
+      "displayed_link": "https://www.ampup.ai \u203a Resources"
+    },
+    {
+      "position": 5,
+      "title": "Clari vs Gong: Revenue intelligence for your GTM team",
+      "link": "https://www.avoma.com/blog/clari-vs-gong",
+      "snippet": "Gong is best for conversation intelligence, coaching, and integrated revenue workflows. Forecasting has improved significantly and works well for teams that ...",
+      "displayed_link": "https://www.avoma.com \u203a blog \u203a clari-vs-gong"
+    },
+    {
+      "position": 6,
+      "title": "Top 6 Gong Alternatives for Revenue Teams (2026)",
+      "link": "https://www.askelephant.ai/blog/top-gong-alternatives-for-revenue-teams",
+      "snippet": "If you need enterprise revenue forecasting, Clari is the strongest option. For budget-friendly transcription, Fireflies.ai and Fathom offer ...",
+      "displayed_link": "https://www.askelephant.ai \u203a Blog"
+    },
+    {
+      "position": 7,
+      "title": "Best Conversation Intelligence Software in 2026 | Gong or ...",
+      "link": "https://www.youtube.com/watch?v=23cDOdbpVMc",
+      "snippet": "Looking for the best conversation intelligence software in 2026? In this video, we compare Gong, CloudTalk, Chorus, HubSpot, and Genesys to ...",
+      "displayed_link": "30+ views \u00b7 2 weeks ago"
+    },
+    {
+      "position": 8,
+      "title": "Best Alternative to Gong: Why Demodesk Is the Top Choice ...",
+      "link": "https://demodesk.com/blog/best-alternative-to-gong",
+      "snippet": "Compare Gong alternatives like Demodesk, Chorus, Avoma, Fireflies, and Clari Copilot. Demodesk delivers 99% CRM accuracy, 98 languages, and EUR ...",
+      "displayed_link": "https://demodesk.com \u203a blog \u203a best-alternative-to-gong"
+    },
+    {
+      "position": 9,
+      "title": "Gong vs. Chorus: Feature, Pricing, and Usability Comparison",
+      "link": "https://www.weflow.ai/blog/gong-vs-chorus",
+      "snippet": "Gong and Chorus are both sales coaching platforms that capture data from your sales conversations and use AI to derive actionable insights from ...",
+      "displayed_link": "https://www.weflow.ai \u203a ... \u203a Comparisons & Alternatives"
+    }
+  ]
+}

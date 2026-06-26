@@ -1,0 +1,136 @@
+{
+  "tool": "serpapi",
+  "source": "serpapi.com",
+  "captured_at": "2026-06-26T00:30:29Z",
+  "ok": true,
+  "input": {
+    "query": "online erectile dysfunction treatment telehealth brand sildenafil tadalafil subscription 2026",
+    "gl": "us",
+    "hl": "en",
+    "device": "desktop"
+  },
+  "schema_drift": [],
+  "parser_version": "v2",
+  "cost": {
+    "credits": 2
+  },
+  "ai_overview_present": true,
+  "ai_overview_skipped": false,
+  "ranked_brands": [],
+  "narrative_paragraphs": [
+    "Online telehealth platforms offer prescription erectile dysfunction (ED) treatments like sildenafil (Viagra) and tadalafil (Cialis). These services provide discreet medical consultations, flexible subscription plans, and convenient doorstep delivery of both generic and brand-name medications.",
+    "Top-rated platforms to consider include:"
+  ],
+  "headings": [
+    "How the Process Works:"
+  ],
+  "references": [
+    {
+      "index": 0,
+      "source": "mattioli1885journals.com",
+      "title": "Best Erectile Dysfunction Telehealth Services - Mattioli 1885",
+      "link": "https://mattioli1885journals.com/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=%2Findex.php%2Findex%2Flogin%2FsignOut%3Fsource%3D%2Esu7u%2Eshop%2Fmale%2F&id=2twEdG"
+    },
+    {
+      "index": 1,
+      "source": "REX MD",
+      "title": "5 Best Telehealth Platforms for Erectile Dysfunction - REX MD",
+      "link": "https://rexmd.com/learn/5-best-telehealth-platforms-for-erectile-dysfunction"
+    },
+    {
+      "index": 2,
+      "source": "mattioli1885journals.com",
+      "title": "Best Telehealth Services for Erectile Dysfunction 2026 - Mattioli 1885",
+      "link": "https://mattioli1885journals.com/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=%2Findex.php%2Findex%2Flogin%2FsignOut%3Fsource%3D%2Esu7u%2Eshop%2Fmale%2F&id=1fEYhG"
+    },
+    {
+      "index": 3,
+      "source": "mattioli1885journals.com",
+      "title": "Which telehealth service is best for erectile dysfunction - Mattioli 1885",
+      "link": "https://mattioli1885journals.com/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=%2Findex.php%2Findex%2Flogin%2FsignOut%3Fsource%3D%2Esu7u%2Eshop%2Fmale%2F&id=1myXfw"
+    },
+    {
+      "index": 4,
+      "source": "TelyRx",
+      "title": "Best Online ED Treatments: Top Options Compared - TelyRx",
+      "link": "https://telyrx.com/blog/erectile-dysfunction/best-online-ed-treatment/?srsltid=AfmBOoqcXRIuqtqP-2u16KPvQ2C0-HkHPOdrPehOhSFPLhS1lQXLNaWG"
+    },
+    {
+      "index": 5,
+      "source": "Vyta.co",
+      "title": "Online ED Treatment \u2014 Same-Day Prescription - Vyta.co",
+      "link": "https://vyta.co/erectile-dysfunction-treatment/"
+    },
+    {
+      "index": 6,
+      "source": "Eden Telemed USA",
+      "title": "Online ED Treatment | FDA-Approved Meds - Eden Telemed",
+      "link": "https://edentelemed.com/online-ed-treatment/"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Get Erectile Dysfunction (ED) Treatment Online",
+      "link": "https://www.goodrx.com/care/services/erectile-dysfunction?srsltid=AfmBOoq7Q_9Rr-QIVmAkrSunfzqaOKBjd0qxUJuKopDi-ZfEh7gf0Jvg",
+      "snippet": "generic Cialis (tadalafil) and Viagra (sildenafil) prescribed online through GoodRx. starting at $18 a month. Eligible users will be billed $108 every six ...",
+      "displayed_link": "https://www.goodrx.com \u203a care \u203a services \u203a erectile-dysf..."
+    },
+    {
+      "position": 2,
+      "title": "Best Erectile Dysfunction Telehealth Services - Mattioli 1885",
+      "link": "https://mattioli1885journals.com/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=%2Findex.php%2Findex%2Flogin%2FsignOut%3Fsource%3D%2Esu7u%2Eshop%2Fmale%2F&id=2twEdG",
+      "snippet": "Erectile dysfunction telehealth services let men connect with licensed providers online for consultations and prescriptions without an in-person visit.",
+      "displayed_link": "https://mattioli1885journals.com \u203a pdf.js \u203a web \u203a viewer"
+    },
+    {
+      "position": 3,
+      "title": "Best Online ED Treatments: Top Options Compared",
+      "link": "https://telyrx.com/blog/erectile-dysfunction/best-online-ed-treatment/?srsltid=AfmBOopI7pGGWK-UoH03hGR11HEi5o7dAq4ZHraRfh9C1PSK8CShFCYJ",
+      "snippet": "Sildenafil, tadalafil, is another telehealth provider that offers access to prescription ED medications through an online portal.",
+      "displayed_link": "https://telyrx.com \u203a blog \u203a best-online-ed-treatment"
+    },
+    {
+      "position": 4,
+      "title": "Characteristics of direct-to-consumer platforms offering ... - PMC",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10397420/",
+      "snippet": "We sought to compare offerings of direct-to-consumer (DTC) platforms for ED treatment with respect to consultation, pricing, services, and privacy policy.",
+      "displayed_link": "https://pmc.ncbi.nlm.nih.gov \u203a articles \u203a PMC10397420"
+    },
+    {
+      "position": 5,
+      "title": "Erectile Dysfunction Treatment",
+      "link": "https://health.amazon.com/onemedical/Erectile-dysfunction-ED-treatment/dp/B0BVC8LZ8D",
+      "snippet": "Get erectile dysfunction treatment online at Amazon One Medical. Request prescription for ED pills like sildenafil (Viagra) with 24/7 telehealth care.",
+      "displayed_link": "https://health.amazon.com \u203a onemedical \u203a Erectile-dysf..."
+    },
+    {
+      "position": 6,
+      "title": "Prescription ED treatment online for just $19",
+      "link": "https://drb.ai/care/sexual-and-reproductive-health/erectile-dysfunction",
+      "snippet": "$19 consult\u2014no membership required. Starting at $9.21 $17.97. Tadalafil is the generic version of Cialis and is used to treat erectile dysfunction",
+      "displayed_link": "https://drb.ai \u203a care \u203a erectile-dysfunction"
+    },
+    {
+      "position": 7,
+      "title": "Online ED Treatment \u2014 Same-Day Prescription",
+      "link": "https://vyta.co/erectile-dysfunction-treatment/",
+      "snippet": "Get online ED treatment fast. U.S.-licensed clinicians prescribe FDA-approved Sildenafil & Tadalafil same-day.",
+      "displayed_link": "https://vyta.co \u203a Men's Health"
+    },
+    {
+      "position": 8,
+      "title": "Erectile Dysfunction Diagnosis, Prescriptions, & Treatment",
+      "link": "https://www.lemonaidhealth.com/services/erectile-dysfunction",
+      "snippet": "Expert online diagnosis and treatments for erectile dysfunction. help 888-536-2267. Choose your meds Sildenafil, tadalafil, Cialis Daily, and more.",
+      "displayed_link": "https://www.lemonaidhealth.com \u203a services \u203a erectile-d..."
+    },
+    {
+      "position": 9,
+      "title": "Low-Cost Erectile Dysfunction Medications Prescribed Online",
+      "link": "https://www.redboxrx.com/services/mens-health/erectile-dysfunction?srsltid=AfmBOop00RXuOdldCKNCtbPTk5zDlcptThRdatuVfS9-cu-3U7UfyM3J",
+      "snippet": "Affordable, FDA-approved ED meds prescribed online. \u00b7 Free shipping, discreet packaging \u00b7 Meds starting at $1 per tablet \u00b7 No membership fees \u00b7 HSA & FSA eligible.",
+      "displayed_link": "https://www.redboxrx.com \u203a services \u203a mens-health \u203a e..."
+    }
+  ]
+}

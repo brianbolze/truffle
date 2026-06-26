@@ -1,0 +1,17 @@
+{
+  "tool": "firecrawl",
+  "_cache_hit": false,
+  "captured_at": "2026-06-26T16:09:56Z",
+  "ok": false,
+  "input": {
+    "domain": "leadoff.ai",
+    "url": "https://leadoff.ai/"
+  },
+  "credits": null,
+  "status": null,
+  "final_url": null,
+  "title": null,
+  "description": null,
+  "text_excerpt": null,
+  "raw_error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+}

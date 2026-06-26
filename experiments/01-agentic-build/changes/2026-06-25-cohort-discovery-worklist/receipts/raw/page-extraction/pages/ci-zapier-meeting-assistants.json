@@ -1,0 +1,2236 @@
+{
+  "tool": "page_extraction_probe",
+  "source": "direct_http_fetch",
+  "captured_at": "2026-06-26T03:34:25Z",
+  "ok": true,
+  "input": {
+    "id": "ci-zapier-meeting-assistants",
+    "cohort": "conversation_intelligence",
+    "facet": "meeting_notes",
+    "rank": 2,
+    "url": "https://zapier.com/blog/best-ai-meeting-assistant/"
+  },
+  "schema_drift": [],
+  "cost": {
+    "credits": 0,
+    "usd": 0
+  },
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "error": null,
+  "raw_html_path": "receipts/raw/page-extraction/html/ci-zapier-meeting-assistants.html",
+  "title": "The 10 best AI meeting assistants in 2026 | Zapier",
+  "text": "The 10 best AI meeting assistants in 2026 | Zapier Skip to content Products Zapier Automation Platform No-code automation across 9,000+ apps Products Zap workflows Do-it-yourself automation for workflows Tables Store data your Zap workflows can read and update Forms Capture inputs that trigger workflows Canvas Plan and map your workflows with AI Agents Create your own AI assistants for any task Chatbots Answer customer questions with AI chatbots Capabilities App integrations Explore 9,000+ app connections AI automation \ud83e\ude84 Cutting-edge AI to upgrade your workflows Security Enterprise-grade security Explore templates Explore use cases Join Zapier Early Access What's new Zapier MCP Add Zapier to your AI chat Zapier SDK Beta Install Zapier to your AI coding agent Functions Beta Code your workflows in a web IDE Lead Router Beta Turn complex lead routing into one simple step Solutions Solutions How Zapier can help you automate your work across teams By team RevOps Drive revenue through automation Marketing Multiply campaign effectiveness and ROI IT Better manage systems with automation HR Empower your HR team with AI automation Sales Close more deals Customer Support Elevate customer satisfaction Leaders Streamline decision-making processes Executive Assistants Eliminate repetitive admin tasks By app NetSuite Salesforce HubSpot Slack ChatGPT (OpenAI) Microsoft Dynamics CRM Microsoft Teams Zendesk Jira Software Cloud View all apps By use case Lead management Automate your way to more conversions Sales pipeline Automate handoffs and streamline sales Marketing campaigns Boost your marketing campaign's impact Customer support Quickly route tickets and responses Data management Connect app data for more insights Project management Deliver projects seamlessly Tickets and incidents Resolve issues and incidents faster Explore templates Explore use cases Join Zapier Early Access Automation you can govern See how Zapier helps you manage, secure, and scale automation across your organization. Zapier for Startups Small and medium businesses Enterprise Resources Resources Educational resources to move your work forward Get inspired 5 things to automate today Popular workflows to save time Create custom chatbots Build an AI chatbot in minutes Guides Go deep with dedicated guidance Webinars Join live or watch on demand Customer stories See how businesses grow with Zapier Blog Read all about apps and automation How to use Zapier Zapier quick-start guide Automate with confidence Webhooks and Zapier Connect your favorite apps with Zapier\u2019s webhooks Help Center Find answers to your questions Zapier Support Get help and find support options Hire a Zapier Solution Partner Find a consultant to help you do more AI & Zapier AI orchestration at work Your guide to intelligent systems Zapier Copilot A personalized automation assistant Zapier's AI tools An AI tool for every need How to use Zapier MCP Connect AI to thousands of apps\u2014code-free Zapier Agents Create agents to handle work for you Explore templates Explore use cases Join Zapier Early Access Implement AI orchestration Three phases to move from disconnected AI pilots to orchestrated systems that scale. Developer resources Powered by Zapier Build an integration Embed an integration Integration Partner Program Documentation Enterprise Pricing EN Deutsch - DE English - EN Espa\u00f1ol - ES Fran\u00e7ais - FR \u65e5\u672c\u8a9e - JA GitHub Explore apps Contact sales Products Products Zap workflows Tables Forms Canvas Agents Chatbots Capabilities App integrations AI automation \ud83e\ude84 Security What's new Zapier MCP Zapier SDK Beta Functions Beta Lead Router Beta Solutions By team RevOps Marketing IT HR Sales Customer Support Leaders Executive Assistants By app NetSuite Salesforce HubSpot Slack ChatGPT (OpenAI) Microsoft Dynamics CRM Microsoft Teams Zendesk Jira Software Cloud View all apps By use case Lead management Sales pipeline Marketing campaigns Customer support Data management Project management Tickets and incidents Zapier for Startups Small and medium businesses Enterprise Resources Get inspired 5 things to automate today Create custom chatbots Guides Webinars Customer stories Blog How to use Zapier Zapier quick-start guide Webhooks and Zapier Help Center Zapier Support Hire a Zapier Solution Partner AI & Zapier AI orchestration at work Zapier Copilot Zapier's AI tools How to use Zapier MCP Zapier Agents Developer resources Powered by Zapier Build an integration Embed an integration Integration Partner Program Documentation Enterprise Pricing EN Deutsch - DE English - EN Espa\u00f1ol - ES Fran\u00e7ais - FR \u65e5\u672c\u8a9e - JA GitHub Explore apps Contact sales Blog Categories App picks All articles Best apps App of the day App comparisons Automation with Zapier All articles Automation inspiration Zapier tutorials Zapier feature guides Customer stories Productivity All articles Productivity tips App tips App tutorials Business growth All articles Marketing tips Business tips Product & platform All articles Partner case studies Product news Platform tips Company updates All articles Company news Zapier initiatives Remote work All articles Remote work tips How we work at Zapier Zapier guides App picks All articles Best apps App of the day App comparisons Automation with Zapier All articles Automation inspiration Zapier tutorials Zapier feature guides Customer stories Productivity All articles Productivity tips App tips App tutorials Business growth All articles Marketing tips Business tips Product & platform All articles Partner case studies Product news Platform tips Company updates All articles Company news Zapier initiatives Remote work All articles Remote work tips How we work at Zapier Zapier guides Home App picks Best apps Best apps 20 min read The 10 best AI meeting assistants in 2026 By Miguel Rebelo \u00b7 April 6, 2026 We independently review every app we recommend in our best apps lists. When you click some of the links on this page, we may earn a commission. Learn more . When you're in a meeting, you're splitting yourself in two: the active listener who's paying attention to the speaker, and the thorough note-taker who's saving every insight for later. But doing two jobs at once is always tricky. You'll either miss the opportunity to ask a great question or fail to take a critical note that you'll need in the future. Create an AI digital assistant with Zapier Learn how AI meeting assistants are here to help. They'll record your calls, transcribe the audio, and store it all for later use. You can then use a range of AI features to extract information, such as summarizing the transcript, listing key insights, and generating action items. There are some big names on this list: Fireflies , Krisp , Fathom , Fellow , and others. But I've also included a few more niche options too. I spent time doing in-depth research and testing on all the AI meeting assistants available, and based on my experiences, these are the best. Automate your meetings with Zapier Automatically capture meeting transcripts, notes, and insights\u2014and send them wherever they need to go. Try Zapier The best AI meeting assistants Fireflies for collaboration and topic tracking Granola for combining human and AI notes Avoma for conversation analytics tl;dv for AI-powered meeting search Krisp for improving audio quality Equal Time for inclusive meetings Otter for asking questions about your meetings Fellow for data privacy and security MeetGeek for AI voice agents Fathom for a free option What makes the best AI note taker for meetings? How we evaluate and test apps Our best apps roundups are written by humans who've spent much of their careers using, testing, and writing about software. Unless explicitly stated, we spend dozens of hours researching and testing apps, using each app as it's intended to be used and evaluating it against the criteria we set for the category. We're never paid for placement in our articles from any app or for links to any site\u2014we value the trust readers put in us to offer authentic evaluations of the categories and apps we review. For more details on our process, read the full rundown of how we select apps to feature on the Zapier blog . There's one important distinction here: AI meeting assistants aren't out to replace your current video conferencing platform. Quite the opposite: they'll empower Zoom, Google Meet, or Microsoft Teams (and other platforms) with a range of new features that'll help you keep track of your meetings. You can use them to refresh your memory, accurately quote people, or propagate important information to all members of your team. There's one common thread among the apps you're about to discover: all of them transcribe your meetings' audio into text, making it easy to search through everything that was said. From that point on, each app has its unique spin on how to best assist you: it can help you summarize the entire conversation, extract key insights, or provide analytics to help you improve productivity. Here's what I looked for as I was testing the AI meeting assistants: Easy implementation: These apps are simple to connect to your calendar and video conferencing software, and work with\u2014at minimum\u2014Zoom and Google Meet. Quality AI features. I looked at transcription quality and the value of any other AI features the platform offers, including summarization, extracting insights, and sentiment analysis. Automation and other productivity features. I prioritized apps that offer time-saving features, such as automatically joining meetings for you or helping you deliver meeting agendas before the event. Organization and collaboration features. Once the meeting is over, you need to keep things organized, so it's easier to search for information later. Sharing should also be simple, so you can keep your entire team in the loop. Integrations. The more the merrier, especially if you can send lead data to a CRM, action items to a task management app, or a summary of a meeting to a dedicated Slack channel. I tested these apps over the course of two weeks, as I held meetings either with myself or with my clients. Once these meetings were over, I went to the dashboard to judge the quality of the transcript and see what features were available to extract more value from it. I checked out how easy it was to share it with others, and I tried a few integrations to see how seamless the data transmission was. One note: I didn't include video conferencing apps, no matter how good their meeting assistant features were. When you're looking for a meeting assistant, you're not looking to completely migrate to an entirely new platform, just adding an extra layer of productivity features on top of what you already have. (But if you do want to move to a greener video conferencing pasture, check out Zapier's list of the best video conferencing apps ). I also didn't include any pure revenue intelligence apps \u2014while some of these apps have revenue intelligence features, I wanted apps that could be used for any sort of meeting. Do I need an AI meeting assistant? It depends. If your video conferencing platform already offers transcription, action items, and summaries, adding an AI assistant may be too much\u2014especially since it's an extra subscription to pay. At this point, most of the main video conferencing apps have AI meeting assistant features baked in. If you're already using one of these apps, check them out first: Zoom offers its AI features on the lowest paid plan, unlocking transcription, smart chapters, and summaries, among other features. This is enough if, for example, you don't need conversation analytics or deep meeting search. Microsoft Teams requires a Copilot Pro Business add-on for AI transcription and meeting notes\u2014on top of an active Microsoft 365 Business subscription. The key difference is how Copilot combines meeting context with your entire company data to answer questions and help your team stay aligned. Google Meet only offers transcription with the Gemini Enterprise plan, without extra bells and whistles on how to search that data. So back to the question: do you need an AI meeting assistant from this list? The answer is yes if: You have meetings across multiple platforms and want to record them all in a single place. These apps are useful for freelancers or solopreneurs who get invited into their clients' video calls. You need advanced features like conversation analytics, AI generation based on meeting content, or a more flexible tool. You have a tight budget, aren't paying for any of the apps above, and prefer to grab a free option. The best AI meeting assistants at a glance Best for Platforms Pricing Website Fireflies Collaboration and topic tracking Zoom, Meet, Teams, Webex, GoTo Meeting, Skype, Dialpad Meetings, Lifesize, Jitsi Free plan available; paid plans from $10/user/month (billed annually) Visit Fireflies Granola Combining human and AI notes All Free plan available; paid plans start at $14/month Visit Granola Avoma Conversation analytics Zoom, Meet, Teams, BlueJeans, GoTo Meeting, Highfive, Uber Conference, Lifesize, and other dialer, video conferencing, and CRM tools From $19/recorder/month (billed annually) Visit Avoma tl;dv AI-powered meeting search Zoom, Meet, Teams Free plan available; paid plans from $18/user/month (billed annually) Visit tl;dv Krisp Improving audio quality All Paid plans from $8/user/month (billed annually) Visit Krisp Equal Time Inclusive meetings Zoom, Meet, Teams From $15/user/month (billed annually) Visit Equal Time Otter Asking questions about your meetings Zoom, Meet, Teams Free plan available; paid plans from $8.33/user/month (billed annually) Visit Otter Fellow Data privacy and security Zoom, Meet, Teams Free plan available; paid plans from $7/user/month (billed annually) Visit Fellow MeetGeek AI voice agents All Free plan available; paid plans start at $9.99/user/month (billed annually) Visit MeetGeek Fathom A free option Zoom, Meet Teams Free plan available; paid plans from $15/user/month (billed annually) Visit Fathom Best AI meeting assistant for collaboration and topic tracking Fireflies.ai Platforms: Zoom, Meet, Teams, Webex, GoTo Meeting, Skype, Dialpad Meetings, Lifesize, Jitsi Fireflies pros: Has generative AI features (AskFred) Can send meeting recaps automatically Fireflies cons: Some screens are too cluttered When there are dozens of meetings going on every week, Fireflies helps you line them all up and keep them organized. The range of available AI features makes it easy to sort your meetings by topic, project, or team, with a feed that provides a breakdown of your week. The app will transcribe everything everyone says in the meeting, assigning it to the appropriate speaker once you identify who's who in the app. When the meeting is over, it'll start working its magic on the transcription: It isolates information such as dates and times, metrics mentioned, tasks, and questions, so you filter them later. It runs sentiment analysis, helping identify the positive, negative, and neutral parts of the meeting. It offers a list of everyone who spoke, including a word-per-minute statistic and percentage talked in relationship to others. It offers a list of topics tracked\u2014and you can add your own, so Fireflies can keep doing its sorting magic. Need to share critical information with your team? You can create soundbites, clipping important parts of meetings into shareable moments. People can come by the meeting page to leave their comments and reactions, so it's easy to see how everyone's keeping up. And if you have an internal knowledge base, you can embed meetings or soundbites, helping you keep a thorough single source of truth. When you need meeting information in your other apps, Fireflies offers a great range of native integrations with giants like HubSpot or Salesforce for storing all lead data, Slack for team chat, and Dropbox to keep your data stored for the long haul. If your favorite app isn't listed, you can integrate Fireflies with Zapier , helping you connect Fireflies to thousands of other apps. Learn more about how to automate Fireflies , or get started with a pre-made workflow. Automate Fireflies Fireflies price: Free plan available with unlimited transcription, with a total of 800 minutes of meeting storage; paid plans start at $10/user/month billed annually. Best AI meeting assistant for combining human and AI notes Granola Platforms : All Granola pros : Automatically formats meeting notes based on context, but you can also use custom meeting templates Minimal, distraction-free interface Granola cons : No video recording/playback Granola is the AI note taker that everyone's talking about. If you like being an active note-taker during meetings but don't want to miss the details, this is the AI meeting assistant you want. Granola automatically transcribes, summarizes, and analyzes your meetings. It also acts as a live notepad, allowing you to manually jot down notes, which Granola then enhances with context pulled straight from the transcript. In practice, here's an example of what that looks like: Prior to a sprint retrospective , you might jot down only a rough agenda in Granola. The AI then transcribes your meeting, and with the click of a button, Granola plugs relevant details from the transcript into your notes. The result is a collaborative memory of the meeting that feels both human and complete. Instead of joining your calls directly, Granola captures audio from your device, so it works with any video conferencing tool. It can also transcribe phone calls after you set it up on iOS, but it doesn't work for inbound calls: if you want to save the conversation to Granola, you have to call people yourself. Granola includes a handful of native app integrations, including HubSpot, Slack, and Notion. But its Zapier integration is where things really open up. With Zapier, you can connect Granola to thousands of apps and build orchestrated AI systems that take your meeting workflows further. Take that same sprint retro example: Zapier's built-in AI can analyze sentiment from Granola's notes and generate tailored suggestions in Notion (or wherever your team works) to help improve your next sprint. Learn more about how to automate Granola with Zapier . Automate Granola Granola pricing : Free plan limits access to meeting history: you can't read meeting notes if they're older than 30 days; paid plans start at $14/month and include unlimited meeting transcripts. Best AI meeting assistant for conversation analytics Avoma Platforms: Zoom, Meet, Teams, BlueJeans, GoTo Meeting, Highfive, Uber Conference, Lifesize, and other dialer, video conferencing, and CRM tools Avoma pros: Great for coaching sales teams Very easy to use Avoma cons: Pricey Having all your meeting transcriptions organized is one thing. Extracting the underlying information from each one of them to make better decisions is another thing entirely. Avoma knows that transcriptions aren't enough if you're on a mission to improve sales calls, UX interviews, or internal meetings. This is why it offers a range of tools that let you dig deep into every meeting with the power of AI: A dashboard where you can track the total conversations everyone's having, including the median amount of meetings per user. A tool that tracks filler words, so you can get rid of the flow-breaking \"ah\"s, \"uh\"s, and \"um\"s. A monologue-tracking statistic, where you can see how long someone talked continuously for, great to discover where conversations lose their dynamic. A talking-to-listening ratio tracker, letting you understand how much you should listen before you talk while in customer meetings. A competitive tracking tool, helping you see how you stack up versus competitors in the words of your customers. Avoma keeps track of every mention of the competition and also whether you lost or won deals when that happened, so you can correlate the information and adjust. Overall topic tracking, so you know what people talk about the most, broken down by keywords. There's also a tracker that lets you know when each topic is usually brought into the conversation, useful to help you structure your future meetings. And a range of coaching tools, including AI scoring, so you can help new sales reps find their footing faster and start closing more deals. This toolkit makes Avoma a great fit for customer-facing teams, whether it's in support or sales. It's great to improve visibility for managers, helping you make better decisions and lead your team to success. And the dev team went all in on CRM integrations, offering native Salesforce, HubSpot, Copper, and Pipedrive integrations, so you can focus on ongoing optimization, not on endless admin work. Plus, you can integrate Avoma with Zapier and connect it to thousands of other apps. Automate Avoma Avoma price: Paid plans start at $19/recorder/month (billed annually) for up to 25 users. Best AI meeting assistant for AI-powered search tl;dv Platforms: Zoom, Meet, Teams tl;dv pros: Generous free plan Lightweight on your PC's resources tl;dv cons: Can fail to join the meeting if tl;dv's servers are too busy True to its name, tl;dv doesn't want you sifting through meeting recordings or endless lists of transcripts to find that key comment about the project you're working on. As it processes all your calls, you can start using its AI chat, AI-powered search, and AI reports tools to find any angle you need, no matter how many hours your team spends on Zoom. When you click Meetings & Folders , focus on the bottom part of the screen: the Ask tl;dv AI input section lets you send prompts to surface content about your meetings. This is the best for analyzing trends or surfacing data across lots of meetings in a single response, as shown by the prompt templates. The simpler prompts include action item summary or a catch-up, while the more powerful ones include sales performance analysis and team misalignment detection. But what if you want to find exactly what your product manager said two months ago? Use the Search tab to write keywords, and use the filter collection to narrow down results. It's one of the best search tools in this category: beyond selecting between internal/external meetings or meetings you joined, you can also pull meetings based on deal stages in HubSpot and Salesforce once connected\u2014with five more filter types to choose from. Scheduled AI reports tie everything together: select which meetings to include (using the filters I just mentioned), which prompt to process them with, and the frequency\u2014with extra settings available to connect it to Slack or your CRM. Once you save and activate, it will process the selected meetings into reports, so you can get a daily breakdown of action items or weekly compiled lists of open bugs, for example. If you like the automation layer that these reports bring to the table, connect tl;dv to Zapier and integrate it with over 9,000+ apps to automate all your meeting-related workflows. Learn more about how to automate tl;dv . Automate tl;dv tl;dv price: Free plan available for unlimited transcription; paid plans from $18/user/month (billed annually). Best AI meeting assistant for improving audio quality Krisp Platforms: All Krisp pros: Improves audio quality on meetings No bots on the call Krisp cons: Can sometimes distort your voice depending on your hardware Laptop microphone quality varies widely. Some are so good that it feels like you're listening to studio-quality audio; others turn even the best voices into a tinny, choppy mess. If you were unlucky with your hardware, Krisp can soften the audio, with strong meeting transcription features included. You need to install Krisp on your computer so it can do its magic, adding a few new audio devices to your machine. You'll have to select it as the audio input and output in your Zoom and Meet apps, which makes the setup a tiny bit more complicated\u2014there's good help to guide you, though. Because of this setup experience, Krisp doesn't need bots joining your calls, providing a more seamless experience in the end. Besides being highly effective\u2014it can filter out music, ringtones, and background chatter without making your audio go full weird\u2014it has another thing that I really appreciate. Since the app runs on your computer, it consumes system resources to optimize your audio. The good stuff here is that it's just a tiny bit of processing power and a modest amount of RAM, meaning your video calls (they rely a lot on these two computer stats) won't be largely affected by using Krisp. Wherever there's audio input, remember that you can use Krisp to optimize it. Look to your computer's taskbar, and tweak the settings for the job at hand. And now that your audio is crystal clear, you can connect Krisp to Zapier to automate your meeting transcripts. Learn more about how to automate Krisp , or get started with a pre-made workflow. Automate Krisp Krisp price: Paid plans from $8/user/month (billed annually). Best AI meeting assistant for inclusive meetings Equal Time Platforms: Zoom, Meet, Teams Equal Time pros: Tracks questions and keywords Tracks attendance Equal Time cons: Interface isn't as nice as others By now, you may have read dozens of articles detailing how introverts have great insights to share. They're observant and careful but lack the impulse to put their expertise on the table. If the extroverts are always stealing the show in your meetings, Equal Time will help you identify who's who and get everyone to participate equally. Once you integrate Equal Time into Google Meet or Zoom, you'll see a sidebar with the following information in real-time: The speaking time for every meeting participant displayed as a percentage. The inclusion score of the meeting, measuring how well the time is distributed among all attendees. A monologue counter, helpful to track how many times the conversation has died. A pie chart with the group speaking balance, so you can divide people by roles or teams and ensure that each gets a proportional amount of air time. When the meeting is over, you'll get an email with the breakdown of these stats. You'll be able to see the talking time breakdown for each participant, along with a set of checks that tell you whether that person spoke at the meeting or not, if they were late, or if they're prone to monologue. Below these, you'll find the typical meeting summary, powered by AI, and a set of tips to help you improve your meetings in the future. Heading over to the dashboard, you'll be able to see all of this info, along with a few extras. You can get a simple sentiment analysis for the meeting, learn the number of questions asked (and you can click to read all of them), and clearly see who's contributing too much or too little to the conversation. While the user experience on the app isn't as top-notch as others on this list, these features are robust enough to make up for it, especially if you're having trouble bringing everyone into the fold. Equal Time price: Free plan available for 40 minutes of transcription per meeting; paid plans from $15/month (billed annually). Best AI meeting assistant for asking questions about your meetings Otter Platforms: Zoom, Meet, Teams Otter pros: Supports separating meetings by workspaces if you have multiple teams Can also transcribe uploaded audio and video files Otter cons: Struggles when transcribing technical language Meet Otter's AI Chat, a tool that'll let you know if you have work on your plate\u2014among other possibilities. When you ask \"was I mentioned in this meeting?\" the chat gives you a breakdown of any action items assigned to you. This way, if you have to pop out during a call\u2014or have to miss it entirely because you're putting out a fire in another project\u2014you can still stay on track. That's one of many questions you can ask about your meetings. I transcribed a test meeting with myself discussing the future of the detergent industry (cleanliness is key, what can I say) and asked the bot lots of questions to see how deep it could go. I wanted to know what we could do to increase sustainability or how to use AI to improve soap-making. In all cases, it kept replying coherently with decent ideas, more or less at the level of what ChatGPT could tell me. This isn't just a one-on-one thing. Otter has workspace features, letting you communicate with your team on the platform inside channels. When you turn on AI for one of them, you can mention Otter to ask questions about a meeting, such as what was decided and what the next steps are. You can then mention teammates to assign tasks and stay aligned as the project moves forward. And if you're Slack-dwellers instead, no problem: Otter integrates with it, so you can send these snippets out to your internal channels there. There's a last entry point to the AI chat. When you click on it on the left-side main menu, you can access an account-wide chat-based search. So, instead of it being grounded only in the meeting you're collaborating on with your team, you can ask anything about recent meetings and topic highlights or see if you have action items assigned to you. This is a welcome twist to the category, making the experience more chat-driven. If you love the way ChatGPT feels, then Otter AI Chat could replicate the experience but connected to your meetings. And you can do even more with Otter when you connect it to Zapier , so you can automatically create new recordings or send your recordings to other apps. Learn more about how to automate Otter . Automate Otter Otter price: Free plan available for up to 300 minutes/month; paid plans from $8.33/user/month (billed annually). Best AI meeting assistant for data privacy and security Fellow Platforms: Zoom, Meet, Teams Fellow pros: Can track all the information about a topic or project Lets you create meeting templates (and has a strong library of its own) Fellow cons: Desktop app is a bit buggy What would happen if your company meetings were leaked out to the world? Wait, don't start imagining that nightmare. Instead, check out Fellow and its strong data privacy and security features, keeping your conversations protected without extra setup. While all of the apps on the list are strong on security, Fellow goes the extra mile and is very transparent about it. Using the Vanta platform to manage its protection policies, you can see how many times it's been tested for vulnerabilities, all the security controls in place, and the relationship with the vendors it uses. You'll see OpenAI on the list and that they're prohibited from training models with your data, for example. This all makes it a secure AI meeting notetaker for regulated industries like finance, legal, and healthcare. Now that you have peace of mind, you can focus on productivity. On this front, Fellow does pretty well: it's designed to help you wrangle your schedule as it tosses around, with a feed and calendar to see upcoming meetings, making it easy to see how your day is about to unfold. As you invite your team, you can collaborate on channels, organizing meetings for easy access. And it takes care of the entire meeting cycle: from meeting briefs and agendas, to note-taking and action items, to analytics and a Fellow copilot to answer any questions you have about your meetings. And with over 50 native integrations, Fellow makes it easy to bring together all the apps you've picked up on your business journey. If you still don't find what you're looking for, you can connect Fellow to Zapier , increasing the integrations list to thousands of apps. That way, you can automatically send notifications or create tasks in your other apps based on Fellow action items. Automate Fellow Fellow price: Free plan available for 5 AI recordings/user; paid plans from $7/user/month (billed annually). Best AI meeting assistant for AI voice agents MeetGeek (Web, iOS, Android, Mac) Platforms: All MeetGeek pros: Wide feature set beyond AI voice agents Automate actions based on meeting content MeetGeek cons: AI voice agents can sometimes be slow to start and slightly unpredictable Until now, meeting bots would listen in quietly on your calls and deliver their reports at the end. MeetGeek's AI agents lead the trend of bots that talk back on command, so you can ask them for help running meetings, structuring interactions, or handling recurring conversations. Setting up a new agent is similar to creating a new GPT in ChatGPT or a Gem in Gemini: head to Voice Agents and give it a name and a set of system instructions. What you specify here will be the actual behavior, so be as detailed as needed to describe the tasks it must do, what topics it should cover, and how to achieve its objectives. There are templates to get you started quickly: you can add an AI recruiter that asks a structured set of questions to applicants, even being able to answer some of their questions; the AI SDR to pitch your products and services to potential clients; and the upbeat AI Scrum Master to run standup meetings, among many others. It's refreshing in this category to interact with an AI agent and hear it talk back, but you might want to test it for your use cases. People who aren't used to this kind of technology might trip up the bot by omitting the activation phrase or constantly interrupting. When your team grasps the basics, you can hop on calls and automate parts of each, such as team standups or structured progress reports, which is especially valuable if team leaders can't make it. Now that you're automating parts of your meeting content, it's time to automate the rest of the busywork. Connect MeetGeek to Zapier to integrate it with over 9,000+ apps, so your tech stack can do more work before you have to jump in. Automate MeetGeek MeetGeek price: Free plan available for 3 hours of transcription, 3 months of transcript storage, 1 month of audio storage, and no AI agents. Pro plan at $9.99/user/month when billed annually. Best free AI meeting assistant Fathom Platforms: Zoom, Meet, Teams Fathom pros: Easy meeting sharing Keyword alerts (paid plan only) Fathom cons: Some quirks when using it with Meet and Teams One of the first things you'll read on Fathom's landing page is that it's completely free. Catch? No catch. The dev team wants to raise awareness of its tool, so they're offering a generous free version that will let you transcribe all your meetings. This is the baseline. Once the meeting is over, you can generate a meeting summary and send that information to your CRM of choice or straight to the appropriate Slack channel. What's more, you can create short clips of your meeting, add each to playlists, and share them with others, a great way to organize insights across meetings. Fathom offers all the core features of the category at no cost, so it's great if you don't need the advanced stuff. If you usually copy and paste things around, you'll be happy to know of this interesting possibility: when copying content out of Fathom and pasting it somewhere else, it lands fully formatted, so you don't have to beautify it later. The free version offers a lot, but of course, there's a paid plan if you need more. When you hop on the Team plan, you'll be able to organize all your meetings in a Team Calls tab, see meeting statistics for each member (useful for sales call coaching), configure alerts that'll pop up whenever a keyword is mentioned, and get a range of automation features to simplify the connections to your CRM and other apps. Fathom is in a really sweet spot. If you're unsure whether an AI meeting assistant will help you improve productivity, be sure to take this one for a test ride. You can do even more with Fathom when you connect it to Zapier , so you can send recordings, transcripts, summaries, and action items straight to the other apps you use most. Learn more about how to automate Fathom , or get started with a pre-made workflow. Automate Fathom Fathom price: Free version available for individuals; paid plans from $15/user/month (billed annually). Read more: Fathom vs. Fireflies Lean into AI meeting notes With all your meetings now transcribed into text, it becomes much easier to search them without maddeningly going back and forward on a video timeline. More than that, it makes it easier to collaborate and share meetings with everyone. And if having too many meetings is threatening your team's productivity, these tools can be a great way to reduce the total number of participants. Since you can share the important parts of each call, your team can keep working and align as they move forward in each project. Related reading: The best transcription software The best Zoom alternatives Free meeting minutes templates and examples The best AI sales assistants Enterprise AI: How to leverage AI across your organization How to use Read AI for better meetings Popular ways to automate Relevance AI This article was originally published in July 2023. The most recent update was in April 2026. Get productivity tips delivered straight to your inbox Subscribe We\u2019ll email you 1-3 times per week\u2014and never share your information. Miguel Rebelo Miguel Rebelo is an avid tinkerer and self-taught AI and automation expert based in London, UK. He loves technology, video games, and huge forests. Track him down at mirebelo.com. tags Artificial intelligence (AI) Video conferencing mentioned apps Fireflies.ai Fellow Fathom tl;dv Krisp Avoma Otter.ai Granola MeetGeek Related articles Zapier feature guides Zapier SDK: Connect your code files to thousands of actions Zapier SDK: Connect your code files to... Best apps The 5 best AI app builders in 2026 The 5 best AI app builders in 2026 Best apps The 9 best AI voice generators The 9 best AI voice generators Productivity tips What is AI agent orchestration? What is AI agent orchestration? Automation inspiration How Zapier can help you with valuemaxxing, not tokenmaxxing How Zapier can help you with valuemaxxing,... Business tips AI in the workplace: What it looks like now and where we're headed AI in the workplace: What it looks like now... App tips What is Claude Mythos? And what happened to Claude Fable 5? What is Claude Mythos? And what happened to... App tips Claude 5: What you need to know about Anthropic's AI models and chatbot Claude 5: What you need to know about... Improve your productivity automatically. Use Zapier to get your apps working together. Sign up See how Zapier works Follow us Pricing Help Developer Platform Press Jobs Enterprise Templates App Integrations Partners Program \u00a9 2026 Zapier Inc. Manage cookies Legal Privacy",
+  "text_chars": 38606,
+  "links": [
+    {
+      "href": "#main",
+      "text": "Skip to content",
+      "domain": null,
+      "position": 1
+    },
+    {
+      "href": "/",
+      "text": "",
+      "domain": null,
+      "position": 2
+    },
+    {
+      "href": "/workflows",
+      "text": "Zap workflows Do-it-yourself automation for workflows",
+      "domain": null,
+      "position": 3
+    },
+    {
+      "href": "/tables",
+      "text": "Tables Store data your Zap workflows can read and update",
+      "domain": null,
+      "position": 4
+    },
+    {
+      "href": "/forms",
+      "text": "Forms Capture inputs that trigger workflows",
+      "domain": null,
+      "position": 5
+    },
+    {
+      "href": "/canvas",
+      "text": "Canvas Plan and map your workflows with AI",
+      "domain": null,
+      "position": 6
+    },
+    {
+      "href": "/agents",
+      "text": "Agents Create your own AI assistants for any task",
+      "domain": null,
+      "position": 7
+    },
+    {
+      "href": "/ai/chatbot",
+      "text": "Chatbots Answer customer questions with AI chatbots",
+      "domain": null,
+      "position": 8
+    },
+    {
+      "href": "/apps",
+      "text": "App integrations Explore 9,000+ app connections",
+      "domain": null,
+      "position": 9
+    },
+    {
+      "href": "/ai",
+      "text": "AI automation \ud83e\ude84 Cutting-edge AI to upgrade your workflows",
+      "domain": null,
+      "position": 10
+    },
+    {
+      "href": "/security-compliance",
+      "text": "Security Enterprise-grade security",
+      "domain": null,
+      "position": 11
+    },
+    {
+      "href": "/templates",
+      "text": "Explore templates",
+      "domain": null,
+      "position": 12
+    },
+    {
+      "href": "/automations",
+      "text": "Explore use cases",
+      "domain": null,
+      "position": 13
+    },
+    {
+      "href": "/early-access",
+      "text": "Join Zapier Early Access",
+      "domain": null,
+      "position": 14
+    },
+    {
+      "href": "/mcp",
+      "text": "Zapier MCP Add Zapier to your AI chat",
+      "domain": null,
+      "position": 15
+    },
+    {
+      "href": "/sdk",
+      "text": "Zapier SDK Beta Install Zapier to your AI coding agent",
+      "domain": null,
+      "position": 16
+    },
+    {
+      "href": "/functions",
+      "text": "Functions Beta Code your workflows in a web IDE",
+      "domain": null,
+      "position": 17
+    },
+    {
+      "href": "/l/leadrouter",
+      "text": "Lead Router Beta Turn complex lead routing into one simple step",
+      "domain": null,
+      "position": 18
+    },
+    {
+      "href": "/solutions/revops",
+      "text": "RevOps Drive revenue through automation",
+      "domain": null,
+      "position": 19
+    },
+    {
+      "href": "/solutions/marketing",
+      "text": "Marketing Multiply campaign effectiveness and ROI",
+      "domain": null,
+      "position": 20
+    },
+    {
+      "href": "/solutions/it",
+      "text": "IT Better manage systems with automation",
+      "domain": null,
+      "position": 21
+    },
+    {
+      "href": "/solutions/hr",
+      "text": "HR Empower your HR team with AI automation",
+      "domain": null,
+      "position": 22
+    },
+    {
+      "href": "/solutions/sales",
+      "text": "Sales Close more deals",
+      "domain": null,
+      "position": 23
+    },
+    {
+      "href": "/solutions/customer-support",
+      "text": "Customer Support Elevate customer satisfaction",
+      "domain": null,
+      "position": 24
+    },
+    {
+      "href": "/solutions/leaders",
+      "text": "Leaders Streamline decision-making processes",
+      "domain": null,
+      "position": 25
+    },
+    {
+      "href": "/solutions/executive-assistants",
+      "text": "Executive Assistants Eliminate repetitive admin tasks",
+      "domain": null,
+      "position": 26
+    },
+    {
+      "href": "/apps/netsuite/integrations",
+      "text": "NetSuite",
+      "domain": null,
+      "position": 27
+    },
+    {
+      "href": "/apps/salesforce/integrations",
+      "text": "Salesforce",
+      "domain": null,
+      "position": 28
+    },
+    {
+      "href": "/apps/hubspot/integrations",
+      "text": "HubSpot",
+      "domain": null,
+      "position": 29
+    },
+    {
+      "href": "/apps/slack/integrations",
+      "text": "Slack",
+      "domain": null,
+      "position": 30
+    },
+    {
+      "href": "/apps/chatgpt/integrations",
+      "text": "ChatGPT (OpenAI)",
+      "domain": null,
+      "position": 31
+    },
+    {
+      "href": "/apps/microsoft-dynamics-crm/integrations",
+      "text": "Microsoft Dynamics CRM",
+      "domain": null,
+      "position": 32
+    },
+    {
+      "href": "/apps/microsoft-teams/integrations",
+      "text": "Microsoft Teams",
+      "domain": null,
+      "position": 33
+    },
+    {
+      "href": "/apps/zendesk/integrations",
+      "text": "Zendesk",
+      "domain": null,
+      "position": 34
+    },
+    {
+      "href": "/apps/jira-software-cloud/integrations",
+      "text": "Jira Software Cloud",
+      "domain": null,
+      "position": 35
+    },
+    {
+      "href": "/apps",
+      "text": "View all apps",
+      "domain": null,
+      "position": 36
+    },
+    {
+      "href": "/lead-management",
+      "text": "Lead management Automate your way to more conversions",
+      "domain": null,
+      "position": 37
+    },
+    {
+      "href": "/sales-pipeline-management",
+      "text": "Sales pipeline Automate handoffs and streamline sales",
+      "domain": null,
+      "position": 38
+    },
+    {
+      "href": "/marketing-campaigns",
+      "text": "Marketing campaigns Boost your marketing campaign's impact",
+      "domain": null,
+      "position": 39
+    },
+    {
+      "href": "/customer-support-management",
+      "text": "Customer support Quickly route tickets and responses",
+      "domain": null,
+      "position": 40
+    },
+    {
+      "href": "/data-management",
+      "text": "Data management Connect app data for more insights",
+      "domain": null,
+      "position": 41
+    },
+    {
+      "href": "/project-management",
+      "text": "Project management Deliver projects seamlessly",
+      "domain": null,
+      "position": 42
+    },
+    {
+      "href": "/ticket-incident-management",
+      "text": "Tickets and incidents Resolve issues and incidents faster",
+      "domain": null,
+      "position": 43
+    },
+    {
+      "href": "/templates",
+      "text": "Explore templates",
+      "domain": null,
+      "position": 44
+    },
+    {
+      "href": "/automations",
+      "text": "Explore use cases",
+      "domain": null,
+      "position": 45
+    },
+    {
+      "href": "/early-access",
+      "text": "Join Zapier Early Access",
+      "domain": null,
+      "position": 46
+    },
+    {
+      "href": "/govern",
+      "text": "Automation you can govern See how Zapier helps you manage, secure, and scale automation across your organization.",
+      "domain": null,
+      "position": 47
+    },
+    {
+      "href": "/startups",
+      "text": "Startups",
+      "domain": null,
+      "position": 48
+    },
+    {
+      "href": "/smb",
+      "text": "Small and medium businesses",
+      "domain": null,
+      "position": 49
+    },
+    {
+      "href": "/enterprise",
+      "text": "Enterprise",
+      "domain": null,
+      "position": 50
+    },
+    {
+      "href": "/blog/what-you-should-automate/",
+      "text": "5 things to automate today Popular workflows to save time",
+      "domain": null,
+      "position": 51
+    },
+    {
+      "href": "/blog/create-custom-ai-chatbots-with-interfaces/",
+      "text": "Create custom chatbots Build an AI chatbot in minutes",
+      "domain": null,
+      "position": 52
+    },
+    {
+      "href": "/resources/guides",
+      "text": "Guides Go deep with dedicated guidance",
+      "domain": null,
+      "position": 53
+    },
+    {
+      "href": "/resources/events",
+      "text": "Webinars Join live or watch on demand",
+      "domain": null,
+      "position": 54
+    },
+    {
+      "href": "/customer-stories",
+      "text": "Customer stories See how businesses grow with Zapier",
+      "domain": null,
+      "position": 55
+    },
+    {
+      "href": "/blog/",
+      "text": "Blog Read all about apps and automation",
+      "domain": null,
+      "position": 56
+    },
+    {
+      "href": "/blog/get-started-with-zapier/",
+      "text": "Zapier quick-start guide Automate with confidence",
+      "domain": null,
+      "position": 57
+    },
+    {
+      "href": "/blog/what-are-webhooks/",
+      "text": "Webhooks and Zapier Connect your favorite apps with Zapier\u2019s webhooks",
+      "domain": null,
+      "position": 58
+    },
+    {
+      "href": "https://help.zapier.com/hc/en-us",
+      "text": "Help Center Find answers to your questions",
+      "domain": "help.zapier.com",
+      "position": 59
+    },
+    {
+      "href": "/app/get-help",
+      "text": "Zapier Support Get help and find support options",
+      "domain": null,
+      "position": 60
+    },
+    {
+      "href": "/partnerdirectory",
+      "text": "Hire a Zapier Solution Partner Find a consultant to help you do more",
+      "domain": null,
+      "position": 61
+    },
+    {
+      "href": "/blog/ai-orchestration/",
+      "text": "AI orchestration at work Your guide to intelligent systems",
+      "domain": null,
+      "position": 62
+    },
+    {
+      "href": "/blog/zapier-copilot-guide/",
+      "text": "Zapier Copilot A personalized automation assistant",
+      "domain": null,
+      "position": 63
+    },
+    {
+      "href": "/blog/zapier-ai-guide/",
+      "text": "Zapier's AI tools An AI tool for every need",
+      "domain": null,
+      "position": 64
+    },
+    {
+      "href": "/blog/zapier-mcp-guide/",
+      "text": "How to use Zapier MCP Connect AI to thousands of apps\u2014code-free",
+      "domain": null,
+      "position": 65
+    },
+    {
+      "href": "/blog/zapier-agents-guide/",
+      "text": "Zapier Agents Create agents to handle work for you",
+      "domain": null,
+      "position": 66
+    },
+    {
+      "href": "/templates",
+      "text": "Explore templates",
+      "domain": null,
+      "position": 67
+    },
+    {
+      "href": "/automations",
+      "text": "Explore use cases",
+      "domain": null,
+      "position": 68
+    },
+    {
+      "href": "/early-access",
+      "text": "Join Zapier Early Access",
+      "domain": null,
+      "position": 69
+    },
+    {
+      "href": "/resources/guides/how-to-implement-ai-orchestration-in-3-phases",
+      "text": "Implement AI orchestration Three phases to move from disconnected AI pilots to orchestrated systems that scale.",
+      "domain": null,
+      "position": 70
+    },
+    {
+      "href": "/developer-platform",
+      "text": "Powered by Zapier",
+      "domain": null,
+      "position": 71
+    },
+    {
+      "href": "/developer-platform/integrations",
+      "text": "Build an integration",
+      "domain": null,
+      "position": 72
+    },
+    {
+      "href": "/developer-platform/embed-tools",
+      "text": "Embed an integration",
+      "domain": null,
+      "position": 73
+    },
+    {
+      "href": "/developer-platform/partner-program",
+      "text": "Integration Partner Program",
+      "domain": null,
+      "position": 74
+    },
+    {
+      "href": "https://platform.zapier.com/",
+      "text": "Documentation",
+      "domain": "platform.zapier.com",
+      "position": 75
+    },
+    {
+      "href": "/enterprise",
+      "text": "Enterprise",
+      "domain": null,
+      "position": 76
+    },
+    {
+      "href": "/pricing",
+      "text": "Pricing",
+      "domain": null,
+      "position": 77
+    },
+    {
+      "href": "/de/blog/best-ai-meeting-assistant/",
+      "text": "Deutsch - DE",
+      "domain": null,
+      "position": 78
+    },
+    {
+      "href": "/blog/best-ai-meeting-assistant/",
+      "text": "English - EN",
+      "domain": null,
+      "position": 79
+    },
+    {
+      "href": "/es/blog/best-ai-meeting-assistant/",
+      "text": "Espa\u00f1ol - ES",
+      "domain": null,
+      "position": 80
+    },
+    {
+      "href": "/fr/blog/best-ai-meeting-assistant/",
+      "text": "Fran\u00e7ais - FR",
+      "domain": null,
+      "position": 81
+    },
+    {
+      "href": "/ja/blog/best-ai-meeting-assistant/",
+      "text": "\u65e5\u672c\u8a9e - JA",
+      "domain": null,
+      "position": 82
+    },
+    {
+      "href": "https://github.com/zapier",
+      "text": "GitHub",
+      "domain": "github.com",
+      "position": 83
+    },
+    {
+      "href": "/apps",
+      "text": "Explore apps",
+      "domain": null,
+      "position": 84
+    },
+    {
+      "href": "/l/contact-sales?demo_source=cs_nav_header",
+      "text": "Contact sales",
+      "domain": null,
+      "position": 85
+    },
+    {
+      "href": "/workflows",
+      "text": "Zap workflows",
+      "domain": null,
+      "position": 86
+    },
+    {
+      "href": "/tables",
+      "text": "Tables",
+      "domain": null,
+      "position": 87
+    },
+    {
+      "href": "/forms",
+      "text": "Forms",
+      "domain": null,
+      "position": 88
+    },
+    {
+      "href": "/canvas",
+      "text": "Canvas",
+      "domain": null,
+      "position": 89
+    },
+    {
+      "href": "/agents",
+      "text": "Agents",
+      "domain": null,
+      "position": 90
+    },
+    {
+      "href": "/ai/chatbot",
+      "text": "Chatbots",
+      "domain": null,
+      "position": 91
+    },
+    {
+      "href": "/apps",
+      "text": "App integrations",
+      "domain": null,
+      "position": 92
+    },
+    {
+      "href": "/ai",
+      "text": "AI automation \ud83e\ude84",
+      "domain": null,
+      "position": 93
+    },
+    {
+      "href": "/security-compliance",
+      "text": "Security",
+      "domain": null,
+      "position": 94
+    },
+    {
+      "href": "/mcp",
+      "text": "Zapier MCP",
+      "domain": null,
+      "position": 95
+    },
+    {
+      "href": "/sdk",
+      "text": "Zapier SDK Beta",
+      "domain": null,
+      "position": 96
+    },
+    {
+      "href": "/functions",
+      "text": "Functions Beta",
+      "domain": null,
+      "position": 97
+    },
+    {
+      "href": "/l/leadrouter",
+      "text": "Lead Router Beta",
+      "domain": null,
+      "position": 98
+    },
+    {
+      "href": "/solutions/revops",
+      "text": "RevOps",
+      "domain": null,
+      "position": 99
+    },
+    {
+      "href": "/solutions/marketing",
+      "text": "Marketing",
+      "domain": null,
+      "position": 100
+    },
+    {
+      "href": "/solutions/it",
+      "text": "IT",
+      "domain": null,
+      "position": 101
+    },
+    {
+      "href": "/solutions/hr",
+      "text": "HR",
+      "domain": null,
+      "position": 102
+    },
+    {
+      "href": "/solutions/sales",
+      "text": "Sales",
+      "domain": null,
+      "position": 103
+    },
+    {
+      "href": "/solutions/customer-support",
+      "text": "Customer Support",
+      "domain": null,
+      "position": 104
+    },
+    {
+      "href": "/solutions/leaders",
+      "text": "Leaders",
+      "domain": null,
+      "position": 105
+    },
+    {
+      "href": "/solutions/executive-assistants",
+      "text": "Executive Assistants",
+      "domain": null,
+      "position": 106
+    },
+    {
+      "href": "/apps/netsuite/integrations",
+      "text": "NetSuite",
+      "domain": null,
+      "position": 107
+    },
+    {
+      "href": "/apps/salesforce/integrations",
+      "text": "Salesforce",
+      "domain": null,
+      "position": 108
+    },
+    {
+      "href": "/apps/hubspot/integrations",
+      "text": "HubSpot",
+      "domain": null,
+      "position": 109
+    },
+    {
+      "href": "/apps/slack/integrations",
+      "text": "Slack",
+      "domain": null,
+      "position": 110
+    },
+    {
+      "href": "/apps/chatgpt/integrations",
+      "text": "ChatGPT (OpenAI)",
+      "domain": null,
+      "position": 111
+    },
+    {
+      "href": "/apps/microsoft-dynamics-crm/integrations",
+      "text": "Microsoft Dynamics CRM",
+      "domain": null,
+      "position": 112
+    },
+    {
+      "href": "/apps/microsoft-teams/integrations",
+      "text": "Microsoft Teams",
+      "domain": null,
+      "position": 113
+    },
+    {
+      "href": "/apps/zendesk/integrations",
+      "text": "Zendesk",
+      "domain": null,
+      "position": 114
+    },
+    {
+      "href": "/apps/jira-software-cloud/integrations",
+      "text": "Jira Software Cloud",
+      "domain": null,
+      "position": 115
+    },
+    {
+      "href": "/apps",
+      "text": "View all apps",
+      "domain": null,
+      "position": 116
+    },
+    {
+      "href": "/lead-management",
+      "text": "Lead management",
+      "domain": null,
+      "position": 117
+    },
+    {
+      "href": "/sales-pipeline-management",
+      "text": "Sales pipeline",
+      "domain": null,
+      "position": 118
+    },
+    {
+      "href": "/marketing-campaigns",
+      "text": "Marketing campaigns",
+      "domain": null,
+      "position": 119
+    },
+    {
+      "href": "/customer-support-management",
+      "text": "Customer support",
+      "domain": null,
+      "position": 120
+    },
+    {
+      "href": "/data-management",
+      "text": "Data management",
+      "domain": null,
+      "position": 121
+    },
+    {
+      "href": "/project-management",
+      "text": "Project management",
+      "domain": null,
+      "position": 122
+    },
+    {
+      "href": "/ticket-incident-management",
+      "text": "Tickets and incidents",
+      "domain": null,
+      "position": 123
+    },
+    {
+      "href": "/startups",
+      "text": "Startups",
+      "domain": null,
+      "position": 124
+    },
+    {
+      "href": "/smb",
+      "text": "Small and medium businesses",
+      "domain": null,
+      "position": 125
+    },
+    {
+      "href": "/enterprise",
+      "text": "Enterprise",
+      "domain": null,
+      "position": 126
+    },
+    {
+      "href": "/blog/what-you-should-automate/",
+      "text": "5 things to automate today",
+      "domain": null,
+      "position": 127
+    },
+    {
+      "href": "/blog/create-custom-ai-chatbots-with-interfaces/",
+      "text": "Create custom chatbots",
+      "domain": null,
+      "position": 128
+    },
+    {
+      "href": "/resources/guides",
+      "text": "Guides",
+      "domain": null,
+      "position": 129
+    },
+    {
+      "href": "/resources/events",
+      "text": "Webinars",
+      "domain": null,
+      "position": 130
+    },
+    {
+      "href": "/customer-stories",
+      "text": "Customer stories",
+      "domain": null,
+      "position": 131
+    },
+    {
+      "href": "/blog/",
+      "text": "Blog",
+      "domain": null,
+      "position": 132
+    },
+    {
+      "href": "/blog/get-started-with-zapier/",
+      "text": "Zapier quick-start guide",
+      "domain": null,
+      "position": 133
+    },
+    {
+      "href": "/blog/what-are-webhooks/",
+      "text": "Webhooks and Zapier",
+      "domain": null,
+      "position": 134
+    },
+    {
+      "href": "https://help.zapier.com/hc/en-us",
+      "text": "Help Center",
+      "domain": "help.zapier.com",
+      "position": 135
+    },
+    {
+      "href": "/app/get-help",
+      "text": "Zapier Support",
+      "domain": null,
+      "position": 136
+    },
+    {
+      "href": "/partnerdirectory",
+      "text": "Hire a Zapier Solution Partner",
+      "domain": null,
+      "position": 137
+    },
+    {
+      "href": "/blog/ai-orchestration/",
+      "text": "AI orchestration at work",
+      "domain": null,
+      "position": 138
+    },
+    {
+      "href": "/blog/zapier-copilot-guide/",
+      "text": "Zapier Copilot",
+      "domain": null,
+      "position": 139
+    },
+    {
+      "href": "/blog/zapier-ai-guide/",
+      "text": "Zapier's AI tools",
+      "domain": null,
+      "position": 140
+    },
+    {
+      "href": "/blog/zapier-mcp-guide/",
+      "text": "How to use Zapier MCP",
+      "domain": null,
+      "position": 141
+    },
+    {
+      "href": "/blog/zapier-agents-guide/",
+      "text": "Zapier Agents",
+      "domain": null,
+      "position": 142
+    },
+    {
+      "href": "/developer-platform",
+      "text": "Powered by Zapier",
+      "domain": null,
+      "position": 143
+    },
+    {
+      "href": "/developer-platform/integrations",
+      "text": "Build an integration",
+      "domain": null,
+      "position": 144
+    },
+    {
+      "href": "/developer-platform/embed-tools",
+      "text": "Embed an integration",
+      "domain": null,
+      "position": 145
+    },
+    {
+      "href": "/developer-platform/partner-program",
+      "text": "Integration Partner Program",
+      "domain": null,
+      "position": 146
+    },
+    {
+      "href": "https://platform.zapier.com/",
+      "text": "Documentation",
+      "domain": "platform.zapier.com",
+      "position": 147
+    },
+    {
+      "href": "/enterprise",
+      "text": "Enterprise",
+      "domain": null,
+      "position": 148
+    },
+    {
+      "href": "/pricing",
+      "text": "Pricing",
+      "domain": null,
+      "position": 149
+    },
+    {
+      "href": "/de/blog/best-ai-meeting-assistant/",
+      "text": "Deutsch - DE",
+      "domain": null,
+      "position": 150
+    },
+    {
+      "href": "/blog/best-ai-meeting-assistant/",
+      "text": "English - EN",
+      "domain": null,
+      "position": 151
+    },
+    {
+      "href": "/es/blog/best-ai-meeting-assistant/",
+      "text": "Espa\u00f1ol - ES",
+      "domain": null,
+      "position": 152
+    },
+    {
+      "href": "/fr/blog/best-ai-meeting-assistant/",
+      "text": "Fran\u00e7ais - FR",
+      "domain": null,
+      "position": 153
+    },
+    {
+      "href": "/ja/blog/best-ai-meeting-assistant/",
+      "text": "\u65e5\u672c\u8a9e - JA",
+      "domain": null,
+      "position": 154
+    },
+    {
+      "href": "https://github.com/zapier",
+      "text": "GitHub",
+      "domain": "github.com",
+      "position": 155
+    },
+    {
+      "href": "/apps",
+      "text": "Explore apps",
+      "domain": null,
+      "position": 156
+    },
+    {
+      "href": "/l/contact-sales?demo_source=cs_nav_header",
+      "text": "Contact sales",
+      "domain": null,
+      "position": 157
+    },
+    {
+      "href": "/blog/",
+      "text": "Blog",
+      "domain": null,
+      "position": 158
+    },
+    {
+      "href": "/blog/categories/app-picks/",
+      "text": "All articles",
+      "domain": null,
+      "position": 159
+    },
+    {
+      "href": "/blog/all-articles/best-apps/",
+      "text": "Best apps",
+      "domain": null,
+      "position": 160
+    },
+    {
+      "href": "/blog/all-articles/app-of-the-day/",
+      "text": "App of the day",
+      "domain": null,
+      "position": 161
+    },
+    {
+      "href": "/blog/all-articles/app-comparisons/",
+      "text": "App comparisons",
+      "domain": null,
+      "position": 162
+    },
+    {
+      "href": "/blog/categories/zapier-automation/",
+      "text": "All articles",
+      "domain": null,
+      "position": 163
+    },
+    {
+      "href": "/blog/all-articles/automation-inspiration/",
+      "text": "Automation inspiration",
+      "domain": null,
+      "position": 164
+    },
+    {
+      "href": "/blog/all-articles/zapier-tutorials/",
+      "text": "Zapier tutorials",
+      "domain": null,
+      "position": 165
+    },
+    {
+      "href": "/blog/all-articles/zapier-feature-guides/",
+      "text": "Zapier feature guides",
+      "domain": null,
+      "position": 166
+    },
+    {
+      "href": "/blog/all-articles/customers/",
+      "text": "Customer stories",
+      "domain": null,
+      "position": 167
+    },
+    {
+      "href": "/blog/categories/productivity/",
+      "text": "All articles",
+      "domain": null,
+      "position": 168
+    },
+    {
+      "href": "/blog/all-articles/productivity-tips/",
+      "text": "Productivity tips",
+      "domain": null,
+      "position": 169
+    },
+    {
+      "href": "/blog/all-articles/app-tips/",
+      "text": "App tips",
+      "domain": null,
+      "position": 170
+    },
+    {
+      "href": "/blog/all-articles/app-tutorials/",
+      "text": "App tutorials",
+      "domain": null,
+      "position": 171
+    },
+    {
+      "href": "/blog/categories/grow-your-business/",
+      "text": "All articles",
+      "domain": null,
+      "position": 172
+    },
+    {
+      "href": "/blog/all-articles/marketing-tips/",
+      "text": "Marketing tips",
+      "domain": null,
+      "position": 173
+    },
+    {
+      "href": "/blog/all-articles/business-tips/",
+      "text": "Business tips",
+      "domain": null,
+      "position": 174
+    },
+    {
+      "href": "/blog/categories/zapier-product-and-platform/",
+      "text": "All articles",
+      "domain": null,
+      "position": 175
+    },
+    {
+      "href": "/blog/all-articles/partner-case-studies/",
+      "text": "Partner case studies",
+      "domain": null,
+      "position": 176
+    },
+    {
+      "href": "/blog/all-articles/product-news/",
+      "text": "Product news",
+      "domain": null,
+      "position": 177
+    },
+    {
+      "href": "/blog/all-articles/platform-tips/",
+      "text": "Platform tips",
+      "domain": null,
+      "position": 178
+    },
+    {
+      "href": "/blog/categories/company-updates/",
+      "text": "All articles",
+      "domain": null,
+      "position": 179
+    },
+    {
+      "href": "/blog/all-articles/company-news/",
+      "text": "Company news",
+      "domain": null,
+      "position": 180
+    },
+    {
+      "href": "/blog/all-articles/company-initiatives/",
+      "text": "Zapier initiatives",
+      "domain": null,
+      "position": 181
+    },
+    {
+      "href": "/blog/categories/remote-work/",
+      "text": "All articles",
+      "domain": null,
+      "position": 182
+    },
+    {
+      "href": "/blog/all-articles/remote-work-tips/",
+      "text": "Remote work tips",
+      "domain": null,
+      "position": 183
+    },
+    {
+      "href": "/blog/all-articles/how-we-work-at-zapier/",
+      "text": "How we work at Zapier",
+      "domain": null,
+      "position": 184
+    },
+    {
+      "href": "/resources/guides",
+      "text": "Zapier guides",
+      "domain": null,
+      "position": 185
+    },
+    {
+      "href": "/blog/categories/app-picks/",
+      "text": "All articles",
+      "domain": null,
+      "position": 186
+    },
+    {
+      "href": "/blog/all-articles/best-apps/",
+      "text": "Best apps",
+      "domain": null,
+      "position": 187
+    },
+    {
+      "href": "/blog/all-articles/app-of-the-day/",
+      "text": "App of the day",
+      "domain": null,
+      "position": 188
+    },
+    {
+      "href": "/blog/all-articles/app-comparisons/",
+      "text": "App comparisons",
+      "domain": null,
+      "position": 189
+    },
+    {
+      "href": "/blog/categories/zapier-automation/",
+      "text": "All articles",
+      "domain": null,
+      "position": 190
+    },
+    {
+      "href": "/blog/all-articles/automation-inspiration/",
+      "text": "Automation inspiration",
+      "domain": null,
+      "position": 191
+    },
+    {
+      "href": "/blog/all-articles/zapier-tutorials/",
+      "text": "Zapier tutorials",
+      "domain": null,
+      "position": 192
+    },
+    {
+      "href": "/blog/all-articles/zapier-feature-guides/",
+      "text": "Zapier feature guides",
+      "domain": null,
+      "position": 193
+    },
+    {
+      "href": "/blog/all-articles/customers/",
+      "text": "Customer stories",
+      "domain": null,
+      "position": 194
+    },
+    {
+      "href": "/blog/categories/productivity/",
+      "text": "All articles",
+      "domain": null,
+      "position": 195
+    },
+    {
+      "href": "/blog/all-articles/productivity-tips/",
+      "text": "Productivity tips",
+      "domain": null,
+      "position": 196
+    },
+    {
+      "href": "/blog/all-articles/app-tips/",
+      "text": "App tips",
+      "domain": null,
+      "position": 197
+    },
+    {
+      "href": "/blog/all-articles/app-tutorials/",
+      "text": "App tutorials",
+      "domain": null,
+      "position": 198
+    },
+    {
+      "href": "/blog/categories/grow-your-business/",
+      "text": "All articles",
+      "domain": null,
+      "position": 199
+    },
+    {
+      "href": "/blog/all-articles/marketing-tips/",
+      "text": "Marketing tips",
+      "domain": null,
+      "position": 200
+    },
+    {
+      "href": "/blog/all-articles/business-tips/",
+      "text": "Business tips",
+      "domain": null,
+      "position": 201
+    },
+    {
+      "href": "/blog/categories/zapier-product-and-platform/",
+      "text": "All articles",
+      "domain": null,
+      "position": 202
+    },
+    {
+      "href": "/blog/all-articles/partner-case-studies/",
+      "text": "Partner case studies",
+      "domain": null,
+      "position": 203
+    },
+    {
+      "href": "/blog/all-articles/product-news/",
+      "text": "Product news",
+      "domain": null,
+      "position": 204
+    },
+    {
+      "href": "/blog/all-articles/platform-tips/",
+      "text": "Platform tips",
+      "domain": null,
+      "position": 205
+    },
+    {
+      "href": "/blog/categories/company-updates/",
+      "text": "All articles",
+      "domain": null,
+      "position": 206
+    },
+    {
+      "href": "/blog/all-articles/company-news/",
+      "text": "Company news",
+      "domain": null,
+      "position": 207
+    },
+    {
+      "href": "/blog/all-articles/company-initiatives/",
+      "text": "Zapier initiatives",
+      "domain": null,
+      "position": 208
+    },
+    {
+      "href": "/blog/categories/remote-work/",
+      "text": "All articles",
+      "domain": null,
+      "position": 209
+    },
+    {
+      "href": "/blog/all-articles/remote-work-tips/",
+      "text": "Remote work tips",
+      "domain": null,
+      "position": 210
+    },
+    {
+      "href": "/blog/all-articles/how-we-work-at-zapier/",
+      "text": "How we work at Zapier",
+      "domain": null,
+      "position": 211
+    },
+    {
+      "href": "/resources/guides",
+      "text": "Zapier guides",
+      "domain": null,
+      "position": 212
+    },
+    {
+      "href": "/blog",
+      "text": "Home",
+      "domain": null,
+      "position": 213
+    },
+    {
+      "href": "/blog/categories/app-picks",
+      "text": "App picks",
+      "domain": null,
+      "position": 214
+    },
+    {
+      "href": "/blog/categories/best-apps",
+      "text": "Best apps",
+      "domain": null,
+      "position": 215
+    },
+    {
+      "href": "/blog/all-articles/best-apps",
+      "text": "Best apps",
+      "domain": null,
+      "position": 216
+    },
+    {
+      "href": "https://x.com/intent/post?url=https://zapier.com/blog/best-ai-meeting-assistant/",
+      "text": "",
+      "domain": "x.com",
+      "position": 217
+    },
+    {
+      "href": "https://www.linkedin.com/sharing/share-offsite?url=https://zapier.com/blog/best-ai-meeting-assistant/",
+      "text": "",
+      "domain": "linkedin.com",
+      "position": 218
+    },
+    {
+      "href": "https://www.reddit.com/submit?url=https://zapier.com/blog/best-ai-meeting-assistant/",
+      "text": "",
+      "domain": "reddit.com",
+      "position": 219
+    },
+    {
+      "href": "/blog/affiliate-commission/",
+      "text": "Learn more",
+      "domain": null,
+      "position": 220
+    },
+    {
+      "href": "https://zapier.com/blog/create-digital-assistant-with-ai-zapier/",
+      "text": "Learn how",
+      "domain": "zapier.com",
+      "position": 221
+    },
+    {
+      "href": "/blog/streamline-meetings-with-ai/",
+      "text": "AI meeting assistants",
+      "domain": null,
+      "position": 222
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1749163931281x693439534891270100?p=1715808885462x244895206427328500",
+      "text": "Fireflies",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 223
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1759167931322x939826519268917200?p=1715808885462x244895206427328500",
+      "text": "Krisp",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 224
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1759277038947x319070463692636160?p=1715808885462x244895206427328500",
+      "text": "Fathom",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 225
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1759178795460x234523644974858240?p=1715808885462x244895206427328500",
+      "text": "Fellow",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 226
+    },
+    {
+      "href": "https://zapier.com/sign-up?utm_campaign=zpr-gbl-pgv-evr-blogsignupfullwidth-ctn&utm_medium=blog&utm_source=zapier",
+      "text": "Try Zapier",
+      "domain": "zapier.com",
+      "position": 227
+    },
+    {
+      "href": "#fireflies",
+      "text": "Fireflies",
+      "domain": null,
+      "position": 228
+    },
+    {
+      "href": "#granola",
+      "text": "Granola",
+      "domain": null,
+      "position": 229
+    },
+    {
+      "href": "#avoma",
+      "text": "Avoma",
+      "domain": null,
+      "position": 230
+    },
+    {
+      "href": "#tldv",
+      "text": "tl;dv",
+      "domain": null,
+      "position": 231
+    },
+    {
+      "href": "#krisp",
+      "text": "Krisp",
+      "domain": null,
+      "position": 232
+    },
+    {
+      "href": "#equal-time",
+      "text": "Equal Time",
+      "domain": null,
+      "position": 233
+    },
+    {
+      "href": "#otter",
+      "text": "Otter",
+      "domain": null,
+      "position": 234
+    },
+    {
+      "href": "#fellow",
+      "text": "Fellow",
+      "domain": null,
+      "position": 235
+    },
+    {
+      "href": "#meetgeek",
+      "text": "MeetGeek",
+      "domain": null,
+      "position": 236
+    },
+    {
+      "href": "#fathom",
+      "text": "Fathom",
+      "domain": null,
+      "position": 237
+    },
+    {
+      "href": "/blog/selecting-apps/",
+      "text": "how we select apps to feature on the Zapier blog",
+      "domain": null,
+      "position": 238
+    },
+    {
+      "href": "/blog/best-video-conferencing-apps/",
+      "text": "best video conferencing apps",
+      "domain": null,
+      "position": 239
+    },
+    {
+      "href": "/blog/revenue-intelligence-platform",
+      "text": "revenue intelligence apps",
+      "domain": null,
+      "position": 240
+    },
+    {
+      "href": "/blog/ai-personal-assistant/",
+      "text": "AI assistant",
+      "domain": null,
+      "position": 241
+    },
+    {
+      "href": "https://www.zoom.com/en/ai-assistant/",
+      "text": "AI features",
+      "domain": "zoom.com",
+      "position": 242
+    },
+    {
+      "href": "https://www.microsoft.com/en-us/microsoft-365/business/copilot-for-microsoft-365#tabs-oc2a1c_tab1",
+      "text": "Copilot Pro Business add-on",
+      "domain": "microsoft.com",
+      "position": 243
+    },
+    {
+      "href": "https://support.google.com/a/answer/15071792?hl=en",
+      "text": "Gemini Enterprise",
+      "domain": "support.google.com",
+      "position": 244
+    },
+    {
+      "href": "#fireflies",
+      "text": "Fireflies",
+      "domain": null,
+      "position": 245
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1749163931281x693439534891270100?p=1715808885462x244895206427328500",
+      "text": "Visit Fireflies",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 246
+    },
+    {
+      "href": "#granola",
+      "text": "Granola",
+      "domain": null,
+      "position": 247
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1779130029445x347557317992251400?p=1715808885462x244895206427328500",
+      "text": "Visit Granola",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 248
+    },
+    {
+      "href": "#avoma",
+      "text": "Avoma",
+      "domain": null,
+      "position": 249
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1745948908846x548845985233371140?p=1715808885462x244895206427328500",
+      "text": "Visit Avoma",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 250
+    },
+    {
+      "href": "#tldv",
+      "text": "tl;dv",
+      "domain": null,
+      "position": 251
+    },
+    {
+      "href": "https://tldv.io/",
+      "text": "Visit tl;dv",
+      "domain": "tldv.io",
+      "position": 252
+    },
+    {
+      "href": "#krisp",
+      "text": "Krisp",
+      "domain": null,
+      "position": 253
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1759167931322x939826519268917200?p=1715808885462x244895206427328500",
+      "text": "Visit Krisp",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 254
+    },
+    {
+      "href": "#equal-time",
+      "text": "Equal Time",
+      "domain": null,
+      "position": 255
+    },
+    {
+      "href": "https://equaltime.io/",
+      "text": "Visit Equal Time",
+      "domain": "equaltime.io",
+      "position": 256
+    },
+    {
+      "href": "#otter",
+      "text": "Otter",
+      "domain": null,
+      "position": 257
+    },
+    {
+      "href": "http://otter.ai/",
+      "text": "Visit Otter",
+      "domain": "otter.ai",
+      "position": 258
+    },
+    {
+      "href": "#fellow",
+      "text": "Fellow",
+      "domain": null,
+      "position": 259
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1759178795460x234523644974858240?p=1715808885462x244895206427328500",
+      "text": "Visit Fellow",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 260
+    },
+    {
+      "href": "#meetgeek",
+      "text": "MeetGeek",
+      "domain": null,
+      "position": 261
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1779138651069x333670847573393400?p=1715808885462x244895206427328500",
+      "text": "Visit MeetGeek",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 262
+    },
+    {
+      "href": "#fathom",
+      "text": "Fathom",
+      "domain": null,
+      "position": 263
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1759277038947x319070463692636160?p=1715808885462x244895206427328500",
+      "text": "Visit Fathom",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 264
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1749163931281x693439534891270100?p=1715808885462x244895206427328500",
+      "text": "Fireflies.ai",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 265
+    },
+    {
+      "href": "https://zapier.com/apps/fireflies/integrations",
+      "text": "integrate Fireflies with Zapier",
+      "domain": "zapier.com",
+      "position": 266
+    },
+    {
+      "href": "/blog/automate-firefliesai/",
+      "text": "how to automate Fireflies",
+      "domain": null,
+      "position": 267
+    },
+    {
+      "href": "https://zapier.com/apps/fireflies/integrations",
+      "text": "Automate Fireflies",
+      "domain": "zapier.com",
+      "position": 268
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1779130029445x347557317992251400?p=1715808885462x244895206427328500",
+      "text": "Granola",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 269
+    },
+    {
+      "href": "/blog/granola-ai/",
+      "text": "Granola",
+      "domain": null,
+      "position": 270
+    },
+    {
+      "href": "/blog/sprint-retrospective/",
+      "text": "sprint retrospective",
+      "domain": null,
+      "position": 271
+    },
+    {
+      "href": "https://www.granola.ai/docs/docs/integrations/using-granola-for-phone-calls",
+      "text": "transcribe phone calls",
+      "domain": "granola.ai",
+      "position": 272
+    },
+    {
+      "href": "https://zapier.com/apps/granola/integrations/",
+      "text": "connect Granola",
+      "domain": "zapier.com",
+      "position": 273
+    },
+    {
+      "href": "/blog/ai-orchestration/",
+      "text": "orchestrated AI systems",
+      "domain": null,
+      "position": 274
+    },
+    {
+      "href": "/blog/automate-granola",
+      "text": "how to automate Granola with Zapier",
+      "domain": null,
+      "position": 275
+    },
+    {
+      "href": "https://zapier.com/apps/granola/integrations/",
+      "text": "Automate Granola",
+      "domain": "zapier.com",
+      "position": 276
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1745948908846x548845985233371140?p=1715808885462x244895206427328500",
+      "text": "Avoma",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 277
+    },
+    {
+      "href": "https://zapier.com/apps/avoma/integrations",
+      "text": "integrate Avoma with Zapier",
+      "domain": "zapier.com",
+      "position": 278
+    },
+    {
+      "href": "https://zapier.com/apps/avoma/integrations",
+      "text": "Automate Avoma",
+      "domain": "zapier.com",
+      "position": 279
+    },
+    {
+      "href": "https://tldv.io/",
+      "text": "tl;dv",
+      "domain": "tldv.io",
+      "position": 280
+    },
+    {
+      "href": "https://zapier.com/apps/tldv/integrations",
+      "text": "connect tl;dv to Zapier",
+      "domain": "zapier.com",
+      "position": 281
+    },
+    {
+      "href": "/blog/automate-tldv/",
+      "text": "how to automate tl;dv",
+      "domain": null,
+      "position": 282
+    },
+    {
+      "href": "https://zapier.com/apps/tldv/integrations",
+      "text": "Automate tl;dv",
+      "domain": "zapier.com",
+      "position": 283
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1759167931322x939826519268917200?p=1715808885462x244895206427328500",
+      "text": "Krisp",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 284
+    },
+    {
+      "href": "https://zapier.com/apps/krisp/integrations",
+      "text": "connect Krisp to Zapier",
+      "domain": "zapier.com",
+      "position": 285
+    },
+    {
+      "href": "/blog/automate-krisp/",
+      "text": "how to automate Krisp",
+      "domain": null,
+      "position": 286
+    },
+    {
+      "href": "https://zapier.com/apps/krisp/integrations",
+      "text": "Automate Krisp",
+      "domain": "zapier.com",
+      "position": 287
+    },
+    {
+      "href": "https://equaltime.io/",
+      "text": "Equal Time",
+      "domain": "equaltime.io",
+      "position": 288
+    },
+    {
+      "href": "http://otter.ai",
+      "text": "Otter",
+      "domain": "otter.ai",
+      "position": 289
+    },
+    {
+      "href": "https://zapier.com/apps/otterai/integrations",
+      "text": "connect it to Zapier",
+      "domain": "zapier.com",
+      "position": 290
+    },
+    {
+      "href": "/blog/automate-otterai/",
+      "text": "how to automate Otter",
+      "domain": null,
+      "position": 291
+    },
+    {
+      "href": "https://zapier.com/apps/otterai/integrations",
+      "text": "Automate Otter",
+      "domain": "zapier.com",
+      "position": 292
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1759178795460x234523644974858240?p=1715808885462x244895206427328500",
+      "text": "Fellow",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 293
+    },
+    {
+      "href": "https://trust.fellow.app/",
+      "text": "Vanta platform",
+      "domain": "trust.fellow.app",
+      "position": 294
+    },
+    {
+      "href": "https://zapier.com/apps/fellow/integrations",
+      "text": "connect Fellow to Zapier",
+      "domain": "zapier.com",
+      "position": 295
+    },
+    {
+      "href": "https://zapier.com/apps/fellow/integrations",
+      "text": "Automate Fellow",
+      "domain": "zapier.com",
+      "position": 296
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1779138651069x333670847573393400?p=1715808885462x244895206427328500",
+      "text": "MeetGeek",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 297
+    },
+    {
+      "href": "https://zapier.com/apps/meetgeekai/integrations",
+      "text": "Connect MeetGeek to Zapier",
+      "domain": "zapier.com",
+      "position": 298
+    },
+    {
+      "href": "https://zapier.com/apps/meetgeekai/integrations",
+      "text": "Automate MeetGeek",
+      "domain": "zapier.com",
+      "position": 299
+    },
+    {
+      "href": "https://vendors.selectsoftwarereviews.com/redirect/1759277038947x319070463692636160?p=1715808885462x244895206427328500",
+      "text": "Fathom",
+      "domain": "vendors.selectsoftwarereviews.com",
+      "position": 300
+    },
+    {
+      "href": "/blog/fathom-features",
+      "text": "Fathom's",
+      "domain": null,
+      "position": 301
+    },
+    {
+      "href": "https://zapier.com/apps/fathom/integrations",
+      "text": "connect it to Zapier",
+      "domain": "zapier.com",
+      "position": 302
+    },
+    {
+      "href": "/blog/automate-fathom/",
+      "text": "how to automate Fathom",
+      "domain": null,
+      "position": 303
+    },
+    {
+      "href": "https://zapier.com/apps/fathom/integrations",
+      "text": "Automate Fathom",
+      "domain": "zapier.com",
+      "position": 304
+    },
+    {
+      "href": "/blog/fathom-vs-fireflies/",
+      "text": "Fathom vs. Fireflies",
+      "domain": null,
+      "position": 305
+    },
+    {
+      "href": "/blog/no-meetings/",
+      "text": "having too many meetings",
+      "domain": null,
+      "position": 306
+    },
+    {
+      "href": "/blog/best-transcription-apps/",
+      "text": "The best transcription software",
+      "domain": null,
+      "position": 307
+    },
+    {
+      "href": "/blog/best-zoom-alternatives/",
+      "text": "The best Zoom alternatives",
+      "domain": null,
+      "position": 308
+    },
+    {
+      "href": "/blog/meeting-minutes-template/",
+      "text": "Free meeting minutes templates and examples",
+      "domain": null,
+      "position": 309
+    },
+    {
+      "href": "/blog/ai-sales-assistant",
+      "text": "The best AI sales assistants",
+      "domain": null,
+      "position": 310
+    },
+    {
+      "href": "/blog/enterprise-ai",
+      "text": "Enterprise AI: How to leverage AI across your organization",
+      "domain": null,
+      "position": 311
+    },
+    {
+      "href": "/blog/read-ai",
+      "text": "How to use Read AI for better meetings",
+      "domain": null,
+      "position": 312
+    },
+    {
+      "href": "/blog/automate-relevance-ai/",
+      "text": "Popular ways to automate Relevance AI",
+      "domain": null,
+      "position": 313
+    },
+    {
+      "href": "/blog/author/miguel-rebelo",
+      "text": "Miguel Rebelo Miguel Rebelo is an avid tinkerer and self-taught AI and automation expert based in London, UK. He loves technology, video games, and huge forests. Track him down at mirebelo.com.",
+      "domain": null,
+      "position": 314
+    },
+    {
+      "href": "/blog/tags/artificial-intelligence",
+      "text": "Artificial intelligence (AI)",
+      "domain": null,
+      "position": 315
+    },
+    {
+      "href": "/blog/tags/video-conferencing",
+      "text": "Video conferencing",
+      "domain": null,
+      "position": 316
+    },
+    {
+      "href": "/blog/apps/fireflies",
+      "text": "Fireflies.ai",
+      "domain": null,
+      "position": 317
+    },
+    {
+      "href": "/blog/apps/fellow",
+      "text": "Fellow",
+      "domain": null,
+      "position": 318
+    },
+    {
+      "href": "/blog/apps/fathom",
+      "text": "Fathom",
+      "domain": null,
+      "position": 319
+    },
+    {
+      "href": "/blog/apps/tldv",
+      "text": "tl;dv",
+      "domain": null,
+      "position": 320
+    },
+    {
+      "href": "/blog/apps/krisp",
+      "text": "Krisp",
+      "domain": null,
+      "position": 321
+    },
+    {
+      "href": "/blog/apps/avoma",
+      "text": "Avoma",
+      "domain": null,
+      "position": 322
+    },
+    {
+      "href": "/blog/apps/otterai",
+      "text": "Otter.ai",
+      "domain": null,
+      "position": 323
+    },
+    {
+      "href": "/blog/apps/granola",
+      "text": "Granola",
+      "domain": null,
+      "position": 324
+    },
+    {
+      "href": "/blog/apps/meetgeekai",
+      "text": "MeetGeek",
+      "domain": null,
+      "position": 325
+    },
+    {
+      "href": "/blog/zapier-sdk-guide/",
+      "text": "",
+      "domain": null,
+      "position": 326
+    },
+    {
+      "href": "/blog/all-articles/zapier-feature-guides",
+      "text": "Zapier feature guides",
+      "domain": null,
+      "position": 327
+    },
+    {
+      "href": "/blog/zapier-sdk-guide/",
+      "text": "Zapier SDK: Connect your code files to thousands of actions Zapier SDK: Connect your code files to...",
+      "domain": null,
+      "position": 328
+    },
+    {
+      "href": "/blog/best-ai-app-builder/",
+      "text": "",
+      "domain": null,
+      "position": 329
+    },
+    {
+      "href": "/blog/all-articles/best-apps",
+      "text": "Best apps",
+      "domain": null,
+      "position": 330
+    },
+    {
+      "href": "/blog/best-ai-app-builder/",
+      "text": "The 5 best AI app builders in 2026 The 5 best AI app builders in 2026",
+      "domain": null,
+      "position": 331
+    },
+    {
+      "href": "/blog/best-ai-voice-generator/",
+      "text": "",
+      "domain": null,
+      "position": 332
+    },
+    {
+      "href": "/blog/all-articles/best-apps",
+      "text": "Best apps",
+      "domain": null,
+      "position": 333
+    },
+    {
+      "href": "/blog/best-ai-voice-generator/",
+      "text": "The 9 best AI voice generators The 9 best AI voice generators",
+      "domain": null,
+      "position": 334
+    },
+    {
+      "href": "/blog/ai-agent-orchestration/",
+      "text": "",
+      "domain": null,
+      "position": 335
+    },
+    {
+      "href": "/blog/all-articles/productivity-tips",
+      "text": "Productivity tips",
+      "domain": null,
+      "position": 336
+    },
+    {
+      "href": "/blog/ai-agent-orchestration/",
+      "text": "What is AI agent orchestration? What is AI agent orchestration?",
+      "domain": null,
+      "position": 337
+    },
+    {
+      "href": "/blog/minimize-ai-spend/",
+      "text": "",
+      "domain": null,
+      "position": 338
+    },
+    {
+      "href": "/blog/all-articles/automation-inspiration",
+      "text": "Automation inspiration",
+      "domain": null,
+      "position": 339
+    },
+    {
+      "href": "/blog/minimize-ai-spend/",
+      "text": "How Zapier can help you with valuemaxxing, not tokenmaxxing How Zapier can help you with valuemaxxing,...",
+      "domain": null,
+      "position": 340
+    },
+    {
+      "href": "/blog/ai-in-the-workplace/",
+      "text": "",
+      "domain": null,
+      "position": 341
+    },
+    {
+      "href": "/blog/all-articles/business-tips",
+      "text": "Business tips",
+      "domain": null,
+      "position": 342
+    },
+    {
+      "href": "/blog/ai-in-the-workplace/",
+      "text": "AI in the workplace: What it looks like now and where we're headed AI in the workplace: What it looks like now...",
+      "domain": null,
+      "position": 343
+    },
+    {
+      "href": "/blog/claude-mythos/",
+      "text": "",
+      "domain": null,
+      "position": 344
+    },
+    {
+      "href": "/blog/all-articles/app-tips",
+      "text": "App tips",
+      "domain": null,
+      "position": 345
+    },
+    {
+      "href": "/blog/claude-mythos/",
+      "text": "What is Claude Mythos? And what happened to Claude Fable 5? What is Claude Mythos? And what happened to...",
+      "domain": null,
+      "position": 346
+    },
+    {
+      "href": "/blog/claude-ai/",
+      "text": "",
+      "domain": null,
+      "position": 347
+    },
+    {
+      "href": "/blog/all-articles/app-tips",
+      "text": "App tips",
+      "domain": null,
+      "position": 348
+    },
+    {
+      "href": "/blog/claude-ai/",
+      "text": "Claude 5: What you need to know about Anthropic's AI models and chatbot Claude 5: What you need to know about...",
+      "domain": null,
+      "position": 349
+    },
+    {
+      "href": "/sign-up",
+      "text": "Sign up",
+      "domain": null,
+      "position": 350
+    },
+    {
+      "href": "/how-it-works",
+      "text": "See how Zapier works",
+      "domain": null,
+      "position": 351
+    },
+    {
+      "href": "http://www.facebook.com/ZapierApp?utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier",
+      "text": "",
+      "domain": "facebook.com",
+      "position": 352
+    },
+    {
+      "href": "https://www.linkedin.com/company/zapier/?utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier",
+      "text": "",
+      "domain": "linkedin.com",
+      "position": 353
+    },
+    {
+      "href": "https://x.com/zapier?utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier#!",
+      "text": "",
+      "domain": "x.com",
+      "position": 354
+    },
+    {
+      "href": "https://www.youtube.com/user/ZapierApp/videos?utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier",
+      "text": "",
+      "domain": "youtube.com",
+      "position": 355
+    },
+    {
+      "href": "/blog/feeds/latest/",
+      "text": "",
+      "domain": null,
+      "position": 356
+    },
+    {
+      "href": "/pricing",
+      "text": "Pricing",
+      "domain": null,
+      "position": 357
+    },
+    {
+      "href": "/app/get-help",
+      "text": "Help",
+      "domain": null,
+      "position": 358
+    },
+    {
+      "href": "/developer-platform/integrations",
+      "text": "Developer Platform",
+      "domain": null,
+      "position": 359
+    },
+    {
+      "href": "/press",
+      "text": "Press",
+      "domain": null,
+      "position": 360
+    },
+    {
+      "href": "/jobs",
+      "text": "Jobs",
+      "domain": null,
+      "position": 361
+    },
+    {
+      "href": "/enterprise",
+      "text": "Enterprise",
+      "domain": null,
+      "position": 362
+    },
+    {
+      "href": "/templates",
+      "text": "Templates",
+      "domain": null,
+      "position": 363
+    },
+    {
+      "href": "/apps",
+      "text": "App Integrations",
+      "domain": null,
+      "position": 364
+    },
+    {
+      "href": "/l/partners",
+      "text": "Partners Program",
+      "domain": null,
+      "position": 365
+    },
+    {
+      "href": "/",
+      "text": "",
+      "domain": null,
+      "position": 366
+    },
+    {
+      "href": "/legal",
+      "text": "Legal",
+      "domain": null,
+      "position": 367
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy",
+      "domain": null,
+      "position": 368
+    }
+  ],
+  "link_count": 368
+}

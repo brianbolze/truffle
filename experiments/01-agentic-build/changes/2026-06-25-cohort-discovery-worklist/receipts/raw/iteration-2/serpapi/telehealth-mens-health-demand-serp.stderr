@@ -1,0 +1,2 @@
+WARNING: ai_overview schema drift for query="Strut Health TRT Nation alternatives men's health telehealth": ["text_blocks[7].type='table' not in {'heading', 'paragraph', 'list'}"]
+Parser pinned to v2 — parsed fields suppressed; review the shape before bumping (exit 3).

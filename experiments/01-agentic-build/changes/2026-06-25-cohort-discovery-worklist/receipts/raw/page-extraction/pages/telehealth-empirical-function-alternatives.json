@@ -1,0 +1,358 @@
+{
+  "tool": "page_extraction_probe",
+  "source": "direct_http_fetch",
+  "captured_at": "2026-06-26T03:34:24Z",
+  "ok": true,
+  "input": {
+    "id": "telehealth-empirical-function-alternatives",
+    "cohort": "telehealth",
+    "facet": "longevity_healthspan",
+    "rank": 8,
+    "url": "https://www.empirical.health/blog/function-health-alternatives/"
+  },
+  "schema_drift": [],
+  "cost": {
+    "credits": 0,
+    "usd": 0
+  },
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "error": null,
+  "raw_html_path": "receipts/raw/page-extraction/html/telehealth-empirical-function-alternatives.html",
+  "title": "Function Health Alternatives | Empirical Health",
+  "text": "Function Health Alternatives | Empirical Health New: 100 biomarkers for $190 Function Health Alternatives Brandon Ballinger \u00b7 May 10, 2025 If you\u2019re looking for a comprehensive blood panel to assess your health, you\u2019ve probably come across both Function Health and Empirical Health . While both services offer broad biomarker testing, there are important differences in price, availability, doctor involvement, and follow-up care. Below, we break down the key similarities and differences\u2014drawing on user experiences, direct comparisons, and community feedback. Function Health vs Empirical Health Feature Function Health Empirical Health Price $365/year $190 Number of biomarkers 100+ 100+ actionable, evidence-based markers ApoB \u2705 Yes \u2705 Yes Lp(a) \u2705 Yes \u2705 Yes hs-CRP \u2705 Yes \u2705 Yes Vitamin B12 Add-on \u2705 Yes Folate Add-on \u2705 Yes Number of lab visits Two blood draws required Single blood draw AI-powered insights \u274c No \u2705 Yes Follow-up care \u274c No \u2705 Yes: treatment, prescriptions, referrals App for tracking \u2705 Yes \u2705 Yes, Android and iPhone Wearables integrated Limited \u2705 Yes: Apple Watch, Galaxy Watch, Fitbit, Pixel, and more Nutrition tracking \u274c No \u2705 Yes Availability Nationwide Most states, including NY/NJ Detailed comparison of Function vs Empirical Function Health\u2019s panel vs Empirical\u2019s panel Both services offer a broad panel of blood tests. Function Health advertises \u201c100+ biomarkers\u201d for $365, while Empirical Health offers 100+ biomarkers for $190. As noted by users in this detailed comparison spreadsheet , the most clinically actionable markers\u2014such as ApoB, Lp(a), advanced lipids, hs-CRP, and insulin resistance markers\u2014are included in both panels. Function Health requires two blood draws (lab appointments on separate days), whereas Empirical requires a single lab appointment. Both Function Health and Empirical offer 100+ biomarkers, and Empirical includes personalized nutrition plans and AI-powered insights. _ Actionable Insights and Follow-up A major difference is what happens after you get your results . With Function Health, your results are delivered via a web dashboard with no actionable care plan. As one Reddit user put it, \u201c[Function Health\u2019s report] is so AI generated it\u2019s offensive. Nothing personal or bespoke about the write up.\u201d Empirical Health, on the other hand, provides personalized nutrition plans, exercise programs, and AI-powered health insights based on your biomarkers. This is a key advantage for anyone who wants to take action on their results, not just collect data. Function Health pricing vs Empirical Health Empirical Health is significantly less expensive : $190 for the initial panel, compared to $365/year for Function Health. Function Health\u2019s Chase Sapphire promotion expired March 31, 2026 In March, Chase Sapphire Reserve cardholders could get 50% cash back on Function Health\u2019s $365 membership. Empirical Health\u2019s every day price is $190, and is an alternative to Function\u2019s Chase Sapphire reserve promotion. Availability of Function Health vs Empirical Health in NY and NJ Function Health is available in most states, but notably not in New York or New Jersey without large fees due to state regulations (a total cost of $600 or more). This is a common frustration for residents in those states, as highlighted in this Reddit thread . In contrast, Empirical Health is available in most US states, including NY and NJ, with only a $99 extra fee, making it an affordable option for those who have been excluded from other services. App, Tracking, and Integrations Function Health provides a web dashboard for results. Empirical Health offers iOS and Android apps that not only track your lab results, but also integrate with Apple Watch and Android Watches for ongoing health monitoring. Compatible devices include Samsung Galaxy Watch, Pixel watch, Apple Watch (all models), and Fitbit. This can be especially useful for tracking trends over time and correlating lab results with lifestyle changes. Nutrition tracking in Empirical Health. Your biomarkers are used to create personalized nutrition goals. Medical Care in Empirical Health Function Health does not provide ongoing care, prescriptions, or referrals as part of the base package. Empirical Health includes these services if needed, making it a more complete option for those who want to address any issues found in their labs. When comparing Function Health vs Superpower vs Empirical Health, medical care is a major difference. Is Function health worth the money vs alternatives? Many people say Function Health is worth the money, but that alternatives like Empirical Health are a better deal. This reddit thread weight the cost of Function (with its new pricing of $365 per year) vs alternatives. Community Feedback and Comparison of Function Health Alternatives Some users have directly compared alternatives to Function Health. According to a Reddit post comparing Function Health to alternatives , Function Health\u2019s main drawbacks are: High price No actionable care plan No ongoing care or prescriptions Not available in NY/NJ without excessive fees Empirical Health is more cost-effective and action-oriented. Some users have noted that the panel, while comprehensive, is slightly smaller than Function\u2019s. However, as one user summarized: \u201cEmpirical Health is the only service I found that includes ApoB, Lp(a), and actionable health insights for under $200.\u201d The bottom line on alternatives to Function Health Both Function Health and Empirical Health offer comprehensive blood testing, but Empirical Health stands out for its lower price, actionable care plan, and nationwide availability. If you want more than just numbers\u2014and especially if you want to take action on your results\u2014Empirical Health is a strong alternative to Function Health. Learn more about Empirical Health Get your free 30-day heart health guide Evidence-based steps to optimize your heart health. Subscribe Heart disease kills more people than all cancers combined. Don't let it be you. Stop by one of 2,200 testing sites today and start your journey to better heart health. Get tested Product Download for iOS Download for Android Download Sleep Tracker Log in to Web App Support Testing Locations Compare vs Function Health vs Superpower vs InsideTracker vs Whoop Advanced Labs vs Labs by Hims vs Blueprint biomarkers Function Health vs Superpower Function Health alternatives Programs Advanced Heart Health Comprehensive Heart Health Gift an Empirical membership For Clinicians For Business Find a testing location Medicare-covered cardiovascular care Company About Empirical for Business Blog Reviews FAQ Contact Legal Privacy Policy Data Collection Terms of Service HIPAA Privacy Notice Telehealth Informed Consent Made with \u2764\ufe0f in New York, NY \u00b7 \u00a9 2026 Empirical Health",
+  "text_chars": 6776,
+  "links": [
+    {
+      "href": "/product/comprehensive-health-panel?utm_source=top_banner",
+      "text": "New: 100 biomarkers for $190",
+      "domain": null,
+      "position": 1
+    },
+    {
+      "href": "/blog/author/bballinger",
+      "text": "Brandon Ballinger",
+      "domain": null,
+      "position": 2
+    },
+    {
+      "href": "#function-health-vs-empirical-health",
+      "text": "Function Health vs Empirical Health",
+      "domain": null,
+      "position": 3
+    },
+    {
+      "href": "https://www.empirical.health/blog/function-health-alternatives/",
+      "text": "Function Health",
+      "domain": "empirical.health",
+      "position": 4
+    },
+    {
+      "href": "https://www.empirical.health/compare/function-health",
+      "text": "Function vs Empirical",
+      "domain": "empirical.health",
+      "position": 5
+    },
+    {
+      "href": "#function-healths-panel-vs-empiricals-panel",
+      "text": "Function Health\u2019s panel vs Empirical\u2019s panel",
+      "domain": null,
+      "position": 6
+    },
+    {
+      "href": "https://www.reddit.com/user/EmpiricalHealth/comments/1lmyvfu/comment/n17gf2y/?context=3",
+      "text": "this detailed comparison spreadsheet",
+      "domain": "reddit.com",
+      "position": 7
+    },
+    {
+      "href": "#actionable-insights-and-follow-up",
+      "text": "Actionable Insights and Follow-up",
+      "domain": null,
+      "position": 8
+    },
+    {
+      "href": "#function-health-pricing-vs-empirical-health",
+      "text": "Function Health pricing vs Empirical Health",
+      "domain": null,
+      "position": 9
+    },
+    {
+      "href": "#function-healths-chase-sapphire-promotion-expired-march-31-2026",
+      "text": "Function Health\u2019s Chase Sapphire promotion expired March 31, 2026",
+      "domain": null,
+      "position": 10
+    },
+    {
+      "href": "#availability-of-function-health-vs-empirical-health-in-ny-and-nj",
+      "text": "Availability of Function Health vs Empirical Health in NY and NJ",
+      "domain": null,
+      "position": 11
+    },
+    {
+      "href": "https://www.reddit.com/r/Function_Health/comments/1g9jvmo/price_doubled_for_ny_and_nj/",
+      "text": "this Reddit thread",
+      "domain": "reddit.com",
+      "position": 12
+    },
+    {
+      "href": "#app-tracking-and-integrations",
+      "text": "App, Tracking, and Integrations",
+      "domain": null,
+      "position": 13
+    },
+    {
+      "href": "#medical-care-in-empirical-health",
+      "text": "Medical Care in Empirical Health",
+      "domain": null,
+      "position": 14
+    },
+    {
+      "href": "/compare/function-health-vs-superpower",
+      "text": "Function Health vs Superpower",
+      "domain": null,
+      "position": 15
+    },
+    {
+      "href": "#is-function-health-worth-the-money-vs-alternatives",
+      "text": "Is Function health worth the money vs alternatives?",
+      "domain": null,
+      "position": 16
+    },
+    {
+      "href": "https://www.reddit.com/r/Function_Health/comments/1p8nvin/why_is_function_health_375_when_similar_panels/",
+      "text": "reddit thread",
+      "domain": "reddit.com",
+      "position": 17
+    },
+    {
+      "href": "#community-feedback-and-comparison-of-function-health-alternatives",
+      "text": "Community Feedback and Comparison of Function Health Alternatives",
+      "domain": null,
+      "position": 18
+    },
+    {
+      "href": "https://www.reddit.com/r/Cholesterol/comments/1lmmujk/blood_tests_with_apob_and_lpa_function_vs/",
+      "text": "Reddit post comparing Function Health to alternatives",
+      "domain": "reddit.com",
+      "position": 19
+    },
+    {
+      "href": "#the-bottom-line-on-alternatives-to-function-health",
+      "text": "The bottom line on alternatives to Function Health",
+      "domain": null,
+      "position": 20
+    },
+    {
+      "href": "https://www.empirical.health/",
+      "text": "Learn more about Empirical Health",
+      "domain": "empirical.health",
+      "position": 21
+    },
+    {
+      "href": "/program/comprehensive-heart-panel",
+      "text": "Get tested",
+      "domain": null,
+      "position": 22
+    },
+    {
+      "href": "/",
+      "text": "",
+      "domain": null,
+      "position": 23
+    },
+    {
+      "href": "https://apps.apple.com/app/apple-store/id6449271489?pt=124999797&ct=Web:TopNav&mt=8",
+      "text": "Download for iOS",
+      "domain": "apps.apple.com",
+      "position": 24
+    },
+    {
+      "href": "https://play.google.com/store/apps/details?id=com.empiricalhealth.EmpiricalHealth",
+      "text": "Download for Android",
+      "domain": "play.google.com",
+      "position": 25
+    },
+    {
+      "href": "https://apps.apple.com/us/app/empirical-sleep-apnea-care/id1623615785",
+      "text": "Download Sleep Tracker",
+      "domain": "apps.apple.com",
+      "position": 26
+    },
+    {
+      "href": "https://app.empirical.health/app/metrics",
+      "text": "Log in to Web App",
+      "domain": "app.empirical.health",
+      "position": 27
+    },
+    {
+      "href": "https://help.empirical.health/",
+      "text": "Support",
+      "domain": "help.empirical.health",
+      "position": 28
+    },
+    {
+      "href": "/testing-locations",
+      "text": "Testing Locations",
+      "domain": null,
+      "position": 29
+    },
+    {
+      "href": "/compare/function-health",
+      "text": "Function Health",
+      "domain": null,
+      "position": 30
+    },
+    {
+      "href": "/compare/superpower",
+      "text": "Superpower",
+      "domain": null,
+      "position": 31
+    },
+    {
+      "href": "/compare/insidetracker",
+      "text": "InsideTracker",
+      "domain": null,
+      "position": 32
+    },
+    {
+      "href": "/compare/whoop",
+      "text": "Whoop Advanced Labs",
+      "domain": null,
+      "position": 33
+    },
+    {
+      "href": "/compare/hims",
+      "text": "Labs by Hims",
+      "domain": null,
+      "position": 34
+    },
+    {
+      "href": "/compare/blueprint-biomarkers",
+      "text": "Blueprint biomarkers",
+      "domain": null,
+      "position": 35
+    },
+    {
+      "href": "/compare/function-health-vs-superpower",
+      "text": "Function Health vs Superpower",
+      "domain": null,
+      "position": 36
+    },
+    {
+      "href": "https://www.empirical.health/blog/function-health-alternatives/",
+      "text": "Function Health alternatives",
+      "domain": "empirical.health",
+      "position": 37
+    },
+    {
+      "href": "/program/advanced-heart-health",
+      "text": "Advanced Heart Health",
+      "domain": null,
+      "position": 38
+    },
+    {
+      "href": "/program/comprehensive-heart-panel",
+      "text": "Comprehensive Heart Health",
+      "domain": null,
+      "position": 39
+    },
+    {
+      "href": "/program/gift",
+      "text": "Gift an Empirical membership",
+      "domain": null,
+      "position": 40
+    },
+    {
+      "href": "/clinicians",
+      "text": "For Clinicians",
+      "domain": null,
+      "position": 41
+    },
+    {
+      "href": "/for-business",
+      "text": "For Business",
+      "domain": null,
+      "position": 42
+    },
+    {
+      "href": "/testing-locations",
+      "text": "Find a testing location",
+      "domain": null,
+      "position": 43
+    },
+    {
+      "href": "/program/medicare-cardiovascular-care/",
+      "text": "Medicare-covered cardiovascular care",
+      "domain": null,
+      "position": 44
+    },
+    {
+      "href": "/about",
+      "text": "About",
+      "domain": null,
+      "position": 45
+    },
+    {
+      "href": "/for-business",
+      "text": "Empirical for Business",
+      "domain": null,
+      "position": 46
+    },
+    {
+      "href": "/blog",
+      "text": "Blog",
+      "domain": null,
+      "position": 47
+    },
+    {
+      "href": "/reviews",
+      "text": "Reviews",
+      "domain": null,
+      "position": 48
+    },
+    {
+      "href": "/faq",
+      "text": "FAQ",
+      "domain": null,
+      "position": 49
+    },
+    {
+      "href": "/contact",
+      "text": "Contact",
+      "domain": null,
+      "position": 50
+    },
+    {
+      "href": "/privacy",
+      "text": "Privacy Policy",
+      "domain": null,
+      "position": 51
+    },
+    {
+      "href": "/data-collection",
+      "text": "Data Collection",
+      "domain": null,
+      "position": 52
+    },
+    {
+      "href": "/terms",
+      "text": "Terms of Service",
+      "domain": null,
+      "position": 53
+    },
+    {
+      "href": "/hipaa-privacy",
+      "text": "HIPAA Privacy Notice",
+      "domain": null,
+      "position": 54
+    },
+    {
+      "href": "/telehealth-informed-consent",
+      "text": "Telehealth Informed Consent",
+      "domain": null,
+      "position": 55
+    }
+  ],
+  "link_count": 55
+}
